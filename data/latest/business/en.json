@@ -2,200 +2,209 @@
   "schema_version": "1.4",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-03",
-  "issue_id": "daily-2026-11-03",
+  "issue_date": "2026-11-04",
+  "issue_id": "daily-2026-11-04",
   "edition": "business",
   "language": "en",
-  "generated_at": "2026-11-03T04:11:17+09:00",
-  "title": "Robots in practice: testing, safety and integration",
-  "lead": "Five studies examine deployment limits, from testing grippers to controlling permitted software commands.",
+  "generated_at": "2026-11-03T23:06:43.997Z",
+  "title": "Replicant Data — November 4, 2026",
+  "lead": "What new research and infrastructure mean for pilots, system integration and deployment cost.",
   "news": [
     {
-      "id": "real-hand-connector-tests",
-      "title": "Why 1,700 physical robot-hand trials matter more than attractive training scores",
-      "summary": "Ammar Abbas and colleagues compared 281 control programs in roughly 1,700 real connector-insertion trials. The study shows that data representation can radically alter success without changing the physical hand.",
-      "details": "Putting a small network connector into its socket is harder than it looks. The plug must face the right way, line up and enter without slipping. A team led by Ammar Abbas compared ways to teach a five-fingered robot hand this task. They carried out roughly 1,700 attempts on real equipment, not just on a screen.",
-      "technical_novelty": "For a customer automating assembly, this points to acceptance tests on actual components. Software may score well internally yet still miss a socket. A procurement specification should define connector geometry, tolerances, trial counts, cycle time and lighting. The paper offers no universal deployment price or guarantee for other connectors, and its most striking improvements arise from particular representation choices rather than a new robot purchase.",
-      "engineering_impact": "The researchers also examined 67 scores that could be calculated without performing the insertion. Only five, related to how smooth and direct the predicted motion was, closely matched real success. Even those worked only within one group of programs. A movement that looks excellent in a computer test may still miss the actual socket.",
-      "limitations": "Only five of 67 offline measures predicted success, and only within one policy family. Replacing physical acceptance testing with a single model score is therefore not supported by these findings.",
-      "evidence_status": "Results are reported by the study authors; independent replication has not been established.",
-      "published_at": "2026-10-29",
-      "organization": "Ammar N. Abbas and collaborators",
+      "id": "warehouse-code-agent-planner",
+      "title": "Coding agents boost simulated warehouse throughput by 22–60 percent",
+      "summary": "Researchers at the University of Southern California, UC Irvine and Symbotic let language-model agents modify a multi-robot warehouse planner. Six simulation campaigns increased throughput by 22 to 60 percent, although some changes raised planning computation more than one hundredfold.",
+      "details": "The original planner assigned work to multiple machines while choosing routes that avoid conflicts. Coding agents proposed program changes, simulated the resulting traffic and measured whether more jobs could be completed. Each improvement was preserved as a sequence of scored source-code patches rather than a single opaque model output. Six independent tuning campaigns were evaluated, including tests with different starting conditions, fleet sizes and warehouse configurations. That makes it possible to inspect what changed, but it does not mean every change will work in a new industrial environment.",
+      "technical_novelty": "The original planner assigned work to multiple machines while choosing routes that avoid conflicts. Coding agents proposed program changes, simulated the resulting traffic and measured whether more jobs could be completed. Each improvement was preserved as a sequence of scored source-code patches rather than a single opaque model output. Six independent tuning campaigns were evaluated, including tests with different starting conditions, fleet sizes and warehouse configurations. That makes it possible to inspect what changed, but it does not mean every change will work in a new industrial environment.",
+      "engineering_impact": "Higher throughput is commercially attractive, but this study used simulation and did not calculate the cost of extra processors, deployment audits or outages. A buyer should assess the entire change-management process, including regression tests and rollback. The reported 60 percent improvement must not be treated as a forecast for another site's revenue.",
+      "limitations": "Across the six campaigns, simulated throughput improved by 22 to 60 percent. Some gains survived a different layout or larger fleet but shrank for smaller fleets and nearly disappeared with an outbound-heavy workload. Final modifications ran to roughly 700–2,400 lines of code, while some versions multiplied planning compute by more than one hundred. These figures do not measure output from a live customer warehouse and do not include the cost of additional hardware. Successful optimization of one benchmark is not a substitute for safety review and software testing.",
+      "evidence_status": "Evidence: results and limitations are reported by the study authors; independent replication has not been established.",
+      "published_at": "2026-11-02",
+      "organization": "University of Southern California, UC Irvine and Symbotic",
       "source_ids": [
-        "src-real-hand-connector-tests"
+        "src-autumn"
       ],
-      "time_window": "7d",
-      "body": "Putting a small network connector into its socket is harder than it looks. The plug must face the right way, line up and enter without slipping. A team led by Ammar Abbas compared ways to teach a five-fingered robot hand this task. They carried out roughly 1,700 attempts on real equipment, not just on a screen.\n\nThe team tested 281 versions of control software from seven groups. They changed what information the program received from cameras and how it described finger movements. This is called a data representation: the same task can be described using different pictures and numbers. Sometimes that choice mattered more than ordinary adjustments to the training process.\n\nThe researchers also examined 67 scores that could be calculated without performing the insertion. Only five, related to how smooth and direct the predicted motion was, closely matched real success. Even those worked only within one group of programs. A movement that looks excellent in a computer test may still miss the actual socket.\n\nFor point-cloud policies, cropping the relevant region, using robot-base coordinates and normalizing features improved success by 70 to 100 percentage points in individual controlled comparisons. For a vision-language-action policy, absolute rather than relative actions improved insertion success by up to 70 points. These figures come from different configurations and cannot be added together or generalized to every architecture. Seven policy families were included, exposing how representation choices interact with model design.\n\nThe findings concern particular hands, connectors and test conditions. They do not establish the best program for every object. They do explain why a robot must be tested with the things it will really handle.\n\nFor a customer automating assembly, this points to acceptance tests on actual components. Software may score well internally yet still miss a socket. A procurement specification should define connector geometry, tolerances, trial counts, cycle time and lighting. The paper offers no universal deployment price or guarantee for other connectors, and its most striking improvements arise from particular representation choices rather than a new robot purchase.\n\nOnly five of 67 offline measures reliably correlated with real insertion success, and only within one policy family. Correlations between minus 0.70 and minus 0.80 for predicted motion smoothness and directness do not turn these scores into substitutes for hardware trials. Selecting a controller from validation loss alone is particularly weakly supported here.\n\nOnly five of 67 offline measures predicted success, and only within one policy family. Replacing physical acceptance testing with a single model score is therefore not supported by these findings.",
+      "time_window": "72h",
+      "body": "Even when warehouse robots know which jobs they should do, they can block one another in narrow corridors or at crowded crossings. Researchers from the University of Southern California, UC Irvine and Symbotic investigated an unusual use of language models: improving the source code of an existing warehouse traffic planner instead of replacing the robots' controllers. Their paper, Late Autumn, appeared on November 2. The experiments used a simulated automated warehouse modeled on an existing facility, with attention to problems that arise from its particular layout.\n\nThe original planner assigned work to multiple machines while choosing routes that avoid conflicts. Coding agents proposed program changes, simulated the resulting traffic and measured whether more jobs could be completed. Each improvement was preserved as a sequence of scored source-code patches rather than a single opaque model output. Six independent tuning campaigns were evaluated, including tests with different starting conditions, fleet sizes and warehouse configurations. That makes it possible to inspect what changed, but it does not mean every change will work in a new industrial environment. The computational load must therefore be evaluated alongside the number of completed jobs.\n\nAcross the six campaigns, simulated throughput improved by 22 to 60 percent. Some gains survived a different layout or larger fleet but shrank for smaller fleets and nearly disappeared with an outbound-heavy workload. Final modifications ran to roughly 700–2,400 lines of code, while some versions multiplied planning compute by more than one hundred. These figures do not measure output from a live customer warehouse and do not include the cost of additional hardware. Successful optimization of one benchmark is not a substitute for safety review and software testing.\n\nHigher throughput is commercially attractive, but this study used simulation and did not calculate the cost of extra processors, deployment audits or outages. A buyer should assess the entire change-management process, including regression tests and rollback. The reported 60 percent improvement must not be treated as a forecast for another site's revenue.",
       "image": null
     },
     {
-      "id": "code-policy-posttraining",
-      "title": "CaPtain lets a small model control robots through software tools",
-      "summary": "Yijia Fan and colleagues presented CaPtain, which trains a model to call robot-control software tools. On held-out LIBERO tasks, success rose from 0% to 73.8% after two training stages.",
-      "details": "Robot workcells normally execute commands through software interfaces that can restrict unsafe movement. Yijia Fan and colleagues introduced CaPtain, in which a small vision-language model chooses calls to such tools. A software harness surrounds the model with perception, geometry and guarded-motion functions. This differs from asking a neural network to output every joint movement directly, and it gives integrators a distinct place to define permitted operations.",
-      "technical_novelty": "The model was first trained on examples of tool-call sequences and then improved using multi-turn reinforcement learning. During training, a special evaluator inspected hidden simulator state to assign credit to individual commands. The deployed agent does not receive that privileged information. On held-out LIBERO tasks, the untrained model scored 0%, rising to 55.4% after the first stage and 73.8% after the second.",
-      "engineering_impact": "For a potential customer, the attraction is reducing manual programming of every action sequence. Integration still needs a strict list of allowed tools, action logs and tests for mistaken perception. The authors also report 78.5% on a different LIBERO-PRO benchmark and 83.3% on SimplerEnv WidowX without target-domain training. These are different evaluations, not guaranteed production throughput.",
-      "limitations": "The paper reports a transfer to real hardware and the release of code, data and model weights. It does not independently establish industrial safety compliance or total deployment cost. A pilot must examine not only task success but also which commands the system can issue when its observations are wrong.",
-      "evidence_status": "Results are author-reported; independent industrial validation is not established.",
-      "published_at": "2026-10-29",
-      "organization": "Yijia Fan and collaborators",
+      "id": "korea-humanoid-data-factory",
+      "title": "South Korea opens a humanoid training-data facility with twelve robots",
+      "summary": "South Korea's science ministry announced the opening of a specialized humanoid data collection center on November 3. Twelve robots are operating at the facility, with staged access for external research and industry organizations planned from late 2027.",
+      "details": "Twelve humanoids are already operating, and the government intends to expand both the fleet and the set of recorded activities. Human operators guide machines remotely or demonstrate movements that the robots imitate. Opening-day demonstrations included removing items from a refrigerator, handling laundry, arranging a sofa and pressing controls inside a vehicle. The recordings are intended to support future training of robot-control models. The event also featured development work on the domestic KAIROS humanoid. Capturing a supervised demonstration does not mean the system can already perform every demonstration autonomously.",
+      "technical_novelty": "Twelve humanoids are already operating, and the government intends to expand both the fleet and the set of recorded activities. Human operators guide machines remotely or demonstrate movements that the robots imitate. Opening-day demonstrations included removing items from a refrigerator, handling laundry, arranging a sofa and pressing controls inside a vehicle. The recordings are intended to support future training of robot-control models. The event also featured development work on the domestic KAIROS humanoid. Capturing a supervised demonstration does not mean the system can already perform every demonstration autonomously.",
+      "engineering_impact": "A shared facility could reduce the entry cost for firms unable to maintain a fleet of humanoids and trained operators. But external access is scheduled only from late 2027, and prices, licensing conditions and data-quality guarantees have not been announced. This is currently a research infrastructure investment, not a ready procurement option.",
+      "limitations": "Universities, institutes and companies are expected to gain access in phases starting in late 2027. The government hopes shared data production will support domestic technology and reduce reliance on foreign sources. Yet the announcement supplies neither comparable task-success measurements for models trained on the new records nor a total number of recorded hours. It verifies the existence of the facility, the twelve operating robots and an access plan. It does not establish that the eventual models will generalize to unfamiliar homes or factories.",
+      "evidence_status": "Evidence: the official announcement confirms a facility and robot count, not measured downstream learning performance.",
+      "published_at": "2026-11-03",
+      "organization": "Ministry of Science and ICT of South Korea",
       "source_ids": [
-        "src-code-policy-posttraining"
+        "src-factory"
       ],
-      "time_window": "7d",
-      "body": "Robot workcells normally execute commands through software interfaces that can restrict unsafe movement. Yijia Fan and colleagues introduced CaPtain, in which a small vision-language model chooses calls to such tools. A software harness surrounds the model with perception, geometry and guarded-motion functions. This differs from asking a neural network to output every joint movement directly, and it gives integrators a distinct place to define permitted operations.\n\nThe model was first trained on examples of tool-call sequences and then improved using multi-turn reinforcement learning. During training, a special evaluator inspected hidden simulator state to assign credit to individual commands. The deployed agent does not receive that privileged information. On held-out LIBERO tasks, the untrained model scored 0%, rising to 55.4% after the first stage and 73.8% after the second.\n\nFor a potential customer, the attraction is reducing manual programming of every action sequence. Integration still needs a strict list of allowed tools, action logs and tests for mistaken perception. The authors also report 78.5% on a different LIBERO-PRO benchmark and 83.3% on SimplerEnv WidowX without target-domain training. These are different evaluations, not guaranteed production throughput.\n\nThe paper reports a transfer to real hardware and the release of code, data and model weights. It does not independently establish industrial safety compliance or total deployment cost. A pilot must examine not only task success but also which commands the system can issue when its observations are wrong.",
+      "time_window": "72h",
+      "body": "Training a humanoid to handle laundry requires more than a photograph of the finished stack. Researchers need examples showing how an arm moves, when a gripper closes, and how the body adjusts while holding something. On November 3 South Korea's Ministry of Science and ICT announced a dedicated collection facility at the Korea Institute of Machinery and Materials, built with the Electronics and Telecommunications Research Institute. Officials describe it as the country's first specialized facility for producing task data from bipedal humanoids.\n\nTwelve humanoids are already operating, and the government intends to expand both the fleet and the set of recorded activities. Human operators guide machines remotely or demonstrate movements that the robots imitate. Opening-day demonstrations included removing items from a refrigerator, handling laundry, arranging a sofa and pressing controls inside a vehicle. The recordings are intended to support future training of robot-control models. The event also featured development work on the domestic KAIROS humanoid. Capturing a supervised demonstration does not mean the system can already perform every demonstration autonomously. Remote operation means that a human chooses actions from elsewhere while the robot records the resulting movements. The telemetry may include machine state and motion signals rather than video alone; the announcement does not detail every recorded field.\n\nUniversities, institutes and companies are expected to gain access in phases starting in late 2027. The government hopes shared data production will support domestic technology and reduce reliance on foreign sources. Yet the announcement supplies neither comparable task-success measurements for models trained on the new records nor a total number of recorded hours. It verifies the existence of the facility, the twelve operating robots and an access plan. It does not establish that the eventual models will generalize to unfamiliar homes or factories.\n\nA shared facility could reduce the entry cost for firms unable to maintain a fleet of humanoids and trained operators. But external access is scheduled only from late 2027, and prices, licensing conditions and data-quality guarantees have not been announced. This is currently a research infrastructure investment, not a ready procurement option.",
       "image": null
     },
     {
-      "id": "safer-person-following",
-      "title": "Better person tracking can create a new collision risk",
-      "summary": "Mingyang Lyu and colleagues found that training a robot to keep following someone can sometimes increase collisions. Their additional risk check reduced collisions by 3.96 points while changing fewer than 2% of steps.",
-      "details": "Imagine a robot following one person down a busy corridor. Someone wearing similar clothes crosses in front of it, and the robot may confuse the two people. A team led by Mingyang Lyu studied how improving a robot's ability to keep following someone affects the safety of its movements.",
-      "technical_novelty": "In a service setting, the risk check should be assessed separately from the main tracking algorithm. It estimates signs that the robot may be following the wrong person and shortens forward movement when needed. That preserves ordinary behaviour most of the time, but it does not replace speed limits, emergency stops or building-specific trials. The paper does not independently establish compliance with industrial safety standards.",
-      "engineering_impact": "When the risk is high, the check shortens the next forward movement. It does not change the robot's turning command. In the experiments, more than 98% of steps remained unchanged. In a difficult tracking test, the collision rate fell by 3.96 percentage points compared with the version without this added check.",
-      "limitations": "Uniformly slowing the robot did not achieve the same benefit, and a repeat evaluation found a 3.77-point reduction. Neither figure is a promise of zero risk to visitors.",
-      "evidence_status": "Results are reported by the study authors; independent replication has not been established.",
+      "id": "iso-mobile-fleet-communications",
+      "title": "Communication compatibility is not the same as robot navigation or safety",
+      "summary": "The Association for Advancing Automation explained ISO 21423:2026 on November 2 as a communications framework for industrial mobile robots from different vendors. The actual standard was published on October 14 and excludes requirements for safety and navigation.",
+      "details": "The scope covers communications among industrial mobile robots, fleet-management programs and other devices in the shared workplace, including automated doors and lifts. The industry group describes information about location, speed, direction, tasks and equipment availability as relevant exchanges. A common message convention can reduce the need for one-off connections between different suppliers. However, sharing state does not calculate collision-free routes, decide who has priority in a corridor or replace an emergency-stop system. Interoperability at the data layer must be distinguished from coordinated physical behavior.",
+      "technical_novelty": "The scope covers communications among industrial mobile robots, fleet-management programs and other devices in the shared workplace, including automated doors and lifts. The industry group describes information about location, speed, direction, tasks and equipment availability as relevant exchanges. A common message convention can reduce the need for one-off connections between different suppliers. However, sharing state does not calculate collision-free routes, decide who has priority in a corridor or replace an emergency-stop system. Interoperability at the data layer must be distinguished from coordinated physical behavior.",
+      "engineering_impact": "Mixed fleets may be easier to procure when vendors actually implement common messages. Yet the standard number alone does not provide completed connections to lifts, safety systems or dispatch software. On-site integration testing and contractual responsibility between suppliers remain separate budget and risk items.",
+      "limitations": "The ISO catalogue explicitly states that the document contains no safety requirements and no navigation requirements. Consumer, military, medical and public-road applications are also excluded. A claim of compliance therefore cannot be treated as permission to deploy a mixed fleet without site-specific testing. Engineers still need to verify the actual interfaces, building integrations and responses to lost communication. A standard can define a shared language for equipment while leaving the most difficult motion and safety problems to the systems built around it.",
+      "evidence_status": "Evidence: an industry explanation refers to the formal standard; it is not an equipment validation study.",
+      "published_at": "2026-11-02",
+      "organization": "Association for Advancing Automation",
+      "source_ids": [
+        "src-iso",
+        "src-iso-original"
+      ],
+      "time_window": "72h",
+      "body": "A large warehouse can operate mobile robots from multiple vendors, yet their fleet managers may disagree about how to describe a machine's position, assignment or state. On November 2 the Association for Advancing Automation discussed ISO 21423:2026, a communications and interoperability standard for industrial mobile robots. The International Organization for Standardization had actually published the document on October 14. The November announcement is an explanation of the existing standard, not the launch of a newly invented navigation system.\n\nThe scope covers communications among industrial mobile robots, fleet-management programs and other devices in the shared workplace, including automated doors and lifts. The industry group describes information about location, speed, direction, tasks and equipment availability as relevant exchanges. A common message convention can reduce the need for one-off connections between different suppliers. However, sharing state does not calculate collision-free routes, decide who has priority in a corridor or replace an emergency-stop system. Interoperability at the data layer must be distinguished from coordinated physical behavior.\n\nThe ISO catalogue explicitly states that the document contains no safety requirements and no navigation requirements. Consumer, military, medical and public-road applications are also excluded. A claim of compliance therefore cannot be treated as permission to deploy a mixed fleet without site-specific testing. Engineers still need to verify the actual interfaces, building integrations and responses to lost communication. A standard can define a shared language for equipment while leaving the most difficult motion and safety problems to the systems built around it.\n\nMixed fleets may be easier to procure when vendors actually implement common messages. Yet the standard number alone does not provide completed connections to lifts, safety systems or dispatch software. On-site integration testing and contractual responsibility between suppliers remain separate budget and risk items.",
+      "image": null
+    },
+    {
+      "id": "xsto-cemat-material-handling",
+      "title": "XSTO shows stair-climbing and modular cargo equipment in Shanghai",
+      "summary": "On November 3 XSTO demonstrated stair-climbing and modular cargo-handling equipment at CeMAT Asia 2026 in Shanghai. The company announcement describes the devices but supplies no independent performance comparison or verified long-term industrial operating figures.",
+      "details": "X-Morph uses interchangeable components for level transport, lifting, loading, unloading and moving cargo on stairs. This kind of modularity means physical reconfiguration for different jobs; it does not mean a machine independently understands arbitrary assignments. The company describes its stair-climbing robot as combining autonomous control with heavy-load movement. ET300P2, by contrast, responds to an operator and assists a person who remains involved in the task. Autonomous operation, remotely guided movement and motorized human assistance imply very different staffing and risk requirements.",
+      "technical_novelty": "X-Morph uses interchangeable components for level transport, lifting, loading, unloading and moving cargo on stairs. This kind of modularity means physical reconfiguration for different jobs; it does not mean a machine independently understands arbitrary assignments. The company describes its stair-climbing robot as combining autonomous control with heavy-load movement. ET300P2, by contrast, responds to an operator and assists a person who remains involved in the task. Autonomous operation, remotely guided movement and motorized human assistance imply very different staffing and risk requirements.",
+      "engineering_impact": "For a delivery firm the critical numbers are staffing per trip, time to climb and damage when a maneuver goes wrong. XSTO's announcement does not supply those comparisons. Any purchase decision needs a trial with actual building geometry, representative cargo and operator training.",
+      "limitations": "XSTO reports visitor interest and discussions about potential partnerships at the trade show. Its announcement does not provide standardized payload results across different stair geometries, failure statistics, operating speeds or ownership costs. A demonstration stand can show how equipment is built and prompt useful questions from customers, but it cannot replace trials on the intended building's stairs with representative loads. The exhibition runs through November 6; that is the duration of a display rather than a verified start date for a commercial deployment.",
+      "evidence_status": "Evidence: the manufacturer describes a demonstration, without published independent performance tests.",
+      "published_at": "2026-11-03",
+      "organization": "XSTO",
+      "source_ids": [
+        "src-xsto"
+      ],
+      "time_window": "72h",
+      "body": "The hardest part of delivering a heavy load often begins where a smooth floor ends: at a staircase, narrow landing or vehicle loading edge. On November 3 XSTO announced a display of equipment for such routes at CeMAT Asia 2026 in Shanghai. The lineup includes a stair-climbing robot with intelligent control, modular X-Morph transport platforms, an ET300P2 motorized cart operated through motion-sensitive controls and a compact EzStep stair-climbing cart. This is a manufacturer's exhibition announcement, not an independent test report.\n\nX-Morph uses interchangeable components for level transport, lifting, loading, unloading and moving cargo on stairs. This kind of modularity means physical reconfiguration for different jobs; it does not mean a machine independently understands arbitrary assignments. The company describes its stair-climbing robot as combining autonomous control with heavy-load movement. ET300P2, by contrast, responds to an operator and assists a person who remains involved in the task. Autonomous operation, remotely guided movement and motorized human assistance imply very different staffing and risk requirements.\n\nXSTO reports visitor interest and discussions about potential partnerships at the trade show. Its announcement does not provide standardized payload results across different stair geometries, failure statistics, operating speeds or ownership costs. A demonstration stand can show how equipment is built and prompt useful questions from customers, but it cannot replace trials on the intended building's stairs with representative loads. The exhibition runs through November 6; that is the duration of a display rather than a verified start date for a commercial deployment.\n\nFor a delivery firm the critical numbers are staffing per trip, time to climb and damage when a maneuver goes wrong. XSTO's announcement does not supply those comparisons. Any purchase decision needs a trial with actual building geometry, representative cargo and operator training.",
+      "image": null
+    },
+    {
+      "id": "rise-humanoid-sequential-skills",
+      "title": "A humanoid chains walking and handling skills learned separately",
+      "summary": "Seoul National University researchers introduced RISE, a framework linking separately recorded examples of locomotion and object handling. They report 87.3 percent mean success in simulation and a 20-percentage-point advantage over a baseline in experiments with a real Unitree G1.",
+      "details": "The architecture shares visual and language processing across several action specialists, with a coordinator deciding which behavior should be active. During training a specialist receives greater responsibility for examples it predicts accurately. Changes in responsibility weights then help signal a transition to another phase of the task. The real robot is a Unitree G1 fitted with two dexterous hands and 43 controllable degrees of freedom. That is an impressive physical configuration, but it does not mean the model can invent arbitrary skills beyond the kinds of demonstrations used for learning.",
+      "technical_novelty": "The architecture shares visual and language processing across several action specialists, with a coordinator deciding which behavior should be active. During training a specialist receives greater responsibility for examples it predicts accurately. Changes in responsibility weights then help signal a transition to another phase of the task. The real robot is a Unitree G1 fitted with two dexterous hands and 43 controllable degrees of freedom. That is an impressive physical configuration, but it does not mean the model can invent arbitrary skills beyond the kinds of demonstrations used for learning.",
+      "engineering_impact": "Reusing separate demonstration collections could lower the effort needed to introduce multi-step assignments on an existing platform. But no audited calculation of data-collection costs, integration work or robot downtime is supplied. A commercial pilot should specify a narrow task sequence before promising a general-purpose humanoid workforce.",
+      "limitations": "For simulated tasks comprising two to four stages, the team reports an 87.3 percent mean success rate against 73.6 percent for its single-expert comparison. On a real G1, the researchers report a 20-percentage-point advantage, with sequences of up to five stages. The university explicitly identifies truly simultaneous locomotion and dexterous manipulation as future work. Watching a robot walk to a table, pick up an object and move again is evidence of sequential skill composition, not proof of unrestricted autonomy in a crowded home.",
+      "evidence_status": "Evidence: performance figures are reported by the university on behalf of the research team; independent replication is not established.",
       "published_at": "2026-10-30",
-      "organization": "Mingyang Lyu and collaborators",
+      "organization": "Seoul National University",
       "source_ids": [
-        "src-safer-person-following"
+        "src-rise"
       ],
       "time_window": "7d",
-      "body": "Imagine a robot following one person down a busy corridor. Someone wearing similar clothes crosses in front of it, and the robot may confuse the two people. A team led by Mingyang Lyu studied how improving a robot's ability to keep following someone affects the safety of its movements.\n\nTraining the software to keep track of its person made it better at following. But in some tests it also increased collisions. The researchers therefore added a separate danger check. It looks at clues about the target person's location and how confidently the robot can tell that person apart from others.\n\nWhen the risk is high, the check shortens the next forward movement. It does not change the robot's turning command. In the experiments, more than 98% of steps remained unchanged. In a difficult tracking test, the collision rate fell by 3.96 percentage points compared with the version without this added check.\n\nThe authors fine-tuned only the planner head of a compact vision-language-action model while freezing the backbone. A separate risk predictor processes 84 cues, including candidate targets, identity margins, estimated range and bearing, and the proposed command. Above a calibrated risk threshold, it shortens the next translational waypoint without changing the turning component. This targets dangerous moments instead of applying a blanket speed reduction or replacing the learned controller with a wholly different planner.\n\nThat does not make the robot safe in every crowded shopping centre. The researchers compared programs under particular test conditions and did not claim protection from every possible mistake. Interestingly, simply slowing the robot all the time did not produce the same improvement.\n\nIn a service setting, the risk check should be assessed separately from the main tracking algorithm. It estimates signs that the robot may be following the wrong person and shortens forward movement when needed. That preserves ordinary behaviour most of the time, but it does not replace speed limits, emergency stops or building-specific trials. The paper does not independently establish compliance with industrial safety standards.\n\nA concurrent evaluation found a 3.77-point collision reduction versus 0.29 points in matched null pairs. The approach is not a formal safety guarantee beyond the studied tracking scenarios. Constant slowing without target-state information did not reproduce the benefit, distinguishing the proposed filter from a simple speed governor.\n\nUniformly slowing the robot did not achieve the same benefit, and a repeat evaluation found a 3.77-point reduction. Neither figure is a promise of zero risk to visitors.",
-      "image": null
-    },
-    {
-      "id": "fingertip-contact-learning",
-      "title": "Robot gripping research shifts attention to where fingers touch",
-      "summary": "Zhixuan Xu and colleagues presented a way to transfer human hand skills through contact surfaces. Across six hand-task combinations, average final-stage success improved by at least 50 percentage points.",
-      "details": "When you pick up a glass, bending your fingers is only part of the job. They must touch the glass in useful places or it may slip. A team led by Zhixuan Xu studied how to teach robot hands using the changing places where fingers contact an object. Their system includes pictures from cameras near the fingertips and information about contact surfaces.",
-      "technical_novelty": "A deployment would need to consider fingertip sensing, camera calibration and the surface of the customer's product, not just the shape of the robot hand. A contact surface is the region where a finger actually supports an object; changing it can determine whether a grip holds. Published hardware designs and code may reduce the cost of an early pilot, but integration into a particular production line remains separate work.",
-      "engineering_impact": "The researchers compared their approach with other methods on six combinations of robot hands and tasks. They report that average success in the final stage improved by at least 50 percentage points. A percentage point measures the difference between two success rates. For example, moving from 20% to 70% is an increase of 50 points.",
-      "limitations": "The 50-point result concerns the last stage of selected tasks. It says nothing directly about line uptime, gripper wear, complete cycle speed or the cost of dropping a product.",
-      "evidence_status": "Results are reported by the study authors; independent replication has not been established.",
-      "published_at": "2026-10-29",
-      "organization": "Zhixuan Xu and collaborators",
-      "source_ids": [
-        "src-fingertip-contact-learning"
-      ],
-      "time_window": "7d",
-      "body": "When you pick up a glass, bending your fingers is only part of the job. They must touch the glass in useful places or it may slip. A team led by Zhixuan Xu studied how to teach robot hands using the changing places where fingers contact an object. Their system includes pictures from cameras near the fingertips and information about contact surfaces.\n\nOne part records where human fingers touched an object. Another helps a robot choose contact points and wrist movements of its own. This matters because a human hand and a robot hand can be shaped quite differently. Simply copying the angles of human finger joints may not let a robot hold the same thing.\n\nThe researchers compared their approach with other methods on six combinations of robot hands and tasks. They report that average success in the final stage improved by at least 50 percentage points. A percentage point measures the difference between two success rates. For example, moving from 20% to 70% is an increase of 50 points.\n\nThe architecture separates demonstration capture from policy learning. Its demonstration interface combines shared contact geometry with colour fingertip views, aligning contact before retargeting the pose. The learning interface predicts relative contact-surface trajectories and then coordinates wrist and finger commands through a lower-level controller. The team has published software and hardware designs, allowing others to attempt experiments with different robotic hands. This is a contact-based representation rather than a claim that human and robot joint angles are interchangeable.\n\nThe tests used particular hands and tasks. They do not prove that a robot can now handle every cup or tool. But the experiment helps explain why similar-looking finger movements can produce very different results when the fingers touch an object differently.\n\nA deployment would need to consider fingertip sensing, camera calibration and the surface of the customer's product, not just the shape of the robot hand. A contact surface is the region where a finger actually supports an object; changing it can determine whether a grip holds. Published hardware designs and code may reduce the cost of an early pilot, but integration into a particular production line remains separate work.\n\nThe at-least-50-point gain concerns the final stage of six hand-task combinations, not every complete manipulation sequence. Different materials, calibration errors and initial approach motions require further tests. The quantity preserved is the pattern of physical contact, not the visual resemblance of finger poses.\n\nThe 50-point result concerns the last stage of selected tasks. It says nothing directly about line uptime, gripper wear, complete cycle speed or the cost of dropping a product.",
-      "image": null
-    },
-    {
-      "id": "shared-navigation-across-robots",
-      "title": "Shared navigation may reduce adaptation work across mixed robot fleets",
-      "summary": "Zhidong Wang and colleagues separated a shared environmental model from each robot's motion characteristics. Across seven simulated platforms, success exceeded selected alternatives by 3.8 to 10.6 points.",
-      "details": "A small wheeled robot and a larger robot with a different steering system cannot move through a narrow corridor in exactly the same way. The command to turn right produces different motions. A team led by Zhidong Wang proposed teaching one program to plan paths for several kinds of robots while still respecting those differences.",
-      "technical_novelty": "For operators of mixed fleets, the attraction is avoiding full retraining for every machine design. Each robot still needs its motion parameters identified. The researchers used three minutes of manual driving on a new physical robot for that step. This is an experimental parameter-identification time, not a promise that installation, mapping, networking, charging and safety setup take three minutes altogether.",
-      "engineering_impact": "In computer experiments, the researchers used seven robots representing five kinds of movement. The shared program succeeded 3.8 to 10.6 percentage points more often than some comparison methods. They then drove a real robot manually for three minutes to learn how it moved, before testing navigation in an unfamiliar indoor space.",
-      "limitations": "The approach is primarily designed for flat ground. Fleets using ramps, lifts or crowded pedestrian crossings must test those cases independently of the published result.",
-      "evidence_status": "Results are reported by the study authors; independent replication has not been established.",
-      "published_at": "2026-10-30",
-      "organization": "Zhidong Wang and collaborators",
-      "source_ids": [
-        "src-shared-navigation-across-robots"
-      ],
-      "time_window": "7d",
-      "body": "A small wheeled robot and a larger robot with a different steering system cannot move through a narrow corridor in exactly the same way. The command to turn right produces different motions. A team led by Zhidong Wang proposed teaching one program to plan paths for several kinds of robots while still respecting those differences.\n\nThe method uses a world model: software that predicts how the scene around a robot may change after it moves. But pictures alone are not enough. The researchers also describe how each particular robot accelerates and turns. The planner can therefore consider what the machine can actually do, not merely which space looks empty.\n\nIn computer experiments, the researchers used seven robots representing five kinds of movement. The shared program succeeded 3.8 to 10.6 percentage points more often than some comparison methods. They then drove a real robot manually for three minutes to learn how it moved, before testing navigation in an unfamiliar indoor space.\n\nThe method couples a shared world model with a differentiable reduced-order model of each robot's motion through the change in camera viewpoint. The world predictor learns from multiple platforms, while kinematic parameters are identified separately. During imagined rollouts, a proposed command first passes through the robot template and then the visual world predictor. This makes the planner sensitive to turning and speed limits without training an entirely separate policy for each platform.\n\nThat real-world test matters, but it does not show that the same program works for every vehicle or on staircases. The study specifically discusses movement on flat ground and particular robot designs.\n\nFor operators of mixed fleets, the attraction is avoiding full retraining for every machine design. Each robot still needs its motion parameters identified. The researchers used three minutes of manual driving on a new physical robot for that step. This is an experimental parameter-identification time, not a promise that installation, mapping, networking, charging and safety setup take three minutes altogether.\n\nIn the physical experiment, the researchers identified a new robot's parameters from three minutes of teleoperated driving and then tested unfamiliar indoor navigation. The flat-ground assumption does not cover stairs, steep slopes or contact-heavy manoeuvres. The numerical baseline gains were measured in simulation; the physical test supports a narrower transfer claim.\n\nThe approach is primarily designed for flat ground. Fleets using ramps, lifts or crowded pedestrian crossings must test those cases independently of the published result.",
+      "body": "A humanoid robot that can walk and a robot that can grasp a bottle do not automatically know when to switch between those two activities. On October 30, Seoul National University described RISE, developed by Professor Songhwai Oh's team. The name means Responsibility-Induced Specialized Experts, referring to several action models that develop distinct roles during training. The system uses independently collected walking and manipulation demonstrations instead of requiring a recording of every complete sequence. The paper was accepted at the IROS 2026 robotics conference.\n\nThe architecture shares visual and language processing across several action specialists, with a coordinator deciding which behavior should be active. During training a specialist receives greater responsibility for examples it predicts accurately. Changes in responsibility weights then help signal a transition to another phase of the task. The real robot is a Unitree G1 fitted with two dexterous hands and 43 controllable degrees of freedom. That is an impressive physical configuration, but it does not mean the model can invent arbitrary skills beyond the kinds of demonstrations used for learning.\n\nFor simulated tasks comprising two to four stages, the team reports an 87.3 percent mean success rate against 73.6 percent for its single-expert comparison. On a real G1, the researchers report a 20-percentage-point advantage, with sequences of up to five stages. The university explicitly identifies truly simultaneous locomotion and dexterous manipulation as future work. Watching a robot walk to a table, pick up an object and move again is evidence of sequential skill composition, not proof of unrestricted autonomy in a crowded home.\n\nReusing separate demonstration collections could lower the effort needed to introduce multi-step assignments on an existing platform. But no audited calculation of data-collection costs, integration work or robot downtime is supplied. A commercial pilot should specify a narrow task sequence before promising a general-purpose humanoid workforce.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Physical acceptance tests remain essential",
-    "summary": "High benchmark success cannot replace testing components, motion limits and perception failures.",
-    "implications": "Deployments must separately assess integration cost, test protocols and consequences of failed actions."
+    "title": "Integration and evidence matter more than universal claims",
+    "summary": "Developments span warehouse planner tuning, shared humanoid data, mixed-fleet communications and modular cargo equipment.",
+    "implications": "Deployment depends on data access, computing cost, on-site tests and clear responsibility across vendors."
   },
   "glossary": [
     {
-      "term": "CaPtain",
-      "definition": "An agent that calls software tools to control a robot."
+      "term": "Late Autumn",
+      "definition": "Study in which coding agents tune a warehouse multi-robot planner."
     },
     {
-      "term": "LIBERO and LIBERO-PRO",
-      "definition": "Two robot-manipulation benchmark suites used to evaluate task success."
+      "term": "planner",
+      "definition": "Software that assigns jobs and selects routes for multiple machines."
     },
     {
-      "term": "software harness",
-      "definition": "Tools, memory and constraints around a trained model."
+      "term": "throughput",
+      "definition": "Number of jobs completed per unit of time."
     },
     {
-      "term": "reinforcement learning",
-      "definition": "Improving decisions through feedback on action outcomes."
+      "term": "computational load",
+      "definition": "Processor capacity and time required to calculate the plan."
     },
     {
-      "term": "data representation",
-      "definition": "The format of observations and commands that affects success."
+      "term": "remote operation",
+      "definition": "A person directing a robot from a separate location."
     },
     {
-      "term": "RJ45 connector",
-      "definition": "A network connector used in the physical insertion trials."
+      "term": "telemetry",
+      "definition": "Recorded states and movements of equipment used for evaluation or learning."
     },
     {
-      "term": "contact surface",
-      "definition": "The part of an object where a finger applies force."
+      "term": "KAIROS",
+      "definition": "South Korean humanoid development program discussed at the new data facility."
     },
     {
-      "term": "Contact Imitation Interface",
-      "definition": "A skill-transfer method based on contact geometry."
+      "term": "ISO 21423:2026",
+      "definition": "Standard for communication among industrial mobile robots and fleet managers."
     },
     {
-      "term": "TRACE",
-      "definition": "A danger filter for person-following robot movement."
+      "term": "modularity",
+      "definition": "Ability to replace hardware components for different handling tasks."
     },
     {
-      "term": "Hourglass",
-      "definition": "Shared navigation with a separate motion model for each robot."
+      "term": "autonomous control",
+      "definition": "Movement selected by a system rather than commanded continuously by a human."
     },
     {
-      "term": "world model",
-      "definition": "Software predicting how the scene changes after an action."
+      "term": "RISE",
+      "definition": "Method for connecting separately trained walking and manipulation skills."
     },
     {
-      "term": "SimplerEnv WidowX",
-      "definition": "A separate robot-arm evaluation environment used to assess transfer without target-domain training."
+      "term": "Unitree G1",
+      "definition": "Humanoid platform used in experiments evaluating RISE."
     }
   ],
   "sources": [
     {
-      "id": "src-real-hand-connector-tests",
-      "url": "https://arxiv.org/abs/2610.40828",
+      "id": "src-autumn",
+      "url": "https://arxiv.org/abs/2611.02391",
       "domain": "arxiv.org",
-      "organization": "Ammar N. Abbas and collaborators",
-      "published_at": "2026-10-29",
-      "title": "From Teleoperation to Long-Horizon Dexterity: Evaluating Visuomotor Skills and Offline Proxies for Dexterous Manipulation"
+      "organization": "University of Southern California, UC Irvine and Symbotic",
+      "published_at": "2026-11-02",
+      "title": "Late Autumn: LLM Agents Specialize a General Multi-Robot Planner for One Warehouse"
     },
     {
-      "id": "src-fingertip-contact-learning",
-      "url": "https://arxiv.org/abs/2610.41028",
-      "domain": "arxiv.org",
-      "organization": "Zhixuan Xu and collaborators",
-      "published_at": "2026-10-29",
-      "title": "Contact Imitation Interface: Transferring Dexterous Skills by Showing How Contact Unfolds"
+      "id": "src-factory",
+      "url": "https://m.korea.kr/news/policyNewsView.do?newsId=148974922&pWiseMinistry=ministryNews&repCodeType=%EC%A0%95%EB%B6%80%EB%B6%80%EC%B2%98&repCode_P=A00033",
+      "domain": "korea.kr",
+      "organization": "Ministry of Science and ICT of South Korea",
+      "published_at": "2026-11-03",
+      "title": "휴머노이드가 일하는 법 배우는 '데이터 생산기지' 국내 첫 개소"
     },
     {
-      "id": "src-safer-person-following",
-      "url": "https://arxiv.org/abs/2610.41275",
-      "domain": "arxiv.org",
-      "organization": "Mingyang Lyu and collaborators",
+      "id": "src-iso",
+      "url": "https://www.automate.org/robotics/news/new-iso-interoperability-standard-helps-mobile-robots-from-different-vendors-work-together",
+      "domain": "automate.org",
+      "organization": "Association for Advancing Automation",
+      "published_at": "2026-11-02",
+      "title": "New ISO Interoperability Standard Helps Mobile Robots from Different Vendors Work Together"
+    },
+    {
+      "id": "src-xsto",
+      "url": "https://en.xsto.com/news-details/56.html",
+      "domain": "en.xsto.com",
+      "organization": "XSTO",
+      "published_at": "2026-11-03",
+      "title": "XSTO Showcases AI and Modular Material Handling at CeMAT Asia 2026"
+    },
+    {
+      "id": "src-rise",
+      "url": "https://eng.snu.ac.kr/en/research/research-achievements?bbsidx=8483&md=v",
+      "domain": "eng.snu.ac.kr",
+      "organization": "Seoul National University",
       "published_at": "2026-10-30",
-      "title": "TRACE: Target-State Risk-Aligned Conditional Execution for Embodied Tracking"
+      "title": "SNU Professor Songhwai Oh’s Team Develops Humanoid AI That Performs Sequential Tasks Using Separately Collected Locomotion and Manipulation Data"
     },
     {
-      "id": "src-shared-navigation-across-robots",
-      "url": "https://arxiv.org/abs/2610.41330",
-      "domain": "arxiv.org",
-      "organization": "Zhidong Wang and collaborators",
-      "published_at": "2026-10-30",
-      "title": "Cross-Embodiment Motion Planning by Coupling Body-Agnostic World Model with Differentiable Ego-Dynamics"
-    },
-    {
-      "id": "src-code-policy-posttraining",
-      "url": "https://arxiv.org/abs/2610.40799",
-      "domain": "arxiv.org",
-      "organization": "Yijia Fan and collaborators",
-      "published_at": "2026-10-29",
-      "title": "CaPtain: A Pipeline for Post-Training Code-as-Policy Robot Agents"
+      "id": "src-iso-original",
+      "url": "https://www.iso.org/standard/86749.html",
+      "domain": "iso.org",
+      "organization": "International Organization for Standardization",
+      "published_at": "2026-10-14",
+      "title": "ISO 21423:2026 Robotics — Industrial mobile robots — Communications and interoperability"
     }
   ]
 }

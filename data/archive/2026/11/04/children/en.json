@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.4",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-04",
+  "issue_id": "daily-2026-11-04",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-03T23:06:43.997Z",
+  "title": "Replicant Data — November 4, 2026",
+  "lead": "Five accessible stories about robots trying, getting things wrong and learning new tasks.",
+  "news": [
+    {
+      "id": "cue-physical-calibration",
+      "title": "Why a ball rolls somewhere the robot did not expect",
+      "summary": "Scientists built a way for a robot to test its guesses about how billiard balls move by trying small experiments. Its predictions improved in the tested conditions, but that does not make it an expert at handling every kind of object.",
+      "details": "The scientists wanted the robot to do more than look at a picture. First the computer guesses where a moving ball will end up. Then the machine tries an action on the real table and checks how far its guess was from the result. It uses what happened to improve its computer model. A model is a set of rules the program uses to make predictions about the next movement.",
+      "technical_novelty": "Imagine a pool table. A photograph shows where the balls are, but it cannot tell you exactly how far a ball will roll after being hit. It may slow down because of the surface or change direction after hitting another ball. Even a very realistic computer game may not behave exactly like a real table.",
+      "engineering_impact": "Imagine rolling a marble first across a desk and then across a rug. Looking at a photograph would not tell you exactly where it stops. The scientists let the machine try a movement, compare the outcome with its computer guess and adjust that guess. The reported 72 percent belongs to a specific prediction test, not to every game a robot might play.",
+      "limitations": "Researchers tested twenty-five different physical settings and reported that the prediction error became 72 percent smaller than with a comparison method. That number is not a score for winning games or doing household chores. It only tells us how much more accurately the system guessed ball positions in those tests. Clothes, soft toys and heavy boxes could behave quite differently.",
+      "evidence_status": "Evidence: results and limitations are reported by the study authors; independent replication has not been established.",
+      "published_at": "2026-11-02",
+      "organization": "Xilun Zhang and collaborators",
+      "source_ids": [
+        "src-cue"
+      ],
+      "time_window": "72h",
+      "body": "Imagine a pool table. A photograph shows where the balls are, but it cannot tell you exactly how far a ball will roll after being hit. It may slow down because of the surface or change direction after hitting another ball. Even a very realistic computer game may not behave exactly like a real table.\n\nThe scientists wanted the robot to do more than look at a picture. First the computer guesses where a moving ball will end up. Then the machine tries an action on the real table and checks how far its guess was from the result. It uses what happened to improve its computer model. A model is a set of rules the program uses to make predictions about the next movement.\n\nImagine rolling a marble first across a desk and then across a rug. Looking at a photograph would not tell you exactly where it stops. The scientists let the machine try a movement, compare the outcome with its computer guess and adjust that guess. The reported 72 percent belongs to a specific prediction test, not to every game a robot might play.\n\nResearchers tested twenty-five different physical settings and reported that the prediction error became 72 percent smaller than with a comparison method. That number is not a score for winning games or doing household chores. It only tells us how much more accurately the system guessed ball positions in those tests. Clothes, soft toys and heavy boxes could behave quite differently.",
+      "image": null
+    },
+    {
+      "id": "klasktron-open-testbed",
+      "title": "Two little robots learn to compete across a game table",
+      "summary": "Researchers built a small game table where two machines compete and react to one another. They practiced the controls in a computer model first and then tested the learned movements on the real table.",
+      "details": "Two moving mechanisms push playing pieces from opposite sides of the board. Researchers first trained their controls in a simulation, which is a computer version of the real equipment. A simulation lets them repeat the game and try many different choices. Afterward they moved the learned controls to the actual table. The researchers say the machines did not need extra training on the real board.",
+      "technical_novelty": "When you play a board game with a friend, doing the same move over and over is rarely a good plan. Your friend may change direction at the last moment. Robots face a similar problem: one machine must notice what the other is doing and adjust its own movement. Scientists built a small tabletop arena to study that challenge.",
+      "engineering_impact": "A game a little like tabletop hockey can become a tiny laboratory. Two moving mechanisms push pieces and try to beat each other. Scientists first practiced the controls inside a computer game, then tested them on an actual board. That does not make the machines clever at everything, but it gives researchers a clear way to measure their decisions.",
+      "limitations": "The team also shared drawings and a list of parts. They estimate that the main hardware costs less than 2,500 dollars. That does not promise that anyone can build the machine without tools or experience. Motors can behave differently when they are adjusted differently. But other scientists can examine the design and try to repeat the game instead of trusting only a video.",
+      "evidence_status": "Evidence: results and limitations are reported by the study authors; independent replication has not been established.",
+      "published_at": "2026-11-02",
+      "organization": "ETH Zurich",
+      "source_ids": [
+        "src-klask"
+      ],
+      "time_window": "72h",
+      "body": "When you play a board game with a friend, doing the same move over and over is rarely a good plan. Your friend may change direction at the last moment. Robots face a similar problem: one machine must notice what the other is doing and adjust its own movement. Scientists built a small tabletop arena to study that challenge.\n\nTwo moving mechanisms push playing pieces from opposite sides of the board. Researchers first trained their controls in a simulation, which is a computer version of the real equipment. A simulation lets them repeat the game and try many different choices. Afterward they moved the learned controls to the actual table. The researchers say the machines did not need extra training on the real board.\n\nA game a little like tabletop hockey can become a tiny laboratory. Two moving mechanisms push pieces and try to beat each other. Scientists first practiced the controls inside a computer game, then tested them on an actual board. That does not make the machines clever at everything, but it gives researchers a clear way to measure their decisions.\n\nThe team also shared drawings and a list of parts. They estimate that the main hardware costs less than 2,500 dollars. That does not promise that anyone can build the machine without tools or experience. Motors can behave differently when they are adjusted differently. But other scientists can examine the design and try to repeat the game instead of trusting only a video.",
+      "image": null
+    },
+    {
+      "id": "korea-humanoid-data-factory",
+      "title": "A new center records movement lessons from twelve humanoid robots",
+      "summary": "South Korea has opened a place where people guide humanoid robots through different tasks and record their movements. Twelve machines are already operating, and the recordings are intended to help future robot training.",
+      "details": "Twelve human-shaped robots are currently being used there. People control them from a distance or show movements for the machines to copy. Demonstrated jobs included taking items from a refrigerator, handling clothes, tidying a sofa and using buttons inside a car. Computers record what the robot's arms and other parts are doing. Those records may later become examples for training new robot programs.",
+      "technical_novelty": "Imagine seeing only a photograph of neatly folded clothes and then being asked to produce the same result. It would be hard to know where to put your hands first or how to turn the fabric. A robot also needs to see the steps along the way, not only the final arrangement. South Korea has opened a special center to collect that sort of record.",
+      "engineering_impact": "To learn how to fold something, it helps to see the movements along the way, not only the neat pile at the end. At the new center people guide the robots while computers record the actions. Twelve machines are currently working there. But recording a task while a person helps does not mean a robot already knows how to do it by itself.",
+      "limitations": "There is an important difference between a machine doing something while a person guides it and a machine working entirely on its own. The opening demonstrations do not prove the second case. Researchers plan to expand the center, and other organizations are expected to gain access gradually starting in late 2027. Nobody has yet shown how many new tasks robots will reliably learn from these recordings.",
+      "evidence_status": "Evidence: the official announcement confirms a facility and robot count, not measured downstream learning performance.",
+      "published_at": "2026-11-03",
+      "organization": "Ministry of Science and ICT of South Korea",
+      "source_ids": [
+        "src-factory"
+      ],
+      "time_window": "72h",
+      "body": "Imagine seeing only a photograph of neatly folded clothes and then being asked to produce the same result. It would be hard to know where to put your hands first or how to turn the fabric. A robot also needs to see the steps along the way, not only the final arrangement. South Korea has opened a special center to collect that sort of record.\n\nTwelve human-shaped robots are currently being used there. People control them from a distance or show movements for the machines to copy. Demonstrated jobs included taking items from a refrigerator, handling clothes, tidying a sofa and using buttons inside a car. Computers record what the robot's arms and other parts are doing. Those records may later become examples for training new robot programs. A movement recording shows the steps taken, not just what the finished work looks like.\n\nTo learn how to fold something, it helps to see the movements along the way, not only the neat pile at the end. At the new center people guide the robots while computers record the actions. Twelve machines are currently working there. But recording a task while a person helps does not mean a robot already knows how to do it by itself.\n\nThere is an important difference between a machine doing something while a person guides it and a machine working entirely on its own. The opening demonstrations do not prove the second case. Researchers plan to expand the center, and other organizations are expected to gain access gradually starting in late 2027. Nobody has yet shown how many new tasks robots will reliably learn from these recordings.",
+      "image": null
+    },
+    {
+      "id": "rise-humanoid-sequential-skills",
+      "title": "A humanoid learns to walk, pick something up and continue its job",
+      "summary": "Researchers built a way for a humanoid robot to connect walking and hand movements that were taught separately. The machine completed several actions in sequence during experiments, but it has not learned every household task.",
+      "details": "The new program has several parts, each becoming better at certain kinds of movement. When one part is especially useful for the current task, the system gives it more influence over the robot's actions. It then notices when another part should take over. In this way a machine can walk to a table, pick something up and walk again. The team tested sequences in a computer simulation and on a real humanoid.",
+      "technical_novelty": "Imagine being asked to walk to a table, pick up a bottle and carry it to another table. First you walk, then stop, then carefully take hold of the object. People can usually connect these steps without much thought. For a robot, joining them is a separate challenge. Scientists at Seoul National University tried connecting skills that had been taught using different sets of examples.",
+      "engineering_impact": "Imagine walking to a table, picking up a bottle and carrying it somewhere else. Knowing how to walk is different from knowing how to hold the bottle carefully. The scientists built a way for the machine to choose which learned action comes next. It can link several steps, but it has not learned every possible household job.",
+      "limitations": "During the computer tests the researchers reported an average success rate of 87.3 percent. On a real machine they also performed better than their comparison method. But this does not mean a robot can run while carefully handling anything with its hands. The scientists themselves say that combining those movements at the same time needs more work. The demonstrated success concerns a sequence of learned steps.",
+      "evidence_status": "Evidence: performance figures are reported by the university on behalf of the research team; independent replication is not established.",
+      "published_at": "2026-10-30",
+      "organization": "Seoul National University",
+      "source_ids": [
+        "src-rise"
+      ],
+      "time_window": "7d",
+      "body": "Imagine being asked to walk to a table, pick up a bottle and carry it to another table. First you walk, then stop, then carefully take hold of the object. People can usually connect these steps without much thought. For a robot, joining them is a separate challenge. Scientists at Seoul National University tried connecting skills that had been taught using different sets of examples.\n\nThe new program has several parts, each becoming better at certain kinds of movement. When one part is especially useful for the current task, the system gives it more influence over the robot's actions. It then notices when another part should take over. In this way a machine can walk to a table, pick something up and walk again. The team tested sequences in a computer simulation and on a real humanoid. This sequence of actions matters because choosing the next step can be as hard as learning each movement.\n\nImagine walking to a table, picking up a bottle and carrying it somewhere else. Knowing how to walk is different from knowing how to hold the bottle carefully. The scientists built a way for the machine to choose which learned action comes next. It can link several steps, but it has not learned every possible household job.\n\nDuring the computer tests the researchers reported an average success rate of 87.3 percent. On a real machine they also performed better than their comparison method. But this does not mean a robot can run while carefully handling anything with its hands. The scientists themselves say that combining those movements at the same time needs more work. The demonstrated success concerns a sequence of learned steps.",
+      "image": null
+    },
+    {
+      "id": "xsto-cemat-material-handling",
+      "title": "How machines help move heavy things up stairs",
+      "summary": "An exhibition in Shanghai showed several devices designed to carry cargo across floors and staircases. People control some of the machines, while claims about more independent movement still need testing in different buildings.",
+      "details": "The exhibits included a machine that climbs stairs and carts with parts that can be changed for different jobs. One platform responds to a person's movement and helps the operator move cargo. Another machine is described as having more independent control. That difference matters: sometimes a person keeps deciding where to go while the motor only helps with the heavy work. Calling a device a robot does not tell us how many decisions it makes by itself.",
+      "technical_novelty": "Imagine delivering a heavy box to the third floor of a building that has no lift. An ordinary trolley rolls easily across a level floor but struggles on a staircase. Companies are developing equipment that can help carry loads where ordinary wheels are not enough. At a trade show in Shanghai, a manufacturer displayed several devices designed for that problem.",
+      "engineering_impact": "Imagine carrying a heavy box upstairs in a building without a lift. An ordinary trolley rolls easily across a flat floor but struggles on the steps. The exhibition showed several machines meant to help with loads like that. People control some of them, while others are described as having more advanced control; none is proven able to handle every staircase.",
+      "limitations": "A trade show is a good place to see equipment and ask how it works. But the manufacturer did not publish detailed comparison tests on many kinds of staircase. The width of the steps, the slope and the weight of the box can all change the difficulty. Before using a machine for real deliveries, people still need to test which routes it can manage safely.",
+      "evidence_status": "Evidence: the manufacturer describes a demonstration, without published independent performance tests.",
+      "published_at": "2026-11-03",
+      "organization": "XSTO",
+      "source_ids": [
+        "src-xsto"
+      ],
+      "time_window": "72h",
+      "body": "Imagine delivering a heavy box to the third floor of a building that has no lift. An ordinary trolley rolls easily across a level floor but struggles on a staircase. Companies are developing equipment that can help carry loads where ordinary wheels are not enough. At a trade show in Shanghai, a manufacturer displayed several devices designed for that problem.\n\nThe exhibits included a machine that climbs stairs and carts with parts that can be changed for different jobs. One platform responds to a person's movement and helps the operator move cargo. Another machine is described as having more independent control. That difference matters: sometimes a person keeps deciding where to go while the motor only helps with the heavy work. Calling a device a robot does not tell us how many decisions it makes by itself.\n\nImagine carrying a heavy box upstairs in a building without a lift. An ordinary trolley rolls easily across a flat floor but struggles on the steps. The exhibition showed several machines meant to help with loads like that. People control some of them, while others are described as having more advanced control; none is proven able to handle every staircase.\n\nA trade show is a good place to see equipment and ask how it works. But the manufacturer did not publish detailed comparison tests on many kinds of staircase. The width of the steps, the slope and the weight of the box can all change the difficulty. Before using a machine for real deliveries, people still need to test which routes it can manage safely.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Testing a guess can teach more than repeating a move",
+    "summary": "These stories follow machines rolling a ball, playing against each other and joining several actions into one job.",
+    "implications": "Each experiment also tells us when people still need to help the machines."
+  },
+  "glossary": [
+    {
+      "term": "computer model",
+      "definition": "A set of rules a program uses to guess how objects will move."
+    },
+    {
+      "term": "simulation",
+      "definition": "A computer version of a real machine or game used for repeated practice."
+    },
+    {
+      "term": "prediction error",
+      "definition": "The gap between where a program expected an object and where it really ended up."
+    },
+    {
+      "term": "movement recording",
+      "definition": "Saved information showing the steps made during an action."
+    },
+    {
+      "term": "sequence of actions",
+      "definition": "Several steps that must happen in the right order to complete a task."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-cue",
+      "url": "https://arxiv.org/abs/2611.02691",
+      "domain": "arxiv.org",
+      "organization": "Xilun Zhang and collaborators",
+      "published_at": "2026-11-02",
+      "title": "Closing the Dynamics Gap through Self-Directed Robotic Interaction"
+    },
+    {
+      "id": "src-klask",
+      "url": "https://arxiv.org/abs/2611.03138",
+      "domain": "arxiv.org",
+      "organization": "ETH Zurich",
+      "published_at": "2026-11-02",
+      "title": "KlaskTron: An Open-Source Platform for Physical Adversarial Multi-Agent RL"
+    },
+    {
+      "id": "src-factory",
+      "url": "https://m.korea.kr/news/policyNewsView.do?newsId=148974922&pWiseMinistry=ministryNews&repCodeType=%EC%A0%95%EB%B6%80%EB%B6%80%EC%B2%98&repCode_P=A00033",
+      "domain": "korea.kr",
+      "organization": "Ministry of Science and ICT of South Korea",
+      "published_at": "2026-11-03",
+      "title": "휴머노이드가 일하는 법 배우는 '데이터 생산기지' 국내 첫 개소"
+    },
+    {
+      "id": "src-rise",
+      "url": "https://eng.snu.ac.kr/en/research/research-achievements?bbsidx=8483&md=v",
+      "domain": "eng.snu.ac.kr",
+      "organization": "Seoul National University",
+      "published_at": "2026-10-30",
+      "title": "SNU Professor Songhwai Oh’s Team Develops Humanoid AI That Performs Sequential Tasks Using Separately Collected Locomotion and Manipulation Data"
+    },
+    {
+      "id": "src-xsto",
+      "url": "https://en.xsto.com/news-details/56.html",
+      "domain": "en.xsto.com",
+      "organization": "XSTO",
+      "published_at": "2026-11-03",
+      "title": "XSTO Showcases AI and Modular Material Handling at CeMAT Asia 2026"
+    }
+  ]
+}
