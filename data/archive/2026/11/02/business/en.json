@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.4",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-02",
+  "issue_id": "daily-2026-11-02",
+  "edition": "business",
+  "language": "en",
+  "generated_at": "2026-11-02T21:23:03+09:00",
+  "title": "Pravda Replikanta — Business edition",
+  "lead": "Robotics research, from training and touch to evaluating skills and practical limitations.",
+  "news": [
+    {
+      "id": "forcesteed-agentic-programming",
+      "title": "Japan's Forcesteed proposes robot programs from instructions, with human approval",
+      "summary": "Forcesteed Robotics announced Agentic Robotics, a feature of its developing FOS platform that uses a local AI agent to propose robot work programs from natural-language instructions. The company says a human must inspect and approve a program before execution, while partner validation remains planned.",
+      "details": "On October 29, Japan-based Forcesteed Robotics announced a feature for its developing FOS platform. A person describes a desired operation in ordinary language, and the local Luqua software agent selects an approach for each step: predefined rules, taught movements or a model linking vision, language and action. It then proposes a node-based work program for the company's LEIVOR controller.",
+      "technical_novelty": "The company intends to reuse previously created motions, skills and complete tasks. A key boundary is the approval workflow: the agent is not supposed to execute its proposed sequence independently. Only programs reviewed and authorized by a human are run. Local processing is also intended for sites where internet access is restricted or unavailable.",
+      "engineering_impact": "Forcesteed proposes breaking a verbal request into steps and selecting fixed rules, taught motions or learned skills for each. Execution requires human approval. The company warns that success in simulation does not establish physical safety. Independent measurements of programming time, corrections, throughput and failure rates are absent. Partner trials remain planned, so a reduction in integration costs has not been demonstrated. Deployment must be assessed by the time spent reviewing and correcting proposed programs, not merely by their generation.",
+      "limitations": "This is a vendor announcement, not an independent performance evaluation. Forcesteed explicitly describes further internal and partner demonstrations as future work, and it provides no comparative figures for integration time, error rates or production throughput. The practical idea is not unlimited autonomy; it is combining several control techniques into a reviewable work program with human authorization.",
+      "evidence_status": "Vendor claim without independent evaluation.",
+      "published_at": "2026-10-29",
+      "organization": "Forcesteed Robotics",
+      "source_ids": [
+        "src-forcesteed-agentic-programming"
+      ],
+      "time_window": "7d",
+      "body": "On October 29, Japan-based Forcesteed Robotics announced a feature for its developing FOS platform. A person describes a desired operation in ordinary language, and the local Luqua software agent selects an approach for each step: predefined rules, taught movements or a model linking vision, language and action. It then proposes a node-based work program for the company's LEIVOR controller.\n\nThe company intends to reuse previously created motions, skills and complete tasks. A key boundary is the approval workflow: the agent is not supposed to execute its proposed sequence independently. Only programs reviewed and authorized by a human are run. Local processing is also intended for sites where internet access is restricted or unavailable.\n\nThis is a vendor announcement, not an independent performance evaluation. Forcesteed explicitly describes further internal and partner demonstrations as future work, and it provides no comparative figures for integration time, error rates or production throughput. The practical idea is not unlimited autonomy; it is combining several control techniques into a reviewable work program with human authorization.\n\nForcesteed proposes breaking a verbal request into steps and selecting fixed rules, taught motions or learned skills for each. Execution requires human approval. The company warns that success in simulation does not establish physical safety. Independent measurements of programming time, corrections, throughput and failure rates are absent. Partner trials remain planned, so a reduction in integration costs has not been demonstrated. Deployment must be assessed by the time spent reviewing and correcting proposed programs, not merely by their generation.",
+      "image": null
+    },
+    {
+      "id": "gym-anything-robotics",
+      "title": "Coding agents build robot training worlds while frontier models struggle on new tests",
+      "summary": "Pranjal Aggarwal and Sean Welleck introduced Gym-Anything, a framework for creating robotics simulations with coding agents. In the RoboWorld suite, the strongest tested models completed no held-out tasks and averaged just 0.06 reward.",
+      "details": "Constructing a realistic virtual training environment can require extensive expert labor before a robot starts learning. Pranjal Aggarwal and Sean Welleck propose Gym-Anything, where coding agents build simulations and an adversarial audit checks whether their physics and tasks satisfy explicit criteria. The selection of physical work draws on US economic activity instead of focusing solely on familiar toy demonstrations.",
+      "technical_novelty": "RoboWorld contains 25 simulations, 175 training environments and 25 held-out test environments. According to the authors, even the strongest evaluated frontier models failed every test task, averaging 0.06 reward. Reward is a numerical simulator score, not a real-world robot success percentage. The paper also explores learning from repeated attempts, privileged teachers that can inspect simulator state, and demonstrations produced by code policies.",
+      "engineering_impact": "RoboWorld contains 25 simulations, 175 training environments and 25 test environments. The authors chose work categories using United States economic data, and coding agents both created and audited tasks. An average reward of 0.06 describes these particular tests, not the percentage of successful operations on real equipment. Repeated attempts and teaching strategies improved the simulated results, but physical contact and friction still require independent measurement. Transferring these results to a plant still requires validating simulations on its actual equipment and materials.",
+      "limitations": "Several approaches improved the measured results, but transfer to physical hardware remains unproven. Automatically generated worlds can misrepresent friction, contact dynamics and unexpected events in actual industrial settings.",
+      "evidence_status": "Research preprint; experimental results are reported by the authors.",
+      "published_at": "2026-10-29",
+      "organization": "Pranjal Aggarwal and Sean Welleck",
+      "source_ids": [
+        "src-gym-anything-robotics"
+      ],
+      "time_window": "7d",
+      "body": "Constructing a realistic virtual training environment can require extensive expert labor before a robot starts learning. Pranjal Aggarwal and Sean Welleck propose Gym-Anything, where coding agents build simulations and an adversarial audit checks whether their physics and tasks satisfy explicit criteria. The selection of physical work draws on US economic activity instead of focusing solely on familiar toy demonstrations.\n\nRoboWorld contains 25 simulations, 175 training environments and 25 held-out test environments. According to the authors, even the strongest evaluated frontier models failed every test task, averaging 0.06 reward. Reward is a numerical simulator score, not a real-world robot success percentage. The paper also explores learning from repeated attempts, privileged teachers that can inspect simulator state, and demonstrations produced by code policies.\n\nSeveral approaches improved the measured results, but transfer to physical hardware remains unproven. Automatically generated worlds can misrepresent friction, contact dynamics and unexpected events in actual industrial settings.\n\nRoboWorld contains 25 simulations, 175 training environments and 25 test environments. The authors chose work categories using United States economic data, and coding agents both created and audited tasks. An average reward of 0.06 describes these particular tests, not the percentage of successful operations on real equipment. Repeated attempts and teaching strategies improved the simulated results, but physical contact and friction still require independent measurement. Transferring these results to a plant still requires validating simulations on its actual equipment and materials.",
+      "image": null
+    },
+    {
+      "id": "touchbridge-human-demonstrations",
+      "title": "Human fingertip contact becomes training data for robot hands",
+      "summary": "Haozhe Zhang and collaborators introduced TouchBridge, a method for converting human demonstrations into robot training data using tactile correspondence. Across four real-world contact-rich tasks, the converted data yielded 72.5% average success versus 77.5% with directly teleoperated robot demonstrations.",
+      "details": "Human fingers and robotic fingers have different geometry, so copying a hand trajectory does not guarantee the same contact with an object. Haozhe Zhang and collaborators propose TouchBridge, a combined hardware-and-software system with a wearable human demonstration interface and a corresponding robotic interface. Both capture visual and fingertip tactile information to establish correspondence across different hand designs.",
+      "technical_novelty": "Its Tac-Retarget component aligns fingertip contact patches and their spatial relationships using measured touch. The authors report that this conversion does not require an object mesh, an object-pose estimate or a physics simulator. With visual synthesis and camera-anchored action conversion, the transformed examples are used to fine-tune a pretrained model that maps visual observations and instructions to robot actions.",
+      "engineering_impact": "The sevenfold speed improvement concerns collecting demonstrations, not the robot's execution speed. Human-hand recordings were gathered faster than comparable teleoperated robot examples. Across four tasks, training solely on converted human data yielded 72.5% success versus 77.5% for an equal number of robot examples. The method preserves fingertip contact information without requiring a three-dimensional model of each object. A different material or hand shape may change the contact and the consequences of a failed grasp. For expensive goods, a five-point success-rate gap may matter more than collecting demonstrations seven times faster.",
+      "limitations": "Across four physical contact-rich tasks, policies trained solely on converted human demonstrations reached 72.5% average success. An equal number of robot demonstrations collected through direct teleoperation yielded 77.5%, while human data collection was seven times faster. These results are promising for collecting examples efficiently, but cover specific tasks, hands and training conditions, not every object or robotic platform.",
+      "evidence_status": "Research preprint; experimental results are reported by the authors.",
+      "published_at": "2026-10-29",
+      "organization": "Haozhe Zhang and collaborators",
+      "source_ids": [
+        "src-touchbridge-human-demonstrations"
+      ],
+      "time_window": "7d",
+      "body": "Human fingers and robotic fingers have different geometry, so copying a hand trajectory does not guarantee the same contact with an object. Haozhe Zhang and collaborators propose TouchBridge, a combined hardware-and-software system with a wearable human demonstration interface and a corresponding robotic interface. Both capture visual and fingertip tactile information to establish correspondence across different hand designs.\n\nIts Tac-Retarget component aligns fingertip contact patches and their spatial relationships using measured touch. The authors report that this conversion does not require an object mesh, an object-pose estimate or a physics simulator. With visual synthesis and camera-anchored action conversion, the transformed examples are used to fine-tune a pretrained model that maps visual observations and instructions to robot actions.\n\nAcross four physical contact-rich tasks, policies trained solely on converted human demonstrations reached 72.5% average success. An equal number of robot demonstrations collected through direct teleoperation yielded 77.5%, while human data collection was seven times faster. These results are promising for collecting examples efficiently, but cover specific tasks, hands and training conditions, not every object or robotic platform.\n\nThe sevenfold speed improvement concerns collecting demonstrations, not the robot's execution speed. Human-hand recordings were gathered faster than comparable teleoperated robot examples. Across four tasks, training solely on converted human data yielded 72.5% success versus 77.5% for an equal number of robot examples. The method preserves fingertip contact information without requiring a three-dimensional model of each object. A different material or hand shape may change the contact and the consequences of a failed grasp. For expensive goods, a five-point success-rate gap may matter more than collecting demonstrations seven times faster.",
+      "image": null
+    },
+    {
+      "id": "roboatom-action-labels",
+      "title": "Millions of labeled short actions expose the structure of long robot tasks",
+      "summary": "Xueyuan Wei and collaborators introduced RoboAtom-Data, a dataset of 1.45 million robot trajectories with consistent time-aligned action labels. It covers 6.88 million skill segments and 16,882.1 recorded hours, with evaluations in skill recognition and robot control.",
+      "details": "An instruction such as clearing a table hides many steps: approach, grasp, move and release. Yet large robot datasets often store only the overall task instruction. Xueyuan Wei and collaborators propose RoboAtom-Data, which assigns consistent time-aligned labels to short, or atomic, actions so learning systems can recover the structure of longer behavior.",
+      "technical_novelty": "The authors describe annotations spanning 1.45 million trajectories, 6.88 million skill-labeled segments and 16,882.1 hours. Their pipeline combines human annotation, propagation of labels across repeated skill sequences and multiple quality-control stages. They also introduce RoboAtom-Bench to test both skill recognition and the localization of skill boundaries in time.",
+      "engineering_impact": "The collection contains 1.45 million trajectories, 6.88 million labeled action segments and 16,882.1 hours of recordings. The authors combine manual checks, propagation of labels across repeated executions and several quality-control stages. They evaluate skill recognition, temporal boundaries and control on long tasks. A mistaken boundary can spread across many examples. The paper describes a planned release of data and tools, not proof that the complete collection is already available. The labels create customer value only if they reduce retries in that customer's actual operations.",
+      "limitations": "According to the paper, an annotation model trained on these labels outperformed the evaluated open and closed models on both RoboAtom-Bench and an external an external test. In control experiments, atomic-action supervision combined with hierarchical execution improved task success on long-task evaluation, additional evaluation and robotics evaluation. The abstract does not specify every numerical gain, and the promised release of data and tools is not equivalent to an already verified public download.",
+      "evidence_status": "Research preprint; experimental results are reported by the authors.",
+      "published_at": "2026-10-29",
+      "organization": "Xueyuan Wei and collaborators",
+      "source_ids": [
+        "src-roboatom-action-labels"
+      ],
+      "time_window": "7d",
+      "body": "An instruction such as clearing a table hides many steps: approach, grasp, move and release. Yet large robot datasets often store only the overall task instruction. Xueyuan Wei and collaborators propose RoboAtom-Data, which assigns consistent time-aligned labels to short, or atomic, actions so learning systems can recover the structure of longer behavior.\n\nThe authors describe annotations spanning 1.45 million trajectories, 6.88 million skill-labeled segments and 16,882.1 hours. Their pipeline combines human annotation, propagation of labels across repeated skill sequences and multiple quality-control stages. They also introduce RoboAtom-Bench to test both skill recognition and the localization of skill boundaries in time.\n\nAccording to the paper, an annotation model trained on these labels outperformed the evaluated open and closed models on both RoboAtom-Bench and an external an external test. In control experiments, atomic-action supervision combined with hierarchical execution improved task success on long-task evaluation, additional evaluation and robotics evaluation. The abstract does not specify every numerical gain, and the promised release of data and tools is not equivalent to an already verified public download.\n\nThe collection contains 1.45 million trajectories, 6.88 million labeled action segments and 16,882.1 hours of recordings. The authors combine manual checks, propagation of labels across repeated executions and several quality-control stages. They evaluate skill recognition, temporal boundaries and control on long tasks. A mistaken boundary can spread across many examples. The paper describes a planned release of data and tools, not proof that the complete collection is already available. The labels create customer value only if they reduce retries in that customer's actual operations.",
+      "image": null
+    },
+    {
+      "id": "physical-belief-map",
+      "title": "A robot map estimates how doors and drawers respond to force",
+      "summary": "Dibyendu Ghosh proposed PhysVLMM, a scene map that represents uncertainty about the mechanics of moving parts. In tests involving doors and drawers in 18 homes, it identified joint types in 86% of held-out pulls.",
+      "details": "A conventional room map can show a robot where a door is without revealing which way it moves or how much force opening it requires. Dibyendu Ghosh proposes PhysVLMM, a map that stores probabilistic beliefs about articulated components. After a measured pull, the system updates its estimate, and a planner can ask whether an action is likely to succeed within a stated risk limit.",
+      "technical_novelty": "Watching a part move does not uniquely reveal its dynamics. Even a measured pull directly informs only the tested component and direction. The method therefore maintains a distribution of possible properties, shares relevant evidence with visually similar untested parts and can abstain when the evidence is inadequate.",
+      "engineering_impact": "Across 18 homes, joint type was identified in 86% of held-out pulls versus 48% for a picture-only comparison. Probabilistic forecast error measured by CRPS was 0.323 versus 0.544, with 13 milliseconds of computation versus 230 seconds. After a measured pull, the map retains multiple possible properties and shares some evidence with similar parts. One pull cannot reveal all of a door's mechanics or certify a direction that has not been tested. For a hazardous door, a false-safe action permission matters more than average hinge-classification accuracy.",
+      "limitations": "In real doors and drawers across 18 homes, the method identified joint types in 86% of held-out pulls versus 48% for a single-view learned comparison. Its prediction error measured by CRPS was 0.323 versus 0.544 for differentiable simulation, while computation took 13 milliseconds versus 230 seconds per case. These are results for the studied objects, not a universal safety guarantee.",
+      "evidence_status": "Research preprint; experimental results are reported by the authors.",
+      "published_at": "2026-10-29",
+      "organization": "Dibyendu Ghosh",
+      "source_ids": [
+        "src-physical-belief-map"
+      ],
+      "time_window": "7d",
+      "body": "A conventional room map can show a robot where a door is without revealing which way it moves or how much force opening it requires. Dibyendu Ghosh proposes PhysVLMM, a map that stores probabilistic beliefs about articulated components. After a measured pull, the system updates its estimate, and a planner can ask whether an action is likely to succeed within a stated risk limit.\n\nWatching a part move does not uniquely reveal its dynamics. Even a measured pull directly informs only the tested component and direction. The method therefore maintains a distribution of possible properties, shares relevant evidence with visually similar untested parts and can abstain when the evidence is inadequate.\n\nIn real doors and drawers across 18 homes, the method identified joint types in 86% of held-out pulls versus 48% for a single-view learned comparison. Its prediction error measured by CRPS (a probabilistic forecast error score) was 0.323 versus 0.544 for differentiable simulation, while computation took 13 milliseconds versus 230 seconds per case. These are results for the studied objects, not a universal safety guarantee.\n\nAcross 18 homes, joint type was identified in 86% of held-out pulls versus 48% for a picture-only comparison. Probabilistic forecast error measured by CRPS was 0.323 versus 0.544, with 13 milliseconds of computation versus 230 seconds. After a measured pull, the map retains multiple possible properties and shares some evidence with similar parts. One pull cannot reveal all of a door's mechanics or certify a direction that has not been tested. For a hazardous door, a false-safe action permission matters more than average hinge-classification accuracy.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Testable skills matter more than striking demonstrations",
+    "summary": "New research emphasizes structured data, measurements and testable results.",
+    "implications": "The next step is independent testing on different robots and real tasks."
+  },
+  "glossary": [
+    {
+      "term": "Agentic Robotics",
+      "definition": "robot program authoring with human approval"
+    },
+    {
+      "term": "Gym-Anything",
+      "definition": "simulations created by coding agents"
+    },
+    {
+      "term": "TouchBridge",
+      "definition": "human touch and motion transfer to robots"
+    },
+    {
+      "term": "RoboAtom-Data",
+      "definition": "data with labels for short actions"
+    },
+    {
+      "term": "PhysVLMM",
+      "definition": "map of uncertain physical properties"
+    },
+    {
+      "term": "FOS",
+      "definition": "Forcesteed's developing robotics platform."
+    },
+    {
+      "term": "LEIVOR",
+      "definition": "Forcesteed's controller for approved programs."
+    },
+    {
+      "term": "CRPS",
+      "definition": "A metric of probabilistic forecast error."
+    },
+    {
+      "term": "simulation",
+      "definition": "A computer model of physical actions used for training or testing."
+    },
+    {
+      "term": "annotation",
+      "definition": "Labels describing recorded actions and their time boundaries."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-forcesteed-agentic-programming",
+      "url": "https://prtimes.jp/main/html/rd/p/000000040.000157769.html",
+      "domain": "prtimes.jp",
+      "organization": "Forcesteed Robotics",
+      "published_at": "2026-10-29",
+      "title": "Forcesteed Robotics、AIエージェントがロボットの作業プログラムを組む「Agentic Robotics」を開発 ー Physical AI OS「FOS」の新機能"
+    },
+    {
+      "id": "src-gym-anything-robotics",
+      "url": "https://arxiv.org/abs/2610.40565",
+      "domain": "arxiv.org",
+      "organization": "Pranjal Aggarwal and Sean Welleck",
+      "published_at": "2026-10-29",
+      "title": "Gym-Anything for Robotics: Scaling physical simulations with digital agents"
+    },
+    {
+      "id": "src-touchbridge-human-demonstrations",
+      "url": "https://arxiv.org/abs/2610.40349",
+      "domain": "arxiv.org",
+      "organization": "Haozhe Zhang and collaborators",
+      "published_at": "2026-10-29",
+      "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation"
+    },
+    {
+      "id": "src-roboatom-action-labels",
+      "url": "https://arxiv.org/abs/2610.40207",
+      "domain": "arxiv.org",
+      "organization": "Xueyuan Wei and collaborators",
+      "published_at": "2026-10-29",
+      "title": "RoboAtom: Large-scale Atomic-Action Supervision for Robot Learning"
+    },
+    {
+      "id": "src-physical-belief-map",
+      "url": "https://arxiv.org/abs/2610.40539",
+      "domain": "arxiv.org",
+      "organization": "Dibyendu Ghosh",
+      "published_at": "2026-10-29",
+      "title": "PhysVLMM: Interaction-Conditioned Physical Belief Maps for Articulated Objects in Robot Scene Maps"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.4",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-03",
+  "issue_id": "daily-2026-11-03",
+  "edition": "business",
+  "language": "en",
+  "generated_at": "2026-11-03T03:52:30+09:00",
+  "title": "Pravda Replikanta — Business",
+  "lead": "Deployment questions: permission to move, software maintenance, edge computing and wrong-object handling.",
+  "news": [
+    {
+      "id": "memory-chip-edge-ai",
+      "title": "Aisin and Tohoku University report a quick-start vision processor",
+      "summary": "Aisin and Tohoku University announced a processor prototype with embedded nonvolatile memory on November 2. They report a 65.7-millisecond operating-system start and 50.7 millijoules per object-detection frame.",
+      "details": "An industrial camera or mobile robot cannot always rely on an always-on server. On November 2, Aisin and Tohoku University announced a processor that retains important program data when power is switched off. This could suit equipment that periodically wakes, examines an image and returns to standby rather than remaining fully active all day.",
+      "technical_novelty": "The prototype integrates 32 megabytes of nonvolatile magnetic memory into a sixteen-nanometer chip. Operating-system startup information and the weights of a compact object detector sit close to the processing circuits, reducing transfers from external storage. The researchers call this near-memory computing. The prototype runs a narrow visual-recognition task, not a general-purpose robot reasoning model.",
+      "engineering_impact": "According to the joint announcement, operating-system startup takes 65.7 milliseconds, about 38.59 times faster than its comparison design. Artificial-intelligence processing is reported to be 10.16 times faster, and total processing time 25.2 times shorter. Object detection uses 50.7 millijoules per image. These figures are measurements reported by the developers, not independent product certification.",
+      "limitations": "The research is scheduled for presentation at a semiconductor circuits conference in Taiwan on November 1–4. The release provides no mass-production price, field failure rate or energy measurement for a complete robot. It does not establish that the processor can run a large model that converts language into complex physical actions. Object detection is a narrower function.",
+      "evidence_status": "Developer announcement, not independently verified.",
+      "published_at": "2026-11-02",
+      "organization": "Aisin and Tohoku University",
+      "source_ids": [
+        "src-memory-chip-edge-ai"
+      ],
+      "time_window": "24h",
+      "body": "An industrial camera or mobile robot cannot always rely on an always-on server. On November 2, Aisin and Tohoku University announced a processor that retains important program data when power is switched off. This could suit equipment that periodically wakes, examines an image and returns to standby rather than remaining fully active all day.\n\nThe prototype integrates 32 megabytes of nonvolatile magnetic memory into a sixteen-nanometer chip. Operating-system startup information and the weights of a compact object detector sit close to the processing circuits, reducing transfers from external storage. The researchers call this near-memory computing. The prototype runs a narrow visual-recognition task, not a general-purpose robot reasoning model.\n\nAccording to the joint announcement, operating-system startup takes 65.7 milliseconds, about 38.59 times faster than its comparison design. Artificial-intelligence processing is reported to be 10.16 times faster, and total processing time 25.2 times shorter. Object detection uses 50.7 millijoules per image. These figures are measurements reported by the developers, not independent product certification.\n\nThe research is scheduled for presentation at a semiconductor circuits conference in Taiwan on November 1–4. The release provides no mass-production price, field failure rate or energy measurement for a complete robot. It does not establish that the processor can run a large model that converts language into complex physical actions. Object detection is a narrower function.\n\nEquipment buyers must consider the entire system, including cameras, motors, power supply and maintenance. Rapid boot may benefit machines that sleep between observations, while continuously operating robots could see less advantage. The announcement gives measurable prototype results but no confirmed procurement schedule or independently verified performance in a working factory.",
+      "image": null
+    },
+    {
+      "id": "uncommanded-robot-actions",
+      "title": "Unauthorized robot motion creates a deployment acceptance risk",
+      "summary": "Researchers tested six control checkpoints with empty and impossible instructions. Every checkpoint moved on blank input, so permission to start needs a separate test.",
+      "details": "A buyer may measure how often a robot finishes requested jobs while overlooking what happens when no authorized job exists. Minsu Jang and colleagues found that all six tested checkpoints started moving on blank input in simulation. Task completion alone therefore leaves an important acceptance criterion untested.",
+      "technical_novelty": "The protocol covers empty instructions, neutral phrases, nonsense text, impossible requests and requests for the wrong task. Six model checkpoints were evaluated in a simulated manipulation benchmark. All six began moving in every episode when the instruction was empty. Five often completed a task that had not been specified. Two tested checkpoints distinguished which task to perform but still initiated movement when asked to do something infeasible.",
+      "engineering_impact": "A supplier should demonstrate an independent permission check on the actual machine and document how rejected commands are logged. A text warning stopped none of the six models; a separate gate worked for five. This study does not measure industrial accident rates or establish the risk of any particular installed robot.",
+      "limitations": "These are simulation results, not observations of six commercial robots operating among people. The distinction between initiating movement and completing a task is crucial: a robot can fail to accomplish anything yet still strike an object while starting. The authors also found that fine-tuning did not reliably suppress starts on infeasible instructions. A text-only instruction to be careful did not establish a dependable no-action condition.",
+      "evidence_status": "Author-reported research preprint; not independently replicated.",
+      "published_at": "2026-10-30",
+      "organization": "Minsu Jang and collaborators",
+      "source_ids": [
+        "src-uncommanded-robot-actions"
+      ],
+      "time_window": "7d",
+      "body": "A buyer may measure how often a robot finishes requested jobs while overlooking what happens when no authorized job exists. Minsu Jang and colleagues found that all six tested checkpoints started moving on blank input in simulation. Task completion alone therefore leaves an important acceptance criterion untested.\n\nThe protocol covers empty instructions, neutral phrases, nonsense text, impossible requests and requests for the wrong task. Six model checkpoints were evaluated in a simulated manipulation benchmark. All six began moving in every episode when the instruction was empty. Five often completed a task that had not been specified. Two tested checkpoints distinguished which task to perform but still initiated movement when asked to do something infeasible.\n\nThe researchers compared three possible safeguards. Adding the phrase 'if no task is given do not move' to the prompt stopped none of the six checkpoints. A separate gate compared the first proposed movement under the given instruction with that under an empty instruction; it held the robot for non-task inputs in five of six checkpoints. Fine-tuning on examples of remaining still prevented task completion on non-task inputs, but did not reliably prevent movement itself.\n\nThese are simulation results, not observations of six commercial robots operating among people. The distinction between initiating movement and completing a task is crucial: a robot can fail to accomplish anything yet still strike an object while starting. The authors also found that fine-tuning did not reliably suppress starts on infeasible instructions. A text-only instruction to be careful did not establish a dependable no-action condition.\n\nA supplier should demonstrate an independent permission check on the actual machine and document how rejected commands are logged. A text warning stopped none of the six models; a separate gate worked for five. This study does not measure industrial accident rates or establish the risk of any particular installed robot.",
+      "image": null
+    },
+    {
+      "id": "robot-harness-automatic-design",
+      "title": "Changing robot control software may reduce retraining needs",
+      "summary": "Researchers revised the control code around an unchanged learned model. Success on unfamiliar tasks rose from 12.7% to 40.2%, but the cost of reviewing generated code was not measured.",
+      "details": "Retraining a robot model for every new station can require data, compute and specialist time. Shengguang Wu and colleagues instead revise the surrounding software while keeping the model unchanged. That software chooses retries, observations and direct arm movements, offering a different integration lever from another training cycle.",
+      "technical_novelty": "The coding model watches execution traces, identifies apparent failure causes and changes the harness. Candidate designs are optimized on one group of episodes and evaluated on separate, held-out scenes and tasks. The harness can preserve useful information between attempts, such as a grasp depth that worked earlier. This persistent memory is part of the control procedure rather than an assertion that the underlying policy learned a new skill.",
+      "engineering_impact": "The increase from 12.7% to 40.2% on unfamiliar tasks is not a return-on-investment calculation. The study does not quantify the cost of reviewing generated code, maintaining its memory or checking safety. A customer pilot must count engineering hours, corrections and throughput under changing conditions before claiming a financial saving.",
+      "limitations": "Reported gains were especially large when a general policy encountered situations far from its training distribution. In some cases the modified wrapper outperformed a fine-tuned policy. The authors do not thereby establish that generated code is always safe or that a memory learned in one scene transfers reliably to every new workplace. The measurements remain results of the authors' experimental setups.",
+      "evidence_status": "Author-reported research preprint; not independently replicated.",
+      "published_at": "2026-10-30",
+      "organization": "Shengguang Wu and collaborators",
+      "source_ids": [
+        "src-robot-harness-automatic-design"
+      ],
+      "time_window": "7d",
+      "body": "Retraining a robot model for every new station can require data, compute and specialist time. Shengguang Wu and colleagues instead revise the surrounding software while keeping the model unchanged. That software chooses retries, observations and direct arm movements, offering a different integration lever from another training cycle.\n\nThe coding model watches execution traces, identifies apparent failure causes and changes the harness. Candidate designs are optimized on one group of episodes and evaluated on separate, held-out scenes and tasks. The harness can preserve useful information between attempts, such as a grasp depth that worked earlier. This persistent memory is part of the control procedure rather than an assertion that the underlying policy learned a new skill.\n\nAcross the authors' tested benchmarks and policies, average success on unseen scenes rose from 9.7% to 43.3%, a roughly 4.5-fold increase. On unseen tasks, success rose from 12.7% to 40.2%, about 3.2-fold. The generated code sometimes freed a jammed arm by lifting it away from an obstacle or changed its approach direction to reach an object horizontally. These are examples of harness behavior, not new robot hardware.\n\nReported gains were especially large when a general policy encountered situations far from its training distribution. In some cases the modified wrapper outperformed a fine-tuned policy. The authors do not thereby establish that generated code is always safe or that a memory learned in one scene transfers reliably to every new workplace. The measurements remain results of the authors' experimental setups.\n\nThe increase from 12.7% to 40.2% on unfamiliar tasks is not a return-on-investment calculation. The study does not quantify the cost of reviewing generated code, maintaining its memory or checking safety. A customer pilot must count engineering hours, corrections and throughput under changing conditions before claiming a financial saving.",
+      "image": null
+    },
+    {
+      "id": "edge-realtime-policy",
+      "title": "Fast embedded inference still needs end-to-end integration checks",
+      "summary": "Researchers developed a compact multi-camera manipulation controller. One processor delivered 30.35-millisecond inference, which does not measure the delay of an entire production system.",
+      "details": "Keeping camera processing inside a work cell can reduce dependence on a remote server, but embedded processors differ markedly. Xianbao Hou and colleagues report 30.35 milliseconds per inference on one device and 149.72 on another. That gap matters when the robot must repeatedly correct its grip rather than execute a fixed movement.",
+      "technical_novelty": "The architecture first combines information from different camera views, then compresses the visual representation before generating robot actions. Its action generator uses flow matching, a learned procedure for transforming an initial action proposal into a useful movement sequence. Robot state and the stage of this generation process condition the prediction. The authors test asynchronous inference, where sensing and action execution do not simply wait for each other at every step.",
+      "engineering_impact": "The reported 72% physical-platform success and 52.26% simulated success concern different experiments, not guaranteed factory uptime. Buyers need camera-to-actuator latency, energy use and a safe response to missed computation deadlines. Faster neural inference removes one bottleneck without resolving gripper mechanics or variation between products.",
+      "limitations": "Both embedded measurements used sixteen-bit integer computation. A high inference frequency does not by itself specify the robot's complete control-loop delay, actuator response, sensing quality or safety envelope. Nor should the simulated fifty-task success percentage be combined with the physical two-arm success percentage: they come from different experiments. The results are reported by the authors in a preprint, without independent replication.",
+      "evidence_status": "Author-reported research preprint; not independently replicated.",
+      "published_at": "2026-10-30",
+      "organization": "Xianbao Hou and collaborators",
+      "source_ids": [
+        "src-edge-realtime-policy"
+      ],
+      "time_window": "7d",
+      "body": "Keeping camera processing inside a work cell can reduce dependence on a remote server, but embedded processors differ markedly. Xianbao Hou and colleagues report 30.35 milliseconds per inference on one device and 149.72 on another. That gap matters when the robot must repeatedly correct its grip rather than execute a fixed movement.\n\nThe architecture first combines information from different camera views, then compresses the visual representation before generating robot actions. Its action generator uses flow matching, a learned procedure for transforming an initial action proposal into a useful movement sequence. Robot state and the stage of this generation process condition the prediction. The authors test asynchronous inference, where sensing and action execution do not simply wait for each other at every step.\n\nAcross fifty clean single-task scenarios in a simulation benchmark, the authors report 52.26% mean success against 46.4% for the strongest listed comparison model. On a physical two-arm platform they report 72.0% mean success under streaming inference. The faster tested processor required 30.35 milliseconds per inference, corresponding to 32.9 cycles per second; the smaller RDK S100 required 149.72 milliseconds, or 6.7 cycles per second.\n\nBoth embedded measurements used sixteen-bit integer computation. A high inference frequency does not by itself specify the robot's complete control-loop delay, actuator response, sensing quality or safety envelope. Nor should the simulated fifty-task success percentage be combined with the physical two-arm success percentage: they come from different experiments. The results are reported by the authors in a preprint, without independent replication.\n\nThe reported 72% physical-platform success and 52.26% simulated success concern different experiments, not guaranteed factory uptime. Buyers need camera-to-actuator latency, energy use and a safe response to missed computation deadlines. Faster neural inference removes one bottleneck without resolving gripper mechanics or variation between products.",
+      "image": null
+    },
+    {
+      "id": "cluttered-robot-commonsense",
+      "title": "Robots pick the wrong object in roughly 30% of cluttered test cases",
+      "summary": "Arjun Guru and colleagues introduced manipulation tests with hidden and crowded objects. Evaluated controllers acted on the wrong object about 30% of the time in cluttered scenes.",
+      "details": "A robot can appear reliable on a clear table, yet a warehouse contains similar items that block one another from view. Arjun Guru and colleagues designed tests for these ordinary complications. The evaluation checks whether a controller selects the correct item, grasp location and appropriate action before judging how precisely the arm moves.",
+      "technical_novelty": "The benchmark includes partly hidden objects, items inside containers, support relationships between objects and suitable grasp points. Several general-purpose manipulation models were evaluated without task-specific additional training. Its results do not certify a commercially deployed warehouse robot.",
+      "engineering_impact": "The authors report that success in cluttered scenes fell by more than half as distracting objects increased. Controllers acted on the wrong object in roughly 30% of cluttered cases. Even detailed language prompts produced correct selection of the object's graspable part only about half the time in some tests. These are benchmark observations, not warehouse defect statistics.",
+      "limitations": "The study also found that systems used to score robot attempts automatically from images could misjudge outcomes in complex scenes. This creates two distinct risks: a controller can choose the wrong product and an automated checker can overlook the mistake. The researchers did not measure actual workplace failure rates or the labor cost of manual verification.",
+      "evidence_status": "Developer announcement, not independently verified.",
+      "published_at": "2026-10-30",
+      "organization": "Arjun Guru and collaborators",
+      "source_ids": [
+        "src-cluttered-robot-commonsense"
+      ],
+      "time_window": "7d",
+      "body": "A robot can appear reliable on a clear table, yet a warehouse contains similar items that block one another from view. Arjun Guru and colleagues designed tests for these ordinary complications. The evaluation checks whether a controller selects the correct item, grasp location and appropriate action before judging how precisely the arm moves.\n\nThe benchmark includes partly hidden objects, items inside containers, support relationships between objects and suitable grasp points. Several general-purpose manipulation models were evaluated without task-specific additional training. Its results do not certify a commercially deployed warehouse robot.\n\nThe authors report that success in cluttered scenes fell by more than half as distracting objects increased. Controllers acted on the wrong object in roughly 30% of cluttered cases. Even detailed language prompts produced correct selection of the object's graspable part only about half the time in some tests. These are benchmark observations, not warehouse defect statistics.\n\nThe study also found that systems used to score robot attempts automatically from images could misjudge outcomes in complex scenes. This creates two distinct risks: a controller can choose the wrong product and an automated checker can overlook the mistake. The researchers did not measure actual workplace failure rates or the labor cost of manual verification.\n\nA customer pilot should include confusing arrangements, hidden goods and explicit wrong-object checks. Throughput on a cleared demonstration table cannot establish readiness for a busy packing line. The especially awkward finding is that automatic success scoring may itself need review before its numbers can support a service-level promise.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "A pilot needs more than a success rate",
+    "summary": "New studies expose unauthorized starts and incorrect object selection.",
+    "implications": "Acceptance tests should measure permission to move, wrong picks and verification costs."
+  },
+  "glossary": [
+    {
+      "term": "nonvolatile memory",
+      "definition": "Storage that keeps data when power is switched off."
+    },
+    {
+      "term": "near-memory computing",
+      "definition": "Placing data close to computation to reduce transfers."
+    },
+    {
+      "term": "action gate",
+      "definition": "A separate mechanism that blocks movement without an authorized request."
+    },
+    {
+      "term": "vision-language-action policy",
+      "definition": "A model converting images and language into robot movements."
+    },
+    {
+      "term": "agent harness (RoboArchitect)",
+      "definition": "Software coordinating a trained model, observations and actions. RoboArchitect is the studied automated design."
+    },
+    {
+      "term": "persistent memory",
+      "definition": "Information retained from earlier attempts for later decisions."
+    },
+    {
+      "term": "inference latency",
+      "definition": "Time required to calculate a model's next output."
+    },
+    {
+      "term": "edge processing",
+      "definition": "Running calculations near equipment instead of on a remote server."
+    },
+    {
+      "term": "grasp point",
+      "definition": "The part of an object selected for physical holding."
+    },
+    {
+      "term": "occlusion",
+      "definition": "An object being partly hidden behind another."
+    },
+    {
+      "term": "benchmark",
+      "definition": "A set of defined tasks used to compare systems."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-memory-chip-edge-ai",
+      "title": "世界初、STT-MRAMを搭載した16nm AI SoCを開発",
+      "url": "https://prtimes.jp/main/html/rd/p/000000227.000112940.html",
+      "domain": "prtimes.jp",
+      "organization": "Aisin and Tohoku University",
+      "published_at": "2026-11-02"
+    },
+    {
+      "id": "src-uncommanded-robot-actions",
+      "url": "https://arxiv.org/abs/2610.41609",
+      "domain": "arxiv.org",
+      "organization": "Minsu Jang and collaborators",
+      "published_at": "2026-10-30",
+      "title": "VLA Policies Do Not Know When Not to Act: Unintended Task Execution and Start Suppression"
+    },
+    {
+      "id": "src-robot-harness-automatic-design",
+      "url": "https://arxiv.org/abs/2610.42141",
+      "domain": "arxiv.org",
+      "organization": "Shengguang Wu and collaborators",
+      "published_at": "2026-10-30",
+      "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory"
+    },
+    {
+      "id": "src-edge-realtime-policy",
+      "url": "https://arxiv.org/abs/2610.41625",
+      "domain": "arxiv.org",
+      "organization": "Xianbao Hou and collaborators",
+      "published_at": "2026-10-30",
+      "title": "RTPolicy: Real-Time (32.9 Hz) Multi-View Visuomotor Policy for Robotic Manipulation on Edge Devices"
+    },
+    {
+      "id": "src-cluttered-robot-commonsense",
+      "title": "MolmoSpaces-CommonSense: Evaluating Commonsense in Robotic Manipulation Policies",
+      "url": "https://arxiv.org/abs/2610.41377",
+      "domain": "arxiv.org",
+      "organization": "Arjun Guru and collaborators",
+      "published_at": "2026-10-30"
+    }
+  ]
+}

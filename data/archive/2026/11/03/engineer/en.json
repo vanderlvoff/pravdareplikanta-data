@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.4",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-03",
+  "issue_id": "daily-2026-11-03",
+  "edition": "engineer",
+  "language": "en",
+  "generated_at": "2026-11-03T04:11:17+09:00",
+  "title": "Robotics: data, contact and safety",
+  "lead": "Five studies examine how action representations, video, contact and risk checks alter robot performance.",
+  "news": [
+    {
+      "id": "learning-from-task-videos",
+      "title": "WorldBridge uses unlabelled task videos to reach 55.90% success",
+      "summary": "Jun Cen and colleagues introduced WorldBridge, connecting video prediction with robot actions. On unfamiliar RoboTwin 2.0 tasks, videos without action labels raised success from 25.07% to 55.90%.",
+      "details": "Imagine watching someone put objects on shelves without being told which movements to make. Learning from that video alone would be difficult for a robot too. A research team led by Jun Cen investigated whether videos could help robots perform tasks that were missing from their usual training examples.",
+      "technical_novelty": "The researchers used learning from video. One part of the system predicts what the next moments of an activity might look like. Another part chooses movements that could produce those pictures. This is not the same as copying a person directly. A robot has different hands, proportions and limits, so its own movements must still be calculated. WorldBridge combines separate video-prediction and action-generation experts, connected by structured attention and trained using joint flow matching. Its visual memory operates on two temporal scales. The authors distinguish video-only coverage of unfamiliar tasks from adding one action-labelled demonstration per task. The latter raises success to 70.70%, but requires a different supervision budget. Treating these two results as though they used identical training data would obscure the contribution of the action labels.",
+      "engineering_impact": "In a computer test of unfamiliar tasks, the starting system succeeded 25.07% of the time. Adding videos of those tasks, without recorded movement commands, increased success to 55.90%. Providing just one example with commands for each new task raised it to 70.70%. Those numbers describe a particular test collection, not every robot in every room.",
+      "limitations": "The reported 96.23% on the full RoboTwin 2.0 setting belongs to a different protocol from the unfamiliar-task experiment. Transfer to another gripper, camera arrangement or physical robot is not established by these figures. A reproducible comparison must specify exactly which task videos and action labels were available.",
+      "evidence_status": "Results are reported by the study authors; independent replication has not been established.",
+      "published_at": "2026-10-29",
+      "organization": "Jun Cen and collaborators",
+      "source_ids": [
+        "src-learning-from-task-videos"
+      ],
+      "time_window": "7d",
+      "body": "Imagine watching someone put objects on shelves without being told which movements to make. Learning from that video alone would be difficult for a robot too. A research team led by Jun Cen investigated whether videos could help robots perform tasks that were missing from their usual training examples.\n\nThe researchers used learning from video. One part of the system predicts what the next moments of an activity might look like. Another part chooses movements that could produce those pictures. This is not the same as copying a person directly. A robot has different hands, proportions and limits, so its own movements must still be calculated.\n\nIn a computer test of unfamiliar tasks, the starting system succeeded 25.07% of the time. Adding videos of those tasks, without recorded movement commands, increased success to 55.90%. Providing just one example with commands for each new task raised it to 70.70%. Those numbers describe a particular test collection, not every robot in every room.\n\nWorldBridge combines separate video-prediction and action-generation experts, connected by structured attention and trained using joint flow matching. Its visual memory operates on two temporal scales. The authors distinguish video-only coverage of unfamiliar tasks from adding one action-labelled demonstration per task. The latter raises success to 70.70%, but requires a different supervision budget. Treating these two results as though they used identical training data would obscure the contribution of the action labels.\n\nThe experiment offers a reason to collect useful videos as well as demonstrations with movement commands. It does not mean a household robot can watch one clip and immediately cook dinner or assemble furniture. The researchers tested specific tasks under controlled conditions.\n\nThe reported 96.23% on the full RoboTwin 2.0 setting belongs to a different protocol from the unfamiliar-task experiment. Transfer to another gripper, camera arrangement or physical robot is not established by these figures. A reproducible comparison must specify exactly which task videos and action labels were available.",
+      "image": null
+    },
+    {
+      "id": "real-hand-connector-tests",
+      "title": "281 policies tested on real connector insertion",
+      "summary": "Ammar Abbas and colleagues compared 281 robot-hand policies in approximately 1,700 real RJ45 connector insertion attempts. Observation and action representations often mattered more than routine optimizer choices.",
+      "details": "Putting a small network connector into its socket is harder than it looks. The plug must face the right way, line up and enter without slipping. A team led by Ammar Abbas compared ways to teach a five-fingered robot hand this task. They carried out roughly 1,700 attempts on real equipment, not just on a screen.",
+      "technical_novelty": "The team tested 281 versions of control software from seven groups. They changed what information the program received from cameras and how it described finger movements. This is called a data representation: the same task can be described using different pictures and numbers. Sometimes that choice mattered more than ordinary adjustments to the training process. For point-cloud policies, cropping the relevant region, using robot-base coordinates and normalizing features improved success by 70 to 100 percentage points in individual controlled comparisons. For a vision-language-action policy, absolute rather than relative actions improved insertion success by up to 70 points. These figures come from different configurations and cannot be added together or generalized to every architecture. Seven policy families were included, exposing how representation choices interact with model design.",
+      "engineering_impact": "The researchers also examined 67 scores that could be calculated without performing the insertion. Only five, related to how smooth and direct the predicted motion was, closely matched real success. Even those worked only within one group of programs. A movement that looks excellent in a computer test may still miss the actual socket.",
+      "limitations": "Only five of 67 offline measures reliably correlated with real insertion success, and only within one policy family. Correlations between minus 0.70 and minus 0.80 for predicted motion smoothness and directness do not turn these scores into substitutes for hardware trials. Selecting a controller from validation loss alone is particularly weakly supported here.",
+      "evidence_status": "Results are reported by the study authors; independent replication has not been established.",
+      "published_at": "2026-10-29",
+      "organization": "Ammar N. Abbas and collaborators",
+      "source_ids": [
+        "src-real-hand-connector-tests"
+      ],
+      "time_window": "7d",
+      "body": "Putting a small network connector into its socket is harder than it looks. The plug must face the right way, line up and enter without slipping. A team led by Ammar Abbas compared ways to teach a five-fingered robot hand this task. They carried out roughly 1,700 attempts on real equipment, not just on a screen.\n\nThe team tested 281 versions of control software from seven groups. They changed what information the program received from cameras and how it described finger movements. This is called a data representation: the same task can be described using different pictures and numbers. Sometimes that choice mattered more than ordinary adjustments to the training process.\n\nThe researchers also examined 67 scores that could be calculated without performing the insertion. Only five, related to how smooth and direct the predicted motion was, closely matched real success. Even those worked only within one group of programs. A movement that looks excellent in a computer test may still miss the actual socket.\n\nFor point-cloud policies, cropping the relevant region, using robot-base coordinates and normalizing features improved success by 70 to 100 percentage points in individual controlled comparisons. For a vision-language-action policy, absolute rather than relative actions improved insertion success by up to 70 points. These figures come from different configurations and cannot be added together or generalized to every architecture. Seven policy families were included, exposing how representation choices interact with model design.\n\nThe findings concern particular hands, connectors and test conditions. They do not establish the best program for every object. They do explain why a robot must be tested with the things it will really handle.\n\nOnly five of 67 offline measures reliably correlated with real insertion success, and only within one policy family. Correlations between minus 0.70 and minus 0.80 for predicted motion smoothness and directness do not turn these scores into substitutes for hardware trials. Selecting a controller from validation loss alone is particularly weakly supported here.",
+      "image": null
+    },
+    {
+      "id": "fingertip-contact-learning",
+      "title": "Contact surfaces replace literal copying of finger joint angles",
+      "summary": "Zhixuan Xu and colleagues introduced Contact Imitation Interface, which transfers human demonstrations through fingertip contact geometry. Across six hand-task pairs, mean final-stage success improved by at least 50 percentage points.",
+      "details": "When you pick up a glass, bending your fingers is only part of the job. They must touch the glass in useful places or it may slip. A team led by Zhixuan Xu studied how to teach robot hands using the changing places where fingers contact an object. Their system includes pictures from cameras near the fingertips and information about contact surfaces.",
+      "technical_novelty": "One part records where human fingers touched an object. Another helps a robot choose contact points and wrist movements of its own. This matters because a human hand and a robot hand can be shaped quite differently. Simply copying the angles of human finger joints may not let a robot hold the same thing. The architecture separates demonstration capture from policy learning. Its demonstration interface combines shared contact geometry with colour fingertip views, aligning contact before retargeting the pose. The learning interface predicts relative contact-surface trajectories and then coordinates wrist and finger commands through a lower-level controller. The team has published software and hardware designs, allowing others to attempt experiments with different robotic hands. This is a contact-based representation rather than a claim that human and robot joint angles are interchangeable.",
+      "engineering_impact": "The researchers compared their approach with other methods on six combinations of robot hands and tasks. They report that average success in the final stage improved by at least 50 percentage points. A percentage point measures the difference between two success rates. For example, moving from 20% to 70% is an increase of 50 points.",
+      "limitations": "The at-least-50-point gain concerns the final stage of six hand-task combinations, not every complete manipulation sequence. Different materials, calibration errors and initial approach motions require further tests. The quantity preserved is the pattern of physical contact, not the visual resemblance of finger poses.",
+      "evidence_status": "Results are reported by the study authors; independent replication has not been established.",
+      "published_at": "2026-10-29",
+      "organization": "Zhixuan Xu and collaborators",
+      "source_ids": [
+        "src-fingertip-contact-learning"
+      ],
+      "time_window": "7d",
+      "body": "When you pick up a glass, bending your fingers is only part of the job. They must touch the glass in useful places or it may slip. A team led by Zhixuan Xu studied how to teach robot hands using the changing places where fingers contact an object. Their system includes pictures from cameras near the fingertips and information about contact surfaces.\n\nOne part records where human fingers touched an object. Another helps a robot choose contact points and wrist movements of its own. This matters because a human hand and a robot hand can be shaped quite differently. Simply copying the angles of human finger joints may not let a robot hold the same thing.\n\nThe researchers compared their approach with other methods on six combinations of robot hands and tasks. They report that average success in the final stage improved by at least 50 percentage points. A percentage point measures the difference between two success rates. For example, moving from 20% to 70% is an increase of 50 points.\n\nThe architecture separates demonstration capture from policy learning. Its demonstration interface combines shared contact geometry with colour fingertip views, aligning contact before retargeting the pose. The learning interface predicts relative contact-surface trajectories and then coordinates wrist and finger commands through a lower-level controller. The team has published software and hardware designs, allowing others to attempt experiments with different robotic hands. This is a contact-based representation rather than a claim that human and robot joint angles are interchangeable.\n\nThe tests used particular hands and tasks. They do not prove that a robot can now handle every cup or tool. But the experiment helps explain why similar-looking finger movements can produce very different results when the fingers touch an object differently.\n\nThe at-least-50-point gain concerns the final stage of six hand-task combinations, not every complete manipulation sequence. Different materials, calibration errors and initial approach motions require further tests. The quantity preserved is the pattern of physical contact, not the visual resemblance of finger poses.",
+      "image": null
+    },
+    {
+      "id": "safer-person-following",
+      "title": "TRACE reduces person-tracking collisions with selective intervention",
+      "summary": "Mingyang Lyu and colleagues introduced TRACE, an execution-time risk filter for a visually guided person-following robot. Paired evaluations reduced collisions by 3.96 percentage points while leaving more than 98% of actions unchanged.",
+      "details": "Imagine a robot following one person down a busy corridor. Someone wearing similar clothes crosses in front of it, and the robot may confuse the two people. A team led by Mingyang Lyu studied how improving a robot's ability to keep following someone affects the safety of its movements.",
+      "technical_novelty": "Training the software to keep track of its person made it better at following. But in some tests it also increased collisions. The researchers therefore added a separate danger check. It looks at clues about the target person's location and how confidently the robot can tell that person apart from others. The authors fine-tuned only the planner head of a compact vision-language-action model while freezing the backbone. A separate risk predictor processes 84 cues, including candidate targets, identity margins, estimated range and bearing, and the proposed command. Above a calibrated risk threshold, it shortens the next translational waypoint without changing the turning component. This targets dangerous moments instead of applying a blanket speed reduction or replacing the learned controller with a wholly different planner.",
+      "engineering_impact": "When the risk is high, the check shortens the next forward movement. It does not change the robot's turning command. In the experiments, more than 98% of steps remained unchanged. In a difficult tracking test, the collision rate fell by 3.96 percentage points compared with the version without this added check.",
+      "limitations": "A concurrent evaluation found a 3.77-point collision reduction versus 0.29 points in matched null pairs. The approach is not a formal safety guarantee beyond the studied tracking scenarios. Constant slowing without target-state information did not reproduce the benefit, distinguishing the proposed filter from a simple speed governor.",
+      "evidence_status": "Results are reported by the study authors; independent replication has not been established.",
+      "published_at": "2026-10-30",
+      "organization": "Mingyang Lyu and collaborators",
+      "source_ids": [
+        "src-safer-person-following"
+      ],
+      "time_window": "7d",
+      "body": "Imagine a robot following one person down a busy corridor. Someone wearing similar clothes crosses in front of it, and the robot may confuse the two people. A team led by Mingyang Lyu studied how improving a robot's ability to keep following someone affects the safety of its movements.\n\nTraining the software to keep track of its person made it better at following. But in some tests it also increased collisions. The researchers therefore added a separate danger check. It looks at clues about the target person's location and how confidently the robot can tell that person apart from others.\n\nWhen the risk is high, the check shortens the next forward movement. It does not change the robot's turning command. In the experiments, more than 98% of steps remained unchanged. In a difficult tracking test, the collision rate fell by 3.96 percentage points compared with the version without this added check.\n\nThe authors fine-tuned only the planner head of a compact vision-language-action model while freezing the backbone. A separate risk predictor processes 84 cues, including candidate targets, identity margins, estimated range and bearing, and the proposed command. Above a calibrated risk threshold, it shortens the next translational waypoint without changing the turning component. This targets dangerous moments instead of applying a blanket speed reduction or replacing the learned controller with a wholly different planner.\n\nThat does not make the robot safe in every crowded shopping centre. The researchers compared programs under particular test conditions and did not claim protection from every possible mistake. Interestingly, simply slowing the robot all the time did not produce the same improvement.\n\nA concurrent evaluation found a 3.77-point collision reduction versus 0.29 points in matched null pairs. The approach is not a formal safety guarantee beyond the studied tracking scenarios. Constant slowing without target-state information did not reproduce the benefit, distinguishing the proposed filter from a simple speed governor.",
+      "image": null
+    },
+    {
+      "id": "shared-navigation-across-robots",
+      "title": "Hourglass shares navigation across robots with different dynamics",
+      "summary": "Zhidong Wang and colleagues presented Hourglass, a shared navigation architecture with robot-specific motion dynamics. Across seven simulated robots of five locomotion types, it exceeded selected baselines by 3.8 to 10.6 percentage points.",
+      "details": "A small wheeled robot and a larger robot with a different steering system cannot move through a narrow corridor in exactly the same way. The command to turn right produces different motions. A team led by Zhidong Wang proposed teaching one program to plan paths for several kinds of robots while still respecting those differences.",
+      "technical_novelty": "The method uses a world model: software that predicts how the scene around a robot may change after it moves. But pictures alone are not enough. The researchers also describe how each particular robot accelerates and turns. The planner can therefore consider what the machine can actually do, not merely which space looks empty. The method couples a shared world model with a differentiable reduced-order model of each robot's motion through the change in camera viewpoint. The world predictor learns from multiple platforms, while kinematic parameters are identified separately. During imagined rollouts, a proposed command first passes through the robot template and then the visual world predictor. This makes the planner sensitive to turning and speed limits without training an entirely separate policy for each platform.",
+      "engineering_impact": "In computer experiments, the researchers used seven robots representing five kinds of movement. The shared program succeeded 3.8 to 10.6 percentage points more often than some comparison methods. They then drove a real robot manually for three minutes to learn how it moved, before testing navigation in an unfamiliar indoor space.",
+      "limitations": "In the physical experiment, the researchers identified a new robot's parameters from three minutes of teleoperated driving and then tested unfamiliar indoor navigation. The flat-ground assumption does not cover stairs, steep slopes or contact-heavy manoeuvres. The numerical baseline gains were measured in simulation; the physical test supports a narrower transfer claim.",
+      "evidence_status": "Results are reported by the study authors; independent replication has not been established.",
+      "published_at": "2026-10-30",
+      "organization": "Zhidong Wang and collaborators",
+      "source_ids": [
+        "src-shared-navigation-across-robots"
+      ],
+      "time_window": "7d",
+      "body": "A small wheeled robot and a larger robot with a different steering system cannot move through a narrow corridor in exactly the same way. The command to turn right produces different motions. A team led by Zhidong Wang proposed teaching one program to plan paths for several kinds of robots while still respecting those differences.\n\nThe method uses a world model: software that predicts how the scene around a robot may change after it moves. But pictures alone are not enough. The researchers also describe how each particular robot accelerates and turns. The planner can therefore consider what the machine can actually do, not merely which space looks empty.\n\nIn computer experiments, the researchers used seven robots representing five kinds of movement. The shared program succeeded 3.8 to 10.6 percentage points more often than some comparison methods. They then drove a real robot manually for three minutes to learn how it moved, before testing navigation in an unfamiliar indoor space.\n\nThe method couples a shared world model with a differentiable reduced-order model of each robot's motion through the change in camera viewpoint. The world predictor learns from multiple platforms, while kinematic parameters are identified separately. During imagined rollouts, a proposed command first passes through the robot template and then the visual world predictor. This makes the planner sensitive to turning and speed limits without training an entirely separate policy for each platform.\n\nThat real-world test matters, but it does not show that the same program works for every vehicle or on staircases. The study specifically discusses movement on flat ground and particular robot designs.\n\nIn the physical experiment, the researchers identified a new robot's parameters from three minutes of teleoperated driving and then tested unfamiliar indoor navigation. The flat-ground assumption does not cover stairs, steep slopes or contact-heavy manoeuvres. The numerical baseline gains were measured in simulation; the physical test supports a narrower transfer claim.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Representation choices change outcomes",
+    "summary": "Performance depends not only on model training but also on coordinate frames, contact data and execution constraints.",
+    "implications": "Results from different protocols cannot be directly compared without checking hardware and available data."
+  },
+  "glossary": [
+    {
+      "term": "WorldBridge",
+      "definition": "A model linking predicted video with robot actions."
+    },
+    {
+      "term": "RoboTwin 2.0",
+      "definition": "A simulated manipulation benchmark for comparing methods."
+    },
+    {
+      "term": "action representation",
+      "definition": "The format used to express robot commands and coordinates."
+    },
+    {
+      "term": "point cloud",
+      "definition": "A collection of three-dimensional points representing surfaces."
+    },
+    {
+      "term": "Contact Imitation Interface",
+      "definition": "A skill-transfer method based on fingertip contact geometry."
+    },
+    {
+      "term": "contact trajectory",
+      "definition": "A sequence of positions of the touching region."
+    },
+    {
+      "term": "TRACE",
+      "definition": "A risk filter for person-following robot movements."
+    },
+    {
+      "term": "risk estimation",
+      "definition": "Computing a risk score from features of the situation."
+    },
+    {
+      "term": "Hourglass",
+      "definition": "A shared navigation architecture with robot-specific dynamics."
+    },
+    {
+      "term": "world model",
+      "definition": "A predictor of how the observed scene changes after an action."
+    },
+    {
+      "term": "RJ45 connector",
+      "definition": "A network connector used in the five-fingered hand insertion experiments."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-learning-from-task-videos",
+      "url": "https://arxiv.org/abs/2610.40748",
+      "domain": "arxiv.org",
+      "organization": "Jun Cen and collaborators",
+      "published_at": "2026-10-29",
+      "title": "WorldBridge: Bridging Video and Action for Task Generalization in World Action Models"
+    },
+    {
+      "id": "src-real-hand-connector-tests",
+      "url": "https://arxiv.org/abs/2610.40828",
+      "domain": "arxiv.org",
+      "organization": "Ammar N. Abbas and collaborators",
+      "published_at": "2026-10-29",
+      "title": "From Teleoperation to Long-Horizon Dexterity: Evaluating Visuomotor Skills and Offline Proxies for Dexterous Manipulation"
+    },
+    {
+      "id": "src-fingertip-contact-learning",
+      "url": "https://arxiv.org/abs/2610.41028",
+      "domain": "arxiv.org",
+      "organization": "Zhixuan Xu and collaborators",
+      "published_at": "2026-10-29",
+      "title": "Contact Imitation Interface: Transferring Dexterous Skills by Showing How Contact Unfolds"
+    },
+    {
+      "id": "src-safer-person-following",
+      "url": "https://arxiv.org/abs/2610.41275",
+      "domain": "arxiv.org",
+      "organization": "Mingyang Lyu and collaborators",
+      "published_at": "2026-10-30",
+      "title": "TRACE: Target-State Risk-Aligned Conditional Execution for Embodied Tracking"
+    },
+    {
+      "id": "src-shared-navigation-across-robots",
+      "url": "https://arxiv.org/abs/2610.41330",
+      "domain": "arxiv.org",
+      "organization": "Zhidong Wang and collaborators",
+      "published_at": "2026-10-30",
+      "title": "Cross-Embodiment Motion Planning by Coupling Body-Agnostic World Model with Differentiable Ego-Dynamics"
+    }
+  ]
+}

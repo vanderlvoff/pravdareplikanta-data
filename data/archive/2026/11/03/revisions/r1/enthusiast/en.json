@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.4",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-03",
+  "issue_id": "daily-2026-11-03",
+  "edition": "enthusiast",
+  "language": "en",
+  "generated_at": "2026-11-03T03:52:30+09:00",
+  "title": "Pravda Replikanta — Enthusiast",
+  "lead": "Why a humanoid struggles to stand, how clutter confuses manipulation and why virtual benchmarks can mislead.",
+  "news": [
+    {
+      "id": "humanoid-fall-under-obstacles",
+      "title": "A humanoid learns to stand up beneath obstacles, succeeding in 95 of 150 real attempts",
+      "summary": "Yidan Lu and colleagues trained a fall-recovery controller that makes room before a humanoid tries to stand. On a Unitree G1, the controller recovered in 95 of 150 real attempts across seven obstacle scenes.",
+      "details": "Imagine trying to stand after falling beneath a low table. You would first have to make room, find support and only then rise. For a humanoid, those steps require coordinated joint movement and contact with nearby objects. Yidan Lu and colleagues explored how a robot could learn this sequence without receiving one rigid escape path.",
+      "technical_novelty": "The method uses reinforcement learning, where simulated attempts are scored according to how well they meet a goal. It rewards gradual reduction of overlap between the robot and an overhead object without specifying a fixed escape path. Additional costs discourage stalled joints and unstable support. A learned motion prior encourages plausible movement. The final policy relies on proprioception, the robot's internal measurement of its body configuration, rather than an external camera.",
+      "engineering_impact": "The physical Unitree G1 recovered in 95 of 150 attempts, whereas some simulated conditions exceeded 98% success. That contrast is more revealing than a polished demonstration: contact with real furniture does not exactly match virtual plates. The remaining 55 failed attempts matter, especially because the published success count alone does not describe how the machine would behave next to a person.",
+      "limitations": "The real robot stood up successfully in 95 of 150 attempts, approximately 63.3%. This gap from the higher simulation rates is important: the simulated configurations and the real obstacle scenes are not identical tests. A successful stand also does not establish safe contact forces around a person or reliability across all floor surfaces and fall orientations. These are experimental results from the research team, not certified recovery behavior.",
+      "evidence_status": "Author-reported research preprint; not independently replicated.",
+      "published_at": "2026-10-30",
+      "organization": "Yidan Lu and collaborators",
+      "source_ids": [
+        "src-humanoid-fall-under-obstacles"
+      ],
+      "time_window": "7d",
+      "body": "Imagine trying to stand after falling beneath a low table. You would first have to make room, find support and only then rise. For a humanoid, those steps require coordinated joint movement and contact with nearby objects. Yidan Lu and colleagues explored how a robot could learn this sequence without receiving one rigid escape path.\n\nThe method uses reinforcement learning, where simulated attempts are scored according to how well they meet a goal. It rewards gradual reduction of overlap between the robot and an overhead object without specifying a fixed escape path. Additional costs discourage stalled joints and unstable support. A learned motion prior encourages plausible movement. The final policy relies on proprioception, the robot's internal measurement of its body configuration, rather than an external camera.\n\nIn simulation, the reported recovery rate beneath plates that could only be lifted was 88.5%, compared with 18.9% without the geometric escape guidance. With free plates whose size, mass and position were varied, recovery reached 98.6%. The authors also deployed the learned controller on a Unitree G1 humanoid and tested seven real-world obstacle arrangements, including furniture and multiple objects not present during training.\n\nThe real robot stood up successfully in 95 of 150 attempts, approximately 63.3%. This gap from the higher simulation rates is important: the simulated configurations and the real obstacle scenes are not identical tests. A successful stand also does not establish safe contact forces around a person or reliability across all floor surfaces and fall orientations. These are experimental results from the research team, not certified recovery behavior.\n\nThe physical Unitree G1 recovered in 95 of 150 attempts, whereas some simulated conditions exceeded 98% success. That contrast is more revealing than a polished demonstration: contact with real furniture does not exactly match virtual plates. The remaining 55 failed attempts matter, especially because the published success count alone does not describe how the machine would behave next to a person.",
+      "image": null
+    },
+    {
+      "id": "cluttered-robot-commonsense",
+      "title": "Robots pick the wrong object in roughly 30% of cluttered test cases",
+      "summary": "Arjun Guru and colleagues introduced manipulation tests with hidden and crowded objects. Evaluated controllers acted on the wrong object about 30% of the time in cluttered scenes.",
+      "details": "Picking up a cup from an empty table is different from finding it among similar objects, some hidden behind a box. Which part should the robot grip, and which item did the instruction actually mean? Arjun Guru and colleagues built tests around these deceptively ordinary questions. The challenge begins before the arm makes its first precise movement.",
+      "technical_novelty": "The benchmark includes partly hidden objects, items inside containers, support relationships between objects and suitable grasp points. Several general-purpose manipulation models were evaluated without task-specific additional training. Its results do not certify a commercially deployed warehouse robot.",
+      "engineering_impact": "The striking result is not simply that clutter reduces success. The tested controllers selected the wrong object in roughly 30% of cluttered cases, while automatic judges sometimes misread the outcome. A robot can therefore make a mistake that its evaluator also misses. The paper does not say that a real warehouse will have the same error rate, but it makes tidy demonstrations harder to trust.",
+      "limitations": "The study also found that systems used to score robot attempts automatically from images could misjudge outcomes in complex scenes. This creates two distinct risks: a controller can choose the wrong product and an automated checker can overlook the mistake. The researchers did not measure actual workplace failure rates or the labor cost of manual verification.",
+      "evidence_status": "Developer announcement, not independently verified.",
+      "published_at": "2026-10-30",
+      "organization": "Arjun Guru and collaborators",
+      "source_ids": [
+        "src-cluttered-robot-commonsense"
+      ],
+      "time_window": "7d",
+      "body": "Picking up a cup from an empty table is different from finding it among similar objects, some hidden behind a box. Which part should the robot grip, and which item did the instruction actually mean? Arjun Guru and colleagues built tests around these deceptively ordinary questions. The challenge begins before the arm makes its first precise movement.\n\nThe benchmark includes partly hidden objects, items inside containers, support relationships between objects and suitable grasp points. Several general-purpose manipulation models were evaluated without task-specific additional training. Its results do not certify a commercially deployed warehouse robot.\n\nThe authors report that success in cluttered scenes fell by more than half as distracting objects increased. Controllers acted on the wrong object in roughly 30% of cluttered cases. Even detailed language prompts produced correct selection of the object's graspable part only about half the time in some tests. These are benchmark observations, not warehouse defect statistics.\n\nThe study also found that systems used to score robot attempts automatically from images could misjudge outcomes in complex scenes. This creates two distinct risks: a controller can choose the wrong product and an automated checker can overlook the mistake. The researchers did not measure actual workplace failure rates or the labor cost of manual verification.\n\nThe striking result is not simply that clutter reduces success. The tested controllers selected the wrong object in roughly 30% of cluttered cases, while automatic judges sometimes misread the outcome. A robot can therefore make a mistake that its evaluator also misses. The paper does not say that a real warehouse will have the same error rate, but it makes tidy demonstrations harder to trust.",
+      "image": null
+    },
+    {
+      "id": "robot-harness-automatic-design",
+      "title": "Automatic controller wrappers lift unseen-task success from 12.7% to 40.2%",
+      "summary": "Shengguang Wu and colleagues developed RoboArchitect, which revises the software around a fixed robot policy after examining failures. Reported success rose from 12.7% to 40.2% on unseen tasks without updating the policy's weights.",
+      "details": "A robot repeatedly reaches for an object from the wrong side. One response is to retrain its neural network; another is to change the surrounding program that decides when to look again and how to approach. Shengguang Wu and colleagues investigated the second route. A coding system observes failures and rewrites the controller around a model whose weights remain unchanged.",
+      "technical_novelty": "The coding model watches execution traces, identifies apparent failure causes and changes the harness. Candidate designs are optimized on one group of episodes and evaluated on separate, held-out scenes and tasks. The harness can preserve useful information between attempts, such as a grasp depth that worked earlier. This persistent memory is part of the control procedure rather than an assertion that the underlying policy learned a new skill.",
+      "engineering_impact": "Success on unfamiliar tasks rose from 12.7% to 40.2%, but that does not mean the original model suddenly understands every scene. The sequence of decisions changed, and the wrapper gained memory of previous attempts. In some tests, this approach even beat additional model training. The researchers have not shown that automatically generated control code is safe in every unfamiliar workshop.",
+      "limitations": "Reported gains were especially large when a general policy encountered situations far from its training distribution. In some cases the modified wrapper outperformed a fine-tuned policy. The authors do not thereby establish that generated code is always safe or that a memory learned in one scene transfers reliably to every new workplace. The measurements remain results of the authors' experimental setups.",
+      "evidence_status": "Author-reported research preprint; not independently replicated.",
+      "published_at": "2026-10-30",
+      "organization": "Shengguang Wu and collaborators",
+      "source_ids": [
+        "src-robot-harness-automatic-design"
+      ],
+      "time_window": "7d",
+      "body": "A robot repeatedly reaches for an object from the wrong side. One response is to retrain its neural network; another is to change the surrounding program that decides when to look again and how to approach. Shengguang Wu and colleagues investigated the second route. A coding system observes failures and rewrites the controller around a model whose weights remain unchanged.\n\nThe coding model watches execution traces, identifies apparent failure causes and changes the harness. Candidate designs are optimized on one group of episodes and evaluated on separate, held-out scenes and tasks. The harness can preserve useful information between attempts, such as a grasp depth that worked earlier. This persistent memory is part of the control procedure rather than an assertion that the underlying policy learned a new skill.\n\nAcross the authors' tested benchmarks and policies, average success on unseen scenes rose from 9.7% to 43.3%, a roughly 4.5-fold increase. On unseen tasks, success rose from 12.7% to 40.2%, about 3.2-fold. The generated code sometimes freed a jammed arm by lifting it away from an obstacle or changed its approach direction to reach an object horizontally. These are examples of harness behavior, not new robot hardware.\n\nReported gains were especially large when a general policy encountered situations far from its training distribution. In some cases the modified wrapper outperformed a fine-tuned policy. The authors do not thereby establish that generated code is always safe or that a memory learned in one scene transfers reliably to every new workplace. The measurements remain results of the authors' experimental setups.\n\nSuccess on unfamiliar tasks rose from 12.7% to 40.2%, but that does not mean the original model suddenly understands every scene. The sequence of decisions changed, and the wrapper gained memory of previous attempts. In some tests, this approach even beat additional model training. The researchers have not shown that automatically generated control code is safe in every unfamiliar workshop.",
+      "image": null
+    },
+    {
+      "id": "simulator-contact-artifacts",
+      "title": "A simulator's collision bug changes a robot benchmark from 89% to 98%",
+      "summary": "Alex Zhou and colleagues audited contact failures in simulated robot manipulation and traced some apparent policy errors to the physics engine. Correcting one collision-detection threshold raised success on five container tasks from 89% to 98%.",
+      "details": "In a virtual test, a robot places an object in a container and the object suddenly shoots away as though pushed by an invisible hand. The attempt is usually counted against the robot. Alex Zhou and colleagues found that the simulator itself can be responsible: its collision calculation sometimes creates motion that should not occur. They built a tool to replay and diagnose these moments.",
+      "technical_novelty": "The authors built SimuGuard, an auditing plugin for four simulation benchmark families: four established manipulation test suites. It records physical state at every simulation step, flags unexplained velocity changes during contact, and replays a run deterministically. Investigators can then change one simulator parameter at a time. This is an instrumentation and diagnosis method, not a new manipulation policy or a claim that all simulation failures are spurious.",
+      "engineering_impact": "Changing one collision threshold raised success on five container tasks from 89% to 98%. The robot had not become more intelligent; the virtual physics had been repaired. That detail makes small differences in benchmark rankings harder to interpret without checking the simulator version. The paper does not report a matching improvement on physical hardware, which is an essential boundary of the finding.",
+      "limitations": "The paper also gives an uncertainty interval for one tested controller: an observed 83.1% success corresponds to 75.8%–98.5% if every flagged episode is counted at the two extremes. The authors recommend rerunning affected benchmarks using a repaired engine, particularly for PhysX 5.3.1 and earlier. Those figures concern this evaluation setup, not an independently established improvement in real-robot manipulation.",
+      "evidence_status": "Author-reported research preprint; not independently replicated.",
+      "published_at": "2026-10-30",
+      "organization": "Alex Zhou and collaborators",
+      "source_ids": [
+        "src-simulator-contact-artifacts"
+      ],
+      "time_window": "7d",
+      "body": "In a virtual test, a robot places an object in a container and the object suddenly shoots away as though pushed by an invisible hand. The attempt is usually counted against the robot. Alex Zhou and colleagues found that the simulator itself can be responsible: its collision calculation sometimes creates motion that should not occur. They built a tool to replay and diagnose these moments.\n\nThe authors built SimuGuard, an auditing plugin for four simulation benchmark families: four established manipulation test suites. It records physical state at every simulation step, flags unexplained velocity changes during contact, and replays a run deterministically. Investigators can then change one simulator parameter at a time. This is an instrumentation and diagnosis method, not a new manipulation policy or a claim that all simulation failures are spurious.\n\nIn RoboTwin, the reported collision geometry could be one or two centimeters apart while the physics engine registered roughly two centimeters of penetration. The solver then expelled the object at several meters per second. The authors traced the behavior to an area threshold that discarded valid small triangles. Changing that constant reduced flagged artifacts from twelve per hundred episodes to zero, while five container tasks rose from 89% to 98% success.\n\nThe paper also gives an uncertainty interval for one tested controller: an observed 83.1% success corresponds to 75.8%–98.5% if every flagged episode is counted at the two extremes. The authors recommend rerunning affected benchmarks using a repaired engine, particularly for PhysX 5.3.1 and earlier. Those figures concern this evaluation setup, not an independently established improvement in real-robot manipulation.\n\nChanging one collision threshold raised success on five container tasks from 89% to 98%. The robot had not become more intelligent; the virtual physics had been repaired. That detail makes small differences in benchmark rankings harder to interpret without checking the simulator version. The paper does not report a matching improvement on physical hardware, which is an essential boundary of the finding.",
+      "image": null
+    },
+    {
+      "id": "memory-chip-edge-ai",
+      "title": "Aisin and Tohoku University report a quick-start vision processor",
+      "summary": "Aisin and Tohoku University announced a processor prototype with embedded nonvolatile memory on November 2. They report a 65.7-millisecond operating-system start and 50.7 millijoules per object-detection frame.",
+      "details": "A camera or warehouse robot may spend time idle and then need to wake quickly to inspect a scene. Aisin and Tohoku University announced a chip that retains important data after power is switched off. It avoids loading everything again from external storage. The idea illustrates that artificial-intelligence speed depends on moving data as well as doing calculations.",
+      "technical_novelty": "The prototype integrates 32 megabytes of nonvolatile magnetic memory into a sixteen-nanometer chip. Operating-system startup information and the weights of a compact object detector sit close to the processing circuits, reducing transfers from external storage. The researchers call this near-memory computing. The prototype runs a narrow visual-recognition task, not a general-purpose robot reasoning model.",
+      "engineering_impact": "The developers report a 65.7-millisecond operating-system start and 50.7 millijoules for object detection in one image. But this test concerns a compact visual detector, not a robot that understands long instructions. The price of a mass-produced chip and the effect on a complete machine with cameras and motors remain unknown. The prototype should not be confused with a finished autonomous robot.",
+      "limitations": "The research is scheduled for presentation at a semiconductor circuits conference in Taiwan on November 1–4. The release provides no mass-production price, field failure rate or energy measurement for a complete robot. It does not establish that the processor can run a large model that converts language into complex physical actions. Object detection is a narrower function.",
+      "evidence_status": "Developer announcement, not independently verified.",
+      "published_at": "2026-11-02",
+      "organization": "Aisin and Tohoku University",
+      "source_ids": [
+        "src-memory-chip-edge-ai"
+      ],
+      "time_window": "24h",
+      "body": "A camera or warehouse robot may spend time idle and then need to wake quickly to inspect a scene. Aisin and Tohoku University announced a chip that retains important data after power is switched off. It avoids loading everything again from external storage. The idea illustrates that artificial-intelligence speed depends on moving data as well as doing calculations.\n\nThe prototype integrates 32 megabytes of nonvolatile magnetic memory into a sixteen-nanometer chip. Operating-system startup information and the weights of a compact object detector sit close to the processing circuits, reducing transfers from external storage. The researchers call this near-memory computing. The prototype runs a narrow visual-recognition task, not a general-purpose robot reasoning model.\n\nAccording to the joint announcement, operating-system startup takes 65.7 milliseconds, about 38.59 times faster than its comparison design. Artificial-intelligence processing is reported to be 10.16 times faster, and total processing time 25.2 times shorter. Object detection uses 50.7 millijoules per image. These figures are measurements reported by the developers, not independent product certification.\n\nThe research is scheduled for presentation at a semiconductor circuits conference in Taiwan on November 1–4. The release provides no mass-production price, field failure rate or energy measurement for a complete robot. It does not establish that the processor can run a large model that converts language into complex physical actions. Object detection is a narrower function.\n\nThe developers report a 65.7-millisecond operating-system start and 50.7 millijoules for object detection in one image. But this test concerns a compact visual detector, not a robot that understands long instructions. The price of a mass-produced chip and the effect on a complete machine with cameras and motors remain unknown. The prototype should not be confused with a finished autonomous robot.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "A demonstration is not the same as dependable behavior",
+    "summary": "Simulated successes and physical attempts reveal different limitations.",
+    "implications": "Comparing test conditions helps distinguish a learned skill from a favorable environment."
+  },
+  "glossary": [
+    {
+      "term": "reinforcement learning",
+      "definition": "Learning control through repeated attempts and feedback about outcomes."
+    },
+    {
+      "term": "proprioception",
+      "definition": "A robot's internal sensing of its joints and body state."
+    },
+    {
+      "term": "simulation",
+      "definition": "Computer calculation of movement and interactions in a virtual world."
+    },
+    {
+      "term": "collision artifact",
+      "definition": "False motion caused by an error in simulated contact."
+    },
+    {
+      "term": "SimuGuard",
+      "definition": "A tool for finding and replaying suspect simulated contacts."
+    },
+    {
+      "term": "agent harness (RoboArchitect)",
+      "definition": "Software coordinating observations and actions around a trained policy. RoboArchitect is the name of the studied system."
+    },
+    {
+      "term": "persistent memory",
+      "definition": "Information from earlier attempts retained for later decisions."
+    },
+    {
+      "term": "grasp point",
+      "definition": "The location on an object where a robot tries to hold it."
+    },
+    {
+      "term": "occlusion",
+      "definition": "One object partly or fully hiding another."
+    },
+    {
+      "term": "nonvolatile memory",
+      "definition": "Storage that keeps data without power."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-humanoid-fall-under-obstacles",
+      "url": "https://arxiv.org/abs/2610.42097",
+      "domain": "arxiv.org",
+      "organization": "Yidan Lu and collaborators",
+      "published_at": "2026-10-30",
+      "title": "ROOF: Learning Humanoid Fall Recovery under Overhead Constraints"
+    },
+    {
+      "id": "src-cluttered-robot-commonsense",
+      "title": "MolmoSpaces-CommonSense: Evaluating Commonsense in Robotic Manipulation Policies",
+      "url": "https://arxiv.org/abs/2610.41377",
+      "domain": "arxiv.org",
+      "organization": "Arjun Guru and collaborators",
+      "published_at": "2026-10-30"
+    },
+    {
+      "id": "src-robot-harness-automatic-design",
+      "url": "https://arxiv.org/abs/2610.42141",
+      "domain": "arxiv.org",
+      "organization": "Shengguang Wu and collaborators",
+      "published_at": "2026-10-30",
+      "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory"
+    },
+    {
+      "id": "src-simulator-contact-artifacts",
+      "url": "https://arxiv.org/abs/2610.41857",
+      "domain": "arxiv.org",
+      "organization": "Alex Zhou and collaborators",
+      "published_at": "2026-10-30",
+      "title": "When the Simulator Fails, Not the Policy: Auditing Contact Artifacts in Simulated Robot Benchmarks"
+    },
+    {
+      "id": "src-memory-chip-edge-ai",
+      "title": "世界初、STT-MRAMを搭載した16nm AI SoCを開発",
+      "url": "https://prtimes.jp/main/html/rd/p/000000227.000112940.html",
+      "domain": "prtimes.jp",
+      "organization": "Aisin and Tohoku University",
+      "published_at": "2026-11-02"
+    }
+  ]
+}

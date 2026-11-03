@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.4",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-03",
+  "issue_id": "daily-2026-11-03",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-03T03:52:30+09:00",
+  "title": "Pravda Replikanta — Young readers",
+  "lead": "Why a robot might move without instructions, how it gets up after falling and what it can learn from mistakes.",
+  "news": [
+    {
+      "id": "humanoid-fall-under-obstacles",
+      "title": "How a humanoid robot stands up beneath a low table",
+      "summary": "Researchers taught a humanoid to make room above itself before standing after a fall. It recovered in 95 of 150 real attempts across seven obstacle scenes.",
+      "details": "Imagine falling beneath a low table. If you stand immediately, you might hit your head on the tabletop. First you need to slide or turn to make some room. A humanoid robot faces a similar problem, but it must also choose where to place its hands and how to keep its balance.",
+      "technical_novelty": "Researchers let the robot practice many times in a computer simulation. They used reinforcement learning, which means giving better scores to attempts that get closer to the goal. The robot was not given one fixed escape route. It learned to clear space, find support and then try to rise.",
+      "engineering_impact": "In some virtual tests, the robot stood up almost every time. The team then tried the program on a real humanoid surrounded by furniture and other objects. It succeeded in 95 out of 150 attempts. That is about six successful recoveries in ten tries, not a perfect result.",
+      "limitations": "The other 55 attempts did not succeed. The experiment also does not show that the robot can stand safely beside a person without bumping into them. That would need different tests. The interesting skill is choosing how to make room rather than copying one movement.",
+      "evidence_status": "Results reported by researchers or developers, not independently verified.",
+      "published_at": "2026-10-30",
+      "organization": "Yidan Lu and collaborators",
+      "source_ids": [
+        "src-humanoid-fall-under-obstacles"
+      ],
+      "time_window": "7d",
+      "body": "Imagine falling beneath a low table. If you stand immediately, you might hit your head on the tabletop. First you need to slide or turn to make some room. A humanoid robot faces a similar problem, but it must also choose where to place its hands and how to keep its balance.\n\nResearchers let the robot practice many times in a computer simulation. They used reinforcement learning, which means giving better scores to attempts that get closer to the goal. The robot was not given one fixed escape route. It learned to clear space, find support and then try to rise.\n\nIn some virtual tests, the robot stood up almost every time. The team then tried the program on a real humanoid surrounded by furniture and other objects. It succeeded in 95 out of 150 attempts. That is about six successful recoveries in ten tries, not a perfect result.\n\nThe other 55 attempts did not succeed. The experiment also does not show that the robot can stand safely beside a person without bumping into them. That would need different tests. The interesting skill is choosing how to make room rather than copying one movement.",
+      "image": null
+    },
+    {
+      "id": "uncommanded-robot-actions",
+      "title": "Why a robot might move when nobody gives it a job",
+      "summary": "Researchers tested six robot-control programs with an empty instruction box. All six started moving in simulation even though nobody had asked them to do anything.",
+      "details": "Imagine opening a robot-control app and leaving the instruction box empty. You would expect the robot to wait. But researchers found a surprising problem: some control programs may start moving without a meaningful request. That could matter if people or fragile objects are nearby.",
+      "technical_novelty": "The team tested six versions of control software in a computer simulation. They gave empty messages, nonsense words and tasks that could not be done. With an empty message, every program started moving. Five often completed some task even though nobody had requested it.",
+      "engineering_impact": "The researchers tried adding a simple written rule: do not move when there is no task. It did not stop any of the six programs. Next they built a separate check before allowing movement. This helped five of the six programs stay still when no real job was given.",
+      "limitations": "These tests took place in a virtual world, not among real people. Still, they explain why telling a machine to be careful is not enough. It needs a dependable way to check permission before moving. The separate check failed for one program, so the problem is not completely solved.",
+      "evidence_status": "Results reported by researchers or developers, not independently verified.",
+      "published_at": "2026-10-30",
+      "organization": "Minsu Jang and collaborators",
+      "source_ids": [
+        "src-uncommanded-robot-actions"
+      ],
+      "time_window": "7d",
+      "body": "Imagine opening a robot-control app and leaving the instruction box empty. You would expect the robot to wait. But researchers found a surprising problem: some control programs may start moving without a meaningful request. That could matter if people or fragile objects are nearby.\n\nThe team tested six versions of control software in a computer simulation. They gave empty messages, nonsense words and tasks that could not be done. With an empty message, every program started moving. Five often completed some task even though nobody had requested it.\n\nThe researchers tried adding a simple written rule: do not move when there is no task. It did not stop any of the six programs. Next they built a separate check before allowing movement. This helped five of the six programs stay still when no real job was given.\n\nThese tests took place in a virtual world, not among real people. Still, they explain why telling a machine to be careful is not enough. It needs a dependable way to check permission before moving. The separate check failed for one program, so the problem is not completely solved.",
+      "image": null
+    },
+    {
+      "id": "cluttered-robot-commonsense",
+      "title": "Why a robot sometimes picks the wrong thing from a crowded table",
+      "summary": "Researchers tested robot programs with similar and partly hidden objects. In cluttered virtual scenes, the programs acted on the wrong object about three times out of ten.",
+      "details": "Imagine one red cup on a table. Finding it is easy. Now add several similar cups and hide one behind a box. A robot must decide which object the instruction means before it can move its hand. Researchers designed new tests for situations like this.",
+      "technical_novelty": "Some test objects were hidden behind others, and some were inside containers. Certain objects had to be held by a particular part. The team checked whether robot programs chose the right object and the right place to hold it. That place is called a grasp point.",
+      "engineering_impact": "When many distracting objects were present, success dropped sharply. The programs acted on the wrong object in about three out of ten cluttered cases. Sometimes even a detailed instruction did not help them choose the right part to grip. These numbers came from specially designed tests.",
+      "limitations": "Another surprising problem appeared: the program checking the result from pictures sometimes made mistakes too. So counting apparent successes is not enough; somebody must verify what the robot actually picked. The study does not mean that one in three real warehouse robots makes the same error. Real workplaces still need their own tests.",
+      "evidence_status": "Results reported by researchers or developers, not independently verified.",
+      "published_at": "2026-10-30",
+      "organization": "Arjun Guru and collaborators",
+      "source_ids": [
+        "src-cluttered-robot-commonsense"
+      ],
+      "time_window": "7d",
+      "body": "Imagine one red cup on a table. Finding it is easy. Now add several similar cups and hide one behind a box. A robot must decide which object the instruction means before it can move its hand. Researchers designed new tests for situations like this.\n\nSome test objects were hidden behind others, and some were inside containers. Certain objects had to be held by a particular part. The team checked whether robot programs chose the right object and the right place to hold it. That place is called a grasp point.\n\nWhen many distracting objects were present, success dropped sharply. The programs acted on the wrong object in about three out of ten cluttered cases. Sometimes even a detailed instruction did not help them choose the right part to grip. These numbers came from specially designed tests.\n\nAnother surprising problem appeared: the program checking the result from pictures sometimes made mistakes too. So counting apparent successes is not enough; somebody must verify what the robot actually picked. The study does not mean that one in three real warehouse robots makes the same error. Real workplaces still need their own tests.",
+      "image": null
+    },
+    {
+      "id": "robot-harness-automatic-design",
+      "title": "A robot changes its approach without retraining its main model",
+      "summary": "Researchers built software that studies robot failures and changes how the robot organizes its actions. On unfamiliar tasks, success rose from 12.7% to 40.2% without retraining the main model.",
+      "details": "Imagine a robot trying to grab a box from above, but a shelf blocks its arm. One solution is to train it again. Another is to change the plan: look from the side, then approach from a different direction. Researchers built software that searches for these kinds of fixes after unsuccessful attempts.",
+      "technical_novelty": "The robot's main trained model stayed the same. A separate program watched recordings of attempts and changed the code that decides when to look and how to move. Sometimes it saved useful details, such as how deeply the fingers should reach. That is a little like keeping notes about a successful trick.",
+      "engineering_impact": "On unfamiliar tasks, success rose from 12.7% to 40.2%. Instead of succeeding roughly once in eight attempts, it succeeded about four times in ten. The new code sometimes helped the robot free a stuck arm or reach an object from another direction.",
+      "limitations": "But four successes in ten attempts are not reliable enough for every job. Automatically written code can also contain mistakes and needs checking. The study shows that how actions are organized can matter as much as the original trained model. The researchers called their system RoboArchitect.",
+      "evidence_status": "Results reported by researchers or developers, not independently verified.",
+      "published_at": "2026-10-30",
+      "organization": "Shengguang Wu and collaborators",
+      "source_ids": [
+        "src-robot-harness-automatic-design"
+      ],
+      "time_window": "7d",
+      "body": "Imagine a robot trying to grab a box from above, but a shelf blocks its arm. One solution is to train it again. Another is to change the plan: look from the side, then approach from a different direction. Researchers built software that searches for these kinds of fixes after unsuccessful attempts.\n\nThe robot's main trained model stayed the same. A separate program watched recordings of attempts and changed the code that decides when to look and how to move. Sometimes it saved useful details, such as how deeply the fingers should reach. That is a little like keeping notes about a successful trick.\n\nOn unfamiliar tasks, success rose from 12.7% to 40.2%. Instead of succeeding roughly once in eight attempts, it succeeded about four times in ten. The new code sometimes helped the robot free a stuck arm or reach an object from another direction.\n\nBut four successes in ten attempts are not reliable enough for every job. Automatically written code can also contain mistakes and needs checking. The study shows that how actions are organized can matter as much as the original trained model. The researchers called their system RoboArchitect.",
+      "image": null
+    },
+    {
+      "id": "memory-chip-edge-ai",
+      "title": "A new chip helps a camera wake quickly and recognize objects",
+      "summary": "Aisin and Tohoku University announced a chip that remembers data even when its power is off. In their test, its operating system started in 65.7 milliseconds before it could process images.",
+      "details": "Imagine a camera that sleeps most of the time to save electricity. When it needs to check what is in front of it, it must wake quickly. Usually, some time is spent loading information from storage. Researchers in Japan tried to make that step much shorter.",
+      "technical_novelty": "They built a chip with memory that keeps information when power is switched off. This is called nonvolatile memory. The information needed for startup and recognizing objects is stored inside the chip itself. That means it does not need to be copied from a separate storage device every time.",
+      "engineering_impact": "The developers reported an operating-system start of 65.7 milliseconds, much less than one second. Finding objects in one image used 50.7 millijoules of energy. These are results from an experimental chip, not a finished household robot. The measurements were reported by its creators.",
+      "limitations": "Recognizing objects is not the same as doing any job someone requests. The chip may help a machine process pictures faster, but it cannot by itself teach a robot to clean a room. We also do not yet know the price of a finished product or how much electricity a complete machine with motors and cameras would save.",
+      "evidence_status": "Results reported by researchers or developers, not independently verified.",
+      "published_at": "2026-11-02",
+      "organization": "Aisin and Tohoku University",
+      "source_ids": [
+        "src-memory-chip-edge-ai"
+      ],
+      "time_window": "24h",
+      "body": "Imagine a camera that sleeps most of the time to save electricity. When it needs to check what is in front of it, it must wake quickly. Usually, some time is spent loading information from storage. Researchers in Japan tried to make that step much shorter.\n\nThey built a chip with memory that keeps information when power is switched off. This is called nonvolatile memory. The information needed for startup and recognizing objects is stored inside the chip itself. That means it does not need to be copied from a separate storage device every time.\n\nThe developers reported an operating-system start of 65.7 milliseconds, much less than one second. Finding objects in one image used 50.7 millijoules of energy. These are results from an experimental chip, not a finished household robot. The measurements were reported by its creators.\n\nRecognizing objects is not the same as doing any job someone requests. The chip may help a machine process pictures faster, but it cannot by itself teach a robot to clean a room. We also do not yet know the price of a finished product or how much electricity a complete machine with motors and cameras would save.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "A robot needs to know when to wait",
+    "summary": "In one experiment, all six control programs moved without a task.",
+    "implications": "Checking permission before movement matters alongside learning to complete jobs."
+  },
+  "glossary": [
+    {
+      "term": "reinforcement learning",
+      "definition": "Learning through attempts that receive better scores when they work."
+    },
+    {
+      "term": "simulation",
+      "definition": "A computer test with virtual objects and movements."
+    },
+    {
+      "term": "grasp point",
+      "definition": "The place on an object where it can be held."
+    },
+    {
+      "term": "permission check",
+      "definition": "A rule deciding whether movement may start."
+    },
+    {
+      "term": "controller memory",
+      "definition": "Useful information kept from earlier attempts."
+    },
+    {
+      "term": "nonvolatile memory",
+      "definition": "Memory that keeps information when power is off."
+    },
+    {
+      "term": "object detection",
+      "definition": "Finding objects in a picture."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-humanoid-fall-under-obstacles",
+      "url": "https://arxiv.org/abs/2610.42097",
+      "domain": "arxiv.org",
+      "organization": "Yidan Lu and collaborators",
+      "published_at": "2026-10-30",
+      "title": "ROOF: Learning Humanoid Fall Recovery under Overhead Constraints"
+    },
+    {
+      "id": "src-uncommanded-robot-actions",
+      "url": "https://arxiv.org/abs/2610.41609",
+      "domain": "arxiv.org",
+      "organization": "Minsu Jang and collaborators",
+      "published_at": "2026-10-30",
+      "title": "VLA Policies Do Not Know When Not to Act: Unintended Task Execution and Start Suppression"
+    },
+    {
+      "id": "src-cluttered-robot-commonsense",
+      "title": "MolmoSpaces-CommonSense: Evaluating Commonsense in Robotic Manipulation Policies",
+      "url": "https://arxiv.org/abs/2610.41377",
+      "domain": "arxiv.org",
+      "organization": "Arjun Guru and collaborators",
+      "published_at": "2026-10-30"
+    },
+    {
+      "id": "src-robot-harness-automatic-design",
+      "url": "https://arxiv.org/abs/2610.42141",
+      "domain": "arxiv.org",
+      "organization": "Shengguang Wu and collaborators",
+      "published_at": "2026-10-30",
+      "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory"
+    },
+    {
+      "id": "src-memory-chip-edge-ai",
+      "title": "世界初、STT-MRAMを搭載した16nm AI SoCを開発",
+      "url": "https://prtimes.jp/main/html/rd/p/000000227.000112940.html",
+      "domain": "prtimes.jp",
+      "organization": "Aisin and Tohoku University",
+      "published_at": "2026-11-02"
+    }
+  ]
+}

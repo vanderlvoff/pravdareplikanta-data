@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.4",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-03",
+  "issue_id": "daily-2026-11-03",
+  "edition": "engineer",
+  "language": "en",
+  "generated_at": "2026-11-03T03:52:30+09:00",
+  "title": "Pravda Replikanta — Engineering",
+  "lead": "Five new studies examine where robot control succeeds, where it moves without permission, and where simulation itself distorts the result.",
+  "news": [
+    {
+      "id": "simulator-contact-artifacts",
+      "title": "A simulator's collision bug changes a robot benchmark from 89% to 98%",
+      "summary": "Alex Zhou and colleagues audited contact failures in simulated robot manipulation and traced some apparent policy errors to the physics engine. Correcting one collision-detection threshold raised success on five container tasks from 89% to 98%.",
+      "details": "Robot manipulation benchmarks usually count every unsuccessful attempt as a failure of the controller. Alex Zhou and colleagues challenge that assumption in a new research preprint. They examined episodes in which a learned controller put an object in the intended location, only for the simulated object to shoot away. Even the benchmark's own scripted demonstrations sometimes failed in this manner. That makes the failure attribution itself an engineering variable.",
+      "technical_novelty": "The authors built SimuGuard, an auditing plugin for four simulation benchmark families: four established manipulation test suites. It records physical state at every simulation step, flags unexplained velocity changes during contact, and replays a run deterministically. Investigators can then change one simulator parameter at a time. This is an instrumentation and diagnosis method, not a new manipulation policy or a claim that all simulation failures are spurious.",
+      "engineering_impact": "In RoboTwin, the reported collision geometry could be one or two centimeters apart while the physics engine registered roughly two centimeters of penetration. The solver then expelled the object at several meters per second. The authors traced the behavior to an area threshold that discarded valid small triangles. Changing that constant reduced flagged artifacts from twelve per hundred episodes to zero, while five container tasks rose from 89% to 98% success.",
+      "limitations": "The paper also gives an uncertainty interval for one tested controller: an observed 83.1% success corresponds to 75.8%–98.5% if every flagged episode is counted at the two extremes. The authors recommend rerunning affected benchmarks using a repaired engine, particularly for PhysX 5.3.1 and earlier. Those figures concern this evaluation setup, not an independently established improvement in real-robot manipulation.",
+      "evidence_status": "Author-reported research preprint; not independently replicated.",
+      "published_at": "2026-10-30",
+      "organization": "Alex Zhou and collaborators",
+      "source_ids": [
+        "src-simulator-contact-artifacts"
+      ],
+      "time_window": "7d",
+      "body": "Robot manipulation benchmarks usually count every unsuccessful attempt as a failure of the controller. Alex Zhou and colleagues challenge that assumption in a new research preprint. They examined episodes in which a learned controller put an object in the intended location, only for the simulated object to shoot away. Even the benchmark's own scripted demonstrations sometimes failed in this manner. That makes the failure attribution itself an engineering variable.\n\nThe authors built SimuGuard, an auditing plugin for four simulation benchmark families: four established manipulation test suites. It records physical state at every simulation step, flags unexplained velocity changes during contact, and replays a run deterministically. Investigators can then change one simulator parameter at a time. This is an instrumentation and diagnosis method, not a new manipulation policy or a claim that all simulation failures are spurious.\n\nIn RoboTwin, the reported collision geometry could be one or two centimeters apart while the physics engine registered roughly two centimeters of penetration. The solver then expelled the object at several meters per second. The authors traced the behavior to an area threshold that discarded valid small triangles. Changing that constant reduced flagged artifacts from twelve per hundred episodes to zero, while five container tasks rose from 89% to 98% success.\n\nThe paper also gives an uncertainty interval for one tested controller: an observed 83.1% success corresponds to 75.8%–98.5% if every flagged episode is counted at the two extremes. The authors recommend rerunning affected benchmarks using a repaired engine, particularly for PhysX 5.3.1 and earlier. Those figures concern this evaluation setup, not an independently established improvement in real-robot manipulation.\n\nAn engineer comparing two policies should therefore retain the simulator version, collision settings, replay trace and flagged episode count alongside the nominal success percentage. Without these, an apparent nine-point advantage could partly measure a numerical geometry defect rather than better control. The most useful result here may be the reproducible diagnosis of a centimeter-scale collision error, not the revised leaderboard position.",
+      "image": null
+    },
+    {
+      "id": "edge-realtime-policy",
+      "title": "A multi-camera robot controller reaches 32.9 updates per second on an edge chip",
+      "summary": "Xianbao Hou and colleagues proposed RTPolicy, a compact multi-camera controller for robot manipulation. They report 52.26% mean success across fifty simulated tasks and 32.9 inference cycles per second on one embedded processor.",
+      "details": "Manipulation control becomes fragile when camera processing takes too long. By the time a model has predicted a movement, the object or gripper may already have shifted. Xianbao Hou and colleagues introduce RTPolicy, a visual control model designed for embedded computing hardware rather than a large remote server. Its aim is to shorten the delay between observing a scene and producing the next useful action while retaining information from several cameras.",
+      "technical_novelty": "The architecture first combines information from different camera views, then compresses the visual representation before generating robot actions. Its action generator uses flow matching, a learned procedure for transforming an initial action proposal into a useful movement sequence. Robot state and the stage of this generation process condition the prediction. The authors test asynchronous inference, where sensing and action execution do not simply wait for each other at every step.",
+      "engineering_impact": "Across fifty clean single-task scenarios in the RoboTwin 2.0 simulator, the authors report 52.26% mean success against 46.4% for the strongest listed comparison model. On a physical two-arm platform they report 72.0% mean success under streaming inference. The RDK S600 processor required 30.35 milliseconds per inference, corresponding to 32.9 cycles per second; the smaller RDK S100 required 149.72 milliseconds, or 6.7 cycles per second.",
+      "limitations": "Both embedded measurements used sixteen-bit integer computation. A high inference frequency does not by itself specify the robot's complete control-loop delay, actuator response, sensing quality or safety envelope. Nor should the simulated fifty-task success percentage be combined with the physical two-arm success percentage: they come from different experiments. The results are reported by the authors in a preprint, without independent replication.",
+      "evidence_status": "Author-reported research preprint; not independently replicated.",
+      "published_at": "2026-10-30",
+      "organization": "Xianbao Hou and collaborators",
+      "source_ids": [
+        "src-edge-realtime-policy"
+      ],
+      "time_window": "7d",
+      "body": "Manipulation control becomes fragile when camera processing takes too long. By the time a model has predicted a movement, the object or gripper may already have shifted. Xianbao Hou and colleagues introduce RTPolicy, a visual control model designed for embedded computing hardware rather than a large remote server. Its aim is to shorten the delay between observing a scene and producing the next useful action while retaining information from several cameras.\n\nThe architecture first combines information from different camera views, then compresses the visual representation before generating robot actions. Its action generator uses flow matching, a learned procedure for transforming an initial action proposal into a useful movement sequence. Robot state and the stage of this generation process condition the prediction. The authors test asynchronous inference, where sensing and action execution do not simply wait for each other at every step.\n\nAcross fifty clean single-task scenarios in the RoboTwin 2.0 simulator, the authors report 52.26% mean success against 46.4% for the strongest listed comparison model. On a physical two-arm platform they report 72.0% mean success under streaming inference. The RDK S600 processor required 30.35 milliseconds per inference, corresponding to 32.9 cycles per second; the smaller RDK S100 required 149.72 milliseconds, or 6.7 cycles per second.\n\nBoth embedded measurements used sixteen-bit integer computation. A high inference frequency does not by itself specify the robot's complete control-loop delay, actuator response, sensing quality or safety envelope. Nor should the simulated fifty-task success percentage be combined with the physical two-arm success percentage: they come from different experiments. The results are reported by the authors in a preprint, without independent replication.\n\nThe processor comparison reveals a practical deployment boundary: changing from S600 to S100 increases inference time by almost fivefold. An engineer choosing a controller therefore needs the actual camera pipeline, task cycle and fallback behavior, not just a model's parameter count. A controller that can refresh a prediction every thirty milliseconds is useful only when the rest of the sensing and actuation chain can exploit that cadence.",
+      "image": null
+    },
+    {
+      "id": "uncommanded-robot-actions",
+      "title": "Six vision-language-action models move even when no task is given",
+      "summary": "Minsu Jang and colleagues tested six robot-control checkpoints with empty and invalid instructions in a simulator. Every checkpoint started moving on empty input, exposing a safety problem distinct from ordinary task success.",
+      "details": "A robot that can follow instructions must also be able to remain still when no valid instruction exists. Minsu Jang and colleagues tested this missing capability in vision-language-action policies, which translate visual observations and written instructions into robot movements. Their study holds the simulated starting scene constant while changing only the instruction, separating an unintended start from a failure to complete an assigned task.",
+      "technical_novelty": "The protocol covers empty instructions, neutral phrases, nonsense text, impossible requests and requests for the wrong task. Six model checkpoints were evaluated in a simulated manipulation benchmark. All six began moving in every episode when the instruction was empty. Five often completed a task that had not been specified. Two tested checkpoints distinguished which task to perform but still initiated movement when asked to do something infeasible.",
+      "engineering_impact": "The researchers compared three possible safeguards. Adding the phrase 'if no task is given do not move' to the prompt stopped none of the six checkpoints. A separate gate compared the first proposed movement under the given instruction with that under an empty instruction; it held the robot for non-task inputs in five of six checkpoints. Fine-tuning on examples of remaining still prevented task completion on non-task inputs, but did not reliably prevent movement itself.",
+      "limitations": "These are simulation results, not observations of six commercial robots operating among people. The distinction between initiating movement and completing a task is crucial: a robot can fail to accomplish anything yet still strike an object while starting. The authors also found that fine-tuning did not reliably suppress starts on infeasible instructions. A text-only instruction to be careful did not establish a dependable no-action condition.",
+      "evidence_status": "Author-reported research preprint; not independently replicated.",
+      "published_at": "2026-10-30",
+      "organization": "Minsu Jang and collaborators",
+      "source_ids": [
+        "src-uncommanded-robot-actions"
+      ],
+      "time_window": "7d",
+      "body": "A robot that can follow instructions must also be able to remain still when no valid instruction exists. Minsu Jang and colleagues tested this missing capability in vision-language-action policies, which translate visual observations and written instructions into robot movements. Their study holds the simulated starting scene constant while changing only the instruction, separating an unintended start from a failure to complete an assigned task.\n\nThe protocol covers empty instructions, neutral phrases, nonsense text, impossible requests and requests for the wrong task. Six model checkpoints were evaluated in a simulated manipulation benchmark. All six began moving in every episode when the instruction was empty. Five often completed a task that had not been specified. Two tested checkpoints distinguished which task to perform but still initiated movement when asked to do something infeasible.\n\nThe researchers compared three possible safeguards. Adding the phrase 'if no task is given do not move' to the prompt stopped none of the six checkpoints. A separate gate compared the first proposed movement under the given instruction with that under an empty instruction; it held the robot for non-task inputs in five of six checkpoints. Fine-tuning on examples of remaining still prevented task completion on non-task inputs, but did not reliably prevent movement itself.\n\nThese are simulation results, not observations of six commercial robots operating among people. The distinction between initiating movement and completing a task is crucial: a robot can fail to accomplish anything yet still strike an object while starting. The authors also found that fine-tuning did not reliably suppress starts on infeasible instructions. A text-only instruction to be careful did not establish a dependable no-action condition.\n\nThe engineering requirement is a separately testable permission-to-act mechanism. It should be evaluated with blank, contradictory and impossible requests before enabling motor commands, rather than inferred from high task-completion scores. The study's strongest simple gate still failed on one checkpoint, so an implementation would need a measured failure policy and a safe default state outside the learned controller.",
+      "image": null
+    },
+    {
+      "id": "robot-harness-automatic-design",
+      "title": "Automatic controller wrappers lift unseen-task success from 12.7% to 40.2%",
+      "summary": "Shengguang Wu and colleagues developed RoboArchitect, which revises the software around a fixed robot policy after examining failures. Reported success rose from 12.7% to 40.2% on unseen tasks without updating the policy's weights.",
+      "details": "A robot's learned policy is only one part of its control software. Other code decides when to ask the policy for an action, when to inspect a camera image and when to move the arm directly. Shengguang Wu and colleagues call this surrounding software a harness and introduce RoboArchitect, a coding-agent system that redesigns it automatically. The trained policy itself remains frozen, so improvements cannot be attributed to retraining its parameters.",
+      "technical_novelty": "The coding model watches execution traces, identifies apparent failure causes and changes the harness. Candidate designs are optimized on one group of episodes and evaluated on separate, held-out scenes and tasks. The harness can preserve useful information between attempts, such as a grasp depth that worked earlier. This persistent memory is part of the control procedure rather than an assertion that the underlying policy learned a new skill.",
+      "engineering_impact": "Across the authors' tested benchmarks and policies, average success on unseen scenes rose from 9.7% to 43.3%, a roughly 4.5-fold increase. On unseen tasks, success rose from 12.7% to 40.2%, about 3.2-fold. The generated code sometimes freed a jammed arm by lifting it away from an obstacle or changed its approach direction to reach an object horizontally. These are examples of harness behavior, not new robot hardware.",
+      "limitations": "Reported gains were especially large when a general policy encountered situations far from its training distribution. In some cases the modified wrapper outperformed a fine-tuned policy. The authors do not thereby establish that generated code is always safe or that a memory learned in one scene transfers reliably to every new workplace. The measurements remain results of the authors' experimental setups.",
+      "evidence_status": "Author-reported research preprint; not independently replicated.",
+      "published_at": "2026-10-30",
+      "organization": "Shengguang Wu and collaborators",
+      "source_ids": [
+        "src-robot-harness-automatic-design"
+      ],
+      "time_window": "7d",
+      "body": "A robot's learned policy is only one part of its control software. Other code decides when to ask the policy for an action, when to inspect a camera image and when to move the arm directly. Shengguang Wu and colleagues call this surrounding software a harness and introduce RoboArchitect, a coding-agent system that redesigns it automatically. The trained policy itself remains frozen, so improvements cannot be attributed to retraining its parameters.\n\nThe coding model watches execution traces, identifies apparent failure causes and changes the harness. Candidate designs are optimized on one group of episodes and evaluated on separate, held-out scenes and tasks. The harness can preserve useful information between attempts, such as a grasp depth that worked earlier. This persistent memory is part of the control procedure rather than an assertion that the underlying policy learned a new skill.\n\nAcross the authors' tested benchmarks and policies, average success on unseen scenes rose from 9.7% to 43.3%, a roughly 4.5-fold increase. On unseen tasks, success rose from 12.7% to 40.2%, about 3.2-fold. The generated code sometimes freed a jammed arm by lifting it away from an obstacle or changed its approach direction to reach an object horizontally. These are examples of harness behavior, not new robot hardware.\n\nReported gains were especially large when a general policy encountered situations far from its training distribution. In some cases the modified wrapper outperformed a fine-tuned policy. The authors do not thereby establish that generated code is always safe or that a memory learned in one scene transfers reliably to every new workplace. The measurements remain results of the authors' experimental setups.\n\nReproducibility now depends on more than a model checkpoint: the evolved code, its memory state, the training episodes used for revision and the untouched evaluation set all matter. A comparison that publishes only the policy weights cannot reproduce the reported behavior. The sharp rise on unseen tasks makes software orchestration a measurable experimental variable rather than a negligible implementation detail.",
+      "image": null
+    },
+    {
+      "id": "humanoid-fall-under-obstacles",
+      "title": "A humanoid learns to stand up beneath obstacles, succeeding in 95 of 150 real attempts",
+      "summary": "Yidan Lu and colleagues trained a fall-recovery controller that makes room before a humanoid tries to stand. On a Unitree G1, the controller recovered in 95 of 150 real attempts across seven obstacle scenes.",
+      "details": "Standing up after a fall is difficult when a robot has a table, shelf or other obstruction above it. Simply repeating a familiar recovery movement may push the body harder into the obstacle. Yidan Lu and colleagues developed a learning method that treats making space and establishing stable support as connected parts of one recovery problem. The controller learns when to escape the obstruction and when there is enough room to rise.",
+      "technical_novelty": "The method uses reinforcement learning, where simulated attempts are scored according to how well they meet a goal. It rewards gradual reduction of overlap between the robot and an overhead object without specifying a fixed escape path. Additional costs discourage stalled joints and unstable support. A learned motion prior encourages plausible movement. The final policy relies on proprioception, the robot's internal measurement of its body configuration, rather than an external camera.",
+      "engineering_impact": "In simulation, the reported recovery rate beneath plates that could only be lifted was 88.5%, compared with 18.9% without the geometric escape guidance. With free plates whose size, mass and position were varied, recovery reached 98.6%. The authors also deployed the learned controller on a Unitree G1 humanoid and tested seven real-world obstacle arrangements, including furniture and multiple objects not present during training.",
+      "limitations": "The real robot stood up successfully in 95 of 150 attempts, approximately 63.3%. This gap from the higher simulation rates is important: the simulated configurations and the real obstacle scenes are not identical tests. A successful stand also does not establish safe contact forces around a person or reliability across all floor surfaces and fall orientations. These are experimental results from the research team, not certified recovery behavior.",
+      "evidence_status": "Author-reported research preprint; not independently replicated.",
+      "published_at": "2026-10-30",
+      "organization": "Yidan Lu and collaborators",
+      "source_ids": [
+        "src-humanoid-fall-under-obstacles"
+      ],
+      "time_window": "7d",
+      "body": "Standing up after a fall is difficult when a robot has a table, shelf or other obstruction above it. Simply repeating a familiar recovery movement may push the body harder into the obstacle. Yidan Lu and colleagues developed a learning method that treats making space and establishing stable support as connected parts of one recovery problem. The controller learns when to escape the obstruction and when there is enough room to rise.\n\nThe method uses reinforcement learning, where simulated attempts are scored according to how well they meet a goal. It rewards gradual reduction of overlap between the robot and an overhead object without specifying a fixed escape path. Additional costs discourage stalled joints and unstable support. A learned motion prior encourages plausible movement. The final policy relies on proprioception, the robot's internal measurement of its body configuration, rather than an external camera.\n\nIn simulation, the reported recovery rate beneath plates that could only be lifted was 88.5%, compared with 18.9% without the geometric escape guidance. With free plates whose size, mass and position were varied, recovery reached 98.6%. The authors also deployed the learned controller on a Unitree G1 humanoid and tested seven real-world obstacle arrangements, including furniture and multiple objects not present during training.\n\nThe real robot stood up successfully in 95 of 150 attempts, approximately 63.3%. This gap from the higher simulation rates is important: the simulated configurations and the real obstacle scenes are not identical tests. A successful stand also does not establish safe contact forces around a person or reliability across all floor surfaces and fall orientations. These are experimental results from the research team, not certified recovery behavior.\n\nThe design is notable for avoiding a manually prescribed escape trajectory. Instead, the policy coordinates contact, clearance and rising under one objective. Yet the real-world count leaves 55 unsuccessful attempts, which a deployment plan would have to handle explicitly. In a crowded workplace, the consequence of a failed rise may depend more on what the robot contacts during those attempts than on its average success percentage.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Robot evaluation requires more than task success",
+    "summary": "A collision defect changed reported success, while blank instructions made all six tested controllers move.",
+    "implications": "Audit simulator physics and explicitly test permission to act before treating benchmark success as operational readiness."
+  },
+  "glossary": [
+    {
+      "term": "SimuGuard",
+      "definition": "An audit plugin that detects and replays suspicious simulated contacts."
+    },
+    {
+      "term": "collision artifact",
+      "definition": "A false motion or contact caused by numerical simulation rather than robot behavior."
+    },
+    {
+      "term": "physics engine",
+      "definition": "Software that calculates motion, forces and contacts in a simulated world."
+    },
+    {
+      "term": "PhysX",
+      "definition": "A physics simulation engine whose older versions are discussed in the collision audit."
+    },
+    {
+      "term": "RTPolicy",
+      "definition": "The authors' multi-camera, low-latency manipulation controller."
+    },
+    {
+      "term": "flow matching",
+      "definition": "A learned process for constructing action sequences by transforming an initial proposal."
+    },
+    {
+      "term": "asynchronous inference",
+      "definition": "Generating updated actions while sensing and execution continue on overlapping schedules."
+    },
+    {
+      "term": "vision-language-action policy",
+      "definition": "A model mapping visual input and language instructions to robot actions."
+    },
+    {
+      "term": "action gate",
+      "definition": "A separate rule or mechanism that decides whether a proposed movement may begin."
+    },
+    {
+      "term": "agent harness (RoboArchitect)",
+      "definition": "Control software around a trained policy that chooses tools, timing and actions. RoboArchitect is the studied automated implementation."
+    },
+    {
+      "term": "persistent memory",
+      "definition": "Information saved between attempts and reused by a controller."
+    },
+    {
+      "term": "proprioception",
+      "definition": "Internal sensing of a robot's joints and body state."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-simulator-contact-artifacts",
+      "url": "https://arxiv.org/abs/2610.41857",
+      "domain": "arxiv.org",
+      "organization": "Alex Zhou and collaborators",
+      "published_at": "2026-10-30",
+      "title": "When the Simulator Fails, Not the Policy: Auditing Contact Artifacts in Simulated Robot Benchmarks"
+    },
+    {
+      "id": "src-edge-realtime-policy",
+      "url": "https://arxiv.org/abs/2610.41625",
+      "domain": "arxiv.org",
+      "organization": "Xianbao Hou and collaborators",
+      "published_at": "2026-10-30",
+      "title": "RTPolicy: Real-Time (32.9 Hz) Multi-View Visuomotor Policy for Robotic Manipulation on Edge Devices"
+    },
+    {
+      "id": "src-uncommanded-robot-actions",
+      "url": "https://arxiv.org/abs/2610.41609",
+      "domain": "arxiv.org",
+      "organization": "Minsu Jang and collaborators",
+      "published_at": "2026-10-30",
+      "title": "VLA Policies Do Not Know When Not to Act: Unintended Task Execution and Start Suppression"
+    },
+    {
+      "id": "src-robot-harness-automatic-design",
+      "url": "https://arxiv.org/abs/2610.42141",
+      "domain": "arxiv.org",
+      "organization": "Shengguang Wu and collaborators",
+      "published_at": "2026-10-30",
+      "title": "RoboArchitect: Automating the Design of Robotic Agents with Persistent Memory"
+    },
+    {
+      "id": "src-humanoid-fall-under-obstacles",
+      "url": "https://arxiv.org/abs/2610.42097",
+      "domain": "arxiv.org",
+      "organization": "Yidan Lu and collaborators",
+      "published_at": "2026-10-30",
+      "title": "ROOF: Learning Humanoid Fall Recovery under Overhead Constraints"
+    }
+  ]
+}

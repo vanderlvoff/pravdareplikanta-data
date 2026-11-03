@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.4",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-02",
+  "issue_id": "daily-2026-11-02",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-02T21:23:03+09:00",
+  "title": "Pravda Replikanta — For young readers",
+  "lead": "Robotics research, from training and touch to evaluating skills and practical limitations.",
+  "news": [
+    {
+      "id": "robot-drawing-benchmark",
+      "title": "Drawing from instructions becomes a test of robot generalization",
+      "summary": "Researchers asked a robot arm to draw pictures described in words instead of repeating one fixed drawing. They compared five control systems on 282 tasks and tested one on a real robot arm.",
+      "details": "Imagine asking a robot to draw a house beside a tree. It might have practiced each shape separately, but arranging them together is a new challenge. Researchers created a test in which a robot arm receives a description and chooses which lines to draw. There can be several correct drawings and several ways to make them.",
+      "technical_novelty": "They prepared 28,200 practice examples inside a computer simulation, covering 282 drawing tasks. Five control systems were compared. The researchers looked at whether learning different examples helps the arm draw familiar objects in new arrangements. The test is not about whether a robot has artistic taste. It asks whether learned movements can be used for a different instruction.",
+      "engineering_impact": "One successful test does not mean the machine will always succeed.",
+      "limitations": "One trained system was also tried on a real robot arm. It continued drawing while responding to a person's intervention. But drawing is a controlled experiment. It does not show that the same arm can safely wash dishes, sort glass or handle every object in a home.",
+      "evidence_status": "Research preprint; experimental results are reported by the authors.",
+      "published_at": "2026-10-29",
+      "organization": "Xiangyu Xu and collaborators",
+      "source_ids": [
+        "src-robot-drawing-benchmark"
+      ],
+      "time_window": "7d",
+      "body": "Imagine asking a robot to draw a house beside a tree. It might have practiced each shape separately, but arranging them together is a new challenge. Researchers created a test in which a robot arm receives a description and chooses which lines to draw. There can be several correct drawings and several ways to make them.\n\nThey prepared 28,200 practice examples inside a computer simulation, covering 282 drawing tasks. Five control systems were compared. The researchers looked at whether learning different examples helps the arm draw familiar objects in new arrangements. The test is not about whether a robot has artistic taste. It asks whether learned movements can be used for a different instruction.\n\nOne trained system was also tried on a real robot arm. It continued drawing while responding to a person's intervention. But drawing is a controlled experiment. It does not show that the same arm can safely wash dishes, sort glass or handle every object in a home.",
+      "image": null
+    },
+    {
+      "id": "physical-belief-map",
+      "title": "A robot map estimates how doors and drawers respond to force",
+      "summary": "A researcher made a map that remembers how a door or drawer moves when pulled. In tests across 18 homes, it identified moving parts more accurately than a picture-only method.",
+      "details": "A room map can show where a door is, but a picture does not always reveal which way it opens. A researcher developed a map that remembers what happened when a robot carefully pulled a handle. That information may help predict how similar doors or drawers will move. When there is too little evidence, the system can wait instead of declaring an action safe.",
+      "technical_novelty": "The method was tested on doors and drawers in 18 homes. It correctly identified the type of moving joint in 86% of held-out trials. A method using only one picture achieved 48%. Predicting a possible movement took about 13 milliseconds, far less than a second. A quick answer, however, is not necessarily a correct one.",
+      "engineering_impact": "One successful test does not mean the machine will always succeed.",
+      "limitations": "Imagine pulling a door toward you and then trying to push it in another direction. The first measurement does not tell you everything about the second movement. This map may help a robot choose actions more carefully, but it cannot make every unfamiliar door safe.",
+      "evidence_status": "Research preprint; experimental results are reported by the authors.",
+      "published_at": "2026-10-29",
+      "organization": "Dibyendu Ghosh",
+      "source_ids": [
+        "src-physical-belief-map"
+      ],
+      "time_window": "7d",
+      "body": "A room map can show where a door is, but a picture does not always reveal which way it opens. A researcher developed a map that remembers what happened when a robot carefully pulled a handle. That information may help predict how similar doors or drawers will move. When there is too little evidence, the system can wait instead of declaring an action safe.\n\nThe method was tested on doors and drawers in 18 homes. It correctly identified the type of moving joint in 86% of held-out trials. A method using only one picture achieved 48%. Predicting a possible movement took about 13 milliseconds, far less than a second. A quick answer, however, is not necessarily a correct one.\n\nImagine pulling a door toward you and then trying to push it in another direction. The first measurement does not tell you everything about the second movement. This map may help a robot choose actions more carefully, but it cannot make every unfamiliar door safe.",
+      "image": null
+    },
+    {
+      "id": "touchbridge-human-demonstrations",
+      "title": "Human fingertip contact becomes training data for robot hands",
+      "summary": "Researchers recorded how human fingers move and touch objects to teach a robot hand. In four tasks, the trained robot succeeded in roughly seven attempts out of ten.",
+      "details": "Try holding a smooth cup between two fingers. How your fingers touch the cup matters as much as how your hand moves. Robot fingers can have a different shape, so copying human movements directly may not work. Researchers built devices that record human finger movements and points of contact, then turn those recordings into training examples for a robot hand.",
+      "technical_novelty": "The human examples were collected seven times faster than examples made by controlling a robot directly. After training, the robot succeeded on average in 72.5% of attempts across four tasks. Training on the same number of robot-recorded examples gave 77.5%. So the faster collection method was slightly less successful in these tests.",
+      "engineering_impact": "One successful test does not mean the machine will always succeed.",
+      "limitations": "This could make it easier to teach robots to hold objects, but it does not mean the hand can grasp everything. A wet cup and a dry cup may slip differently. New materials and finger designs still need to be tested.",
+      "evidence_status": "Research preprint; experimental results are reported by the authors.",
+      "published_at": "2026-10-29",
+      "organization": "Haozhe Zhang and collaborators",
+      "source_ids": [
+        "src-touchbridge-human-demonstrations"
+      ],
+      "time_window": "7d",
+      "body": "Try holding a smooth cup between two fingers. How your fingers touch the cup matters as much as how your hand moves. Robot fingers can have a different shape, so copying human movements directly may not work. Researchers built devices that record human finger movements and points of contact, then turn those recordings into training examples for a robot hand.\n\nThe human examples were collected seven times faster than examples made by controlling a robot directly. After training, the robot succeeded on average in 72.5% of attempts across four tasks. Training on the same number of robot-recorded examples gave 77.5%. So the faster collection method was slightly less successful in these tests.\n\nThis could make it easier to teach robots to hold objects, but it does not mean the hand can grasp everything. A wet cup and a dry cup may slip differently. New materials and finger designs still need to be tested.",
+      "image": null
+    },
+    {
+      "id": "roboatom-action-labels",
+      "title": "Millions of labeled short actions expose the structure of long robot tasks",
+      "summary": "Researchers divided long robot jobs into short, named actions. This helps machines learn individual steps instead of treating a whole job as one movement.",
+      "details": "A request such as 'clear the table' contains several smaller actions. First the robot must find an object, then pick it up, move it and put it down. Researchers proposed recording not only the name of the whole job but also when each short step begins and ends. This gives a learning system more information about how long tasks are made from smaller movements.",
+      "technical_novelty": "The researchers labeled 1.45 million movement recordings. They marked 6.88 million short segments, representing 16,882.1 hours of recordings. Some labels were checked by people, while others were copied to similar repeated sequences. The authors report that these labels helped robots complete some long tasks more successfully.",
+      "engineering_impact": "One successful test does not mean the machine will always succeed.",
+      "limitations": "The boundaries between steps must be accurate. If a robot decides to release an object too early, it may fall. The researchers have said they plan to release the complete data and tools, but that release should not be treated as already completed.",
+      "evidence_status": "Research preprint; experimental results are reported by the authors.",
+      "published_at": "2026-10-29",
+      "organization": "Xueyuan Wei and collaborators",
+      "source_ids": [
+        "src-roboatom-action-labels"
+      ],
+      "time_window": "7d",
+      "body": "A request such as 'clear the table' contains several smaller actions. First the robot must find an object, then pick it up, move it and put it down. Researchers proposed recording not only the name of the whole job but also when each short step begins and ends. This gives a learning system more information about how long tasks are made from smaller movements.\n\nThe researchers labeled 1.45 million movement recordings. They marked 6.88 million short segments, representing 16,882.1 hours of recordings. Some labels were checked by people, while others were copied to similar repeated sequences. The authors report that these labels helped robots complete some long tasks more successfully.\n\nThe boundaries between steps must be accurate. If a robot decides to release an object too early, it may fall. The researchers have said they plan to release the complete data and tools, but that release should not be treated as already completed.",
+      "image": null
+    },
+    {
+      "id": "acrossdex-bimanual-hands",
+      "title": "One learning pipeline adapts coordinated manipulation to different robot hands",
+      "summary": "Researchers taught two different designs of robot hands to handle objects. Turning an object worked well, but opening a lid and putting it back was much harder.",
+      "details": "Imagine two robot hands with different numbers of finger joints. Both need to hold objects, but their motors require different commands. Researchers tried using recordings of human hands to teach two designs of robot hands similar movements. They kept part of the learning system for wrist movement and adjusted finger control for each design.",
+      "technical_novelty": "Then they tested several tasks. In one test, the robot had to turn an object: the first hand design succeeded in 100% of attempts and the second in 93.3%. But opening a lid and putting it back succeeded in only 40.6% of attempts in another test. These numbers are not contradictory. Different tasks require different ways of coordinating fingers and contact.",
+      "engineering_impact": "One successful test does not mean the machine will always succeed.",
+      "limitations": "The robot also needs to look at the object again and adjust its plan if something moves. Changing commands too suddenly can cause problems. Success in one task does not mean a robot hand can do every task.",
+      "evidence_status": "Research preprint; experimental results are reported by the authors.",
+      "published_at": "2026-10-29",
+      "organization": "Xiaoyu Yang and Nan Wu",
+      "source_ids": [
+        "src-acrossdex-bimanual-hands"
+      ],
+      "time_window": "7d",
+      "body": "Imagine two robot hands with different numbers of finger joints. Both need to hold objects, but their motors require different commands. Researchers tried using recordings of human hands to teach two designs of robot hands similar movements. They kept part of the learning system for wrist movement and adjusted finger control for each design.\n\nThen they tested several tasks. In one test, the robot had to turn an object: the first hand design succeeded in 100% of attempts and the second in 93.3%. But opening a lid and putting it back succeeded in only 40.6% of attempts in another test. These numbers are not contradictory. Different tasks require different ways of coordinating fingers and contact.\n\nThe robot also needs to look at the object again and adjust its plan if something moves. Changing commands too suddenly can cause problems. Success in one task does not mean a robot hand can do every task.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Testable skills matter more than striking demonstrations",
+    "summary": "New research emphasizes structured data, measurements and testable results.",
+    "implications": "The next step is independent testing on different robots and real tasks."
+  },
+  "glossary": [
+    {
+      "term": "test task",
+      "definition": "A challenge used to check a machine's skill."
+    },
+    {
+      "term": "training example",
+      "definition": "A recorded action used for learning."
+    },
+    {
+      "term": "touch",
+      "definition": "Contact between a finger and an object."
+    },
+    {
+      "term": "action sequence",
+      "definition": "Several short steps making up a job."
+    },
+    {
+      "term": "prediction",
+      "definition": "An estimate of what may happen next."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-robot-drawing-benchmark",
+      "url": "https://arxiv.org/abs/2610.40532",
+      "domain": "arxiv.org",
+      "organization": "Xiangyu Xu and collaborators",
+      "published_at": "2026-10-29",
+      "title": "BURGER: Benchmarking and Understanding Robotic Generalization via Embodied Drawing"
+    },
+    {
+      "id": "src-physical-belief-map",
+      "url": "https://arxiv.org/abs/2610.40539",
+      "domain": "arxiv.org",
+      "organization": "Dibyendu Ghosh",
+      "published_at": "2026-10-29",
+      "title": "PhysVLMM: Interaction-Conditioned Physical Belief Maps for Articulated Objects in Robot Scene Maps"
+    },
+    {
+      "id": "src-touchbridge-human-demonstrations",
+      "url": "https://arxiv.org/abs/2610.40349",
+      "domain": "arxiv.org",
+      "organization": "Haozhe Zhang and collaborators",
+      "published_at": "2026-10-29",
+      "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation"
+    },
+    {
+      "id": "src-roboatom-action-labels",
+      "url": "https://arxiv.org/abs/2610.40207",
+      "domain": "arxiv.org",
+      "organization": "Xueyuan Wei and collaborators",
+      "published_at": "2026-10-29",
+      "title": "RoboAtom: Large-scale Atomic-Action Supervision for Robot Learning"
+    },
+    {
+      "id": "src-acrossdex-bimanual-hands",
+      "url": "https://arxiv.org/abs/2610.40210",
+      "domain": "arxiv.org",
+      "organization": "Xiaoyu Yang and Nan Wu",
+      "published_at": "2026-10-29",
+      "title": "AcrossDEX 1.0: From Human Motion Pretraining to Bimanual Dexterous Manipulation across Hand Embodiments"
+    }
+  ]
+}
