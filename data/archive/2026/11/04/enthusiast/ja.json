@@ -146,6 +146,14 @@
     {
       "term": "自動的な制御",
       "definition": "人が動きを一つずつ決めずに、機械が行動を選ぶこと。"
+    },
+    {
+      "term": "CoreXY",
+      "definition": "二方向の動きを組み合わせる駆動方式。"
+    },
+    {
+      "term": "NVIDIA Isaac Lab",
+      "definition": "ロボットの動きを模擬環境で試すためのソフトウェア。"
     }
   ],
   "sources": [
