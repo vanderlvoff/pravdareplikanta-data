@@ -2,196 +2,209 @@
   "schema_version": "1.4",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-03",
-  "issue_id": "daily-2026-11-03",
+  "issue_date": "2026-11-04",
+  "issue_id": "daily-2026-11-04",
   "edition": "engineer",
   "language": "en",
-  "generated_at": "2026-11-03T04:11:17+09:00",
-  "title": "Robotics: data, contact and safety",
-  "lead": "Five studies examine how action representations, video, contact and risk checks alter robot performance.",
+  "generated_at": "2026-11-03T23:06:43.997Z",
+  "title": "Replicant Data — November 4, 2026",
+  "lead": "Research on physical calibration, robot learning, multi-machine planning and communication standards.",
   "news": [
     {
-      "id": "learning-from-task-videos",
-      "title": "WorldBridge uses unlabelled task videos to reach 55.90% success",
-      "summary": "Jun Cen and colleagues introduced WorldBridge, connecting video prediction with robot actions. On unfamiliar RoboTwin 2.0 tasks, videos without action labels raised success from 25.07% to 55.90%.",
-      "details": "Imagine watching someone put objects on shelves without being told which movements to make. Learning from that video alone would be difficult for a robot too. A research team led by Jun Cen investigated whether videos could help robots perform tasks that were missing from their usual training examples.",
-      "technical_novelty": "The researchers used learning from video. One part of the system predicts what the next moments of an activity might look like. Another part chooses movements that could produce those pictures. This is not the same as copying a person directly. A robot has different hands, proportions and limits, so its own movements must still be calculated. WorldBridge combines separate video-prediction and action-generation experts, connected by structured attention and trained using joint flow matching. Its visual memory operates on two temporal scales. The authors distinguish video-only coverage of unfamiliar tasks from adding one action-labelled demonstration per task. The latter raises success to 70.70%, but requires a different supervision budget. Treating these two results as though they used identical training data would obscure the contribution of the action labels.",
-      "engineering_impact": "In a computer test of unfamiliar tasks, the starting system succeeded 25.07% of the time. Adding videos of those tasks, without recorded movement commands, increased success to 55.90%. Providing just one example with commands for each new task raised it to 70.70%. Those numbers describe a particular test collection, not every robot in every room.",
-      "limitations": "The reported 96.23% on the full RoboTwin 2.0 setting belongs to a different protocol from the unfamiliar-task experiment. Transfer to another gripper, camera arrangement or physical robot is not established by these figures. A reproducible comparison must specify exactly which task videos and action labels were available.",
-      "evidence_status": "Results are reported by the study authors; independent replication has not been established.",
-      "published_at": "2026-10-29",
-      "organization": "Jun Cen and collaborators",
+      "id": "cue-physical-calibration",
+      "title": "A robot calibrates a physical simulator by choosing its own experiments",
+      "summary": "Researchers introduced CUE, which tests physical interactions and updates the physics in a simulated scene. In billiards experiments they report a 72 percent reduction in ball-position prediction error across 25 simulated settings with hidden physical properties.",
+      "details": "Given a high-level instruction, CUE observes the surroundings, proposes parameters for its physical simulation and predicts how objects will move. It then compares the prediction with the observed result and selects the next experiment where the model is least accurate. This is active calibration: the machine takes measurements through action instead of fitting everything from an existing fixed dataset. The paper describes a real-to-simulation-to-real loop in which the system can proceed without a human manually resetting the scene after each test.",
+      "technical_novelty": "Given a high-level instruction, CUE observes the surroundings, proposes parameters for its physical simulation and predicts how objects will move. It then compares the prediction with the observed result and selects the next experiment where the model is least accurate. This is active calibration: the machine takes measurements through action instead of fitting everything from an existing fixed dataset. The paper describes a real-to-simulation-to-real loop in which the system can proceed without a human manually resetting the scene after each test.",
+      "engineering_impact": "The distinctive component is experiment selection driven by discrepancy between predicted and observed dynamics, rather than parameter fitting on a fixed collection of trajectories. A meaningful reproduction would separate perception error, contact modeling and physical parameter identification. Billiard collisions provide an observable benchmark, but only a narrow range of friction and restitution behavior.",
+      "limitations": "Across 25 simulated hidden-physics conditions, the authors report reducing held-out billiard-ball position error by 72 percent against the strongest baseline. They also describe an experiment on a real pool table. This figure concerns prediction error for the tested dynamics; it is not a success rate for arbitrary robotic work. The paper does not establish an equivalent improvement for cloth, irregular packaging or complicated household objects. The evidence is an author-reported experimental study rather than independent replication.",
+      "evidence_status": "Evidence: results and limitations are reported by the study authors; independent replication has not been established.",
+      "published_at": "2026-11-02",
+      "organization": "Xilun Zhang and collaborators",
       "source_ids": [
-        "src-learning-from-task-videos"
+        "src-cue"
       ],
-      "time_window": "7d",
-      "body": "Imagine watching someone put objects on shelves without being told which movements to make. Learning from that video alone would be difficult for a robot too. A research team led by Jun Cen investigated whether videos could help robots perform tasks that were missing from their usual training examples.\n\nThe researchers used learning from video. One part of the system predicts what the next moments of an activity might look like. Another part chooses movements that could produce those pictures. This is not the same as copying a person directly. A robot has different hands, proportions and limits, so its own movements must still be calculated.\n\nIn a computer test of unfamiliar tasks, the starting system succeeded 25.07% of the time. Adding videos of those tasks, without recorded movement commands, increased success to 55.90%. Providing just one example with commands for each new task raised it to 70.70%. Those numbers describe a particular test collection, not every robot in every room.\n\nWorldBridge combines separate video-prediction and action-generation experts, connected by structured attention and trained using joint flow matching. Its visual memory operates on two temporal scales. The authors distinguish video-only coverage of unfamiliar tasks from adding one action-labelled demonstration per task. The latter raises success to 70.70%, but requires a different supervision budget. Treating these two results as though they used identical training data would obscure the contribution of the action labels.\n\nThe experiment offers a reason to collect useful videos as well as demonstrations with movement commands. It does not mean a household robot can watch one clip and immediately cook dinner or assemble furniture. The researchers tested specific tasks under controlled conditions.\n\nThe reported 96.23% on the full RoboTwin 2.0 setting belongs to a different protocol from the unfamiliar-task experiment. Transfer to another gripper, camera arrangement or physical robot is not established by these figures. A reproducible comparison must specify exactly which task videos and action labels were available.",
+      "time_window": "72h",
+      "body": "A picture of a pool table shows where the balls are but not how quickly they will slow down on the felt. A robot planning its next move needs to estimate friction and how much speed remains after a collision. Researchers led by Xilun Zhang and Marco Pavone presented CUE on November 2, short for Calibration Using Exploration. Rather than merely watch recordings, the system chooses real interactions that reveal physical properties missing from its virtual representation of the scene.\n\nGiven a high-level instruction, CUE observes the surroundings, proposes parameters for its physical simulation and predicts how objects will move. It then compares the prediction with the observed result and selects the next experiment where the model is least accurate. This is active calibration: the machine takes measurements through action instead of fitting everything from an existing fixed dataset. The paper describes a real-to-simulation-to-real loop in which the system can proceed without a human manually resetting the scene after each test.\n\nAcross 25 simulated hidden-physics conditions, the authors report reducing held-out billiard-ball position error by 72 percent against the strongest baseline. They also describe an experiment on a real pool table. This figure concerns prediction error for the tested dynamics; it is not a success rate for arbitrary robotic work. The paper does not establish an equivalent improvement for cloth, irregular packaging or complicated household objects. The evidence is an author-reported experimental study rather than independent replication.\n\nThe distinctive component is experiment selection driven by discrepancy between predicted and observed dynamics, rather than parameter fitting on a fixed collection of trajectories. A meaningful reproduction would separate perception error, contact modeling and physical parameter identification. Billiard collisions provide an observable benchmark, but only a narrow range of friction and restitution behavior.",
       "image": null
     },
     {
-      "id": "real-hand-connector-tests",
-      "title": "281 policies tested on real connector insertion",
-      "summary": "Ammar Abbas and colleagues compared 281 robot-hand policies in approximately 1,700 real RJ45 connector insertion attempts. Observation and action representations often mattered more than routine optimizer choices.",
-      "details": "Putting a small network connector into its socket is harder than it looks. The plug must face the right way, line up and enter without slipping. A team led by Ammar Abbas compared ways to teach a five-fingered robot hand this task. They carried out roughly 1,700 attempts on real equipment, not just on a screen.",
-      "technical_novelty": "The team tested 281 versions of control software from seven groups. They changed what information the program received from cameras and how it described finger movements. This is called a data representation: the same task can be described using different pictures and numbers. Sometimes that choice mattered more than ordinary adjustments to the training process. For point-cloud policies, cropping the relevant region, using robot-base coordinates and normalizing features improved success by 70 to 100 percentage points in individual controlled comparisons. For a vision-language-action policy, absolute rather than relative actions improved insertion success by up to 70 points. These figures come from different configurations and cannot be added together or generalized to every architecture. Seven policy families were included, exposing how representation choices interact with model design.",
-      "engineering_impact": "The researchers also examined 67 scores that could be calculated without performing the insertion. Only five, related to how smooth and direct the predicted motion was, closely matched real success. Even those worked only within one group of programs. A movement that looks excellent in a computer test may still miss the actual socket.",
-      "limitations": "Only five of 67 offline measures reliably correlated with real insertion success, and only within one policy family. Correlations between minus 0.70 and minus 0.80 for predicted motion smoothness and directness do not turn these scores into substitutes for hardware trials. Selecting a controller from validation loss alone is particularly weakly supported here.",
-      "evidence_status": "Results are reported by the study authors; independent replication has not been established.",
-      "published_at": "2026-10-29",
-      "organization": "Ammar N. Abbas and collaborators",
+      "id": "klasktron-open-testbed",
+      "title": "A sub-$2,500 open tabletop arena for competing robots",
+      "summary": "ETH Zurich researchers released KlaskTron, a tabletop system in which two robotic mechanisms learn competitive play. The authors estimate hardware at under 2,500 US dollars and report transferring simulated control to the physical apparatus without additional training.",
+      "details": "Both mechanisms use CoreXY gantry arrangements and brushless motors. The team built a digital twin in NVIDIA Isaac Lab, a simulation environment used in robot development, and trained a model of how the motors respond to commands. They report transferring the resulting control policy from simulation to the real tabletop setup without further on-hardware training. Hardware drawings, a bill of materials, assembly instructions, control code and experiment configurations are publicly available. These resources make it possible for other laboratories to scrutinize more than a demonstration video.",
+      "technical_novelty": "Both mechanisms use CoreXY gantry arrangements and brushless motors. The team built a digital twin in NVIDIA Isaac Lab, a simulation environment used in robot development, and trained a model of how the motors respond to commands. They report transferring the resulting control policy from simulation to the real tabletop setup without further on-hardware training. Hardware drawings, a bill of materials, assembly instructions, control code and experiment configurations are publicly available. These resources make it possible for other laboratories to scrutinize more than a demonstration video.",
+      "engineering_impact": "Reproducibility rests on unusually concrete artifacts: mechanical drawings, parts lists, an actuator model and the reinforcement-learning code. Testing another build should record controller latency, backlash and calibration drift rather than assume the systems are identical. The competitive setup provides continually changing conditions for examining policy stability.",
+      "limitations": "Competition differs from following a fixed movement script because the opponent changes the conditions at every turn. The authors observed behaviors responding to an adversary, but the paper does not guarantee stable play on any independently assembled copy. Precise construction and actuator calibration still matter. Nor does success on a tabletop establish that large humanoids can coordinate safely among people. The practical research contribution is a relatively affordable physical platform on which claims about policy transfer and interaction can be tested.",
+      "evidence_status": "Evidence: results and limitations are reported by the study authors; independent replication has not been established.",
+      "published_at": "2026-11-02",
+      "organization": "ETH Zurich",
       "source_ids": [
-        "src-real-hand-connector-tests"
+        "src-klask"
       ],
-      "time_window": "7d",
-      "body": "Putting a small network connector into its socket is harder than it looks. The plug must face the right way, line up and enter without slipping. A team led by Ammar Abbas compared ways to teach a five-fingered robot hand this task. They carried out roughly 1,700 attempts on real equipment, not just on a screen.\n\nThe team tested 281 versions of control software from seven groups. They changed what information the program received from cameras and how it described finger movements. This is called a data representation: the same task can be described using different pictures and numbers. Sometimes that choice mattered more than ordinary adjustments to the training process.\n\nThe researchers also examined 67 scores that could be calculated without performing the insertion. Only five, related to how smooth and direct the predicted motion was, closely matched real success. Even those worked only within one group of programs. A movement that looks excellent in a computer test may still miss the actual socket.\n\nFor point-cloud policies, cropping the relevant region, using robot-base coordinates and normalizing features improved success by 70 to 100 percentage points in individual controlled comparisons. For a vision-language-action policy, absolute rather than relative actions improved insertion success by up to 70 points. These figures come from different configurations and cannot be added together or generalized to every architecture. Seven policy families were included, exposing how representation choices interact with model design.\n\nThe findings concern particular hands, connectors and test conditions. They do not establish the best program for every object. They do explain why a robot must be tested with the things it will really handle.\n\nOnly five of 67 offline measures reliably correlated with real insertion success, and only within one policy family. Correlations between minus 0.70 and minus 0.80 for predicted motion smoothness and directness do not turn these scores into substitutes for hardware trials. Selecting a controller from validation loss alone is particularly weakly supported here.",
+      "time_window": "72h",
+      "body": "Studying how two learning machines respond to each other is difficult when experiments depend on expensive full-size robots. ETH Zurich researchers proposed a smaller alternative: KlaskTron, a tabletop testbed inspired by the game KLASK. Two controlled mechanisms compete across a board and must respond to the other side's changing actions. The paper appeared on November 2, with the researchers estimating component cost below 2,500 US dollars. The system is primarily a repeatable environment for experiments in multi-agent robot learning, not a product announcement for a commercial arcade game.\n\nBoth mechanisms use CoreXY gantry arrangements and brushless motors. The team built a digital twin in NVIDIA Isaac Lab, a simulation environment used in robot development, and trained a model of how the motors respond to commands. They report transferring the resulting control policy from simulation to the real tabletop setup without further on-hardware training. Hardware drawings, a bill of materials, assembly instructions, control code and experiment configurations are publicly available. These resources make it possible for other laboratories to scrutinize more than a demonstration video.\n\nCompetition differs from following a fixed movement script because the opponent changes the conditions at every turn. The authors observed behaviors responding to an adversary, but the paper does not guarantee stable play on any independently assembled copy. Precise construction and actuator calibration still matter. Nor does success on a tabletop establish that large humanoids can coordinate safely among people. The practical research contribution is a relatively affordable physical platform on which claims about policy transfer and interaction can be tested.\n\nReproducibility rests on unusually concrete artifacts: mechanical drawings, parts lists, an actuator model and the reinforcement-learning code. Testing another build should record controller latency, backlash and calibration drift rather than assume the systems are identical. The competitive setup provides continually changing conditions for examining policy stability.",
       "image": null
     },
     {
-      "id": "fingertip-contact-learning",
-      "title": "Contact surfaces replace literal copying of finger joint angles",
-      "summary": "Zhixuan Xu and colleagues introduced Contact Imitation Interface, which transfers human demonstrations through fingertip contact geometry. Across six hand-task pairs, mean final-stage success improved by at least 50 percentage points.",
-      "details": "When you pick up a glass, bending your fingers is only part of the job. They must touch the glass in useful places or it may slip. A team led by Zhixuan Xu studied how to teach robot hands using the changing places where fingers contact an object. Their system includes pictures from cameras near the fingertips and information about contact surfaces.",
-      "technical_novelty": "One part records where human fingers touched an object. Another helps a robot choose contact points and wrist movements of its own. This matters because a human hand and a robot hand can be shaped quite differently. Simply copying the angles of human finger joints may not let a robot hold the same thing. The architecture separates demonstration capture from policy learning. Its demonstration interface combines shared contact geometry with colour fingertip views, aligning contact before retargeting the pose. The learning interface predicts relative contact-surface trajectories and then coordinates wrist and finger commands through a lower-level controller. The team has published software and hardware designs, allowing others to attempt experiments with different robotic hands. This is a contact-based representation rather than a claim that human and robot joint angles are interchangeable.",
-      "engineering_impact": "The researchers compared their approach with other methods on six combinations of robot hands and tasks. They report that average success in the final stage improved by at least 50 percentage points. A percentage point measures the difference between two success rates. For example, moving from 20% to 70% is an increase of 50 points.",
-      "limitations": "The at-least-50-point gain concerns the final stage of six hand-task combinations, not every complete manipulation sequence. Different materials, calibration errors and initial approach motions require further tests. The quantity preserved is the pattern of physical contact, not the visual resemblance of finger poses.",
-      "evidence_status": "Results are reported by the study authors; independent replication has not been established.",
-      "published_at": "2026-10-29",
-      "organization": "Zhixuan Xu and collaborators",
+      "id": "warehouse-code-agent-planner",
+      "title": "Coding agents boost simulated warehouse throughput by 22–60 percent",
+      "summary": "Researchers at the University of Southern California, the University of California at Irvine and Symbotic let language-model agents modify a multi-robot warehouse planner. Six simulation campaigns increased throughput by 22 to 60 percent, although some changes raised planning computation more than one hundredfold.",
+      "details": "The original planner assigned work to multiple machines while choosing routes that avoid conflicts. Coding agents proposed program changes, simulated the resulting traffic and measured whether more jobs could be completed. Each improvement was preserved as a sequence of scored source-code patches rather than a single opaque model output. Six independent tuning campaigns were evaluated, including tests with different starting conditions, fleet sizes and warehouse configurations. That makes it possible to inspect what changed, but it does not mean every change will work in a new industrial environment.",
+      "technical_novelty": "The original planner assigned work to multiple machines while choosing routes that avoid conflicts. Coding agents proposed program changes, simulated the resulting traffic and measured whether more jobs could be completed. Each improvement was preserved as a sequence of scored source-code patches rather than a single opaque model output. Six independent tuning campaigns were evaluated, including tests with different starting conditions, fleet sizes and warehouse configurations. That makes it possible to inspect what changed, but it does not mean every change will work in a new industrial environment.",
+      "engineering_impact": "The agents produced a chain of scored, reviewable commits rather than a single untraceable rewrite. Reproduction would require matching random seeds, checking conflict resolution and profiling processor use as carefully as throughput. A policy that delivers the highest simulated flow may be unusable if its computation exceeds the control loop's timing budget.",
+      "limitations": "Across the six campaigns, simulated throughput improved by 22 to 60 percent. Some gains survived a different layout or larger fleet but shrank for smaller fleets and nearly disappeared with an outbound-heavy workload. Final modifications ran to roughly 700–2,400 lines of code, while some versions multiplied planning compute by more than one hundred. These figures do not measure output from a live customer warehouse and do not include the cost of additional hardware. Successful optimization of one benchmark is not a substitute for safety review and software testing.",
+      "evidence_status": "Evidence: results and limitations are reported by the study authors; independent replication has not been established.",
+      "published_at": "2026-11-02",
+      "organization": "University of Southern California, UC Irvine and Symbotic",
       "source_ids": [
-        "src-fingertip-contact-learning"
+        "src-autumn"
       ],
-      "time_window": "7d",
-      "body": "When you pick up a glass, bending your fingers is only part of the job. They must touch the glass in useful places or it may slip. A team led by Zhixuan Xu studied how to teach robot hands using the changing places where fingers contact an object. Their system includes pictures from cameras near the fingertips and information about contact surfaces.\n\nOne part records where human fingers touched an object. Another helps a robot choose contact points and wrist movements of its own. This matters because a human hand and a robot hand can be shaped quite differently. Simply copying the angles of human finger joints may not let a robot hold the same thing.\n\nThe researchers compared their approach with other methods on six combinations of robot hands and tasks. They report that average success in the final stage improved by at least 50 percentage points. A percentage point measures the difference between two success rates. For example, moving from 20% to 70% is an increase of 50 points.\n\nThe architecture separates demonstration capture from policy learning. Its demonstration interface combines shared contact geometry with colour fingertip views, aligning contact before retargeting the pose. The learning interface predicts relative contact-surface trajectories and then coordinates wrist and finger commands through a lower-level controller. The team has published software and hardware designs, allowing others to attempt experiments with different robotic hands. This is a contact-based representation rather than a claim that human and robot joint angles are interchangeable.\n\nThe tests used particular hands and tasks. They do not prove that a robot can now handle every cup or tool. But the experiment helps explain why similar-looking finger movements can produce very different results when the fingers touch an object differently.\n\nThe at-least-50-point gain concerns the final stage of six hand-task combinations, not every complete manipulation sequence. Different materials, calibration errors and initial approach motions require further tests. The quantity preserved is the pattern of physical contact, not the visual resemblance of finger poses.",
+      "time_window": "72h",
+      "body": "Even when warehouse robots know which jobs they should do, they can block one another in narrow corridors or at crowded crossings. Researchers from the University of Southern California, the University of California at Irvine and Symbotic investigated an unusual use of language models: improving the source code of an existing warehouse traffic planner instead of replacing the robots' controllers. Their paper, Late Autumn, appeared on November 2. The experiments used a simulated automated warehouse modeled on an existing facility, with attention to problems that arise from its particular layout.\n\nThe original planner assigned work to multiple machines while choosing routes that avoid conflicts. Coding agents proposed program changes, simulated the resulting traffic and measured whether more jobs could be completed. Each improvement was preserved as a sequence of scored source-code patches rather than a single opaque model output. Six independent tuning campaigns were evaluated, including tests with different starting conditions, fleet sizes and warehouse configurations. That makes it possible to inspect what changed, but it does not mean every change will work in a new industrial environment.\n\nAcross the six campaigns, simulated throughput improved by 22 to 60 percent. Some gains survived a different layout or larger fleet but shrank for smaller fleets and nearly disappeared with an outbound-heavy workload. Final modifications ran to roughly 700–2,400 lines of code, while some versions multiplied planning compute by more than one hundred. These figures do not measure output from a live customer warehouse and do not include the cost of additional hardware. Successful optimization of one benchmark is not a substitute for safety review and software testing.\n\nThe agents produced a chain of scored, reviewable commits rather than a single untraceable rewrite. Reproduction would require matching random seeds, checking conflict resolution and profiling processor use as carefully as throughput. A policy that delivers the highest simulated flow may be unusable if its computation exceeds the control loop's timing budget.",
       "image": null
     },
     {
-      "id": "safer-person-following",
-      "title": "TRACE reduces person-tracking collisions with selective intervention",
-      "summary": "Mingyang Lyu and colleagues introduced TRACE, an execution-time risk filter for a visually guided person-following robot. Paired evaluations reduced collisions by 3.96 percentage points while leaving more than 98% of actions unchanged.",
-      "details": "Imagine a robot following one person down a busy corridor. Someone wearing similar clothes crosses in front of it, and the robot may confuse the two people. A team led by Mingyang Lyu studied how improving a robot's ability to keep following someone affects the safety of its movements.",
-      "technical_novelty": "Training the software to keep track of its person made it better at following. But in some tests it also increased collisions. The researchers therefore added a separate danger check. It looks at clues about the target person's location and how confidently the robot can tell that person apart from others. The authors fine-tuned only the planner head of a compact vision-language-action model while freezing the backbone. A separate risk predictor processes 84 cues, including candidate targets, identity margins, estimated range and bearing, and the proposed command. Above a calibrated risk threshold, it shortens the next translational waypoint without changing the turning component. This targets dangerous moments instead of applying a blanket speed reduction or replacing the learned controller with a wholly different planner.",
-      "engineering_impact": "When the risk is high, the check shortens the next forward movement. It does not change the robot's turning command. In the experiments, more than 98% of steps remained unchanged. In a difficult tracking test, the collision rate fell by 3.96 percentage points compared with the version without this added check.",
-      "limitations": "A concurrent evaluation found a 3.77-point collision reduction versus 0.29 points in matched null pairs. The approach is not a formal safety guarantee beyond the studied tracking scenarios. Constant slowing without target-state information did not reproduce the benefit, distinguishing the proposed filter from a simple speed governor.",
-      "evidence_status": "Results are reported by the study authors; independent replication has not been established.",
+      "id": "rise-humanoid-sequential-skills",
+      "title": "A humanoid chains walking and handling skills learned separately",
+      "summary": "Seoul National University researchers introduced RISE, a framework linking separately recorded examples of locomotion and object handling. They report 87.3 percent mean success in simulation and a 20-percentage-point advantage over a baseline in experiments with a real Unitree G1.",
+      "details": "The architecture shares visual and language processing across several action specialists, with a coordinator deciding which behavior should be active. During training a specialist receives greater responsibility for examples it predicts accurately. Changes in responsibility weights then help signal a transition to another phase of the task. The real robot is a Unitree G1 fitted with two dexterous hands and 43 controllable degrees of freedom. That is an impressive physical configuration, but it does not mean the model can invent arbitrary skills beyond the kinds of demonstrations used for learning.",
+      "technical_novelty": "The architecture shares visual and language processing across several action specialists, with a coordinator deciding which behavior should be active. During training a specialist receives greater responsibility for examples it predicts accurately. Changes in responsibility weights then help signal a transition to another phase of the task. The real robot is a Unitree G1 fitted with two dexterous hands and 43 controllable degrees of freedom. That is an impressive physical configuration, but it does not mean the model can invent arbitrary skills beyond the kinds of demonstrations used for learning.",
+      "engineering_impact": "The design question is how specialist weights identify skill boundaries without additional labeled transition demonstrations. Reproduction should separate the failure rates of individual policies from errors in deciding when to switch. The two-to-four-stage simulation figures must not be treated as interchangeable with the real robot's longer sequences.",
+      "limitations": "For simulated tasks comprising two to four stages, the team reports an 87.3 percent mean success rate against 73.6 percent for its single-expert comparison. On a real G1, the researchers report a 20-percentage-point advantage, with sequences of up to five stages. The university explicitly identifies truly simultaneous locomotion and dexterous manipulation as future work. Watching a robot walk to a table, pick up an object and move again is evidence of sequential skill composition, not proof of unrestricted autonomy in a crowded home.",
+      "evidence_status": "Evidence: performance figures are reported by the university on behalf of the research team; independent replication is not established.",
       "published_at": "2026-10-30",
-      "organization": "Mingyang Lyu and collaborators",
+      "organization": "Seoul National University",
       "source_ids": [
-        "src-safer-person-following"
+        "src-rise"
       ],
       "time_window": "7d",
-      "body": "Imagine a robot following one person down a busy corridor. Someone wearing similar clothes crosses in front of it, and the robot may confuse the two people. A team led by Mingyang Lyu studied how improving a robot's ability to keep following someone affects the safety of its movements.\n\nTraining the software to keep track of its person made it better at following. But in some tests it also increased collisions. The researchers therefore added a separate danger check. It looks at clues about the target person's location and how confidently the robot can tell that person apart from others.\n\nWhen the risk is high, the check shortens the next forward movement. It does not change the robot's turning command. In the experiments, more than 98% of steps remained unchanged. In a difficult tracking test, the collision rate fell by 3.96 percentage points compared with the version without this added check.\n\nThe authors fine-tuned only the planner head of a compact vision-language-action model while freezing the backbone. A separate risk predictor processes 84 cues, including candidate targets, identity margins, estimated range and bearing, and the proposed command. Above a calibrated risk threshold, it shortens the next translational waypoint without changing the turning component. This targets dangerous moments instead of applying a blanket speed reduction or replacing the learned controller with a wholly different planner.\n\nThat does not make the robot safe in every crowded shopping centre. The researchers compared programs under particular test conditions and did not claim protection from every possible mistake. Interestingly, simply slowing the robot all the time did not produce the same improvement.\n\nA concurrent evaluation found a 3.77-point collision reduction versus 0.29 points in matched null pairs. The approach is not a formal safety guarantee beyond the studied tracking scenarios. Constant slowing without target-state information did not reproduce the benefit, distinguishing the proposed filter from a simple speed governor.",
+      "body": "A humanoid robot that can walk and a robot that can grasp a bottle do not automatically know when to switch between those two activities. On October 30, Seoul National University described RISE, developed by Professor Songhwai Oh's team. The name means Responsibility-Induced Specialized Experts, referring to several action models that develop distinct roles during training. The system uses independently collected walking and manipulation demonstrations instead of requiring a recording of every complete sequence. The paper was accepted at the IROS 2026 robotics conference.\n\nThe architecture shares visual and language processing across several action specialists, with a coordinator deciding which behavior should be active. During training a specialist receives greater responsibility for examples it predicts accurately. Changes in responsibility weights then help signal a transition to another phase of the task. The real robot is a Unitree G1 fitted with two dexterous hands and 43 controllable degrees of freedom. That is an impressive physical configuration, but it does not mean the model can invent arbitrary skills beyond the kinds of demonstrations used for learning.\n\nFor simulated tasks comprising two to four stages, the team reports an 87.3 percent mean success rate against 73.6 percent for its single-expert comparison. On a real G1, the researchers report a 20-percentage-point advantage, with sequences of up to five stages. The university explicitly identifies truly simultaneous locomotion and dexterous manipulation as future work. Watching a robot walk to a table, pick up an object and move again is evidence of sequential skill composition, not proof of unrestricted autonomy in a crowded home.\n\nThe design question is how specialist weights identify skill boundaries without additional labeled transition demonstrations. Reproduction should separate the failure rates of individual policies from errors in deciding when to switch. The two-to-four-stage simulation figures must not be treated as interchangeable with the real robot's longer sequences.",
       "image": null
     },
     {
-      "id": "shared-navigation-across-robots",
-      "title": "Hourglass shares navigation across robots with different dynamics",
-      "summary": "Zhidong Wang and colleagues presented Hourglass, a shared navigation architecture with robot-specific motion dynamics. Across seven simulated robots of five locomotion types, it exceeded selected baselines by 3.8 to 10.6 percentage points.",
-      "details": "A small wheeled robot and a larger robot with a different steering system cannot move through a narrow corridor in exactly the same way. The command to turn right produces different motions. A team led by Zhidong Wang proposed teaching one program to plan paths for several kinds of robots while still respecting those differences.",
-      "technical_novelty": "The method uses a world model: software that predicts how the scene around a robot may change after it moves. But pictures alone are not enough. The researchers also describe how each particular robot accelerates and turns. The planner can therefore consider what the machine can actually do, not merely which space looks empty. The method couples a shared world model with a differentiable reduced-order model of each robot's motion through the change in camera viewpoint. The world predictor learns from multiple platforms, while kinematic parameters are identified separately. During imagined rollouts, a proposed command first passes through the robot template and then the visual world predictor. This makes the planner sensitive to turning and speed limits without training an entirely separate policy for each platform.",
-      "engineering_impact": "In computer experiments, the researchers used seven robots representing five kinds of movement. The shared program succeeded 3.8 to 10.6 percentage points more often than some comparison methods. They then drove a real robot manually for three minutes to learn how it moved, before testing navigation in an unfamiliar indoor space.",
-      "limitations": "In the physical experiment, the researchers identified a new robot's parameters from three minutes of teleoperated driving and then tested unfamiliar indoor navigation. The flat-ground assumption does not cover stairs, steep slopes or contact-heavy manoeuvres. The numerical baseline gains were measured in simulation; the physical test supports a narrower transfer claim.",
-      "evidence_status": "Results are reported by the study authors; independent replication has not been established.",
-      "published_at": "2026-10-30",
-      "organization": "Zhidong Wang and collaborators",
+      "id": "iso-mobile-fleet-communications",
+      "title": "Communication compatibility is not the same as robot navigation or safety",
+      "summary": "The Association for Advancing Automation explained ISO 21423:2026 on November 2 as a communications framework for industrial mobile robots from different vendors. The actual standard was published on October 14 and excludes requirements for safety and navigation.",
+      "details": "The scope covers communications among industrial mobile robots, fleet-management programs and other devices in the shared workplace, including automated doors and lifts. The industry group describes information about location, speed, direction, tasks and equipment availability as relevant exchanges. A common message convention can reduce the need for one-off connections between different suppliers. However, sharing state does not calculate collision-free routes, decide who has priority in a corridor or replace an emergency-stop system. Interoperability at the data layer must be distinguished from coordinated physical behavior.",
+      "technical_novelty": "The scope covers communications among industrial mobile robots, fleet-management programs and other devices in the shared workplace, including automated doors and lifts. The industry group describes information about location, speed, direction, tasks and equipment availability as relevant exchanges. A common message convention can reduce the need for one-off connections between different suppliers. However, sharing state does not calculate collision-free routes, decide who has priority in a corridor or replace an emergency-stop system. Interoperability at the data layer must be distinguished from coordinated physical behavior.",
+      "engineering_impact": "A technical specification must distinguish reported state, issued commands and the fleet manager's authority. Procurement and conformance checks need the primary standard text rather than relying exclusively on a trade association summary. Because safety is outside scope, failure-mode analysis and protective controls remain separate engineering obligations.",
+      "limitations": "The ISO catalogue explicitly states that the document contains no safety requirements and no navigation requirements. Consumer, military, medical and public-road applications are also excluded. A claim of compliance therefore cannot be treated as permission to deploy a mixed fleet without site-specific testing. Engineers still need to verify the actual interfaces, building integrations and responses to lost communication. A standard can define a shared language for equipment while leaving the most difficult motion and safety problems to the systems built around it.",
+      "evidence_status": "Evidence: an industry explanation refers to the formal standard; it is not an equipment validation study.",
+      "published_at": "2026-11-02",
+      "organization": "Association for Advancing Automation",
       "source_ids": [
-        "src-shared-navigation-across-robots"
+        "src-iso",
+        "src-iso-original"
       ],
-      "time_window": "7d",
-      "body": "A small wheeled robot and a larger robot with a different steering system cannot move through a narrow corridor in exactly the same way. The command to turn right produces different motions. A team led by Zhidong Wang proposed teaching one program to plan paths for several kinds of robots while still respecting those differences.\n\nThe method uses a world model: software that predicts how the scene around a robot may change after it moves. But pictures alone are not enough. The researchers also describe how each particular robot accelerates and turns. The planner can therefore consider what the machine can actually do, not merely which space looks empty.\n\nIn computer experiments, the researchers used seven robots representing five kinds of movement. The shared program succeeded 3.8 to 10.6 percentage points more often than some comparison methods. They then drove a real robot manually for three minutes to learn how it moved, before testing navigation in an unfamiliar indoor space.\n\nThe method couples a shared world model with a differentiable reduced-order model of each robot's motion through the change in camera viewpoint. The world predictor learns from multiple platforms, while kinematic parameters are identified separately. During imagined rollouts, a proposed command first passes through the robot template and then the visual world predictor. This makes the planner sensitive to turning and speed limits without training an entirely separate policy for each platform.\n\nThat real-world test matters, but it does not show that the same program works for every vehicle or on staircases. The study specifically discusses movement on flat ground and particular robot designs.\n\nIn the physical experiment, the researchers identified a new robot's parameters from three minutes of teleoperated driving and then tested unfamiliar indoor navigation. The flat-ground assumption does not cover stairs, steep slopes or contact-heavy manoeuvres. The numerical baseline gains were measured in simulation; the physical test supports a narrower transfer claim.",
+      "time_window": "72h",
+      "body": "A large warehouse can operate mobile robots from multiple vendors, yet their fleet managers may disagree about how to describe a machine's position, assignment or state. On November 2 the Association for Advancing Automation discussed ISO 21423:2026, a communications and interoperability standard for industrial mobile robots. The International Organization for Standardization had actually published the document on October 14. The November announcement is an explanation of the existing standard, not the launch of a newly invented navigation system.\n\nThe scope covers communications among industrial mobile robots, fleet-management programs and other devices in the shared workplace, including automated doors and lifts. The industry group describes information about location, speed, direction, tasks and equipment availability as relevant exchanges. A common message convention can reduce the need for one-off connections between different suppliers. However, sharing state does not calculate collision-free routes, decide who has priority in a corridor or replace an emergency-stop system. Interoperability at the data layer must be distinguished from coordinated physical behavior.\n\nThe ISO catalogue explicitly states that the document contains no safety requirements and no navigation requirements. Consumer, military, medical and public-road applications are also excluded. A claim of compliance therefore cannot be treated as permission to deploy a mixed fleet without site-specific testing. Engineers still need to verify the actual interfaces, building integrations and responses to lost communication. A standard can define a shared language for equipment while leaving the most difficult motion and safety problems to the systems built around it.\n\nA technical specification must distinguish reported state, issued commands and the fleet manager's authority. Procurement and conformance checks need the primary standard text rather than relying exclusively on a trade association summary. Because safety is outside scope, failure-mode analysis and protective controls remain separate engineering obligations.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Representation choices change outcomes",
-    "summary": "Performance depends not only on model training but also on coordinate frames, contact data and execution constraints.",
-    "implications": "Results from different protocols cannot be directly compared without checking hardware and available data."
+    "title": "Experiments become part of the controller's evidence",
+    "summary": "New work combines active physical calibration, reproducible robotic testbeds and auditable software optimization.",
+    "implications": "The crucial distinction is between measured simulation gains and independently verified real-world performance."
   },
   "glossary": [
     {
-      "term": "WorldBridge",
-      "definition": "A model linking predicted video with robot actions."
+      "term": "CUE",
+      "definition": "Calibration Using Exploration, a method for selecting physical trials to tune simulation parameters."
     },
     {
-      "term": "RoboTwin 2.0",
-      "definition": "A simulated manipulation benchmark for comparing methods."
+      "term": "CoreXY",
+      "definition": "A coupled two-axis gantry drive geometry used for fast tabletop motion."
     },
     {
-      "term": "action representation",
-      "definition": "The format used to express robot commands and coordinates."
+      "term": "digital twin",
+      "definition": "A virtual representation of a particular physical mechanism."
     },
     {
-      "term": "point cloud",
-      "definition": "A collection of three-dimensional points representing surfaces."
+      "term": "NVIDIA Isaac Lab",
+      "definition": "Robot simulation and training environment used in the tabletop experiment."
     },
     {
-      "term": "Contact Imitation Interface",
-      "definition": "A skill-transfer method based on fingertip contact geometry."
+      "term": "actuator model",
+      "definition": "An approximation of how a motor or mechanism responds to control commands."
     },
     {
-      "term": "contact trajectory",
-      "definition": "A sequence of positions of the touching region."
+      "term": "coding agent",
+      "definition": "A system that proposes and evaluates changes to software source code."
     },
     {
-      "term": "TRACE",
-      "definition": "A risk filter for person-following robot movements."
+      "term": "throughput",
+      "definition": "Number of jobs a system completes in a given period."
     },
     {
-      "term": "risk estimation",
-      "definition": "Computing a risk score from features of the situation."
+      "term": "RISE",
+      "definition": "Responsibility-Induced Specialized Experts, a way to specialize and switch robot-action models."
     },
     {
-      "term": "Hourglass",
-      "definition": "A shared navigation architecture with robot-specific dynamics."
+      "term": "IROS",
+      "definition": "International Conference on Intelligent Robots and Systems, where the RISE paper was accepted."
     },
     {
-      "term": "world model",
-      "definition": "A predictor of how the observed scene changes after an action."
+      "term": "Unitree G1",
+      "definition": "A specific humanoid robot platform used in the sequential-skill study."
     },
     {
-      "term": "RJ45 connector",
-      "definition": "A network connector used in the five-fingered hand insertion experiments."
+      "term": "ISO 21423:2026",
+      "definition": "An international communications and interoperability standard for industrial mobile robots."
+    },
+    {
+      "term": "interoperability",
+      "definition": "Ability of different devices and programs to exchange understandable information."
     }
   ],
   "sources": [
     {
-      "id": "src-learning-from-task-videos",
-      "url": "https://arxiv.org/abs/2610.40748",
+      "id": "src-cue",
+      "url": "https://arxiv.org/abs/2611.02691",
       "domain": "arxiv.org",
-      "organization": "Jun Cen and collaborators",
-      "published_at": "2026-10-29",
-      "title": "WorldBridge: Bridging Video and Action for Task Generalization in World Action Models"
+      "organization": "Xilun Zhang and collaborators",
+      "published_at": "2026-11-02",
+      "title": "Closing the Dynamics Gap through Self-Directed Robotic Interaction"
     },
     {
-      "id": "src-real-hand-connector-tests",
-      "url": "https://arxiv.org/abs/2610.40828",
+      "id": "src-klask",
+      "url": "https://arxiv.org/abs/2611.03138",
       "domain": "arxiv.org",
-      "organization": "Ammar N. Abbas and collaborators",
-      "published_at": "2026-10-29",
-      "title": "From Teleoperation to Long-Horizon Dexterity: Evaluating Visuomotor Skills and Offline Proxies for Dexterous Manipulation"
+      "organization": "ETH Zurich",
+      "published_at": "2026-11-02",
+      "title": "KlaskTron: An Open-Source Platform for Physical Adversarial Multi-Agent RL"
     },
     {
-      "id": "src-fingertip-contact-learning",
-      "url": "https://arxiv.org/abs/2610.41028",
+      "id": "src-autumn",
+      "url": "https://arxiv.org/abs/2611.02391",
       "domain": "arxiv.org",
-      "organization": "Zhixuan Xu and collaborators",
-      "published_at": "2026-10-29",
-      "title": "Contact Imitation Interface: Transferring Dexterous Skills by Showing How Contact Unfolds"
+      "organization": "University of Southern California, UC Irvine and Symbotic",
+      "published_at": "2026-11-02",
+      "title": "Late Autumn: LLM Agents Specialize a General Multi-Robot Planner for One Warehouse"
     },
     {
-      "id": "src-safer-person-following",
-      "url": "https://arxiv.org/abs/2610.41275",
-      "domain": "arxiv.org",
-      "organization": "Mingyang Lyu and collaborators",
+      "id": "src-rise",
+      "url": "https://eng.snu.ac.kr/en/research/research-achievements?bbsidx=8483&md=v",
+      "domain": "eng.snu.ac.kr",
+      "organization": "Seoul National University",
       "published_at": "2026-10-30",
-      "title": "TRACE: Target-State Risk-Aligned Conditional Execution for Embodied Tracking"
+      "title": "SNU Professor Songhwai Oh’s Team Develops Humanoid AI That Performs Sequential Tasks Using Separately Collected Locomotion and Manipulation Data"
     },
     {
-      "id": "src-shared-navigation-across-robots",
-      "url": "https://arxiv.org/abs/2610.41330",
-      "domain": "arxiv.org",
-      "organization": "Zhidong Wang and collaborators",
-      "published_at": "2026-10-30",
-      "title": "Cross-Embodiment Motion Planning by Coupling Body-Agnostic World Model with Differentiable Ego-Dynamics"
+      "id": "src-iso",
+      "url": "https://www.automate.org/robotics/news/new-iso-interoperability-standard-helps-mobile-robots-from-different-vendors-work-together",
+      "domain": "automate.org",
+      "organization": "Association for Advancing Automation",
+      "published_at": "2026-11-02",
+      "title": "New ISO Interoperability Standard Helps Mobile Robots from Different Vendors Work Together"
+    },
+    {
+      "id": "src-iso-original",
+      "url": "https://www.iso.org/standard/86749.html",
+      "domain": "iso.org",
+      "organization": "International Organization for Standardization",
+      "published_at": "2026-10-14",
+      "title": "ISO 21423:2026 Robotics — Industrial mobile robots — Communications and interoperability"
     }
   ]
 }
