@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-04",
-  "issue_id": "daily-2026-11-04",
+  "issue_date": "2026-11-05",
+  "issue_id": "daily-2026-11-05",
   "edition": "children",
   "language": "ja",
-  "generated_at": "2026-11-03T23:06:43.997Z",
-  "title": "レプリカント・データ — 2026年11月4日",
-  "lead": "ロボットが試し、失敗しながら仕事を覚える五つのお話。",
+  "generated_at": "2026-11-05T01:36:46+09:00",
+  "title": "D1テスト — 11月4日号の記事",
+  "lead": "記事保存と百科事典リンクの技術テストです。11月4日号の原文を再利用しています。新しいニュースの編集号ではありません。",
   "news": [
     {
       "id": "cue-physical-calibration",
@@ -106,28 +106,6 @@
     "summary": "球を転がし、ゲームで競い合い、いくつかの仕事を順番につなぐロボットの研究を紹介する。",
     "implications": "できたことだけでなく、人の助けがまだ必要なところにも注目しよう。"
   },
-  "glossary": [
-    {
-      "term": "モデル",
-      "definition": "物がどう動くかをコンピューターが予想するための計算上の決まり。"
-    },
-    {
-      "term": "シミュレーション",
-      "definition": "本物に似た世界をコンピューター内に作り、何度も試すこと。"
-    },
-    {
-      "term": "予想の誤差",
-      "definition": "予想した位置と本当に止まった位置の違い。"
-    },
-    {
-      "term": "動きの記録",
-      "definition": "人やロボットが何をどの順番でしたかを残した情報。"
-    },
-    {
-      "term": "動作の順番",
-      "definition": "一つの仕事を終えるために、いくつかの動きを並べた順序。"
-    }
-  ],
   "sources": [
     {
       "id": "src-cue",

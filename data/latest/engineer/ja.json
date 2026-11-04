@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-04",
-  "issue_id": "daily-2026-11-04",
+  "issue_date": "2026-11-05",
+  "issue_id": "daily-2026-11-05",
   "edition": "engineer",
   "language": "ja",
-  "generated_at": "2026-11-03T23:06:43.997Z",
-  "title": "レプリカント・データ — 2026年11月4日",
-  "lead": "物理モデルの調整、ロボットの学習、複数機体の計画、通信規格に関する研究を扱う。",
+  "generated_at": "2026-11-05T01:36:46+09:00",
+  "title": "D1テスト — 11月4日号の記事",
+  "lead": "記事保存と百科事典リンクの技術テストです。11月4日号の原文を再利用しています。新しいニュースの編集号ではありません。",
   "news": [
     {
       "id": "cue-physical-calibration",
@@ -107,56 +107,6 @@
     "summary": "実物を試して物理モデルを直す研究、再現しやすい実験台、点検可能なソフト改善が進んでいる。",
     "implications": "模擬実験の改善率と、実物で確認された成績を分けて評価する必要がある。"
   },
-  "glossary": [
-    {
-      "term": "CUE",
-      "definition": "Calibration Using Explorationの略。実物の動きを試し、シミュレーションの物理設定を直す方法。"
-    },
-    {
-      "term": "CoreXY",
-      "definition": "二つの軸を連動させ、機械を平面内で動かす駆動方式。"
-    },
-    {
-      "term": "デジタルツイン",
-      "definition": "実物の装置の動きや構造をコンピューター内で再現したモデル。"
-    },
-    {
-      "term": "NVIDIA Isaac Lab",
-      "definition": "ロボットの動きを模擬し、学習を試すためのソフトウェア環境。"
-    },
-    {
-      "term": "駆動モデル",
-      "definition": "モーターが命令にどのように反応するかを表す計算モデル。"
-    },
-    {
-      "term": "プログラム担当AI",
-      "definition": "コードの変更を提案し、試験で効果を調べる仕組み。"
-    },
-    {
-      "term": "処理量",
-      "definition": "一定時間に終えられる仕事の数。"
-    },
-    {
-      "term": "RISE",
-      "definition": "Responsibility-Induced Specialized Expertsの略。動作別のモデルを学習し、順番に切り替える方法。"
-    },
-    {
-      "term": "IROS",
-      "definition": "Intelligent Robots and Systemsという国際ロボット会議。"
-    },
-    {
-      "term": "Unitree G1",
-      "definition": "連続作業の実験で使われた特定の人型ロボット。"
-    },
-    {
-      "term": "ISO 21423:2026",
-      "definition": "産業用移動ロボットの通信と相互運用性を定める国際規格。"
-    },
-    {
-      "term": "相互運用性",
-      "definition": "違う会社の機械やソフトが情報を正しくやり取りできること。"
-    }
-  ],
   "sources": [
     {
       "id": "src-cue",

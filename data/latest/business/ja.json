@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-04",
-  "issue_id": "daily-2026-11-04",
+  "issue_date": "2026-11-05",
+  "issue_id": "daily-2026-11-05",
   "edition": "business",
   "language": "ja",
-  "generated_at": "2026-11-03T23:06:43.997Z",
-  "title": "レプリカント・データ — 2026年11月4日",
-  "lead": "研究と新しい設備が実証試験、システム接続、導入費用に与える影響を考える。",
+  "generated_at": "2026-11-05T01:36:46+09:00",
+  "title": "D1テスト — 11月4日号の記事",
+  "lead": "記事保存と百科事典リンクの技術テストです。11月4日号の原文を再利用しています。新しいニュースの編集号ではありません。",
   "news": [
     {
       "id": "warehouse-code-agent-planner",
@@ -107,56 +107,6 @@
     "summary": "倉庫の計画ソフト、学習データ施設、異なる製品間の通信、運搬機器の組み替えが注目された。",
     "implications": "導入判断には利用時期、計算費用、現場試験、メーカー間の責任分担を確かめる必要がある。"
   },
-  "glossary": [
-    {
-      "term": "Late Autumn",
-      "definition": "倉庫の経路計画ソフトをプログラム担当AIで改善した研究の名前。"
-    },
-    {
-      "term": "経路計画",
-      "definition": "複数の機体が仕事を進めるため、通る道を選ぶこと。"
-    },
-    {
-      "term": "処理量",
-      "definition": "一定時間に終えられる作業の数。"
-    },
-    {
-      "term": "計算量",
-      "definition": "計画を作るためにコンピューターが必要とする計算の大きさ。"
-    },
-    {
-      "term": "遠隔操作",
-      "definition": "人が別の場所からロボットを動かす方法。"
-    },
-    {
-      "term": "作業データ",
-      "definition": "ロボットが行った動きや受けた指示の記録。"
-    },
-    {
-      "term": "KAIROS",
-      "definition": "韓国で開発を進めている人型ロボットの名称。"
-    },
-    {
-      "term": "ISO 21423:2026",
-      "definition": "産業用移動ロボットなどの通信を定める国際規格。"
-    },
-    {
-      "term": "組み替え",
-      "definition": "目的に応じて機械の部品や構成を交換すること。"
-    },
-    {
-      "term": "自動的な制御",
-      "definition": "人が一つずつ指示しなくても機械が動作を選ぶ仕組み。"
-    },
-    {
-      "term": "RISE",
-      "definition": "歩行と物の操作を別々に学んでから連続作業につなぐ方法。"
-    },
-    {
-      "term": "Unitree G1",
-      "definition": "RISEの実物実験に使われた人型ロボットの機種。"
-    }
-  ],
   "sources": [
     {
       "id": "src-autumn",

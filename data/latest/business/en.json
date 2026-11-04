@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-04",
-  "issue_id": "daily-2026-11-04",
+  "issue_date": "2026-11-05",
+  "issue_id": "daily-2026-11-05",
   "edition": "business",
   "language": "en",
-  "generated_at": "2026-11-03T23:06:43.997Z",
-  "title": "Replicant Data — November 4, 2026",
-  "lead": "What new research and infrastructure mean for pilots, system integration and deployment cost.",
+  "generated_at": "2026-11-05T01:36:46+09:00",
+  "title": "D1 test — material from the November 4 issue",
+  "lead": "Technical test of D1 article storage and encyclopedia links. Original November 4 texts are reused; this is not a new editorial news selection.",
   "news": [
     {
       "id": "warehouse-code-agent-planner",
@@ -107,56 +107,6 @@
     "summary": "Developments span warehouse planner tuning, shared humanoid data, mixed-fleet communications and modular cargo equipment.",
     "implications": "Deployment depends on data access, computing cost, on-site tests and clear responsibility across vendors."
   },
-  "glossary": [
-    {
-      "term": "Late Autumn",
-      "definition": "Study in which coding agents tune a warehouse multi-robot planner."
-    },
-    {
-      "term": "planner",
-      "definition": "Software that assigns jobs and selects routes for multiple machines."
-    },
-    {
-      "term": "throughput",
-      "definition": "Number of jobs completed per unit of time."
-    },
-    {
-      "term": "computational load",
-      "definition": "Processor capacity and time required to calculate the plan."
-    },
-    {
-      "term": "remote operation",
-      "definition": "A person directing a robot from a separate location."
-    },
-    {
-      "term": "telemetry",
-      "definition": "Recorded states and movements of equipment used for evaluation or learning."
-    },
-    {
-      "term": "KAIROS",
-      "definition": "South Korean humanoid development program discussed at the new data facility."
-    },
-    {
-      "term": "ISO 21423:2026",
-      "definition": "Standard for communication among industrial mobile robots and fleet managers."
-    },
-    {
-      "term": "modularity",
-      "definition": "Ability to replace hardware components for different handling tasks."
-    },
-    {
-      "term": "autonomous control",
-      "definition": "Movement selected by a system rather than commanded continuously by a human."
-    },
-    {
-      "term": "RISE",
-      "definition": "Method for connecting separately trained walking and manipulation skills."
-    },
-    {
-      "term": "Unitree G1",
-      "definition": "Humanoid platform used in experiments evaluating RISE."
-    }
-  ],
   "sources": [
     {
       "id": "src-autumn",

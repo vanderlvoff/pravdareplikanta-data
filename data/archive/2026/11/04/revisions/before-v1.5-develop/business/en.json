@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.4",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-04",
+  "issue_id": "daily-2026-11-04",
+  "edition": "business",
+  "language": "en",
+  "generated_at": "2026-11-03T23:06:43.997Z",
+  "title": "Replicant Data — November 4, 2026",
+  "lead": "What new research and infrastructure mean for pilots, system integration and deployment cost.",
+  "news": [
+    {
+      "id": "warehouse-code-agent-planner",
+      "title": "Coding agents boost simulated warehouse throughput by 22–60 percent",
+      "summary": "Researchers at the University of Southern California, the University of California at Irvine and Symbotic let language-model agents modify a multi-robot warehouse planner. Six simulation campaigns increased throughput by 22 to 60 percent, although some changes raised planning computation more than one hundredfold.",
+      "details": "The original planner assigned work to multiple machines while choosing routes that avoid conflicts. Coding agents proposed program changes, simulated the resulting traffic and measured whether more jobs could be completed. Each improvement was preserved as a sequence of scored source-code patches rather than a single opaque model output. Six independent tuning campaigns were evaluated, including tests with different starting conditions, fleet sizes and warehouse configurations. That makes it possible to inspect what changed, but it does not mean every change will work in a new industrial environment.",
+      "technical_novelty": "The original planner assigned work to multiple machines while choosing routes that avoid conflicts. Coding agents proposed program changes, simulated the resulting traffic and measured whether more jobs could be completed. Each improvement was preserved as a sequence of scored source-code patches rather than a single opaque model output. Six independent tuning campaigns were evaluated, including tests with different starting conditions, fleet sizes and warehouse configurations. That makes it possible to inspect what changed, but it does not mean every change will work in a new industrial environment.",
+      "engineering_impact": "Higher throughput is commercially attractive, but this study used simulation and did not calculate the cost of extra processors, deployment audits or outages. A buyer should assess the entire change-management process, including regression tests and rollback. The reported 60 percent improvement must not be treated as a forecast for another site's revenue.",
+      "limitations": "Across the six campaigns, simulated throughput improved by 22 to 60 percent. Some gains survived a different layout or larger fleet but shrank for smaller fleets and nearly disappeared with an outbound-heavy workload. Final modifications ran to roughly 700–2,400 lines of code, while some versions multiplied planning compute by more than one hundred. These figures do not measure output from a live customer warehouse and do not include the cost of additional hardware. Successful optimization of one benchmark is not a substitute for safety review and software testing.",
+      "evidence_status": "Evidence: results and limitations are reported by the study authors; independent replication has not been established.",
+      "published_at": "2026-11-02",
+      "organization": "University of Southern California, UC Irvine and Symbotic",
+      "source_ids": [
+        "src-autumn"
+      ],
+      "time_window": "72h",
+      "body": "Even when warehouse robots know which jobs they should do, they can block one another in narrow corridors or at crowded crossings. Researchers from the University of Southern California, the University of California at Irvine and Symbotic investigated an unusual use of language models: improving the source code of an existing warehouse traffic planner instead of replacing the robots' controllers. Their paper, Late Autumn, appeared on November 2. The experiments used a simulated automated warehouse modeled on an existing facility, with attention to problems that arise from its particular layout.\n\nThe original planner assigned work to multiple machines while choosing routes that avoid conflicts. Coding agents proposed program changes, simulated the resulting traffic and measured whether more jobs could be completed. Each improvement was preserved as a sequence of scored source-code patches rather than a single opaque model output. Six independent tuning campaigns were evaluated, including tests with different starting conditions, fleet sizes and warehouse configurations. That makes it possible to inspect what changed, but it does not mean every change will work in a new industrial environment. The computational load must therefore be evaluated alongside the number of completed jobs.\n\nAcross the six campaigns, simulated throughput improved by 22 to 60 percent. Some gains survived a different layout or larger fleet but shrank for smaller fleets and nearly disappeared with an outbound-heavy workload. Final modifications ran to roughly 700–2,400 lines of code, while some versions multiplied planning compute by more than one hundred. These figures do not measure output from a live customer warehouse and do not include the cost of additional hardware. Successful optimization of one benchmark is not a substitute for safety review and software testing.\n\nHigher throughput is commercially attractive, but this study used simulation and did not calculate the cost of extra processors, deployment audits or outages. A buyer should assess the entire change-management process, including regression tests and rollback. The reported 60 percent improvement must not be treated as a forecast for another site's revenue.",
+      "image": null
+    },
+    {
+      "id": "korea-humanoid-data-factory",
+      "title": "South Korea opens a humanoid training-data facility with twelve robots",
+      "summary": "South Korea's science ministry announced the opening of a specialized humanoid data collection center on November 3. Twelve robots are operating at the facility, with staged access for external research and industry organizations planned from late 2027.",
+      "details": "Twelve humanoids are already operating, and the government intends to expand both the fleet and the set of recorded activities. Human operators guide machines remotely or demonstrate movements that the robots imitate. Opening-day demonstrations included removing items from a refrigerator, handling laundry, arranging a sofa and pressing controls inside a vehicle. The recordings are intended to support future training of robot-control models. The event also featured development work on the domestic KAIROS humanoid. Capturing a supervised demonstration does not mean the system can already perform every demonstration autonomously.",
+      "technical_novelty": "Twelve humanoids are already operating, and the government intends to expand both the fleet and the set of recorded activities. Human operators guide machines remotely or demonstrate movements that the robots imitate. Opening-day demonstrations included removing items from a refrigerator, handling laundry, arranging a sofa and pressing controls inside a vehicle. The recordings are intended to support future training of robot-control models. The event also featured development work on the domestic KAIROS humanoid. Capturing a supervised demonstration does not mean the system can already perform every demonstration autonomously.",
+      "engineering_impact": "A shared facility could reduce the entry cost for firms unable to maintain a fleet of humanoids and trained operators. But external access is scheduled only from late 2027, and prices, licensing conditions and data-quality guarantees have not been announced. This is currently a research infrastructure investment, not a ready procurement option.",
+      "limitations": "Universities, institutes and companies are expected to gain access in phases starting in late 2027. The government hopes shared data production will support domestic technology and reduce reliance on foreign sources. Yet the announcement supplies neither comparable task-success measurements for models trained on the new records nor a total number of recorded hours. It verifies the existence of the facility, the twelve operating robots and an access plan. It does not establish that the eventual models will generalize to unfamiliar homes or factories.",
+      "evidence_status": "Evidence: the official announcement confirms a facility and robot count, not measured downstream learning performance.",
+      "published_at": "2026-11-03",
+      "organization": "Ministry of Science and ICT of South Korea",
+      "source_ids": [
+        "src-factory"
+      ],
+      "time_window": "72h",
+      "body": "Training a humanoid to handle laundry requires more than a photograph of the finished stack. Researchers need examples showing how an arm moves, when a gripper closes, and how the body adjusts while holding something. On November 3 South Korea's science ministry announced a dedicated collection facility at the Korea Institute of Machinery and Materials, built with the Electronics and Telecommunications Research Institute. Officials describe it as the country's first specialized facility for producing task data from bipedal humanoids.\n\nTwelve humanoids are already operating, and the government intends to expand both the fleet and the set of recorded activities. Human operators guide machines remotely or demonstrate movements that the robots imitate. Opening-day demonstrations included removing items from a refrigerator, handling laundry, arranging a sofa and pressing controls inside a vehicle. The recordings are intended to support future training of robot-control models. The event also featured development work on the domestic KAIROS humanoid. Capturing a supervised demonstration does not mean the system can already perform every demonstration autonomously. Remote operation means that a human chooses actions from elsewhere while the robot records the resulting movements. The telemetry may include machine state and motion signals rather than video alone; the announcement does not detail every recorded field.\n\nUniversities, institutes and companies are expected to gain access in phases starting in late 2027. The government hopes shared data production will support domestic technology and reduce reliance on foreign sources. Yet the announcement supplies neither comparable task-success measurements for models trained on the new records nor a total number of recorded hours. It verifies the existence of the facility, the twelve operating robots and an access plan. It does not establish that the eventual models will generalize to unfamiliar homes or factories.\n\nA shared facility could reduce the entry cost for firms unable to maintain a fleet of humanoids and trained operators. But external access is scheduled only from late 2027, and prices, licensing conditions and data-quality guarantees have not been announced. This is currently a research infrastructure investment, not a ready procurement option.",
+      "image": null
+    },
+    {
+      "id": "iso-mobile-fleet-communications",
+      "title": "Communication compatibility is not the same as robot navigation or safety",
+      "summary": "The Association for Advancing Automation explained ISO 21423:2026 on November 2 as a communications framework for industrial mobile robots from different vendors. The actual standard was published on October 14 and excludes requirements for safety and navigation.",
+      "details": "The scope covers communications among industrial mobile robots, fleet-management programs and other devices in the shared workplace, including automated doors and lifts. The industry group describes information about location, speed, direction, tasks and equipment availability as relevant exchanges. A common message convention can reduce the need for one-off connections between different suppliers. However, sharing state does not calculate collision-free routes, decide who has priority in a corridor or replace an emergency-stop system. Interoperability at the data layer must be distinguished from coordinated physical behavior.",
+      "technical_novelty": "The scope covers communications among industrial mobile robots, fleet-management programs and other devices in the shared workplace, including automated doors and lifts. The industry group describes information about location, speed, direction, tasks and equipment availability as relevant exchanges. A common message convention can reduce the need for one-off connections between different suppliers. However, sharing state does not calculate collision-free routes, decide who has priority in a corridor or replace an emergency-stop system. Interoperability at the data layer must be distinguished from coordinated physical behavior.",
+      "engineering_impact": "Mixed fleets may be easier to procure when vendors actually implement common messages. Yet the standard number alone does not provide completed connections to lifts, safety systems or dispatch software. On-site integration testing and contractual responsibility between suppliers remain separate budget and risk items.",
+      "limitations": "The ISO catalogue explicitly states that the document contains no safety requirements and no navigation requirements. Consumer, military, medical and public-road applications are also excluded. A claim of compliance therefore cannot be treated as permission to deploy a mixed fleet without site-specific testing. Engineers still need to verify the actual interfaces, building integrations and responses to lost communication. A standard can define a shared language for equipment while leaving the most difficult motion and safety problems to the systems built around it.",
+      "evidence_status": "Evidence: an industry explanation refers to the formal standard; it is not an equipment validation study.",
+      "published_at": "2026-11-02",
+      "organization": "Association for Advancing Automation",
+      "source_ids": [
+        "src-iso",
+        "src-iso-original"
+      ],
+      "time_window": "72h",
+      "body": "A large warehouse can operate mobile robots from multiple vendors, yet their fleet managers may disagree about how to describe a machine's position, assignment or state. On November 2 the Association for Advancing Automation discussed ISO 21423:2026, a communications and interoperability standard for industrial mobile robots. The International Organization for Standardization had actually published the document on October 14. The November announcement is an explanation of the existing standard, not the launch of a newly invented navigation system.\n\nThe scope covers communications among industrial mobile robots, fleet-management programs and other devices in the shared workplace, including automated doors and lifts. The industry group describes information about location, speed, direction, tasks and equipment availability as relevant exchanges. A common message convention can reduce the need for one-off connections between different suppliers. However, sharing state does not calculate collision-free routes, decide who has priority in a corridor or replace an emergency-stop system. Interoperability at the data layer must be distinguished from coordinated physical behavior.\n\nThe ISO catalogue explicitly states that the document contains no safety requirements and no navigation requirements. Consumer, military, medical and public-road applications are also excluded. A claim of compliance therefore cannot be treated as permission to deploy a mixed fleet without site-specific testing. Engineers still need to verify the actual interfaces, building integrations and responses to lost communication. A standard can define a shared language for equipment while leaving the most difficult motion and safety problems to the systems built around it.\n\nMixed fleets may be easier to procure when vendors actually implement common messages. Yet the standard number alone does not provide completed connections to lifts, safety systems or dispatch software. On-site integration testing and contractual responsibility between suppliers remain separate budget and risk items.",
+      "image": null
+    },
+    {
+      "id": "xsto-cemat-material-handling",
+      "title": "XSTO shows stair-climbing and modular cargo equipment in Shanghai",
+      "summary": "On November 3 XSTO demonstrated stair-climbing and modular cargo-handling equipment at CeMAT Asia 2026 in Shanghai. The company announcement describes the devices but supplies no independent performance comparison or verified long-term industrial operating figures.",
+      "details": "X-Morph uses interchangeable components for level transport, lifting, loading, unloading and moving cargo on stairs. This kind of modularity means physical reconfiguration for different jobs; it does not mean a machine independently understands arbitrary assignments. The company describes its stair-climbing robot as combining autonomous control with heavy-load movement. ET300P2, by contrast, responds to an operator and assists a person who remains involved in the task. Autonomous operation, remotely guided movement and motorized human assistance imply very different staffing and risk requirements.",
+      "technical_novelty": "X-Morph uses interchangeable components for level transport, lifting, loading, unloading and moving cargo on stairs. This kind of modularity means physical reconfiguration for different jobs; it does not mean a machine independently understands arbitrary assignments. The company describes its stair-climbing robot as combining autonomous control with heavy-load movement. ET300P2, by contrast, responds to an operator and assists a person who remains involved in the task. Autonomous operation, remotely guided movement and motorized human assistance imply very different staffing and risk requirements.",
+      "engineering_impact": "For a delivery firm the critical numbers are staffing per trip, time to climb and damage when a maneuver goes wrong. XSTO's announcement does not supply those comparisons. Any purchase decision needs a trial with actual building geometry, representative cargo and operator training.",
+      "limitations": "XSTO reports visitor interest and discussions about potential partnerships at the trade show. Its announcement does not provide standardized payload results across different stair geometries, failure statistics, operating speeds or ownership costs. A demonstration stand can show how equipment is built and prompt useful questions from customers, but it cannot replace trials on the intended building's stairs with representative loads. The exhibition runs through November 6; that is the duration of a display rather than a verified start date for a commercial deployment.",
+      "evidence_status": "Evidence: the manufacturer describes a demonstration, without published independent performance tests.",
+      "published_at": "2026-11-03",
+      "organization": "XSTO",
+      "source_ids": [
+        "src-xsto"
+      ],
+      "time_window": "72h",
+      "body": "The hardest part of delivering a heavy load often begins where a smooth floor ends: at a staircase, narrow landing or vehicle loading edge. On November 3 XSTO announced a display of equipment for such routes at CeMAT Asia 2026 in Shanghai. The lineup includes a stair-climbing robot with intelligent control, modular X-Morph transport platforms, an ET300P2 motorized cart operated through motion-sensitive controls and a compact EzStep stair-climbing cart. This is a manufacturer's exhibition announcement, not an independent test report.\n\nX-Morph uses interchangeable components for level transport, lifting, loading, unloading and moving cargo on stairs. This kind of modularity means physical reconfiguration for different jobs; it does not mean a machine independently understands arbitrary assignments. The company describes its stair-climbing robot as combining autonomous control with heavy-load movement. ET300P2, by contrast, responds to an operator and assists a person who remains involved in the task. Autonomous operation, remotely guided movement and motorized human assistance imply very different staffing and risk requirements.\n\nXSTO reports visitor interest and discussions about potential partnerships at the trade show. Its announcement does not provide standardized payload results across different stair geometries, failure statistics, operating speeds or ownership costs. A demonstration stand can show how equipment is built and prompt useful questions from customers, but it cannot replace trials on the intended building's stairs with representative loads. The exhibition runs through November 6; that is the duration of a display rather than a verified start date for a commercial deployment.\n\nFor a delivery firm the critical numbers are staffing per trip, time to climb and damage when a maneuver goes wrong. XSTO's announcement does not supply those comparisons. Any purchase decision needs a trial with actual building geometry, representative cargo and operator training.",
+      "image": null
+    },
+    {
+      "id": "rise-humanoid-sequential-skills",
+      "title": "A humanoid chains walking and handling skills learned separately",
+      "summary": "Seoul National University researchers introduced RISE, a framework linking separately recorded examples of locomotion and object handling. They report 87.3 percent mean success in simulation and a 20-percentage-point advantage over a baseline in experiments with a real Unitree G1.",
+      "details": "The architecture shares visual and language processing across several action specialists, with a coordinator deciding which behavior should be active. During training a specialist receives greater responsibility for examples it predicts accurately. Changes in responsibility weights then help signal a transition to another phase of the task. The real robot is a Unitree G1 fitted with two dexterous hands and 43 controllable degrees of freedom. That is an impressive physical configuration, but it does not mean the model can invent arbitrary skills beyond the kinds of demonstrations used for learning.",
+      "technical_novelty": "The architecture shares visual and language processing across several action specialists, with a coordinator deciding which behavior should be active. During training a specialist receives greater responsibility for examples it predicts accurately. Changes in responsibility weights then help signal a transition to another phase of the task. The real robot is a Unitree G1 fitted with two dexterous hands and 43 controllable degrees of freedom. That is an impressive physical configuration, but it does not mean the model can invent arbitrary skills beyond the kinds of demonstrations used for learning.",
+      "engineering_impact": "Reusing separate demonstration collections could lower the effort needed to introduce multi-step assignments on an existing platform. But no audited calculation of data-collection costs, integration work or robot downtime is supplied. A commercial pilot should specify a narrow task sequence before promising a general-purpose humanoid workforce.",
+      "limitations": "For simulated tasks comprising two to four stages, the team reports an 87.3 percent mean success rate against 73.6 percent for its single-expert comparison. On a real G1, the researchers report a 20-percentage-point advantage, with sequences of up to five stages. The university explicitly identifies truly simultaneous locomotion and dexterous manipulation as future work. Watching a robot walk to a table, pick up an object and move again is evidence of sequential skill composition, not proof of unrestricted autonomy in a crowded home.",
+      "evidence_status": "Evidence: performance figures are reported by the university on behalf of the research team; independent replication is not established.",
+      "published_at": "2026-10-30",
+      "organization": "Seoul National University",
+      "source_ids": [
+        "src-rise"
+      ],
+      "time_window": "7d",
+      "body": "A humanoid robot that can walk and a robot that can grasp a bottle do not automatically know when to switch between those two activities. On October 30, Seoul National University described RISE, developed by Professor Songhwai Oh's team. The name means Responsibility-Induced Specialized Experts, referring to several action models that develop distinct roles during training. The system uses independently collected walking and manipulation demonstrations instead of requiring a recording of every complete sequence. The paper was accepted for presentation at an international robotics conference in 2026.\n\nThe architecture shares visual and language processing across several action specialists, with a coordinator deciding which behavior should be active. During training a specialist receives greater responsibility for examples it predicts accurately. Changes in responsibility weights then help signal a transition to another phase of the task. The real robot is a Unitree G1 fitted with two dexterous hands and 43 controllable degrees of freedom. That is an impressive physical configuration, but it does not mean the model can invent arbitrary skills beyond the kinds of demonstrations used for learning.\n\nFor simulated tasks comprising two to four stages, the team reports an 87.3 percent mean success rate against 73.6 percent for its single-expert comparison. On a real G1, the researchers report a 20-percentage-point advantage, with sequences of up to five stages. The university explicitly identifies truly simultaneous locomotion and dexterous manipulation as future work. Watching a robot walk to a table, pick up an object and move again is evidence of sequential skill composition, not proof of unrestricted autonomy in a crowded home.\n\nReusing separate demonstration collections could lower the effort needed to introduce multi-step assignments on an existing platform. But no audited calculation of data-collection costs, integration work or robot downtime is supplied. A commercial pilot should specify a narrow task sequence before promising a general-purpose humanoid workforce.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Integration and evidence matter more than universal claims",
+    "summary": "Developments span warehouse planner tuning, shared humanoid data, mixed-fleet communications and modular cargo equipment.",
+    "implications": "Deployment depends on data access, computing cost, on-site tests and clear responsibility across vendors."
+  },
+  "glossary": [
+    {
+      "term": "Late Autumn",
+      "definition": "Study in which coding agents tune a warehouse multi-robot planner."
+    },
+    {
+      "term": "planner",
+      "definition": "Software that assigns jobs and selects routes for multiple machines."
+    },
+    {
+      "term": "throughput",
+      "definition": "Number of jobs completed per unit of time."
+    },
+    {
+      "term": "computational load",
+      "definition": "Processor capacity and time required to calculate the plan."
+    },
+    {
+      "term": "remote operation",
+      "definition": "A person directing a robot from a separate location."
+    },
+    {
+      "term": "telemetry",
+      "definition": "Recorded states and movements of equipment used for evaluation or learning."
+    },
+    {
+      "term": "KAIROS",
+      "definition": "South Korean humanoid development program discussed at the new data facility."
+    },
+    {
+      "term": "ISO 21423:2026",
+      "definition": "Standard for communication among industrial mobile robots and fleet managers."
+    },
+    {
+      "term": "modularity",
+      "definition": "Ability to replace hardware components for different handling tasks."
+    },
+    {
+      "term": "autonomous control",
+      "definition": "Movement selected by a system rather than commanded continuously by a human."
+    },
+    {
+      "term": "RISE",
+      "definition": "Method for connecting separately trained walking and manipulation skills."
+    },
+    {
+      "term": "Unitree G1",
+      "definition": "Humanoid platform used in experiments evaluating RISE."
+    }
+  ],
+  "sources": [
+    {
+      "id": "src-autumn",
+      "url": "https://arxiv.org/abs/2611.02391",
+      "domain": "arxiv.org",
+      "organization": "University of Southern California, UC Irvine and Symbotic",
+      "published_at": "2026-11-02",
+      "title": "Late Autumn: LLM Agents Specialize a General Multi-Robot Planner for One Warehouse"
+    },
+    {
+      "id": "src-factory",
+      "url": "https://m.korea.kr/news/policyNewsView.do?newsId=148974922&pWiseMinistry=ministryNews&repCodeType=%EC%A0%95%EB%B6%80%EB%B6%80%EC%B2%98&repCode_P=A00033",
+      "domain": "korea.kr",
+      "organization": "Ministry of Science and ICT of South Korea",
+      "published_at": "2026-11-03",
+      "title": "휴머노이드가 일하는 법 배우는 '데이터 생산기지' 국내 첫 개소"
+    },
+    {
+      "id": "src-iso",
+      "url": "https://www.automate.org/robotics/news/new-iso-interoperability-standard-helps-mobile-robots-from-different-vendors-work-together",
+      "domain": "automate.org",
+      "organization": "Association for Advancing Automation",
+      "published_at": "2026-11-02",
+      "title": "New ISO Interoperability Standard Helps Mobile Robots from Different Vendors Work Together"
+    },
+    {
+      "id": "src-xsto",
+      "url": "https://en.xsto.com/news-details/56.html",
+      "domain": "en.xsto.com",
+      "organization": "XSTO",
+      "published_at": "2026-11-03",
+      "title": "XSTO Showcases AI and Modular Material Handling at CeMAT Asia 2026"
+    },
+    {
+      "id": "src-rise",
+      "url": "https://eng.snu.ac.kr/en/research/research-achievements?bbsidx=8483&md=v",
+      "domain": "eng.snu.ac.kr",
+      "organization": "Seoul National University",
+      "published_at": "2026-10-30",
+      "title": "SNU Professor Songhwai Oh’s Team Develops Humanoid AI That Performs Sequential Tasks Using Separately Collected Locomotion and Manipulation Data"
+    },
+    {
+      "id": "src-iso-original",
+      "url": "https://www.iso.org/standard/86749.html",
+      "domain": "iso.org",
+      "organization": "International Organization for Standardization",
+      "published_at": "2026-10-14",
+      "title": "ISO 21423:2026 Robotics — Industrial mobile robots — Communications and interoperability"
+    }
+  ]
+}

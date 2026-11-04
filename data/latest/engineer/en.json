@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-04",
-  "issue_id": "daily-2026-11-04",
+  "issue_date": "2026-11-05",
+  "issue_id": "daily-2026-11-05",
   "edition": "engineer",
   "language": "en",
-  "generated_at": "2026-11-03T23:06:43.997Z",
-  "title": "Replicant Data — November 4, 2026",
-  "lead": "Research on physical calibration, robot learning, multi-machine planning and communication standards.",
+  "generated_at": "2026-11-05T01:36:46+09:00",
+  "title": "D1 test — material from the November 4 issue",
+  "lead": "Technical test of D1 article storage and encyclopedia links. Original November 4 texts are reused; this is not a new editorial news selection.",
   "news": [
     {
       "id": "cue-physical-calibration",
@@ -107,56 +107,6 @@
     "summary": "New work combines active physical calibration, reproducible robotic testbeds and auditable software optimization.",
     "implications": "The crucial distinction is between measured simulation gains and independently verified real-world performance."
   },
-  "glossary": [
-    {
-      "term": "CUE",
-      "definition": "Calibration Using Exploration, a method for selecting physical trials to tune simulation parameters."
-    },
-    {
-      "term": "CoreXY",
-      "definition": "A coupled two-axis gantry drive geometry used for fast tabletop motion."
-    },
-    {
-      "term": "digital twin",
-      "definition": "A virtual representation of a particular physical mechanism."
-    },
-    {
-      "term": "NVIDIA Isaac Lab",
-      "definition": "Robot simulation and training environment used in the tabletop experiment."
-    },
-    {
-      "term": "actuator model",
-      "definition": "An approximation of how a motor or mechanism responds to control commands."
-    },
-    {
-      "term": "coding agent",
-      "definition": "A system that proposes and evaluates changes to software source code."
-    },
-    {
-      "term": "throughput",
-      "definition": "Number of jobs a system completes in a given period."
-    },
-    {
-      "term": "RISE",
-      "definition": "Responsibility-Induced Specialized Experts, a way to specialize and switch robot-action models."
-    },
-    {
-      "term": "IROS",
-      "definition": "International Conference on Intelligent Robots and Systems, where the RISE paper was accepted."
-    },
-    {
-      "term": "Unitree G1",
-      "definition": "A specific humanoid robot platform used in the sequential-skill study."
-    },
-    {
-      "term": "ISO 21423:2026",
-      "definition": "An international communications and interoperability standard for industrial mobile robots."
-    },
-    {
-      "term": "interoperability",
-      "definition": "Ability of different devices and programs to exchange understandable information."
-    }
-  ],
   "sources": [
     {
       "id": "src-cue",

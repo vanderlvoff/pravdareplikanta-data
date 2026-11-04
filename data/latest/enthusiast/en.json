@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-04",
-  "issue_id": "daily-2026-11-04",
+  "issue_date": "2026-11-05",
+  "issue_id": "daily-2026-11-05",
   "edition": "enthusiast",
   "language": "en",
-  "generated_at": "2026-11-03T23:06:43.997Z",
-  "title": "Replicant Data — November 4, 2026",
-  "lead": "From billiards and tabletop games to humanoids: how machines test and acquire new abilities.",
+  "generated_at": "2026-11-05T01:36:46+09:00",
+  "title": "D1 test — material from the November 4 issue",
+  "lead": "Technical test of D1 article storage and encyclopedia links. Original November 4 texts are reused; this is not a new editorial news selection.",
   "news": [
     {
       "id": "cue-physical-calibration",
@@ -106,56 +106,6 @@
     "summary": "This edition follows machines testing physical assumptions, responding to opponents and combining separately learned tasks.",
     "implications": "A compelling demonstration is most informative when the verified result remains separate from what is still unknown."
   },
-  "glossary": [
-    {
-      "term": "CUE",
-      "definition": "System that selects informative physical experiments to improve simulated predictions."
-    },
-    {
-      "term": "calibration",
-      "definition": "Adjusting model parameters to agree with observed behavior."
-    },
-    {
-      "term": "simulation",
-      "definition": "A computer environment where actions can be tried without using a physical setup."
-    },
-    {
-      "term": "KlaskTron",
-      "definition": "Open tabletop platform where two controlled mechanisms compete."
-    },
-    {
-      "term": "digital twin",
-      "definition": "A computer representation of a particular device and how it moves."
-    },
-    {
-      "term": "RISE",
-      "definition": "Method that connects separately trained walking and manipulation abilities."
-    },
-    {
-      "term": "KAIROS",
-      "definition": "Name of a humanoid under development in South Korea."
-    },
-    {
-      "term": "demonstration",
-      "definition": "Recorded example of a task, often performed with human guidance, for later learning."
-    },
-    {
-      "term": "modularity",
-      "definition": "Ability to change hardware modules depending on the job."
-    },
-    {
-      "term": "autonomous control",
-      "definition": "A system selecting actions without a human directing every movement."
-    },
-    {
-      "term": "CoreXY",
-      "definition": "A two-axis drive arrangement used to move the tabletop mechanisms."
-    },
-    {
-      "term": "NVIDIA Isaac Lab",
-      "definition": "A simulation environment for training and testing robot controllers."
-    }
-  ],
   "sources": [
     {
       "id": "src-cue",

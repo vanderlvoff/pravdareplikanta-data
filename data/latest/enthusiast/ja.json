@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-04",
-  "issue_id": "daily-2026-11-04",
+  "issue_date": "2026-11-05",
+  "issue_id": "daily-2026-11-05",
   "edition": "enthusiast",
   "language": "ja",
-  "generated_at": "2026-11-03T23:06:43.997Z",
-  "title": "レプリカント・データ — 2026年11月4日",
-  "lead": "ビリヤードや小さなゲームから人型ロボットまで、機械が新しい動きを学ぶ仕組みを紹介する。",
+  "generated_at": "2026-11-05T01:36:46+09:00",
+  "title": "D1テスト — 11月4日号の記事",
+  "lead": "記事保存と百科事典リンクの技術テストです。11月4日号の原文を再利用しています。新しいニュースの編集号ではありません。",
   "news": [
     {
       "id": "cue-physical-calibration",
@@ -106,56 +106,6 @@
     "summary": "ロボットが物理の予想を確かめ、相手に反応し、別々の動作をつなぐ研究を紹介する。",
     "implications": "実演でできたことと、まだ確かめられていない能力を区別すると仕組みが見えてくる。"
   },
-  "glossary": [
-    {
-      "term": "CUE",
-      "definition": "予想を直すために、何を試せばよいか選ぶシステム。"
-    },
-    {
-      "term": "調整",
-      "definition": "実際に見た動きに合わせて、モデルの設定を直すこと。"
-    },
-    {
-      "term": "シミュレーション",
-      "definition": "実物を使わずにコンピューター内で動きを試すこと。"
-    },
-    {
-      "term": "KlaskTron",
-      "definition": "二つの装置が対戦できる、設計の公開された小さな実験台。"
-    },
-    {
-      "term": "デジタルツイン",
-      "definition": "特定の機械の動きをコンピューター内に再現したモデル。"
-    },
-    {
-      "term": "RISE",
-      "definition": "別々に学んだ歩行と物の操作をつなげる方法。"
-    },
-    {
-      "term": "KAIROS",
-      "definition": "韓国で開発中の人型ロボットの名前。"
-    },
-    {
-      "term": "実演",
-      "definition": "人が手伝ったり操作したりして、仕事の進め方を見せること。"
-    },
-    {
-      "term": "組み替え",
-      "definition": "使う仕事に合わせて機械の部品を交換すること。"
-    },
-    {
-      "term": "自動的な制御",
-      "definition": "人が動きを一つずつ決めずに、機械が行動を選ぶこと。"
-    },
-    {
-      "term": "CoreXY",
-      "definition": "二方向の動きを組み合わせる駆動方式。"
-    },
-    {
-      "term": "NVIDIA Isaac Lab",
-      "definition": "ロボットの動きを模擬環境で試すためのソフトウェア。"
-    }
-  ],
   "sources": [
     {
       "id": "src-cue",

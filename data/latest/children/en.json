@@ -1,14 +1,14 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-04",
-  "issue_id": "daily-2026-11-04",
+  "issue_date": "2026-11-05",
+  "issue_id": "daily-2026-11-05",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-03T23:06:43.997Z",
-  "title": "Replicant Data — November 4, 2026",
-  "lead": "Five accessible stories about robots trying, getting things wrong and learning new tasks.",
+  "generated_at": "2026-11-05T01:36:46+09:00",
+  "title": "D1 test — material from the November 4 issue",
+  "lead": "Technical test of D1 article storage and encyclopedia links. Original November 4 texts are reused; this is not a new editorial news selection.",
   "news": [
     {
       "id": "cue-physical-calibration",
@@ -106,28 +106,6 @@
     "summary": "These stories follow machines rolling a ball, playing against each other and joining several actions into one job.",
     "implications": "Each experiment also tells us when people still need to help the machines."
   },
-  "glossary": [
-    {
-      "term": "computer model",
-      "definition": "A set of rules a program uses to guess how objects will move."
-    },
-    {
-      "term": "simulation",
-      "definition": "A computer version of a real machine or game used for repeated practice."
-    },
-    {
-      "term": "prediction error",
-      "definition": "The gap between where a program expected an object and where it really ended up."
-    },
-    {
-      "term": "movement recording",
-      "definition": "Saved information showing the steps made during an action."
-    },
-    {
-      "term": "sequence of actions",
-      "definition": "Several steps that must happen in the right order to complete a task."
-    }
-  ],
   "sources": [
     {
       "id": "src-cue",
