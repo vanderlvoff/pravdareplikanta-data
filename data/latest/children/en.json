@@ -1,173 +1,151 @@
 {
-  "schema_version": "1.4",
+  "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-04",
-  "issue_id": "daily-2026-11-04",
+  "issue_date": "2026-11-05",
+  "issue_id": "daily-2026-11-05",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-03T23:06:43.997Z",
-  "title": "Replicant Data — November 4, 2026",
-  "lead": "Five accessible stories about robots trying, getting things wrong and learning new tasks.",
+  "generated_at": "2026-11-04T17:38:00Z",
+  "title": "Replicant Data — November 5, 2026",
+  "lead": "New research on physical reflexes and robot training, measured factory results and Physical AI infrastructure. We separate evaluated outcomes from product claims.",
   "news": [
     {
-      "id": "cue-physical-calibration",
-      "title": "Why a ball rolls somewhere the robot did not expect",
-      "summary": "Scientists built a way for a robot to test its guesses about how billiard balls move by trying small experiments. Its predictions improved in the tested conditions, but that does not make it an expert at handling every kind of object.",
-      "details": "The scientists wanted the robot to do more than look at a picture. First the computer guesses where a moving ball will end up. Then the machine tries an action on the real table and checks how far its guess was from the result. It uses what happened to improve its computer model. A model is a set of rules the program uses to make predictions about the next movement.",
-      "technical_novelty": "Imagine a pool table. A photograph shows where the balls are, but it cannot tell you exactly how far a ball will roll after being hit. It may slow down because of the surface or change direction after hitting another ball. Even a very realistic computer game may not behave exactly like a real table.",
-      "engineering_impact": "Imagine rolling a marble first across a desk and then across a rug. Looking at a photograph would not tell you exactly where it stops. The scientists let the machine try a movement, compare the outcome with its computer guess and adjust that guess. The reported 72 percent belongs to a specific prediction test, not to every game a robot might play.",
-      "limitations": "Researchers tested twenty-five different physical settings and reported that the prediction error became 72 percent smaller than with a comparison method. That number is not a score for winning games or doing household chores. It only tells us how much more accurately the system guessed ball positions in those tests. Clothes, soft toys and heavy boxes could behave quite differently.",
-      "evidence_status": "Evidence: results and limitations are reported by the study authors; independent replication has not been established.",
+      "id": "tohoku-reflex",
+      "title": "Why a robot's leg kicked without a computer deciding to kick it",
+      "summary": "Scientists at Tohoku University built a mechanical device that reacts when an artificial muscle is stretched. They reproduced a knee-jerk reflex and combined the device with other controls to make a two-legged robot walk.",
+      "details": "The proposed mechanism responds when an artificial muscle is stretched beyond an adjustable threshold. Its physical structure detects the stretch and contracts the mechanism, reproducing the essential cause-and-response pattern of the patellar tendon reflex. For walking, the group paired this mechanical response with higher-level control that changes the activation threshold with the phase of a step. This distinction matters: the reflex module does not remove every electronic component from the walking robot, nor does it independently decide where to walk.",
+      "technical_novelty": "The proposed mechanism responds when an artificial muscle is stretched beyond an adjustable threshold. Its physical structure detects the stretch and contracts the mechanism, reproducing the essential cause-and-response pattern of the patellar tendon reflex. For walking, the group paired this mechanical response with higher-level control that changes the activation threshold with the phase of a step. This distinction matters: the reflex module does not remove every electronic component from the walking robot, nor does it independently decide where to walk.",
+      "engineering_impact": "Such embodied control could reduce the amount of sensor wiring, computation and power needed for some fast local reactions. The researchers demonstrated knee-jerk behavior and generated bipedal gait, but the announcement provides no evidence that the mechanism alone solves balance on arbitrary ground, obstacle avoidance or safe operation around people. The next engineering question is how multiple interacting artificial muscles would coordinate their thresholds when the body encounters unexpected contact. The result is a mechanical control principle, not a ready-made autonomous humanoid.",
+      "limitations": "Such embodied control could reduce the amount of sensor wiring, computation and power needed for some fast local reactions. The researchers demonstrated knee-jerk behavior and generated bipedal gait, but the announcement provides no evidence that the mechanism alone solves balance on arbitrary ground, obstacle avoidance or safe operation around people. The next engineering question is how multiple interacting artificial muscles would coordinate their thresholds when the body encounters unexpected contact. The result is a mechanical control principle, not a ready-made autonomous humanoid.",
+      "evidence_status": "Evidence: figures are reported by the researchers or company; independent replication of the stated results has not been established.",
+      "published_at": "2026-11-04",
+      "organization": "Tohoku University",
+      "source_ids": [
+        "src-tohoku-reflex"
+      ],
+      "time_window": "24h",
+      "body": "Imagine a doctor gently tapping just below your knee. Your lower leg moves before you have time to think about moving it. This is called a reflex. Researchers at Japan's Tohoku University wanted to give a robot something similar. On November 4, they described a small mechanism that responds when an artificial muscle stretches. That part works through its physical structure, without an electronic sensor or computer making the immediate reflex decision.\n\nWhen the artificial muscle stretches past a chosen point, the mechanism makes it contract. The team first reproduced the familiar knee-jerk response. Then they added a separate controller that changes when the mechanism should react as the robot takes a step. Together, these parts allowed two-legged walking. This does not mean that the whole robot works without computers. The broader movement still needs to be coordinated by another system.\n\nWhy build a reflex into a machine? A quick local response might need less wiring and electrical power than a response that is always calculated elsewhere. But the scientists have not shown that their robot can walk safely on every surface, avoid people or find its own route. They have demonstrated one useful kind of reaction, not a robot that can walk anywhere.",
+      "image": null
+    },
+    {
+      "id": "jtekt-picking",
+      "title": "A factory robot gets better at picking parts from a messy box",
+      "summary": "JTEKT says an AI-assisted robot picked randomly placed parts more successfully in one factory trial. Its announced success rate was 97.1%, compared with 85.0% under earlier control, while the average task cycle became 16% shorter.",
+      "details": "JTEKT says the AI system inspected camera images, inferred the condition and position of parts, then selected grasp and transport actions. In the company's stated high-difficulty evaluation conditions, picking success reached 97.1%, compared with 85.0% for existing control, a gain of 12.1 percentage points. Average cycle time fell by 16%. The company says the change required adding an AI-capable PC to existing equipment rather than undertaking a large mechanical rebuild. These are measurable operational indicators, but the announcement does not supply a complete independent audit of long-term factory uptime.",
+      "technical_novelty": "JTEKT says the AI system inspected camera images, inferred the condition and position of parts, then selected grasp and transport actions. In the company's stated high-difficulty evaluation conditions, picking success reached 97.1%, compared with 85.0% for existing control, a gain of 12.1 percentage points. Average cycle time fell by 16%. The company says the change required adding an AI-capable PC to existing equipment rather than undertaking a large mechanical rebuild. These are measurable operational indicators, but the announcement does not supply a complete independent audit of long-term factory uptime.",
+      "engineering_impact": "The figures suggest an incremental path to using learned perception and control on installed production equipment, where replacing the entire cell can be expensive. A buyer still needs to know how performance changes with new part families, dirt, lighting, abnormal bins and maintenance cycles. A 97.1% picking success rate also means some attempts fail; the economic result depends on recovery, rejected parts and human intervention, not only average cycle time. The scope is one specified production task under the company's test conditions.",
+      "limitations": "The figures suggest an incremental path to using learned perception and control on installed production equipment, where replacing the entire cell can be expensive. A buyer still needs to know how performance changes with new part families, dirt, lighting, abnormal bins and maintenance cycles. A 97.1% picking success rate also means some attempts fail; the economic result depends on recovery, rejected parts and human intervention, not only average cycle time. The scope is one specified production task under the company's test conditions.",
+      "evidence_status": "Evidence: figures are reported by the researchers or company; independent replication of the stated results has not been established.",
       "published_at": "2026-11-02",
-      "organization": "Xilun Zhang and collaborators",
+      "organization": "JTEKT",
       "source_ids": [
-        "src-cue"
+        "src-jtekt"
       ],
       "time_window": "72h",
-      "body": "Imagine a pool table. A photograph shows where the balls are, but it cannot tell you exactly how far a ball will roll after being hit. It may slow down because of the surface or change direction after hitting another ball. Even a very realistic computer game may not behave exactly like a real table.\n\nThe scientists wanted the robot to do more than look at a picture. First the computer guesses where a moving ball will end up. Then the machine tries an action on the real table and checks how far its guess was from the result. It uses what happened to improve its computer model. A model is a set of rules the program uses to make predictions about the next movement.\n\nImagine rolling a marble first across a desk and then across a rug. Looking at a photograph would not tell you exactly where it stops. The scientists let the machine try a movement, compare the outcome with its computer guess and adjust that guess. The reported 72 percent belongs to a specific prediction test, not to every game a robot might play.\n\nResearchers tested twenty-five different physical settings and reported that the prediction error became 72 percent smaller than with a comparison method. That number is not a score for winning games or doing household chores. It only tells us how much more accurately the system guessed ball positions in those tests. Clothes, soft toys and heavy boxes could behave quite differently.",
+      "body": "A person can look into a box of mixed parts and usually decide which piece to pick up. For a robot, that is harder: it must find each part and choose where to hold it. Japanese manufacturer JTEKT reported on November 2 that it had tested an improved system on a car-parts production line. The actual experiment finished on August 31. Two partner companies, Upstage AI and Karakuri, worked on the project as well.\n\nThe added AI looks at camera pictures and chooses where the robot should grip and move a part. Under the company's specially chosen difficult test conditions, the old control system succeeded on 85.0% of attempts. The new system achieved 97.1%, and the average time for a work cycle fell by 16%. JTEKT says it could add an AI computer to existing equipment rather than rebuild the entire robot station.\n\nThat is useful progress, but even 97.1% is not the same as always getting the job right. Some attempts still fail, and a failure might require a person to help. The company measured a specific kind of factory work, not every object you might find at home or school. Engineers still need to check what happens with other parts, different lighting and unexpected situations.",
       "image": null
     },
     {
-      "id": "klasktron-open-testbed",
-      "title": "Two little robots learn to compete across a game table",
-      "summary": "Researchers built a small game table where two machines compete and react to one another. They practiced the controls in a computer model first and then tested the learned movements on the real table.",
-      "details": "Two moving mechanisms push playing pieces from opposite sides of the board. Researchers first trained their controls in a simulation, which is a computer version of the real equipment. A simulation lets them repeat the game and try many different choices. Afterward they moved the learned controls to the actual table. The researchers say the machines did not need extra training on the real board.",
-      "technical_novelty": "When you play a board game with a friend, doing the same move over and over is rarely a good plan. Your friend may change direction at the last moment. Robots face a similar problem: one machine must notice what the other is doing and adjust its own movement. Scientists built a small tabletop arena to study that challenge.",
-      "engineering_impact": "A game a little like tabletop hockey can become a tiny laboratory. Two moving mechanisms push pieces and try to beat each other. Scientists first practiced the controls inside a computer game, then tested them on an actual board. That does not make the machines clever at everything, but it gives researchers a clear way to measure their decisions.",
-      "limitations": "The team also shared drawings and a list of parts. They estimate that the main hardware costs less than 2,500 dollars. That does not promise that anyone can build the machine without tools or experience. Motors can behave differently when they are adjusted differently. But other scientists can examine the design and try to repeat the game instead of trusting only a video.",
-      "evidence_status": "Evidence: results and limitations are reported by the study authors; independent replication has not been established.",
+      "id": "airoa-handheld",
+      "title": "Teaching two robot hands without using a robot to record the lessons",
+      "summary": "The AIRoA-0 researchers collected 16,151 hours of examples with grippers held directly by people. They report that a model trained on those examples succeeded on an average of 78% of ten selected robot tasks.",
+      "details": "AIRoA-0 uses cameras on the two grippers' wrists, estimates which regions of the view matter and tracks the stage of the task while predicting successive actions. Reported examples include sorting small parts, replacing components in a robot vacuum, unzipping a pencil case and folding a towel. On ten evaluation tasks, the authors report a mean success rate of 78%, against 27% for the strongest of four comparison vision-language-action models adapted using the same task demonstrations. They say the system can operate on several robot platforms carrying the YUBI gripper.",
+      "technical_novelty": "AIRoA-0 uses cameras on the two grippers' wrists, estimates which regions of the view matter and tracks the stage of the task while predicting successive actions. Reported examples include sorting small parts, replacing components in a robot vacuum, unzipping a pencil case and folding a towel. On ten evaluation tasks, the authors report a mean success rate of 78%, against 27% for the strongest of four comparison vision-language-action models adapted using the same task demonstrations. They say the system can operate on several robot platforms carrying the YUBI gripper.",
+      "engineering_impact": "The comparison is encouraging, but it is still a result from the authors' selected tasks and baseline configurations, not a claim that a robot can perform every household job. Transferring a recorded handheld movement to hardware requires consistent gripper geometry, camera placement and action representation. The disclosed dataset and training recipe create an opportunity for replication; independent replication of the reported rates is not yet established. The most striking result is that collecting useful manipulation data may no longer always require allocating time on an expensive robot.",
+      "limitations": "The comparison is encouraging, but it is still a result from the authors' selected tasks and baseline configurations, not a claim that a robot can perform every household job. Transferring a recorded handheld movement to hardware requires consistent gripper geometry, camera placement and action representation. The disclosed dataset and training recipe create an opportunity for replication; independent replication of the reported rates is not yet established. The most striking result is that collecting useful manipulation data may no longer always require allocating time on an expensive robot.",
+      "evidence_status": "Evidence: figures are reported by the researchers or company; independent replication of the stated results has not been established.",
       "published_at": "2026-11-02",
-      "organization": "ETH Zurich",
+      "organization": "Yueh-Hua Wu and collaborators",
       "source_ids": [
-        "src-klask"
+        "src-airoa"
       ],
       "time_window": "72h",
-      "body": "When you play a board game with a friend, doing the same move over and over is rarely a good plan. Your friend may change direction at the last moment. Robots face a similar problem: one machine must notice what the other is doing and adjust its own movement. Scientists built a small tabletop arena to study that challenge.\n\nTwo moving mechanisms push playing pieces from opposite sides of the board. Researchers first trained their controls in a simulation, which is a computer version of the real equipment. A simulation lets them repeat the game and try many different choices. Afterward they moved the learned controls to the actual table. The researchers say the machines did not need extra training on the real board.\n\nA game a little like tabletop hockey can become a tiny laboratory. Two moving mechanisms push pieces and try to beat each other. Scientists first practiced the controls inside a computer game, then tested them on an actual board. That does not make the machines clever at everything, but it gives researchers a clear way to measure their decisions.\n\nThe team also shared drawings and a list of parts. They estimate that the main hardware costs less than 2,500 dollars. That does not promise that anyone can build the machine without tools or experience. Motors can behave differently when they are adjusted differently. But other scientists can examine the design and try to repeat the game instead of trusting only a video.",
+      "body": "To teach a robot to fold a towel, someone usually has to operate a real robot and record its movements. That uses expensive equipment for a long time. The AIRoA-0 team tried something different: a person holds two small YUBI grippers and demonstrates the work without any robot being present. Cameras record the movements. The researchers collected 16,151 hours of these examples and described their project in a paper first submitted on November 2.\n\nLater, they trained a model and ran it on actual robots carrying compatible grippers. The reported examples include sorting tiny parts, opening a pencil case and folding a towel. The team tested ten tasks and reported 78% average success. The strongest of four comparison models, trained with the same task demonstrations, reached 27%. Those figures come from the researchers' own experiments, not from independent testing in every possible environment.\n\nThe interesting idea is that people can record useful lessons while the robot is doing something else. That could make it easier to gather examples for many jobs. But learning from videos does not mean a machine will never make mistakes. New objects, a different camera or another kind of gripper may still be difficult. Even a 78% success rate means that some attempts did not work.",
       "image": null
     },
     {
-      "id": "korea-humanoid-data-factory",
-      "title": "A new center records movement lessons from twelve humanoid robots",
-      "summary": "South Korea has opened a place where people guide humanoid robots through different tasks and record their movements. Twelve machines are already operating, and the recordings are intended to help future robot training.",
-      "details": "Twelve human-shaped robots are currently being used there. People control them from a distance or show movements for the machines to copy. Demonstrated jobs included taking items from a refrigerator, handling clothes, tidying a sofa and using buttons inside a car. Computers record what the robot's arms and other parts are doing. Those records may later become examples for training new robot programs.",
-      "technical_novelty": "Imagine seeing only a photograph of neatly folded clothes and then being asked to produce the same result. It would be hard to know where to put your hands first or how to turn the fabric. A robot also needs to see the steps along the way, not only the final arrangement. South Korea has opened a special center to collect that sort of record.",
-      "engineering_impact": "To learn how to fold something, it helps to see the movements along the way, not only the neat pile at the end. At the new center people guide the robots while computers record the actions. Twelve machines are currently working there. But recording a task while a person helps does not mean a robot already knows how to do it by itself.",
-      "limitations": "There is an important difference between a machine doing something while a person guides it and a machine working entirely on its own. The opening demonstrations do not prove the second case. Researchers plan to expand the center, and other organizations are expected to gain access gradually starting in late 2027. Nobody has yet shown how many new tasks robots will reliably learn from these recordings.",
-      "evidence_status": "Evidence: the official announcement confirms a facility and robot count, not measured downstream learning performance.",
-      "published_at": "2026-11-03",
-      "organization": "Ministry of Science and ICT of South Korea",
+      "id": "etri-showcase",
+      "title": "Ten different ways to help robots learn and move",
+      "summary": "South Korea's ETRI announced an event on November 5 to present ten Physical AI technologies. The planned demonstrations include robot hands that sense touch and a large library of recorded robot actions.",
+      "details": "One reported component, ROJI-Hub, is intended to help teams retrieve and reuse robot learning data. According to the announcement, the collection covers about 140,000 robot tasks and more than 1.4 million execution-video records, including activities such as stacking cups and moving objects. Other planned presentations discuss a compact computing approach for quadruped intelligence, hand sensors that register touch, acquisition of demonstrations for vision-language-action models, and planning methods intended to tolerate changing situations. These are separate research directions, not one integrated benchmark.",
+      "technical_novelty": "One reported component, ROJI-Hub, is intended to help teams retrieve and reuse robot learning data. According to the announcement, the collection covers about 140,000 robot tasks and more than 1.4 million execution-video records, including activities such as stacking cups and moving objects. Other planned presentations discuss a compact computing approach for quadruped intelligence, hand sensors that register touch, acquisition of demonstrations for vision-language-action models, and planning methods intended to tolerate changing situations. These are separate research directions, not one integrated benchmark.",
+      "engineering_impact": "The event could reveal which interfaces make Korean research systems practical for developers, but its agenda alone does not demonstrate interoperability, reliability or safety of finished robots. Reported dataset sizes are counts of recorded material, not counts of unique skills successfully deployed. Details of licenses, hardware requirements and evaluation protocols will matter more than the number of items on the event program. A responsible reading treats the November 4 announcement as a preview of work to be shown on November 5, not as proof that every demonstration has already taken place.",
+      "limitations": "The event could reveal which interfaces make Korean research systems practical for developers, but its agenda alone does not demonstrate interoperability, reliability or safety of finished robots. Reported dataset sizes are counts of recorded material, not counts of unique skills successfully deployed. Details of licenses, hardware requirements and evaluation protocols will matter more than the number of items on the event program. A responsible reading treats the November 4 announcement as a preview of work to be shown on November 5, not as proof that every demonstration has already taken place.",
+      "evidence_status": "Evidence: figures are reported by the researchers or company; independent replication of the stated results has not been established.",
+      "published_at": "2026-11-04",
+      "organization": "Electronics and Telecommunications Research Institute (ETRI)",
       "source_ids": [
-        "src-factory"
+        "src-etri"
       ],
-      "time_window": "72h",
-      "body": "Imagine seeing only a photograph of neatly folded clothes and then being asked to produce the same result. It would be hard to know where to put your hands first or how to turn the fabric. A robot also needs to see the steps along the way, not only the final arrangement. South Korea has opened a special center to collect that sort of record.\n\nTwelve human-shaped robots are currently being used there. People control them from a distance or show movements for the machines to copy. Demonstrated jobs included taking items from a refrigerator, handling clothes, tidying a sofa and using buttons inside a car. Computers record what the robot's arms and other parts are doing. Those records may later become examples for training new robot programs. A movement recording shows the steps taken, not just what the finished work looks like.\n\nTo learn how to fold something, it helps to see the movements along the way, not only the neat pile at the end. At the new center people guide the robots while computers record the actions. Twelve machines are currently working there. But recording a task while a person helps does not mean a robot already knows how to do it by itself.\n\nThere is an important difference between a machine doing something while a person guides it and a machine working entirely on its own. The opening demonstrations do not prove the second case. Researchers plan to expand the center, and other organizations are expected to gain access gradually starting in late 2027. Nobody has yet shown how many new tasks robots will reliably learn from these recordings.",
+      "time_window": "24h",
+      "body": "Imagine a museum where every room teaches robots a different ability. In one room, a machine tries to feel an object with its hand. In another, it learns to travel through difficult places. Elsewhere, researchers collect recordings to help robots learn tasks. South Korea's ETRI institute announced on November 4 that it would present ten Physical AI technologies at an event planned for November 5. Physical AI means systems that sense and act in the real world, not just answer questions on a screen.\n\nOne project is ROJI-Hub, a kind of library for robot training. According to the announcement, it contains information about around 140,000 tasks and more than 1.4 million records of task videos. These may include activities such as stacking cups and moving objects. Other planned presentations discuss a robot hand that senses touch and technology intended to help robots move through difficult conditions. Each project is different; they have not all been combined into one clever machine.\n\nThe event was only announced on November 4, so it would be wrong to say that all the demonstrations have already succeeded. A million videos also do not mean a robot has learned a million reliable skills. Watching an action is just one part of learning how to do it with real objects. Researchers must still show what their machines can actually achieve and where they make mistakes.",
       "image": null
     },
     {
-      "id": "rise-humanoid-sequential-skills",
-      "title": "A humanoid learns to walk, pick something up and continue its job",
-      "summary": "Researchers built a way for a humanoid robot to connect walking and hand movements that were taught separately. The machine completed several actions in sequence during experiments, but it has not learned every household task.",
-      "details": "The new program has several parts, each becoming better at certain kinds of movement. When one part is especially useful for the current task, the system gives it more influence over the robot's actions. It then notices when another part should take over. In this way a machine can walk to a table, pick something up and walk again. The team tested sequences in a computer simulation and on a real humanoid.",
-      "technical_novelty": "Imagine being asked to walk to a table, pick up a bottle and carry it to another table. First you walk, then stop, then carefully take hold of the object. People can usually connect these steps without much thought. For a robot, joining them is a separate challenge. Scientists at Seoul National University tried connecting skills that had been taught using different sets of examples.",
-      "engineering_impact": "Imagine walking to a table, picking up a bottle and carrying it somewhere else. Knowing how to walk is different from knowing how to hold the bottle carefully. The scientists built a way for the machine to choose which learned action comes next. It can link several steps, but it has not learned every possible household job.",
-      "limitations": "During the computer tests the researchers reported an average success rate of 87.3 percent. On a real machine they also performed better than their comparison method. But this does not mean a robot can run while carefully handling anything with its hands. The scientists themselves say that combining those movements at the same time needs more work. The demonstrated success concerns a sequence of learned steps.",
-      "evidence_status": "Evidence: performance figures are reported by the university on behalf of the research team; independent replication is not established.",
-      "published_at": "2026-10-30",
-      "organization": "Seoul National University",
+      "id": "sidekick-team",
+      "title": "How a small team can keep track of ten robots",
+      "summary": "Sidekick Robotics announced Team, a shared workspace for people building robot software. It is intended for teams of up to ten people and ten robots, but the new platform does not by itself teach the machines new skills.",
+      "details": "Sidekick lists model access, tagging and feedback, policy training, fine-tuning, and visualizations within the same workspace. It also describes online reinforcement-learning workflows where a person marks episodes successful or unsuccessful while real hardware executes them. This would address a familiar integration problem: evaluation notes, model versions and physical deployments often become scattered across tools. Yet simply placing those functions behind one interface does not prove that model quality increases or that robots can operate without supervision.",
+      "technical_novelty": "Sidekick lists model access, tagging and feedback, policy training, fine-tuning, and visualizations within the same workspace. It also describes online reinforcement-learning workflows where a person marks episodes successful or unsuccessful while real hardware executes them. This would address a familiar integration problem: evaluation notes, model versions and physical deployments often become scattered across tools. Yet simply placing those functions behind one interface does not prove that model quality increases or that robots can operate without supervision.",
+      "engineering_impact": "The company's Flywheel continuous-learning component remains in an invite-only internal alpha rather than a generally available part of the beta. A team considering the product would need to validate hardware compatibility, the boundary between protected model weights and derived policies, access controls, reliability of multi-robot orchestration and total operating costs. The significant news is a packaging and workflow claim for Physical AI development teams, with scale and pricing defined; there is no published independent fleet-performance benchmark in this announcement.",
+      "limitations": "The company's Flywheel continuous-learning component remains in an invite-only internal alpha rather than a generally available part of the beta. A team considering the product would need to validate hardware compatibility, the boundary between protected model weights and derived policies, access controls, reliability of multi-robot orchestration and total operating costs. The significant news is a packaging and workflow claim for Physical AI development teams, with scale and pricing defined; there is no published independent fleet-performance benchmark in this announcement.",
+      "evidence_status": "Evidence: figures are reported by the researchers or company; independent replication of the stated results has not been established.",
+      "published_at": "2026-11-04",
+      "organization": "Sidekick Robotics",
       "source_ids": [
-        "src-rise"
+        "src-sidekick"
       ],
-      "time_window": "7d",
-      "body": "Imagine being asked to walk to a table, pick up a bottle and carry it to another table. First you walk, then stop, then carefully take hold of the object. People can usually connect these steps without much thought. For a robot, joining them is a separate challenge. Scientists at Seoul National University tried connecting skills that had been taught using different sets of examples.\n\nThe new program has several parts, each becoming better at certain kinds of movement. When one part is especially useful for the current task, the system gives it more influence over the robot's actions. It then notices when another part should take over. In this way a machine can walk to a table, pick something up and walk again. The team tested sequences in a computer simulation and on a real humanoid. This sequence of actions matters because choosing the next step can be as hard as learning each movement.\n\nImagine walking to a table, picking up a bottle and carrying it somewhere else. Knowing how to walk is different from knowing how to hold the bottle carefully. The scientists built a way for the machine to choose which learned action comes next. It can link several steps, but it has not learned every possible household job.\n\nDuring the computer tests the researchers reported an average success rate of 87.3 percent. On a real machine they also performed better than their comparison method. But this does not mean a robot can run while carefully handling anything with its hands. The scientists themselves say that combining those movements at the same time needs more work. The demonstrated success concerns a sequence of learned steps.",
-      "image": null
-    },
-    {
-      "id": "xsto-cemat-material-handling",
-      "title": "How machines help move heavy things up stairs",
-      "summary": "An exhibition in Shanghai showed several devices designed to carry cargo across floors and staircases. People control some of the machines, while claims about more independent movement still need testing in different buildings.",
-      "details": "The exhibits included a machine that climbs stairs and carts with parts that can be changed for different jobs. One platform responds to a person's movement and helps the operator move cargo. Another machine is described as having more independent control. That difference matters: sometimes a person keeps deciding where to go while the motor only helps with the heavy work. Calling a device a robot does not tell us how many decisions it makes by itself.",
-      "technical_novelty": "Imagine delivering a heavy box to the third floor of a building that has no lift. An ordinary trolley rolls easily across a level floor but struggles on a staircase. Companies are developing equipment that can help carry loads where ordinary wheels are not enough. At a trade show in Shanghai, a manufacturer displayed several devices designed for that problem.",
-      "engineering_impact": "Imagine carrying a heavy box upstairs in a building without a lift. An ordinary trolley rolls easily across a flat floor but struggles on the steps. The exhibition showed several machines meant to help with loads like that. People control some of them, while others are described as having more advanced control; none is proven able to handle every staircase.",
-      "limitations": "A trade show is a good place to see equipment and ask how it works. But the manufacturer did not publish detailed comparison tests on many kinds of staircase. The width of the steps, the slope and the weight of the box can all change the difficulty. Before using a machine for real deliveries, people still need to test which routes it can manage safely.",
-      "evidence_status": "Evidence: the manufacturer describes a demonstration, without published independent performance tests.",
-      "published_at": "2026-11-03",
-      "organization": "XSTO",
-      "source_ids": [
-        "src-xsto"
-      ],
-      "time_window": "72h",
-      "body": "Imagine delivering a heavy box to the third floor of a building that has no lift. An ordinary trolley rolls easily across a level floor but struggles on a staircase. Companies are developing equipment that can help carry loads where ordinary wheels are not enough. At a trade show in Shanghai, a manufacturer displayed several devices designed for that problem.\n\nThe exhibits included a machine that climbs stairs and carts with parts that can be changed for different jobs. One platform responds to a person's movement and helps the operator move cargo. Another machine is described as having more independent control. That difference matters: sometimes a person keeps deciding where to go while the motor only helps with the heavy work. Calling a device a robot does not tell us how many decisions it makes by itself.\n\nImagine carrying a heavy box upstairs in a building without a lift. An ordinary trolley rolls easily across a flat floor but struggles on the steps. The exhibition showed several machines meant to help with loads like that. People control some of them, while others are described as having more advanced control; none is proven able to handle every staircase.\n\nA trade show is a good place to see equipment and ask how it works. But the manufacturer did not publish detailed comparison tests on many kinds of staircase. The width of the steps, the slope and the weight of the box can all change the difficulty. Before using a machine for real deliveries, people still need to test which routes it can manage safely.",
+      "time_window": "24h",
+      "body": "Imagine a school team building a robot together. One student changes the program, another tests the movement and a third writes down what happened. If everyone keeps a different version, the group can easily get confused. Professional robotics teams have a similar problem. On November 4, Sidekick Robotics announced a beta version of Team, a service intended to help people share robot models, training results and test information.\n\nThe company says a Team workspace can support up to ten people and development work involving up to ten robots. Its listed price begins at $12 per person each week. Sidekick describes ways to keep track of trained model versions, look at evaluations and mark whether a robot trial succeeded or failed. These are tools for the people teaching robots. They do not mean that a robot suddenly learns a new movement just because its developer uses a shared website.\n\nThe company also talks about Flywheel, a feature intended to help robots keep learning during use. For now, it is still in an internal alpha stage, so it should not be treated as an ordinary finished feature. A real team would need to check that the platform works with its equipment and saves time. The announcement does not give an independent experiment showing that ten robots perform better simply because their engineers share a workspace.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Testing a guess can teach more than repeating a move",
-    "summary": "These stories follow machines rolling a ball, playing against each other and joining several actions into one job.",
-    "implications": "Each experiment also tells us when people still need to help the machines."
+    "title": "Physical AI is more than a single model",
+    "summary": "Recent work explores different paths to useful robots: built-in mechanical responses, cheaper training data and improvements in specific factory operations.",
+    "implications": "A laboratory success rate, a factory cycle-time measure and a platform feature list require different types of validation."
   },
-  "glossary": [
-    {
-      "term": "computer model",
-      "definition": "A set of rules a program uses to guess how objects will move."
-    },
-    {
-      "term": "simulation",
-      "definition": "A computer version of a real machine or game used for repeated practice."
-    },
-    {
-      "term": "prediction error",
-      "definition": "The gap between where a program expected an object and where it really ended up."
-    },
-    {
-      "term": "movement recording",
-      "definition": "Saved information showing the steps made during an action."
-    },
-    {
-      "term": "sequence of actions",
-      "definition": "Several steps that must happen in the right order to complete a task."
-    }
-  ],
   "sources": [
     {
-      "id": "src-cue",
-      "url": "https://arxiv.org/abs/2611.02691",
+      "id": "src-tohoku-reflex",
+      "title": "Electronics-Free Artificial Reflex Reproduces Knee-Jerk and Enables Bipedal Walking",
+      "url": "https://www.tohoku.ac.jp/en/press/electronics_free_artificial_reflex_reproduces_knee_jerk_and_enables_bipedal_walking.html",
+      "domain": "tohoku.ac.jp",
+      "organization": "Tohoku University",
+      "published_at": "2026-11-04"
+    },
+    {
+      "id": "src-jtekt",
+      "title": "ジェイテクト、フィジカルAIを活用した工場実証で部品取り出し工程の成功率97.1％を達成",
+      "url": "https://prtimes.jp/main/html/rd/p/000000609.000028729.html",
+      "domain": "prtimes.jp",
+      "organization": "JTEKT",
+      "published_at": "2026-11-02"
+    },
+    {
+      "id": "src-airoa",
+      "title": "AIRoA-0: Long-Horizon, Precise, Cross-Embodiment Manipulation from Handheld Data",
+      "url": "https://arxiv.org/abs/2611.03815",
       "domain": "arxiv.org",
-      "organization": "Xilun Zhang and collaborators",
-      "published_at": "2026-11-02",
-      "title": "Closing the Dynamics Gap through Self-Directed Robotic Interaction"
+      "organization": "Yueh-Hua Wu and collaborators",
+      "published_at": "2026-11-02"
     },
     {
-      "id": "src-klask",
-      "url": "https://arxiv.org/abs/2611.03138",
-      "domain": "arxiv.org",
-      "organization": "ETH Zurich",
-      "published_at": "2026-11-02",
-      "title": "KlaskTron: An Open-Source Platform for Physical Adversarial Multi-Agent RL"
+      "id": "src-etri",
+      "title": "ETRI to unveil ten Physical AI technologies at KINTEX on November 5",
+      "url": "https://www.etnews.com/20261104000219",
+      "domain": "etnews.com",
+      "organization": "Electronics and Telecommunications Research Institute (ETRI)",
+      "published_at": "2026-11-04"
     },
     {
-      "id": "src-factory",
-      "url": "https://m.korea.kr/news/policyNewsView.do?newsId=148974922&pWiseMinistry=ministryNews&repCodeType=%EC%A0%95%EB%B6%80%EB%B6%80%EC%B2%98&repCode_P=A00033",
-      "domain": "korea.kr",
-      "organization": "Ministry of Science and ICT of South Korea",
-      "published_at": "2026-11-03",
-      "title": "휴머노이드가 일하는 법 배우는 '데이터 생산기지' 국내 첫 개소"
-    },
-    {
-      "id": "src-rise",
-      "url": "https://eng.snu.ac.kr/en/research/research-achievements?bbsidx=8483&md=v",
-      "domain": "eng.snu.ac.kr",
-      "organization": "Seoul National University",
-      "published_at": "2026-10-30",
-      "title": "SNU Professor Songhwai Oh’s Team Develops Humanoid AI That Performs Sequential Tasks Using Separately Collected Locomotion and Manipulation Data"
-    },
-    {
-      "id": "src-xsto",
-      "url": "https://en.xsto.com/news-details/56.html",
-      "domain": "en.xsto.com",
-      "organization": "XSTO",
-      "published_at": "2026-11-03",
-      "title": "XSTO Showcases AI and Modular Material Handling at CeMAT Asia 2026"
+      "id": "src-sidekick",
+      "title": "Introducing Team — the Collaborative Plan of the Sidekick Robotics Platform",
+      "url": "https://www.sidekickrobotics.ai/news/introducing-team",
+      "domain": "sidekickrobotics.ai",
+      "organization": "Sidekick Robotics",
+      "published_at": "2026-11-04"
     }
   ]
 }
