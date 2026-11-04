@@ -1,0 +1,28 @@
+name: Process DATA develop in private CODE
+on:
+  push:
+    branches: [develop]
+    paths:
+      - 'data/latest/**'
+      - 'data/schema/**'
+      - '.github/workflows/notify-code.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: notify-code-develop
+  cancel-in-progress: true
+jobs:
+  notify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 2
+    steps:
+      - name: Dispatch pinned develop import in CODE
+        env:
+          GH_TOKEN: ${{ secrets.CODE_ACTIONS_TOKEN }}
+          DATA_SHA: ${{ github.sha }}
+        run: |
+          test -n "$GH_TOKEN"
+          gh workflow run article-pipeline.yml --repo vanderlvoff/pravdareplikanta \
+            --ref develop -f operation=prepare -f content_branch=develop \
+            -f content_commit="$DATA_SHA" -f write_remote=true
