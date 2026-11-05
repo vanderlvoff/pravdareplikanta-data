@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-06",
+  "article_id": "trex",
+  "article_title": {
+    "ru": "Пальцы с обратной связью: Panasonic проверила T-Rex на 12 задачах",
+    "en": "Tactile corrections lift Panasonic's two-handed robot success rate",
+    "ja": "パナソニックの触覚付き双腕操作、12課題で平均成功率65％"
+  },
+  "article_urls": {
+    "ru": "https://repravda.com/ru/issues/2026-11-06/articles/trex/",
+    "en": "https://repravda.com/en/issues/2026-11-06/articles/trex/",
+    "ja": "https://repravda.com/ja/issues/2026-11-06/articles/trex/"
+  },
+  "edition": "engineer",
+  "image_path": "data/images/2026-11-06/trex.webp",
+  "caption": {
+    "ru": "Исследователи проверяют бережную передачу яйца двумя роботизированными руками. Редакционная иллюстрация по мотивам работы T-Rex; оборудование изображено условно.",
+    "en": "Researchers test a gentle egg handoff between two robotic hands. Editorial illustration inspired by T-Rex; the apparatus is conceptual.",
+    "ja": "2つのロボットハンドによる卵の慎重な受け渡しを検証する研究者。T-Rexの研究を題材にした編集イラストで、装置は概念的な表現。"
+  },
+  "alt": {
+    "ru": "Женщина-инженер настраивает органы управления испытательного стенда, мужчина записывает наблюдения; две роботизированные кисти бережно передают яйцо над мягким поддоном.",
+    "en": "A woman engineer adjusts test-bench controls while a man records observations; two robotic hands gently transfer an egg above a padded tray.",
+    "ja": "女性技術者が実験装置を操作し、男性が観察結果を記録する。2つのロボットハンドが緩衝材を敷いたトレーの上で卵を慎重に受け渡している。"
+  },
+  "visual_thesis": "Обратная связь от прикосновения помогает корректировать тонкие движения при работе с хрупким предметом.",
+  "visual_brief": "Одна лабораторная сцена испытания передачи яйца: женщина активно управляет стендом, коллега фиксирует результат. Чёрно-белая научная гравюра с ясными силуэтами и умеренной штриховкой. Роботизированные руки — условное редакционное изображение, а не реконструкция оборудования T-Rex.",
+  "source_ids": [
+    "src-trex"
+  ],
+  "source_json": {
+    "repository": "vanderlvoff/pravdareplikanta-data",
+    "branch": "develop",
+    "path": "data/archive/2026/11/06/engineer/ru.json",
+    "blob_sha": "47dcb6ac64f0e054c42bd3f0ce1cdd529dff12ce"
+  },
+  "illustration_type": "editorial_concept",
+  "style": "black-and-white-scientific-engraving",
+  "width": 1600,
+  "height": 900
+}
