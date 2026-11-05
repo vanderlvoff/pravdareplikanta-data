@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-05",
+  "article_id": "jtekt-picking",
+  "article_title": {
+    "ru": "JTEKT сообщила о 97,1% успешных захватов деталей на заводе",
+    "en": "JTEKT reports 97.1% success in a factory random-picking trial",
+    "ja": "ジェイテクト、工場のばら積み部品取り出しで成功率97.1％"
+  },
+  "article_urls": {
+    "ru": "https://repravda.com/ru/issues/2026-11-05/articles/jtekt-picking/",
+    "en": "https://repravda.com/en/issues/2026-11-05/articles/jtekt-picking/",
+    "ja": "https://repravda.com/ja/issues/2026-11-05/articles/jtekt-picking/"
+  },
+  "image_path": "data/images/2026-11-05/jtekt-picking.webp",
+  "caption": {
+    "ru": "Инженеры оценивают работу роботизированной выборки деталей. Редакционная иллюстрация по мотивам сообщения JTEKT; показана условная производственная ячейка.",
+    "en": "Engineers evaluate robotic bin picking. Editorial illustration inspired by JTEKT's report; the production cell is conceptual.",
+    "ja": "ロボットによるばら積み部品取り出しを評価する技術者。ジェイテクトの発表を題材にした編集イラストで、生産設備は概念的な表現。"
+  },
+  "alt": {
+    "ru": "Женщина-инженер работает с панелью управления, коллега записывает результаты; за защитным ограждением робот извлекает металлическую деталь из контейнера.",
+    "en": "A woman engineer operates a control panel while a colleague records results; behind a safety guard, a robot picks a metal component from a bin.",
+    "ja": "女性技術者が操作盤を扱い、同僚が結果を記録している。安全柵の内側でロボットが箱から金属部品を取り出している。"
+  },
+  "visual_thesis": "Улучшение конкретной заводской операции оценивают по захватам и производственному циклу.",
+  "visual_brief": "Чёрно-белая редакционная гравюра в духе советской научной графики. Два инженера проверяют выборку деталей роботом. Концептуальная сцена, а не документальное изображение оборудования или сотрудников JTEKT.",
+  "source_ids": [
+    "src-jtekt"
+  ],
+  "source_json": {
+    "repository": "vanderlvoff/pravdareplikanta-data",
+    "branch": "develop",
+    "path": "data/archive/2026/11/05/engineer/ru.json",
+    "blob_sha": "c0e308ef2a0cce54d0a03eb5ee97216c177a7d67"
+  },
+  "illustration_type": "editorial_concept",
+  "style": "black-and-white-scientific-engraving",
+  "width": 1600,
+  "height": 900
+}
