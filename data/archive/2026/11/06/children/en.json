@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-06",
+  "issue_id": "daily-2026-11-06",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-05T22:10:00Z",
+  "title": "Replicant Data — November 6, 2026 — Young Readers",
+  "lead": "Why a robot can remember the wrong object, how fingertips help with careful tasks, and why factory machines need protection against unauthorized commands.",
+  "news": [
+    {
+      "id": "memory",
+      "title": "A robot learns to question its own memory",
+      "summary": "MIT scientists developed a way for a robot to check whether it remembered an object correctly. It looks at several pictures and corrects doubtful labels.",
+      "details": "The new method compares pictures of the same object taken from different directions. The robot checks how confident it was about its first description. Then it looks for disagreements between pictures. When the descriptions do not fit together, it selects some more useful images and changes the saved label. It is a way to question an old guess, not a perfect memory that never makes a mistake.",
+      "technical_novelty": "The new method compares pictures of the same object taken from different directions. The robot checks how confident it was about its first description. Then it looks for disagreements between pictures. When the descriptions do not fit together, it selects some more useful images and changes the saved label. It is a way to question an old guess, not a perfect memory that never makes a mistake.",
+      "engineering_impact": "In tests, the researchers cleared up uncertain descriptions for about 92 percent of the objects they examined, often using just two extra descriptions. This result does not mean a robot can now identify everything correctly or carry out any household job. The method is mainly about improving written memories of objects and answering questions about where and when they were seen.",
+      "limitations": "In tests, the researchers cleared up uncertain descriptions for about 92 percent of the objects they examined, often using just two extra descriptions. This result does not mean a robot can now identify everything correctly or carry out any household job. The method is mainly about improving written memories of objects and answering questions about where and when they were seen.",
+      "evidence_status": "These results are reported by the developers; tests in other situations may have different outcomes.",
+      "published_at": "2026-11-05",
+      "organization": "Massachusetts Institute of Technology",
+      "source_ids": [
+        "src-memory"
+      ],
+      "time_window": "24h",
+      "body": "Sometimes a distant object looks like something else. A chimney on a roof might even resemble a little animal. Robots can make similar mistakes when they look through a camera and save descriptions of what they see. If a robot remembers the wrong object name, it may struggle to find something important later. Researchers wanted to help it notice and repair those mistakes.\n\nThe new method compares pictures of the same object taken from different directions. The robot checks how confident it was about its first description. Then it looks for disagreements between pictures. When the descriptions do not fit together, it selects some more useful images and changes the saved label. It is a way to question an old guess, not a perfect memory that never makes a mistake.\n\nIn tests, the researchers cleared up uncertain descriptions for about 92 percent of the objects they examined, often using just two extra descriptions. This result does not mean a robot can now identify everything correctly or carry out any household job. The method is mainly about improving written memories of objects and answering questions about where and when they were seen.\n\nImagine fixing the caption in a family photo album after finding a clearer picture. The robot is doing something a little like that. It learns to check an old description instead of believing it forever. The researchers work at the Massachusetts Institute of Technology, and their scientific name for the system is UQ-DAAAM.",
+      "image": null
+    },
+    {
+      "id": "trex",
+      "title": "Robot hands learn to adjust when an object starts to slip",
+      "summary": "Panasonic and university scientists gave robot fingers faster ways to react to touch. The robot managed some careful tasks more often, but it still made many mistakes.",
+      "details": "A robot with two hands tried twelve kinds of tasks, including turning pages, moving an egg and using a key. On average, it succeeded in 65 out of 100 attempts. A comparison system managed 35, and a version without touch information managed 42. That is a big improvement, but the robot still failed many times. It is not ready to do every delicate job without checking.",
+      "technical_novelty": "A robot with two hands tried twelve kinds of tasks, including turning pages, moving an egg and using a key. On average, it succeeded in 65 out of 100 attempts. A comparison system managed 35, and a version without touch information managed 42. That is a big improvement, but the robot still failed many times. It is not ready to do every delicate job without checking.",
+      "engineering_impact": "The team trained the system using many recordings. Some showed humans working with objects; others came from real robot hands touching things. Watching another person's movement is not the same as feeling contact with an object. Combining those two sorts of experience helped the robot make more careful adjustments when an object moved unexpectedly.",
+      "limitations": "The team trained the system using many recordings. Some showed humans working with objects; others came from real robot hands touching things. Watching another person's movement is not the same as feeling contact with an object. Combining those two sorts of experience helped the robot make more careful adjustments when an object moved unexpectedly.",
+      "evidence_status": "These results are reported by the developers; tests in other situations may have different outcomes.",
+      "published_at": "2026-11-05",
+      "organization": "Panasonic Holdings",
+      "source_ids": [
+        "src-trex"
+      ],
+      "time_window": "24h",
+      "body": "When you hold a raw egg, your eyes help you find it and your fingers tell you how tightly to squeeze. A robot's camera can show where the egg is, but it may not notice quickly enough when the egg starts to slip. Researchers added special sensors to robot fingertips so the hands can change their movements as soon as contact changes.\n\nA robot with two hands tried twelve kinds of tasks, including turning pages, moving an egg and using a key. On average, it succeeded in 65 out of 100 attempts. A comparison system managed 35, and a version without touch information managed 42. That is a big improvement, but the robot still failed many times. It is not ready to do every delicate job without checking.\n\nThe team trained the system using many recordings. Some showed humans working with objects; others came from real robot hands touching things. Watching another person's movement is not the same as feeling contact with an object. Combining those two sorts of experience helped the robot make more careful adjustments when an object moved unexpectedly.\n\nImagine a pencil beginning to slip from your hand. You tighten your grip almost immediately. Scientists want robot hands to make that kind of quick correction. The work is still a research experiment and needs tests with more objects and longer working hours. Panasonic and its partners called their system T-Rex.",
+      "image": null
+    },
+    {
+      "id": "serve",
+      "title": "How robots share useful stories from their journeys",
+      "summary": "Serve is offering robotics companies tools to manage connections and useful recordings. These tools help developers learn from rare events but do not replace the robot's own safe behavior.",
+      "details": "One company has begun offering tools to other robot builders. One tool helps robots communicate with computers far away. Another finds unusual and useful moments in long recordings. A third offers information gathered from robots driving on real sidewalks. An early customer works on large machines used for construction, which face very different problems from small delivery robots.",
+      "technical_novelty": "One company has begun offering tools to other robot builders. One tool helps robots communicate with computers far away. Another finds unusual and useful moments in long recordings. A third offers information gathered from robots driving on real sidewalks. An early customer works on large machines used for construction, which face very different problems from small delivery robots.",
+      "engineering_impact": "Think about a school notebook with hundreds of easy exercises but just a few very difficult ones. Finding the difficult examples can help you learn more. Robot builders want to find the tricky moments in recordings for the same reason. Yet better communication does not make a robot automatically safe. Engineers still have to plan what it should do when the connection fails.",
+      "limitations": "Think about a school notebook with hundreds of easy exercises but just a few very difficult ones. Finding the difficult examples can help you learn more. Robot builders want to find the tricky moments in recordings for the same reason. Yet better communication does not make a robot automatically safe. Engineers still have to plan what it should do when the connection fails.",
+      "evidence_status": "These results are reported by the developers; tests in other situations may have different outcomes.",
+      "published_at": "2026-11-05",
+      "organization": "Serve Robotics",
+      "source_ids": [
+        "src-serve"
+      ],
+      "time_window": "24h",
+      "body": "A robot that drives along a street sees houses, sidewalks and people every day. Sometimes something unusual happens, such as a blocked path that was open yesterday. Such moments can teach the people building robots what their machines find difficult. But when thousands of robots are recording video, no team can watch every minute of it by hand.\n\nOne company has begun offering tools to other robot builders. One tool helps robots communicate with computers far away. Another finds unusual and useful moments in long recordings. A third offers information gathered from robots driving on real sidewalks. An early customer works on large machines used for construction, which face very different problems from small delivery robots.\n\nThink about a school notebook with hundreds of easy exercises but just a few very difficult ones. Finding the difficult examples can help you learn more. Robot builders want to find the tricky moments in recordings for the same reason. Yet better communication does not make a robot automatically safe. Engineers still have to plan what it should do when the connection fails.\n\nThe company behind these services, Serve Robotics, says it has deployed more than 2,000 robots across more than 40 cities and 27 hospitals. That shows its experience, but it is not a measurement proving that the new tools are better than every alternative. The announcement does not tell us how much faster other robots will learn.",
+      "image": null
+    },
+    {
+      "id": "kawasaki",
+      "title": "A factory robot gets new protection against unwanted commands",
+      "summary": "Kawasaki released a device that controls a factory robot and checks who may change its commands. People still need to configure the protections correctly.",
+      "details": "Kawasaki has released a new controller with extra security features. It checks who is trying to sign in, gives different people different permissions and keeps a record of important actions. It also protects information sent over the network. Think of a building with several keys: one person may be allowed to look inside a room, while another can change what happens there.",
+      "technical_novelty": "Kawasaki has released a new controller with extra security features. It checks who is trying to sign in, gives different people different permissions and keeps a record of important actions. It also protects information sent over the network. Think of a building with several keys: one person may be allowed to look inside a room, while another can change what happens there.",
+      "engineering_impact": "But even good protection can fail if people choose weak passwords or forget to set things up properly. And stopping someone from changing commands is different from stopping a moving robot arm from hurting a person. Separate safety rules are needed for that. A strong lock on a door does not prevent someone from accidentally falling inside the room.",
+      "limitations": "But even good protection can fail if people choose weak passwords or forget to set things up properly. And stopping someone from changing commands is different from stopping a moving robot arm from hurting a person. Separate safety rules are needed for that. A strong lock on a door does not prevent someone from accidentally falling inside the room.",
+      "evidence_status": "These results are reported by the developers; tests in other situations may have different outcomes.",
+      "published_at": "2026-11-05",
+      "organization": "Kawasaki Heavy Industries",
+      "source_ids": [
+        "src-kawasaki"
+      ],
+      "time_window": "24h",
+      "body": "A big robot in a factory may lift heavy parts and repeat the same movement many times. A special device called a controller tells it how to move. Sometimes the controller receives instructions and updates through a computer network. If an unauthorized person could change those instructions, work might stop or become dangerous. That is why engineers need to protect the computer controls as well as the moving machine.\n\nKawasaki has released a new controller with extra security features. It checks who is trying to sign in, gives different people different permissions and keeps a record of important actions. It also protects information sent over the network. Think of a building with several keys: one person may be allowed to look inside a room, while another can change what happens there.\n\nBut even good protection can fail if people choose weak passwords or forget to set things up properly. And stopping someone from changing commands is different from stopping a moving robot arm from hurting a person. Separate safety rules are needed for that. A strong lock on a door does not prevent someone from accidentally falling inside the room.\n\nThe new device went on sale in November 2026. Its maker listed security features but did not prove that every factory using it will resist every possible attack. The people who install and manage the robots still have to test the settings and keep them up to date.",
+      "image": null
+    },
+    {
+      "id": "neura",
+      "title": "Robots may one day help inspect dangerous electrical equipment",
+      "summary": "Several companies want to train robots to inspect electrical equipment. Real trials are planned for 2027, so the new helper is not already working independently on power grids.",
+      "details": "First, robots will practice in places where movements can be repeated safely. Experienced workers will show the tasks, while engineers record what real robots do. Some training will happen in computer simulations, where conditions can be changed without risking damage to electrical equipment. After the lessons, the team will need to test what the real machines can actually do.",
+      "technical_novelty": "First, robots will practice in places where movements can be repeated safely. Experienced workers will show the tasks, while engineers record what real robots do. Some training will happen in computer simulations, where conditions can be changed without risking damage to electrical equipment. After the lessons, the team will need to test what the real machines can actually do.",
+      "engineering_impact": "The first practical trials on actual power networks are expected in 2027. That means nobody has shown that these new robots can independently repair electrical lines today. Even a robot that learns to open a door or look at a machine must be tested very carefully before it works near dangerous equipment. Being able to stop safely matters as much as completing a task.",
+      "limitations": "The first practical trials on actual power networks are expected in 2027. That means nobody has shown that these new robots can independently repair electrical lines today. Even a robot that learns to open a door or look at a machine must be tested very carefully before it works near dangerous equipment. Being able to stop safely matters as much as completing a task.",
+      "evidence_status": "These results are reported by the developers; tests in other situations may have different outcomes.",
+      "published_at": "2026-11-05",
+      "organization": "NEURA Robotics",
+      "source_ids": [
+        "src-neura"
+      ],
+      "time_window": "24h",
+      "body": "Large electrical systems help bring power to homes and schools. Workers must check the equipment to make sure it is working properly. Some places can be dangerous and some jobs are physically difficult. Several companies want to find out whether robots could one day help with these inspections. For now, that is a plan for development, not a report of robots already doing the work alone.\n\nFirst, robots will practice in places where movements can be repeated safely. Experienced workers will show the tasks, while engineers record what real robots do. Some training will happen in computer simulations, where conditions can be changed without risking damage to electrical equipment. After the lessons, the team will need to test what the real machines can actually do.\n\nThe first practical trials on actual power networks are expected in 2027. That means nobody has shown that these new robots can independently repair electrical lines today. Even a robot that learns to open a door or look at a machine must be tested very carefully before it works near dangerous equipment. Being able to stop safely matters as much as completing a task.\n\nThe companies behind the project are NEURA Robotics, E.ON and enviaM, with early trials linked to grid operator MITNETZ STROM. They want to turn the experience of skilled workers into useful robot abilities. But learning an action in a training room and being trusted to perform it on an active electrical network are two very different stages.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "It helps to notice mistakes",
+    "summary": "Some scientists teach robots to hold objects carefully, while others teach them to check what they remember.",
+    "implications": "Even a clever program makes mistakes. It has to notice them, check what happened and not be trusted with jobs it cannot yet do."
+  },
+  "sources": [
+    {
+      "id": "src-memory",
+      "title": "Clearing up a robot’s fuzzy memory",
+      "url": "https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105",
+      "domain": "news.mit.edu",
+      "organization": "Massachusetts Institute of Technology",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-trex",
+      "title": "Panasonic HD Co-Develops a Robot Manipulation AI That Performs Dexterous Bimanual Tasks by Reacting Instantly to Fingertip Touch",
+      "url": "https://news.panasonic.com/global/press/en261105-2",
+      "domain": "news.panasonic.com",
+      "organization": "Panasonic Holdings",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-serve",
+      "title": "Serve Robotics Launches Physical AI Services",
+      "url": "https://ir.serverobotics.com/news-releases/news-release-details/serve-robotics-launches-physical-ai-services-opening-technology",
+      "domain": "ir.serverobotics.com",
+      "organization": "Serve Robotics",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-kawasaki",
+      "title": "F-series controller S-type industrial robot security release",
+      "url": "https://www.khi.co.jp/pressrelease/detail/20261105_1.html",
+      "domain": "www.khi.co.jp",
+      "organization": "Kawasaki Heavy Industries",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-neura",
+      "title": "NEURA Robotics, E.ON and enviaM-Gruppe launch partnership",
+      "url": "https://neura-robotics.com/physical-ai-energy-infrastructure-eon-enviam/",
+      "domain": "neura-robotics.com",
+      "organization": "NEURA Robotics",
+      "published_at": "2026-11-05"
+    }
+  ]
+}

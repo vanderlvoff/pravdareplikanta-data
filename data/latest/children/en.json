@@ -2,150 +2,150 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-05",
-  "issue_id": "daily-2026-11-05",
+  "issue_date": "2026-11-06",
+  "issue_id": "daily-2026-11-06",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-04T17:38:00Z",
-  "title": "Replicant Data — November 5, 2026",
-  "lead": "New research on physical reflexes and robot training, measured factory results and Physical AI infrastructure. We separate evaluated outcomes from product claims.",
+  "generated_at": "2026-11-05T22:10:00Z",
+  "title": "Replicant Data — November 6, 2026 — Young Readers",
+  "lead": "Why a robot can remember the wrong object, how fingertips help with careful tasks, and why factory machines need protection against unauthorized commands.",
   "news": [
     {
-      "id": "tohoku-reflex",
-      "title": "Why a robot's leg kicked without a computer deciding to kick it",
-      "summary": "Scientists at Tohoku University built a mechanical device that reacts when an artificial muscle is stretched. They reproduced a knee-jerk reflex and combined the device with other controls to make a two-legged robot walk.",
-      "details": "The proposed mechanism responds when an artificial muscle is stretched beyond an adjustable threshold. Its physical structure detects the stretch and contracts the mechanism, reproducing the essential cause-and-response pattern of the patellar tendon reflex. For walking, the group paired this mechanical response with higher-level control that changes the activation threshold with the phase of a step. This distinction matters: the reflex module does not remove every electronic component from the walking robot, nor does it independently decide where to walk.",
-      "technical_novelty": "The proposed mechanism responds when an artificial muscle is stretched beyond an adjustable threshold. Its physical structure detects the stretch and contracts the mechanism, reproducing the essential cause-and-response pattern of the patellar tendon reflex. For walking, the group paired this mechanical response with higher-level control that changes the activation threshold with the phase of a step. This distinction matters: the reflex module does not remove every electronic component from the walking robot, nor does it independently decide where to walk.",
-      "engineering_impact": "Such embodied control could reduce the amount of sensor wiring, computation and power needed for some fast local reactions. The researchers demonstrated knee-jerk behavior and generated bipedal gait, but the announcement provides no evidence that the mechanism alone solves balance on arbitrary ground, obstacle avoidance or safe operation around people. The next engineering question is how multiple interacting artificial muscles would coordinate their thresholds when the body encounters unexpected contact. The result is a mechanical control principle, not a ready-made autonomous humanoid.",
-      "limitations": "Such embodied control could reduce the amount of sensor wiring, computation and power needed for some fast local reactions. The researchers demonstrated knee-jerk behavior and generated bipedal gait, but the announcement provides no evidence that the mechanism alone solves balance on arbitrary ground, obstacle avoidance or safe operation around people. The next engineering question is how multiple interacting artificial muscles would coordinate their thresholds when the body encounters unexpected contact. The result is a mechanical control principle, not a ready-made autonomous humanoid.",
-      "evidence_status": "Evidence: figures are reported by the researchers or company; independent replication of the stated results has not been established.",
-      "published_at": "2026-11-04",
-      "organization": "Tohoku University",
+      "id": "memory",
+      "title": "A robot learns to question its own memory",
+      "summary": "MIT scientists developed a way for a robot to check whether it remembered an object correctly. It looks at several pictures and corrects doubtful labels.",
+      "details": "The new method compares pictures of the same object taken from different directions. The robot checks how confident it was about its first description. Then it looks for disagreements between pictures. When the descriptions do not fit together, it selects some more useful images and changes the saved label. It is a way to question an old guess, not a perfect memory that never makes a mistake.",
+      "technical_novelty": "The new method compares pictures of the same object taken from different directions. The robot checks how confident it was about its first description. Then it looks for disagreements between pictures. When the descriptions do not fit together, it selects some more useful images and changes the saved label. It is a way to question an old guess, not a perfect memory that never makes a mistake.",
+      "engineering_impact": "In tests, the researchers cleared up uncertain descriptions for about 92 percent of the objects they examined, often using just two extra descriptions. This result does not mean a robot can now identify everything correctly or carry out any household job. The method is mainly about improving written memories of objects and answering questions about where and when they were seen.",
+      "limitations": "In tests, the researchers cleared up uncertain descriptions for about 92 percent of the objects they examined, often using just two extra descriptions. This result does not mean a robot can now identify everything correctly or carry out any household job. The method is mainly about improving written memories of objects and answering questions about where and when they were seen.",
+      "evidence_status": "These results are reported by the developers; tests in other situations may have different outcomes.",
+      "published_at": "2026-11-05",
+      "organization": "Massachusetts Institute of Technology",
       "source_ids": [
-        "src-tohoku-reflex"
+        "src-memory"
       ],
       "time_window": "24h",
-      "body": "Imagine a doctor gently tapping just below your knee. Your lower leg moves before you have time to think about moving it. This is called a reflex. Researchers at Japan's Tohoku University wanted to give a robot something similar. On November 4, they described a small mechanism that responds when an artificial muscle stretches. That part works through its physical structure, without an electronic sensor or computer making the immediate reflex decision.\n\nWhen the artificial muscle stretches past a chosen point, the mechanism makes it contract. The team first reproduced the familiar knee-jerk response. Then they added a separate controller that changes when the mechanism should react as the robot takes a step. Together, these parts allowed two-legged walking. This does not mean that the whole robot works without computers. The broader movement still needs to be coordinated by another system.\n\nWhy build a reflex into a machine? A quick local response might need less wiring and electrical power than a response that is always calculated elsewhere. But the scientists have not shown that their robot can walk safely on every surface, avoid people or find its own route. They have demonstrated one useful kind of reaction, not a robot that can walk anywhere.",
+      "body": "Sometimes a distant object looks like something else. A chimney on a roof might even resemble a little animal. Robots can make similar mistakes when they look through a camera and save descriptions of what they see. If a robot remembers the wrong object name, it may struggle to find something important later. Researchers wanted to help it notice and repair those mistakes.\n\nThe new method compares pictures of the same object taken from different directions. The robot checks how confident it was about its first description. Then it looks for disagreements between pictures. When the descriptions do not fit together, it selects some more useful images and changes the saved label. It is a way to question an old guess, not a perfect memory that never makes a mistake.\n\nIn tests, the researchers cleared up uncertain descriptions for about 92 percent of the objects they examined, often using just two extra descriptions. This result does not mean a robot can now identify everything correctly or carry out any household job. The method is mainly about improving written memories of objects and answering questions about where and when they were seen.\n\nImagine fixing the caption in a family photo album after finding a clearer picture. The robot is doing something a little like that. It learns to check an old description instead of believing it forever. The researchers work at the Massachusetts Institute of Technology, and their scientific name for the system is UQ-DAAAM.",
       "image": null
     },
     {
-      "id": "jtekt-picking",
-      "title": "A factory robot gets better at picking parts from a messy box",
-      "summary": "JTEKT says an AI-assisted robot picked randomly placed parts more successfully in one factory trial. Its announced success rate was 97.1%, compared with 85.0% under earlier control, while the average task cycle became 16% shorter.",
-      "details": "JTEKT says the AI system inspected camera images, inferred the condition and position of parts, then selected grasp and transport actions. In the company's stated high-difficulty evaluation conditions, picking success reached 97.1%, compared with 85.0% for existing control, a gain of 12.1 percentage points. Average cycle time fell by 16%. The company says the change required adding an AI-capable PC to existing equipment rather than undertaking a large mechanical rebuild. These are measurable operational indicators, but the announcement does not supply a complete independent audit of long-term factory uptime.",
-      "technical_novelty": "JTEKT says the AI system inspected camera images, inferred the condition and position of parts, then selected grasp and transport actions. In the company's stated high-difficulty evaluation conditions, picking success reached 97.1%, compared with 85.0% for existing control, a gain of 12.1 percentage points. Average cycle time fell by 16%. The company says the change required adding an AI-capable PC to existing equipment rather than undertaking a large mechanical rebuild. These are measurable operational indicators, but the announcement does not supply a complete independent audit of long-term factory uptime.",
-      "engineering_impact": "The figures suggest an incremental path to using learned perception and control on installed production equipment, where replacing the entire cell can be expensive. A buyer still needs to know how performance changes with new part families, dirt, lighting, abnormal bins and maintenance cycles. A 97.1% picking success rate also means some attempts fail; the economic result depends on recovery, rejected parts and human intervention, not only average cycle time. The scope is one specified production task under the company's test conditions.",
-      "limitations": "The figures suggest an incremental path to using learned perception and control on installed production equipment, where replacing the entire cell can be expensive. A buyer still needs to know how performance changes with new part families, dirt, lighting, abnormal bins and maintenance cycles. A 97.1% picking success rate also means some attempts fail; the economic result depends on recovery, rejected parts and human intervention, not only average cycle time. The scope is one specified production task under the company's test conditions.",
-      "evidence_status": "Evidence: figures are reported by the researchers or company; independent replication of the stated results has not been established.",
-      "published_at": "2026-11-02",
-      "organization": "JTEKT",
+      "id": "trex",
+      "title": "Robot hands learn to adjust when an object starts to slip",
+      "summary": "Panasonic and university scientists gave robot fingers faster ways to react to touch. The robot managed some careful tasks more often, but it still made many mistakes.",
+      "details": "A robot with two hands tried twelve kinds of tasks, including turning pages, moving an egg and using a key. On average, it succeeded in 65 out of 100 attempts. A comparison system managed 35, and a version without touch information managed 42. That is a big improvement, but the robot still failed many times. It is not ready to do every delicate job without checking.",
+      "technical_novelty": "A robot with two hands tried twelve kinds of tasks, including turning pages, moving an egg and using a key. On average, it succeeded in 65 out of 100 attempts. A comparison system managed 35, and a version without touch information managed 42. That is a big improvement, but the robot still failed many times. It is not ready to do every delicate job without checking.",
+      "engineering_impact": "The team trained the system using many recordings. Some showed humans working with objects; others came from real robot hands touching things. Watching another person's movement is not the same as feeling contact with an object. Combining those two sorts of experience helped the robot make more careful adjustments when an object moved unexpectedly.",
+      "limitations": "The team trained the system using many recordings. Some showed humans working with objects; others came from real robot hands touching things. Watching another person's movement is not the same as feeling contact with an object. Combining those two sorts of experience helped the robot make more careful adjustments when an object moved unexpectedly.",
+      "evidence_status": "These results are reported by the developers; tests in other situations may have different outcomes.",
+      "published_at": "2026-11-05",
+      "organization": "Panasonic Holdings",
       "source_ids": [
-        "src-jtekt"
-      ],
-      "time_window": "72h",
-      "body": "A person can look into a box of mixed parts and usually decide which piece to pick up. For a robot, that is harder: it must find each part and choose where to hold it. Japanese manufacturer JTEKT reported on November 2 that it had tested an improved system on a car-parts production line. The actual experiment finished on August 31. Two partner companies, Upstage AI and Karakuri, worked on the project as well.\n\nThe added AI looks at camera pictures and chooses where the robot should grip and move a part. Under the company's specially chosen difficult test conditions, the old control system succeeded on 85.0% of attempts. The new system achieved 97.1%, and the average time for a work cycle fell by 16%. JTEKT says it could add an AI computer to existing equipment rather than rebuild the entire robot station.\n\nThat is useful progress, but even 97.1% is not the same as always getting the job right. Some attempts still fail, and a failure might require a person to help. The company measured a specific kind of factory work, not every object you might find at home or school. Engineers still need to check what happens with other parts, different lighting and unexpected situations.",
-      "image": null
-    },
-    {
-      "id": "airoa-handheld",
-      "title": "Teaching two robot hands without using a robot to record the lessons",
-      "summary": "The AIRoA-0 researchers collected 16,151 hours of examples with grippers held directly by people. They report that a model trained on those examples succeeded on an average of 78% of ten selected robot tasks.",
-      "details": "AIRoA-0 uses cameras on the two grippers' wrists, estimates which regions of the view matter and tracks the stage of the task while predicting successive actions. Reported examples include sorting small parts, replacing components in a robot vacuum, unzipping a pencil case and folding a towel. On ten evaluation tasks, the authors report a mean success rate of 78%, against 27% for the strongest of four comparison vision-language-action models adapted using the same task demonstrations. They say the system can operate on several robot platforms carrying the YUBI gripper.",
-      "technical_novelty": "AIRoA-0 uses cameras on the two grippers' wrists, estimates which regions of the view matter and tracks the stage of the task while predicting successive actions. Reported examples include sorting small parts, replacing components in a robot vacuum, unzipping a pencil case and folding a towel. On ten evaluation tasks, the authors report a mean success rate of 78%, against 27% for the strongest of four comparison vision-language-action models adapted using the same task demonstrations. They say the system can operate on several robot platforms carrying the YUBI gripper.",
-      "engineering_impact": "The comparison is encouraging, but it is still a result from the authors' selected tasks and baseline configurations, not a claim that a robot can perform every household job. Transferring a recorded handheld movement to hardware requires consistent gripper geometry, camera placement and action representation. The disclosed dataset and training recipe create an opportunity for replication; independent replication of the reported rates is not yet established. The most striking result is that collecting useful manipulation data may no longer always require allocating time on an expensive robot.",
-      "limitations": "The comparison is encouraging, but it is still a result from the authors' selected tasks and baseline configurations, not a claim that a robot can perform every household job. Transferring a recorded handheld movement to hardware requires consistent gripper geometry, camera placement and action representation. The disclosed dataset and training recipe create an opportunity for replication; independent replication of the reported rates is not yet established. The most striking result is that collecting useful manipulation data may no longer always require allocating time on an expensive robot.",
-      "evidence_status": "Evidence: figures are reported by the researchers or company; independent replication of the stated results has not been established.",
-      "published_at": "2026-11-02",
-      "organization": "Yueh-Hua Wu and collaborators",
-      "source_ids": [
-        "src-airoa"
-      ],
-      "time_window": "72h",
-      "body": "To teach a robot to fold a towel, someone usually has to operate a real robot and record its movements. That uses expensive equipment for a long time. The AIRoA-0 team tried something different: a person holds two small YUBI grippers and demonstrates the work without any robot being present. Cameras record the movements. The researchers collected 16,151 hours of these examples and described their project in a paper first submitted on November 2.\n\nLater, they trained a model and ran it on actual robots carrying compatible grippers. The reported examples include sorting tiny parts, opening a pencil case and folding a towel. The team tested ten tasks and reported 78% average success. The strongest of four comparison models, trained with the same task demonstrations, reached 27%. Those figures come from the researchers' own experiments, not from independent testing in every possible environment.\n\nThe interesting idea is that people can record useful lessons while the robot is doing something else. That could make it easier to gather examples for many jobs. But learning from videos does not mean a machine will never make mistakes. New objects, a different camera or another kind of gripper may still be difficult. Even a 78% success rate means that some attempts did not work.",
-      "image": null
-    },
-    {
-      "id": "etri-showcase",
-      "title": "Ten different ways to help robots learn and move",
-      "summary": "South Korea's ETRI announced an event on November 5 to present ten Physical AI technologies. The planned demonstrations include robot hands that sense touch and a large library of recorded robot actions.",
-      "details": "One reported component, ROJI-Hub, is intended to help teams retrieve and reuse robot learning data. According to the announcement, the collection covers about 140,000 robot tasks and more than 1.4 million execution-video records, including activities such as stacking cups and moving objects. Other planned presentations discuss a compact computing approach for quadruped intelligence, hand sensors that register touch, acquisition of demonstrations for vision-language-action models, and planning methods intended to tolerate changing situations. These are separate research directions, not one integrated benchmark.",
-      "technical_novelty": "One reported component, ROJI-Hub, is intended to help teams retrieve and reuse robot learning data. According to the announcement, the collection covers about 140,000 robot tasks and more than 1.4 million execution-video records, including activities such as stacking cups and moving objects. Other planned presentations discuss a compact computing approach for quadruped intelligence, hand sensors that register touch, acquisition of demonstrations for vision-language-action models, and planning methods intended to tolerate changing situations. These are separate research directions, not one integrated benchmark.",
-      "engineering_impact": "The event could reveal which interfaces make Korean research systems practical for developers, but its agenda alone does not demonstrate interoperability, reliability or safety of finished robots. Reported dataset sizes are counts of recorded material, not counts of unique skills successfully deployed. Details of licenses, hardware requirements and evaluation protocols will matter more than the number of items on the event program. A responsible reading treats the November 4 announcement as a preview of work to be shown on November 5, not as proof that every demonstration has already taken place.",
-      "limitations": "The event could reveal which interfaces make Korean research systems practical for developers, but its agenda alone does not demonstrate interoperability, reliability or safety of finished robots. Reported dataset sizes are counts of recorded material, not counts of unique skills successfully deployed. Details of licenses, hardware requirements and evaluation protocols will matter more than the number of items on the event program. A responsible reading treats the November 4 announcement as a preview of work to be shown on November 5, not as proof that every demonstration has already taken place.",
-      "evidence_status": "Evidence: figures are reported by the researchers or company; independent replication of the stated results has not been established.",
-      "published_at": "2026-11-04",
-      "organization": "Electronics and Telecommunications Research Institute (ETRI)",
-      "source_ids": [
-        "src-etri"
+        "src-trex"
       ],
       "time_window": "24h",
-      "body": "Imagine a museum where every room teaches robots a different ability. In one room, a machine tries to feel an object with its hand. In another, it learns to travel through difficult places. Elsewhere, researchers collect recordings to help robots learn tasks. South Korea's ETRI institute announced on November 4 that it would present ten Physical AI technologies at an event planned for November 5. Physical AI means systems that sense and act in the real world, not just answer questions on a screen.\n\nOne project is ROJI-Hub, a kind of library for robot training. According to the announcement, it contains information about around 140,000 tasks and more than 1.4 million records of task videos. These may include activities such as stacking cups and moving objects. Other planned presentations discuss a robot hand that senses touch and technology intended to help robots move through difficult conditions. Each project is different; they have not all been combined into one clever machine.\n\nThe event was only announced on November 4, so it would be wrong to say that all the demonstrations have already succeeded. A million videos also do not mean a robot has learned a million reliable skills. Watching an action is just one part of learning how to do it with real objects. Researchers must still show what their machines can actually achieve and where they make mistakes.",
+      "body": "When you hold a raw egg, your eyes help you find it and your fingers tell you how tightly to squeeze. A robot's camera can show where the egg is, but it may not notice quickly enough when the egg starts to slip. Researchers added special sensors to robot fingertips so the hands can change their movements as soon as contact changes.\n\nA robot with two hands tried twelve kinds of tasks, including turning pages, moving an egg and using a key. On average, it succeeded in 65 out of 100 attempts. A comparison system managed 35, and a version without touch information managed 42. That is a big improvement, but the robot still failed many times. It is not ready to do every delicate job without checking.\n\nThe team trained the system using many recordings. Some showed humans working with objects; others came from real robot hands touching things. Watching another person's movement is not the same as feeling contact with an object. Combining those two sorts of experience helped the robot make more careful adjustments when an object moved unexpectedly.\n\nImagine a pencil beginning to slip from your hand. You tighten your grip almost immediately. Scientists want robot hands to make that kind of quick correction. The work is still a research experiment and needs tests with more objects and longer working hours. Panasonic and its partners called their system T-Rex.",
       "image": null
     },
     {
-      "id": "sidekick-team",
-      "title": "How a small team can keep track of ten robots",
-      "summary": "Sidekick Robotics announced Team, a shared workspace for people building robot software. It is intended for teams of up to ten people and ten robots, but the new platform does not by itself teach the machines new skills.",
-      "details": "Sidekick lists model access, tagging and feedback, policy training, fine-tuning, and visualizations within the same workspace. It also describes online reinforcement-learning workflows where a person marks episodes successful or unsuccessful while real hardware executes them. This would address a familiar integration problem: evaluation notes, model versions and physical deployments often become scattered across tools. Yet simply placing those functions behind one interface does not prove that model quality increases or that robots can operate without supervision.",
-      "technical_novelty": "Sidekick lists model access, tagging and feedback, policy training, fine-tuning, and visualizations within the same workspace. It also describes online reinforcement-learning workflows where a person marks episodes successful or unsuccessful while real hardware executes them. This would address a familiar integration problem: evaluation notes, model versions and physical deployments often become scattered across tools. Yet simply placing those functions behind one interface does not prove that model quality increases or that robots can operate without supervision.",
-      "engineering_impact": "The company's Flywheel continuous-learning component remains in an invite-only internal alpha rather than a generally available part of the beta. A team considering the product would need to validate hardware compatibility, the boundary between protected model weights and derived policies, access controls, reliability of multi-robot orchestration and total operating costs. The significant news is a packaging and workflow claim for Physical AI development teams, with scale and pricing defined; there is no published independent fleet-performance benchmark in this announcement.",
-      "limitations": "The company's Flywheel continuous-learning component remains in an invite-only internal alpha rather than a generally available part of the beta. A team considering the product would need to validate hardware compatibility, the boundary between protected model weights and derived policies, access controls, reliability of multi-robot orchestration and total operating costs. The significant news is a packaging and workflow claim for Physical AI development teams, with scale and pricing defined; there is no published independent fleet-performance benchmark in this announcement.",
-      "evidence_status": "Evidence: figures are reported by the researchers or company; independent replication of the stated results has not been established.",
-      "published_at": "2026-11-04",
-      "organization": "Sidekick Robotics",
+      "id": "serve",
+      "title": "How robots share useful stories from their journeys",
+      "summary": "Serve is offering robotics companies tools to manage connections and useful recordings. These tools help developers learn from rare events but do not replace the robot's own safe behavior.",
+      "details": "One company has begun offering tools to other robot builders. One tool helps robots communicate with computers far away. Another finds unusual and useful moments in long recordings. A third offers information gathered from robots driving on real sidewalks. An early customer works on large machines used for construction, which face very different problems from small delivery robots.",
+      "technical_novelty": "One company has begun offering tools to other robot builders. One tool helps robots communicate with computers far away. Another finds unusual and useful moments in long recordings. A third offers information gathered from robots driving on real sidewalks. An early customer works on large machines used for construction, which face very different problems from small delivery robots.",
+      "engineering_impact": "Think about a school notebook with hundreds of easy exercises but just a few very difficult ones. Finding the difficult examples can help you learn more. Robot builders want to find the tricky moments in recordings for the same reason. Yet better communication does not make a robot automatically safe. Engineers still have to plan what it should do when the connection fails.",
+      "limitations": "Think about a school notebook with hundreds of easy exercises but just a few very difficult ones. Finding the difficult examples can help you learn more. Robot builders want to find the tricky moments in recordings for the same reason. Yet better communication does not make a robot automatically safe. Engineers still have to plan what it should do when the connection fails.",
+      "evidence_status": "These results are reported by the developers; tests in other situations may have different outcomes.",
+      "published_at": "2026-11-05",
+      "organization": "Serve Robotics",
       "source_ids": [
-        "src-sidekick"
+        "src-serve"
       ],
       "time_window": "24h",
-      "body": "Imagine a school team building a robot together. One student changes the program, another tests the movement and a third writes down what happened. If everyone keeps a different version, the group can easily get confused. Professional robotics teams have a similar problem. On November 4, Sidekick Robotics announced a beta version of Team, a service intended to help people share robot models, training results and test information.\n\nThe company says a Team workspace can support up to ten people and development work involving up to ten robots. Its listed price begins at $12 per person each week. Sidekick describes ways to keep track of trained model versions, look at evaluations and mark whether a robot trial succeeded or failed. These are tools for the people teaching robots. They do not mean that a robot suddenly learns a new movement just because its developer uses a shared website.\n\nThe company also talks about Flywheel, a feature intended to help robots keep learning during use. For now, it is still in an internal alpha stage, so it should not be treated as an ordinary finished feature. A real team would need to check that the platform works with its equipment and saves time. The announcement does not give an independent experiment showing that ten robots perform better simply because their engineers share a workspace.",
+      "body": "A robot that drives along a street sees houses, sidewalks and people every day. Sometimes something unusual happens, such as a blocked path that was open yesterday. Such moments can teach the people building robots what their machines find difficult. But when thousands of robots are recording video, no team can watch every minute of it by hand.\n\nOne company has begun offering tools to other robot builders. One tool helps robots communicate with computers far away. Another finds unusual and useful moments in long recordings. A third offers information gathered from robots driving on real sidewalks. An early customer works on large machines used for construction, which face very different problems from small delivery robots.\n\nThink about a school notebook with hundreds of easy exercises but just a few very difficult ones. Finding the difficult examples can help you learn more. Robot builders want to find the tricky moments in recordings for the same reason. Yet better communication does not make a robot automatically safe. Engineers still have to plan what it should do when the connection fails.\n\nThe company behind these services, Serve Robotics, says it has deployed more than 2,000 robots across more than 40 cities and 27 hospitals. That shows its experience, but it is not a measurement proving that the new tools are better than every alternative. The announcement does not tell us how much faster other robots will learn.",
+      "image": null
+    },
+    {
+      "id": "kawasaki",
+      "title": "A factory robot gets new protection against unwanted commands",
+      "summary": "Kawasaki released a device that controls a factory robot and checks who may change its commands. People still need to configure the protections correctly.",
+      "details": "Kawasaki has released a new controller with extra security features. It checks who is trying to sign in, gives different people different permissions and keeps a record of important actions. It also protects information sent over the network. Think of a building with several keys: one person may be allowed to look inside a room, while another can change what happens there.",
+      "technical_novelty": "Kawasaki has released a new controller with extra security features. It checks who is trying to sign in, gives different people different permissions and keeps a record of important actions. It also protects information sent over the network. Think of a building with several keys: one person may be allowed to look inside a room, while another can change what happens there.",
+      "engineering_impact": "But even good protection can fail if people choose weak passwords or forget to set things up properly. And stopping someone from changing commands is different from stopping a moving robot arm from hurting a person. Separate safety rules are needed for that. A strong lock on a door does not prevent someone from accidentally falling inside the room.",
+      "limitations": "But even good protection can fail if people choose weak passwords or forget to set things up properly. And stopping someone from changing commands is different from stopping a moving robot arm from hurting a person. Separate safety rules are needed for that. A strong lock on a door does not prevent someone from accidentally falling inside the room.",
+      "evidence_status": "These results are reported by the developers; tests in other situations may have different outcomes.",
+      "published_at": "2026-11-05",
+      "organization": "Kawasaki Heavy Industries",
+      "source_ids": [
+        "src-kawasaki"
+      ],
+      "time_window": "24h",
+      "body": "A big robot in a factory may lift heavy parts and repeat the same movement many times. A special device called a controller tells it how to move. Sometimes the controller receives instructions and updates through a computer network. If an unauthorized person could change those instructions, work might stop or become dangerous. That is why engineers need to protect the computer controls as well as the moving machine.\n\nKawasaki has released a new controller with extra security features. It checks who is trying to sign in, gives different people different permissions and keeps a record of important actions. It also protects information sent over the network. Think of a building with several keys: one person may be allowed to look inside a room, while another can change what happens there.\n\nBut even good protection can fail if people choose weak passwords or forget to set things up properly. And stopping someone from changing commands is different from stopping a moving robot arm from hurting a person. Separate safety rules are needed for that. A strong lock on a door does not prevent someone from accidentally falling inside the room.\n\nThe new device went on sale in November 2026. Its maker listed security features but did not prove that every factory using it will resist every possible attack. The people who install and manage the robots still have to test the settings and keep them up to date.",
+      "image": null
+    },
+    {
+      "id": "neura",
+      "title": "Robots may one day help inspect dangerous electrical equipment",
+      "summary": "Several companies want to train robots to inspect electrical equipment. Real trials are planned for 2027, so the new helper is not already working independently on power grids.",
+      "details": "First, robots will practice in places where movements can be repeated safely. Experienced workers will show the tasks, while engineers record what real robots do. Some training will happen in computer simulations, where conditions can be changed without risking damage to electrical equipment. After the lessons, the team will need to test what the real machines can actually do.",
+      "technical_novelty": "First, robots will practice in places where movements can be repeated safely. Experienced workers will show the tasks, while engineers record what real robots do. Some training will happen in computer simulations, where conditions can be changed without risking damage to electrical equipment. After the lessons, the team will need to test what the real machines can actually do.",
+      "engineering_impact": "The first practical trials on actual power networks are expected in 2027. That means nobody has shown that these new robots can independently repair electrical lines today. Even a robot that learns to open a door or look at a machine must be tested very carefully before it works near dangerous equipment. Being able to stop safely matters as much as completing a task.",
+      "limitations": "The first practical trials on actual power networks are expected in 2027. That means nobody has shown that these new robots can independently repair electrical lines today. Even a robot that learns to open a door or look at a machine must be tested very carefully before it works near dangerous equipment. Being able to stop safely matters as much as completing a task.",
+      "evidence_status": "These results are reported by the developers; tests in other situations may have different outcomes.",
+      "published_at": "2026-11-05",
+      "organization": "NEURA Robotics",
+      "source_ids": [
+        "src-neura"
+      ],
+      "time_window": "24h",
+      "body": "Large electrical systems help bring power to homes and schools. Workers must check the equipment to make sure it is working properly. Some places can be dangerous and some jobs are physically difficult. Several companies want to find out whether robots could one day help with these inspections. For now, that is a plan for development, not a report of robots already doing the work alone.\n\nFirst, robots will practice in places where movements can be repeated safely. Experienced workers will show the tasks, while engineers record what real robots do. Some training will happen in computer simulations, where conditions can be changed without risking damage to electrical equipment. After the lessons, the team will need to test what the real machines can actually do.\n\nThe first practical trials on actual power networks are expected in 2027. That means nobody has shown that these new robots can independently repair electrical lines today. Even a robot that learns to open a door or look at a machine must be tested very carefully before it works near dangerous equipment. Being able to stop safely matters as much as completing a task.\n\nThe companies behind the project are NEURA Robotics, E.ON and enviaM, with early trials linked to grid operator MITNETZ STROM. They want to turn the experience of skilled workers into useful robot abilities. But learning an action in a training room and being trusted to perform it on an active electrical network are two very different stages.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Physical AI is more than a single model",
-    "summary": "Recent work explores different paths to useful robots: built-in mechanical responses, cheaper training data and improvements in specific factory operations.",
-    "implications": "A laboratory success rate, a factory cycle-time measure and a platform feature list require different types of validation."
+    "title": "It helps to notice mistakes",
+    "summary": "Some scientists teach robots to hold objects carefully, while others teach them to check what they remember.",
+    "implications": "Even a clever program makes mistakes. It has to notice them, check what happened and not be trusted with jobs it cannot yet do."
   },
   "sources": [
     {
-      "id": "src-tohoku-reflex",
-      "title": "Electronics-Free Artificial Reflex Reproduces Knee-Jerk and Enables Bipedal Walking",
-      "url": "https://www.tohoku.ac.jp/en/press/electronics_free_artificial_reflex_reproduces_knee_jerk_and_enables_bipedal_walking.html",
-      "domain": "tohoku.ac.jp",
-      "organization": "Tohoku University",
-      "published_at": "2026-11-04"
+      "id": "src-memory",
+      "title": "Clearing up a robot’s fuzzy memory",
+      "url": "https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105",
+      "domain": "news.mit.edu",
+      "organization": "Massachusetts Institute of Technology",
+      "published_at": "2026-11-05"
     },
     {
-      "id": "src-jtekt",
-      "title": "ジェイテクト、フィジカルAIを活用した工場実証で部品取り出し工程の成功率97.1％を達成",
-      "url": "https://prtimes.jp/main/html/rd/p/000000609.000028729.html",
-      "domain": "prtimes.jp",
-      "organization": "JTEKT",
-      "published_at": "2026-11-02"
+      "id": "src-trex",
+      "title": "Panasonic HD Co-Develops a Robot Manipulation AI That Performs Dexterous Bimanual Tasks by Reacting Instantly to Fingertip Touch",
+      "url": "https://news.panasonic.com/global/press/en261105-2",
+      "domain": "news.panasonic.com",
+      "organization": "Panasonic Holdings",
+      "published_at": "2026-11-05"
     },
     {
-      "id": "src-airoa",
-      "title": "AIRoA-0: Long-Horizon, Precise, Cross-Embodiment Manipulation from Handheld Data",
-      "url": "https://arxiv.org/abs/2611.03815",
-      "domain": "arxiv.org",
-      "organization": "Yueh-Hua Wu and collaborators",
-      "published_at": "2026-11-02"
+      "id": "src-serve",
+      "title": "Serve Robotics Launches Physical AI Services",
+      "url": "https://ir.serverobotics.com/news-releases/news-release-details/serve-robotics-launches-physical-ai-services-opening-technology",
+      "domain": "ir.serverobotics.com",
+      "organization": "Serve Robotics",
+      "published_at": "2026-11-05"
     },
     {
-      "id": "src-etri",
-      "title": "ETRI to unveil ten Physical AI technologies at KINTEX on November 5",
-      "url": "https://www.etnews.com/20261104000219",
-      "domain": "etnews.com",
-      "organization": "Electronics and Telecommunications Research Institute (ETRI)",
-      "published_at": "2026-11-04"
+      "id": "src-kawasaki",
+      "title": "F-series controller S-type industrial robot security release",
+      "url": "https://www.khi.co.jp/pressrelease/detail/20261105_1.html",
+      "domain": "www.khi.co.jp",
+      "organization": "Kawasaki Heavy Industries",
+      "published_at": "2026-11-05"
     },
     {
-      "id": "src-sidekick",
-      "title": "Introducing Team — the Collaborative Plan of the Sidekick Robotics Platform",
-      "url": "https://www.sidekickrobotics.ai/news/introducing-team",
-      "domain": "sidekickrobotics.ai",
-      "organization": "Sidekick Robotics",
-      "published_at": "2026-11-04"
+      "id": "src-neura",
+      "title": "NEURA Robotics, E.ON and enviaM-Gruppe launch partnership",
+      "url": "https://neura-robotics.com/physical-ai-energy-infrastructure-eon-enviam/",
+      "domain": "neura-robotics.com",
+      "organization": "NEURA Robotics",
+      "published_at": "2026-11-05"
     }
   ]
 }

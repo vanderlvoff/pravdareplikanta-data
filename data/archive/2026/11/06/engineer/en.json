@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-06",
+  "issue_id": "daily-2026-11-06",
+  "edition": "engineer",
+  "language": "en",
+  "generated_at": "2026-11-05T22:10:00Z",
+  "title": "Replicant Data — November 6, 2026 — Engineering",
+  "lead": "New control loops, corrected robot memory and the limits of fleet infrastructure. Reported measurements are separated from deployment claims.",
+  "news": [
+    {
+      "id": "trex",
+      "title": "Tactile corrections lift Panasonic's two-handed robot success rate",
+      "summary": "Panasonic and an international research team unveiled T-Rex, a system that uses fingertip feedback to revise the movements of two robot hands. It achieved 65% average success on 12 real-world tasks, against 35% for the selected baseline.",
+      "details": "The architecture combines a vision-language-action model, or VLA, which translates visual observations and written instructions into robot actions, with a faster tactile correction module. Its high-level action generator runs at roughly five updates per second; the fingertip-driven module changes motions at roughly twenty updates per second. Sensors across ten fingertips provide information about contact forces and deformation. Instead of repeating a computationally expensive visual interpretation for every slip or excessive squeeze, the system can alter its action locally. This does not establish that it understands every unfamiliar object or situation.",
+      "technical_novelty": "The architecture combines a vision-language-action model, or VLA, which translates visual observations and written instructions into robot actions, with a faster tactile correction module. Its high-level action generator runs at roughly five updates per second; the fingertip-driven module changes motions at roughly twenty updates per second. Sensors across ten fingertips provide information about contact forces and deformation. Instead of repeating a computationally expensive visual interpretation for every slip or excessive squeeze, the system can alter its action locally. This does not establish that it understands every unfamiliar object or situation.",
+      "engineering_impact": "The engineering significance lies in decoupling low-frequency semantic action generation from higher-frequency contact correction. Sensor alignment matters: contact forces, camera frames and executed commands must refer to compatible time steps or the controller will respond to stale information. The announcement gives an architecture and aggregated outcomes, not a full latency distribution, per-object error matrix or compute budget. Independent reproduction would require comparable grippers, synchronized sensing and carefully matched evaluation tasks. Durability of tactile elements and robustness under changing friction are practical questions left open by the reported average.",
+      "limitations": "During 12 contact-heavy tasks, including transferring an egg, turning pages and using a key, T-Rex averaged 65% success. The comparator achieved 35%, while a version without tactile information reached 42%. These figures describe the authors' particular test program and should not be presented as universal reliability guarantees.",
+      "evidence_status": "Figures and outcomes are attributed to the cited organization; not all reported results have been independently reproduced.",
+      "published_at": "2026-11-05",
+      "organization": "Panasonic Holdings",
+      "source_ids": [
+        "src-trex"
+      ],
+      "time_window": "24h",
+      "body": "A thin card may be perfectly visible while the forces that make it slip remain hidden to a camera. On November 5, Panasonic Holdings and researchers from Berkeley, Stanford, NVIDIA and other organizations introduced T-Rex, a system designed to let a two-handed robot react to touch while manipulating objects. This is a research result rather than an announcement of a production installation. The team plans to present it at the Conference on Robot Learning on November 9–12, although the technical description and evaluation results are already public.\n\nThe architecture combines a vision-language-action model, or VLA, which translates visual observations and written instructions into robot actions, with a faster tactile correction module. Its high-level action generator runs at roughly five updates per second; the fingertip-driven module changes motions at roughly twenty updates per second. Sensors across ten fingertips provide information about contact forces and deformation. Instead of repeating a computationally expensive visual interpretation for every slip or excessive squeeze, the system can alter its action locally. This does not establish that it understands every unfamiliar object or situation.\n\nThe researchers recorded more than 7,700 two-handed manipulation episodes totaling about 100 hours across more than 200 everyday objects and 22 basic actions. Broader visual-motion learning also drew on 22,889 hours of first-person human video. During 12 contact-heavy tasks, including transferring an egg, turning pages and using a key, T-Rex averaged 65% success. The comparator achieved 35%, while a version without tactile information reached 42%. These figures describe the authors' particular test program and should not be presented as universal reliability guarantees.\n\nThe engineering significance lies in decoupling low-frequency semantic action generation from higher-frequency contact correction. Sensor alignment matters: contact forces, camera frames and executed commands must refer to compatible time steps or the controller will respond to stale information. The announcement gives an architecture and aggregated outcomes, not a full latency distribution, per-object error matrix or compute budget. Independent reproduction would require comparable grippers, synchronized sensing and carefully matched evaluation tasks. Durability of tactile elements and robustness under changing friction are practical questions left open by the reported average.",
+      "image": null
+    },
+    {
+      "id": "memory",
+      "title": "MIT gives mobile robots a way to correct uncertain memories",
+      "summary": "MIT researchers described a method that checks stored object descriptions against several views of the same object. Their system resolved ambiguity for about 92% of evaluated objects needing correction and improved description accuracy by five percent in its reported comparison.",
+      "details": "The robot collects camera images while moving and stores object descriptions together with a spatial representation of its surroundings. A vision-language model first produces captions. The new method checks both the model's confidence in individual words and whether descriptions from several viewpoints agree. When uncertainty becomes sufficiently high, it selects additional views and combines the captions into a revised memory entry. The procedure deals mainly with semantic and spatial memory; it does not physically inspect an object by manipulating it or certify that every future action will be safe.",
+      "technical_novelty": "The robot collects camera images while moving and stores object descriptions together with a spatial representation of its surroundings. A vision-language model first produces captions. The new method checks both the model's confidence in individual words and whether descriptions from several viewpoints agree. When uncertainty becomes sufficiently high, it selects additional views and combines the captions into a revised memory entry. The procedure deals mainly with semantic and spatial memory; it does not physically inspect an object by manipulating it or certify that every future action will be safe.",
+      "engineering_impact": "Technically, the method combines internal language-model confidence with cross-view consistency into a measure of uncertainty. A frame-selection heuristic identifies useful additional observations without repeatedly invoking the expensive vision-language model, according to the team's analysis. This is distinct from geometric map accuracy, object association errors or motion safety. A reproduction should measure correction latency, wrong correspondences between frames and performance when objects move between observations. A particularly difficult failure occurs when several mutually consistent views support the same mistaken label; the release does not establish immunity to that case.",
+      "limitations": "The robot also answered questions about what it saw, where objects were and when they appeared more accurately. These measurements should not be misread as a five-percent increase in the success rate of delivery or navigation tasks. The team wants to explore integration with mobile manipulators in future work.",
+      "evidence_status": "Figures and outcomes are attributed to the cited organization; not all reported results have been independently reproduced.",
+      "published_at": "2026-11-05",
+      "organization": "Massachusetts Institute of Technology",
+      "source_ids": [
+        "src-memory"
+      ],
+      "time_window": "24h",
+      "body": "A mistaken memory can matter more to a robot than a funny label on a photograph. A distant chimney might be described as a squirrel, and an incorrect object name could later disrupt a longer task. On November 5, researchers at the Massachusetts Institute of Technology explained a new method for discovering and repairing unreliable entries in a moving robot's visual memory. Called UQ-DAAAM, it is designed to recognize uncertainty in object descriptions rather than treating the earliest label as permanent truth.\n\nThe robot collects camera images while moving and stores object descriptions together with a spatial representation of its surroundings. A vision-language model first produces captions. The new method checks both the model's confidence in individual words and whether descriptions from several viewpoints agree. When uncertainty becomes sufficiently high, it selects additional views and combines the captions into a revised memory entry. The procedure deals mainly with semantic and spatial memory; it does not physically inspect an object by manipulating it or certify that every future action will be safe.\n\nIn the researchers' tests, the method resolved ambiguity for about 92% of the objects under consideration while using only two extra captions per object. The accuracy of descriptions improved by five percent over the state-of-the-art comparison used in the study. The robot also answered questions about what it saw, where objects were and when they appeared more accurately. These measurements should not be misread as a five-percent increase in the success rate of delivery or navigation tasks. The team wants to explore integration with mobile manipulators in future work.\n\nTechnically, the method combines internal language-model confidence with cross-view consistency into a measure of uncertainty. A frame-selection heuristic identifies useful additional observations without repeatedly invoking the expensive vision-language model, according to the team's analysis. This is distinct from geometric map accuracy, object association errors or motion safety. A reproduction should measure correction latency, wrong correspondences between frames and performance when objects move between observations. A particularly difficult failure occurs when several mutually consistent views support the same mistaken label; the release does not establish immunity to that case.",
+      "image": null
+    },
+    {
+      "id": "kawasaki",
+      "title": "Kawasaki adds security controls to industrial robot controller",
+      "summary": "Kawasaki Heavy Industries announced sales of the F-series S-type controller with expanded network-security features on November 5. It lists authentication, access controls, logging and protected protocols, but does not publish independent penetration-test results for the product.",
+      "details": "Specified protections include username-and-password authentication, access permission management, session restrictions, logs and packet filtering. The company lists SSH, FTPS and HTTPS for protected communication, along with checks of system integrity during startup, restrictions on program execution and secure software updates. Functional safety measures remain part of the controller, including support for PROFIsafe communications. Cybersecurity against unauthorized changes and functional safety against dangerous robot movements are related but distinct engineering responsibilities.",
+      "technical_novelty": "Specified protections include username-and-password authentication, access permission management, session restrictions, logs and packet filtering. The company lists SSH, FTPS and HTTPS for protected communication, along with checks of system integrity during startup, restrictions on program execution and secure software updates. Functional safety measures remain part of the controller, including support for PROFIsafe communications. Cybersecurity against unauthorized changes and functional safety against dangerous robot movements are related but distinct engineering responsibilities.",
+      "engineering_impact": "Integration testing should examine engineer authentication, key rotation, audit-log collection and recovery from interrupted firmware updates. Using an encrypted protocol does not replace network segmentation or assessment of exposed services. In a robot cell, the boundary between approved motion programs and remotely modified operating parameters is especially sensitive. The release mentions standards and development processes but does not provide a threat model, pen-test data or measured compute overhead from these protections. A line-specific deployment therefore requires a documented authorization scheme and practical restoration tests.",
+      "limitations": "The company holds certification related to that process; this is not a claim that every installation is invulnerable or that every configuration has passed every attack scenario. The announcement does not give a public independent penetration-test report, a measured reduction in incidents or a full migration cost. Actual protection will depend on network design, account management and maintenance at each plant.",
+      "evidence_status": "Figures and outcomes are attributed to the cited organization; not all reported results have been independently reproduced.",
+      "published_at": "2026-11-05",
+      "organization": "Kawasaki Heavy Industries",
+      "source_ids": [
+        "src-kawasaki"
+      ],
+      "time_window": "24h",
+      "body": "An industrial robot is rarely isolated from the network that supplies programs, updates and diagnostic information. Connectivity makes maintenance easier while creating paths for mistakes or malicious access. On November 5, Kawasaki Heavy Industries announced the new F-series controller S-type, designed with additional cybersecurity functions for industrial robots. Its November rollout starts with handling applications. This is a controller release focused on secure operation, not a new foundation model or evidence of more capable artificial intelligence.\n\nSpecified protections include username-and-password authentication, access permission management, session restrictions, logs and packet filtering. The company lists SSH, FTPS and HTTPS for protected communication, along with checks of system integrity during startup, restrictions on program execution and secure software updates. Functional safety measures remain part of the controller, including support for PROFIsafe communications. Cybersecurity against unauthorized changes and functional safety against dangerous robot movements are related but distinct engineering responsibilities.\n\nKawasaki says the development process followed IEC 62443-4-1, an international standard concerned with secure development practices for industrial automation products. The company holds certification related to that process; this is not a claim that every installation is invulnerable or that every configuration has passed every attack scenario. The announcement does not give a public independent penetration-test report, a measured reduction in incidents or a full migration cost. Actual protection will depend on network design, account management and maintenance at each plant.\n\nIntegration testing should examine engineer authentication, key rotation, audit-log collection and recovery from interrupted firmware updates. Using an encrypted protocol does not replace network segmentation or assessment of exposed services. In a robot cell, the boundary between approved motion programs and remotely modified operating parameters is especially sensitive. The release mentions standards and development processes but does not provide a threat model, pen-test data or measured compute overhead from these protections. A line-specific deployment therefore requires a documented authorization scheme and practical restoration tests.",
+      "image": null
+    },
+    {
+      "id": "serve",
+      "title": "Serve Robotics opens fleet connectivity and training-data services",
+      "summary": "Serve Robotics launched three Physical AI Services products on November 5 for robot connectivity and training-data management. Bedrock Robotics is an early customer, while Serve cites experience with a fleet of over 2,000 deployed robots.",
+      "details": "The first component, Serve Link, connects machines to computation and monitoring outside the robot. Initial customer Bedrock Robotics, which builds autonomy for heavy construction equipment, reportedly uses Wi-Fi, cellular and satellite links. Serve Data Curator is meant to identify uncommon, informative episodes in large collections of recordings. A third offering is a catalog of real-world data from the company's sidewalk operations, including terrain and infrastructure observations. Serve also claims these underlying services have already supported several vehicle categories beyond its food-delivery machines.",
+      "technical_novelty": "The first component, Serve Link, connects machines to computation and monitoring outside the robot. Initial customer Bedrock Robotics, which builds autonomy for heavy construction equipment, reportedly uses Wi-Fi, cellular and satellite links. Serve Data Curator is meant to identify uncommon, informative episodes in large collections of recordings. A third offering is a catalog of real-world data from the company's sidewalk operations, including terrain and infrastructure observations. Serve also claims these underlying services have already supported several vehicle categories beyond its food-delivery machines.",
+      "engineering_impact": "Engineers should separate telemetry, remote commands, training-data collection and model delivery because their latency and reliability requirements are different. Multinetwork connectivity is useful, but the announcement does not describe safe behavior when off-board compute becomes unreachable. Evaluation should include bandwidth, encryption, failover, offline autonomy and the cost of shipping video off the vehicle. Similarly, an interesting data sample is only valuable if it improves a later policy under a controlled test. The presence of a data curator alone is not evidence that fleet-learning performance improved.",
+      "limitations": "The announcement does not supply independently audited network latency, connectivity loss rates, or measured model improvement caused by curated examples. Bedrock is named as a customer, but detailed prices and performance guarantees are not disclosed. The concrete change is that a previously internal infrastructure layer is being packaged as a commercial service.",
+      "evidence_status": "Figures and outcomes are attributed to the cited organization; not all reported results have been independently reproduced.",
+      "published_at": "2026-11-05",
+      "organization": "Serve Robotics",
+      "source_ids": [
+        "src-serve"
+      ],
+      "time_window": "24h",
+      "body": "Building a robot that moves is only the beginning of running a large fleet. Engineers must keep machines connected, select useful training examples and monitor whether software changes improve operations. On November 5, delivery-robot operator Serve Robotics announced that it would offer parts of its own supporting infrastructure to other companies under the name Physical AI Services. This is not a new general-purpose motion model, and the launch does not establish that every connected robot can operate without human oversight.\n\nThe first component, Serve Link, connects machines to computation and monitoring outside the robot. Initial customer Bedrock Robotics, which builds autonomy for heavy construction equipment, reportedly uses Wi-Fi, cellular and satellite links. Serve Data Curator is meant to identify uncommon, informative episodes in large collections of recordings. A third offering is a catalog of real-world data from the company's sidewalk operations, including terrain and infrastructure observations. Serve also claims these underlying services have already supported several vehicle categories beyond its food-delivery machines.\n\nThe company says it has deployed more than 2,000 robots across over 40 cities and 27 hospitals. That is a description of its operating footprint, not an independent benchmark of the newly offered services. The announcement does not supply independently audited network latency, connectivity loss rates, or measured model improvement caused by curated examples. Bedrock is named as a customer, but detailed prices and performance guarantees are not disclosed. The concrete change is that a previously internal infrastructure layer is being packaged as a commercial service.\n\nEngineers should separate telemetry, remote commands, training-data collection and model delivery because their latency and reliability requirements are different. Multinetwork connectivity is useful, but the announcement does not describe safe behavior when off-board compute becomes unreachable. Evaluation should include bandwidth, encryption, failover, offline autonomy and the cost of shipping video off the vehicle. Similarly, an interesting data sample is only valuable if it improves a later policy under a controlled test. The presence of a data curator alone is not evidence that fleet-learning performance improved.",
+      "image": null
+    },
+    {
+      "id": "neura",
+      "title": "NEURA and energy groups plan robot training for power grids",
+      "summary": "NEURA Robotics, E.ON and enviaM announced work on Physical AI for inspecting and maintaining energy infrastructure. First practical trials with network operator MITNETZ STROM are expected in 2027, not already underway.",
+      "details": "The partners intend to use Neuraverse, NEURA's environment for learning and sharing robot skills. E.ON and enviaM will participate in TUM RoboGym powered by NEURA, a training initiative linked to the Technical University of Munich. Its stated approach combines demonstrations by humans, recordings from real robots and simulated experiences before skills are deployed. Rather than learning every movement for the first time in a potentially hazardous facility, teams can prepare behaviors elsewhere and check them on appropriate hardware. The company announcement does not identify the exact first robot configuration or a completed validation protocol.",
+      "technical_novelty": "The partners intend to use Neuraverse, NEURA's environment for learning and sharing robot skills. E.ON and enviaM will participate in TUM RoboGym powered by NEURA, a training initiative linked to the Technical University of Munich. Its stated approach combines demonstrations by humans, recordings from real robots and simulated experiences before skills are deployed. Rather than learning every movement for the first time in a potentially hazardous facility, teams can prepare behaviors elsewhere and check them on appropriate hardware. The company announcement does not identify the exact first robot configuration or a completed validation protocol.",
+      "engineering_impact": "A pilot must distinguish learned manipulation skills, environmental perception and the independent system that authorizes safe operation near electrical assets. Mistaken recognition and incorrect arm motion require different safeguards. Neuraverse describes a route from data to deployment, but the announcement does not provide tests for electromagnetic interference, restricted access, abnormal grid states or recovery after interruption. Engineers will need documented stop conditions, event logs, evaluation criteria and human-supervision roles. A skill that works in a robot gym has not thereby been validated on an energized site.",
+      "limitations": "It would therefore be misleading to report a completed rollout or independently verified robot performance. What exists today is a named partnership, an intended training route and a future pilot milestone. This gap between a demonstration curriculum and permitted industrial operation is central to the story.",
+      "evidence_status": "Figures and outcomes are attributed to the cited organization; not all reported results have been independently reproduced.",
+      "published_at": "2026-11-05",
+      "organization": "NEURA Robotics",
+      "source_ids": [
+        "src-neura"
+      ],
+      "time_window": "24h",
+      "body": "Electric infrastructure offers many repetitive inspection tasks, but the consequences of a mistake can be severe. On November 5, NEURA Robotics, E.ON and the regional energy group enviaM announced a partnership to develop robots for inspecting assets, monitoring equipment and supporting workers in hazardous or physically demanding jobs. The announcement is a development and deployment plan, not evidence that autonomous robots have already taken over work on active electricity networks. That distinction matters when robots may eventually operate around critical infrastructure.\n\nThe partners intend to use Neuraverse, NEURA's environment for learning and sharing robot skills. E.ON and enviaM will participate in TUM RoboGym powered by NEURA, a training initiative linked to the Technical University of Munich. Its stated approach combines demonstrations by humans, recordings from real robots and simulated experiences before skills are deployed. Rather than learning every movement for the first time in a potentially hazardous facility, teams can prepare behaviors elsewhere and check them on appropriate hardware. The company announcement does not identify the exact first robot configuration or a completed validation protocol.\n\nMITNETZ STROM, an electricity-network subsidiary of the enviaM group in eastern Germany, is expected to gain initial practical experience during 2027. The release gives no measured inspection accuracy, task completion time, fault-detection sensitivity or operating-risk threshold. It would therefore be misleading to report a completed rollout or independently verified robot performance. What exists today is a named partnership, an intended training route and a future pilot milestone. This gap between a demonstration curriculum and permitted industrial operation is central to the story.\n\nA pilot must distinguish learned manipulation skills, environmental perception and the independent system that authorizes safe operation near electrical assets. Mistaken recognition and incorrect arm motion require different safeguards. Neuraverse describes a route from data to deployment, but the announcement does not provide tests for electromagnetic interference, restricted access, abnormal grid states or recovery after interruption. Engineers will need documented stop conditions, event logs, evaluation criteria and human-supervision roles. A skill that works in a robot gym has not thereby been validated on an energized site.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Feedback and verifiable limits",
+    "summary": "New methods separate rapid local control, memory correction and reliable operating infrastructure.",
+    "implications": "Measurements need to cover latency, reproducibility, connectivity and perception errors as well as success scores."
+  },
+  "sources": [
+    {
+      "id": "src-trex",
+      "title": "Panasonic HD Co-Develops a Robot Manipulation AI That Performs Dexterous Bimanual Tasks by Reacting Instantly to Fingertip Touch",
+      "url": "https://news.panasonic.com/global/press/en261105-2",
+      "domain": "news.panasonic.com",
+      "organization": "Panasonic Holdings",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-memory",
+      "title": "Clearing up a robot’s fuzzy memory",
+      "url": "https://news.mit.edu/2026/clearing-up-robot-fuzzy-memory-1105",
+      "domain": "news.mit.edu",
+      "organization": "Massachusetts Institute of Technology",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-kawasaki",
+      "title": "F-series controller S-type industrial robot security release",
+      "url": "https://www.khi.co.jp/pressrelease/detail/20261105_1.html",
+      "domain": "www.khi.co.jp",
+      "organization": "Kawasaki Heavy Industries",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-serve",
+      "title": "Serve Robotics Launches Physical AI Services",
+      "url": "https://ir.serverobotics.com/news-releases/news-release-details/serve-robotics-launches-physical-ai-services-opening-technology",
+      "domain": "ir.serverobotics.com",
+      "organization": "Serve Robotics",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-neura",
+      "title": "NEURA Robotics, E.ON and enviaM-Gruppe launch partnership",
+      "url": "https://neura-robotics.com/physical-ai-energy-infrastructure-eon-enviam/",
+      "domain": "neura-robotics.com",
+      "organization": "NEURA Robotics",
+      "published_at": "2026-11-05"
+    }
+  ]
+}
