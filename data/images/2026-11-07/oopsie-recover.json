@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-07",
+  "article_id": "oopsie-recover",
+  "article_title": {
+    "ru": "Робота исправляют словами и движением, сохраняя исходную модель",
+    "en": "A correction layer steers a robot without retraining its base model",
+    "ja": "人の修正と説明から、ロボットの動作を学習し直さず補正"
+  },
+  "article_urls": {
+    "ru": "https://repravda.com/ru/issues/2026-11-07/articles/oopsie-recover/",
+    "en": "https://repravda.com/en/issues/2026-11-07/articles/oopsie-recover/",
+    "ja": "https://repravda.com/ja/issues/2026-11-07/articles/oopsie-recover/"
+  },
+  "edition": "engineer",
+  "image_path": "data/images/2026-11-07/oopsie-recover.webp",
+  "caption": {
+    "ru": "Человек корректирует положение захвата, чтобы кружка оставалась вертикальной. Редакционная иллюстрация к OopsieRecover; оборудование показано условно, а не воспроизводит исследовательскую установку.",
+    "en": "A researcher corrects a gripper's orientation to keep a mug upright. Editorial illustration for OopsieRecover; the apparatus is conceptual, rather than a reconstruction of the research setup.",
+    "ja": "研究者が把持部の向きを修正し、カップをまっすぐに保つ。OopsieRecoverを題材にした編集イラスト。装置は概念的な表現で、研究設備の再現ではない。"
+  },
+  "alt": {
+    "ru": "Чёрно-белая гравюра: женщина-инженер направляет запястье роботизированной руки и показывает вертикальное положение кружки, удерживаемой захватом; коллега справа записывает наблюдения в блокнот.",
+    "en": "Black-and-white engraving: a woman engineer guides a robot arm's wrist and indicates the upright orientation of a mug held by its gripper; a colleague on the right records observations in a notebook.",
+    "ja": "白黒の版画。女性技術者がロボットアームの手首を導き、把持部が持つカップの垂直な向きを手で示す。右側の同僚は観察結果をノートに記録している。"
+  },
+  "visual_thesis": "Человеческое исправление движения и пояснение причины помогают выбирать подходящие действия без переобучения базовой модели.",
+  "visual_brief": "Одна условная лабораторная сцена по статье OopsieRecover: женщина направляет запястье манипулятора с кружкой и поясняющим жестом показывает вертикальное положение; мужчина наблюдает за предметом и записывает результат. Чёрная тушь на белом, уверенные контуры, умеренная перекрёстная штриховка, светлые лица и руки. Действие считывается как инженерная коррекция, а не постановочный портрет. Конкретная конструкция манипулятора является редакционным обобщением. Иллюстрация не утверждает, что система моделирует силы контакта, гарантирует успех или создаёт отсутствующие среди кандидатов движения.",
+  "source_ids": [
+    "src-oopsie",
+    "src-oopsie-project"
+  ],
+  "illustration_type": "editorial_concept",
+  "style": "black-and-white-scientific-engraving",
+  "width": 1600,
+  "height": 900
+}
