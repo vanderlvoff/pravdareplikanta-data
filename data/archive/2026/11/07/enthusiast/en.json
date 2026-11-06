@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-07",
+  "issue_id": "daily-2026-11-07",
+  "edition": "enthusiast",
+  "language": "en",
+  "generated_at": "2026-11-06T20:54:13.858715Z",
+  "title": "Replicant Data — November 7, 2026: Enthusiast",
+  "lead": "Why explanations help correct robots, how virtual touch works and why a confident 'finished' needs checking. Five views of the connection between software and the physical world.",
+  "news": [
+    {
+      "id": "social-humanoid",
+      "title": "Predicting the next gesture does not mean reading a person's mind",
+      "summary": "A team from Berkeley, Sony and Meta demonstrated a humanoid that adjusts its movement to a human partner. Social Humanoid uses a shared motion vocabulary, while understanding feelings and controlling physical contact remain separate questions.",
+      "details": "The researchers represent human and robot motion using common short elements, rather like a movement vocabulary. One component selects a sequence and anticipates the person's continuation; another controls the robot's body. Five collections of recorded human motion are transformed into 260 hours of paired human–humanoid data. Both partners' poses need adjustment because human and robot proportions and reachable distances differ.",
+      "technical_novelty": "The researchers represent human and robot motion using common short elements, rather like a movement vocabulary. One component selects a sequence and anticipates the person's continuation; another controls the robot's body. Five collections of recorded human motion are transformed into 260 hours of paired human–humanoid data. Both partners' poses need adjustment because human and robot proportions and reachable distances differ.",
+      "engineering_impact": "An important detail sits behind the demonstration: a separate operator enables motion and can stop it. The controller does not actively regulate contact force. A gesture that looks natural and a touch that feels gentle are therefore different engineering achievements. Assessing the second requires studying what happens at the point of contact, not just how closely the robot follows a pose.",
+      "limitations": "Motion coordination does not measure emotional understanding or touch comfort; contact forces are not actively regulated.",
+      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
+      "published_at": "2026-11-05",
+      "organization": "UC Berkeley; Sony Group Corporation; Meta",
+      "source_ids": [
+        "src-social-humanoid",
+        "src-social-humanoid-project"
+      ],
+      "time_window": "72h",
+      "body": "Try giving someone a high-five. Both people subtly adjust their arms as their hands approach, rather than replaying an identical greeting every time. A robot needs more than a recording of an arm going up to do the same. Social Humanoid, a November 5 preprint from UC Berkeley, Sony and Meta researchers, studies this coordination problem on a Unitree G1. A camera observes the partner while the system generates the robot's response.\n\nThe researchers represent human and robot motion using common short elements, rather like a movement vocabulary. One component selects a sequence and anticipates the person's continuation; another controls the robot's body. Five collections of recorded human motion are transformed into 260 hours of paired human–humanoid data. Both partners' poses need adjustment because human and robot proportions and reachable distances differ.\n\nThe authors demonstrate greetings and other interactions in simulation and on a physical G1 with 29 independently controlled movement directions. Median delay from a camera frame to a robot command is 308 milliseconds in the reported pipeline. Neither the latency nor the coordinated appearance establishes emotional understanding. The 260 hours describe the prepared dataset, not the duration of real meetings between people and a robot.\n\nAn important detail sits behind the demonstration: a separate operator enables motion and can stop it. The controller does not actively regulate contact force. A gesture that looks natural and a touch that feels gentle are therefore different engineering achievements. Assessing the second requires studying what happens at the point of contact, not just how closely the robot follows a pose.",
+      "image": null
+    },
+    {
+      "id": "oopsie-recover",
+      "title": "Why a robot benefits from knowing the reason for a correction",
+      "summary": "University of Texas at Austin and Toyota Research Institute researchers combined a corrected robot movement with a human explanation. OopsieRecover reuses the resulting correction in new scenes without retraining the original model.",
+      "details": "A person temporarily corrects the robot and adds an explanation. The system connects the description to relevant object parts and creates a condition that activates at the right moment. The original vision-language-action model, which turns observations and instructions into movement, keeps proposing actions. An added layer chooses more suitable candidates instead of changing the original model's weights.",
+      "technical_novelty": "A person temporarily corrects the robot and adds an explanation. The system connects the description to relevant object parts and creates a condition that activates at the right moment. The original vision-language-action model, which turns observations and instructions into movement, keeps proposing actions. An added layer chooses more suitable candidates instead of changing the original model's weights.",
+      "engineering_impact": "The correction is not a universal piece of common sense. The system still has to identify the object and track its relevant points, while hidden friction and contact forces are not explicitly represented. It also chooses from movements proposed by the original model. A good instruction cannot rescue the attempt if none of those candidates contains an effective recovery.",
+      "limitations": "Corrections represent spatial conditions, depend on perception and select among base-model candidates; they do not explicitly model contact forces.",
+      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
+      "published_at": "2026-11-05",
+      "organization": "University of Texas at Austin; Toyota Research Institute",
+      "source_ids": [
+        "src-oopsie",
+        "src-oopsie-project"
+      ],
+      "time_window": "72h",
+      "body": "When correcting a learner, showing the movement is often less useful than explaining why it matters. Keeping a mug upright and avoiding a nearby glass are different instructions, even if both briefly move a hand sideways. Researchers at the University of Texas at Austin and Toyota Research Institute explore a similar idea for robots. Their OopsieRecover preprint, submitted on November 5, focuses on the meaning behind individual human interventions.\n\nA person temporarily corrects the robot and adds an explanation. The system connects the description to relevant object parts and creates a condition that activates at the right moment. The original vision-language-action model, which turns observations and instructions into movement, keeps proposing actions. An added layer chooses more suitable candidates instead of changing the original model's weights.\n\nThe experiments include three simulated tasks and three physical tasks, along with changed object positions and scenes. On real hardware, completed-stage progress increases from 35.1% to 61.0%. Imagine a job with several steps: getting further is useful, but it is not the same as reaching the final step. That is why the figure must not be read as the proportion of entirely successful attempts. The results are reported by the authors.\n\nThe correction is not a universal piece of common sense. The system still has to identify the object and track its relevant points, while hidden friction and contact forces are not explicitly represented. It also chooses from movements proposed by the original model. A good instruction cannot rescue the attempt if none of those candidates contains an effective recovery.",
+      "image": null
+    },
+    {
+      "id": "tactilelab",
+      "title": "Teaching virtual robot fingers about movement along an object's surface",
+      "summary": "TactileLab offers tactile robot training without computing every deformation of a soft sensor. University of Bristol researchers and collaborators demonstrate transferring this approach to physical robotic devices.",
+      "details": "Calculating exactly how a soft sensing surface deforms is expensive. The authors instead use simpler rigid-body physics to estimate movement along the contact, complementing information about pressing depth. They build on Isaac Lab, an environment in which robots can train in a simulated world. Reinforcement learning rewards useful actions so that repeated experience changes which movements the machine chooses.",
+      "technical_novelty": "Calculating exactly how a soft sensing surface deforms is expensive. The authors instead use simpler rigid-body physics to estimate movement along the contact, complementing information about pressing depth. They build on Isaac Lab, an environment in which robots can train in a simulated world. Reinforcement learning rewards useful actions so that repeated experience changes which movements the machine chooses.",
+      "engineering_impact": "The most interesting boundary lies between deformation and slipping. The translation assumes that the sensor surface is still sticking to the object. A sudden disturbance can start sliding and break that assumption. Virtual touch is therefore best understood as a carefully selected approximation: it preserves particular properties of contact while leaving other properties to a separate detection and control problem.",
+      "limitations": "Translation of physical observations assumes sticking contact; abrupt disturbances can violate that assumption.",
+      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
+      "published_at": "2026-11-05",
+      "organization": "University of Bristol and collaborators",
+      "source_ids": [
+        "src-tactilelab",
+        "src-tactilelab-project"
+      ],
+      "time_window": "72h",
+      "body": "Press a finger onto a table, then gently move it sideways. The depth of the press may barely change, although the contact feels different. A robot can use such information when holding or rotating an object. TactileLab, a study involving University of Bristol researchers and submitted on November 5, attempts to include it in virtual training. It concerns useful contact measurements, rather than giving a machine human sensations.\n\nCalculating exactly how a soft sensing surface deforms is expensive. The authors instead use simpler rigid-body physics to estimate movement along the contact, complementing information about pressing depth. They build on Isaac Lab, an environment in which robots can train in a simulated world. Reinforcement learning rewards useful actions so that repeated experience changes which movements the machine chooses.\n\nTo deploy the learned behavior, another model translates real sensor images into the shared representation used during training. The researchers demonstrate several sensor designs, two-arm manipulation and movement within a robotic hand. This does not promise identical behavior from every gripper. If the sensor images barely reveal tangential deformation, the translation model lacks the information needed to reconstruct it accurately.\n\nThe most interesting boundary lies between deformation and slipping. The translation assumes that the sensor surface is still sticking to the object. A sudden disturbance can start sliding and break that assumption. Virtual touch is therefore best understood as a carefully selected approximation: it preserves particular properties of contact while leaving other properties to a separate detection and control problem.",
+      "image": null
+    },
+    {
+      "id": "ugo-canon-manufacturing",
+      "title": "Why a factory announcement is also a robotics story",
+      "summary": "Japan's ugo has commissioned Canon Electronics to make its ugo mini G2 inspection robot. Production began in October in Saitama, while the November 2 announcement describes preparations for provision from November 24.",
+      "details": "The manufacturing partner makes the equipment on the developer's behalf, an arrangement known as contract manufacturing. ugo expects to use its partner's experience in precision devices, quality control and component purchasing. The underlying problem does not require a new algorithm: several customers can request several robots simultaneously, and a small assembly operation can become the bottleneck even when the control software works.",
+      "technical_novelty": "The manufacturing partner makes the equipment on the developer's behalf, an arrangement known as contract manufacturing. ugo expects to use its partner's experience in precision devices, quality control and component purchasing. The underlying problem does not require a new algorithm: several customers can request several robots simultaneously, and a small assembly operation can become the bottleneck even when the control software works.",
+      "engineering_impact": "Scaling has an unglamorous side: consistent components, repeatable assembly and maintenance. A faulty part can undermine a good controller just as an unsuitable algorithm can. The manufacturing location and start date are known. Actual delivery numbers and long-term operation at customer facilities will be needed to show what the expanded production arrangement achieves.",
+      "limitations": "Annual production capacity and independent inspection-accuracy results are not disclosed; the hundred-unit shipment figure belongs to the earlier model.",
+      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
+      "published_at": "2026-11-02",
+      "organization": "ugo; Canon Electronics",
+      "source_ids": [
+        "src-ugo-canon"
+      ],
+      "time_window": "7d",
+      "body": "A robot can look convincing at an exhibition yet face a different challenge when several buildings need identical machines. Japanese inspection-robot developer ugo described its manufacturing partnership with Canon Electronics on November 2. Assembly of the new ugo mini G2 began in October at the Misato site in Saitama Prefecture. Customer provision is planned from November 24, so the release is not a report of completed deliveries of a new fleet.\n\nThe manufacturing partner makes the equipment on the developer's behalf, an arrangement known as contract manufacturing. ugo expects to use its partner's experience in precision devices, quality control and component purchasing. The underlying problem does not require a new algorithm: several customers can request several robots simultaneously, and a small assembly operation can become the bottleneck even when the control software works.\n\nAccording to ugo, cumulative shipments of the previous G1 model, introduced in 2025, exceeded one hundred units. Those machines cannot be counted as shipments of the new G2. The announcement also supplies neither an independent inspection-quality comparison nor the new factory's annual capacity. It describes a route toward more consistent supply rather than demonstrated superiority of the robot's artificial intelligence.\n\nScaling has an unglamorous side: consistent components, repeatable assembly and maintenance. A faulty part can undermine a good controller just as an unsuitable algorithm can. The manufacturing location and start date are known. Actual delivery numbers and long-term operation at customer facilities will be needed to show what the expanded production arrangement achieves.",
+      "image": null
+    },
+    {
+      "id": "roboarcade",
+      "title": "Testing a robot that says 'finished' too soon",
+      "summary": "Stanford researchers created RoboARCade, 22 simulated tasks for agents controlling robots. The suite exposes unsuitable action strategies, imprecise movement and claims of success when the requested result has not been reached.",
+      "details": "The suite assembles 22 tasks involving extended sequences, memory and precise object handling. They share MuJoCo, software that calculates mechanical movement and contact. An agent can receive multiple camera images with depth information or use an interactive three-dimensional workspace. This allows comparison of both the models and the tools through which they observe the world and request movement.",
+      "technical_novelty": "The suite assembles 22 tasks involving extended sequences, memory and precise object handling. They share MuJoCo, software that calculates mechanical movement and contact. An agent can receive multiple camera images with depth information or use an interactive three-dimensional workspace. This allows comparison of both the models and the tools through which they observe the world and request movement.",
+      "engineering_impact": "The authors more often find a poor manipulation strategy or imprecise execution than a failure to understand the image. Describing a scene well is therefore different from moving an object accurately. The grading arrangement matters too: agents cannot inspect hidden scoring conditions, and their descriptions do not replace outcome checks. After the agent says 'finished', the researchers still examine what happened to the object.",
+      "limitations": "Results concern simulated tasks and selected agents; independent state checks matter because an agent's completion report can be wrong.",
+      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
+      "published_at": "2026-11-05",
+      "organization": "Stanford University",
+      "source_ids": [
+        "src-roboarcade",
+        "src-roboarcade-project"
+      ],
+      "time_window": "72h",
+      "body": "A virtual robot moves an object and announces that it is finished. Did the object actually reach the requested location? In RoboARCade, an external evaluator answers that question using the simulated world's state. Stanford researchers submitted the benchmark preprint on November 5. They study software agents choosing successive robot movements from observations, rather than simply launching an already prepared robot skill.\n\nThe suite assembles 22 tasks involving extended sequences, memory and precise object handling. They share MuJoCo, software that calculates mechanical movement and contact. An agent can receive multiple camera images with depth information or use an interactive three-dimensional workspace. This allows comparison of both the models and the tools through which they observe the world and request movement.\n\nIn the main comparison, GPT-6 Astra scores 49.8% and Claude Fable 5.1 scores 43.6%. A richer visual interface improves results by 1.5–6.8 percentage points while costing 1.7–2.3 times as much. Another finding is especially revealing: incorrect success claims occur on 24–39% of attempted subtasks. These values describe the particular experiments rather than every simulated or physical robot.\n\nThe authors more often find a poor manipulation strategy or imprecise execution than a failure to understand the image. Describing a scene well is therefore different from moving an object accurately. The grading arrangement matters too: agents cannot inspect hidden scoring conditions, and their descriptions do not replace outcome checks. After the agent says 'finished', the researchers still examine what happened to the object.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "The gap between a good description and a good action",
+    "summary": "Robots need contact information, corrections and external outcome checks alongside recognition and commands.",
+    "implications": "A demonstration is more informative when its measurements and preserved assumptions are clear."
+  },
+  "sources": [
+    {
+      "id": "src-oopsie",
+      "title": "OopsieRecover: Learning Transferable VLA Corrections from Semantic Interventions",
+      "url": "https://arxiv.org/abs/2611.08462",
+      "domain": "arxiv.org",
+      "organization": "University of Texas at Austin; Toyota Research Institute",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-oopsie-project",
+      "title": "OopsieRecover — Learning transferable VLA corrections from semantic interventions",
+      "url": "https://robin-lab.cs.utexas.edu/oopsierecover/",
+      "domain": "robin-lab.cs.utexas.edu",
+      "organization": "University of Texas at Austin; Toyota Research Institute",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-tactilelab",
+      "title": "TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation",
+      "url": "https://arxiv.org/abs/2611.07881",
+      "domain": "arxiv.org",
+      "organization": "University of Bristol and collaborators",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-tactilelab-project",
+      "title": "TactileLab: Efficient Multimodal Tactile Simulation for Shear-Sensitive Dexterous Sim2Real Robotic Manipulation",
+      "url": "https://yijionglin.github.io/tactilelab/",
+      "domain": "yijionglin.github.io",
+      "organization": "University of Bristol and collaborators",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-social-humanoid",
+      "title": "Social Humanoid: Socially Responsive Human-Humanoid Interaction",
+      "url": "https://arxiv.org/abs/2611.08407",
+      "domain": "arxiv.org",
+      "organization": "UC Berkeley; Sony Group Corporation; Meta",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-social-humanoid-project",
+      "title": "Social Humanoid — Socially Responsive Human–Humanoid Interaction",
+      "url": "https://von31.github.io/social-humanoid/",
+      "domain": "von31.github.io",
+      "organization": "UC Berkeley; Sony Group Corporation; Meta",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-roboarcade",
+      "title": "RoboARCade: Benchmarking Agentic Robot Control",
+      "url": "https://arxiv.org/abs/2611.08209",
+      "domain": "arxiv.org",
+      "organization": "Stanford University",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-roboarcade-project",
+      "title": "Leaderboard | RoboARCade",
+      "url": "https://roboarcade.org/",
+      "domain": "roboarcade.org",
+      "organization": "Stanford University",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-ugo-canon",
+      "title": "キヤノン電子にAIロボット「ugo mini G2」の生産を委託",
+      "url": "https://ugo.plus/information/2026/11/02/canonems/",
+      "domain": "ugo.plus",
+      "organization": "ugo; Canon Electronics",
+      "published_at": "2026-11-02"
+    }
+  ]
+}

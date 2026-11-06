@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-07",
+  "issue_id": "daily-2026-11-07",
+  "edition": "engineer",
+  "language": "en",
+  "generated_at": "2026-11-06T20:54:13.858715Z",
+  "title": "Replicant Data — November 7, 2026: Engineering",
+  "lead": "Behavior correction, simulated touch and independent outcome checks. Research metrics are examined alongside measurement design and transfer limits.",
+  "news": [
+    {
+      "id": "oopsie-recover",
+      "title": "A correction layer steers a robot without retraining its base model",
+      "summary": "The University of Texas at Austin and Toyota Research Institute introduced OopsieRecover, which transfers human corrections to changed scenes. Real-world task progress rose from 35.1% to 61.0%; that measure counts completed stages rather than fully successful trials.",
+      "details": "The system grounds relevant robot and object parts as spatial point sets. It proposes a conditional cost that activates in the appropriate context and penalizes an undesirable movement. Candidate explanations are tested against the available interventions and refined if they are too narrow or permissive. During execution, the base model samples possible action sequences; the correction layer predicts their consequences and prefers the sequence with the lower applicable cost.",
+      "technical_novelty": "The system grounds relevant robot and object parts as spatial point sets. It proposes a conditional cost that activates in the appropriate context and penalizes an undesirable movement. Candidate explanations are tested against the available interventions and refined if they are too narrow or permissive. During execution, the base model samples possible action sequences; the correction layer predicts their consequences and prefers the sequence with the lower applicable cost.",
+      "engineering_impact": "Reproduction depends on accurate point tracking, scene grounding and motion prediction. Spatial conditions do not explicitly represent contact forces or hidden physical properties. There is also a restriction imposed by the action generator: steering selects among its sampled candidates. When none of those candidates contains a useful recovery, a better ranking cannot manufacture the missing motion.",
+      "limitations": "Corrections represent spatial conditions, depend on perception and select among base-model candidates; they do not explicitly model contact forces.",
+      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
+      "published_at": "2026-11-05",
+      "organization": "University of Texas at Austin; Toyota Research Institute",
+      "source_ids": [
+        "src-oopsie",
+        "src-oopsie-project"
+      ],
+      "time_window": "72h",
+      "body": "A corrected trajectory does not, by itself, explain why a human intervened. Perhaps a mug needed to remain upright, or a gripper was about to collide with a nearby object. Researchers at the University of Texas at Austin and Toyota Research Institute combine the intervention with a verbal explanation in OopsieRecover, a preprint submitted on November 5. The underlying vision-language-action model, which maps observations and instructions into movements, keeps its original weights throughout adaptation.\n\nThe system grounds relevant robot and object parts as spatial point sets. It proposes a conditional cost that activates in the appropriate context and penalizes an undesirable movement. Candidate explanations are tested against the available interventions and refined if they are too narrow or permissive. During execution, the base model samples possible action sequences; the correction layer predicts their consequences and prefers the sequence with the lower applicable cost.\n\nThe study covers three simulated tasks and three physical tasks, including changed object positions and scenes. Only small sets of corrections are collected for each task. On real hardware, reported mean task progress increases from 35.1% to 61.0%. Progress measures the fraction of stages completed, so it must not be relabeled as a 61% rate of entirely successful runs. The evaluation was conducted by the authors, rather than established through independent replication.\n\nReproduction depends on accurate point tracking, scene grounding and motion prediction. Spatial conditions do not explicitly represent contact forces or hidden physical properties. There is also a restriction imposed by the action generator: steering selects among its sampled candidates. When none of those candidates contains a useful recovery, a better ranking cannot manufacture the missing motion.",
+      "image": null
+    },
+    {
+      "id": "tactilelab",
+      "title": "TactileLab approximates contact shear without expensive soft-body simulation",
+      "summary": "Researchers including a University of Bristol team introduced TactileLab, an Isaac Lab framework for learning tactile robot control. It estimates tangential contact motion and translates real sensor images into a shared representation for deployment.",
+      "details": "Rigid-body physics supplies an efficient estimate of dense tangential motion at the contact interface. The authors call this representation simulated tactile flow. It complements a contact-depth field instead of reproducing the full deformation of a soft material. The control architecture processes these tactile observations together with a history of the robot's own mechanical state, allowing current contact information to be interpreted in the context of earlier movement.",
+      "technical_novelty": "Rigid-body physics supplies an efficient estimate of dense tangential motion at the contact interface. The authors call this representation simulated tactile flow. It complements a contact-depth field instead of reproducing the full deformation of a soft material. The control architecture processes these tactile observations together with a history of the robot's own mechanical state, allowing current contact information to be interpreted in the context of earlier movement.",
+      "engineering_impact": "The transfer method assumes sticking contact, with deformation dominated by shear rather than slip. Abrupt disturbances can violate that assumption and lead to states from which the policy does not recover. A replication should therefore distinguish a useful shear signal from an object already sliding across the sensor. Incorporating slip detection into the simulated learning pipeline remains an explicit open issue.",
+      "limitations": "Translation of physical observations assumes sticking contact; abrupt disturbances can violate that assumption.",
+      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
+      "published_at": "2026-11-05",
+      "organization": "University of Bristol and collaborators",
+      "source_ids": [
+        "src-tactilelab",
+        "src-tactilelab-project"
+      ],
+      "time_window": "72h",
+      "body": "Pressing into an object and moving along its surface produce different tactile information. A robot turning or holding an object can benefit from both, but detailed simulation of a deforming sensor is expensive when training many policies in parallel. TactileLab, described in a November 5 preprint by researchers including the University of Bristol, addresses that computational bottleneck. It is a research framework built on Isaac Lab, a robotics simulation and learning environment, rather than a newly manufactured sensor.\n\nRigid-body physics supplies an efficient estimate of dense tangential motion at the contact interface. The authors call this representation simulated tactile flow. It complements a contact-depth field instead of reproducing the full deformation of a soft material. The control architecture processes these tactile observations together with a history of the robot's own mechanical state, allowing current contact information to be interpreted in the context of earlier movement.\n\nA separate translation model maps real tactile images into the same flow and depth representations. The researchers demonstrate transfer across several sensor designs and deploy policies on physical tasks involving two arms and manipulation within a hand. These are author-reported experiments. A common observation format does not make every sensor equally informative: surface motion must remain visible in the original sensor images for the translator to recover it reliably.\n\nThe transfer method assumes sticking contact, with deformation dominated by shear rather than slip. Abrupt disturbances can violate that assumption and lead to states from which the policy does not recover. A replication should therefore distinguish a useful shear signal from an object already sliding across the sensor. Incorporating slip detection into the simulated learning pipeline remains an explicit open issue.",
+      "image": null
+    },
+    {
+      "id": "roboarcade",
+      "title": "RoboARCade checks physical outcomes outside the agent's own workspace",
+      "summary": "Stanford researchers introduced RoboARCade, a suite of 22 simulated tasks for direct agent control of robots. Depending on the agent, incorrect claims of completion occurred on 24–39% of attempted subtasks.",
+      "details": "The suite includes 22 tasks involving extended sequences, memory and precise manipulation across three robot embodiments. MuJoCo, a simulator of mechanical systems, supplies the shared physics backend. Tasks are packaged separately, while agents and observation interfaces can be exchanged independently. One interface provides camera color and depth information; another offers an interactive three-dimensional workspace in which an agent can position a virtual target gripper before requesting movement.",
+      "technical_novelty": "The suite includes 22 tasks involving extended sequences, memory and precise manipulation across three robot embodiments. MuJoCo, a simulator of mechanical systems, supplies the shared physics backend. Tasks are packaged separately, while agents and observation interfaces can be exchanged independently. One interface provides camera color and depth information; another offers an interactive three-dimensional workspace in which an agent can position a virtual target gripper before requesting movement.",
+      "engineering_impact": "Scoring is kept outside the agent sandbox. Hidden object poses and grading conditions are unavailable to the model, and recorded simulator states determine the outcome. Reproduction must preserve that separation. Most reported failures concern an unsuitable manipulation strategy or imprecise execution, so improving scene recognition alone would leave the benchmark's main sources of error unresolved.",
+      "limitations": "Results concern simulated tasks and selected agents; independent state checks matter because an agent's completion report can be wrong.",
+      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
+      "published_at": "2026-11-05",
+      "organization": "Stanford University",
+      "source_ids": [
+        "src-roboarcade",
+        "src-roboarcade-project"
+      ],
+      "time_window": "72h",
+      "body": "An agent saying that an action is complete does not establish that the object reached its target. Stanford researchers examine that gap in RoboARCade, a benchmark described in a preprint submitted on November 5. A model observes the scene and chooses successive robot motion targets itself, rather than only giving a high-level instruction to a separate learned executor. The evaluation takes place in simulation, allowing failures to be inspected without exposing physical equipment to the same risks.\n\nThe suite includes 22 tasks involving extended sequences, memory and precise manipulation across three robot embodiments. MuJoCo, a simulator of mechanical systems, supplies the shared physics backend. Tasks are packaged separately, while agents and observation interfaces can be exchanged independently. One interface provides camera color and depth information; another offers an interactive three-dimensional workspace in which an agent can position a virtual target gripper before requesting movement.\n\nIn the principal comparison, GPT-6 Astra scores 49.8% and Claude Fable 5.1 scores 43.6%. A richer visual interface adds 1.5 to 6.8 percentage points while increasing cost by 1.7 to 2.3 times. Agents also incorrectly claim success on 24–39% of attempted subtasks. Those results belong to this particular suite, interface selection and evaluation protocol, rather than describing reliability for industrial robot operation.\n\nScoring is kept outside the agent sandbox. Hidden object poses and grading conditions are unavailable to the model, and recorded simulator states determine the outcome. Reproduction must preserve that separation. Most reported failures concern an unsuitable manipulation strategy or imprecise execution, so improving scene recognition alone would leave the benchmark's main sources of error unresolved.",
+      "image": null
+    },
+    {
+      "id": "social-humanoid",
+      "title": "A shared motion vocabulary helps a humanoid respond to a human partner",
+      "summary": "Researchers from UC Berkeley, Sony and Meta introduced Social Humanoid for coordinated human–Unitree G1 motion. Its 260-hour training benchmark is derived from human motion recordings, not 260 hours of physical robot trials.",
+      "details": "The high-level model represents human and robot motion using a shared vocabulary of discrete elements. It generates a humanoid response while anticipating the partner's next motion, including when observations temporarily disappear. A lower-level whole-body controller executes the generated trajectory. The distinction matters because a plausible predicted pose sequence is only useful if the physical controller can follow it with sufficient stability and timing.",
+      "technical_novelty": "The high-level model represents human and robot motion using a shared vocabulary of discrete elements. It generates a humanoid response while anticipating the partner's next motion, including when observations temporarily disappear. A lower-level whole-body controller executes the generated trajectory. The distinction matters because a plausible predicted pose sequence is only useful if the physical controller can follow it with sufficient stability and timing.",
+      "engineering_impact": "A separate operator enables motion and can return the robot to a standing pose. The low-level controller does not actively regulate contact forces or compliance during close interaction. Consequently, accurate trajectory tracking cannot substitute for measurements of pressure, comfort and physical safety. The remaining integration problem is especially concrete at the point where an apparently coordinated gesture touches a person.",
+      "limitations": "Motion coordination does not measure emotional understanding or touch comfort; contact forces are not actively regulated.",
+      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
+      "published_at": "2026-11-05",
+      "organization": "UC Berkeley; Sony Group Corporation; Meta",
+      "source_ids": [
+        "src-social-humanoid",
+        "src-social-humanoid-project"
+      ],
+      "time_window": "72h",
+      "body": "Raising a hand is easier than deciding when and how to respond to another person who is also moving. A team from UC Berkeley, Sony and Meta addresses that coordination problem in Social Humanoid, a preprint submitted on November 5. The system controls a Unitree G1 with 29 degrees of freedom. These degrees describe independently controlled directions of mechanical movement; they are not a count of social behaviors learned by the robot.\n\nThe high-level model represents human and robot motion using a shared vocabulary of discrete elements. It generates a humanoid response while anticipating the partner's next motion, including when observations temporarily disappear. A lower-level whole-body controller executes the generated trajectory. The distinction matters because a plausible predicted pose sequence is only useful if the physical controller can follow it with sufficient stability and timing.\n\nTo build the dataset, the team adapts five human motion-capture collections into 260 hours of paired human–humanoid interaction. The procedure modifies both partners' poses to preserve reach, contact and relative body scale. The authors demonstrate simulated and physical interactions, including greetings, and report a median camera-to-command latency of 308 milliseconds. That is a measurement of the specific pipeline, not a general guarantee of safe reaction time.\n\nA separate operator enables motion and can return the robot to a standing pose. The low-level controller does not actively regulate contact forces or compliance during close interaction. Consequently, accurate trajectory tracking cannot substitute for measurements of pressure, comfort and physical safety. The remaining integration problem is especially concrete at the point where an apparently coordinated gesture touches a person.",
+      "image": null
+    },
+    {
+      "id": "semantic-radio",
+      "title": "NVIDIA's wireless roundup highlights sending object information instead of every image",
+      "summary": "A November 6 NVIDIA roundup describes research on communication for Physical AI, including a King's College London robot testbed. Reported task-time reductions reach 52.6% against periodic image transmission, but the underlying study predates the roundup.",
+      "details": "The described setup connects a camera-equipped arm with a Jetson AGX Orin computing platform and Sionna wireless research software. Experiments include packing fruit and stacking cubes with deliberately introduced faults. NVIDIA reports task-completion-time reductions of up to 52.6% relative to periodic image transmission. Some configurations also use a digital twin, a computational representation of the equipment, to inspect planned motion for potential collisions before execution.",
+      "technical_novelty": "The described setup connects a camera-equipped arm with a Jetson AGX Orin computing platform and Sionna wireless research software. Experiments include packing fruit and stacking cubes with deliberately introduced faults. NVIDIA reports task-completion-time reductions of up to 52.6% relative to periodic image transmission. Some configurations also use a digital twin, a computational representation of the equipment, to inspect planned motion for potential collisions before execution.",
+      "engineering_impact": "Information selection introduces a control problem before the first packet is sent: which details may safely be omitted? A compact scene description is useful only while it preserves the properties needed for the current action and for recognizing failure. Testing should include stale descriptions and delayed replacement images, rather than treating reduced traffic volume as sufficient evidence of better control.",
+      "limitations": "The November 6 roundup describes earlier research; reduced task time does not guarantee a maximum network delay.",
+      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
+      "published_at": "2026-11-06",
+      "organization": "NVIDIA; King's College London",
+      "source_ids": [
+        "src-semantic-radio"
+      ],
+      "time_window": "24h",
+      "body": "When a robot relies on computation outside its body, the wireless connection becomes part of its response loop. NVIDIA's November 6 overview highlights King's College London work on sending compact descriptions of objects, positions and relationships instead of relying only on periodic camera images. The approach is called goal-oriented semantic communication because the message is selected for the information needed by the task. The roundup is new; the underlying research was published earlier.\n\nThe described setup connects a camera-equipped arm with a Jetson AGX Orin computing platform and Sionna wireless research software. Experiments include packing fruit and stacking cubes with deliberately introduced faults. NVIDIA reports task-completion-time reductions of up to 52.6% relative to periodic image transmission. Some configurations also use a digital twin, a computational representation of the equipment, to inspect planned motion for potential collisions before execution.\n\nThe overview combines several separate projects on robotic communication, radio reception and base-station energy savings. Their measurements cannot be combined into one verdict on the readiness of sixth-generation networks. A robotic deployment needs its own end-to-end latency distribution and failure behavior. Faster average task completion does not establish a maximum delay or show how a machine would recover from every kind of network interruption.\n\nInformation selection introduces a control problem before the first packet is sent: which details may safely be omitted? A compact scene description is useful only while it preserves the properties needed for the current action and for recognizing failure. Testing should include stale descriptions and delayed replacement images, rather than treating reduced traffic volume as sufficient evidence of better control.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Outcome verification becomes part of control",
+    "summary": "New studies supplement models with external result checks, contextual corrections and specialized contact representations.",
+    "implications": "Comparisons must distinguish stage progress, complete success, motion accuracy and end-to-end delay."
+  },
+  "sources": [
+    {
+      "id": "src-oopsie",
+      "title": "OopsieRecover: Learning Transferable VLA Corrections from Semantic Interventions",
+      "url": "https://arxiv.org/abs/2611.08462",
+      "domain": "arxiv.org",
+      "organization": "University of Texas at Austin; Toyota Research Institute",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-oopsie-project",
+      "title": "OopsieRecover — Learning transferable VLA corrections from semantic interventions",
+      "url": "https://robin-lab.cs.utexas.edu/oopsierecover/",
+      "domain": "robin-lab.cs.utexas.edu",
+      "organization": "University of Texas at Austin; Toyota Research Institute",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-tactilelab",
+      "title": "TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation",
+      "url": "https://arxiv.org/abs/2611.07881",
+      "domain": "arxiv.org",
+      "organization": "University of Bristol and collaborators",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-tactilelab-project",
+      "title": "TactileLab: Efficient Multimodal Tactile Simulation for Shear-Sensitive Dexterous Sim2Real Robotic Manipulation",
+      "url": "https://yijionglin.github.io/tactilelab/",
+      "domain": "yijionglin.github.io",
+      "organization": "University of Bristol and collaborators",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-social-humanoid",
+      "title": "Social Humanoid: Socially Responsive Human-Humanoid Interaction",
+      "url": "https://arxiv.org/abs/2611.08407",
+      "domain": "arxiv.org",
+      "organization": "UC Berkeley; Sony Group Corporation; Meta",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-social-humanoid-project",
+      "title": "Social Humanoid — Socially Responsive Human–Humanoid Interaction",
+      "url": "https://von31.github.io/social-humanoid/",
+      "domain": "von31.github.io",
+      "organization": "UC Berkeley; Sony Group Corporation; Meta",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-roboarcade",
+      "title": "RoboARCade: Benchmarking Agentic Robot Control",
+      "url": "https://arxiv.org/abs/2611.08209",
+      "domain": "arxiv.org",
+      "organization": "Stanford University",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-roboarcade-project",
+      "title": "Leaderboard | RoboARCade",
+      "url": "https://roboarcade.org/",
+      "domain": "roboarcade.org",
+      "organization": "Stanford University",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-semantic-radio",
+      "title": "How NVIDIA Open Source Tools Are Helping Researchers Build Next-Generation 6G Networks",
+      "url": "https://blogs.nvidia.com/blog/telco-open-source-tools-research-6g-networks/",
+      "domain": "blogs.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-06"
+    }
+  ]
+}

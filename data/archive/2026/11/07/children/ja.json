@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-07",
+  "issue_id": "daily-2026-11-07",
+  "edition": "children",
+  "language": "ja",
+  "generated_at": "2026-11-06T20:54:13.858715Z",
+  "title": "レプリカント・データ — 2026年11月7日：小学生",
+  "lead": "人の身ぶりに合わせたり、動きを直したり、仮想の指で練習したりするロボット。研究者は仕事が本当に終わったかも確かめる。",
+  "news": [
+    {
+      "id": "social-humanoid",
+      "title": "人の動きに合わせて、ロボットがあいさつ",
+      "summary": "バークレー校、ソニー、Metaの研究者は、人に合わせてポーズを変えるロボットを見せた。勉強に使ったのは、人の動きの記録を作り直したデータで、実物のロボットが何百時間も人と会ったわけではない。",
+      "details": "学習には、人の動きを記録した5つのデータ集を使った。片方の人をロボットの体の大きさや動ける範囲に合うように変え、相手の姿勢も直した。できた組み合わせは260時間分だ。これは用意したデータの長さであり、ロボットが人と過ごした時間ではない。",
+      "technical_novelty": "学習には、人の動きを記録した5つのデータ集を使った。片方の人をロボットの体の大きさや動ける範囲に合うように変え、相手の姿勢も直した。できた組み合わせは260時間分だ。これは用意したデータの長さであり、ロボットが人と過ごした時間ではない。",
+      "engineering_impact": "このプログラムで相手の気持ちが分かるようになったわけではない。また、ふれる力を積極的に調節する仕組みでもない。動画できれいなあいさつが見えても、人の手にどれほどやさしくふれるかは別に確かめなければならない。",
+      "limitations": "動きを合わせても気持ちの理解や触れたときの快適さを確かめたことにはならず、接触力を積極的に調節するものでもない。",
+      "evidence_status": "結果は研究者または企業の発表に基づく。第三者による再現は確認されていない。",
+      "published_at": "2026-11-05",
+      "organization": "UC Berkeley; Sony Group Corporation; Meta",
+      "source_ids": [
+        "src-social-humanoid",
+        "src-social-humanoid-project"
+      ],
+      "time_window": "72h",
+      "body": "あいさつのために手を出すと、相手も気づいて手を上げる。ただ手を振るだけでなく、動く時を合わせることが大切だ。バークレー校、ソニー、Metaの研究者は、ロボットにもこうした調整をさせようとしている。11月5日に出した研究では、人を見て次の動きを選ぶ仕組みを調べた。\n\n学習には、人の動きを記録した5つのデータ集を使った。片方の人をロボットの体の大きさや動ける範囲に合うように変え、相手の姿勢も直した。できた組み合わせは260時間分だ。これは用意したデータの長さであり、ロボットが人と過ごした時間ではない。\n\nプログラムの一つの部分が動きの順番を決め、別の部分が体を動かす。研究者は、あいさつなどを仮想（かそう）の世界と実物のロボットで試した。実験中は別の大人が動きを許可し、必要なら止める。\n\nこのプログラムで相手の気持ちが分かるようになったわけではない。また、ふれる力を積極的に調節する仕組みでもない。動画できれいなあいさつが見えても、人の手にどれほどやさしくふれるかは別に確かめなければならない。",
+      "image": null
+    },
+    {
+      "id": "oopsie-recover",
+      "title": "動きを直した理由も、ロボットに教える",
+      "summary": "テキサス大学オースティン校とトヨタ・リサーチ・インスティテュートの研究者は、人が動きを直すときに説明も加えた。ロボットは似た新しい場面で、その説明を動きの選択に使う。",
+      "details": "人は途中で操作を引きつぎ、動きを直して理由を話す。プログラムは説明を物に結び付け、次に動きを選ぶときの条件を作る。元のロボットのモデルを最初から学習し直すのではない。モデルが出した動きの候補から、追加した仕組みが合うものを選ぶ。",
+      "technical_novelty": "人は途中で操作を引きつぎ、動きを直して理由を話す。プログラムは説明を物に結び付け、次に動きを選ぶときの条件を作る。元のロボットのモデルを最初から学習し直すのではない。モデルが出した動きの候補から、追加した仕組みが合うものを選ぶ。",
+      "engineering_impact": "どんな失敗も直せるわけではない。物を正しく見つけ、動きの候補の中に役立つ修正があることが必要だ。良い動きがなければ選べない。教える人の言葉とともに、機械がどんな動きを用意できるかも大切になる。",
+      "limitations": "修正は空間の条件で表され、物の見え方と元のモデルの候補に依存する。接触力を直接扱うものではない。",
+      "evidence_status": "結果は研究者または企業の発表に基づく。第三者による再現は確認されていない。",
+      "published_at": "2026-11-05",
+      "organization": "University of Texas at Austin; Toyota Research Institute",
+      "source_ids": [
+        "src-oopsie",
+        "src-oopsie-project"
+      ],
+      "time_window": "72h",
+      "body": "カップをななめにして運ぶ人に、手の向きを直してあげる。それだけでなく、カップはまっすぐに保とうと説明すれば、理由も伝わる。テキサス大学オースティン校とトヨタ・リサーチ・インスティテュートは、ロボットでも似た方法を調べている。研究は11月5日に発表された。\n\n人は途中で操作を引きつぎ、動きを直して理由を話す。プログラムは説明を物に結び付け、次に動きを選ぶときの条件を作る。元のロボットのモデルを最初から学習し直すのではない。モデルが出した動きの候補から、追加した仕組みが合うものを選ぶ。\n\nコンピューター内で3つ、実物の装置で3つの課題を試した。実物での手順の進み具合は、平均35.1％から61.0％に上がった。ただし、前より先へ進むことと、仕事を最後まで終えることは同じではない。数字は手順のうち終えた部分を示す。\n\nどんな失敗も直せるわけではない。物を正しく見つけ、動きの候補の中に役立つ修正があることが必要だ。良い動きがなければ選べない。教える人の言葉とともに、機械がどんな動きを用意できるかも大切になる。",
+      "image": null
+    },
+    {
+      "id": "tactilelab",
+      "title": "仮想の指で、ふれた物の動きを練習する",
+      "summary": "ブリストル大学などの研究者は、コンピューター内でロボットの触覚（しょっかく）を使う練習を考えた。学んだ動きを実物の装置へ移す実験も行った。",
+      "details": "やわらかい指の表面がどう変形するかを、すべて細かく計算するのは大変だ。そこで、押し込みの深さと、物の表面に沿う動きを、もっと簡単に求める。仮想（かそう）の世界で何度も試し、仕事をしやすい動きを選ぶプログラムを育てる。",
+      "technical_novelty": "やわらかい指の表面がどう変形するかを、すべて細かく計算するのは大変だ。そこで、押し込みの深さと、物の表面に沿う動きを、もっと簡単に求める。仮想（かそう）の世界で何度も試し、仕事をしやすい動きを選ぶプログラムを育てる。",
+      "engineering_impact": "ただし、センサーの表面が物の上を滑っていないことを前提にしている。強い力で急に滑ると、計算の条件が変わる。小さな変形と、本当に滑り始めた状態を見分けることは別の課題だ。動いたと気づくだけでは、つかみ方を正しく直せない場合がある。",
+      "limitations": "実物の観測を変える方法は、物がセンサーの上を滑らない接触を前提とし、急な外力で条件が崩れることがある。",
+      "evidence_status": "結果は研究者または企業の発表に基づく。第三者による再現は確認されていない。",
+      "published_at": "2026-11-05",
+      "organization": "University of Bristol and collaborators",
+      "source_ids": [
+        "src-tactilelab",
+        "src-tactilelab-project"
+      ],
+      "time_window": "72h",
+      "body": "指を机に押し当てて、はなさずに少し横へ引いてみよう。押す感じだけでなく、指の下の変化も分かる。ロボットが物を持ったまま回すときにも、こうした情報が役立つ。ブリストル大学などの研究者は、11月5日に新しいコンピューターでの練習方法を発表した。\n\nやわらかい指の表面がどう変形するかを、すべて細かく計算するのは大変だ。そこで、押し込みの深さと、物の表面に沿う動きを、もっと簡単に求める。仮想（かそう）の世界で何度も試し、仕事をしやすい動きを選ぶプログラムを育てる。\n\n本物のセンサーは、ふれた場所の画像を出す。別のプログラムがそれを学習中と同じ形の情報へ変える。研究者は、いくつかのセンサー、両腕の作業、手の中で物を動かす実験を示した。これは研究チーム自身が調べた結果である。\n\nただし、センサーの表面が物の上を滑っていないことを前提にしている。強い力で急に滑ると、計算の条件が変わる。小さな変形と、本当に滑り始めた状態を見分けることは別の課題だ。動いたと気づくだけでは、つかみ方を正しく直せない場合がある。",
+      "image": null
+    },
+    {
+      "id": "ugo-canon-manufacturing",
+      "title": "建物を点検する新しいロボットを、工場で作る",
+      "summary": "日本の点検ロボットの開発会社は、キヤノン電子に製造を頼むことにした。組み立ては10月に始まり、11月24日から客へ提供する予定だ。",
+      "details": "新しい機械は、埼玉県の美里事業所で10月から組み立てている。客に提供するのは11月24日からの予定だ。これは、これから始まる提供の日付であって、新しいロボットがすでに全員へ届いたという意味ではない。",
+      "technical_novelty": "新しい機械は、埼玉県の美里事業所で10月から組み立てている。客に提供するのは11月24日からの予定だ。これは、これから始まる提供の日付であって、新しいロボットがすでに全員へ届いたという意味ではない。",
+      "engineering_impact": "製造の契約だけでは、ロボットが故障をどれだけ正確に見つけるかは分からない。発表には、別の人たちが行った点検精度の試験や、一年に何台作るかという数はない。それでも、動く設計をたくさんの同じ機械にするために、工場の協力が必要なことは分かる。",
+      "limitations": "年間の生産能力や第三者による点検精度は公表されていない。100台を超えた出荷は前のモデルの実績である。",
+      "evidence_status": "結果は研究者または企業の発表に基づく。第三者による再現は確認されていない。",
+      "published_at": "2026-11-02",
+      "organization": "ugo; Canon Electronics",
+      "source_ids": [
+        "src-ugo-canon"
+      ],
+      "time_window": "7d",
+      "body": "展示会では一台のロボットを見せられる。でも、いくつもの建物で同じ機械を使いたくなったら、どうするだろう。日本のugoは、設備の点検を助けるロボットを開発している。同社はキヤノン電子と製造の協力を決め、11月2日に知らせた。\n\n新しい機械は、埼玉県の美里事業所で10月から組み立てている。客に提供するのは11月24日からの予定だ。これは、これから始まる提供の日付であって、新しいロボットがすでに全員へ届いたという意味ではない。\n\n開発会社は、相手の経験を生かしたいと考えている。同じ部品を集め、正しく組み立て、できあがりを確かめることが必要だからだ。2025年に出た前のモデルは、これまでの出荷が100台を超えた。この台数を、新モデルの出荷として数えることはできない。\n\n製造の契約だけでは、ロボットが故障をどれだけ正確に見つけるかは分からない。発表には、別の人たちが行った点検精度の試験や、一年に何台作るかという数はない。それでも、動く設計をたくさんの同じ機械にするために、工場の協力が必要なことは分かる。",
+      "image": null
+    },
+    {
+      "id": "roboarcade",
+      "title": "「できた」と言っても、物の位置をもう一度チェック",
+      "summary": "スタンフォード大学の研究者は、ロボットを動かすプログラム向けに22の仮想課題を用意した。成功したという報告が、実際の物の状態と合わない場合が見つかった。",
+      "details": "課題には、前の手順を覚えることや、物を正確に動かすこと、長い順番をこなすことが必要になる。すべてコンピューター内で行うので、実物の機械を壊さず繰り返せる。プログラムには画像や三次元の作業空間を見せる。成功は別の仕組みが確かめる。",
+      "technical_novelty": "課題には、前の手順を覚えることや、物を正確に動かすこと、長い順番をこなすことが必要になる。すべてコンピューター内で行うので、実物の機械を壊さず繰り返せる。プログラムには画像や三次元の作業空間を見せる。成功は別の仕組みが確かめる。",
+      "engineering_impact": "物がどこにあるかを上手に話すだけでは、作業は終わらない。丁寧につかんで移す必要がある。検査する仕組みは、仮想（かそう）の世界の状態を見て、本当に頼まれた変化が起きたかを調べる。この試験では、終わったと言うだけでは点数をもらえない。",
+      "limitations": "結果は今回の仮想課題と選んだプログラムに対するもので、完了報告が誤るため、状態を別に確かめる必要がある。",
+      "evidence_status": "結果は研究者または企業の発表に基づく。第三者による再現は確認されていない。",
+      "published_at": "2026-11-05",
+      "organization": "Stanford University",
+      "source_ids": [
+        "src-roboarcade",
+        "src-roboarcade-project"
+      ],
+      "time_window": "72h",
+      "body": "箱へ物を入れてと頼んだのに、物は横に残っている。それでもロボットが終わったと言ったら困る。スタンフォード大学の研究者は、こうした問題を調べるために22の課題を作った。研究は11月5日に出された。画像を見ながら次の動きを自分で選ぶプログラムを試す。\n\n課題には、前の手順を覚えることや、物を正確に動かすこと、長い順番をこなすことが必要になる。すべてコンピューター内で行うので、実物の機械を壊さず繰り返せる。プログラムには画像や三次元の作業空間を見せる。成功は別の仕組みが確かめる。\n\nプログラムによって、試みた小さな課題の24～39％で、間違った完了報告があった。これは今回の条件での結果で、すべてのロボットに当てはまるわけではない。画像を理解できないことより、動きの計画や細かな実行の失敗が多かった。\n\n物がどこにあるかを上手に話すだけでは、作業は終わらない。丁寧につかんで移す必要がある。検査する仕組みは、仮想（かそう）の世界の状態を見て、本当に頼まれた変化が起きたかを調べる。この試験では、終わったと言うだけでは点数をもらえない。",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "「できた」の後に、結果を見る",
+    "summary": "プログラムが動きを選んで説明しても、物が正しい場所へ移ったかは別に調べる必要がある。",
+    "implications": "ロボットの行動と、研究者が確かめた方法の両方に注目してみよう。"
+  },
+  "sources": [
+    {
+      "id": "src-oopsie",
+      "title": "OopsieRecover: Learning Transferable VLA Corrections from Semantic Interventions",
+      "url": "https://arxiv.org/abs/2611.08462",
+      "domain": "arxiv.org",
+      "organization": "University of Texas at Austin; Toyota Research Institute",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-oopsie-project",
+      "title": "OopsieRecover — Learning transferable VLA corrections from semantic interventions",
+      "url": "https://robin-lab.cs.utexas.edu/oopsierecover/",
+      "domain": "robin-lab.cs.utexas.edu",
+      "organization": "University of Texas at Austin; Toyota Research Institute",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-tactilelab",
+      "title": "TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation",
+      "url": "https://arxiv.org/abs/2611.07881",
+      "domain": "arxiv.org",
+      "organization": "University of Bristol and collaborators",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-tactilelab-project",
+      "title": "TactileLab: Efficient Multimodal Tactile Simulation for Shear-Sensitive Dexterous Sim2Real Robotic Manipulation",
+      "url": "https://yijionglin.github.io/tactilelab/",
+      "domain": "yijionglin.github.io",
+      "organization": "University of Bristol and collaborators",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-social-humanoid",
+      "title": "Social Humanoid: Socially Responsive Human-Humanoid Interaction",
+      "url": "https://arxiv.org/abs/2611.08407",
+      "domain": "arxiv.org",
+      "organization": "UC Berkeley; Sony Group Corporation; Meta",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-social-humanoid-project",
+      "title": "Social Humanoid — Socially Responsive Human–Humanoid Interaction",
+      "url": "https://von31.github.io/social-humanoid/",
+      "domain": "von31.github.io",
+      "organization": "UC Berkeley; Sony Group Corporation; Meta",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-roboarcade",
+      "title": "RoboARCade: Benchmarking Agentic Robot Control",
+      "url": "https://arxiv.org/abs/2611.08209",
+      "domain": "arxiv.org",
+      "organization": "Stanford University",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-roboarcade-project",
+      "title": "Leaderboard | RoboARCade",
+      "url": "https://roboarcade.org/",
+      "domain": "roboarcade.org",
+      "organization": "Stanford University",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-ugo-canon",
+      "title": "キヤノン電子にAIロボット「ugo mini G2」の生産を委託",
+      "url": "https://ugo.plus/information/2026/11/02/canonems/",
+      "domain": "ugo.plus",
+      "organization": "ugo; Canon Electronics",
+      "published_at": "2026-11-02"
+    }
+  ]
+}
