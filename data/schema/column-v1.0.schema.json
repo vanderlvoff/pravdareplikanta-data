@@ -1,0 +1,297 @@
+{
+  "$defs": {
+    "ColumnImage": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 96,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "localizations": {
+          "additionalProperties": {
+            "$ref": "#/$defs/ImageText"
+          },
+          "propertyNames": {
+            "enum": [
+              "ru",
+              "en",
+              "ja"
+            ]
+          },
+          "title": "Localizations",
+          "type": "object"
+        }
+      },
+      "required": [
+        "id",
+        "path",
+        "localizations"
+      ],
+      "title": "ColumnImage",
+      "type": "object"
+    },
+    "ColumnTranslation": {
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "maxLength": 300,
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "series": {
+          "default": "",
+          "maxLength": 200,
+          "title": "Series",
+          "type": "string"
+        },
+        "author": {
+          "maxLength": 150,
+          "minLength": 1,
+          "title": "Author",
+          "type": "string"
+        },
+        "summary": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Summary",
+          "type": "string"
+        },
+        "body": {
+          "items": {
+            "discriminator": {
+              "mapping": {
+                "heading": "#/$defs/Paragraph",
+                "image": "#/$defs/ImageBlock",
+                "list": "#/$defs/ListBlock",
+                "paragraph": "#/$defs/Paragraph",
+                "quote": "#/$defs/Paragraph"
+              },
+              "propertyName": "type"
+            },
+            "oneOf": [
+              {
+                "$ref": "#/$defs/Paragraph"
+              },
+              {
+                "$ref": "#/$defs/ListBlock"
+              },
+              {
+                "$ref": "#/$defs/ImageBlock"
+              }
+            ]
+          },
+          "maxItems": 500,
+          "minItems": 1,
+          "title": "Body",
+          "type": "array"
+        }
+      },
+      "required": [
+        "title",
+        "author",
+        "summary",
+        "body"
+      ],
+      "title": "ColumnTranslation",
+      "type": "object"
+    },
+    "ImageBlock": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "image",
+          "title": "Type",
+          "type": "string"
+        },
+        "image_id": {
+          "maxLength": 96,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "title": "Image Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "image_id"
+      ],
+      "title": "ImageBlock",
+      "type": "object"
+    },
+    "ImageText": {
+      "additionalProperties": false,
+      "properties": {
+        "alt": {
+          "maxLength": 1000,
+          "minLength": 1,
+          "title": "Alt",
+          "type": "string"
+        },
+        "caption": {
+          "default": "",
+          "maxLength": 3000,
+          "title": "Caption",
+          "type": "string"
+        },
+        "path": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Path"
+        }
+      },
+      "required": [
+        "alt"
+      ],
+      "title": "ImageText",
+      "type": "object"
+    },
+    "ListBlock": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "const": "list",
+          "title": "Type",
+          "type": "string"
+        },
+        "items": {
+          "items": {
+            "maxLength": 200000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "maxItems": 50,
+          "minItems": 1,
+          "title": "Items",
+          "type": "array"
+        }
+      },
+      "required": [
+        "type",
+        "items"
+      ],
+      "title": "ListBlock",
+      "type": "object"
+    },
+    "Paragraph": {
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "enum": [
+            "paragraph",
+            "heading",
+            "quote"
+          ],
+          "title": "Type",
+          "type": "string"
+        },
+        "text": {
+          "maxLength": 200000,
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "text"
+      ],
+      "title": "Paragraph",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "id": {
+      "maxLength": 96,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "title": "Id",
+      "type": "string"
+    },
+    "slug": {
+      "maxLength": 96,
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "title": "Slug",
+      "type": "string"
+    },
+    "published_at": {
+      "format": "date-time",
+      "title": "Published At",
+      "type": "string"
+    },
+    "status": {
+      "default": "draft",
+      "enum": [
+        "draft",
+        "published",
+        "withdrawn"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "translations": {
+      "additionalProperties": {
+        "$ref": "#/$defs/ColumnTranslation"
+      },
+      "minProperties": 1,
+      "propertyNames": {
+        "enum": [
+          "ru",
+          "en",
+          "ja"
+        ]
+      },
+      "title": "Translations",
+      "type": "object"
+    },
+    "images": {
+      "items": {
+        "$ref": "#/$defs/ColumnImage"
+      },
+      "maxItems": 30,
+      "title": "Images",
+      "type": "array"
+    },
+    "cover_image": {
+      "anyOf": [
+        {
+          "maxLength": 96,
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Cover Image"
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "slug",
+    "published_at",
+    "translations"
+  ],
+  "title": "ColumnPost",
+  "type": "object",
+  "$id": "https://raw.githubusercontent.com/vanderlvoff/pravdareplikanta-data/main/data/schema/column-v1.0.schema.json"
+}
