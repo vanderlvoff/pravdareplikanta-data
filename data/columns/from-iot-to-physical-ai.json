@@ -1,0 +1,732 @@
+{
+  "schema_version": "1.0",
+  "id": "from-iot-to-physical-ai",
+  "slug": "from-iot-to-physical-ai",
+  "published_at": "2026-11-08T00:00:00+09:00",
+  "status": "published",
+  "translations": {
+    "ru": {
+      "title": "От Интернета вещей к физическому ИИ. Что изменилось на самом деле?",
+      "series": "Рассуждения о физическом ИИ",
+      "author": "Юрий Львов",
+      "summary": "От подключённых устройств к машинам, которые выбирают действия: инженерный опыт и размышления о том, какую роль в интеллекте играют тело, среда и способность действовать.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Некоторое время назад главным связующим звеном между информационными технологиями и реальным миром считалась концепция Интернета вещей — Internet of Things, или просто IoT. До неё мы говорили об автоматизации на уровне локальных систем, а ещё раньше — о цифровизации отдельных устройств."
+        },
+        {
+          "type": "paragraph",
+          "text": "Что всё это означало на практике? Возьмём, например, станки с числовым программным управлением (ЧПУ). На протяжении десятилетий мы наблюдали, как обычные механизмы приобретали способность выполнять всё более сложные и разнообразные задачи при всё меньшем непосредственном участии человека. Если раньше рабочий стоял у станка, вручную управлял его движениями, переключал режимы работы и контролировал процесс обработки детали, то развитие электроники и вычислительной техники постепенно изменило характер его труда."
+        },
+        {
+          "type": "paragraph",
+          "text": "Сначала появились системы числового программного управления. Уже в 1952 году в Массачусетском технологическом институте продемонстрировали экспериментальный фрезерный станок с таким управлением. В Японии одним из пионеров стала будущая компания FANUC, разработавшая свою первую систему NC в 1956 году. Затем отдельные станки научились работать под управлением компьютеров, их объединили в производственные комплексы, связали локальными сетями и включили в общие информационные системы предприятий."
+        },
+        {
+          "type": "paragraph",
+          "text": "Сегодня единая цифровая инфраструктура может охватывать не просто механизмы одного цеха или завода, но и производственные площадки, расположенные в разных городах и даже странах. Это позволяет координировать производство на уровне целых промышленных кластеров. Разумеется, речь не идёт о том, что все предприятия мира последовательно прошли одни и те же стадии. Где-то по-прежнему работают станки, которым уже несколько десятилетий, а где-то производство почти полностью автоматизировано. Но общее направление развития вполне очевидно: вычислительная техника постепенно брала на себя всё большую часть задач, которые прежде требовали постоянного участия человека."
+        },
+        {
+          "type": "image",
+          "image_id": "machine-evolution"
+        },
+        {
+          "type": "paragraph",
+          "text": "На бытовом уровне прогресс тоже не стоял на месте. Хотя полноценный «умный дом» так и не стал повсеместным явлением — отчасти из-за стоимости, отчасти из-за сложностей интеграции и сомнительной практической пользы некоторых решений, — его отдельные элементы давно и прочно вошли в нашу жизнь. Многие современные кондиционеры, стиральные машины, а иногда даже холодильники умеют общаться с мобильными приложениями на наших телефонах. Я уже молчу о роботах-пылесосах, телевизорах, аудиосистемах и многочисленных домашних датчиках."
+        },
+        {
+          "type": "paragraph",
+          "text": "Сам термин Internet of Things появился ещё в 1999 году. Его предложил британский технолог Кевин Эштон, занимавшийся тогда вопросами автоматической идентификации товаров с помощью радиочастотных меток RFID. Первоначальная идея заключалась не столько в возможности включать лампочку со смартфона, сколько в том, чтобы компьютеры могли самостоятельно получать информацию о предметах реального мира, не полагаясь исключительно на данные, вводимые человеком."
+        },
+        {
+          "type": "paragraph",
+          "text": "За прошедшие годы Интернет вещей превратился в огромную технологическую экосистему, охватывающую промышленность, транспорт, энергетику, сельское хозяйство и повседневную жизнь. Так отчего же мы стали значительно реже слышать термин IoT в разговорах о технологическом будущем? Ведь люди только-только начали понимать, что это такое и зачем оно нужно! А тут нам на смену СМИ и технологические корпорации «выкатили» новый термин — Physical AI, или физический искусственный интеллект."
+        },
+        {
+          "type": "paragraph",
+          "text": "Разумеется, если разобраться, никакой прямой замены одного другим не произошло. Интернет вещей никуда не исчез, а подключённые к сети устройства не перестали быть подключёнными. Просто, похоже, изменился сам предмет нашего внимания. Если раньше мы прежде всего стремились научить машины обмениваться информацией, то теперь всё чаще задаёмся вопросом: а нельзя ли научить их самостоятельно понимать, что с этой информацией делать?"
+        },
+        {
+          "type": "heading",
+          "text": "Откуда взялся физический ИИ?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Здесь нас ожидает любопытное открытие. Сам термин Physical AI вовсе не является недавним изобретением маркетологов NVIDIA или других технологических гигантов."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ещё в ноябре 2020 года исследователи Аслан Мириев и Мирко Ковач опубликовали в научном журнале Nature Machine Intelligence работу «Skills for Physical Artificial Intelligence», в которой рассматривали физический ИИ как самостоятельное междисциплинарное направление исследований. Причём их представление о физическом интеллекте было существенно шире, чем просто подключение нейросети к роботизированному механизму."
+        },
+        {
+          "type": "paragraph",
+          "text": "Речь шла о совместном развитии интеллектуального управления, механической конструкции, материалов, сенсоров и исполнительных механизмов. Иными словами, тело машины рассматривалось не только как инструмент, исполняющий команды вычислительной системы, но и как неотъемлемая часть самого интеллекта. Это, кстати, перекликается с гораздо более ранними исследованиями воплощённого интеллекта — Embodied Intelligence. Но об этом, пожалуй, поговорим как-нибудь отдельно."
+        },
+        {
+          "type": "paragraph",
+          "text": "В последние годы термин Physical AI получил новое, значительно более широкое распространение. Особенно заметную роль в его популяризации сыграла NVIDIA, представившая в 2025 году платформу Cosmos для разработки моделей физического мира и обучения интеллектуальных систем, взаимодействующих с ним. И вот примерно в это время концепция физического ИИ бесцеремонно ворвалась в повестки заседаний высокого начальства глобальных корпораций."
+        },
+        {
+          "type": "heading",
+          "text": "Но что же изменилось с инженерной точки зрения?"
+        },
+        {
+          "type": "paragraph",
+          "text": "На мой взгляд, важнейшей предпосылкой стала стремительная эволюция больших языковых моделей — Large Language Models, или LLM. Когда эти модели научились не только генерировать связный текст, но и достаточно убедительно справляться с задачами, требующими последовательного анализа, выбора действий и многошагового планирования, возник вполне естественный соблазн использовать их за пределами привычных текстовых интерфейсов. Имея такой инструмент, было бы грехом не попытаться внедрить в контур управления физическими объектами новый слой интеллектуальной логики."
+        },
+        {
+          "type": "paragraph",
+          "text": "Конечно, сама идея использования искусственного интеллекта в робототехнике далеко не нова. Машинное обучение, компьютерное зрение, планирование движений и обучение с подкреплением применялись здесь задолго до появления ChatGPT. Но большие языковые модели открыли новые возможности для взаимодействия человека с машинами. Теперь можно было попытаться описать роботу задачу обычными словами, а определение последовательности необходимых действий частично поручить интеллектуальной модели."
+        },
+        {
+          "type": "paragraph",
+          "text": "В 2022 году исследователи Google представили систему SayCan, соединявшую возможности языковых моделей с набором действий, которые робот действительно способен выполнять. В 2023 году появился RT-2 — пример модели класса Vision-Language-Action (VLA), связывающей визуальную информацию, языковые инструкции и роботизированные действия. В какой-то степени всё это стало закономерным продолжением давно начавшегося процесса."
+        },
+        {
+          "type": "heading",
+          "text": "Немного из собственного опыта"
+        },
+        {
+          "type": "paragraph",
+          "text": "Примерно в тот же период инженеры-робототехники по всему миру начали экспериментировать с интеграцией больших языковых моделей в логические контуры роботов. Не сговариваясь друг с другом, они пытались ответить на похожие вопросы: как соединить способность языковой модели интерпретировать человеческие инструкции с возможностями реального механизма?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Не обошла эта идея и меня. В качестве эксперимента я сконструировал слой логики на базе RAG-приложения — системы, которая использует поиск дополнительной информации для формирования ответа языковой модели. Этот слой позволял управлять навигационной системой мобильного робота в симуляционной среде Gazebo с помощью текстовых команд."
+        },
+        {
+          "type": "image",
+          "image_id": "command-rag-navigation"
+        },
+        {
+          "type": "paragraph",
+          "text": "Первоначально предполагалось использовать также голосовые инструкции. Однако довольно быстро я пришёл к выводу, что голосовой интерфейс в данном случае — всего лишь частный способ передачи команды, не имеющий принципиального значения для самой исследуемой задачи. Поэтому доводить его даже до полноценного прототипа я не стал и сосредоточился на текстовом управлении."
+        },
+        {
+          "type": "paragraph",
+          "text": "Меня интересовало другое: может ли языковая модель выступать промежуточным звеном между намерением человека и уже существующей системой управления роботом? То есть не просто передавать команды исполнительным механизмам, а интерпретировать поставленную задачу и преобразовывать её в действия, понятные навигационной системе."
+        },
+        {
+          "type": "image",
+          "image_id": "rviz2-alpha-beta-gamma"
+        },
+        {
+          "type": "paragraph",
+          "text": "Разумеется, мой эксперимент был лишь одним из множества подобных опытов, которые тогда проводили инженеры по всему миру. Более того, сама идея использовать языковую модель для управления роботом довольно быстро перестала выглядеть чем-то новым. Но для меня этот опыт оказался поучительным."
+        },
+        {
+          "type": "paragraph",
+          "text": "К тому времени человекоподобные роботы уже умели ходить, бегать, прыгать и даже танцевать. И что особенно интересно, всем этим достижениям они были обязаны вовсе не большим языковым моделям. За ними стояли десятилетия развития механики, теории автоматического управления, вычислительных методов, а позднее и машинного обучения."
+        },
+        {
+          "type": "paragraph",
+          "text": "Вспомним хотя бы знаменитого Atlas от Boston Dynamics, который ещё до нынешнего бума генеративного ИИ демонстрировал удивительную подвижность. Причём для его впечатляющих танцевальных выступлений использовались прежде всего методы оптимизации движений и классического управления, а не языковые модели."
+        },
+        {
+          "type": "paragraph",
+          "text": "И тут возникло любопытное противоречие. Мы научили машины выполнять весьма сложные движения, но по-прежнему испытывали трудности, пытаясь объяснить им обычными человеческими словами, что именно от них требуется."
+        },
+        {
+          "type": "paragraph",
+          "text": "Появление современных языковых моделей позволило по-новому подойти к этой проблеме. Теперь между человеческим намерением и исполнительными механизмами можно было попытаться поставить систему, способную интерпретировать задачу, учитывать обстоятельства и выбирать подходящие действия. Впрочем, достаточно ли этого, чтобы говорить о появлении физического интеллекта? Или мы всего лишь приделали к давно существующей автоматике новый, чрезвычайно убедительный интерфейс?"
+        },
+        {
+          "type": "heading",
+          "text": "Что же на самом деле изменилось?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Когда я начинал разбираться в том, что сегодня называют физическим ИИ, мне казалось, что речь идёт об очередном этапе развития информационных технологий. Но чем внимательнее я смотрел на происходящее, тем меньше был уверен, что всё настолько просто."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ведь если задуматься, мы уже давно научили машины взаимодействовать с окружающим миром. Промышленные роботы выполняют сложнейшие операции, самолёты используют автопилоты, автомобили умеют самостоятельно поддерживать скорость и дистанцию, а системы управления производством непрерывно реагируют на показания тысяч датчиков. И всё это работало задолго до появления больших языковых моделей."
+        },
+        {
+          "type": "paragraph",
+          "text": "Так чего же нам, собственно, не хватало?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Первое, что приходит в голову, — универсальности. До сих пор большинство автоматизированных систем создавалось для решения заранее определённого круга задач. Инженер проектировал систему, описывал допустимые состояния, предусматривал реакции на различные события. Чем сложнее становилась окружающая среда, тем труднее было предусмотреть все возможные ситуации."
+        },
+        {
+          "type": "paragraph",
+          "text": "Современный ИИ обещает изменить именно это. Вместо того чтобы подробно объяснять машине, как действовать в каждом отдельном случае, мы пытаемся научить её самостоятельно находить подходящее решение. Но здесь обнаруживается неожиданная трудность: правильно выбрать действие и успешно выполнить его в физическом мире — далеко не одно и то же."
+        },
+        {
+          "type": "paragraph",
+          "text": "Языковая модель может совершенно разумно объяснить, как взять чашку со стола. Но из этого вовсе не следует, что робот сможет её поднять. Нужно правильно оценить расстояние, подобрать усилие, учесть форму предмета, трение, положение центра тяжести. И, что особенно важно, постоянно корректировать собственные действия на основании того, что происходит в действительности."
+        },
+        {
+          "type": "paragraph",
+          "text": "Причём иногда оказывается, что проблема вообще не в алгоритме. Достаточно изменить конструкцию захвата, подобрать другой материал или иначе расположить датчик — и задача, требовавшая сложных вычислений, внезапно становится значительно проще."
+        },
+        {
+          "type": "paragraph",
+          "text": "Получается, что интеллект физической системы нельзя рассматривать исключительно как свойство программного обеспечения. По крайней мере, её способность демонстрировать интеллектуальное поведение зависит и от конструкции тела, и от окружающей среды, и от характера взаимодействия между ними. Хорошо спроектированная механика может избавить вычислительную систему от необходимости решать некоторые задачи программно. А способность машины воспринимать последствия собственных действий порой оказывается не менее важной, чем умение составлять планы."
+        },
+        {
+          "type": "paragraph",
+          "text": "Вот здесь привычная мне картина эволюции информационных технологий начинает давать трещину."
+        },
+        {
+          "type": "paragraph",
+          "text": "До сих пор я рассматривал физический мир преимущественно как объект управления. Есть компьютер, который принимает решения, и есть механизмы, которые эти решения исполняют. Датчики собирают информацию, программное обеспечение её обрабатывает, а исполнительные устройства воздействуют на окружающую среду. В сущности, именно так мы привыкли представлять архитектуру большинства автоматизированных систем."
+        },
+        {
+          "type": "paragraph",
+          "text": "Но что, если само это разделение не вполне соответствует природе интеллекта? Что, если способность действовать в мире не просто является результатом интеллектуальной деятельности, а участвует в формировании самого интеллекта?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ведь человек познаёт окружающий мир не только наблюдая за ним и анализируя полученную информацию. Младенец учится понимать свойства предметов, хватая их, роняя, толкая, пробуя перемещать. Мы узнаём, что поверхность скользкая, не только по её внешнему виду, но и по тому, как она сопротивляется нашим движениям. Наши представления о физическом мире формируются в том числе благодаря непрерывному взаимодействию с ним."
+        },
+        {
+          "type": "image",
+          "image_id": "robot-smelling-flower"
+        },
+        {
+          "type": "paragraph",
+          "text": "Означает ли это, что искусственному интеллекту тоже необходимо подобное взаимодействие? И если да, то в какой степени? Обязательно ли ему физическое тело или достаточно виртуальной среды, в которой он сможет экспериментировать и наблюдать последствия своих действий? А может быть, всё это лишь один из возможных путей формирования интеллекта, но вовсе не обязательное условие?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Здесь, как мне кажется, мы подходим к гораздо более фундаментальной проблеме, чем выбор очередной архитектуры нейросети или способ интеграции LLM с роботизированной системой."
+        },
+        {
+          "type": "paragraph",
+          "text": "С одной стороны, существует представление об интеллекте как о способности обрабатывать информацию, строить модели и находить решения. В такой картине физическое тело — лишь один из возможных инструментов, с помощью которых интеллект взаимодействует с окружающим миром. С другой стороны, исследования воплощённого познания заставляют задуматься, насколько вообще правомерно отделять интеллектуальную деятельность от тела и среды, в которых она осуществляется."
+        },
+        {
+          "type": "paragraph",
+          "text": "При этом я вовсе не хочу утверждать, что второе представление обязательно правильнее первого. Машина может демонстрировать весьма сложное и адаптивное поведение, не обладая тем, что мы привыкли называть пониманием. И наоборот, способность рассуждать об окружающем мире не обязательно требует непосредственного физического взаимодействия с ним. По крайней мере, окончательно этот вопрос, насколько мне известно, ещё не решён."
+        },
+        {
+          "type": "paragraph",
+          "text": "Для меня это уже совсем другой разговор. Не о том, как подключить ещё одну нейросеть к промышленному контроллеру, и даже не о том, как научить робота понимать человеческую речь. Это разговор о том, что вообще означает понимать окружающий мир и какую роль в этом понимании играет способность действовать."
+        },
+        {
+          "type": "paragraph",
+          "text": "Я начинал с довольно простой мысли: развитие физического ИИ — очередной закономерный этап автоматизации, когда к механизмам, датчикам и компьютерным сетям добавился новый слой интеллектуального управления. Но постепенно пришёл к выводу, что за этим технологическим развитием скрывается куда более интересный вопрос — о природе самого интеллекта."
+        },
+        {
+          "type": "paragraph",
+          "text": "Вот поэтому с этого вопроса я и начал наши рассуждения."
+        }
+      ]
+    },
+    "en": {
+      "title": "From the Internet of Things to Physical AI. What Has Really Changed?",
+      "series": "Reflections on Physical AI",
+      "author": "Yury Lvov",
+      "summary": "From connected devices to machines that choose actions: an engineer’s experience and reflections on the roles of the body, the environment and the ability to act in intelligence.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Not so long ago, the Internet of Things—or simply IoT—was regarded as the main bridge between information technology and the real world. Before that, we talked about automation within local systems, and earlier still, about the digitisation of individual devices."
+        },
+        {
+          "type": "paragraph",
+          "text": "What did all this mean in practice? Consider computer numerical control (CNC) machine tools. Over several decades, we watched ordinary mechanisms acquire the ability to perform increasingly complex and varied tasks with less and less direct human involvement. A worker once stood at the machine, manually controlled its movements, switched operating modes and monitored the machining of a part. The development of electronics and computing gradually changed the nature of that work."
+        },
+        {
+          "type": "paragraph",
+          "text": "Numerical control systems came first. As early as 1952, the Massachusetts Institute of Technology demonstrated an experimental milling machine with this kind of control. In Japan, one of the pioneers was the company that would become FANUC, which developed its first NC system in 1956. Individual machine tools then came under computer control; they were combined into production systems, connected through local networks and integrated into companies’ wider information systems."
+        },
+        {
+          "type": "paragraph",
+          "text": "Today, a shared digital infrastructure can encompass not just the machinery in one workshop or factory, but production sites in different cities and even countries. This makes it possible to coordinate production across entire industrial clusters. Of course, this does not mean that every enterprise in the world has followed the same sequence of stages. Some still use machines that are several decades old; elsewhere, production is almost entirely automated. But the overall direction is clear: computing gradually took over more and more tasks that had previously required constant human involvement."
+        },
+        {
+          "type": "image",
+          "image_id": "machine-evolution"
+        },
+        {
+          "type": "paragraph",
+          "text": "Progress did not stand still at home either. Although a fully fledged smart home has never become universal—partly because of cost, partly because of integration difficulties and the questionable practical value of some solutions—individual elements have long since become an established part of our lives. Many modern air conditioners, washing machines and sometimes even refrigerators can communicate with apps on our phones. Not to mention robot vacuum cleaners, televisions, audio systems and all kinds of household sensors."
+        },
+        {
+          "type": "paragraph",
+          "text": "The term Internet of Things itself dates back to 1999. It was proposed by the British technologist Kevin Ashton, who was working on the automatic identification of goods using RFID tags. The original idea was less about switching on a light bulb from a smartphone than about enabling computers to obtain information about real-world objects on their own, rather than relying exclusively on data entered by people."
+        },
+        {
+          "type": "paragraph",
+          "text": "Over the years, the Internet of Things has grown into an enormous technological ecosystem spanning industry, transport, energy, agriculture and everyday life. So why have we begun hearing the term IoT so much less often in discussions about the technological future? People had only just started to understand what it was and why it mattered! And then the media and technology corporations rolled out a new term: Physical AI."
+        },
+        {
+          "type": "paragraph",
+          "text": "On closer inspection, of course, there has been no direct replacement of one by the other. The Internet of Things has not disappeared, and connected devices have not stopped being connected. What seems to have changed is the focus of our attention. Where we once primarily wanted machines to exchange information, we are now increasingly asking whether they could learn for themselves what to do with it."
+        },
+        {
+          "type": "heading",
+          "text": "Where did Physical AI come from?"
+        },
+        {
+          "type": "paragraph",
+          "text": "There is an interesting discovery waiting for us here. The term Physical AI is by no means a recent invention of NVIDIA’s marketing department or those of other technology giants."
+        },
+        {
+          "type": "paragraph",
+          "text": "Back in November 2020, researchers Aslan Miriyev and Mirko Kovač published “Skills for Physical Artificial Intelligence” in Nature Machine Intelligence. They considered Physical AI an interdisciplinary research field in its own right. Their understanding of physical intelligence was considerably broader than simply connecting a neural network to a robotic mechanism."
+        },
+        {
+          "type": "paragraph",
+          "text": "They were discussing the joint development of intelligent control, mechanical design, materials, sensors and actuators. In other words, a machine’s body was seen not merely as a tool that executes the computing system’s commands, but as an integral part of intelligence itself. This also echoes much earlier research into embodied intelligence. But perhaps that is a subject for another time."
+        },
+        {
+          "type": "paragraph",
+          "text": "In recent years, the term Physical AI has gained renewed and much wider currency. NVIDIA played a particularly visible role in popularising it, introducing its Cosmos platform in 2025 for developing models of the physical world and training intelligent systems that interact with it. Around that time, the idea of Physical AI burst rather unceremoniously onto the meeting agendas of senior executives at global corporations."
+        },
+        {
+          "type": "heading",
+          "text": "But what changed from an engineering perspective?"
+        },
+        {
+          "type": "paragraph",
+          "text": "To my mind, the most important prerequisite was the rapid evolution of large language models, or LLMs. Once these models learned not only to generate coherent text but also to tackle tasks involving sequential analysis, action selection and multistep planning with considerable plausibility, the temptation to use them beyond familiar text interfaces was only natural. With such a tool available, it would have been a shame not to try adding a new layer of intelligent logic to the control loop of physical objects."
+        },
+        {
+          "type": "paragraph",
+          "text": "Of course, using artificial intelligence in robotics is far from a new idea. Machine learning, computer vision, motion planning and reinforcement learning were used in the field long before ChatGPT appeared. But large language models opened up new possibilities for interaction between people and machines. We could now try describing a task to a robot in ordinary words and entrusting part of the work of determining the necessary sequence of actions to an intelligent model."
+        },
+        {
+          "type": "paragraph",
+          "text": "In 2022, Google researchers introduced SayCan, a system that combined the capabilities of language models with a repertoire of actions a robot could actually perform. In 2023 came RT-2, an example of a Vision-Language-Action (VLA) model connecting visual information, language instructions and robotic actions. In a sense, all of this was a natural continuation of a process that had begun long before."
+        },
+        {
+          "type": "heading",
+          "text": "A little from my own experience"
+        },
+        {
+          "type": "paragraph",
+          "text": "Around the same period, robotics engineers all over the world began experimenting with integrating large language models into robots’ logic layers. Without coordinating with one another, they were trying to answer similar questions: how could a language model’s ability to interpret human instructions be connected to the capabilities of a real mechanism?"
+        },
+        {
+          "type": "paragraph",
+          "text": "The idea did not pass me by either. As an experiment, I built a logic layer around a RAG application—a system that retrieves additional information to help a language model formulate its response. This layer allowed me to control a mobile robot’s navigation system in the Gazebo simulation environment using text commands."
+        },
+        {
+          "type": "image",
+          "image_id": "command-rag-navigation"
+        },
+        {
+          "type": "paragraph",
+          "text": "I initially intended to support voice instructions as well. But I soon concluded that, in this case, a voice interface was merely one particular way of delivering a command, with no fundamental bearing on the question I was investigating. So I did not develop it even into a complete prototype, and concentrated on text-based control."
+        },
+        {
+          "type": "paragraph",
+          "text": "What interested me was something else: could a language model act as an intermediary between a person’s intention and an existing robot control system? Could it do more than simply pass commands to actuators—could it interpret the task and translate it into actions the navigation system could understand?"
+        },
+        {
+          "type": "image",
+          "image_id": "rviz2-alpha-beta-gamma"
+        },
+        {
+          "type": "paragraph",
+          "text": "My experiment was, of course, only one of many similar efforts being undertaken by engineers around the world at the time. Indeed, the very idea of using a language model to control a robot quickly ceased to look especially new. But I found the experience instructive."
+        },
+        {
+          "type": "paragraph",
+          "text": "By then, humanoid robots could already walk, run, jump and even dance. What is particularly interesting is that none of those achievements depended on large language models. Behind them lay decades of advances in mechanics, automatic control theory, computational methods and, later, machine learning."
+        },
+        {
+          "type": "paragraph",
+          "text": "Think of Boston Dynamics’ famous Atlas, which demonstrated astonishing mobility well before the current generative AI boom. Its impressive dance performances relied primarily on motion optimisation and classical control methods, rather than language models."
+        },
+        {
+          "type": "paragraph",
+          "text": "An intriguing contradiction emerged. We had taught machines to perform highly complex movements, yet still struggled to explain to them, in ordinary human language, what we wanted them to do."
+        },
+        {
+          "type": "paragraph",
+          "text": "Modern language models offered a new way of approaching this problem. Between human intention and the actuators, we could now try placing a system capable of interpreting a task, taking circumstances into account and selecting suitable actions. But is that enough to speak of physical intelligence? Or have we merely bolted an extraordinarily convincing new interface onto long-established automation?"
+        },
+        {
+          "type": "heading",
+          "text": "So what has really changed?"
+        },
+        {
+          "type": "paragraph",
+          "text": "When I first tried to understand what is now called Physical AI, I thought I was looking at another stage in the evolution of information technology. But the more closely I examined what was happening, the less certain I became that it was so straightforward."
+        },
+        {
+          "type": "paragraph",
+          "text": "After all, we taught machines to interact with the world around them a long time ago. Industrial robots perform extremely complex operations, aircraft use autopilots, cars can maintain their speed and following distance automatically, and production control systems continuously respond to readings from thousands of sensors. All of this worked long before large language models appeared."
+        },
+        {
+          "type": "paragraph",
+          "text": "So what, exactly, were we missing?"
+        },
+        {
+          "type": "paragraph",
+          "text": "The first thing that comes to mind is versatility. Until now, most automated systems were created to solve a predefined set of tasks. An engineer designed the system, described the permissible states and specified responses to various events. The more complex the environment became, the harder it was to anticipate every possible situation."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is precisely what modern AI promises to change. Instead of telling a machine in detail what to do in each individual case, we try to teach it to find a suitable solution on its own. But an unexpected difficulty appears: choosing the right action and successfully carrying it out in the physical world are very different things."
+        },
+        {
+          "type": "paragraph",
+          "text": "A language model can give a perfectly reasonable explanation of how to pick up a cup from a table. That does not mean a robot will be able to lift it. It must judge the distance correctly, apply the appropriate force and account for the object’s shape, friction and centre of gravity. Particularly importantly, it must continuously adjust its actions in response to what is actually happening."
+        },
+        {
+          "type": "paragraph",
+          "text": "Sometimes, moreover, the problem turns out not to lie in the algorithm at all. Changing the gripper design, choosing a different material or repositioning a sensor can suddenly make a task that required complex calculations much simpler."
+        },
+        {
+          "type": "paragraph",
+          "text": "It follows that the intelligence of a physical system cannot be regarded exclusively as a property of its software. At the very least, its ability to exhibit intelligent behaviour depends on the design of its body, its environment and the nature of the interaction between them. Well-designed mechanics can spare the computing system from having to solve certain problems in software. And the machine’s ability to perceive the consequences of its own actions can be just as important as its ability to make plans."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is where my familiar picture of the evolution of information technology begins to crack."
+        },
+        {
+          "type": "paragraph",
+          "text": "Until now, I had regarded the physical world primarily as something to be controlled. There is a computer that makes decisions, and there are mechanisms that execute them. Sensors gather information, software processes it, and actuators affect the environment. In essence, this is how we have grown accustomed to imagining the architecture of most automated systems."
+        },
+        {
+          "type": "paragraph",
+          "text": "But what if this very division does not fully reflect the nature of intelligence? What if the ability to act in the world is not merely a result of intelligent activity, but plays a part in the formation of intelligence itself?"
+        },
+        {
+          "type": "paragraph",
+          "text": "After all, people learn about the world not only by observing it and analysing the information they receive. An infant learns about the properties of objects by grasping, dropping, pushing and trying to move them. We discover that a surface is slippery not only from its appearance, but from how it resists our movements. Our understanding of the physical world is shaped in part by continuous interaction with it."
+        },
+        {
+          "type": "image",
+          "image_id": "robot-smelling-flower"
+        },
+        {
+          "type": "paragraph",
+          "text": "Does this mean artificial intelligence needs a similar kind of interaction? And if so, to what extent? Does it necessarily require a physical body, or would a virtual environment in which it can experiment and observe the consequences of its actions be enough? Or is this simply one possible route towards the development of intelligence, rather than a necessary condition?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Here, I think, we are approaching a far more fundamental problem than choosing the next neural network architecture or deciding how to integrate an LLM with a robotic system."
+        },
+        {
+          "type": "paragraph",
+          "text": "On the one hand, intelligence can be understood as the ability to process information, build models and find solutions. In that picture, a physical body is merely one possible tool through which intelligence interacts with the world. On the other hand, research into embodied cognition makes us question how legitimate it is to separate intellectual activity from the body and environment in which it takes place."
+        },
+        {
+          "type": "paragraph",
+          "text": "I certainly do not mean to suggest that the second view is necessarily more correct than the first. A machine can exhibit highly complex and adaptive behaviour without possessing what we usually call understanding. Conversely, the ability to reason about the world does not necessarily require direct physical interaction with it. As far as I know, at least, the question has not been settled."
+        },
+        {
+          "type": "paragraph",
+          "text": "For me, this is a very different conversation. It is not about connecting another neural network to an industrial controller, or even about teaching a robot to understand human speech. It is about what it means to understand the world at all, and what role the ability to act plays in that understanding."
+        },
+        {
+          "type": "paragraph",
+          "text": "I began with a fairly simple idea: the development of Physical AI is another natural stage of automation, in which mechanisms, sensors and computer networks acquire a new layer of intelligent control. Gradually, though, I came to see a much more interesting question behind this technological development: a question about the nature of intelligence itself."
+        },
+        {
+          "type": "paragraph",
+          "text": "That is why I chose this question as the starting point for our reflections."
+        }
+      ]
+    },
+    "ja": {
+      "title": "IoTからフィジカルAIへ。本当に変わったのは何か？",
+      "series": "フィジカルAIについて考える",
+      "author": "ユーリ・リヴォフ",
+      "summary": "つながる機器から、行動を選ぶ機械へ。エンジニアとしての経験を手がかりに、知能における身体、環境、そして行動する能力の役割を考えます。",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "少し前まで、情報技術と現実世界を結ぶ中心的な考え方といえば、モノのインターネット、すなわちInternet of Things、略してIoTでした。その前には個々のシステムの自動化について語り、さらにさかのぼれば、一台一台の機器のデジタル化について語っていました。"
+        },
+        {
+          "type": "paragraph",
+          "text": "実際には、どのような変化だったのでしょうか。例えば、コンピューター数値制御（CNC）の工作機械を考えてみましょう。何十年もの間、普通の機械が、より複雑で多様な作業を、人の直接的な関与を減らしながらこなせるようになる過程を、私たちは見てきました。かつて作業者は機械のそばに立ち、その動きを手で操作し、運転モードを切り替え、部品の加工を監視していました。電子技術と計算機技術の発展は、その仕事のあり方を少しずつ変えていきました。"
+        },
+        {
+          "type": "paragraph",
+          "text": "まず登場したのが数値制御システムです。1952年にはすでに、マサチューセッツ工科大学で数値制御を備えた実験的なフライス盤が実演されています。日本では、後にファナックとなる企業が先駆者の一つで、1956年に初のNCシステムを開発しました。その後、個々の工作機械がコンピューターで制御されるようになり、生産システムとして組み合わされ、ローカルネットワークでつながり、企業全体の情報システムへと組み込まれていきました。"
+        },
+        {
+          "type": "paragraph",
+          "text": "今日では、共通のデジタル基盤が、一つの工場や作業場の機械だけでなく、別の都市、さらには別の国にある生産拠点までカバーすることもできます。産業集積全体にわたる生産の調整が可能になったのです。もちろん、世界中の企業が同じ段階を順番に経てきたという意味ではありません。何十年も前の機械が今も稼働している場所もあれば、ほぼすべてが自動化されている場所もあります。それでも、大きな流れは明らかです。以前は人が常に関与しなければならなかった仕事を、計算機が少しずつ、より多く引き受けるようになってきました。"
+        },
+        {
+          "type": "image",
+          "image_id": "machine-evolution"
+        },
+        {
+          "type": "paragraph",
+          "text": "家庭の中でも進歩は続きました。本格的な「スマートホーム」は、費用や機器間の連携の難しさ、そして一部の仕組みの実用性への疑問などから、どこにでもあるものにはなりませんでした。それでも、その一部はすでに私たちの暮らしに根づいています。今では多くのエアコンや洗濯機、ときには冷蔵庫まで、スマートフォンのアプリと通信できます。ロボット掃除機、テレビ、オーディオ機器、さまざまな家庭用センサーについては、言うまでもありません。"
+        },
+        {
+          "type": "paragraph",
+          "text": "Internet of Thingsという言葉そのものは、1999年に生まれました。提唱したのは、RFIDタグによる商品の自動識別に取り組んでいた英国の技術者、ケビン・アシュトンです。もともとの発想は、スマートフォンで電球を点灯させることよりも、人が入力したデータだけに頼らず、コンピューターが現実世界のモノについて自ら情報を得られるようにすることにありました。"
+        },
+        {
+          "type": "paragraph",
+          "text": "それから年月を経て、IoTは産業、交通、エネルギー、農業、そして日常生活にまで広がる巨大な技術の生態系となりました。それなのに、未来の技術を語る場で、IoTという言葉を以前ほど聞かなくなったのはなぜでしょう。人々が、それが何で、何の役に立つのかを理解し始めたばかりだというのに。そこへメディアやテクノロジー企業が持ち出してきたのが、Physical AI、すなわちフィジカルAIという新しい言葉でした。"
+        },
+        {
+          "type": "paragraph",
+          "text": "もちろん、よく考えれば、一方がもう一方にそのまま置き換わったわけではありません。IoTは消えていませんし、ネットワークにつながっていた機器が、つながらなくなったわけでもありません。どうやら変わったのは、私たちが注目する対象のようです。以前は、機械同士が情報をやり取りできるようにすることを主に目指していました。今は、その情報をどう扱うべきかまで、機械が自ら理解できないかと考えるようになっています。"
+        },
+        {
+          "type": "heading",
+          "text": "フィジカルAIはどこから来たのか？"
+        },
+        {
+          "type": "paragraph",
+          "text": "ここで、興味深いことに気づきます。Physical AIという言葉は、NVIDIAやほかの巨大テクノロジー企業のマーケティング担当者が、最近になって思いついたものではありません。"
+        },
+        {
+          "type": "paragraph",
+          "text": "2020年11月にはすでに、研究者のアスラン・ミリエフとミルコ・コヴァチが、学術誌Nature Machine Intelligenceに「Skills for Physical Artificial Intelligence」を発表し、フィジカルAIを独立した学際的研究分野として論じていました。しかも、彼らが考えるフィジカルな知能は、単にニューラルネットワークをロボットの機構につなぐことよりも、はるかに広いものでした。"
+        },
+        {
+          "type": "paragraph",
+          "text": "そこで扱われていたのは、知的な制御、機械の構造、材料、センサー、アクチュエーターを一体として発展させることでした。つまり、機械の身体は、計算システムの命令を実行する道具にとどまらず、知能そのものを構成する不可欠な一部と捉えられていたのです。これは、さらに以前から続く身体性知能、Embodied Intelligenceの研究とも通じます。ただ、それについては、また別の機会に話しましょう。"
+        },
+        {
+          "type": "paragraph",
+          "text": "近年、Physical AIという言葉は新たに、そしてはるかに広く使われるようになりました。その普及で特に目立った役割を果たしたのがNVIDIAです。同社は2025年、物理世界のモデルを開発し、その世界と相互作用する知的システムを学習させるためのプラットフォームCosmosを発表しました。ちょうどその頃、フィジカルAIという考え方は、世界的な企業の経営幹部が集まる会議の議題へ、いささか遠慮なく入り込んできたのです。"
+        },
+        {
+          "type": "heading",
+          "text": "では、工学の観点からは何が変わったのか？"
+        },
+        {
+          "type": "paragraph",
+          "text": "私の考えでは、最も重要な前提となったのは、大規模言語モデル、Large Language Models、略してLLMの急速な進化です。これらのモデルが、筋の通った文章を生成するだけでなく、順を追った分析、行動の選択、複数段階の計画を要する課題にも、かなりもっともらしく対応するようになったとき、使い慣れたテキストのインターフェースを越えて応用したくなるのは自然なことでした。これほどの道具があるのなら、物理的な対象を制御するループに、新たな知的ロジックの層を組み込もうとしない手はありません。"
+        },
+        {
+          "type": "paragraph",
+          "text": "もちろん、ロボット工学で人工知能を使うという発想自体は、まったく新しくありません。機械学習、コンピュータービジョン、動作計画、強化学習は、ChatGPTが登場するずっと前から使われていました。ただ、大規模言語モデルは、人と機械のやり取りに新しい可能性を開きました。普通の言葉でロボットに仕事を説明し、必要な動作の順序を決める作業の一部を、知的なモデルに委ねてみることができるようになったのです。"
+        },
+        {
+          "type": "paragraph",
+          "text": "2022年、Googleの研究者は、言語モデルの能力と、ロボットが実際に実行できる行動の集合を組み合わせたSayCanを発表しました。2023年には、画像情報、言語による指示、ロボットの行動を結びつけるVision-Language-Action（VLA）モデルの一例として、RT-2が登場しました。ある意味で、これらはずっと以前から始まっていた過程の、自然な延長だったともいえます。"
+        },
+        {
+          "type": "heading",
+          "text": "私自身の経験から少し"
+        },
+        {
+          "type": "paragraph",
+          "text": "ほぼ同じ頃、世界各地のロボット技術者が、大規模言語モデルをロボットのロジック層に組み込む実験を始めていました。互いに相談したわけでもないのに、似た問いに答えようとしていたのです。人の指示を解釈する言語モデルの能力を、実際の機構の能力とどう結びつければよいのか、と。"
+        },
+        {
+          "type": "paragraph",
+          "text": "私もその発想とは無縁ではありませんでした。実験として、RAGアプリケーションを基にしたロジック層を作ってみました。RAGとは、追加の情報を検索し、その情報を使って言語モデルが回答を組み立てる仕組みです。この層によって、Gazeboのシミュレーション環境にある移動ロボットのナビゲーションシステムを、テキストの指示で操作できるようにしました。"
+        },
+        {
+          "type": "image",
+          "image_id": "command-rag-navigation"
+        },
+        {
+          "type": "paragraph",
+          "text": "当初は音声による指示にも対応させるつもりでした。しかし、ほどなくして、この場合の音声インターフェースは、指示を伝える一つの手段にすぎず、調べたい課題の本質には関わらないと考えるようになりました。そこで、音声部分は本格的な試作にまで仕上げず、テキストによる操作に集中することにしました。"
+        },
+        {
+          "type": "paragraph",
+          "text": "私が知りたかったのは、別のことでした。言語モデルは、人の意図と、すでにあるロボット制御システムの間をつなぐ役割を果たせるのか。単にアクチュエーターに命令を渡すのではなく、与えられた課題を解釈し、ナビゲーションシステムが理解できる行動へ変換できるのか、ということです。"
+        },
+        {
+          "type": "image",
+          "image_id": "rviz2-alpha-beta-gamma"
+        },
+        {
+          "type": "paragraph",
+          "text": "もちろん、私の実験は、当時世界中の技術者が行っていた数多くの似た試みの一つにすぎません。そもそも、ロボットの制御に言語モデルを使うという発想は、すぐに目新しいものではなくなりました。それでも、私にとっては学ぶところの多い経験でした。"
+        },
+        {
+          "type": "paragraph",
+          "text": "その頃には、ヒューマノイドロボットはすでに、歩き、走り、跳び、さらには踊ることまでできるようになっていました。特に興味深いのは、こうした成果が、いずれも大規模言語モデルのおかげではなかったという点です。その背後には、機械工学、自動制御理論、計算手法、そして後には機械学習の、何十年にもわたる発展がありました。"
+        },
+        {
+          "type": "paragraph",
+          "text": "例えば、Boston Dynamicsの有名なAtlasを思い浮かべてください。現在の生成AIブームが起きるより前から、驚くほどの運動能力を見せていました。その見事なダンスには、言語モデルではなく、主として動作の最適化や古典的な制御手法が使われていたのです。"
+        },
+        {
+          "type": "paragraph",
+          "text": "ここに、興味深い矛盾がありました。私たちは機械にかなり複雑な動きを教えられるようになったのに、何をしてほしいのかを普通の人間の言葉で説明することには、相変わらず苦労していたのです。"
+        },
+        {
+          "type": "paragraph",
+          "text": "現代の言語モデルが現れたことで、この問題に新しい角度から取り組めるようになりました。人の意図とアクチュエーターの間に、課題を解釈し、状況を考慮し、適切な行動を選ぶシステムを置いてみることができます。けれども、それだけでフィジカルな知能が生まれたと言ってよいのでしょうか。それとも、以前からある自動化に、きわめて説得力のある新しいインターフェースを取り付けただけなのでしょうか。"
+        },
+        {
+          "type": "heading",
+          "text": "本当に変わったのは何か？"
+        },
+        {
+          "type": "paragraph",
+          "text": "今フィジカルAIと呼ばれているものを理解しようとし始めた頃、私は、これは情報技術の発展における次の段階なのだと思っていました。しかし、起きていることを注意深く見るほど、そんなに単純な話ではないのではないかと感じるようになりました。"
+        },
+        {
+          "type": "paragraph",
+          "text": "考えてみれば、私たちは機械を周囲の世界と相互作用させる方法を、ずっと前から知っていました。産業用ロボットは非常に複雑な作業をこなし、飛行機は自動操縦を使い、自動車は速度や車間距離を自動的に維持し、生産管理システムは何千ものセンサーの値に絶えず反応しています。しかも、そのすべては、大規模言語モデルが現れるずっと前から動いていました。"
+        },
+        {
+          "type": "paragraph",
+          "text": "では、いったい何が足りなかったのでしょうか。"
+        },
+        {
+          "type": "paragraph",
+          "text": "まず思い浮かぶのは、汎用性です。これまでの自動化システムの多くは、あらかじめ定められた範囲の課題を解くために作られていました。技術者がシステムを設計し、許容される状態を記述し、さまざまな出来事への反応を用意します。周囲の環境が複雑になるほど、起こりうるすべての状況を見通すのは難しくなりました。"
+        },
+        {
+          "type": "paragraph",
+          "text": "現代のAIが変えると約束しているのは、まさにこの部分です。個々の場面でどう動くかを機械に細かく説明する代わりに、適切な解決策を自ら見つけられるように学ばせようとしています。ところが、そこで思いがけない難しさが現れます。正しい行動を選ぶことと、それを物理世界でうまく実行することは、まったく同じではないのです。"
+        },
+        {
+          "type": "paragraph",
+          "text": "言語モデルは、テーブルの上のカップをどう取るかを、とても筋の通った言葉で説明できます。しかし、それだけでロボットがカップを持ち上げられるとは限りません。距離を正しく見積もり、力を調整し、物体の形、摩擦、重心の位置を考慮する必要があります。そして特に重要なのは、現実に何が起きているかに応じて、自分の動作を絶えず修正することです。"
+        },
+        {
+          "type": "paragraph",
+          "text": "ときには、問題がアルゴリズムにあるわけではないと分かることもあります。グリッパーの構造を変える、別の材料を選ぶ、センサーの位置を変える。たったそれだけで、複雑な計算が必要だった課題が、急にずっと簡単になることがあるのです。"
+        },
+        {
+          "type": "paragraph",
+          "text": "つまり、物理システムの知能を、ソフトウェアだけの性質として捉えることはできません。少なくとも、知的な振る舞いを示せるかどうかは、身体の構造、周囲の環境、そして両者の相互作用のあり方にも左右されます。よく設計された機械構造は、計算システムが一部の課題をソフトウェアで解かなくて済むようにしてくれます。また、自分の行動がもたらした結果を機械が知覚する能力は、計画を立てる能力に劣らず重要な場合があります。"
+        },
+        {
+          "type": "paragraph",
+          "text": "このあたりで、私が慣れ親しんでいた情報技術の発展の見取り図に、ひびが入り始めます。"
+        },
+        {
+          "type": "paragraph",
+          "text": "それまで私は、物理世界を主として制御の対象と見ていました。判断するコンピューターがあり、その判断を実行する機構がある。センサーが情報を集め、ソフトウェアが処理し、アクチュエーターが環境に働きかける。要するに、ほとんどの自動化システムの構造を、私たちはそう捉えることに慣れてきたのです。"
+        },
+        {
+          "type": "paragraph",
+          "text": "しかし、この分け方自体が、知能の性質に十分に合っていないとしたら、どうでしょう。世界の中で行動する能力が、知的な活動の結果であるだけでなく、知能そのものの形成に関わっているとしたら。"
+        },
+        {
+          "type": "paragraph",
+          "text": "そもそも人は、周囲の世界を観察し、得られた情報を分析するだけで理解するわけではありません。赤ん坊は、物をつかみ、落とし、押し、動かそうとすることで、その性質を学びます。表面が滑りやすいことも、見た目だけでなく、自分の動きに対してどう抵抗するかを通じて知ります。物理世界に対する私たちの理解は、その世界との絶え間ない相互作用によっても形づくられています。"
+        },
+        {
+          "type": "image",
+          "image_id": "robot-smelling-flower"
+        },
+        {
+          "type": "paragraph",
+          "text": "人工知能にも、同じような相互作用が必要なのでしょうか。必要だとすれば、どの程度なのでしょう。物理的な身体は不可欠なのか、それとも、実験し、自分の行動の結果を観察できる仮想環境があれば十分なのか。あるいは、これは知能が形づくられる一つの道にすぎず、必須の条件ではないのでしょうか。"
+        },
+        {
+          "type": "paragraph",
+          "text": "ここで私たちは、次のニューラルネットワークの構造を選ぶことや、LLMをロボットシステムに組み込む方法を考えることよりも、はるかに根本的な問題に近づいているように思います。"
+        },
+        {
+          "type": "paragraph",
+          "text": "一方には、知能を、情報を処理し、モデルを作り、解決策を見つける能力と捉える考え方があります。その見方では、身体は、知能が周囲の世界と相互作用するために使う道具の一つにすぎません。他方、身体化された認知の研究は、知的な活動を、それが行われる身体や環境から切り離して考えることが、そもそもどこまで妥当なのかを問いかけます。"
+        },
+        {
+          "type": "paragraph",
+          "text": "ただし、後者の考え方が必ず前者より正しいと言いたいわけではありません。機械は、私たちが普段「理解」と呼ぶものを持たなくても、きわめて複雑で適応的な行動を示せるかもしれません。反対に、周囲の世界について推論する能力が、必ずしもその世界との直接的な物理的相互作用を必要とするとは限りません。少なくとも、私の知る限りでは、この問いに最終的な答えは出ていません。"
+        },
+        {
+          "type": "paragraph",
+          "text": "私にとって、これはもう別の話です。産業用コントローラーにニューラルネットワークをもう一つつなぐ方法でも、ロボットに人間の言葉を理解させる方法でもありません。周囲の世界を理解するとは、そもそもどういうことなのか。そして、その理解の中で、行動できることがどんな役割を果たすのか、という話なのです。"
+        },
+        {
+          "type": "paragraph",
+          "text": "私の出発点は、かなり単純な考えでした。フィジカルAIの発展とは、機構、センサー、コンピューターネットワークに、新しい知的制御の層が加わる、自動化の自然な次の段階なのだ、と。しかし次第に、その技術の発展の奥には、もっと興味深い問いが隠れていると考えるようになりました。知能そのものの性質をめぐる問いです。"
+        },
+        {
+          "type": "paragraph",
+          "text": "だからこそ、この問いから、私たちの考察を始めることにしました。"
+        }
+      ]
+    }
+  },
+  "images": [
+    {
+      "id": "machine-evolution",
+      "path": "images/columns/from-iot-to-physical-ai/machine-evolution.webp",
+      "localizations": {
+        "ru": {
+          "alt": "Эволюция металлообработки от ручного токарного станка до автоматизированного производства с ЧПУ.",
+          "caption": "От ручного токарного станка и механизации к числовому программному управлению и роботизированному производству.",
+          "path": null
+        },
+        "en": {
+          "alt": "The evolution of manufacturing, from manually operated lathes to CNC automation and robotic production.",
+          "caption": "From manual lathes and mechanization to numerical control and robot-assisted manufacturing.",
+          "path": null
+        },
+        "ja": {
+          "alt": "手動旋盤からCNC工作機械、ロボットによる自動生産へと進化する工場。",
+          "caption": "手動旋盤から機械化、数値制御、ロボットを活用した生産への発展を示す。",
+          "path": null
+        }
+      }
+    },
+    {
+      "id": "command-rag-navigation",
+      "path": "images/columns/from-iot-to-physical-ai/command-rag-navigation.webp",
+      "localizations": {
+        "ru": {
+          "alt": "Схема взаимодействия текстовой команды, LLM, RAG, навигационной системы, датчиков и обратной связи.",
+          "caption": "Языковая модель интерпретирует команду, извлекает через RAG данные из базы знаний и передаёт цель навигационной системе, не управляя моторами напрямую.",
+          "path": null
+        },
+        "en": {
+          "alt": "Diagram showing a text command, LLM, RAG retrieval, navigation, sensors, and feedback.",
+          "caption": "The language model interprets the instruction, retrieves knowledge through RAG, and passes a navigation goal to the robot without controlling its motors directly.",
+          "path": "images/columns/from-iot-to-physical-ai/command-rag-navigation-en.webp"
+        },
+        "ja": {
+          "alt": "テキスト命令、LLM、RAG検索、ナビゲーション、センサー、フィードバックの構成図。",
+          "caption": "言語モデルは命令を解釈し、RAGを通じて必要な情報を取得してナビゲーション目標を渡す。モーターを直接制御するわけではない。",
+          "path": "images/columns/from-iot-to-physical-ai/command-rag-navigation-ja.webp"
+        }
+      }
+    },
+    {
+      "id": "rviz2-alpha-beta-gamma",
+      "path": "images/columns/from-iot-to-physical-ai/rviz2-alpha-beta-gamma.webp",
+      "localizations": {
+        "ru": {
+          "alt": "Три навигационные точки «Альфа», «Бета» и «Гамма» на схематической карте RViz2; к зоне «Гамма» есть проход из основного коридора.",
+          "caption": "Схематическая реконструкция эксперимента: точки «Альфа», «Бета» и «Гамма» расположены в единой проходимой области карты, а к «Гамме» ведёт проход. RAG хранил соответствие названий точек их координатам, которые модель извлекала по свободной текстовой команде и передавала навигационной системе. Иллюстрация RViz2 — художественная реконструкция, а не скриншот реальной программы. Координаты на ней условные.",
+          "path": null
+        },
+        "en": {
+          "alt": "An illustrative RViz2 occupancy map with Alpha, Beta and Gamma; the Gamma room connects to the main traversable corridor.",
+          "caption": "Conceptual reconstruction of the experiment: Alpha, Beta and Gamma are in a single connected navigable map area, with a passage to Gamma. RAG stored the mapping between names and coordinates, allowing the model to resolve a free-form destination command and pass the goal to navigation. The RViz2 image is an artistic reconstruction, not an actual application screenshot. Coordinates are illustrative.",
+          "path": "images/columns/from-iot-to-physical-ai/rviz2-alpha-beta-gamma-en.webp"
+        },
+        "ja": {
+          "alt": "アルファ・ベータ・ガンマの3地点を示すRViz2風の占有格子マップ。ガンマ区域は通路で他の領域につながっている。",
+          "caption": "実験の模式的な再構成。アルファ・ベータ・ガンマはつながった移動可能領域にあり、ガンマにも通路がある。RAGは地点名と座標の対応を保持し、自由な文章による指示からモデルが目的地の座標を取得してナビゲーションへ渡す。 RViz2の図は実際のスクリーンショットではなく創作した再構成図です。座標は例示用です。",
+          "path": "images/columns/from-iot-to-physical-ai/rviz2-alpha-beta-gamma-ja.webp"
+        }
+      }
+    },
+    {
+      "id": "robot-smelling-flower",
+      "path": "images/columns/from-iot-to-physical-ai/robot-smelling-flower.webp",
+      "localizations": {
+        "ru": {
+          "alt": "Технологичный гуманоидный робот держит цветок лилии в механической руке и подносит его к лицевым сенсорам, словно вдыхая аромат.",
+          "caption": "Робот держит цветок и словно пытается уловить его аромат. Может ли машина познавать физический мир через собственное взаимодействие с ним? Художественная иллюстрация.",
+          "path": null
+        },
+        "en": {
+          "alt": "A technically detailed humanoid robot holds a lily in its articulated hand and brings the bloom toward its face, as if smelling its fragrance.",
+          "caption": "A robot holds a flower as if trying to sense its fragrance. Can machines learn about the physical world through their own interactions? Editorial illustration.",
+          "path": null
+        },
+        "ja": {
+          "alt": "精密な人型ロボットが関節のある手でユリの花を持ち、香りを嗅ぐように顔のセンサーへ近づけている。",
+          "caption": "ロボットは花を手に持ち、香りを確かめるかのように顔を近づける。機械は物理世界との相互作用を通じて学べるのだろうか。創作イラスト。",
+          "path": null
+        }
+      }
+    }
+  ],
+  "cover_image": "machine-evolution"
+}
