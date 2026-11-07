@@ -40,8 +40,8 @@
       "order": 4,
       "file": "04-robot-smelling-flower.webp",
       "path": "articles/images/phai001/en/04-robot-smelling-flower.webp",
-      "alt": "A robot with cameras and an air-sampling sensor leans gently toward a lily.",
-      "caption": "Can machines learn about the physical world through their own interactions? An editorial illustration, not a depiction of a deployed system.",
+      "alt": "A technically detailed humanoid robot holds a lily in its articulated hand and brings the bloom toward its face, as if smelling its fragrance.",
+      "caption": "A robot holds a flower as if trying to sense its fragrance. Can machines learn about the physical world through their own interactions? Editorial illustration.",
       "artwork_type": "editorial_illustration",
       "is_generated": true
     }
