@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "article_id": "phai001",
+  "language": "ja",
+  "title": "IoTからフィジカルAIへ――本当に変わったものは何か",
+  "style": "Black-and-white engraved editorial illustration inspired by mid-20th-century popular-science printmaking",
+  "images": [
+    {
+      "id": "machine-evolution",
+      "order": 1,
+      "file": "01-machine-evolution.webp",
+      "path": "articles/images/phai001/ja/01-machine-evolution.webp",
+      "alt": "手動旋盤からCNC工作機械、ロボットによる自動生産へと進化する工場。",
+      "caption": "手動旋盤から機械化、数値制御、ロボットを活用した生産への発展を示す。",
+      "artwork_type": "editorial_illustration",
+      "is_generated": true
+    },
+    {
+      "id": "command-rag-navigation",
+      "order": 2,
+      "file": "02-command-rag-navigation.webp",
+      "path": "articles/images/phai001/ja/02-command-rag-navigation.webp",
+      "alt": "テキスト命令、LLM、RAG検索、ナビゲーション、センサー、フィードバックの構成図。",
+      "caption": "言語モデルは命令を解釈し、RAGを通じて必要な情報を取得してナビゲーション目標を渡す。モーターを直接制御するわけではない。",
+      "artwork_type": "technical_diagram",
+      "is_generated": true
+    },
+    {
+      "id": "rviz2-alpha-beta-gamma",
+      "order": 3,
+      "file": "03-rviz2-alpha-beta-gamma.webp",
+      "path": "articles/images/phai001/ja/03-rviz2-alpha-beta-gamma.webp",
+      "alt": "アルファ、ベータ、ガンマの3地点とベータへの経路を示す、RViz2風の模式図。",
+      "caption": "実験の模式的な再構成。RAGの知識ベースにはアルファ・ベータ・ガンマという地点名と座標の対応が保存されていた。自然な文章で目的地を指示すると、モデルが対応する座標をナビゲーションシステムに渡す。",
+      "artwork_type": "conceptual_reconstruction",
+      "is_generated": true
+    },
+    {
+      "id": "robot-smelling-flower",
+      "order": 4,
+      "file": "04-robot-smelling-flower.webp",
+      "path": "articles/images/phai001/ja/04-robot-smelling-flower.webp",
+      "alt": "カメラと空気分析センサーを備えたロボットが、そっとユリの花に顔を近づける。",
+      "caption": "機械は物理世界との相互作用を通じて学べるのだろうか。実在する装置を示したものではなく、編集用の創作イラスト。",
+      "artwork_type": "editorial_illustration",
+      "is_generated": true
+    }
+  ],
+  "editorial_note": "RViz2の図は実際のスクリーンショットではなく創作した再構成図です。座標は例示用です。"
+}
