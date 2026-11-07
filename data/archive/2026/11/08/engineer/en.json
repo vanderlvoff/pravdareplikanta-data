@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-08",
+  "issue_id": "daily-2026-11-08",
+  "edition": "engineer",
+  "language": "en",
+  "generated_at": "2026-11-07T20:46:23.293353Z",
+  "title": "Replicant Data — November 8, 2026: Engineer",
+  "lead": "Whole-body control, synthetic data and yielding mechanics address different parts of the problem.",
+  "news": [
+    {
+      "id": "hitch",
+      "title": "HITCH grounds whole-body humanoid commands in measured depth",
+      "summary": "Researchers from Tsinghua and partner institutes connect scene measurements to commands for a humanoid's body parts. Physical carrying succeeded in 13 of 20 trials; the separate 95% result belongs to a simulation benchmark.",
+      "details": "In a November 5 preprint, researchers from Tsinghua University, the Institute of Automation of the Chinese Academy of Sciences and Shanghai Qizhi Institute describe HITCH, a software harness for whole-body humanoid control. A model that processes images and language selects a point in an image and receives its three-dimensional position measured from depth. A separate interface accepts pelvis, torso, hand, walking and gaze commands. A planner turns these requests into coordinated references, and a learned controller follows them.",
+      "technical_novelty": "In a November 5 preprint, researchers from Tsinghua University, the Institute of Automation of the Chinese Academy of Sciences and Shanghai Qizhi Institute describe HITCH, a software harness for whole-body humanoid control. A model that processes images and language selects a point in an image and receives its three-dimensional position measured from depth. A separate interface accepts pelvis, torso, hand, walking and gaze commands. A planner turns these requests into coordinated references, and a learned controller follows them.",
+      "engineering_impact": "Timing conditions deserve attention when reproducing the comparison. The authors allowed 45 seconds of simulated time for SIMPLE and 60 seconds for HumanoidArena because sequential harness calls are relatively slow. Successful physical carrying averaged 60.7 seconds. Image acquisition accounted for roughly a fifth of that duration, including waiting for the head and body to settle; a faster language model alone would not remove that delay.",
+      "limitations": "The 95% result is simulated; physical G1 evaluation covers two tasks using a remote server and operator judgment. The planner does not support sitting or stepping over obstacles.",
+      "evidence_status": "Preprint and author-conducted experiments; independent replication of these results is not established.",
+      "published_at": "2026-11-05",
+      "organization": "Tsinghua University; Institute of Automation, Chinese Academy of Sciences; Shanghai Qizhi Institute",
+      "source_ids": [
+        "src-hitch"
+      ],
+      "time_window": "72h",
+      "body": "Recognizing the correct object does not tell a humanoid where to stand or how far to lean. This work makes the boundary between a reasoning model and motion control explicit. Its measurement interface returns coordinates instead of requiring the model to infer distance from appearance alone. That separation provides a way to test perception, command execution and training data as different contributions.\n\nIn a November 5 preprint, researchers from Tsinghua University, the Institute of Automation of the Chinese Academy of Sciences and Shanghai Qizhi Institute describe HITCH, a software harness for whole-body humanoid control. A model that processes images and language selects a point in an image and receives its three-dimensional position measured from depth. A separate interface accepts pelvis, torso, hand, walking and gaze commands. A planner turns these requests into coordinated references, and a learned controller follows them.\n\nThe model was trained on trajectories from five base tasks. Adding five demonstrations per task brought success on the simulated SIMPLE benchmark to 95%. Physical Unitree G1 tests had different outcomes: 13 successful carrying episodes out of 20 and six successful navigation episodes out of ten. The model ran on a remote server connected over Wi-Fi, with an operator judging the outcomes. Its training data contained no real images.\n\nTiming conditions deserve attention when reproducing the comparison. The authors allowed 45 seconds of simulated time for SIMPLE and 60 seconds for HumanoidArena because sequential harness calls are relatively slow. Successful physical carrying averaged 60.7 seconds. Image acquisition accounted for roughly a fifth of that duration, including waiting for the head and body to settle; a faster language model alone would not remove that delay.",
+      "image": null
+    },
+    {
+      "id": "halo",
+      "title": "HALO transfers learning from a thousand virtual homes to physical rooms",
+      "summary": "Apple researchers trained a humanoid system on synthetic episodes and evaluated it in six unfamiliar physical environments. They report 91% success over 360 trials, while adding new task types still requires human input.",
+      "details": "Apple researchers introduced HALO in a preprint submitted on November 4. Training episodes are generated in a thousand procedurally constructed homes: the pipeline synthesizes motion, places it in a scene and renders the robot's view. The resulting corpus contains 300 hours of synthetic episodes. During operation, a high-level module splits instructions into subtasks, a middle layer replans whole-body motion at about three updates per second, and a lower controller follows the plan at 50 hertz using depth and information about the robot's own mechanisms.",
+      "technical_novelty": "Apple researchers introduced HALO in a preprint submitted on November 4. Training episodes are generated in a thousand procedurally constructed homes: the pipeline synthesizes motion, places it in a scene and renders the robot's view. The resulting corpus contains 300 hours of synthetic episodes. During operation, a high-level module splits instructions into subtasks, a middle layer replans whole-body motion at about three updates per second, and a lower controller follows the plan at 50 hertz using depth and information about the robot's own mechanisms.",
+      "engineering_impact": "Compute requirements also belong in a reproduction budget. The project lists 250 H100 accelerators for corpus generation, 64 B200 devices for generator training and four H100 devices for controller training. These describe different development stages, not the computer carried by the robot. When contact becomes occluded, the tracker follows a kinematic plan without knowing its purpose; this narrow transfer of intent is an explicitly identified limitation.",
+      "limitations": "New tasks require human-authored descriptions and keyframes. Vision supplies no direct signal for occluded contact; 91% applies to the selected 360 trials.",
+      "evidence_status": "Preprint and author-conducted experiments; independent replication of these results is not established.",
+      "published_at": "2026-11-04",
+      "organization": "Apple",
+      "source_ids": [
+        "src-halo-project",
+        "src-halo"
+      ],
+      "time_window": "7d",
+      "body": "The training pair begins with a generated scene and motion sequence rather than an operator wearing motion-capture equipment. That shifts the source of possible errors: impossible motions and unsuitable placements among furniture must be filtered out. The architecture separates a kinematic plan, describing how the body should move, from the controller that realizes it under balance and actuator constraints. Each layer therefore needs its own evaluation.\n\nApple researchers introduced HALO in a preprint submitted on November 4. Training episodes are generated in a thousand procedurally constructed homes: the pipeline synthesizes motion, places it in a scene and renders the robot's view. The resulting corpus contains 300 hours of synthetic episodes. During operation, a high-level module splits instructions into subtasks, a middle layer replans whole-body motion at about three updates per second, and a lower controller follows the plan at 50 hertz using depth and information about the robot's own mechanisms.\n\nThe authors report 91% success across 360 trials in six physical environments that were neither used for training nor scanned beforehand. Demonstrations include sitting, passing sideways through doors, moving beneath tables and pushing boxes. Computation runs onboard. Adding a new task type still requires human-authored descriptions and keyframes, however, and vision provides no direct contact signal when an object becomes hidden.\n\nCompute requirements also belong in a reproduction budget. The project lists 250 H100 accelerators for corpus generation, 64 B200 devices for generator training and four H100 devices for controller training. These describe different development stages, not the computer carried by the robot. When contact becomes occluded, the tracker follows a kinematic plan without knowing its purpose; this narrow transfer of intent is an explicitly identified limitation.",
+      "image": null
+    },
+    {
+      "id": "insectron",
+      "title": "Magnetic transmission lets a miniature robot's legs yield under overload",
+      "summary": "Sant'Anna researchers published a six-legged platform whose magnetic couplings transmit motion but slip under excessive load. Recovery exceeded 90% in the paper's vertical-disturbance experiments.",
+      "details": "Donato Romano and Gianluca Manduca of the BioRobotics Institute at Sant'Anna School in Pisa described INSECTRON in npj Robotics on November 5. The centimeter-scale six-legged robot uses magnetic transmission. Neodymium magnets connect each leg to its drivetrain, transmitting torque under ordinary loads while allowing slip under overload. Additional magnetic couplings between modules accommodate unequal loads. This protective response arises in the mechanism without a separate computed decision for every impact.",
+      "technical_novelty": "Donato Romano and Gianluca Manduca of the BioRobotics Institute at Sant'Anna School in Pisa described INSECTRON in npj Robotics on November 5. The centimeter-scale six-legged robot uses magnetic transmission. Neodymium magnets connect each leg to its drivetrain, transmitting torque under ordinary loads while allowing slip under overload. Additional magnetic couplings between modules accommodate unequal loads. This protective response arises in the mechanism without a separate computed decision for every impact.",
+      "engineering_impact": "Slipping should not be confused with switching off control. The controller maintains phase coordination from sensor feedback while the yielding coupling absorbs overload. The study demonstrates those layers working together on a small platform. Tool-free leg replacement helps servicing, but scaling the principle to a heavier machine requires new checks of transmitted torque, magnet mass and re-engagement behavior. The reported recovery percentage does not measure those scaling relationships.",
+      "limitations": "Recovery above 90% applies to the reported vertical disturbances on a small platform, not every impact or a different machine scale.",
+      "evidence_status": "Peer-reviewed npj Robotics paper with author-conducted experiments; separate independent replication is not established.",
+      "published_at": "2026-11-05",
+      "organization": "The BioRobotics Institute, Sant'Anna School of Advanced Studies",
+      "source_ids": [
+        "src-insectron"
+      ],
+      "time_window": "72h",
+      "body": "A fast protective response need not always wait for a new estimate of the robot's state and a revised command. Here part of that response is built into torque transmission. A magnetic clutch, a coupling that can allow relative movement between drive and leg, must hold ordinary loads yet yield when they become excessive. Its threshold is a mechanical design choice rather than a camera-based obstacle decision.\n\nDonato Romano and Gianluca Manduca of the BioRobotics Institute at Sant'Anna School in Pisa described INSECTRON in npj Robotics on November 5. The centimeter-scale six-legged robot uses magnetic transmission. Neodymium magnets connect each leg to its drivetrain, transmitting torque under ordinary loads while allowing slip under overload. Additional magnetic couplings between modules accommodate unequal loads. This protective response arises in the mechanism without a separate computed decision for every impact.\n\nHall-effect sensors, which detect magnetic fields, provide drivetrain feedback to a controller coordinating alternating leg motion. The authors tested locomotion on different surfaces and slopes, differential turning and spinning in place. Following vertical disturbances, the robot recovered autonomously in more than 90% of trials. Legs can be replaced without tools. The paper is peer reviewed, but the recovery percentage applies to the reported disturbances rather than every possible accident.\n\nSlipping should not be confused with switching off control. The controller maintains phase coordination from sensor feedback while the yielding coupling absorbs overload. The study demonstrates those layers working together on a small platform. Tool-free leg replacement helps servicing, but scaling the principle to a heavier machine requires new checks of transmitted torque, magnet mass and re-engagement behavior. The reported recovery percentage does not measure those scaling relationships.",
+      "image": null
+    },
+    {
+      "id": "astra-orbital",
+      "title": "ASTRA assembles a new orbital bay, not an entire antenna",
+      "summary": "Caltech reported robotic assembly of a truss bay in orbit under a DARPA program. The planned eleven-bay structure remains incomplete, and troubleshooting relies on a physical flight spare on Earth.",
+      "details": "On November 5, Caltech reported an orbital ASTRA experiment, a robotic reflector-antenna assembly demonstration in NOM4D, a program investigating construction technologies for space, funded by the US Defense Advanced Research Projects Agency, DARPA. A manipulator takes tubes and connectors from dispensers, builds a bay on an assembly plate and pushes it outward. The intended antenna diameter is 1.4 meters. In orbit, two preassembled bays were extended and a third bay was assembled. The complete truss would contain eleven bays; the announcement does not report a finished antenna.",
+      "technical_novelty": "On November 5, Caltech reported an orbital ASTRA experiment, a robotic reflector-antenna assembly demonstration in NOM4D, a program investigating construction technologies for space, funded by the US Defense Advanced Research Projects Agency, DARPA. A manipulator takes tubes and connectors from dispensers, builds a bay on an assembly plate and pushes it outward. The intended antenna diameter is 1.4 meters. In orbit, two preassembled bays were extended and a third bay was assembled. The complete truss would contain eleven bays; the announcement does not report a finished antenna.",
+      "engineering_impact": "The source calls assembly autonomous, but that describes execution between commands rather than the absence of a ground team. Specialists reproduced discovered problems on Earth. The newly assembled third bay matters as a completed orbital operation; it cannot be reported as eleven finished bays or evidence of months of intervention-free construction. The team identifies simplifying and refining the mechanism as work for a subsequent design.",
+      "limitations": "The antenna is unfinished. A ground team checks photographs and troubleshoots on a flight spare; communications are limited to short windows.",
+      "evidence_status": "Caltech's account of its team's orbital demonstration; an independent assessment of the extent of autonomy is not supplied.",
+      "published_at": "2026-11-05",
+      "organization": "Caltech; DARPA",
+      "source_ids": [
+        "src-astra-caltech"
+      ],
+      "time_window": "72h",
+      "body": "Connecting parts once and continuing construction without assistance are different engineering achievements. In orbit, a technician cannot simply reach a connector, and continuous observation is unavailable. The experiment's architecture therefore includes more than a manipulator: short communication windows, photographs of the result and a physical duplicate on which engineers try recovery procedures. Those support mechanisms are part of the demonstrated capability rather than incidental background.\n\nOn November 5, Caltech reported an orbital ASTRA experiment, a robotic reflector-antenna assembly demonstration in NOM4D, a program investigating construction technologies for space, funded by the US Defense Advanced Research Projects Agency, DARPA. A manipulator takes tubes and connectors from dispensers, builds a bay on an assembly plate and pushes it outward. The intended antenna diameter is 1.4 meters. In orbit, two preassembled bays were extended and a third bay was assembled. The complete truss would contain eleven bays; the announcement does not report a finished antenna.\n\nThe ground team sent commands and checked the results in downloaded photographs. Communication is available during only seven or eight daily windows of roughly fifteen minutes. Unexpected problems were reproduced on a flight spare in the laboratory before a workaround was transmitted to the orbital machine. The team considers completion of the entire truss unlikely before the mission ends in December. Caltech presents the result as a proof of concept rather than a ready orbital construction service.\n\nThe source calls assembly autonomous, but that describes execution between commands rather than the absence of a ground team. Specialists reproduced discovered problems on Earth. The newly assembled third bay matters as a completed orbital operation; it cannot be reported as eleven finished bays or evidence of months of intervention-free construction. The team identifies simplifying and refining the mechanism as work for a subsequent design.",
+      "image": null
+    },
+    {
+      "id": "stretch-gen2",
+      "title": "Stretch Gen 2 cuts internal cabling and shortens a drive-module swap",
+      "summary": "Boston Dynamics introduced a redesigned unloading robot with 81% less internal cabling. The manufacturer connects its mechanical changes to downtime causes observed in the previous generation.",
+      "details": "On November 3, Boston Dynamics introduced Stretch Gen 2, a new version of its mobile trailer-unloading robot. The company links the redesign to analysis of more than one hundred thousand operating hours from earlier machines. Updated connectors address vibration, the gripper has revised valves and sensing, and continuously rotating joints avoid earlier mechanical stops. The manufacturer says internal cabling was reduced by 81% to remove sources of wear and intermittent electrical faults.",
+      "technical_novelty": "On November 3, Boston Dynamics introduced Stretch Gen 2, a new version of its mobile trailer-unloading robot. The company links the redesign to analysis of more than one hundred thousand operating hours from earlier machines. Updated connectors address vibration, the gripper has revised valves and sensing, and continuously rotating joints avoid earlier mechanical stops. The manufacturer says internal cabling was reduced by 81% to remove sources of wear and intermittent electrical faults.",
+      "engineering_impact": "The hundred thousand operating hours describe earlier machines, not a demonstrated service life for the new version. Likewise, one thousand cases per hour is a stated upper rate under particular conditions rather than an average for every trailer. Evaluating the redesign requires comparable fault and downtime records before and after replacement. A one-hour module swap is operationally useful only when a working spare module is actually available.",
+      "limitations": "Specifications are manufacturer claims. One thousand cases per hour depends on loads and stacking; the hundred thousand hours concern earlier machines, not the new version's proven lifespan.",
+      "evidence_status": "Official manufacturer release; the new version's specifications are not confirmed by an independent comparative test.",
+      "published_at": "2026-11-03",
+      "organization": "Boston Dynamics",
+      "source_ids": [
+        "src-stretch-gen2"
+      ],
+      "time_window": "7d",
+      "body": "The engineering story concerns repeating an established action throughout a working day rather than introducing a new movement. Vibration, cable wear and accidental stops can limit a system alongside its ability to recognize a carton. The manufacturer has translated field observations into connectors, joints and access for replacing modules. Reliability work consequently changes the physical arrangement of the machine as well as its software and grasping strategy.\n\nOn November 3, Boston Dynamics introduced Stretch Gen 2, a new version of its mobile trailer-unloading robot. The company links the redesign to analysis of more than one hundred thousand operating hours from earlier machines. Updated connectors address vibration, the gripper has revised valves and sensing, and continuously rotating joints avoid earlier mechanical stops. The manufacturer says internal cabling was reduced by 81% to remove sources of wear and intermittent electrical faults.\n\nThe company also reports replacing a drive module in about one hour rather than a full day. Advertised throughput reaches one thousand cases per hour but depends on case weight and stacking conditions; peak operation uses multiple-case picks. The battery is described as lasting two shifts, with charging to 90% taking around 75 minutes. These are the manufacturer's specifications and assessments, not an independent comparative warehouse evaluation of the new machine.\n\nThe hundred thousand operating hours describe earlier machines, not a demonstrated service life for the new version. Likewise, one thousand cases per hour is a stated upper rate under particular conditions rather than an average for every trailer. Evaluating the redesign requires comparable fault and downtime records before and after replacement. A one-hour module swap is operationally useful only when a working spare module is actually available.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Measurement, execution and repair are distinct reliability layers",
+    "summary": "Whole-body control, synthetic data and yielding mechanics address different parts of the problem.",
+    "implications": "Comparisons need measurement conditions, physical execution and recovery after faults."
+  },
+  "sources": [
+    {
+      "id": "src-hitch",
+      "title": "HITCH: Teaching a Vision-Language Model to Operate a Humanoid through a Whole-Body Harness",
+      "url": "https://arxiv.org/abs/2611.08039",
+      "domain": "arxiv.org",
+      "organization": "Tsinghua University; Institute of Automation, Chinese Academy of Sciences; Shanghai Qizhi Institute",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-halo-project",
+      "title": "HALO — Perceptive Humanoid Motion from Simulation",
+      "url": "https://apple-aiml-research.github.io/ml-halo/",
+      "domain": "apple-aiml-research.github.io",
+      "organization": "Apple",
+      "published_at": "2026-11-04"
+    },
+    {
+      "id": "src-halo",
+      "title": "Perceptive Humanoid Motion from Simulation",
+      "url": "https://arxiv.org/abs/2611.06908",
+      "domain": "arxiv.org",
+      "organization": "Apple",
+      "published_at": "2026-11-04"
+    },
+    {
+      "id": "src-insectron",
+      "title": "Insect-inspired hexapod robot with magnetically coupled compliant and modular drive system",
+      "url": "https://www.nature.com/articles/s44182-026-00106-y",
+      "domain": "www.nature.com",
+      "organization": "The BioRobotics Institute, Sant'Anna School of Advanced Studies",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-astra-caltech",
+      "title": "Caltech Robotic Space Demo Successfully Builds in Space",
+      "url": "https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space",
+      "domain": "www.caltech.edu",
+      "organization": "Caltech",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-stretch-gen2",
+      "title": "Boston Dynamics Launches Next Generation Stretch Robot",
+      "url": "https://bostondynamics.com/news/boston-dynamics-launches-next-generation-stretch-robot",
+      "domain": "bostondynamics.com",
+      "organization": "Boston Dynamics",
+      "published_at": "2026-11-03"
+    }
+  ]
+}

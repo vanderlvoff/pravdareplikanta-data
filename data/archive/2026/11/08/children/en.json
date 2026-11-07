@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-08",
+  "issue_id": "daily-2026-11-08",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-07T20:46:23.293353Z",
+  "title": "Replicant Data — November 8, 2026: Children",
+  "lead": "Magnets help one machine, while others benefit from measurements, virtual practice or a second machine on Earth.",
+  "news": [
+    {
+      "id": "insectron",
+      "title": "Magnets help a small robot's legs yield instead of staying rigid",
+      "summary": "Scientists in Pisa made a six-legged robot with magnetic connections. Under an excessive load, those connections can slip rather than transmitting the entire disturbance rigidly.",
+      "details": "That connection is called a clutch. Imagine two parts allowed to turn slightly relative to each other rather than holding at any cost. The computer has not disappeared, however. Sensors detect changes in magnetic fields, and a program coordinates the six legs. The mechanical protection and the walking controller have different jobs.",
+      "technical_novelty": "If a small robot catches its foot, the motor may keep pulling. A rigid part then receives a heavy load. Two scientists at Sant'Anna School in Pisa, Italy, tried a different connection. Their study appeared on November 5. Magnets link the robot's legs to its drive. During ordinary walking they transmit movement; under excessive load they allow the parts to shift.",
+      "engineering_impact": "The researchers tried different surfaces, slopes and vertical disturbances. In the vertical-disturbance experiments, the robot recovered in more than nine attempts out of ten. That does not promise survival after any possible blow: the result belongs to the tested conditions. A leg can also be replaced without tools. The magnets are useful during assembly as well as during movement.",
+      "limitations": "The researchers tried different surfaces, slopes and vertical disturbances. In the vertical-disturbance experiments, the robot recovered in more than nine attempts out of ten. That does not promise survival after any possible blow: the result belongs to the tested conditions. A leg can also be replaced without tools. The magnets are useful during assembly as well as during movement.",
+      "evidence_status": "The article was checked through scientific peer review; its authors carried out the experiments. Independent repetition has not been confirmed.",
+      "published_at": "2026-11-05",
+      "organization": "The BioRobotics Institute, Sant'Anna School of Advanced Studies",
+      "source_ids": [
+        "src-insectron"
+      ],
+      "time_window": "72h",
+      "body": "If a small robot catches its foot, the motor may keep pulling. A rigid part then receives a heavy load. Two scientists at Sant'Anna School in Pisa, Italy, tried a different connection. Their study appeared on November 5. Magnets link the robot's legs to its drive. During ordinary walking they transmit movement; under excessive load they allow the parts to shift.\n\nThat connection is called a clutch. Imagine two parts allowed to turn slightly relative to each other rather than holding at any cost. The computer has not disappeared, however. Sensors detect changes in magnetic fields, and a program coordinates the six legs. The mechanical protection and the walking controller have different jobs.\n\nThe researchers tried different surfaces, slopes and vertical disturbances. In the vertical-disturbance experiments, the robot recovered in more than nine attempts out of ten. That does not promise survival after any possible blow: the result belongs to the tested conditions. A leg can also be replaced without tools. The magnets are useful during assembly as well as during movement.",
+      "image": null
+    },
+    {
+      "id": "astra-orbital",
+      "title": "A robot builds in space while its twin helps on Earth",
+      "summary": "A Caltech team reported that a robot assembled a new antenna-frame section in orbit. The full frame is unfinished, and engineers help the machine recover from unexpected problems.",
+      "details": "In orbit, two sections already built on Earth were pushed out first. The machine then assembled a third. The full frame needs eleven sections, so the complete antenna has not been built. Its intended diameter is 1.4 meters. Engineers send commands, receive photographs and check what happened. They can communicate with the machine during only a few short periods each day.",
+      "technical_novelty": "How could you build something in space that will not fit inside a rocket in one piece? You could send parts and join them at the destination. Caltech scientists are testing that route. In a November 5 announcement, they described a robot taking tubes and connectors from holders and assembling a section of an antenna frame.",
+      "engineering_impact": "When a problem appears, the team uses a second machine in the laboratory. They can try a repair procedure there before sending it into space. The robot performs operations by itself, but people still help it recover. The mission is due to end in December, and the team expects the frame to remain incomplete. Testing on its Earthbound twin reveals which pieces of the next design should be simpler.",
+      "limitations": "When a problem appears, the team uses a second machine in the laboratory. They can try a repair procedure there before sending it into space. The robot performs operations by itself, but people still help it recover. The mission is due to end in December, and the team expects the frame to remain incomplete. Testing on its Earthbound twin reveals which pieces of the next design should be simpler.",
+      "evidence_status": "Caltech, where the developers work, reports the demonstration. The announcement supplies no separate independent evaluation.",
+      "published_at": "2026-11-05",
+      "organization": "Caltech; DARPA",
+      "source_ids": [
+        "src-astra-caltech"
+      ],
+      "time_window": "72h",
+      "body": "How could you build something in space that will not fit inside a rocket in one piece? You could send parts and join them at the destination. Caltech scientists are testing that route. In a November 5 announcement, they described a robot taking tubes and connectors from holders and assembling a section of an antenna frame.\n\nIn orbit, two sections already built on Earth were pushed out first. The machine then assembled a third. The full frame needs eleven sections, so the complete antenna has not been built. Its intended diameter is 1.4 meters. Engineers send commands, receive photographs and check what happened. They can communicate with the machine during only a few short periods each day.\n\nWhen a problem appears, the team uses a second machine in the laboratory. They can try a repair procedure there before sending it into space. The robot performs operations by itself, but people still help it recover. The mission is due to end in December, and the team expects the frame to remain incomplete. Testing on its Earthbound twin reveals which pieces of the next design should be simpler.",
+      "image": null
+    },
+    {
+      "id": "halo",
+      "title": "A robot practiced sitting and moving under tables in invented homes",
+      "summary": "Apple researchers prepared a thousand homes inside a computer for robot learning. They then tested the machine in six physical environments it had never seen during training.",
+      "details": "The program prepared images and movements for learning. Different parts of the system then chose a small task, planned bodily motion and helped carry it out. Physical demonstrations included sitting, passing sideways through a door, going under tables and pushing a box. In six new environments, the team reported 91% success in 360 attempts: roughly nine successes in ten under those conditions.",
+      "technical_novelty": "Sitting on a chair takes more than noticing it. You need to turn, approach and lower your body onto the correct place. Apple researchers tried teaching a robot those connections in homes generated by a program. Their study appeared on November 4. A thousand virtual homes provided different rooms and furniture without sending a physical robot to record a lesson in every location.",
+      "engineering_impact": "The robot did not invent every lesson itself. A new type of work still needs a person to describe the task and specify important body positions. Sight also has a limit: if an object disappears behind a hand, the image does not directly reveal whether touch continues. Moving successfully under a table therefore does not establish every household skill or tell the machine how strongly it holds an object.",
+      "limitations": "The robot did not invent every lesson itself. A new type of work still needs a person to describe the task and specify important body positions. Sight also has a limit: if an object disappears behind a hand, the image does not directly reveal whether touch continues. Moving successfully under a table therefore does not establish every household skill or tell the machine how strongly it holds an object.",
+      "evidence_status": "The research team reports these experiments. Independent repetition of the results has not been confirmed.",
+      "published_at": "2026-11-04",
+      "organization": "Apple",
+      "source_ids": [
+        "src-halo-project",
+        "src-halo"
+      ],
+      "time_window": "7d",
+      "body": "Sitting on a chair takes more than noticing it. You need to turn, approach and lower your body onto the correct place. Apple researchers tried teaching a robot those connections in homes generated by a program. Their study appeared on November 4. A thousand virtual homes provided different rooms and furniture without sending a physical robot to record a lesson in every location.\n\nThe program prepared images and movements for learning. Different parts of the system then chose a small task, planned bodily motion and helped carry it out. Physical demonstrations included sitting, passing sideways through a door, going under tables and pushing a box. In six new environments, the team reported 91% success in 360 attempts: roughly nine successes in ten under those conditions.\n\nThe robot did not invent every lesson itself. A new type of work still needs a person to describe the task and specify important body positions. Sight also has a limit: if an object disappears behind a hand, the image does not directly reveal whether touch continues. Moving successfully under a table therefore does not establish every household skill or tell the machine how strongly it holds an object.",
+      "image": null
+    },
+    {
+      "id": "stretch-gen2",
+      "title": "Fewer wires inside can mean fewer reasons to stop",
+      "summary": "Boston Dynamics changed the design of a robot that unloads cartons from trailers. The company reduced its internal cabling and worked to make replacement of parts faster.",
+      "details": "The company says the new design has 81% less internal cabling. Connectors and parts of the gripper were changed as well. One drive module can now be replaced in about an hour instead of a whole day. A module is a unit removed and replaced together, so a technician need not spend as long dismantling many little pieces beside a queue of cartons.",
+      "technical_novelty": "When a robot moves a carton, we watch its arm. Important parts are hidden inside too: wires, connectors and drives that turn wheels. Movement and vibration can wear them out. On November 3, Boston Dynamics showed a new version of its warehouse robot. It studied more than one hundred thousand hours of earlier machines working before making the changes.",
+      "engineering_impact": "The company also advertises up to a thousand cases per hour, but weight and stacking affect the result. That is not a promise to unload every trailer equally fast. Another time matters: how long a broken robot waits and how quickly a replacement part arrives. A useful warehouse helper needs to return to work after a fault as well as move efficiently before it.",
+      "limitations": "The company also advertises up to a thousand cases per hour, but weight and stacking affect the result. That is not a promise to unload every trailer equally fast. Another time matters: how long a broken robot waits and how quickly a replacement part arrives. A useful warehouse helper needs to return to work after a fault as well as move efficiently before it.",
+      "evidence_status": "These figures come from the company making the robot. The source provides no independent comparison of the new machine.",
+      "published_at": "2026-11-03",
+      "organization": "Boston Dynamics",
+      "source_ids": [
+        "src-stretch-gen2"
+      ],
+      "time_window": "7d",
+      "body": "When a robot moves a carton, we watch its arm. Important parts are hidden inside too: wires, connectors and drives that turn wheels. Movement and vibration can wear them out. On November 3, Boston Dynamics showed a new version of its warehouse robot. It studied more than one hundred thousand hours of earlier machines working before making the changes.\n\nThe company says the new design has 81% less internal cabling. Connectors and parts of the gripper were changed as well. One drive module can now be replaced in about an hour instead of a whole day. A module is a unit removed and replaced together, so a technician need not spend as long dismantling many little pieces beside a queue of cartons.\n\nThe company also advertises up to a thousand cases per hour, but weight and stacking affect the result. That is not a promise to unload every trailer equally fast. Another time matters: how long a broken robot waits and how quickly a replacement part arrives. A useful warehouse helper needs to return to work after a fault as well as move efficiently before it.",
+      "image": null
+    },
+    {
+      "id": "hitch",
+      "title": "Before carrying a box, a robot asks where it is",
+      "summary": "Researchers from Tsinghua and partner institutes gave a humanoid a separate way to measure object positions. It selects an image point and receives coordinates before moving its body.",
+      "details": "Another part of the system accepts instructions for hands, torso, steps and gaze. It helps the body move together instead of simply reaching an arm forward. Training used five basic kinds of work. In computer tests, extra examples helped achieve 95% success on one task set. That is not a result for every action of a physical robot.",
+      "technical_novelty": "Pointing at a box in a picture is easier than knowing exactly how far away it stands. Picking it up needs that depth too. Researchers from Tsinghua and two other Chinese institutes added a way for a robot to ask this question. Their study was published on November 5. The program selects an image point, and a depth measurement returns its position in space.",
+      "engineering_impact": "On the actual machine, carrying succeeded in 13 attempts out of 20, and navigation in six out of ten. A person checked those outcomes. Sometimes the program selected a point on the table behind an object and built its next plan from that wrong point. A useful next lesson is therefore noticing the mistake and measuring again, instead of confidently continuing a poor plan.",
+      "limitations": "On the actual machine, carrying succeeded in 13 attempts out of 20, and navigation in six out of ten. A person checked those outcomes. Sometimes the program selected a point on the table behind an object and built its next plan from that wrong point. A useful next lesson is therefore noticing the mistake and measuring again, instead of confidently continuing a poor plan.",
+      "evidence_status": "The research team reports these experiments. Independent repetition of the results has not been confirmed.",
+      "published_at": "2026-11-05",
+      "organization": "Tsinghua University; Institute of Automation, Chinese Academy of Sciences; Shanghai Qizhi Institute",
+      "source_ids": [
+        "src-hitch"
+      ],
+      "time_window": "72h",
+      "body": "Pointing at a box in a picture is easier than knowing exactly how far away it stands. Picking it up needs that depth too. Researchers from Tsinghua and two other Chinese institutes added a way for a robot to ask this question. Their study was published on November 5. The program selects an image point, and a depth measurement returns its position in space.\n\nAnother part of the system accepts instructions for hands, torso, steps and gaze. It helps the body move together instead of simply reaching an arm forward. Training used five basic kinds of work. In computer tests, extra examples helped achieve 95% success on one task set. That is not a result for every action of a physical robot.\n\nOn the actual machine, carrying succeeded in 13 attempts out of 20, and navigation in six out of ten. A person checked those outcomes. Sometimes the program selected a point on the table behind an object and built its next plan from that wrong point. A useful next lesson is therefore noticing the mistake and measuring again, instead of confidently continuing a poor plan.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Robots need different ways to handle difficulties",
+    "summary": "Magnets help one machine, while others benefit from measurements, virtual practice or a second machine on Earth.",
+    "implications": "Look for what was actually tested and where people still need to help."
+  },
+  "sources": [
+    {
+      "id": "src-hitch",
+      "title": "HITCH: Teaching a Vision-Language Model to Operate a Humanoid through a Whole-Body Harness",
+      "url": "https://arxiv.org/abs/2611.08039",
+      "domain": "arxiv.org",
+      "organization": "Tsinghua University; Institute of Automation, Chinese Academy of Sciences; Shanghai Qizhi Institute",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-halo-project",
+      "title": "HALO — Perceptive Humanoid Motion from Simulation",
+      "url": "https://apple-aiml-research.github.io/ml-halo/",
+      "domain": "apple-aiml-research.github.io",
+      "organization": "Apple",
+      "published_at": "2026-11-04"
+    },
+    {
+      "id": "src-halo",
+      "title": "Perceptive Humanoid Motion from Simulation",
+      "url": "https://arxiv.org/abs/2611.06908",
+      "domain": "arxiv.org",
+      "organization": "Apple",
+      "published_at": "2026-11-04"
+    },
+    {
+      "id": "src-insectron",
+      "title": "Insect-inspired hexapod robot with magnetically coupled compliant and modular drive system",
+      "url": "https://www.nature.com/articles/s44182-026-00106-y",
+      "domain": "www.nature.com",
+      "organization": "The BioRobotics Institute, Sant'Anna School of Advanced Studies",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-astra-caltech",
+      "title": "Caltech Robotic Space Demo Successfully Builds in Space",
+      "url": "https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space",
+      "domain": "www.caltech.edu",
+      "organization": "Caltech",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-stretch-gen2",
+      "title": "Boston Dynamics Launches Next Generation Stretch Robot",
+      "url": "https://bostondynamics.com/news/boston-dynamics-launches-next-generation-stretch-robot",
+      "domain": "bostondynamics.com",
+      "organization": "Boston Dynamics",
+      "published_at": "2026-11-03"
+    }
+  ]
+}
