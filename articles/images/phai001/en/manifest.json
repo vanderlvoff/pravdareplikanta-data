@@ -30,8 +30,8 @@
       "order": 3,
       "file": "03-rviz2-alpha-beta-gamma.webp",
       "path": "articles/images/phai001/en/03-rviz2-alpha-beta-gamma.webp",
-      "alt": "Engraved illustrative RViz2 map with Alpha, Beta, and Gamma and a planned route to Beta.",
-      "caption": "Conceptual reconstruction of the experiment: the RAG knowledge base held coordinates mapped to the names Alpha, Beta, and Gamma. A free-form text command could request a destination by name, and the model passed its coordinates to the navigation system.",
+      "alt": "An illustrative RViz2 occupancy map with Alpha, Beta and Gamma; the Gamma room connects to the main traversable corridor.",
+      "caption": "Conceptual reconstruction of the experiment: Alpha, Beta and Gamma are in a single connected navigable map area, with a passage to Gamma. RAG stored the mapping between names and coordinates, allowing the model to resolve a free-form destination command and pass the goal to navigation.",
       "artwork_type": "conceptual_reconstruction",
       "is_generated": true
     },
