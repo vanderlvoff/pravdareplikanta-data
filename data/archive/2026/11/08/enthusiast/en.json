@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-08",
+  "issue_id": "daily-2026-11-08",
+  "edition": "enthusiast",
+  "language": "en",
+  "generated_at": "2026-11-07T20:46:23.293353Z",
+  "title": "Replicant Data — November 8, 2026: Enthusiast",
+  "lead": "Magnetic transmission, depth measurements, virtual homes and a flight spare help in different ways.",
+  "news": [
+    {
+      "id": "insectron",
+      "title": "A robot's leg can yield to an impact through magnetic coupling",
+      "summary": "Researchers in Pisa built a small six-legged robot with magnetic connections in its drivetrain. Those connections slip under excessive load, helping the mechanism tolerate disturbances without a separate computer decision for each impact.",
+      "details": "Donato Romano and Gianluca Manduca of the BioRobotics Institute at Sant'Anna School in Pisa described INSECTRON in npj Robotics on November 5. The centimeter-scale six-legged robot uses magnetic transmission. Neodymium magnets connect each leg to its drivetrain, transmitting torque under ordinary loads while allowing slip under overload. Additional magnetic couplings between modules accommodate unequal loads. This protective response arises in the mechanism without a separate computed decision for every impact.",
+      "technical_novelty": "Donato Romano and Gianluca Manduca of the BioRobotics Institute at Sant'Anna School in Pisa described INSECTRON in npj Robotics on November 5. The centimeter-scale six-legged robot uses magnetic transmission. Neodymium magnets connect each leg to its drivetrain, transmitting torque under ordinary loads while allowing slip under overload. Additional magnetic couplings between modules accommodate unequal loads. This protective response arises in the mechanism without a separate computed decision for every impact.",
+      "engineering_impact": "Two meanings of response need separating here. A quick mechanical adjustment does not mean the robot recognized the impact or understood its cause. Sensors and software still coordinate its legs, while protection also emerges from the transmission itself. Magnets have not replaced the entire computer; the design distributes responsibilities between calculations and what follows directly from the structure and properties of a connection.",
+      "limitations": "Recovery above 90% applies to the reported vertical disturbances on a small platform, not every impact or a different machine scale.",
+      "evidence_status": "Peer-reviewed npj Robotics paper with author-conducted experiments; separate independent replication is not established.",
+      "published_at": "2026-11-05",
+      "organization": "The BioRobotics Institute, Sant'Anna School of Advanced Studies",
+      "source_ids": [
+        "src-insectron"
+      ],
+      "time_window": "72h",
+      "body": "Imagine a transmission that holds firmly below a particular load and then allows its parts to shift. That is the central idea of this robot. Yielding is an intended property rather than a manufacturing error. It differs from software deciding to retreat: the connection gives way mechanically while the rest of the system continues to coordinate the rhythm of walking and the movement of the remaining legs.\n\nDonato Romano and Gianluca Manduca of the BioRobotics Institute at Sant'Anna School in Pisa described INSECTRON in npj Robotics on November 5. The centimeter-scale six-legged robot uses magnetic transmission. Neodymium magnets connect each leg to its drivetrain, transmitting torque under ordinary loads while allowing slip under overload. Additional magnetic couplings between modules accommodate unequal loads. This protective response arises in the mechanism without a separate computed decision for every impact.\n\nHall-effect sensors, which detect magnetic fields, provide drivetrain feedback to a controller coordinating alternating leg motion. The authors tested locomotion on different surfaces and slopes, differential turning and spinning in place. Following vertical disturbances, the robot recovered autonomously in more than 90% of trials. Legs can be replaced without tools. The paper is peer reviewed, but the recovery percentage applies to the reported disturbances rather than every possible accident.\n\nTwo meanings of response need separating here. A quick mechanical adjustment does not mean the robot recognized the impact or understood its cause. Sensors and software still coordinate its legs, while protection also emerges from the transmission itself. Magnets have not replaced the entire computer; the design distributes responsibilities between calculations and what follows directly from the structure and properties of a connection.",
+      "image": null
+    },
+    {
+      "id": "astra-orbital",
+      "title": "A robot starts building an antenna in space while its twin helps on Earth",
+      "summary": "Caltech reported assembly of a new antenna-truss section in orbit. The planned complete antenna remains unfinished, and problems are investigated using a second physical machine in the laboratory.",
+      "details": "On November 5, Caltech reported an orbital ASTRA experiment, a robotic reflector-antenna assembly demonstration in NOM4D, a program investigating construction technologies for space, funded by the US Defense Advanced Research Projects Agency, DARPA. A manipulator takes tubes and connectors from dispensers, builds a bay on an assembly plate and pushes it outward. The intended antenna diameter is 1.4 meters. In orbit, two preassembled bays were extended and a third bay was assembled. The complete truss would contain eleven bays; the announcement does not report a finished antenna.",
+      "technical_novelty": "On November 5, Caltech reported an orbital ASTRA experiment, a robotic reflector-antenna assembly demonstration in NOM4D, a program investigating construction technologies for space, funded by the US Defense Advanced Research Projects Agency, DARPA. A manipulator takes tubes and connectors from dispensers, builds a bay on an assembly plate and pushes it outward. The intended antenna diameter is 1.4 meters. In orbit, two preassembled bays were extended and a third bay was assembled. The complete truss would contain eleven bays; the announcement does not report a finished antenna.",
+      "engineering_impact": "The two machines have different jobs. One genuinely joins parts in orbit; the other lets engineers investigate a failure without experimenting on the only working unit in space. Autonomous therefore does not mean that engineers on Earth have disappeared. They do not hold each component by hand, but remain part of recovery after unexpected problems. The unfinished truss reveals both the possibility of construction and the difficulty of its environment.",
+      "limitations": "The antenna is unfinished. A ground team checks photographs and troubleshoots on a flight spare; communications are limited to short windows.",
+      "evidence_status": "Caltech's account of its team's orbital demonstration; an independent assessment of the extent of autonomy is not supplied.",
+      "published_at": "2026-11-05",
+      "organization": "Caltech; DARPA",
+      "source_ids": [
+        "src-astra-caltech"
+      ],
+      "time_window": "72h",
+      "body": "A large object can be folded for launch and unfolded afterward. Another option is to send parts and join them at the destination. That second route is attractive for future antennas too large to fit inside a rocket fairing. Yet repeating a seemingly simple operation becomes difficult when the apparatus is far away and opportunities to communicate with it are brief and separated by long gaps.\n\nOn November 5, Caltech reported an orbital ASTRA experiment, a robotic reflector-antenna assembly demonstration in NOM4D, a program investigating construction technologies for space, funded by the US Defense Advanced Research Projects Agency, DARPA. A manipulator takes tubes and connectors from dispensers, builds a bay on an assembly plate and pushes it outward. The intended antenna diameter is 1.4 meters. In orbit, two preassembled bays were extended and a third bay was assembled. The complete truss would contain eleven bays; the announcement does not report a finished antenna.\n\nThe ground team sent commands and checked the results in downloaded photographs. Communication is available during only seven or eight daily windows of roughly fifteen minutes. Unexpected problems were reproduced on a flight spare in the laboratory before a workaround was transmitted to the orbital machine. The team considers completion of the entire truss unlikely before the mission ends in December. Caltech presents the result as a proof of concept rather than a ready orbital construction service.\n\nThe two machines have different jobs. One genuinely joins parts in orbit; the other lets engineers investigate a failure without experimenting on the only working unit in space. Autonomous therefore does not mean that engineers on Earth have disappeared. They do not hold each component by hand, but remain part of recovery after unexpected problems. The unfinished truss reveals both the possibility of construction and the difficulty of its environment.",
+      "image": null
+    },
+    {
+      "id": "halo",
+      "title": "Why train a robot in a thousand homes that nobody lived in?",
+      "summary": "Apple researchers generate learning motions and images inside virtual homes. After that training, the humanoid completed 91% of 360 evaluated attempts in six physical environments, according to the team.",
+      "details": "Apple researchers introduced HALO in a preprint submitted on November 4. Training episodes are generated in a thousand procedurally constructed homes: the pipeline synthesizes motion, places it in a scene and renders the robot's view. The resulting corpus contains 300 hours of synthetic episodes. During operation, a high-level module splits instructions into subtasks, a middle layer replans whole-body motion at about three updates per second, and a lower controller follows the plan at 50 hertz using depth and information about the robot's own mechanisms.",
+      "technical_novelty": "Apple researchers introduced HALO in a preprint submitted on November 4. Training episodes are generated in a thousand procedurally constructed homes: the pipeline synthesizes motion, places it in a scene and renders the robot's view. The resulting corpus contains 300 hours of synthetic episodes. During operation, a high-level module splits instructions into subtasks, a middle layer replans whole-body motion at about three updates per second, and a lower controller follows the plan at 50 hertz using depth and information about the robot's own mechanisms.",
+      "engineering_impact": "A computer-generated room is not automatically a reliable lesson. Motions are checked and unsuitable candidates filtered, and the physical robot still needs real tests. Vision also has a straightforward boundary: an object can disappear behind a table edge or a hand. The image then supplies no direct evidence that touch continues. Linking several movements does not give this system all the information available through human skin.",
+      "limitations": "New tasks require human-authored descriptions and keyframes. Vision supplies no direct signal for occluded contact; 91% applies to the selected 360 trials.",
+      "evidence_status": "Preprint and author-conducted experiments; independent replication of these results is not established.",
+      "published_at": "2026-11-04",
+      "organization": "Apple",
+      "source_ids": [
+        "src-halo-project",
+        "src-halo"
+      ],
+      "time_window": "7d",
+      "body": "Sitting requires more than recognizing the word chair: the robot must locate the seat, turn and transfer its weight. Synthetic examples are intended to connect an image, an instruction and bodily motion. Virtual homes are not being built just for a viewer's attractive walkthrough. They provide varied distances and furniture arrangements for learning without physically transporting a robot between a thousand different properties and recording every action there.\n\nApple researchers introduced HALO in a preprint submitted on November 4. Training episodes are generated in a thousand procedurally constructed homes: the pipeline synthesizes motion, places it in a scene and renders the robot's view. The resulting corpus contains 300 hours of synthetic episodes. During operation, a high-level module splits instructions into subtasks, a middle layer replans whole-body motion at about three updates per second, and a lower controller follows the plan at 50 hertz using depth and information about the robot's own mechanisms.\n\nThe authors report 91% success across 360 trials in six physical environments that were neither used for training nor scanned beforehand. Demonstrations include sitting, passing sideways through doors, moving beneath tables and pushing boxes. Computation runs onboard. Adding a new task type still requires human-authored descriptions and keyframes, however, and vision provides no direct contact signal when an object becomes hidden.\n\nA computer-generated room is not automatically a reliable lesson. Motions are checked and unsuitable candidates filtered, and the physical robot still needs real tests. Vision also has a straightforward boundary: an object can disappear behind a table edge or a hand. The image then supplies no direct evidence that touch continues. Linking several movements does not give this system all the information available through human skin.",
+      "image": null
+    },
+    {
+      "id": "hitch",
+      "title": "A robot benefits from measuring distance before explaining its next move",
+      "summary": "Tsinghua and partner researchers gave a model separate tools for querying positions and commanding a humanoid's body. Their experiments show why confident reasoning cannot replace a correct measurement of the scene.",
+      "details": "In a November 5 preprint, researchers from Tsinghua University, the Institute of Automation of the Chinese Academy of Sciences and Shanghai Qizhi Institute describe HITCH, a software harness for whole-body humanoid control. A model that processes images and language selects a point in an image and receives its three-dimensional position measured from depth. A separate interface accepts pelvis, torso, hand, walking and gaze commands. A planner turns these requests into coordinated references, and a learned controller follows them.",
+      "technical_novelty": "In a November 5 preprint, researchers from Tsinghua University, the Institute of Automation of the Chinese Academy of Sciences and Shanghai Qizhi Institute describe HITCH, a software harness for whole-body humanoid control. A model that processes images and language selects a point in an image and receives its three-dimensional position measured from depth. A separate interface accepts pelvis, torso, hand, walking and gaze commands. A planner turns these requests into coordinated references, and a learned controller follows them.",
+      "engineering_impact": "One failure is particularly revealing: after training, lengthy reasoning sometimes made performance worse. The model selected a point on the table behind the box, then developed a seemingly logical plan from that incorrect reading. The authors suggest teaching it to notice the mistake and measure again. Correctly linked words do not repair a misplaced point; checking the observation mattered more than the persuasiveness of the subsequent explanation.",
+      "limitations": "The 95% result is simulated; physical G1 evaluation covers two tasks using a remote server and operator judgment. The planner does not support sitting or stepping over obstacles.",
+      "evidence_status": "Preprint and author-conducted experiments; independent replication of these results is not established.",
+      "published_at": "2026-11-05",
+      "organization": "Tsinghua University; Institute of Automation, Chinese Academy of Sciences; Shanghai Qizhi Institute",
+      "source_ids": [
+        "src-hitch"
+      ],
+      "time_window": "72h",
+      "body": "Imagine choosing a box in a photograph, picking it up and carrying it to another table. Naming the object correctly leaves unanswered questions about distance, hand height and room for a step. The researchers turned measurement into an explicit action available to the model. The program can ask where a point is before deciding how to move, rather than deriving every distance from the apparent size of an object.\n\nIn a November 5 preprint, researchers from Tsinghua University, the Institute of Automation of the Chinese Academy of Sciences and Shanghai Qizhi Institute describe HITCH, a software harness for whole-body humanoid control. A model that processes images and language selects a point in an image and receives its three-dimensional position measured from depth. A separate interface accepts pelvis, torso, hand, walking and gaze commands. A planner turns these requests into coordinated references, and a learned controller follows them.\n\nThe model was trained on trajectories from five base tasks. Adding five demonstrations per task brought success on the simulated SIMPLE benchmark to 95%. Physical Unitree G1 tests had different outcomes: 13 successful carrying episodes out of 20 and six successful navigation episodes out of ten. The model ran on a remote server connected over Wi-Fi, with an operator judging the outcomes. Its training data contained no real images.\n\nOne failure is particularly revealing: after training, lengthy reasoning sometimes made performance worse. The model selected a point on the table behind the box, then developed a seemingly logical plan from that incorrect reading. The authors suggest teaching it to notice the mistake and measure again. Correctly linked words do not repair a misplaced point; checking the observation mattered more than the persuasiveness of the subsequent explanation.",
+      "image": null
+    },
+    {
+      "id": "stretch-gen2",
+      "title": "Why a warehouse robot now has fewer wires inside",
+      "summary": "Boston Dynamics updated its Stretch unloading robot and cut internal cabling by 81%. It presents that change as a response to wear and stoppages rather than simply a way to move cartons faster.",
+      "details": "On November 3, Boston Dynamics introduced Stretch Gen 2, a new version of its mobile trailer-unloading robot. The company links the redesign to analysis of more than one hundred thousand operating hours from earlier machines. Updated connectors address vibration, the gripper has revised valves and sensing, and continuously rotating joints avoid earlier mechanical stops. The manufacturer says internal cabling was reduced by 81% to remove sources of wear and intermittent electrical faults.",
+      "technical_novelty": "On November 3, Boston Dynamics introduced Stretch Gen 2, a new version of its mobile trailer-unloading robot. The company links the redesign to analysis of more than one hundred thousand operating hours from earlier machines. Updated connectors address vibration, the gripper has revised valves and sensing, and continuously rotating joints avoid earlier mechanical stops. The manufacturer says internal cabling was reduced by 81% to remove sources of wear and intermittent electrical faults.",
+      "engineering_impact": "The machine's numbers answer different questions. Peak speed concerns possible pace, replacement time concerns returning to work, and charging affects scheduling. They cannot be combined into one overall quality percentage. The manufacturer has identified the changed components; learning how often the redesigned machine actually stops over several months will require comparable operating records from real facilities, rather than a sequence of its fastest picks.",
+      "limitations": "Specifications are manufacturer claims. One thousand cases per hour depends on loads and stacking; the hundred thousand hours concern earlier machines, not the new version's proven lifespan.",
+      "evidence_status": "Official manufacturer release; the new version's specifications are not confirmed by an independent comparative test.",
+      "published_at": "2026-11-03",
+      "organization": "Boston Dynamics",
+      "source_ids": [
+        "src-stretch-gen2"
+      ],
+      "time_window": "7d",
+      "body": "A polished video shows the gripper and the carton while cables remain hidden inside the body. Every turn and vibration affects those cables too. A warehouse robot has to do more than reach the right place once: it repeats the work for hours. Updating an inconspicuous component can therefore matter alongside a successful demonstration of a difficult movement, especially when small faults interrupt an entire unloading sequence.\n\nOn November 3, Boston Dynamics introduced Stretch Gen 2, a new version of its mobile trailer-unloading robot. The company links the redesign to analysis of more than one hundred thousand operating hours from earlier machines. Updated connectors address vibration, the gripper has revised valves and sensing, and continuously rotating joints avoid earlier mechanical stops. The manufacturer says internal cabling was reduced by 81% to remove sources of wear and intermittent electrical faults.\n\nThe company also reports replacing a drive module in about one hour rather than a full day. Advertised throughput reaches one thousand cases per hour but depends on case weight and stacking conditions; peak operation uses multiple-case picks. The battery is described as lasting two shifts, with charging to 90% taking around 75 minutes. These are the manufacturer's specifications and assessments, not an independent comparative warehouse evaluation of the new machine.\n\nThe machine's numbers answer different questions. Peak speed concerns possible pace, replacement time concerns returning to work, and charging affects scheduling. They cannot be combined into one overall quality percentage. The manufacturer has identified the changed components; learning how often the redesigned machine actually stops over several months will require comparable operating records from real facilities, rather than a sequence of its fastest picks.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Some capability lives outside the model",
+    "summary": "Magnetic transmission, depth measurements, virtual homes and a flight spare help in different ways.",
+    "implications": "Understanding a result means tracing the chain from observation to correction and repair."
+  },
+  "sources": [
+    {
+      "id": "src-hitch",
+      "title": "HITCH: Teaching a Vision-Language Model to Operate a Humanoid through a Whole-Body Harness",
+      "url": "https://arxiv.org/abs/2611.08039",
+      "domain": "arxiv.org",
+      "organization": "Tsinghua University; Institute of Automation, Chinese Academy of Sciences; Shanghai Qizhi Institute",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-halo-project",
+      "title": "HALO — Perceptive Humanoid Motion from Simulation",
+      "url": "https://apple-aiml-research.github.io/ml-halo/",
+      "domain": "apple-aiml-research.github.io",
+      "organization": "Apple",
+      "published_at": "2026-11-04"
+    },
+    {
+      "id": "src-halo",
+      "title": "Perceptive Humanoid Motion from Simulation",
+      "url": "https://arxiv.org/abs/2611.06908",
+      "domain": "arxiv.org",
+      "organization": "Apple",
+      "published_at": "2026-11-04"
+    },
+    {
+      "id": "src-insectron",
+      "title": "Insect-inspired hexapod robot with magnetically coupled compliant and modular drive system",
+      "url": "https://www.nature.com/articles/s44182-026-00106-y",
+      "domain": "www.nature.com",
+      "organization": "The BioRobotics Institute, Sant'Anna School of Advanced Studies",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-astra-caltech",
+      "title": "Caltech Robotic Space Demo Successfully Builds in Space",
+      "url": "https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space",
+      "domain": "www.caltech.edu",
+      "organization": "Caltech",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-stretch-gen2",
+      "title": "Boston Dynamics Launches Next Generation Stretch Robot",
+      "url": "https://bostondynamics.com/news/boston-dynamics-launches-next-generation-stretch-robot",
+      "domain": "bostondynamics.com",
+      "organization": "Boston Dynamics",
+      "published_at": "2026-11-03"
+    }
+  ]
+}

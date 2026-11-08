@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-08",
+  "article_id": "hitch",
+  "article_title": {
+    "ru": "HITCH связывает измерения глубины с командами всему телу гуманоида",
+    "en": "HITCH grounds whole-body humanoid commands in measured depth",
+    "ja": "奥行きの測定を全身の操作へつなぐHITCH"
+  },
+  "article_urls": {
+    "ru": "https://repravda.com/ru/issues/2026-11-08/articles/hitch/",
+    "en": "https://repravda.com/en/issues/2026-11-08/articles/hitch/",
+    "ja": "https://repravda.com/ja/issues/2026-11-08/articles/hitch/"
+  },
+  "edition": "engineer",
+  "image_path": "data/images/2026-11-08/hitch.webp",
+  "caption": {
+    "ru": "Опытный инженер фиксирует результат испытания переноса коробки гуманоидом. Редакционная иллюстрация к HITCH: робот и способ поддержки груза показаны условно, без реконструкции реальной установки. На стене — чёрно-белая адаптация плаката Г. Ф. Камрадзиуса «Качество — точность, надежность, прогресс» (1977).",
+    "en": "An experienced male engineer records the outcome of a humanoid box-carrying trial. Editorial illustration for HITCH: the robot and load-support geometry are conceptual, not a reconstruction of the actual setup. The wall carries a monochrome adaptation of G. F. Kamradziuss's 1977 poster about quality, precision, reliability and progress.",
+    "ja": "人型ロボットの箱運び試験を記録する熟練の男性技術者。HITCHを題材にした編集イラスト。機体と荷物の支持方法は概念的な表現で、実際の装置の再現ではない。 壁にはG・F・カムラジウスの1977年の品質、精度、信頼性、進歩を題材にしたポスターを白黒で翻案して掲示。"
+  },
+  "alt": {
+    "ru": "Чёрно-белая гравюра: гуманоид устойчиво стоит на двух ногах и поддерживает коробку двумя обращёнными вверх ладонями под её нижними краями. Слева мужчина-инженер около шестидесяти лет смотрит на груз и записывает наблюдения на планшете; справа расположен свободный стол. Над столом висит плакат с микрометром и надписью «Качество — точность, надежность, прогресс». Стены, окно и страховочный портал в заднем углу обозначают лабораторию; плакат закреплён на правой стене и показан в её перспективе. Портал установлен вдоль стены на двух параллельных Т-образных основаниях; с каретки на короткой цепи свисает свободный крюк. На окне горизонтальные жалюзи.",
+    "en": "Black-and-white engraving: a humanoid stands firmly on both feet and supports a box with two upward-facing palms beneath its lower edges. On the left, a male engineer around sixty watches the load and records observations on a clipboard; an empty table stands on the right. Above the table is a poster showing a micrometer and a Russian slogan about quality, precision, reliability and progress. Walls, a window and a safety gantry in the rear corner establish the laboratory; the poster is fixed to the right wall in matching perspective. The gantry stands along the wall on two parallel T-shaped bases; an unloaded hook hangs from its trolley on a short chain. Horizontal blinds cover the window.",
+    "ja": "白黒の版画。人型ロボットが両足で立ち、上向きの両手を箱の下端に当てて支える。左の六十歳前後の男性技術者は荷物を見ながら用紙に観察を記録し、右側に空の机がある。 机の上方の壁には、マイクロメーターと品質・精度・信頼性・進歩についてのロシア語の標語を描いたポスターがある。 壁、窓、奥の隅に置いた安全用の門型フレームで研究室を示し、右の壁のポスターは壁面の遠近に沿って取り付けられている。 門型フレームは壁に沿って平行な二本のT字型の脚で立ち、台車から短い鎖と荷物をつっていないフックが下がる。窓には横型ブラインドがある。"
+  },
+  "visual_thesis": "Измерение сцены и согласованное управление телом должны приводить к физически проверяемому переносу предмета, а не только к правдоподобной команде.",
+  "visual_brief": "Одна условная лабораторная сцена по статье HITCH: инженер около шестидесяти лет записывает наблюдения, гуманоид устойчиво стоит на полу и поддерживает коробку двумя ладонями снизу. Конструкция робота и хват — редакционное обобщение, не реконструкция G1. Стены и пол задают перспективу; на окне горизонтальные жалюзи. Неиспользуемый портал установлен вдоль стены на одинаковых параллельных Т-образных опорах; к каретке на балке короткой цепью присоединён обычный свободный крюк, не связанный с роботом. Прямоугольный стол справа имеет плоскую столешницу постоянной толщины и вертикальные ножки. На стене в перспективе закреплена монохромная адаптация реального плаката Г. Ф. Камрадзиуса «Качество — точность, надежность, прогресс» (1977), с целым изображением микрометра; мелкий издательский текст и угловой знак опущены. Портал, жалюзи и интерьер являются художественными деталями лаборатории, а не фактами о составе установки HITCH. Иллюстрация не превращает 95% симуляционного результата в показатель реальных опытов: JSON отдельно сообщает 13 успешных переносов из 20. Чёрная тушь на белом, ясные контакты и опоры, умеренная штриховка.",
+  "source_ids": [
+    "src-hitch"
+  ],
+  "illustration_type": "editorial_concept",
+  "style": "black-and-white-scientific-engraving",
+  "width": 1600,
+  "height": 900,
+  "poster": {
+    "title": "Качество - точность, надежность, прогресс.",
+    "artist": "Камрадзиус Гунарс Фридрихович",
+    "year": 1977,
+    "source_url": "https://russianposter.ru/poster.php?rid=800101286000000",
+    "treatment": "monochrome editorial adaptation; minor print and corner mark omitted"
+  }
+}

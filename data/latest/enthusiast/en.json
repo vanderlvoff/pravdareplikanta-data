@@ -2,186 +2,159 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-07",
-  "issue_id": "daily-2026-11-07",
+  "issue_date": "2026-11-08",
+  "issue_id": "daily-2026-11-08",
   "edition": "enthusiast",
   "language": "en",
-  "generated_at": "2026-11-06T20:54:13.858715Z",
-  "title": "Replicant Data — November 7, 2026: Enthusiast",
-  "lead": "Why explanations help correct robots, how virtual touch works and why a confident 'finished' needs checking. Five views of the connection between software and the physical world.",
+  "generated_at": "2026-11-07T20:46:23.293353Z",
+  "title": "Replicant Data — November 8, 2026: Enthusiast",
+  "lead": "Magnetic transmission, depth measurements, virtual homes and a flight spare help in different ways.",
   "news": [
     {
-      "id": "social-humanoid",
-      "title": "Predicting the next gesture does not mean reading a person's mind",
-      "summary": "A team from Berkeley, Sony and Meta demonstrated a humanoid that adjusts its movement to a human partner. Social Humanoid uses a shared motion vocabulary, while understanding feelings and controlling physical contact remain separate questions.",
-      "details": "The researchers represent human and robot motion using common short elements, rather like a movement vocabulary. One component selects a sequence and anticipates the person's continuation; another controls the robot's body. Five collections of recorded human motion are transformed into 260 hours of paired human–humanoid data. Both partners' poses need adjustment because human and robot proportions and reachable distances differ.",
-      "technical_novelty": "The researchers represent human and robot motion using common short elements, rather like a movement vocabulary. One component selects a sequence and anticipates the person's continuation; another controls the robot's body. Five collections of recorded human motion are transformed into 260 hours of paired human–humanoid data. Both partners' poses need adjustment because human and robot proportions and reachable distances differ.",
-      "engineering_impact": "An important detail sits behind the demonstration: a separate operator enables motion and can stop it. The controller does not actively regulate contact force. A gesture that looks natural and a touch that feels gentle are therefore different engineering achievements. Assessing the second requires studying what happens at the point of contact, not just how closely the robot follows a pose.",
-      "limitations": "Motion coordination does not measure emotional understanding or touch comfort; contact forces are not actively regulated.",
-      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
+      "id": "insectron",
+      "title": "A robot's leg can yield to an impact through magnetic coupling",
+      "summary": "Researchers in Pisa built a small six-legged robot with magnetic connections in its drivetrain. Those connections slip under excessive load, helping the mechanism tolerate disturbances without a separate computer decision for each impact.",
+      "details": "Donato Romano and Gianluca Manduca of the BioRobotics Institute at Sant'Anna School in Pisa described INSECTRON in npj Robotics on November 5. The centimeter-scale six-legged robot uses magnetic transmission. Neodymium magnets connect each leg to its drivetrain, transmitting torque under ordinary loads while allowing slip under overload. Additional magnetic couplings between modules accommodate unequal loads. This protective response arises in the mechanism without a separate computed decision for every impact.",
+      "technical_novelty": "Donato Romano and Gianluca Manduca of the BioRobotics Institute at Sant'Anna School in Pisa described INSECTRON in npj Robotics on November 5. The centimeter-scale six-legged robot uses magnetic transmission. Neodymium magnets connect each leg to its drivetrain, transmitting torque under ordinary loads while allowing slip under overload. Additional magnetic couplings between modules accommodate unequal loads. This protective response arises in the mechanism without a separate computed decision for every impact.",
+      "engineering_impact": "Two meanings of response need separating here. A quick mechanical adjustment does not mean the robot recognized the impact or understood its cause. Sensors and software still coordinate its legs, while protection also emerges from the transmission itself. Magnets have not replaced the entire computer; the design distributes responsibilities between calculations and what follows directly from the structure and properties of a connection.",
+      "limitations": "Recovery above 90% applies to the reported vertical disturbances on a small platform, not every impact or a different machine scale.",
+      "evidence_status": "Peer-reviewed npj Robotics paper with author-conducted experiments; separate independent replication is not established.",
       "published_at": "2026-11-05",
-      "organization": "UC Berkeley; Sony Group Corporation; Meta",
+      "organization": "The BioRobotics Institute, Sant'Anna School of Advanced Studies",
       "source_ids": [
-        "src-social-humanoid",
-        "src-social-humanoid-project"
+        "src-insectron"
       ],
       "time_window": "72h",
-      "body": "Try giving someone a high-five. Both people subtly adjust their arms as their hands approach, rather than replaying an identical greeting every time. A robot needs more than a recording of an arm going up to do the same. Social Humanoid, a November 5 preprint from UC Berkeley, Sony and Meta researchers, studies this coordination problem on a Unitree G1. A camera observes the partner while the system generates the robot's response.\n\nThe researchers represent human and robot motion using common short elements, rather like a movement vocabulary. One component selects a sequence and anticipates the person's continuation; another controls the robot's body. Five collections of recorded human motion are transformed into 260 hours of paired human–humanoid data. Both partners' poses need adjustment because human and robot proportions and reachable distances differ.\n\nThe authors demonstrate greetings and other interactions in simulation and on a physical G1 with 29 independently controlled movement directions. Median delay from a camera frame to a robot command is 308 milliseconds in the reported pipeline. Neither the latency nor the coordinated appearance establishes emotional understanding. The 260 hours describe the prepared dataset, not the duration of real meetings between people and a robot.\n\nAn important detail sits behind the demonstration: a separate operator enables motion and can stop it. The controller does not actively regulate contact force. A gesture that looks natural and a touch that feels gentle are therefore different engineering achievements. Assessing the second requires studying what happens at the point of contact, not just how closely the robot follows a pose.",
+      "body": "Imagine a transmission that holds firmly below a particular load and then allows its parts to shift. That is the central idea of this robot. Yielding is an intended property rather than a manufacturing error. It differs from software deciding to retreat: the connection gives way mechanically while the rest of the system continues to coordinate the rhythm of walking and the movement of the remaining legs.\n\nDonato Romano and Gianluca Manduca of the BioRobotics Institute at Sant'Anna School in Pisa described INSECTRON in npj Robotics on November 5. The centimeter-scale six-legged robot uses magnetic transmission. Neodymium magnets connect each leg to its drivetrain, transmitting torque under ordinary loads while allowing slip under overload. Additional magnetic couplings between modules accommodate unequal loads. This protective response arises in the mechanism without a separate computed decision for every impact.\n\nHall-effect sensors, which detect magnetic fields, provide drivetrain feedback to a controller coordinating alternating leg motion. The authors tested locomotion on different surfaces and slopes, differential turning and spinning in place. Following vertical disturbances, the robot recovered autonomously in more than 90% of trials. Legs can be replaced without tools. The paper is peer reviewed, but the recovery percentage applies to the reported disturbances rather than every possible accident.\n\nTwo meanings of response need separating here. A quick mechanical adjustment does not mean the robot recognized the impact or understood its cause. Sensors and software still coordinate its legs, while protection also emerges from the transmission itself. Magnets have not replaced the entire computer; the design distributes responsibilities between calculations and what follows directly from the structure and properties of a connection.",
       "image": null
     },
     {
-      "id": "oopsie-recover",
-      "title": "Why a robot benefits from knowing the reason for a correction",
-      "summary": "University of Texas at Austin and Toyota Research Institute researchers combined a corrected robot movement with a human explanation. OopsieRecover reuses the resulting correction in new scenes without retraining the original model.",
-      "details": "A person temporarily corrects the robot and adds an explanation. The system connects the description to relevant object parts and creates a condition that activates at the right moment. The original vision-language-action model, which turns observations and instructions into movement, keeps proposing actions. An added layer chooses more suitable candidates instead of changing the original model's weights.",
-      "technical_novelty": "A person temporarily corrects the robot and adds an explanation. The system connects the description to relevant object parts and creates a condition that activates at the right moment. The original vision-language-action model, which turns observations and instructions into movement, keeps proposing actions. An added layer chooses more suitable candidates instead of changing the original model's weights.",
-      "engineering_impact": "The correction is not a universal piece of common sense. The system still has to identify the object and track its relevant points, while hidden friction and contact forces are not explicitly represented. It also chooses from movements proposed by the original model. A good instruction cannot rescue the attempt if none of those candidates contains an effective recovery.",
-      "limitations": "Corrections represent spatial conditions, depend on perception and select among base-model candidates; they do not explicitly model contact forces.",
-      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
+      "id": "astra-orbital",
+      "title": "A robot starts building an antenna in space while its twin helps on Earth",
+      "summary": "Caltech reported assembly of a new antenna-truss section in orbit. The planned complete antenna remains unfinished, and problems are investigated using a second physical machine in the laboratory.",
+      "details": "On November 5, Caltech reported an orbital ASTRA experiment, a robotic reflector-antenna assembly demonstration in NOM4D, a program investigating construction technologies for space, funded by the US Defense Advanced Research Projects Agency, DARPA. A manipulator takes tubes and connectors from dispensers, builds a bay on an assembly plate and pushes it outward. The intended antenna diameter is 1.4 meters. In orbit, two preassembled bays were extended and a third bay was assembled. The complete truss would contain eleven bays; the announcement does not report a finished antenna.",
+      "technical_novelty": "On November 5, Caltech reported an orbital ASTRA experiment, a robotic reflector-antenna assembly demonstration in NOM4D, a program investigating construction technologies for space, funded by the US Defense Advanced Research Projects Agency, DARPA. A manipulator takes tubes and connectors from dispensers, builds a bay on an assembly plate and pushes it outward. The intended antenna diameter is 1.4 meters. In orbit, two preassembled bays were extended and a third bay was assembled. The complete truss would contain eleven bays; the announcement does not report a finished antenna.",
+      "engineering_impact": "The two machines have different jobs. One genuinely joins parts in orbit; the other lets engineers investigate a failure without experimenting on the only working unit in space. Autonomous therefore does not mean that engineers on Earth have disappeared. They do not hold each component by hand, but remain part of recovery after unexpected problems. The unfinished truss reveals both the possibility of construction and the difficulty of its environment.",
+      "limitations": "The antenna is unfinished. A ground team checks photographs and troubleshoots on a flight spare; communications are limited to short windows.",
+      "evidence_status": "Caltech's account of its team's orbital demonstration; an independent assessment of the extent of autonomy is not supplied.",
       "published_at": "2026-11-05",
-      "organization": "University of Texas at Austin; Toyota Research Institute",
+      "organization": "Caltech; DARPA",
       "source_ids": [
-        "src-oopsie",
-        "src-oopsie-project"
+        "src-astra-caltech"
       ],
       "time_window": "72h",
-      "body": "When correcting a learner, showing the movement is often less useful than explaining why it matters. Keeping a mug upright and avoiding a nearby glass are different instructions, even if both briefly move a hand sideways. Researchers at the University of Texas at Austin and Toyota Research Institute explore a similar idea for robots. Their OopsieRecover preprint, submitted on November 5, focuses on the meaning behind individual human interventions.\n\nA person temporarily corrects the robot and adds an explanation. The system connects the description to relevant object parts and creates a condition that activates at the right moment. The original vision-language-action model, which turns observations and instructions into movement, keeps proposing actions. An added layer chooses more suitable candidates instead of changing the original model's weights.\n\nThe experiments include three simulated tasks and three physical tasks, along with changed object positions and scenes. On real hardware, completed-stage progress increases from 35.1% to 61.0%. Imagine a job with several steps: getting further is useful, but it is not the same as reaching the final step. That is why the figure must not be read as the proportion of entirely successful attempts. The results are reported by the authors.\n\nThe correction is not a universal piece of common sense. The system still has to identify the object and track its relevant points, while hidden friction and contact forces are not explicitly represented. It also chooses from movements proposed by the original model. A good instruction cannot rescue the attempt if none of those candidates contains an effective recovery.",
+      "body": "A large object can be folded for launch and unfolded afterward. Another option is to send parts and join them at the destination. That second route is attractive for future antennas too large to fit inside a rocket fairing. Yet repeating a seemingly simple operation becomes difficult when the apparatus is far away and opportunities to communicate with it are brief and separated by long gaps.\n\nOn November 5, Caltech reported an orbital ASTRA experiment, a robotic reflector-antenna assembly demonstration in NOM4D, a program investigating construction technologies for space, funded by the US Defense Advanced Research Projects Agency, DARPA. A manipulator takes tubes and connectors from dispensers, builds a bay on an assembly plate and pushes it outward. The intended antenna diameter is 1.4 meters. In orbit, two preassembled bays were extended and a third bay was assembled. The complete truss would contain eleven bays; the announcement does not report a finished antenna.\n\nThe ground team sent commands and checked the results in downloaded photographs. Communication is available during only seven or eight daily windows of roughly fifteen minutes. Unexpected problems were reproduced on a flight spare in the laboratory before a workaround was transmitted to the orbital machine. The team considers completion of the entire truss unlikely before the mission ends in December. Caltech presents the result as a proof of concept rather than a ready orbital construction service.\n\nThe two machines have different jobs. One genuinely joins parts in orbit; the other lets engineers investigate a failure without experimenting on the only working unit in space. Autonomous therefore does not mean that engineers on Earth have disappeared. They do not hold each component by hand, but remain part of recovery after unexpected problems. The unfinished truss reveals both the possibility of construction and the difficulty of its environment.",
       "image": null
     },
     {
-      "id": "tactilelab",
-      "title": "Teaching virtual robot fingers about movement along an object's surface",
-      "summary": "TactileLab offers tactile robot training without computing every deformation of a soft sensor. University of Bristol researchers and collaborators demonstrate transferring this approach to physical robotic devices.",
-      "details": "Calculating exactly how a soft sensing surface deforms is expensive. The authors instead use simpler rigid-body physics to estimate movement along the contact, complementing information about pressing depth. They build on Isaac Lab, an environment in which robots can train in a simulated world. Reinforcement learning rewards useful actions so that repeated experience changes which movements the machine chooses.",
-      "technical_novelty": "Calculating exactly how a soft sensing surface deforms is expensive. The authors instead use simpler rigid-body physics to estimate movement along the contact, complementing information about pressing depth. They build on Isaac Lab, an environment in which robots can train in a simulated world. Reinforcement learning rewards useful actions so that repeated experience changes which movements the machine chooses.",
-      "engineering_impact": "The most interesting boundary lies between deformation and slipping. The translation assumes that the sensor surface is still sticking to the object. A sudden disturbance can start sliding and break that assumption. Virtual touch is therefore best understood as a carefully selected approximation: it preserves particular properties of contact while leaving other properties to a separate detection and control problem.",
-      "limitations": "Translation of physical observations assumes sticking contact; abrupt disturbances can violate that assumption.",
-      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
-      "published_at": "2026-11-05",
-      "organization": "University of Bristol and collaborators",
+      "id": "halo",
+      "title": "Why train a robot in a thousand homes that nobody lived in?",
+      "summary": "Apple researchers generate learning motions and images inside virtual homes. After that training, the humanoid completed 91% of 360 evaluated attempts in six physical environments, according to the team.",
+      "details": "Apple researchers introduced HALO in a preprint submitted on November 4. Training episodes are generated in a thousand procedurally constructed homes: the pipeline synthesizes motion, places it in a scene and renders the robot's view. The resulting corpus contains 300 hours of synthetic episodes. During operation, a high-level module splits instructions into subtasks, a middle layer replans whole-body motion at about three updates per second, and a lower controller follows the plan at 50 hertz using depth and information about the robot's own mechanisms.",
+      "technical_novelty": "Apple researchers introduced HALO in a preprint submitted on November 4. Training episodes are generated in a thousand procedurally constructed homes: the pipeline synthesizes motion, places it in a scene and renders the robot's view. The resulting corpus contains 300 hours of synthetic episodes. During operation, a high-level module splits instructions into subtasks, a middle layer replans whole-body motion at about three updates per second, and a lower controller follows the plan at 50 hertz using depth and information about the robot's own mechanisms.",
+      "engineering_impact": "A computer-generated room is not automatically a reliable lesson. Motions are checked and unsuitable candidates filtered, and the physical robot still needs real tests. Vision also has a straightforward boundary: an object can disappear behind a table edge or a hand. The image then supplies no direct evidence that touch continues. Linking several movements does not give this system all the information available through human skin.",
+      "limitations": "New tasks require human-authored descriptions and keyframes. Vision supplies no direct signal for occluded contact; 91% applies to the selected 360 trials.",
+      "evidence_status": "Preprint and author-conducted experiments; independent replication of these results is not established.",
+      "published_at": "2026-11-04",
+      "organization": "Apple",
       "source_ids": [
-        "src-tactilelab",
-        "src-tactilelab-project"
-      ],
-      "time_window": "72h",
-      "body": "Press a finger onto a table, then gently move it sideways. The depth of the press may barely change, although the contact feels different. A robot can use such information when holding or rotating an object. TactileLab, a study involving University of Bristol researchers and submitted on November 5, attempts to include it in virtual training. It concerns useful contact measurements, rather than giving a machine human sensations.\n\nCalculating exactly how a soft sensing surface deforms is expensive. The authors instead use simpler rigid-body physics to estimate movement along the contact, complementing information about pressing depth. They build on Isaac Lab, an environment in which robots can train in a simulated world. Reinforcement learning rewards useful actions so that repeated experience changes which movements the machine chooses.\n\nTo deploy the learned behavior, another model translates real sensor images into the shared representation used during training. The researchers demonstrate several sensor designs, two-arm manipulation and movement within a robotic hand. This does not promise identical behavior from every gripper. If the sensor images barely reveal tangential deformation, the translation model lacks the information needed to reconstruct it accurately.\n\nThe most interesting boundary lies between deformation and slipping. The translation assumes that the sensor surface is still sticking to the object. A sudden disturbance can start sliding and break that assumption. Virtual touch is therefore best understood as a carefully selected approximation: it preserves particular properties of contact while leaving other properties to a separate detection and control problem.",
-      "image": null
-    },
-    {
-      "id": "ugo-canon-manufacturing",
-      "title": "Why a factory announcement is also a robotics story",
-      "summary": "Japan's ugo has commissioned Canon Electronics to make its ugo mini G2 inspection robot. Production began in October in Saitama, while the November 2 announcement describes preparations for provision from November 24.",
-      "details": "The manufacturing partner makes the equipment on the developer's behalf, an arrangement known as contract manufacturing. ugo expects to use its partner's experience in precision devices, quality control and component purchasing. The underlying problem does not require a new algorithm: several customers can request several robots simultaneously, and a small assembly operation can become the bottleneck even when the control software works.",
-      "technical_novelty": "The manufacturing partner makes the equipment on the developer's behalf, an arrangement known as contract manufacturing. ugo expects to use its partner's experience in precision devices, quality control and component purchasing. The underlying problem does not require a new algorithm: several customers can request several robots simultaneously, and a small assembly operation can become the bottleneck even when the control software works.",
-      "engineering_impact": "Scaling has an unglamorous side: consistent components, repeatable assembly and maintenance. A faulty part can undermine a good controller just as an unsuitable algorithm can. The manufacturing location and start date are known. Actual delivery numbers and long-term operation at customer facilities will be needed to show what the expanded production arrangement achieves.",
-      "limitations": "Annual production capacity and independent inspection-accuracy results are not disclosed; the hundred-unit shipment figure belongs to the earlier model.",
-      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
-      "published_at": "2026-11-02",
-      "organization": "ugo; Canon Electronics",
-      "source_ids": [
-        "src-ugo-canon"
+        "src-halo-project",
+        "src-halo"
       ],
       "time_window": "7d",
-      "body": "A robot can look convincing at an exhibition yet face a different challenge when several buildings need identical machines. Japanese inspection-robot developer ugo described its manufacturing partnership with Canon Electronics on November 2. Assembly of the new ugo mini G2 began in October at the Misato site in Saitama Prefecture. Customer provision is planned from November 24, so the release is not a report of completed deliveries of a new fleet.\n\nThe manufacturing partner makes the equipment on the developer's behalf, an arrangement known as contract manufacturing. ugo expects to use its partner's experience in precision devices, quality control and component purchasing. The underlying problem does not require a new algorithm: several customers can request several robots simultaneously, and a small assembly operation can become the bottleneck even when the control software works.\n\nAccording to ugo, cumulative shipments of the previous G1 model, introduced in 2025, exceeded one hundred units. Those machines cannot be counted as shipments of the new G2. The announcement also supplies neither an independent inspection-quality comparison nor the new factory's annual capacity. It describes a route toward more consistent supply rather than demonstrated superiority of the robot's artificial intelligence.\n\nScaling has an unglamorous side: consistent components, repeatable assembly and maintenance. A faulty part can undermine a good controller just as an unsuitable algorithm can. The manufacturing location and start date are known. Actual delivery numbers and long-term operation at customer facilities will be needed to show what the expanded production arrangement achieves.",
+      "body": "Sitting requires more than recognizing the word chair: the robot must locate the seat, turn and transfer its weight. Synthetic examples are intended to connect an image, an instruction and bodily motion. Virtual homes are not being built just for a viewer's attractive walkthrough. They provide varied distances and furniture arrangements for learning without physically transporting a robot between a thousand different properties and recording every action there.\n\nApple researchers introduced HALO in a preprint submitted on November 4. Training episodes are generated in a thousand procedurally constructed homes: the pipeline synthesizes motion, places it in a scene and renders the robot's view. The resulting corpus contains 300 hours of synthetic episodes. During operation, a high-level module splits instructions into subtasks, a middle layer replans whole-body motion at about three updates per second, and a lower controller follows the plan at 50 hertz using depth and information about the robot's own mechanisms.\n\nThe authors report 91% success across 360 trials in six physical environments that were neither used for training nor scanned beforehand. Demonstrations include sitting, passing sideways through doors, moving beneath tables and pushing boxes. Computation runs onboard. Adding a new task type still requires human-authored descriptions and keyframes, however, and vision provides no direct contact signal when an object becomes hidden.\n\nA computer-generated room is not automatically a reliable lesson. Motions are checked and unsuitable candidates filtered, and the physical robot still needs real tests. Vision also has a straightforward boundary: an object can disappear behind a table edge or a hand. The image then supplies no direct evidence that touch continues. Linking several movements does not give this system all the information available through human skin.",
       "image": null
     },
     {
-      "id": "roboarcade",
-      "title": "Testing a robot that says 'finished' too soon",
-      "summary": "Stanford researchers created RoboARCade, 22 simulated tasks for agents controlling robots. The suite exposes unsuitable action strategies, imprecise movement and claims of success when the requested result has not been reached.",
-      "details": "The suite assembles 22 tasks involving extended sequences, memory and precise object handling. They share MuJoCo, software that calculates mechanical movement and contact. An agent can receive multiple camera images with depth information or use an interactive three-dimensional workspace. This allows comparison of both the models and the tools through which they observe the world and request movement.",
-      "technical_novelty": "The suite assembles 22 tasks involving extended sequences, memory and precise object handling. They share MuJoCo, software that calculates mechanical movement and contact. An agent can receive multiple camera images with depth information or use an interactive three-dimensional workspace. This allows comparison of both the models and the tools through which they observe the world and request movement.",
-      "engineering_impact": "The authors more often find a poor manipulation strategy or imprecise execution than a failure to understand the image. Describing a scene well is therefore different from moving an object accurately. The grading arrangement matters too: agents cannot inspect hidden scoring conditions, and their descriptions do not replace outcome checks. After the agent says 'finished', the researchers still examine what happened to the object.",
-      "limitations": "Results concern simulated tasks and selected agents; independent state checks matter because an agent's completion report can be wrong.",
-      "evidence_status": "Results are reported by the authors or company in the cited primary source; independent replication is not established.",
+      "id": "hitch",
+      "title": "A robot benefits from measuring distance before explaining its next move",
+      "summary": "Tsinghua and partner researchers gave a model separate tools for querying positions and commanding a humanoid's body. Their experiments show why confident reasoning cannot replace a correct measurement of the scene.",
+      "details": "In a November 5 preprint, researchers from Tsinghua University, the Institute of Automation of the Chinese Academy of Sciences and Shanghai Qizhi Institute describe HITCH, a software harness for whole-body humanoid control. A model that processes images and language selects a point in an image and receives its three-dimensional position measured from depth. A separate interface accepts pelvis, torso, hand, walking and gaze commands. A planner turns these requests into coordinated references, and a learned controller follows them.",
+      "technical_novelty": "In a November 5 preprint, researchers from Tsinghua University, the Institute of Automation of the Chinese Academy of Sciences and Shanghai Qizhi Institute describe HITCH, a software harness for whole-body humanoid control. A model that processes images and language selects a point in an image and receives its three-dimensional position measured from depth. A separate interface accepts pelvis, torso, hand, walking and gaze commands. A planner turns these requests into coordinated references, and a learned controller follows them.",
+      "engineering_impact": "One failure is particularly revealing: after training, lengthy reasoning sometimes made performance worse. The model selected a point on the table behind the box, then developed a seemingly logical plan from that incorrect reading. The authors suggest teaching it to notice the mistake and measure again. Correctly linked words do not repair a misplaced point; checking the observation mattered more than the persuasiveness of the subsequent explanation.",
+      "limitations": "The 95% result is simulated; physical G1 evaluation covers two tasks using a remote server and operator judgment. The planner does not support sitting or stepping over obstacles.",
+      "evidence_status": "Preprint and author-conducted experiments; independent replication of these results is not established.",
       "published_at": "2026-11-05",
-      "organization": "Stanford University",
+      "organization": "Tsinghua University; Institute of Automation, Chinese Academy of Sciences; Shanghai Qizhi Institute",
       "source_ids": [
-        "src-roboarcade",
-        "src-roboarcade-project"
+        "src-hitch"
       ],
       "time_window": "72h",
-      "body": "A virtual robot moves an object and announces that it is finished. Did the object actually reach the requested location? In RoboARCade, an external evaluator answers that question using the simulated world's state. Stanford researchers submitted the benchmark preprint on November 5. They study software agents choosing successive robot movements from observations, rather than simply launching an already prepared robot skill.\n\nThe suite assembles 22 tasks involving extended sequences, memory and precise object handling. They share MuJoCo, software that calculates mechanical movement and contact. An agent can receive multiple camera images with depth information or use an interactive three-dimensional workspace. This allows comparison of both the models and the tools through which they observe the world and request movement.\n\nIn the main comparison, GPT-6 Astra scores 49.8% and Claude Fable 5.1 scores 43.6%. A richer visual interface improves results by 1.5–6.8 percentage points while costing 1.7–2.3 times as much. Another finding is especially revealing: incorrect success claims occur on 24–39% of attempted subtasks. These values describe the particular experiments rather than every simulated or physical robot.\n\nThe authors more often find a poor manipulation strategy or imprecise execution than a failure to understand the image. Describing a scene well is therefore different from moving an object accurately. The grading arrangement matters too: agents cannot inspect hidden scoring conditions, and their descriptions do not replace outcome checks. After the agent says 'finished', the researchers still examine what happened to the object.",
+      "body": "Imagine choosing a box in a photograph, picking it up and carrying it to another table. Naming the object correctly leaves unanswered questions about distance, hand height and room for a step. The researchers turned measurement into an explicit action available to the model. The program can ask where a point is before deciding how to move, rather than deriving every distance from the apparent size of an object.\n\nIn a November 5 preprint, researchers from Tsinghua University, the Institute of Automation of the Chinese Academy of Sciences and Shanghai Qizhi Institute describe HITCH, a software harness for whole-body humanoid control. A model that processes images and language selects a point in an image and receives its three-dimensional position measured from depth. A separate interface accepts pelvis, torso, hand, walking and gaze commands. A planner turns these requests into coordinated references, and a learned controller follows them.\n\nThe model was trained on trajectories from five base tasks. Adding five demonstrations per task brought success on the simulated SIMPLE benchmark to 95%. Physical Unitree G1 tests had different outcomes: 13 successful carrying episodes out of 20 and six successful navigation episodes out of ten. The model ran on a remote server connected over Wi-Fi, with an operator judging the outcomes. Its training data contained no real images.\n\nOne failure is particularly revealing: after training, lengthy reasoning sometimes made performance worse. The model selected a point on the table behind the box, then developed a seemingly logical plan from that incorrect reading. The authors suggest teaching it to notice the mistake and measure again. Correctly linked words do not repair a misplaced point; checking the observation mattered more than the persuasiveness of the subsequent explanation.",
+      "image": null
+    },
+    {
+      "id": "stretch-gen2",
+      "title": "Why a warehouse robot now has fewer wires inside",
+      "summary": "Boston Dynamics updated its Stretch unloading robot and cut internal cabling by 81%. It presents that change as a response to wear and stoppages rather than simply a way to move cartons faster.",
+      "details": "On November 3, Boston Dynamics introduced Stretch Gen 2, a new version of its mobile trailer-unloading robot. The company links the redesign to analysis of more than one hundred thousand operating hours from earlier machines. Updated connectors address vibration, the gripper has revised valves and sensing, and continuously rotating joints avoid earlier mechanical stops. The manufacturer says internal cabling was reduced by 81% to remove sources of wear and intermittent electrical faults.",
+      "technical_novelty": "On November 3, Boston Dynamics introduced Stretch Gen 2, a new version of its mobile trailer-unloading robot. The company links the redesign to analysis of more than one hundred thousand operating hours from earlier machines. Updated connectors address vibration, the gripper has revised valves and sensing, and continuously rotating joints avoid earlier mechanical stops. The manufacturer says internal cabling was reduced by 81% to remove sources of wear and intermittent electrical faults.",
+      "engineering_impact": "The machine's numbers answer different questions. Peak speed concerns possible pace, replacement time concerns returning to work, and charging affects scheduling. They cannot be combined into one overall quality percentage. The manufacturer has identified the changed components; learning how often the redesigned machine actually stops over several months will require comparable operating records from real facilities, rather than a sequence of its fastest picks.",
+      "limitations": "Specifications are manufacturer claims. One thousand cases per hour depends on loads and stacking; the hundred thousand hours concern earlier machines, not the new version's proven lifespan.",
+      "evidence_status": "Official manufacturer release; the new version's specifications are not confirmed by an independent comparative test.",
+      "published_at": "2026-11-03",
+      "organization": "Boston Dynamics",
+      "source_ids": [
+        "src-stretch-gen2"
+      ],
+      "time_window": "7d",
+      "body": "A polished video shows the gripper and the carton while cables remain hidden inside the body. Every turn and vibration affects those cables too. A warehouse robot has to do more than reach the right place once: it repeats the work for hours. Updating an inconspicuous component can therefore matter alongside a successful demonstration of a difficult movement, especially when small faults interrupt an entire unloading sequence.\n\nOn November 3, Boston Dynamics introduced Stretch Gen 2, a new version of its mobile trailer-unloading robot. The company links the redesign to analysis of more than one hundred thousand operating hours from earlier machines. Updated connectors address vibration, the gripper has revised valves and sensing, and continuously rotating joints avoid earlier mechanical stops. The manufacturer says internal cabling was reduced by 81% to remove sources of wear and intermittent electrical faults.\n\nThe company also reports replacing a drive module in about one hour rather than a full day. Advertised throughput reaches one thousand cases per hour but depends on case weight and stacking conditions; peak operation uses multiple-case picks. The battery is described as lasting two shifts, with charging to 90% taking around 75 minutes. These are the manufacturer's specifications and assessments, not an independent comparative warehouse evaluation of the new machine.\n\nThe machine's numbers answer different questions. Peak speed concerns possible pace, replacement time concerns returning to work, and charging affects scheduling. They cannot be combined into one overall quality percentage. The manufacturer has identified the changed components; learning how often the redesigned machine actually stops over several months will require comparable operating records from real facilities, rather than a sequence of its fastest picks.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "The gap between a good description and a good action",
-    "summary": "Robots need contact information, corrections and external outcome checks alongside recognition and commands.",
-    "implications": "A demonstration is more informative when its measurements and preserved assumptions are clear."
+    "title": "Some capability lives outside the model",
+    "summary": "Magnetic transmission, depth measurements, virtual homes and a flight spare help in different ways.",
+    "implications": "Understanding a result means tracing the chain from observation to correction and repair."
   },
   "sources": [
     {
-      "id": "src-oopsie",
-      "title": "OopsieRecover: Learning Transferable VLA Corrections from Semantic Interventions",
-      "url": "https://arxiv.org/abs/2611.08462",
+      "id": "src-hitch",
+      "title": "HITCH: Teaching a Vision-Language Model to Operate a Humanoid through a Whole-Body Harness",
+      "url": "https://arxiv.org/abs/2611.08039",
       "domain": "arxiv.org",
-      "organization": "University of Texas at Austin; Toyota Research Institute",
+      "organization": "Tsinghua University; Institute of Automation, Chinese Academy of Sciences; Shanghai Qizhi Institute",
       "published_at": "2026-11-05"
     },
     {
-      "id": "src-oopsie-project",
-      "title": "OopsieRecover — Learning transferable VLA corrections from semantic interventions",
-      "url": "https://robin-lab.cs.utexas.edu/oopsierecover/",
-      "domain": "robin-lab.cs.utexas.edu",
-      "organization": "University of Texas at Austin; Toyota Research Institute",
-      "published_at": "2026-11-05"
+      "id": "src-halo-project",
+      "title": "HALO — Perceptive Humanoid Motion from Simulation",
+      "url": "https://apple-aiml-research.github.io/ml-halo/",
+      "domain": "apple-aiml-research.github.io",
+      "organization": "Apple",
+      "published_at": "2026-11-04"
     },
     {
-      "id": "src-tactilelab",
-      "title": "TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation",
-      "url": "https://arxiv.org/abs/2611.07881",
+      "id": "src-halo",
+      "title": "Perceptive Humanoid Motion from Simulation",
+      "url": "https://arxiv.org/abs/2611.06908",
       "domain": "arxiv.org",
-      "organization": "University of Bristol and collaborators",
+      "organization": "Apple",
+      "published_at": "2026-11-04"
+    },
+    {
+      "id": "src-insectron",
+      "title": "Insect-inspired hexapod robot with magnetically coupled compliant and modular drive system",
+      "url": "https://www.nature.com/articles/s44182-026-00106-y",
+      "domain": "www.nature.com",
+      "organization": "The BioRobotics Institute, Sant'Anna School of Advanced Studies",
       "published_at": "2026-11-05"
     },
     {
-      "id": "src-tactilelab-project",
-      "title": "TactileLab: Efficient Multimodal Tactile Simulation for Shear-Sensitive Dexterous Sim2Real Robotic Manipulation",
-      "url": "https://yijionglin.github.io/tactilelab/",
-      "domain": "yijionglin.github.io",
-      "organization": "University of Bristol and collaborators",
+      "id": "src-astra-caltech",
+      "title": "Caltech Robotic Space Demo Successfully Builds in Space",
+      "url": "https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space",
+      "domain": "www.caltech.edu",
+      "organization": "Caltech",
       "published_at": "2026-11-05"
     },
     {
-      "id": "src-social-humanoid",
-      "title": "Social Humanoid: Socially Responsive Human-Humanoid Interaction",
-      "url": "https://arxiv.org/abs/2611.08407",
-      "domain": "arxiv.org",
-      "organization": "UC Berkeley; Sony Group Corporation; Meta",
-      "published_at": "2026-11-05"
-    },
-    {
-      "id": "src-social-humanoid-project",
-      "title": "Social Humanoid — Socially Responsive Human–Humanoid Interaction",
-      "url": "https://von31.github.io/social-humanoid/",
-      "domain": "von31.github.io",
-      "organization": "UC Berkeley; Sony Group Corporation; Meta",
-      "published_at": "2026-11-05"
-    },
-    {
-      "id": "src-roboarcade",
-      "title": "RoboARCade: Benchmarking Agentic Robot Control",
-      "url": "https://arxiv.org/abs/2611.08209",
-      "domain": "arxiv.org",
-      "organization": "Stanford University",
-      "published_at": "2026-11-05"
-    },
-    {
-      "id": "src-roboarcade-project",
-      "title": "Leaderboard | RoboARCade",
-      "url": "https://roboarcade.org/",
-      "domain": "roboarcade.org",
-      "organization": "Stanford University",
-      "published_at": "2026-11-05"
-    },
-    {
-      "id": "src-ugo-canon",
-      "title": "キヤノン電子にAIロボット「ugo mini G2」の生産を委託",
-      "url": "https://ugo.plus/information/2026/11/02/canonems/",
-      "domain": "ugo.plus",
-      "organization": "ugo; Canon Electronics",
-      "published_at": "2026-11-02"
+      "id": "src-stretch-gen2",
+      "title": "Boston Dynamics Launches Next Generation Stretch Robot",
+      "url": "https://bostondynamics.com/news/boston-dynamics-launches-next-generation-stretch-robot",
+      "domain": "bostondynamics.com",
+      "organization": "Boston Dynamics",
+      "published_at": "2026-11-03"
     }
   ]
 }
