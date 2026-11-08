@@ -2,167 +2,149 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-08",
-  "issue_id": "daily-2026-11-08",
+  "issue_date": "2026-11-09",
+  "issue_id": "daily-2026-11-09",
   "edition": "business",
   "language": "en",
-  "generated_at": "2026-11-07T20:46:23.293353Z",
-  "title": "Replicant Data — November 8, 2026: Business",
-  "lead": "Maintenance, demonstration collection and integration change the economics of robot use.",
+  "generated_at": "2026-11-08T20:49:31.168647Z",
+  "title": "Replicant Data — November 9, 2026: Business",
+  "lead": "A warehouse pilot and learning from production need evidence about a particular operation.",
   "news": [
     {
-      "id": "stretch-gen2",
-      "title": "Stretch's redesign makes maintenance a commercial feature",
-      "summary": "Boston Dynamics redesigned its trailer-unloading robot around downtime causes found in earlier deployments. It promises faster module replacement, while the new version's economic effect still needs customer-site verification.",
-      "details": "On November 3, Boston Dynamics introduced Stretch Gen 2, a new version of its mobile trailer-unloading robot. The company links the redesign to analysis of more than one hundred thousand operating hours from earlier machines. Updated connectors address vibration, the gripper has revised valves and sensing, and continuously rotating joints avoid earlier mechanical stops. The manufacturer says internal cabling was reduced by 81% to remove sources of wear and intermittent electrical faults.",
-      "technical_novelty": "On November 3, Boston Dynamics introduced Stretch Gen 2, a new version of its mobile trailer-unloading robot. The company links the redesign to analysis of more than one hundred thousand operating hours from earlier machines. Updated connectors address vibration, the gripper has revised valves and sensing, and continuously rotating joints avoid earlier mechanical stops. The manufacturer says internal cabling was reduced by 81% to remove sources of wear and intermittent electrical faults.",
-      "engineering_impact": "The announcement supplies no independent payback calculation. Customers need their own carton weights, shift schedules, downtime costs and module delivery times. The two-shift battery claim also needs a defined duration and duty cycle. Faster repair may be worth more than peak speed, but only if the service arrangement delivers the necessary part before a queue of unloaded trailers builds up.",
-      "limitations": "Specifications are manufacturer claims. One thousand cases per hour depends on loads and stacking; the hundred thousand hours concern earlier machines, not the new version's proven lifespan.",
-      "evidence_status": "Official manufacturer release; the new version's specifications are not confirmed by an independent comparative test.",
-      "published_at": "2026-11-03",
-      "organization": "Boston Dynamics",
-      "source_ids": [
-        "src-stretch-gen2"
-      ],
-      "time_window": "7d",
-      "body": "A loading dock purchases available working time as well as carton speed. If replacing a small component stops an otherwise capable system for an entire day, headline throughput no longer describes the shift's output. A new generation of warehouse equipment therefore needs assessment through maintenance access, spare parts and the customer's ability to perform repairs with its own technicians rather than always waiting for outside service.\n\nOn November 3, Boston Dynamics introduced Stretch Gen 2, a new version of its mobile trailer-unloading robot. The company links the redesign to analysis of more than one hundred thousand operating hours from earlier machines. Updated connectors address vibration, the gripper has revised valves and sensing, and continuously rotating joints avoid earlier mechanical stops. The manufacturer says internal cabling was reduced by 81% to remove sources of wear and intermittent electrical faults.\n\nThe company also reports replacing a drive module in about one hour rather than a full day. Advertised throughput reaches one thousand cases per hour but depends on case weight and stacking conditions; peak operation uses multiple-case picks. The battery is described as lasting two shifts, with charging to 90% taking around 75 minutes. These are the manufacturer's specifications and assessments, not an independent comparative warehouse evaluation of the new machine.\n\nThe announcement supplies no independent payback calculation. Customers need their own carton weights, shift schedules, downtime costs and module delivery times. The two-shift battery claim also needs a defined duration and duty cycle. Faster repair may be worth more than peak speed, but only if the service arrangement delivers the necessary part before a queue of unloaded trailers builds up.",
-      "image": null
-    },
-    {
-      "id": "airoa-handheld",
-      "title": "Japan's AIRoA separates demonstration collection from robot availability",
-      "summary": "AIRoA-0 learns from people using handheld grippers, so recording demonstrations does not require a robot fleet. The Japanese project reports 78% mean success on ten tasks, while transfer still depends on compatible tools and control integration.",
-      "details": "AIRoA-0, described in a November 2 preprint, learns two-handed manipulation from 16,151 hours of human demonstrations. People record actions with YUBI handheld grippers without a robot at the recording site. Two wrist cameras supply images; the model estimates task progress and outputs gripper motions that each machine's controller converts into its own mechanical movements. The authors collected no demonstrations through remote human control of a robot and used neither learning through trials and rewards nor corrections performed on a robot.",
-      "technical_novelty": "AIRoA-0, described in a November 2 preprint, learns two-handed manipulation from 16,151 hours of human demonstrations. People record actions with YUBI handheld grippers without a robot at the recording site. Two wrist cameras supply images; the model estimates task progress and outputs gripper motions that each machine's controller converts into its own mechanical movements. The authors collected no demonstrations through remote human control of a robot and used neither learning through trials and rewards nor corrections performed on a robot.",
-      "engineering_impact": "Running identical weights on different platforms does not make integration free. Matching tools, camera placement and conversion into the particular robot's movements remain necessary. The developers describe adapting a new task in under four hours on eight H200 accelerators, a substantial computing node. Its cost belongs beside the robotic-cell time saved; this is not equivalent to changing a few settings on an ordinary laptop.",
-      "limitations": "The 78% result covers ten Franka tasks. Other platforms require matching grippers, cameras and command conversion; independent replication is not established.",
-      "evidence_status": "Preprint and author-conducted experiments; independent replication of these results is not established.",
-      "published_at": "2026-11-02",
-      "organization": "AIRoA; Yueh-Hua Wu and collaborators",
-      "source_ids": [
-        "src-airoa-project",
-        "src-airoa"
-      ],
-      "time_window": "7d",
-      "body": "A pilot budget often hides competition for the same machine: it is needed for collecting training examples, evaluation and useful production work. Japan's AIRoA association moves the first process outside the robotic cell. People record demonstrations with tools in their hands. That changes how examples can be collected, rather than eliminating demonstrator labor, quality control or the computing required to learn from the recordings.\n\nAIRoA-0, described in a November 2 preprint, learns two-handed manipulation from 16,151 hours of human demonstrations. People record actions with YUBI handheld grippers without a robot at the recording site. Two wrist cameras supply images; the model estimates task progress and outputs gripper motions that each machine's controller converts into its own mechanical movements. The authors collected no demonstrations through remote human control of a robot and used neither learning through trials and rewards nor corrections performed on a robot.\n\nOn ten tasks using Franka hardware, the authors report 78% average success, compared with 27% for the strongest of four other models adapted using the same task demonstrations. Evaluation took place away from the training-recording locations. Examples include sorting parts, handling a pencil case and folding towels. The same weights also ran on TX-G2, OpenArm and UR with matching grippers. This does not establish the same 78% result on each of the four platforms.\n\nRunning identical weights on different platforms does not make integration free. Matching tools, camera placement and conversion into the particular robot's movements remain necessary. The developers describe adapting a new task in under four hours on eight H200 accelerators, a substantial computing node. Its cost belongs beside the robotic-cell time saved; this is not equivalent to changing a few settings on an ordinary laptop.",
-      "image": null
-    },
-    {
-      "id": "astra-orbital",
-      "title": "Caltech's orbital builder demonstrates an operation, not a finished service",
-      "summary": "A Caltech robot assembled a new antenna-truss bay in orbit. Its maturity must be assessed alongside an incomplete structure, short communication windows and ground-team recovery work.",
-      "details": "On November 5, Caltech reported an orbital ASTRA experiment, a robotic reflector-antenna assembly demonstration in NOM4D, a program investigating construction technologies for space, funded by the US Defense Advanced Research Projects Agency, DARPA. A manipulator takes tubes and connectors from dispensers, builds a bay on an assembly plate and pushes it outward. The intended antenna diameter is 1.4 meters. In orbit, two preassembled bays were extended and a third bay was assembled. The complete truss would contain eleven bays; the announcement does not report a finished antenna.",
-      "technical_novelty": "On November 5, Caltech reported an orbital ASTRA experiment, a robotic reflector-antenna assembly demonstration in NOM4D, a program investigating construction technologies for space, funded by the US Defense Advanced Research Projects Agency, DARPA. A manipulator takes tubes and connectors from dispensers, builds a bay on an assembly plate and pushes it outward. The intended antenna diameter is 1.4 meters. In orbit, two preassembled bays were extended and a third bay was assembled. The complete truss would contain eleven bays; the announcement does not report a finished antenna.",
-      "engineering_impact": "The ground flight spare is part of technical support rather than merely insurance sitting in storage. Building it, staffing the team and arranging limited communications would enter a future service cost. Assembly of a bay establishes a particular capability, but the announcement supplies no price for a completed antenna. Even the current demonstration structure is considered unlikely to be finished before the mission ends.",
-      "limitations": "The antenna is unfinished. A ground team checks photographs and troubleshoots on a flight spare; communications are limited to short windows.",
-      "evidence_status": "Caltech's account of its team's orbital demonstration; an independent assessment of the extent of autonomy is not supplied.",
-      "published_at": "2026-11-05",
-      "organization": "Caltech; DARPA",
-      "source_ids": [
-        "src-astra-caltech"
-      ],
-      "time_window": "72h",
-      "body": "Building in space could escape the size of a structure folded inside a launch vehicle's fairing. A potential future market and a demonstrated operation nevertheless represent different maturity levels. Caltech's announcement exposes an intermediate stage: components are genuinely joined in orbit while the team discovers how much engineering support unexpected situations require. Remote operation makes that support an especially visible part of the development process.\n\nOn November 5, Caltech reported an orbital ASTRA experiment, a robotic reflector-antenna assembly demonstration in NOM4D, a program investigating construction technologies for space, funded by the US Defense Advanced Research Projects Agency, DARPA. A manipulator takes tubes and connectors from dispensers, builds a bay on an assembly plate and pushes it outward. The intended antenna diameter is 1.4 meters. In orbit, two preassembled bays were extended and a third bay was assembled. The complete truss would contain eleven bays; the announcement does not report a finished antenna.\n\nThe ground team sent commands and checked the results in downloaded photographs. Communication is available during only seven or eight daily windows of roughly fifteen minutes. Unexpected problems were reproduced on a flight spare in the laboratory before a workaround was transmitted to the orbital machine. The team considers completion of the entire truss unlikely before the mission ends in December. Caltech presents the result as a proof of concept rather than a ready orbital construction service.\n\nThe ground flight spare is part of technical support rather than merely insurance sitting in storage. Building it, staffing the team and arranging limited communications would enter a future service cost. Assembly of a bay establishes a particular capability, but the announcement supplies no price for a completed antenna. Even the current demonstration structure is considered unlikely to be finished before the mission ends.",
-      "image": null
-    },
-    {
-      "id": "halo",
-      "title": "HALO reduces demonstration recording while moving effort into simulation",
-      "summary": "Apple demonstrated humanoid learning in generated homes followed by tests in six physical environments. Its 91% result covers 360 selected trials, and new kinds of work still require task design.",
-      "details": "Apple researchers introduced HALO in a preprint submitted on November 4. Training episodes are generated in a thousand procedurally constructed homes: the pipeline synthesizes motion, places it in a scene and renders the robot's view. The resulting corpus contains 300 hours of synthetic episodes. During operation, a high-level module splits instructions into subtasks, a middle layer replans whole-body motion at about three updates per second, and a lower controller follows the plan at 50 hertz using depth and information about the robot's own mechanisms.",
-      "technical_novelty": "Apple researchers introduced HALO in a preprint submitted on November 4. Training episodes are generated in a thousand procedurally constructed homes: the pipeline synthesizes motion, places it in a scene and renders the robot's view. The resulting corpus contains 300 hours of synthetic episodes. During operation, a high-level module splits instructions into subtasks, a middle layer replans whole-body motion at about three updates per second, and a lower controller follows the plan at 50 hertz using depth and information about the robot's own mechanisms.",
-      "engineering_impact": "The particular operations in the evaluation matter to a customer. Sitting on a chair is different from providing home care, and pushing a box does not establish handling of fragile contents. The study identifies a concrete weakness: an object outside the camera's view supplies no direct contact signal. A pilot involving grasps hidden from the camera would need a dedicated evaluation of that condition.",
-      "limitations": "New tasks require human-authored descriptions and keyframes. Vision supplies no direct signal for occluded contact; 91% applies to the selected 360 trials.",
-      "evidence_status": "Preprint and author-conducted experiments; independent replication of these results is not established.",
+      "id": "id-terra-pilot",
+      "title": "A warehouse humanoid pilot starts with task selection, not a payback claim",
+      "summary": "ID Logistics and Terra Robotics are preparing humanoid applications in German warehouses. They are testing matching machines at two locations and plan a first live operational pilot within six months.",
+      "details": "ID Logistics and Terra Robotics entered a partnership effective November 1 to prepare humanoid applications in German warehouses. Their November 4 announcement identifies two test locations: Griesheim, with a robot called IDA, and Löhne, with Heinz. Each company bought a Unitree G1 EDU6 so programming could proceed in parallel on comparable hardware. Initial work distinguishes cartons from mailing bags and sorts them into shipping boxes. The release mentions five-finger hands with tactile sensing, but supplies no sorting throughput or reliability measurements.",
+      "technical_novelty": "ID Logistics and Terra Robotics entered a partnership effective November 1 to prepare humanoid applications in German warehouses. Their November 4 announcement identifies two test locations: Griesheim, with a robot called IDA, and Löhne, with Heinz. Each company bought a Unitree G1 EDU6 so programming could proceed in parallel on comparable hardware. Initial work distinguishes cartons from mailing bags and sorts them into shipping boxes. The release mentions five-finger hands with tactile sensing, but supplies no sorting throughput or reliability measurements.",
+      "engineering_impact": "For budgeting, uncertainty about the chosen operation matters immediately. While several applications remain under consideration, the equipment purchase price cannot determine cost per shipment. The partners first need a selected task and then a live-process evaluation. Their public commitment reaches a first pilot within six months; the release does not present contracts for a specified fleet size or demonstrated investment payback.",
+      "limitations": "Preparation for a future pilot; no quantitative throughput, reliability, human-intervention or cost data.",
+      "evidence_status": "Official participant announcement of initial work and plans; no independent evaluation is supplied.",
       "published_at": "2026-11-04",
-      "organization": "Apple",
+      "organization": "ID Logistics; Terra Robotics",
       "source_ids": [
-        "src-halo-project",
-        "src-halo"
+        "id-terra-release"
       ],
       "time_window": "7d",
-      "body": "Preparing examples without sending an operator to every target site changes early development economics. Virtual homes must still be generated, motions produced and checked, and models trained. The approach reduces dependence on manually recording every attempt but creates a different production chain with computing, verification and its own limits. A procurement comparison should account for that chain rather than interpreting synthetic data as a costless input.\n\nApple researchers introduced HALO in a preprint submitted on November 4. Training episodes are generated in a thousand procedurally constructed homes: the pipeline synthesizes motion, places it in a scene and renders the robot's view. The resulting corpus contains 300 hours of synthetic episodes. During operation, a high-level module splits instructions into subtasks, a middle layer replans whole-body motion at about three updates per second, and a lower controller follows the plan at 50 hertz using depth and information about the robot's own mechanisms.\n\nThe authors report 91% success across 360 trials in six physical environments that were neither used for training nor scanned beforehand. Demonstrations include sitting, passing sideways through doors, moving beneath tables and pushing boxes. Computation runs onboard. Adding a new task type still requires human-authored descriptions and keyframes, however, and vision provides no direct contact signal when an object becomes hidden.\n\nThe particular operations in the evaluation matter to a customer. Sitting on a chair is different from providing home care, and pushing a box does not establish handling of fragile contents. The study identifies a concrete weakness: an object outside the camera's view supplies no direct contact signal. A pilot involving grasps hidden from the camera would need a dedicated evaluation of that condition.",
+      "body": "Buying a robot and launching a useful warehouse service are separate project stages. The ID Logistics–Terra agreement is notable for leaving room between them to select work and agree requirements. No savings calculation accompanies the announced programme. It is best assessed as preparation for a measurable deployment, rather than as completed commercial evidence that a humanoid already pays for itself.\n\nID Logistics and Terra Robotics entered a partnership effective November 1 to prepare humanoid applications in German warehouses. Their November 4 announcement identifies two test locations: Griesheim, with a robot called IDA, and Löhne, with Heinz. Each company bought a Unitree G1 EDU6 so programming could proceed in parallel on comparable hardware. Initial work distinguishes cartons from mailing bags and sorts them into shipping boxes. The release mentions five-finger hands with tactile sensing, but supplies no sorting throughput or reliability measurements.\n\nThe partners plan to assess four or five candidate use cases, establish technical and operational requirements, and select an appropriate task and robot combination. A first pilot in a real German operating environment is planned within six months. That is a future stage, not evidence of a completed fleet rollout. Terra works with several equipment brands, so the present test platform is not presented as the final choice for every warehouse. This is a release from the participants themselves. It provides neither independent evaluation nor cost per parcel, human-intervention rates or sustained operating-time figures.\n\nFor budgeting, uncertainty about the chosen operation matters immediately. While several applications remain under consideration, the equipment purchase price cannot determine cost per shipment. The partners first need a selected task and then a live-process evaluation. Their public commitment reaches a first pilot within six months; the release does not present contracts for a specified fleet size or demonstrated investment payback.",
       "image": null
     },
     {
-      "id": "hitch",
-      "title": "A humanoid's simulation score leaves a substantial integration gap",
-      "summary": "HITCH links measured distances to commands for a humanoid's body parts. Researchers obtained a high score in one virtual benchmark, while physical box carrying succeeded in 13 of 20 attempts.",
-      "details": "In a November 5 preprint, researchers from Tsinghua University, the Institute of Automation of the Chinese Academy of Sciences and Shanghai Qizhi Institute describe HITCH, a software harness for whole-body humanoid control. A model that processes images and language selects a point in an image and receives its three-dimensional position measured from depth. A separate interface accepts pelvis, torso, hand, walking and gaze commands. A planner turns these requests into coordinated references, and a learned controller follows them.",
-      "technical_novelty": "In a November 5 preprint, researchers from Tsinghua University, the Institute of Automation of the Chinese Academy of Sciences and Shanghai Qizhi Institute describe HITCH, a software harness for whole-body humanoid control. A model that processes images and language selects a point in an image and receives its three-dimensional position measured from depth. A separate interface accepts pelvis, torso, hand, walking and gaze commands. A planner turns these requests into coordinated references, and a learned controller follows them.",
-      "engineering_impact": "Thirty physical attempts cannot establish annual fleet availability or the cost of a successful operation. Successful carrying averaged 60.7 seconds including observation and motion. The remote server creates a local-network dependency, while operator judgment is different from automated acceptance. Before removing supervision, an integrator must specify how a box left in the wrong place will be detected and who owns that failure.",
-      "limitations": "The 95% result is simulated; physical G1 evaluation covers two tasks using a remote server and operator judgment. The planner does not support sitting or stepping over obstacles.",
-      "evidence_status": "Preprint and author-conducted experiments; independent replication of these results is not established.",
-      "published_at": "2026-11-05",
-      "organization": "Tsinghua University; Institute of Automation, Chinese Academy of Sciences; Shanghai Qizhi Institute",
+      "id": "walden-production",
+      "title": "Walden prioritises learning from production, with operating metrics undisclosed",
+      "summary": "A November 6 Carnegie Mellon seminar programme describes Walden Robotics' development through real manufacturing work. It records the company's stated approach, rather than a published assessment of fleet cost or reliability.",
+      "details": "The Carnegie Mellon Robotics Institute's November 6 seminar programme presented Walden Robotics' approach to learning in production. Its listed speaker was co-founder and chief technology officer Ben Burchfiel. The abstract describes a company developing both hardware and physical AI, with real work feeding a continuing cycle of deployment and learning. It says Walden was founded in January 2026 and put its first robot into production manufacturing two months later. This is a retrospective claim by the company, not a newly announced November deployment.",
+      "technical_novelty": "The Carnegie Mellon Robotics Institute's November 6 seminar programme presented Walden Robotics' approach to learning in production. Its listed speaker was co-founder and chief technology officer Ben Burchfiel. The abstract describes a company developing both hardware and physical AI, with real work feeding a continuing cycle of deployment and learning. It says Walden was founded in January 2026 and put its first robot into production manufacturing two months later. This is a retrospective claim by the company, not a newly announced November deployment.",
+      "engineering_impact": "A prospective customer could ask how observation collection is separated from testing a revised controller, and who authorises its use. Those are supplier questions, not established descriptions of Walden's process. Without downtime and cost figures in the programme, the continued presence of a first robot in manufacturing cannot be converted into shift availability or the profitability of a service contract.",
+      "limitations": "Seminar abstract, not a measurement report; customer, fleet size, success and cost are undisclosed. The material date refers to the event, not the March deployment.",
+      "evidence_status": "Official November 6 seminar programme and speaker claims in its abstract; the talk recording is not yet available.",
+      "published_at": "2026-11-06",
+      "organization": "Walden Robotics; Carnegie Mellon University Robotics Institute",
       "source_ids": [
-        "src-hitch"
+        "walden-seminar"
       ],
       "time_window": "72h",
-      "body": "Deployment requires separating the model's ability to choose a step from the machine's ability to execute it accurately. A control harness connects both levels and exposes integration work: depth measurements, body coordination, server execution, communications and outcome checking. A customer pilot has to assess those components together even when the supplier of the reasoning model can be changed independently of the rest of the equipment.\n\nIn a November 5 preprint, researchers from Tsinghua University, the Institute of Automation of the Chinese Academy of Sciences and Shanghai Qizhi Institute describe HITCH, a software harness for whole-body humanoid control. A model that processes images and language selects a point in an image and receives its three-dimensional position measured from depth. A separate interface accepts pelvis, torso, hand, walking and gaze commands. A planner turns these requests into coordinated references, and a learned controller follows them.\n\nThe model was trained on trajectories from five base tasks. Adding five demonstrations per task brought success on the simulated SIMPLE benchmark to 95%. Physical Unitree G1 tests had different outcomes: 13 successful carrying episodes out of 20 and six successful navigation episodes out of ten. The model ran on a remote server connected over Wi-Fi, with an operator judging the outcomes. Its training data contained no real images.\n\nThirty physical attempts cannot establish annual fleet availability or the cost of a successful operation. Successful carrying averaged 60.7 seconds including observation and motion. The remote server creates a local-network dependency, while operator judgment is different from automated acceptance. Before removing supervision, an integrator must specify how a box left in the wrong place will be detected and who owns that failure.",
+      "body": "Putting a machine into production early can give a developer useful observations, but a customer also needs rules for changing a working system. That question arises from the Walden Robotics seminar announcement, which links improvement to experience on real tasks. The available source supports examination of that choice. It does not turn the proposed feedback cycle into measured commercial efficiency.\n\nThe Carnegie Mellon Robotics Institute's November 6 seminar programme presented Walden Robotics' approach to learning in production. Its listed speaker was co-founder and chief technology officer Ben Burchfiel. The abstract describes a company developing both hardware and physical AI, with real work feeding a continuing cycle of deployment and learning. It says Walden was founded in January 2026 and put its first robot into production manufacturing two months later. This is a retrospective claim by the company, not a newly announced November deployment.\n\nThe programme says the first machine remains in production and the fleet has continued learning on the job. It does not identify the customer, fleet size, downtime, operating cost or task-success rate. The page says the video will become available after November 12, so it cannot substantiate details from an as-yet unavailable recording. What is established here is the company's stated development model and the seminar abstract's contents. The phrase learning on the job does not establish that a controller changes its parameters automatically beside running manufacturing equipment without a separate validation and approval process.\n\nA prospective customer could ask how observation collection is separated from testing a revised controller, and who authorises its use. Those are supplier questions, not established descriptions of Walden's process. Without downtime and cost figures in the programme, the continued presence of a first robot in manufacturing cannot be converted into shift availability or the profitability of a service contract.",
+      "image": null
+    },
+    {
+      "id": "vflash",
+      "title": "Faster robot planning needs a whole-pipeline evaluation",
+      "summary": "NVIDIA introduced VFlash to prepare spatial plans for robot actions more quickly. Model computation accelerated on Thor and Spark, but the study does not measure throughput gains at an actual customer workstation.",
+      "details": "NVIDIA researchers and collaborators introduced VFlash, a method for generating visual plans more quickly. These plans describe points, regions or trajectories that a separate action model uses to choose robot actions. Rather than emit coordinates as a long sequence of small pieces, a compact helper model proposes an entire geometric primitive in parallel. Spatial usefulness can matter more than reproducing every piece of the sequential model's output. Ordinary text follows a different rule: proposed continuations remain verified, so relaxed acceptance of geometry does not extend to written instructions.",
+      "technical_novelty": "NVIDIA researchers and collaborators introduced VFlash, a method for generating visual plans more quickly. These plans describe points, regions or trajectories that a separate action model uses to choose robot actions. Rather than emit coordinates as a long sequence of small pieces, a compact helper model proposes an entire geometric primitive in parallel. Spatial usefulness can matter more than reproducing every piece of the sequential model's output. Ordinary text follows a different rule: proposed continuations remain verified, so relaxed acceptance of geometry does not extend to written instructions.",
+      "engineering_impact": "A local evaluation needs to retain the outcome criterion: was the work completed, rather than were coordinates produced sooner? The 70.2% versus 62.6% comparison belongs to virtual suites and a particular action model. The specialised inference runtime is also part of the reported acceleration conditions. Buying a similar processor without transferring that software arrangement does not automatically reproduce the published result.",
+      "limitations": "Simulated tasks and specific computing configurations; physical robot speed and production economics were not measured.",
+      "evidence_status": "Preprint and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-05",
+      "organization": "NVIDIA and collaborators",
+      "source_ids": [
+        "vflash-paper"
+      ],
+      "time_window": "7d",
+      "body": "When a machine spends time preparing its next action, quicker computation may be more useful than another sensor. Before buying hardware, however, an operator needs to know how much delay comes from the model. NVIDIA's work offers a specific way to reduce waiting for a spatial plan. Its measurements can inform a trial design, but they do not calculate a customer's operating cost.\n\nNVIDIA researchers and collaborators introduced VFlash, a method for generating visual plans more quickly. These plans describe points, regions or trajectories that a separate action model uses to choose robot actions. Rather than emit coordinates as a long sequence of small pieces, a compact helper model proposes an entire geometric primitive in parallel. Spatial usefulness can matter more than reproducing every piece of the sequential model's output. Ordinary text follows a different rule: proposed continuations remain verified, so relaxed acceptance of geometry does not extend to written instructions.\n\nAcross four task suites in the simulated MolmoSpaces environment, an action model conditioned on these plans averaged 70.2% success, against 62.6% for the baseline. On Thor and Spark computing platforms, the authors report twelvefold faster decoding, the production of coordinates for robotic plans, and roughly fivefold faster execution of the complete model pipeline. Those measurements cover different parts of the computation. Hardware and the specially prepared inference runtime affect the result. Neither number means that a physical arm moves five times faster, or that a factory can ship five times as many finished products.\n\nA local evaluation needs to retain the outcome criterion: was the work completed, rather than were coordinates produced sooner? The 70.2% versus 62.6% comparison belongs to virtual suites and a particular action model. The specialised inference runtime is also part of the reported acceleration conditions. Buying a similar processor without transferring that software arrangement does not automatically reproduce the published result.",
+      "image": null
+    },
+    {
+      "id": "openzilo",
+      "title": "A robot-command ring performs differently on isolated and extended tasks",
+      "summary": "Ding's team combined voice and gesture robot input in the OpenZilo ring platform. Tests with ten participants support interface comparison, but do not validate a finished care or medical-monitoring service.",
+      "details": "Qianggang Ding and colleagues introduced OpenZilo, an open research platform for using a smart ring to interact with robots. Its hardware combines a microphone, motion sensing, optical pulse sensing and skin-temperature measurement. Software separates signal acquisition, event interpretation, response selection and robot execution. That separation helps locate errors: a misread gesture and a correctly understood command that the robot fails to execute need different remedies. Including physiological sensors does not establish that the device is suitable for medical diagnosis or reliable health monitoring.",
+      "technical_novelty": "Qianggang Ding and colleagues introduced OpenZilo, an open research platform for using a smart ring to interact with robots. Its hardware combines a microphone, motion sensing, optical pulse sensing and skin-temperature measurement. Software separates signal acquisition, event interpretation, response selection and robot execution. That separation helps locate errors: a misread gesture and a correctly understood command that the robot fails to execute need different remedies. Including physiological sensors does not establish that the device is suitable for medical diagnosis or reliable health monitoring.",
+      "engineering_impact": "These data do not justify choosing gestures for every workplace or speech for every job. The relevant task stage and acceptable error rate affect that decision. Care applications would require an additional test of physiological events: simulated notifications establish no rate for missing a real dangerous condition. The offering described here is a research platform, without a published guarantee of medical outcomes.",
+      "limitations": "Ten participants and distinct isolated-command and complete-task protocols. Physiological notifications were simulated; medical use was not validated.",
+      "evidence_status": "Preprint and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-02",
+      "organization": "Zilo Lab; Université de Montréal; Mila and collaborators",
+      "source_ids": [
+        "openzilo-paper"
+      ],
+      "time_window": "7d",
+      "body": "A wearable controller has an attractive property: the user need not walk to a separate control panel. Deployment still depends on what happens after a command is accepted. OpenZilo lets researchers trace that route in stages. For a workplace interface, the difference between recognised intent and a completed operation matters, particularly when the user must make several corrections during a continuing task.\n\nQianggang Ding and colleagues introduced OpenZilo, an open research platform for using a smart ring to interact with robots. Its hardware combines a microphone, motion sensing, optical pulse sensing and skin-temperature measurement. Software separates signal acquisition, event interpretation, response selection and robot execution. That separation helps locate errors: a misread gesture and a correctly understood command that the robot fails to execute need different remedies. Including physiological sensors does not establish that the device is suitable for medical diagnosis or reliable health monitoring.\n\nTen participants took part in the study. For five isolated commands, the researchers ran 250 trials per input modality: physical task success was 90.4% with speech and 88.8% with gestures. A separate experiment started with a shared spoken instruction and then allowed adjustments during execution. Complete-task success was 70% with gestures and 64% with speech. These figures measure different tasks, rather than conflicting estimates of one performance level. A physiological-event response branch was tested with simulated notifications, not with validated detection of illness or a dangerous human condition. The paper therefore supports an interaction prototype, rather than an independently verified care service.\n\nThese data do not justify choosing gestures for every workplace or speech for every job. The relevant task stage and acceptable error rate affect that decision. Care applications would require an additional test of physiological events: simulated notifications establish no rate for missing a real dangerous condition. The offering described here is a research platform, without a published guarantee of medical outcomes.",
+      "image": null
+    },
+    {
+      "id": "soft-snake-shape",
+      "title": "A soft robot's measured shape under load is one step toward application reliability",
+      "summary": "Zhang and Wu tested shape estimation for a cable-driven soft robot under load and obstacle contact. Their study identifies changing error conditions, without establishing a finished industrial inspection solution.",
+      "details": "Minghui Zhang and Wenhui Wu, affiliated with Shandong University of Science and Technology and Beijing Jiaotong University, describe shape estimation for a soft snake-like robot. Cables bend its flexible sections, while small inertial sensors distributed along the body report their orientations. Filtering reduces measurement noise before those readings are combined with a geometric model that approximates a section's bend using a parabola. The system reconstructs a three-dimensional centreline. Unlike an ideal constant-curvature arc, this representation can account for changes in bending shape under load.",
+      "technical_novelty": "Minghui Zhang and Wenhui Wu, affiliated with Shandong University of Science and Technology and Beijing Jiaotong University, describe shape estimation for a soft snake-like robot. Cables bend its flexible sections, while small inertial sensors distributed along the body report their orientations. Filtering reduces measurement noise before those readings are combined with a geometric model that approximates a section's bend using a parabola. The system reconstructs a three-dimensional centreline. Unlike an ideal constant-curvature arc, this representation can account for changes in bending shape under load.",
+      "engineering_impact": "An application assessment would need to compare error with available clearance and the consequences of touching an object. An average alone cannot set a safe distance from fragile equipment. The study includes a 19.4-millimetre contact-case peak. Sensor maintenance cost, endurance in an industrial environment and long-term availability are not reported; those expenses cannot be inferred from laboratory geometry measurements.",
+      "limitations": "The authors’ apparatus; contact increases error. Autonomous navigation and customer operation were not validated.",
+      "evidence_status": "Peer-reviewed Mechanical Sciences article; measurements by the authors, with independent repetition not established.",
+      "published_at": "2026-11-02",
+      "organization": "Shandong University of Science and Technology; Beijing Jiaotong University",
+      "source_ids": [
+        "snake-paper"
+      ],
+      "time_window": "7d",
+      "body": "A compliant machine can adapt around surrounding objects, which also makes its configuration harder to track. Shape measurement is relevant to confined-space work because an operator or controller needs to know where the body actually is, not merely what motion was requested. The published tests nevertheless do not describe a commercial equipment-inspection service or operation at a customer facility.\n\nMinghui Zhang and Wenhui Wu, affiliated with Shandong University of Science and Technology and Beijing Jiaotong University, describe shape estimation for a soft snake-like robot. Cables bend its flexible sections, while small inertial sensors distributed along the body report their orientations. Filtering reduces measurement noise before those readings are combined with a geometric model that approximates a section's bend using a parabola. The system reconstructs a three-dimensional centreline. Unlike an ideal constant-curvature arc, this representation can account for changes in bending shape under load.\n\nFor one section carrying a 500-gram end load, maximum endpoint position error was 11.38 millimetres. During planar motion of the complete robot, mean root-mean-square shape error was 7.67 millimetres. With obstacle contact, the corresponding average rose to 10.86 millimetres and the peak reached 19.4 millimetres. Root-mean-square error combines deviations into one measure, giving larger misses more weight. These figures describe distinct test conditions and should not be substituted for one another. Published on November 2 in Mechanical Sciences, the paper reports experiments on the authors' apparatus. Knowing the shape of its own body does not by itself give a robot obstacle recognition or an independently selected safe route.\n\nAn application assessment would need to compare error with available clearance and the consequences of touching an object. An average alone cannot set a safe distance from fragile equipment. The study includes a 19.4-millimetre contact-case peak. Sensor maintenance cost, endurance in an industrial environment and long-term availability are not reported; those expenses cannot be inferred from laboratory geometry measurements.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Available working time matters beyond a record score",
-    "summary": "Maintenance, demonstration collection and integration change the economics of robot use.",
-    "implications": "A pilot needs downtime, computing, communications and acceptance criteria alongside task success."
+    "title": "Acceptance conditions separate a prototype from a service",
+    "summary": "A warehouse pilot and learning from production need evidence about a particular operation.",
+    "implications": "Cost assessment follows task definition, human-intervention requirements and approval rules for updates."
   },
   "sources": [
     {
-      "id": "src-hitch",
-      "title": "HITCH: Teaching a Vision-Language Model to Operate a Humanoid through a Whole-Body Harness",
-      "url": "https://arxiv.org/abs/2611.08039",
-      "domain": "arxiv.org",
-      "organization": "Tsinghua University; Institute of Automation, Chinese Academy of Sciences; Shanghai Qizhi Institute",
-      "published_at": "2026-11-05"
-    },
-    {
-      "id": "src-halo-project",
-      "title": "HALO — Perceptive Humanoid Motion from Simulation",
-      "url": "https://apple-aiml-research.github.io/ml-halo/",
-      "domain": "apple-aiml-research.github.io",
-      "organization": "Apple",
+      "id": "id-terra-release",
+      "title": "ID LOGISTICS AND TERRA ROBOTICS PAVE THE WAY FOR HUMANOID ROBOTICS IN CONTRACT LOGISTICS",
+      "url": "https://www.id-logistics.com/media/2026/11/PR-ID-Logistics-Humanoid-Robots-Germany.pdf",
+      "domain": "www.id-logistics.com",
+      "organization": "ID Logistics; Terra Robotics",
       "published_at": "2026-11-04"
     },
     {
-      "id": "src-halo",
-      "title": "Perceptive Humanoid Motion from Simulation",
-      "url": "https://arxiv.org/abs/2611.06908",
-      "domain": "arxiv.org",
-      "organization": "Apple",
-      "published_at": "2026-11-04"
+      "id": "walden-seminar",
+      "title": "Learning in Production: Building Physical AI at Walden Robotics",
+      "url": "https://www.ri.cmu.edu/event/learning-in-production-building-physical-ai-at-walden-robotics/",
+      "domain": "www.ri.cmu.edu",
+      "organization": "Walden Robotics; Carnegie Mellon University Robotics Institute",
+      "published_at": "2026-11-06"
     },
     {
-      "id": "src-astra-caltech",
-      "title": "Caltech Robotic Space Demo Successfully Builds in Space",
-      "url": "https://www.caltech.edu/about/news/caltech-robotic-space-demo-successfully-builds-in-space",
-      "domain": "www.caltech.edu",
-      "organization": "Caltech",
+      "id": "vflash-paper",
+      "title": "VFlash: Fast Visual Planning for Physical AI",
+      "url": "https://research.nvidia.com/labs/lpr/vflash/",
+      "domain": "research.nvidia.com",
+      "organization": "NVIDIA and collaborators",
       "published_at": "2026-11-05"
     },
     {
-      "id": "src-stretch-gen2",
-      "title": "Boston Dynamics Launches Next Generation Stretch Robot",
-      "url": "https://bostondynamics.com/news/boston-dynamics-launches-next-generation-stretch-robot",
-      "domain": "bostondynamics.com",
-      "organization": "Boston Dynamics",
-      "published_at": "2026-11-03"
-    },
-    {
-      "id": "src-airoa-project",
-      "title": "AIRoA-0 — Long-Horizon, Precise, Cross-Embodiment Manipulation from Handheld Data",
-      "url": "https://a-0.airoa.io/",
-      "domain": "a-0.airoa.io",
-      "organization": "AIRoA",
+      "id": "openzilo-paper",
+      "title": "OpenZilo: An Open Smart-Ring Platform for Human-Centric Sensing and Interaction with Robots",
+      "url": "https://arxiv.org/abs/2611.03410",
+      "domain": "arxiv.org",
+      "organization": "Zilo Lab; Université de Montréal; Mila and collaborators",
       "published_at": "2026-11-02"
     },
     {
-      "id": "src-airoa",
-      "title": "AIRoA-0: Long-Horizon, Precise, Cross-Embodiment Manipulation from Handheld Data",
-      "url": "https://arxiv.org/abs/2611.03815",
-      "domain": "arxiv.org",
-      "organization": "Yueh-Hua Wu and collaborators",
+      "id": "snake-paper",
+      "title": "Real-time shape estimation of a wire-driven soft snake-like robot based on micro-inertial sensors",
+      "url": "https://ms.copernicus.org/articles/17/983/2026/",
+      "domain": "ms.copernicus.org",
+      "organization": "Shandong University of Science and Technology; Beijing Jiaotong University",
       "published_at": "2026-11-02"
     }
   ]
