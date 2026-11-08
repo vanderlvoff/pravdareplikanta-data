@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-09",
+  "article_id": "vflash",
+  "article_title": {
+    "ru": "NVIDIA ускоряет геометрический план, не требуя точного повторения последовательного ответа",
+    "en": "NVIDIA accelerates geometric planning without demanding an identical sequential answer",
+    "ja": "NVIDIA、座標の完全一致を求めず視覚計画を高速化"
+  },
+  "article_urls": {
+    "ru": "https://repravda.com/ru/engineer/issues/2026-11-09/articles/vflash/",
+    "en": "https://repravda.com/en/engineer/issues/2026-11-09/articles/vflash/",
+    "ja": "https://repravda.com/ja/engineer/issues/2026-11-09/articles/vflash/"
+  },
+  "edition": "engineer",
+  "image_path": "data/images/2026-11-09/vflash.webp",
+  "caption": {
+    "ru": "Мужчина-инженер сравнивает геометрический план с виртуальным действием робота. Концептуальная редакционная иллюстрация к VFlash; не реконструкция установки NVIDIA и не демонстрация ускоренного движения реальной машины.",
+    "en": "A male engineer compares a geometric plan with a virtual robot action. A conceptual editorial illustration for VFlash, not a reconstruction of NVIDIA's setup or a demonstration of faster physical movement.",
+    "ja": "男性技術者が幾何的な計画を仮想ロボットの動作と照らし合わせる。VFlashを題材にした概念的な編集イラストで、NVIDIAの実験装置の再現や実機の移動速度の実証ではない。"
+  },
+  "alt": {
+    "ru": "Чёрно-белая гравюра: мужчина-инженер в рабочем халате карандашом проводит кривую через точки на листе, придерживая его другой рукой. Рядом на устойчивом мониторе показана каркасная виртуальная роборука с открытым захватом над кубом; пунктирная траектория подходит к кубу на координатной плоскости. Лист, руки и подставка монитора опираются на общий стол; на заднем плане окно лаборатории.",
+    "en": "Black-and-white engraving of a male engineer tracing a curve through points on paper with a pencil while holding the sheet with his other hand. A stable desktop monitor shows a wireframe virtual robot arm with an open gripper above a cube and a dotted trajectory approaching it on a coordinate plane. The paper, hands and monitor stand rest on one desk; a laboratory window is in the background.",
+    "ja": "白黒の版画。作業着の男性技術者が片手で紙を押さえ、鉛筆で点を通る曲線を描く。机上のモニターには、立方体の上で把持部を開いた仮想のワイヤーフレーム型ロボットアームと、座標面の立方体へ近付く点線の軌道が映る。紙、手、モニターの台座は同じ机に支えられ、背景には研究室の窓がある。"
+  },
+  "visual_thesis": "Полезность геометрического плана проверяется по виртуальному выполнению задания; ускорение его вычисления нельзя отождествлять с ускорением механического движения.",
+  "visual_brief": "Edit the supplied editorial engraving. Replace ONLY the woman engineer with a male engineer approximately 40–45 years old, handsome harmonious realistic face, short neatly combed hair, clean-shaven, calm professional concentration, practical laboratory coat over a shirt. Preserve exactly the same seated pose and working action: right hand holds pencil with its tip touching the curve on paper, left hand holds the paper flat. Adjust face, hair, neck and clothing fit naturally for a man. Preserve the hand positions and clear contacts; natural anatomy and proportions. Keep the entire scene and composition unchanged: paper trajectory and points, screen image of wireframe virtual robot arm, cube, dotted trajectory, monitor pedestal, desk, chair, window and perspective. Preserve the pure black ink on white Soviet mid-century popular science engraving style, disciplined hatching and spacious whites. No colour, no text, no logos, no new objects, no additional characters. One landscape image with same framing. Do not change the robot or monitor illustration.",
+  "source_ids": [
+    "vflash-paper"
+  ],
+  "illustration_type": "editorial_concept",
+  "style": "black-and-white-scientific-engraving",
+  "width": 1600,
+  "height": 900
+}

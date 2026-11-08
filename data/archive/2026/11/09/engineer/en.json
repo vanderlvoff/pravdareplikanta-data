@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-09",
+  "issue_id": "daily-2026-11-09",
+  "edition": "engineer",
+  "language": "en",
+  "generated_at": "2026-11-08T20:49:31.168647Z",
+  "title": "Replicant Data — November 9, 2026: Engineer",
+  "lead": "Geometric planning, shape estimation and joint control improve different links in an action.",
+  "news": [
+    {
+      "id": "vflash",
+      "title": "NVIDIA accelerates geometric planning without demanding an identical sequential answer",
+      "summary": "NVIDIA's VFlash generates geometric elements of robot plans in parallel. Its action model reached 70.2% success on simulated tasks, while reported computing gains measure inference rather than faster physical movement.",
+      "details": "NVIDIA researchers and collaborators introduced VFlash, a method for generating visual plans more quickly. These plans describe points, regions or trajectories that a separate action model uses to choose robot actions. Rather than emit coordinates as a long sequence of small pieces, a compact helper model proposes an entire geometric primitive in parallel. Spatial usefulness can matter more than reproducing every piece of the sequential model's output. Ordinary text follows a different rule: proposed continuations remain verified, so relaxed acceptance of geometry does not extend to written instructions.",
+      "technical_novelty": "NVIDIA researchers and collaborators introduced VFlash, a method for generating visual plans more quickly. These plans describe points, regions or trajectories that a separate action model uses to choose robot actions. Rather than emit coordinates as a long sequence of small pieces, a compact helper model proposes an entire geometric primitive in parallel. Spatial usefulness can matter more than reproducing every piece of the sequential model's output. Ordinary text follows a different rule: proposed continuations remain verified, so relaxed acceptance of geometry does not extend to written instructions.",
+      "engineering_impact": "Reproduction requires separate comparisons of geometric quality and complete pipeline time. Faster decoding can be useful without reproducing an original coordinate sequence exactly, provided the downstream action model still completes its tasks. The reported evaluation tests that connection across four virtual suites. It does not supply a production-line cycle measurement, where sensing, safety checks and the mechanism's motion would also contribute to the elapsed time.",
+      "limitations": "Simulated tasks and specific computing configurations; physical robot speed and production economics were not measured.",
+      "evidence_status": "Preprint and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-05",
+      "organization": "NVIDIA and collaborators",
+      "source_ids": [
+        "vflash-paper"
+      ],
+      "time_window": "7d",
+      "body": "Waiting for the next coordinate can dominate the time spent preparing a robot's plan. VFlash, published on November 5, examines that particular stage between an image-and-task input and an actionable spatial description. Its central choice is to change what counts as an acceptable answer for geometry while keeping a different rule for text. That distinction matters more than a blanket claim of faster robot intelligence.\n\nNVIDIA researchers and collaborators introduced VFlash, a method for generating visual plans more quickly. These plans describe points, regions or trajectories that a separate action model uses to choose robot actions. Rather than emit coordinates as a long sequence of small pieces, a compact helper model proposes an entire geometric primitive in parallel. Spatial usefulness can matter more than reproducing every piece of the sequential model's output. Ordinary text follows a different rule: proposed continuations remain verified, so relaxed acceptance of geometry does not extend to written instructions.\n\nAcross four task suites in the simulated MolmoSpaces environment, an action model conditioned on these plans averaged 70.2% success, against 62.6% for the baseline. On Thor and Spark computing platforms, the authors report twelvefold faster decoding, the production of coordinates for robotic plans, and roughly fivefold faster execution of the complete model pipeline. Those measurements cover different parts of the computation. Hardware and the specially prepared inference runtime affect the result. Neither number means that a physical arm moves five times faster, or that a factory can ship five times as many finished products.\n\nReproduction requires separate comparisons of geometric quality and complete pipeline time. Faster decoding can be useful without reproducing an original coordinate sequence exactly, provided the downstream action model still completes its tasks. The reported evaluation tests that connection across four virtual suites. It does not supply a production-line cycle measurement, where sensing, safety checks and the mechanism's motion would also contribute to the elapsed time.",
+      "image": null
+    },
+    {
+      "id": "soft-snake-shape",
+      "title": "A soft robot reconstructs its shape from sensors along its body",
+      "summary": "Zhang and Wu combine inertial sensing with a geometric model to estimate a cable-driven snake robot's shape. Their Mechanical Sciences paper separates error measurements for unloaded motion, an end load and obstacle contact.",
+      "details": "Minghui Zhang and Wenhui Wu, affiliated with Shandong University of Science and Technology and Beijing Jiaotong University, describe shape estimation for a soft snake-like robot. Cables bend its flexible sections, while small inertial sensors distributed along the body report their orientations. Filtering reduces measurement noise before those readings are combined with a geometric model that approximates a section's bend using a parabola. The system reconstructs a three-dimensional centreline. Unlike an ideal constant-curvature arc, this representation can account for changes in bending shape under load.",
+      "technical_novelty": "Minghui Zhang and Wenhui Wu, affiliated with Shandong University of Science and Technology and Beijing Jiaotong University, describe shape estimation for a soft snake-like robot. Cables bend its flexible sections, while small inertial sensors distributed along the body report their orientations. Filtering reduces measurement noise before those readings are combined with a geometric model that approximates a section's bend using a parabola. The system reconstructs a three-dimensional centreline. Unlike an ideal constant-curvature arc, this representation can account for changes in bending shape under load.",
+      "engineering_impact": "Testing a different construction would require matching the contact conditions rather than selecting the smallest published error. Sensors supply section orientation; a model then fills in the shape between them, so measurement and geometric approximation both matter. The increase from 7.67 to 10.86 millimetres in average shape error identifies the contact-sensitive part of the result. A 19.4-millimetre peak remains relevant even when the average is lower.",
+      "limitations": "The authors’ apparatus; contact increases error. Autonomous navigation and customer operation were not validated.",
+      "evidence_status": "Peer-reviewed Mechanical Sciences article; measurements by the authors, with independent repetition not established.",
+      "published_at": "2026-11-02",
+      "organization": "Shandong University of Science and Technology; Beijing Jiaotong University",
+      "source_ids": [
+        "snake-paper"
+      ],
+      "time_window": "7d",
+      "body": "A cable command specifies how an actuator should pull, but external loads also determine the shape of a compliant body. The final configuration cannot always be recovered from the requested movement alone. This study distributes measurements along flexible sections to reconstruct a spatial centreline instead of reporting only a single endpoint. The change in error under contact is particularly relevant to anyone trying to reproduce the result.\n\nMinghui Zhang and Wenhui Wu, affiliated with Shandong University of Science and Technology and Beijing Jiaotong University, describe shape estimation for a soft snake-like robot. Cables bend its flexible sections, while small inertial sensors distributed along the body report their orientations. Filtering reduces measurement noise before those readings are combined with a geometric model that approximates a section's bend using a parabola. The system reconstructs a three-dimensional centreline. Unlike an ideal constant-curvature arc, this representation can account for changes in bending shape under load.\n\nFor one section carrying a 500-gram end load, maximum endpoint position error was 11.38 millimetres. During planar motion of the complete robot, mean root-mean-square shape error was 7.67 millimetres. With obstacle contact, the corresponding average rose to 10.86 millimetres and the peak reached 19.4 millimetres. Root-mean-square error combines deviations into one measure, giving larger misses more weight. These figures describe distinct test conditions and should not be substituted for one another. Published on November 2 in Mechanical Sciences, the paper reports experiments on the authors' apparatus. Knowing the shape of its own body does not by itself give a robot obstacle recognition or an independently selected safe route.\n\nTesting a different construction would require matching the contact conditions rather than selecting the smallest published error. Sensors supply section orientation; a model then fills in the shape between them, so measurement and geometric approximation both matter. The increase from 7.67 to 10.86 millimetres in average shape error identifies the contact-sensitive part of the result. A 19.4-millimetre peak remains relevant even when the average is lower.",
+      "image": null
+    },
+    {
+      "id": "h2marl",
+      "title": "Joint-direction control improves simulated balance with a smoothness trade-off",
+      "summary": "Hu and colleagues' H2MARL lets different joint movement directions learn with their own physical descriptors. Simulated foot slip and torso deviation improved, but a comparison method retained better movement smoothness.",
+      "details": "Xuemin Hu and collaborators at Hubei University, Worcester Polytechnic Institute and the Chinese Academy of Sciences' Institute of Automation proposed H2MARL, a humanoid-control learning framework with distinct software agents for individual actuated degrees of freedom. A degree of freedom here means one independently controlled direction of joint movement. Each agent receives physical descriptors such as its rotation axis and torque limits. An upper layer proposes pose changes; a lower layer translates them into joint commands using movement history. Both layers learn from shared interaction trajectories instead of permanently freezing the lower controller before training the upper one.",
+      "technical_novelty": "Xuemin Hu and collaborators at Hubei University, Worcester Polytechnic Institute and the Chinese Academy of Sciences' Institute of Automation proposed H2MARL, a humanoid-control learning framework with distinct software agents for individual actuated degrees of freedom. A degree of freedom here means one independently controlled direction of joint movement. Each agent receives physical descriptors such as its rotation axis and torque limits. An upper layer proposes pose changes; a lower layer translates them into joint commands using movement history. Both layers learn from shared interaction trajectories instead of permanently freezing the lower controller before training the upper one.",
+      "engineering_impact": "The authors remove components in controlled comparisons to separate joint-level representation, coupled learning and extra gait rewards. Physical deployment would still require checks of sensor delay, actuator limits and real foot contact. The simulated advantage is already uneven: MAPPO's smoothness score is 0.2329 against 0.3514 for the proposed framework. Those values belong alongside the improved balance scores, rather than disappearing behind an overall claim of more natural motion.",
+      "limitations": "Simulation only, without physical humanoid transfer. Smoothness was worse than MAPPO on the reported measure.",
+      "evidence_status": "Preprint and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-04",
+      "organization": "Hubei University; Worcester Polytechnic Institute; Institute of Automation, Chinese Academy of Sciences",
+      "source_ids": [
+        "h2marl-paper"
+      ],
+      "time_window": "7d",
+      "body": "A hip and an elbow need different torque, and two rotation axes within one joint may serve different roles in balance. H2MARL represents such distinctions explicitly for each actuated degree of freedom. Its second design choice connects the training of a planner with that of its executor. The paper therefore examines both how finely control should be divided and how the resulting hierarchy should adapt during learning.\n\nXuemin Hu and collaborators at Hubei University, Worcester Polytechnic Institute and the Chinese Academy of Sciences' Institute of Automation proposed H2MARL, a humanoid-control learning framework with distinct software agents for individual actuated degrees of freedom. A degree of freedom here means one independently controlled direction of joint movement. Each agent receives physical descriptors such as its rotation axis and torque limits. An upper layer proposes pose changes; a lower layer translates them into joint commands using movement history. Both layers learn from shared interaction trajectories instead of permanently freezing the lower controller before training the upper one.\n\nThe November 4 paper evaluates the method in MuJoCo and Isaac Gym simulators, not on a physical humanoid. In one comparison with MAPPO, another multi-agent learning method, the foot-slip score fell from 0.5790 to 0.5367 and the torso-deviation score from 0.3873 to 0.2516. However, movement smoothness was worse: 0.3514 versus 0.2329, with lower values preferred. Improved stability therefore did not mean superiority on every measure. The two inference layers took a combined mean of 9.259 milliseconds on the authors' workstation, a hardware-specific computation result rather than a measured delay on a deployed robot.\n\nThe authors remove components in controlled comparisons to separate joint-level representation, coupled learning and extra gait rewards. Physical deployment would still require checks of sensor delay, actuator limits and real foot contact. The simulated advantage is already uneven: MAPPO's smoothness score is 0.2329 against 0.3514 for the proposed framework. Those values belong alongside the improved balance scores, rather than disappearing behind an overall claim of more natural motion.",
+      "image": null
+    },
+    {
+      "id": "openzilo",
+      "title": "A robot-control ring separates command recognition from execution",
+      "summary": "Ding and colleagues released OpenZilo, a ring platform for voice and gesture interaction with robots. Tests with ten participants show why completing an isolated command differs from completing an entire adjusted task.",
+      "details": "Qianggang Ding and colleagues introduced OpenZilo, an open research platform for using a smart ring to interact with robots. Its hardware combines a microphone, motion sensing, optical pulse sensing and skin-temperature measurement. Software separates signal acquisition, event interpretation, response selection and robot execution. That separation helps locate errors: a misread gesture and a correctly understood command that the robot fails to execute need different remedies. Including physiological sensors does not establish that the device is suitable for medical diagnosis or reliable health monitoring.",
+      "technical_novelty": "Qianggang Ding and colleagues introduced OpenZilo, an open research platform for using a smart ring to interact with robots. Its hardware combines a microphone, motion sensing, optical pulse sensing and skin-temperature measurement. Software separates signal acquisition, event interpretation, response selection and robot execution. That separation helps locate errors: a misread gesture and a correctly understood command that the robot fails to execute need different remedies. Including physiological sensors does not establish that the device is suitable for medical diagnosis or reliable health monitoring.",
+      "engineering_impact": "Input methods need comparison at matching stages of a task. Speech led on isolated-command completion, whereas gestures led when participants adjusted a continuing task. Those experiments do not establish one universally superior interface. The physiological branch requires an additional boundary: a simulated notification tests the route from an event to the robot's response, but it does not establish how accurately that event could be extracted from a person's real bodily signals.",
+      "limitations": "Ten participants and distinct isolated-command and complete-task protocols. Physiological notifications were simulated; medical use was not validated.",
+      "evidence_status": "Preprint and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-02",
+      "organization": "Zilo Lab; Université de Montréal; Mila and collaborators",
+      "source_ids": [
+        "openzilo-paper"
+      ],
+      "time_window": "7d",
+      "body": "Several failure points sit between a finger movement and a completed robot action. The November 2 OpenZilo preprint makes that chain explicit: a signal becomes an event, a response is selected, and the robot attempts execution. An open platform is useful here because those stages can be inspected separately. Correctly recognising a command does not guarantee that the requested physical outcome follows from it.\n\nQianggang Ding and colleagues introduced OpenZilo, an open research platform for using a smart ring to interact with robots. Its hardware combines a microphone, motion sensing, optical pulse sensing and skin-temperature measurement. Software separates signal acquisition, event interpretation, response selection and robot execution. That separation helps locate errors: a misread gesture and a correctly understood command that the robot fails to execute need different remedies. Including physiological sensors does not establish that the device is suitable for medical diagnosis or reliable health monitoring.\n\nTen participants took part in the study. For five isolated commands, the researchers ran 250 trials per input modality: physical task success was 90.4% with speech and 88.8% with gestures. A separate experiment started with a shared spoken instruction and then allowed adjustments during execution. Complete-task success was 70% with gestures and 64% with speech. These figures measure different tasks, rather than conflicting estimates of one performance level. A physiological-event response branch was tested with simulated notifications, not with validated detection of illness or a dangerous human condition. The paper therefore supports an interaction prototype, rather than an independently verified care service.\n\nInput methods need comparison at matching stages of a task. Speech led on isolated-command completion, whereas gestures led when participants adjusted a continuing task. Those experiments do not establish one universally superior interface. The physiological branch requires an additional boundary: a simulated notification tests the route from an event to the robot's response, but it does not establish how accurately that event could be extracted from a person's real bodily signals.",
+      "image": null
+    },
+    {
+      "id": "id-terra-pilot",
+      "title": "Two matching humanoid testbeds prepare for a German warehouse pilot",
+      "summary": "ID Logistics and Terra Robotics are programming identical humanoids at two German locations. They plan to select use cases and start a live operational pilot within six months, without yet publishing throughput measurements.",
+      "details": "ID Logistics and Terra Robotics entered a partnership effective November 1 to prepare humanoid applications in German warehouses. Their November 4 announcement identifies two test locations: Griesheim, with a robot called IDA, and Löhne, with Heinz. Each company bought a Unitree G1 EDU6 so programming could proceed in parallel on comparable hardware. Initial work distinguishes cartons from mailing bags and sorts them into shipping boxes. The release mentions five-finger hands with tactile sensing, but supplies no sorting throughput or reliability measurements.",
+      "technical_novelty": "ID Logistics and Terra Robotics entered a partnership effective November 1 to prepare humanoid applications in German warehouses. Their November 4 announcement identifies two test locations: Griesheim, with a robot called IDA, and Löhne, with Heinz. Each company bought a Unitree G1 EDU6 so programming could proceed in parallel on comparable hardware. Initial work distinguishes cartons from mailing bags and sorts them into shipping boxes. The release mentions five-finger hands with tactile sensing, but supplies no sorting throughput or reliability measurements.",
+      "engineering_impact": "The next observable boundary is the move from initial sorting to an operational environment. That requires the partners' requirements, task selection and equipment choice; published acceptance criteria are still absent. Five-finger tactile hands alone do not answer questions about stuck mailing bags, damaged packaging or operator intervention. The release supplies a pilot preparation horizon, rather than the number of hours already worked by a robot without human assistance.",
+      "limitations": "Preparation for a future pilot; no quantitative throughput, reliability, human-intervention or cost data.",
+      "evidence_status": "Official participant announcement of initial work and plans; no independent evaluation is supplied.",
+      "published_at": "2026-11-04",
+      "organization": "ID Logistics; Terra Robotics",
+      "source_ids": [
+        "id-terra-release"
+      ],
+      "time_window": "7d",
+      "body": "Matching equipment at two locations removes one source of variation from collaborative software development. ID Logistics and Terra have chosen that sequence: comparable machines first, candidate applications and requirements next, and then an operational pilot. The announcement exposes the preparation of an experiment. It does not yet provide a basis for comparing a humanoid with a conventional warehouse sorter on throughput, availability or exception-handling performance.\n\nID Logistics and Terra Robotics entered a partnership effective November 1 to prepare humanoid applications in German warehouses. Their November 4 announcement identifies two test locations: Griesheim, with a robot called IDA, and Löhne, with Heinz. Each company bought a Unitree G1 EDU6 so programming could proceed in parallel on comparable hardware. Initial work distinguishes cartons from mailing bags and sorts them into shipping boxes. The release mentions five-finger hands with tactile sensing, but supplies no sorting throughput or reliability measurements.\n\nThe partners plan to assess four or five candidate use cases, establish technical and operational requirements, and select an appropriate task and robot combination. A first pilot in a real German operating environment is planned within six months. That is a future stage, not evidence of a completed fleet rollout. Terra works with several equipment brands, so the present test platform is not presented as the final choice for every warehouse. This is a release from the participants themselves. It provides neither independent evaluation nor cost per parcel, human-intervention rates or sustained operating-time figures.\n\nThe next observable boundary is the move from initial sorting to an operational environment. That requires the partners' requirements, task selection and equipment choice; published acceptance criteria are still absent. Five-finger tactile hands alone do not answer questions about stuck mailing bags, damaged packaging or operator intervention. The release supplies a pilot preparation horizon, rather than the number of hours already worked by a robot without human assistance.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Model-to-execution alignment needs separate measurements",
+    "summary": "Geometric planning, shape estimation and joint control improve different links in an action.",
+    "implications": "Evaluate task completion, contact conditions and metric trade-offs without treating computing acceleration as mechanical speed."
+  },
+  "sources": [
+    {
+      "id": "vflash-paper",
+      "title": "VFlash: Fast Visual Planning for Physical AI",
+      "url": "https://research.nvidia.com/labs/lpr/vflash/",
+      "domain": "research.nvidia.com",
+      "organization": "NVIDIA and collaborators",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "snake-paper",
+      "title": "Real-time shape estimation of a wire-driven soft snake-like robot based on micro-inertial sensors",
+      "url": "https://ms.copernicus.org/articles/17/983/2026/",
+      "domain": "ms.copernicus.org",
+      "organization": "Shandong University of Science and Technology; Beijing Jiaotong University",
+      "published_at": "2026-11-02"
+    },
+    {
+      "id": "h2marl-paper",
+      "title": "H^2MARL: Hierarchical Heterogeneous Multi-agent Reinforcement Learning for Humanoid Robot Control",
+      "url": "https://arxiv.org/abs/2611.06523",
+      "domain": "arxiv.org",
+      "organization": "Hubei University; Worcester Polytechnic Institute; Institute of Automation, Chinese Academy of Sciences",
+      "published_at": "2026-11-04"
+    },
+    {
+      "id": "openzilo-paper",
+      "title": "OpenZilo: An Open Smart-Ring Platform for Human-Centric Sensing and Interaction with Robots",
+      "url": "https://arxiv.org/abs/2611.03410",
+      "domain": "arxiv.org",
+      "organization": "Zilo Lab; Université de Montréal; Mila and collaborators",
+      "published_at": "2026-11-02"
+    },
+    {
+      "id": "id-terra-release",
+      "title": "ID LOGISTICS AND TERRA ROBOTICS PAVE THE WAY FOR HUMANOID ROBOTICS IN CONTRACT LOGISTICS",
+      "url": "https://www.id-logistics.com/media/2026/11/PR-ID-Logistics-Humanoid-Robots-Germany.pdf",
+      "domain": "www.id-logistics.com",
+      "organization": "ID Logistics; Terra Robotics",
+      "published_at": "2026-11-04"
+    }
+  ]
+}

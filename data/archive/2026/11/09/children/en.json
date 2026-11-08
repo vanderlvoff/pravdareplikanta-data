@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-09",
+  "issue_id": "daily-2026-11-09",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-08T20:49:31.168647Z",
+  "title": "Replicant Data — November 9, 2026: Children",
+  "lead": "Researchers test body shape, human commands and robot steps through different experiments.",
+  "news": [
+    {
+      "id": "soft-snake-shape",
+      "title": "A flexible robot gets help working out its own shape",
+      "summary": "Researchers Zhang and Wu at two Chinese universities measured the shape of a soft snake-like robot. Sensors along its body helped reconstruct bends, but touching an obstacle made the estimate less accurate.",
+      "details": "Software combines those readings with a mathematical model, a rule describing a possible bend. It reconstructs the shape from separate measurements instead of seeing the entire body directly. The team tested a moving robot and one flexible section carrying 500 grams. That is roughly the mass of half a litre of water, although the load's position and the section's construction also matter.",
+      "technical_novelty": "Bend a soft paper strip: the direction of its tip no longer describes its whole shape. A flexible robot pulled by cables faces a similar difficulty. Touching another object can change its shape further. Researchers placed small sensors along its body to report which way different sections point.",
+      "engineering_impact": "During planar movement, average shape error was less than a centimetre. Obstacle contact increased it, with the largest deviation approaching two centimetres. Such a gap matters in a tight space. Knowing its own bend is useful, but this software does not by itself choose a clear route between objects.",
+      "limitations": "During planar movement, average shape error was less than a centimetre. Obstacle contact increased it, with the largest deviation approaching two centimetres. Such a gap matters in a tight space. Knowing its own bend is useful, but this software does not by itself choose a clear route between objects.",
+      "evidence_status": "Scientific reviewers checked the paper; its authors ran the tests. Independent repetition has not been confirmed.",
+      "published_at": "2026-11-02",
+      "organization": "Shandong University of Science and Technology; Beijing Jiaotong University",
+      "source_ids": [
+        "snake-paper"
+      ],
+      "time_window": "7d",
+      "body": "Bend a soft paper strip: the direction of its tip no longer describes its whole shape. A flexible robot pulled by cables faces a similar difficulty. Touching another object can change its shape further. Researchers placed small sensors along its body to report which way different sections point.\n\nSoftware combines those readings with a mathematical model, a rule describing a possible bend. It reconstructs the shape from separate measurements instead of seeing the entire body directly. The team tested a moving robot and one flexible section carrying 500 grams. That is roughly the mass of half a litre of water, although the load's position and the section's construction also matter.\n\nDuring planar movement, average shape error was less than a centimetre. Obstacle contact increased it, with the largest deviation approaching two centimetres. Such a gap matters in a tight space. Knowing its own bend is useful, but this software does not by itself choose a clear route between objects.",
+      "image": null
+    },
+    {
+      "id": "openzilo",
+      "title": "A ring lets people guide a robot by speaking or moving a hand",
+      "summary": "Researcher Qianggang Ding's team made a ring for giving robots voice and gesture commands. Tests with ten people found that short commands and longer jobs with corrections have different difficulties.",
+      "details": "Ten people tried five short commands, with 250 attempts for each input method. The robot completed about 90 out of 100 actions with speech and about 89 with gestures. Another test involved a longer job with corrections along the way. Whole-job success was 70% with gestures and 64% with speech.",
+      "technical_novelty": "Imagine guiding a robot without walking over to its control panel. Researchers built a ring with a microphone and movement sensors for that purpose. It sends sound or hand movements to software, which chooses a robot command. Recognising the gesture and completing the physical action are separate steps, so the team checked more than whether the instruction was understood.",
+      "engineering_impact": "That does not make one method best for everything. A short request and repeated adjustments are different jobs. The ring also has body sensors, but robot responses were tested using artificial notifications. That checks what happens after a signal arrives, rather than whether the ring can actually spot an illness.",
+      "limitations": "That does not make one method best for everything. A short request and repeated adjustments are different jobs. The ring also has body sensors, but robot responses were tested using artificial notifications. That checks what happens after a signal arrives, rather than whether the ring can actually spot an illness.",
+      "evidence_status": "The researchers describe their own experiments. Repetition by another team has not been confirmed.",
+      "published_at": "2026-11-02",
+      "organization": "Zilo Lab; Université de Montréal; Mila and collaborators",
+      "source_ids": [
+        "openzilo-paper"
+      ],
+      "time_window": "7d",
+      "body": "Imagine guiding a robot without walking over to its control panel. Researchers built a ring with a microphone and movement sensors for that purpose. It sends sound or hand movements to software, which chooses a robot command. Recognising the gesture and completing the physical action are separate steps, so the team checked more than whether the instruction was understood.\n\nTen people tried five short commands, with 250 attempts for each input method. The robot completed about 90 out of 100 actions with speech and about 89 with gestures. Another test involved a longer job with corrections along the way. Whole-job success was 70% with gestures and 64% with speech.\n\nThat does not make one method best for everything. A short request and repeated adjustments are different jobs. The ring also has body sensors, but robot responses were tested using artificial notifications. That checks what happens after a signal arrives, rather than whether the ring can actually spot an illness.",
+      "image": null
+    },
+    {
+      "id": "id-terra-pilot",
+      "title": "Two warehouse teams test which jobs a humanoid could do",
+      "summary": "ID Logistics and Terra Robotics are preparing warehouse trials in Germany with two matching robots. They plan a first pilot—a limited test in real warehouse work—within six months.",
+      "details": "The companies bought matching machines so they could develop software on similar equipment. Initial work involves telling boxes from mailing bags and sorting them into shipping boxes. The robots have five-finger hands that sense touch. However, the announcement gives neither the number of successful attempts nor the parcels handled per hour.",
+      "technical_novelty": "A cardboard box and a soft mailing bag behave differently when a hand picks them up. Moving one tidy box in a demonstration is different from sorting varied parcels throughout a shift. Two companies have started checking which warehouse jobs humanoid robots could perform. One test robot is in Griesheim and another in Löhne, Germany.",
+      "engineering_impact": "The partners now want to compare four or five possible jobs and choose a suitable one. A pilot means a limited test in real operations; they plan one within six months. This is not a report that robots already work across the company's warehouses. First comes finding out which particular job they can repeat reliably.",
+      "limitations": "The partners now want to compare four or five possible jobs and choose a suitable one. A pilot means a limited test in real operations; they plan one within six months. This is not a report that robots already work across the company's warehouses. First comes finding out which particular job they can repeat reliably.",
+      "evidence_status": "The companies themselves report the plans and initial work. Their announcement includes no independent assessment.",
+      "published_at": "2026-11-04",
+      "organization": "ID Logistics; Terra Robotics",
+      "source_ids": [
+        "id-terra-release"
+      ],
+      "time_window": "7d",
+      "body": "A cardboard box and a soft mailing bag behave differently when a hand picks them up. Moving one tidy box in a demonstration is different from sorting varied parcels throughout a shift. Two companies have started checking which warehouse jobs humanoid robots could perform. One test robot is in Griesheim and another in Löhne, Germany.\n\nThe companies bought matching machines so they could develop software on similar equipment. Initial work involves telling boxes from mailing bags and sorting them into shipping boxes. The robots have five-finger hands that sense touch. However, the announcement gives neither the number of successful attempts nor the parcels handled per hour.\n\nThe partners now want to compare four or five possible jobs and choose a suitable one. A pilot means a limited test in real operations; they plan one within six months. This is not a report that robots already work across the company's warehouses. First comes finding out which particular job they can repeat reliably.",
+      "image": null
+    },
+    {
+      "id": "vflash",
+      "title": "Researchers build a robot's plan in bigger pieces",
+      "summary": "NVIDIA researchers found a way to prepare points and paths for robot actions more quickly. The plans helped in computer tasks, but the experiment did not measure a real arm moving faster.",
+      "details": "Writing numbers quickly is useful only if the action still works. The team therefore checked another model doing tasks with these plans. Across four groups of computer tasks, average success was 70.2% instead of the comparison version's 62.6%. That is about 70 successes in a hundred, not a promise that every action will now work.",
+      "technical_novelty": "Before guiding a robot towards an object, software can prepare a plan made of points and paths. Numbers called coordinates describe those points. A model, a program trained using data, normally writes small pieces of that description in order. The researchers tried having a smaller helper model propose a whole part of the plan at once instead.",
+      "engineering_impact": "On two computing platforms, producing plans was twelve times faster and the complete model pipeline ran about five times faster. A real arm still has to travel through space. Those numbers describe computation, not a heavy robot moving five times faster. The researchers call their method VFlash.",
+      "limitations": "On two computing platforms, producing plans was twelve times faster and the complete model pipeline ran about five times faster. A real arm still has to travel through space. Those numbers describe computation, not a heavy robot moving five times faster. The researchers call their method VFlash.",
+      "evidence_status": "The researchers describe their own experiments. Repetition by another team has not been confirmed.",
+      "published_at": "2026-11-05",
+      "organization": "NVIDIA and collaborators",
+      "source_ids": [
+        "vflash-paper"
+      ],
+      "time_window": "7d",
+      "body": "Before guiding a robot towards an object, software can prepare a plan made of points and paths. Numbers called coordinates describe those points. A model, a program trained using data, normally writes small pieces of that description in order. The researchers tried having a smaller helper model propose a whole part of the plan at once instead.\n\nWriting numbers quickly is useful only if the action still works. The team therefore checked another model doing tasks with these plans. Across four groups of computer tasks, average success was 70.2% instead of the comparison version's 62.6%. That is about 70 successes in a hundred, not a promise that every action will now work.\n\nOn two computing platforms, producing plans was twelve times faster and the complete model pipeline ran about five times faster. A real arm still has to travel through space. Those numbers describe computation, not a heavy robot moving five times faster. The researchers call their method VFlash.",
+      "image": null
+    },
+    {
+      "id": "h2marl",
+      "title": "A virtual robot learns to slip less while walking",
+      "summary": "Hu's team from three research organisations tried teaching a humanoid's joint movements differently. Computer tests steadied its torso, but one comparison method still produced smoother walking.",
+      "details": "One part of the program proposes a pose change; another turns that into joint movements. They learn from shared records of attempts so their plans and execution fit together. This is reinforcement learning: useful actions receive higher scores. The tests happen in a simulator, a computer world with rules for movement and contact, rather than on a real machine.",
+      "technical_novelty": "If the supporting foot slides during a step, keeping balance becomes harder. Researchers taught a computer humanoid to walk while accounting for the different jobs of its joints. For example, moving a hip forwards helps a step, while moving sideways helps balance. The program receives information about how each movement works and how much force is allowed.",
+      "engineering_impact": "Feet slipped less and the torso tilted less in the experiments. However, another method produced smoother movements. Holding a pose more steadily and moving more smoothly are different achievements. A computer experiment alone cannot tell us whether the same trade-off will hold with real motors on a real floor.",
+      "limitations": "Feet slipped less and the torso tilted less in the experiments. However, another method produced smoother movements. Holding a pose more steadily and moving more smoothly are different achievements. A computer experiment alone cannot tell us whether the same trade-off will hold with real motors on a real floor.",
+      "evidence_status": "The researchers describe their own experiments. Repetition by another team has not been confirmed.",
+      "published_at": "2026-11-04",
+      "organization": "Hubei University; Worcester Polytechnic Institute; Institute of Automation, Chinese Academy of Sciences",
+      "source_ids": [
+        "h2marl-paper"
+      ],
+      "time_window": "7d",
+      "body": "If the supporting foot slides during a step, keeping balance becomes harder. Researchers taught a computer humanoid to walk while accounting for the different jobs of its joints. For example, moving a hip forwards helps a step, while moving sideways helps balance. The program receives information about how each movement works and how much force is allowed.\n\nOne part of the program proposes a pose change; another turns that into joint movements. They learn from shared records of attempts so their plans and execution fit together. This is reinforcement learning: useful actions receive higher scores. The tests happen in a simulator, a computer world with rules for movement and contact, rather than on a real machine.\n\nFeet slipped less and the torso tilted less in the experiments. However, another method produced smoother movements. Holding a pose more steadily and moving more smoothly are different achievements. A computer experiment alone cannot tell us whether the same trade-off will hold with real motors on a real floor.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Sensing, planning and moving are different jobs",
+    "summary": "Researchers test body shape, human commands and robot steps through different experiments.",
+    "implications": "Connect a promising result to what was actually tried, whether in a computer or on a real machine."
+  },
+  "sources": [
+    {
+      "id": "snake-paper",
+      "title": "Real-time shape estimation of a wire-driven soft snake-like robot based on micro-inertial sensors",
+      "url": "https://ms.copernicus.org/articles/17/983/2026/",
+      "domain": "ms.copernicus.org",
+      "organization": "Shandong University of Science and Technology; Beijing Jiaotong University",
+      "published_at": "2026-11-02"
+    },
+    {
+      "id": "openzilo-paper",
+      "title": "OpenZilo: An Open Smart-Ring Platform for Human-Centric Sensing and Interaction with Robots",
+      "url": "https://arxiv.org/abs/2611.03410",
+      "domain": "arxiv.org",
+      "organization": "Zilo Lab; Université de Montréal; Mila and collaborators",
+      "published_at": "2026-11-02"
+    },
+    {
+      "id": "id-terra-release",
+      "title": "ID LOGISTICS AND TERRA ROBOTICS PAVE THE WAY FOR HUMANOID ROBOTICS IN CONTRACT LOGISTICS",
+      "url": "https://www.id-logistics.com/media/2026/11/PR-ID-Logistics-Humanoid-Robots-Germany.pdf",
+      "domain": "www.id-logistics.com",
+      "organization": "ID Logistics; Terra Robotics",
+      "published_at": "2026-11-04"
+    },
+    {
+      "id": "vflash-paper",
+      "title": "VFlash: Fast Visual Planning for Physical AI",
+      "url": "https://research.nvidia.com/labs/lpr/vflash/",
+      "domain": "research.nvidia.com",
+      "organization": "NVIDIA and collaborators",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "h2marl-paper",
+      "title": "H^2MARL: Hierarchical Heterogeneous Multi-agent Reinforcement Learning for Humanoid Robot Control",
+      "url": "https://arxiv.org/abs/2611.06523",
+      "domain": "arxiv.org",
+      "organization": "Hubei University; Worcester Polytechnic Institute; Institute of Automation, Chinese Academy of Sciences",
+      "published_at": "2026-11-04"
+    }
+  ]
+}
