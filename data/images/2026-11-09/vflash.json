@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-09",
+  "article_id": "vflash",
+  "article_title": {
+    "ru": "NVIDIA ускоряет геометрический план, не требуя точного повторения последовательного ответа",
+    "en": "NVIDIA accelerates geometric planning without demanding an identical sequential answer",
+    "ja": "NVIDIA、座標の完全一致を求めず視覚計画を高速化"
+  },
+  "article_urls": {
+    "ru": "https://repravda.com/ru/engineer/issues/2026-11-09/articles/vflash/",
+    "en": "https://repravda.com/en/engineer/issues/2026-11-09/articles/vflash/",
+    "ja": "https://repravda.com/ja/engineer/issues/2026-11-09/articles/vflash/"
+  },
+  "edition": "engineer",
+  "image_path": "data/images/2026-11-09/vflash.webp",
+  "caption": {
+    "ru": "Инженер сравнивает геометрический план с виртуальным действием робота. Концептуальная редакционная иллюстрация к VFlash; не реконструкция установки NVIDIA и не демонстрация ускоренного движения реальной машины.",
+    "en": "An engineer compares a geometric plan with a virtual robot action. A conceptual editorial illustration for VFlash, not a reconstruction of NVIDIA's setup or a demonstration of faster physical movement.",
+    "ja": "技術者が幾何的な計画を仮想ロボットの動作と照らし合わせる。VFlashを題材にした概念的な編集イラストで、NVIDIAの実験装置の再現や実機の移動速度の実証ではない。"
+  },
+  "alt": {
+    "ru": "Чёрно-белая гравюра: женщина-инженер в рабочем халате карандашом проводит кривую через точки на листе, придерживая его другой рукой. Рядом на устойчивом мониторе показана каркасная виртуальная роборука с открытым захватом над кубом; пунктирная траектория подходит к кубу на координатной плоскости. Лист, руки и подставка монитора опираются на общий стол; на заднем плане окно лаборатории.",
+    "en": "Black-and-white engraving of a woman engineer tracing a curve through points on paper with a pencil while holding the sheet with her other hand. A stable desktop monitor shows a wireframe virtual robot arm with an open gripper above a cube and a dotted trajectory approaching it on a coordinate plane. The paper, hands and monitor stand rest on one desk; a laboratory window is in the background.",
+    "ja": "白黒の版画。作業着の女性技術者が片手で紙を押さえ、鉛筆で点を通る曲線を描く。机上のモニターには、立方体の上で把持部を開いた仮想のワイヤーフレーム型ロボットアームと、座標面の立方体へ近付く点線の軌道が映る。紙、手、モニターの台座は同じ机に支えられ、背景には研究室の窓がある。"
+  },
+  "visual_thesis": "Полезность геометрического плана проверяется по виртуальному выполнению задания; ускорение его вычисления нельзя отождествлять с ускорением механического движения.",
+  "visual_brief": "Use case: illustration-story. Asset: exactly ONE original landscape 16:9 editorial illustration for a robotics engineering newspaper, intended final width 1600 px.\nStyle: black ink on pure white, mid-20th-century Soviet popular-science editorial wood engraving language applied to modern computing research. Bold assured outlines, expressive solid black areas, disciplined moderate hatching and crosshatching, clear silhouettes, ample untouched white, light pleasant face and hands. No colour, sepia, tinted paper, gouache, neon, framing, political symbols, logos, readable text, letters, numbers, or interface widgets.\nONE coherent scene: a woman robotics engineer in her early forties sits at a simple laboratory desk, actively evaluating a spatial robot plan. She has an attractive harmonious realistic face, natural anatomy, neat tied-back hair, practical light laboratory work jacket and ordinary blouse. Calm professional concentration, no glamour posing. She looks down toward a sheet of paper on the desk, her right hand naturally grips a pencil, pencil tip visibly contacts the paper while she traces a simple curved trajectory with a few points; her left hand rests flat on the near corner of the paper to hold it down. The sheet lies fully supported by the desk, no clipboard, no readable handwriting. Both forearms clearly connected to her body, fingers natural. Her seated body and chair are stable, not floating.\nBeside the paper is ONE substantial modern landscape monitor, turned so both the engineer and viewer can see it. Its pedestal and foot visibly rest on the same flat level tabletop. The display contains only a clean sparse scientific simulation image, with no pseudo UI: a single visibly wireframe virtual robot arm fixed at its base to a gridded virtual ground plane; a single plain small cube resting on that plane; one curved dotted geometric path approaching the cube. Open parallel gripper hovers clearly above the cube, not gripping it and not claiming any contact. The robot is clearly an abstract digital model INSIDE THE SCREEN, not an actual robotic apparatus. No real robot in the room, no hologram, no floating graphics. Simple mechanically coherent arm with connected joints, no decorative cables, no made-up branded hardware. This is a conceptual representation of computational visual planning, not an exact diagram or reconstruction of the NVIDIA experiment.\nThe paper's simple curved path visually echoes the simulated path. Do not draw multiple panels, before/after comparisons or a collage. The narrative is an engineer checking a geometric plan against a virtual action, NOT demonstrating a faster physical robot. No stopwatch, speed lines, percent values, medical sensors, snake robot, humanoid or warehouse.\nComposition: three-quarter view, upper-body engineer on left, monitor on right, paper and hands prominent in lower centre. All in the same unified perspective. Desk has a rectangular level top of constant thickness with plausible supporting legs, chair physically supports seated engineer. A plain floor-wall junction and one restrained laboratory window establish a recognisable room, no posters or wall text. Background sparse, not cluttered. Facial features and contact of pencil to paper must remain legible at newspaper thumbnail scale. White space around head and screen, avoid excessive tiny dense hatching. Show actual research work with dignity.\nPhysical QA constraints: visible unambiguous pencil-to-paper contact, paper-to-table support, monitor-foot-to-table support, desk and chair support on floor, no intersections or impossible supports. The screen's cube rests on its grid; the robot base rests on the same virtual plane; gripper is open above cube without pretending to support it. Simplify all extraneous hardware.",
+  "source_ids": [
+    "vflash-paper"
+  ],
+  "illustration_type": "editorial_concept",
+  "style": "black-and-white-scientific-engraving",
+  "width": 1600,
+  "height": 900
+}
