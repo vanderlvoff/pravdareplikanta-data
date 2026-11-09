@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-10",
+  "issue_id": "daily-2026-11-10",
+  "edition": "enthusiast",
+  "language": "en",
+  "generated_at": "2026-11-09T20:45:41.081797Z",
+  "title": "Replicants explore why one success is not enough — November 10, 2026: Enthusiast",
+  "lead": "Cart pushing, virtual practice and screen tasks test machine skills in different ways.",
+  "news": [
+    {
+      "id": "forpc-cart",
+      "title": "Why pushing a cart is difficult even for a robot that can walk",
+      "summary": "Huazhong University researchers developed ForPC for walking while pushing a loaded cart. In a physical test, a Unitree G1 moved up to 30 kilograms of cargo by coordinating body movement with hand contact.",
+      "details": "ZhenYu Zou and colleagues at Huazhong University of Science and Technology proposed ForPC, whole-body control for humanoid cart pushing. First the robot learns balance under hand loads and different upper-body poses. A supplementary controller then adjusts the arms, waist and legs using estimates of robot–cart interaction inferred from the robot's own signals rather than external force sensors. Both arms should contribute to propulsion instead of wasting effort by opposing each other on the same handle. The method treats walking and sustained hand contact as a coupled problem.",
+      "technical_novelty": "ZhenYu Zou and colleagues at Huazhong University of Science and Technology proposed ForPC, whole-body control for humanoid cart pushing. First the robot learns balance under hand loads and different upper-body poses. A supplementary controller then adjusts the arms, waist and legs using estimates of robot–cart interaction inferred from the robot's own signals rather than external force sensors. Both arms should contribute to propulsion instead of wasting effort by opposing each other on the same handle. The method treats walking and sustained hand contact as a coupled problem.",
+      "engineering_impact": "The robot estimates interaction from its own signals without being told a new payload's mass. A camera still reads a marker for cart heading, however. This is a particular combination of learned behaviour and measurement, rather than movement by guesswork. Testing took place indoors on a flat surface, with specific support conditions for both wheels and feet.",
+      "limitations": "Author-run flat indoor-floor tests using a visual cart-heading marker. Lifetime, cost per trip and slope operation were not measured.",
+      "evidence_status": "Research preprint and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-05",
+      "organization": "Huazhong University of Science and Technology",
+      "source_ids": [
+        "src-forpc"
+      ],
+      "time_window": "7d",
+      "body": "A cart rolls on wheels, but the job is not simply a walk with arms held forwards. As the load resists motion, the hands transmit a reaction back into the body. The researchers connect a walking skill with adjustments of the arms and torso. Another difficulty appears when two hands share a handle but pull against each other.\n\nZhenYu Zou and colleagues at Huazhong University of Science and Technology proposed ForPC, whole-body control for humanoid cart pushing. First the robot learns balance under hand loads and different upper-body poses. A supplementary controller then adjusts the arms, waist and legs using estimates of robot–cart interaction inferred from the robot's own signals rather than external force sensors. Both arms should contribute to propulsion instead of wasting effort by opposing each other on the same handle. The method treats walking and sustained hand contact as a coupled problem.\n\nThe preprint appeared on November 5. In simulation comparisons, cart-speed tracking error fell by up to 68.2% relative to a locomotion-only baseline. That is a maximum relative reduction in error, not an increase in robot speed. On a physical Unitree G1 humanoid, the simulation-trained controller pushed a cart carrying up to 30 kilograms at 0.5 metres per second without additional real-world training. Tests used a flat indoor floor. Relative cart heading came from an AprilTag, a visual marker recognised by a camera. The demonstration is not operation without external visual references or verified transport among unpredictable obstacles.\n\nThe robot estimates interaction from its own signals without being told a new payload's mass. A camera still reads a marker for cart heading, however. This is a particular combination of learned behaviour and measurement, rather than movement by guesswork. Testing took place indoors on a flat surface, with specific support conditions for both wheels and feet.",
+      "image": null
+    },
+    {
+      "id": "cua-embodied",
+      "title": "An agent gets a screen and mouse for spatial tasks",
+      "summary": "Aggarwal and Welleck at Carnegie Mellon used a shared computer-agent design in four competitions. It operated specialised applications, so one shared design did not mean identical tools for every task.",
+      "details": "Pranjal Aggarwal and Sean Welleck at Carnegie Mellon University tested whether one computer-use agent design could handle spatial tasks through ordinary software interaction. They built an application for each task, displaying scenes and exposing buttons, keyboard controls or point selection. The agent receives screenshots and acts with a mouse and keyboard. Task-specific software changes, while the shared software running the agent stays fixed. This puts domain functionality in the application instead of requiring a newly designed agent for every competition.",
+      "technical_novelty": "Pranjal Aggarwal and Sean Welleck at Carnegie Mellon University tested whether one computer-use agent design could handle spatial tasks through ordinary software interaction. They built an application for each task, displaying scenes and exposing buttons, keyboard controls or point selection. The agent receives screenshots and acts with a mouse and keyboard. Task-specific software changes, while the shared software running the agent stays fixed. This puts domain functionality in the application instead of requiring a newly designed agent for every competition.",
+      "engineering_impact": "Selecting a drawer handle in a 3D image is meaningful, but it is not yet pulling it with a physical hand. The competition scores the selected scene region, not drawer resistance or grasp force. Keeping screen selection separate from physical execution explains both the approach's strength and the next experiment that a real robot would need.",
+      "limitations": "Digital competition tasks, not physical robot control. Domain-specific algorithms remain in the specialised applications.",
+      "evidence_status": "Research preprint and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-06",
+      "organization": "Carnegie Mellon University",
+      "source_ids": [
+        "src-cua-embodied"
+      ],
+      "time_window": "7d",
+      "body": "A screen can show more than documents: it can display a space where a route or a particular object part must be found. The researchers gave an agent such applications while retaining mouse and keyboard actions. Different tasks met through a common control surface. Specialised software still does work behind that surface, and that contribution belongs in the explanation.\n\nPranjal Aggarwal and Sean Welleck at Carnegie Mellon University tested whether one computer-use agent design could handle spatial tasks through ordinary software interaction. They built an application for each task, displaying scenes and exposing buttons, keyboard controls or point selection. The agent receives screenshots and acts with a mouse and keyboard. Task-specific software changes, while the shared software running the agent stays fixed. This puts domain functionality in the application instead of requiring a newly designed agent for every competition.\n\nThe November 6 preprint reports four competitions associated with the European Conference on Computer Vision. Entries placed first in selecting language-described regions in 3D scenes, second in text-guided video-object segmentation, third in navigation with a conversational guide and sixth in navigation from descriptions. These ranks concern different tasks and cannot be added into one performance score. They are not physical robot trials. Specialised processing, including object segmentation, remains inside the applications. Keeping the agent architecture shared does not remove the task-specific tools that make each software environment useful.\n\nSelecting a drawer handle in a 3D image is meaningful, but it is not yet pulling it with a physical hand. The competition scores the selected scene region, not drawer resistance or grasp force. Keeping screen selection separate from physical execution explains both the approach's strength and the next experiment that a real robot would need.",
+      "image": null
+    },
+    {
+      "id": "nvidia-corl-2026",
+      "title": "NVIDIA's new robots learn from examples, with virtual worlds for practice",
+      "summary": "At CoRL, NVIDIA presented GR00T 2 and new robot-training software. Success changed with demonstration count, while virtual training speed was measured separately from physical movement speed.",
+      "details": "At the November 9 Conference on Robot Learning in Austin, NVIDIA introduced GR00T 2, a trained robot-control program using a representation of the physical world, alongside new simulation tools. According to the company, the model completed 40 of 50 evaluated tasks at least once without task-specific demonstrations. That counts tasks achieved, not successful attempts. With one demonstration per task, average success was 71%; with five it reached 95%. Training used diverse robot and human data, including 100,000 hours of open human video recorded from the wearer's viewpoint.",
+      "technical_novelty": "At the November 9 Conference on Robot Learning in Austin, NVIDIA introduced GR00T 2, a trained robot-control program using a representation of the physical world, alongside new simulation tools. According to the company, the model completed 40 of 50 evaluated tasks at least once without task-specific demonstrations. That counts tasks achieved, not successful attempts. With one demonstration per task, average success was 71%; with five it reached 95%. Training used diverse robot and human data, including 100,000 hours of open human video recorded from the wearer's viewpoint.",
+      "engineering_impact": "Forty out of fifty sounds like eighty per cent, but the statement counts something different: at least one success in each of forty task types. It does not specify the denominator of all attempts. It therefore cannot replace the separately reported average success with one or five examples. Training throughput and physical hand speed require a similar distinction.",
+      "limitations": "Developer-reported results on selected tasks and configurations; no independent reproduction or customer-workstation throughput calculation.",
+      "evidence_status": "Official developer or vendor announcement; figures and plans are not independent evaluation.",
+      "published_at": "2026-11-09",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "src-nvidia-corl"
+      ],
+      "time_window": "24h",
+      "body": "Seeing an example, attempting a task and checking its outcome are different parts of machine learning. NVIDIA's programme includes a pretrained model, demonstrations of particular work and virtual environments for practice. The figures become clearer after identifying which part is being evaluated and how much extra help the system receives.\n\nAt the November 9 Conference on Robot Learning in Austin, NVIDIA introduced GR00T 2, a trained robot-control program using a representation of the physical world, alongside new simulation tools. According to the company, the model completed 40 of 50 evaluated tasks at least once without task-specific demonstrations. That counts tasks achieved, not successful attempts. With one demonstration per task, average success was 71%; with five it reached 95%. Training used diverse robot and human data, including 100,000 hours of open human video recorded from the wearer's viewpoint.\n\nThe same programme introduced Isaac Lab 3.0, software for training robots. Researchers can choose between PhysX and Newton physics solvers; Newton can model deformable objects such as cloth and cables. In a particular vision-based dexterous-manipulation training benchmark, the Newton configuration provided up to 2.5 times the training throughput of Isaac Lab 2.3 with PhysX. This compares two training configurations, not physical robot speed. The developer reports all these figures. The announcement does not establish the same performance on arbitrary hardware or provide independent reproduction of the results.\n\nForty out of fifty sounds like eighty per cent, but the statement counts something different: at least one success in each of forty task types. It does not specify the denominator of all attempts. It therefore cannot replace the separately reported average success with one or five examples. Training throughput and physical hand speed require a similar distinction.",
+      "image": null
+    },
+    {
+      "id": "dexbench-launch",
+      "title": "A robot exam changes the conditions as well as the task",
+      "summary": "RLWRLD introduced DexBench in Seoul with 15 virtual tests of precise hand work. Objects, physical properties and layouts change so familiar success can be distinguished from transferring a skill.",
+      "details": "RLWRLD introduced DexBench at NVIDIA AI Day Seoul at the COEX convention centre on November 9. It is a suite of repeatable tests for dexterous manipulation, meaning precise robotic hand work with objects. This first major release from an initiative started with NVIDIA in June contains 15 tasks across retail, logistics, assembly and hotel food-and-beverage operations. Examples include retrieving products from shelves, unloading roll cages, inserting connectors, fastening screws, stacking plates and pouring liquids. Virtual objects and equipment are modelled using specifications of real products.",
+      "technical_novelty": "RLWRLD introduced DexBench at NVIDIA AI Day Seoul at the COEX convention centre on November 9. It is a suite of repeatable tests for dexterous manipulation, meaning precise robotic hand work with objects. This first major release from an initiative started with NVIDIA in June contains 15 tasks across retail, logistics, assembly and hotel food-and-beverage operations. Examples include retrieving products from shelves, unloading roll cages, inserting connectors, fastening screws, stacking plates and pouring liquids. Virtual objects and equipment are modelled using specifications of real products.",
+      "engineering_impact": "The organisers also plan to compare virtual scores with physical robots. That matters because a convenient simulated cup and a real object can slip or deform differently. The news provides the structure for comparison, not evidence that fifteen named tasks are already performed equally reliably in a shop, hotel and factory.",
+      "limitations": "Simulated evaluation; physical-robot correspondence and component releases are identified as further steps.",
+      "evidence_status": "Official developer or vendor announcement; figures and plans are not independent evaluation.",
+      "published_at": "2026-11-09",
+      "organization": "RLWRLD",
+      "source_ids": [
+        "src-dexbench"
+      ],
+      "time_window": "24h",
+      "body": "Move a cup and it remains recognisable, but the old hand movement will no longer reach the right place. For a robot, that change can reveal what was actually learned. DexBench collects such variations into repeatable tests. It is a defined set of manual operations in virtual work scenes, rather than one giant examination of every form of intelligent behaviour.\n\nRLWRLD introduced DexBench at NVIDIA AI Day Seoul at the COEX convention centre on November 9. It is a suite of repeatable tests for dexterous manipulation, meaning precise robotic hand work with objects. This first major release from an initiative started with NVIDIA in June contains 15 tasks across retail, logistics, assembly and hotel food-and-beverage operations. Examples include retrieving products from shelves, unloading roll cages, inserting connectors, fastening screws, stacking plates and pouring liquids. Virtual objects and equipment are modelled using specifications of real products.\n\nEvaluation goes beyond whether a task worked once. Conditions change along three dimensions: objects, physical properties and spatial arrangements. That probes transfer to situations not encountered during training. The foundation is Isaac Lab-Arena, software for evaluating robot-control policies at scale, together with Newton's physical-interaction simulation. RLWRLD plans to release code, environments, data, baseline models and a leaderboard. Comparing simulated performance with physical robots is identified as further work. Launching a test suite therefore does not establish the operational reliability of any particular robot at an actual industrial site.\n\nThe organisers also plan to compare virtual scores with physical robots. That matters because a convenient simulated cup and a real object can slip or deform differently. The news provides the structure for comparison, not evidence that fifteen named tasks are already performed equally reliably in a shop, hotel and factory.",
+      "image": null
+    },
+    {
+      "id": "robotbank-quadruped",
+      "title": "Japan's RobotBank starts a quadruped by defining its future job",
+      "summary": "Tokyo's RobotBank announced a robot-development programme for equipment inspection rounds. It plans to validate site conditions first; there is no finished machine with an announced price and sales date yet.",
+      "details": "Tokyo-based RobotBank announced development of its own industrial quadruped on November 9. Intended uses include inspection rounds around production equipment, observation in logistics and large facilities, and infrastructure inspection support. The company plans to validate site-specific conditions before fixing product specifications. Mechanical design, locomotion control, sensors, teleoperation and maintenance will be considered together. Environmental recognition and autonomous task execution are planned as staged additions following technical validation, rather than established capabilities of an available machine.",
+      "technical_novelty": "Tokyo-based RobotBank announced development of its own industrial quadruped on November 9. Intended uses include inspection rounds around production equipment, observation in logistics and large facilities, and infrastructure inspection support. The company plans to validate site-specific conditions before fixing product specifications. Mechanical design, locomotion control, sensors, teleoperation and maintenance will be considered together. Environmental recognition and autonomous task execution are planned as staged additions following technical validation, rather than established capabilities of an available machine.",
+      "engineering_impact": "There is no number of stairs climbed or hours worked by the new product, and borrowing figures from similar robots would be misleading. Instead, the company lists what it intends to measure after prototyping. The sequence matters: an industrial-machine project has begun, rather than a transition from an impressive walk to verified daily service having been completed.",
+      "limitations": "Development start and validation plan; specifications, measured results, price and release timing are not announced.",
+      "evidence_status": "Official developer or vendor announcement; figures and plans are not independent evaluation.",
+      "published_at": "2026-11-09",
+      "organization": "RobotBank",
+      "source_ids": [
+        "src-robotbank"
+      ],
+      "time_window": "24h",
+      "body": "Four legs attract attention, but RobotBank's announcement has another focus: designing the machine together with the conditions of its service. Walking around a facility and returning useful information are different outcomes. Sensors, remote assistance and maintenance appear alongside locomotion, while autonomous features still require technical trials.\n\nTokyo-based RobotBank announced development of its own industrial quadruped on November 9. Intended uses include inspection rounds around production equipment, observation in logistics and large facilities, and infrastructure inspection support. The company plans to validate site-specific conditions before fixing product specifications. Mechanical design, locomotion control, sensors, teleoperation and maintenance will be considered together. Environmental recognition and autonomous task execution are planned as staged additions following technical validation, rather than established capabilities of an available machine.\n\nRobotBank stresses that this is not its first development effort: the project builds on previous robot products, software platforms and system integration. Through RobotBank Lab, it plans to analyse customer needs, produce prototypes and conduct trials. Proposed assessment criteria include task success, operating time, frequency of human intervention, safety and maintenance expense. No measured results for those criteria, final specifications, sales date or mass-production schedule are supplied. Mobile manipulators and other possible follow-on products are identified as areas for consideration, not a guaranteed product roadmap. The release describes the start of a development programme, not a completed deployment.\n\nThere is no number of stairs climbed or hours worked by the new product, and borrowing figures from similar robots would be misleading. Instead, the company lists what it intends to measure after prototyping. The sequence matters: an industrial-machine project has begun, rather than a transition from an impressive walk to verified daily service having been completed.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Replicants explore why one success is not enough",
+    "summary": "Cart pushing, virtual practice and screen tasks test machine skills in different ways.",
+    "implications": "Distinguish what a number counts: tasks, attempts, computation or physical actions."
+  },
+  "sources": [
+    {
+      "id": "src-forpc",
+      "title": "ForPC: Force-Aware Whole-Body Control for Precise Humanoid Cart Pushing",
+      "url": "https://arxiv.org/abs/2611.08664",
+      "domain": "arxiv.org",
+      "organization": "Huazhong University of Science and Technology",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-cua-embodied",
+      "title": "Computer-Use Agents Are Embodied Generalists",
+      "url": "https://arxiv.org/abs/2611.09847",
+      "domain": "arxiv.org",
+      "organization": "Carnegie Mellon University",
+      "published_at": "2026-11-06"
+    },
+    {
+      "id": "src-nvidia-corl",
+      "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
+      "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+      "domain": "blogs.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-09"
+    },
+    {
+      "id": "src-dexbench",
+      "title": "RLWRLD Launches DexBench, Confirms Planned Investment from NVIDIA",
+      "url": "https://www.rlwrld.ai/en/news/117",
+      "domain": "www.rlwrld.ai",
+      "organization": "RLWRLD",
+      "published_at": "2026-11-09"
+    },
+    {
+      "id": "src-robotbank",
+      "title": "RobotBank、具身AIロボットの自社製品開発を本格始動。第一弾として産業向け四足歩行ロボットの開発に着手",
+      "url": "https://prtimes.jp/main/html/rd/p/000000085.000097103.html",
+      "domain": "prtimes.jp",
+      "organization": "RobotBank",
+      "published_at": "2026-11-09"
+    }
+  ]
+}

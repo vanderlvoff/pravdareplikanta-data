@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-10",
+  "issue_id": "daily-2026-11-10",
+  "edition": "engineer",
+  "language": "en",
+  "generated_at": "2026-11-09T20:45:41.081797Z",
+  "title": "Replicants investigate where computation meets contact — November 10, 2026: Engineer",
+  "lead": "New models, physical simulation and interaction estimates connect different parts of control.",
+  "news": [
+    {
+      "id": "forpc-cart",
+      "title": "A humanoid coordinates steps and hand effort while pushing a loaded cart",
+      "summary": "Huazhong University researchers proposed ForPC to coordinate walking with pushing. A simulation-trained Unitree G1 moved a cart carrying up to 30 kilograms, using a visual marker for relative cart heading.",
+      "details": "ZhenYu Zou and colleagues at Huazhong University of Science and Technology proposed ForPC, whole-body control for humanoid cart pushing. First the robot learns balance under hand loads and different upper-body poses. A supplementary controller then adjusts the arms, waist and legs using estimates of robot–cart interaction inferred from the robot's own signals rather than external force sensors. Both arms should contribute to propulsion instead of wasting effort by opposing each other on the same handle. The method treats walking and sustained hand contact as a coupled problem.",
+      "technical_novelty": "ZhenYu Zou and colleagues at Huazhong University of Science and Technology proposed ForPC, whole-body control for humanoid cart pushing. First the robot learns balance under hand loads and different upper-body poses. A supplementary controller then adjusts the arms, waist and legs using estimates of robot–cart interaction inferred from the robot's own signals rather than external force sensors. Both arms should contribute to propulsion instead of wasting effort by opposing each other on the same handle. The method treats walking and sustained hand contact as a coupled problem.",
+      "engineering_impact": "Without external force sensors needs careful reading. The controller still uses the robot's own measurements, including joint torques, and visual cart heading. Omitting a separate force-measurement device is not the same as omitting feedback. Reproduction also needs wheel, handle and floor conditions; flat-floor results do not establish stability margin on a threshold or slope.",
+      "limitations": "Author-run flat indoor-floor tests using a visual cart-heading marker. Lifetime, cost per trip and slope operation were not measured.",
+      "evidence_status": "Research preprint and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-05",
+      "organization": "Huazhong University of Science and Technology",
+      "source_ids": [
+        "src-forpc"
+      ],
+      "time_window": "7d",
+      "body": "Pushing a cart changes leg loading through sustained hand contact. A capable walking controller therefore does not guarantee accurate cargo motion. ForPC adds bounded whole-body adjustments to a stable locomotion skill, accounting for the interaction. The significant feature is not simply force estimation, but coordination between two arms that close a physical loop with the cart.\n\nZhenYu Zou and colleagues at Huazhong University of Science and Technology proposed ForPC, whole-body control for humanoid cart pushing. First the robot learns balance under hand loads and different upper-body poses. A supplementary controller then adjusts the arms, waist and legs using estimates of robot–cart interaction inferred from the robot's own signals rather than external force sensors. Both arms should contribute to propulsion instead of wasting effort by opposing each other on the same handle. The method treats walking and sustained hand contact as a coupled problem.\n\nThe preprint appeared on November 5. In simulation comparisons, cart-speed tracking error fell by up to 68.2% relative to a locomotion-only baseline. That is a maximum relative reduction in error, not an increase in robot speed. On a physical Unitree G1 humanoid, the simulation-trained controller pushed a cart carrying up to 30 kilograms at 0.5 metres per second without additional real-world training. Tests used a flat indoor floor. Relative cart heading came from an AprilTag, a visual marker recognised by a camera. The demonstration is not operation without external visual references or verified transport among unpredictable obstacles.\n\nWithout external force sensors needs careful reading. The controller still uses the robot's own measurements, including joint torques, and visual cart heading. Omitting a separate force-measurement device is not the same as omitting feedback. Reproduction also needs wheel, handle and floor conditions; flat-floor results do not establish stability margin on a threshold or slope.",
+      "image": null
+    },
+    {
+      "id": "nvidia-corl-2026",
+      "title": "NVIDIA pairs a new robot model with more detailed simulation training",
+      "summary": "At CoRL in Austin, NVIDIA introduced the GR00T 2 control model and Isaac Lab 3.0 training software. Its task-success and training-throughput results measure different things, rather than one overall level of deployment readiness.",
+      "details": "At the November 9 Conference on Robot Learning in Austin, NVIDIA introduced GR00T 2, a trained robot-control program using a representation of the physical world, alongside new simulation tools. According to the company, the model completed 40 of 50 evaluated tasks at least once without task-specific demonstrations. That counts tasks achieved, not successful attempts. With one demonstration per task, average success was 71%; with five it reached 95%. Training used diverse robot and human data, including 100,000 hours of open human video recorded from the wearer's viewpoint.",
+      "technical_novelty": "At the November 9 Conference on Robot Learning in Austin, NVIDIA introduced GR00T 2, a trained robot-control program using a representation of the physical world, alongside new simulation tools. According to the company, the model completed 40 of 50 evaluated tasks at least once without task-specific demonstrations. That counts tasks achieved, not successful attempts. With one demonstration per task, average success was 71%; with five it reached 95%. Training used diverse robot and human data, including 100,000 hours of open human video recorded from the wearer's viewpoint.",
+      "engineering_impact": "Reproduction particularly needs the denominators. Forty tasks completed at least once does not give the probability of the next attempt succeeding. The 71% and 95% figures also change the number of demonstrations. Meanwhile, the simulator comparison changes both software version and physics solver. Without preserving those conditions, the numbers do not isolate the superiority of a single component.",
+      "limitations": "Developer-reported results on selected tasks and configurations; no independent reproduction or customer-workstation throughput calculation.",
+      "evidence_status": "Official developer or vendor announcement; figures and plans are not independent evaluation.",
+      "published_at": "2026-11-09",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "src-nvidia-corl"
+      ],
+      "time_window": "24h",
+      "body": "A new model and a new simulator address related but distinct problems. NVIDIA's programme needs to be read as both a control-quality result and a computation result. Mixing them would turn the frequency of completed actions and the volume of virtual practice into an unsupported claim about a physical production cycle.\n\nAt the November 9 Conference on Robot Learning in Austin, NVIDIA introduced GR00T 2, a trained robot-control program using a representation of the physical world, alongside new simulation tools. According to the company, the model completed 40 of 50 evaluated tasks at least once without task-specific demonstrations. That counts tasks achieved, not successful attempts. With one demonstration per task, average success was 71%; with five it reached 95%. Training used diverse robot and human data, including 100,000 hours of open human video recorded from the wearer's viewpoint.\n\nThe same programme introduced Isaac Lab 3.0, software for training robots. Researchers can choose between PhysX and Newton physics solvers; Newton can model deformable objects such as cloth and cables. In a particular vision-based dexterous-manipulation training benchmark, the Newton configuration provided up to 2.5 times the training throughput of Isaac Lab 2.3 with PhysX. This compares two training configurations, not physical robot speed. The developer reports all these figures. The announcement does not establish the same performance on arbitrary hardware or provide independent reproduction of the results.\n\nReproduction particularly needs the denominators. Forty tasks completed at least once does not give the probability of the next attempt succeeding. The 71% and 95% figures also change the number of demonstrations. Meanwhile, the simulator comparison changes both software version and physics solver. Without preserving those conditions, the numbers do not isolate the superiority of a single component.",
+      "image": null
+    },
+    {
+      "id": "dexbench-launch",
+      "title": "DexBench varies objects, physics and layout to test robot dexterity",
+      "summary": "RLWRLD introduced DexBench in Seoul with 15 simulated tasks for precise robotic hand work. Evaluation varies three groups of conditions, while comparison with physical robot performance remains planned work.",
+      "details": "RLWRLD introduced DexBench at NVIDIA AI Day Seoul at the COEX convention centre on November 9. It is a suite of repeatable tests for dexterous manipulation, meaning precise robotic hand work with objects. This first major release from an initiative started with NVIDIA in June contains 15 tasks across retail, logistics, assembly and hotel food-and-beverage operations. Examples include retrieving products from shelves, unloading roll cages, inserting connectors, fastening screws, stacking plates and pouring liquids. Virtual objects and equipment are modelled using specifications of real products.",
+      "technical_novelty": "RLWRLD introduced DexBench at NVIDIA AI Day Seoul at the COEX convention centre on November 9. It is a suite of repeatable tests for dexterous manipulation, meaning precise robotic hand work with objects. This first major release from an initiative started with NVIDIA in June contains 15 tasks across retail, logistics, assembly and hotel food-and-beverage operations. Examples include retrieving products from shelves, unloading roll cages, inserting connectors, fastening screws, stacking plates and pouring liquids. Virtual objects and equipment are modelled using specifications of real products.",
+      "engineering_impact": "The announcement does not mean every promised component is already available in final form: it sets out a release plan. Comparisons will need a fixed environment version and variation set. A further question is whether the same failure causes appear in simulation and on a physical hand. The release explicitly leaves that correspondence for subsequent validation.",
+      "limitations": "Simulated evaluation; physical-robot correspondence and component releases are identified as further steps.",
+      "evidence_status": "Official developer or vendor announcement; figures and plans are not independent evaluation.",
+      "published_at": "2026-11-09",
+      "organization": "RLWRLD",
+      "source_ids": [
+        "src-dexbench"
+      ],
+      "time_window": "24h",
+      "body": "A skill can work on a familiar part and fail when its location or physical properties change. DexBench organises evaluation around those changes. Its engineering value depends on repeating not only a successful task, but a particular failure condition while distinguishing it from other variables in the experiment.\n\nRLWRLD introduced DexBench at NVIDIA AI Day Seoul at the COEX convention centre on November 9. It is a suite of repeatable tests for dexterous manipulation, meaning precise robotic hand work with objects. This first major release from an initiative started with NVIDIA in June contains 15 tasks across retail, logistics, assembly and hotel food-and-beverage operations. Examples include retrieving products from shelves, unloading roll cages, inserting connectors, fastening screws, stacking plates and pouring liquids. Virtual objects and equipment are modelled using specifications of real products.\n\nEvaluation goes beyond whether a task worked once. Conditions change along three dimensions: objects, physical properties and spatial arrangements. That probes transfer to situations not encountered during training. The foundation is Isaac Lab-Arena, software for evaluating robot-control policies at scale, together with Newton's physical-interaction simulation. RLWRLD plans to release code, environments, data, baseline models and a leaderboard. Comparing simulated performance with physical robots is identified as further work. Launching a test suite therefore does not establish the operational reliability of any particular robot at an actual industrial site.\n\nThe announcement does not mean every promised component is already available in final form: it sets out a release plan. Comparisons will need a fixed environment version and variation set. A further question is whether the same failure causes appear in simulation and on a physical hand. The release explicitly leaves that correspondence for subsequent validation.",
+      "image": null
+    },
+    {
+      "id": "wuji-data-system",
+      "title": "HumansX packages two robot arms as a demonstration-recording environment",
+      "summary": "Tokyo's HumansX assembled a dual-arm system with Wuji Hand 2 hands and operator gloves. The offering combines equipment and setup for recording examples, without establishing the quality of later autonomous learning.",
+      "details": "Tokyo-based HumansX proposed a dual-arm data-collection system on November 9, combining Wuji Hand 2 robotic hands with Wuji Glove operator gloves. Operator movements can be recorded as demonstrations for later robot learning. Each hand has 20 actively controlled degrees of freedom, meaning separate movement directions, with four per finger. Vendor specifications give a mass of about 800 grams and fingertip peak force of at least 12 newtons. Peak force is not a continuous-load rating or the mass of an object that can safely be held.",
+      "technical_novelty": "Tokyo-based HumansX proposed a dual-arm data-collection system on November 9, combining Wuji Hand 2 robotic hands with Wuji Glove operator gloves. Operator movements can be recorded as demonstrations for later robot learning. Each hand has 20 actively controlled degrees of freedom, meaning separate movement directions, with four per finger. Vendor specifications give a mass of about 800 grams and fingertip peak force of at least 12 newtons. Peak force is not a continuous-load rating or the mass of an object that can safely be held.",
+      "engineering_impact": "An order would need agreement on which signals are recorded and how they are checked after setup. Those are configuration questions, not published supplier results. Peak force and movement count determine neither continuous-service lifetime nor training-data quality. Even delivery of the complete system remains dependent on the selected configuration in the announcement.",
+      "limitations": "Vendor specifications; no independent lifetime test, fixed public complete-system price or autonomous-learning outcome from collected demonstrations.",
+      "evidence_status": "Official developer or vendor announcement; figures and plans are not independent evaluation.",
+      "published_at": "2026-11-09",
+      "organization": "HumansX",
+      "source_ids": [
+        "src-wuji-system",
+        "src-wuji-reservations"
+      ],
+      "time_window": "24h",
+      "body": "Demonstration collection requires separate devices to act as one measurement setup. This offering goes beyond selling a hand to provide an assembled two-arm configuration. It reduces the number of components a customer must connect, but synchronisation, movement representation and recording quality still need checking. Wearing gloves alone does not solve the transfer of human motion to a robot.\n\nTokyo-based HumansX proposed a dual-arm data-collection system on November 9, combining Wuji Hand 2 robotic hands with Wuji Glove operator gloves. Operator movements can be recorded as demonstrations for later robot learning. Each hand has 20 actively controlled degrees of freedom, meaning separate movement directions, with four per finger. Vendor specifications give a mass of about 800 grams and fingertip peak force of at least 12 newtons. Peak force is not a continuous-load rating or the mass of an object that can safely be held.\n\nThe assembled configuration uses Marvin Pro arms. The supplier offers setup, on-site installation and Japanese-language support. The first hand allocation is fully reserved; the next batch is scheduled to ship from February 2027. Its own website opened second-batch reservations on November 6: the November 9 release adds the dual-arm system offering, rather than establishing immediate off-the-shelf availability. Price and delivery for a complete installation depend on configuration and require an enquiry. The announcement supplies neither an independent hand-lifetime test nor evidence that collected demonstrations have already enabled autonomous completion of a customer's task.\n\nAn order would need agreement on which signals are recorded and how they are checked after setup. Those are configuration questions, not published supplier results. Peak force and movement count determine neither continuous-service lifetime nor training-data quality. Even delivery of the complete system remains dependent on the selected configuration in the announcement.",
+      "image": null
+    },
+    {
+      "id": "cua-embodied",
+      "title": "One computer-use agent handles four spatial tasks through specialised apps",
+      "summary": "Aggarwal and Welleck at Carnegie Mellon retained a shared agent-running software across four computer-vision competitions. Specialised functions live inside the applications; the results are not physical robot trials.",
+      "details": "Pranjal Aggarwal and Sean Welleck at Carnegie Mellon University tested whether one computer-use agent design could handle spatial tasks through ordinary software interaction. They built an application for each task, displaying scenes and exposing buttons, keyboard controls or point selection. The agent receives screenshots and acts with a mouse and keyboard. Task-specific software changes, while the shared software running the agent stays fixed. This puts domain functionality in the application instead of requiring a newly designed agent for every competition.",
+      "technical_novelty": "Pranjal Aggarwal and Sean Welleck at Carnegie Mellon University tested whether one computer-use agent design could handle spatial tasks through ordinary software interaction. They built an application for each task, displaying scenes and exposing buttons, keyboard controls or point selection. The agent receives screenshots and acts with a mouse and keyboard. Task-specific software changes, while the shared software running the agent stays fixed. This puts domain functionality in the application instead of requiring a newly designed agent for every competition.",
+      "engineering_impact": "Application contents matter: a click can invoke a specialised algorithm the agent did not invent. A shared action-selection design is therefore different from an identical set of underlying operations. Selecting the right region in a 3D scan does not yet provide a controller that grasps it with a physical hand under force and timing constraints.",
+      "limitations": "Digital competition tasks, not physical robot control. Domain-specific algorithms remain in the specialised applications.",
+      "evidence_status": "Research preprint and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-06",
+      "organization": "Carnegie Mellon University",
+      "source_ids": [
+        "src-cua-embodied"
+      ],
+      "time_window": "7d",
+      "body": "Specialisation can sit around a model as well as inside it. Here, an agent uses screenshots, a mouse and a keyboard while task-specific applications supply the operations. That makes it possible to examine what remains shared between tasks. The relevant system boundary still includes those tools, rather than only the model selecting the next action.\n\nPranjal Aggarwal and Sean Welleck at Carnegie Mellon University tested whether one computer-use agent design could handle spatial tasks through ordinary software interaction. They built an application for each task, displaying scenes and exposing buttons, keyboard controls or point selection. The agent receives screenshots and acts with a mouse and keyboard. Task-specific software changes, while the shared software running the agent stays fixed. This puts domain functionality in the application instead of requiring a newly designed agent for every competition.\n\nThe November 6 preprint reports four competitions associated with the European Conference on Computer Vision. Entries placed first in selecting language-described regions in 3D scenes, second in text-guided video-object segmentation, third in navigation with a conversational guide and sixth in navigation from descriptions. These ranks concern different tasks and cannot be added into one performance score. They are not physical robot trials. Specialised processing, including object segmentation, remains inside the applications. Keeping the agent architecture shared does not remove the task-specific tools that make each software environment useful.\n\nApplication contents matter: a click can invoke a specialised algorithm the agent did not invent. A shared action-selection design is therefore different from an identical set of underlying operations. Selecting the right region in a 3D scan does not yet provide a controller that grasps it with a physical hand under force and timing constraints.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Replicants investigate where computation meets contact",
+    "summary": "New models, physical simulation and interaction estimates connect different parts of control.",
+    "implications": "Task coverage, attempt success, training throughput and real contact need separate evaluation protocols."
+  },
+  "sources": [
+    {
+      "id": "src-forpc",
+      "title": "ForPC: Force-Aware Whole-Body Control for Precise Humanoid Cart Pushing",
+      "url": "https://arxiv.org/abs/2611.08664",
+      "domain": "arxiv.org",
+      "organization": "Huazhong University of Science and Technology",
+      "published_at": "2026-11-05"
+    },
+    {
+      "id": "src-nvidia-corl",
+      "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
+      "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+      "domain": "blogs.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-09"
+    },
+    {
+      "id": "src-dexbench",
+      "title": "RLWRLD Launches DexBench, Confirms Planned Investment from NVIDIA",
+      "url": "https://www.rlwrld.ai/en/news/117",
+      "domain": "www.rlwrld.ai",
+      "organization": "RLWRLD",
+      "published_at": "2026-11-09"
+    },
+    {
+      "id": "src-wuji-system",
+      "title": "【第1期予約完売】20自由度ロボットハンド「Wuji Hand 2」第2期予約受付を開始 ― 現場ですぐ使える双腕データ収集システムもあわせてご提案",
+      "url": "https://prtimes.jp/main/html/rd/p/000000002.000192177.html",
+      "domain": "prtimes.jp",
+      "organization": "HumansX",
+      "published_at": "2026-11-09"
+    },
+    {
+      "id": "src-wuji-reservations",
+      "title": "Wuji Hand 2 First Batch Fully Reserved — Second-Batch Reservations Now Open",
+      "url": "https://humansx.co.jp/en/news/wuji-hand2-batch2-preorder/",
+      "domain": "humansx.co.jp",
+      "organization": "HumansX",
+      "published_at": "2026-11-06"
+    },
+    {
+      "id": "src-cua-embodied",
+      "title": "Computer-Use Agents Are Embodied Generalists",
+      "url": "https://arxiv.org/abs/2611.09847",
+      "domain": "arxiv.org",
+      "organization": "Carnegie Mellon University",
+      "published_at": "2026-11-06"
+    }
+  ]
+}

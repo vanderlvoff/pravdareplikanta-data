@@ -2,150 +2,159 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-09",
-  "issue_id": "daily-2026-11-09",
+  "issue_date": "2026-11-10",
+  "issue_id": "daily-2026-11-10",
   "edition": "engineer",
   "language": "en",
-  "generated_at": "2026-11-08T20:49:31.168647Z",
-  "title": "Replicant Data — November 9, 2026: Engineer",
-  "lead": "Geometric planning, shape estimation and joint control improve different links in an action.",
+  "generated_at": "2026-11-09T20:45:41.081797Z",
+  "title": "Replicants investigate where computation meets contact — November 10, 2026: Engineer",
+  "lead": "New models, physical simulation and interaction estimates connect different parts of control.",
   "news": [
     {
-      "id": "vflash",
-      "title": "NVIDIA accelerates geometric planning without demanding an identical sequential answer",
-      "summary": "NVIDIA's VFlash generates geometric elements of robot plans in parallel. Its action model reached 70.2% success on simulated tasks, while reported computing gains measure inference rather than faster physical movement.",
-      "details": "NVIDIA researchers and collaborators introduced VFlash, a method for generating visual plans more quickly. These plans describe points, regions or trajectories that a separate action model uses to choose robot actions. Rather than emit coordinates as a long sequence of small pieces, a compact helper model proposes an entire geometric primitive in parallel. Spatial usefulness can matter more than reproducing every piece of the sequential model's output. Ordinary text follows a different rule: proposed continuations remain verified, so relaxed acceptance of geometry does not extend to written instructions.",
-      "technical_novelty": "NVIDIA researchers and collaborators introduced VFlash, a method for generating visual plans more quickly. These plans describe points, regions or trajectories that a separate action model uses to choose robot actions. Rather than emit coordinates as a long sequence of small pieces, a compact helper model proposes an entire geometric primitive in parallel. Spatial usefulness can matter more than reproducing every piece of the sequential model's output. Ordinary text follows a different rule: proposed continuations remain verified, so relaxed acceptance of geometry does not extend to written instructions.",
-      "engineering_impact": "Reproduction requires separate comparisons of geometric quality and complete pipeline time. Faster decoding can be useful without reproducing an original coordinate sequence exactly, provided the downstream action model still completes its tasks. The reported evaluation tests that connection across four virtual suites. It does not supply a production-line cycle measurement, where sensing, safety checks and the mechanism's motion would also contribute to the elapsed time.",
-      "limitations": "Simulated tasks and specific computing configurations; physical robot speed and production economics were not measured.",
-      "evidence_status": "Preprint and author-run experiments; independent reproduction has not been confirmed.",
+      "id": "forpc-cart",
+      "title": "A humanoid coordinates steps and hand effort while pushing a loaded cart",
+      "summary": "Huazhong University researchers proposed ForPC to coordinate walking with pushing. A simulation-trained Unitree G1 moved a cart carrying up to 30 kilograms, using a visual marker for relative cart heading.",
+      "details": "ZhenYu Zou and colleagues at Huazhong University of Science and Technology proposed ForPC, whole-body control for humanoid cart pushing. First the robot learns balance under hand loads and different upper-body poses. A supplementary controller then adjusts the arms, waist and legs using estimates of robot–cart interaction inferred from the robot's own signals rather than external force sensors. Both arms should contribute to propulsion instead of wasting effort by opposing each other on the same handle. The method treats walking and sustained hand contact as a coupled problem.",
+      "technical_novelty": "ZhenYu Zou and colleagues at Huazhong University of Science and Technology proposed ForPC, whole-body control for humanoid cart pushing. First the robot learns balance under hand loads and different upper-body poses. A supplementary controller then adjusts the arms, waist and legs using estimates of robot–cart interaction inferred from the robot's own signals rather than external force sensors. Both arms should contribute to propulsion instead of wasting effort by opposing each other on the same handle. The method treats walking and sustained hand contact as a coupled problem.",
+      "engineering_impact": "Without external force sensors needs careful reading. The controller still uses the robot's own measurements, including joint torques, and visual cart heading. Omitting a separate force-measurement device is not the same as omitting feedback. Reproduction also needs wheel, handle and floor conditions; flat-floor results do not establish stability margin on a threshold or slope.",
+      "limitations": "Author-run flat indoor-floor tests using a visual cart-heading marker. Lifetime, cost per trip and slope operation were not measured.",
+      "evidence_status": "Research preprint and author-run experiments; independent reproduction has not been confirmed.",
       "published_at": "2026-11-05",
-      "organization": "NVIDIA and collaborators",
+      "organization": "Huazhong University of Science and Technology",
       "source_ids": [
-        "vflash-paper"
+        "src-forpc"
       ],
       "time_window": "7d",
-      "body": "Waiting for the next coordinate can dominate the time spent preparing a robot's plan. VFlash, published on November 5, examines that particular stage between an image-and-task input and an actionable spatial description. Its central choice is to change what counts as an acceptable answer for geometry while keeping a different rule for text. That distinction matters more than a blanket claim of faster robot intelligence.\n\nNVIDIA researchers and collaborators introduced VFlash, a method for generating visual plans more quickly. These plans describe points, regions or trajectories that a separate action model uses to choose robot actions. Rather than emit coordinates as a long sequence of small pieces, a compact helper model proposes an entire geometric primitive in parallel. Spatial usefulness can matter more than reproducing every piece of the sequential model's output. Ordinary text follows a different rule: proposed continuations remain verified, so relaxed acceptance of geometry does not extend to written instructions.\n\nAcross four task suites in the simulated MolmoSpaces environment, an action model conditioned on these plans averaged 70.2% success, against 62.6% for the baseline. On Thor and Spark computing platforms, the authors report twelvefold faster decoding, the production of coordinates for robotic plans, and roughly fivefold faster execution of the complete model pipeline. Those measurements cover different parts of the computation. Hardware and the specially prepared inference runtime affect the result. Neither number means that a physical arm moves five times faster, or that a factory can ship five times as many finished products.\n\nReproduction requires separate comparisons of geometric quality and complete pipeline time. Faster decoding can be useful without reproducing an original coordinate sequence exactly, provided the downstream action model still completes its tasks. The reported evaluation tests that connection across four virtual suites. It does not supply a production-line cycle measurement, where sensing, safety checks and the mechanism's motion would also contribute to the elapsed time.",
+      "body": "Pushing a cart changes leg loading through sustained hand contact. A capable walking controller therefore does not guarantee accurate cargo motion. ForPC adds bounded whole-body adjustments to a stable locomotion skill, accounting for the interaction. The significant feature is not simply force estimation, but coordination between two arms that close a physical loop with the cart.\n\nZhenYu Zou and colleagues at Huazhong University of Science and Technology proposed ForPC, whole-body control for humanoid cart pushing. First the robot learns balance under hand loads and different upper-body poses. A supplementary controller then adjusts the arms, waist and legs using estimates of robot–cart interaction inferred from the robot's own signals rather than external force sensors. Both arms should contribute to propulsion instead of wasting effort by opposing each other on the same handle. The method treats walking and sustained hand contact as a coupled problem.\n\nThe preprint appeared on November 5. In simulation comparisons, cart-speed tracking error fell by up to 68.2% relative to a locomotion-only baseline. That is a maximum relative reduction in error, not an increase in robot speed. On a physical Unitree G1 humanoid, the simulation-trained controller pushed a cart carrying up to 30 kilograms at 0.5 metres per second without additional real-world training. Tests used a flat indoor floor. Relative cart heading came from an AprilTag, a visual marker recognised by a camera. The demonstration is not operation without external visual references or verified transport among unpredictable obstacles.\n\nWithout external force sensors needs careful reading. The controller still uses the robot's own measurements, including joint torques, and visual cart heading. Omitting a separate force-measurement device is not the same as omitting feedback. Reproduction also needs wheel, handle and floor conditions; flat-floor results do not establish stability margin on a threshold or slope.",
       "image": null
     },
     {
-      "id": "soft-snake-shape",
-      "title": "A soft robot reconstructs its shape from sensors along its body",
-      "summary": "Zhang and Wu combine inertial sensing with a geometric model to estimate a cable-driven snake robot's shape. Their Mechanical Sciences paper separates error measurements for unloaded motion, an end load and obstacle contact.",
-      "details": "Minghui Zhang and Wenhui Wu, affiliated with Shandong University of Science and Technology and Beijing Jiaotong University, describe shape estimation for a soft snake-like robot. Cables bend its flexible sections, while small inertial sensors distributed along the body report their orientations. Filtering reduces measurement noise before those readings are combined with a geometric model that approximates a section's bend using a parabola. The system reconstructs a three-dimensional centreline. Unlike an ideal constant-curvature arc, this representation can account for changes in bending shape under load.",
-      "technical_novelty": "Minghui Zhang and Wenhui Wu, affiliated with Shandong University of Science and Technology and Beijing Jiaotong University, describe shape estimation for a soft snake-like robot. Cables bend its flexible sections, while small inertial sensors distributed along the body report their orientations. Filtering reduces measurement noise before those readings are combined with a geometric model that approximates a section's bend using a parabola. The system reconstructs a three-dimensional centreline. Unlike an ideal constant-curvature arc, this representation can account for changes in bending shape under load.",
-      "engineering_impact": "Testing a different construction would require matching the contact conditions rather than selecting the smallest published error. Sensors supply section orientation; a model then fills in the shape between them, so measurement and geometric approximation both matter. The increase from 7.67 to 10.86 millimetres in average shape error identifies the contact-sensitive part of the result. A 19.4-millimetre peak remains relevant even when the average is lower.",
-      "limitations": "The authors’ apparatus; contact increases error. Autonomous navigation and customer operation were not validated.",
-      "evidence_status": "Peer-reviewed Mechanical Sciences article; measurements by the authors, with independent repetition not established.",
-      "published_at": "2026-11-02",
-      "organization": "Shandong University of Science and Technology; Beijing Jiaotong University",
+      "id": "nvidia-corl-2026",
+      "title": "NVIDIA pairs a new robot model with more detailed simulation training",
+      "summary": "At CoRL in Austin, NVIDIA introduced the GR00T 2 control model and Isaac Lab 3.0 training software. Its task-success and training-throughput results measure different things, rather than one overall level of deployment readiness.",
+      "details": "At the November 9 Conference on Robot Learning in Austin, NVIDIA introduced GR00T 2, a trained robot-control program using a representation of the physical world, alongside new simulation tools. According to the company, the model completed 40 of 50 evaluated tasks at least once without task-specific demonstrations. That counts tasks achieved, not successful attempts. With one demonstration per task, average success was 71%; with five it reached 95%. Training used diverse robot and human data, including 100,000 hours of open human video recorded from the wearer's viewpoint.",
+      "technical_novelty": "At the November 9 Conference on Robot Learning in Austin, NVIDIA introduced GR00T 2, a trained robot-control program using a representation of the physical world, alongside new simulation tools. According to the company, the model completed 40 of 50 evaluated tasks at least once without task-specific demonstrations. That counts tasks achieved, not successful attempts. With one demonstration per task, average success was 71%; with five it reached 95%. Training used diverse robot and human data, including 100,000 hours of open human video recorded from the wearer's viewpoint.",
+      "engineering_impact": "Reproduction particularly needs the denominators. Forty tasks completed at least once does not give the probability of the next attempt succeeding. The 71% and 95% figures also change the number of demonstrations. Meanwhile, the simulator comparison changes both software version and physics solver. Without preserving those conditions, the numbers do not isolate the superiority of a single component.",
+      "limitations": "Developer-reported results on selected tasks and configurations; no independent reproduction or customer-workstation throughput calculation.",
+      "evidence_status": "Official developer or vendor announcement; figures and plans are not independent evaluation.",
+      "published_at": "2026-11-09",
+      "organization": "NVIDIA",
       "source_ids": [
-        "snake-paper"
+        "src-nvidia-corl"
       ],
-      "time_window": "7d",
-      "body": "A cable command specifies how an actuator should pull, but external loads also determine the shape of a compliant body. The final configuration cannot always be recovered from the requested movement alone. This study distributes measurements along flexible sections to reconstruct a spatial centreline instead of reporting only a single endpoint. The change in error under contact is particularly relevant to anyone trying to reproduce the result.\n\nMinghui Zhang and Wenhui Wu, affiliated with Shandong University of Science and Technology and Beijing Jiaotong University, describe shape estimation for a soft snake-like robot. Cables bend its flexible sections, while small inertial sensors distributed along the body report their orientations. Filtering reduces measurement noise before those readings are combined with a geometric model that approximates a section's bend using a parabola. The system reconstructs a three-dimensional centreline. Unlike an ideal constant-curvature arc, this representation can account for changes in bending shape under load.\n\nFor one section carrying a 500-gram end load, maximum endpoint position error was 11.38 millimetres. During planar motion of the complete robot, mean root-mean-square shape error was 7.67 millimetres. With obstacle contact, the corresponding average rose to 10.86 millimetres and the peak reached 19.4 millimetres. Root-mean-square error combines deviations into one measure, giving larger misses more weight. These figures describe distinct test conditions and should not be substituted for one another. Published on November 2 in Mechanical Sciences, the paper reports experiments on the authors' apparatus. Knowing the shape of its own body does not by itself give a robot obstacle recognition or an independently selected safe route.\n\nTesting a different construction would require matching the contact conditions rather than selecting the smallest published error. Sensors supply section orientation; a model then fills in the shape between them, so measurement and geometric approximation both matter. The increase from 7.67 to 10.86 millimetres in average shape error identifies the contact-sensitive part of the result. A 19.4-millimetre peak remains relevant even when the average is lower.",
+      "time_window": "24h",
+      "body": "A new model and a new simulator address related but distinct problems. NVIDIA's programme needs to be read as both a control-quality result and a computation result. Mixing them would turn the frequency of completed actions and the volume of virtual practice into an unsupported claim about a physical production cycle.\n\nAt the November 9 Conference on Robot Learning in Austin, NVIDIA introduced GR00T 2, a trained robot-control program using a representation of the physical world, alongside new simulation tools. According to the company, the model completed 40 of 50 evaluated tasks at least once without task-specific demonstrations. That counts tasks achieved, not successful attempts. With one demonstration per task, average success was 71%; with five it reached 95%. Training used diverse robot and human data, including 100,000 hours of open human video recorded from the wearer's viewpoint.\n\nThe same programme introduced Isaac Lab 3.0, software for training robots. Researchers can choose between PhysX and Newton physics solvers; Newton can model deformable objects such as cloth and cables. In a particular vision-based dexterous-manipulation training benchmark, the Newton configuration provided up to 2.5 times the training throughput of Isaac Lab 2.3 with PhysX. This compares two training configurations, not physical robot speed. The developer reports all these figures. The announcement does not establish the same performance on arbitrary hardware or provide independent reproduction of the results.\n\nReproduction particularly needs the denominators. Forty tasks completed at least once does not give the probability of the next attempt succeeding. The 71% and 95% figures also change the number of demonstrations. Meanwhile, the simulator comparison changes both software version and physics solver. Without preserving those conditions, the numbers do not isolate the superiority of a single component.",
       "image": null
     },
     {
-      "id": "h2marl",
-      "title": "Joint-direction control improves simulated balance with a smoothness trade-off",
-      "summary": "Hu and colleagues' H2MARL lets different joint movement directions learn with their own physical descriptors. Simulated foot slip and torso deviation improved, but a comparison method retained better movement smoothness.",
-      "details": "Xuemin Hu and collaborators at Hubei University, Worcester Polytechnic Institute and the Chinese Academy of Sciences' Institute of Automation proposed H2MARL, a humanoid-control learning framework with distinct software agents for individual actuated degrees of freedom. A degree of freedom here means one independently controlled direction of joint movement. Each agent receives physical descriptors such as its rotation axis and torque limits. An upper layer proposes pose changes; a lower layer translates them into joint commands using movement history. Both layers learn from shared interaction trajectories instead of permanently freezing the lower controller before training the upper one.",
-      "technical_novelty": "Xuemin Hu and collaborators at Hubei University, Worcester Polytechnic Institute and the Chinese Academy of Sciences' Institute of Automation proposed H2MARL, a humanoid-control learning framework with distinct software agents for individual actuated degrees of freedom. A degree of freedom here means one independently controlled direction of joint movement. Each agent receives physical descriptors such as its rotation axis and torque limits. An upper layer proposes pose changes; a lower layer translates them into joint commands using movement history. Both layers learn from shared interaction trajectories instead of permanently freezing the lower controller before training the upper one.",
-      "engineering_impact": "The authors remove components in controlled comparisons to separate joint-level representation, coupled learning and extra gait rewards. Physical deployment would still require checks of sensor delay, actuator limits and real foot contact. The simulated advantage is already uneven: MAPPO's smoothness score is 0.2329 against 0.3514 for the proposed framework. Those values belong alongside the improved balance scores, rather than disappearing behind an overall claim of more natural motion.",
-      "limitations": "Simulation only, without physical humanoid transfer. Smoothness was worse than MAPPO on the reported measure.",
-      "evidence_status": "Preprint and author-run experiments; independent reproduction has not been confirmed.",
-      "published_at": "2026-11-04",
-      "organization": "Hubei University; Worcester Polytechnic Institute; Institute of Automation, Chinese Academy of Sciences",
+      "id": "dexbench-launch",
+      "title": "DexBench varies objects, physics and layout to test robot dexterity",
+      "summary": "RLWRLD introduced DexBench in Seoul with 15 simulated tasks for precise robotic hand work. Evaluation varies three groups of conditions, while comparison with physical robot performance remains planned work.",
+      "details": "RLWRLD introduced DexBench at NVIDIA AI Day Seoul at the COEX convention centre on November 9. It is a suite of repeatable tests for dexterous manipulation, meaning precise robotic hand work with objects. This first major release from an initiative started with NVIDIA in June contains 15 tasks across retail, logistics, assembly and hotel food-and-beverage operations. Examples include retrieving products from shelves, unloading roll cages, inserting connectors, fastening screws, stacking plates and pouring liquids. Virtual objects and equipment are modelled using specifications of real products.",
+      "technical_novelty": "RLWRLD introduced DexBench at NVIDIA AI Day Seoul at the COEX convention centre on November 9. It is a suite of repeatable tests for dexterous manipulation, meaning precise robotic hand work with objects. This first major release from an initiative started with NVIDIA in June contains 15 tasks across retail, logistics, assembly and hotel food-and-beverage operations. Examples include retrieving products from shelves, unloading roll cages, inserting connectors, fastening screws, stacking plates and pouring liquids. Virtual objects and equipment are modelled using specifications of real products.",
+      "engineering_impact": "The announcement does not mean every promised component is already available in final form: it sets out a release plan. Comparisons will need a fixed environment version and variation set. A further question is whether the same failure causes appear in simulation and on a physical hand. The release explicitly leaves that correspondence for subsequent validation.",
+      "limitations": "Simulated evaluation; physical-robot correspondence and component releases are identified as further steps.",
+      "evidence_status": "Official developer or vendor announcement; figures and plans are not independent evaluation.",
+      "published_at": "2026-11-09",
+      "organization": "RLWRLD",
       "source_ids": [
-        "h2marl-paper"
+        "src-dexbench"
       ],
-      "time_window": "7d",
-      "body": "A hip and an elbow need different torque, and two rotation axes within one joint may serve different roles in balance. H2MARL represents such distinctions explicitly for each actuated degree of freedom. Its second design choice connects the training of a planner with that of its executor. The paper therefore examines both how finely control should be divided and how the resulting hierarchy should adapt during learning.\n\nXuemin Hu and collaborators at Hubei University, Worcester Polytechnic Institute and the Chinese Academy of Sciences' Institute of Automation proposed H2MARL, a humanoid-control learning framework with distinct software agents for individual actuated degrees of freedom. A degree of freedom here means one independently controlled direction of joint movement. Each agent receives physical descriptors such as its rotation axis and torque limits. An upper layer proposes pose changes; a lower layer translates them into joint commands using movement history. Both layers learn from shared interaction trajectories instead of permanently freezing the lower controller before training the upper one.\n\nThe November 4 paper evaluates the method in MuJoCo and Isaac Gym simulators, not on a physical humanoid. In one comparison with MAPPO, another multi-agent learning method, the foot-slip score fell from 0.5790 to 0.5367 and the torso-deviation score from 0.3873 to 0.2516. However, movement smoothness was worse: 0.3514 versus 0.2329, with lower values preferred. Improved stability therefore did not mean superiority on every measure. The two inference layers took a combined mean of 9.259 milliseconds on the authors' workstation, a hardware-specific computation result rather than a measured delay on a deployed robot.\n\nThe authors remove components in controlled comparisons to separate joint-level representation, coupled learning and extra gait rewards. Physical deployment would still require checks of sensor delay, actuator limits and real foot contact. The simulated advantage is already uneven: MAPPO's smoothness score is 0.2329 against 0.3514 for the proposed framework. Those values belong alongside the improved balance scores, rather than disappearing behind an overall claim of more natural motion.",
+      "time_window": "24h",
+      "body": "A skill can work on a familiar part and fail when its location or physical properties change. DexBench organises evaluation around those changes. Its engineering value depends on repeating not only a successful task, but a particular failure condition while distinguishing it from other variables in the experiment.\n\nRLWRLD introduced DexBench at NVIDIA AI Day Seoul at the COEX convention centre on November 9. It is a suite of repeatable tests for dexterous manipulation, meaning precise robotic hand work with objects. This first major release from an initiative started with NVIDIA in June contains 15 tasks across retail, logistics, assembly and hotel food-and-beverage operations. Examples include retrieving products from shelves, unloading roll cages, inserting connectors, fastening screws, stacking plates and pouring liquids. Virtual objects and equipment are modelled using specifications of real products.\n\nEvaluation goes beyond whether a task worked once. Conditions change along three dimensions: objects, physical properties and spatial arrangements. That probes transfer to situations not encountered during training. The foundation is Isaac Lab-Arena, software for evaluating robot-control policies at scale, together with Newton's physical-interaction simulation. RLWRLD plans to release code, environments, data, baseline models and a leaderboard. Comparing simulated performance with physical robots is identified as further work. Launching a test suite therefore does not establish the operational reliability of any particular robot at an actual industrial site.\n\nThe announcement does not mean every promised component is already available in final form: it sets out a release plan. Comparisons will need a fixed environment version and variation set. A further question is whether the same failure causes appear in simulation and on a physical hand. The release explicitly leaves that correspondence for subsequent validation.",
       "image": null
     },
     {
-      "id": "openzilo",
-      "title": "A robot-control ring separates command recognition from execution",
-      "summary": "Ding and colleagues released OpenZilo, a ring platform for voice and gesture interaction with robots. Tests with ten participants show why completing an isolated command differs from completing an entire adjusted task.",
-      "details": "Qianggang Ding and colleagues introduced OpenZilo, an open research platform for using a smart ring to interact with robots. Its hardware combines a microphone, motion sensing, optical pulse sensing and skin-temperature measurement. Software separates signal acquisition, event interpretation, response selection and robot execution. That separation helps locate errors: a misread gesture and a correctly understood command that the robot fails to execute need different remedies. Including physiological sensors does not establish that the device is suitable for medical diagnosis or reliable health monitoring.",
-      "technical_novelty": "Qianggang Ding and colleagues introduced OpenZilo, an open research platform for using a smart ring to interact with robots. Its hardware combines a microphone, motion sensing, optical pulse sensing and skin-temperature measurement. Software separates signal acquisition, event interpretation, response selection and robot execution. That separation helps locate errors: a misread gesture and a correctly understood command that the robot fails to execute need different remedies. Including physiological sensors does not establish that the device is suitable for medical diagnosis or reliable health monitoring.",
-      "engineering_impact": "Input methods need comparison at matching stages of a task. Speech led on isolated-command completion, whereas gestures led when participants adjusted a continuing task. Those experiments do not establish one universally superior interface. The physiological branch requires an additional boundary: a simulated notification tests the route from an event to the robot's response, but it does not establish how accurately that event could be extracted from a person's real bodily signals.",
-      "limitations": "Ten participants and distinct isolated-command and complete-task protocols. Physiological notifications were simulated; medical use was not validated.",
-      "evidence_status": "Preprint and author-run experiments; independent reproduction has not been confirmed.",
-      "published_at": "2026-11-02",
-      "organization": "Zilo Lab; Université de Montréal; Mila and collaborators",
+      "id": "wuji-data-system",
+      "title": "HumansX packages two robot arms as a demonstration-recording environment",
+      "summary": "Tokyo's HumansX assembled a dual-arm system with Wuji Hand 2 hands and operator gloves. The offering combines equipment and setup for recording examples, without establishing the quality of later autonomous learning.",
+      "details": "Tokyo-based HumansX proposed a dual-arm data-collection system on November 9, combining Wuji Hand 2 robotic hands with Wuji Glove operator gloves. Operator movements can be recorded as demonstrations for later robot learning. Each hand has 20 actively controlled degrees of freedom, meaning separate movement directions, with four per finger. Vendor specifications give a mass of about 800 grams and fingertip peak force of at least 12 newtons. Peak force is not a continuous-load rating or the mass of an object that can safely be held.",
+      "technical_novelty": "Tokyo-based HumansX proposed a dual-arm data-collection system on November 9, combining Wuji Hand 2 robotic hands with Wuji Glove operator gloves. Operator movements can be recorded as demonstrations for later robot learning. Each hand has 20 actively controlled degrees of freedom, meaning separate movement directions, with four per finger. Vendor specifications give a mass of about 800 grams and fingertip peak force of at least 12 newtons. Peak force is not a continuous-load rating or the mass of an object that can safely be held.",
+      "engineering_impact": "An order would need agreement on which signals are recorded and how they are checked after setup. Those are configuration questions, not published supplier results. Peak force and movement count determine neither continuous-service lifetime nor training-data quality. Even delivery of the complete system remains dependent on the selected configuration in the announcement.",
+      "limitations": "Vendor specifications; no independent lifetime test, fixed public complete-system price or autonomous-learning outcome from collected demonstrations.",
+      "evidence_status": "Official developer or vendor announcement; figures and plans are not independent evaluation.",
+      "published_at": "2026-11-09",
+      "organization": "HumansX",
       "source_ids": [
-        "openzilo-paper"
+        "src-wuji-system",
+        "src-wuji-reservations"
       ],
-      "time_window": "7d",
-      "body": "Several failure points sit between a finger movement and a completed robot action. The November 2 OpenZilo preprint makes that chain explicit: a signal becomes an event, a response is selected, and the robot attempts execution. An open platform is useful here because those stages can be inspected separately. Correctly recognising a command does not guarantee that the requested physical outcome follows from it.\n\nQianggang Ding and colleagues introduced OpenZilo, an open research platform for using a smart ring to interact with robots. Its hardware combines a microphone, motion sensing, optical pulse sensing and skin-temperature measurement. Software separates signal acquisition, event interpretation, response selection and robot execution. That separation helps locate errors: a misread gesture and a correctly understood command that the robot fails to execute need different remedies. Including physiological sensors does not establish that the device is suitable for medical diagnosis or reliable health monitoring.\n\nTen participants took part in the study. For five isolated commands, the researchers ran 250 trials per input modality: physical task success was 90.4% with speech and 88.8% with gestures. A separate experiment started with a shared spoken instruction and then allowed adjustments during execution. Complete-task success was 70% with gestures and 64% with speech. These figures measure different tasks, rather than conflicting estimates of one performance level. A physiological-event response branch was tested with simulated notifications, not with validated detection of illness or a dangerous human condition. The paper therefore supports an interaction prototype, rather than an independently verified care service.\n\nInput methods need comparison at matching stages of a task. Speech led on isolated-command completion, whereas gestures led when participants adjusted a continuing task. Those experiments do not establish one universally superior interface. The physiological branch requires an additional boundary: a simulated notification tests the route from an event to the robot's response, but it does not establish how accurately that event could be extracted from a person's real bodily signals.",
+      "time_window": "24h",
+      "body": "Demonstration collection requires separate devices to act as one measurement setup. This offering goes beyond selling a hand to provide an assembled two-arm configuration. It reduces the number of components a customer must connect, but synchronisation, movement representation and recording quality still need checking. Wearing gloves alone does not solve the transfer of human motion to a robot.\n\nTokyo-based HumansX proposed a dual-arm data-collection system on November 9, combining Wuji Hand 2 robotic hands with Wuji Glove operator gloves. Operator movements can be recorded as demonstrations for later robot learning. Each hand has 20 actively controlled degrees of freedom, meaning separate movement directions, with four per finger. Vendor specifications give a mass of about 800 grams and fingertip peak force of at least 12 newtons. Peak force is not a continuous-load rating or the mass of an object that can safely be held.\n\nThe assembled configuration uses Marvin Pro arms. The supplier offers setup, on-site installation and Japanese-language support. The first hand allocation is fully reserved; the next batch is scheduled to ship from February 2027. Its own website opened second-batch reservations on November 6: the November 9 release adds the dual-arm system offering, rather than establishing immediate off-the-shelf availability. Price and delivery for a complete installation depend on configuration and require an enquiry. The announcement supplies neither an independent hand-lifetime test nor evidence that collected demonstrations have already enabled autonomous completion of a customer's task.\n\nAn order would need agreement on which signals are recorded and how they are checked after setup. Those are configuration questions, not published supplier results. Peak force and movement count determine neither continuous-service lifetime nor training-data quality. Even delivery of the complete system remains dependent on the selected configuration in the announcement.",
       "image": null
     },
     {
-      "id": "id-terra-pilot",
-      "title": "Two matching humanoid testbeds prepare for a German warehouse pilot",
-      "summary": "ID Logistics and Terra Robotics are programming identical humanoids at two German locations. They plan to select use cases and start a live operational pilot within six months, without yet publishing throughput measurements.",
-      "details": "ID Logistics and Terra Robotics entered a partnership effective November 1 to prepare humanoid applications in German warehouses. Their November 4 announcement identifies two test locations: Griesheim, with a robot called IDA, and Löhne, with Heinz. Each company bought a Unitree G1 EDU6 so programming could proceed in parallel on comparable hardware. Initial work distinguishes cartons from mailing bags and sorts them into shipping boxes. The release mentions five-finger hands with tactile sensing, but supplies no sorting throughput or reliability measurements.",
-      "technical_novelty": "ID Logistics and Terra Robotics entered a partnership effective November 1 to prepare humanoid applications in German warehouses. Their November 4 announcement identifies two test locations: Griesheim, with a robot called IDA, and Löhne, with Heinz. Each company bought a Unitree G1 EDU6 so programming could proceed in parallel on comparable hardware. Initial work distinguishes cartons from mailing bags and sorts them into shipping boxes. The release mentions five-finger hands with tactile sensing, but supplies no sorting throughput or reliability measurements.",
-      "engineering_impact": "The next observable boundary is the move from initial sorting to an operational environment. That requires the partners' requirements, task selection and equipment choice; published acceptance criteria are still absent. Five-finger tactile hands alone do not answer questions about stuck mailing bags, damaged packaging or operator intervention. The release supplies a pilot preparation horizon, rather than the number of hours already worked by a robot without human assistance.",
-      "limitations": "Preparation for a future pilot; no quantitative throughput, reliability, human-intervention or cost data.",
-      "evidence_status": "Official participant announcement of initial work and plans; no independent evaluation is supplied.",
-      "published_at": "2026-11-04",
-      "organization": "ID Logistics; Terra Robotics",
+      "id": "cua-embodied",
+      "title": "One computer-use agent handles four spatial tasks through specialised apps",
+      "summary": "Aggarwal and Welleck at Carnegie Mellon retained a shared agent-running software across four computer-vision competitions. Specialised functions live inside the applications; the results are not physical robot trials.",
+      "details": "Pranjal Aggarwal and Sean Welleck at Carnegie Mellon University tested whether one computer-use agent design could handle spatial tasks through ordinary software interaction. They built an application for each task, displaying scenes and exposing buttons, keyboard controls or point selection. The agent receives screenshots and acts with a mouse and keyboard. Task-specific software changes, while the shared software running the agent stays fixed. This puts domain functionality in the application instead of requiring a newly designed agent for every competition.",
+      "technical_novelty": "Pranjal Aggarwal and Sean Welleck at Carnegie Mellon University tested whether one computer-use agent design could handle spatial tasks through ordinary software interaction. They built an application for each task, displaying scenes and exposing buttons, keyboard controls or point selection. The agent receives screenshots and acts with a mouse and keyboard. Task-specific software changes, while the shared software running the agent stays fixed. This puts domain functionality in the application instead of requiring a newly designed agent for every competition.",
+      "engineering_impact": "Application contents matter: a click can invoke a specialised algorithm the agent did not invent. A shared action-selection design is therefore different from an identical set of underlying operations. Selecting the right region in a 3D scan does not yet provide a controller that grasps it with a physical hand under force and timing constraints.",
+      "limitations": "Digital competition tasks, not physical robot control. Domain-specific algorithms remain in the specialised applications.",
+      "evidence_status": "Research preprint and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-06",
+      "organization": "Carnegie Mellon University",
       "source_ids": [
-        "id-terra-release"
+        "src-cua-embodied"
       ],
       "time_window": "7d",
-      "body": "Matching equipment at two locations removes one source of variation from collaborative software development. ID Logistics and Terra have chosen that sequence: comparable machines first, candidate applications and requirements next, and then an operational pilot. The announcement exposes the preparation of an experiment. It does not yet provide a basis for comparing a humanoid with a conventional warehouse sorter on throughput, availability or exception-handling performance.\n\nID Logistics and Terra Robotics entered a partnership effective November 1 to prepare humanoid applications in German warehouses. Their November 4 announcement identifies two test locations: Griesheim, with a robot called IDA, and Löhne, with Heinz. Each company bought a Unitree G1 EDU6 so programming could proceed in parallel on comparable hardware. Initial work distinguishes cartons from mailing bags and sorts them into shipping boxes. The release mentions five-finger hands with tactile sensing, but supplies no sorting throughput or reliability measurements.\n\nThe partners plan to assess four or five candidate use cases, establish technical and operational requirements, and select an appropriate task and robot combination. A first pilot in a real German operating environment is planned within six months. That is a future stage, not evidence of a completed fleet rollout. Terra works with several equipment brands, so the present test platform is not presented as the final choice for every warehouse. This is a release from the participants themselves. It provides neither independent evaluation nor cost per parcel, human-intervention rates or sustained operating-time figures.\n\nThe next observable boundary is the move from initial sorting to an operational environment. That requires the partners' requirements, task selection and equipment choice; published acceptance criteria are still absent. Five-finger tactile hands alone do not answer questions about stuck mailing bags, damaged packaging or operator intervention. The release supplies a pilot preparation horizon, rather than the number of hours already worked by a robot without human assistance.",
+      "body": "Specialisation can sit around a model as well as inside it. Here, an agent uses screenshots, a mouse and a keyboard while task-specific applications supply the operations. That makes it possible to examine what remains shared between tasks. The relevant system boundary still includes those tools, rather than only the model selecting the next action.\n\nPranjal Aggarwal and Sean Welleck at Carnegie Mellon University tested whether one computer-use agent design could handle spatial tasks through ordinary software interaction. They built an application for each task, displaying scenes and exposing buttons, keyboard controls or point selection. The agent receives screenshots and acts with a mouse and keyboard. Task-specific software changes, while the shared software running the agent stays fixed. This puts domain functionality in the application instead of requiring a newly designed agent for every competition.\n\nThe November 6 preprint reports four competitions associated with the European Conference on Computer Vision. Entries placed first in selecting language-described regions in 3D scenes, second in text-guided video-object segmentation, third in navigation with a conversational guide and sixth in navigation from descriptions. These ranks concern different tasks and cannot be added into one performance score. They are not physical robot trials. Specialised processing, including object segmentation, remains inside the applications. Keeping the agent architecture shared does not remove the task-specific tools that make each software environment useful.\n\nApplication contents matter: a click can invoke a specialised algorithm the agent did not invent. A shared action-selection design is therefore different from an identical set of underlying operations. Selecting the right region in a 3D scan does not yet provide a controller that grasps it with a physical hand under force and timing constraints.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Model-to-execution alignment needs separate measurements",
-    "summary": "Geometric planning, shape estimation and joint control improve different links in an action.",
-    "implications": "Evaluate task completion, contact conditions and metric trade-offs without treating computing acceleration as mechanical speed."
+    "title": "Replicants investigate where computation meets contact",
+    "summary": "New models, physical simulation and interaction estimates connect different parts of control.",
+    "implications": "Task coverage, attempt success, training throughput and real contact need separate evaluation protocols."
   },
   "sources": [
     {
-      "id": "vflash-paper",
-      "title": "VFlash: Fast Visual Planning for Physical AI",
-      "url": "https://research.nvidia.com/labs/lpr/vflash/",
-      "domain": "research.nvidia.com",
-      "organization": "NVIDIA and collaborators",
+      "id": "src-forpc",
+      "title": "ForPC: Force-Aware Whole-Body Control for Precise Humanoid Cart Pushing",
+      "url": "https://arxiv.org/abs/2611.08664",
+      "domain": "arxiv.org",
+      "organization": "Huazhong University of Science and Technology",
       "published_at": "2026-11-05"
     },
     {
-      "id": "snake-paper",
-      "title": "Real-time shape estimation of a wire-driven soft snake-like robot based on micro-inertial sensors",
-      "url": "https://ms.copernicus.org/articles/17/983/2026/",
-      "domain": "ms.copernicus.org",
-      "organization": "Shandong University of Science and Technology; Beijing Jiaotong University",
-      "published_at": "2026-11-02"
+      "id": "src-nvidia-corl",
+      "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
+      "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
+      "domain": "blogs.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-09"
     },
     {
-      "id": "h2marl-paper",
-      "title": "H^2MARL: Hierarchical Heterogeneous Multi-agent Reinforcement Learning for Humanoid Robot Control",
-      "url": "https://arxiv.org/abs/2611.06523",
+      "id": "src-dexbench",
+      "title": "RLWRLD Launches DexBench, Confirms Planned Investment from NVIDIA",
+      "url": "https://www.rlwrld.ai/en/news/117",
+      "domain": "www.rlwrld.ai",
+      "organization": "RLWRLD",
+      "published_at": "2026-11-09"
+    },
+    {
+      "id": "src-wuji-system",
+      "title": "【第1期予約完売】20自由度ロボットハンド「Wuji Hand 2」第2期予約受付を開始 ― 現場ですぐ使える双腕データ収集システムもあわせてご提案",
+      "url": "https://prtimes.jp/main/html/rd/p/000000002.000192177.html",
+      "domain": "prtimes.jp",
+      "organization": "HumansX",
+      "published_at": "2026-11-09"
+    },
+    {
+      "id": "src-wuji-reservations",
+      "title": "Wuji Hand 2 First Batch Fully Reserved — Second-Batch Reservations Now Open",
+      "url": "https://humansx.co.jp/en/news/wuji-hand2-batch2-preorder/",
+      "domain": "humansx.co.jp",
+      "organization": "HumansX",
+      "published_at": "2026-11-06"
+    },
+    {
+      "id": "src-cua-embodied",
+      "title": "Computer-Use Agents Are Embodied Generalists",
+      "url": "https://arxiv.org/abs/2611.09847",
       "domain": "arxiv.org",
-      "organization": "Hubei University; Worcester Polytechnic Institute; Institute of Automation, Chinese Academy of Sciences",
-      "published_at": "2026-11-04"
-    },
-    {
-      "id": "openzilo-paper",
-      "title": "OpenZilo: An Open Smart-Ring Platform for Human-Centric Sensing and Interaction with Robots",
-      "url": "https://arxiv.org/abs/2611.03410",
-      "domain": "arxiv.org",
-      "organization": "Zilo Lab; Université de Montréal; Mila and collaborators",
-      "published_at": "2026-11-02"
-    },
-    {
-      "id": "id-terra-release",
-      "title": "ID LOGISTICS AND TERRA ROBOTICS PAVE THE WAY FOR HUMANOID ROBOTICS IN CONTRACT LOGISTICS",
-      "url": "https://www.id-logistics.com/media/2026/11/PR-ID-Logistics-Humanoid-Robots-Germany.pdf",
-      "domain": "www.id-logistics.com",
-      "organization": "ID Logistics; Terra Robotics",
-      "published_at": "2026-11-04"
+      "organization": "Carnegie Mellon University",
+      "published_at": "2026-11-06"
     }
   ]
 }
