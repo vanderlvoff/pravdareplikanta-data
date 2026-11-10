@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-11",
+  "issue_id": "daily-2026-11-11",
+  "edition": "business",
+  "language": "en",
+  "generated_at": "2026-11-10T20:52:31.055215Z",
+  "title": "Robots in factories and hospitals: pilots, development and support",
+  "lead": "Google's factory pilot and Mitsubishi's hospital delivery mark different stages of use. SORACOM offers connectivity, security and update services for operating systems.",
+  "news": [
+    {
+      "id": "gemini-robotics-25",
+      "title": "Apollo 2 with Google's new model is tested on active car production lines",
+      "summary": "Google DeepMind reports 96% success in a parts-kitting pilot with Apptronik and Mercedes-Benz. Two production sites are named, but workload, operator interventions and cost per operation are not disclosed.",
+      "details": "Google DeepMind introduced Gemini Robotics 2.5 on November 10, a model that chooses robot actions from images and verbal instructions. Its developer evaluated more than 200 distinct tasks, including tool use and flexible objects. A separate pilot with Apptronik and Mercedes-Benz used Apollo 2 humanoids to pick metal automotive fastening parts, or brackets, from bins and place them in a required sequence. Trials took place on active production lines in Kecskemét, Hungary, and Sindelfingen, Germany. The company reports 96% task success for that pilot, without giving a total attempt count in the announcement.",
+      "technical_novelty": "Google DeepMind introduced Gemini Robotics 2.5 on November 10, a model that chooses robot actions from images and verbal instructions. Its developer evaluated more than 200 distinct tasks, including tool use and flexible objects. A separate pilot with Apptronik and Mercedes-Benz used Apollo 2 humanoids to pick metal automotive fastening parts, or brackets, from bins and place them in a required sequence. Trials took place on active production lines in Kecskemét, Hungary, and Sindelfingen, Germany. The company reports 96% task success for that pilot, without giving a total attempt count in the announcement.",
+      "engineering_impact": "The commercial interpretation depends on the kitting scope: which brackets, bins and sequences belong to the tested process. Those conditions need to accompany trial counts and exception handling. The release does not allow calculation of consistently completed kits per machine per shift at either production site.",
+      "limitations": "Developer-reported results for a specific pilot; total attempts, the complete human-intervention record and cost per part are not supplied. Laboratory tasks and the factory pilot were evaluated separately.",
+      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "published_at": "2026-11-10",
+      "organization": "Google DeepMind; Apptronik; Mercedes-Benz",
+      "source_ids": [
+        "src-gemini-robotics-25"
+      ],
+      "time_window": "24h",
+      "body": "For deployment decisions, naming an operation and active sites is useful. Task success remains only one part of a service assessment, however. Assistance frequency, cycle duration and handling of an unsuccessful part also matter. An aggregate pilot score does not answer those questions automatically.\n\nGoogle DeepMind introduced Gemini Robotics 2.5 on November 10, a model that chooses robot actions from images and verbal instructions. Its developer evaluated more than 200 distinct tasks, including tool use and flexible objects. A separate pilot with Apptronik and Mercedes-Benz used Apollo 2 humanoids to pick metal automotive fastening parts, or brackets, from bins and place them in a required sequence. Trials took place on active production lines in Kecskemét, Hungary, and Sindelfingen, Germany. The company reports 96% task success for that pilot, without giving a total attempt count in the announcement.\n\nThe system separates two levels: Gemini Robotics ER tracks the workflow, while the new action model controls the hands and arms. The production result therefore belongs to that configuration, rather than to one isolated neural network. Laboratory comparisons also vary by task: sweeping rubbish into a dustpan improved from 0% to 52% against Gemini Robotics 2, for example. The model is rolling out to robotics partners. These are developer-reported figures, without independent assessment, a complete human-intervention record or a cost per handled part in the release.\n\nThe commercial interpretation depends on the kitting scope: which brackets, bins and sequences belong to the tested process. Those conditions need to accompany trial counts and exception handling. The release does not allow calculation of consistently completed kits per machine per shift at either production site.",
+      "image": null
+    },
+    {
+      "id": "meldy-robopivot",
+      "title": "Mitsubishi reuses internal software work for a hospital delivery robot",
+      "summary": "Mitsubishi Electric applied RoboPivot to MELDY, supplied to a Japanese hospital. It estimates a 30% reduction in guidance-function development; the figure does not measure hospital staff time saved.",
+      "details": "Mitsubishi Electric announced the first product application of RoboPivot on November 10. This shared software foundation supports robot development. Subsidiary Mitsubishi Electric Mobility used it for MELDY, a multipurpose hospital delivery robot supplied in November to St. Marianna University Hospital in Japan. Departments developed the foundation collaboratively inside the company, reusing code and experience instead of recreating similar functions. This is called InnerSource: open collaboration practices applied internally, rather than a promise that the entire codebase is publicly available.",
+      "technical_novelty": "Mitsubishi Electric announced the first product application of RoboPivot on November 10. This shared software foundation supports robot development. Subsidiary Mitsubishi Electric Mobility used it for MELDY, a multipurpose hospital delivery robot supplied in November to St. Marianna University Hospital in Japan. Departments developed the foundation collaboratively inside the company, reusing code and experience instead of recreating similar functions. This is called InnerSource: open collaboration practices applied internally, rather than a promise that the entire codebase is publicly available.",
+      "engineering_impact": "Faster development could help the manufacturer produce related machines, but the source does not convert it into a discount or delivery price. The hospital outcome disclosed here is MELDY's November supply. Trip frequency, transported volume and staff-workload changes are absent, so the 30% estimate cannot be entered as hospital operating savings.",
+      "limitations": "The 30% is an estimate for guidance-function development including test-environment preparation. It does not measure delivery speed or hospital labour savings; absolute development time and independent evaluation are not supplied.",
+      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "published_at": "2026-11-10",
+      "organization": "Mitsubishi Electric; Mitsubishi Electric Mobility",
+      "source_ids": [
+        "src-meldy-robopivot"
+      ],
+      "time_window": "24h",
+      "body": "Robot deployment includes software preparation and verification before useful deliveries begin. Mitsubishi identifies a specific opportunity to shorten that preparation: reusing common software components. For a buyer, this describes how the product was created. Assessing the hospital service requires different evidence about deliveries and staff activity.\n\nMitsubishi Electric announced the first product application of RoboPivot on November 10. This shared software foundation supports robot development. Subsidiary Mitsubishi Electric Mobility used it for MELDY, a multipurpose hospital delivery robot supplied in November to St. Marianna University Hospital in Japan. Departments developed the foundation collaboratively inside the company, reusing code and experience instead of recreating similar functions. This is called InnerSource: open collaboration practices applied internally, rather than a promise that the entire codebase is publicly available.\n\nThe company estimates a 30% reduction in software-development lead time. A footnote defines the comparison: developing robot guidance functionality from scratch, including preparation of the verification environment. It does not measure travel speed, delivery volume or hospital staff time saved. A separate goal seeks a 50% reduction in the broader product-development cycle by 2030, with a different scope of comparison. Neither the absolute project duration nor independent verification of the estimated saving is supplied. The delivery announcement and the development estimate describe different outcomes.\n\nFaster development could help the manufacturer produce related machines, but the source does not convert it into a discount or delivery price. The hospital outcome disclosed here is MELDY's November supply. Trip frequency, transported volume and staff-workload changes are absent, so the 30% estimate cannot be entered as hospital operating savings.",
+      "image": null
+    },
+    {
+      "id": "soracom-suite",
+      "title": "SORACOM bundles connectivity, protection and remote updates for robot systems",
+      "summary": "SORACOM began offering Physical AI Suite for operational support. Connectivity, protected connections and updates are included, while suspicious-traffic detection requires monitoring to be set up in the customer's environment.",
+      "details": "SORACOM began offering Physical AI Suite on November 10, combining connectivity, security and remote-operation services for robots and other physical systems. Existing platform functions are packaged with a new device, network and cloud security-assessment and hardening service. Features include restricted network access, encrypted connections, automatic renewal of digital certificates, and remote updates to models and embedded software. A certificate here helps establish trust during a connection; it is not certification that a robot's mechanical movement is safe.",
+      "technical_novelty": "SORACOM began offering Physical AI Suite on November 10, combining connectivity, security and remote-operation services for robots and other physical systems. Existing platform functions are packaged with a new device, network and cloud security-assessment and hardening service. Features include restricted network access, encrypted connections, automatic renewal of digital certificates, and remote updates to models and embedded software. A certificate here helps establish trust during a connection; it is not certification that a robot's mechanical movement is safe.",
+      "engineering_impact": "The monitoring condition directly affects project scope: providing communications and providing working suspicious-traffic detection are different deliverables. A budget needs to identify who builds monitoring and who responds to an alert. SORACOM quotes the package individually; no fixed per-robot maintenance total appears in the announcement.",
+      "limitations": "Commercial announcement without measured reductions in downtime, attacks or costs for a specific fleet. Detecting and blocking suspicious communications requires a monitoring system in the customer's environment; overall pricing is quoted individually.",
+      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "published_at": "2026-11-10",
+      "organization": "SORACOM",
+      "source_ids": [
+        "src-soracom-suite"
+      ],
+      "time_window": "24h",
+      "body": "After installation, maintaining a robot's software and connections becomes ongoing work. SORACOM packages those duties while allowing selection of functions. A buyer needs agreement on setup and monitoring responsibilities as well as the communication link. Otherwise, one package name can conceal different service scopes at different sites.\n\nSORACOM began offering Physical AI Suite on November 10, combining connectivity, security and remote-operation services for robots and other physical systems. Existing platform functions are packaged with a new device, network and cloud security-assessment and hardening service. Features include restricted network access, encrypted connections, automatic renewal of digital certificates, and remote updates to models and embedded software. A certificate here helps establish trust during a connection; it is not certification that a robot's mechanical movement is safe.\n\nCustomers choose the functions they need. Overall pricing is by individual quotation, while existing services retain their own tariffs. The source specifies that blocking suspicious communications from the network requires a monitoring system to be built for the customer's environment. Subscribing to the package does not automatically mean that detection is operating on every device. This is operational infrastructure, not a new movement-control model. The announcement supplies no measured reduction in downtime, attack frequency or maintenance cost for a particular robot fleet.\n\nThe monitoring condition directly affects project scope: providing communications and providing working suspicious-traffic detection are different deliverables. A budget needs to identify who builds monitoring and who responds to an alert. SORACOM quotes the package individually; no fixed per-robot maintenance total appears in the announcement.",
+      "image": null
+    },
+    {
+      "id": "roboscript-memory",
+      "title": "RoboScript changes a task record rather than model parameters",
+      "summary": "Huazhong University and ArcheOne AI researchers tested text memory for robot control. The method avoids retraining the base model, while retaining rehearsal and system-operation costs.",
+      "details": "Researchers at Huazhong University of Science and Technology and ArcheOne AI described RoboScript, a system that improves task execution by writing rehearsal feedback into text memory. The underlying model stays unchanged. Starting from one demonstration, it rehearses in simulation, records useful steps and object roles, and freezes that memory for evaluation on new scenes. The method is called World In-Context Learning: adaptation through information supplied alongside a task, rather than changes to the model's internal parameters.",
+      "technical_novelty": "Researchers at Huazhong University of Science and Technology and ArcheOne AI described RoboScript, a system that improves task execution by writing rehearsal feedback into text memory. The underlying model stays unchanged. Starting from one demonstration, it rehearses in simulation, records useful steps and object roles, and freezes that memory for evaluation on new scenes. The method is called World In-Context Learning: adaptation through information supplied alongside a task, rather than changes to the model's internal parameters.",
+      "engineering_impact": "Transferring a text memory to another machine is not buying a universal skill. A note cannot supply a movement absent from the available actions. Cloth, cables and coordinated two-arm work are particularly relevant supplier limitations: those operations may need additional tools even though the underlying model's parameters remain unchanged.",
+      "limitations": "The 83.4% concerns simulated RoboTwin 2.0 tasks, not physical trials. Rehearsals and existing movement skills are required; cloth, cables and close two-arm coordination remain difficult. Independent reproduction is not confirmed.",
+      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-09",
+      "organization": "Huazhong University of Science and Technology; ArcheOne AI",
+      "source_ids": [
+        "src-roboscript-memory"
+      ],
+      "time_window": "72h",
+      "body": "An applied project needs to know what must change for a new job. In RoboScript, that component is a prepared record of steps and task conditions. It is another configuration process, rather than learning at no cost. It relies on a base model, observation tools and available movements, with the record's usefulness checked through additional attempts.\n\nResearchers at Huazhong University of Science and Technology and ArcheOne AI described RoboScript, a system that improves task execution by writing rehearsal feedback into text memory. The underlying model stays unchanged. Starting from one demonstration, it rehearses in simulation, records useful steps and object roles, and freezes that memory for evaluation on new scenes. The method is called World In-Context Learning: adaptation through information supplied alongside a task, rather than changes to the model's internal parameters.\n\nThe preprint appeared on November 9. Across all 50 RoboTwin 2.0 tasks, a virtual suite of dual-arm manipulation, the authors report 83.4% mean success over clean and altered settings. Rehearsal and evaluation scenes are separated; memory is not rewritten for every test episode. Transfer to a physical dual-arm robot is also described, but 83.4% belongs to the virtual suite. Cloth, cables and tightly coordinated two-arm actions remain challenging. Leaving model parameters unchanged does not remove the cost of rehearsals, observations or the pre-existing movement skills used by the system.\n\nTransferring a text memory to another machine is not buying a universal skill. A note cannot supply a movement absent from the available actions. Cloth, cables and coordinated two-arm work are particularly relevant supplier limitations: those operations may need additional tools even though the underlying model's parameters remain unchanged.",
+      "image": null
+    },
+    {
+      "id": "prism-corl",
+      "title": "A small control-network change improves defined tests, with deployment costs unmeasured",
+      "summary": "Michigan presented PRISM, a signal-processing component for robot control, at the Conference on Robot Learning (CoRL). Its team reports improved virtual walking and physical grasping, without measuring investment payback or shift-level equipment availability.",
+      "details": "The University of Michigan presented PRISM at the Conference on Robot Learning (CoRL) in Austin on November 10. It is an input component for a movement-control neural network. The preprint first appeared in July; the current event is its conference presentation, not a new original-publication date. PRISM learns useful multiplicative combinations of observations, previous actions and commands, such as joint-position and velocity signals. Replacing initial input processing lets it fit existing learning systems without a new training objective or extra sensors. Its contribution is a change in representation rather than simply a larger parameter count.",
+      "technical_novelty": "The University of Michigan presented PRISM at the Conference on Robot Learning (CoRL) in Austin on November 10. It is an input component for a movement-control neural network. The preprint first appeared in July; the current event is its conference presentation, not a new original-publication date. PRISM learns useful multiplicative combinations of observations, previous actions and commands, such as joint-position and velocity signals. Replacing initial input processing lets it fit existing learning systems without a new training objective or extra sensors. Its contribution is a change in representation rather than simply a larger parameter count.",
+      "engineering_impact": "The physical result has a clear narrow scope: an SO-101 arm picking up a tape roll, 50 attempts, and 94% versus 68% using matching demonstrations. That is more informative than a general reliability promise. It still supplies no shift throughput, per-part processing cost or maintenance interval for the arm.",
+      "limitations": "Research-team results from 24-second simulated walking trials and a separate 50-attempt physical grasp test. No independent reproduction or long-duration industrial evaluation is supplied; the preprint dates to July, with the conference presentation on November 10 being the new event.",
+      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-10",
+      "organization": "University of Michigan",
+      "source_ids": [
+        "src-prism-corl"
+      ],
+      "time_window": "24h",
+      "body": "Improving control without extra sensors or a complete learning-system replacement is relevant to deployment. The size of an architectural change does not determine implementation effort, however. Data preparation, software compatibility and task validation remain machine-specific work. The university announcement does not measure those costs for an industrial customer. A neural network here is a learned computational model that selects a control action from observations.\n\nThe University of Michigan presented PRISM at the Conference on Robot Learning (CoRL) in Austin on November 10. It is an input component for a movement-control neural network. The preprint first appeared in July; the current event is its conference presentation, not a new original-publication date. PRISM learns useful multiplicative combinations of observations, previous actions and commands, such as joint-position and velocity signals. Replacing initial input processing lets it fit existing learning systems without a new training objective or extra sensors. Its contribution is a change in representation rather than simply a larger parameter count.\n\nIn simulation, humanoids completed 92.5% of 24-second trials without falling, against 51% for a conventional network. Enlarging the conventional network to a comparable size produced 52.3%. This measures stability over a fixed interval, not long-term service lifetime. In a separate physical test, an SO-101 arm picked up a roll of tape with 94% success across 50 attempts, against 68% using identical training demonstrations. The university reports its team's results. Simulated walking and physical grasping percentages belong to separate experiments, not one general reliability figure.\n\nThe physical result has a clear narrow scope: an SO-101 arm picking up a tape roll, 50 attempts, and 94% versus 68% using matching demonstrations. That is more informative than a general reliability promise. It still supplies no shift throughput, per-part processing cost or maintenance interval for the arm.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Robots in factories and hospitals: pilots, development and support",
+    "summary": "Google's factory pilot and Mitsubishi's hospital delivery mark different stages of use. SORACOM offers connectivity, security and update services for operating systems.",
+    "implications": "A 96% task success rate, an estimated 30% development-time reduction and the scope of connectivity services are different inputs. Each needs its own workload, conditions and costs before an investment calculation."
+  },
+  "sources": [
+    {
+      "id": "src-gemini-robotics-25",
+      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "domain": "deepmind.google",
+      "organization": "Google DeepMind; Apptronik; Mercedes-Benz",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "src-meldy-robopivot",
+      "title": "三菱電機のインナーソース活動の開発成果を製品に初適用",
+      "url": "https://www.mitsubishielectric.co.jp/ja/pr/2026/1110_pd/",
+      "domain": "www.mitsubishielectric.co.jp",
+      "organization": "Mitsubishi Electric; Mitsubishi Electric Mobility",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "src-soracom-suite",
+      "title": "フィジカルAIシステムを「つなぐ」「守る」「育てる」、「SORACOM フィジカルAI Suite」を提供開始",
+      "url": "https://soracom.com/ja/news/20261110-physical-ai-suite",
+      "domain": "soracom.com",
+      "organization": "SORACOM",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "src-roboscript-memory",
+      "title": "World In-Context Learning for Agentic Robot Manipulation",
+      "url": "https://arxiv.org/abs/2611.12885",
+      "domain": "arxiv.org",
+      "organization": "Huazhong University of Science and Technology; ArcheOne AI",
+      "published_at": "2026-11-09"
+    },
+    {
+      "id": "src-prism-corl",
+      "title": "PRISM: A neural network component for better robotic motor control",
+      "url": "https://news.engin.umich.edu/2026/11/prism-a-neural-network-component-for-better-robotic-motor-control/",
+      "domain": "news.engin.umich.edu",
+      "organization": "University of Michigan",
+      "published_at": "2026-11-10"
+    }
+  ]
+}
