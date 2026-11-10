@@ -2,159 +2,150 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-10",
-  "issue_id": "daily-2026-11-10",
+  "issue_date": "2026-11-11",
+  "issue_id": "daily-2026-11-11",
   "edition": "business",
   "language": "en",
-  "generated_at": "2026-11-09T20:45:41.081797Z",
-  "title": "Replicants examine what deployment readiness requires — November 10, 2026: Business",
-  "lead": "Demonstration collection, changed conditions and site requirements shape the path from project to service.",
+  "generated_at": "2026-11-10T20:52:31.055215Z",
+  "title": "Robots in factories and hospitals: pilots, development and support",
+  "lead": "Google's factory pilot and Mitsubishi's hospital delivery mark different stages of use. SORACOM offers connectivity, security and update services for operating systems.",
   "news": [
     {
-      "id": "robotbank-quadruped",
-      "title": "RobotBank starts its own quadruped programme with site conditions still to validate",
-      "summary": "Tokyo-based RobotBank announced an industrial quadruped for inspection applications. Sales timing and specifications remain undefined, while the company listed the criteria it intends to assess during future operation.",
-      "details": "Tokyo-based RobotBank announced development of its own industrial quadruped on November 9. Intended uses include inspection rounds around production equipment, observation in logistics and large facilities, and infrastructure inspection support. The company plans to validate site-specific conditions before fixing product specifications. Mechanical design, locomotion control, sensors, teleoperation and maintenance will be considered together. Environmental recognition and autonomous task execution are planned as staged additions following technical validation, rather than established capabilities of an available machine.",
-      "technical_novelty": "Tokyo-based RobotBank announced development of its own industrial quadruped on November 9. Intended uses include inspection rounds around production equipment, observation in logistics and large facilities, and infrastructure inspection support. The company plans to validate site-specific conditions before fixing product specifications. Mechanical design, locomotion control, sensors, teleoperation and maintenance will be considered together. Environmental recognition and autonomous task execution are planned as staged additions following technical validation, rather than established capabilities of an available machine.",
-      "engineering_impact": "The practical decision precedes procurement: which site and inspection task should the machine serve? Without validated conditions, future useful rounds per shift cannot be assigned. Specifications and timing are explicitly left open, and subsequent robot types are candidates rather than commitments to bring each one to market.",
-      "limitations": "Development start and validation plan; specifications, measured results, price and release timing are not announced.",
-      "evidence_status": "Official developer or vendor announcement; figures and plans are not independent evaluation.",
-      "published_at": "2026-11-09",
-      "organization": "RobotBank",
+      "id": "gemini-robotics-25",
+      "title": "Apollo 2 with Google's new model is tested on active car production lines",
+      "summary": "Google DeepMind reports 96% success in a parts-kitting pilot with Apptronik and Mercedes-Benz. Two production sites are named, but workload, operator interventions and cost per operation are not disclosed.",
+      "details": "Google DeepMind introduced Gemini Robotics 2.5 on November 10, a model that chooses robot actions from images and verbal instructions. Its developer evaluated more than 200 distinct tasks, including tool use and flexible objects. A separate pilot with Apptronik and Mercedes-Benz used Apollo 2 humanoids to pick metal automotive fastening parts, or brackets, from bins and place them in a required sequence. Trials took place on active production lines in Kecskemét, Hungary, and Sindelfingen, Germany. The company reports 96% task success for that pilot, without giving a total attempt count in the announcement.",
+      "technical_novelty": "Google DeepMind introduced Gemini Robotics 2.5 on November 10, a model that chooses robot actions from images and verbal instructions. Its developer evaluated more than 200 distinct tasks, including tool use and flexible objects. A separate pilot with Apptronik and Mercedes-Benz used Apollo 2 humanoids to pick metal automotive fastening parts, or brackets, from bins and place them in a required sequence. Trials took place on active production lines in Kecskemét, Hungary, and Sindelfingen, Germany. The company reports 96% task success for that pilot, without giving a total attempt count in the announcement.",
+      "engineering_impact": "The commercial interpretation depends on the kitting scope: which brackets, bins and sequences belong to the tested process. Those conditions need to accompany trial counts and exception handling. The release does not allow calculation of consistently completed kits per machine per shift at either production site.",
+      "limitations": "Developer-reported results for a specific pilot; total attempts, the complete human-intervention record and cost per part are not supplied. Laboratory tasks and the factory pilot were evaluated separately.",
+      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "published_at": "2026-11-10",
+      "organization": "Google DeepMind; Apptronik; Mercedes-Benz",
       "source_ids": [
-        "src-robotbank"
+        "src-gemini-robotics-25"
       ],
       "time_window": "24h",
-      "body": "An inspection customer needs more than the ability to cross uneven ground. Sensor choice, operator assistance and servicing costs at a particular site also matter. RobotBank places those issues alongside mechanical development. The announcement reveals intended product criteria, although it does not yet allow selection of a finished configuration or calculation of a purchase budget.\n\nTokyo-based RobotBank announced development of its own industrial quadruped on November 9. Intended uses include inspection rounds around production equipment, observation in logistics and large facilities, and infrastructure inspection support. The company plans to validate site-specific conditions before fixing product specifications. Mechanical design, locomotion control, sensors, teleoperation and maintenance will be considered together. Environmental recognition and autonomous task execution are planned as staged additions following technical validation, rather than established capabilities of an available machine.\n\nRobotBank stresses that this is not its first development effort: the project builds on previous robot products, software platforms and system integration. Through RobotBank Lab, it plans to analyse customer needs, produce prototypes and conduct trials. Proposed assessment criteria include task success, operating time, frequency of human intervention, safety and maintenance expense. No measured results for those criteria, final specifications, sales date or mass-production schedule are supplied. Mobile manipulators and other possible follow-on products are identified as areas for consideration, not a guaranteed product roadmap. The release describes the start of a development programme, not a completed deployment.\n\nThe practical decision precedes procurement: which site and inspection task should the machine serve? Without validated conditions, future useful rounds per shift cannot be assigned. Specifications and timing are explicitly left open, and subsequent robot types are candidates rather than commitments to bring each one to market.",
+      "body": "For deployment decisions, naming an operation and active sites is useful. Task success remains only one part of a service assessment, however. Assistance frequency, cycle duration and handling of an unsuccessful part also matter. An aggregate pilot score does not answer those questions automatically.\n\nGoogle DeepMind introduced Gemini Robotics 2.5 on November 10, a model that chooses robot actions from images and verbal instructions. Its developer evaluated more than 200 distinct tasks, including tool use and flexible objects. A separate pilot with Apptronik and Mercedes-Benz used Apollo 2 humanoids to pick metal automotive fastening parts, or brackets, from bins and place them in a required sequence. Trials took place on active production lines in Kecskemét, Hungary, and Sindelfingen, Germany. The company reports 96% task success for that pilot, without giving a total attempt count in the announcement.\n\nThe system separates two levels: Gemini Robotics ER tracks the workflow, while the new action model controls the hands and arms. The production result therefore belongs to that configuration, rather than to one isolated neural network. Laboratory comparisons also vary by task: sweeping rubbish into a dustpan improved from 0% to 52% against Gemini Robotics 2, for example. The model is rolling out to robotics partners. These are developer-reported figures, without independent assessment, a complete human-intervention record or a cost per handled part in the release.\n\nThe commercial interpretation depends on the kitting scope: which brackets, bins and sequences belong to the tested process. Those conditions need to accompany trial counts and exception handling. The release does not allow calculation of consistently completed kits per machine per shift at either production site.",
       "image": null
     },
     {
-      "id": "wuji-data-system",
-      "title": "HumansX offers a demonstration-collection setup, beyond individual robot hands",
-      "summary": "Tokyo's HumansX proposed a dual-arm installation with operator gloves for recording demonstrations. Complete-system pricing and delivery depend on configuration; the next hand batch is expected from February 2027.",
-      "details": "Tokyo-based HumansX proposed a dual-arm data-collection system on November 9, combining Wuji Hand 2 robotic hands with Wuji Glove operator gloves. Operator movements can be recorded as demonstrations for later robot learning. Each hand has 20 actively controlled degrees of freedom, meaning separate movement directions, with four per finger. Vendor specifications give a mass of about 800 grams and fingertip peak force of at least 12 newtons. Peak force is not a continuous-load rating or the mass of an object that can safely be held.",
-      "technical_novelty": "Tokyo-based HumansX proposed a dual-arm data-collection system on November 9, combining Wuji Hand 2 robotic hands with Wuji Glove operator gloves. Operator movements can be recorded as demonstrations for later robot learning. Each hand has 20 actively controlled degrees of freedom, meaning separate movement directions, with four per finger. Vendor specifications give a mass of about 800 grams and fingertip peak force of at least 12 newtons. Peak force is not a continuous-load rating or the mass of an object that can safely be held.",
-      "engineering_impact": "Hand delivery and complete-system delivery require separate agreement. A vendor's fully reserved allocation supplies neither customer count nor revenue or the number of installations working today. The claim of lower cost also comes without a comparative budget. Commercial assessment therefore depends on the chosen configuration, support and on-site work included in the offer.",
-      "limitations": "Vendor specifications; no independent lifetime test, fixed public complete-system price or autonomous-learning outcome from collected demonstrations.",
-      "evidence_status": "Official developer or vendor announcement; figures and plans are not independent evaluation.",
-      "published_at": "2026-11-09",
-      "organization": "HumansX",
+      "id": "meldy-robopivot",
+      "title": "Mitsubishi reuses internal software work for a hospital delivery robot",
+      "summary": "Mitsubishi Electric applied RoboPivot to MELDY, supplied to a Japanese hospital. It estimates a 30% reduction in guidance-function development; the figure does not measure hospital staff time saved.",
+      "details": "Mitsubishi Electric announced the first product application of RoboPivot on November 10. This shared software foundation supports robot development. Subsidiary Mitsubishi Electric Mobility used it for MELDY, a multipurpose hospital delivery robot supplied in November to St. Marianna University Hospital in Japan. Departments developed the foundation collaboratively inside the company, reusing code and experience instead of recreating similar functions. This is called InnerSource: open collaboration practices applied internally, rather than a promise that the entire codebase is publicly available.",
+      "technical_novelty": "Mitsubishi Electric announced the first product application of RoboPivot on November 10. This shared software foundation supports robot development. Subsidiary Mitsubishi Electric Mobility used it for MELDY, a multipurpose hospital delivery robot supplied in November to St. Marianna University Hospital in Japan. Departments developed the foundation collaboratively inside the company, reusing code and experience instead of recreating similar functions. This is called InnerSource: open collaboration practices applied internally, rather than a promise that the entire codebase is publicly available.",
+      "engineering_impact": "Faster development could help the manufacturer produce related machines, but the source does not convert it into a discount or delivery price. The hospital outcome disclosed here is MELDY's November supply. Trip frequency, transported volume and staff-workload changes are absent, so the 30% estimate cannot be entered as hospital operating savings.",
+      "limitations": "The 30% is an estimate for guidance-function development including test-environment preparation. It does not measure delivery speed or hospital labour savings; absolute development time and independent evaluation are not supplied.",
+      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "published_at": "2026-11-10",
+      "organization": "Mitsubishi Electric; Mitsubishi Electric Mobility",
       "source_ids": [
-        "src-wuji-system",
-        "src-wuji-reservations"
+        "src-meldy-robopivot"
       ],
       "time_window": "24h",
-      "body": "An applied project can stall before model training while a customer connects hands, gloves and movement recording. HumansX addresses that stage. The contract can therefore extend beyond buying a hand: readiness to collect useful demonstrations after setup needs to be defined, rather than assumed from the inventory of purchased components.\n\nTokyo-based HumansX proposed a dual-arm data-collection system on November 9, combining Wuji Hand 2 robotic hands with Wuji Glove operator gloves. Operator movements can be recorded as demonstrations for later robot learning. Each hand has 20 actively controlled degrees of freedom, meaning separate movement directions, with four per finger. Vendor specifications give a mass of about 800 grams and fingertip peak force of at least 12 newtons. Peak force is not a continuous-load rating or the mass of an object that can safely be held.\n\nThe assembled configuration uses Marvin Pro arms. The supplier offers setup, on-site installation and Japanese-language support. The first hand allocation is fully reserved; the next batch is scheduled to ship from February 2027. Its own website opened second-batch reservations on November 6: the November 9 release adds the dual-arm system offering, rather than establishing immediate off-the-shelf availability. Price and delivery for a complete installation depend on configuration and require an enquiry. The announcement supplies neither an independent hand-lifetime test nor evidence that collected demonstrations have already enabled autonomous completion of a customer's task.\n\nHand delivery and complete-system delivery require separate agreement. A vendor's fully reserved allocation supplies neither customer count nor revenue or the number of installations working today. The claim of lower cost also comes without a comparative budget. Commercial assessment therefore depends on the chosen configuration, support and on-site work included in the offer.",
+      "body": "Robot deployment includes software preparation and verification before useful deliveries begin. Mitsubishi identifies a specific opportunity to shorten that preparation: reusing common software components. For a buyer, this describes how the product was created. Assessing the hospital service requires different evidence about deliveries and staff activity.\n\nMitsubishi Electric announced the first product application of RoboPivot on November 10. This shared software foundation supports robot development. Subsidiary Mitsubishi Electric Mobility used it for MELDY, a multipurpose hospital delivery robot supplied in November to St. Marianna University Hospital in Japan. Departments developed the foundation collaboratively inside the company, reusing code and experience instead of recreating similar functions. This is called InnerSource: open collaboration practices applied internally, rather than a promise that the entire codebase is publicly available.\n\nThe company estimates a 30% reduction in software-development lead time. A footnote defines the comparison: developing robot guidance functionality from scratch, including preparation of the verification environment. It does not measure travel speed, delivery volume or hospital staff time saved. A separate goal seeks a 50% reduction in the broader product-development cycle by 2030, with a different scope of comparison. Neither the absolute project duration nor independent verification of the estimated saving is supplied. The delivery announcement and the development estimate describe different outcomes.\n\nFaster development could help the manufacturer produce related machines, but the source does not convert it into a discount or delivery price. The hospital outcome disclosed here is MELDY's November supply. Trip frequency, transported volume and staff-workload changes are absent, so the 30% estimate cannot be entered as hospital operating savings.",
       "image": null
     },
     {
-      "id": "dexbench-launch",
-      "title": "DexBench tests whether a robot skill survives changed working conditions",
-      "summary": "RLWRLD introduced 15 DexBench tasks for simulated evaluation of robotic hands in Seoul. The suite tests unfamiliar objects and conditions, while correspondence with physical operation remains to be validated.",
-      "details": "RLWRLD introduced DexBench at NVIDIA AI Day Seoul at the COEX convention centre on November 9. It is a suite of repeatable tests for dexterous manipulation, meaning precise robotic hand work with objects. This first major release from an initiative started with NVIDIA in June contains 15 tasks across retail, logistics, assembly and hotel food-and-beverage operations. Examples include retrieving products from shelves, unloading roll cages, inserting connectors, fastening screws, stacking plates and pouring liquids. Virtual objects and equipment are modelled using specifications of real products.",
-      "technical_novelty": "RLWRLD introduced DexBench at NVIDIA AI Day Seoul at the COEX convention centre on November 9. It is a suite of repeatable tests for dexterous manipulation, meaning precise robotic hand work with objects. This first major release from an initiative started with NVIDIA in June contains 15 tasks across retail, logistics, assembly and hotel food-and-beverage operations. Examples include retrieving products from shelves, unloading roll cages, inserting connectors, fastening screws, stacking plates and pouring liquids. Virtual objects and equipment are modelled using specifications of real products.",
-      "engineering_impact": "A contract should preserve a simulation score's identity and conditions. Changes in products, friction or position may alter data and configuration requirements. While comparison with physical robots remains a future stage, virtual evaluation can compare development choices. It cannot substitute for acceptance at a particular line with its own failures and operating expenses.",
-      "limitations": "Simulated evaluation; physical-robot correspondence and component releases are identified as further steps.",
-      "evidence_status": "Official developer or vendor announcement; figures and plans are not independent evaluation.",
-      "published_at": "2026-11-09",
-      "organization": "RLWRLD",
+      "id": "soracom-suite",
+      "title": "SORACOM bundles connectivity, protection and remote updates for robot systems",
+      "summary": "SORACOM began offering Physical AI Suite for operational support. Connectivity, protected connections and updates are included, while suspicious-traffic detection requires monitoring to be set up in the customer's environment.",
+      "details": "SORACOM began offering Physical AI Suite on November 10, combining connectivity, security and remote-operation services for robots and other physical systems. Existing platform functions are packaged with a new device, network and cloud security-assessment and hardening service. Features include restricted network access, encrypted connections, automatic renewal of digital certificates, and remote updates to models and embedded software. A certificate here helps establish trust during a connection; it is not certification that a robot's mechanical movement is safe.",
+      "technical_novelty": "SORACOM began offering Physical AI Suite on November 10, combining connectivity, security and remote-operation services for robots and other physical systems. Existing platform functions are packaged with a new device, network and cloud security-assessment and hardening service. Features include restricted network access, encrypted connections, automatic renewal of digital certificates, and remote updates to models and embedded software. A certificate here helps establish trust during a connection; it is not certification that a robot's mechanical movement is safe.",
+      "engineering_impact": "The monitoring condition directly affects project scope: providing communications and providing working suspicious-traffic detection are different deliverables. A budget needs to identify who builds monitoring and who responds to an alert. SORACOM quotes the package individually; no fixed per-robot maintenance total appears in the announcement.",
+      "limitations": "Commercial announcement without measured reductions in downtime, attacks or costs for a specific fleet. Detecting and blocking suspicious communications requires a monitoring system in the customer's environment; overall pricing is quoted individually.",
+      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "published_at": "2026-11-10",
+      "organization": "SORACOM",
       "source_ids": [
-        "src-dexbench"
+        "src-soracom-suite"
       ],
       "time_window": "24h",
-      "body": "Deployment depends on the gap between an attractive demonstration and retained performance after products or workstations change. DexBench addresses that gap through shared tests. A customer can use this approach to frame supplier questions, but a test launch does not supply a universal threshold for accepting a machine into industrial operation.\n\nRLWRLD introduced DexBench at NVIDIA AI Day Seoul at the COEX convention centre on November 9. It is a suite of repeatable tests for dexterous manipulation, meaning precise robotic hand work with objects. This first major release from an initiative started with NVIDIA in June contains 15 tasks across retail, logistics, assembly and hotel food-and-beverage operations. Examples include retrieving products from shelves, unloading roll cages, inserting connectors, fastening screws, stacking plates and pouring liquids. Virtual objects and equipment are modelled using specifications of real products.\n\nEvaluation goes beyond whether a task worked once. Conditions change along three dimensions: objects, physical properties and spatial arrangements. That probes transfer to situations not encountered during training. The foundation is Isaac Lab-Arena, software for evaluating robot-control policies at scale, together with Newton's physical-interaction simulation. RLWRLD plans to release code, environments, data, baseline models and a leaderboard. Comparing simulated performance with physical robots is identified as further work. Launching a test suite therefore does not establish the operational reliability of any particular robot at an actual industrial site.\n\nA contract should preserve a simulation score's identity and conditions. Changes in products, friction or position may alter data and configuration requirements. While comparison with physical robots remains a future stage, virtual evaluation can compare development choices. It cannot substitute for acceptance at a particular line with its own failures and operating expenses.",
+      "body": "After installation, maintaining a robot's software and connections becomes ongoing work. SORACOM packages those duties while allowing selection of functions. A buyer needs agreement on setup and monitoring responsibilities as well as the communication link. Otherwise, one package name can conceal different service scopes at different sites.\n\nSORACOM began offering Physical AI Suite on November 10, combining connectivity, security and remote-operation services for robots and other physical systems. Existing platform functions are packaged with a new device, network and cloud security-assessment and hardening service. Features include restricted network access, encrypted connections, automatic renewal of digital certificates, and remote updates to models and embedded software. A certificate here helps establish trust during a connection; it is not certification that a robot's mechanical movement is safe.\n\nCustomers choose the functions they need. Overall pricing is by individual quotation, while existing services retain their own tariffs. The source specifies that blocking suspicious communications from the network requires a monitoring system to be built for the customer's environment. Subscribing to the package does not automatically mean that detection is operating on every device. This is operational infrastructure, not a new movement-control model. The announcement supplies no measured reduction in downtime, attack frequency or maintenance cost for a particular robot fleet.\n\nThe monitoring condition directly affects project scope: providing communications and providing working suspicious-traffic detection are different deliverables. A budget needs to identify who builds monitoring and who responds to an alert. SORACOM quotes the package individually; no fixed per-robot maintenance total appears in the announcement.",
       "image": null
     },
     {
-      "id": "nvidia-corl-2026",
-      "title": "NVIDIA's new training tools still leave customer acceptance to measure",
-      "summary": "NVIDIA introduced GR00T 2 and Isaac Lab 3.0 at CoRL for robot learning. It reports success changing with demonstration count and a separate training-throughput gain, rather than a completed deployment cost model.",
-      "details": "At the November 9 Conference on Robot Learning in Austin, NVIDIA introduced GR00T 2, a trained robot-control program using a representation of the physical world, alongside new simulation tools. According to the company, the model completed 40 of 50 evaluated tasks at least once without task-specific demonstrations. That counts tasks achieved, not successful attempts. With one demonstration per task, average success was 71%; with five it reached 95%. Training used diverse robot and human data, including 100,000 hours of open human video recorded from the wearer's viewpoint.",
-      "technical_novelty": "At the November 9 Conference on Robot Learning in Austin, NVIDIA introduced GR00T 2, a trained robot-control program using a representation of the physical world, alongside new simulation tools. According to the company, the model completed 40 of 50 evaluated tasks at least once without task-specific demonstrations. That counts tasks achieved, not successful attempts. With one demonstration per task, average success was 71%; with five it reached 95%. Training used diverse robot and human data, including 100,000 hours of open human video recorded from the wearer's viewpoint.",
-      "engineering_impact": "Without task-specific demonstrations does not mean training without data: large robot and human datasets already underpin the model. Computing-time savings also refer to a particular simulation configuration. The percentages and throughput multiplier alone do not yield the combined cost of demonstrations, integration and acceptance trials at a specific workstation.",
-      "limitations": "Developer-reported results on selected tasks and configurations; no independent reproduction or customer-workstation throughput calculation.",
-      "evidence_status": "Official developer or vendor announcement; figures and plans are not independent evaluation.",
+      "id": "roboscript-memory",
+      "title": "RoboScript changes a task record rather than model parameters",
+      "summary": "Huazhong University and ArcheOne AI researchers tested text memory for robot control. The method avoids retraining the base model, while retaining rehearsal and system-operation costs.",
+      "details": "Researchers at Huazhong University of Science and Technology and ArcheOne AI described RoboScript, a system that improves task execution by writing rehearsal feedback into text memory. The underlying model stays unchanged. Starting from one demonstration, it rehearses in simulation, records useful steps and object roles, and freezes that memory for evaluation on new scenes. The method is called World In-Context Learning: adaptation through information supplied alongside a task, rather than changes to the model's internal parameters.",
+      "technical_novelty": "Researchers at Huazhong University of Science and Technology and ArcheOne AI described RoboScript, a system that improves task execution by writing rehearsal feedback into text memory. The underlying model stays unchanged. Starting from one demonstration, it rehearses in simulation, records useful steps and object roles, and freezes that memory for evaluation on new scenes. The method is called World In-Context Learning: adaptation through information supplied alongside a task, rather than changes to the model's internal parameters.",
+      "engineering_impact": "Transferring a text memory to another machine is not buying a universal skill. A note cannot supply a movement absent from the available actions. Cloth, cables and coordinated two-arm work are particularly relevant supplier limitations: those operations may need additional tools even though the underlying model's parameters remain unchanged.",
+      "limitations": "The 83.4% concerns simulated RoboTwin 2.0 tasks, not physical trials. Rehearsals and existing movement skills are required; cloth, cables and close two-arm coordination remain difficult. Independent reproduction is not confirmed.",
+      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
       "published_at": "2026-11-09",
-      "organization": "NVIDIA",
+      "organization": "Huazhong University of Science and Technology; ArcheOne AI",
       "source_ids": [
-        "src-nvidia-corl"
+        "src-roboscript-memory"
       ],
-      "time_window": "24h",
-      "body": "If one example and five examples produce different outcomes, preparing data remains part of deployment cost. NVIDIA's figures are particularly useful when read beside their conditions. The tools may change an experimental plan, but a customer still needs to establish how many demonstrations its operation requires and which failure rate it can tolerate.\n\nAt the November 9 Conference on Robot Learning in Austin, NVIDIA introduced GR00T 2, a trained robot-control program using a representation of the physical world, alongside new simulation tools. According to the company, the model completed 40 of 50 evaluated tasks at least once without task-specific demonstrations. That counts tasks achieved, not successful attempts. With one demonstration per task, average success was 71%; with five it reached 95%. Training used diverse robot and human data, including 100,000 hours of open human video recorded from the wearer's viewpoint.\n\nThe same programme introduced Isaac Lab 3.0, software for training robots. Researchers can choose between PhysX and Newton physics solvers; Newton can model deformable objects such as cloth and cables. In a particular vision-based dexterous-manipulation training benchmark, the Newton configuration provided up to 2.5 times the training throughput of Isaac Lab 2.3 with PhysX. This compares two training configurations, not physical robot speed. The developer reports all these figures. The announcement does not establish the same performance on arbitrary hardware or provide independent reproduction of the results.\n\nWithout task-specific demonstrations does not mean training without data: large robot and human datasets already underpin the model. Computing-time savings also refer to a particular simulation configuration. The percentages and throughput multiplier alone do not yield the combined cost of demonstrations, integration and acceptance trials at a specific workstation.",
+      "time_window": "72h",
+      "body": "An applied project needs to know what must change for a new job. In RoboScript, that component is a prepared record of steps and task conditions. It is another configuration process, rather than learning at no cost. It relies on a base model, observation tools and available movements, with the record's usefulness checked through additional attempts.\n\nResearchers at Huazhong University of Science and Technology and ArcheOne AI described RoboScript, a system that improves task execution by writing rehearsal feedback into text memory. The underlying model stays unchanged. Starting from one demonstration, it rehearses in simulation, records useful steps and object roles, and freezes that memory for evaluation on new scenes. The method is called World In-Context Learning: adaptation through information supplied alongside a task, rather than changes to the model's internal parameters.\n\nThe preprint appeared on November 9. Across all 50 RoboTwin 2.0 tasks, a virtual suite of dual-arm manipulation, the authors report 83.4% mean success over clean and altered settings. Rehearsal and evaluation scenes are separated; memory is not rewritten for every test episode. Transfer to a physical dual-arm robot is also described, but 83.4% belongs to the virtual suite. Cloth, cables and tightly coordinated two-arm actions remain challenging. Leaving model parameters unchanged does not remove the cost of rehearsals, observations or the pre-existing movement skills used by the system.\n\nTransferring a text memory to another machine is not buying a universal skill. A note cannot supply a movement absent from the available actions. Cloth, cables and coordinated two-arm work are particularly relevant supplier limitations: those operations may need additional tools even though the underlying model's parameters remain unchanged.",
       "image": null
     },
     {
-      "id": "forpc-cart",
-      "title": "Physical cart pushing is demonstrated, while warehouse economics remain unmeasured",
-      "summary": "Huazhong University researchers transferred ForPC from simulation to a Unitree G1. The machine pushed a cart carrying up to 30 kilograms, but a flat-floor trial does not establish warehouse throughput.",
-      "details": "ZhenYu Zou and colleagues at Huazhong University of Science and Technology proposed ForPC, whole-body control for humanoid cart pushing. First the robot learns balance under hand loads and different upper-body poses. A supplementary controller then adjusts the arms, waist and legs using estimates of robot–cart interaction inferred from the robot's own signals rather than external force sensors. Both arms should contribute to propulsion instead of wasting effort by opposing each other on the same handle. The method treats walking and sustained hand contact as a coupled problem.",
-      "technical_novelty": "ZhenYu Zou and colleagues at Huazhong University of Science and Technology proposed ForPC, whole-body control for humanoid cart pushing. First the robot learns balance under hand loads and different upper-body poses. A supplementary controller then adjusts the arms, waist and legs using estimates of robot–cart interaction inferred from the robot's own signals rather than external force sensors. Both arms should contribute to propulsion instead of wasting effort by opposing each other on the same handle. The method treats walking and sustained hand contact as a coupled problem.",
-      "engineering_impact": "Thirty kilograms describes cargo on wheels, not a mass lifted by the hands. That distinction changes mechanical requirements and comparisons with other transport options. Floor and route properties, loading arrangements and human assistance still need evaluation. The source supplies no cost per trip, shift-level statistics or customer-site fleet-availability assessment.",
-      "limitations": "Author-run flat indoor-floor tests using a visual cart-heading marker. Lifetime, cost per trip and slope operation were not measured.",
-      "evidence_status": "Research preprint and author-run experiments; independent reproduction has not been confirmed.",
-      "published_at": "2026-11-05",
-      "organization": "Huazhong University of Science and Technology",
+      "id": "prism-corl",
+      "title": "A small control-network change improves defined tests, with deployment costs unmeasured",
+      "summary": "Michigan presented PRISM, a signal-processing component for robot control, at the Conference on Robot Learning (CoRL). Its team reports improved virtual walking and physical grasping, without measuring investment payback or shift-level equipment availability.",
+      "details": "The University of Michigan presented PRISM at the Conference on Robot Learning (CoRL) in Austin on November 10. It is an input component for a movement-control neural network. The preprint first appeared in July; the current event is its conference presentation, not a new original-publication date. PRISM learns useful multiplicative combinations of observations, previous actions and commands, such as joint-position and velocity signals. Replacing initial input processing lets it fit existing learning systems without a new training objective or extra sensors. Its contribution is a change in representation rather than simply a larger parameter count.",
+      "technical_novelty": "The University of Michigan presented PRISM at the Conference on Robot Learning (CoRL) in Austin on November 10. It is an input component for a movement-control neural network. The preprint first appeared in July; the current event is its conference presentation, not a new original-publication date. PRISM learns useful multiplicative combinations of observations, previous actions and commands, such as joint-position and velocity signals. Replacing initial input processing lets it fit existing learning systems without a new training objective or extra sensors. Its contribution is a change in representation rather than simply a larger parameter count.",
+      "engineering_impact": "The physical result has a clear narrow scope: an SO-101 arm picking up a tape roll, 50 attempts, and 94% versus 68% using matching demonstrations. That is more informative than a general reliability promise. It still supplies no shift throughput, per-part processing cost or maintenance interval for the arm.",
+      "limitations": "Research-team results from 24-second simulated walking trials and a separate 50-attempt physical grasp test. No independent reproduction or long-duration industrial evaluation is supplied; the preprint dates to July, with the conference presentation on November 10 being the new event.",
+      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-10",
+      "organization": "University of Michigan",
       "source_ids": [
-        "src-forpc"
+        "src-prism-corl"
       ],
-      "time_window": "7d",
-      "body": "Using an ordinary wheeled cart is attractive where existing material flow already accommodates it. The robot must handle more than its own body, however: cargo changes hand reactions and balance. ForPC studies that interaction. It provides a physical demonstration to discuss when choosing a pilot, without a published profitability calculation for a transport service.\n\nZhenYu Zou and colleagues at Huazhong University of Science and Technology proposed ForPC, whole-body control for humanoid cart pushing. First the robot learns balance under hand loads and different upper-body poses. A supplementary controller then adjusts the arms, waist and legs using estimates of robot–cart interaction inferred from the robot's own signals rather than external force sensors. Both arms should contribute to propulsion instead of wasting effort by opposing each other on the same handle. The method treats walking and sustained hand contact as a coupled problem.\n\nThe preprint appeared on November 5. In simulation comparisons, cart-speed tracking error fell by up to 68.2% relative to a locomotion-only baseline. That is a maximum relative reduction in error, not an increase in robot speed. On a physical Unitree G1 humanoid, the simulation-trained controller pushed a cart carrying up to 30 kilograms at 0.5 metres per second without additional real-world training. Tests used a flat indoor floor. Relative cart heading came from an AprilTag, a visual marker recognised by a camera. The demonstration is not operation without external visual references or verified transport among unpredictable obstacles.\n\nThirty kilograms describes cargo on wheels, not a mass lifted by the hands. That distinction changes mechanical requirements and comparisons with other transport options. Floor and route properties, loading arrangements and human assistance still need evaluation. The source supplies no cost per trip, shift-level statistics or customer-site fleet-availability assessment.",
+      "time_window": "24h",
+      "body": "Improving control without extra sensors or a complete learning-system replacement is relevant to deployment. The size of an architectural change does not determine implementation effort, however. Data preparation, software compatibility and task validation remain machine-specific work. The university announcement does not measure those costs for an industrial customer. A neural network here is a learned computational model that selects a control action from observations.\n\nThe University of Michigan presented PRISM at the Conference on Robot Learning (CoRL) in Austin on November 10. It is an input component for a movement-control neural network. The preprint first appeared in July; the current event is its conference presentation, not a new original-publication date. PRISM learns useful multiplicative combinations of observations, previous actions and commands, such as joint-position and velocity signals. Replacing initial input processing lets it fit existing learning systems without a new training objective or extra sensors. Its contribution is a change in representation rather than simply a larger parameter count.\n\nIn simulation, humanoids completed 92.5% of 24-second trials without falling, against 51% for a conventional network. Enlarging the conventional network to a comparable size produced 52.3%. This measures stability over a fixed interval, not long-term service lifetime. In a separate physical test, an SO-101 arm picked up a roll of tape with 94% success across 50 attempts, against 68% using identical training demonstrations. The university reports its team's results. Simulated walking and physical grasping percentages belong to separate experiments, not one general reliability figure.\n\nThe physical result has a clear narrow scope: an SO-101 arm picking up a tape roll, 50 attempts, and 94% versus 68% using matching demonstrations. That is more informative than a general reliability promise. It still supplies no shift throughput, per-part processing cost or maintenance interval for the arm.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Replicants examine what deployment readiness requires",
-    "summary": "Demonstration collection, changed conditions and site requirements shape the path from project to service.",
-    "implications": "Acceptance needs a defined operation, equipment configuration and measurements at the site."
+    "title": "Robots in factories and hospitals: pilots, development and support",
+    "summary": "Google's factory pilot and Mitsubishi's hospital delivery mark different stages of use. SORACOM offers connectivity, security and update services for operating systems.",
+    "implications": "A 96% task success rate, an estimated 30% development-time reduction and the scope of connectivity services are different inputs. Each needs its own workload, conditions and costs before an investment calculation."
   },
   "sources": [
     {
-      "id": "src-robotbank",
-      "title": "RobotBank、具身AIロボットの自社製品開発を本格始動。第一弾として産業向け四足歩行ロボットの開発に着手",
-      "url": "https://prtimes.jp/main/html/rd/p/000000085.000097103.html",
-      "domain": "prtimes.jp",
-      "organization": "RobotBank",
-      "published_at": "2026-11-09"
+      "id": "src-gemini-robotics-25",
+      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "domain": "deepmind.google",
+      "organization": "Google DeepMind; Apptronik; Mercedes-Benz",
+      "published_at": "2026-11-10"
     },
     {
-      "id": "src-wuji-system",
-      "title": "【第1期予約完売】20自由度ロボットハンド「Wuji Hand 2」第2期予約受付を開始 ― 現場ですぐ使える双腕データ収集システムもあわせてご提案",
-      "url": "https://prtimes.jp/main/html/rd/p/000000002.000192177.html",
-      "domain": "prtimes.jp",
-      "organization": "HumansX",
-      "published_at": "2026-11-09"
+      "id": "src-meldy-robopivot",
+      "title": "三菱電機のインナーソース活動の開発成果を製品に初適用",
+      "url": "https://www.mitsubishielectric.co.jp/ja/pr/2026/1110_pd/",
+      "domain": "www.mitsubishielectric.co.jp",
+      "organization": "Mitsubishi Electric; Mitsubishi Electric Mobility",
+      "published_at": "2026-11-10"
     },
     {
-      "id": "src-wuji-reservations",
-      "title": "Wuji Hand 2 First Batch Fully Reserved — Second-Batch Reservations Now Open",
-      "url": "https://humansx.co.jp/en/news/wuji-hand2-batch2-preorder/",
-      "domain": "humansx.co.jp",
-      "organization": "HumansX",
-      "published_at": "2026-11-06"
+      "id": "src-soracom-suite",
+      "title": "フィジカルAIシステムを「つなぐ」「守る」「育てる」、「SORACOM フィジカルAI Suite」を提供開始",
+      "url": "https://soracom.com/ja/news/20261110-physical-ai-suite",
+      "domain": "soracom.com",
+      "organization": "SORACOM",
+      "published_at": "2026-11-10"
     },
     {
-      "id": "src-dexbench",
-      "title": "RLWRLD Launches DexBench, Confirms Planned Investment from NVIDIA",
-      "url": "https://www.rlwrld.ai/en/news/117",
-      "domain": "www.rlwrld.ai",
-      "organization": "RLWRLD",
-      "published_at": "2026-11-09"
-    },
-    {
-      "id": "src-nvidia-corl",
-      "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
-      "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
-      "domain": "blogs.nvidia.com",
-      "organization": "NVIDIA",
-      "published_at": "2026-11-09"
-    },
-    {
-      "id": "src-forpc",
-      "title": "ForPC: Force-Aware Whole-Body Control for Precise Humanoid Cart Pushing",
-      "url": "https://arxiv.org/abs/2611.08664",
+      "id": "src-roboscript-memory",
+      "title": "World In-Context Learning for Agentic Robot Manipulation",
+      "url": "https://arxiv.org/abs/2611.12885",
       "domain": "arxiv.org",
-      "organization": "Huazhong University of Science and Technology",
-      "published_at": "2026-11-05"
+      "organization": "Huazhong University of Science and Technology; ArcheOne AI",
+      "published_at": "2026-11-09"
+    },
+    {
+      "id": "src-prism-corl",
+      "title": "PRISM: A neural network component for better robotic motor control",
+      "url": "https://news.engin.umich.edu/2026/11/prism-a-neural-network-component-for-better-robotic-motor-control/",
+      "domain": "news.engin.umich.edu",
+      "organization": "University of Michigan",
+      "published_at": "2026-11-10"
     }
   ]
 }

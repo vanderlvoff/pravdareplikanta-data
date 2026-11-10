@@ -2,158 +2,149 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-10",
-  "issue_id": "daily-2026-11-10",
+  "issue_date": "2026-11-11",
+  "issue_id": "daily-2026-11-11",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-09T20:45:41.081797Z",
-  "title": "Replicants discover how robots learn and get tested — November 10, 2026: Children",
-  "lead": "Cargo on wheels, movement examples and changed conditions reveal different difficulties.",
+  "generated_at": "2026-11-10T20:52:31.055215Z",
+  "title": "How a robot moves a box without arms",
+  "lead": "One robot pushes a box with its body; others sort parts or use notes from practice. We look at how these actions work and what the tests established.",
   "news": [
     {
-      "id": "forpc-cart",
-      "title": "A robot learns to push a cart without its hands upsetting its steps",
-      "summary": "Researchers at China's Huazhong University of Science and Technology taught a humanoid to push a loaded cart. In a physical test it moved up to 30 kilograms of cargo supported by wheels, rather than lifted in its hands.",
-      "details": "The hands need to help the same movement instead of pulling a shared handle in opposite directions. Software estimates the interaction from signals within the robot. A camera reads a special marker for the cart's direction. The robot therefore gets feedback about movement, rather than simply repeating one recorded gesture.",
-      "technical_novelty": "Imagine a cart full of heavy things: you push its handle, and it pushes back against your hands. A robot must account for that effort too, or its steps may become unstable. Researchers first taught it to walk under different loads on its hands. They then added software that adjusts arms, waist and legs together.",
-      "engineering_impact": "After computer training, the controller moved to a real machine without extra training on it. On a flat indoor floor, the robot pushed up to 30 kilograms of cargo at half a metre per second. Wheels support that weight; this was not a weightlifting test. Thresholds, slopes and unexpected obstacles would need separate checks.",
-      "limitations": "After computer training, the controller moved to a real machine without extra training on it. On a flat indoor floor, the robot pushed up to 30 kilograms of cargo at half a metre per second. Wheels support that weight; this was not a weightlifting test. Thresholds, slopes and unexpected obstacles would need separate checks.",
+      "id": "cobra-box",
+      "title": "A robot without arms pushes a box with its body",
+      "summary": "Northeastern University researchers in Boston moved a box using a snake-shaped robot. In twenty laboratory attempts, it delivered the box into a small area around the target.",
+      "details": "A program planned how to approach the box and where to take it. Another system, outside the robot, tracked the positions of both machine and load. These measurements helped correct its direction. So the robot chose its own actions, but the team has not yet repeated this experiment without the laboratory's tracking equipment.",
+      "technical_novelty": "How can you move a box without arms? These researchers tried pushing it with a long robot body shaped like a snake. Its sections bend, rest on the floor and pass a push into the box where they touch it. The robot has to move its load in the right direction as well as move itself.",
+      "engineering_impact": "The team changed starting positions and targets, then ran twenty attempts. Every time, the box finished within twenty centimetres of its target, about the length of a school ruler. That does not mean it placed the box on one exact point or could work on any ground. The tests used a flat, hard floor rather than rocks or stairs.",
+      "limitations": "The team changed starting positions and targets, then ran twenty attempts. Every time, the box finished within twenty centimetres of its target, about the length of a school ruler. That does not mean it placed the box on one exact point or could work on any ground. The tests used a flat, hard floor rather than rocks or stairs.",
       "evidence_status": "The researchers describe their own tests. Repetition by another team has not been confirmed.",
-      "published_at": "2026-11-05",
-      "organization": "Huazhong University of Science and Technology",
+      "published_at": "2026-11-06",
+      "organization": "Northeastern University",
       "source_ids": [
-        "src-forpc"
+        "src-cobra-box"
       ],
       "time_window": "7d",
-      "body": "Imagine a cart full of heavy things: you push its handle, and it pushes back against your hands. A robot must account for that effort too, or its steps may become unstable. Researchers first taught it to walk under different loads on its hands. They then added software that adjusts arms, waist and legs together.\n\nThe hands need to help the same movement instead of pulling a shared handle in opposite directions. Software estimates the interaction from signals within the robot. A camera reads a special marker for the cart's direction. The robot therefore gets feedback about movement, rather than simply repeating one recorded gesture.\n\nAfter computer training, the controller moved to a real machine without extra training on it. On a flat indoor floor, the robot pushed up to 30 kilograms of cargo at half a metre per second. Wheels support that weight; this was not a weightlifting test. Thresholds, slopes and unexpected obstacles would need separate checks.",
+      "body": "How can you move a box without arms? These researchers tried pushing it with a long robot body shaped like a snake. Its sections bend, rest on the floor and pass a push into the box where they touch it. The robot has to move its load in the right direction as well as move itself.\n\nA program planned how to approach the box and where to take it. Another system, outside the robot, tracked the positions of both machine and load. These measurements helped correct its direction. So the robot chose its own actions, but the team has not yet repeated this experiment without the laboratory's tracking equipment.\n\nThe team changed starting positions and targets, then ran twenty attempts. Every time, the box finished within twenty centimetres of its target, about the length of a school ruler. That does not mean it placed the box on one exact point or could work on any ground. The tests used a flat, hard floor rather than rocks or stairs.",
       "image": null
     },
     {
-      "id": "nvidia-corl-2026",
-      "title": "More examples helped a robot succeed more often",
-      "summary": "NVIDIA presented a new robot-learning system at a scientific conference in Austin. Five demonstrations helped more than one in its tests, while computer-training speed was measured separately from machine movement.",
-      "details": "Across fifty tested tasks, one demonstration of each job gave 71% average success. Five demonstrations gave 95%. This describes a particular test, not a promise that any home robot will complete 95 out of a hundred arbitrary chores. The model had already learned from large collections of human and robot recordings.",
-      "technical_novelty": "To connect small parts carefully, a robot needs more than the ability to reach a table. It must choose an accurate movement. Demonstrations are examples of how work is done, and they can help teach it. The company introduced a model, a control program trained with data, together with tools for practice in a computer world.",
-      "engineering_impact": "Another part of the announcement concerns simulation, a computer world for trying movements. New tools can account for cloth and cables changing shape. Training ran faster than an earlier configuration in one comparison. Computing attempts faster does not mean a real arm moves faster: its mechanism still has physical limits.",
-      "limitations": "Another part of the announcement concerns simulation, a computer world for trying movements. New tools can account for cloth and cables changing shape. Training ran faster than an earlier configuration in one comparison. Computing attempts faster does not mean a real arm moves faster: its mechanism still has physical limits.",
+      "id": "gemini-robotics-25",
+      "title": "Robots sorted parts at two working car factories",
+      "summary": "Google DeepMind reported a robot pilot with Apptronik and Mercedes-Benz. Robots took metal parts from bins and arranged them in the required order, with the company reporting 96% task success.",
+      "details": "A new computer model selects actions using images and a spoken or written instruction. A model here means a trained program that helps control movement. Another part of the system follows the progress of the whole job. The reported factory result therefore belongs to these parts working together, rather than to the new program alone.",
+      "technical_novelty": "Preparing parts for a car can involve more than carrying them somewhere. They may need to be placed in the order that assembly requires. This is the job tested at working factories in Hungary and Germany. Robots took metal brackets, parts used for fastening, from bins and arranged them in the required sequence.",
+      "engineering_impact": "The company reports 96% task success. That is like 96 successes in a hundred, but the announcement does not give the actual number of attempts: a hundred just explains the percentage. It also leaves out the full record of human help. These trials do not tell us how every other part would be handled, or how many complete sets a robot could prepare throughout a shift.",
+      "limitations": "The company reports 96% task success. That is like 96 successes in a hundred, but the announcement does not give the actual number of attempts: a hundred just explains the percentage. It also leaves out the full record of human help. These trials do not tell us how every other part would be handled, or how many complete sets a robot could prepare throughout a shift.",
       "evidence_status": "The company itself reports the tests, specifications or plans. The announcement supplies no independent verification.",
-      "published_at": "2026-11-09",
-      "organization": "NVIDIA",
+      "published_at": "2026-11-10",
+      "organization": "Google DeepMind; Apptronik; Mercedes-Benz",
       "source_ids": [
-        "src-nvidia-corl"
+        "src-gemini-robotics-25"
       ],
       "time_window": "24h",
-      "body": "To connect small parts carefully, a robot needs more than the ability to reach a table. It must choose an accurate movement. Demonstrations are examples of how work is done, and they can help teach it. The company introduced a model, a control program trained with data, together with tools for practice in a computer world.\n\nAcross fifty tested tasks, one demonstration of each job gave 71% average success. Five demonstrations gave 95%. This describes a particular test, not a promise that any home robot will complete 95 out of a hundred arbitrary chores. The model had already learned from large collections of human and robot recordings.\n\nAnother part of the announcement concerns simulation, a computer world for trying movements. New tools can account for cloth and cables changing shape. Training ran faster than an earlier configuration in one comparison. Computing attempts faster does not mean a real arm moves faster: its mechanism still has physical limits.",
+      "body": "Preparing parts for a car can involve more than carrying them somewhere. They may need to be placed in the order that assembly requires. This is the job tested at working factories in Hungary and Germany. Robots took metal brackets, parts used for fastening, from bins and arranged them in the required sequence.\n\nA new computer model selects actions using images and a spoken or written instruction. A model here means a trained program that helps control movement. Another part of the system follows the progress of the whole job. The reported factory result therefore belongs to these parts working together, rather than to the new program alone.\n\nThe company reports 96% task success. That is like 96 successes in a hundred, but the announcement does not give the actual number of attempts: a hundred just explains the percentage. It also leaves out the full record of human help. These trials do not tell us how every other part would be handled, or how many complete sets a robot could prepare throughout a shift.",
       "image": null
     },
     {
-      "id": "dexbench-launch",
-      "title": "A robot test changes objects and places to check skills more fairly",
-      "summary": "RLWRLD presented fifteen computer tests of robotic hand work in Seoul. Objects, their properties and their positions change, while comparison with physical robots is still planned.",
-      "details": "The suite has fifteen tasks from retail, logistics, assembly and hotel food service. They include retrieving products, joining connectors, stacking plates and pouring liquid. A connector is a joining part, such as the end used to plug in a cable. Tests ask whether a skill still works with another object, different physical behaviour or a new location.",
-      "technical_novelty": "Imagine a cup moved to the other side of a table. Repeating yesterday's hand movement will not be enough to pick it up. A robot can also work well in a familiar place and fail after a small change. The company prepared tests where such changes can be repeated and compared.",
-      "engineering_impact": "For now, this happens in simulation, a computer world with rules for movement and contact. Objects use real-product specifications, but they are not therefore identical to reality. The company plans to compare results with physical robots. A real object might slip differently from its computer copy, changing how an action ends.",
-      "limitations": "For now, this happens in simulation, a computer world with rules for movement and contact. Objects use real-product specifications, but they are not therefore identical to reality. The company plans to compare results with physical robots. A real object might slip differently from its computer copy, changing how an action ends.",
+      "id": "meldy-robopivot",
+      "title": "Developers shared software for a hospital delivery robot",
+      "summary": "Mitsubishi Electric used work shared between its teams in a hospital delivery robot. The machine was delivered to a Japanese hospital in November, and the company estimates 30% less development time for one function.",
+      "details": "The shared framework was first used in software for a robot that carries things in hospitals. The machine was delivered to St. Marianna University Hospital in Japan this November. Sharing inside the company does not mean anyone can freely download all the software. It means its own teams can use and improve each other's work.",
+      "technical_novelty": "Wheels and motors are not enough for a hospital robot to do its job. Software has to guide its actions, and developers need to check whether that software works properly. Mitsubishi Electric used program components that teams can share inside the company. This means that similar work does not always have to begin again with a blank page.",
+      "engineering_impact": "The company estimates 30% less development time for one function. The comparison covers creating the robot's guidance function from scratch, including preparing its testing environment. It does not mean the robot travels 30% faster or doctors spend 30% less time working. The announcement does not measure how many deliveries the machine has already completed in the hospital.",
+      "limitations": "The company estimates 30% less development time for one function. The comparison covers creating the robot's guidance function from scratch, including preparing its testing environment. It does not mean the robot travels 30% faster or doctors spend 30% less time working. The announcement does not measure how many deliveries the machine has already completed in the hospital.",
       "evidence_status": "The company itself reports the tests, specifications or plans. The announcement supplies no independent verification.",
-      "published_at": "2026-11-09",
-      "organization": "RLWRLD",
+      "published_at": "2026-11-10",
+      "organization": "Mitsubishi Electric; Mitsubishi Electric Mobility",
       "source_ids": [
-        "src-dexbench"
+        "src-meldy-robopivot"
       ],
       "time_window": "24h",
-      "body": "Imagine a cup moved to the other side of a table. Repeating yesterday's hand movement will not be enough to pick it up. A robot can also work well in a familiar place and fail after a small change. The company prepared tests where such changes can be repeated and compared.\n\nThe suite has fifteen tasks from retail, logistics, assembly and hotel food service. They include retrieving products, joining connectors, stacking plates and pouring liquid. A connector is a joining part, such as the end used to plug in a cable. Tests ask whether a skill still works with another object, different physical behaviour or a new location.\n\nFor now, this happens in simulation, a computer world with rules for movement and contact. Objects use real-product specifications, but they are not therefore identical to reality. The company plans to compare results with physical robots. A real object might slip differently from its computer copy, changing how an action ends.",
+      "body": "Wheels and motors are not enough for a hospital robot to do its job. Software has to guide its actions, and developers need to check whether that software works properly. Mitsubishi Electric used program components that teams can share inside the company. This means that similar work does not always have to begin again with a blank page.\n\nThe shared framework was first used in software for a robot that carries things in hospitals. The machine was delivered to St. Marianna University Hospital in Japan this November. Sharing inside the company does not mean anyone can freely download all the software. It means its own teams can use and improve each other's work.\n\nThe company estimates 30% less development time for one function. The comparison covers creating the robot's guidance function from scratch, including preparing its testing environment. It does not mean the robot travels 30% faster or doctors spend 30% less time working. The announcement does not measure how many deliveries the machine has already completed in the hospital.",
       "image": null
     },
     {
-      "id": "wuji-data-system",
-      "title": "Gloves help record how a person controls two robot arms",
-      "summary": "Tokyo's HumansX offered a two-arm robot setup with operator gloves. It is meant for control and recording examples, rather than announced as a robot that has already learned all the work by itself.",
-      "details": "Each hand has twenty controlled movement directions, four per finger. This gives software more ways to position fingers than a simple gripper that only opens and closes. More possible movements do not mean the machine can choose them correctly by itself. An operator supplies the movement here, while the recordings prepare data for later work.",
-      "technical_novelty": "A person wears special gloves and moves their fingers; robotic hands follow through a control system. Those actions can be recorded as demonstrations, examples for later learning. The company assembled two arms and offers setup. That can help users start recording without connecting every part of the equipment themselves.",
-      "engineering_impact": "The next hand batch is expected from February 2027. Delivery of the complete setup depends on its configuration, with pricing available by enquiry. The announcement does not show a customer's task already learned autonomously from these recordings. A useful recording and an independently chosen action still require a separate learning and testing stage between them.",
-      "limitations": "The next hand batch is expected from February 2027. Delivery of the complete setup depends on its configuration, with pricing available by enquiry. The announcement does not show a customer's task already learned autonomously from these recordings. A useful recording and an independently chosen action still require a separate learning and testing stage between them.",
-      "evidence_status": "The company itself reports the tests, specifications or plans. The announcement supplies no independent verification.",
-      "published_at": "2026-11-09",
-      "organization": "HumansX",
+      "id": "prism-corl",
+      "title": "Researchers changed signal processing to help a robot fall less",
+      "summary": "The University of Michigan presented a way to combine information about a robot's movement. In computer tests, it helped robots more often complete 24 seconds without falling; a separate real arm picked up a roll of tape.",
+      "details": "The method was presented at a science conference in Austin on November 10, although the research text first appeared in July. In a computer world, the team tested whether a human-shaped robot could move for 24 seconds without falling. The new version succeeded in 92.5% of trials, compared with 51% for the ordinary network. These percentages compare two control methods in that particular test.",
+      "technical_novelty": "When a robot moves a leg, its program needs information about where its body parts are and how quickly they move. Individual numbers matter, but so do their combinations. Researchers changed the input section of a neural network, a program that learns to choose actions through examples or practice. That section learns useful combinations of signals.",
+      "engineering_impact": "The team also tried a different task with a real robot arm: picking up a roll of tape. Across fifty attempts, the new version achieved 94% success, compared with 68%. These figures cannot be mixed with the walking result: they involved real objects and a different movement. A short balance test also cannot tell us how many hours a robot will work without falling.",
+      "limitations": "The team also tried a different task with a real robot arm: picking up a roll of tape. Across fifty attempts, the new version achieved 94% success, compared with 68%. These figures cannot be mixed with the walking result: they involved real objects and a different movement. A short balance test also cannot tell us how many hours a robot will work without falling.",
+      "evidence_status": "The researchers describe their own tests. Repetition by another team has not been confirmed.",
+      "published_at": "2026-11-10",
+      "organization": "University of Michigan",
       "source_ids": [
-        "src-wuji-system",
-        "src-wuji-reservations"
+        "src-prism-corl"
       ],
       "time_window": "24h",
-      "body": "A person wears special gloves and moves their fingers; robotic hands follow through a control system. Those actions can be recorded as demonstrations, examples for later learning. The company assembled two arms and offers setup. That can help users start recording without connecting every part of the equipment themselves.\n\nEach hand has twenty controlled movement directions, four per finger. This gives software more ways to position fingers than a simple gripper that only opens and closes. More possible movements do not mean the machine can choose them correctly by itself. An operator supplies the movement here, while the recordings prepare data for later work.\n\nThe next hand batch is expected from February 2027. Delivery of the complete setup depends on its configuration, with pricing available by enquiry. The announcement does not show a customer's task already learned autonomously from these recordings. A useful recording and an independently chosen action still require a separate learning and testing stage between them.",
+      "body": "When a robot moves a leg, its program needs information about where its body parts are and how quickly they move. Individual numbers matter, but so do their combinations. Researchers changed the input section of a neural network, a program that learns to choose actions through examples or practice. That section learns useful combinations of signals.\n\nThe method was presented at a science conference in Austin on November 10, although the research text first appeared in July. In a computer world, the team tested whether a human-shaped robot could move for 24 seconds without falling. The new version succeeded in 92.5% of trials, compared with 51% for the ordinary network. These percentages compare two control methods in that particular test.\n\nThe team also tried a different task with a real robot arm: picking up a roll of tape. Across fifty attempts, the new version achieved 94% success, compared with 68%. These figures cannot be mixed with the walking result: they involved real objects and a different movement. A short balance test also cannot tell us how many hours a robot will work without falling.",
       "image": null
     },
     {
-      "id": "robotbank-quadruped",
-      "title": "A Japanese company starts a four-legged robot for equipment checks",
-      "summary": "Tokyo's RobotBank announced an industrial robot project for inspection rounds. It will first study working conditions; finished specifications and a sales date have not yet been announced.",
-      "details": "Reaching the route's end is not enough: the inspection must return something useful. The company plans to measure task success, working time and how often a person helps. Safety and maintenance expense also matter. For now, those are planned measurements, not good scores already achieved by the new machine.",
-      "technical_novelty": "A factory may need someone to follow the same route regularly and check equipment. A Japanese company plans to build a four-legged robot for that job. Legs may help on uneven ground, but the particular conditions matter. The developers therefore want to check each site's needs before choosing sensors and final specifications.",
-      "engineering_impact": "Movement, body design and remote control will be developed together. Functions for recognising situations and doing tasks autonomously are intended as gradual additions after testing. A date for selling a finished machine is still unknown. This is a project's beginning; a picture of a similar robot cannot replace trials of this particular development.",
-      "limitations": "Movement, body design and remote control will be developed together. Functions for recognising situations and doing tasks autonomously are intended as gradual additions after testing. A date for selling a finished machine is still unknown. This is a project's beginning; a picture of a similar robot cannot replace trials of this particular development.",
-      "evidence_status": "The company itself reports the tests, specifications or plans. The announcement supplies no independent verification.",
+      "id": "roboscript-memory",
+      "title": "A robot uses notes made during computer practice",
+      "summary": "A team from Huazhong University and ArcheOne AI tested how written notes help a robot choose actions. The system practised in a computer world, then read the saved steps when facing new scenes.",
+      "details": "Those attempts produce text memory: notes about the steps of work and the roles of objects. The notes are then fixed and tested in new scenes, rather than rewritten every time. The underlying model, a trained program that selects actions, stays unchanged. What changes is the information it reads before doing the work.",
+      "technical_novelty": "Imagine instructions whose unsuccessful order of steps was corrected after a test. The researchers used a similar idea for a robot: useful steps are written in words. First, the system sees one demonstration of a task. It then tries that task in simulation, a computer world where actions can be tested without moving real objects.",
+      "engineering_impact": "Across fifty virtual tasks involving two arms, the authors report an average success rate of 83.4%. They also describe transfer to a real robot, but that percentage belongs to the computer tests. Cloth, cables and difficult movements involving both arms still cause trouble. Even good instructions cannot replace a movement that the system does not already have among its available actions.",
+      "limitations": "Across fifty virtual tasks involving two arms, the authors report an average success rate of 83.4%. They also describe transfer to a real robot, but that percentage belongs to the computer tests. Cloth, cables and difficult movements involving both arms still cause trouble. Even good instructions cannot replace a movement that the system does not already have among its available actions.",
+      "evidence_status": "The researchers describe their own tests. Repetition by another team has not been confirmed.",
       "published_at": "2026-11-09",
-      "organization": "RobotBank",
+      "organization": "Huazhong University of Science and Technology; ArcheOne AI",
       "source_ids": [
-        "src-robotbank"
+        "src-roboscript-memory"
       ],
-      "time_window": "24h",
-      "body": "A factory may need someone to follow the same route regularly and check equipment. A Japanese company plans to build a four-legged robot for that job. Legs may help on uneven ground, but the particular conditions matter. The developers therefore want to check each site's needs before choosing sensors and final specifications.\n\nReaching the route's end is not enough: the inspection must return something useful. The company plans to measure task success, working time and how often a person helps. Safety and maintenance expense also matter. For now, those are planned measurements, not good scores already achieved by the new machine.\n\nMovement, body design and remote control will be developed together. Functions for recognising situations and doing tasks autonomously are intended as gradual additions after testing. A date for selling a finished machine is still unknown. This is a project's beginning; a picture of a similar robot cannot replace trials of this particular development.",
+      "time_window": "72h",
+      "body": "Imagine instructions whose unsuccessful order of steps was corrected after a test. The researchers used a similar idea for a robot: useful steps are written in words. First, the system sees one demonstration of a task. It then tries that task in simulation, a computer world where actions can be tested without moving real objects.\n\nThose attempts produce text memory: notes about the steps of work and the roles of objects. The notes are then fixed and tested in new scenes, rather than rewritten every time. The underlying model, a trained program that selects actions, stays unchanged. What changes is the information it reads before doing the work.\n\nAcross fifty virtual tasks involving two arms, the authors report an average success rate of 83.4%. They also describe transfer to a real robot, but that percentage belongs to the computer tests. Cloth, cables and difficult movements involving both arms still cause trouble. Even good instructions cannot replace a movement that the system does not already have among its available actions.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Replicants discover how robots learn and get tested",
-    "summary": "Cargo on wheels, movement examples and changed conditions reveal different difficulties.",
-    "implications": "Recording an action, a computer experiment and a real-machine trial answer different questions."
+    "title": "How a robot moves a box without arms",
+    "summary": "One robot pushes a box with its body; others sort parts or use notes from practice. We look at how these actions work and what the tests established.",
+    "implications": "The box had a twenty-centimetre allowance, and the walking test lasted twenty-four seconds. These details help explain what worked without promising every kind of ground or endless operation."
   },
   "sources": [
     {
-      "id": "src-forpc",
-      "title": "ForPC: Force-Aware Whole-Body Control for Precise Humanoid Cart Pushing",
-      "url": "https://arxiv.org/abs/2611.08664",
+      "id": "src-cobra-box",
+      "title": "Autonomous Whole-body Loco-manipulation Using a Snake Robot",
+      "url": "https://arxiv.org/abs/2611.09777",
       "domain": "arxiv.org",
-      "organization": "Huazhong University of Science and Technology",
-      "published_at": "2026-11-05"
-    },
-    {
-      "id": "src-nvidia-corl",
-      "title": "Practice Makes Precise: At CoRL, NVIDIA and Partners Reveal How Robots Rehearse Delicate Work in Simulation",
-      "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/",
-      "domain": "blogs.nvidia.com",
-      "organization": "NVIDIA",
-      "published_at": "2026-11-09"
-    },
-    {
-      "id": "src-dexbench",
-      "title": "RLWRLD Launches DexBench, Confirms Planned Investment from NVIDIA",
-      "url": "https://www.rlwrld.ai/en/news/117",
-      "domain": "www.rlwrld.ai",
-      "organization": "RLWRLD",
-      "published_at": "2026-11-09"
-    },
-    {
-      "id": "src-wuji-system",
-      "title": "【第1期予約完売】20自由度ロボットハンド「Wuji Hand 2」第2期予約受付を開始 ― 現場ですぐ使える双腕データ収集システムもあわせてご提案",
-      "url": "https://prtimes.jp/main/html/rd/p/000000002.000192177.html",
-      "domain": "prtimes.jp",
-      "organization": "HumansX",
-      "published_at": "2026-11-09"
-    },
-    {
-      "id": "src-wuji-reservations",
-      "title": "Wuji Hand 2 First Batch Fully Reserved — Second-Batch Reservations Now Open",
-      "url": "https://humansx.co.jp/en/news/wuji-hand2-batch2-preorder/",
-      "domain": "humansx.co.jp",
-      "organization": "HumansX",
+      "organization": "Northeastern University",
       "published_at": "2026-11-06"
     },
     {
-      "id": "src-robotbank",
-      "title": "RobotBank、具身AIロボットの自社製品開発を本格始動。第一弾として産業向け四足歩行ロボットの開発に着手",
-      "url": "https://prtimes.jp/main/html/rd/p/000000085.000097103.html",
-      "domain": "prtimes.jp",
-      "organization": "RobotBank",
+      "id": "src-gemini-robotics-25",
+      "title": "Gemini Robotics 2.5 accelerates real-world general dexterity",
+      "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/",
+      "domain": "deepmind.google",
+      "organization": "Google DeepMind; Apptronik; Mercedes-Benz",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "src-meldy-robopivot",
+      "title": "三菱電機のインナーソース活動の開発成果を製品に初適用",
+      "url": "https://www.mitsubishielectric.co.jp/ja/pr/2026/1110_pd/",
+      "domain": "www.mitsubishielectric.co.jp",
+      "organization": "Mitsubishi Electric; Mitsubishi Electric Mobility",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "src-prism-corl",
+      "title": "PRISM: A neural network component for better robotic motor control",
+      "url": "https://news.engin.umich.edu/2026/11/prism-a-neural-network-component-for-better-robotic-motor-control/",
+      "domain": "news.engin.umich.edu",
+      "organization": "University of Michigan",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "src-roboscript-memory",
+      "title": "World In-Context Learning for Agentic Robot Manipulation",
+      "url": "https://arxiv.org/abs/2611.12885",
+      "domain": "arxiv.org",
+      "organization": "Huazhong University of Science and Technology; ArcheOne AI",
       "published_at": "2026-11-09"
     }
   ]
