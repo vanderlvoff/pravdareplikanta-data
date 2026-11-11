@@ -8,7 +8,7 @@
   "language": "en",
   "generated_at": "2026-11-11T20:50:02.945953Z",
   "title": "The robot waited, but counted the work as done",
-  "lead": "A pause can confuse a program meant to remember cube transfers. Other stories follow hands learning to grasp, equipment placed in a virtual warehouse and a space robot tested on Earth.",
+  "lead": "In a computer experiment, a robot sometimes mistook waiting time for completed cube transfers. Other stories look at physical tests of a robot hand, a virtual warehouse and a Japanese prototype intended for space.",
   "news": [
     {
       "id": "memory-clock",
@@ -103,8 +103,8 @@
   ],
   "technology_signal": {
     "title": "The robot waited, but counted the work as done",
-    "summary": "A pause can confuse a program meant to remember cube transfers. Other stories follow hands learning to grasp, equipment placed in a virtual warehouse and a space robot tested on Earth.",
-    "implications": "To understand an experiment, ask what was physical, what happened in a computer and what counted as finishing. Those details change the meaning of an impressive movement."
+    "summary": "In a computer experiment, a robot sometimes mistook waiting time for completed cube transfers. Other stories look at physical tests of a robot hand, a virtual warehouse and a Japanese prototype intended for space.",
+    "implications": "The cube-transfer experiment took place in a computer simulation, while the grasping study also tested a physical robot arm. The space robot is still being examined on Earth; these differences tell us which results have actually been demonstrated."
   },
   "sources": [
     {
