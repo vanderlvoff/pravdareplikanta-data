@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-12",
+  "issue_id": "daily-2026-11-12",
+  "edition": "business",
+  "language": "en",
+  "generated_at": "2026-11-11T20:50:02.945953Z",
+  "title": "From virtual warehouse layouts to an inspection-development agreement",
+  "lead": "Space Data offers on-screen equipment planning, while Elith and Blue Innovation plan inspection-data analysis. Learning and memory studies show checks that remain before deployment.",
+  "news": [
+    {
+      "id": "robotbrain-catalog",
+      "title": "Warehouse equipment can be arranged in a browser before a physical move",
+      "summary": "Space Data added virtual warehouse equipment to RobotBrain. It supports layout discussions, but assumed masses and speeds do not establish a particular site's throughput or safety.",
+      "details": "Japan's Space Data added an equipment catalogue to RobotBrain on November 11. This browser environment supports robot deployment planning and operation. Users place virtual objects in a warehouse reconstructed from a 360-degree camera recording. The catalogue combines 94 prepared equipment and accessory models with 24 models made by the company, for 118 in total. Items can be selected and placed on floors or benches without installing a separate application. Before placement, the interface indicates overlap with other objects. It supports layout discussions and staff practice without physically moving real storage racks.",
+      "technical_novelty": "Japan's Space Data added an equipment catalogue to RobotBrain on November 11. This browser environment supports robot deployment planning and operation. Users place virtual objects in a warehouse reconstructed from a 360-degree camera recording. The catalogue combines 94 prepared equipment and accessory models with 24 models made by the company, for 118 in total. Items can be selected and placed on floors or benches without installing a separate application. Before placement, the interface indicates overlap with other objects. It supports layout discussions and staff practice without physically moving real storage racks.",
+      "engineering_impact": "Buyers need to match catalogue functions to their own operations: placement is supported more broadly than complete operation. Lifting a specific load or calculating flow requires more than assumed demonstration values. The release cannot determine how many orders an eventual line will process per hour or which equipment will deliver that rate.",
+      "limitations": "Four types are operable among 118 models; demonstration masses and speeds are assumptions, not specifications for customer equipment.",
+      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "published_at": "2026-11-11",
+      "organization": "Space Data",
+      "source_ids": [
+        "src-robotbrain-catalog"
+      ],
+      "time_window": "24h",
+      "body": "Early layout comparisons can avoid physically rearranging racks and machines. Procurement still benefits from separating a shape demonstration from operational validation. The announcement offers a browser-accessible way to present a warehouse and share it with a customer. It does not calculate the savings or investment return of a robotic workstation or a warehouse automation project.\n\nJapan's Space Data added an equipment catalogue to RobotBrain on November 11. This browser environment supports robot deployment planning and operation. Users place virtual objects in a warehouse reconstructed from a 360-degree camera recording. The catalogue combines 94 prepared equipment and accessory models with 24 models made by the company, for 118 in total. Items can be selected and placed on floors or benches without installing a separate application. Before placement, the interface indicates overlap with other objects. It supports layout discussions and staff practice without physically moving real storage racks.\n\nFour types currently support operation and load interaction: an electric stacker, a hand pallet truck, an angled roller conveyor and a plastic pallet. The simulated stacker's forks reach 1.2 metres; the hand truck uses a 700-newton force limit; newtons measure force rather than load mass. The company explicitly says masses and speeds in the illustrated scenes are assumed values, not specifications for particular equipment or customer sites. These numbers therefore define the demonstration, rather than the customer's permissible load. Making all catalogue objects operable remains a future plan, not a feature already available across all 118 models.\n\nBuyers need to match catalogue functions to their own operations: placement is supported more broadly than complete operation. Lifting a specific load or calculating flow requires more than assumed demonstration values. The release cannot determine how many orders an eventual line will process per hour or which equipment will deliver that rate.",
+      "image": null
+    },
+    {
+      "id": "elith-inspection",
+      "title": "Elith and Blue Innovation agree to develop analysis for robotic inspections",
+      "summary": "The Japanese companies signed a partnership for infrastructure inspection. Specific tasks, schedules and supply conditions will be decided separately; no ready autonomous inspection service has been announced.",
+      "details": "Elith and Blue Innovation signed a partnership on November 11 to develop analysis tools for infrastructure inspection. Blue Earth Platform, Blue Innovation's system for coordinating drones, robots and other devices, is intended to connect data collection with its use. Elith supplies model development and evaluation, data analysis and safety expertise. Its partner contributes device integration and operational experience. The aim is to help staff interpret images and sensor readings, understand conditions and decide what to do next.",
+      "technical_novelty": "Elith and Blue Innovation signed a partnership on November 11 to develop analysis tools for infrastructure inspection. Blue Earth Platform, Blue Innovation's system for coordinating drones, robots and other devices, is intended to connect data collection with its use. Elith supplies model development and evaluation, data analysis and safety expertise. Its partner contributes device integration and operational experience. The aim is to help staff interpret images and sensor readings, understand conditions and decide what to do next.",
+      "engineering_impact": "Customer-data permissions and false-detection criteria affect the contract's scope. A general promise of safety cannot replace them. Without published trials at specific facilities or a service price, the proposal cannot be compared with an operating inspection contractor on inspection volume or cost per detected defect.",
+      "limitations": "Development agreement; tasks, timing, conditions and support model remain to be defined. Defect-recognition accuracy and savings are not published.",
+      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "published_at": "2026-11-11",
+      "organization": "Elith; Blue Innovation",
+      "source_ids": [
+        "src-elith-inspection"
+      ],
+      "time_window": "24h",
+      "body": "A drone image is not yet a maintenance decision. Staff must interpret the data and determine which conclusions deserve confidence. The partners intend to work on that transition from collection to situational assessment. For a buyer, the announcement currently defines a joint development direction rather than measured promises about reduced operating costs or staffing requirements.\n\nElith and Blue Innovation signed a partnership on November 11 to develop analysis tools for infrastructure inspection. Blue Earth Platform, Blue Innovation's system for coordinating drones, robots and other devices, is intended to connect data collection with its use. Elith supplies model development and evaluation, data analysis and safety expertise. Its partner contributes device integration and operational experience. The aim is to help staff interpret images and sensor readings, understand conditions and decide what to do next.\n\nThis is an agreement to develop and validate functions, rather than an announcement of an autonomous inspection service ready for operation. Specific tasks, schedules and supply conditions will be set through separate contracts. The partners plan to evaluate the validity of results, false detections, unexpected behaviour and data protection. No defect-recognition accuracy, number of inspected facilities or staff-reduction calculation is supplied. Customer data use remains subject to agreed contracts and conditions. The commercial model for continuing support will also be developed in light of the development and validation results.\n\nCustomer-data permissions and false-detection criteria affect the contract's scope. A general promise of safety cannot replace them. Without published trials at specific facilities or a service price, the proposal cannot be compared with an operating inspection contractor on inspection volume or cost per detected defect.",
+      "image": null
+    },
+    {
+      "id": "dexseed-data",
+      "title": "Human-grasp data offers another source of demonstrations, with physical checks still required",
+      "summary": "The University of Hong Kong, Robbyant and Zhejiang University generate robot records through simulation. In physical evaluation of eight grasp modes, success depended strongly on the particular type of movement.",
+      "details": "Researchers from the University of Hong Kong, Robbyant and Zhejiang University introduced DexSeed, a way to generate robot demonstrations from recorded human grasps. They group source interactions by how fingers hold an object, then adapt them to the robot hand and different object geometries. In physics simulation, the arm follows prepared trajectories while a learned finger controller maintains contact. Successful actions are recorded with images and language descriptions of the grasp. These data fine-tune a model that selects movements from the scene and an instruction.",
+      "technical_novelty": "Researchers from the University of Hong Kong, Robbyant and Zhejiang University introduced DexSeed, a way to generate robot demonstrations from recorded human grasps. They group source interactions by how fingers hold an object, then adapt them to the robot hand and different object geometries. In physics simulation, the arm follows prepared trajectories while a learned finger controller maintains contact. Successful actions are recorded with images and language descriptions of the grasp. These data fine-tune a model that selects movements from the scene and an instruction.",
+      "engineering_impact": "Each of eight grasp modes was physically tested on only one object. The 20–80% range therefore cannot become a guarantee for a customer's product catalogue. Precise finger placement through a handle may need more preparation than a simple lift. Costing needs the required grasp, rather than just the total number of generated trajectories.",
+      "limitations": "Physical tests use one object and ten attempts per grasp mode. In-hand manipulation, two-arm work and tactile inputs remain future directions.",
+      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-10",
+      "organization": "The University of Hong Kong; Robbyant; Zhejiang University",
+      "source_ids": [
+        "src-dexseed-data"
+      ],
+      "time_window": "72h",
+      "body": "Collecting coordinated finger and arm movements can be an expensive part of preparing a dexterous-hand project. Existing human interactions offer another source of material. Generation nevertheless moves some effort into modelling and example selection rather than eliminating preparation. The paper does not provide a universal cost per production-ready operation obtained by training on its generated demonstrations.\n\nResearchers from the University of Hong Kong, Robbyant and Zhejiang University introduced DexSeed, a way to generate robot demonstrations from recorded human grasps. They group source interactions by how fingers hold an object, then adapt them to the robot hand and different object geometries. In physics simulation, the arm follows prepared trajectories while a learned finger controller maintains contact. Successful actions are recorded with images and language descriptions of the grasp. These data fine-tune a model that selects movements from the scene and an instruction.\n\nThe November 10 preprint uses 19 human sequences covering eight grasp modes to produce 25,270 robot trajectories, or sequences of movements, verified in simulation. Physical evaluation uses a Franka arm with a multifinger Wuji hand: one object for each mode and ten attempts per object. Success requires grasping, lifting and placing the object inside a target region. Rates vary from 20% to 80% across modes; precise finger alignment with a handle is particularly difficult. Moving objects within the hand, coordinated two-arm manipulation and tactile inputs remain future directions. The result does not establish general dexterity across arbitrary objects.\n\nEach of eight grasp modes was physically tested on only one object. The 20–80% range therefore cannot become a guarantee for a customer's product catalogue. Precise finger placement through a handle may need more preparation than a simple lift. Costing needs the required grasp, rather than just the total number of generated trajectories.",
+      "image": null
+    },
+    {
+      "id": "flex-language",
+      "title": "Conversational route corrections remain a simulated demonstration",
+      "summary": "Massachusetts Institute of Technology and New York University showed FLEX, which can turn a request about one object into a broader movement preference. Coffee, candle and bowling-ball tests took place in simulation rather than customer homes.",
+      "details": "Massachusetts Institute of Technology described FLEX, developed with New York University, on November 9. It changes a robot's planned path using conversational instructions. In simulation, a person types a request not to spill coffee on a laptop. The system adds that constraint, then uses a language model, a program trained on large text collections, to extend the preference to other electronics such as a phone. Computer vision checks which objects remain present and removes absent ones from the feature list. The three stages take about five seconds; that is not the duration of the entire robot task.",
+      "technical_novelty": "Massachusetts Institute of Technology described FLEX, developed with New York University, on November 9. It changes a robot's planned path using conversational instructions. In simulation, a person types a request not to spill coffee on a laptop. The system adds that constraint, then uses a language model, a program trained on large text collections, to extend the preference to other electronics such as a phone. Computer vision checks which objects remain present and removes absent ones from the feature list. The three stages take about five seconds; that is not the duration of the entire robot task.",
+      "engineering_impact": "Removing absent objects can help in a changing room, but removal criteria also affect behaviour. The source does not quantify how often a needed constraint disappears incorrectly. Without that evidence, roughly five-second instruction processing cannot be translated into user-support costs or the safety level of a household service.",
+      "limitations": "Three virtual scenarios, without a physical household trial or guaranteed correct generalisation. Roughly five seconds concerns feature processing.",
+      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-09",
+      "organization": "Massachusetts Institute of Technology; New York University",
+      "source_ids": [
+        "src-flex-language"
+      ],
+      "time_window": "72h",
+      "body": "Configuring every prohibition separately could take time for a household or assistive robot. The authors try to extract a broader user preference from a short sentence. The practical interest concerns how corrections are supplied, rather than the readiness of a home product. Deployment still needs to check whether the derived rule matches a particular person's expectations and the room's actual conditions.\n\nMassachusetts Institute of Technology described FLEX, developed with New York University, on November 9. It changes a robot's planned path using conversational instructions. In simulation, a person types a request not to spill coffee on a laptop. The system adds that constraint, then uses a language model, a program trained on large text collections, to extend the preference to other electronics such as a phone. Computer vision checks which objects remain present and removes absent ones from the feature list. The three stages take about five seconds; that is not the duration of the entire robot task.\n\nThe team tested three virtual situations: carrying coffee, a candle and a bowling ball. The system inferred broader preferences to avoid electronics, flammable objects and fragile items respectively. It changes features used in path planning, rather than demonstrating human understanding of intentions. The announcement discusses research ahead of its conference presentation; the underlying work was already available and should not receive a new original-publication date from this news item. Physical tests in users' homes and error-free generalisation are not established in the report. An overly broad rule can also change a path in an unwanted way.\n\nRemoving absent objects can help in a changing room, but removal criteria also affect behaviour. The source does not quantify how often a needed constraint disappears incorrectly. Without that evidence, roughly five-second instruction processing cannot be translated into user-support costs or the safety level of a household service.",
+      "image": null
+    },
+    {
+      "id": "memory-clock",
+      "title": "Pauses expose premature completion in repetitive robot work",
+      "summary": "Nanyang Technological University tested control-model memory on virtual object-transfer tasks. Inactivity could be counted as completed work even though the transfer count had not changed.",
+      "details": "Chubin Zhang and Bo An at Nanyang Technological University examined what a robot control model actually stores in memory. These models select actions from images and language instructions; memory should preserve earlier events. In the simulated RoboMME benchmark, a robot repeatedly moves a cube before finishing its task. The researchers inserted pauses or wrist movements that did not complete another transfer. A released model treated elapsed time as progress and stopped prematurely. Across two tasks, successful episodes fell from 47 to 16 and from 44 to 10 out of 50.",
+      "technical_novelty": "Chubin Zhang and Bo An at Nanyang Technological University examined what a robot control model actually stores in memory. These models select actions from images and language instructions; memory should preserve earlier events. In the simulated RoboMME benchmark, a robot repeatedly moves a cube before finishing its task. The researchers inserted pauses or wrist movements that did not complete another transfer. A released model treated elapsed time as progress and stopped prematurely. Across two tasks, successful episodes fell from 47 to 16 and from 44 to 10 out of 50.",
+      "engineering_impact": "Event-based frame selection needs its own source of event information. In the paper, that still includes simulator signals. Procurement evaluation of such a component therefore needs a way to determine that a real transfer actually finished. A visually convincing stored history alone does not establish that the required number of operations was performed.",
+      "limitations": "Simulated tasks with scripted interventions; event detection uses simulator signals. Real-deployment failure frequency is not measured.",
+      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-10",
+      "organization": "Nanyang Technological University",
+      "source_ids": [
+        "src-memory-clock"
+      ],
+      "time_window": "72h",
+      "body": "When an operation requires repetition, deciding when to stop is part of quality, just like grasping successfully. The study tests an error that steady-paced demonstrations can conceal. Evaluation needs to establish whether completed actions are still counted correctly after an interruption, alongside the average undisturbed result. The authors do not estimate production losses or the commercial cost of this failure.\n\nChubin Zhang and Bo An at Nanyang Technological University examined what a robot control model actually stores in memory. These models select actions from images and language instructions; memory should preserve earlier events. In the simulated RoboMME benchmark, a robot repeatedly moves a cube before finishing its task. The researchers inserted pauses or wrist movements that did not complete another transfer. A released model treated elapsed time as progress and stopped prematurely. Across two tasks, successful episodes fell from 47 to 16 and from 44 to 10 out of 50.\n\nThe preprint was submitted on November 10, rather than on the date its entry appeared in the recent arXiv listing. A control retained the pause but withheld its frames from memory, restoring performance. Simply removing time stamps did not cure the problem: inactive intervals still occupied stored-frame slots. Event-based memory selection recovered at least half the lost performance without retraining. All experiments nevertheless used simulation and scripted interruptions, with simulator signals helping detect events. The authors did not measure the frequency of these failures in customer deployments.\n\nEvent-based frame selection needs its own source of event information. In the paper, that still includes simulator signals. Procurement evaluation of such a component therefore needs a way to determine that a real transfer actually finished. A visually convincing stored history alone does not establish that the required number of operations was performed.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "From virtual warehouse layouts to an inspection-development agreement",
+    "summary": "Space Data offers on-screen equipment planning, while Elith and Blue Innovation plan inspection-data analysis. Learning and memory studies show checks that remain before deployment.",
+    "implications": "A model catalogue, a development agreement and a successful grasp mark different readiness stages. Deployment estimates need site parameters, a defined operation and agreed data-use conditions."
+  },
+  "sources": [
+    {
+      "id": "src-robotbrain-catalog",
+      "title": "スペースデータ、RobotBrainにマテハン機器94種を倉庫で置いて試せる機能を追加",
+      "url": "https://prtimes.jp/main/html/rd/p/000000270.000080352.html",
+      "domain": "prtimes.jp",
+      "organization": "Space Data",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "src-elith-inspection",
+      "title": "Elith、ブルーイノベーションと「Blue Earth Platform®」の機能高度化に向け戦略的業務提携を締結",
+      "url": "https://prtimes.jp/main/html/rd/p/000000203.000121022.html",
+      "domain": "prtimes.jp",
+      "organization": "Elith; Blue Innovation",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "src-dexseed-data",
+      "title": "DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning",
+      "url": "https://arxiv.org/abs/2611.14092",
+      "domain": "arxiv.org",
+      "organization": "The University of Hong Kong; Robbyant; Zhejiang University",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "src-flex-language",
+      "title": "AI-assisted learning platform helps robots reason beyond literal commands",
+      "url": "https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109",
+      "domain": "news.mit.edu",
+      "organization": "Massachusetts Institute of Technology; New York University",
+      "published_at": "2026-11-09"
+    },
+    {
+      "id": "src-memory-clock",
+      "title": "Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies",
+      "url": "https://arxiv.org/abs/2611.14488",
+      "domain": "arxiv.org",
+      "organization": "Nanyang Technological University",
+      "published_at": "2026-11-10"
+    }
+  ]
+}

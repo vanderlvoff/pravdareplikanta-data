@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-12",
+  "issue_id": "daily-2026-11-12",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-11T20:50:02.945953Z",
+  "title": "The robot waited, but counted the work as done",
+  "lead": "A pause can confuse a program meant to remember cube transfers. Other stories follow hands learning to grasp, equipment placed in a virtual warehouse and a space robot tested on Earth.",
+  "news": [
+    {
+      "id": "memory-clock",
+      "title": "A robot mistook waiting for work already done",
+      "summary": "Scientists at Nanyang Technological University asked a virtual robot to move a cube several times. Pauses confused its count even though it had not moved the cube during the wait.",
+      "details": "They inserted stops during the work. The robot did nothing useful, but its program sometimes treated passing time as another completed part of the job. In one test, it succeeded in 47 out of fifty attempts without that interruption, but only 16 with it. It could finish before making all the required transfers.",
+      "technical_novelty": "The job is to move a cube three times, then press a button. After the second transfer, the scene may look almost the same as after the first. The program therefore needs memory: stored information about earlier actions. Scientists tested this in simulation, a computer world where the robot and objects exist as models.",
+      "engineering_impact": "The researchers repeated the stop while leaving its images out of memory. Performance returned, so stopping alone was not the whole cause. They also tried keeping records according to events instead of equal time intervals. These experiments remain computer tests: they do not tell us how often the error occurs in real robots doing everyday work.",
+      "limitations": "The researchers repeated the stop while leaving its images out of memory. Performance returned, so stopping alone was not the whole cause. They also tried keeping records according to events instead of equal time intervals. These experiments remain computer tests: they do not tell us how often the error occurs in real robots doing everyday work.",
+      "evidence_status": "The researchers describe their own tests. Repetition by another team has not been confirmed.",
+      "published_at": "2026-11-10",
+      "organization": "Nanyang Technological University",
+      "source_ids": [
+        "src-memory-clock"
+      ],
+      "time_window": "72h",
+      "body": "The job is to move a cube three times, then press a button. After the second transfer, the scene may look almost the same as after the first. The program therefore needs memory: stored information about earlier actions. Scientists tested this in simulation, a computer world where the robot and objects exist as models.\n\nThey inserted stops during the work. The robot did nothing useful, but its program sometimes treated passing time as another completed part of the job. In one test, it succeeded in 47 out of fifty attempts without that interruption, but only 16 with it. It could finish before making all the required transfers.\n\nThe researchers repeated the stop while leaving its images out of memory. Performance returned, so stopping alone was not the whole cause. They also tried keeping records according to events instead of equal time intervals. These experiments remain computer tests: they do not tell us how often the error occurs in real robots doing everyday work.",
+      "image": null
+    },
+    {
+      "id": "dexseed-data",
+      "title": "Human movements helped make lessons for a robot hand",
+      "summary": "A team from the University of Hong Kong, Robbyant and Zhejiang University used recordings of people holding objects. They created virtual exercises from them, then tested a physical robot arm.",
+      "details": "The first check took place in simulation, a computer world that calculates movement and contact. Images, instructions and actions were saved from successful attempts. These examples trained a program to choose arm and finger movements from images and words. This does not mean the robot gained a person's understanding of objects.",
+      "technical_novelty": "Picking up an apple and threading fingers through a handle need different movements. Human and robot fingers are built differently, so copying a hand's position is not enough. Researchers tried to preserve the places where fingers touch an object. They then changed the object's shape or the arm's path and checked whether the movement could actually work.",
+      "engineering_impact": "The physical arm tried eight grasping styles, with ten attempts for each. Results varied from two successes in ten to eight. A success required picking up the object, lifting it and putting it inside a target area. Precise finger placement through a handle remained difficult, and using both arms together was not part of this experiment.",
+      "limitations": "The physical arm tried eight grasping styles, with ten attempts for each. Results varied from two successes in ten to eight. A success required picking up the object, lifting it and putting it inside a target area. Precise finger placement through a handle remained difficult, and using both arms together was not part of this experiment.",
+      "evidence_status": "The researchers describe their own tests. Repetition by another team has not been confirmed.",
+      "published_at": "2026-11-10",
+      "organization": "The University of Hong Kong; Robbyant; Zhejiang University",
+      "source_ids": [
+        "src-dexseed-data"
+      ],
+      "time_window": "72h",
+      "body": "Picking up an apple and threading fingers through a handle need different movements. Human and robot fingers are built differently, so copying a hand's position is not enough. Researchers tried to preserve the places where fingers touch an object. They then changed the object's shape or the arm's path and checked whether the movement could actually work.\n\nThe first check took place in simulation, a computer world that calculates movement and contact. Images, instructions and actions were saved from successful attempts. These examples trained a program to choose arm and finger movements from images and words. This does not mean the robot gained a person's understanding of objects.\n\nThe physical arm tried eight grasping styles, with ten attempts for each. Results varied from two successes in ten to eight. A success required picking up the object, lifting it and putting it inside a target area. Precise finger placement through a handle remained difficult, and using both arms together was not part of this experiment.",
+      "image": null
+    },
+    {
+      "id": "robotbrain-catalog",
+      "title": "Warehouse equipment can be arranged in a computer world first",
+      "summary": "Japan's Space Data added 118 equipment and accessory models to its browser environment. Four types can be operated as well as placed in the scene.",
+      "details": "There are 118 models in the catalogue, but not all can move. Four types currently support operation, including a machine with lifting forks and a hand pallet truck. A conveyor shows boxes travelling on rollers and coming to a stop. This reveals more than an object's shape: it shows the movements that the program supports.",
+      "technical_novelty": "Imagine adding a new pallet truck or conveyor to a warehouse. Moving real racks for every idea would be slow and awkward. The company offers a way to arrange things in a virtual version of the room first. It is made from recordings by a camera that sees all around itself, and users open the scene in a browser.",
+      "engineering_impact": "The company warns that weights and speeds in the examples are assumed values. A picture cannot tell us that a real truck will lift a particular load. A real warehouse needs its actual dimensions and checked equipment specifications. The illustrated warehouse was also changed so that viewers could not identify the original site.",
+      "limitations": "The company warns that weights and speeds in the examples are assumed values. A picture cannot tell us that a real truck will lift a particular load. A real warehouse needs its actual dimensions and checked equipment specifications. The illustrated warehouse was also changed so that viewers could not identify the original site.",
+      "evidence_status": "The company itself reports the tests, specifications or plans. The announcement supplies no independent verification.",
+      "published_at": "2026-11-11",
+      "organization": "Space Data",
+      "source_ids": [
+        "src-robotbrain-catalog"
+      ],
+      "time_window": "24h",
+      "body": "Imagine adding a new pallet truck or conveyor to a warehouse. Moving real racks for every idea would be slow and awkward. The company offers a way to arrange things in a virtual version of the room first. It is made from recordings by a camera that sees all around itself, and users open the scene in a browser.\n\nThere are 118 models in the catalogue, but not all can move. Four types currently support operation, including a machine with lifting forks and a hand pallet truck. A conveyor shows boxes travelling on rollers and coming to a stop. This reveals more than an object's shape: it shows the movements that the program supports.\n\nThe company warns that weights and speeds in the examples are assumed values. A picture cannot tell us that a real truck will lift a particular load. A real warehouse needs its actual dimensions and checked equipment specifications. The illustrated warehouse was also changed so that viewers could not identify the original site.",
+      "image": null
+    },
+    {
+      "id": "spaceentry-ground",
+      "title": "A space robot is being tested for turns using its arms and legs",
+      "summary": "Japan's Space Entry built a human-shaped ground-test model. Its idea for changing orientation draws on the way a cat turns its body in the air.",
+      "details": "The company is now showing a model and test apparatus at an exhibition in Utsunomiya. The model is on Earth, not aboard a space station. Gravity and supports matter on Earth, so researchers need to establish what the apparatus tests and how those conditions differ from flight. A completed model does not mean the space test has already happened.",
+      "technical_novelty": "A falling cat can turn by changing the arrangement of its body parts. Developers want to use a related principle in a robot intended for space. Instead of expelling gas, it would move its arms and legs to change which way its body faces. This is a turning method, not a way to fly anywhere without a propulsion system.",
+      "engineering_impact": "The company aims for an orbital experiment in fiscal 2030. It has not yet reported measured turning accuracy or the machine's working lifetime in space. Even if a turn needs no gas, the joints still need energy. Looking a little like a cat does not provide it: real actuators must move the robot's body parts.",
+      "limitations": "The company aims for an orbital experiment in fiscal 2030. It has not yet reported measured turning accuracy or the machine's working lifetime in space. Even if a turn needs no gas, the joints still need energy. Looking a little like a cat does not provide it: real actuators must move the robot's body parts.",
+      "evidence_status": "The company itself reports the tests, specifications or plans. The announcement supplies no independent verification.",
+      "published_at": "2026-11-10",
+      "organization": "Space Entry",
+      "source_ids": [
+        "src-spaceentry-ground"
+      ],
+      "time_window": "72h",
+      "body": "A falling cat can turn by changing the arrangement of its body parts. Developers want to use a related principle in a robot intended for space. Instead of expelling gas, it would move its arms and legs to change which way its body faces. This is a turning method, not a way to fly anywhere without a propulsion system.\n\nThe company is now showing a model and test apparatus at an exhibition in Utsunomiya. The model is on Earth, not aboard a space station. Gravity and supports matter on Earth, so researchers need to establish what the apparatus tests and how those conditions differ from flight. A completed model does not mean the space test has already happened.\n\nThe company aims for an orbital experiment in fiscal 2030. It has not yet reported measured turning accuracy or the machine's working lifetime in space. Even if a turn needs no gas, the joints still need energy. Looking a little like a cat does not provide it: real actuators must move the robot's body parts.",
+      "image": null
+    },
+    {
+      "id": "flex-language",
+      "title": "A request to protect a laptop changes a virtual robot's path",
+      "summary": "Massachusetts Institute of Technology and New York University tested how a robot uses a short spoken-style correction. In a computer experiment, it changed its path to avoid other electronics as well as a laptop.",
+      "details": "The system checks the table image and removes objects that are no longer there. These steps take about five seconds, which is not the time needed for the cup's entire journey. Researchers also tried carrying a candle and a bowling ball. For those tasks, the program formed rules about flammable and fragile things respectively.",
+      "technical_novelty": "An arm carries a cup of coffee across a table with objects on it. A person types a request not to spill the drink on a laptop. The program adds the laptop to its list of things to protect. A language model, a program trained to find relationships in large text collections, then helps extend the rule to other electronic devices.",
+      "engineering_impact": "All three situations were virtual, taking place in a computer world. They do not establish that a physical robot can already help safely in every kitchen. Similar objects sometimes matter for different reasons, and making a rule too broad can be a mistake. The program changes conditions for path selection; it does not read minds or understand a person as another person would.",
+      "limitations": "All three situations were virtual, taking place in a computer world. They do not establish that a physical robot can already help safely in every kitchen. Similar objects sometimes matter for different reasons, and making a rule too broad can be a mistake. The program changes conditions for path selection; it does not read minds or understand a person as another person would.",
+      "evidence_status": "The researchers describe their own tests. Repetition by another team has not been confirmed.",
+      "published_at": "2026-11-09",
+      "organization": "Massachusetts Institute of Technology; New York University",
+      "source_ids": [
+        "src-flex-language"
+      ],
+      "time_window": "72h",
+      "body": "An arm carries a cup of coffee across a table with objects on it. A person types a request not to spill the drink on a laptop. The program adds the laptop to its list of things to protect. A language model, a program trained to find relationships in large text collections, then helps extend the rule to other electronic devices.\n\nThe system checks the table image and removes objects that are no longer there. These steps take about five seconds, which is not the time needed for the cup's entire journey. Researchers also tried carrying a candle and a bowling ball. For those tasks, the program formed rules about flammable and fragile things respectively.\n\nAll three situations were virtual, taking place in a computer world. They do not establish that a physical robot can already help safely in every kitchen. Similar objects sometimes matter for different reasons, and making a rule too broad can be a mistake. The program changes conditions for path selection; it does not read minds or understand a person as another person would.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "The robot waited, but counted the work as done",
+    "summary": "A pause can confuse a program meant to remember cube transfers. Other stories follow hands learning to grasp, equipment placed in a virtual warehouse and a space robot tested on Earth.",
+    "implications": "To understand an experiment, ask what was physical, what happened in a computer and what counted as finishing. Those details change the meaning of an impressive movement."
+  },
+  "sources": [
+    {
+      "id": "src-memory-clock",
+      "title": "Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies",
+      "url": "https://arxiv.org/abs/2611.14488",
+      "domain": "arxiv.org",
+      "organization": "Nanyang Technological University",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "src-dexseed-data",
+      "title": "DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning",
+      "url": "https://arxiv.org/abs/2611.14092",
+      "domain": "arxiv.org",
+      "organization": "The University of Hong Kong; Robbyant; Zhejiang University",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "src-robotbrain-catalog",
+      "title": "スペースデータ、RobotBrainにマテハン機器94種を倉庫で置いて試せる機能を追加",
+      "url": "https://prtimes.jp/main/html/rd/p/000000270.000080352.html",
+      "domain": "prtimes.jp",
+      "organization": "Space Data",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "src-spaceentry-ground",
+      "title": "スペースエントリ―「猫の着地」に学ぶ宇宙用人型ロボット地上試験モデル完成！動作検証を開始～第70回宇宙科学技術連合講演会にて実機展示と動作デモを実施～",
+      "url": "https://prtimes.jp/main/html/rd/p/000000018.000157421.html",
+      "domain": "prtimes.jp",
+      "organization": "Space Entry",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "src-flex-language",
+      "title": "AI-assisted learning platform helps robots reason beyond literal commands",
+      "url": "https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109",
+      "domain": "news.mit.edu",
+      "organization": "Massachusetts Institute of Technology; New York University",
+      "published_at": "2026-11-09"
+    }
+  ]
+}
