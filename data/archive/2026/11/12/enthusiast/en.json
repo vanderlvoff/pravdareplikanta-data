@@ -8,7 +8,7 @@
   "language": "en",
   "generated_at": "2026-11-11T20:50:02.945953Z",
   "title": "What a robot computes before it moves",
-  "lead": "One system refines selected parts of a predicted scene; another learns from human grasps. We also explore virtual warehouse planning and why a space robot is tested on Earth.",
+  "lead": "Researchers are exploring which parts of a future scene a robot needs to predict in detail and how recordings of human grasps can train a robotic hand. This edition also examines a virtual warehouse and a ground prototype of a robot intended for space.",
   "news": [
     {
       "id": "elastic-world",
@@ -103,8 +103,8 @@
   ],
   "technology_signal": {
     "title": "What a robot computes before it moves",
-    "summary": "One system refines selected parts of a predicted scene; another learns from human grasps. We also explore virtual warehouse planning and why a space robot is tested on Earth.",
-    "implications": "A computed prediction, a checked grasp and a ground demonstration answer different questions. The replacement-cup test is revealing: more completed stages need not mean more fully successful attempts."
+    "summary": "Researchers are exploring which parts of a future scene a robot needs to predict in detail and how recordings of human grasps can train a robotic hand. This edition also examines a virtual warehouse and a ground prototype of a robot intended for space.",
+    "implications": "In the tea-making experiment, replacing the cup changed the outcome: better performance on individual stages did not increase the number of fully completed attempts. The grasping tests and the space-robot demonstration measure different capabilities under different conditions."
   },
   "sources": [
     {

@@ -8,7 +8,7 @@
   "language": "en",
   "generated_at": "2026-11-11T20:50:02.945953Z",
   "title": "Remembering completed work rather than elapsed time",
-  "lead": "Pauses expose memory errors, while synthetic grasps need execution checks. Virtual warehouses and a ground space-robot prototype also need their experimental conditions attached.",
+  "lead": "Researchers tested why a robot miscounts completed actions after a pause and how reliably synthetic grasp demonstrations translate into physical execution. Separate reports examine the limits of warehouse simulations and ground tests of a robot intended for space.",
   "news": [
     {
       "id": "memory-clock",
@@ -103,7 +103,7 @@
   ],
   "technology_signal": {
     "title": "Remembering completed work rather than elapsed time",
-    "summary": "Pauses expose memory errors, while synthetic grasps need execution checks. Virtual warehouses and a ground space-robot prototype also need their experimental conditions attached.",
+    "summary": "Researchers tested why a robot miscounts completed actions after a pause and how reliably synthetic grasp demonstrations translate into physical execution. Separate reports examine the limits of warehouse simulations and ground tests of a robot intended for space.",
     "implications": "Cube transfers, finger contact, warehouse-model parameters and apparatus freedom define different criteria. A success rate from one test cannot replace another test's protocol."
   },
   "sources": [
