@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-13",
+  "issue_id": "daily-2026-11-13",
+  "edition": "business",
+  "language": "en",
+  "generated_at": "2026-11-12T20:46:06.640875Z",
+  "title": "From a robotics partnership to a deployment project",
+  "lead": "SOMPO and NTT begin by considering cleaning and item transport in care facilities. Their agreement does not yet select a robot or report measured staff-time savings.",
+  "news": [
+    {
+      "id": "sompo-care-planning",
+      "title": "SOMPO and NTT put support tasks first in care partnership",
+      "summary": "SOMPO and NTT announced a partnership to apply robots and connected systems in eldercare. Initial tasks include cleaning and transporting items, rather than direct physical assistance to care recipients.",
+      "details": "On November 12, SOMPO Holdings and NTT announced a partnership signed the previous day to develop physical AI applications in eldercare. In the announcement, physical AI includes cameras, sensors, robots and the systems connecting them: equipment observes a real setting and acts within it. The partners are beginning discussions about applications, rather than announcing an operational care robot. Initial intended tasks are cleaning, laundry, serving and clearing meals, and transporting items. Direct physical assistance to care recipients is excluded from that initial task list.",
+      "technical_novelty": "On November 12, SOMPO Holdings and NTT announced a partnership signed the previous day to develop physical AI applications in eldercare. In the announcement, physical AI includes cameras, sensors, robots and the systems connecting them: equipment observes a real setting and acts within it. The partners are beginning discussions about applications, rather than announcing an operational care robot. Initial intended tasks are cleaning, laundry, serving and clearing meals, and transporting items. Direct physical assistance to care recipients is excluded from that initial task list.",
+      "engineering_impact": "The project’s concrete content must emerge through task selection, demonstration plans and responsibility for data and operations. Until those decisions exist, staffing reductions or investment payback cannot be calculated from this announcement. Starting with support tasks is an established boundary of the agreement; extending to direct physical assistance is not presented as a ready solution.",
+      "limitations": "The SOMPO–NTT agreement does not yet specify a robot model, facility count or measured staff-time savings. Initial tasks exclude direct physical assistance to care recipients.",
+      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "published_at": "2026-11-12",
+      "organization": "SOMPO Holdings; NTT",
+      "source_ids": [
+        "sompo-ntt-20261112"
+      ],
+      "time_window": "24h",
+      "body": "In care facilities, a robotics proposal can easily be mistaken for a promise to replace complex staff work. SOMPO and NTT draw an explicit boundary around their initial discussions: support operations come first. That matters because helping a person move and transporting supplies require different evaluation conditions and work organization. The agreement itself does not yet select equipment.\n\nOn November 12, SOMPO Holdings and NTT announced a partnership signed the previous day to develop physical AI applications in eldercare. In the announcement, physical AI includes cameras, sensors, robots and the systems connecting them: equipment observes a real setting and acts within it. The partners are beginning discussions about applications, rather than announcing an operational care robot. Initial intended tasks are cleaning, laundry, serving and clearing meals, and transporting items. Direct physical assistance to care recipients is excluded from that initial task list.\n\nSOMPO will contribute experience in care delivery and facility operations. NTT will contribute communications, information security, device integration and infrastructure-operation expertise. The partners intend to specify use cases, demonstration plans, responsibilities, data handling and intellectual-property arrangements. They explicitly recognize that developing equipment is insufficient: workflows, maintenance and safe, stable operation around people must be organized together. The announcement names no selected robot model or number of participating facilities. It reports no measured staff-time savings or demonstrated improvement in care quality. This is a framework for joint work in which the concrete project still needs to be defined.\n\nThe project’s concrete content must emerge through task selection, demonstration plans and responsibility for data and operations. Until those decisions exist, staffing reductions or investment payback cannot be calculated from this announcement. Starting with support tasks is an established boundary of the agreement; extending to direct physical assistance is not presented as a ready solution.",
+      "image": null
+    },
+    {
+      "id": "ntt-action-preview",
+      "title": "NTT reports stacking gains before planned airport trials",
+      "summary": "NTT reported improved small-robot stacking through advance evaluation of candidate actions. Baggage handling is the first intended application, with field work involving Mujin still ahead.",
+      "details": "On November 11, NTT presented a world model: software that predicts how a robot's surroundings will change after an action. It takes several candidate actions from a controller, generates an outcome for each and evaluates the risk of objects falling or a stack collapsing. NTT's physical-control adapter is incorporated into a video-generation model. It estimates object position, orientation, speed and mass from images, then uses equations of motion. This calculation is intended to constrain prediction errors such as objects disappearing during collisions. The description comes from the developer; it is not independent validation of the inferred mass or other properties.",
+      "technical_novelty": "On November 11, NTT presented a world model: software that predicts how a robot's surroundings will change after an action. It takes several candidate actions from a controller, generates an outcome for each and evaluates the risk of objects falling or a stack collapsing. NTT's physical-control adapter is incorporated into a video-generation model. It estimates object position, orientation, speed and mass from images, then uses equations of motion. This calculation is intended to constrain prediction errors such as objects disappearing during collisions. The description comes from the developer; it is not independent validation of the inferred mass or other properties.",
+      "engineering_impact": "The announcement provides no implementation price, measured airport-line throughput or payback period. Rig-level success cannot supply those figures: they also depend on prediction time and integration with existing equipment. Mujin is named as a partner for future work, rather than a confirmed operator of an already functioning baggage system built around this model.",
+      "limitations": "NTT reports a small shelf-stacking experiment. Operation with varied baggage at an active airport is not established, and numerical action-screening latency is not provided.",
+      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "published_at": "2026-11-11",
+      "organization": "NTT",
+      "source_ids": [
+        "ntt-world-20261111"
+      ],
+      "time_window": "72h",
+      "body": "For a baggage-automation buyer, successful placement is useful only when its measurement conditions are known. NTT’s announcement describes a way to supplement existing control with consequence screening. That implies integration and acceptance work for a customer, rather than immediate replacement of a baggage line with a newly available robot system ready for production.\n\nOn November 11, NTT presented a world model: software that predicts how a robot's surroundings will change after an action. It takes several candidate actions from a controller, generates an outcome for each and evaluates the risk of objects falling or a stack collapsing. NTT's physical-control adapter is incorporated into a video-generation model. It estimates object position, orientation, speed and mass from images, then uses equations of motion. This calculation is intended to constrain prediction errors such as objects disappearing during collisions. The description comes from the developer; it is not independent validation of the inferred mass or other properties.\n\nNTT tested the approach with a small robot performing a shelf-stacking task intended to imitate cargo stacking. Reported success increased from 73.1% without the technology to 92.3% with it. Those figures describe the company's test rig, not baggage handling at an operating airport. A separate evaluation compared predicted and reference videos in scenes containing collisions between multiple objects. Airport baggage is the first intended application, with field demonstrations involving Mujin still ahead. NTT also plans to exhibit the research on November 18–25. The announcement therefore contains an experimental result and a deployment plan at different stages of maturity.\n\nThe announcement provides no implementation price, measured airport-line throughput or payback period. Rig-level success cannot supply those figures: they also depend on prediction time and integration with existing equipment. Mujin is named as a partner for future work, rather than a confirmed operator of an already functioning baggage system built around this model.",
+      "image": null
+    },
+    {
+      "id": "camera-lighting",
+      "title": "Room illuminance cannot replace a robot camera check",
+      "summary": "A fysical.ai study found that substantial room dimming barely changed one robot camera’s images. Acceptance tests based only on a light-meter reading can misdescribe the visual system’s operating conditions.",
+      "details": "Simon Cowling of Denmark-based fysical.ai posted a preliminary research paper on November 10 about testing robot control under different lighting conditions. Four controllers were trained on the same 50 demonstrations: an SO-101 arm had to place a green ball in a basket while ignoring two red balls. Each controller was tested at ten ball placements in normal and dimmed conditions. Workspace illuminance fell from about 520 to 45 lux, an 11.5-fold reduction. The main comparison contained 80 attempts. Success totaled 20 out of 40 attempts in normal light and 19 out of 40 in low light.",
+      "technical_novelty": "Simon Cowling of Denmark-based fysical.ai posted a preliminary research paper on November 10 about testing robot control under different lighting conditions. Four controllers were trained on the same 50 demonstrations: an SO-101 arm had to place a green ball in a basket while ignoring two red balls. Each controller was tested at ten ball placements in normal and dimmed conditions. Workspace illuminance fell from about 520 to 45 lux, an 11.5-fold reduction. The main comparison contained 80 attempts. Success totaled 20 out of 40 attempts in normal light and 19 out of 40 in low light.",
+      "engineering_impact": "The author’s recommendations include recording camera settings and comparing frames with the training recordings. This is no industrial reliability estimate: one ball-placement task and eight small test blocks do not characterize shift-long operation. Moving a camera or changing its settings would require checking the resulting input images rather than relying on the previous room-light measurement.",
+      "limitations": "Simon Cowling tested one rig and one task. Exposure was not locked, settings were read afterward and there was no automatic-exposure-off comparison; day and controller-order effects were not isolated either.",
+      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-10",
+      "organization": "fysical.ai",
+      "source_ids": [
+        "cowling-light-261113810"
+      ],
+      "time_window": "72h",
+      "body": "When a supplier promises low-light operation, a buyer needs to know what was tested. Lux measures illumination at a surface; a robot controller receives images after the camera has processed the incoming light. The small Danish study shows why both need to be examined. Otherwise, similar outcomes might be credited to model training when the camera itself changed the effective conditions.\n\nSimon Cowling of Denmark-based fysical.ai posted a preliminary research paper on November 10 about testing robot control under different lighting conditions. Four controllers were trained on the same 50 demonstrations: an SO-101 arm had to place a green ball in a basket while ignoring two red balls. Each controller was tested at ten ball placements in normal and dimmed conditions. Workspace illuminance fell from about 520 to 45 lux, an 11.5-fold reduction. The main comparison contained 80 attempts. Success totaled 20 out of 40 attempts in normal light and 19 out of 40 in low light.\n\nYet average recorded image brightness fell by only 3% for the front camera and 19% for the wrist camera. After the experiments, the author found automatic exposure enabled: the camera adjusts how it gathers light. This probably compensated for much of the dimming, although its causal role was not tested separately. The results therefore do not establish that the controllers withstand genuinely dark images. The study used one rig and one task, with manually placed balls and a single unblinded scorer. Small trial counts leave substantial uncertainty: the confidence interval for the pooled success change runs from a 23-percentage-point decrease to a 19-point increase.\n\nThe author’s recommendations include recording camera settings and comparing frames with the training recordings. This is no industrial reliability estimate: one ball-placement task and eight small test blocks do not characterize shift-long operation. Moving a camera or changing its settings would require checking the resulting input images rather than relying on the previous room-light measurement.",
+      "image": null
+    },
+    {
+      "id": "hachioji-crane-sim",
+      "title": "Space Data offers a virtual yard for shared-work planning",
+      "summary": "Space Data created a hypothetical construction yard on digital terrain around Hachioji Junction. Worker and robot roles and counts can be changed, but no physical-site deployment outcomes are established.",
+      "details": "On November 12, Space Data presented a new scene for RobotBrain, its environment for evaluating robots before deployment. A hypothetical construction yard occupies digitally recreated terrain around Hachioji Junction in Japan. It contains four cranes, six construction vehicles, ten workers and fourteen robots. Ten robots are bipedal and four transport materials. These are simulated participants, not a workforce already operating at the junction. Users can change participant counts and roles to study shared movement in a confined yard. Compared with the company's first crane example, the stated addition is people and robots carrying out different assigned tasks.",
+      "technical_novelty": "On November 12, Space Data presented a new scene for RobotBrain, its environment for evaluating robots before deployment. A hypothetical construction yard occupies digitally recreated terrain around Hachioji Junction in Japan. It contains four cranes, six construction vehicles, ten workers and fourteen robots. Ten robots are bipedal and four transport materials. These are simulated participants, not a workforce already operating at the junction. Users can change participant counts and roles to study shared movement in a confined yard. Compared with the company's first crane example, the stated addition is people and robots carrying out different assigned tasks.",
+      "engineering_impact": "The company offers demonstrations on request, without measured construction-budget or training-time savings. A purchasing decision would need an assessment of which scenarios match the intended site. Plausible load swing, in particular, does not automatically validate vehicle-yielding rules or a worker’s behavior when something unexpected happens.",
+      "limitations": "Space Data shows a hypothetical yard, not physical construction trials. Equipment models are unofficial and include estimated parameters; safe simulated movement does not validate a real robot’s safety.",
+      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "published_at": "2026-11-12",
+      "organization": "Space Data",
+      "source_ids": [
+        "spacedata-hachioji-20261112"
+      ],
+      "time_window": "24h",
+      "body": "A planner could try alternative traffic arrangements before equipment arrives on site. Space Data proposes that use for its new scene: examining space for workers and robots and rehearsing hazardous situations without exposing participants to the real operation. This supports preliminary analysis; it is not authorization for machinery to work safely alongside people on a construction project.\n\nOn November 12, Space Data presented a new scene for RobotBrain, its environment for evaluating robots before deployment. A hypothetical construction yard occupies digitally recreated terrain around Hachioji Junction in Japan. It contains four cranes, six construction vehicles, ten workers and fourteen robots. Ten robots are bipedal and four transport materials. These are simulated participants, not a workforce already operating at the junction. Users can change participant counts and roles to study shared movement in a confined yard. Compared with the company's first crane example, the stated addition is people and robots carrying out different assigned tasks.\n\nAccording to the developer, a simulated robot anticipates a vehicle's position 2.5 seconds ahead and waits for it to pass. Robots avoid suspended loads, while vehicles stop in front of people. The system calculates load weight, cable tension and load swing. For a 40-meter cable, the reported oscillation period is 12.87 seconds, compared with 12.69 seconds from a pendulum formula. That comparison checks one physical behavior; it does not establish safety for the entire yard. Space Data explicitly says the construction scenario is hypothetical, equipment models are not official manufacturer models and some unpublished parameters are estimates.\n\nThe company offers demonstrations on request, without measured construction-budget or training-time savings. A purchasing decision would need an assessment of which scenarios match the intended site. Plausible load swing, in particular, does not automatically validate vehicle-yielding rules or a worker’s behavior when something unexpected happens.",
+      "image": null
+    },
+    {
+      "id": "atlas-wheel-test",
+      "title": "Wheeled Atlas is an actuator experiment, not a product launch",
+      "summary": "Boston Dynamics showed a research modification of Atlas for demanding actuator tests. The company explicitly separates it from a commercial product, so the demonstration does not establish customer availability of a wheeled model.",
+      "details": "Boston Dynamics described its wheeled Atlas experiment on November 9. Controls engineer Andy Wu stresses that the humanoid with its feet replaced by wheels is a research testbed, not a new commercial configuration. An off-the-shelf scooter rim is attached to the existing ankle actuator through a custom adapter. In the computer model, the corresponding joint can rotate continuously. Accelerating, turning and braking require the motors to deliver speed and torque together under load. Torque is the turning effort produced by a drive. The team wanted those demanding operating conditions to test both the actuators and their mathematical models.",
+      "technical_novelty": "Boston Dynamics described its wheeled Atlas experiment on November 9. Controls engineer Andy Wu stresses that the humanoid with its feet replaced by wheels is a research testbed, not a new commercial configuration. An off-the-shelf scooter rim is attached to the existing ankle actuator through a custom adapter. In the computer model, the corresponding joint can rotate continuously. Accelerating, turning and braking require the motors to deliver speed and torque together under load. Torque is the turning effort produced by a drive. The team wanted those demanding operating conditions to test both the actuators and their mathematical models.",
+      "engineering_impact": "The company says insights are already being brought back to its standard Atlas configuration. That is a statement about development, not a measured service-life gain in a delivered machine. Neither a wheeled-version price nor a production task is announced; the developer itself calls this conversion a research testbed.",
+      "limitations": "Boston Dynamics describes wheeled Atlas as a research testbed. It provides no service-life measurement under these loads and does not present drive-failure response as an already validated capability.",
+      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "published_at": "2026-11-09",
+      "organization": "Boston Dynamics",
+      "source_ids": [
+        "bd-roll-20261109"
+      ],
+      "time_window": "7d",
+      "body": "A striking video of a robot on wheels can look like the start of another product line. Boston Dynamics describes a different purpose: understanding drive behavior near operating limits and matching it to learned control. For deployment assessment, that separates an internal research tool from equipment with documented service conditions and customer use cases.\n\nBoston Dynamics described its wheeled Atlas experiment on November 9. Controls engineer Andy Wu stresses that the humanoid with its feet replaced by wheels is a research testbed, not a new commercial configuration. An off-the-shelf scooter rim is attached to the existing ankle actuator through a custom adapter. In the computer model, the corresponding joint can rotate continuously. Accelerating, turning and braking require the motors to deliver speed and torque together under load. Torque is the turning effort produced by a drive. The team wanted those demanding operating conditions to test both the actuators and their mathematical models.\n\nWhole-body control was trained using reinforcement learning: software tries movements in simulation and receives numerical rewards for the resulting behavior. To make the learned movements feasible on hardware, the team characterized the real actuators, tuned the simulated motor model and checked that low-level control settings agreed across software setups. Some behaviors followed human motion recordings. A full-turn jump tracked one such recording, while a sideways dash used wheel rolling where a person would slide their feet. The account demonstrates behavior transferred to hardware, but supplies no comparative endurance protocol or quantified failure-rate evaluation.\n\nThe company says insights are already being brought back to its standard Atlas configuration. That is a statement about development, not a measured service-life gain in a delivered machine. Neither a wheeled-version price nor a production task is announced; the developer itself calls this conversion a research testbed.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "From a robotics partnership to a deployment project",
+    "summary": "SOMPO and NTT begin by considering cleaning and item transport in care facilities. Their agreement does not yet select a robot or report measured staff-time savings.",
+    "implications": "Tasks, demonstration plans, data handling and operating responsibilities still need to be specified. Those decisions support an assessment of a concrete deployment; the partnership alone supplies no payback calculation."
+  },
+  "sources": [
+    {
+      "id": "sompo-ntt-20261112",
+      "title": "SOMPOホールディングスとNTTがパートナーシップ協定を締結 ～介護分野におけるフィジカルAI社会実装にむけて～",
+      "url": "https://group.ntt/jp/newsrelease/2026/11/12/261112b.html",
+      "domain": "group.ntt",
+      "organization": "SOMPO Holdings; NTT",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "ntt-world-20261111",
+      "title": "ロボットが「動く前に未来を予測」、失敗を回避するフィジカルAI技術を開発",
+      "url": "https://group.ntt/jp/newsrelease/2026/11/11/261111b.html",
+      "domain": "group.ntt",
+      "organization": "NTT",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "cowling-light-261113810",
+      "title": "Camera equalisation of an 11.5x drop in environmental illuminance: four imitation-learning policies on an SO-101 arm",
+      "url": "https://arxiv.org/abs/2611.13810",
+      "domain": "arxiv.org",
+      "organization": "fysical.ai",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "spacedata-hachioji-20261112",
+      "title": "スペースデータ、八王子ジャンクションを舞台に人とロボットが働くクレーン作業シミュレーションを開発",
+      "url": "https://prtimes.jp/main/html/rd/p/000000275.000080352.html",
+      "domain": "prtimes.jp",
+      "organization": "Space Data",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "bd-roll-20261109",
+      "title": "Atlas On a Roll: Bridging Classical Motor Controls and Whole-Body RL",
+      "url": "https://bostondynamics.com/blog/atlas-on-a-roll/",
+      "domain": "bostondynamics.com",
+      "organization": "Boston Dynamics",
+      "published_at": "2026-11-09"
+    }
+  ]
+}

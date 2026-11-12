@@ -2,150 +2,150 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-12",
-  "issue_id": "daily-2026-11-12",
+  "issue_date": "2026-11-13",
+  "issue_id": "daily-2026-11-13",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-11T20:50:02.945953Z",
-  "title": "The robot waited, but counted the work as done",
-  "lead": "In a computer experiment, a robot sometimes mistook waiting time for completed cube transfers. Other stories look at physical tests of a robot hand, a virtual warehouse and a Japanese prototype intended for space.",
+  "generated_at": "2026-11-12T20:46:06.640875Z",
+  "title": "Lights off. What did the robot see?",
+  "lead": "A researcher dimmed the room where a robot moved a ball into a basket. One recorded view barely became darker, probably because of the cameras’ automatic settings.",
   "news": [
     {
-      "id": "memory-clock",
-      "title": "A robot mistook waiting for work already done",
-      "summary": "Scientists at Nanyang Technological University asked a virtual robot to move a cube several times. Pauses confused its count even though it had not moved the cube during the wait.",
-      "details": "They inserted stops during the work. The robot did nothing useful, but its program sometimes treated passing time as another completed part of the job. In one test, it succeeded in 47 out of fifty attempts without that interruption, but only 16 with it. It could finish before making all the required transfers.",
-      "technical_novelty": "The job is to move a cube three times, then press a button. After the second transfer, the scene may look almost the same as after the first. The program therefore needs memory: stored information about earlier actions. Scientists tested this in simulation, a computer world where the robot and objects exist as models.",
-      "engineering_impact": "The researchers repeated the stop while leaving its images out of memory. Performance returned, so stopping alone was not the whole cause. They also tried keeping records according to events instead of equal time intervals. These experiments remain computer tests: they do not tell us how often the error occurs in real robots doing everyday work.",
-      "limitations": "The researchers repeated the stop while leaving its images out of memory. Performance returned, so stopping alone was not the whole cause. They also tried keeping records according to events instead of equal time intervals. These experiments remain computer tests: they do not tell us how often the error occurs in real robots doing everyday work.",
-      "evidence_status": "The researchers describe their own tests. Repetition by another team has not been confirmed.",
-      "published_at": "2026-11-10",
-      "organization": "Nanyang Technological University",
-      "source_ids": [
-        "src-memory-clock"
-      ],
-      "time_window": "72h",
-      "body": "The job is to move a cube three times, then press a button. After the second transfer, the scene may look almost the same as after the first. The program therefore needs memory: stored information about earlier actions. Scientists tested this in simulation, a computer world where the robot and objects exist as models.\n\nThey inserted stops during the work. The robot did nothing useful, but its program sometimes treated passing time as another completed part of the job. In one test, it succeeded in 47 out of fifty attempts without that interruption, but only 16 with it. It could finish before making all the required transfers.\n\nThe researchers repeated the stop while leaving its images out of memory. Performance returned, so stopping alone was not the whole cause. They also tried keeping records according to events instead of equal time intervals. These experiments remain computer tests: they do not tell us how often the error occurs in real robots doing everyday work.",
-      "image": null
-    },
-    {
-      "id": "dexseed-data",
-      "title": "Human movements helped make lessons for a robot hand",
-      "summary": "A team from the University of Hong Kong, Robbyant and Zhejiang University used recordings of people holding objects. They created virtual exercises from them, then tested a physical robot arm.",
-      "details": "The first check took place in simulation, a computer world that calculates movement and contact. Images, instructions and actions were saved from successful attempts. These examples trained a program to choose arm and finger movements from images and words. This does not mean the robot gained a person's understanding of objects.",
-      "technical_novelty": "Picking up an apple and threading fingers through a handle need different movements. Human and robot fingers are built differently, so copying a hand's position is not enough. Researchers tried to preserve the places where fingers touch an object. They then changed the object's shape or the arm's path and checked whether the movement could actually work.",
-      "engineering_impact": "The physical arm tried eight grasping styles, with ten attempts for each. Results varied from two successes in ten to eight. A success required picking up the object, lifting it and putting it inside a target area. Precise finger placement through a handle remained difficult, and using both arms together was not part of this experiment.",
-      "limitations": "The physical arm tried eight grasping styles, with ten attempts for each. Results varied from two successes in ten to eight. A success required picking up the object, lifting it and putting it inside a target area. Precise finger placement through a handle remained difficult, and using both arms together was not part of this experiment.",
-      "evidence_status": "The researchers describe their own tests. Repetition by another team has not been confirmed.",
-      "published_at": "2026-11-10",
-      "organization": "The University of Hong Kong; Robbyant; Zhejiang University",
-      "source_ids": [
-        "src-dexseed-data"
-      ],
-      "time_window": "72h",
-      "body": "Picking up an apple and threading fingers through a handle need different movements. Human and robot fingers are built differently, so copying a hand's position is not enough. Researchers tried to preserve the places where fingers touch an object. They then changed the object's shape or the arm's path and checked whether the movement could actually work.\n\nThe first check took place in simulation, a computer world that calculates movement and contact. Images, instructions and actions were saved from successful attempts. These examples trained a program to choose arm and finger movements from images and words. This does not mean the robot gained a person's understanding of objects.\n\nThe physical arm tried eight grasping styles, with ten attempts for each. Results varied from two successes in ten to eight. A success required picking up the object, lifting it and putting it inside a target area. Precise finger placement through a handle remained difficult, and using both arms together was not part of this experiment.",
-      "image": null
-    },
-    {
-      "id": "robotbrain-catalog",
-      "title": "Warehouse equipment can be arranged in a computer world first",
-      "summary": "Japan's Space Data added 118 equipment and accessory models to its browser environment. Four types can be operated as well as placed in the scene.",
-      "details": "There are 118 models in the catalogue, but not all can move. Four types currently support operation, including a machine with lifting forks and a hand pallet truck. A conveyor shows boxes travelling on rollers and coming to a stop. This reveals more than an object's shape: it shows the movements that the program supports.",
-      "technical_novelty": "Imagine adding a new pallet truck or conveyor to a warehouse. Moving real racks for every idea would be slow and awkward. The company offers a way to arrange things in a virtual version of the room first. It is made from recordings by a camera that sees all around itself, and users open the scene in a browser.",
-      "engineering_impact": "The company warns that weights and speeds in the examples are assumed values. A picture cannot tell us that a real truck will lift a particular load. A real warehouse needs its actual dimensions and checked equipment specifications. The illustrated warehouse was also changed so that viewers could not identify the original site.",
-      "limitations": "The company warns that weights and speeds in the examples are assumed values. A picture cannot tell us that a real truck will lift a particular load. A real warehouse needs its actual dimensions and checked equipment specifications. The illustrated warehouse was also changed so that viewers could not identify the original site.",
+      "id": "ntt-action-preview",
+      "title": "Check whether the stack will fall first",
+      "summary": "Japan's NTT made software compare what could happen after different robot movements. In a small experiment, the check helped a robot place objects on a shelf more successfully.",
+      "details": "NTT researchers built a world model: software that predicts changes around a robot. It estimates object properties from images and uses the laws of motion to help generate video predictions of a load falling or staying in place.",
+      "technical_novelty": "Japan's NTT made software compare what could happen after different robot movements. In a small experiment, the check helped a robot place objects on a shelf more successfully.",
+      "engineering_impact": "NTT wants to apply this approach to airport baggage. It has not yet shown that result on an operating baggage line. Real bags vary in shape and weight, while the reported experiment used a small test setup.",
+      "limitations": "The company wants to apply this approach to airport baggage. It has not yet shown that result on an operating baggage line. Real bags vary in shape and weight, while the reported experiment used a small test setup.",
       "evidence_status": "The company itself reports the tests, specifications or plans. The announcement supplies no independent verification.",
       "published_at": "2026-11-11",
+      "organization": "NTT",
+      "source_ids": [
+        "ntt-world-20261111"
+      ],
+      "time_window": "72h",
+      "body": "Putting something on a shelf can go wrong even when the arm reaches the right place. A neighboring object might fall. Researchers at Japan's NTT tried calculating the consequences of several movements before choosing which one to use.\n\nThey built a world model: software that predicts changes around a robot. It estimates object position, speed and other properties from images. Calculations using the laws of motion then help produce a video of a possible outcome, such as a load staying in place or falling.\n\nA small robot tested the idea by stacking objects on a shelf. Reported success rose from 73.1% to 92.3%. Those shares are roughly 73 and 92 successes out of a hundred; the announcement does not say that exactly a hundred attempts were made.\n\nThe company wants to apply this approach to airport baggage. It has not yet shown that result on an operating baggage line. Real bags vary in shape and weight, while the reported experiment used a small test setup.",
+      "image": null
+    },
+    {
+      "id": "atlas-wheel-test",
+      "title": "Wheels help engineers test a robot's motors",
+      "summary": "Boston Dynamics engineers replaced a humanoid robot's feet with wheels. They used it to check how real motors carry out movements learned on a computer.",
+      "details": "In the Boston Dynamics experiment, robot movements are first tried in simulation, a computer experiment. Software learns using scores for its results, while measurements of real motors help keep the computer model from granting them unrealistic strength.",
+      "technical_novelty": "Boston Dynamics engineers replaced a humanoid robot's feet with wheels. They used it to check how real motors carry out movements learned on a computer.",
+      "engineering_impact": "Some movements followed recordings of a person. During a quick sideways movement, the robot rolled where the person slid their feet. The experiment does not tell us motor lifetime: the company gives no number of hours under these loads. For reference, the robot is called Atlas.",
+      "limitations": "Some movements followed recordings of a person. During a quick sideways movement, the robot rolled where the person slid their feet. The experiment does not tell us motor lifetime: the company gives no number of hours under these loads. For reference, the robot is called Atlas.",
+      "evidence_status": "The company itself reports the tests, specifications or plans. The announcement supplies no independent verification.",
+      "published_at": "2026-11-09",
+      "organization": "Boston Dynamics",
+      "source_ids": [
+        "bd-roll-20261109"
+      ],
+      "time_window": "7d",
+      "body": "The robot rolls, turns and stops sharply. Its wheels are not the launch of a new machine for sale. Boston Dynamics engineers wanted to test motors while they worked quickly and pushed hard for sustained periods.\n\nThe movements are first tried in a simulation, a computer experiment with a virtual robot. Software receives scores for the results and gradually finds useful movements. This is called reinforcement learning. If a virtual motor is stronger than the real one, the learned movement might fail on the laboratory floor.\n\nThe team therefore measured the real actuators, the devices that move robot parts. They adjusted the computer model to match those measurements. A special adapter attached each wheel to a drive that had previously moved a foot.\n\nSome movements followed recordings of a person. During a quick sideways movement, the robot rolled where the person slid their feet. The experiment does not tell us motor lifetime: the company gives no number of hours under these loads. For reference, the robot is called Atlas.",
+      "image": null
+    },
+    {
+      "id": "camera-lighting",
+      "title": "Why a dark room did not make a dark picture",
+      "summary": "A researcher in Denmark tested a robot in normal and low light. One recorded view barely became darker, probably because of the cameras’ automatic settings.",
+      "details": "Simon Cowling tested four robot-arm controllers. Success was 20 out of 40 attempts in normal light and 19 out of 40 in low light, but the camera pictures did not dim nearly as much as the room.",
+      "technical_novelty": "A researcher in Denmark tested a robot in normal and low light. One recorded view barely became darker, probably because of the cameras’ automatic settings.",
+      "engineering_impact": "That setting probably helped, but no separate comparison switched the automatic control off. The test therefore did not show how the programs handle genuinely dark pictures. Camera settings matter here because the program receives its pictures through the camera, rather than seeing the room directly.",
+      "limitations": "That setting probably helped, but no separate comparison switched the automatic control off. The test therefore did not show how the programs handle genuinely dark pictures. Camera settings matter here because the program receives its pictures through the camera, rather than seeing the room directly.",
+      "evidence_status": "The researchers describe their own tests. Repetition by another team has not been confirmed.",
+      "published_at": "2026-11-10",
+      "organization": "fysical.ai",
+      "source_ids": [
+        "cowling-light-261113810"
+      ],
+      "time_window": "72h",
+      "body": "A robot arm must pick the green ball instead of two red ones and put it in a basket. Simon Cowling of Denmark's fysical.ai tested four programs controlling that arm. They all learned from the same 50 demonstrations by a person.\n\nThe researcher then dimmed the room substantially. In normal light, 20 attempts out of 40 succeeded; in low light, 19 out of 40 succeeded. It would be tempting to say that darkness hardly mattered. But first we need to check what the cameras actually recorded.\n\nThe front camera's pictures became only 3% dimmer, even though light at the table fell roughly elevenfold. The camera on the arm recorded pictures 19% dimmer. Afterward, the author found automatic exposure enabled: the cameras could adjust how they collected light.\n\nThat setting probably helped, but no separate comparison switched the automatic control off. The test therefore did not show how the programs handle genuinely dark pictures. Camera settings matter here because the program receives its pictures through the camera, rather than seeing the room directly.",
+      "image": null
+    },
+    {
+      "id": "cable-action-context",
+      "title": "A robot uses what happened to a cable before",
+      "summary": "University of Bologna researchers compared ways to shape a cable on a table. Records of earlier movements helped control it, while a better prediction did not always lead to a better action.",
+      "details": "Bologna researchers compared ways to control a cable. One used stiffness, how hard it is to bend, and friction, which resists sliding; another used up to five previous movements and the shape changes they caused.",
+      "technical_novelty": "University of Bologna researchers compared ways to shape a cable on a table. Records of earlier movements helped control it, while a better prediction did not always lead to a better action.",
+      "engineering_impact": "Each trial allowed up to ten actions. Required accuracy meant cable points were, on average, no more than a centimeter from their targets, not that every point matched perfectly. The study only tested shaping on a plane. A person reset the cable, so starting shapes were not exactly identical across comparisons.",
+      "limitations": "Each trial allowed up to ten actions. Required accuracy meant cable points were, on average, no more than a centimeter from their targets, not that every point matched perfectly. The study only tested shaping on a plane. A person reset the cable, so starting shapes were not exactly identical across comparisons.",
+      "evidence_status": "The researchers describe their own tests. Repetition by another team has not been confirmed.",
+      "published_at": "2026-11-10",
+      "organization": "University of Bologna",
+      "source_ids": [
+        "bologna-cable-261114274"
+      ],
+      "time_window": "72h",
+      "body": "Imagine a cable on a table that needs to match a target shape. Pulling one spot changes more than that spot alone. University of Bologna researchers tested what information helps a robot choose where to grasp and how to move.\n\nOne program used estimates of stiffness and friction. Stiffness describes how hard the cable is to bend; friction resists sliding along the table. Another program used up to five earlier movements and the changes in shape they produced.\n\nThe programs learned in computer experiments first. Researchers then moved them to a real robot without extra training on that robot. The version using previous interactions reached the required accuracy more often: in 88.3% of trials, compared with 76.7% for a version using shape alone.\n\nEach trial allowed up to ten actions. Required accuracy meant cable points were, on average, no more than a centimeter from their targets, not that every point matched perfectly. The study only tested shaping on a plane. A person reset the cable, so starting shapes were not exactly identical across comparisons.",
+      "image": null
+    },
+    {
+      "id": "hachioji-crane-sim",
+      "title": "A robot waits for a truck in a computer-built yard",
+      "summary": "Japan's Space Data created a hypothetical construction yard with people, robots and vehicles. Inside the program, users can examine where participants need to wait for one another.",
+      "details": "Space Data placed a hypothetical construction yard on terrain around Hachioji Junction. Its program includes ten workers and fourteen robots, with adjustable numbers and tasks for comparing movement arrangements.",
+      "technical_novelty": "Japan's Space Data created a hypothetical construction yard with people, robots and vehicles. Inside the program, users can examine where participants need to wait for one another.",
+      "engineering_impact": "A safe route on screen does not prove that a physical robot will follow it safely. Some machine properties are estimates because exact values are not public. Nor does this announcement plan that construction at the junction: the company explicitly says the work is hypothetical.",
+      "limitations": "A safe route on screen does not prove that a physical robot will follow it safely. Some machine properties are estimates because exact values are not public. Nor does this announcement plan that construction at the junction: the company explicitly says the work is hypothetical.",
+      "evidence_status": "The company itself reports the tests, specifications or plans. The announcement supplies no independent verification.",
+      "published_at": "2026-11-12",
       "organization": "Space Data",
       "source_ids": [
-        "src-robotbrain-catalog"
+        "spacedata-hachioji-20261112"
       ],
       "time_window": "24h",
-      "body": "Imagine adding a new pallet truck or conveyor to a warehouse. Moving real racks for every idea would be slow and awkward. The company offers a way to arrange things in a virtual version of the room first. It is made from recordings by a camera that sees all around itself, and users open the scene in a browser.\n\nThere are 118 models in the catalogue, but not all can move. Four types currently support operation, including a machine with lifting forks and a hand pallet truck. A conveyor shows boxes travelling on rollers and coming to a stop. This reveals more than an object's shape: it shows the movements that the program supports.\n\nThe company warns that weights and speeds in the examples are assumed values. A picture cannot tell us that a real truck will lift a particular load. A real warehouse needs its actual dimensions and checked equipment specifications. The illustrated warehouse was also changed so that viewers could not identify the original site.",
-      "image": null
-    },
-    {
-      "id": "spaceentry-ground",
-      "title": "A space robot is being tested for turns using its arms and legs",
-      "summary": "Japan's Space Entry built a human-shaped ground-test model. Its idea for changing orientation draws on the way a cat turns its body in the air.",
-      "details": "The company is now showing a model and test apparatus at an exhibition in Utsunomiya. The model is on Earth, not aboard a space station. Gravity and supports matter on Earth, so researchers need to establish what the apparatus tests and how those conditions differ from flight. A completed model does not mean the space test has already happened.",
-      "technical_novelty": "A falling cat can turn by changing the arrangement of its body parts. Developers want to use a related principle in a robot intended for space. Instead of expelling gas, it would move its arms and legs to change which way its body faces. This is a turning method, not a way to fly anywhere without a propulsion system.",
-      "engineering_impact": "The company aims for an orbital experiment in fiscal 2030. It has not yet reported measured turning accuracy or the machine's working lifetime in space. Even if a turn needs no gas, the joints still need energy. Looking a little like a cat does not provide it: real actuators must move the robot's body parts.",
-      "limitations": "The company aims for an orbital experiment in fiscal 2030. It has not yet reported measured turning accuracy or the machine's working lifetime in space. Even if a turn needs no gas, the joints still need energy. Looking a little like a cat does not provide it: real actuators must move the robot's body parts.",
-      "evidence_status": "The company itself reports the tests, specifications or plans. The announcement supplies no independent verification.",
-      "published_at": "2026-11-10",
-      "organization": "Space Entry",
-      "source_ids": [
-        "src-spaceentry-ground"
-      ],
-      "time_window": "72h",
-      "body": "A falling cat can turn by changing the arrangement of its body parts. Developers want to use a related principle in a robot intended for space. Instead of expelling gas, it would move its arms and legs to change which way its body faces. This is a turning method, not a way to fly anywhere without a propulsion system.\n\nThe company is now showing a model and test apparatus at an exhibition in Utsunomiya. The model is on Earth, not aboard a space station. Gravity and supports matter on Earth, so researchers need to establish what the apparatus tests and how those conditions differ from flight. A completed model does not mean the space test has already happened.\n\nThe company aims for an orbital experiment in fiscal 2030. It has not yet reported measured turning accuracy or the machine's working lifetime in space. Even if a turn needs no gas, the joints still need energy. Looking a little like a cat does not provide it: real actuators must move the robot's body parts.",
-      "image": null
-    },
-    {
-      "id": "flex-language",
-      "title": "A request to protect a laptop changes a virtual robot's path",
-      "summary": "Massachusetts Institute of Technology and New York University tested how a robot uses a short spoken-style correction. In a computer experiment, it changed its path to avoid other electronics as well as a laptop.",
-      "details": "The system checks the table image and removes objects that are no longer there. These steps take about five seconds, which is not the time needed for the cup's entire journey. Researchers also tried carrying a candle and a bowling ball. For those tasks, the program formed rules about flammable and fragile things respectively.",
-      "technical_novelty": "An arm carries a cup of coffee across a table with objects on it. A person types a request not to spill the drink on a laptop. The program adds the laptop to its list of things to protect. A language model, a program trained to find relationships in large text collections, then helps extend the rule to other electronic devices.",
-      "engineering_impact": "All three situations were virtual, taking place in a computer world. They do not establish that a physical robot can already help safely in every kitchen. Similar objects sometimes matter for different reasons, and making a rule too broad can be a mistake. The program changes conditions for path selection; it does not read minds or understand a person as another person would.",
-      "limitations": "All three situations were virtual, taking place in a computer world. They do not establish that a physical robot can already help safely in every kitchen. Similar objects sometimes matter for different reasons, and making a rule too broad can be a mistake. The program changes conditions for path selection; it does not read minds or understand a person as another person would.",
-      "evidence_status": "The researchers describe their own tests. Repetition by another team has not been confirmed.",
-      "published_at": "2026-11-09",
-      "organization": "Massachusetts Institute of Technology; New York University",
-      "source_ids": [
-        "src-flex-language"
-      ],
-      "time_window": "72h",
-      "body": "An arm carries a cup of coffee across a table with objects on it. A person types a request not to spill the drink on a laptop. The program adds the laptop to its list of things to protect. A language model, a program trained to find relationships in large text collections, then helps extend the rule to other electronic devices.\n\nThe system checks the table image and removes objects that are no longer there. These steps take about five seconds, which is not the time needed for the cup's entire journey. Researchers also tried carrying a candle and a bowling ball. For those tasks, the program formed rules about flammable and fragile things respectively.\n\nAll three situations were virtual, taking place in a computer world. They do not establish that a physical robot can already help safely in every kitchen. Similar objects sometimes matter for different reasons, and making a rule too broad can be a mistake. The program changes conditions for path selection; it does not read minds or understand a person as another person would.",
+      "body": "A truck approaches, and a robot stops to wait. This is not a report from a real construction site. Japan's Space Data built a simulation, a computer experiment showing people and machines working in a shared space.\n\nThe terrain comes from the real Hachioji Junction, but the construction yard is invented. It includes ten workers, fourteen robots, cranes and construction vehicles. Users can change participant numbers and tasks to examine whether there is enough space for movement and work.\n\nAccording to the company, the program predicts where a vehicle will be 2.5 seconds later. A virtual robot waits for it to pass and avoids going under a suspended load. The system also calculates cable tension and load swing, rather than merely drawing a moving picture.\n\nA safe route on screen does not prove that a physical robot will follow it safely. Some machine properties are estimates because exact values are not public. Nor does this announcement plan that construction at the junction: the company explicitly says the work is hypothetical.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "The robot waited, but counted the work as done",
-    "summary": "In a computer experiment, a robot sometimes mistook waiting time for completed cube transfers. Other stories look at physical tests of a robot hand, a virtual warehouse and a Japanese prototype intended for space.",
-    "implications": "The cube-transfer experiment took place in a computer simulation, while the grasping study also tested a physical robot arm. The space robot is still being examined on Earth; these differences tell us which results have actually been demonstrated."
+    "title": "Lights off. What did the robot see?",
+    "summary": "A researcher dimmed the room where a robot moved a ball into a basket. One recorded view barely became darker, probably because of the cameras’ automatic settings.",
+    "implications": "To find out whether a program handles a dark picture, switching off a lamp is not enough. The picture itself must be checked: a camera can brighten it before sending it to the robot."
   },
   "sources": [
     {
-      "id": "src-memory-clock",
-      "title": "Is Your Robot's Memory Just a Clock? Temporal Shortcuts in Memory-Augmented VLA Policies",
-      "url": "https://arxiv.org/abs/2611.14488",
-      "domain": "arxiv.org",
-      "organization": "Nanyang Technological University",
-      "published_at": "2026-11-10"
-    },
-    {
-      "id": "src-dexseed-data",
-      "title": "DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning",
-      "url": "https://arxiv.org/abs/2611.14092",
-      "domain": "arxiv.org",
-      "organization": "The University of Hong Kong; Robbyant; Zhejiang University",
-      "published_at": "2026-11-10"
-    },
-    {
-      "id": "src-robotbrain-catalog",
-      "title": "スペースデータ、RobotBrainにマテハン機器94種を倉庫で置いて試せる機能を追加",
-      "url": "https://prtimes.jp/main/html/rd/p/000000270.000080352.html",
-      "domain": "prtimes.jp",
-      "organization": "Space Data",
+      "id": "ntt-world-20261111",
+      "title": "ロボットが「動く前に未来を予測」、失敗を回避するフィジカルAI技術を開発",
+      "url": "https://group.ntt/jp/newsrelease/2026/11/11/261111b.html",
+      "domain": "group.ntt",
+      "organization": "NTT",
       "published_at": "2026-11-11"
     },
     {
-      "id": "src-spaceentry-ground",
-      "title": "スペースエントリ―「猫の着地」に学ぶ宇宙用人型ロボット地上試験モデル完成！動作検証を開始～第70回宇宙科学技術連合講演会にて実機展示と動作デモを実施～",
-      "url": "https://prtimes.jp/main/html/rd/p/000000018.000157421.html",
-      "domain": "prtimes.jp",
-      "organization": "Space Entry",
+      "id": "bd-roll-20261109",
+      "title": "Atlas On a Roll: Bridging Classical Motor Controls and Whole-Body RL",
+      "url": "https://bostondynamics.com/blog/atlas-on-a-roll/",
+      "domain": "bostondynamics.com",
+      "organization": "Boston Dynamics",
+      "published_at": "2026-11-09"
+    },
+    {
+      "id": "cowling-light-261113810",
+      "title": "Camera equalisation of an 11.5x drop in environmental illuminance: four imitation-learning policies on an SO-101 arm",
+      "url": "https://arxiv.org/abs/2611.13810",
+      "domain": "arxiv.org",
+      "organization": "fysical.ai",
       "published_at": "2026-11-10"
     },
     {
-      "id": "src-flex-language",
-      "title": "AI-assisted learning platform helps robots reason beyond literal commands",
-      "url": "https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109",
-      "domain": "news.mit.edu",
-      "organization": "Massachusetts Institute of Technology; New York University",
-      "published_at": "2026-11-09"
+      "id": "bologna-cable-261114274",
+      "title": "From Prediction to Action: Learning Physical Context for Deformable Linear Object Manipulation",
+      "url": "https://arxiv.org/abs/2611.14274",
+      "domain": "arxiv.org",
+      "organization": "University of Bologna",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "spacedata-hachioji-20261112",
+      "title": "スペースデータ、八王子ジャンクションを舞台に人とロボットが働くクレーン作業シミュレーションを開発",
+      "url": "https://prtimes.jp/main/html/rd/p/000000275.000080352.html",
+      "domain": "prtimes.jp",
+      "organization": "Space Data",
+      "published_at": "2026-11-12"
     }
   ]
 }
