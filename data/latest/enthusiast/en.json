@@ -2,150 +2,150 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-12",
-  "issue_id": "daily-2026-11-12",
+  "issue_date": "2026-11-13",
+  "issue_id": "daily-2026-11-13",
   "edition": "enthusiast",
   "language": "en",
-  "generated_at": "2026-11-11T20:50:02.945953Z",
-  "title": "What a robot computes before it moves",
-  "lead": "Researchers are exploring which parts of a future scene a robot needs to predict in detail and how recordings of human grasps can train a robotic hand. This edition also examines a virtual warehouse and a ground prototype of a robot intended for space.",
+  "generated_at": "2026-11-12T20:46:06.640875Z",
+  "title": "What the robot camera actually saw",
+  "lead": "A Danish experiment substantially dimmed a room, but the robot images changed much less. The study shows why a light-meter reading and camera data need separate examination.",
   "news": [
     {
-      "id": "elastic-world",
-      "title": "A robot chooses which parts of its predicted future need more work",
-      "summary": "Researchers from the National University of Singapore and RoboScience proposed Elastic-WAM for control using predicted images. Its tea-preparation test improved under nominal conditions, but changing the cup left full-task success level with the comparison method.",
-      "details": "A team from the National University of Singapore and RoboScience described Elastic-WAM, which allocates computation when robot control uses predicted future images. Instead of applying an identical refinement budget to every scene, it decides when to stop and which future-image regions to update. The prediction supports action selection rather than producing an attractive video. The base model stays frozen during subsequent learning of this allocation. The preprint appeared on November 10, with simulated benchmarks and a separate physical tea-preparation evaluation.",
-      "technical_novelty": "A team from the National University of Singapore and RoboScience described Elastic-WAM, which allocates computation when robot control uses predicted future images. Instead of applying an identical refinement budget to every scene, it decides when to stop and which future-image regions to update. The prediction supports action selection rather than producing an attractive video. The base model stays frozen during subsequent learning of this allocation. The preprint appeared on November 10, with simulated benchmarks and a separate physical tea-preparation evaluation.",
-      "engineering_impact": "The replacement cup provides a concrete boundary. Both compared systems completed 30% of whole attempts, although the new one passed more intermediate stages. Asking whether performance improved therefore needs a choice of measure: a completely prepared tea sequence or partial completion. This study reports both rather than treating them as interchangeable successes.",
-      "limitations": "Twenty physical trials per condition; cup replacement leaves both compared methods at 30% full success. The 32.2% latency reduction belongs to a separate simulated benchmark.",
-      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
-      "published_at": "2026-11-10",
-      "organization": "National University of Singapore; RoboScience",
-      "source_ids": [
-        "src-elastic-world"
-      ],
-      "time_window": "72h",
-      "body": "A future scene can be predicted with different amounts of computation. Continuing to refine one region may be wasteful if that refinement no longer changes the movement needed. The researchers teach a system to distribute this work according to the situation. This is a computational procedure, not human imagination: it updates representations of future images to select an action.\n\nA team from the National University of Singapore and RoboScience described Elastic-WAM, which allocates computation when robot control uses predicted future images. Instead of applying an identical refinement budget to every scene, it decides when to stop and which future-image regions to update. The prediction supports action selection rather than producing an attractive video. The base model stays frozen during subsequent learning of this allocation. The preprint appeared on November 10, with simulated benchmarks and a separate physical tea-preparation evaluation.\n\nThe physical experiment used two xArm 7 arms, four successive stages and 20 attempts per method in each condition. Under nominal conditions, the whole task succeeded in 50% of attempts versus 30% for the comparison method Joint-WAM. Replacing the cup reduced both to 30%, although the new system completed more individual stages. Separately, the authors report 32.2% lower inference latency than Joint-WAM on the simulated RoboCasa-GR1 benchmark. That figure is not a reduction in real tea-preparation time or a promise for every robot operation. The physical task used 200 demonstrations; the paper does not provide independent replication.\n\nThe replacement cup provides a concrete boundary. Both compared systems completed 30% of whole attempts, although the new one passed more intermediate stages. Asking whether performance improved therefore needs a choice of measure: a completely prepared tea sequence or partial completion. This study reports both rather than treating them as interchangeable successes.",
-      "image": null
-    },
-    {
-      "id": "dexseed-data",
-      "title": "Human grasp recordings become lessons for a robot hand",
-      "summary": "The University of Hong Kong, Robbyant and Zhejiang University described DexSeed, turning human examples into many checked virtual movements. A physical arm then attempted object handling from language instructions.",
-      "details": "Researchers from the University of Hong Kong, Robbyant and Zhejiang University introduced DexSeed, a way to generate robot demonstrations from recorded human grasps. They group source interactions by how fingers hold an object, then adapt them to the robot hand and different object geometries. In physics simulation, the arm follows prepared trajectories while a learned finger controller maintains contact. Successful actions are recorded with images and language descriptions of the grasp. These data fine-tune a model that selects movements from the scene and an instruction.",
-      "technical_novelty": "Researchers from the University of Hong Kong, Robbyant and Zhejiang University introduced DexSeed, a way to generate robot demonstrations from recorded human grasps. They group source interactions by how fingers hold an object, then adapt them to the robot hand and different object geometries. In physics simulation, the arm follows prepared trajectories while a learned finger controller maintains contact. Successful actions are recorded with images and language descriptions of the grasp. These data fine-tune a model that selects movements from the scene and an instruction.",
-      "engineering_impact": "The lowest success rate belongs to precise handle interaction rather than to all objects equally. The word grasp covers different mechanical requirements. Lifting, maintaining contact and threading fingers into the right place demand different movements. The total size of a training dataset does not tell us which requirement has been learned most reliably.",
-      "limitations": "Physical tests use one object and ten attempts per grasp mode. In-hand manipulation, two-arm work and tactile inputs remain future directions.",
-      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
-      "published_at": "2026-11-10",
-      "organization": "The University of Hong Kong; Robbyant; Zhejiang University",
-      "source_ids": [
-        "src-dexseed-data"
-      ],
-      "time_window": "72h",
-      "body": "Human and robot fingers are built differently. Copying coordinates from a recording is therefore not enough: the contact relationship matters, including which finger surface holds which part of an object. The researchers adapt each example and test its execution in a computer world. Selected successes become training material linking images, instructions and movements instead of merely reproducing a human hand's shape.\n\nResearchers from the University of Hong Kong, Robbyant and Zhejiang University introduced DexSeed, a way to generate robot demonstrations from recorded human grasps. They group source interactions by how fingers hold an object, then adapt them to the robot hand and different object geometries. In physics simulation, the arm follows prepared trajectories while a learned finger controller maintains contact. Successful actions are recorded with images and language descriptions of the grasp. These data fine-tune a model that selects movements from the scene and an instruction.\n\nThe November 10 preprint uses 19 human sequences covering eight grasp modes to produce 25,270 robot trajectories, or sequences of movements, verified in simulation. Physical evaluation uses a Franka arm with a multifinger Wuji hand: one object for each mode and ten attempts per object. Success requires grasping, lifting and placing the object inside a target region. Rates vary from 20% to 80% across modes; precise finger alignment with a handle is particularly difficult. Moving objects within the hand, coordinated two-arm manipulation and tactile inputs remain future directions. The result does not establish general dexterity across arbitrary objects.\n\nThe lowest success rate belongs to precise handle interaction rather than to all objects equally. The word grasp covers different mechanical requirements. Lifting, maintaining contact and threading fingers into the right place demand different movements. The total size of a training dataset does not tell us which requirement has been learned most reliably.",
-      "image": null
-    },
-    {
-      "id": "robotbrain-catalog",
-      "title": "A virtual warehouse lets equipment be placed on screen first",
-      "summary": "Space Data added 118 equipment and accessory models to RobotBrain. Four types support operation as well as placement, with assumed masses and speeds in the demonstration.",
-      "details": "Japan's Space Data added an equipment catalogue to RobotBrain on November 11. This browser environment supports robot deployment planning and operation. Users place virtual objects in a warehouse reconstructed from a 360-degree camera recording. The catalogue combines 94 prepared equipment and accessory models with 24 models made by the company, for 118 in total. Items can be selected and placed on floors or benches without installing a separate application. Before placement, the interface indicates overlap with other objects. It supports layout discussions and staff practice without physically moving real storage racks.",
-      "technical_novelty": "Japan's Space Data added an equipment catalogue to RobotBrain on November 11. This browser environment supports robot deployment planning and operation. Users place virtual objects in a warehouse reconstructed from a 360-degree camera recording. The catalogue combines 94 prepared equipment and accessory models with 24 models made by the company, for 118 in total. Items can be selected and placed on floors or benches without installing a separate application. Before placement, the interface indicates overlap with other objects. It supports layout discussions and staff practice without physically moving real storage racks.",
-      "engineering_impact": "An important source note says the illustrated warehouse was altered to prevent identification, while equipment parameters are assumptions. That can demonstrate the environment's functions, but limits conclusions about an individual business. The scene is an example of the tool in use, rather than a published calculation of a selected warehouse line using measured site data.",
-      "limitations": "Four types are operable among 118 models; demonstration masses and speeds are assumptions, not specifications for customer equipment.",
+      "id": "ntt-action-preview",
+      "title": "A robot compares outcomes before placing an object",
+      "summary": "NTT developed software to predict the results of several possible robot actions. Advance screening improved shelf-stacking success in a small experiment, while airport validation remains ahead.",
+      "details": "On November 11, NTT presented a world model: software that predicts how a robot's surroundings will change after an action. It takes several candidate actions from a controller, generates an outcome for each and evaluates the risk of objects falling or a stack collapsing. NTT's physical-control adapter is incorporated into a video-generation model. It estimates object position, orientation, speed and mass from images, then uses equations of motion. This calculation is intended to constrain prediction errors such as objects disappearing during collisions. The description comes from the developer; it is not independent validation of the inferred mass or other properties.",
+      "technical_novelty": "On November 11, NTT presented a world model: software that predicts how a robot's surroundings will change after an action. It takes several candidate actions from a controller, generates an outcome for each and evaluates the risk of objects falling or a stack collapsing. NTT's physical-control adapter is incorporated into a video-generation model. It estimates object position, orientation, speed and mass from images, then uses equations of motion. This calculation is intended to constrain prediction errors such as objects disappearing during collisions. The description comes from the developer; it is not independent validation of the inferred mass or other properties.",
+      "engineering_impact": "An interesting feature is the attempt to combine a video prediction with explicit physical properties of objects. A convincing-looking video is insufficient by itself; the actual stacking outcome matters. The reported gain currently belongs to the small test rig, while the varied shapes and weights of real baggage remain part of future evaluation.",
+      "limitations": "NTT reports a small shelf-stacking experiment. Operation with varied baggage at an active airport is not established, and numerical action-screening latency is not provided.",
       "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
       "published_at": "2026-11-11",
+      "organization": "NTT",
+      "source_ids": [
+        "ntt-world-20261111"
+      ],
+      "time_window": "72h",
+      "body": "An arm can deliver a box accurately and still knock down the objects beside it. Predicting the arm’s route is therefore different from predicting what happens to the surrounding stack. NTT proposes comparing several possible outcomes before acting. The robot does not know the future: software builds predictions from available observations and a set of computational assumptions.\n\nOn November 11, NTT presented a world model: software that predicts how a robot's surroundings will change after an action. It takes several candidate actions from a controller, generates an outcome for each and evaluates the risk of objects falling or a stack collapsing. NTT's physical-control adapter is incorporated into a video-generation model. It estimates object position, orientation, speed and mass from images, then uses equations of motion. This calculation is intended to constrain prediction errors such as objects disappearing during collisions. The description comes from the developer; it is not independent validation of the inferred mass or other properties.\n\nNTT tested the approach with a small robot performing a shelf-stacking task intended to imitate cargo stacking. Reported success increased from 73.1% without the technology to 92.3% with it. Those figures describe the company's test rig, not baggage handling at an operating airport. A separate evaluation compared predicted and reference videos in scenes containing collisions between multiple objects. Airport baggage is the first intended application, with field demonstrations involving Mujin still ahead. NTT also plans to exhibit the research on November 18–25. The announcement therefore contains an experimental result and a deployment plan at different stages of maturity.\n\nAn interesting feature is the attempt to combine a video prediction with explicit physical properties of objects. A convincing-looking video is insufficient by itself; the actual stacking outcome matters. The reported gain currently belongs to the small test rig, while the varied shapes and weights of real baggage remain part of future evaluation.",
+      "image": null
+    },
+    {
+      "id": "atlas-wheel-test",
+      "title": "Why put wheels on a humanoid robot?",
+      "summary": "Boston Dynamics fitted Atlas with wheels to load its actuators in an unusual way. This is a research modification for control testing, rather than a new production vehicle.",
+      "details": "Boston Dynamics described its wheeled Atlas experiment on November 9. Controls engineer Andy Wu stresses that the humanoid with its feet replaced by wheels is a research testbed, not a new commercial configuration. An off-the-shelf scooter rim is attached to the existing ankle actuator through a custom adapter. In the computer model, the corresponding joint can rotate continuously. Accelerating, turning and braking require the motors to deliver speed and torque together under load. Torque is the turning effort produced by a drive. The team wanted those demanding operating conditions to test both the actuators and their mathematical models.",
+      "technical_novelty": "Boston Dynamics described its wheeled Atlas experiment on November 9. Controls engineer Andy Wu stresses that the humanoid with its feet replaced by wheels is a research testbed, not a new commercial configuration. An off-the-shelf scooter rim is attached to the existing ankle actuator through a custom adapter. In the computer model, the corresponding joint can rotate continuously. Accelerating, turning and braking require the motors to deliver speed and torque together under load. Torque is the turning effort produced by a drive. The team wanted those demanding operating conditions to test both the actuators and their mathematical models.",
+      "engineering_impact": "The sideways motion makes the adaptation visible: training found a way to roll where the human example slid its feet. The result depends on both the mechanism and its software model. The account does not say how many hours the wheeled Atlas can sustain these loads before servicing; an athletic demonstration does not measure service life.",
+      "limitations": "Boston Dynamics describes wheeled Atlas as a research testbed. It provides no service-life measurement under these loads and does not present drive-failure response as an already validated capability.",
+      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "published_at": "2026-11-09",
+      "organization": "Boston Dynamics",
+      "source_ids": [
+        "bd-roll-20261109"
+      ],
+      "time_window": "7d",
+      "body": "The wheels look like the invention, but here they are an experimental tool. The engineer wanted motors to work quickly and forcefully for sustained periods. That creates a way to examine what sits behind an impressive movement: how closely the computer’s description of a motor matches what the real device can deliver while carrying a load.\n\nBoston Dynamics described its wheeled Atlas experiment on November 9. Controls engineer Andy Wu stresses that the humanoid with its feet replaced by wheels is a research testbed, not a new commercial configuration. An off-the-shelf scooter rim is attached to the existing ankle actuator through a custom adapter. In the computer model, the corresponding joint can rotate continuously. Accelerating, turning and braking require the motors to deliver speed and torque together under load. Torque is the turning effort produced by a drive. The team wanted those demanding operating conditions to test both the actuators and their mathematical models.\n\nWhole-body control was trained using reinforcement learning: software tries movements in simulation and receives numerical rewards for the resulting behavior. To make the learned movements feasible on hardware, the team characterized the real actuators, tuned the simulated motor model and checked that low-level control settings agreed across software setups. Some behaviors followed human motion recordings. A full-turn jump tracked one such recording, while a sideways dash used wheel rolling where a person would slide their feet. The account demonstrates behavior transferred to hardware, but supplies no comparative endurance protocol or quantified failure-rate evaluation.\n\nThe sideways motion makes the adaptation visible: training found a way to roll where the human example slid its feet. The result depends on both the mechanism and its software model. The account does not say how many hours the wheeled Atlas can sustain these loads before servicing; an athletic demonstration does not measure service life.",
+      "image": null
+    },
+    {
+      "id": "camera-lighting",
+      "title": "The room grew dim, but the robot images barely changed",
+      "summary": "A fysical.ai researcher reduced light at a robot’s workspace roughly elevenfold. The cameras largely preserved frame brightness, changing how a comparison of four controllers should be interpreted.",
+      "details": "Simon Cowling of Denmark-based fysical.ai posted a preliminary research paper on November 10 about testing robot control under different lighting conditions. Four controllers were trained on the same 50 demonstrations: an SO-101 arm had to place a green ball in a basket while ignoring two red balls. Each controller was tested at ten ball placements in normal and dimmed conditions. Workspace illuminance fell from about 520 to 45 lux, an 11.5-fold reduction. The main comparison contained 80 attempts. Success totaled 20 out of 40 attempts in normal light and 19 out of 40 in low light.",
+      "technical_novelty": "Simon Cowling of Denmark-based fysical.ai posted a preliminary research paper on November 10 about testing robot control under different lighting conditions. Four controllers were trained on the same 50 demonstrations: an SO-101 arm had to place a green ball in a basket while ignoring two red balls. Each controller was tested at ten ball placements in normal and dimmed conditions. Workspace illuminance fell from about 520 to 45 lux, an 11.5-fold reduction. The main comparison contained 80 attempts. Success totaled 20 out of 40 attempts in normal light and 19 out of 40 in low light.",
+      "engineering_impact": "The author recommends examining recordings and camera settings alongside illuminance. Importantly, automatic compensation is inferred here, rather than established through a separate exposure-mode comparison. The supported observation is narrower: on this rig, a large change in room light became a much smaller change in the recorded image supplied for evaluation.",
+      "limitations": "Simon Cowling tested one rig and one task. Exposure was not locked, settings were read afterward and there was no automatic-exposure-off comparison; day and controller-order effects were not isolated either.",
+      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-10",
+      "organization": "fysical.ai",
+      "source_ids": [
+        "cowling-light-261113810"
+      ],
+      "time_window": "72h",
+      "body": "Switching off a room light and darkening a photograph are different interventions. A camera can adjust its light collection and keep the recorded frame relatively bright. This familiar photographic behavior mattered in the robot experiment: the controller did not observe the room directly, but received an image after the camera had responded to the conditions.\n\nSimon Cowling of Denmark-based fysical.ai posted a preliminary research paper on November 10 about testing robot control under different lighting conditions. Four controllers were trained on the same 50 demonstrations: an SO-101 arm had to place a green ball in a basket while ignoring two red balls. Each controller was tested at ten ball placements in normal and dimmed conditions. Workspace illuminance fell from about 520 to 45 lux, an 11.5-fold reduction. The main comparison contained 80 attempts. Success totaled 20 out of 40 attempts in normal light and 19 out of 40 in low light.\n\nYet average recorded image brightness fell by only 3% for the front camera and 19% for the wrist camera. After the experiments, the author found automatic exposure enabled: the camera adjusts how it gathers light. This probably compensated for much of the dimming, although its causal role was not tested separately. The results therefore do not establish that the controllers withstand genuinely dark images. The study used one rig and one task, with manually placed balls and a single unblinded scorer. Small trial counts leave substantial uncertainty: the confidence interval for the pooled success change runs from a 23-percentage-point decrease to a 19-point increase.\n\nThe author recommends examining recordings and camera settings alongside illuminance. Importantly, automatic compensation is inferred here, rather than established through a separate exposure-mode comparison. The supported observation is narrower: on this rig, a large change in room light became a much smaller change in the recorded image supplied for evaluation.",
+      "image": null
+    },
+    {
+      "id": "cable-action-context",
+      "title": "Predicting a cable is different from choosing how to move it",
+      "summary": "Bologna researchers compared ways to describe a flexible cable while controlling its shape. Better deformation prediction and better movement selection turned out to be different objectives.",
+      "details": "University of Bologna researchers posted preliminary work on November 10 on shaping a flexible cable on a plane. Their Geometry–Pointer–Flow method first chooses a segment to grasp, then generates its translation and rotation. The team compared information about cable stiffness and surface friction with a different representation: a learned record of up to five previous actions and the shape changes they produced. Each representation was evaluated separately for predicting the next shape and selecting an action. In simulation, estimated physical parameters improved prediction, but produced no detectable control improvement over a version using geometry alone.",
+      "technical_novelty": "University of Bologna researchers posted preliminary work on November 10 on shaping a flexible cable on a plane. Their Geometry–Pointer–Flow method first chooses a segment to grasp, then generates its translation and rotation. The team compared information about cable stiffness and surface friction with a different representation: a learned record of up to five previous actions and the shape changes they produced. Each representation was evaluated separately for predicting the next shape and selecting an action. In simulation, estimated physical parameters improved prediction, but produced no detectable control improvement over a version using geometry alone.",
+      "engineering_impact": "The distinction must be checked after execution: an accurate forecast does not itself bring a cable closer to its goal. The study is limited to a plane and several compliance levels. On the physical table, a person reset the cable, preventing perfectly identical initial shapes for each controller in the comparison.",
+      "limitations": "The Bologna study tests planar cable shaping with one grasp per action. Manual reset prevents identical starting shapes; the exact content of the learned history representation is not established, and code is promised after acceptance.",
+      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
+      "published_at": "2026-11-10",
+      "organization": "University of Bologna",
+      "source_ids": [
+        "bologna-cable-261114274"
+      ],
+      "time_window": "72h",
+      "body": "Two similar-looking cables can react differently to the same hand movement: one bends more readily, another grips the tabletop more strongly. A controller can estimate those properties or use a record of what happened after previous movements. The researchers compared both approaches, asking separately whether they helped predict the next shape and select an action toward a target.\n\nUniversity of Bologna researchers posted preliminary work on November 10 on shaping a flexible cable on a plane. Their Geometry–Pointer–Flow method first chooses a segment to grasp, then generates its translation and rotation. The team compared information about cable stiffness and surface friction with a different representation: a learned record of up to five previous actions and the shape changes they produced. Each representation was evaluated separately for predicting the next shape and selecting an action. In simulation, estimated physical parameters improved prediction, but produced no detectable control improvement over a version using geometry alone.\n\nThe interaction-history version reduced executed one-step shape error by 9.9% across 470 paired simulation trials. Hardware tests covered three cable compliance levels and two support surfaces. Controllers were trained only in simulation, without real-world training or fine-tuning. Within ten actions, the history-based version reached a mean shape error of at most 10 mm in 88.3% of trials, compared with 76.7% for geometry alone. Each controller completed 60 such rollouts. Error means the average distance between corresponding cable and target points, not the largest deviation. Manual resetting prevented exactly identical starting configurations across controllers.\n\nThe distinction must be checked after execution: an accurate forecast does not itself bring a cable closer to its goal. The study is limited to a plane and several compliance levels. On the physical table, a person reset the cable, preventing perfectly identical initial shapes for each controller in the comparison.",
+      "image": null
+    },
+    {
+      "id": "hachioji-crane-sim",
+      "title": "A virtual construction yard gains people and robots",
+      "summary": "Space Data simulated people, robots and vehicles in a hypothetical yard at Hachioji Junction. The scene demonstrates waiting and movement rules, rather than an operating robotic construction site.",
+      "details": "On November 12, Space Data presented a new scene for RobotBrain, its environment for evaluating robots before deployment. A hypothetical construction yard occupies digitally recreated terrain around Hachioji Junction in Japan. It contains four cranes, six construction vehicles, ten workers and fourteen robots. Ten robots are bipedal and four transport materials. These are simulated participants, not a workforce already operating at the junction. Users can change participant counts and roles to study shared movement in a confined yard. Compared with the company's first crane example, the stated addition is people and robots carrying out different assigned tasks.",
+      "technical_novelty": "On November 12, Space Data presented a new scene for RobotBrain, its environment for evaluating robots before deployment. A hypothetical construction yard occupies digitally recreated terrain around Hachioji Junction in Japan. It contains four cranes, six construction vehicles, ten workers and fourteen robots. Ten robots are bipedal and four transport materials. These are simulated participants, not a workforce already operating at the junction. Users can change participant counts and roles to study shared movement in a confined yard. Compared with the company's first crane example, the stated addition is people and robots carrying out different assigned tasks.",
+      "engineering_impact": "Changing participant numbers and tasks before entering a physical site is the scene’s intended value. Its limits depend on the assumptions used to build it. The developer warns that some equipment properties are estimated, so a simulated robot stopping for a vehicle is not evidence that a real machine would react with the same safety.",
+      "limitations": "Space Data shows a hypothetical yard, not physical construction trials. Equipment models are unofficial and include estimated parameters; safe simulated movement does not validate a real robot’s safety.",
+      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "published_at": "2026-11-12",
       "organization": "Space Data",
       "source_ids": [
-        "src-robotbrain-catalog"
+        "spacedata-hachioji-20261112"
       ],
       "time_window": "24h",
-      "body": "A warehouse plan shows where a rack stands, but imagining a loaded truck passing beside it is harder. A virtual scene lets users position objects and try supported movements. Static models and equipment with moving parts nevertheless provide different information. Access through a convenient browser does not by itself turn the calculation into a precise replica of a real warehouse.\n\nJapan's Space Data added an equipment catalogue to RobotBrain on November 11. This browser environment supports robot deployment planning and operation. Users place virtual objects in a warehouse reconstructed from a 360-degree camera recording. The catalogue combines 94 prepared equipment and accessory models with 24 models made by the company, for 118 in total. Items can be selected and placed on floors or benches without installing a separate application. Before placement, the interface indicates overlap with other objects. It supports layout discussions and staff practice without physically moving real storage racks.\n\nFour types currently support operation and load interaction: an electric stacker, a hand pallet truck, an angled roller conveyor and a plastic pallet. The simulated stacker's forks reach 1.2 metres; the hand truck uses a 700-newton force limit; newtons measure force rather than load mass. The company explicitly says masses and speeds in the illustrated scenes are assumed values, not specifications for particular equipment or customer sites. These numbers therefore define the demonstration, rather than the customer's permissible load. Making all catalogue objects operable remains a future plan, not a feature already available across all 118 models.\n\nAn important source note says the illustrated warehouse was altered to prevent identification, while equipment parameters are assumptions. That can demonstrate the environment's functions, but limits conclusions about an individual business. The scene is an example of the tool in use, rather than a published calculation of a selected warehouse line using measured site data.",
-      "image": null
-    },
-    {
-      "id": "spaceentry-ground",
-      "title": "A cat's turn suggests an idea for a space robot",
-      "summary": "Japan's Space Entry showed a ground humanoid model intended to reorient through body movements. This is a terrestrial test stage; an orbital demonstration is targeted for fiscal 2030.",
-      "details": "Space Entry announced completion of a ground-test model for a space humanoid on November 10. The company is exhibiting the robot and its test apparatus at a space-engineering conference in Utsunomiya on November 10–13. It studies reorientation using the robot's own arms and legs. The idea is compared with a falling cat's turn: changing the relative configuration of body parts can alter orientation without consuming propellant. This announcement concerns a terrestrial model and motion demonstration, not a machine already operating in orbit.",
-      "technical_novelty": "Space Entry announced completion of a ground-test model for a space humanoid on November 10. The company is exhibiting the robot and its test apparatus at a space-engineering conference in Utsunomiya on November 10–13. It studies reorientation using the robot's own arms and legs. The idea is compared with a falling cat's turn: changing the relative configuration of body parts can alter orientation without consuming propellant. This announcement concerns a terrestrial model and motion demonstration, not a machine already operating in orbit.",
-      "engineering_impact": "Avoiding gas consumption does not make a turn free. Joints need to move and their actuators need energy. The announcement marks progress toward a ground experiment, without comparing a measured turning cost against thruster control. Service lifetime and the accuracy of a future orbital machine also remain without reported numerical results.",
-      "limitations": "Ground model; orientation accuracy and lifetime are unpublished. The fiscal-2030 orbital demonstration is a target, not a completed experiment.",
-      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
-      "published_at": "2026-11-10",
-      "organization": "Space Entry",
-      "source_ids": [
-        "src-spaceentry-ground"
-      ],
-      "time_window": "72h",
-      "body": "A cat can turn in the air by changing the arrangement of its body parts. Researchers apply a related physical principle to a robot that turns without expelling gas. That does not mean an animal supplied a finished space-machine design. A mechanism, suitable movements and a way to test them on Earth still have to be developed under conditions different from flight.\n\nSpace Entry announced completion of a ground-test model for a space humanoid on November 10. The company is exhibiting the robot and its test apparatus at a space-engineering conference in Utsunomiya on November 10–13. It studies reorientation using the robot's own arms and legs. The idea is compared with a falling cat's turn: changing the relative configuration of body parts can alter orientation without consuming propellant. This announcement concerns a terrestrial model and motion demonstration, not a machine already operating in orbit.\n\nThe developer connects the project with attitude-control research by Yuki Kubo at Kobe University. It is also developing remote operation that accommodates communication delays between Earth and space, although this exhibition chiefly addresses reorientation tests. An orbital demonstration on the International Space Station is targeted for fiscal 2030. The announcement supplies no measured turn accuracy, service lifetime or demonstrated fuel saving. Avoiding propellant expenditure for reorientation does not mean the robot needs no electrical power: its joints still require actuation.\n\nAvoiding gas consumption does not make a turn free. Joints need to move and their actuators need energy. The announcement marks progress toward a ground experiment, without comparing a measured turning cost against thruster control. Service lifetime and the accuracy of a future orbital machine also remain without reported numerical results.",
-      "image": null
-    },
-    {
-      "id": "flex-language",
-      "title": "A request not to spill coffee changes a virtual robot's route",
-      "summary": "Massachusetts Institute of Technology and New York University presented a way to revise paths from conversational commands. The system extends a laptop-related request to other electronics, but the study uses virtual scenes.",
-      "details": "Massachusetts Institute of Technology described FLEX, developed with New York University, on November 9. It changes a robot's planned path using conversational instructions. In simulation, a person types a request not to spill coffee on a laptop. The system adds that constraint, then uses a language model, a program trained on large text collections, to extend the preference to other electronics such as a phone. Computer vision checks which objects remain present and removes absent ones from the feature list. The three stages take about five seconds; that is not the duration of the entire robot task.",
-      "technical_novelty": "Massachusetts Institute of Technology described FLEX, developed with New York University, on November 9. It changes a robot's planned path using conversational instructions. In simulation, a person types a request not to spill coffee on a laptop. The system adds that constraint, then uses a language model, a program trained on large text collections, to extend the preference to other electronics such as a phone. Computer vision checks which objects remain present and removes absent ones from the feature list. The three stages take about five seconds; that is not the duration of the entire robot task.",
-      "engineering_impact": "The third step, removing absent objects, matters alongside generalisation. Rooms change, and a rule about something already removed should not influence the path indefinitely. Yet similar objects do not always matter equally to a person. The demonstrated examples do not establish that the system will correctly infer every personal reason behind a prohibition.",
-      "limitations": "Three virtual scenarios, without a physical household trial or guaranteed correct generalisation. Roughly five seconds concerns feature processing.",
-      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
-      "published_at": "2026-11-09",
-      "organization": "Massachusetts Institute of Technology; New York University",
-      "source_ids": [
-        "src-flex-language"
-      ],
-      "time_window": "72h",
-      "body": "People rarely list every object they care about. A request to protect a laptop may also imply the phone lying beside it. The researchers try to extract that relationship from language rather than asking a person to describe the whole table again. For the robot, it becomes an edit to the objects and properties considered during path selection.\n\nMassachusetts Institute of Technology described FLEX, developed with New York University, on November 9. It changes a robot's planned path using conversational instructions. In simulation, a person types a request not to spill coffee on a laptop. The system adds that constraint, then uses a language model, a program trained on large text collections, to extend the preference to other electronics such as a phone. Computer vision checks which objects remain present and removes absent ones from the feature list. The three stages take about five seconds; that is not the duration of the entire robot task.\n\nThe team tested three virtual situations: carrying coffee, a candle and a bowling ball. The system inferred broader preferences to avoid electronics, flammable objects and fragile items respectively. It changes features used in path planning, rather than demonstrating human understanding of intentions. The announcement discusses research ahead of its conference presentation; the underlying work was already available and should not receive a new original-publication date from this news item. Physical tests in users' homes and error-free generalisation are not established in the report. An overly broad rule can also change a path in an unwanted way.\n\nThe third step, removing absent objects, matters alongside generalisation. Rooms change, and a rule about something already removed should not influence the path indefinitely. Yet similar objects do not always matter equally to a person. The demonstrated examples do not establish that the system will correctly infer every personal reason behind a prohibition.",
+      "body": "A crane can lift correctly while the surrounding yard remains awkward to use because routes are blocked. To explore shared movement, a new computer scene adds workers and several robot types. Its terrain comes from a real Japanese location, but the work inside the yard is hypothetical; the announcement is not a construction plan for that place.\n\nOn November 12, Space Data presented a new scene for RobotBrain, its environment for evaluating robots before deployment. A hypothetical construction yard occupies digitally recreated terrain around Hachioji Junction in Japan. It contains four cranes, six construction vehicles, ten workers and fourteen robots. Ten robots are bipedal and four transport materials. These are simulated participants, not a workforce already operating at the junction. Users can change participant counts and roles to study shared movement in a confined yard. Compared with the company's first crane example, the stated addition is people and robots carrying out different assigned tasks.\n\nAccording to the developer, a simulated robot anticipates a vehicle's position 2.5 seconds ahead and waits for it to pass. Robots avoid suspended loads, while vehicles stop in front of people. The system calculates load weight, cable tension and load swing. For a 40-meter cable, the reported oscillation period is 12.87 seconds, compared with 12.69 seconds from a pendulum formula. That comparison checks one physical behavior; it does not establish safety for the entire yard. Space Data explicitly says the construction scenario is hypothetical, equipment models are not official manufacturer models and some unpublished parameters are estimates.\n\nChanging participant numbers and tasks before entering a physical site is the scene’s intended value. Its limits depend on the assumptions used to build it. The developer warns that some equipment properties are estimated, so a simulated robot stopping for a vehicle is not evidence that a real machine would react with the same safety.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "What a robot computes before it moves",
-    "summary": "Researchers are exploring which parts of a future scene a robot needs to predict in detail and how recordings of human grasps can train a robotic hand. This edition also examines a virtual warehouse and a ground prototype of a robot intended for space.",
-    "implications": "In the tea-making experiment, replacing the cup changed the outcome: better performance on individual stages did not increase the number of fully completed attempts. The grasping tests and the space-robot demonstration measure different capabilities under different conditions."
+    "title": "What the robot camera actually saw",
+    "summary": "A Danish experiment substantially dimmed a room, but the robot images changed much less. The study shows why a light-meter reading and camera data need separate examination.",
+    "implications": "The cameras used automatic exposure, which probably compensated for much of the dimming. Similar controller success under those conditions does not show equal performance on genuinely dark images."
   },
   "sources": [
     {
-      "id": "src-elastic-world",
-      "title": "Elastic-WAM: Adaptive Spatiotemporal Imagination for Efficient Robot Control",
-      "url": "https://arxiv.org/abs/2611.14257",
-      "domain": "arxiv.org",
-      "organization": "National University of Singapore; RoboScience",
-      "published_at": "2026-11-10"
-    },
-    {
-      "id": "src-dexseed-data",
-      "title": "DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning",
-      "url": "https://arxiv.org/abs/2611.14092",
-      "domain": "arxiv.org",
-      "organization": "The University of Hong Kong; Robbyant; Zhejiang University",
-      "published_at": "2026-11-10"
-    },
-    {
-      "id": "src-robotbrain-catalog",
-      "title": "スペースデータ、RobotBrainにマテハン機器94種を倉庫で置いて試せる機能を追加",
-      "url": "https://prtimes.jp/main/html/rd/p/000000270.000080352.html",
-      "domain": "prtimes.jp",
-      "organization": "Space Data",
+      "id": "ntt-world-20261111",
+      "title": "ロボットが「動く前に未来を予測」、失敗を回避するフィジカルAI技術を開発",
+      "url": "https://group.ntt/jp/newsrelease/2026/11/11/261111b.html",
+      "domain": "group.ntt",
+      "organization": "NTT",
       "published_at": "2026-11-11"
     },
     {
-      "id": "src-spaceentry-ground",
-      "title": "スペースエントリ―「猫の着地」に学ぶ宇宙用人型ロボット地上試験モデル完成！動作検証を開始～第70回宇宙科学技術連合講演会にて実機展示と動作デモを実施～",
-      "url": "https://prtimes.jp/main/html/rd/p/000000018.000157421.html",
-      "domain": "prtimes.jp",
-      "organization": "Space Entry",
+      "id": "bd-roll-20261109",
+      "title": "Atlas On a Roll: Bridging Classical Motor Controls and Whole-Body RL",
+      "url": "https://bostondynamics.com/blog/atlas-on-a-roll/",
+      "domain": "bostondynamics.com",
+      "organization": "Boston Dynamics",
+      "published_at": "2026-11-09"
+    },
+    {
+      "id": "cowling-light-261113810",
+      "title": "Camera equalisation of an 11.5x drop in environmental illuminance: four imitation-learning policies on an SO-101 arm",
+      "url": "https://arxiv.org/abs/2611.13810",
+      "domain": "arxiv.org",
+      "organization": "fysical.ai",
       "published_at": "2026-11-10"
     },
     {
-      "id": "src-flex-language",
-      "title": "AI-assisted learning platform helps robots reason beyond literal commands",
-      "url": "https://news.mit.edu/2026/ai-assisted-learning-platform-helps-robots-reason-beyond-literal-commands-1109",
-      "domain": "news.mit.edu",
-      "organization": "Massachusetts Institute of Technology; New York University",
-      "published_at": "2026-11-09"
+      "id": "bologna-cable-261114274",
+      "title": "From Prediction to Action: Learning Physical Context for Deformable Linear Object Manipulation",
+      "url": "https://arxiv.org/abs/2611.14274",
+      "domain": "arxiv.org",
+      "organization": "University of Bologna",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "spacedata-hachioji-20261112",
+      "title": "スペースデータ、八王子ジャンクションを舞台に人とロボットが働くクレーン作業シミュレーションを開発",
+      "url": "https://prtimes.jp/main/html/rd/p/000000275.000080352.html",
+      "domain": "prtimes.jp",
+      "organization": "Space Data",
+      "published_at": "2026-11-12"
     }
   ]
 }
