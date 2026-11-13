@@ -1,0 +1,616 @@
+{
+  "schema_version": "1.0",
+  "id": "imitation-learning",
+  "category": "foundations",
+  "technology_type": "method",
+  "title": {
+    "ru": "Обучение по демонстрациям",
+    "en": "Imitation learning and behavior cloning",
+    "ja": "模倣学習と行動クローニング"
+  },
+  "short_description": {
+    "ru": "Что робот может перенять из примеров и почему ошибки накапливаются.",
+    "en": "What a robot can learn from demonstrations, and why errors compound.",
+    "ja": "実演から何を学べるか、なぜ小さな誤差が重なるのか。"
+  },
+  "related_technologies": [
+    {
+      "target": "reinforcement-learning",
+      "type": "alternative_to",
+      "explanation": {
+        "ru": "Выбор между экспертными примерами и наградой зависит от доступных данных; гибриды тоже возможны.",
+        "en": "Expert demonstrations and reward feedback offer different supervision; hybrids are possible.",
+        "ja": "実演と報酬では学習の手がかりが異なり、組み合わせも可能。"
+      }
+    }
+  ],
+  "prerequisites": [],
+  "term_refs": [
+    "imitation-learning",
+    "behavioral-cloning",
+    "teleoperation",
+    "demonstration-dataset"
+  ],
+  "sources": [
+    {
+      "id": "dagger",
+      "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+      "url": "https://arxiv.org/abs/1011.0686",
+      "kind": "paper",
+      "year": 2011
+    },
+    {
+      "id": "act-paper",
+      "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+      "url": "https://arxiv.org/abs/2304.13705",
+      "kind": "paper",
+      "year": 2023
+    }
+  ],
+  "last_reviewed": "2026-11-13",
+  "content_status": "ready",
+  "diagram": null,
+  "localizations": {
+    "en": {
+      "engineer": {
+        "title": "Imitation learning and behavior cloning",
+        "short_description": "What a robot can learn from demonstrations, and why errors compound.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Learning from demonstrated behavior",
+            "paragraphs": [
+              "Imitation learning uses expert behavior as supervision. Behavior cloning (BC) is a particular formulation: fit a policy that predicts the expert's action from an observation. Imitation learning is the broader family; interactive data aggregation and other formulations should not be treated as identical to supervised cloning."
+            ]
+          },
+          {
+            "id": "data",
+            "title": "The observation–action contract",
+            "paragraphs": [
+              "Record what the deployed policy can actually observe, aligned with the intended action convention. Images, joint positions, gripper states and timestamps must be consistent. The expert's privileged information may not be available at inference. A dataset collected with a different controller or action delay can teach a mapping that cannot be executed as recorded."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "What the objective fits",
+            "paragraphs": [
+              "For continuous actions, squared-error regression is a simple baseline; probabilistic models can optimize conditional likelihood. Neither objective by itself checks long-horizon task success. A mean prediction can be unsuitable when demonstrations contain distinct valid modes. Chunked, diffusion and flow policies are different ways to represent the conditional action distribution."
+            ]
+          },
+          {
+            "id": "deployment",
+            "title": "Covariate shift in the loop",
+            "paragraphs": [
+              "Training inputs come from expert trajectories, while deployed inputs depend on the learned policy's previous actions. Small errors can drive the robot into states missing from the demonstrations, after which action predictions deteriorate further. Low held-out action error on expert observations does not measure this compounding closed-loop failure."
+            ]
+          },
+          {
+            "id": "correction",
+            "title": "Data aggregation and recovery",
+            "paragraphs": [
+              "DAgger addresses this mismatch by collecting states visited by the learner and requesting expert actions there, then aggregating the data. Expert queries, intervention handling and safe rollout collection are real costs. Recovery demonstrations can also broaden coverage, but a dataset label saying recovery does not ensure that all relevant failure states have been covered."
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "A trained mapping still needs control",
+            "paragraphs": [
+              "At runtime, the policy may map observations to a single action or a sequence without reward computation. Its update rate must fit perception and control deadlines. The action may be a target for a classical controller. Calibration, contact constraints, command saturation and stopping behavior remain separate engineering responsibilities."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "An informative dataset split",
+            "paragraphs": [
+              "Separate sessions, objects and conditions rather than randomly mixing nearly identical adjacent frames. Evaluate full tasks, initial-condition variation, disturbances and interventions. Record where the robot leaves the supported data distribution. Compare methods on the same observation and action interfaces so a representation change is not mistaken for an algorithmic improvement."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "When demonstrations are an advantage",
+            "paragraphs": [
+              "Demonstrations are useful when an expert can show desired behavior more easily than a reward can describe it. They can initialize RL or train a complete policy for a bounded task. Their central limitation is coverage: examples of successful operation do not automatically explain failure recovery, unfamiliar objects or independent safety requirements."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Imitation learning and behavior cloning",
+        "short_description": "What a robot can learn from demonstrations, and why errors compound.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "Show the work instead of writing every rule",
+            "paragraphs": [
+              "Imitation learning can be practical when an experienced operator can demonstrate an operation that is difficult to program manually. Behavior cloning learns to predict the demonstrated actions. It does not establish that the robot can handle every condition outside those examples or understand the operator's broader intent."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "What data collection really involves",
+            "paragraphs": [
+              "Budget for an expert, a suitable interface, synchronized recordings and a repeatable definition of success. Teleoperation is one option, but its usability affects data quality and operator time. Include a record of failed and recovered attempts, consistent gripper operation and review of unusable recordings."
+            ]
+          },
+          {
+            "id": "deployment",
+            "title": "Where the workload can move",
+            "paragraphs": [
+              "A task may look successful in familiar starting conditions but require human help when objects shift. That intervention and recovery labor belongs in the operating model. Interactive collection methods can ask experts about states visited by the learner, but this creates additional staffing and safe-testing requirements rather than eliminating them."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "A grounded pilot",
+            "paragraphs": [
+              "Begin with a simple cloning baseline and test whole operations on held-out sessions and object variations. Compare against specialized programming or RL when the task justifies it. Measure useful throughput, interventions, time to teach a new variant and the cost of maintaining cameras, calibration and training data."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Data is not a one-off purchase",
+            "paragraphs": [
+              "New packaging, fixtures and robot hardware can change the meaning or distribution of inputs and commands. Demonstration collection may need to be repeated. Demand a clear update process, exception route and independent safety assessment. A small training error is not an acceptance metric for production availability."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Imitation learning and behavior cloning",
+        "short_description": "What a robot can learn from demonstrations, and why errors compound.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Copying examples is a learning recipe",
+            "paragraphs": [
+              "In imitation learning, a person or another expert supplies examples of useful behavior. Behavior cloning is the direct version: learn which action matches a given observation. The robot need not receive a reward score during this training. However, not every imitation-learning method is just a supervised copy of a fixed dataset."
+            ]
+          },
+          {
+            "id": "data",
+            "title": "What is inside an example",
+            "paragraphs": [
+              "A useful example links what the robot can sense to the command that was issued at that time. Camera frames alone may not reveal joint positions or whether a gripper is closed. The recording must match the action format used when the learned policy is deployed. A delayed image can create a misleading pairing."
+            ]
+          },
+          {
+            "id": "failure",
+            "title": "Why little mistakes become large ones",
+            "paragraphs": [
+              "An expert keeps a demonstrated trajectory on track. A learned policy makes small errors and then sees situations produced by those errors. If those situations were absent from training, the next prediction can become even less suitable. This is why accurately predicting actions in recorded examples does not guarantee a successful real attempt."
+            ]
+          },
+          {
+            "id": "improvement",
+            "title": "Teaching where the learner goes wrong",
+            "paragraphs": [
+              "One response is to collect expert advice in states the learner actually visits. DAgger is a well-known data-aggregation approach built around this idea. Another practical concern is recording useful recovery behavior. Both need thoughtful collection: dangerous robot experiments do not become acceptable simply because their data might help learning."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Related methods, different jobs",
+            "paragraphs": [
+              "ACT predicts action chunks from demonstrations; diffusion and flow methods can generate action distributions. RL instead uses rewards and interaction, although demonstrations can help initialize it. The right comparison is what the robot completes under varied conditions, including how it recovers and how often a person must intervene."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Imitation learning and behavior cloning",
+        "short_description": "What a robot can learn from demonstrations, and why errors compound.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Learning from an example",
+            "paragraphs": [
+              "Imagine teaching a robot to place a block in a tray. A person first shows useful movements. Imitation learning uses recorded examples to learn a rule for choosing commands. A simple version called behavior cloning tries to predict the command that goes with what the robot sees."
+            ]
+          },
+          {
+            "id": "recording",
+            "title": "Keep the picture and movement together",
+            "paragraphs": [
+              "An example needs more than a nice video. The program must know which command matched each observation and what the robot could sense. A joint measurement or gripper position can matter too. If the picture is late, the computer might learn a connection between the wrong situation and movement."
+            ]
+          },
+          {
+            "id": "trouble",
+            "title": "A small error changes the next picture",
+            "paragraphs": [
+              "Suppose the robot's hand moves a little too far. Its next view is now different from the teacher's view. If it has never learned what to do there, another error can follow. A good score on recorded examples therefore does not prove the whole task will work."
+            ]
+          },
+          {
+            "id": "helping",
+            "title": "Show how to recover",
+            "paragraphs": [
+              "Engineers can collect new examples in places where the learner has trouble. They might also record how to recover when a block slips. These examples need careful checking. A person must keep experiments safe rather than let a real machine make any mistake it likes."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Copying is not understanding everything",
+            "paragraphs": [
+              "A different tray or a hidden block can still cause failure. Methods such as ACT or diffusion change how commands are predicted, but they still need useful examples. People test complete attempts, provide limits and decide when the robot should ask for help or stop. Learning a pattern does not give it human understanding."
+            ]
+          }
+        ]
+      }
+    },
+    "ru": {
+      "engineer": {
+        "title": "Обучение по демонстрациям",
+        "short_description": "Что робот может перенять из примеров и почему ошибки накапливаются.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Обучение по показанному поведению",
+            "paragraphs": [
+              "Обучение по демонстрациям использует поведение эксперта как сигнал обучения. Behavior cloning (BC) — частная постановка: подобрать политику, предсказывающую действие эксперта по наблюдению. Семейство imitation learning шире; интерактивное накопление данных и другие подходы нельзя считать той же регрессией на фиксированном наборе примеров."
+            ]
+          },
+          {
+            "id": "data",
+            "title": "Контракт наблюдений и действий",
+            "paragraphs": [
+              "Записывают информацию, реально доступную рабочей модели, согласованную с форматом команд. Изображения, суставные положения, захват и временные метки должны соответствовать друг другу. Эксперт мог видеть то, чего нет у модели. Если контроллер или задержка действия при записи отличаются, полученная зависимость может оказаться неисполнимой в таком виде."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Что оптимизируется",
+            "paragraphs": [
+              "Для непрерывных действий простым базовым вариантом служит среднеквадратичная регрессия; вероятностные модели могут оптимизировать условное правдоподобие. Такие цели сами не проверяют успех длинного эпизода. Среднее действие бывает неудачным при нескольких допустимых вариантах. Блоковое предсказание, диффузия и flow matching по-разному представляют условное распределение действий."
+            ]
+          },
+          {
+            "id": "deployment",
+            "title": "Смена распределения в замкнутом цикле",
+            "paragraphs": [
+              "На обучении входы получены из экспертных траекторий. При работе они зависят от предыдущих действий самой модели. Маленькая ошибка уводит робота в непоказанное состояние, где следующее предсказание становится ещё хуже. Низкая ошибка на отложенных экспертных кадрах не измеряет такое накопление сбоев в реальной попытке."
+            ]
+          },
+          {
+            "id": "correction",
+            "title": "Добавлять данные там, где ошибается модель",
+            "paragraphs": [
+              "DAgger собирает состояния, посещаемые обучаемой политикой, запрашивает экспертные действия в них и объединяет новые данные со старыми. Запросы к эксперту, вмешательства и безопасные прогоны имеют цену. Демонстрации восстановления также расширяют покрытие, но само название набора не доказывает наличия всех значимых аварийных состояний."
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "Готовой зависимости нужен контроллер",
+            "paragraphs": [
+              "При исполнении модель может выдавать одиночную цель или последовательность без расчёта награды. Частота обновления должна укладываться в сроки обработки датчиков и управления. Команда нередко является целью классическому контроллеру. Калибровка, контактные ограничения, насыщение команд и остановка остаются самостоятельными задачами."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Содержательное разбиение данных",
+            "paragraphs": [
+              "Разделяют сессии, предметы и условия, а не случайно перемешивают соседние почти одинаковые кадры. Проверяют полные задачи, начальные состояния, возмущения и вмешательства; фиксируют выход за поддержанное данными распределение. При сравнении методов сохраняют интерфейсы наблюдений и действий, чтобы смену представления не принять за улучшение алгоритма."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Когда примеры дают преимущество",
+            "paragraphs": [
+              "Демонстрации удобны, если эксперту легче показать действие, чем описать его наградой. Они могут обучить ограниченный навык или инициализировать RL. Центральное ограничение — покрытие: удачные примеры сами по себе не объясняют восстановление, работу с незнакомым объектом и требования независимой безопасности."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Обучение по демонстрациям",
+        "short_description": "Что робот может перенять из примеров и почему ошибки накапливаются.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "Показать работу вместо записи всех правил",
+            "paragraphs": [
+              "Обучение по демонстрациям удобно там, где оператор способен показать операцию, которую трудно описать программой. Behavior cloning предсказывает показанные действия. Это не доказывает работу во всех условиях за пределами примеров и не означает понимания широких намерений оператора."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Что означает собрать данные",
+            "paragraphs": [
+              "Нужны эксперт, подходящий интерфейс, синхронные записи и повторяемое определение успешной операции. Телеуправление — один из вариантов; удобство интерфейса влияет на время человека и качество примеров. Учитывают неудачи, восстановление, одинаковые команды захвата и проверку непригодных записей."
+            ]
+          },
+          {
+            "id": "deployment",
+            "title": "Куда перемещается нагрузка",
+            "paragraphs": [
+              "В знакомом исходном положении задача может работать хорошо, но при смещении предметов требовать помощи. Стоимость вмешательств и восстановления входит в эксплуатационную модель. Интерактивный сбор спрашивает эксперта о состояниях, куда попала модель, однако создаёт новые требования к персоналу и безопасным испытаниям."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Приземлённый пилот",
+            "paragraphs": [
+              "Начните с простого клонирования поведения и полных операций на отдельных сессиях и вариантах предметов. Если оправдано задачей, сравните со специализированной программой и RL. Измеряйте полезную производительность, вмешательства, время обучения новому варианту и поддержку камер, калибровки и данных."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Данные — не разовая покупка",
+            "paragraphs": [
+              "Новая упаковка, оснастка и робот меняют распределение входов или смысл команды. Примеры может потребоваться записать заново. Нужны понятный процесс обновления, обработка исключений и независимая оценка безопасности. Маленькая обучающая ошибка не является критерием производственной доступности."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Обучение по демонстрациям",
+        "short_description": "Что робот может перенять из примеров и почему ошибки накапливаются.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Копировать примеры — тоже отдельная задача",
+            "paragraphs": [
+              "В имитационном обучении человек или другой эксперт показывает полезное поведение. Прямой вариант, behavior cloning, учит соответствие наблюдения и команды. Для такого обучения не нужна награда RL. Но всё семейство имитационного обучения не сводится к копированию заранее собранного набора."
+            ]
+          },
+          {
+            "id": "data",
+            "title": "Что входит в один пример",
+            "paragraphs": [
+              "Нужна связь между тем, что робот способен измерить, и выданной в этот момент командой. По одной картинке не всегда понятны положения суставов и состояние захвата. Запись должна подходить рабочему формату действий. Запоздалое изображение создаёт ложную пару ситуации и движения."
+            ]
+          },
+          {
+            "id": "failure",
+            "title": "Почему небольшая ошибка растёт",
+            "paragraphs": [
+              "Эксперт удерживает показанную траекторию в нужном состоянии. Обученная модель слегка ошибается и затем получает картину, уже изменённую своей ошибкой. Если такого состояния не было в примерах, следующая команда может стать ещё хуже. Точное угадывание действий на записях поэтому не гарантирует успешной реальной попытки."
+            ]
+          },
+          {
+            "id": "improvement",
+            "title": "Показывать помощь в нужных местах",
+            "paragraphs": [
+              "Можно спрашивать экспертные команды в состояниях, куда фактически приходит ученик. На этой идее основан известный подход DAgger с накоплением данных. Полезны и примеры восстановления после сбоев. Сбор требует осторожности: потенциально полезные данные не оправдывают опасные эксперименты с машиной."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Разные способы предсказывать команды",
+            "paragraphs": [
+              "ACT учит блоки действий, а диффузия и flow matching могут представлять разные варианты последовательности. RL использует награды и взаимодействие, хотя демонстрации способны дать ему начальное поведение. Сравнивать нужно выполнение полных задач в разных условиях, восстановление и частоту помощи человека."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Обучение по демонстрациям",
+        "short_description": "Что робот может перенять из примеров и почему ошибки накапливаются.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Учиться по образцу",
+            "paragraphs": [
+              "Допустим, мы хотим, чтобы робот складывал кубик в лоток. Человек показывает полезные движения, а программа записывает примеры. Обучение по демонстрациям помогает выучить правило выбора команды. В простом варианте модель пытается предсказать действие по тому, что видит робот."
+            ]
+          },
+          {
+            "id": "recording",
+            "title": "Согласовать картинку и движение",
+            "paragraphs": [
+              "Красивого видео недостаточно. Нужно знать, какая команда соответствует каждому наблюдению и какие измерения доступны машине. Имеют значение суставы и положение захвата. Если картинка запоздала, компьютер может учить связь не с той ситуацией, которая была во время действия."
+            ]
+          },
+          {
+            "id": "trouble",
+            "title": "Ошибка меняет следующую картинку",
+            "paragraphs": [
+              "Представь, что рука робота ушла немного дальше нужного. Теперь он видит не ту картину, которую видел учитель. Если модель не знает, что делать в таком месте, появится следующая ошибка. Хорошие ответы на записанных примерах ещё не доказывают выполнения всей задачи."
+            ]
+          },
+          {
+            "id": "helping",
+            "title": "Показать, как исправляться",
+            "paragraphs": [
+              "Инженеры могут собирать новые примеры там, где модель затрудняется. Можно показать и восстановление, когда кубик выскользнул. Такие записи проверяют особенно внимательно. Ради полезных примеров нельзя позволять настоящей машине совершать любые опасные ошибки."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Повторить — не значит понять всё",
+            "paragraphs": [
+              "Другой лоток или закрытый от камеры кубик всё ещё могут вызвать неудачу. Методы вроде ACT меняют предсказание команд, но не отменяют необходимость хороших примеров. Люди проверяют целые попытки, задают ограничения и решают, когда нужна помощь или остановка. Выучить закономерность — не то же самое, что понимать по-человечески."
+            ]
+          }
+        ]
+      }
+    },
+    "ja": {
+      "engineer": {
+        "title": "模倣学習と行動クローニング",
+        "short_description": "実演から何を学べるか、なぜ小さな誤差が重なるのか。",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "実演を教師信号にする",
+            "paragraphs": [
+              "模倣学習は、専門家の振る舞いから行動を学ぶ方法の総称です。行動クローニング（Behavior Cloning、BC）は、そのうち観測から専門家の行動を予測する方策を教師あり学習する構成です。対話的なデータ集約なども含む広い分野を、固定データでの回帰と同一視しないことが重要です。"
+            ]
+          },
+          {
+            "id": "data",
+            "title": "観測と行動をそろえる",
+            "paragraphs": [
+              "運用時に方策が実際に使える画像、関節状態、グリッパー情報を、意図した指令と時刻を合わせて記録します。専門家だけに見えている情報は推論時に使えないかもしれません。収録と運用で制御器や遅延が異なると、記録どおりの関係を実行できない場合があります。"
+            ]
+          },
+          {
+            "id": "training",
+            "title": "何を近づけるか",
+            "paragraphs": [
+              "連続行動なら二乗誤差による回帰が単純な基準です。確率モデルは条件付き尤度を学べますが、それだけで長い作業の成功は確かめられません。実演に別々の有効な動作があると、その平均が不適切になる場合があります。ACT、拡散、Flow Matchingは行動列の表現が異なります。"
+            ]
+          },
+          {
+            "id": "deployment",
+            "title": "閉ループで分布が変わる",
+            "paragraphs": [
+              "学習入力は専門家の軌跡から来ますが、運用入力は学習した方策の過去の行動で決まります。小さな誤差が未収録の状態を生み、次の予測をさらに悪くします。専門家の画像上で測った小さな予測誤差だけでは、この累積する失敗を評価できません。"
+            ]
+          },
+          {
+            "id": "correction",
+            "title": "学習器が訪れる状態を集める",
+            "paragraphs": [
+              "DAggerは、学習器が訪れた状態で専門家の行動を求め、データへ加える方法です。専門家への問い合わせ、介入、安全な実行には費用がかかります。復帰動作の実演も有用ですが、その名称だけで重要な失敗状態がすべて収録されたとはいえません。"
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "制御系へつなぐ",
+            "paragraphs": [
+              "推論では報酬を計算せず、一つの目標や行動列を出せます。周期はセンサー処理と制御の期限に合わせます。出力が古典的な制御器への目標となる構成もあります。校正、接触条件、飽和、停止動作は別途設計が必要です。"
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "意味のある評価分割",
+            "paragraphs": [
+              "似た隣接フレームを無作為に分けるのでなく、収録セッション、物体、条件を分離します。作業全体、開始状態の違い、外乱、介入を評価し、対応できるデータ分布から外れる場所を記録します。方式の比較では観測と行動の形式をそろえます。"
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "実演の利点と範囲",
+            "paragraphs": [
+              "報酬で目的を書くより専門家が動作を示す方が容易なら有力です。限られた作業の方策を学ぶほか、RLの初期方策にも使えます。中心的な限界はデータの範囲です。成功例だけでは、失敗からの復帰、未知の物体、安全要件まで自動的に説明できません。"
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "模倣学習と行動クローニング",
+        "short_description": "実演から何を学べるか、なぜ小さな誤差が重なるのか。",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "規則を書く代わりに見せる",
+            "paragraphs": [
+              "熟練者が容易に示せる一方、細かくプログラムしにくい工程で模倣学習を検討できます。行動クローニングは、示された動作を予測する方法です。収録外の条件への対応や、担当者の広い意図の理解まで実証するものではありません。"
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "収録に必要な仕事",
+            "paragraphs": [
+              "専門家、適切な操作画面、同期した記録、再現可能な成功基準を準備します。遠隔操作の使いやすさも、人の時間とデータ品質を左右します。失敗と復旧、統一したグリッパー操作、使えない記録の確認も予算に入れます。"
+            ]
+          },
+          {
+            "id": "deployment",
+            "title": "負担が移る場所",
+            "paragraphs": [
+              "決まった開始状態では成功しても、物体のずれで人の助けが必要になることがあります。介入と復旧の工数も運用費です。学習器が訪れた状態へ専門家が回答する方式は有用ですが、人員や安全な試験の要件も追加されます。"
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "小さな試験で比較する",
+            "paragraphs": [
+              "単純なクローニングを基準に、別の収録セッションや物体条件で工程全体を評価します。必要に応じて専用プログラムやRLとも比較します。有効な処理量、介入、新しい品種を教える時間、カメラや校正の保守費用を見ます。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "一度集めたら終わりではない",
+            "paragraphs": [
+              "包装、治具、機体の変更は、入力の分布や指令の意味を変えます。実演の収集をやり直す場合もあります。更新手順、例外を引き取る運用、独立した安全評価が必要です。小さな訓練誤差だけを設備の受入条件にはできません。"
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "模倣学習と行動クローニング",
+        "short_description": "実演から何を学べるか、なぜ小さな誤差が重なるのか。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "例をまねるにも仕組みがある",
+            "paragraphs": [
+              "模倣学習では、人などの専門家が役立つ振る舞いを示します。直接的な行動クローニングは、観測に合う指令を学ぶ方法です。訓練時にRLの報酬は必要ありません。ただし模倣学習全体が、固定した記録を写すだけの方法とは限りません。"
+            ]
+          },
+          {
+            "id": "data",
+            "title": "一つの例に必要な情報",
+            "paragraphs": [
+              "ロボットが測れる情報と、その時刻の指令を結びつけます。画像だけでは関節位置やグリッパーの状態が分からない場合もあります。運用で使う行動形式に合わせる必要があり、遅れた画像と動作を組にすると誤った関係を学んでしまいます。"
+            ]
+          },
+          {
+            "id": "failure",
+            "title": "小さなずれが次のずれを生む",
+            "paragraphs": [
+              "専門家は実演を正しい軌跡に保ちます。学習した方策が少し間違うと、その結果で見え方も変わります。例にない状況では次の予測がさらに悪くなります。記録された動作を正しく当てるだけで、実機の一連の作業が成功するとは限らないのです。"
+            ]
+          },
+          {
+            "id": "improvement",
+            "title": "困った場所で教える",
+            "paragraphs": [
+              "学習器が実際に訪れた状態で専門家に指令を求める方法があります。DAggerはこの考えに基づくデータ集約の例です。失敗からの復帰を示すことも役立ちます。ただし、役立つデータが得られそうだからといって、危険な実機実験が許されるわけではありません。"
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "近い方法を整理する",
+            "paragraphs": [
+              "ACTは動作列を予測し、拡散やFlow Matchingは動作の分布を表す方法になります。RLは報酬と相互作用から学びますが、実演で初期化することも可能です。比較では違う条件での完了、復帰、人の介入まで含めて見る必要があります。"
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "模倣学習と行動クローニング",
+        "short_description": "実演から何を学べるか、なぜ小さな誤差が重なるのか。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "お手本から規則を学ぶ",
+            "paragraphs": [
+              "ロボットに積み木をトレーへ入れてほしいとしよう。まず人が役立つ動きを見せる。模倣学習（もほうがくしゅう）は、記録した例から指令の選び方を学ぶ方法だ。単純な行動クローニングは、見えたものに合う指令を予測する。"
+            ]
+          },
+          {
+            "id": "recording",
+            "title": "画像と動きを一緒にする",
+            "paragraphs": [
+              "きれいな動画だけでは十分でない。どの観測（かんそく）にどの指令が対応し、機械が何を測れるかを記録する。関節の位置や、つかむ部分が閉じているかも大事だ。画像が遅れると、違う場面との関係を学んでしまう。"
+            ]
+          },
+          {
+            "id": "trouble",
+            "title": "少し間違うと見え方が変わる",
+            "paragraphs": [
+              "ロボットの手が少し行き過ぎたとする。その次に見える画像は、先生が見た画像と違うね。そこでどうすればよいか学んでいなければ、さらに間違うかもしれない。録画で正解できることだけで、作業全体の成功は分からない。"
+            ]
+          },
+          {
+            "id": "helping",
+            "title": "戻り方も見せる",
+            "paragraphs": [
+              "技術者は、学習器が困った場所で新しい例を集められる。積み木が滑った後に、どう直すかを見せることもある。例は注意して確かめる。役立つ記録のためでも、本物の機械に好きなだけ危険な失敗をさせてよいわけではない。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "写すことと何でも分かること",
+            "paragraphs": [
+              "違うトレーや、カメラに見えない積み木では失敗することもある。ACTなどで予測の仕方を変えても、よい例は必要だ。人は一連の作業を試し、制限や助けを求める条件を決める。規則を覚えることは、人と同じ理解を持つことではない。"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,618 @@
+{
+  "schema_version": "1.0",
+  "id": "reinforcement-learning",
+  "category": "foundations",
+  "technology_type": "method",
+  "title": {
+    "ru": "Обучение с подкреплением",
+    "en": "Reinforcement learning",
+    "ja": "強化学習"
+  },
+  "short_description": {
+    "ru": "Как действие и его последствия становятся данными для обучения policy.",
+    "en": "How actions and their consequences become data for learning a policy.",
+    "ja": "行動とその結果を、方策を学ぶためのデータにする。"
+  },
+  "related_technologies": [
+    {
+      "target": "imitation-learning",
+      "type": "complements",
+      "explanation": {
+        "ru": "Демонстрации могут задавать стартовое поведение, а награда — последующее улучшение.",
+        "en": "Demonstrations can initialize behavior before reward-driven refinement.",
+        "ja": "実演から初期の動作を学び、その後に報酬で改善できる。"
+      }
+    }
+  ],
+  "prerequisites": [],
+  "term_refs": [
+    "reinforcement-learning",
+    "robot-policy",
+    "robot-simulation"
+  ],
+  "sources": [
+    {
+      "id": "ppo",
+      "title": "Proximal Policy Optimization Algorithms",
+      "url": "https://arxiv.org/abs/1707.06347",
+      "kind": "paper",
+      "year": 2017
+    },
+    {
+      "id": "legged-gym",
+      "title": "Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2109.11978",
+      "kind": "paper",
+      "year": 2021
+    }
+  ],
+  "last_reviewed": "2026-11-13",
+  "content_status": "ready",
+  "diagram": null,
+  "localizations": {
+    "en": {
+      "engineer": {
+        "title": "Reinforcement learning",
+        "short_description": "How actions and their consequences become data for learning a policy.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Learning through consequences",
+            "paragraphs": [
+              "Reinforcement learning (RL) optimizes a policy using interaction data and a reward objective. A robot observes a state or partial observation, selects an action and receives the next observation and reward. The objective usually includes future rewards, so an immediately attractive action can be undesirable over an entire trajectory. The reward is designed feedback, not a machine's understanding of purpose."
+            ]
+          },
+          {
+            "id": "formulation",
+            "title": "State, action and return",
+            "paragraphs": [
+              "Specify the observation process, action space, transition dynamics, reward and episode termination. With partial observability, a single sensor snapshot may not determine the relevant state; history or a recurrent estimate can matter. A controller's action can be a joint target rather than direct motor torque. That choice changes the dynamics presented to the learner."
+            ],
+            "formula": "J(θ) = E[Σₜ γᵗ rₜ]"
+          },
+          {
+            "id": "training",
+            "title": "Collect, estimate, update",
+            "paragraphs": [
+              "An on-policy workflow rolls out the current policy, estimates returns or advantages and updates the policy. PPO, for example, limits parts of its policy-ratio update through a clipped surrogate objective. The critic learns to estimate value; it is not a separate physical sensor. Hyperparameters, reward scales, termination rules and environment resets all influence the learned behavior."
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "Training is not runtime control",
+            "paragraphs": [
+              "After training, the deployed actor maps observations to actions without necessarily running an optimizer or receiving rewards at every timestep. Online learning is a separate choice requiring additional controls. Measure the whole observation-to-command deadline; the simulated training timestep, policy frequency and actuator loop frequency are different quantities."
+            ]
+          },
+          {
+            "id": "variants",
+            "title": "Model-free, model-based and offline",
+            "paragraphs": [
+              "Model-free learning need not learn an explicit predictive dynamics model. Model-based methods use one to improve decisions or generate learning trajectories. Offline RL learns from a fixed dataset and faces the risk of valuing unsupported actions too highly. Behavior cloning instead fits demonstrated actions directly; it does not require an RL reward objective."
+            ]
+          },
+          {
+            "id": "applications",
+            "title": "When the approach is useful",
+            "paragraphs": [
+              "RL is attractive when an objective can be evaluated and useful interaction data can be collected, often in simulation for locomotion. It can discover coordinated behavior without an expert labeling every action. However, the simulator, reward engineering and transfer process are major parts of the system, not free substitutes for engineering effort."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Testing the actual objective",
+            "paragraphs": [
+              "Evaluate held-out conditions, multiple seeds, failure recovery and real closed-loop outcomes. Inspect energy use, contacts, constraint violations and interventions alongside return. A policy may exploit a simulator artifact or reward loophole. Random episode resets can conceal a recovery problem that will be costly on a real machine."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Reward is not a safety constraint",
+            "paragraphs": [
+              "A penalty for collision or excessive torque is not proof that the event cannot occur. Exploration can damage hardware, and an unmodeled situation can defeat a successful policy. Keep validated limits and stopping functions outside the learned objective. Paper results establish behavior under their evaluation protocol; they do not certify a production installation."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Reinforcement learning",
+        "short_description": "How actions and their consequences become data for learning a policy.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "Useful when outcomes can be measured",
+            "paragraphs": [
+              "Reinforcement learning trains a policy from actions and their consequences. It is relevant when a useful outcome can be evaluated but writing every action rule is difficult. The business question is not simply whether RL is advanced, but whether the organization can define the outcome and collect enough representative interaction data."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "What is needed beyond a model",
+            "paragraphs": [
+              "A project may need a calibrated simulator, reward design, reset procedures, compute for many trials and real-machine validation. Training directly on equipment can consume operating time and create wear or damage. Simulation reduces some trial costs but introduces a transfer problem that must be measured separately."
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "What runs after learning",
+            "paragraphs": [
+              "A trained policy can execute without continuing to learn on the production line. This separates the cost of training from runtime hardware needs. Require clear controls over model versions and updates. Treat any proposal for online learning as an additional operational and safety decision, not a default benefit."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Choosing supervision",
+            "paragraphs": [
+              "If operators can cheaply demonstrate the task, imitation learning may be a simpler first baseline. If dynamics can be modeled well, planning may provide more direct control over constraints. Hybrids are possible. Compare total successful throughput, interventions, recovery effort and the cost of updating the task, not only a reward curve."
+            ]
+          },
+          {
+            "id": "risk",
+            "title": "What a rising reward can hide",
+            "paragraphs": [
+              "A policy can optimize the wrong thing or exploit a simulator mismatch. High training reward may coexist with unacceptable contacts or operator workload. Specify acceptance criteria outside the training objective and test changed conditions. Scaling requires evidence that the operational metric, rather than just the model's internal score, improves."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Reinforcement learning",
+        "short_description": "How actions and their consequences become data for learning a policy.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Actions change what happens next",
+            "paragraphs": [
+              "In reinforcement learning, a model chooses actions and learns from the consequences. A reward signal says which outcomes the designer values. The aim is not merely to choose the action with the largest immediate score: an action can make later progress easier or harder. This is different from simply copying an example."
+            ]
+          },
+          {
+            "id": "loop",
+            "title": "A repeated interaction",
+            "paragraphs": [
+              "A robot observes, acts, receives another observation and obtains a reward. Training uses many such sequences to change its policy. The word state describes information relevant to what happens next, but sensors may reveal only part of it. A robot can therefore need a history of observations rather than a single picture."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Why simulation is common",
+            "paragraphs": [
+              "Trying many policies on real hardware is slow and can be risky. Simulators allow repeated attempts and resets, which makes them useful for learning locomotion. But a simulated contact or motor is only an approximation. Learning in simulation and transferring a policy to a real robot are two connected, distinct engineering problems."
+            ]
+          },
+          {
+            "id": "runtime",
+            "title": "The trained robot need not keep learning",
+            "paragraphs": [
+              "Once a policy is trained, it can turn observations into commands without changing its own parameters. Reward calculations and training updates need not happen during every real movement. Some systems do learn online, but that is a separate design decision rather than a requirement of reinforcement learning."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "The score may describe the wrong goal",
+            "paragraphs": [
+              "A cleverly designed reward can still have loopholes. A robot might earn a high score by moving in a way its designer did not intend. Compare reward with complete task performance, energy, contacts and failures. Safety cannot be reduced to giving the model a sufficiently large penalty after a dangerous event."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Reinforcement learning",
+        "short_description": "How actions and their consequences become data for learning a policy.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Learning from what happens",
+            "paragraphs": [
+              "Imagine a computer trying different ways to move a simulated robot. After an action, the program checks the result and gives a score called a reward. Reinforcement learning uses these experiences to improve a rule for choosing actions. The reward does not mean the computer feels pleased."
+            ]
+          },
+          {
+            "id": "future",
+            "title": "A small score now can help later",
+            "paragraphs": [
+              "Going straight toward a target may be a poor choice if a wall blocks the way. A detour might look worse at first but help the robot reach its goal later. The training process tries to account for a sequence of results, not just the next score."
+            ]
+          },
+          {
+            "id": "practice",
+            "title": "Why a virtual robot helps",
+            "paragraphs": [
+              "A real robot can fall or damage something while trying a new movement. A simulation lets engineers test many attempts more conveniently. Yet virtual floors and motors are not perfect copies. A movement learned there must still be checked carefully on the real machine."
+            ]
+          },
+          {
+            "id": "runtime",
+            "title": "Training and using a skill",
+            "paragraphs": [
+              "During training, the rule changes after many examples of actions and results. Later, the robot can use the learned rule without changing it while it works. Engineers decide separately whether learning should continue during operation. Moving a robot and training its model are not the same activity."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "A score can be misleading",
+            "paragraphs": [
+              "Suppose a program rewards reaching a place but forgets to account for pushing objects out of the way. A robot might get a good score for unwanted behavior. People must check whether the score matches the real task and provide limits and a stop mechanism. A reward alone cannot make a machine safe."
+            ]
+          }
+        ]
+      }
+    },
+    "ru": {
+      "engineer": {
+        "title": "Обучение с подкреплением",
+        "short_description": "Как действие и его последствия становятся данными для обучения policy.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Обучение по последствиям действий",
+            "paragraphs": [
+              "Обучение с подкреплением, reinforcement learning (RL), оптимизирует policy по данным взаимодействия и заданной награде. Робот получает наблюдение, выбирает действие, затем новое наблюдение и награду. Обычно учитываются будущие результаты: немедленно выгодная команда может мешать на длинном горизонте. Награда является спроектированным сигналом, а не пониманием цели машиной."
+            ]
+          },
+          {
+            "id": "formulation",
+            "title": "Состояние, действие и возврат",
+            "paragraphs": [
+              "Определяют наблюдения, пространство действий, динамику переходов, награду и завершение эпизода. При частичной наблюдаемости один снимок датчиков не определяет всё существенное состояние; нужны история или рекуррентная оценка. Действием могут служить суставные цели, а не моменты моторов. Выбор представления меняет систему, с которой взаимодействует алгоритм."
+            ],
+            "formula": "J(θ) = E[Σₜ γᵗ rₜ]"
+          },
+          {
+            "id": "training",
+            "title": "Сбор опыта и обновление",
+            "paragraphs": [
+              "В on-policy процессе текущая policy собирает траектории, затем оценивают возвраты или преимущества и обновляют параметры. Например, PPO использует обрезанную целевую функцию с отношением вероятностей старой и новой policy. Критик оценивает ценность состояния, но не является физическим датчиком. Масштабы награды, сбросы, условия завершения и параметры алгоритма существенно влияют на результат."
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "Исполнение не равно обучению",
+            "paragraphs": [
+              "После обучения актор может преобразовывать наблюдения в действия без оптимизатора и без вычисления награды на каждом рабочем шаге. Продолжать обучение онлайн — отдельное решение. Измеряют весь срок от наблюдения до команды; шаг симуляции, частота policy и частота приводного контура — разные величины."
+            ]
+          },
+          {
+            "id": "variants",
+            "title": "Разные источники обучения",
+            "paragraphs": [
+              "Model-free метод не обязан строить явную предсказательную модель динамики. Model-based подход использует такую модель для решений или учебных траекторий. Offline RL учится на фиксированном наборе данных и рискует переоценивать неподдержанные данными действия. Behavior cloning, напротив, непосредственно подгоняет действия под демонстрации, не требуя цели RL по награде."
+            ]
+          },
+          {
+            "id": "applications",
+            "title": "Когда это полезно",
+            "paragraphs": [
+              "RL привлекательно, если результат можно оценить и доступен полезный опыт взаимодействия. Для движения ног этот опыт часто получают в симуляции. Можно находить согласованное поведение без экспертной разметки каждого действия. Но симулятор, проектирование награды и перенос на машину составляют значительную инженерную работу."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Проверять реальную задачу",
+            "paragraphs": [
+              "Оценивают новые условия, несколько случайных запусков обучения и восстановление после сбоев. Наряду с возвратом считают энергию, контакты, нарушения ограничений и вмешательства. Policy может использовать артефакт симулятора или лазейку в награде. Удобные автоматические сбросы эпизодов способны скрыть проблему восстановления, которая окажется дорогой на оборудовании."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Награда не является ограничителем",
+            "paragraphs": [
+              "Штраф за столкновение или большой момент не доказывает невозможность опасного события. Исследование действий может повредить оборудование, а неучтённая ситуация — сломать успешную policy. Проверенные ограничения и остановка должны существовать вне обучающей цели. Результат статьи относится к её протоколу оценки, не к сертификации нового участка."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Обучение с подкреплением",
+        "short_description": "Как действие и его последствия становятся данными для обучения policy.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "Когда результат можно измерить",
+            "paragraphs": [
+              "RL учит выбор действий по их последствиям. Подход имеет смысл, если полезный результат можно оценить, а вручную описать все правила сложно. Главный вопрос — не современность алгоритма, а способность организации задать правильный результат и получить достаточно представительных взаимодействий для обучения."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Что нужно кроме модели",
+            "paragraphs": [
+              "Могут потребоваться калиброванный симулятор, разработка награды, процедуры сброса, вычисления для множества попыток и проверка настоящей машины. Обучение прямо на оборудовании занимает рабочее время и создаёт износ или повреждения. Симуляция сокращает часть расходов, но перенос на реальность проверяют отдельно."
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "Что работает после обучения",
+            "paragraphs": [
+              "Обученная policy может исполняться без продолжения обучения на производственной линии. Поэтому стоимость подготовки и требования рабочего компьютера надо разделять. Нужны управляемые версии модели и процедуры обновления. Предложение обучаться онлайн рассматривается как дополнительное эксплуатационное решение, а не обязательное преимущество RL."
+            ]
+          },
+          {
+            "id": "choice",
+            "title": "Как выбрать способ обучения",
+            "paragraphs": [
+              "Если оператору легко показать задачу, начните сравнение с обучения по демонстрациям. Если хорошо известна динамика, планирование может дать более прямой контроль ограничений. Допустимы гибриды. Сравнивайте полезный выпуск, вмешательства, восстановление и стоимость изменения задачи, а не только график награды."
+            ]
+          },
+          {
+            "id": "risk",
+            "title": "Что скрывает растущая награда",
+            "paragraphs": [
+              "Policy способна оптимизировать не тот результат или использовать неточность симулятора. Высокая учебная награда может соседствовать с недопустимыми контактами и нагрузкой на персонал. Задайте приёмочные критерии вне учебной цели и проверьте изменённые условия. При масштабировании должен улучшаться эксплуатационный показатель, а не только внутренний балл."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Обучение с подкреплением",
+        "short_description": "Как действие и его последствия становятся данными для обучения policy.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Действие меняет следующий шаг",
+            "paragraphs": [
+              "В обучении с подкреплением модель выбирает действия и учится по последствиям. Награда сообщает, какие результаты ценит разработчик. Нужно не просто заработать максимальный балл сейчас: действие способно облегчить или затруднить дальнейшую работу. Поэтому такой способ отличается от непосредственного копирования примера."
+            ]
+          },
+          {
+            "id": "loop",
+            "title": "Повторяющееся взаимодействие",
+            "paragraphs": [
+              "Робот наблюдает, действует, получает новое наблюдение и награду. Множество таких последовательностей меняет его policy. Состоянием называют информацию, существенную для дальнейшего развития, но датчики показывают лишь её часть. Иногда вместо одной фотографии необходима история измерений."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Зачем симуляция",
+            "paragraphs": [
+              "Проверять множество вариантов на реальном роботе медленно и рискованно. Симулятор позволяет повторять попытки и сбрасывать среду, поэтому он полезен для обучения ходьбе. Однако виртуальный контакт и мотор остаются приближениями. Обучение в симуляторе и перенос на настоящую машину — связанные, но разные задачи."
+            ]
+          },
+          {
+            "id": "runtime",
+            "title": "Робот не обязан учиться постоянно",
+            "paragraphs": [
+              "Готовая policy может выдавать команды, не изменяя свои параметры. Расчёт награды и учебные обновления не обязаны сопровождать каждое реальное движение. Системы с обучением онлайн тоже существуют, но это самостоятельный выбор архитектуры, не непременное свойство RL."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Баллы могут описывать не ту цель",
+            "paragraphs": [
+              "Даже аккуратно придуманная награда имеет лазейки. Робот может заработать много баллов непредусмотренным способом. Сравнивайте их с завершением всей задачи, энергией, контактами и сбоями. Безопасность нельзя свести к достаточно крупному штрафу, который модель получит уже после опасного события."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Обучение с подкреплением",
+        "short_description": "Как действие и его последствия становятся данными для обучения policy.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Учиться по результату",
+            "paragraphs": [
+              "Представь компьютер, пробующий разные способы двигать виртуального робота. После действия программа проверяет результат и начисляет балл — награду. Обучение с подкреплением использует такой опыт, чтобы улучшать правило выбора действий. Награда не означает, что компьютер чувствует радость."
+            ]
+          },
+          {
+            "id": "future",
+            "title": "Обход может помочь позже",
+            "paragraphs": [
+              "Двигаться прямо к цели не всегда разумно, если путь закрывает стена. Сначала обход кажется невыгодным, зато помогает добраться потом. Обучение пытается учитывать последовательность результатов, а не только ближайшие баллы. Правило должно помогать всей задаче, а не одному удобному шагу."
+            ]
+          },
+          {
+            "id": "practice",
+            "title": "Почему тренируются виртуально",
+            "paragraphs": [
+              "Настоящий робот при попытке нового движения может упасть или что-нибудь повредить. Симуляция позволяет удобнее проверять много вариантов. Но виртуальный пол и двигатель — не точные копии настоящих. Выученное движение ещё нужно осторожно проверить на машине."
+            ]
+          },
+          {
+            "id": "runtime",
+            "title": "Учиться и пользоваться навыком",
+            "paragraphs": [
+              "Во время обучения правило меняется после множества примеров действий и результатов. Потом робот может применять готовое правило, не изменяя его во время работы. Решение продолжать обучение при эксплуатации принимают отдельно. Управлять движением и обучать модель — разные занятия."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Награда бывает обманчивой",
+            "paragraphs": [
+              "Допустим, программа хвалит за достижение места, но забывает учитывать растолканные предметы. Тогда хорошим окажется нежелательное поведение. Люди проверяют соответствие баллов задаче, устанавливают ограничения и возможность остановки. Одни награды не делают машину безопасной."
+            ]
+          }
+        ]
+      }
+    },
+    "ja": {
+      "engineer": {
+        "title": "強化学習",
+        "short_description": "行動とその結果を、方策を学ぶためのデータにする。",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "結果を使って方策を改善する",
+            "paragraphs": [
+              "強化学習（Reinforcement Learning、RL）は、環境との相互作用と報酬を使って方策を最適化します。観測から行動を選び、次の観測と報酬を受け取ります。通常は将来の報酬も含めるため、直後に有利な行動が長い軌跡では不利な場合もあります。報酬は設計した信号であり、機械が目的を理解した証拠ではありません。"
+            ]
+          },
+          {
+            "id": "formulation",
+            "title": "状態と行動を定める",
+            "paragraphs": [
+              "観測、行動空間、遷移、報酬、エピソード終了を定義します。部分観測では一回の測定だけで必要な状態が分からず、履歴や再帰的な推定が役立ちます。行動をモータートルクにするか関節目標にするかでも、学習器から見た動力学が変わります。"
+            ],
+            "formula": "J(θ) = E[Σₜ γᵗ rₜ]"
+          },
+          {
+            "id": "training",
+            "title": "経験の収集と更新",
+            "paragraphs": [
+              "オンポリシー学習では現在の方策で軌跡を収集し、収益やアドバンテージを推定して更新します。PPOは、古い方策と新しい方策の確率比を用いる目的関数にクリッピングを導入した例です。価値を推定するcriticは物理センサーではありません。報酬の尺度、終了条件、リセット、各設定が振る舞いに影響します。"
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "学習時と運用時",
+            "paragraphs": [
+              "学習後のactorは、毎回最適化したり報酬を受け取ったりしなくても、観測から行動を出せます。運用中も学習するかは別の判断です。シミュレーションの刻み、方策の周期、駆動部の周期を区別し、観測から指令までの全遅延を測ります。"
+            ]
+          },
+          {
+            "id": "variants",
+            "title": "学習方式の違い",
+            "paragraphs": [
+              "モデルフリーは明示的な予測動力学モデルを必須としません。モデルベースは予測モデルを判断や学習軌跡へ使います。オフラインRLは固定データで学び、データにない行動を過大評価する問題があります。行動クローニングは実演を直接再現するもので、RLの報酬目的とは異なります。"
+            ]
+          },
+          {
+            "id": "applications",
+            "title": "適した条件",
+            "paragraphs": [
+              "結果を評価でき、有用な相互作用データを集められる場合に有力です。脚移動ではシミュレーションで経験を集めることが多く、各行動への専門家ラベルなしに協調動作を学べます。ただし、環境作成、報酬設計、実機への転移も大きな開発作業です。"
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "報酬以外も調べる",
+            "paragraphs": [
+              "未使用の条件、複数の乱数初期値、失敗からの復帰を評価します。報酬と一緒にエネルギー、接触、制約違反、人の介入を調べます。方策が仮想環境の不具合や報酬の抜け道を利用する場合があります。便利な自動リセットは、実機の復旧負担を隠すこともあります。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "罰則は安全制約ではない",
+            "paragraphs": [
+              "衝突や大きなトルクへの罰則だけで、その事象が起こらないとは証明できません。探索は機体を傷め、未知の状況は学習済み方策を破綻させます。検証した制限と停止機能を目的関数の外に設けます。論文の評価結果は、新しい設備の安全認証とは別です。"
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "強化学習",
+        "short_description": "行動とその結果を、方策を学ぶためのデータにする。",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "成果を評価できる工程",
+            "paragraphs": [
+              "強化学習は、行動とその結果から選び方を学ぶ手法です。成果を評価できる一方、全動作の規則を書きにくい場合に検討できます。重要なのは新しさではなく、必要な成果を定義し、代表的な経験を十分集められるかという点です。"
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "モデル以外の準備",
+            "paragraphs": [
+              "校正したシミュレーター、報酬設計、リセット手順、大量試行の計算資源、実機の検証が必要になる場合があります。実機で直接試すと設備の時間や摩耗、破損リスクが生じます。仮想環境で費用を減らしても、実機への転移は別に確認します。"
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "運用時に何を動かすか",
+            "paragraphs": [
+              "学習した方策は、現場で学習を続けず実行できます。訓練の費用と運用計算機の要件を分け、モデルの版と更新手順を管理します。稼働中のオンライン学習は標準の利点と見なさず、追加の運用判断として扱います。"
+            ]
+          },
+          {
+            "id": "choice",
+            "title": "他の方法との比較",
+            "paragraphs": [
+              "作業を人が容易に示せるなら、模倣学習が単純な比較対象になります。動力学をよく記述できるなら、計画方式が制約を扱いやすい場合もあります。複合方式も含め、有効な生産量、介入、復旧、作業変更の費用で比較します。"
+            ]
+          },
+          {
+            "id": "risk",
+            "title": "報酬の増加に隠れるもの",
+            "paragraphs": [
+              "方策が誤った目標やシミュレーターのずれを利用する場合があります。高い訓練報酬と、許容できない接触や人の負荷が同時に起こり得ます。学習目標とは独立した受入条件を設け、工程の指標が改善しているか確認する必要があります。"
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "強化学習",
+        "short_description": "行動とその結果を、方策を学ぶためのデータにする。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "行動が次の状況を変える",
+            "paragraphs": [
+              "強化学習では、モデルが行動を選び、その結果から学びます。設計者が重視する結果を報酬という信号で表します。今すぐ高得点になる行動だけでなく、後の成功を助ける行動を探す点が大切です。お手本の動作をそのまま写す学習とは違います。"
+            ]
+          },
+          {
+            "id": "loop",
+            "title": "相互作用を繰り返す",
+            "paragraphs": [
+              "観測し、行動し、次の観測と報酬を得るという流れを繰り返して方策を変えます。状態は今後に関係する情報ですが、センサーには一部しか見えないことがあります。そのため一枚の画像より、測定の履歴が役立つ場合もあります。"
+            ]
+          },
+          {
+            "id": "training",
+            "title": "仮想環境で試す理由",
+            "paragraphs": [
+              "実機で多くの行動を試すのは遅く、危険もあります。シミュレーターは反復やリセットを行いやすく、歩行の学習などに使われます。ただし仮想の床やモーターは近似です。そこで学ぶことと、実際の機体へ移すことは別々に確かめる必要があります。"
+            ]
+          },
+          {
+            "id": "runtime",
+            "title": "いつも学び続けるわけではない",
+            "paragraphs": [
+              "できあがった方策は、パラメータを変えずに指令を出せます。実機の一動作ごとに報酬計算や学習更新が必要とは限りません。運用中に学ぶ設計もありますが、強化学習という名前だけから決まるものではありません。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "点数と本当の目的",
+            "paragraphs": [
+              "考えて作った報酬にも抜け道があります。意図しなかった動きで高得点を得ることもあるので、完了率、接触、エネルギー、失敗と照らし合わせます。危険な出来事の後に大きな減点を与えるだけでは、安全の仕組みにはなりません。"
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "強化学習",
+        "short_description": "行動とその結果を、方策を学ぶためのデータにする。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "結果を見て学ぶ",
+            "paragraphs": [
+              "コンピューターが、仮想（かそう）のロボットを動かす方法をいろいろ試すとしよう。行動の後で結果を調べ、報酬（ほうしゅう）という点数を与える。強化学習はその経験を使い、行動の選び方を直していく。コンピューターが喜ぶという意味ではないよ。"
+            ]
+          },
+          {
+            "id": "future",
+            "title": "回り道が役立つこともある",
+            "paragraphs": [
+              "目標へまっすぐ進んでも、壁があれば届かない。回り道は最初は損に見えても、後で目標に近づける。だから学習では、次の一点だけでなく、その後も続く結果を考える。目先の点数だけが本当の成功ではないんだ。"
+            ]
+          },
+          {
+            "id": "practice",
+            "title": "仮想のロボットで試す",
+            "paragraphs": [
+              "本物のロボットが新しい動きを試すと、転んだり物を壊したりするかもしれない。シミュレーションなら多くの試行を行いやすい。でも仮想の床やモーターは本物と完全には同じでない。学んだ動きを実機でも確かめる必要がある。"
+            ]
+          },
+          {
+            "id": "runtime",
+            "title": "練習と本番を分ける",
+            "paragraphs": [
+              "学習中は、行動と結果をたくさん集めて規則を変える。本番では、できあがった規則を変えずに使うこともできる。本番中も学ばせるかは、技術者が別に決める。機械を動かすことと、モデルを学習させることは同じではない。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "点数が間違っていたら",
+            "paragraphs": [
+              "目的地に着くことだけをほめ、途中の物を押しのけても減点しないプログラムを考えよう。望まない行動でも高得点になるね。人は点数が作業に合うかを調べ、制限と停止（ていし）の方法も用意する。報酬だけで安全は決まらない。"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

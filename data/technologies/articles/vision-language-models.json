@@ -1,0 +1,615 @@
+{
+  "schema_version": "1.0",
+  "id": "vision-language-models",
+  "category": "generalist-models",
+  "technology_type": "model-family",
+  "title": {
+    "ru": "Зрительно-языковые модели",
+    "en": "Vision-language models",
+    "ja": "視覚言語モデル"
+  },
+  "short_description": {
+    "ru": "Что дают связи изображений и текста — и чего они не дают роботизированному контроллеру.",
+    "en": "What linking images and text offers, and what a robot controller still needs.",
+    "ja": "画像と言葉を結びつけてできることと、制御に足りないもの。"
+  },
+  "related_technologies": [
+    {
+      "target": "transformers",
+      "type": "uses",
+      "explanation": {
+        "ru": "Многие современные VLM используют Transformer, но это не определение всего семейства.",
+        "en": "Many modern VLMs use transformers; that is not the definition of the entire family.",
+        "ja": "多くのVLMはTransformerを利用するが、必須の定義ではない。"
+      }
+    }
+  ],
+  "prerequisites": [],
+  "term_refs": [
+    "vision-language-model",
+    "multimodal-learning",
+    "robot-perception"
+  ],
+  "sources": [
+    {
+      "id": "clip",
+      "title": "Learning Transferable Visual Models From Natural Language Supervision",
+      "url": "https://arxiv.org/abs/2103.00020",
+      "kind": "paper",
+      "year": 2021
+    },
+    {
+      "id": "flamingo",
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://arxiv.org/abs/2204.14198",
+      "kind": "paper",
+      "year": 2022
+    }
+  ],
+  "last_reviewed": "2026-11-13",
+  "content_status": "ready",
+  "diagram": null,
+  "localizations": {
+    "en": {
+      "engineer": {
+        "title": "Vision-language models",
+        "short_description": "What linking images and text offers, and what a robot controller still needs.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Connecting images and language",
+            "paragraphs": [
+              "Vision-language models (VLMs) learn relationships between visual inputs and language. The family includes representation models and generative systems with different interfaces. A model that retrieves matching descriptions is not necessarily one that generates text, predicts actions or estimates calibrated geometry. State which capability and training recipe a robotic system actually uses."
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "Encoders and multimodal fusion",
+            "paragraphs": [
+              "A visual encoder produces image features, while a language component represents or generates text. Fusion can use shared embedding spaces, projection modules or cross-attention. CLIP's contrastive image–text representation and Flamingo's conditioned language generation are different examples. The label VLM alone does not determine causal masking, input resolution or action support."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Different objectives teach different relations",
+            "paragraphs": [
+              "Contrastive learning aligns paired image and text representations against alternatives. Generative training can predict text conditioned on visual information. Dataset composition, captions and filtering affect what relationships are learned. Neither objective directly guarantees correct contact dynamics, object dimensions or completion of a robot manipulation task."
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "What the output means",
+            "paragraphs": [
+              "An output can be an embedding, a matching score or generated language. Its interpretation must be defined by the application. A textual statement about an object is not automatically a calibrated pose estimate. If the robot needs coordinates, use a tested grounding and state-estimation interface rather than treating plausible language as a measurement."
+            ]
+          },
+          {
+            "id": "robotics",
+            "title": "A component in a larger loop",
+            "paragraphs": [
+              "A VLM can assist semantic perception, task interpretation or a high-level choice. Another system must convert that information into feasible actions and execute them. In a VLA architecture, robot action training connects representations to an action output. Calling a VLM through an API does not by itself create that trained action interface."
+            ]
+          },
+          {
+            "id": "timing",
+            "title": "Observation age and uncertainty",
+            "paragraphs": [
+              "Measure preprocessing, visual encoding, generation and communication latency. A response about an earlier image can be unsuitable after the scene changes. Text confidence is not a calibrated probability of physical task success. Define how the system checks ambiguous observations, requests another measurement and handles unsupported instructions."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Tests tied to the intended use",
+            "paragraphs": [
+              "Evaluate object and instruction variations, spatial relations, missing views, occlusion and misleading prompts. Separate language-answer correctness from robot outcome correctness. Compare against a dedicated vision pipeline where appropriate. The relevant test is the downstream task and its failure handling, not only an image–text benchmark."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Semantics is not physics",
+            "paragraphs": [
+              "A VLM can hallucinate details, confuse left and right, overlook a small object or rely on dataset correlations. No broad model label makes its output a safety authorization. Use bounded interfaces, verification and separate control constraints. Published model examples demonstrate particular tasks, not a guarantee of reliable perception in every operational setting."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Vision-language models",
+        "short_description": "What linking images and text offers, and what a robot controller still needs.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "Useful semantic context",
+            "paragraphs": [
+              "A VLM connects visual information with language and can help interpret objects or written tasks. It can reduce some hand-written semantic rules, but should not be purchased as if it were a complete robot controller. Define whether the needed output is a description, retrieval score, object interpretation or a high-level task suggestion."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "What deployment consumes",
+            "paragraphs": [
+              "Consider camera setup, image preparation, model compute or service access, network delay, data handling and integration. A generative model's latency can differ from an embedding model's. Check the actual license and deployment terms. Measure using the target images and operating environment rather than a convenient text-only example."
+            ]
+          },
+          {
+            "id": "integration",
+            "title": "Where verification belongs",
+            "paragraphs": [
+              "An image description is not a measured robot coordinate. A downstream system may need calibrated perception, task logic and a controller before physical movement. Keep a narrow interface between semantic suggestions and permitted actions, and define when a person or another sensor must resolve uncertainty."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "A meaningful business test",
+            "paragraphs": [
+              "Compare with dedicated vision tools or a smaller model on the actual task: objects, lighting, instructions and acceptable exceptions. Count correct work completed and human reviews, not merely fluent answers. Include the operational cost of handling confidently incorrect descriptions and the time taken to obtain a new observation."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Maturity depends on the decision",
+            "paragraphs": [
+              "General image–text capabilities are established, while reliable use in a specific robot operation requires validation. Hallucination, changing scenes and small visual details can be material risks. Avoid assuming that recognizing a scene implies understanding its mechanics. Scale only after checking error consequences and an independent safety path."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Vision-language models",
+        "short_description": "What linking images and text offers, and what a robot controller still needs.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Images and words in one model family",
+            "paragraphs": [
+              "A vision-language model learns connections between pictures and language. Some models place matching images and descriptions near one another in a numerical space. Others generate text while using visual information. The family name does not mean every model has all these abilities, and it does not automatically include robot actions."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Different ways to connect the two",
+            "paragraphs": [
+              "CLIP is a well-known contrastive example: matching image–text pairs teach useful representations. Flamingo is an example of a system designed to generate language conditioned on visual input. They show why architecture and training objective matter. Simply labeling a system VLM leaves many important details unspecified."
+            ]
+          },
+          {
+            "id": "output",
+            "title": "An answer is not a measurement",
+            "paragraphs": [
+              "A model might describe a cup as standing beside a box. That can be useful semantic information, but it does not provide a calibrated distance for a robot gripper. A convincing description can also contain invented details. Physical actions need a suitable observation and control interface, not just a plausible sentence."
+            ]
+          },
+          {
+            "id": "robotics",
+            "title": "How it can help a robot",
+            "paragraphs": [
+              "A VLM might interpret an instruction or assist with a high-level decision. A different component then chooses and executes movements. VLA models connect vision and language to trained action outputs, which is an additional capability. A model that can talk about a robot has not necessarily learned how to command it."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Check what changed after the picture",
+            "paragraphs": [
+              "A moving scene may no longer match the image used for a response. Small objects, occlusion and unfamiliar views can also cause mistakes. Engineers test the specific downstream job and define how to ask for another observation or human help. The quality of the words and the success of the physical task are different measurements."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Vision-language models",
+        "short_description": "What linking images and text offers, and what a robot controller still needs.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Connecting pictures with words",
+            "paragraphs": [
+              "A vision-language model learns patterns between images and language. It might help find a picture that matches a description or write words about a picture. Different models do different jobs. This does not mean that they see and understand a room exactly as a person does."
+            ]
+          },
+          {
+            "id": "practice",
+            "title": "What examples teach",
+            "paragraphs": [
+              "During training, some models compare pairs of pictures and captions with other pairs. Other models learn to continue text while using an image. These lessons teach connections between information. They do not automatically teach the forces needed to pick up an object or the safe path for a robot's arm."
+            ]
+          },
+          {
+            "id": "measurement",
+            "title": "Beside is not a distance",
+            "paragraphs": [
+              "Suppose a model says a cup is beside a box. That sentence may help describe the scene. A robot still needs to know where to place its gripper and which movements are allowed. A sentence is not the same as a careful measurement of position or distance."
+            ]
+          },
+          {
+            "id": "action",
+            "title": "Talking and moving are different",
+            "paragraphs": [
+              "One part of a robot system might use a model to process an instruction. Other parts propose commands and control the motors. A VLA is a family that connects images and words with learned action outputs. A model that can describe movement does not necessarily have that capability."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "A good-sounding answer can be wrong",
+            "paragraphs": [
+              "The model might miss a small object or say something that is not in the picture. The scene could also change while the computer is answering. Engineers check results, take new measurements and arrange help or stopping rules. Clear language alone does not prove a robot will act correctly."
+            ]
+          }
+        ]
+      }
+    },
+    "ru": {
+      "engineer": {
+        "title": "Зрительно-языковые модели",
+        "short_description": "Что дают связи изображений и текста — и чего они не дают роботизированному контроллеру.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Связать изображения и язык",
+            "paragraphs": [
+              "Зрительно-языковые модели, vision-language models (VLM), учат связи визуальных входов с языком. В семейство входят модели представлений и генеративные системы с разными интерфейсами. Поиск подходящей подписи не равен генерации текста, действий или оценке калиброванной геометрии. В роботизированной системе нужно назвать конкретную используемую способность и способ обучения."
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "Энкодеры и объединение модальностей",
+            "paragraphs": [
+              "Зрительный энкодер получает признаки картинки, языковая часть представляет или генерирует текст. Объединение строят через общее пространство признаков, проекции или cross-attention. Контрастивное представление CLIP и условная генерация языка во Flamingo — разные примеры. Название VLM не определяет маску внимания, разрешение входа или поддержку действий."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Разные цели учат разным связям",
+            "paragraphs": [
+              "Контрастивное обучение сближает парные изображения и тексты относительно альтернатив. Генеративная цель может предсказывать текст при заданных визуальных данных. На результат влияют состав набора, подписи и фильтрация. Ни одна из этих целей непосредственно не гарантирует верную динамику контакта, размеры предметов и завершение манипуляционной задачи."
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "Что означает выход",
+            "paragraphs": [
+              "Выходом бывают вектор признаков, оценка соответствия или текст. Приложение должно определить их интерпретацию. Фраза о предмете не является автоматически оценкой его позы. Если роботу нужны координаты, требуется проверенное привязывание к сцене и оценка состояния, а не использование правдоподобных слов как измерительного прибора."
+            ]
+          },
+          {
+            "id": "robotics",
+            "title": "Компонент более широкого цикла",
+            "paragraphs": [
+              "VLM может помогать семантическому восприятию, разбору задачи и выбору высокого уровня. Другая система превращает информацию в выполнимые действия и исполняет их. В VLA роботизированное обучение связывает представления с выходом действий. Один вызов VLM через API ещё не создаёт обученного интерфейса команд."
+            ]
+          },
+          {
+            "id": "timing",
+            "title": "Возраст наблюдения и неопределённость",
+            "paragraphs": [
+              "Измеряют подготовку изображения, зрительный энкодер, генерацию и передачу. Ответ о старом кадре может стать непригодным после изменения сцены. Уверенный текст не является калиброванной вероятностью физического успеха. Задают проверку неоднозначностей, запрос дополнительных измерений и обработку неподдержанных инструкций."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Оценка под назначение",
+            "paragraphs": [
+              "Проверяют новые предметы и инструкции, пространственные отношения, потерю обзора, окклюзию и вводящие в заблуждение запросы. Правильность языкового ответа отделяют от правильности результата робота. При необходимости сравнивают со специализированным зрением. Важно качество целевой операции и обработка ошибок, не только показатель на наборе картинок и подписей."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Семантика не заменяет физику",
+            "paragraphs": [
+              "VLM может придумывать детали, путать стороны, не замечать мелкий объект и опираться на случайные корреляции. Общее название семейства не делает ответ разрешением безопасного движения. Нужны ограниченные интерфейсы, проверки и отдельные ограничения управления. Опубликованный пример демонстрирует определённую задачу, а не надёжное восприятие любых условий."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Зрительно-языковые модели",
+        "short_description": "Что дают связи изображений и текста — и чего они не дают роботизированному контроллеру.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "Полезный смысловой контекст",
+            "paragraphs": [
+              "VLM связывает визуальные данные с языком и может помогать разбору предметов и письменных заданий. Иногда это сокращает ручные смысловые правила, но модель не является готовым контроллером робота. Сначала определите нужный выход: описание, оценку соответствия, интерпретацию объекта или предложение задачи высокого уровня."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Что расходуется при внедрении",
+            "paragraphs": [
+              "Учитывают камеры, подготовку изображений, вычисления или доступ к сервису, сеть, обработку данных и интеграцию. Задержки генератора текста отличаются от модели признаков. Проверяют реальную лицензию и условия эксплуатации. Измерять следует на рабочих изображениях и в целевом окружении, а не на удобном текстовом примере."
+            ]
+          },
+          {
+            "id": "integration",
+            "title": "Где необходима проверка",
+            "paragraphs": [
+              "Описание картинки — не измеренная координата для машины. Ниже могут понадобиться калиброванное зрение, логика задания и контроллер. Между смысловым предложением и разрешённым действием нужен узкий интерфейс. Заранее определяют, когда неопределённость должен разрешить человек или дополнительный датчик."
+            ]
+          },
+          {
+            "id": "choice",
+            "title": "Содержательная приёмка",
+            "paragraphs": [
+              "Сравните VLM со специализированным зрением или меньшей моделью на реальных предметах, свете и командах. Считайте правильно выполненную работу и обращения к человеку, не только гладкость ответов. Включайте расходы на уверенно неверные описания и время получения новых наблюдений."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Зрелость конкретного решения",
+            "paragraphs": [
+              "Связи изображений и текста давно исследуются, но их надёжное использование в нужной операции требует подтверждения. Галлюцинации, изменившаяся сцена и мелкие детали бывают существенными рисками. Распознать картинку — не значит знать её механику. Масштабировать следует после оценки последствий ошибок и независимого пути безопасности."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Зрительно-языковые модели",
+        "short_description": "Что дают связи изображений и текста — и чего они не дают роботизированному контроллеру.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Изображения и слова в одном семействе",
+            "paragraphs": [
+              "Зрительно-языковая модель учит связи картинок и языка. Одни модели располагают подходящие изображения и описания рядом в числовом пространстве. Другие генерируют текст с учётом визуальных данных. Название семейства не означает наличия всех возможностей и не включает действия робота автоматически."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Разные способы связать два вида данных",
+            "paragraphs": [
+              "CLIP — известный пример контрастивного обучения представлений на парах изображения и текста. Flamingo показывает другую задачу: генерацию языка при визуальном условии. Поэтому важны архитектура и цель обучения. Одна надпись VLM оставляет множество свойств системы неизвестными."
+            ]
+          },
+          {
+            "id": "output",
+            "title": "Ответ не является измерением",
+            "paragraphs": [
+              "Модель может сказать, что чашка находится рядом с коробкой. Это полезное смысловое описание, но оно не даёт калиброванного расстояния для захвата. Убедительная фраза способна содержать и выдуманную деталь. Физическому действию нужен проверенный интерфейс наблюдений и управления."
+            ]
+          },
+          {
+            "id": "robotics",
+            "title": "Чем это помогает машине",
+            "paragraphs": [
+              "VLM может разбирать инструкцию или помогать высокоуровневому решению, после чего другой компонент выбирает и исполняет движения. VLA связывает зрение и язык с обученными выходами действий — это дополнительная возможность. Модель, умеющая говорить о роботе, не обязательно умеет выдавать ему команды."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Что изменилось после кадра",
+            "paragraphs": [
+              "Движущаяся сцена может уже не соответствовать изображению, по которому пришёл ответ. Мелкие предметы, перекрытия и непривычный ракурс тоже создают ошибки. Инженеры проверяют конкретную задачу и задают запрос нового наблюдения или помощи. Качество слов и успех физической операции — разные показатели."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Зрительно-языковые модели",
+        "short_description": "Что дают связи изображений и текста — и чего они не дают роботизированному контроллеру.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Соединить картинки и слова",
+            "paragraphs": [
+              "Зрительно-языковая модель учит закономерности между изображениями и языком. Она может помогать искать картинку по описанию или писать слова о картинке. Разные модели выполняют разные задачи. Это не значит, что они видят и понимают комнату точно как человек."
+            ]
+          },
+          {
+            "id": "practice",
+            "title": "Какие примеры помогают",
+            "paragraphs": [
+              "При обучении одни модели сравнивают пары картинок и подписей с другими парами. Другие учатся продолжать текст, используя изображение. Такие упражнения учат связям информации. Они не учат автоматически нужному усилию захвата или безопасному пути руки робота."
+            ]
+          },
+          {
+            "id": "measurement",
+            "title": "Рядом — ещё не расстояние",
+            "paragraphs": [
+              "Пусть модель говорит: чашка рядом с коробкой. Фраза может хорошо описывать сцену. Но роботу ещё надо знать, куда поставить захват и какие движения разрешены. Предложение не равно аккуратному измерению положения или расстояния в настоящей комнате."
+            ]
+          },
+          {
+            "id": "action",
+            "title": "Говорить и двигаться — разные задачи",
+            "paragraphs": [
+              "Одна часть системы может обрабатывать инструкцию с помощью модели. Другие части предлагают команды и управляют двигателями. Семейство VLA связывает изображения и слова с обученными действиями. Модель, описывающая движение, не обязательно обладает этой способностью."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Убедительный ответ бывает неверным",
+            "paragraphs": [
+              "Модель может пропустить маленькую вещь или назвать деталь, которой нет на картинке. Пока компьютер отвечал, сцена тоже могла измениться. Поэтому проверяют результат, получают новые измерения и предусматривают помощь или остановку. Красивый язык не доказывает правильного действия."
+            ]
+          }
+        ]
+      }
+    },
+    "ja": {
+      "engineer": {
+        "title": "視覚言語モデル",
+        "short_description": "画像と言葉を結びつけてできることと、制御に足りないもの。",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "視覚と言語を結ぶモデル群",
+            "paragraphs": [
+              "視覚言語モデル（Vision-Language Model、VLM）は、画像と言語の関係を学びます。表現を作るモデルと文章を生成するモデルは、異なるインターフェースを持ちます。説明の検索、文章生成、行動生成、校正された幾何の推定は同じ能力ではありません。実際に利用する機能と学習方法を明示します。"
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "エンコーダーと融合",
+            "paragraphs": [
+              "画像の特徴を作る部分と、言語を表す、あるいは生成する部分を接続します。共有埋め込み、射影、cross-attentionなどの方式があります。CLIPの対照学習表現とFlamingoの条件付き文章生成は異なる例です。VLMという名前だけでは入力解像度やマスク、行動対応は決まりません。"
+            ]
+          },
+          {
+            "id": "training",
+            "title": "何を学習しているか",
+            "paragraphs": [
+              "対照学習は、対応する画像と文章の表現を他の組より近づけます。生成学習は視覚情報を条件に文章を予測できます。収録内容、キャプション、除外処理が学習する関係を左右します。どちらも接触動力学、物体寸法、ロボット作業の成功を直接保証する目的ではありません。"
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "出力の解釈",
+            "paragraphs": [
+              "出力は埋め込み、対応スコア、文章などで、使い方を設備側で定義します。物体についての文は、そのまま校正済みの位置姿勢ではありません。座標が必要なら、検証したグラウンディングや状態推定へ接続し、もっともらしい文章を測定値として扱わないことが必要です。"
+            ]
+          },
+          {
+            "id": "robotics",
+            "title": "大きな制御ループの一部",
+            "paragraphs": [
+              "意味的な認識、指示の解釈、高水準の選択を助けられますが、実行可能な動作への変換と実機制御は別に必要です。VLAではロボットの行動学習で表現と指令を結びつけます。VLMをAPIで呼ぶだけでは、その学習済みの接続は作れません。"
+            ]
+          },
+          {
+            "id": "timing",
+            "title": "観測の古さと不確かさ",
+            "paragraphs": [
+              "画像の前処理、エンコード、生成、通信の全遅延を測ります。古い画像への答えは、場面が変わると不適切になります。自信のある文章も、物理作業の成功確率ではありません。不明な観測の検証、追加測定、対応できない指示の扱いを定めます。"
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "用途に合う試験",
+            "paragraphs": [
+              "物体や指示の変化、位置関係、欠けた視野、遮蔽、誤解を招く入力を試します。文章回答の正しさと作業結果の正しさを分け、必要なら専用の視覚処理と比べます。画像と文章のベンチマークだけでなく、後段の仕事と失敗処理を評価します。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "意味と物理は同じではない",
+            "paragraphs": [
+              "存在しない細部、左右の混同、小物の見落とし、データの相関への依存が起こります。モデル群の名称だけで出力を安全な行動の許可にできません。制限した接続、検証、独立した制御制約が必要です。公開例は、その試験条件での結果として読みます。"
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "視覚言語モデル",
+        "short_description": "画像と言葉を結びつけてできることと、制御に足りないもの。",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "意味的な文脈を補う",
+            "paragraphs": [
+              "VLMは画像と言葉を結び、物体や文章の作業指示を解釈するのに使えます。一部の規則記述を減らせても、完成したロボット制御器ではありません。説明文、照合スコア、物体の解釈、高水準の提案のうち、どの出力が必要かを最初に定めます。"
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "導入時の負担",
+            "paragraphs": [
+              "カメラ、画像処理、計算機またはサービス、通信、データ管理、設備との接続を検討します。文章生成と埋め込みモデルの遅延は異なります。実際の利用条件を確認し、都合のよい文章の例でなく、対象の画像と運用環境で測定します。"
+            ]
+          },
+          {
+            "id": "integration",
+            "title": "出力を検証する場所",
+            "paragraphs": [
+              "画像の説明は測定したロボット座標ではありません。校正された知覚、工程の判断、制御器が後段に必要な場合があります。意味的な提案と許可された動作の間を狭い仕様でつなぎ、人や別のセンサーが不明点を解決する条件を決めます。"
+            ]
+          },
+          {
+            "id": "choice",
+            "title": "業務に合う比較",
+            "paragraphs": [
+              "実際の物体、照明、指示、例外条件で、専用の視覚ツールや小さいモデルと比べます。流暢な回答だけでなく正しく完了した仕事と人の確認を数えます。確信を持って誤る回答への対応や、新しい観測を得る時間も運用費に含めます。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "判断の用途ごとの成熟度",
+            "paragraphs": [
+              "一般的な画像と言語の機能が使えても、特定のロボット工程での信頼性は検証が必要です。幻覚、場面変化、小さな視覚情報は大きなリスクになり得ます。画像の認識と力学の理解を混同せず、誤りの結果と独立した安全経路を確認して拡大します。"
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "視覚言語モデル",
+        "short_description": "画像と言葉を結びつけてできることと、制御に足りないもの。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "画像と言葉の関係",
+            "paragraphs": [
+              "視覚言語モデルは、画像と言葉のつながりを学びます。合う画像と説明を数値空間で近づける方式も、画像を参照しながら文章を作る方式もあります。この名前だけで両方ができるとは限らず、ロボットの行動が自動的に含まれるわけでもありません。"
+            ]
+          },
+          {
+            "id": "training",
+            "title": "結び方が違う例",
+            "paragraphs": [
+              "CLIPは、画像と文章のペアから対照学習する代表例です。Flamingoは視覚を条件に言語を生成する別の例です。同じVLMでも構成と学習目標が重要になります。名前一つでは、どんな入力や出力を扱うシステムか分かりません。"
+            ]
+          },
+          {
+            "id": "output",
+            "title": "答えと測定値の違い",
+            "paragraphs": [
+              "モデルが「コップは箱の横にある」と説明できれば、場面の意味を知る助けになります。でも、つかむための正確な距離を得たわけではありません。自然な文に架空の細部が入ることもあります。物理的な行動には、検証した観測と制御への接続が必要です。"
+            ]
+          },
+          {
+            "id": "robotics",
+            "title": "ロボットのどこを助けるか",
+            "paragraphs": [
+              "指示の解釈や高水準の判断を助け、その後に別の部分が動作を選んで実行する構成があります。VLAは視覚と言語を学習済みの行動出力へ結ぶモデル群です。ロボットについて説明できることと、指令を出せることは別の能力です。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "撮影後の変化も考える",
+            "paragraphs": [
+              "回答に使った画像と、現在の場面が違う場合もあります。小物、遮蔽、見慣れない角度でも誤ります。技術者は具体的な後段の仕事を試し、追加観測や人への問い合わせを決めます。言葉の質と実際の作業成功は、別の指標として測ります。"
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "視覚言語モデル",
+        "short_description": "画像と言葉を結びつけてできることと、制御に足りないもの。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "画像と言葉を結ぶ",
+            "paragraphs": [
+              "視覚言語（しかくげんご）モデルは、画像と言葉の関係を学ぶ。説明に合う画像を探したり、画像について文を書いたりするモデルがあるよ。できる仕事はモデルによって違う。人とまったく同じように部屋を見て理解する意味ではないんだ。"
+            ]
+          },
+          {
+            "id": "practice",
+            "title": "どんな練習をするか",
+            "paragraphs": [
+              "画像と説明文のペアを、ほかのペアと比べる学び方がある。画像を使いながら次の言葉を予測する方法もある。情報の関係を学ぶ練習であり、物をつかむ力や、腕が安全に通れる道まで自動的に教わるわけではない。"
+            ]
+          },
+          {
+            "id": "measurement",
+            "title": "横にあるだけでは足りない",
+            "paragraphs": [
+              "「コップは箱の横」とモデルが答えたとする。場面の説明としては役立つかもしれない。でもロボットには、つかむ部分をどこへ置くか、どこまで動いてよいかという情報も必要だ。文は位置や距離を丁寧に測った値とは違う。"
+            ]
+          },
+          {
+            "id": "action",
+            "title": "説明と動作は別の役目",
+            "paragraphs": [
+              "モデルで指示を処理し、別の部分で動作を提案し、さらに制御器でモーターを動かす構成がある。VLAは画像と言葉を学習した行動へ結ぶモデル群だ。動きを説明できるモデルが、必ずその指令も出せるとは限らないよ。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "もっともらしくても確認する",
+            "paragraphs": [
+              "小さな物を見落としたり、画像にないことを言ったりする場合がある。答えている間に場面が変わることもあるね。技術者は結果を確認し、測り直しや助けを求める条件を用意する。自然な言葉だけでは、正しく動ける証明にならない。"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

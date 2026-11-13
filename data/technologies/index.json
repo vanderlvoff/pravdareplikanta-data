@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "title": {
+    "ru": "Технологии физического ИИ",
+    "en": "Physical AI technologies",
+    "ja": "フィジカルAIの技術"
+  },
+  "introduction": {
+    "ru": "Как робот наблюдает мир, выбирает действие и проверяет его результат. Здесь собраны методы обучения, архитектуры управления и способы проверки — с разными объяснениями для четырёх уровней подготовки.",
+    "en": "How a robot observes the world, chooses an action and checks the outcome. Explore learning methods, control architectures and evaluation through explanations for four reading levels.",
+    "ja": "ロボットは世界を観測し、行動を選び、その結果を確かめます。学習方法、制御の構成、評価の考え方を、四つの読み方に合わせてたどる技術アトラスです。"
+  },
+  "categories": [
+    {
+      "id": "foundations",
+      "title": {
+        "ru": "Основы",
+        "en": "Foundations",
+        "ja": "基礎"
+      },
+      "description": {
+        "ru": "Как представляют знания и обучают модели.",
+        "en": "How representations and learning methods are built.",
+        "ja": "情報の表現とモデルの学習方法。"
+      }
+    },
+    {
+      "id": "perception",
+      "title": {
+        "ru": "Восприятие мира",
+        "en": "Perception and state estimation",
+        "ja": "知覚と状態推定"
+      },
+      "description": {
+        "ru": "Изображения, датчики и представления окружающей среды.",
+        "en": "Images, sensors and representations of the environment.",
+        "ja": "画像、センサー、周囲の環境の表現。"
+      }
+    },
+    {
+      "id": "control",
+      "title": {
+        "ru": "Движение и управление",
+        "en": "Locomotion and low-level control",
+        "ja": "移動と低レベル制御"
+      },
+      "description": {
+        "ru": "От наблюдений до команд приводам и устойчивого движения.",
+        "en": "From observations to actuator commands and stable movement.",
+        "ja": "観測から駆動部への指令と安定した運動へ。"
+      }
+    },
+    {
+      "id": "manipulation",
+      "title": {
+        "ru": "Манипуляция и действия",
+        "en": "Manipulation and action generation",
+        "ja": "操作と行動生成"
+      },
+      "description": {
+        "ru": "Как роботы предсказывают и выполняют движения рук.",
+        "en": "How robots generate and execute manipulation actions.",
+        "ja": "ロボットが腕の動作を生成して実行する仕組み。"
+      }
+    },
+    {
+      "id": "generalist-models",
+      "title": {
+        "ru": "Универсальные модели",
+        "en": "Generalist robot models",
+        "ja": "汎用ロボットモデル"
+      },
+      "description": {
+        "ru": "Связь зрения, языка и управления на разных роботах.",
+        "en": "Connecting vision, language and action across robot embodiments.",
+        "ja": "視覚、言語、行動を多様なロボットで結びつける。"
+      }
+    },
+    {
+      "id": "world-models-planning",
+      "title": {
+        "ru": "Модели мира и планирование",
+        "en": "World models and planning",
+        "ja": "世界モデルと計画"
+      },
+      "description": {
+        "ru": "Предсказание последствий и выбор последовательности действий.",
+        "en": "Predicting consequences and choosing action sequences.",
+        "ja": "行動の結果を予測し、手順を選ぶ。"
+      }
+    },
+    {
+      "id": "training-simulation",
+      "title": {
+        "ru": "Обучение, симуляция и проверка",
+        "en": "Training, simulation and evaluation",
+        "ja": "学習・シミュレーション・評価"
+      },
+      "description": {
+        "ru": "Данные, виртуальные эксперименты и проверка на реальной машине.",
+        "en": "Data, simulated experiments and evaluation on real machines.",
+        "ja": "データ、仮想環境での実験、実機での評価。"
+      }
+    }
+  ],
+  "technology_ids": [
+    "neural-locomotion-policies",
+    "reinforcement-learning",
+    "imitation-learning",
+    "act",
+    "diffusion-policy",
+    "flow-matching-policies",
+    "transformers",
+    "vision-language-models",
+    "vision-language-action-models",
+    "world-models",
+    "model-based-planning",
+    "sim-to-real-transfer"
+  ]
+}

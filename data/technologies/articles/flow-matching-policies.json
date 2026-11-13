@@ -1,0 +1,624 @@
+{
+  "schema_version": "1.0",
+  "id": "flow-matching-policies",
+  "category": "manipulation",
+  "technology_type": "method",
+  "title": {
+    "ru": "Политики на основе flow matching",
+    "en": "Flow matching policies",
+    "ja": "Flow Matchingによる方策"
+  },
+  "short_description": {
+    "ru": "Обученное поле скоростей преобразует шум в согласованный план движений.",
+    "en": "A learned velocity field transforms noise into a coordinated action sequence.",
+    "ja": "学習したベクトル場でノイズをまとまった動作列へ変換する。"
+  },
+  "related_technologies": [
+    {
+      "target": "imitation-learning",
+      "type": "uses",
+      "explanation": {
+        "ru": "Наблюдения и действия из демонстраций задают условное распределение траекторий.",
+        "en": "Demonstration observations and actions specify a conditional trajectory distribution.",
+        "ja": "実演の観測と動作から条件付きの軌跡分布を学ぶ。"
+      }
+    }
+  ],
+  "prerequisites": [
+    "imitation-learning"
+  ],
+  "term_refs": [
+    "flow-matching",
+    "action-representation",
+    "vision-language-action"
+  ],
+  "sources": [
+    {
+      "id": "flow-matching",
+      "title": "Flow Matching for Generative Modeling",
+      "url": "https://arxiv.org/abs/2210.02747",
+      "kind": "paper",
+      "year": 2023
+    },
+    {
+      "id": "pi-zero",
+      "title": "π0: A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://arxiv.org/abs/2410.24164",
+      "kind": "paper",
+      "year": 2024
+    },
+    {
+      "id": "openpi-code",
+      "title": "OpenPI — Physical Intelligence",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "kind": "code",
+      "year": 2025
+    }
+  ],
+  "last_reviewed": "2026-11-13",
+  "content_status": "ready",
+  "diagram": "flow",
+  "localizations": {
+    "en": {
+      "engineer": {
+        "title": "Flow matching policies",
+        "short_description": "A learned velocity field transforms noise into a coordinated action sequence.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "A flow in action space",
+            "paragraphs": [
+              "Flow matching policies generate actions by integrating a learned conditional vector field. In a common construction, a noise sample is gradually transported toward a demonstrated action sequence. The vector describes how the numerical sample changes during generation; it is not the physical velocity of a robot joint or end effector."
+            ]
+          },
+          {
+            "id": "representation",
+            "title": "Inputs and outputs",
+            "paragraphs": [
+              "An observation encoder supplies images, robot state and, in some systems, a language instruction. The generator operates on a fixed action representation, often a chunk. The meaning of each coordinate, normalization, horizon and execution frequency must match the dataset and controller. A continuous numerical output does not automatically satisfy kinematic or force constraints."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Matching the velocity field",
+            "paragraphs": [
+              "Training samples an interpolation time and a point along a path between noise and an action example. The network learns the target velocity along that path, conditioned on observations. A squared-error velocity objective is a representative formulation. The exact path construction matters; flow matching is not simply a diffusion noise-prediction loss with another label."
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "Integrating during generation",
+            "paragraphs": [
+              "Start from a noise sample and numerically integrate the learned field over generative time. Solver choice and step count affect computation and sample quality. Observations may remain fixed during one generated chunk, with new conditioning supplied at the next policy update. An inexpensive solver is useful only if its closed-loop behavior remains acceptable."
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "Where a VLA can use it",
+            "paragraphs": [
+              "The original π0 combines a pretrained vision-language backbone with a flow-based action expert. This is one concrete architecture, not a definition of all VLA models or all flow policies. A flow head can also be conditioned without language. Pretraining the backbone does not remove the requirement for robot action data and an embodiment-specific execution contract."
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "Connection to real time",
+            "paragraphs": [
+              "A controller executes a chosen prefix or scheduled portion of the generated chunk. Measure sensing, conditioning, numerical integration, data transfer and actuation latency together. A small number of generative steps does not establish a universal control rate. Real feedback, command buffering and policies for missed deadlines must be engineered explicitly."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "What to test",
+            "paragraphs": [
+              "Hold demonstrations, representations and task splits constant when comparing flow matching with diffusion or direct chunk prediction. Include execution latency distribution, task completion, mode consistency, interventions and recovery after contact errors. Test whether reducing integration steps changes the behavior, not just whether it reduces the average model runtime."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Expressivity is not a safety certificate",
+            "paragraphs": [
+              "Flow matching can model alternatives in a high-dimensional action sequence, but it can also produce unsuitable targets outside training conditions. Distribution shifts, poorly calibrated observations and absent recovery data remain problems. Classical limits, collision checks where applicable and independent stopping mechanisms are still needed. The most suitable generator depends on the complete system."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Flow matching policies",
+        "short_description": "A learned velocity field transforms noise into a coordinated action sequence.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "Generating coordinated action proposals",
+            "paragraphs": [
+              "Flow matching is a way to produce coordinated robot commands from observations. It can represent different valid movement patterns instead of a single averaged response. It is a component of an automation system, not a complete product. A reference to a large generalist model does not establish compatibility with a particular robot or production process."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "The actual resource commitment",
+            "paragraphs": [
+              "Plan for synchronized robot demonstrations, a clearly defined action interface, a tested observation pipeline and compute for model conditioning and numerical integration. If a pretrained backbone is used, review its license, deployment constraints and the cost of adapting it. Availability of model weights alone does not complete the integration."
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "When compute becomes an operating constraint",
+            "paragraphs": [
+              "The generator moves a numerical sample from noise toward actions in several solver steps. Their number affects latency and possibly quality. Faster generation is useful only if the resulting operation remains reliable. Verify the full deadline from a fresh observation to an executable command on the intended hardware."
+            ]
+          },
+          {
+            "id": "choice",
+            "title": "A useful procurement comparison",
+            "paragraphs": [
+              "Compare against diffusion or a simpler imitation policy using the same task and data. Ask for complete attempts, not selected examples, and record interventions, recovery work and timing variation. An action head that performs well in one published configuration may behave differently after changes to objects, cameras, grippers or execution frequency."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Where the risk remains",
+            "paragraphs": [
+              "Continuous commands are not automatically safe commands. Unseen contacts and missing recovery examples can still cause failure. Budget for dataset upkeep, on-site validation and exception handling. Keep safety functions independent of the learned generator, and avoid assuming that a new generative recipe immediately provides a mature general-purpose robot."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Flow matching policies",
+        "short_description": "A learned velocity field transforms noise into a coordinated action sequence.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Turning one cloud of numbers into another",
+            "paragraphs": [
+              "Imagine gradually reshaping a scattered set of points into useful patterns. A flow matching policy learns a mathematical rule for changing a noisy numerical sample into an action sequence. The changing numbers describe a proposed robot movement. The flow is a calculation in action space, not a force pushing the machine."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "What the rule learns",
+            "paragraphs": [
+              "Training connects noise samples with demonstrated actions and chooses points between them. At those points, the model learns which direction the sample should move next, using the current observations as a condition. Repeating this over data produces a velocity field that can guide new samples."
+            ]
+          },
+          {
+            "id": "generation",
+            "title": "Following the field",
+            "paragraphs": [
+              "At inference, a numerical solver follows the learned field in several steps. More or fewer steps change the computational work and may change the result. The robot does not take a physical step for each solver step. Only the completed action proposal is handed to the execution system."
+            ]
+          },
+          {
+            "id": "connection",
+            "title": "Why it appears in VLA research",
+            "paragraphs": [
+              "A vision-language model can provide a representation of images and instructions, while a flow head generates actions from that representation. The original π0 is an example. Other action generators can fill the same role, and a flow policy does not have to include language. These names refer to different layers of a system."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "A motion proposal still needs testing",
+            "paragraphs": [
+              "A generated sequence can offer several plausible ways to perform a task, yet still fail on an unfamiliar object or contact. Compare it with diffusion: denoising and velocity-field integration are different recipes with practical trade-offs. Real observations, controllers and tests of complete attempts remain essential in both cases."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Flow matching policies",
+        "short_description": "A learned velocity field transforms noise into a coordinated action sequence.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "A rule for changing numbers",
+            "paragraphs": [
+              "Think of some scattered dots that gradually form a useful pattern. Flow matching teaches a rule that changes random numbers into numbers describing a robot's movements. The word flow refers to this calculation. It does not mean that water or an invisible force moves the robot."
+            ]
+          },
+          {
+            "id": "examples",
+            "title": "Learning a direction",
+            "paragraphs": [
+              "People first provide examples of useful movements. During training, the program makes intermediate examples between random numbers and those recorded commands. The model learns which way to change the numbers at each point, depending on what the robot can observe."
+            ]
+          },
+          {
+            "id": "calculation",
+            "title": "Computer steps and robot motion",
+            "paragraphs": [
+              "When making a new proposal, the computer follows its learned rule through several calculation steps. Those are not the robot's physical steps. The numbers must first become a suitable command sequence, and another part of the system must send the commands to the machine."
+            ]
+          },
+          {
+            "id": "language",
+            "title": "It can be part of a bigger model",
+            "paragraphs": [
+              "Some systems also use a model that connects pictures and words. That part can help interpret an instruction such as putting an object in a box. A flow-based part then proposes movements. Understanding a sentence and safely moving a real motor are still different tasks."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Why a human still checks",
+            "paragraphs": [
+              "A moved box or a slipping object can create a situation missing from the examples. The proposed motion may then be wrong even if it looks smooth. Engineers test whole attempts, limit the machine's motion and provide stopping rules. A clever way to generate commands is not proof that every command is safe."
+            ]
+          }
+        ]
+      }
+    },
+    "ru": {
+      "engineer": {
+        "title": "Политики на основе flow matching",
+        "short_description": "Обученное поле скоростей преобразует шум в согласованный план движений.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Поток в пространстве действий",
+            "paragraphs": [
+              "Политика на основе flow matching генерирует действия интегрированием выученного условного векторного поля. В распространённой постановке шумовая выборка постепенно преобразуется в демонстрационную последовательность. Скорость этого преобразования относится к числам в генеративном процессе: это не физическая скорость сустава или рабочего органа робота."
+            ]
+          },
+          {
+            "id": "representation",
+            "title": "Входы и представление выхода",
+            "paragraphs": [
+              "Энкодер передаёт изображения, состояние робота и, в некоторых системах, языковую инструкцию. Генератор работает с заданным форматом действий, часто с блоком будущих целей. Смысл координат, нормализация, длина блока и частота исполнения должны соответствовать данным и контроллеру. Непрерывные числа на выходе сами по себе не соблюдают ограничения кинематики или усилия."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Обучение поля скоростей",
+            "paragraphs": [
+              "На обучении выбирают момент интерполяции и точку на пути между шумом и примером действий. Сеть учит целевую скорость вдоль этого пути при заданных наблюдениях. Типичная цель — квадратичная ошибка поля скоростей. Выбор пути существенен: flow matching нельзя считать той же ошибкой предсказания диффузионного шума под другим названием."
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "Численное интегрирование",
+            "paragraphs": [
+              "При выводе начинают с шума и интегрируют поле по генеративному времени. Метод решателя и число шагов влияют на вычисления и качество выборки. Внутри одной генерации наблюдения могут оставаться фиксированными, а новое условие поступает при следующем обновлении policy. Дешёвый решатель полезен, только если сохраняется приемлемое поведение в замкнутом цикле."
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "Где это встречается в VLA",
+            "paragraphs": [
+              "Исходная π0 объединяет предобученную зрительно-языковую основу с генератором действий на flow matching. Это конкретная архитектура, а не определение всех VLA и не обязательный состав любой flow-policy. Поле можно условить и без языка. Предобучение основы не отменяет роботизированные данные и согласование действий с конкретным телом робота."
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "Связь с реальным временем",
+            "paragraphs": [
+              "Контроллер исполняет выбранное начало или другой предусмотренный графиком фрагмент блока. В задержку входят датчики, обработка условия, интегрирование, передача и приводы. Малое число генеративных шагов не устанавливает универсальную частоту управления. Нужно явно проектировать обратную связь, буфер команд и поведение при пропуске срока обновления."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Что измерять",
+            "paragraphs": [
+              "При сравнении с диффузией или прямым предсказанием фиксируют демонстрации, представления и разбиение задач. Измеряют распределение задержек, завершение операций, согласованность выбора вариантов, вмешательства и восстановление после ошибок контакта. Сокращение числа шагов проверяют по поведению всей системы, а не только по среднему времени нейросетевого вызова."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Генерация не подтверждает безопасность",
+            "paragraphs": [
+              "Поле способно представлять альтернативные траектории, но может выдать неподходящую цель за пределами обучения. Смена распределения, плохая калибровка наблюдений и нехватка восстановительных примеров остаются проблемами. Нужны ограничения исполнения, проверки столкновений там, где они применимы, и независимая остановка. Выбирают генератор в составе целой системы."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Политики на основе flow matching",
+        "short_description": "Обученное поле скоростей преобразует шум в согласованный план движений.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "Предлагать согласованные команды",
+            "paragraphs": [
+              "Flow matching — способ получить согласованные команды из наблюдений. Он может сохранять разные допустимые варианты движения вместо одного среднего ответа. Это компонент автоматизации, не готовое решение участка. Ссылка на крупную универсальную модель ещё не доказывает совместимость с конкретным роботом или производственным процессом."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Реальные составляющие бюджета",
+            "paragraphs": [
+              "Запланируйте синхронные демонстрации, чёткий интерфейс действий, проверенную обработку наблюдений и вычисления для модели и численного интегрирования. Если используется предобученная основа, выясните условия лицензии, ограничения развёртывания и стоимость адаптации. Доступные веса модели не означают завершённой интеграции."
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "Когда вычисления влияют на работу",
+            "paragraphs": [
+              "Генератор преобразует числовой шум в действия за несколько шагов решателя. Их число влияет на задержку и, возможно, на качество. Ускорение полезно, только если операция остаётся надёжной. Проверяйте полный срок от свежего наблюдения до пригодной команды на целевом оборудовании."
+            ]
+          },
+          {
+            "id": "choice",
+            "title": "Полезное сравнение поставщиков",
+            "paragraphs": [
+              "Сопоставляйте с диффузией и простой имитационной policy на одинаковой задаче и данных. Запрашивайте полные попытки, а не отобранные успехи; учитывайте вмешательства, восстановление и разброс времени. Результат опубликованной конфигурации может не сохраниться после смены предметов, камер, захвата или частоты исполнения."
+            ]
+          },
+          {
+            "id": "risk",
+            "title": "Что остаётся риском",
+            "paragraphs": [
+              "Непрерывная команда не становится безопасной только из-за формата. Неизвестный контакт или отсутствие восстановительных примеров всё ещё приводят к сбою. Учитывайте поддержку данных, испытания на месте и обработку исключений. Не переносите функции безопасности на обученный генератор и не считайте новый метод признаком зрелого универсального робота."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Политики на основе flow matching",
+        "short_description": "Обученное поле скоростей преобразует шум в согласованный план движений.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Преобразовать облако чисел",
+            "paragraphs": [
+              "Представь рассыпанные точки, которые постепенно складываются в полезный узор. Flow matching учит математическое правило преобразования шумовой выборки в последовательность действий. Числа описывают предложенное движение. Поток существует в пространстве вычислений, а не толкает механизм какой-то новой физической силой."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Чему учит правило",
+            "paragraphs": [
+              "На обучении связывают шумовые выборки с демонстрациями и выбирают промежуточные точки между ними. Модель учит направление дальнейшего изменения чисел с учётом наблюдений. После большого числа примеров получается поле, которое направляет новые выборки к подходящим последовательностям действий."
+            ]
+          },
+          {
+            "id": "generation",
+            "title": "Следовать за полем",
+            "paragraphs": [
+              "При выводе численный решатель проходит по выученному полю за несколько шагов. Их количество меняет объём вычислений и может повлиять на результат. Один шаг решателя не соответствует одному движению робота. Сначала получают числовую последовательность, затем передают её системе исполнения."
+            ]
+          },
+          {
+            "id": "connection",
+            "title": "Почему метод упоминают вместе с VLA",
+            "paragraphs": [
+              "Зрительно-языковая часть может представить изображения и инструкцию, а flow-генератор — превратить это представление в действия. Примером служит исходная π0. Но на этом месте возможен другой генератор, а flow-policy может вообще не использовать язык. Названия относятся к разным слоям архитектуры."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Вариант движения ещё нужно проверить",
+            "paragraphs": [
+              "Полученная последовательность может быть правдоподобной и всё равно не сработать на незнакомом предмете или контакте. Диффузия удаляет шум, а flow matching интегрирует поле скоростей: это разные рецепты с собственными компромиссами. Реальные наблюдения, контроллер и испытания полных попыток нужны в обоих случаях."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Политики на основе flow matching",
+        "short_description": "Обученное поле скоростей преобразует шум в согласованный план движений.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Правило изменения чисел",
+            "paragraphs": [
+              "Представь точки, которые из беспорядка складываются в узор. Flow matching помогает выучить правило, меняющее случайные числа на числа для движения робота. Слово «поток» здесь относится к вычислению. Ни вода, ни невидимая сила робота при этом не двигают."
+            ]
+          },
+          {
+            "id": "examples",
+            "title": "По примерам полезных движений",
+            "paragraphs": [
+              "Сначала люди собирают примеры действий. Программа делает промежуточные варианты между случайными числами и записанными командами. Модель учится тому, в какую сторону менять числа, учитывая, что сейчас видит робот. Это помогает получать новые предложения движения."
+            ]
+          },
+          {
+            "id": "calculation",
+            "title": "Шаг компьютера и движение машины",
+            "paragraphs": [
+              "Чтобы сделать предложение, компьютер несколько раз следует выученному правилу. Эти вычислительные шаги не являются физическими шагами робота. Числа ещё должны стать подходящими командами, а отдельная часть системы — передать их настоящей машине."
+            ]
+          },
+          {
+            "id": "language",
+            "title": "Часть более большой системы",
+            "paragraphs": [
+              "В некоторых системах есть модель, связывающая картинки со словами. Она помогает обработать указание, например положить предмет в коробку. Затем генератор предлагает движения. Обработать фразу и безопасно управлять реальным двигателем — всё же разные задачи."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Почему нужны проверки",
+            "paragraphs": [
+              "Переставленная коробка или выскользнувший предмет могут создать ситуацию, которой не было в примерах. Предложение окажется неверным, даже если выглядит плавным. Поэтому проверяют попытки целиком, ограничивают движение и предусматривают остановку. Интересный способ генерации команд не доказывает безопасность каждой из них."
+            ]
+          }
+        ]
+      }
+    },
+    "ja": {
+      "engineer": {
+        "title": "Flow Matchingによる方策",
+        "short_description": "学習したベクトル場でノイズをまとまった動作列へ変換する。",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "行動空間での流れ",
+            "paragraphs": [
+              "Flow Matchingによる方策は、条件付きのベクトル場を学習し、その場を積分して行動を生成します。代表的な構成では、ノイズの標本を実演の行動列へ近づけます。この速度は生成中の数値の変化率であり、関節や手先の物理的な速度ではありません。"
+            ]
+          },
+          {
+            "id": "representation",
+            "title": "入出力の契約",
+            "paragraphs": [
+              "画像、機体の状態、場合によっては言語指示をエンコーダーから与えます。生成器は決めた行動形式を使い、複数時刻の目標を出す場合があります。座標の意味、正規化、予測区間、実行周期はデータと制御器で一致させます。連続値を出すだけでは、運動学や力の制約は満たせません。"
+            ]
+          },
+          {
+            "id": "training",
+            "title": "速度場を学ぶ",
+            "paragraphs": [
+              "学習では、ノイズと行動例を結ぶ経路上の時刻と点を選びます。観測を条件に、その点での目標速度を予測させます。速度の二乗誤差が代表的な目的関数です。経路の設計が重要であり、拡散モデルのノイズ予測損失に別名を付けただけではありません。"
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "生成時の積分",
+            "paragraphs": [
+              "ノイズから始め、生成時間に沿って場を数値積分します。解法とステップ数は計算量と生成品質に影響します。一つの列を生成する間は観測を固定し、次の方策更新で新しい条件を使う構成もあります。少ないステップが有用かどうかは閉ループで確かめます。"
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "VLAとの関係",
+            "paragraphs": [
+              "元のπ0は、事前学習した視覚言語モデルとFlow Matchingの行動生成部を組み合わせています。これは具体例であり、すべてのVLAやFlow方策の定義ではありません。言語を使わず条件を与えることも可能です。事前学習だけで実機の行動データや指令形式の調整は不要になりません。"
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "実時間との接続",
+            "paragraphs": [
+              "制御器が生成列の先頭など、定めた部分を実行します。センサー、条件処理、積分、通信、駆動までの遅延を測ります。生成ステップが少ないだけで、任意の制御周波数に対応できるとはいえません。指令のバッファ、更新期限を逃した場合の動作、実測による修正を設計します。"
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "比較の条件",
+            "paragraphs": [
+              "拡散や直接予測と比べる場合は、実演、行動形式、評価課題をそろえます。遅延の分布、完了率、動作方式の一貫性、人の介入、接触失敗からの復帰を調べます。ステップ削減が平均計算時間だけでなく、実際の振る舞いにどう影響するかも確認します。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "生成は安全証明ではない",
+            "paragraphs": [
+              "多様な候補を表現できても、未学習の条件では不適切な目標を出します。分布の変化、校正のずれ、復帰例の不足は残ります。適切な制限や必要な衝突検査、独立した停止機構を用意します。最適な生成器は、設備全体の条件から選ぶ必要があります。"
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Flow Matchingによる方策",
+        "short_description": "学習したベクトル場でノイズをまとまった動作列へ変換する。",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "協調した指令を提案する",
+            "paragraphs": [
+              "Flow Matchingは、観測からロボットの行動列を作る方法です。一つの平均的な応答だけでなく、複数の有効な動作を表すことができます。ただし自動化設備の一部であり、完成した製品ではありません。汎用モデルの採用だけで、自社の機体や工程との互換性は証明できません。"
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "必要な資源を見積もる",
+            "paragraphs": [
+              "同期した実演、明確な指令形式、検証した観測処理、モデルと積分計算のための資源が必要です。事前学習モデルを使う場合は、利用条件や実行環境、適応に必要な費用を確認します。重みが公開されていることと、設備への接続が終わっていることは別です。"
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "計算と作業の関係",
+            "paragraphs": [
+              "生成器は、数回の数値計算でノイズを動作へ変換します。ステップ数は遅延と品質を変える可能性があります。高速化が意味を持つのは、工程が安定して動く場合です。新しい観測から実行可能な指令までの期限を、使う予定のハードウェアで確認します。"
+            ]
+          },
+          {
+            "id": "choice",
+            "title": "採用前の比較",
+            "paragraphs": [
+              "同じ課題と実演を使い、拡散方式や単純な模倣方策と比較します。選ばれた成功例でなく全試行を確認し、人の介入、復旧工数、時間の変動を数えます。対象物、カメラ、グリッパー、実行周期が変われば、論文の構成と同じ結果になるとは限りません。"
+            ]
+          },
+          {
+            "id": "risk",
+            "title": "残る導入リスク",
+            "paragraphs": [
+              "連続した指令でも安全な指令とは限りません。未知の接触や復帰例の不足で失敗します。データの保守、現場での検証、例外処理を予算に含め、安全機能を生成器から独立させます。新しい生成手法を、成熟した汎用ロボットそのものと見なさないことが大切です。"
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Flow Matchingによる方策",
+        "short_description": "学習したベクトル場でノイズをまとまった動作列へ変換する。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "数値の雲を動作へ変える",
+            "paragraphs": [
+              "散らばった点を、少しずつ役立つ模様へ整えるところを想像してください。Flow Matchingの方策は、ノイズの数値を行動列へ変える規則を学びます。動くのは計算上の標本です。ロボットを新しい物理的な力で押しているわけではありません。"
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "どちらへ変えるかを学ぶ",
+            "paragraphs": [
+              "学習ではノイズと実演の動作を結び、その途中の点を選びます。観測された状況を条件として、その点から数値をどちらへ変えるかを学びます。多くの例を通して、新しい標本を案内するベクトル場ができます。"
+            ]
+          },
+          {
+            "id": "generation",
+            "title": "場に沿って進める",
+            "paragraphs": [
+              "推論では、数値解法によって学んだ場を数ステップ進めます。回数を変えれば計算量も結果も変わる可能性があります。この一ステップは、実機の一歩とは違います。生成した数値列を、別の実行系がロボットへの指令として扱います。"
+            ]
+          },
+          {
+            "id": "connection",
+            "title": "VLAのどこに入るのか",
+            "paragraphs": [
+              "視覚言語モデルが画像と指示の表現を作り、Flow生成器が行動へ変換する構成があります。元のπ0はその一例です。別の生成器を使うVLAもあり、Flow方策に必ず言語が必要なわけでもありません。システム内の異なる役割を表す名前なのです。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "生成した動作を試す",
+            "paragraphs": [
+              "複数の候補がもっともらしくても、見慣れない物体や接触で失敗する場合があります。拡散はノイズを除去し、Flow Matchingは速度場を積分するという違いがあります。どちらも実測、制御器、作業を通した試験が必要で、滑らかな例だけでは判断できません。"
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Flow Matchingによる方策",
+        "short_description": "学習したベクトル場でノイズをまとまった動作列へ変換する。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "数値を変える規則",
+            "paragraphs": [
+              "ばらばらの点が、少しずつ模様になる様子を考えてみよう。Flow Matchingは、偶然に選んだ数値から、ロボットの動きを表す数値へ変える規則を学ぶ方法だ。「流れ」という名前でも、水や見えない力でロボットを動かしているわけではない。"
+            ]
+          },
+          {
+            "id": "examples",
+            "title": "お手本と途中の点",
+            "paragraphs": [
+              "人が役立つ動きを見せ、プログラムがその指令を記録する。練習では、ノイズとお手本の間にある途中の例を使う。モデルは、ロボットから見える情報を条件に、数値をどちらへ変えればよいかという規則を学んでいく。"
+            ]
+          },
+          {
+            "id": "calculation",
+            "title": "計算の一歩は本当の一歩ではない",
+            "paragraphs": [
+              "新しい動作を考えるとき、コンピューターはその規則に従って何度か計算する。計算の一歩ごとにロボットが歩くわけではないよ。数値の列を作ってから、別の制御（せいぎょ）の仕組みが機械へ指令を送る。"
+            ]
+          },
+          {
+            "id": "language",
+            "title": "言葉を扱う部分と組み合わせる",
+            "paragraphs": [
+              "画像と言葉を結びつけるモデルと一緒に使う場合もある。「箱に入れて」という指示を処理する部分と、動きを作る部分が分かれている。文を処理することと、本物のモーターを安全に動かすことは、同じ仕事ではないんだ。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "まだ確かめる必要がある",
+            "paragraphs": [
+              "箱が動いたり物が滑ったりすると、お手本にない場面になるかもしれない。滑らかそうな動きでも間違いは起こる。技術者は作業全体を試し、動ける範囲や止め方を決める。面白い生成方法を使っただけで、すべての動きが安全になるわけではない。"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

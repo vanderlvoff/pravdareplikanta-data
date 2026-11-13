@@ -1,0 +1,634 @@
+{
+  "schema_version": "1.0",
+  "id": "diffusion-policy",
+  "category": "manipulation",
+  "technology_type": "method",
+  "title": {
+    "ru": "Diffusion Policy",
+    "en": "Diffusion Policy",
+    "ja": "Diffusion Policy"
+  },
+  "short_description": {
+    "ru": "Как удаление шума превращается в последовательность действий робота.",
+    "en": "How denoising produces a sequence of robot actions.",
+    "ja": "ノイズを取り除く計算から、ロボットの動作列を作る。"
+  },
+  "related_technologies": [
+    {
+      "target": "imitation-learning",
+      "type": "depends_on",
+      "explanation": {
+        "ru": "Рассматриваемая исходная policy обучается по демонстрационным траекториям.",
+        "en": "The original policy considered here learns from demonstration trajectories.",
+        "ja": "ここで扱う元の方策は実演の軌跡から学習する。"
+      }
+    },
+    {
+      "target": "flow-matching-policies",
+      "type": "alternative_to",
+      "explanation": {
+        "ru": "Итеративное удаление шума и интегрирование поля скоростей — разные генеративные рецепты.",
+        "en": "Iterative denoising and velocity-field integration are different generative recipes.",
+        "ja": "反復的なノイズ除去とベクトル場の積分は異なる生成方法。"
+      }
+    }
+  ],
+  "prerequisites": [
+    "imitation-learning"
+  ],
+  "term_refs": [
+    "diffusion-policy",
+    "diffusion-model",
+    "action-chunking",
+    "imitation-learning"
+  ],
+  "sources": [
+    {
+      "id": "diffusion-policy-paper",
+      "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+      "url": "https://arxiv.org/abs/2303.04137",
+      "kind": "paper",
+      "year": 2023
+    },
+    {
+      "id": "ddpm",
+      "title": "Denoising Diffusion Probabilistic Models",
+      "url": "https://arxiv.org/abs/2006.11239",
+      "kind": "paper",
+      "year": 2020
+    },
+    {
+      "id": "diffusion-code",
+      "title": "Diffusion Policy — author implementation",
+      "url": "https://github.com/real-stanford/diffusion_policy",
+      "kind": "code",
+      "year": 2023
+    }
+  ],
+  "last_reviewed": "2026-11-13",
+  "content_status": "ready",
+  "diagram": "diffusion",
+  "localizations": {
+    "en": {
+      "engineer": {
+        "title": "Diffusion Policy",
+        "short_description": "How denoising produces a sequence of robot actions.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "A conditional distribution over actions",
+            "paragraphs": [
+              "Diffusion Policy learns to generate action sequences conditioned on recent observations. The diffusion process runs over action coordinates, not future images. Its output might contain end-effector poses, joint targets or another dataset-defined representation; a separate execution stack converts that representation into robot motion."
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "Observation and action horizons",
+            "paragraphs": [
+              "An observation encoder supplies visual and proprioceptive context to a conditional denoiser. The original work studies convolutional and transformer-based variants. Keep observation horizon, predicted action horizon and executed action horizon explicit. Their lengths describe different parts of the closed-loop system and need not coincide."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "The denoising objective",
+            "paragraphs": [
+              "Training takes a demonstrated action sequence, adds noise according to a sampled diffusion timestep and asks the network to predict the injected noise under the observation condition. A mean-squared noise-prediction loss is a common formulation. Action normalization and observation/action synchronization are part of the model contract, not preprocessing details that can be changed freely after deployment."
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "Iterative action generation",
+            "paragraphs": [
+              "Inference begins with a noise sample shaped like an action sequence. Repeated denoising updates turn it into a candidate sequence consistent with the current observation. Different samples can represent distinct valid action modes. This can avoid the invalid middle action produced by averaging demonstrations, but it does not ensure every sampled trajectory is physically feasible."
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "Receding-horizon execution",
+            "paragraphs": [
+              "Execute only the configured prefix, obtain new observations and generate again. A shorter executed prefix improves opportunities for correction while increasing inference demand. Longer prefixes reduce that demand but leave more motion between observations. Diffusion iterations occur in generative computation time; robot execution proceeds in physical time. They are not interchangeable clocks."
+            ]
+          },
+          {
+            "id": "timing",
+            "title": "Latency and evaluation",
+            "paragraphs": [
+              "Measure observation encoding, denoising, communication and controller latency together. Reduce denoising steps only after testing the resulting closed-loop behavior. Compare generators using the same data, action representation and compute budget. Report task completion, collisions, intervention frequency, cycle-time variation and recovery, not only the training loss or an appealing sampled trajectory."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "What the distribution misses",
+            "paragraphs": [
+              "Occlusion, absent recovery demonstrations and changes in contact dynamics can break the policy. Multimodality represents alternatives supported by learning; it is not an uncertainty certificate or a safety guarantee. Switching between modes across replans can also affect consistency. Velocity, force and workspace limits still belong in the execution and safety architecture."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Relation to ACT and flow matching",
+            "paragraphs": [
+              "ACT's original decoder directly predicts an action chunk, whereas Diffusion Policy iteratively refines a noisy sample. Flow matching instead learns a conditional velocity field and integrates it. These are alternative generators, not different names for the same algorithm. Their trade-offs depend on data, sampling settings and the actual robot task."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Diffusion Policy",
+        "short_description": "How denoising produces a sequence of robot actions.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "Several ways to perform one operation",
+            "paragraphs": [
+              "A task may admit different valid motions, such as approaching an object from either side. Diffusion Policy can represent such alternatives rather than reducing them to an average that may hit the object. This is useful for manipulation with demonstrations, but it does not automatically extend the policy to unseen objects or operating conditions."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Data and compute",
+            "paragraphs": [
+              "The project needs synchronized observations and action sequences, a consistent action format, dataset cleaning and an observation encoder. Deployment also needs compute for several denoising updates per prediction. Plan hardware using the full sensing-to-command delay and repeated task trials, not a single neural-network benchmark."
+            ]
+          },
+          {
+            "id": "workflow",
+            "title": "How it stays connected to the machine",
+            "paragraphs": [
+              "A generated sequence is usually executed only partly before the robot observes again and replans. The chosen execution interval affects responsiveness and compute demand. The underlying controller and independent safety measures remain necessary. A generated motion is a proposal, not an automatic authorization to run it."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "How to make a selection",
+            "paragraphs": [
+              "Compare against ACT or a simpler policy on the same demonstration set and task acceptance protocol. Include completion rate, interventions, time variation and the labor of recovering from failed grasps. A more expressive action distribution is commercially useful only if the whole cell achieves an acceptable, repeatable operation."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Where costs reappear",
+            "paragraphs": [
+              "Additional sampling steps, camera changes and missing recovery data can make deployment expensive. A high-quality demo video cannot establish uptime across shifts. Include retraining after object changes, compute maintenance, exception handling and the consequences of unexpected contact. Treat safety assessment separately from model performance."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Diffusion Policy",
+        "short_description": "How denoising produces a sequence of robot actions.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Starting with a scrambled sequence",
+            "paragraphs": [
+              "Diffusion Policy begins with numerical noise shaped like a possible sequence of robot actions. A learned network repeatedly revises that sequence while looking at the current observations. The result is a candidate movement. This resembles denoising in image generation, but the generated object here is a series of action coordinates, not a picture."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "How it learns what to remove",
+            "paragraphs": [
+              "Training examples contain recorded observations and demonstrated actions. The training procedure deliberately corrupts an action sequence and teaches the network to identify the added noise. Over many examples it learns how plausible actions depend on what the robot sees. The demonstrations must still cover useful behavior and agree with the robot's command format."
+            ]
+          },
+          {
+            "id": "alternatives",
+            "title": "Why alternatives matter",
+            "paragraphs": [
+              "A robot might reach a cup by going left or right around an obstacle. Averaging those paths could go straight into it. A distribution can preserve distinct alternatives and sample one. That advantage does not mean every possible obstacle was learned or that any sampled motion is guaranteed to be safe."
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "Only execute part, then look again",
+            "paragraphs": [
+              "The robot need not perform the entire generated sequence before checking its surroundings. Receding-horizon execution uses a prefix, takes another observation and generates an updated sequence. More frequent checks help correction but require more computation. The number of denoising steps is a separate setting from the length of motion executed."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Different recipes for the same interface",
+            "paragraphs": [
+              "ACT, diffusion and flow matching can all produce action sequences, yet their generation procedures differ. Diffusion's iterative refinement can be useful, while its latency can be costly. To compare methods, examine complete robot trials with the same data, including failures, rather than judging the smoothness of generated examples alone."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Diffusion Policy",
+        "short_description": "How denoising produces a sequence of robot actions.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Numbers instead of a noisy picture",
+            "paragraphs": [
+              "You may have seen software turn a noisy picture into a clearer one. Diffusion Policy uses a related learning idea, but works on numbers describing robot commands. It starts with a scrambled group of those numbers and gradually changes them into a possible short movement."
+            ]
+          },
+          {
+            "id": "examples",
+            "title": "Learning from recorded moves",
+            "paragraphs": [
+              "A person shows the robot useful actions. Pictures and commands are recorded together. During practice, a program adds known noise to the recorded commands, and the model learns to predict that noise. This teaches a relationship between what is seen and which movements might fit."
+            ]
+          },
+          {
+            "id": "choice",
+            "title": "Going around an obstacle",
+            "paragraphs": [
+              "Imagine a cup behind a small obstacle. Going around the left side and going around the right side might both work. Combining the two paths into their middle could hit the obstacle. A model that represents several possibilities can choose one pattern instead of that middle path."
+            ]
+          },
+          {
+            "id": "checking",
+            "title": "Move a little and check again",
+            "paragraphs": [
+              "The robot can perform only the beginning of its predicted movement, look again and make another prediction. That helps it respond when the scene changes. The computer's noise-removal steps and the robot's movements are different things: one changes numbers, while the other changes the physical world."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "A proposal can still be wrong",
+            "paragraphs": [
+              "A model may not have learned what to do when the cup slips or the camera is blocked. It can generate a smooth command that is still unsuitable. Engineers test complete attempts, provide limits and keep a way to stop the robot. Generating a possible action is not the same as proving it will work."
+            ]
+          }
+        ]
+      }
+    },
+    "ru": {
+      "engineer": {
+        "title": "Diffusion Policy",
+        "short_description": "Как удаление шума превращается в последовательность действий робота.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Условное распределение действий",
+            "paragraphs": [
+              "Diffusion Policy генерирует последовательности действий с учётом недавних наблюдений. Диффузионный процесс работает в пространстве координат действий, а не будущих изображений. Выход может содержать позы рабочего органа, суставные цели или другое принятое в данных представление. Перевод этого представления в движение остаётся задачей исполнительного стека."
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "Наблюдение, прогноз и исполнение",
+            "paragraphs": [
+              "Энкодер наблюдений передаёт зрительный и проприоцептивный контекст условной сети удаления шума. В исходной работе исследуются свёрточные и трансформерные варианты. Горизонт наблюдений, горизонт предсказания действий и исполняемый горизонт задают разные части замкнутого цикла. Приравнивать их без объяснения нельзя."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Задача обучения",
+            "paragraphs": [
+              "К демонстрационной последовательности добавляют шум, выбирая шаг диффузии, и обучают сеть предсказывать внесённый шум при заданном наблюдении. Распространённая формулировка использует среднеквадратичную ошибку предсказания шума. Нормализация действий, временное выравнивание и система координат входят в контракт модели; после обучения их нельзя произвольно заменять."
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "Итеративная генерация",
+            "paragraphs": [
+              "Вывод начинается с шума нужной формы. Последовательные шаги удаления шума создают кандидатную последовательность, согласованную с наблюдением. Разные выборки могут представлять разные допустимые способы действия. Это помогает не усреднять альтернативы в неудачное среднее движение, но не гарантирует физическую выполнимость каждой выборки."
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "Пересчёт на скользящем горизонте",
+            "paragraphs": [
+              "Выполняют заданное начало последовательности, получают новые наблюдения и генерируют снова. Короткое исполняемое начало даёт больше возможностей для коррекции, но требует чаще запускать модель. Длинное экономит вызовы ценой большего промежутка без нового решения. Шаги генеративного вычисления и моменты физического исполнения — разные шкалы времени."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Задержка и измерение качества",
+            "paragraphs": [
+              "В бюджет включают кодирование изображения, итерации генерации, передачу и контроллер. Число шагов удаления шума уменьшают только вместе с проверкой поведения в замкнутом цикле. Для сравнения фиксируют данные, представление действий и вычислительный бюджет. Измеряют завершённые задачи, столкновения, вмешательства, разброс времени и восстановление, а не одну обучающую ошибку."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Границы выученного распределения",
+            "paragraphs": [
+              "Окклюзия, отсутствие примеров восстановления и изменение контактной динамики могут нарушить работу. Многомодальность означает представление нескольких вариантов, а не сертификат неопределённости или безопасности. При новом пересчёте возможна смена выбранного варианта. Ограничения скорости, усилия и рабочей зоны по-прежнему нужны в исполнительной системе."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Сравнение с ACT и flow matching",
+            "paragraphs": [
+              "Исходный декодер ACT непосредственно предсказывает блок целей. Diffusion Policy итеративно уточняет зашумлённую выборку. Flow matching учит поле скоростей и интегрирует его. Это разные способы генерации последовательностей, а не названия одного алгоритма. Их практические компромиссы зависят от данных, настроек вывода и конкретной операции."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Diffusion Policy",
+        "short_description": "Как удаление шума превращается в последовательность действий робота.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "Несколько способов выполнить операцию",
+            "paragraphs": [
+              "К одному предмету можно подойти разными допустимыми движениями. Diffusion Policy способна сохранять такие варианты, а не сводить их к среднему, которое попадёт в препятствие. Это полезный кандидат для манипуляции по демонстрациям. Однако наличие нескольких вариантов не означает готовности к неизвестным предметам и условиям."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Данные и вычисления",
+            "paragraphs": [
+              "Нужны синхронные наблюдения и действия, единый формат команд, проверка записей и обработка изображений. На рабочем оборудовании потребуются вычисления для нескольких итераций генерации. Подбирать компьютер следует по полной задержке от датчика до команды и результатам повторных операций, а не по скорости одного слоя сети."
+            ]
+          },
+          {
+            "id": "workflow",
+            "title": "Как модель связана с машиной",
+            "paragraphs": [
+              "Обычно выполняется только начало сгенерированной последовательности, после чего робот снова наблюдает и пересчитывает действие. Интервал исполнения влияет на реакцию и вычислительную нагрузку. Контроллер и независимые меры безопасности остаются необходимыми: последовательность от модели является предложением движения, а не разрешением его выполнить."
+            ]
+          },
+          {
+            "id": "choice",
+            "title": "Как выбирать",
+            "paragraphs": [
+              "Сравнивайте с ACT или простой policy на одинаковых демонстрациях и согласованных приёмочных испытаниях. Считайте завершение операций, вмешательства, разброс времени и труд восстановления после неудачного захвата. Более богатое распределение полезно бизнесу, только если весь участок стабильно выполняет требуемую работу."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Где возникают расходы",
+            "paragraphs": [
+              "Дополнительные итерации, смена камеры и недостаток примеров восстановления способны сделать внедрение дорогим. Показательный ролик не устанавливает доступность по сменам. Учитывайте переобучение после изменений, обслуживание компьютера и обработку исключений. Оценка безопасности оборудования проводится отдельно от измерения качества модели."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Diffusion Policy",
+        "short_description": "Как удаление шума превращается в последовательность действий робота.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Начать с перемешанных действий",
+            "paragraphs": [
+              "Diffusion Policy начинает с числового шума, имеющего форму последовательности команд робота. Обученная сеть несколько раз исправляет эту последовательность с учётом наблюдений. Так получается кандидат движения. Идея похожа на удаление шума при генерации изображений, но результат здесь — координаты действий, а не картинка."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Как узнать, что удалять",
+            "paragraphs": [
+              "В обучающих примерах записаны наблюдения и показанные действия. Программа намеренно портит последовательность известным шумом, а сеть учится его предсказывать. Постепенно она осваивает связь между увиденным и подходящими движениями. Примеры всё равно должны содержать полезное поведение и соответствовать формату команд данного робота."
+            ]
+          },
+          {
+            "id": "alternatives",
+            "title": "Зачем хранить альтернативы",
+            "paragraphs": [
+              "Пусть к чашке можно дотянуться слева или справа от препятствия. Средняя между этими траекториями пройдёт прямо через препятствие. Распределение способно сохранить два разных варианта и выбрать один. Но из этого не следует, что модель встречала все препятствия или что любая выборка безопасна."
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "Немного выполнить и снова посмотреть",
+            "paragraphs": [
+              "Исполнение на скользящем горизонте использует только начало прогноза, затем берёт новое наблюдение и обновляет последовательность. Более частый пересчёт помогает корректировать движение, но требует ресурсов. Количество шагов удаления шума — самостоятельная настройка, не совпадающая с длиной реально выполненного движения."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Разные рецепты генерации",
+            "paragraphs": [
+              "ACT, диффузия и flow matching могут выдавать последовательности действий, но получают их разными вычислениями. Итеративное уточнение бывает полезным, а его задержка — существенной. Сравнивать следует полные попытки робота на одинаковых данных, включая сбои, а не только гладкость красиво показанной траектории."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Diffusion Policy",
+        "short_description": "Как удаление шума превращается в последовательность действий робота.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Шум не в картинке, а в командах",
+            "paragraphs": [
+              "Возможно, ты видел, как программа превращает шумную картинку в более ясную. Diffusion Policy применяет похожую идею к числам, описывающим команды робота. Она начинает с перемешанной группы чисел и постепенно превращает её в вариант короткого движения."
+            ]
+          },
+          {
+            "id": "examples",
+            "title": "Откуда берутся примеры",
+            "paragraphs": [
+              "Человек показывает роботу полезные действия. Камеры и команды записываются вместе. Во время обучения программа добавляет известный шум к записанным командам, а модель пытается этот шум определить. Так она учит связь между тем, что видно, и возможными движениями."
+            ]
+          },
+          {
+            "id": "choice",
+            "title": "Обойти препятствие",
+            "paragraphs": [
+              "Представь чашку за небольшим препятствием. Дойти до неё слева и справа может быть одинаково разумно. Средний путь между ними попадёт в препятствие. Если модель хранит разные возможности, она может предложить один из обходов, а не такое неудачное среднее."
+            ]
+          },
+          {
+            "id": "checking",
+            "title": "Сделать немного и проверить",
+            "paragraphs": [
+              "Робот может выполнить только начало предложенного движения, посмотреть ещё раз и получить новый вариант. Это помогает учитывать перемены. Шаги, которыми компьютер убирает числовой шум, и шаги настоящего движения различаются: первые меняют числа, вторые — физический мир."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Предложение может оказаться неверным",
+            "paragraphs": [
+              "Если чашка выскользнула или камера закрыта, нужного примера в обучении могло не быть. Модель способна предложить плавную, но неподходящую команду. Поэтому инженеры проверяют полные попытки, устанавливают ограничения и возможность остановки. Предсказать действие — ещё не доказать, что оно сработает."
+            ]
+          }
+        ]
+      }
+    },
+    "ja": {
+      "engineer": {
+        "title": "Diffusion Policy",
+        "short_description": "ノイズを取り除く計算から、ロボットの動作列を作る。",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "行動列の条件付き分布",
+            "paragraphs": [
+              "Diffusion Policyは、最近の観測を条件に行動列を生成します。拡散過程が扱うのは行動の数値であり、未来の画像ではありません。出力を関節目標にするか手先の姿勢にするかはデータの定義に依存し、実際の駆動は別の制御系が担当します。"
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "三つの区間を分ける",
+            "paragraphs": [
+              "観測エンコーダーが視覚や固有感覚の情報を条件付きのノイズ除去ネットワークへ渡します。元の研究には畳み込み型とTransformer型があります。観測を何時刻使うか、何時刻先まで予測するか、そのうち何時刻を実行するかは異なる設計項目です。"
+            ]
+          },
+          {
+            "id": "training",
+            "title": "ノイズを予測する学習",
+            "paragraphs": [
+              "実演の行動列に、選んだ拡散ステップに応じたノイズを加えます。ネットワークは観測を条件として、加えたノイズを予測するよう学習します。代表的な目的関数はノイズ予測の二乗誤差です。正規化、座標系、観測との時刻合わせも契約の一部で、導入後に自由に変えられません。"
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "反復による生成",
+            "paragraphs": [
+              "行動列と同じ形のノイズを用意し、ノイズ除去を繰り返して候補を得ます。異なる乱数から別々の有効な動作を表現できます。実演を単純に平均した不適切な動作を避ける利点がありますが、出てきたすべての候補が物理的に実行可能とは限りません。"
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "一部を実行して再予測",
+            "paragraphs": [
+              "設定した先頭部分だけを実行し、新しい観測で生成し直します。実行区間が短いと修正の機会は増えますが、推論回数も増えます。長ければ計算負荷を抑えられる一方、観測による修正の間隔が広がります。生成計算のステップと実機の時間は別です。"
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "遅延と評価",
+            "paragraphs": [
+              "画像処理、ノイズ除去、通信、制御器までの遅延を測ります。生成ステップを減らすなら閉ループ性能も確認します。同じデータ、行動形式、計算予算で比較し、完了率、衝突、介入、所要時間のばらつき、復帰を記録します。学習損失だけでは実用性を判断できません。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "分布が保証しないこと",
+            "paragraphs": [
+              "遮蔽、復帰データの不足、接触条件の変化で失敗します。複数の動作を表す能力は、不確かさの証明や安全保証ではありません。再生成のたびに動作の方式が変わる場合もあります。速度、力、作業範囲の制限を実行側に設ける必要があります。"
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "ACTとFlow Matchingとの違い",
+            "paragraphs": [
+              "元のACTは動作列を直接予測します。Diffusion Policyはノイズを反復的に除き、Flow Matchingは学習したベクトル場を積分します。同じ手法の別名ではありません。利点と費用は、データ、生成設定、実際の作業によって異なります。"
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Diffusion Policy",
+        "short_description": "ノイズを取り除く計算から、ロボットの動作列を作る。",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "動作の選択肢を表す",
+            "paragraphs": [
+              "対象へ左から近づくか、右から近づくかという複数の有効な動作を表現できる点が特徴です。二つを平均して障害物に当たる動作を出す問題を避けられる可能性があります。ただし、未知の物体や条件にも対応できるという意味ではありません。"
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "必要なデータと計算",
+            "paragraphs": [
+              "同期した観測と行動、統一した指令形式、データ確認、画像の処理系が必要です。運用時には、予測ごとに複数回のノイズ除去計算が発生します。コンピューターは単体モデルの速度でなく、観測から実行までの遅延と反復試験を基準に選びます。"
+            ]
+          },
+          {
+            "id": "workflow",
+            "title": "設備での動かし方",
+            "paragraphs": [
+              "生成した列の先頭だけを実行し、次の観測で更新する使い方が一般的です。実行区間は反応の速さと計算負荷を変えます。既存の制御器と独立した安全対策は必要なままです。モデルの提案を、そのまま無条件の実行許可として扱うことはできません。"
+            ]
+          },
+          {
+            "id": "choice",
+            "title": "導入判断の比較",
+            "paragraphs": [
+              "同じ実演と受入試験を使い、ACTや単純な方策と比較します。完了率、人の介入、所要時間の変動、把持失敗からの復旧工数を数えます。多様な動作を出せても、設備全体が再現性のある工程を実行できなければ事業上の利点にはなりません。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "運用中の費用",
+            "paragraphs": [
+              "生成回数の増加、カメラの変更、復帰データの不足は費用を押し上げます。成功動画だけでシフト全体の稼働率は分かりません。物体変更後の再学習、計算機の保守、例外への対応を含め、安全の評価とモデル性能の評価を分けて考えます。"
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Diffusion Policy",
+        "short_description": "ノイズを取り除く計算から、ロボットの動作列を作る。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "ばらばらの数値から動作へ",
+            "paragraphs": [
+              "Diffusion Policyは、動作列と同じ形をした数値のノイズから始めます。ネットワークが観測を見ながら何度も修正すると、候補となる動作列になります。画像生成のノイズ除去に似た考え方ですが、作るものは絵ではなくロボットへの行動指令です。"
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "何を取り除くと学ぶのか",
+            "paragraphs": [
+              "実演には観測と行動が組で記録されています。学習時に行動列を既知のノイズでわざと壊し、モデルにそのノイズを予測させます。こうして見えた状況と動作の関係を学びます。例が役立つ行動を含み、機体の指令形式に合っていることは必要です。"
+            ]
+          },
+          {
+            "id": "alternatives",
+            "title": "平均では困る場合",
+            "paragraphs": [
+              "障害物の向こうのコップに、左か右を回って届くとします。二つの経路の平均は、障害物を通ってしまうかもしれません。分布として表せば、別の候補を保って一つを選べます。ただし、すべての障害物を学んだことや、どの候補も安全なことは意味しません。"
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "少し動いて、また見る",
+            "paragraphs": [
+              "列を全部実行せず、先頭だけ動いてから観測し直すのが後退ホライズン型の実行です。頻繁な更新は修正に役立ちますが、計算も必要です。ノイズ除去を何回行うかと、実際に何時刻分を動かすかは独立した設定になります。"
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "生成方法を比べる",
+            "paragraphs": [
+              "ACT、拡散、Flow Matchingはいずれも動作列を作れますが、計算の仕方は違います。反復的な修正が有効な場合も、遅延が問題になる場合もあります。同じデータで作業全体を試し、失敗も含めて調べます。滑らかな動作例だけを見ても比較はできません。"
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Diffusion Policy",
+        "short_description": "ノイズを取り除く計算から、ロボットの動作列を作る。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "画像ではなく指令のノイズ",
+            "paragraphs": [
+              "ざらざらした画像を、コンピューターが少しずつはっきりさせる例を見たことはあるかな。Diffusion Policyは、似た学び方をロボットの指令を表す数値に使う。ばらばらの数値から、短い動作の候補を作っていくんだ。"
+            ]
+          },
+          {
+            "id": "examples",
+            "title": "お手本にノイズを足す",
+            "paragraphs": [
+              "人が役立つ動作を見せ、画像と指令を一緒に記録する。練習では、プログラムが指令に分かっているノイズを加え、モデルはそれを当てる。そうして、どんな場面でどんな動きが合うかという関係を学んでいく。"
+            ]
+          },
+          {
+            "id": "choice",
+            "title": "障害物をよける道",
+            "paragraphs": [
+              "コップの手前に障害物（しょうがいぶつ）があるとしよう。左を通る道も右を通る道も使えるかもしれない。でも、その真ん中を通るとぶつかる。別々の可能性を表すモデルなら、真ん中ではなく一方の動き方を候補にできる。"
+            ]
+          },
+          {
+            "id": "checking",
+            "title": "少し動いて見直す",
+            "paragraphs": [
+              "ロボットは予測（よそく）した動きの初めだけを実行し、もう一度見て、予測を直せる。コンピューターが数値のノイズを取り除くステップと、実機が動く時間は違う。前者は計算の中の変化で、後者は物理世界での変化なんだ。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "候補は間違うこともある",
+            "paragraphs": [
+              "コップが滑ったりカメラが隠れたりした例を、モデルが学んでいない場合もある。滑らかな指令でも使えないことがあるので、技術者は一連の作業を試し、制限や停止の仕組みを用意する。動きを作れたことだけでは、成功する証明にはならない。"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
