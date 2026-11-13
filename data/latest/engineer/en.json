@@ -2,150 +2,195 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-13",
-  "issue_id": "daily-2026-11-13",
+  "issue_date": "2026-11-14",
+  "issue_id": "daily-2026-11-14",
   "edition": "engineer",
   "language": "en",
-  "generated_at": "2026-11-12T20:46:06.640875Z",
-  "title": "A good prediction still needs a useful action",
-  "lead": "NTT evaluates action outcomes before stacking objects. In Bologna experiments, information that improved cable-shape prediction did not always improve control.",
+  "generated_at": "2026-11-13T21:02:43.279476Z",
+  "title": "NVIDIA changes leadership and pledges continuity",
+  "lead": "NVIDIA confirmed chief executive Jensen Huang’s resignation; finance chief Colette Kress became interim leader. The board says operations, customer commitments and product plans will continue.",
   "news": [
     {
-      "id": "ntt-action-preview",
-      "title": "NTT screens robot actions before stacking cargo",
-      "summary": "NTT presented a model that predicts falls and collisions before a robot executes a movement. In a small shelf-stacking experiment, the company reported success rising from 73.1% to 92.3%.",
-      "details": "On November 11, NTT presented a world model: software that predicts how a robot's surroundings will change after an action. It takes several candidate actions from a controller, generates an outcome for each and evaluates the risk of objects falling or a stack collapsing. NTT's physical-control adapter is incorporated into a video-generation model. It estimates object position, orientation, speed and mass from images, then uses equations of motion. This calculation is intended to constrain prediction errors such as objects disappearing during collisions. The description comes from the developer; it is not independent validation of the inferred mass or other properties.",
-      "technical_novelty": "On November 11, NTT presented a world model: software that predicts how a robot's surroundings will change after an action. It takes several candidate actions from a controller, generates an outcome for each and evaluates the risk of objects falling or a stack collapsing. NTT's physical-control adapter is incorporated into a video-generation model. It estimates object position, orientation, speed and mass from images, then uses equations of motion. This calculation is intended to constrain prediction errors such as objects disappearing during collisions. The description comes from the developer; it is not independent validation of the inferred mass or other properties.",
-      "engineering_impact": "The release describes operation fast enough for integration into robot control, but supplies no numerical prediction latency. Reproduction therefore depends on both the cost of scoring candidate actions and the method used to infer physical properties from images. Improved stacking success alone does not establish whether screening can keep pace with a particular baggage line.",
-      "limitations": "NTT reports a small shelf-stacking experiment. Operation with varied baggage at an active airport is not established, and numerical action-screening latency is not provided.",
-      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
-      "published_at": "2026-11-11",
-      "organization": "NTT",
-      "source_ids": [
-        "ntt-world-20261111"
-      ],
-      "time_window": "72h",
-      "body": "A gripper reaching its destination does not guarantee a successful placement: the neighboring stack might become unstable. NTT adds consequence prediction to existing robot control. A controller first proposes actions, and a separate model compares their predicted outcomes. Generating a movement and evaluating what it will cause remain distinct functions within the system.\n\nOn November 11, NTT presented a world model: software that predicts how a robot's surroundings will change after an action. It takes several candidate actions from a controller, generates an outcome for each and evaluates the risk of objects falling or a stack collapsing. NTT's physical-control adapter is incorporated into a video-generation model. It estimates object position, orientation, speed and mass from images, then uses equations of motion. This calculation is intended to constrain prediction errors such as objects disappearing during collisions. The description comes from the developer; it is not independent validation of the inferred mass or other properties.\n\nNTT tested the approach with a small robot performing a shelf-stacking task intended to imitate cargo stacking. Reported success increased from 73.1% without the technology to 92.3% with it. Those figures describe the company's test rig, not baggage handling at an operating airport. A separate evaluation compared predicted and reference videos in scenes containing collisions between multiple objects. Airport baggage is the first intended application, with field demonstrations involving Mujin still ahead. NTT also plans to exhibit the research on November 18–25. The announcement therefore contains an experimental result and a deployment plan at different stages of maturity.\n\nThe release describes operation fast enough for integration into robot control, but supplies no numerical prediction latency. Reproduction therefore depends on both the cost of scoring candidate actions and the method used to infer physical properties from images. Improved stacking success alone does not establish whether screening can keep pace with a particular baggage line.",
-      "image": null
-    },
-    {
-      "id": "atlas-wheel-test",
-      "title": "Atlas wheels expose the demands on actuator models",
-      "summary": "Boston Dynamics turned Atlas into a wheeled research testbed. The team examined whether movements learned in simulation matched the capabilities of real actuators.",
-      "details": "Boston Dynamics described its wheeled Atlas experiment on November 9. Controls engineer Andy Wu stresses that the humanoid with its feet replaced by wheels is a research testbed, not a new commercial configuration. An off-the-shelf scooter rim is attached to the existing ankle actuator through a custom adapter. In the computer model, the corresponding joint can rotate continuously. Accelerating, turning and braking require the motors to deliver speed and torque together under load. Torque is the turning effort produced by a drive. The team wanted those demanding operating conditions to test both the actuators and their mathematical models.",
-      "technical_novelty": "Boston Dynamics described its wheeled Atlas experiment on November 9. Controls engineer Andy Wu stresses that the humanoid with its feet replaced by wheels is a research testbed, not a new commercial configuration. An off-the-shelf scooter rim is attached to the existing ankle actuator through a custom adapter. In the computer model, the corresponding joint can rotate continuously. Accelerating, turning and braking require the motors to deliver speed and torque together under load. Torque is the turning effort produced by a drive. The team wanted those demanding operating conditions to test both the actuators and their mathematical models.",
-      "engineering_impact": "The team adjusted rewards, command ranges and posture handling using an existing training framework. The account does not quantify the contribution of each adjustment. Wu names actuator-failure response as work he has started; he does not present it as an already demonstrated ability of this wheeled robot to continue safely after a drive fails.",
-      "limitations": "Boston Dynamics describes wheeled Atlas as a research testbed. It provides no service-life measurement under these loads and does not present drive-failure response as an already validated capability.",
-      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
-      "published_at": "2026-11-09",
-      "organization": "Boston Dynamics",
-      "source_ids": [
-        "bd-roll-20261109"
-      ],
-      "time_window": "7d",
-      "body": "The most visible modification, wheels in place of feet, serves a specific experimental purpose. Continuous loaded rotation exposes motor behavior that an idealized simulator might omit. The account is valuable as an example of matching actuator models to learned whole-body control, rather than as an announcement of a new locomotion product for customers.\n\nBoston Dynamics described its wheeled Atlas experiment on November 9. Controls engineer Andy Wu stresses that the humanoid with its feet replaced by wheels is a research testbed, not a new commercial configuration. An off-the-shelf scooter rim is attached to the existing ankle actuator through a custom adapter. In the computer model, the corresponding joint can rotate continuously. Accelerating, turning and braking require the motors to deliver speed and torque together under load. Torque is the turning effort produced by a drive. The team wanted those demanding operating conditions to test both the actuators and their mathematical models.\n\nWhole-body control was trained using reinforcement learning: software tries movements in simulation and receives numerical rewards for the resulting behavior. To make the learned movements feasible on hardware, the team characterized the real actuators, tuned the simulated motor model and checked that low-level control settings agreed across software setups. Some behaviors followed human motion recordings. A full-turn jump tracked one such recording, while a sideways dash used wheel rolling where a person would slide their feet. The account demonstrates behavior transferred to hardware, but supplies no comparative endurance protocol or quantified failure-rate evaluation.\n\nThe team adjusted rewards, command ranges and posture handling using an existing training framework. The account does not quantify the contribution of each adjustment. Wu names actuator-failure response as work he has started; he does not present it as an already demonstrated ability of this wheeled robot to continue safely after a drive fails.",
-      "image": null
-    },
-    {
-      "id": "camera-lighting",
-      "title": "Robot lighting test reveals a camera-setting confound",
-      "summary": "A fysical.ai researcher compared four arm controllers after an 11.5-fold illuminance drop. The cameras largely preserved image brightness, so the experiment does not test controller performance on genuinely dark frames.",
-      "details": "Simon Cowling of Denmark-based fysical.ai posted a preliminary research paper on November 10 about testing robot control under different lighting conditions. Four controllers were trained on the same 50 demonstrations: an SO-101 arm had to place a green ball in a basket while ignoring two red balls. Each controller was tested at ten ball placements in normal and dimmed conditions. Workspace illuminance fell from about 520 to 45 lux, an 11.5-fold reduction. The main comparison contained 80 attempts. Success totaled 20 out of 40 attempts in normal light and 19 out of 40 in low light.",
-      "technical_novelty": "Simon Cowling of Denmark-based fysical.ai posted a preliminary research paper on November 10 about testing robot control under different lighting conditions. Four controllers were trained on the same 50 demonstrations: an SO-101 arm had to place a green ball in a basket while ignoring two red balls. Each controller was tested at ten ball placements in normal and dimmed conditions. Workspace illuminance fell from about 520 to 45 lux, an 11.5-fold reduction. The main comparison contained 80 attempts. Success totaled 20 out of 40 attempts in normal light and 19 out of 40 in low light.",
-      "engineering_impact": "Camera settings were read after the experiments, and exposure was not locked during comparison. Isolating its causal contribution would require a separate controlled test with specified settings. Normal and low light were also tested on different days in the same policy order, leaving day and order effects inseparable from lighting in this design.",
-      "limitations": "Simon Cowling tested one rig and one task. Exposure was not locked, settings were read afterward and there was no automatic-exposure-off comparison; day and controller-order effects were not isolated either.",
-      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
-      "published_at": "2026-11-10",
-      "organization": "fysical.ai",
-      "source_ids": [
-        "cowling-light-261113810"
-      ],
-      "time_window": "72h",
-      "body": "For visual robot control, tabletop illuminance and the data entering a policy are different quantities. Cowling shows how widely they can diverge on an ordinary low-cost rig. A light meter recorded substantial dimming, while the cameras did not record a proportionally darker scene. Ignoring the recordings would change the apparent meaning of the controller comparison.\n\nSimon Cowling of Denmark-based fysical.ai posted a preliminary research paper on November 10 about testing robot control under different lighting conditions. Four controllers were trained on the same 50 demonstrations: an SO-101 arm had to place a green ball in a basket while ignoring two red balls. Each controller was tested at ten ball placements in normal and dimmed conditions. Workspace illuminance fell from about 520 to 45 lux, an 11.5-fold reduction. The main comparison contained 80 attempts. Success totaled 20 out of 40 attempts in normal light and 19 out of 40 in low light.\n\nYet average recorded image brightness fell by only 3% for the front camera and 19% for the wrist camera. After the experiments, the author found automatic exposure enabled: the camera adjusts how it gathers light. This probably compensated for much of the dimming, although its causal role was not tested separately. The results therefore do not establish that the controllers withstand genuinely dark images. The study used one rig and one task, with manually placed balls and a single unblinded scorer. Small trial counts leave substantial uncertainty: the confidence interval for the pooled success change runs from a 23-percentage-point decrease to a 19-point increase.\n\nCamera settings were read after the experiments, and exposure was not locked during comparison. Isolating its causal contribution would require a separate controlled test with specified settings. Normal and low light were also tested on different days in the same policy order, leaving day and order effects inseparable from lighting in this design.",
-      "image": null
-    },
-    {
-      "id": "cable-action-context",
-      "title": "Cable prediction and action selection favor different information",
-      "summary": "University of Bologna researchers compared ways to represent cable properties during manipulation. Information that improved deformation prediction did not necessarily improve the selected control action.",
-      "details": "University of Bologna researchers posted preliminary work on November 10 on shaping a flexible cable on a plane. Their Geometry–Pointer–Flow method first chooses a segment to grasp, then generates its translation and rotation. The team compared information about cable stiffness and surface friction with a different representation: a learned record of up to five previous actions and the shape changes they produced. Each representation was evaluated separately for predicting the next shape and selecting an action. In simulation, estimated physical parameters improved prediction, but produced no detectable control improvement over a version using geometry alone.",
-      "technical_novelty": "University of Bologna researchers posted preliminary work on November 10 on shaping a flexible cable on a plane. Their Geometry–Pointer–Flow method first chooses a segment to grasp, then generates its translation and rotation. The team compared information about cable stiffness and surface friction with a different representation: a learned record of up to five previous actions and the shape changes they produced. Each representation was evaluated separately for predicting the next shape and selecting an action. In simulation, estimated physical parameters improved prediction, but produced no detectable control improvement over a version using geometry alone.",
-      "engineering_impact": "The task is planar cable shaping with one grasp per action. The experiments do not identify exactly which hidden properties the interaction history encodes. The authors promise code after acceptance, limiting present reproduction to the published description. Success in this setting cannot automatically be transferred to knot tying or three-dimensional cable assembly.",
-      "limitations": "The Bologna study tests planar cable shaping with one grasp per action. Manual reset prevents identical starting shapes; the exact content of the learned history representation is not established, and code is promised after acceptance.",
-      "evidence_status": "Research and author-run experiments; independent reproduction has not been confirmed.",
-      "published_at": "2026-11-10",
-      "organization": "University of Bologna",
-      "source_ids": [
-        "bologna-cable-261114274"
-      ],
-      "time_window": "72h",
-      "body": "Accurately predicting the next cable shape does not guarantee choosing a useful movement. The Bologna study evaluates these objectives separately with a common grasp-selection architecture. This distinction matters experimentally: prediction is scored against the resulting deformation, whereas control is scored by executing the selected action and measuring the shape it actually produces relative to a target.\n\nUniversity of Bologna researchers posted preliminary work on November 10 on shaping a flexible cable on a plane. Their Geometry–Pointer–Flow method first chooses a segment to grasp, then generates its translation and rotation. The team compared information about cable stiffness and surface friction with a different representation: a learned record of up to five previous actions and the shape changes they produced. Each representation was evaluated separately for predicting the next shape and selecting an action. In simulation, estimated physical parameters improved prediction, but produced no detectable control improvement over a version using geometry alone.\n\nThe interaction-history version reduced executed one-step shape error by 9.9% across 470 paired simulation trials. Hardware tests covered three cable compliance levels and two support surfaces. Controllers were trained only in simulation, without real-world training or fine-tuning. Within ten actions, the history-based version reached a mean shape error of at most 10 mm in 88.3% of trials, compared with 76.7% for geometry alone. Each controller completed 60 such rollouts. Error means the average distance between corresponding cable and target points, not the largest deviation. Manual resetting prevented exactly identical starting configurations across controllers.\n\nThe task is planar cable shaping with one grasp per action. The experiments do not identify exactly which hidden properties the interaction history encodes. The authors promise code after acceptance, limiting present reproduction to the published description. Success in this setting cannot automatically be transferred to knot tying or three-dimensional cable assembly.",
-      "image": null
-    },
-    {
-      "id": "hachioji-crane-sim",
-      "title": "Hachioji construction simulation adds robots that wait for traffic",
-      "summary": "Space Data added workers and robots to a crane simulation set around Hachioji Junction. It describes vehicle-position prediction 2.5 seconds ahead, without claiming physical construction-site trials.",
-      "details": "On November 12, Space Data presented a new scene for RobotBrain, its environment for evaluating robots before deployment. A hypothetical construction yard occupies digitally recreated terrain around Hachioji Junction in Japan. It contains four cranes, six construction vehicles, ten workers and fourteen robots. Ten robots are bipedal and four transport materials. These are simulated participants, not a workforce already operating at the junction. Users can change participant counts and roles to study shared movement in a confined yard. Compared with the company's first crane example, the stated addition is people and robots carrying out different assigned tasks.",
-      "technical_novelty": "On November 12, Space Data presented a new scene for RobotBrain, its environment for evaluating robots before deployment. A hypothetical construction yard occupies digitally recreated terrain around Hachioji Junction in Japan. It contains four cranes, six construction vehicles, ten workers and fourteen robots. Ten robots are bipedal and four transport materials. These are simulated participants, not a workforce already operating at the junction. Users can change participant counts and roles to study shared movement in a confined yard. Compared with the company's first crane example, the stated addition is people and robots carrying out different assigned tasks.",
-      "engineering_impact": "Agreement with a pendulum calculation cannot be turned into a general accuracy score for robot behavior or shared-work safety. The release provides no validation of these interaction rules against trajectories from an operating construction site. Planning use would require distinguishing public equipment specifications from developer-estimated parameters, especially where those assumptions affect the outcome.",
-      "limitations": "Space Data shows a hypothetical yard, not physical construction trials. Equipment models are unofficial and include estimated parameters; safe simulated movement does not validate a real robot’s safety.",
-      "evidence_status": "Official company announcement; the reported results and estimates are not independent verification.",
+      "id": "nvidia-leadership",
+      "title": "NVIDIA changes leadership while pledging to maintain its product plans",
+      "summary": "NVIDIA confirmed chief executive Jensen Huang’s resignation and finance chief Colette Kress’s interim appointment. For robot developers, this changes governance at a computing supplier; it does not establish that its products have stopped.",
+      "details": "On November 12, NVIDIA announced Jensen Huang's departure as president, chief executive and board member. Colette Kress became interim chief executive while retaining her chief financial officer duties; a permanent successor is still being sought. NVIDIA's filing with the U.S. Securities and Exchange Commission says the board accepted the resignation on November 11. That is the decision date, whereas November 12 is the public announcement date. The leadership change at a supplier of AI computing equipment is a confirmed event, rather than an inference from reports about the scandal.",
+      "technical_novelty": "NVIDIA confirmed chief executive Jensen Huang’s resignation and finance chief Colette Kress’s interim appointment. For robot developers, this changes governance at a computing supplier; it does not establish that its products have stopped. The crisis surrounding Huang has a separate investigative process: on November 10, independent directors said they had engaged outside lawyers to investigate. TechCrunch describes the controversy as arising from reported extramarital relationships and scrutiny of China-related chip sales. TechCrunch and Reuters independently reported the resignation, but reports of possible misconduct are not findings of that investigation. The cited official documents do not publish such findings. NVIDIA's board says operations, customer commitments and product plans should continue without interruption. That is the company's position about future operations; it does not independently establish that customers will see no disruption. Financial results and the accompanying investor call remain scheduled for November 17.",
+      "engineering_impact": "NVIDIA confirmed chief executive Jensen Huang’s resignation and finance chief Colette Kress’s interim appointment. For robot developers, this changes governance at a computing supplier; it does not establish that its products have stopped. The next specific disclosure point named by NVIDIA is its November 17 financial report and management discussion. Resignation alone establishes neither a broken roadmap nor guaranteed unchanged developer terms: the disclosed event is a governance transition, not a specification revision.",
+      "limitations": "NVIDIA confirmed chief executive Jensen Huang’s resignation and finance chief Colette Kress’s interim appointment. For robot developers, this changes governance at a computing supplier; it does not establish that its products have stopped. The next specific disclosure point named by NVIDIA is its November 17 financial report and management discussion. Resignation alone establishes neither a broken roadmap nor guaranteed unchanged developer terms: the disclosed event is a governance transition, not a specification revision.",
+      "evidence_status": "Leadership change is confirmed by the official release and U.S. Securities and Exchange Commission filing; an investigation and reported allegations are not findings of guilt.",
       "published_at": "2026-11-12",
-      "organization": "Space Data",
+      "organization": "NVIDIA",
       "source_ids": [
-        "spacedata-hachioji-20261112"
+        "nv-transition",
+        "nv-filing",
+        "nv-board",
+        "nv-tc",
+        "nv-reuters"
       ],
-      "time_window": "24h",
-      "body": "A shared-work simulation needs explicit interaction rules: who yields and where movement is prohibited. Space Data’s construction example supplies such rules inside a hypothetical site. This adds substance beyond showing cranes alone, but recognizable terrain does not establish that digital participants reproduce the behavior of real workers, vehicles and robot controllers under operational conditions.\n\nOn November 12, Space Data presented a new scene for RobotBrain, its environment for evaluating robots before deployment. A hypothetical construction yard occupies digitally recreated terrain around Hachioji Junction in Japan. It contains four cranes, six construction vehicles, ten workers and fourteen robots. Ten robots are bipedal and four transport materials. These are simulated participants, not a workforce already operating at the junction. Users can change participant counts and roles to study shared movement in a confined yard. Compared with the company's first crane example, the stated addition is people and robots carrying out different assigned tasks.\n\nAccording to the developer, a simulated robot anticipates a vehicle's position 2.5 seconds ahead and waits for it to pass. Robots avoid suspended loads, while vehicles stop in front of people. The system calculates load weight, cable tension and load swing. For a 40-meter cable, the reported oscillation period is 12.87 seconds, compared with 12.69 seconds from a pendulum formula. That comparison checks one physical behavior; it does not establish safety for the entire yard. Space Data explicitly says the construction scenario is hypothetical, equipment models are not official manufacturer models and some unpublished parameters are estimates.\n\nAgreement with a pendulum calculation cannot be turned into a general accuracy score for robot behavior or shared-work safety. The release provides no validation of these interaction rules against trajectories from an operating construction site. Planning use would require distinguishing public equipment specifications from developer-estimated parameters, especially where those assumptions affect the outcome.",
+      "time_window": "72h",
+      "body": "On November 12, NVIDIA announced Jensen Huang's departure as president, chief executive and board member. Colette Kress became interim chief executive while retaining her chief financial officer duties; a permanent successor is still being sought. NVIDIA's filing with the U.S. Securities and Exchange Commission says the board accepted the resignation on November 11. That is the decision date, whereas November 12 is the public announcement date. The leadership change at a supplier of AI computing equipment is a confirmed event, rather than an inference from reports about the scandal.\n\nThe crisis surrounding Huang has a separate investigative process: on November 10, independent directors said they had engaged outside lawyers to investigate. TechCrunch describes the controversy as arising from reported extramarital relationships and scrutiny of China-related chip sales. TechCrunch and Reuters independently reported the resignation, but reports of possible misconduct are not findings of that investigation. The cited official documents do not publish such findings. NVIDIA's board says operations, customer commitments and product plans should continue without interruption. That is the company's position about future operations; it does not independently establish that customers will see no disruption. Financial results and the accompanying investor call remain scheduled for November 17.\n\nA team relying on NVIDIA computing should distinguish corporate risk from the condition of a particular tool. The leadership announcement does not cancel shipments, end support or change software compatibility. Equally, the board's commitment to continuity does not replace documentation for the actual hardware and software versions used in a robot.\n\nThe next specific disclosure point named by NVIDIA is its November 17 financial report and management discussion. Resignation alone establishes neither a broken roadmap nor guaranteed unchanged developer terms: the disclosed event is a governance transition, not a specification revision.",
+      "image": null
+    },
+    {
+      "id": "asus-gallop-station",
+      "title": "ASUS splits packing-robot control into four layers",
+      "summary": "ASUS described a two-arm robot packing accessories at a group factory. Its 99.5%-within-20-seconds target is not presented as an already achieved result.",
+      "details": "On November 13, ASUS described Gallop, its robot program for factory workstations. Today it is a fixed-base, two-arm system learning to pack accessories for motherboards, the main circuit boards connecting a computer’s components, at an ASUS group plant. The station contains 15 small parts, many in thin transparent bags. ASUS sets a target of 99.5% success while completing a kit within 20 seconds. In the article, that is the required standard, not a published measurement of reliability already achieved. A wheeled version, customer pilots in 2027 and market availability in the second half of 2028 remain plans.",
+      "technical_novelty": "ASUS described a two-arm robot packing accessories at a group factory. Its 99.5%-within-20-seconds target is not presented as an already achieved result. ASUS describes four control layers: planning steps, separately checking their execution, reaching and grasping skills, and precise arm control. Fixed interfaces — agreed rules for exchanging data — connect them so that models can change without rebuilding the whole robot. An onboard NVIDIA Jetson AGX Thor computer runs the system. Training uses recordings of consenting workers, variations in computer-simulated conditions and demonstrations guided by a person wearing a headset and gloves. ASUS still plans to integrate its own touch-sensitive hand. The intended design should therefore not be mistaken for the exact configuration already operating on the current rig.",
+      "engineering_impact": "ASUS described a two-arm robot packing accessories at a group factory. Its 99.5%-within-20-seconds target is not presented as an already achieved result. Fixed interfaces can make model replacement easier at the design level, but do not themselves establish preserved latency or quality after a swap. The description supplies no such comparison. Both the touch-sensitive hand and wheeled base still belong to the announced development sequence rather than a single fully demonstrated configuration.",
+      "limitations": "ASUS described a two-arm robot packing accessories at a group factory. Its 99.5%-within-20-seconds target is not presented as an already achieved result. Fixed interfaces can make model replacement easier at the design level, but do not themselves establish preserved latency or quality after a swap. The description supplies no such comparison. Both the touch-sensitive hand and wheeled base still belong to the announced development sequence rather than a single fully demonstrated configuration.",
+      "evidence_status": "Developer announcement; stated plans and capabilities are not an independent test.",
+      "published_at": "2026-11-13",
+      "organization": "ASUS",
+      "source_ids": [
+        "asus-station"
+      ],
+      "time_window": "72h",
+      "body": "On November 13, ASUS described Gallop, its robot program for factory workstations. Today it is a fixed-base, two-arm system learning to pack accessories for motherboards, the main circuit boards connecting a computer’s components, at an ASUS group plant. The station contains 15 small parts, many in thin transparent bags. ASUS sets a target of 99.5% success while completing a kit within 20 seconds. In the article, that is the required standard, not a published measurement of reliability already achieved. A wheeled version, customer pilots in 2027 and market availability in the second half of 2028 remain plans.\n\nASUS describes four control layers: planning steps, separately checking their execution, reaching and grasping skills, and precise arm control. Fixed interfaces — agreed rules for exchanging data — connect them so that models can change without rebuilding the whole robot. An onboard NVIDIA Jetson AGX Thor computer runs the system. Training uses recordings of consenting workers, variations in computer-simulated conditions and demonstrations guided by a person wearing a headset and gloves. ASUS still plans to integrate its own touch-sensitive hand. The intended design should therefore not be mistaken for the exact configuration already operating on the current rig.\n\nA distinct execution-checking layer is architecturally significant: generating a sequence and establishing that a step actually finished are different functions. ASUS assigns them to separate layers. Without a published protocol, however, it remains unclear which observations confirm completion and how the system distinguishes a failed grasp from a successfully transferred part.\n\nFixed interfaces can make model replacement easier at the design level, but do not themselves establish preserved latency or quality after a swap. The description supplies no such comparison. Both the touch-sensitive hand and wheeled base still belong to the announced development sequence rather than a single fully demonstrated configuration.",
+      "image": null
+    },
+    {
+      "id": "heir-human-context",
+      "title": "Gaze context can clarify a request without completing it",
+      "summary": "A team including Tsinghua University introduced HEIR, a collection of speech, gaze and robot-motion records for household assistance. In a separate integrated autonomous test, the system completed 18.52% of 27 requests.",
+      "details": "A team including Tsinghua University posted a research preprint on November 12 about grounding household robot requests in speech, measured gaze and video from the person's viewpoint. Its HEIR dataset pairs those signals with robot observations and recorded movements. An operator controlled the robot during data collection: these are demonstrations, not thousands of independently completed requests. Seventeen participants contributed 300 sessions totaling 38.56 hours. The evaluation covers identifying the intended object, planning steps, moving around and manipulating objects with the arms.",
+      "technical_novelty": "A team including Tsinghua University introduced HEIR, a collection of speech, gaze and robot-motion records for household assistance. In a separate integrated autonomous test, the system completed 18.52% of 27 requests. The Tsinghua team’s system first interprets a request, then uses the current state to decide whether to continue a step, switch to the next one or finish. The authors compared models on recordings and ran separate autonomous experiments on a physical robot. The integrated system completed 18.52% of 27 evaluated requests. Better scores for individual actions do not establish equal reliability for the whole assistant. Gaze contributions were isolated mainly through controlled comparisons on recorded data; live sessions diverge in human behavior and object arrangement. The result does not establish dependable assistance in an arbitrary home or for a person outside the tested setting.",
+      "engineering_impact": "A team including Tsinghua University introduced HEIR, a collection of speech, gaze and robot-motion records for household assistance. In a separate integrated autonomous test, the system completed 18.52% of 27 requests. The paper isolates gaze contributions through controlled comparisons on recordings. Whole-robot success also depends on request interpretation, transitions between steps, navigation and grasping. The 18.52% result is therefore neither an isolated score for gaze sensing nor evidence that the assistant is ready for arbitrary homes.",
+      "limitations": "A team including Tsinghua University introduced HEIR, a collection of speech, gaze and robot-motion records for household assistance. In a separate integrated autonomous test, the system completed 18.52% of 27 requests. The paper isolates gaze contributions through controlled comparisons on recordings. Whole-robot success also depends on request interpretation, transitions between steps, navigation and grasping. The 18.52% result is therefore neither an isolated score for gaze sensing nor evidence that the assistant is ready for arbitrary homes.",
+      "evidence_status": "Preprint and author-run experiments; independent reproduction is not confirmed.",
+      "published_at": "2026-11-12",
+      "organization": "Tsinghua University; Beijing Academy of Artificial Intelligence; Fudan University; Yangu Robotics",
+      "source_ids": [
+        "heir-preprint"
+      ],
+      "time_window": "72h",
+      "body": "A team including Tsinghua University posted a research preprint on November 12 about grounding household robot requests in speech, measured gaze and video from the person's viewpoint. Its HEIR dataset pairs those signals with robot observations and recorded movements. An operator controlled the robot during data collection: these are demonstrations, not thousands of independently completed requests. Seventeen participants contributed 300 sessions totaling 38.56 hours. The evaluation covers identifying the intended object, planning steps, moving around and manipulating objects with the arms.\n\nThe Tsinghua team’s system first interprets a request, then uses the current state to decide whether to continue a step, switch to the next one or finish. The authors compared models on recordings and ran separate autonomous experiments on a physical robot. The integrated system completed 18.52% of 27 evaluated requests. Better scores for individual actions do not establish equal reliability for the whole assistant. Gaze contributions were isolated mainly through controlled comparisons on recorded data; live sessions diverge in human behavior and object arrangement. The result does not establish dependable assistance in an arbitrary home or for a person outside the tested setting.\n\nReproduction requires preserving the boundaries between three forms of evidence. Collection trajectories were controlled by a person; offline model comparisons score individual predictions; physical end-to-end tests check actual request completion. Neither training-set size nor next-action accuracy is a count of autonomously completed household jobs, and those measures answer different experimental questions.\n\nThe paper isolates gaze contributions through controlled comparisons on recordings. Whole-robot success also depends on request interpretation, transitions between steps, navigation and grasping. The 18.52% result is therefore neither an isolated score for gaze sensing nor evidence that the assistant is ready for arbitrary homes.",
+      "image": null
+    },
+    {
+      "id": "gxo-apollo-framework",
+      "title": "GXO ties wider Apollo trials to warehouse operating measures",
+      "summary": "GXO and Apptronik plan expanded warehouse trials from 2027. A potential rollout of up to 1,000 humanoids depends on agreed requirements, rather than a demonstrated robot movement alone.",
+      "details": "Logistics company GXO and robot developer Apptronik announced a letter of intent on November 12 to expand warehouse trials of the human-shaped Apollo robot. Tests in live operations are planned from 2027, covering picking, case and tote movement, packing and sorting. The proposed scale is up to 1,000 robots over four years, explicitly conditional on meeting agreed productivity, safety and operational measures. Initial commercial deployment in North America is intended for late 2027. This is a conditional expansion plan, not an announcement that a thousand machines have been delivered.",
+      "technical_novelty": "GXO and Apptronik plan expanded warehouse trials from 2027. A potential rollout of up to 1,000 humanoids depends on agreed requirements, rather than a demonstrated robot movement alone. GXO and Apptronik envisage a service model: robot use would be provided as a service that can expand as applications become ready. Prices, maintenance coverage and the allocation of individual costs are not disclosed. GXO reports an earlier pilot for picking small consumer goods and evaluations of more than 50 logistics tasks at Apptronik's training facility. That facility is not fifty customer warehouses. Independent Forbes coverage highlights an economic limitation: GXO's chief executive had previously said humanoid investment had not yet paid off. The agreement itself provides no payback calculation for the future program.",
+      "engineering_impact": "GXO and Apptronik plan expanded warehouse trials from 2027. A potential rollout of up to 1,000 humanoids depends on agreed requirements, rather than a demonstrated robot movement alone. Numerical acceptance thresholds for individual applications are not published. Without allowed intervention counts or recovery-time requirements, the thousand-unit ceiling describes intended scale rather than a reproducible level of operational readiness. Those missing measures determine what the planned trials actually have to establish.",
+      "limitations": "GXO and Apptronik plan expanded warehouse trials from 2027. A potential rollout of up to 1,000 humanoids depends on agreed requirements, rather than a demonstrated robot movement alone. Numerical acceptance thresholds for individual applications are not published. Without allowed intervention counts or recovery-time requirements, the thousand-unit ceiling describes intended scale rather than a reproducible level of operational readiness. Those missing measures determine what the planned trials actually have to establish.",
+      "evidence_status": "Developer announcement; stated plans and capabilities are not an independent test.",
+      "published_at": "2026-11-12",
+      "organization": "GXO; Apptronik",
+      "source_ids": [
+        "gxo-intent",
+        "gxo-forbes"
+      ],
+      "time_window": "72h",
+      "body": "Logistics company GXO and robot developer Apptronik announced a letter of intent on November 12 to expand warehouse trials of the human-shaped Apollo robot. Tests in live operations are planned from 2027, covering picking, case and tote movement, packing and sorting. The proposed scale is up to 1,000 robots over four years, explicitly conditional on meeting agreed productivity, safety and operational measures. Initial commercial deployment in North America is intended for late 2027. This is a conditional expansion plan, not an announcement that a thousand machines have been delivered.\n\nGXO and Apptronik envisage a service model: robot use would be provided as a service that can expand as applications become ready. Prices, maintenance coverage and the allocation of individual costs are not disclosed. GXO reports an earlier pilot for picking small consumer goods and evaluations of more than 50 logistics tasks at Apptronik's training facility. That facility is not fifty customer warehouses. Independent Forbes coverage highlights an economic limitation: GXO's chief executive had previously said humanoid investment had not yet paid off. The agreement itself provides no payback calculation for the future program.\n\nThe engineering task is to validate integration into live warehouse processes, not one successful grasp. Evaluation includes safety, security and technical requirements. The partners also intend to test operation alongside existing automation and people, so an isolated demonstration score cannot substitute for evidence from the intended picking or transport workflow.\n\nNumerical acceptance thresholds for individual applications are not published. Without allowed intervention counts or recovery-time requirements, the thousand-unit ceiling describes intended scale rather than a reproducible level of operational readiness. Those missing measures determine what the planned trials actually have to establish.",
+      "image": null
+    },
+    {
+      "id": "munich-autoware-bus",
+      "title": "Autoware is being adapted for a full-size Munich city bus",
+      "summary": "TIER IV and the Technical University of Munich described responsibilities for automated bus driving. Route operation is planned after controlled tests and with personnel aboard for safety.",
+      "details": "Japan's TIER IV and the Technical University of Munich announced support on November 11 for automated-driving development on a full-size city bus in Munich. The basis is Autoware, automated-driving software whose development TIER IV leads. Its source code is available for study and modification. The bus still needs adaptation to local roads and testing. Bus manufacturer MAN is responsible for vehicle-control mechanisms and low-level software; the university handles sensor configuration and the driving system. After tests in controlled conditions, the partners plan operation on existing routes with personnel aboard to ensure safety.",
+      "technical_novelty": "TIER IV and the Technical University of Munich described responsibilities for automated bus driving. Route operation is planned after controlled tests and with personnel aboard for safety. The effort uses a joint research center established in October. It draws on experience deploying the Autoware automated-driving software in Japanese buses, but does not simply install unchanged software on another vehicle: both the vehicle platform and road conditions differ. A university professor describes federal support of 20 million euros over three years for the Munich bus-development project. That is project-wide funding, not an announced budget solely for Autoware software. The release supplies no Munich route-trial results, measured reduction in crashes or promise to remove the onboard safety personnel at the outset.",
+      "engineering_impact": "TIER IV and the Technical University of Munich described responsibilities for automated bus driving. Route operation is planned after controlled tests and with personnel aboard for safety. The intended route stage includes onboard safety personnel. Future test comparisons will therefore need their authority and intervention conditions, alongside the vehicle configuration. Describing the software platform without those operating conditions would not establish whether two bus projects demonstrate the same degree of independent driving.",
+      "limitations": "TIER IV and the Technical University of Munich described responsibilities for automated bus driving. Route operation is planned after controlled tests and with personnel aboard for safety. The intended route stage includes onboard safety personnel. Future test comparisons will therefore need their authority and intervention conditions, alongside the vehicle configuration. Describing the software platform without those operating conditions would not establish whether two bus projects demonstrate the same degree of independent driving.",
+      "evidence_status": "Developer announcement; stated plans and capabilities are not an independent test.",
+      "published_at": "2026-11-11",
+      "organization": "TIER IV; Technical University of Munich; MAN",
+      "source_ids": [
+        "tier-bus"
+      ],
+      "time_window": "72h",
+      "body": "Japan's TIER IV and the Technical University of Munich announced support on November 11 for automated-driving development on a full-size city bus in Munich. The basis is Autoware, automated-driving software whose development TIER IV leads. Its source code is available for study and modification. The bus still needs adaptation to local roads and testing. Bus manufacturer MAN is responsible for vehicle-control mechanisms and low-level software; the university handles sensor configuration and the driving system. After tests in controlled conditions, the partners plan operation on existing routes with personnel aboard to ensure safety.\n\nThe effort uses a joint research center established in October. It draws on experience deploying the Autoware automated-driving software in Japanese buses, but does not simply install unchanged software on another vehicle: both the vehicle platform and road conditions differ. A university professor describes federal support of 20 million euros over three years for the Munich bus-development project. That is project-wide funding, not an announced budget solely for Autoware software. The release supplies no Munich route-trial results, measured reduction in crashes or promise to remove the onboard safety personnel at the outset.\n\nThe division of work identifies the limits of a portable software solution. Driving depends on sensors, vehicle actuators and road conditions as well as algorithms. MAN's vehicle-control work and the university's sensor configuration imply a separate integration effort, rather than automatic compatibility between every bus and an unchanged software installation.\n\nThe intended route stage includes onboard safety personnel. Future test comparisons will therefore need their authority and intervention conditions, alongside the vehicle configuration. Describing the software platform without those operating conditions would not establish whether two bus projects demonstrate the same degree of independent driving.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "A good prediction still needs a useful action",
-    "summary": "NTT evaluates action outcomes before stacking objects. In Bologna experiments, information that improved cable-shape prediction did not always improve control.",
-    "implications": "NTT checked advance screening through actual stacking success on a small rig. The Bologna study separately measures prediction error and the shape produced by an executed action; those outcomes are not interchangeable."
+    "title": "NVIDIA changes leadership and pledges continuity",
+    "summary": "NVIDIA confirmed chief executive Jensen Huang’s resignation; finance chief Colette Kress became interim leader. The board says operations, customer commitments and product plans will continue.",
+    "implications": "NVIDIA’s leadership announcement contains no canceled shipments or changes in software compatibility. For robot developers, it changes governance at a computing-platform supplier without itself establishing a change in hardware capability."
   },
   "sources": [
     {
-      "id": "ntt-world-20261111",
-      "title": "ロボットが「動く前に未来を予測」、失敗を回避するフィジカルAI技術を開発",
-      "url": "https://group.ntt/jp/newsrelease/2026/11/11/261111b.html",
-      "domain": "group.ntt",
-      "organization": "NTT",
-      "published_at": "2026-11-11"
-    },
-    {
-      "id": "bd-roll-20261109",
-      "title": "Atlas On a Roll: Bridging Classical Motor Controls and Whole-Body RL",
-      "url": "https://bostondynamics.com/blog/atlas-on-a-roll/",
-      "domain": "bostondynamics.com",
-      "organization": "Boston Dynamics",
-      "published_at": "2026-11-09"
-    },
-    {
-      "id": "cowling-light-261113810",
-      "title": "Camera equalisation of an 11.5x drop in environmental illuminance: four imitation-learning policies on an SO-101 arm",
-      "url": "https://arxiv.org/abs/2611.13810",
-      "domain": "arxiv.org",
-      "organization": "fysical.ai",
-      "published_at": "2026-11-10"
-    },
-    {
-      "id": "bologna-cable-261114274",
-      "title": "From Prediction to Action: Learning Physical Context for Deformable Linear Object Manipulation",
-      "url": "https://arxiv.org/abs/2611.14274",
-      "domain": "arxiv.org",
-      "organization": "University of Bologna",
-      "published_at": "2026-11-10"
-    },
-    {
-      "id": "spacedata-hachioji-20261112",
-      "title": "スペースデータ、八王子ジャンクションを舞台に人とロボットが働くクレーン作業シミュレーションを開発",
-      "url": "https://prtimes.jp/main/html/rd/p/000000275.000080352.html",
-      "domain": "prtimes.jp",
-      "organization": "Space Data",
+      "id": "nv-transition",
+      "title": "NVIDIA Announces CEO Transition",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition/",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
       "published_at": "2026-11-12"
+    },
+    {
+      "id": "nv-filing",
+      "title": "NVIDIA Corporation, Form 8-K: leadership changes",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+      "domain": "www.sec.gov",
+      "organization": "NVIDIA; U.S. Securities and Exchange Commission",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "nv-board",
+      "title": "Statement from the Independent Members of the NVIDIA Board",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/Statement-from-the-Independent-Members-of-the-NVIDIA-Board/default.aspx",
+      "domain": "investor.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "nv-tc",
+      "title": "The unfolding Jensen Huang scandal: a timeline",
+      "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "domain": "techcrunch.com",
+      "organization": "TechCrunch",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "nv-reuters",
+      "title": "Nvidia's Huang turns to Paul Weiss, law firm that inked deal with Trump",
+      "url": "https://www.reuters.com/legal/transactional/nvidias-huang-turns-paul-weiss-law-firm-that-inked-deal-with-trump-2026-11-13/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "asus-station",
+      "title": "Factory-Proven Physical AI: Why ASUS Is Building a Humanoid Robot",
+      "url": "https://press.asus.com/blog/factory-proven-physical-ai-asus-gallop-humanoid-robot/",
+      "domain": "press.asus.com",
+      "organization": "ASUS",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "heir-preprint",
+      "title": "HEIR: Harness Egocentric Intent for Human-Robot Interactions",
+      "url": "https://arxiv.org/abs/2611.17238",
+      "domain": "arxiv.org",
+      "organization": "Tsinghua University; Beijing Academy of Artificial Intelligence; Fudan University; Yangu Robotics",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "gxo-intent",
+      "title": "GXO and Apptronik Expand Partnership to Scale Humanoid Deployment",
+      "url": "https://investors.gxo.com/news-releases/news-release-details/gxo-and-apptronik-expand-partnership-scale-humanoid-deployment",
+      "domain": "investors.gxo.com",
+      "organization": "GXO; Apptronik",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "gxo-forbes",
+      "title": "GXO Doubles Down On Humanoids With Plan For Up To 1,000 Apptronik Robots",
+      "url": "https://www.forbes.com/sites/johnkoetsier/2026/11/12/gxo-doubles-down-on-humanoids-with-plan-for-up-to-1000-apptronik-robots/",
+      "domain": "www.forbes.com",
+      "organization": "Forbes",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "tier-bus",
+      "title": "ティアフォーとミュンヘン工科大学、「Autoware」を活用した自動運転システムをミュンヘン市内の路線バス開発に展開",
+      "url": "https://prtimes.jp/main/html/rd/p/000000149.000040119.html",
+      "domain": "prtimes.jp",
+      "organization": "TIER IV; Technical University of Munich",
+      "published_at": "2026-11-11"
     }
   ]
 }
