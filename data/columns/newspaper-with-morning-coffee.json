@@ -176,23 +176,23 @@
   },
   "images": [
     {
-      "id": "morning-editorial-shift",
-      "path": "images/columns/newspaper-with-morning-coffee/morning-editorial-shift.webp",
+      "id": "morning-editorial-shift-author-v5",
+      "path": "images/columns/newspaper-with-morning-coffee/morning-editorial-shift-author-v5.webp",
       "localizations": {
         "ru": {
-          "alt": "Чёрно-белая гравюра: редактор правит газетную полосу карандашом, а небольшой робот подаёт новый лист. На столе дымится нетронутый кофе, лежат стопка корректур и толстая папка.",
-          "caption": "Хотелось просто читать газету за кофе. Пришлось ещё и выпускать её. Редакционная иллюстрация."
+          "alt": "Чёрно-белая гравюра: автор в очках сидит в центре за редакционным столом с карандашом над корректурой и смотрит на читателя. Слева обычный робот-помощник подаёт новый лист; на столе — эспрессо, газетные полосы и толстая папка.",
+          "caption": "Хотелось просто читать газету за кофе. Пришлось ещё и выпускать её. Редакционная иллюстрация по фотографии автора."
         },
         "en": {
-          "alt": "Black-and-white engraving: an editor corrects a newspaper proof with a pencil while a small robot offers another sheet. Untouched coffee steams beside a pile of proofs and a thick binder.",
-          "caption": "The plan was to read the paper over coffee. Publishing it became part of the morning, too. Editorial illustration."
+          "alt": "Black-and-white engraving: the author, wearing glasses, sits centrally at an editorial desk, looking at the reader with a pencil poised over a proof. An ordinary robot assistant offers another sheet on the left; espresso, newspaper proofs and a thick binder sit on the desk.",
+          "caption": "The plan was to read the paper over coffee. Publishing it became part of the morning, too. Editorial illustration based on the author’s photograph."
         },
         "ja": {
-          "alt": "白黒の版画。編集者が鉛筆で新聞の校正刷りを直す横で、小さなロボットが次の紙を差し出す。机には、手を付けていない湯気の立つコーヒー、積まれた校正刷り、分厚いファイルがある。",
-          "caption": "コーヒーを飲みながら新聞を読むはずが、発行する仕事まで朝の日課になった。編集イラスト。"
+          "alt": "白黒の版画。眼鏡をかけた著者が編集机の中央に座り、校正刷りの上に鉛筆を構えて読者を見ている。左ではロボット助手が次の紙を差し出す。机にはエスプレッソ、新聞の紙面、分厚いファイルがある。",
+          "caption": "コーヒーを飲みながら新聞を読むはずが、発行する仕事まで朝の日課になった。著者の写真をもとにした編集イラスト。"
         }
       }
     }
   ],
-  "cover_image": "morning-editorial-shift"
+  "cover_image": "morning-editorial-shift-author-v5"
 }
