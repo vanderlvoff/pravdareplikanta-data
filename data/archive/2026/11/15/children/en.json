@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-15",
+  "issue_id": "daily-2026-11-15",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-14T21:27:09.324372Z",
+  "title": "What a robot needs to do a job",
+  "lead": "Japan wants to connect waste-processing knowledge with robotics developers. Researchers in Singapore have prepared computer-based tasks for comparing how machines learn to act.",
+  "news": [
+    {
+      "id": "waste-physical-ai-consortium",
+      "title": "Japan brings recycling workers and robot builders into one discussion",
+      "summary": "Japan's environment ministry is forming a group for developers and waste-processing organizations. It will collect workplace problems and help find partners for trials.",
+      "details": "Discarded products are becoming more complicated, with different materials joined inside one item. On November 13, Japan's environment ministry announced a group connecting waste-processing facilities and robotics developers. The aim is to help technology builders learn about the actual difficulties at a working site.",
+      "technical_novelty": "Japan's environment ministry is forming a group for developers and waste-processing organizations. It will collect workplace problems and help find partners for trials. The announcement names growing sorting categories, worker shortages and safety. It uses physical AI to mean programs connected to machines that act on real objects. Choosing a suitable device requires knowing which items arrive at a facility and what must happen to them.",
+      "engineering_impact": "Japan's environment ministry is forming a group for developers and waste-processing organizations. It will collect workplace problems and help find partners for trials. The new group is a consortium: organizations sharing knowledge and discussing common problems. Companies, local authorities and industry groups can participate. Its organizers want to gather facility requests and help identify partners for technical trials. There is no membership fee.",
+      "limitations": "Japan's environment ministry is forming a group for developers and waste-processing organizations. It will collect workplace problems and help find partners for trials. Applications close on December 3, and the first meeting is planned for December 17. It will explain the group's aims and present examples of work. The group begins with that exchange of information; decisions about particular machines will be made in individual projects.",
+      "evidence_status": "This is a ministry announcement about cooperation and planned meetings.",
+      "published_at": "2026-11-13",
+      "organization": "Ministry of the Environment, Japan",
+      "source_ids": [
+        "env-consortium"
+      ],
+      "time_window": "72h",
+      "body": "Discarded products are becoming more complicated, with different materials joined inside one item. On November 13, Japan's environment ministry announced a group connecting waste-processing facilities and robotics developers. The aim is to help technology builders learn about the actual difficulties at a working site.\n\nThe announcement names growing sorting categories, worker shortages and safety. It uses physical AI to mean programs connected to machines that act on real objects. Choosing a suitable device requires knowing which items arrive at a facility and what must happen to them.\n\nThe new group is a consortium: organizations sharing knowledge and discussing common problems. Companies, local authorities and industry groups can participate. Its organizers want to gather facility requests and help identify partners for technical trials. There is no membership fee.\n\nApplications close on December 3, and the first meeting is planned for December 17. It will explain the group's aims and present examples of work. The group begins with that exchange of information; decisions about particular machines will be made in individual projects.",
+      "image": null
+    },
+    {
+      "id": "dexremo-force-frame",
+      "title": "A robot hand learns which way its fingers are pushing",
+      "summary": "A University of York team and partners tested a three-finger hand for detachment and cleaning. Its program benefited from describing different fingers' forces relative to one shared reference at the wrist.",
+      "details": "An object stuck to a surface needs to be detached before it can move away. Researchers at the University of York and partner universities published a study on November 11 about a three-finger hand learning this work. Their experiments also cover cleaning surfaces and retrieving hidden objects.",
+      "technical_novelty": "A University of York team and partners tested a three-finger hand for detachment and cleaning. Its program benefited from describing different fingers' forces relative to one shared reference at the wrist. Sensors on the fingers measure forces from contact. However, bending a finger also turns its sensor. The program uses joint positions to describe force directions relative to one place at the wrist. That makes different fingers' measurements easier to compare.",
+      "engineering_impact": "A University of York team and partners tested a three-finger hand for detachment and cleaning. Its program benefited from describing different fingers' forces relative to one shared reference at the wrist. Each job received 20 successful teaching examples recorded while a person controlled the machine. The programs were then tested separately. Across six main tasks, adding finger-position information and transformed forces raised mean success from 24 to 83 percent. Cameras and joint information remained common to the compared programs.",
+      "limitations": "A University of York team and partners tested a three-finger hand for detachment and cleaning. Its program benefited from describing different fingers' forces relative to one shared reference at the wrist. The hand was positioned near its target in advance. Its wrist stayed fixed, while another mechanism raised and lowered it. The authors identify a further task: connect the skill to a whole arm that can bring the hand to the required working position.",
+      "evidence_status": "These are the researchers’ tests on a physical hand; the comparison covers six core tasks.",
+      "published_at": "2026-11-11",
+      "organization": "University of York; University of Edinburgh; Friedrich Schiller University Jena; King’s College London",
+      "source_ids": [
+        "dexremo-paper"
+      ],
+      "time_window": "7d",
+      "body": "An object stuck to a surface needs to be detached before it can move away. Researchers at the University of York and partner universities published a study on November 11 about a three-finger hand learning this work. Their experiments also cover cleaning surfaces and retrieving hidden objects.\n\nSensors on the fingers measure forces from contact. However, bending a finger also turns its sensor. The program uses joint positions to describe force directions relative to one place at the wrist. That makes different fingers' measurements easier to compare.\n\nEach job received 20 successful teaching examples recorded while a person controlled the machine. The programs were then tested separately. Across six main tasks, adding finger-position information and transformed forces raised mean success from 24 to 83 percent. Cameras and joint information remained common to the compared programs.\n\nThe hand was positioned near its target in advance. Its wrist stayed fixed, while another mechanism raised and lowered it. The authors identify a further task: connect the skill to a whole arm that can bring the hand to the required working position.",
+      "image": null
+    },
+    {
+      "id": "maniladder-difficulty",
+      "title": "Robots get 112 tasks in four difficulty levels",
+      "summary": "Researchers including a National University of Singapore team created a set of computer-based robot tests. They assign difficulty using one program that receives the same number of teaching examples for each task.",
+      "details": "Hanging a mug on a rack and closing a box with two arms require different movements. A team including the National University of Singapore published 112 simulated robot tasks on November 12. They include solid objects, flexible items and work using one or two arms.",
+      "technical_novelty": "Researchers including a National University of Singapore team created a set of computer-based robot tests. They assign difficulty using one program that receives the same number of teaching examples for each task. How do the researchers decide which task is harder? They give the same program 20 examples of each task and teach it using the same procedure. They then check how often it succeeds. This is learning from demonstrations: the program works out how to reproduce useful movements in another attempt.",
+      "engineering_impact": "Researchers including a National University of Singapore team created a set of computer-based robot tests. They assign difficulty using one program that receives the same number of teaching examples for each task. If a task is too easy or too hard for its intended level, its conditions are changed. A mug's starting position or a box's size can be adjusted. The result is four difficulty levels rather than just a long list of objects. The researchers also check the ordering with other programs.",
+      "limitations": "Researchers including a National University of Singapore team created a set of computer-based robot tests. They assign difficulty using one program that receives the same number of teaching examples for each task. Final comparisons try each task 50 times with prepared starting conditions. This helps compare programs more fairly. Giving a program more teaching examples can change its result, so the number of examples is part of the test conditions too.",
+      "evidence_status": "The researchers describe their own computer-based tests and conditions for comparing programs.",
+      "published_at": "2026-11-12",
+      "organization": "National University of Singapore and collaborating universities",
+      "source_ids": [
+        "maniladder-paper"
+      ],
+      "time_window": "72h",
+      "body": "Hanging a mug on a rack and closing a box with two arms require different movements. A team including the National University of Singapore published 112 simulated robot tasks on November 12. They include solid objects, flexible items and work using one or two arms.\n\nHow do the researchers decide which task is harder? They give the same program 20 examples of each task and teach it using the same procedure. They then check how often it succeeds. This is learning from demonstrations: the program works out how to reproduce useful movements in another attempt.\n\nIf a task is too easy or too hard for its intended level, its conditions are changed. A mug's starting position or a box's size can be adjusted. The result is four difficulty levels rather than just a long list of objects. The researchers also check the ordering with other programs.\n\nFinal comparisons try each task 50 times with prepared starting conditions. This helps compare programs more fairly. Giving a program more teaching examples can change its result, so the number of examples is part of the test conditions too.",
+      "image": null
+    },
+    {
+      "id": "serve-developer-portal",
+      "title": "A shop can request a robot delivery through its own program",
+      "summary": "Serve Robotics opened software access to its delivery-robot service. Developers can first test requests with virtual machines; physical trips require company approval.",
+      "details": "A small shop wants to send a purchase to a customer but owns no robot. On November 11, U.S. company Serve Robotics opened software access to its sidewalk delivery network. A shop's application can say where to collect an item, where to take it and how to follow the trip.",
+      "technical_novelty": "Serve Robotics opened software access to its delivery-robot service. Developers can first test requests with virtual machines; physical trips require company approval. This connection is called a programming interface: one program sends another commands in an agreed format. Serve remains responsible for the trip. It assigns robots, chooses routes and supervises the machines. The developer works on the application and how the shop and customer use it.",
+      "engineering_impact": "Serve Robotics opened software access to its delivery-robot service. Developers can first test requests with virtual machines; physical trips require company approval. Commands can first be checked in a test environment containing virtual robots. Developers can run through the delivery sequence and try unusual situations there. This gives them a chance to find software errors before their requests affect a physical machine's journey.",
+      "limitations": "Serve Robotics opened software access to its delivery-robot service. Developers can first test requests with virtual machines; physical trips require company approval. Real deliveries need Serve's permission. Both addresses also have to fit its current service coverage. The company reports 2,000 robots across 20 U.S. cities, so a first project starts by choosing a place the network can serve.",
+      "evidence_status": "The delivery operator reported how the service works and how many robots its network includes.",
+      "published_at": "2026-11-11",
+      "organization": "Serve Robotics",
+      "source_ids": [
+        "serve-release",
+        "serve-technical"
+      ],
+      "time_window": "7d",
+      "body": "A small shop wants to send a purchase to a customer but owns no robot. On November 11, U.S. company Serve Robotics opened software access to its sidewalk delivery network. A shop's application can say where to collect an item, where to take it and how to follow the trip.\n\nThis connection is called a programming interface: one program sends another commands in an agreed format. Serve remains responsible for the trip. It assigns robots, chooses routes and supervises the machines. The developer works on the application and how the shop and customer use it.\n\nCommands can first be checked in a test environment containing virtual robots. Developers can run through the delivery sequence and try unusual situations there. This gives them a chance to find software errors before their requests affect a physical machine's journey.\n\nReal deliveries need Serve's permission. Both addresses also have to fit its current service coverage. The company reports 2,000 robots across 20 U.S. cities, so a first project starts by choosing a place the network can serve.",
+      "image": null
+    },
+    {
+      "id": "japan-robot-investment",
+      "title": "Japan discusses helping robots start work at real sites",
+      "summary": "Japan's prime minister met robot and component makers. Companies requested support for development, teaching data and several years of early adoption.",
+      "details": "Japan’s prime minister Sanae Takaichi met robot and component makers on November 12. They discussed support for developing the technology and using it at factories and other workplaces. Companies requested help across several stages, from building devices to putting the first systems into use.",
+      "technical_novelty": "Japan's prime minister met robot and component makers. Companies requested support for development, teaching data and several years of early adoption. One request covers parts and production, from research to making many devices. Another concerns programs that learn to control actions. Those programs need records of work, so companies also asked for help collecting data and supporting early installations across several years.",
+      "engineering_impact": "Japan's prime minister met robot and component makers. Companies requested support for development, teaching data and several years of early adoption. The government discusses reducing heavy and dangerous work and responding to worker shortages. Its 2040 ambition includes roughly 10 million robots using artificial intelligence. Here that means learning programs involved in selecting a machine's actions.",
+      "limitations": "Japan's prime minister met robot and component makers. Companies requested support for development, teaching data and several years of early adoption. Officials must now put the requests into the growth-strategy implementation plan. It should clarify which support will be offered and what budgets are required. The eventual program will show how technology builders and workplaces can take part in those measures.",
+      "evidence_status": "This is a published government speech about future support measures.",
+      "published_at": "2026-11-12",
+      "organization": "Prime Minister’s Office of Japan",
+      "source_ids": [
+        "japan-pm-1112",
+        "japan-sankei-1113"
+      ],
+      "time_window": "7d",
+      "body": "Japan’s prime minister Sanae Takaichi met robot and component makers on November 12. They discussed support for developing the technology and using it at factories and other workplaces. Companies requested help across several stages, from building devices to putting the first systems into use.\n\nOne request covers parts and production, from research to making many devices. Another concerns programs that learn to control actions. Those programs need records of work, so companies also asked for help collecting data and supporting early installations across several years.\n\nThe government discusses reducing heavy and dangerous work and responding to worker shortages. Its 2040 ambition includes roughly 10 million robots using artificial intelligence. Here that means learning programs involved in selecting a machine's actions.\n\nOfficials must now put the requests into the growth-strategy implementation plan. It should clarify which support will be offered and what budgets are required. The eventual program will show how technology builders and workplaces can take part in those measures.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "What a robot needs to do a job",
+    "summary": "Japan wants to connect waste-processing knowledge with robotics developers. Researchers in Singapore have prepared computer-based tasks for comparing how machines learn to act.",
+    "implications": "Waste operators can explain their actual working conditions to developers. In the computer tests, researchers set conditions in advance: both stories show why a task needs a precise description before choosing equipment or software."
+  },
+  "sources": [
+    {
+      "id": "env-consortium",
+      "title": "「廃棄物・資源循環分野のフィジカルAIコンソーシアム」の設立と会員の募集について",
+      "url": "https://www.env.go.jp/press/press_05819.html",
+      "domain": "www.env.go.jp",
+      "organization": "Ministry of the Environment, Japan",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "dexremo-paper",
+      "title": "DexRemo: A Force-Sensing Hand Platform and Task Suite for Contact-Rich Removal Manipulation",
+      "url": "https://arxiv.org/abs/2611.15981",
+      "domain": "arxiv.org",
+      "organization": "University of York; University of Edinburgh; Friedrich Schiller University Jena; King’s College London",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "maniladder-paper",
+      "title": "ManiLadder: Benchmarking Robot Manipulation Through a Categorized and Multi-Difficulty Level Task Ladder",
+      "url": "https://arxiv.org/abs/2611.16374",
+      "domain": "arxiv.org",
+      "organization": "National University of Singapore and collaborating universities",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "serve-release",
+      "title": "Serve Robotics Opens Its Robot Delivery Network for Anyone to Build On",
+      "url": "https://serverobotics.gcs-web.com/news-releases/news-release-details/serve-robotics-opens-its-robot-delivery-network-anyone-build",
+      "domain": "serverobotics.gcs-web.com",
+      "organization": "Serve Robotics",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "serve-technical",
+      "title": "Introducing the Serve Developer Portal: Build With Our Robots",
+      "url": "https://www.serverobotics.com/blog/introducing-the-serve-developer-portal-build-with-our-robots/index.html",
+      "domain": "www.serverobotics.com",
+      "organization": "Serve Robotics",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "japan-pm-1112",
+      "title": "フィジカルＡＩ関連企業との意見交換会",
+      "url": "https://www.kantei.go.jp/jp/105/actions/202611/12ikenkoukan.html",
+      "domain": "www.kantei.go.jp",
+      "organization": "Prime Minister’s Office of Japan",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "japan-sankei-1113",
+      "title": "虎柄ロボットに「阪神君」と命名　首相、フィジカルAIを体験　関連企業と意見交換",
+      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003182/",
+      "domain": "www.itmedia.co.jp",
+      "organization": "Sankei Shimbun; ITmedia",
+      "published_at": "2026-11-13"
+    }
+  ]
+}

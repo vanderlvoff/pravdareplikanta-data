@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-15",
+  "issue_id": "daily-2026-11-15",
+  "edition": "business",
+  "language": "en",
+  "generated_at": "2026-11-14T21:27:09.324372Z",
+  "title": "Capital for robotics, conditions for deployment",
+  "lead": "Agile Robots raised $500 million in a round led by SoftBank Group. The maker of industrial arms, hands and mobile robots will use the capital to expand production and enter new markets.",
+  "news": [
+    {
+      "id": "agile-series-f",
+      "title": "Agile Robots raises $500 million for production and new markets",
+      "summary": "SoftBank Group led Agile Robots' round with NVIDIA and Hitachi participating. Funding will support U.S. expansion and production capacity, at an $8.5 billion company valuation.",
+      "details": "Agile Robots raised $500 million in a Series F financing round at an $8.5 billion valuation, reported by Reuters and Forbes on November 12. A financing round is a further stage of raising capital from investors. SoftBank Group led it, with NVIDIA, Hitachi and Hitachi Ventures, and T.Capital among the participants. Total capital raised reached $2 billion. The company links the new money to U.S. expansion, greater production capacity including in Germany, and entry into new markets.",
+      "technical_novelty": "SoftBank Group led Agile Robots' round with NVIDIA and Hitachi participating. Funding will support U.S. expansion and production capacity, at an $8.5 billion company valuation. Agile Robots offers industrial arms, robotic hands, mobile systems and humanoids. It reports more than 20,000 industrial robotic solutions installed with customers. Its Fürstenfeldbruck site near Munich has stated capacity for up to 10,000 legged or wheeled humanoid robots a year. These figures describe different parts of the business: installed industrial equipment and capacity to produce new machines. Forbes connects investor interest with the combination of manufacturing, software and established industrial-automation experience.",
+      "engineering_impact": "SoftBank Group led Agile Robots' round with NVIDIA and Hitachi participating. Funding will support U.S. expansion and production capacity, at an $8.5 billion company valuation. For buyers, the breadth of the offer matters: the company combines devices, software and integration of production processes. Capacity expansion can therefore affect different project types, from an arm on a line to a mobile system. The financing confirms access to capital for those plans. Supplier selection still requires identifying which subsidiary will perform integration, what equipment a contract includes and who services the installed system. Those are project-specific responsibilities that the public portfolio description leaves to the commercial agreement rather than assigning for the customer.",
+      "limitations": "SoftBank Group led Agile Robots' round with NVIDIA and Hitachi participating. Funding will support U.S. expansion and production capacity, at an $8.5 billion company valuation. The announcement names intended markets and production expansion but does not disclose capacity utilization, individual order schedules or prices. A deployment calculation will need those parameters from a specific proposal, alongside the funded company's wider industrial capabilities.",
+      "evidence_status": "Company financing announcement checked against Forbes and Reuters; production capacity and installed base are company-reported.",
+      "published_at": "2026-11-12",
+      "organization": "Agile Robots; SoftBank Group",
+      "source_ids": [
+        "agile-official",
+        "agile-forbes",
+        "agile-reuters"
+      ],
+      "time_window": "72h",
+      "body": "Agile Robots raised $500 million in a Series F financing round at an $8.5 billion valuation, reported by Reuters and Forbes on November 12. A financing round is a further stage of raising capital from investors. SoftBank Group led it, with NVIDIA, Hitachi and Hitachi Ventures, and T.Capital among the participants. Total capital raised reached $2 billion. The company links the new money to U.S. expansion, greater production capacity including in Germany, and entry into new markets.\n\nAgile Robots offers industrial arms, robotic hands, mobile systems and humanoids. It reports more than 20,000 industrial robotic solutions installed with customers. Its Fürstenfeldbruck site near Munich has stated capacity for up to 10,000 legged or wheeled humanoid robots a year. These figures describe different parts of the business: installed industrial equipment and capacity to produce new machines. Forbes connects investor interest with the combination of manufacturing, software and established industrial-automation experience.\n\nFor buyers, the breadth of the offer matters: the company combines devices, software and integration of production processes. Capacity expansion can therefore affect different project types, from an arm on a line to a mobile system. The financing confirms access to capital for those plans. Supplier selection still requires identifying which subsidiary will perform integration, what equipment a contract includes and who services the installed system. Those are project-specific responsibilities that the public portfolio description leaves to the commercial agreement rather than assigning for the customer.\n\nThe announcement names intended markets and production expansion but does not disclose capacity utilization, individual order schedules or prices. A deployment calculation will need those parameters from a specific proposal, alongside the funded company's wider industrial capabilities.",
+      "image": null
+    },
+    {
+      "id": "japan-robot-investment",
+      "title": "Japan seeks concrete conditions for scaling robot adoption",
+      "summary": "Japan's prime minister instructed officials to incorporate robot makers' requests into the growth plan. These include multi-year support for early deployments and component production.",
+      "details": "Japan's prime minister Sanae Takaichi met robot and component makers on November 12 to discuss support for physical AI, artificial-intelligence systems that guide actions in the physical world. She instructed ministers to reflect company requests in the growth-strategy implementation plan and provide predictable information about support measures and required budgets. The meeting reiterated 2040 ambitions: deploying roughly 10 million AI robots and securing a global market share for Japanese industry of more than 30%, or 20 trillion yen.",
+      "technical_novelty": "Japan's prime minister instructed officials to incorporate robot makers' requests into the growth plan. These include multi-year support for early deployments and component production. Companies identified four needs: support from domestic robot and component research through volume production; faster development of domestic AI technologies; mechanisms for accumulating data; and multi-year support for early adoption. The government links robotics to worker shortages, physical workload and hazardous operations. The published speech assigns these issues to further planning, with specific support amounts still to be set out. A separate Sankei report published by ITmedia on November 13 corroborates the meeting and the targets.",
+      "engineering_impact": "Japan's prime minister instructed officials to incorporate robot makers' requests into the growth plan. These include multi-year support for early deployments and component production. The market signal concerns early demand and suppliers' ability to plan across several years. A buyer's first installation normally involves preparing a site, aligning work with employees and feeding operating information back to a developer, as well as paying for equipment. The meeting identified early-adoption support as a separate need alongside domestic-technology investment. This gives companies a specific topic for discussion with government and partners. The economics of a particular project will depend on the eventual program's scope and participation rules.",
+      "limitations": "Japan's prime minister instructed officials to incorporate robot makers' requests into the growth plan. These include multi-year support for early deployments and component production. The next information to watch is the implementation plan's published measures and budget parameters. Those details will determine eligible costs and participants; the prime minister's speech currently records an instruction to make the support conditions predictable for prospective investors and adopters.",
+      "evidence_status": "Official policy speech corroborated by Sankei reporting; targets and instructions are presented as government plans.",
+      "published_at": "2026-11-12",
+      "organization": "Prime Minister’s Office of Japan",
+      "source_ids": [
+        "japan-pm-1112",
+        "japan-sankei-1113"
+      ],
+      "time_window": "7d",
+      "body": "Japan's prime minister Sanae Takaichi met robot and component makers on November 12 to discuss support for physical AI, artificial-intelligence systems that guide actions in the physical world. She instructed ministers to reflect company requests in the growth-strategy implementation plan and provide predictable information about support measures and required budgets. The meeting reiterated 2040 ambitions: deploying roughly 10 million AI robots and securing a global market share for Japanese industry of more than 30%, or 20 trillion yen.\n\nCompanies identified four needs: support from domestic robot and component research through volume production; faster development of domestic AI technologies; mechanisms for accumulating data; and multi-year support for early adoption. The government links robotics to worker shortages, physical workload and hazardous operations. The published speech assigns these issues to further planning, with specific support amounts still to be set out. A separate Sankei report published by ITmedia on November 13 corroborates the meeting and the targets.\n\nThe market signal concerns early demand and suppliers' ability to plan across several years. A buyer's first installation normally involves preparing a site, aligning work with employees and feeding operating information back to a developer, as well as paying for equipment. The meeting identified early-adoption support as a separate need alongside domestic-technology investment. This gives companies a specific topic for discussion with government and partners. The economics of a particular project will depend on the eventual program's scope and participation rules.\n\nThe next information to watch is the implementation plan's published measures and budget parameters. Those details will determine eligible costs and participants; the prime minister's speech currently records an instruction to make the support conditions predictable for prospective investors and adopters.",
+      "image": null
+    },
+    {
+      "id": "serve-developer-portal",
+      "title": "Serve lets shops build on an existing robot-delivery network",
+      "summary": "Serve Robotics opened its sidewalk-delivery interface to outside developers. The operator retains control of trips, while live access requires separate approval and service-area coverage.",
+      "details": "U.S. company Serve Robotics opened a developer portal for its sidewalk delivery-robot network on November 11. An application can request a delivery, specify collection and drop-off, and track the trip through an application programming interface, or API: a set of commands for communicating with the service. Serve also provides a test environment containing simulated robots. Documentation and this environment are available immediately; live-robot access requires company approval and service coverage at the requested location.",
+      "technical_novelty": "Serve Robotics opened its sidewalk-delivery interface to outside developers. The operator retains control of trips, while live access requires separate approval and service-area coverage. Serve reports a network of 2,000 robots across more than 150 neighborhoods in 20 U.S. cities. Dispatch, routes, navigation and operational supervision remain with the operator. Developers build services on top of that infrastructure, such as delivery for a local shop. The simulated environment allows them to test the full delivery sequence and unusual situations before using a physical machine. The network figures are company-reported, and the allocation of operating responsibilities also comes from Serve’s description.",
+      "engineering_impact": "Serve Robotics opened its sidewalk-delivery interface to outside developers. The operator retains control of trips, while live access requires separate approval and service-area coverage. For a shop, the entry point changes: its ordering software can connect to the operator's network while Serve handles routes and robot supervision. Integration still needs to fit actual work, including parcel acceptance, customer notifications and handover. The announcement describes technical access and division of functions; pricing and service terms for an individual business need separate agreement. Starting in the simulated environment gives a team a way to understand the software exchange before connecting it to a physical delivery operation.",
+      "limitations": "Serve Robotics opened its sidewalk-delivery interface to outside developers. The operator retains control of trips, while live access requires separate approval and service-area coverage. Coverage constrains each real order: even a completed application needs Serve approval and addresses in supported neighborhoods. Choosing the first deployment site therefore requires checking collection and delivery locations together with the software interface and the business's intended workflow.",
+      "evidence_status": "Official Serve release and technical explanation; network size and available functions are operator-reported.",
+      "published_at": "2026-11-11",
+      "organization": "Serve Robotics",
+      "source_ids": [
+        "serve-release",
+        "serve-technical"
+      ],
+      "time_window": "7d",
+      "body": "U.S. company Serve Robotics opened a developer portal for its sidewalk delivery-robot network on November 11. An application can request a delivery, specify collection and drop-off, and track the trip through an application programming interface, or API: a set of commands for communicating with the service. Serve also provides a test environment containing simulated robots. Documentation and this environment are available immediately; live-robot access requires company approval and service coverage at the requested location.\n\nServe reports a network of 2,000 robots across more than 150 neighborhoods in 20 U.S. cities. Dispatch, routes, navigation and operational supervision remain with the operator. Developers build services on top of that infrastructure, such as delivery for a local shop. The simulated environment allows them to test the full delivery sequence and unusual situations before using a physical machine. The network figures are company-reported, and the allocation of operating responsibilities also comes from Serve’s description.\n\nFor a shop, the entry point changes: its ordering software can connect to the operator's network while Serve handles routes and robot supervision. Integration still needs to fit actual work, including parcel acceptance, customer notifications and handover. The announcement describes technical access and division of functions; pricing and service terms for an individual business need separate agreement. Starting in the simulated environment gives a team a way to understand the software exchange before connecting it to a physical delivery operation.\n\nCoverage constrains each real order: even a completed application needs Serve approval and addresses in supported neighborhoods. Choosing the first deployment site therefore requires checking collection and delivery locations together with the software interface and the business's intended workflow.",
+      "image": null
+    },
+    {
+      "id": "waste-physical-ai-consortium",
+      "title": "Japan matches recycling operators' needs with physical-AI suppliers",
+      "summary": "Japan is creating a free sector consortium for robotics in waste management. It aims to improve trial-partner matching and communication of facility needs.",
+      "details": "Japan's Ministry of the Environment announced a consortium on November 13 to support physical AI in waste management and resource recycling. Here physical AI means systems connecting artificial intelligence with machine actions at a worksite. Government bodies, municipalities, companies and industry groups are invited. The consortium aims to improve information exchange between technology suppliers and facilities seeking automation, bringing together their needs and implementation barriers.",
+      "technical_novelty": "Japan is creating a free sector consortium for robotics in waste management. It aims to improve trial-partner matching and communication of facility needs. The ministry identifies specific pressures: more complex products, growing sorting categories, worker shortages and safety requirements. Obstacles to robotics include poor communication of site needs, insufficient matching of trial partners and incomplete rules. Membership applications are open until December 3, with no membership fee. A first meeting is scheduled for December 17 in a hybrid in-person and online format. Its program includes the consortium's objectives, a presentation from the economy ministry's robotics unit and examples of work in the sector.",
+      "engineering_impact": "Japan is creating a free sector consortium for robotics in waste management. It aims to improve trial-partner matching and communication of facility needs. For a waste-processing manager, the forum is useful when defining the problem: identify the material stream, difficult operation and safety conditions before choosing technology. The ministry itself names weak communication between demand and supply as an obstacle. The consortium can offer contact with developers and facilities facing similar issues. Its published program currently focuses on coordinating those participants, however, and does not set equipment-purchase financing terms. That distinction matters when deciding which planning costs the business will need to carry itself.",
+      "limitations": "Japan is creating a free sector consortium for robotics in waste management. It aims to improve trial-partner matching and communication of facility needs. The practical dates are set: applications close December 3 and the first meeting takes place December 17. A prospective participant can prepare its operation and trial requirements in advance, matching the needs that the organizers plan to collect from facilities.",
+      "evidence_status": "Official ministry announcement about sector coordination; it contains no measurements of a particular robotic installation.",
+      "published_at": "2026-11-13",
+      "organization": "Ministry of the Environment, Japan",
+      "source_ids": [
+        "env-consortium"
+      ],
+      "time_window": "72h",
+      "body": "Japan's Ministry of the Environment announced a consortium on November 13 to support physical AI in waste management and resource recycling. Here physical AI means systems connecting artificial intelligence with machine actions at a worksite. Government bodies, municipalities, companies and industry groups are invited. The consortium aims to improve information exchange between technology suppliers and facilities seeking automation, bringing together their needs and implementation barriers.\n\nThe ministry identifies specific pressures: more complex products, growing sorting categories, worker shortages and safety requirements. Obstacles to robotics include poor communication of site needs, insufficient matching of trial partners and incomplete rules. Membership applications are open until December 3, with no membership fee. A first meeting is scheduled for December 17 in a hybrid in-person and online format. Its program includes the consortium's objectives, a presentation from the economy ministry's robotics unit and examples of work in the sector.\n\nFor a waste-processing manager, the forum is useful when defining the problem: identify the material stream, difficult operation and safety conditions before choosing technology. The ministry itself names weak communication between demand and supply as an obstacle. The consortium can offer contact with developers and facilities facing similar issues. Its published program currently focuses on coordinating those participants, however, and does not set equipment-purchase financing terms. That distinction matters when deciding which planning costs the business will need to carry itself.\n\nThe practical dates are set: applications close December 3 and the first meeting takes place December 17. A prospective participant can prepare its operation and trial requirements in advance, matching the needs that the organizers plan to collect from facilities.",
+      "image": null
+    },
+    {
+      "id": "dexremo-force-frame",
+      "title": "A low-cost removal hand is evaluated with sensors and operating conditions",
+      "summary": "A University of York team and partners introduced a three-finger hand for detachment and cleaning. Its results depend on force sensing and representation, so the mechanical-hand price needs to be considered with the system configuration.",
+      "details": "Researchers at the University of York, with colleagues in Edinburgh, Jena and King's College London, posted a paper on November 11 about DexRemo, a three-finger robotic hand for detaching adhered objects, cleaning surfaces and retrieving obscured targets. Each fingertip measures force along three axes. To compare readings as the fingers bend, the authors transform them into a shared coordinate frame attached to the wrist. Each force direction is then described relative to the same reference rather than a differently oriented finger.",
+      "technical_novelty": "A University of York team and partners introduced a three-finger hand for detachment and cleaning. Its results depend on force sensing and representation, so the mechanical-hand price needs to be considered with the system configuration. Each control program learns from 20 successful demonstrations collected through human operation. It receives three camera views, joint states and selected fingertip observations. Across six core tasks, mean success rose from 24% with cameras and joint information alone to 83% when fingertip position and orientation, along with forces expressed in wrist coordinates, were added. That comparison changes several inputs together; intermediate configurations help examine their contributions. Three further scenarios were evaluated with the full configuration. The paper has been accepted by IEEE Transactions on Robotics, a research journal.",
+      "engineering_impact": "A University of York team and partners introduced a three-finger hand for detachment and cleaning. Its results depend on force sensing and representation, so the mechanical-hand price needs to be considered with the system configuration. The authors estimate the hand itself at about $200, with each optional sensing fingertip adding roughly $170. Equipping all three fingers changes the hardware bill before cameras, computing and the positioning mechanism are included. This helps assess the accessibility of a research rig. A production application would additionally need integration, maintenance and material preparation; the published comparison tests local tabletop operations. It supplies evidence for choosing sensing and signal representation, two design choices that affect execution of those operations.",
+      "limitations": "A University of York team and partners introduced a three-finger hand for detachment and cleaning. Its results depend on force sensing and representation, so the mechanical-hand price needs to be considered with the system configuration. The authors identify variation in adhesion, contamination and material behavior even under prescribed preparation. A cleaning-service project needs to characterize and test those properties on customer samples, because its incoming objects may differ from the conditions of the published evaluation.",
+      "evidence_status": "Author-run experiments; accepted by IEEE Transactions on Robotics. Input comparisons cover six core tasks; independent reproduction is not established here.",
+      "published_at": "2026-11-11",
+      "organization": "University of York; University of Edinburgh; Friedrich Schiller University Jena; King’s College London",
+      "source_ids": [
+        "dexremo-paper"
+      ],
+      "time_window": "7d",
+      "body": "Researchers at the University of York, with colleagues in Edinburgh, Jena and King's College London, posted a paper on November 11 about DexRemo, a three-finger robotic hand for detaching adhered objects, cleaning surfaces and retrieving obscured targets. Each fingertip measures force along three axes. To compare readings as the fingers bend, the authors transform them into a shared coordinate frame attached to the wrist. Each force direction is then described relative to the same reference rather than a differently oriented finger.\n\nEach control program learns from 20 successful demonstrations collected through human operation. It receives three camera views, joint states and selected fingertip observations. Across six core tasks, mean success rose from 24% with cameras and joint information alone to 83% when fingertip position and orientation, along with forces expressed in wrist coordinates, were added. That comparison changes several inputs together; intermediate configurations help examine their contributions. Three further scenarios were evaluated with the full configuration. The paper has been accepted by IEEE Transactions on Robotics, a research journal.\n\nThe authors estimate the hand itself at about $200, with each optional sensing fingertip adding roughly $170. Equipping all three fingers changes the hardware bill before cameras, computing and the positioning mechanism are included. This helps assess the accessibility of a research rig. A production application would additionally need integration, maintenance and material preparation; the published comparison tests local tabletop operations. It supplies evidence for choosing sensing and signal representation, two design choices that affect execution of those operations.\n\nThe authors identify variation in adhesion, contamination and material behavior even under prescribed preparation. A cleaning-service project needs to characterize and test those properties on customer samples, because its incoming objects may differ from the conditions of the published evaluation.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Capital for robotics, conditions for deployment",
+    "summary": "Agile Robots raised $500 million in a round led by SoftBank Group. The maker of industrial arms, hands and mobile robots will use the capital to expand production and enter new markets.",
+    "implications": "Agile Robots directs the financing toward production capacity and new markets. Buyers will need equipment scope, delivery schedules and maintenance terms in an individual proposal; the announcement describes the company’s expansion priorities."
+  },
+  "sources": [
+    {
+      "id": "agile-official",
+      "title": "Physical AI leader Agile Robots raises $500 million Series F at $8.5 billion valuation to accelerate global growth",
+      "url": "https://www.agile-robots.com/en/news/detail/physical-ai-leader-agile-robots-raises-500-million-series-f-funding/",
+      "domain": "www.agile-robots.com",
+      "organization": "Agile Robots",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "agile-forbes",
+      "title": "Germany’s Agile Robots Raises $500 Million From Softbank, Nvidia At $8.5 Billion Valuation",
+      "url": "https://www.forbes.com/sites/johnkoetsier/2026/11/12/germanys-agile-robots-raises-500-million-from-softbank-nvidia-at-85-billion-valuation/",
+      "domain": "www.forbes.com",
+      "organization": "Forbes",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "agile-reuters",
+      "title": "SoftBank, Nvidia back Germany’s Agile Robots at $8.5 billion valuation",
+      "url": "https://www.reuters.com/business/media-telecom/softbank-nvidia-back-germanys-agile-robots-85-billion-valuation-2026-11-12/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "japan-pm-1112",
+      "title": "フィジカルＡＩ関連企業との意見交換会",
+      "url": "https://www.kantei.go.jp/jp/105/actions/202611/12ikenkoukan.html",
+      "domain": "www.kantei.go.jp",
+      "organization": "Prime Minister’s Office of Japan",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "japan-sankei-1113",
+      "title": "虎柄ロボットに「阪神君」と命名　首相、フィジカルAIを体験　関連企業と意見交換",
+      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003182/",
+      "domain": "www.itmedia.co.jp",
+      "organization": "Sankei Shimbun; ITmedia",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "serve-release",
+      "title": "Serve Robotics Opens Its Robot Delivery Network for Anyone to Build On",
+      "url": "https://serverobotics.gcs-web.com/news-releases/news-release-details/serve-robotics-opens-its-robot-delivery-network-anyone-build",
+      "domain": "serverobotics.gcs-web.com",
+      "organization": "Serve Robotics",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "serve-technical",
+      "title": "Introducing the Serve Developer Portal: Build With Our Robots",
+      "url": "https://www.serverobotics.com/blog/introducing-the-serve-developer-portal-build-with-our-robots/index.html",
+      "domain": "www.serverobotics.com",
+      "organization": "Serve Robotics",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "env-consortium",
+      "title": "「廃棄物・資源循環分野のフィジカルAIコンソーシアム」の設立と会員の募集について",
+      "url": "https://www.env.go.jp/press/press_05819.html",
+      "domain": "www.env.go.jp",
+      "organization": "Ministry of the Environment, Japan",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "dexremo-paper",
+      "title": "DexRemo: A Force-Sensing Hand Platform and Task Suite for Contact-Rich Removal Manipulation",
+      "url": "https://arxiv.org/abs/2611.15981",
+      "domain": "arxiv.org",
+      "organization": "University of York; University of Edinburgh; Friedrich Schiller University Jena; King’s College London",
+      "published_at": "2026-11-11"
+    }
+  ]
+}
