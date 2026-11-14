@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "id": "newspaper-with-morning-coffee",
+  "slug": "newspaper-with-morning-coffee",
+  "published_at": "2026-11-15T00:00:00+09:00",
+  "status": "published",
+  "translations": {
+    "ru": {
+      "title": "Газета к утреннему кофе.",
+      "series": "Рассуждения о физическом ИИ",
+      "author": "Юрий Львов",
+      "summary": "Как просьба готовить утренний дайджест превратилась в интернет-газету, редакционный устав и ежедневную работу издателя, которому всё ещё хочется побыть читателем.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Прошло восемнадцать дней с того момента, как я впервые попросил ChatGPT готовить к моему утреннему кофе краткий дайджест событий в мире физического ИИ. Могу ли я сказать, что вполне доволен результатом? Пожалуй, только отчасти. Кофе я по-прежнему готовлю сам, но теперь выясняется, что и газету без моего участия выпускать рановато."
+        },
+        {
+          "type": "paragraph",
+          "text": "Начиналось всё довольно беззаботно. Я дал ChatGPT практически полный карт-бланш: вот тебе тема, найди интересное, проверь источники, расскажи, что происходит. Промпт составил по общим рекомендациям промпт-инжиниринга — с ролью, задачей, аудиторией и прочими признаками серьёзного подхода. Мне представлялось, что основную работу я уже сделал. Оставалось наполнить чашку бодрящим вьетнамским кофе."
+        },
+        {
+          "type": "paragraph",
+          "text": "Первое время газета могла просто не выйти. Задача начинала собирать материалы, а потом исчезала без объяснений. Просьба хотя бы сообщать, что случилось, заметного эффекта не дала. Видимо, я переоценил способность автоматического сотрудника написать объяснительную после того, как он уже ушёл с работы. Разбираться приходилось методом проб и ошибок, а поиск причин напоминал гадание на кофейной гуще. Хорошо хоть кофе уже входил в программу."
+        },
+        {
+          "type": "paragraph",
+          "text": "Когда с выходом выпусков стало немного спокойнее, я наконец получил возможность их почитать. Тут и началось самое интересное. Выяснилось, что между «текст написан» и «это приятно и полезно читать» помещается довольно много редакторской работы. Иногда приходилось выяснять, о чём вообще статья. Иногда — просить говорить по-человечески. Иногда — напоминать, что читатель пришёл узнать новости, а не сдавать экзамен на знание всех сокращений в современной робототехнике."
+        },
+        {
+          "type": "paragraph",
+          "text": "Надо признать, масштабу происходящего я помог сам. Скромный дайджест постепенно превратился в «Правду репликанта»: четыре редакции, три языка, иллюстрации. В какой-то момент у меня уже было небольшое интернет-издание, но всё ещё сохранялась первоначальная надежда просто читать его за завтраком. Вероятно, именно так люди заводят дачу, рассчитывая отдыхать на природе, а получают целый комплект обязанностей."
+        },
+        {
+          "type": "paragraph",
+          "text": "По ходу дела пришлось познакомиться и с журналистскими привычками моего нового сотрудника. Он любил многозначительные вступления, охотно рассуждал о перспективах и временами проявлял такую заботу о читателе, что хотелось попросить его немного больше доверять человеческому интеллекту. Особенно трогательной оказалась критичность: стоило потребовать осторожнее относиться к громким заявлениям, как редакция начала подозрительно прищуриваться едва ли не в каждом абзаце. Чувство меры мы продолжаем обсуждать."
+        },
+        {
+          "type": "paragraph",
+          "text": "Постепенно за всеми этими замечаниями обнаружился общий вопрос: какую газету я вообще хочу читать? Такую, где есть интересные события, понятные объяснения и ощущение того, куда движется отрасль. Где автор умеет оценить достижение без восторженного придыхания и рассказать об ограничениях без назидательности. Оказалось, сформулировать это пожелание гораздо проще, чем добиться его ежедневного исполнения."
+        },
+        {
+          "type": "paragraph",
+          "text": "С картинками вышла отдельная история. Я надеялся обсуждать художественный стиль и настроение, но регулярно возвращался к устройству человеческого тела и основам механики. Для издания о физическом ИИ физическая правдоподобность неожиданно стала предметом настойчивых переговоров. Зато теперь я рассматриваю иллюстрации с вниманием, которого прежде удостаивались разве что подозрительные детали в инженерных чертежах."
+        },
+        {
+          "type": "paragraph",
+          "text": "Каждое замечание отправлялось в промпт. Тот рос, становился обстоятельнее и постепенно приобретал черты редакционного устава. Восемнадцать дней назад я выдал системе тему и свободу действий. Теперь у нас довольно подробное представление о том, как должна работать редакция."
+        },
+        {
+          "type": "paragraph",
+          "text": "Разумеется, наличие устава ещё не означает, что редакция всегда по нему живёт. Иногда очередной выпуск преподносит знакомый сюрприз, и приходится возвращаться к разговору, который, казалось бы, уже состоялся. Поэтому я пока осторожно отношусь к словам «проблема решена». Обычно они означают, что мы договорились, как должно быть. Утром проверим, насколько убедительно."
+        },
+        {
+          "type": "paragraph",
+          "text": "И всё-таки мне нравится этот эксперимент. Газета выходит, я нахожу в ней полезное, а сам проект постепенно обретает характер. Есть даже некоторое удовольствие в том, чтобы наблюдать, как из простой просьбы складывается целая редакционная жизнь, — хотя изначально я не планировал участвовать в ней настолько лично."
+        },
+        {
+          "type": "paragraph",
+          "text": "За эти недели я успел побыть издателем, редактором, корректором и дежурным по выпуску. Роль читателя тоже иногда достаётся. Хочется, чтобы со временем именно она стала основной: открыть утром «Правду репликанта», узнать, что произошло в мире физического ИИ, и спокойно выпить кофе. Пока он ещё горячий."
+        }
+      ]
+    },
+    "en": {
+      "title": "A Newspaper with My Morning Coffee.",
+      "series": "Reflections on Physical AI",
+      "author": "Yury Lvov",
+      "summary": "How a request for a morning digest grew into an online newspaper, an editorial charter and a daily publishing job for someone who still hopes to be a reader.",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Eighteen days have passed since I first asked ChatGPT to prepare a brief digest of Physical AI news to go with my morning coffee. Can I say I am entirely happy with the result? Only partly, I suppose. I still make the coffee myself, but it turns out it is still too soon to publish the newspaper without my involvement."
+        },
+        {
+          "type": "paragraph",
+          "text": "It all began rather casually. I gave ChatGPT almost complete carte blanche: here is your subject; find something interesting, check the sources and tell me what is happening. I wrote the prompt following the usual prompt-engineering advice, complete with a role, a task, an audience and the other hallmarks of a serious approach. I felt I had done most of the work. All that remained was to fill my cup with invigorating Vietnamese coffee."
+        },
+        {
+          "type": "paragraph",
+          "text": "At first, the paper sometimes simply failed to appear. The task would start collecting material and then vanish without explanation. Asking it at least to report what had happened made little noticeable difference. Apparently, I had overestimated an automated employee’s ability to write an explanation after clocking off for the day. Working things out meant trial and error, and looking for causes felt rather like reading coffee grounds. At least coffee was already part of the arrangement."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once publication became a little more dependable, I finally had a chance to read the issues. That was when things became interesting. There turned out to be quite a lot of editorial work between “the text has been written” and “this is pleasant and useful to read.” Sometimes I had to find out what an article was actually about. Sometimes I had to ask for plain language. Sometimes I had to point out that readers had come for the news, rather than an examination on every acronym in modern robotics."
+        },
+        {
+          "type": "paragraph",
+          "text": "I have to admit that I helped the operation grow. The modest digest gradually became The Replicant Truth: four editions, three languages and illustrations. At some point, I had a small online publication, while still clinging to my original hope of simply reading it over breakfast. This is probably how people acquire a country cottage expecting to relax outdoors, only to end up with a whole new set of duties."
+        },
+        {
+          "type": "paragraph",
+          "text": "Along the way, I also became acquainted with my new employee’s journalistic habits. It liked portentous openings, readily speculated about future prospects and sometimes showed such concern for the reader that I wanted to ask it to place a little more trust in human intelligence. Its critical judgment was particularly touching: no sooner had I requested more caution about grand claims than the editorial office began narrowing its eyes suspiciously in almost every paragraph. We are still discussing a sense of proportion."
+        },
+        {
+          "type": "paragraph",
+          "text": "Gradually, all these comments revealed a common question: what kind of newspaper did I actually want to read? One with interesting events, clear explanations and a sense of where the field was heading. One whose writer could appreciate an achievement without breathless enthusiasm and explain limitations without lecturing. Expressing this wish turned out to be much easier than having it fulfilled every day."
+        },
+        {
+          "type": "paragraph",
+          "text": "The pictures became a story of their own. I had hoped to discuss artistic style and mood, but kept returning to human anatomy and basic mechanics. For a publication about Physical AI, physical plausibility unexpectedly became a matter of persistent negotiation. On the other hand, I now examine illustrations with an attention I used to reserve for suspicious details in engineering drawings."
+        },
+        {
+          "type": "paragraph",
+          "text": "Every comment went into the prompt. It grew, became more detailed and gradually took on the features of an editorial charter. Eighteen days ago, I gave the system a subject and freedom of action. Now we have a fairly detailed understanding of how the editorial office is supposed to work."
+        },
+        {
+          "type": "paragraph",
+          "text": "Of course, having a charter does not mean the editorial office always lives by it. An issue sometimes presents a familiar surprise, and we have to return to a conversation that seemed to have been settled. So I remain cautious about the words “the problem is solved.” Usually, they mean we have agreed on how things ought to be. In the morning, we will see how convincingly."
+        },
+        {
+          "type": "paragraph",
+          "text": "And yet I like this experiment. The paper comes out, I find useful things in it, and the project is gradually acquiring a character of its own. There is even a certain pleasure in watching a simple request develop into an entire editorial life, although I had not originally planned to take quite such a personal part in it."
+        },
+        {
+          "type": "paragraph",
+          "text": "Over these weeks I have been publisher, editor, proofreader and the person on duty for getting the issue out. I occasionally get to be a reader too. In time, I would like that to become my main role: open The Replicant Truth in the morning, find out what has happened in Physical AI and quietly drink my coffee. While it is still hot."
+        }
+      ]
+    },
+    "ja": {
+      "title": "朝のコーヒーに新聞を。",
+      "series": "フィジカルAIについて考える",
+      "author": "ユーリ・リヴォフ",
+      "summary": "朝のニュースをまとめてほしいというお願いが、三言語の新聞と編集規約、そして毎日の発行作業になった。発行人は今も、読者になる時間を待っている。",
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "朝のコーヒーに合わせてフィジカルAIのニュースを短くまとめてほしいと、初めてChatGPTに頼んでから十八日が経った。結果に十分満足しているかと聞かれれば、答えは「半分くらい」だろう。コーヒーは相変わらず自分でいれている。そしてどうやら、新聞のほうも、まだ私の手を離れて発行できる段階ではないらしい。"
+        },
+        {
+          "type": "paragraph",
+          "text": "始まりは、ずいぶん気楽だった。ChatGPTには、ほとんど白紙委任状を渡した。このテーマで面白い話を探し、情報源を確かめ、何が起きているか教えてほしい。プロンプトも、プロンプトエンジニアリングの一般的な助言に従って書いた。役割、課題、読者層など、真面目に取り組んでいると分かる要素は一通りそろえた。主な仕事はもう済んだ気がしていた。あとはカップに、気分をしゃきっとさせてくれるベトナムコーヒーを注ぐだけだった。"
+        },
+        {
+          "type": "paragraph",
+          "text": "最初のうちは、新聞が出ないことがあった。タスクは資料を集め始めたかと思うと、説明もなく消えてしまう。せめて何が起きたか知らせてほしいと頼んでも、目立った効果はなかった。自動化された社員が、退勤した後でも始末書を書いてくれると思ったのは、買いかぶりだったのかもしれない。結局、試行錯誤で調べるしかなく、原因探しはコーヒーのかすを読んで占うようなものだった。少なくともコーヒーだけは、最初から予定に入っていた。"
+        },
+        {
+          "type": "paragraph",
+          "text": "発行が少し安定すると、ようやく新聞を読む余裕ができた。そこからが本番だった。「文章ができている」と「気持ちよく読めて役に立つ」の間には、かなりの編集作業があると分かった。そもそも何についての記事なのかを確かめることもあれば、人に伝わる言葉で書いてほしいと頼むこともあった。読者はニュースを知りに来たのであって、現代ロボット工学の略語をすべて問う試験を受けに来たわけではない、と念を押すこともあった。"
+        },
+        {
+          "type": "paragraph",
+          "text": "規模を大きくしたのは自分でもあると認めなければならない。ささやかなダイジェストは、いつの間にか『レプリカントの真実』になった。四つの読者向けの版、三つの言語、イラスト付き。気付けば小さなウェブメディアを持っていたのに、朝食を取りながらただ読むだけでいい、という最初の期待は残っていた。自然の中でのんびり過ごすつもりで別荘を買い、結局は山ほどの仕事を抱え込む人も、たぶんこんな感じなのだろう。"
+        },
+        {
+          "type": "paragraph",
+          "text": "その間に、新しい社員の記者としての癖も分かってきた。意味深な書き出しが好きで、将来の展望を語ることに熱心だった。読者への気遣いが手厚すぎて、人間の理解力をもう少し信用してほしいと言いたくなることもあった。とりわけ微笑ましかったのは批判精神だ。大げさな主張には慎重になってほしいと求めた途端、編集部はほとんど毎段落で疑い深く目を細め始めた。ほどほどとは何か、今も話し合っている。"
+        },
+        {
+          "type": "paragraph",
+          "text": "こうした指摘を重ねるうちに、共通する問いが見えてきた。そもそも私は、どんな新聞を読みたいのか。面白い出来事があり、説明が分かりやすく、その分野がどちらへ進んでいるかが感じられる新聞だ。成果を息をのむような大絶賛なしに評価でき、限界を説教調にならずに伝えられる書き手がいる新聞。この希望を言葉にするほうが、それを毎日実現してもらうより、ずっと簡単だった。"
+        },
+        {
+          "type": "paragraph",
+          "text": "画像には、また別の物語があった。画風や雰囲気を相談するつもりが、何度も人体の構造や力学の基本に立ち戻ることになった。フィジカルAIを扱う媒体にとって、物理的にもっともらしいことが、思いがけず粘り強い交渉の対象になったのである。そのおかげで今は、以前なら技術図面の怪しい箇所くらいにしか向けなかった注意を、イラストに注いでいる。"
+        },
+        {
+          "type": "paragraph",
+          "text": "指摘はそのたびにプロンプトへ書き足した。プロンプトは長くなり、細かくなり、やがて編集部の規約のようになっていった。十八日前にシステムへ渡したのは、テーマと行動の自由だった。今では、編集部がどう働くべきかについて、かなり詳しい取り決めがある。"
+        },
+        {
+          "type": "paragraph",
+          "text": "もちろん、規約があるからといって、編集部がいつもその通りに暮らしているわけではない。新しい号が見覚えのある驚きを運んできて、終わったはずの話し合いに戻ることもある。だから今は、「問題は解決した」という言葉には慎重だ。たいていの場合、それは「どうあるべきかについて合意した」という意味である。どれほど説得力があったかは、朝になれば分かる。"
+        },
+        {
+          "type": "paragraph",
+          "text": "それでも、この実験は気に入っている。新聞は出るし、役に立つことも見つかる。プロジェクトにも少しずつ個性が生まれている。単純なお願いから、編集部の日常が丸ごと立ち上がっていくのを見るのは、ある意味で楽しくもある。最初から、ここまで自分で深く関わるつもりだったわけではないのだけれど。"
+        },
+        {
+          "type": "paragraph",
+          "text": "この数週間で、発行人、編集者、校正者、発行当番まで経験した。たまには読者の役も回ってくる。いつか、それが主な役割になればと思う。朝、『レプリカントの真実』を開き、フィジカルAIの世界で何があったかを知り、落ち着いてコーヒーを飲む。まだ熱いうちに。"
+        }
+      ]
+    }
+  },
+  "images": [
+    {
+      "id": "morning-editorial-shift-author-v5",
+      "path": "images/columns/newspaper-with-morning-coffee/morning-editorial-shift-author-v5.webp",
+      "localizations": {
+        "ru": {
+          "alt": "Чёрно-белая гравюра: автор в очках сидит в центре за редакционным столом с карандашом над корректурой и смотрит на читателя. Слева обычный робот-помощник подаёт новый лист; на столе — эспрессо, газетные полосы и толстая папка.",
+          "caption": "Хотелось просто читать газету за кофе. Пришлось ещё и выпускать её. Редакционная иллюстрация по фотографии автора."
+        },
+        "en": {
+          "alt": "Black-and-white engraving: the author, wearing glasses, sits centrally at an editorial desk, looking at the reader with a pencil poised over a proof. An ordinary robot assistant offers another sheet on the left; espresso, newspaper proofs and a thick binder sit on the desk.",
+          "caption": "The plan was to read the paper over coffee. Publishing it became part of the morning, too. Editorial illustration based on the author’s photograph."
+        },
+        "ja": {
+          "alt": "白黒の版画。眼鏡をかけた著者が編集机の中央に座り、校正刷りの上に鉛筆を構えて読者を見ている。左ではロボット助手が次の紙を差し出す。机にはエスプレッソ、新聞の紙面、分厚いファイルがある。",
+          "caption": "コーヒーを飲みながら新聞を読むはずが、発行する仕事まで朝の日課になった。著者の写真をもとにした編集イラスト。"
+        }
+      }
+    }
+  ],
+  "cover_image": "morning-editorial-shift-author-v5"
+}
