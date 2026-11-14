@@ -2,16 +2,16 @@
   "schema_version": "1.0",
   "id": "neural-locomotion-policies",
   "category": "control",
-  "technology_type": "architecture",
+  "technology_type": "model-family",
   "title": {
     "ru": "Нейросетевые политики движения",
     "en": "Neural locomotion policies",
     "ja": "移動を制御するニューラル方策"
   },
   "short_description": {
-    "ru": "От показаний датчиков и команды скорости к согласованному движению ног.",
-    "en": "From sensor readings and velocity commands to coordinated leg motion.",
-    "ja": "センサー値と速度指令から、脚の動きを組み立てる。"
+    "ru": "Нейросетевая политика движения — обученная нейронная сеть, связывающая измерения и цель движения с командами шагающему роботу.",
+    "en": "A neural locomotion policy is a trained neural network linking measurements and a motion goal to commands for a legged robot.",
+    "ja": "ニューラル移動方策は、測定値と動作の目標を、脚ロボットの指令へ結び付ける学習済みネットワークです。"
   },
   "related_technologies": [
     {
@@ -65,20 +65,21 @@
       "year": 2021
     }
   ],
-  "last_reviewed": "2026-11-13",
+  "last_reviewed": "2026-11-14",
   "content_status": "ready",
   "diagram": "locomotion",
   "localizations": {
     "en": {
       "engineer": {
         "title": "Neural locomotion policies",
-        "short_description": "From sensor readings and velocity commands to coordinated leg motion.",
+        "short_description": "A neural locomotion policy is a trained neural network linking measurements and a motion goal to commands for a legged robot.",
         "sections": [
           {
             "id": "overview",
-            "title": "From observations to locomotion commands",
+            "title": "What it is",
             "paragraphs": [
-              "A neural locomotion policy maps sensor-derived information and a motion command to an action used by a legged robot's control stack. Inputs can include body orientation, estimated velocity, joint positions and velocities, previous actions and a desired velocity. The policy may output joint targets, residual corrections or torques; the output convention must be stated for the particular system."
+              "A neural locomotion policy is a neural-network-parameterized control rule for a legged robot. Inputs describe robot state and desired motion, while outputs specify actions for the execution control loop.",
+              "For example, a four-legged robot is asked to move forward. Its network receives a velocity request, body orientation and joint measurements. In one implementation, outputs are joint-position targets executed by a separate controller. The next calculation uses updated measurements, so commands change with body motion."
             ]
           },
           {
@@ -134,13 +135,14 @@
       },
       "business": {
         "title": "Neural locomotion policies",
-        "short_description": "From sensor readings and velocity commands to coordinated leg motion.",
+        "short_description": "A neural locomotion policy is a trained neural network linking measurements and a motion goal to commands for a legged robot.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Mobility is a capability with a defined envelope",
+            "title": "What it is",
             "paragraphs": [
-              "A locomotion policy helps a legged robot turn sensor readings and a desired motion into motor-control targets. It may support movement over terrain that is difficult to describe with fixed rules. Its practical operating envelope must still specify surfaces, payloads, speed, weather and human interaction; walking in a video is not a universal mobility guarantee."
+              "A neural locomotion policy is a learned software module connecting sensors and a movement request to the robot's leg-control system.",
+              "For example, a four-legged robot is asked to move forward. Its network receives a velocity request, body orientation and joint measurements. In one implementation, outputs are joint-position targets executed by a separate controller. The next calculation uses updated measurements, so commands change with body motion."
             ]
           },
           {
@@ -175,13 +177,14 @@
       },
       "enthusiast": {
         "title": "Neural locomotion policies",
-        "short_description": "From sensor readings and velocity commands to coordinated leg motion.",
+        "short_description": "A neural locomotion policy is a trained neural network linking measurements and a motion goal to commands for a legged robot.",
         "sections": [
           {
             "id": "idea",
-            "title": "A policy chooses movement commands",
+            "title": "What it is",
             "paragraphs": [
-              "A neural locomotion policy is a learned rule that connects what a robot measures to commands for moving its legs. A person or another program might request a forward velocity or a turn. The policy uses that request together with body and joint information; it is not simply replaying a walking animation."
+              "A neural walking policy is a rule represented by a trained network, linking body measurements and a motion request to leg commands.",
+              "For example, a four-legged robot is asked to move forward. Its network receives a velocity request, body orientation and joint measurements. In one implementation, outputs are joint-position targets executed by a separate controller. The next calculation uses updated measurements, so commands change with body motion."
             ]
           },
           {
@@ -216,13 +219,14 @@
       },
       "children": {
         "title": "Neural locomotion policies",
-        "short_description": "From sensor readings and velocity commands to coordinated leg motion.",
+        "short_description": "A neural locomotion policy is a program with a trained network that uses sensor readings and a request to calculate commands for a robot's legs.",
         "sections": [
           {
             "id": "idea",
-            "title": "A rule for moving legs",
+            "title": "What it is",
             "paragraphs": [
-              "A robot can receive a request such as move forward slowly. A neural locomotion policy is a learned rule that uses this request and sensor measurements to suggest commands for its legs. It is not just playing the same walking video over and over."
+              "A neural locomotion policy is a program with a trained network that uses sensor readings and a request to calculate commands for a robot's legs.",
+              "For example, a four-legged robot is asked to move forward. Its network receives a velocity request, body orientation and joint measurements. In one implementation, outputs are joint-position targets executed by a separate controller. The next calculation uses updated measurements, so commands change with body motion."
             ]
           },
           {
@@ -259,13 +263,14 @@
     "ru": {
       "engineer": {
         "title": "Нейросетевые политики движения",
-        "short_description": "От показаний датчиков и команды скорости к согласованному движению ног.",
+        "short_description": "Нейросетевая политика движения — обученная нейронная сеть, связывающая измерения и цель движения с командами шагающему роботу.",
         "sections": [
           {
             "id": "overview",
-            "title": "От измерений к командам движения",
+            "title": "Что это такое",
             "paragraphs": [
-              "Нейросетевая политика движения связывает показания датчиков и команду желаемого движения с действием в контуре управления шагающим роботом. На вход могут поступать ориентация корпуса, оценка скорости, положения и скорости суставов, предыдущие действия и целевая скорость. На выходе возможны суставные цели, остаточные поправки или моменты; конкретное соглашение нужно указать явно."
+              "Нейросетевая политика движения — параметризованное нейронной сетью правило управления шагающим роботом. Её входы описывают состояние и требуемое движение, а выходы — действия для исполнительного контура.",
+              "Например, четырёхногому роботу задано движение вперёд. В сеть поступают запрос скорости, ориентация корпуса и измерения суставов. В одном варианте реализации выходом служат целевые положения суставов, которые исполняет отдельный контроллер. Следующий расчёт использует новые измерения, поэтому команды меняются вместе с движением тела."
             ]
           },
           {
@@ -321,13 +326,14 @@
       },
       "business": {
         "title": "Нейросетевые политики движения",
-        "short_description": "От показаний датчиков и команды скорости к согласованному движению ног.",
+        "short_description": "Нейросетевая политика движения — обученная нейронная сеть, связывающая измерения и цель движения с командами шагающему роботу.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Подвижность имеет рабочие границы",
+            "title": "Что это такое",
             "paragraphs": [
-              "Политика движения помогает шагающему роботу переводить показания датчиков и желаемое движение в цели управления. Это кандидат для поверхностей, которые трудно описать фиксированными правилами. Но область работы должна задавать покрытие, нагрузку, скорость, погоду и взаимодействие с людьми. Видео ходьбы не доказывает универсальную проходимость."
+              "Нейросетевая политика движения — обучаемый программный модуль между датчиками, запросом на перемещение и системой управления ногами робота.",
+              "Например, четырёхногому роботу задано движение вперёд. В сеть поступают запрос скорости, ориентация корпуса и измерения суставов. В одном варианте реализации выходом служат целевые положения суставов, которые исполняет отдельный контроллер. Следующий расчёт использует новые измерения, поэтому команды меняются вместе с движением тела."
             ]
           },
           {
@@ -362,13 +368,14 @@
       },
       "enthusiast": {
         "title": "Нейросетевые политики движения",
-        "short_description": "От показаний датчиков и команды скорости к согласованному движению ног.",
+        "short_description": "Нейросетевая политика движения — обученная нейронная сеть, связывающая измерения и цель движения с командами шагающему роботу.",
         "sections": [
           {
             "id": "idea",
-            "title": "Политика выбирает команды движения",
+            "title": "Что это такое",
             "paragraphs": [
-              "Нейросетевая политика ходьбы — выученное правило, связывающее измерения с командами ногам. Человек или другая программа может попросить ехать вперёд с заданной скоростью либо повернуть. Политика использует запрос вместе с информацией о корпусе и суставах. Это не воспроизведение готовой анимации."
+              "Нейросетевая политика ходьбы — правило в виде обученной нейронной сети, которое связывает измерения о теле робота и запрос на движение с командами ногам.",
+              "Например, четырёхногому роботу задано движение вперёд. В сеть поступают запрос скорости, ориентация корпуса и измерения суставов. В одном варианте реализации выходом служат целевые положения суставов, которые исполняет отдельный контроллер. Следующий расчёт использует новые измерения, поэтому команды меняются вместе с движением тела."
             ]
           },
           {
@@ -403,13 +410,14 @@
       },
       "children": {
         "title": "Нейросетевые политики движения",
-        "short_description": "От показаний датчиков и команды скорости к согласованному движению ног.",
+        "short_description": "Нейросетевая политика движения — программа с обученной сетью, которая по показаниям датчиков и заданию рассчитывает команды для ног робота.",
         "sections": [
           {
             "id": "idea",
-            "title": "Правило для движения ног",
+            "title": "Что это такое",
             "paragraphs": [
-              "Роботу можно дать запрос: двигайся вперёд медленно. Нейросетевая политика движения — выученное правило, которое использует запрос и измерения, чтобы предложить команды ногам. Она не обязана повторять одну и ту же заранее записанную анимацию ходьбы."
+              "Нейросетевая политика движения — программа с обученной сетью, которая по показаниям датчиков и заданию рассчитывает команды для ног робота.",
+              "Например, четырёхногому роботу задано движение вперёд. В сеть поступают запрос скорости, ориентация корпуса и измерения суставов. В одном варианте реализации выходом служат целевые положения суставов, которые исполняет отдельный контроллер. Следующий расчёт использует новые измерения, поэтому команды меняются вместе с движением тела."
             ]
           },
           {
@@ -446,13 +454,14 @@
     "ja": {
       "engineer": {
         "title": "移動を制御するニューラル方策",
-        "short_description": "センサー値と速度指令から、脚の動きを組み立てる。",
+        "short_description": "ニューラル移動方策は、測定値と動作の目標を、脚ロボットの指令へ結び付ける学習済みネットワークです。",
         "sections": [
           {
             "id": "overview",
-            "title": "観測から移動の指令へ",
+            "title": "どんな技術か",
             "paragraphs": [
-              "ニューラル移動方策は、センサー情報と動作の要求を、脚ロボットの制御系へ渡す行動に写します。姿勢、推定速度、関節位置と速度、前の行動、目標速度などが入力例です。出力は関節目標、残差補正、トルクなどであり、具体的なシステムの契約を明示する必要があります。"
+              "ニューラル移動方策は、脚ロボットの制御規則をニューラルネットワークで表したものです。入力は機体の状態と目標動作、出力は実行制御系へ渡す行動です。",
+              "例えば、四脚ロボットに前進を指示します。目標速度、胴体の向き、関節の測定値をネットワークへ入れます。一つの実装では、関節目標位置を出力し、別の制御器で実行します。次の計算には新しい測定を使うので、体の動きに応じて指令も変わります。"
             ]
           },
           {
@@ -508,13 +517,14 @@
       },
       "business": {
         "title": "移動を制御するニューラル方策",
-        "short_description": "センサー値と速度指令から、脚の動きを組み立てる。",
+        "short_description": "ニューラル移動方策は、測定値と動作の目標を、脚ロボットの指令へ結び付ける学習済みネットワークです。",
         "sections": [
           {
             "id": "purpose",
-            "title": "移動能力の適用範囲",
+            "title": "どんな技術か",
             "paragraphs": [
-              "移動方策は、センサーと目標速度などから脚の制御目標を作ります。固定規則で記述しにくい地形への対応を検討できます。ただし路面、積載、速度、天候、人との接触条件を定めます。歩行動画は、あらゆる場所を移動できる保証ではありません。"
+              "ニューラル移動方策は、センサと移動要求を、脚の制御システムへつなぐ学習済みソフトウェア部品です。",
+              "例えば、四脚ロボットに前進を指示します。目標速度、胴体の向き、関節の測定値をネットワークへ入れます。一つの実装では、関節目標位置を出力し、別の制御器で実行します。次の計算には新しい測定を使うので、体の動きに応じて指令も変わります。"
             ]
           },
           {
@@ -549,13 +559,14 @@
       },
       "enthusiast": {
         "title": "移動を制御するニューラル方策",
-        "short_description": "センサー値と速度指令から、脚の動きを組み立てる。",
+        "short_description": "ニューラル移動方策は、測定値と動作の目標を、脚ロボットの指令へ結び付ける学習済みネットワークです。",
         "sections": [
           {
             "id": "idea",
-            "title": "脚への指令を選ぶ規則",
+            "title": "どんな技術か",
             "paragraphs": [
-              "ニューラル移動方策は、測定値を脚の指令へ結びつける学習済みの規則です。人や別のプログラムが前進速度や旋回を要求すると、体や関節の情報と一緒に使います。同じ歩行アニメーションを再生しているだけではありません。"
+              "ニューラル歩行方策は、機体の測定値や動作の要求から脚の指令を求める、訓練されたネットワークの規則です。",
+              "例えば、四脚ロボットに前進を指示します。目標速度、胴体の向き、関節の測定値をネットワークへ入れます。一つの実装では、関節目標位置を出力し、別の制御器で実行します。次の計算には新しい測定を使うので、体の動きに応じて指令も変わります。"
             ]
           },
           {
@@ -590,13 +601,14 @@
       },
       "children": {
         "title": "移動を制御するニューラル方策",
-        "short_description": "センサー値と速度指令から、脚の動きを組み立てる。",
+        "short_description": "ニューラル移動方策は、センサの値と動くための指示を使い、脚への指令を計算する学習済みプログラムだ。",
         "sections": [
           {
             "id": "idea",
-            "title": "脚の動きを選ぶ規則",
+            "title": "どんな技術か",
             "paragraphs": [
-              "ロボットに「ゆっくり前へ」と頼むとしよう。ニューラル移動方策（ほうさく）は、その要求とセンサーの値から脚への指令を提案する、学習した規則だ。決まった歩行動画を繰り返し再生するだけではないよ。"
+              "ニューラル移動方策は、センサの値と動くための指示を使い、脚への指令を計算する学習済みプログラムだ。",
+              "例えば、四脚ロボットに前進を指示します。目標速度、胴体の向き、関節の測定値をネットワークへ入れます。一つの実装では、関節目標位置を出力し、別の制御器で実行します。次の計算には新しい測定を使うので、体の動きに応じて指令も変わります。"
             ]
           },
           {

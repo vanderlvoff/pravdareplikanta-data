@@ -9,18 +9,18 @@
     "ja": "世界モデル"
   },
   "short_description": {
-    "ru": "Предсказывать наблюдения, представления и последствия — не то же самое, что точно симулировать физику.",
-    "en": "Predicting observations, representations and consequences is not the same as accurate physical simulation.",
-    "ja": "観測や状態、行動の結果の予測と、正確な物理シミュレーションを区別する。"
+    "ru": "Модель мира — математическое представление окружающей среды и закономерностей её изменения.",
+    "en": "A world model is a mathematical representation of an environment and the dynamics of its changes.",
+    "ja": "世界モデルとは、環境の状態と変化の関係を数理的に表したものです。"
   },
   "related_technologies": [
     {
       "target": "reinforcement-learning",
       "type": "complements",
       "explanation": {
-        "ru": "Dreamer учит поведение на воображаемых траекториях внутри обученной модели.",
-        "en": "Dreamer learns behavior using imagined trajectories within a learned model.",
-        "ja": "Dreamerは学習したモデル内の想像上の軌跡で行動を学ぶ。"
+        "ru": "Dreamer — семейство алгоритмов обучения с подкреплением. В них правило действий обучают на прогнозах модели среды: какие изменения и награды могут последовать за выбранными действиями.",
+        "en": "Dreamer is a family of reinforcement-learning algorithms. They train an action-selection rule using an environment model's predictions of outcomes and rewards following chosen actions.",
+        "ja": "Dreamerは、モデルを使う強化学習（きょうかがくしゅう）の手法の集まりです。モデルが予測する行動の結果や報酬（ほうしゅう）を使い、動き方を選ぶ規則を学ばせます。"
       }
     }
   ],
@@ -60,20 +60,21 @@
       "year": 2023
     }
   ],
-  "last_reviewed": "2026-11-13",
+  "last_reviewed": "2026-11-14",
   "content_status": "ready",
   "diagram": "world",
   "localizations": {
     "en": {
       "engineer": {
         "title": "World models",
-        "short_description": "Predicting observations, representations and consequences is not the same as accurate physical simulation.",
+        "short_description": "A world model is a mathematical representation of an environment and the dynamics of its changes.",
         "sections": [
           {
             "id": "overview",
-            "title": "Predicting consequences with a learned model",
+            "title": "What is a world model?",
             "paragraphs": [
-              "A world model represents aspects of an environment and predicts how they may change. In robotics it can predict sensor observations, latent states, rewards or other task-relevant quantities, often conditioned on actions. Specify what is modeled. A realistic-looking video, a useful latent predictor and an accurate physical simulator are different artifacts."
+              "A world model is a computational representation of an environment that couples a description of state with a model of state changes. For a robot, state might include object positions, velocities and contacts; dynamics specifies how these evolve over time and under actions. In learned world models, neural-network parameters fitted to recorded experience encode these relationships.",
+              "For example, a block model can take its current position and velocity together with a proposed push, then estimate its next position and velocity. A latent model instead operates on a compact numerical state. In either case the software contains both a representation of the situation and relationships describing its evolution."
             ]
           },
           {
@@ -101,7 +102,7 @@
             "id": "uses",
             "title": "Planning and imagined training",
             "paragraphs": [
-              "A planner can compare candidate action sequences using a model. Another use is learning a policy from imagined trajectories, as in Dreamer-style agents. Those are distinct uses of predictive information. The 2018 World Models work and later Dreamer methods are concrete research designs, not a single fixed architecture shared by everything called a world model."
+              "A planner can compare action sequences through predicted consequences. Another use is training a policy on model-generated sequences of states, actions and rewards. Dreamer is a family of model-based reinforcement-learning algorithms using this approach. Planning during execution and training a policy within a model are distinct uses of predictive information. The 2018 World Models work and the Dreamer family describe specific research designs rather than a single architecture for all world models."
             ]
           },
           {
@@ -129,13 +130,14 @@
       },
       "business": {
         "title": "World models",
-        "short_description": "Predicting observations, representations and consequences is not the same as accurate physical simulation.",
+        "short_description": "A world model is a mathematical representation of an environment and the dynamics of its changes.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Evaluate possible outcomes before acting",
+            "title": "What is a world model?",
             "paragraphs": [
-              "A world model predicts aspects of what may happen, sometimes in response to proposed actions. It can support planning or training without performing every trial physically. First define the decision it should improve. A video generator, a predictive state model and a validated engineering simulator do not offer interchangeable capabilities."
+              "A world model is a software description of an operating environment and how its state changes. For example, it can relate the position of a box to the motion of a conveyor belt. That description may be expressed through mathematical relationships or a neural network fitted to recorded operations.",
+              "The system takes current measurements and a proposed intervention, calculates a possible later process state and passes the result to a decision-making component. This can support comparing belt movements or robot actions before execution. Deployment begins by specifying which objects, changes and decisions the model needs to describe."
             ]
           },
           {
@@ -170,13 +172,14 @@
       },
       "enthusiast": {
         "title": "World models",
-        "short_description": "Predicting observations, representations and consequences is not the same as accurate physical simulation.",
+        "short_description": "A world model is a mathematical representation of an environment and the dynamics of its changes.",
         "sections": [
           {
             "id": "idea",
-            "title": "A model of what could happen",
+            "title": "What is a world model?",
             "paragraphs": [
-              "A world model predicts aspects of an environment. A robot might use it to estimate what would happen after a push, or to represent how its observations change over time. The model need not generate a picture: it may work with a compact numerical state that is useful for making decisions."
+              "A world model is a description of an environment and the relationships between its changes, held inside a computer system. Imagine a block on a table: numbers can describe its position and speed, while mathematical relationships describe how a push changes its motion. A learned world model obtains such relationships from recorded experience.",
+              "The program can then enter different proposed pushes into that description and calculate where the block could end up. Predictions come from this internal representation of a scene and its changes. In a large neural network, the representation may be compressed numerical features rather than an explicit list of named objects."
             ]
           },
           {
@@ -197,7 +200,7 @@
             "id": "uses",
             "title": "Two ways to use an imagined future",
             "paragraphs": [
-              "A planner can compare action candidates using model predictions. A policy can also learn inside model-generated trajectories; Dreamer is a research family that uses this idea. These are different arrangements. Neither means that the robot no longer needs to observe the real world while executing its actions."
+              "A planner can compare commands using predictions, while a learning program can use calculated actions and outcomes as training experience. The second approach is used by Dreamer, a family of reinforcement-learning algorithms that train an action-selection rule within an environment model. These are different uses of the model. A physical robot still receives fresh observations while carrying out the resulting commands."
             ]
           },
           {
@@ -211,13 +214,14 @@
       },
       "children": {
         "title": "World models",
-        "short_description": "Predicting observations, representations and consequences is not the same as accurate physical simulation.",
+        "short_description": "A description of the surroundings inside a program: what it contains and how it represents a moving block.",
         "sections": [
           {
             "id": "idea",
-            "title": "A prediction about what might happen",
+            "title": "What is a world model?",
             "paragraphs": [
-              "Suppose a robot could estimate how a block might move after a push. A world model is a computer model that predicts some changes in its surroundings. It might predict numbers describing the scene rather than make a new picture. It is not a complete copy of the whole world."
+              "A world model is a simplified description of the surroundings inside a program, containing information about things and how they change. In a simple description of a block on a table, numbers give its position and speed. The program also has a rule connecting a push to a change in motion.",
+              "That rule can be learned from recorded examples of how a block was pushed and where it moved. The program can then enter a new push and calculate where the block might go. This is how an internal description of the surroundings helps a robot estimate an outcome before making a real movement."
             ]
           },
           {
@@ -254,13 +258,14 @@
     "ru": {
       "engineer": {
         "title": "Модели мира",
-        "short_description": "Предсказывать наблюдения, представления и последствия — не то же самое, что точно симулировать физику.",
+        "short_description": "Модель мира — математическое представление окружающей среды и закономерностей её изменения.",
         "sections": [
           {
             "id": "overview",
-            "title": "Выученное предсказание последствий",
+            "title": "Что такое модель мира",
             "paragraphs": [
-              "Модель мира представляет некоторые стороны среды и предсказывает их изменение. В робототехнике это могут быть наблюдения датчиков, латентные состояния, награды и другие нужные задаче величины, часто с учётом действия. Следует назвать, что именно моделируется. Правдоподобное видео, полезный латентный предсказатель и точный физический симулятор — разные результаты."
+              "Модель мира — это вычислительное представление среды, в котором описание её состояния связано с моделью изменения этого состояния. В робототехнической задаче оно может включать положение и скорость объектов, состояние контактов и зависимость этих величин от времени и управляющего воздействия. В обучаемых моделях эти связи задаются параметрами нейросети, настроенными по данным.",
+              "Например, для кубика на столе входом могут быть его текущее положение, скорость и предполагаемое усилие толчка. Модель рассчитывает возможное положение и скорость на следующем шаге. Если вместо явных физических величин используется компактное скрытое состояние, смысл остаётся тем же: внутри программы есть представление ситуации и зависимость, описывающая её развитие."
             ]
           },
           {
@@ -288,7 +293,7 @@
             "id": "uses",
             "title": "Планирование и воображаемое обучение",
             "paragraphs": [
-              "Планировщик способен сравнивать последовательности по предсказанным последствиям. Другой вариант — обучать политику на воображаемых траекториях, как в семействе Dreamer. Это разные способы использования прогноза. Работа World Models 2018 года и позднейшие Dreamer — конкретные исследовательские конструкции, не одна обязательная архитектура всех моделей мира."
+              "Планировщик может сравнивать последовательности действий по предсказанным последствиям. Другой вариант — обучать политику на рассчитанных моделью последовательностях состояний, действий и наград. Этот подход использует Dreamer — семейство алгоритмов обучения с подкреплением на основе обучаемой модели среды. Планирование при исполнении и обучение политики внутри модели — разные способы использования прогноза. Работа World Models 2018 года и семейство Dreamer описывают конкретные исследовательские конструкции, а не единственную архитектуру модели мира."
             ]
           },
           {
@@ -316,13 +321,14 @@
       },
       "business": {
         "title": "Модели мира",
-        "short_description": "Предсказывать наблюдения, представления и последствия — не то же самое, что точно симулировать физику.",
+        "short_description": "Модель мира — математическое представление окружающей среды и закономерностей её изменения.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Оценивать варианты до исполнения",
+            "title": "Что такое модель мира",
             "paragraphs": [
-              "Модель мира предсказывает некоторые последствия, иногда в ответ на предложенные действия. Она может помогать планированию или обучению без физического выполнения каждой попытки. Сначала определите, какое решение надо улучшить. Видеогенератор, предсказатель состояния и подтверждённый инженерный симулятор не являются взаимозаменяемыми."
+              "Модель мира — программное описание того, как устроена рабочая среда и как в ней меняется обстановка. Оно связывает измеряемое состояние процесса с его дальнейшим развитием: например, положение коробки на ленте — с движением конвейера. Такое описание может быть набором математических зависимостей или обученной по данным нейросетью.",
+              "Система получает текущие измерения и вариант воздействия, рассчитывает возможное состояние процесса после него и передаёт результат системе принятия решений. Практическое применение — заранее сравнить варианты движения ленты или робота. Для внедрения сначала определяют, какие объекты, изменения и решения должна описывать модель."
             ]
           },
           {
@@ -357,13 +363,14 @@
       },
       "enthusiast": {
         "title": "Модели мира",
-        "short_description": "Предсказывать наблюдения, представления и последствия — не то же самое, что точно симулировать физику.",
+        "short_description": "Модель мира — математическое представление окружающей среды и закономерностей её изменения.",
         "sections": [
           {
             "id": "idea",
-            "title": "Модель возможных последствий",
+            "title": "Что такое модель мира",
             "paragraphs": [
-              "Модель мира предсказывает некоторые стороны среды. Робот может оценить результат толчка или изменение наблюдений во времени. Изображение генерировать необязательно: иногда используется компактное числовое состояние, удобное для выбора действий."
+              "Модель мира — это описание среды и связей между происходящими в ней изменениями, которое существует внутри программы. Представь стол с кубиком: числа могут описывать место и скорость кубика, а математические зависимости — то, как его движение меняется после толчка. В обучаемой модели такие зависимости получают из записанного опыта.",
+              "Теперь программа может подставить в это описание разные варианты толчка и рассчитать, где окажется кубик. Именно наличие внутреннего описания сцены и её изменений позволяет получать прогноз. В сложной нейросети описание бывает сжатым набором числовых признаков, а не списком именованных предметов."
             ]
           },
           {
@@ -384,7 +391,7 @@
             "id": "uses",
             "title": "Два применения воображаемого будущего",
             "paragraphs": [
-              "Планировщик сравнивает кандидатные действия по прогнозу. Другой способ — учить политику внутри сгенерированных траекторий; Dreamer использует такую идею. Это разные схемы. Ни одна не означает, что настоящему роботу больше не нужно наблюдать мир во время исполнения."
+              "Планировщик может сравнивать команды по прогнозу, а программа обучения — использовать рассчитанные действия и их результаты как учебный опыт. Второй подход применяется в Dreamer: так называется семейство алгоритмов обучения с подкреплением, которые обучают правило действий внутри модели среды. Это разные способы использования модели. При работе с настоящим роботом полученные команды по-прежнему проверяют новыми наблюдениями."
             ]
           },
           {
@@ -398,13 +405,14 @@
       },
       "children": {
         "title": "Модели мира",
-        "short_description": "Предсказывать наблюдения, представления и последствия — не то же самое, что точно симулировать физику.",
+        "short_description": "Описание окружающей обстановки внутри программы: из чего оно состоит и как по нему рассчитывают движение кубика.",
         "sections": [
           {
             "id": "idea",
-            "title": "Предположить результат толчка",
+            "title": "Что такое модель мира",
             "paragraphs": [
-              "Допустим, робот оценивает, как сдвинется кубик, если его толкнуть. Модель мира — компьютерная модель, предсказывающая некоторые изменения окружения. Иногда она выдаёт числа о сцене, а не новую картинку. Полной копией всего мира она не является."
+              "Модель мира — это упрощённое описание окружающей обстановки внутри программы, в котором есть сведения о предметах и их изменениях. Например, в простом описании стола с кубиком числа показывают место кубика и его скорость. В программе также есть правило, связывающее толчок с изменением движения.",
+              "Такое правило можно получить из записанных примеров: как толкнули кубик и куда он сдвинулся. После этого программа подставляет новый толчок и рассчитывает, где кубик может оказаться. Вот зачем роботу внутреннее описание обстановки: по нему можно оценивать результат действия до настоящего движения."
             ]
           },
           {
@@ -441,13 +449,14 @@
     "ja": {
       "engineer": {
         "title": "世界モデル",
-        "short_description": "観測や状態、行動の結果の予測と、正確な物理シミュレーションを区別する。",
+        "short_description": "世界モデルとは、環境の状態と変化の関係を数理的に表したものです。",
         "sections": [
           {
             "id": "overview",
-            "title": "結果を予測する学習モデル",
+            "title": "世界モデルとは",
             "paragraphs": [
-              "世界モデルは、環境の一部を表現し、その変化を予測します。センサー観測、潜在状態、報酬、作業に必要な量などが対象になり、行動を条件にする場合もあります。何をモデル化したかを明示します。自然に見える動画、有用な潜在予測、正確な物理シミュレーターは別の成果です。"
+              "世界モデルとは、環境の状態を表す情報と、その状態が変化する関係を組み合わせた計算上の表現です。ロボットでは、物体の位置、速度、接触状態などと、それらが時間や操作によって変わる関係を扱います。学習型では、経験の記録から調整したニューラルネットワークのパラメータが、その関係を表します。",
+              "例えば、机の上の積み木の現在位置と速度、加える予定の力を入力し、次の位置や速度を計算します。明示的な物理量の代わりに、圧縮した潜在状態を使う構成もあります。いずれも、システム内部に状況の表現と変化の関係があるため、先の状態を予測できます。"
             ]
           },
           {
@@ -475,7 +484,7 @@
             "id": "uses",
             "title": "計画と想像上の学習",
             "paragraphs": [
-              "予測で行動列を比較する計画器に使う方法と、Dreamerのように想像上の軌跡で方策を学ぶ方法があります。予測情報の用途が異なります。2018年のWorld Modelsや後のDreamerは具体的な研究方式で、世界モデルすべてが同じ構成を持つわけではありません。"
+              "計画器が予測結果によって行動列を比較する使い方と、モデルで計算した状態・行動・報酬の列で方策を訓練する使い方があります。Dreamerは後者を用いる、学習した環境モデルに基づく強化学習アルゴリズム群です。実行時の計画とモデル内での方策訓練は、予測情報の異なる用途です。2018年のWorld ModelsとDreamerは具体的な研究方式であり、世界モデルすべての共通構成ではありません。"
             ]
           },
           {
@@ -503,13 +512,14 @@
       },
       "business": {
         "title": "世界モデル",
-        "short_description": "観測や状態、行動の結果の予測と、正確な物理シミュレーションを区別する。",
+        "short_description": "世界モデルとは、環境の状態と変化の関係を数理的に表したものです。",
         "sections": [
           {
             "id": "purpose",
-            "title": "動く前に結果を比べる",
+            "title": "世界モデルとは",
             "paragraphs": [
-              "世界モデルは、行動を変えた場合などの結果を予測し、すべてを実機で試さずに計画や学習を助ける可能性があります。どの判断を改善したいかを最初に決めます。動画生成器、状態予測器、検証済みの工学シミュレーターは交換可能なものではありません。"
+              "世界モデルとは、作業環境の状態と、その変化の関係をソフトウェアで記述したものです。例えば、箱の位置がコンベヤーの動作によってどう変わるかを扱います。数学的な関係式や、稼働データから訓練したニューラルネットワークとして実装できます。",
+              "現在の測定値と操作案から、その後の工程の状態を計算し、判断を行う仕組みへ渡します。ベルトの動かし方やロボットの操作を実行前に比較する用途があります。導入時には、どの物体、変化、判断を表す必要があるのかを最初に決めます。"
             ]
           },
           {
@@ -544,13 +554,14 @@
       },
       "enthusiast": {
         "title": "世界モデル",
-        "short_description": "観測や状態、行動の結果の予測と、正確な物理シミュレーションを区別する。",
+        "short_description": "世界モデルとは、環境の状態と変化の関係を数理的に表したものです。",
         "sections": [
           {
             "id": "idea",
-            "title": "起こり得る変化のモデル",
+            "title": "世界モデルとは",
             "paragraphs": [
-              "世界モデルは、環境のある側面を予測します。押した後の結果や観測の時間変化を表すために使えます。画像を作る必要はなく、判断に役立つ小さな数値の状態で動くモデルもあります。全世界の完全な再現ではありません。"
+              "世界モデルとは、周りの状況と変化のつながりをコンピューター内に表したものです。机の上の積み木なら、場所と速さを数値で表し、押す力と運動の変化を数学的な関係で結び付けられます。学習型のモデルは、その関係を経験の記録から身に付けます。",
+              "この説明に違う押し方を入力すると、その後に積み木がどこへ動くかを計算できます。予測の基になるのは、場面と変化の内部表現です。大きなニューラルネットワークでは、物体名の一覧ではなく、圧縮された数値の特徴で表す場合もあります。"
             ]
           },
           {
@@ -571,7 +582,7 @@
             "id": "uses",
             "title": "予測の二つの使い方",
             "paragraphs": [
-              "計画器が予測した結果で行動候補を比較する使い方があります。Dreamerのように、モデルの軌跡を使って方策を学ぶ方式もあります。構成は別ですが、どちらも実行中の現実の観測が不要になるわけではありません。"
+              "計画器が予測で指令を比較する使い方と、学習用プログラムがモデルの計算結果を経験として使う方法があります。Dreamerは、後者で行動の規則を学ぶ、強化学習のアルゴリズム群の名前です。モデルの使い方が違います。実際のロボットが動く間には、新しい観測も引き続き使います。"
             ]
           },
           {
@@ -585,13 +596,14 @@
       },
       "children": {
         "title": "世界モデル",
-        "short_description": "観測や状態、行動の結果の予測と、正確な物理シミュレーションを区別する。",
+        "short_description": "周りの様子と変わり方をコンピューターの中に表す仕組みを、積み木で考えてみよう。",
         "sections": [
           {
             "id": "idea",
-            "title": "押した後を予想する",
+            "title": "世界モデルとは",
             "paragraphs": [
-              "ロボットが積み木を押したら、どう動くか予想できるとしよう。世界モデルは、周りの一部の変化を予測（よそく）するコンピューターのモデルだ。新しい画像でなく、場面を表す数値を出すものもある。世界全部の完全なコピーではないよ。"
+              "世界モデルは、周りの様子とその変わり方を、コンピューターの中に表したものだ。例えば、机の上の積み木の場所と速さを数値で表せる。そこに、押し方と動きの変化を結び付ける規則（きそく）も加える。これで、積み木の様子と動き方の説明がプログラムの中にできる。",
+              "その規則は、積み木を押して、どう動いたかを記録した例から学べる。次に別の押し方を入力すれば、その後の場所を計算できる。こうして、ロボットが実際に動く前に、結果を予測（よそく）するための材料になるんだ。"
             ]
           },
           {

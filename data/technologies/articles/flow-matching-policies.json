@@ -9,9 +9,9 @@
     "ja": "Flow Matchingによる方策"
   },
   "short_description": {
-    "ru": "Обученное поле скоростей преобразует шум в согласованный план движений.",
-    "en": "A learned velocity field transforms noise into a coordinated action sequence.",
-    "ja": "学習したベクトル場でノイズをまとまった動作列へ変換する。"
+    "ru": "Политика на основе flow matching — модель действий с обученным полем направлений, по которому числовой шум преобразуют в команды.",
+    "en": "A flow-matching policy is an action model with a learned vector field that transforms numerical noise into commands.",
+    "ja": "Flow Matchingによる方策は、学習したベクトル場に沿って数値ノイズを指令へ変える行動モデルです。"
   },
   "related_technologies": [
     {
@@ -55,20 +55,21 @@
       "year": 2025
     }
   ],
-  "last_reviewed": "2026-11-13",
+  "last_reviewed": "2026-11-14",
   "content_status": "ready",
   "diagram": "flow",
   "localizations": {
     "en": {
       "engineer": {
         "title": "Flow matching policies",
-        "short_description": "A learned velocity field transforms noise into a coordinated action sequence.",
+        "short_description": "A flow-matching policy is an action model with a learned vector field that transforms numerical noise into commands.",
         "sections": [
           {
             "id": "overview",
-            "title": "A flow in action space",
+            "title": "What it is",
             "paragraphs": [
-              "Flow matching policies generate actions by integrating a learned conditional vector field. In a common construction, a noise sample is gradually transported toward a demonstrated action sequence. The vector describes how the numerical sample changes during generation; it is not the physical velocity of a robot joint or end effector."
+              "A flow-matching policy is a generative action model with a learned conditional vector field. The field specifies directions of change for numerical samples, and integration transports an initial distribution into a command distribution.",
+              "For example, a model prepares gripper movements toward an object. Observations supply the conditions while the computation progressively changes a numerical array into an action sequence. The commands go to a controller. The field's velocity describes numerical change during generation, not motor speed."
             ]
           },
           {
@@ -124,13 +125,14 @@
       },
       "business": {
         "title": "Flow matching policies",
-        "short_description": "A learned velocity field transforms noise into a coordinated action sequence.",
+        "short_description": "A flow-matching policy is an action model with a learned vector field that transforms numerical noise into commands.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Generating coordinated action proposals",
+            "title": "What it is",
             "paragraphs": [
-              "Flow matching is a way to produce coordinated robot commands from observations. It can represent different valid movement patterns instead of a single averaged response. It is a component of an automation system, not a complete product. A reference to a large generalist model does not establish compatibility with a particular robot or production process."
+              "A flow-matching policy is a command-generation model whose trained network specifies gradual changes from initial random numbers to coordinated actions.",
+              "For example, a model prepares gripper movements toward an object. Observations supply the conditions while the computation progressively changes a numerical array into an action sequence. The commands go to a controller. The field's velocity describes numerical change during generation, not motor speed."
             ]
           },
           {
@@ -165,13 +167,14 @@
       },
       "enthusiast": {
         "title": "Flow matching policies",
-        "short_description": "A learned velocity field transforms noise into a coordinated action sequence.",
+        "short_description": "A flow-matching policy is an action model with a learned vector field that transforms numerical noise into commands.",
         "sections": [
           {
             "id": "idea",
-            "title": "Turning one cloud of numbers into another",
+            "title": "What it is",
             "paragraphs": [
-              "Imagine gradually reshaping a scattered set of points into useful patterns. A flow matching policy learns a mathematical rule for changing a noisy numerical sample into an action sequence. The changing numbers describe a proposed robot movement. The flow is a calculation in action space, not a force pushing the machine."
+              "Flow matching in a robot policy is a way to build a movement generator using learned directions of numerical change to form future command sequences.",
+              "For example, a model prepares gripper movements toward an object. Observations supply the conditions while the computation progressively changes a numerical array into an action sequence. The commands go to a controller. The field's velocity describes numerical change during generation, not motor speed."
             ]
           },
           {
@@ -206,13 +209,14 @@
       },
       "children": {
         "title": "Flow matching policies",
-        "short_description": "A learned velocity field transforms noise into a coordinated action sequence.",
+        "short_description": "A flow-matching policy is a movement-selection program with a learned rule for gradually changing random numbers into commands.",
         "sections": [
           {
             "id": "idea",
-            "title": "A rule for changing numbers",
+            "title": "What it is",
             "paragraphs": [
-              "Think of some scattered dots that gradually form a useful pattern. Flow matching teaches a rule that changes random numbers into numbers describing a robot's movements. The word flow refers to this calculation. It does not mean that water or an invisible force moves the robot."
+              "A flow-matching policy is a movement-selection program with a learned rule for gradually changing random numbers into commands.",
+              "For example, a model prepares gripper movements toward an object. Observations supply the conditions while the computation progressively changes a numerical array into an action sequence. The commands go to a controller. The field's velocity describes numerical change during generation, not motor speed."
             ]
           },
           {
@@ -249,13 +253,14 @@
     "ru": {
       "engineer": {
         "title": "Политики на основе flow matching",
-        "short_description": "Обученное поле скоростей преобразует шум в согласованный план движений.",
+        "short_description": "Политика на основе flow matching — модель действий с обученным полем направлений, по которому числовой шум преобразуют в команды.",
         "sections": [
           {
             "id": "overview",
-            "title": "Поток в пространстве действий",
+            "title": "Что это такое",
             "paragraphs": [
-              "Политика на основе flow matching генерирует действия интегрированием выученного условного векторного поля. В распространённой постановке шумовая выборка постепенно преобразуется в демонстрационную последовательность. Скорость этого преобразования относится к числам в генеративном процессе: это не физическая скорость сустава или рабочего органа робота."
+              "Политика на основе flow matching — генеративная модель действий с обучаемым условным векторным полем. Поле задаёт направления изменения числовых образцов, а интегрирование вдоль него превращает начальное распределение в распределение команд.",
+              "Например, модель готовит движения захвата к предмету. Наблюдения задают условия, а вычислительный процесс постепенно меняет массив чисел до последовательности действий. Полученные команды передаются контроллеру. «Скорость» в названии поля означает изменение этих чисел в процессе генерации, а не скорость двигателя."
             ]
           },
           {
@@ -311,13 +316,14 @@
       },
       "business": {
         "title": "Политики на основе flow matching",
-        "short_description": "Обученное поле скоростей преобразует шум в согласованный план движений.",
+        "short_description": "Политика на основе flow matching — модель действий с обученным полем направлений, по которому числовой шум преобразуют в команды.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Предлагать согласованные команды",
+            "title": "Что это такое",
             "paragraphs": [
-              "Flow matching — способ получить согласованные команды из наблюдений. Он может сохранять разные допустимые варианты движения вместо одного среднего ответа. Это компонент автоматизации, не готовое решение участка. Ссылка на крупную универсальную модель ещё не доказывает совместимость с конкретным роботом или производственным процессом."
+              "Политика на основе flow matching — модель генерации команд, в которой обученная сеть задаёт постепенное преобразование исходных случайных чисел в согласованные действия.",
+              "Например, модель готовит движения захвата к предмету. Наблюдения задают условия, а вычислительный процесс постепенно меняет массив чисел до последовательности действий. Полученные команды передаются контроллеру. «Скорость» в названии поля означает изменение этих чисел в процессе генерации, а не скорость двигателя."
             ]
           },
           {
@@ -352,13 +358,14 @@
       },
       "enthusiast": {
         "title": "Политики на основе flow matching",
-        "short_description": "Обученное поле скоростей преобразует шум в согласованный план движений.",
+        "short_description": "Политика на основе flow matching — модель действий с обученным полем направлений, по которому числовой шум преобразуют в команды.",
         "sections": [
           {
             "id": "idea",
-            "title": "Преобразовать облако чисел",
+            "title": "Что это такое",
             "paragraphs": [
-              "Представь рассыпанные точки, которые постепенно складываются в полезный узор. Flow matching учит математическое правило преобразования шумовой выборки в последовательность действий. Числа описывают предложенное движение. Поток существует в пространстве вычислений, а не толкает механизм какой-то новой физической силой."
+              "Flow matching в политике робота — способ построить генератор движений с выученными направлениями изменения чисел: по ним формируется будущая последовательность команд.",
+              "Например, модель готовит движения захвата к предмету. Наблюдения задают условия, а вычислительный процесс постепенно меняет массив чисел до последовательности действий. Полученные команды передаются контроллеру. «Скорость» в названии поля означает изменение этих чисел в процессе генерации, а не скорость двигателя."
             ]
           },
           {
@@ -393,13 +400,14 @@
       },
       "children": {
         "title": "Политики на основе flow matching",
-        "short_description": "Обученное поле скоростей преобразует шум в согласованный план движений.",
+        "short_description": "Политика на основе flow matching — программа выбора движений, где обученное правило задаёт, как постепенно менять случайные числа до получения команд.",
         "sections": [
           {
             "id": "idea",
-            "title": "Правило изменения чисел",
+            "title": "Что это такое",
             "paragraphs": [
-              "Представь точки, которые из беспорядка складываются в узор. Flow matching помогает выучить правило, меняющее случайные числа на числа для движения робота. Слово «поток» здесь относится к вычислению. Ни вода, ни невидимая сила робота при этом не двигают."
+              "Политика на основе flow matching — программа выбора движений, где обученное правило задаёт, как постепенно менять случайные числа до получения команд.",
+              "Например, модель готовит движения захвата к предмету. Наблюдения задают условия, а вычислительный процесс постепенно меняет массив чисел до последовательности действий. Полученные команды передаются контроллеру. «Скорость» в названии поля означает изменение этих чисел в процессе генерации, а не скорость двигателя."
             ]
           },
           {
@@ -436,13 +444,14 @@
     "ja": {
       "engineer": {
         "title": "Flow Matchingによる方策",
-        "short_description": "学習したベクトル場でノイズをまとまった動作列へ変換する。",
+        "short_description": "Flow Matchingによる方策は、学習したベクトル場に沿って数値ノイズを指令へ変える行動モデルです。",
         "sections": [
           {
             "id": "overview",
-            "title": "行動空間での流れ",
+            "title": "どんな技術か",
             "paragraphs": [
-              "Flow Matchingによる方策は、条件付きのベクトル場を学習し、その場を積分して行動を生成します。代表的な構成では、ノイズの標本を実演の行動列へ近づけます。この速度は生成中の数値の変化率であり、関節や手先の物理的な速度ではありません。"
+              "Flow Matchingによる方策は、条件付きベクトル場を学ぶ生成型の行動モデルです。場は数値標本の変化方向を表し、その積分によって初期分布を指令の分布へ移します。",
+              "例えば、物体に近づくハンドの動きを作ります。観測を条件に、数値の配列を少しずつ変えて行動列を得て、制御器へ渡します。ここでベクトル場の速度というのは、生成の途中で数値が変わる速さであり、モータの速度ではありません。"
             ]
           },
           {
@@ -498,13 +507,14 @@
       },
       "business": {
         "title": "Flow Matchingによる方策",
-        "short_description": "学習したベクトル場でノイズをまとまった動作列へ変換する。",
+        "short_description": "Flow Matchingによる方策は、学習したベクトル場に沿って数値ノイズを指令へ変える行動モデルです。",
         "sections": [
           {
             "id": "purpose",
-            "title": "協調した指令を提案する",
+            "title": "どんな技術か",
             "paragraphs": [
-              "Flow Matchingは、観測からロボットの行動列を作る方法です。一つの平均的な応答だけでなく、複数の有効な動作を表すことができます。ただし自動化設備の一部であり、完成した製品ではありません。汎用モデルの採用だけで、自社の機体や工程との互換性は証明できません。"
+              "Flow Matchingによる方策は、訓練したネットワークで、初期の乱数からまとまった動作への段階的な変化を記述する指令生成モデルです。",
+              "例えば、物体に近づくハンドの動きを作ります。観測を条件に、数値の配列を少しずつ変えて行動列を得て、制御器へ渡します。ここでベクトル場の速度というのは、生成の途中で数値が変わる速さであり、モータの速度ではありません。"
             ]
           },
           {
@@ -539,13 +549,14 @@
       },
       "enthusiast": {
         "title": "Flow Matchingによる方策",
-        "short_description": "学習したベクトル場でノイズをまとまった動作列へ変換する。",
+        "short_description": "Flow Matchingによる方策は、学習したベクトル場に沿って数値ノイズを指令へ変える行動モデルです。",
         "sections": [
           {
             "id": "idea",
-            "title": "数値の雲を動作へ変える",
+            "title": "どんな技術か",
             "paragraphs": [
-              "散らばった点を、少しずつ役立つ模様へ整えるところを想像してください。Flow Matchingの方策は、ノイズの数値を行動列へ変える規則を学びます。動くのは計算上の標本です。ロボットを新しい物理的な力で押しているわけではありません。"
+              "ロボット方策のFlow Matchingは、数値を変える方向を学び、その方向に沿って動作列を作る生成器の組み立て方です。",
+              "例えば、物体に近づくハンドの動きを作ります。観測を条件に、数値の配列を少しずつ変えて行動列を得て、制御器へ渡します。ここでベクトル場の速度というのは、生成の途中で数値が変わる速さであり、モータの速度ではありません。"
             ]
           },
           {
@@ -580,13 +591,14 @@
       },
       "children": {
         "title": "Flow Matchingによる方策",
-        "short_description": "学習したベクトル場でノイズをまとまった動作列へ変換する。",
+        "short_description": "Flow Matchingによる方策は、ばらばらな数をどちらへ変えていくかという規則を学び、動きの指令を作る仕組みだ。",
         "sections": [
           {
             "id": "idea",
-            "title": "数値を変える規則",
+            "title": "どんな技術か",
             "paragraphs": [
-              "ばらばらの点が、少しずつ模様になる様子を考えてみよう。Flow Matchingは、偶然に選んだ数値から、ロボットの動きを表す数値へ変える規則を学ぶ方法だ。「流れ」という名前でも、水や見えない力でロボットを動かしているわけではない。"
+              "Flow Matchingによる方策は、ばらばらな数をどちらへ変えていくかという規則を学び、動きの指令を作る仕組みだ。",
+              "例えば、物体に近づくハンドの動きを作ります。観測を条件に、数値の配列を少しずつ変えて行動列を得て、制御器へ渡します。ここでベクトル場の速度というのは、生成の途中で数値が変わる速さであり、モータの速度ではありません。"
             ]
           },
           {

@@ -9,9 +9,9 @@
     "ja": "視覚言語モデル"
   },
   "short_description": {
-    "ru": "Что дают связи изображений и текста — и чего они не дают роботизированному контроллеру.",
-    "en": "What linking images and text offers, and what a robot controller still needs.",
-    "ja": "画像と言葉を結びつけてできることと、制御に足りないもの。"
+    "ru": "Зрительно-языковая модель (VLM) — нейросетевая система с представлениями изображений и текста и обученными связями между ними.",
+    "en": "A vision-language model (VLM) is a neural system with image and text representations linked through training.",
+    "ja": "視覚言語モデル（VLM）は、画像と言語の表現と、その間の学習済みの関係を持つニューラルシステムです。"
   },
   "related_technologies": [
     {
@@ -46,20 +46,21 @@
       "year": 2022
     }
   ],
-  "last_reviewed": "2026-11-13",
+  "last_reviewed": "2026-11-14",
   "content_status": "ready",
   "diagram": null,
   "localizations": {
     "en": {
       "engineer": {
         "title": "Vision-language models",
-        "short_description": "What linking images and text offers, and what a robot controller still needs.",
+        "short_description": "A vision-language model (VLM) is a neural system with image and text representations linked through training.",
         "sections": [
           {
             "id": "overview",
-            "title": "Connecting images and language",
+            "title": "What it is",
             "paragraphs": [
-              "Vision-language models (VLMs) learn relationships between visual inputs and language. The family includes representation models and generative systems with different interfaces. A model that retrieves matching descriptions is not necessarily one that generates text, predicts actions or estimates calibrated geometry. State which capability and training recipe a robotic system actually uses."
+              "A vision-language model (VLM) is a neural system joining visual and language processing through training. Its components form linked image–text representations or generate language conditioned on visual input.",
+              "For example, one model takes a table photograph and candidate captions, then calculates how well each caption matches the image. Another architecture may generate a verbal description of that photograph. Training links visual features and words in both cases, while the particular output is determined by the model design."
             ]
           },
           {
@@ -115,13 +116,14 @@
       },
       "business": {
         "title": "Vision-language models",
-        "short_description": "What linking images and text offers, and what a robot controller still needs.",
+        "short_description": "A vision-language model (VLM) is a neural system with image and text representations linked through training.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Useful semantic context",
+            "title": "What it is",
             "paragraphs": [
-              "A VLM connects visual information with language and can help interpret objects or written tasks. It can reduce some hand-written semantic rules, but should not be purchased as if it were a complete robot controller. Define whether the needed output is a description, retrieval score, object interpretation or a high-level task suggestion."
+              "A vision-language model is a trained AI model with image and language inputs and learned connections between their content.",
+              "For example, one model takes a table photograph and candidate captions, then calculates how well each caption matches the image. Another architecture may generate a verbal description of that photograph. Training links visual features and words in both cases, while the particular output is determined by the model design."
             ]
           },
           {
@@ -156,13 +158,14 @@
       },
       "enthusiast": {
         "title": "Vision-language models",
-        "short_description": "What linking images and text offers, and what a robot controller still needs.",
+        "short_description": "A vision-language model (VLM) is a neural system with image and text representations linked through training.",
         "sections": [
           {
             "id": "idea",
-            "title": "Images and words in one model family",
+            "title": "What it is",
             "paragraphs": [
-              "A vision-language model learns connections between pictures and language. Some models place matching images and descriptions near one another in a numerical space. Others generate text while using visual information. The family name does not mean every model has all these abilities, and it does not automatically include robot actions."
+              "A vision-language model is a network or network system in which numerical representations of pictures and words are linked by training on paired examples.",
+              "For example, one model takes a table photograph and candidate captions, then calculates how well each caption matches the image. Another architecture may generate a verbal description of that photograph. Training links visual features and words in both cases, while the particular output is determined by the model design."
             ]
           },
           {
@@ -197,13 +200,14 @@
       },
       "children": {
         "title": "Vision-language models",
-        "short_description": "What linking images and text offers, and what a robot controller still needs.",
+        "short_description": "A vision-language model is a trained program that links images with words through computations for pictures, text and their connections.",
         "sections": [
           {
             "id": "idea",
-            "title": "Connecting pictures with words",
+            "title": "What it is",
             "paragraphs": [
-              "A vision-language model learns patterns between images and language. It might help find a picture that matches a description or write words about a picture. Different models do different jobs. This does not mean that they see and understand a room exactly as a person does."
+              "A vision-language model is a trained program that links images with words through computations for pictures, text and their connections.",
+              "For example, one model takes a table photograph and candidate captions, then calculates how well each caption matches the image. Another architecture may generate a verbal description of that photograph. Training links visual features and words in both cases, while the particular output is determined by the model design."
             ]
           },
           {
@@ -240,13 +244,14 @@
     "ru": {
       "engineer": {
         "title": "Зрительно-языковые модели",
-        "short_description": "Что дают связи изображений и текста — и чего они не дают роботизированному контроллеру.",
+        "short_description": "Зрительно-языковая модель (VLM) — нейросетевая система с представлениями изображений и текста и обученными связями между ними.",
         "sections": [
           {
             "id": "overview",
-            "title": "Связать изображения и язык",
+            "title": "Что это такое",
             "paragraphs": [
-              "Зрительно-языковые модели, vision-language models (VLM), учат связи визуальных входов с языком. В семейство входят модели представлений и генеративные системы с разными интерфейсами. Поиск подходящей подписи не равен генерации текста, действий или оценке калиброванной геометрии. В роботизированной системе нужно назвать конкретную используемую способность и способ обучения."
+              "Зрительно-языковая модель (VLM) — нейросетевая система, объединяющая обработку визуальных данных и языка через совместное обучение. Её компоненты формируют связанные представления изображений и текста либо генерируют язык по визуальному условию.",
+              "Например, одной модели показывают фотографию стола и несколько подписей, а она рассчитывает соответствие каждой подписи изображению. Другая архитектура может по той же фотографии сформировать описание словами. В обоих случаях обучение связывает визуальные признаки со словами; конкретный тип выхода задаётся устройством модели."
             ]
           },
           {
@@ -302,13 +307,14 @@
       },
       "business": {
         "title": "Зрительно-языковые модели",
-        "short_description": "Что дают связи изображений и текста — и чего они не дают роботизированному контроллеру.",
+        "short_description": "Зрительно-языковая модель (VLM) — нейросетевая система с представлениями изображений и текста и обученными связями между ними.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Полезный смысловой контекст",
+            "title": "Что это такое",
             "paragraphs": [
-              "VLM связывает визуальные данные с языком и может помогать разбору предметов и письменных заданий. Иногда это сокращает ручные смысловые правила, но модель не является готовым контроллером робота. Сначала определите нужный выход: описание, оценку соответствия, интерпретацию объекта или предложение задачи высокого уровня."
+              "Зрительно-языковая модель — обученная модель ИИ с входами для изображений и языка и связями между их содержанием.",
+              "Например, одной модели показывают фотографию стола и несколько подписей, а она рассчитывает соответствие каждой подписи изображению. Другая архитектура может по той же фотографии сформировать описание словами. В обоих случаях обучение связывает визуальные признаки со словами; конкретный тип выхода задаётся устройством модели."
             ]
           },
           {
@@ -343,13 +349,14 @@
       },
       "enthusiast": {
         "title": "Зрительно-языковые модели",
-        "short_description": "Что дают связи изображений и текста — и чего они не дают роботизированному контроллеру.",
+        "short_description": "Зрительно-языковая модель (VLM) — нейросетевая система с представлениями изображений и текста и обученными связями между ними.",
         "sections": [
           {
             "id": "idea",
-            "title": "Изображения и слова в одном семействе",
+            "title": "Что это такое",
             "paragraphs": [
-              "Зрительно-языковая модель учит связи картинок и языка. Одни модели располагают подходящие изображения и описания рядом в числовом пространстве. Другие генерируют текст с учётом визуальных данных. Название семейства не означает наличия всех возможностей и не включает действия робота автоматически."
+              "Зрительно-языковая модель — нейронная сеть или система сетей, в которой числовые представления картинок и слов связаны обучением на совместных примерах.",
+              "Например, одной модели показывают фотографию стола и несколько подписей, а она рассчитывает соответствие каждой подписи изображению. Другая архитектура может по той же фотографии сформировать описание словами. В обоих случаях обучение связывает визуальные признаки со словами; конкретный тип выхода задаётся устройством модели."
             ]
           },
           {
@@ -384,13 +391,14 @@
       },
       "children": {
         "title": "Зрительно-языковые модели",
-        "short_description": "Что дают связи изображений и текста — и чего они не дают роботизированному контроллеру.",
+        "short_description": "Зрительно-языковая модель — обученная программа, в которой изображения связаны со словами: у неё есть вычисления для картинок, для текста и связи между ними.",
         "sections": [
           {
             "id": "idea",
-            "title": "Соединить картинки и слова",
+            "title": "Что это такое",
             "paragraphs": [
-              "Зрительно-языковая модель учит закономерности между изображениями и языком. Она может помогать искать картинку по описанию или писать слова о картинке. Разные модели выполняют разные задачи. Это не значит, что они видят и понимают комнату точно как человек."
+              "Зрительно-языковая модель — обученная программа, в которой изображения связаны со словами: у неё есть вычисления для картинок, для текста и связи между ними.",
+              "Например, одной модели показывают фотографию стола и несколько подписей, а она рассчитывает соответствие каждой подписи изображению. Другая архитектура может по той же фотографии сформировать описание словами. В обоих случаях обучение связывает визуальные признаки со словами; конкретный тип выхода задаётся устройством модели."
             ]
           },
           {
@@ -427,13 +435,14 @@
     "ja": {
       "engineer": {
         "title": "視覚言語モデル",
-        "short_description": "画像と言葉を結びつけてできることと、制御に足りないもの。",
+        "short_description": "視覚言語モデル（VLM）は、画像と言語の表現と、その間の学習済みの関係を持つニューラルシステムです。",
         "sections": [
           {
             "id": "overview",
-            "title": "視覚と言語を結ぶモデル群",
+            "title": "どんな技術か",
             "paragraphs": [
-              "視覚言語モデル（Vision-Language Model、VLM）は、画像と言語の関係を学びます。表現を作るモデルと文章を生成するモデルは、異なるインターフェースを持ちます。説明の検索、文章生成、行動生成、校正された幾何の推定は同じ能力ではありません。実際に利用する機能と学習方法を明示します。"
+              "視覚言語モデル（VLM）は、視覚と言語の処理を学習によって結び付けたニューラルシステムです。画像と文章の対応する表現を作る構成や、視覚入力を条件に言語を生成する構成があります。",
+              "例えば、机の写真といくつかの説明文を入力し、どの文が画像に合うか計算するモデルがあります。別の構成では、写真から説明文を生成できます。どちらも学習で視覚特徴と言葉を結びますが、出力の種類は構成によって決まります。"
             ]
           },
           {
@@ -489,13 +498,14 @@
       },
       "business": {
         "title": "視覚言語モデル",
-        "short_description": "画像と言葉を結びつけてできることと、制御に足りないもの。",
+        "short_description": "視覚言語モデル（VLM）は、画像と言語の表現と、その間の学習済みの関係を持つニューラルシステムです。",
         "sections": [
           {
             "id": "purpose",
-            "title": "意味的な文脈を補う",
+            "title": "どんな技術か",
             "paragraphs": [
-              "VLMは画像と言葉を結び、物体や文章の作業指示を解釈するのに使えます。一部の規則記述を減らせても、完成したロボット制御器ではありません。説明文、照合スコア、物体の解釈、高水準の提案のうち、どの出力が必要かを最初に定めます。"
+              "視覚言語モデルは、画像と言語の入力を持ち、その内容のつながりを学習したAIモデルです。",
+              "例えば、机の写真といくつかの説明文を入力し、どの文が画像に合うか計算するモデルがあります。別の構成では、写真から説明文を生成できます。どちらも学習で視覚特徴と言葉を結びますが、出力の種類は構成によって決まります。"
             ]
           },
           {
@@ -530,13 +540,14 @@
       },
       "enthusiast": {
         "title": "視覚言語モデル",
-        "short_description": "画像と言葉を結びつけてできることと、制御に足りないもの。",
+        "short_description": "視覚言語モデル（VLM）は、画像と言語の表現と、その間の学習済みの関係を持つニューラルシステムです。",
         "sections": [
           {
             "id": "idea",
-            "title": "画像と言葉の関係",
+            "title": "どんな技術か",
             "paragraphs": [
-              "視覚言語モデルは、画像と言葉のつながりを学びます。合う画像と説明を数値空間で近づける方式も、画像を参照しながら文章を作る方式もあります。この名前だけで両方ができるとは限らず、ロボットの行動が自動的に含まれるわけでもありません。"
+              "視覚言語モデルは、画像と単語の数値表現を、組になった例で結び付けるネットワーク、またはその組み合わせです。",
+              "例えば、机の写真といくつかの説明文を入力し、どの文が画像に合うか計算するモデルがあります。別の構成では、写真から説明文を生成できます。どちらも学習で視覚特徴と言葉を結びますが、出力の種類は構成によって決まります。"
             ]
           },
           {
@@ -571,13 +582,14 @@
       },
       "children": {
         "title": "視覚言語モデル",
-        "short_description": "画像と言葉を結びつけてできることと、制御に足りないもの。",
+        "short_description": "視覚言語モデルは、画像の計算と言葉の計算、その間のつながりを持つ、学習済みのプログラムだ。",
         "sections": [
           {
             "id": "idea",
-            "title": "画像と言葉を結ぶ",
+            "title": "どんな技術か",
             "paragraphs": [
-              "視覚言語（しかくげんご）モデルは、画像と言葉の関係を学ぶ。説明に合う画像を探したり、画像について文を書いたりするモデルがあるよ。できる仕事はモデルによって違う。人とまったく同じように部屋を見て理解する意味ではないんだ。"
+              "視覚言語モデルは、画像の計算と言葉の計算、その間のつながりを持つ、学習済みのプログラムだ。",
+              "例えば、机の写真といくつかの説明文を入力し、どの文が画像に合うか計算するモデルがあります。別の構成では、写真から説明文を生成できます。どちらも学習で視覚特徴と言葉を結びますが、出力の種類は構成によって決まります。"
             ]
           },
           {

@@ -9,9 +9,9 @@
     "ja": "モデルに基づく計画"
   },
   "short_description": {
-    "ru": "Проверять возможные действия в модели и регулярно пересчитывать решение по реальным наблюдениям.",
-    "en": "Evaluate candidate actions in a model and replan from real observations.",
-    "ja": "モデルで行動候補を調べ、実際の観測から計画を更新する。"
+    "ru": "Планирование с моделью — способ выбора действий через расчёт их последствий в модели среды и сравнение результатов по заданному критерию.",
+    "en": "Model-based planning is action selection through simulated consequences and comparison under a specified objective.",
+    "ja": "モデルに基づく計画は、環境モデルで行動の結果を計算し、目的に沿って候補を比較する意思決定手法です。"
   },
   "related_technologies": [
     {
@@ -49,20 +49,21 @@
       "year": 2024
     }
   ],
-  "last_reviewed": "2026-11-13",
+  "last_reviewed": "2026-11-14",
   "content_status": "ready",
   "diagram": null,
   "localizations": {
     "en": {
       "engineer": {
         "title": "Model-based planning",
-        "short_description": "Evaluate candidate actions in a model and replan from real observations.",
+        "short_description": "Model-based planning is action selection through simulated consequences and comparison under a specified objective.",
         "sections": [
           {
             "id": "overview",
-            "title": "Choose actions by predicting their consequences",
+            "title": "What it is",
             "paragraphs": [
-              "Model-based planning evaluates candidate actions through a model before selecting what to execute. The model can be analytical, learned or hybrid. This is not necessarily reinforcement learning, and a planner does not need to be a neural network. State which dynamics, observations and constraints it assumes before discussing its performance."
+              "Model-based planning is an action-computation method combining an environment dynamics model, candidate solutions and an evaluation objective. The model may use specified equations or be learned from data.",
+              "For example, a robot needs to move a block without colliding with another object. The planner enters several push sequences into the model, obtains future positions and evaluates the alternatives. It executes the chosen plan's beginning, then a fresh observation allows replanning."
             ]
           },
           {
@@ -119,13 +120,14 @@
       },
       "business": {
         "title": "Model-based planning",
-        "short_description": "Evaluate candidate actions in a model and replan from real observations.",
+        "short_description": "Model-based planning is action selection through simulated consequences and comparison under a specified objective.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Compare options before the equipment acts",
+            "title": "What it is",
             "paragraphs": [
-              "Model-based planning predicts the consequences of several action choices and selects a useful one. Its model may come from known mechanics or from data. The first investment question is whether those predictions improve the actual decision. A neural model is not mandatory, and a well-understood analytical solution can be the simpler baseline."
+              "Model-based planning is a decision scheme with two main parts: a model calculates process evolution and an algorithm compares action options under an operating objective.",
+              "For example, a robot needs to move a block without colliding with another object. The planner enters several push sequences into the model, obtains future positions and evaluates the alternatives. It executes the chosen plan's beginning, then a fresh observation allows replanning."
             ]
           },
           {
@@ -160,13 +162,14 @@
       },
       "enthusiast": {
         "title": "Model-based planning",
-        "short_description": "Evaluate candidate actions in a model and replan from real observations.",
+        "short_description": "Model-based planning is action selection through simulated consequences and comparison under a specified objective.",
         "sections": [
           {
             "id": "idea",
-            "title": "Try several actions in a model",
+            "title": "What it is",
             "paragraphs": [
-              "A model-based planner predicts what might happen under different action sequences, scores those outcomes and chooses an action. The model can use familiar equations or learned relationships. Planning and learning are different activities: a planner can use a model without training a neural network or collecting reward-driven experience."
+              "Model-based planning is choosing actions through internal calculations of possible outcomes, using both a description of environmental changes and a rule for comparing futures.",
+              "For example, a robot needs to move a block without colliding with another object. The planner enters several push sequences into the model, obtains future positions and evaluates the alternatives. It executes the chosen plan's beginning, then a fresh observation allows replanning."
             ]
           },
           {
@@ -201,13 +204,14 @@
       },
       "children": {
         "title": "Model-based planning",
-        "short_description": "Evaluate candidate actions in a model and replan from real observations.",
+        "short_description": "Model-based planning is a way to make robot movement plans using a computer description of what could happen after different choices.",
         "sections": [
           {
             "id": "idea",
-            "title": "Compare a few possible moves",
+            "title": "What it is",
             "paragraphs": [
-              "Before moving a robot, a planner can use a model to predict several possible results. It then chooses a command using the goals and limits set by people. This is model-based planning. The model may use equations or learned patterns; it does not always require a neural network."
+              "Model-based planning is a way to make robot movement plans using a computer description of what could happen after different choices.",
+              "For example, a robot needs to move a block without colliding with another object. The planner enters several push sequences into the model, obtains future positions and evaluates the alternatives. It executes the chosen plan's beginning, then a fresh observation allows replanning."
             ]
           },
           {
@@ -244,13 +248,14 @@
     "ru": {
       "engineer": {
         "title": "Планирование с моделью",
-        "short_description": "Проверять возможные действия в модели и регулярно пересчитывать решение по реальным наблюдениям.",
+        "short_description": "Планирование с моделью — способ выбора действий через расчёт их последствий в модели среды и сравнение результатов по заданному критерию.",
         "sections": [
           {
             "id": "overview",
-            "title": "Выбирать по предсказанным последствиям",
+            "title": "Что это такое",
             "paragraphs": [
-              "Планирование с моделью оценивает кандидатные действия до их исполнения. Модель бывает аналитической, обученной или гибридной. Такой планировщик не обязательно использует RL и не обязан быть нейросетью. Перед обсуждением качества надо описать предполагаемые динамику, наблюдения и ограничения."
+              "Планирование с моделью — метод вычисления действий, в котором сочетаются модель изменения среды, множество кандидатных решений и критерий их оценки. Модель может быть задана уравнениями или обучена по данным.",
+              "Например, робот должен передвинуть кубик, не столкнув его с другим предметом. Планировщик подставляет в модель несколько последовательностей толчков, получает будущие положения и оценивает варианты. Выбранное начало плана исполняется, затем новое наблюдение позволяет пересчитать решение."
             ]
           },
           {
@@ -307,13 +312,14 @@
       },
       "business": {
         "title": "Планирование с моделью",
-        "short_description": "Проверять возможные действия в модели и регулярно пересчитывать решение по реальным наблюдениям.",
+        "short_description": "Планирование с моделью — способ выбора действий через расчёт их последствий в модели среды и сравнение результатов по заданному критерию.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Сравнить варианты до движения",
+            "title": "Что это такое",
             "paragraphs": [
-              "Планировщик с моделью предсказывает последствия разных команд и выбирает полезный вариант. Модель может опираться на известную механику или данные. Сначала нужно понять, улучшают ли прогнозы настоящее решение. Нейросеть не обязательна; понятный аналитический вариант бывает более простым начальным решением."
+              "Планирование с моделью — схема принятия решений из двух основных частей: модель рассчитывает развитие процесса, а алгоритм сравнивает варианты действий по рабочему критерию.",
+              "Например, робот должен передвинуть кубик, не столкнув его с другим предметом. Планировщик подставляет в модель несколько последовательностей толчков, получает будущие положения и оценивает варианты. Выбранное начало плана исполняется, затем новое наблюдение позволяет пересчитать решение."
             ]
           },
           {
@@ -348,13 +354,14 @@
       },
       "enthusiast": {
         "title": "Планирование с моделью",
-        "short_description": "Проверять возможные действия в модели и регулярно пересчитывать решение по реальным наблюдениям.",
+        "short_description": "Планирование с моделью — способ выбора действий через расчёт их последствий в модели среды и сравнение результатов по заданному критерию.",
         "sections": [
           {
             "id": "idea",
-            "title": "Попробовать действия внутри модели",
+            "title": "Что это такое",
             "paragraphs": [
-              "Планировщик предсказывает результаты разных последовательностей, оценивает их и выбирает команду. Модель может использовать привычные уравнения или выученные связи. Планирование и обучение — разные занятия: для использования модели не обязательно обучать нейросеть или собирать опыт по награде."
+              "Планирование с моделью — способ выбирать действия по внутреннему расчёту возможных результатов. В нём есть описание изменений среды и правило сравнения будущих вариантов.",
+              "Например, робот должен передвинуть кубик, не столкнув его с другим предметом. Планировщик подставляет в модель несколько последовательностей толчков, получает будущие положения и оценивает варианты. Выбранное начало плана исполняется, затем новое наблюдение позволяет пересчитать решение."
             ]
           },
           {
@@ -389,13 +396,14 @@
       },
       "children": {
         "title": "Планирование с моделью",
-        "short_description": "Проверять возможные действия в модели и регулярно пересчитывать решение по реальным наблюдениям.",
+        "short_description": "Планирование с моделью — способ составить движения робота с помощью компьютерного описания того, что может произойти после каждого варианта.",
         "sections": [
           {
             "id": "idea",
-            "title": "Сравнить несколько движений",
+            "title": "Что это такое",
             "paragraphs": [
-              "Перед движением робота планировщик может предсказать в модели несколько результатов. Затем он выбирает команду по заданным людьми целям и ограничениям. Это планирование с моделью. Внутри бывают уравнения или выученные закономерности — нейросеть нужна не всегда."
+              "Планирование с моделью — способ составить движения робота с помощью компьютерного описания того, что может произойти после каждого варианта.",
+              "Например, робот должен передвинуть кубик, не столкнув его с другим предметом. Планировщик подставляет в модель несколько последовательностей толчков, получает будущие положения и оценивает варианты. Выбранное начало плана исполняется, затем новое наблюдение позволяет пересчитать решение."
             ]
           },
           {
@@ -432,13 +440,14 @@
     "ja": {
       "engineer": {
         "title": "モデルに基づく計画",
-        "short_description": "モデルで行動候補を調べ、実際の観測から計画を更新する。",
+        "short_description": "モデルに基づく計画は、環境モデルで行動の結果を計算し、目的に沿って候補を比較する意思決定手法です。",
         "sections": [
           {
             "id": "overview",
-            "title": "結果をモデルで比べて選ぶ",
+            "title": "どんな技術か",
             "paragraphs": [
-              "モデルに基づく計画は、実行前に候補の行動をモデルで評価します。モデルは解析的、学習型、複合型のいずれでも構いません。強化学習を必須とせず、計画器もニューラルネットワークとは限りません。前提とする動力学、観測、制約を明示してから性能を議論します。"
+              "モデルに基づく計画は、環境変化のモデル、候補の行動、評価基準を組み合わせて行動を計算する手法です。モデルは方程式で与えることも、データから学習することもできます。",
+              "例えば、積み木を別の物にぶつけず移す課題です。計画器は、いくつかの押し方の列をモデルへ入力し、先の位置を求めて候補を評価します。選んだ計画の初めを実行し、新しい観測から計画を更新します。"
             ]
           },
           {
@@ -495,13 +504,14 @@
       },
       "business": {
         "title": "モデルに基づく計画",
-        "short_description": "モデルで行動候補を調べ、実際の観測から計画を更新する。",
+        "short_description": "モデルに基づく計画は、環境モデルで行動の結果を計算し、目的に沿って候補を比較する意思決定手法です。",
         "sections": [
           {
             "id": "purpose",
-            "title": "設備が動く前に比べる",
+            "title": "どんな技術か",
             "paragraphs": [
-              "モデルを使い、複数の指令の結果を予測して選ぶ方法です。既知の力学を使うか、データから学ぶかは別の選択です。予測が実際の判断を改善するかを最初に確認します。ニューラルモデルは必須でなく、分かりやすい解析方式が基準になる場合もあります。"
+              "モデルに基づく計画は、工程の変化を計算するモデルと、業務の基準で操作案を比較するアルゴリズムを組み合わせた意思決定方式です。",
+              "例えば、積み木を別の物にぶつけず移す課題です。計画器は、いくつかの押し方の列をモデルへ入力し、先の位置を求めて候補を評価します。選んだ計画の初めを実行し、新しい観測から計画を更新します。"
             ]
           },
           {
@@ -536,13 +546,14 @@
       },
       "enthusiast": {
         "title": "モデルに基づく計画",
-        "short_description": "モデルで行動候補を調べ、実際の観測から計画を更新する。",
+        "short_description": "モデルに基づく計画は、環境モデルで行動の結果を計算し、目的に沿って候補を比較する意思決定手法です。",
         "sections": [
           {
             "id": "idea",
-            "title": "モデルの中で候補を試す",
+            "title": "どんな技術か",
             "paragraphs": [
-              "行動列ごとの結果を予測し、評価して指令を選ぶのがモデルに基づく計画です。モデルは方程式でも、学習した関係でも構いません。計画と学習は別の活動で、モデルを使うからといって必ずニューラル学習や報酬による訓練を行うわけではありません。"
+              "モデルに基づく計画は、環境がどう変わるかの記述と、将来の結果を比べる規則を使い、行動を選ぶ方法です。",
+              "例えば、積み木を別の物にぶつけず移す課題です。計画器は、いくつかの押し方の列をモデルへ入力し、先の位置を求めて候補を評価します。選んだ計画の初めを実行し、新しい観測から計画を更新します。"
             ]
           },
           {
@@ -577,13 +588,14 @@
       },
       "children": {
         "title": "モデルに基づく計画",
-        "short_description": "モデルで行動候補を調べ、実際の観測から計画を更新する。",
+        "short_description": "モデルに基づく計画は、違う動きをした後に何が起こりそうかを、コンピューター内の説明を使って計算し、動き方を組み立てる方法だ。",
         "sections": [
           {
             "id": "idea",
-            "title": "いくつかの案を比べる",
+            "title": "どんな技術か",
             "paragraphs": [
-              "ロボットが動く前に、モデルを使って別々の結果を予測（よそく）できる。計画器は人が決めた目標や制限で案を比べ、指令を選ぶ。モデルには方程式や学んだ規則を使えるので、ニューラルネットワークがいつも必要とは限らないよ。"
+              "モデルに基づく計画は、違う動きをした後に何が起こりそうかを、コンピューター内の説明を使って計算し、動き方を組み立てる方法だ。",
+              "例えば、積み木を別の物にぶつけず移す課題です。計画器は、いくつかの押し方の列をモデルへ入力し、先の位置を求めて候補を評価します。選んだ計画の初めを実行し、新しい観測から計画を更新します。"
             ]
           },
           {

@@ -9,9 +9,9 @@
     "ja": "Diffusion Policy"
   },
   "short_description": {
-    "ru": "Как удаление шума превращается в последовательность действий робота.",
-    "en": "How denoising produces a sequence of robot actions.",
-    "ja": "ノイズを取り除く計算から、ロボットの動作列を作る。"
+    "ru": "Diffusion Policy — модель действий робота с генератором, который постепенно преобразует числовой шум в последовательность команд.",
+    "en": "Diffusion Policy is a robot-action model with a generator that gradually transforms numerical noise into a command sequence.",
+    "ja": "Diffusion Policyは、数値のノイズを段階的に行動列へ変える生成器を持つ、ロボットの方策モデルです。"
   },
   "related_technologies": [
     {
@@ -65,20 +65,21 @@
       "year": 2023
     }
   ],
-  "last_reviewed": "2026-11-13",
+  "last_reviewed": "2026-11-14",
   "content_status": "ready",
   "diagram": "diffusion",
   "localizations": {
     "en": {
       "engineer": {
         "title": "Diffusion Policy",
-        "short_description": "How denoising produces a sequence of robot actions.",
+        "short_description": "Diffusion Policy is a robot-action model with a generator that gradually transforms numerical noise into a command sequence.",
         "sections": [
           {
             "id": "overview",
-            "title": "A conditional distribution over actions",
+            "title": "What it is",
             "paragraphs": [
-              "Diffusion Policy learns to generate action sequences conditioned on recent observations. The diffusion process runs over action coordinates, not future images. Its output might contain end-effector poses, joint targets or another dataset-defined representation; a separate execution stack converts that representation into robot motion."
+              "Diffusion Policy is a conditional generative robot-policy model. An action sequence is a numerical array, and a trained network progressively transforms initial noise into that array using observations.",
+              "Suppose a gripper needs to approach a block. Images and robot state condition generation while the network refines an array of future commands. The resulting sequence can describe several movements toward the block; a controller executes its beginning and new measurements support another calculation."
             ]
           },
           {
@@ -134,13 +135,14 @@
       },
       "business": {
         "title": "Diffusion Policy",
-        "short_description": "How denoising produces a sequence of robot actions.",
+        "short_description": "Diffusion Policy is a robot-action model with a generator that gradually transforms numerical noise into a command sequence.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Several ways to perform one operation",
+            "title": "What it is",
             "paragraphs": [
-              "A task may admit different valid motions, such as approaching an object from either side. Diffusion Policy can represent such alternatives rather than reducing them to an average that may hit the object. This is useful for manipulation with demonstrations, but it does not automatically extend the policy to unseen objects or operating conditions."
+              "Diffusion Policy is an action-selection model with a generative network that starts with a noisy numerical sample and forms commands for the observed situation.",
+              "Suppose a gripper needs to approach a block. Images and robot state condition generation while the network refines an array of future commands. The resulting sequence can describe several movements toward the block; a controller executes its beginning and new measurements support another calculation."
             ]
           },
           {
@@ -175,13 +177,14 @@
       },
       "enthusiast": {
         "title": "Diffusion Policy",
-        "short_description": "How denoising produces a sequence of robot actions.",
+        "short_description": "Diffusion Policy is a robot-action model with a generator that gradually transforms numerical noise into a command sequence.",
         "sections": [
           {
             "id": "idea",
-            "title": "Starting with a scrambled sequence",
+            "title": "What it is",
             "paragraphs": [
-              "Diffusion Policy begins with numerical noise shaped like a possible sequence of robot actions. A learned network repeatedly revises that sequence while looking at the current observations. The result is a candidate movement. This resembles denoising in image generation, but the generated object here is a series of action coordinates, not a picture."
+              "Diffusion Policy is a neural robot-motion model built around gradual refinement of numbers describing future commands.",
+              "Suppose a gripper needs to approach a block. Images and robot state condition generation while the network refines an array of future commands. The resulting sequence can describe several movements toward the block; a controller executes its beginning and new measurements support another calculation."
             ]
           },
           {
@@ -216,13 +219,14 @@
       },
       "children": {
         "title": "Diffusion Policy",
-        "short_description": "How denoising produces a sequence of robot actions.",
+        "short_description": "Diffusion Policy is a program with a neural network that turns random numbers into movement commands over several calculation steps.",
         "sections": [
           {
             "id": "idea",
-            "title": "Numbers instead of a noisy picture",
+            "title": "What it is",
             "paragraphs": [
-              "You may have seen software turn a noisy picture into a clearer one. Diffusion Policy uses a related learning idea, but works on numbers describing robot commands. It starts with a scrambled group of those numbers and gradually changes them into a possible short movement."
+              "Diffusion Policy is a program with a neural network that turns random numbers into movement commands over several calculation steps.",
+              "Suppose a gripper needs to approach a block. Images and robot state condition generation while the network refines an array of future commands. The resulting sequence can describe several movements toward the block; a controller executes its beginning and new measurements support another calculation."
             ]
           },
           {
@@ -259,13 +263,14 @@
     "ru": {
       "engineer": {
         "title": "Diffusion Policy",
-        "short_description": "Как удаление шума превращается в последовательность действий робота.",
+        "short_description": "Diffusion Policy — модель действий робота с генератором, который постепенно преобразует числовой шум в последовательность команд.",
         "sections": [
           {
             "id": "overview",
-            "title": "Условное распределение действий",
+            "title": "Что это такое",
             "paragraphs": [
-              "Diffusion Policy генерирует последовательности действий с учётом недавних наблюдений. Диффузионный процесс работает в пространстве координат действий, а не будущих изображений. Выход может содержать позы рабочего органа, суставные цели или другое принятое в данных представление. Перевод этого представления в движение остаётся задачей исполнительного стека."
+              "Diffusion Policy — условная генеративная модель политики робота. В ней последовательность действий представлена массивом чисел, а обученная нейросеть пошагово преобразует начальный шум в этот массив с учётом наблюдений.",
+              "Допустим, захват должен подойти к кубику. Изображение и состояние робота задают условия генерации, а сеть уточняет массив будущих команд. Готовая последовательность может описывать несколько движений к кубику; контроллер исполняет её начало, затем новые измерения используются для следующего расчёта."
             ]
           },
           {
@@ -321,13 +326,14 @@
       },
       "business": {
         "title": "Diffusion Policy",
-        "short_description": "Как удаление шума превращается в последовательность действий робота.",
+        "short_description": "Diffusion Policy — модель действий робота с генератором, который постепенно преобразует числовой шум в последовательность команд.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Несколько способов выполнить операцию",
+            "title": "Что это такое",
             "paragraphs": [
-              "К одному предмету можно подойти разными допустимыми движениями. Diffusion Policy способна сохранять такие варианты, а не сводить их к среднему, которое попадёт в препятствие. Это полезный кандидат для манипуляции по демонстрациям. Однако наличие нескольких вариантов не означает готовности к неизвестным предметам и условиям."
+              "Diffusion Policy — модель выбора действий с генеративной нейросетью, которая формирует последовательность команд по текущей обстановке, начиная с шумового числового образца.",
+              "Допустим, захват должен подойти к кубику. Изображение и состояние робота задают условия генерации, а сеть уточняет массив будущих команд. Готовая последовательность может описывать несколько движений к кубику; контроллер исполняет её начало, затем новые измерения используются для следующего расчёта."
             ]
           },
           {
@@ -362,13 +368,14 @@
       },
       "enthusiast": {
         "title": "Diffusion Policy",
-        "short_description": "Как удаление шума превращается в последовательность действий робота.",
+        "short_description": "Diffusion Policy — модель действий робота с генератором, который постепенно преобразует числовой шум в последовательность команд.",
         "sections": [
           {
             "id": "idea",
-            "title": "Начать с перемешанных действий",
+            "title": "Что это такое",
             "paragraphs": [
-              "Diffusion Policy начинает с числового шума, имеющего форму последовательности команд робота. Обученная сеть несколько раз исправляет эту последовательность с учётом наблюдений. Так получается кандидат движения. Идея похожа на удаление шума при генерации изображений, но результат здесь — координаты действий, а не картинка."
+              "Diffusion Policy — нейросетевая модель движений робота, устроенная как постепенное уточнение чисел, описывающих будущие команды.",
+              "Допустим, захват должен подойти к кубику. Изображение и состояние робота задают условия генерации, а сеть уточняет массив будущих команд. Готовая последовательность может описывать несколько движений к кубику; контроллер исполняет её начало, затем новые измерения используются для следующего расчёта."
             ]
           },
           {
@@ -403,13 +410,14 @@
       },
       "children": {
         "title": "Diffusion Policy",
-        "short_description": "Как удаление шума превращается в последовательность действий робота.",
+        "short_description": "Diffusion Policy — программа с нейронной сетью, которая за несколько вычислительных шагов превращает случайные числа в команды движения.",
         "sections": [
           {
             "id": "idea",
-            "title": "Шум не в картинке, а в командах",
+            "title": "Что это такое",
             "paragraphs": [
-              "Возможно, ты видел, как программа превращает шумную картинку в более ясную. Diffusion Policy применяет похожую идею к числам, описывающим команды робота. Она начинает с перемешанной группы чисел и постепенно превращает её в вариант короткого движения."
+              "Diffusion Policy — программа с нейронной сетью, которая за несколько вычислительных шагов превращает случайные числа в команды движения.",
+              "Допустим, захват должен подойти к кубику. Изображение и состояние робота задают условия генерации, а сеть уточняет массив будущих команд. Готовая последовательность может описывать несколько движений к кубику; контроллер исполняет её начало, затем новые измерения используются для следующего расчёта."
             ]
           },
           {
@@ -446,13 +454,14 @@
     "ja": {
       "engineer": {
         "title": "Diffusion Policy",
-        "short_description": "ノイズを取り除く計算から、ロボットの動作列を作る。",
+        "short_description": "Diffusion Policyは、数値のノイズを段階的に行動列へ変える生成器を持つ、ロボットの方策モデルです。",
         "sections": [
           {
             "id": "overview",
-            "title": "行動列の条件付き分布",
+            "title": "どんな技術か",
             "paragraphs": [
-              "Diffusion Policyは、最近の観測を条件に行動列を生成します。拡散過程が扱うのは行動の数値であり、未来の画像ではありません。出力を関節目標にするか手先の姿勢にするかはデータの定義に依存し、実際の駆動は別の制御系が担当します。"
+              "Diffusion Policyは、観測を条件にする生成型のロボット方策モデルです。行動列を数値の配列で表し、学習したネットワークで初期ノイズをその配列へ段階的に変えます。",
+              "積み木へハンドを近づける場面なら、画像と機体の状態を条件として、将来の指令の配列を整えます。得られた列には複数の動きが含まれます。その初めを制御器が実行し、新しい測定を使って次の計算を行います。"
             ]
           },
           {
@@ -508,13 +517,14 @@
       },
       "business": {
         "title": "Diffusion Policy",
-        "short_description": "ノイズを取り除く計算から、ロボットの動作列を作る。",
+        "short_description": "Diffusion Policyは、数値のノイズを段階的に行動列へ変える生成器を持つ、ロボットの方策モデルです。",
         "sections": [
           {
             "id": "purpose",
-            "title": "動作の選択肢を表す",
+            "title": "どんな技術か",
             "paragraphs": [
-              "対象へ左から近づくか、右から近づくかという複数の有効な動作を表現できる点が特徴です。二つを平均して障害物に当たる動作を出す問題を避けられる可能性があります。ただし、未知の物体や条件にも対応できるという意味ではありません。"
+              "Diffusion Policyは、ノイズを含む数値から始め、観測した状況に合う指令列を生成する行動選択モデルです。",
+              "積み木へハンドを近づける場面なら、画像と機体の状態を条件として、将来の指令の配列を整えます。得られた列には複数の動きが含まれます。その初めを制御器が実行し、新しい測定を使って次の計算を行います。"
             ]
           },
           {
@@ -549,13 +559,14 @@
       },
       "enthusiast": {
         "title": "Diffusion Policy",
-        "short_description": "ノイズを取り除く計算から、ロボットの動作列を作る。",
+        "short_description": "Diffusion Policyは、数値のノイズを段階的に行動列へ変える生成器を持つ、ロボットの方策モデルです。",
         "sections": [
           {
             "id": "idea",
-            "title": "ばらばらの数値から動作へ",
+            "title": "どんな技術か",
             "paragraphs": [
-              "Diffusion Policyは、動作列と同じ形をした数値のノイズから始めます。ネットワークが観測を見ながら何度も修正すると、候補となる動作列になります。画像生成のノイズ除去に似た考え方ですが、作るものは絵ではなくロボットへの行動指令です。"
+              "Diffusion Policyは、これからの動きを表す数値を、段階的に整えるニューラルモデルです。",
+              "積み木へハンドを近づける場面なら、画像と機体の状態を条件として、将来の指令の配列を整えます。得られた列には複数の動きが含まれます。その初めを制御器が実行し、新しい測定を使って次の計算を行います。"
             ]
           },
           {
@@ -590,13 +601,14 @@
       },
       "children": {
         "title": "Diffusion Policy",
-        "short_description": "ノイズを取り除く計算から、ロボットの動作列を作る。",
+        "short_description": "Diffusion Policyは、ばらばらな数を何回かの計算で動きの指令へ変える、ニューラルネットワークを使ったプログラムだ。",
         "sections": [
           {
             "id": "idea",
-            "title": "画像ではなく指令のノイズ",
+            "title": "どんな技術か",
             "paragraphs": [
-              "ざらざらした画像を、コンピューターが少しずつはっきりさせる例を見たことはあるかな。Diffusion Policyは、似た学び方をロボットの指令を表す数値に使う。ばらばらの数値から、短い動作の候補を作っていくんだ。"
+              "Diffusion Policyは、ばらばらな数を何回かの計算で動きの指令へ変える、ニューラルネットワークを使ったプログラムだ。",
+              "積み木へハンドを近づける場面なら、画像と機体の状態を条件として、将来の指令の配列を整えます。得られた列には複数の動きが含まれます。その初めを制御器が実行し、新しい測定を使って次の計算を行います。"
             ]
           },
           {

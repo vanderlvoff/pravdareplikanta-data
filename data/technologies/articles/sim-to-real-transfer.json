@@ -9,9 +9,9 @@
     "ja": "シミュレーションから実機への転移"
   },
   "short_description": {
-    "ru": "Почему успех в симуляторе не гарантирует работу в реальном мире.",
-    "en": "Why success in a simulator does not guarantee success in the physical world.",
-    "ja": "シミュレーターで成功しても、実機で動くとは限らない理由。"
+    "ru": "Sim-to-real — процесс переноса решения из компьютерной симуляции на физического робота с согласованием модели, датчиков и управления.",
+    "en": "Sim-to-real is transferring a solution from simulation to a physical robot while aligning models, sensing and control.",
+    "ja": "Sim-to-realは、モデル、計測、制御の対応を整えながら、シミュレーションの成果を実機へ移す工程です。"
   },
   "related_technologies": [
     {
@@ -54,20 +54,21 @@
       "year": 2021
     }
   ],
-  "last_reviewed": "2026-11-13",
+  "last_reviewed": "2026-11-14",
   "content_status": "ready",
   "diagram": null,
   "localizations": {
     "en": {
       "engineer": {
         "title": "Sim-to-real transfer",
-        "short_description": "Why success in a simulator does not guarantee success in the physical world.",
+        "short_description": "Sim-to-real is transferring a solution from simulation to a physical robot while aligning models, sensing and control.",
         "sections": [
           {
             "id": "overview",
-            "title": "Transfer is a validation problem, not a file copy",
+            "title": "What it is",
             "paragraphs": [
-              "Sim-to-real transfer connects learning or design in a simulator with operation on a physical robot. A policy that scores well in simulation can fail because observations, dynamics or timing differ. The goal is a validated operating envelope on the real system, not simply the ability to load the same model weights."
+              "Sim-to-real transfer is the engineering process of moving a policy, model or other solution from simulation into a physical system. It includes aligning observation and action interfaces, addressing environment differences and testing real equipment.",
+              "For example, a walking policy is trained on a simulated four-legged robot. The same input and command meanings are then connected to the physical robot's sensors and actuators. Engineers measure differences in delays, friction and load, adjust modeling or training and test movements on the equipment in stages."
             ]
           },
           {
@@ -123,13 +124,14 @@
       },
       "business": {
         "title": "Sim-to-real transfer",
-        "short_description": "Why success in a simulator does not guarantee success in the physical world.",
+        "short_description": "Sim-to-real is transferring a solution from simulation to a physical robot while aligning models, sensing and control.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Use simulation without confusing it with reality",
+            "title": "What it is",
             "paragraphs": [
-              "Sim-to-real aims to reuse work done in a simulator on actual equipment. It can reduce some physical experimentation and help prepare a policy or perception system. Its business value depends on the real transfer result. A successful simulated task is an intermediate development result, not an accepted production capability."
+              "Sim-to-real is preparing a solution developed or trained in a simulated environment for use on physical equipment.",
+              "For example, a walking policy is trained on a simulated four-legged robot. The same input and command meanings are then connected to the physical robot's sensors and actuators. Engineers measure differences in delays, friction and load, adjust modeling or training and test movements on the equipment in stages."
             ]
           },
           {
@@ -164,13 +166,14 @@
       },
       "enthusiast": {
         "title": "Sim-to-real transfer",
-        "short_description": "Why success in a simulator does not guarantee success in the physical world.",
+        "short_description": "Sim-to-real is transferring a solution from simulation to a physical robot while aligning models, sensing and control.",
         "sections": [
           {
             "id": "idea",
-            "title": "A virtual lesson meets a real machine",
+            "title": "What it is",
             "paragraphs": [
-              "A simulator can let a robot try many movements before physical testing. Sim-to-real transfer asks whether what was learned there still works on the actual machine. Loading the model is only the beginning. Virtual pictures, motors and contacts can differ from real observations and motion."
+              "Sim-to-real is transferring the result of virtual experiments to a real robot while checking the correspondence between the two environments.",
+              "For example, a walking policy is trained on a simulated four-legged robot. The same input and command meanings are then connected to the physical robot's sensors and actuators. Engineers measure differences in delays, friction and load, adjust modeling or training and test movements on the equipment in stages."
             ]
           },
           {
@@ -205,13 +208,14 @@
       },
       "children": {
         "title": "Sim-to-real transfer",
-        "short_description": "Why success in a simulator does not guarantee success in the physical world.",
+        "short_description": "Sim-to-real is the work of taking a movement program from a computer model to a physical robot and checking it on the real machine.",
         "sections": [
           {
             "id": "idea",
-            "title": "Practicing in a virtual world",
+            "title": "What it is",
             "paragraphs": [
-              "Engineers can let a simulated robot practice many movements on a computer. Sim-to-real transfer means trying to use that work on a real robot. The virtual lesson may help, but the real world does not have to behave exactly like the computer model."
+              "Sim-to-real is the work of taking a movement program from a computer model to a physical robot and checking it on the real machine.",
+              "For example, a walking policy is trained on a simulated four-legged robot. The same input and command meanings are then connected to the physical robot's sensors and actuators. Engineers measure differences in delays, friction and load, adjust modeling or training and test movements on the equipment in stages."
             ]
           },
           {
@@ -248,13 +252,14 @@
     "ru": {
       "engineer": {
         "title": "Перенос из симуляции на робота",
-        "short_description": "Почему успех в симуляторе не гарантирует работу в реальном мире.",
+        "short_description": "Sim-to-real — процесс переноса решения из компьютерной симуляции на физического робота с согласованием модели, датчиков и управления.",
         "sections": [
           {
             "id": "overview",
-            "title": "Разрыв между симуляцией и роботом",
+            "title": "Что это такое",
             "paragraphs": [
-              "Sim-to-real transfer — перенос поведения, обученного в симуляторе, на физическое устройство. Это инженерная процедура, а не отдельная архитектура сети. Политика может быть обучена подкреплением, на демонстрациях или комбинированным способом. Успешное выполнение в виртуальной сцене ещё не доказывает работоспособность на реальном роботе.",
+              "Sim-to-real transfer — инженерный процесс переноса политики, модели или другого решения из симуляции в физическую систему. Его части — согласование интерфейсов наблюдений и действий, учёт различий сред и испытания на реальном оборудовании.",
+              "Например, политику ходьбы обучают на виртуальном четырёхногом роботе. Затем те же значения входов и команд связывают с датчиками и приводами реальной машины. Инженеры измеряют различия в задержках, трении и нагрузке, настраивают модель или обучение и поэтапно проверяют движения на оборудовании.",
               "Разрыв включает визуальные различия, ошибки динамики и несовпадение интерфейсов. Масса, трение, жёсткость контакта, люфт, задержка привода и шум датчиков влияют на замкнутый контур. Неверные единицы измерения или порядок суставов способны разрушить перенос даже при хорошем совпадении физики."
             ]
           },
@@ -315,13 +320,14 @@
       },
       "business": {
         "title": "Перенос из симуляции на робота",
-        "short_description": "Почему успех в симуляторе не гарантирует работу в реальном мире.",
+        "short_description": "Sim-to-real — процесс переноса решения из компьютерной симуляции на физического робота с согласованием модели, датчиков и управления.",
         "sections": [
           {
             "id": "overview",
-            "title": "Что получает проект",
+            "title": "Что это такое",
             "paragraphs": [
-              "Перенос из симуляции в реальность позволяет часть обучения и перебора условий выполнять без постоянной занятости физического робота. Это может сократить износ и облегчить повторяемые эксперименты. Покупка симулятора или демонстрация виртуального успеха сами по себе не означают готовности к внедрению."
+              "Sim-to-real — процесс подготовки к применению на настоящем оборудовании решения, разработанного или обученного в компьютерной модели среды.",
+              "Например, политику ходьбы обучают на виртуальном четырёхногом роботе. Затем те же значения входов и команд связывают с датчиками и приводами реальной машины. Инженеры измеряют различия в задержках, трении и нагрузке, настраивают модель или обучение и поэтапно проверяют движения на оборудовании."
             ]
           },
           {
@@ -356,13 +362,14 @@
       },
       "enthusiast": {
         "title": "Перенос из симуляции на робота",
-        "short_description": "Почему успех в симуляторе не гарантирует работу в реальном мире.",
+        "short_description": "Sim-to-real — процесс переноса решения из компьютерной симуляции на физического робота с согласованием модели, датчиков и управления.",
         "sections": [
           {
             "id": "overview",
-            "title": "Почему виртуальный навык не сразу работает",
+            "title": "Что это такое",
             "paragraphs": [
-              "В симуляторе робот может выполнить миллионы попыток, не ломая детали. Но настоящая поверхность скользит иначе, мотор запаздывает, а камера видит другое освещение. Sim-to-real — работа по переносу навыка через этот разрыв. Речь идёт о согласовании поведения с физическим устройством, а не о простом копировании файла сети."
+              "Sim-to-real — перенос результата виртуальных экспериментов на реального робота с проверкой того, как соотносятся обе среды.",
+              "Например, политику ходьбы обучают на виртуальном четырёхногом роботе. Затем те же значения входов и команд связывают с датчиками и приводами реальной машины. Инженеры измеряют различия в задержках, трении и нагрузке, настраивают модель или обучение и поэтапно проверяют движения на оборудовании."
             ]
           },
           {
@@ -397,13 +404,14 @@
       },
       "children": {
         "title": "Перенос из симуляции на робота",
-        "short_description": "Почему успех в симуляторе не гарантирует работу в реальном мире.",
+        "short_description": "Sim-to-real — работа по переносу программы движений из компьютерной модели на настоящего робота и её проверке на реальной машине.",
         "sections": [
           {
             "id": "overview",
-            "title": "Из виртуального опыта в настоящую комнату",
+            "title": "Что это такое",
             "paragraphs": [
-              "Представь программу, в которой робот пробует идти или брать кубик. Там можно повторять попытки без поломки настоящей машины. Но перенести полученное правило на реального робота бывает трудно. Эту задачу называют sim-to-real — из симуляции в реальность."
+              "Sim-to-real — работа по переносу программы движений из компьютерной модели на настоящего робота и её проверке на реальной машине.",
+              "Например, политику ходьбы обучают на виртуальном четырёхногом роботе. Затем те же значения входов и команд связывают с датчиками и приводами реальной машины. Инженеры измеряют различия в задержках, трении и нагрузке, настраивают модель или обучение и поэтапно проверяют движения на оборудовании."
             ]
           },
           {
@@ -440,13 +448,14 @@
     "ja": {
       "engineer": {
         "title": "シミュレーションから実機への転移",
-        "short_description": "シミュレーターで成功しても、実機で動くとは限らない理由。",
+        "short_description": "Sim-to-realは、モデル、計測、制御の対応を整えながら、シミュレーションの成果を実機へ移す工程です。",
         "sections": [
           {
             "id": "overview",
-            "title": "シミュレータと実機の差",
+            "title": "どんな技術か",
             "paragraphs": [
-              "Sim-to-realは、シミュレーションで得た方策を実機へ移すための工程であり、特定のネットワーク構造ではない。方策は強化学習や模倣学習で訓練できる。仮想環境での成功は、実機での成功や安全性を直接保証しない。"
+              "Sim-to-realは、方策やモデルなどをシミュレーションから実機へ移す工学的な工程です。観測と行動のインタフェースを合わせ、環境の差を扱い、実機で試験する作業が含まれます。",
+              "例えば、四脚ロボットの歩行方策を仮想環境で学習します。同じ意味の入力と指令を、実機のセンサや駆動部へ接続します。遅延、摩擦、荷重の差を測り、モデルや訓練を調整しながら、段階的に実機の動きを試します。"
             ]
           },
           {
@@ -504,13 +513,14 @@
       },
       "business": {
         "title": "シミュレーションから実機への転移",
-        "short_description": "シミュレーターで成功しても、実機で動くとは限らない理由。",
+        "short_description": "Sim-to-realは、モデル、計測、制御の対応を整えながら、シミュレーションの成果を実機へ移す工程です。",
         "sections": [
           {
             "id": "overview",
-            "title": "何を移すのか",
+            "title": "どんな技術か",
             "paragraphs": [
-              "Sim-to-realは、仮想環境で訓練したロボットの振る舞いを実機へ移す工程である。設備を占有する試行や摩耗を減らせる可能性があるが、シミュレータを導入しただけで実用化が終わるわけではない。"
+              "Sim-to-realは、仮想環境で開発・訓練した仕組みを、実際の設備で使うために準備し検証する工程です。",
+              "例えば、四脚ロボットの歩行方策を仮想環境で学習します。同じ意味の入力と指令を、実機のセンサや駆動部へ接続します。遅延、摩擦、荷重の差を測り、モデルや訓練を調整しながら、段階的に実機の動きを試します。"
             ]
           },
           {
@@ -545,13 +555,14 @@
       },
       "enthusiast": {
         "title": "シミュレーションから実機への転移",
-        "short_description": "シミュレーターで成功しても、実機で動くとは限らない理由。",
+        "short_description": "Sim-to-realは、モデル、計測、制御の対応を整えながら、シミュレーションの成果を実機へ移す工程です。",
         "sections": [
           {
             "id": "overview",
-            "title": "仮想世界だけでは足りない",
+            "title": "どんな技術か",
             "paragraphs": [
-              "仮想ロボットは何度転んでも部品を壊さない。そのため大量の訓練に便利だが、実際の床、モータ、カメラはモデルと少しずつ違う。Sim-to-realは、この違いを調べて訓練済みの方策を実機で使えるようにする作業である。"
+              "Sim-to-realは、仮想実験の成果を実際のロボットへ移し、二つの環境の対応を確かめる作業です。",
+              "例えば、四脚ロボットの歩行方策を仮想環境で学習します。同じ意味の入力と指令を、実機のセンサや駆動部へ接続します。遅延、摩擦、荷重の差を測り、モデルや訓練を調整しながら、段階的に実機の動きを試します。"
             ]
           },
           {
@@ -586,13 +597,14 @@
       },
       "children": {
         "title": "シミュレーションから実機への転移",
-        "short_description": "シミュレーターで成功しても、実機で動くとは限らない理由。",
+        "short_description": "Sim-to-realは、画面の中のロボットで使った動作プログラムを、本物へ移し、実際の機械で確かめる作業だ。",
         "sections": [
           {
             "id": "overview",
-            "title": "画面から本物の部屋へ",
+            "title": "どんな技術か",
             "paragraphs": [
-              "画面の中のロボットなら、歩く練習を何度しても本物の部品はこわれない。でも、その動き方を本物の機械へ移すのは簡単ではない。この問題をsim-to-real、つまりシミュレーションから現実への移行（いこう）という。"
+              "Sim-to-realは、画面の中のロボットで使った動作プログラムを、本物へ移し、実際の機械で確かめる作業だ。",
+              "例えば、四脚ロボットの歩行方策を仮想環境で学習します。同じ意味の入力と指令を、実機のセンサや駆動部へ接続します。遅延、摩擦、荷重の差を測り、モデルや訓練を調整しながら、段階的に実機の動きを試します。"
             ]
           },
           {

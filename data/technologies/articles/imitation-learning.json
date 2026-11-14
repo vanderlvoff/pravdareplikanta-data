@@ -9,9 +9,9 @@
     "ja": "模倣学習と行動クローニング"
   },
   "short_description": {
-    "ru": "Что робот может перенять из примеров и почему ошибки накапливаются.",
-    "en": "What a robot can learn from demonstrations, and why errors compound.",
-    "ja": "実演から何を学べるか、なぜ小さな誤差が重なるのか。"
+    "ru": "Обучение по демонстрациям — семейство методов машинного обучения поведения по записанным примерам выполнения задачи.",
+    "en": "Imitation learning is a family of methods for learning behavior from recorded examples of task execution.",
+    "ja": "模倣学習は、作業の実演を記録した例から行動を学ぶ、機械学習の手法群です。"
   },
   "related_technologies": [
     {
@@ -47,20 +47,21 @@
       "year": 2023
     }
   ],
-  "last_reviewed": "2026-11-13",
+  "last_reviewed": "2026-11-14",
   "content_status": "ready",
   "diagram": null,
   "localizations": {
     "en": {
       "engineer": {
         "title": "Imitation learning and behavior cloning",
-        "short_description": "What a robot can learn from demonstrations, and why errors compound.",
+        "short_description": "Imitation learning is a family of methods for learning behavior from recorded examples of task execution.",
         "sections": [
           {
             "id": "overview",
-            "title": "Learning from demonstrated behavior",
+            "title": "What it is",
             "paragraphs": [
-              "Imitation learning uses expert behavior as supervision. Behavior cloning (BC) is a particular formulation: fit a policy that predicts the expert's action from an observation. Imitation learning is the broader family; interactive data aggregation and other formulations should not be treated as identical to supervised cloning."
+              "Imitation learning is a family of methods for obtaining agent behavior from demonstrations: records of observations, actions and task execution. Examples of desired behavior supply the training signal.",
+              "For example, a person moves a block into a tray while the system records images and gripper commands. Many such examples train an action-selection rule. Later, the robot uses its own observation of a scene and the trained model to calculate a command."
             ]
           },
           {
@@ -116,13 +117,14 @@
       },
       "business": {
         "title": "Imitation learning and behavior cloning",
-        "short_description": "What a robot can learn from demonstrations, and why errors compound.",
+        "short_description": "Imitation learning is a family of methods for learning behavior from recorded examples of task execution.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Show the work instead of writing every rule",
+            "title": "What it is",
             "paragraphs": [
-              "Imitation learning can be practical when an experienced operator can demonstrate an operation that is difficult to program manually. Behavior cloning learns to predict the demonstrated actions. It does not establish that the robot can handle every condition outside those examples or understand the operator's broader intent."
+              "Imitation learning is a way to prepare action models from recordings of an operator or other expert, linking situations with the actions taken in them.",
+              "For example, a person moves a block into a tray while the system records images and gripper commands. Many such examples train an action-selection rule. Later, the robot uses its own observation of a scene and the trained model to calculate a command."
             ]
           },
           {
@@ -157,13 +159,14 @@
       },
       "enthusiast": {
         "title": "Imitation learning and behavior cloning",
-        "short_description": "What a robot can learn from demonstrations, and why errors compound.",
+        "short_description": "Imitation learning is a family of methods for learning behavior from recorded examples of task execution.",
         "sections": [
           {
             "id": "idea",
-            "title": "Copying examples is a learning recipe",
+            "title": "What it is",
             "paragraphs": [
-              "In imitation learning, a person or another expert supplies examples of useful behavior. Behavior cloning is the direct version: learn which action matches a given observation. The robot need not receive a reward score during this training. However, not every imitation-learning method is just a supervised copy of a fixed dataset."
+              "Imitation learning is training a program on demonstrated behavior that links observations to subsequent actions.",
+              "For example, a person moves a block into a tray while the system records images and gripper commands. Many such examples train an action-selection rule. Later, the robot uses its own observation of a scene and the trained model to calculate a command."
             ]
           },
           {
@@ -198,13 +201,14 @@
       },
       "children": {
         "title": "Imitation learning and behavior cloning",
-        "short_description": "What a robot can learn from demonstrations, and why errors compound.",
+        "short_description": "Imitation learning is a way to adjust a robot program using examples of a person or another machine doing the task.",
         "sections": [
           {
             "id": "idea",
-            "title": "Learning from an example",
+            "title": "What it is",
             "paragraphs": [
-              "Imagine teaching a robot to place a block in a tray. A person first shows useful movements. Imitation learning uses recorded examples to learn a rule for choosing commands. A simple version called behavior cloning tries to predict the command that goes with what the robot sees."
+              "Imitation learning is a way to adjust a robot program using examples of a person or another machine doing the task.",
+              "For example, a person moves a block into a tray while the system records images and gripper commands. Many such examples train an action-selection rule. Later, the robot uses its own observation of a scene and the trained model to calculate a command."
             ]
           },
           {
@@ -241,13 +245,14 @@
     "ru": {
       "engineer": {
         "title": "Обучение по демонстрациям",
-        "short_description": "Что робот может перенять из примеров и почему ошибки накапливаются.",
+        "short_description": "Обучение по демонстрациям — семейство методов машинного обучения поведения по записанным примерам выполнения задачи.",
         "sections": [
           {
             "id": "overview",
-            "title": "Обучение по показанному поведению",
+            "title": "Что это такое",
             "paragraphs": [
-              "Обучение по демонстрациям использует поведение эксперта как сигнал обучения. Behavior cloning (BC) — частная постановка: подобрать политику, предсказывающую действие эксперта по наблюдению. Семейство imitation learning шире; интерактивное накопление данных и другие подходы нельзя считать той же регрессией на фиксированном наборе примеров."
+              "Имитационное обучение — семейство методов получения поведения агента по демонстрациям: записям наблюдений, действий и выполнения задачи. Источник учебного сигнала — примеры желательного поведения.",
+              "Например, человек перемещает кубик в лоток, а система записывает изображения и команды захвату. Из многих таких примеров обучают правило выбора действий. Позже робот получает собственное наблюдение сцены и использует обученную модель, чтобы рассчитать команду."
             ]
           },
           {
@@ -303,13 +308,14 @@
       },
       "business": {
         "title": "Обучение по демонстрациям",
-        "short_description": "Что робот может перенять из примеров и почему ошибки накапливаются.",
+        "short_description": "Обучение по демонстрациям — семейство методов машинного обучения поведения по записанным примерам выполнения задачи.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Показать работу вместо записи всех правил",
+            "title": "Что это такое",
             "paragraphs": [
-              "Обучение по демонстрациям удобно там, где оператор способен показать операцию, которую трудно описать программой. Behavior cloning предсказывает показанные действия. Это не доказывает работу во всех условиях за пределами примеров и не означает понимания широких намерений оператора."
+              "Обучение по демонстрациям — способ подготовки модели действий на записях работы оператора или другого эксперта. В данных связаны ситуации и действия, выполненные в этих ситуациях.",
+              "Например, человек перемещает кубик в лоток, а система записывает изображения и команды захвату. Из многих таких примеров обучают правило выбора действий. Позже робот получает собственное наблюдение сцены и использует обученную модель, чтобы рассчитать команду."
             ]
           },
           {
@@ -344,13 +350,14 @@
       },
       "enthusiast": {
         "title": "Обучение по демонстрациям",
-        "short_description": "Что робот может перенять из примеров и почему ошибки накапливаются.",
+        "short_description": "Обучение по демонстрациям — семейство методов машинного обучения поведения по записанным примерам выполнения задачи.",
         "sections": [
           {
             "id": "idea",
-            "title": "Копировать примеры — тоже отдельная задача",
+            "title": "Что это такое",
             "paragraphs": [
-              "В имитационном обучении человек или другой эксперт показывает полезное поведение. Прямой вариант, behavior cloning, учит соответствие наблюдения и команды. Для такого обучения не нужна награда RL. Но всё семейство имитационного обучения не сводится к копированию заранее собранного набора."
+              "Имитационное обучение — обучение программы на показанных примерах поведения, где наблюдения связаны с последующими действиями.",
+              "Например, человек перемещает кубик в лоток, а система записывает изображения и команды захвату. Из многих таких примеров обучают правило выбора действий. Позже робот получает собственное наблюдение сцены и использует обученную модель, чтобы рассчитать команду."
             ]
           },
           {
@@ -385,13 +392,14 @@
       },
       "children": {
         "title": "Обучение по демонстрациям",
-        "short_description": "Что робот может перенять из примеров и почему ошибки накапливаются.",
+        "short_description": "Обучение по демонстрациям — способ настроить программу робота по примерам того, как задание выполняли человек или другая машина.",
         "sections": [
           {
             "id": "idea",
-            "title": "Учиться по образцу",
+            "title": "Что это такое",
             "paragraphs": [
-              "Допустим, мы хотим, чтобы робот складывал кубик в лоток. Человек показывает полезные движения, а программа записывает примеры. Обучение по демонстрациям помогает выучить правило выбора команды. В простом варианте модель пытается предсказать действие по тому, что видит робот."
+              "Обучение по демонстрациям — способ настроить программу робота по примерам того, как задание выполняли человек или другая машина.",
+              "Например, человек перемещает кубик в лоток, а система записывает изображения и команды захвату. Из многих таких примеров обучают правило выбора действий. Позже робот получает собственное наблюдение сцены и использует обученную модель, чтобы рассчитать команду."
             ]
           },
           {
@@ -428,13 +436,14 @@
     "ja": {
       "engineer": {
         "title": "模倣学習と行動クローニング",
-        "short_description": "実演から何を学べるか、なぜ小さな誤差が重なるのか。",
+        "short_description": "模倣学習は、作業の実演を記録した例から行動を学ぶ、機械学習の手法群です。",
         "sections": [
           {
             "id": "overview",
-            "title": "実演を教師信号にする",
+            "title": "どんな技術か",
             "paragraphs": [
-              "模倣学習は、専門家の振る舞いから行動を学ぶ方法の総称です。行動クローニング（Behavior Cloning、BC）は、そのうち観測から専門家の行動を予測する方策を教師あり学習する構成です。対話的なデータ集約なども含む広い分野を、固定データでの回帰と同一視しないことが重要です。"
+              "模倣学習は、観測、行動、作業実行を記録した実演から、エージェントの行動を得る手法の総称です。望ましい振る舞いの例が学習の信号になります。",
+              "例えば、人が積み木をトレーへ移す間に、画像とハンドへの指令を記録します。多くの例から動作を選ぶ規則を学びます。その後、ロボット自身が得た場面の観測をモデルへ入力し、指令を計算します。"
             ]
           },
           {
@@ -490,13 +499,14 @@
       },
       "business": {
         "title": "模倣学習と行動クローニング",
-        "short_description": "実演から何を学べるか、なぜ小さな誤差が重なるのか。",
+        "short_description": "模倣学習は、作業の実演を記録した例から行動を学ぶ、機械学習の手法群です。",
         "sections": [
           {
             "id": "purpose",
-            "title": "規則を書く代わりに見せる",
+            "title": "どんな技術か",
             "paragraphs": [
-              "熟練者が容易に示せる一方、細かくプログラムしにくい工程で模倣学習を検討できます。行動クローニングは、示された動作を予測する方法です。収録外の条件への対応や、担当者の広い意図の理解まで実証するものではありません。"
+              "模倣学習は、操作者などの作業記録から行動モデルを訓練する方法です。状況と、その状況で選ばれた動作を対応付けて扱います。",
+              "例えば、人が積み木をトレーへ移す間に、画像とハンドへの指令を記録します。多くの例から動作を選ぶ規則を学びます。その後、ロボット自身が得た場面の観測をモデルへ入力し、指令を計算します。"
             ]
           },
           {
@@ -531,13 +541,14 @@
       },
       "enthusiast": {
         "title": "模倣学習と行動クローニング",
-        "short_description": "実演から何を学べるか、なぜ小さな誤差が重なるのか。",
+        "short_description": "模倣学習は、作業の実演を記録した例から行動を学ぶ、機械学習の手法群です。",
         "sections": [
           {
             "id": "idea",
-            "title": "例をまねるにも仕組みがある",
+            "title": "どんな技術か",
             "paragraphs": [
-              "模倣学習では、人などの専門家が役立つ振る舞いを示します。直接的な行動クローニングは、観測に合う指令を学ぶ方法です。訓練時にRLの報酬は必要ありません。ただし模倣学習全体が、固定した記録を写すだけの方法とは限りません。"
+              "模倣学習は、観測した場面と次の動きを結び付けた実演を使い、プログラムを訓練する方法です。",
+              "例えば、人が積み木をトレーへ移す間に、画像とハンドへの指令を記録します。多くの例から動作を選ぶ規則を学びます。その後、ロボット自身が得た場面の観測をモデルへ入力し、指令を計算します。"
             ]
           },
           {
@@ -572,13 +583,14 @@
       },
       "children": {
         "title": "模倣学習と行動クローニング",
-        "short_description": "実演から何を学べるか、なぜ小さな誤差が重なるのか。",
+        "short_description": "模倣学習（もほうがくしゅう）は、人や別の機械が仕事をした例を使い、ロボットのプログラムを調整する方法だ。",
         "sections": [
           {
             "id": "idea",
-            "title": "お手本から規則を学ぶ",
+            "title": "どんな技術か",
             "paragraphs": [
-              "ロボットに積み木をトレーへ入れてほしいとしよう。まず人が役立つ動きを見せる。模倣学習（もほうがくしゅう）は、記録した例から指令の選び方を学ぶ方法だ。単純な行動クローニングは、見えたものに合う指令を予測する。"
+              "模倣学習（もほうがくしゅう）は、人や別の機械が仕事をした例を使い、ロボットのプログラムを調整する方法だ。",
+              "例えば、人が積み木をトレーへ移す間に、画像とハンドへの指令を記録します。多くの例から動作を選ぶ規則を学びます。その後、ロボット自身が得た場面の観測をモデルへ入力し、指令を計算します。"
             ]
           },
           {

@@ -9,9 +9,9 @@
     "ja": "視覚・言語・行動モデル"
   },
   "short_description": {
-    "ru": "Как изображения и инструкции связывают с действиями, сохраняя отдельный контур управления.",
-    "en": "Linking images and instructions to actions while retaining a separate control loop.",
-    "ja": "画像と指示を行動へ結びつけ、制御ループとの役割を分ける。"
+    "ru": "VLA — семейство обучаемых моделей, связывающих изображение сцены и языковое задание с выходным представлением действий робота.",
+    "en": "VLA is a family of learned models linking a scene image and language task to a robot-action representation.",
+    "ja": "VLAは、場面の画像と言語の課題を、ロボットの行動表現へ結び付ける学習モデル群です。"
   },
   "related_technologies": [
     {
@@ -72,20 +72,21 @@
       "year": 2024
     }
   ],
-  "last_reviewed": "2026-11-13",
+  "last_reviewed": "2026-11-14",
   "content_status": "ready",
   "diagram": "vla",
   "localizations": {
     "en": {
       "engineer": {
         "title": "Vision-language-action models",
-        "short_description": "Linking images and instructions to actions while retaining a separate control loop.",
+        "short_description": "VLA is a family of learned models linking a scene image and language task to a robot-action representation.",
         "sections": [
           {
             "id": "overview",
-            "title": "Vision and language connected to action",
+            "title": "What it is",
             "paragraphs": [
-              "A vision-language-action model (VLA) is trained to connect visual observations and language with robot action outputs. It is a family-level description, not a single architecture or a claim of universal robot control. Distinguish the VLA concept from implementations such as RT-2, OpenVLA and π0, and from the specific method used to generate their actions."
+              "A vision-language-action model (VLA) is a learned robot policy with visual and language inputs and outputs in an action representation. Its design connects scene processing, task conditioning and command generation.",
+              "For example, a camera sees a cup and a box, and the instruction is to put the cup in the box. The model uses both inputs and outputs actions in its chosen format, such as changes in a gripper target pose. Separate system components turn that representation into executable equipment movements."
             ]
           },
           {
@@ -141,13 +142,14 @@
       },
       "business": {
         "title": "Vision-language-action models",
-        "short_description": "Linking images and instructions to actions while retaining a separate control loop.",
+        "short_description": "VLA is a family of learned models linking a scene image and language task to a robot-action representation.",
         "sections": [
           {
             "id": "purpose",
-            "title": "One family, several engineering choices",
+            "title": "What it is",
             "paragraphs": [
-              "VLA models connect images and instructions to learned robot actions. They may reduce the need to train a completely separate system for every closely related task. However, VLA is not a product specification. RT-2, OpenVLA and π0 use different designs, access conditions and action-generation mechanisms."
+              "A VLA is a trained robot-action model that uses camera data and a verbal instruction together as inputs for computing commands.",
+              "For example, a camera sees a cup and a box, and the instruction is to put the cup in the box. The model uses both inputs and outputs actions in its chosen format, such as changes in a gripper target pose. Separate system components turn that representation into executable equipment movements."
             ]
           },
           {
@@ -182,13 +184,14 @@
       },
       "enthusiast": {
         "title": "Vision-language-action models",
-        "short_description": "Linking images and instructions to actions while retaining a separate control loop.",
+        "short_description": "VLA is a family of learned models linking a scene image and language task to a robot-action representation.",
         "sections": [
           {
             "id": "idea",
-            "title": "Adding an action connection",
+            "title": "What it is",
             "paragraphs": [
-              "A model that describes an image has not necessarily learned to move a robot. A VLA connects vision and language with robot action outputs through training. The name describes a family. It does not say that every model has the same body, action format or method of producing a movement."
+              "A VLA is a neural model or model system combining an image, a language task and numerical commands for robot actions.",
+              "For example, a camera sees a cup and a box, and the instruction is to put the cup in the box. The model uses both inputs and outputs actions in its chosen format, such as changes in a gripper target pose. Separate system components turn that representation into executable equipment movements."
             ]
           },
           {
@@ -223,13 +226,14 @@
       },
       "children": {
         "title": "Vision-language-action models",
-        "short_description": "Linking images and instructions to actions while retaining a separate control loop.",
+        "short_description": "A VLA is a trained robot program linking a camera picture and an instruction in words to movement commands.",
         "sections": [
           {
             "id": "idea",
-            "title": "From a picture and words to a command",
+            "title": "What it is",
             "paragraphs": [
-              "Imagine saying put the cup in the box while a robot's camera sees the table. A VLA is a kind of model trained to connect pictures and words with robot commands. It is different from a model that only writes a description of the scene."
+              "A VLA is a trained robot program linking a camera picture and an instruction in words to movement commands.",
+              "For example, a camera sees a cup and a box, and the instruction is to put the cup in the box. The model uses both inputs and outputs actions in its chosen format, such as changes in a gripper target pose. Separate system components turn that representation into executable equipment movements."
             ]
           },
           {
@@ -266,13 +270,14 @@
     "ru": {
       "engineer": {
         "title": "Модели vision-language-action",
-        "short_description": "Как изображения и инструкции связывают с действиями, сохраняя отдельный контур управления.",
+        "short_description": "VLA — семейство обучаемых моделей, связывающих изображение сцены и языковое задание с выходным представлением действий робота.",
         "sections": [
           {
             "id": "overview",
-            "title": "Зрение и язык связаны с действием",
+            "title": "Что это такое",
             "paragraphs": [
-              "Vision-language-action (VLA) — семейство моделей, обученных связывать визуальные наблюдения и язык с действиями робота. Это не одна архитектура и не обещание универсального управления. Нужно различать концепцию VLA, конкретные реализации RT-2, OpenVLA, π0 и используемый ими метод генерации команд."
+              "Модель vision-language-action (VLA) — обучаемая модель роботической политики с визуальными и языковыми входами и выходом в виде представления действий. В её устройстве соединены восприятие сцены, условие задания и генератор команд.",
+              "Например, камера видит чашку и коробку, а задание — «поставь чашку в коробку». Модель использует оба входа и выдаёт действия в своём формате: например, изменения целевого положения захвата. Отдельные компоненты системы переводят это представление в исполняемые движения оборудования."
             ]
           },
           {
@@ -328,13 +333,14 @@
       },
       "business": {
         "title": "Модели vision-language-action",
-        "short_description": "Как изображения и инструкции связывают с действиями, сохраняя отдельный контур управления.",
+        "short_description": "VLA — семейство обучаемых моделей, связывающих изображение сцены и языковое задание с выходным представлением действий робота.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Семейство, а не спецификация продукта",
+            "title": "Что это такое",
             "paragraphs": [
-              "VLA связывает изображения и инструкции с обученными действиями. Возможно переиспользование модели для близких задач вместо независимого обучения каждой. Но RT-2, OpenVLA и π0 различаются устройством, доступностью и механизмом генерации. Само название VLA не определяет техническое задание оборудования."
+              "VLA — обученная модель действий робота, в которой данные камеры и инструкция словами являются совместными входами для расчёта команд.",
+              "Например, камера видит чашку и коробку, а задание — «поставь чашку в коробку». Модель использует оба входа и выдаёт действия в своём формате: например, изменения целевого положения захвата. Отдельные компоненты системы переводят это представление в исполняемые движения оборудования."
             ]
           },
           {
@@ -369,13 +375,14 @@
       },
       "enthusiast": {
         "title": "Модели vision-language-action",
-        "short_description": "Как изображения и инструкции связывают с действиями, сохраняя отдельный контур управления.",
+        "short_description": "VLA — семейство обучаемых моделей, связывающих изображение сцены и языковое задание с выходным представлением действий робота.",
         "sections": [
           {
             "id": "idea",
-            "title": "Добавить связь с действием",
+            "title": "Что это такое",
             "paragraphs": [
-              "Модель, описывающая картинку, ещё не обязательно умеет двигать робота. VLA через обучение связывает зрение и язык с выходными командами. Название обозначает семейство; из него не следуют одинаковые тела, форматы действий и способы создания движения."
+              "VLA — нейросетевая модель или система моделей, объединяющая картинку, словесное задание и числовые команды для действий робота.",
+              "Например, камера видит чашку и коробку, а задание — «поставь чашку в коробку». Модель использует оба входа и выдаёт действия в своём формате: например, изменения целевого положения захвата. Отдельные компоненты системы переводят это представление в исполняемые движения оборудования."
             ]
           },
           {
@@ -410,13 +417,14 @@
       },
       "children": {
         "title": "Модели vision-language-action",
-        "short_description": "Как изображения и инструкции связывают с действиями, сохраняя отдельный контур управления.",
+        "short_description": "VLA — обученная программа для робота, у которой картинка с камеры и задание словами связаны с командами движения.",
         "sections": [
           {
             "id": "idea",
-            "title": "Из картинки и слов получить команду",
+            "title": "Что это такое",
             "paragraphs": [
-              "Представь: человек говорит «поставь чашку в коробку», а камера видит стол. VLA — разновидность модели, которую учат связывать картинки и слова с командами роботу. Она отличается от модели, только описывающей увиденную сцену."
+              "VLA — обученная программа для робота, у которой картинка с камеры и задание словами связаны с командами движения.",
+              "Например, камера видит чашку и коробку, а задание — «поставь чашку в коробку». Модель использует оба входа и выдаёт действия в своём формате: например, изменения целевого положения захвата. Отдельные компоненты системы переводят это представление в исполняемые движения оборудования."
             ]
           },
           {
@@ -453,13 +461,14 @@
     "ja": {
       "engineer": {
         "title": "視覚・言語・行動モデル",
-        "short_description": "画像と指示を行動へ結びつけ、制御ループとの役割を分ける。",
+        "short_description": "VLAは、場面の画像と言語の課題を、ロボットの行動表現へ結び付ける学習モデル群です。",
         "sections": [
           {
             "id": "overview",
-            "title": "視覚と言語を行動へ結ぶ",
+            "title": "どんな技術か",
             "paragraphs": [
-              "視覚・言語・行動モデル（Vision-Language-Action、VLA）は、視覚観測と言語からロボットの行動を出す接続を学ぶモデル群です。一つの構成でも、万能な制御の保証でもありません。VLAという概念、RT-2・OpenVLA・π0などの具体例、そこで使う行動生成法を区別します。"
+              "視覚・言語・行動モデル（VLA）は、視覚と言語を入力とし、行動表現を出力する学習済みロボット方策です。場面の処理、課題の条件、指令生成を結び付けます。",
+              "例えば、カメラにコップと箱が写り、「コップを箱に入れて」と指示します。モデルは両方を使い、ハンドの目標姿勢の変化など、そのモデルの形式で行動を出します。別のシステム部品が、その表現を設備で実行できる動きへ変換します。"
             ]
           },
           {
@@ -515,13 +524,14 @@
       },
       "business": {
         "title": "視覚・言語・行動モデル",
-        "short_description": "画像と指示を行動へ結びつけ、制御ループとの役割を分ける。",
+        "short_description": "VLAは、場面の画像と言語の課題を、ロボットの行動表現へ結び付ける学習モデル群です。",
         "sections": [
           {
             "id": "purpose",
-            "title": "モデル群と製品仕様を分ける",
+            "title": "どんな技術か",
             "paragraphs": [
-              "VLAは画像と指示を学習済みの行動へつなぎ、近い作業の間でモデルを再利用できる可能性があります。ただし名称だけでは製品仕様は分かりません。RT-2、OpenVLA、π0は構成、利用条件、行動生成の仕組みが異なります。"
+              "VLAは、カメラ情報と言葉の指示を一緒に入力し、動作の指令を計算する学習済みモデルです。",
+              "例えば、カメラにコップと箱が写り、「コップを箱に入れて」と指示します。モデルは両方を使い、ハンドの目標姿勢の変化など、そのモデルの形式で行動を出します。別のシステム部品が、その表現を設備で実行できる動きへ変換します。"
             ]
           },
           {
@@ -556,13 +566,14 @@
       },
       "enthusiast": {
         "title": "視覚・言語・行動モデル",
-        "short_description": "画像と指示を行動へ結びつけ、制御ループとの役割を分ける。",
+        "short_description": "VLAは、場面の画像と言語の課題を、ロボットの行動表現へ結び付ける学習モデル群です。",
         "sections": [
           {
             "id": "idea",
-            "title": "行動への接続を学ぶ",
+            "title": "どんな技術か",
             "paragraphs": [
-              "画像を説明するモデルが、ロボットを動かす方法まで学んだとは限りません。VLAは、視覚と言語をロボットの行動出力へ結びつけます。モデル群の呼び名であり、すべてが同じ体や指令形式、生成法を使うという意味ではありません。"
+              "VLAは、画像、言葉による課題、行動の数値指令をつないだニューラルモデル、またはモデルの組み合わせです。",
+              "例えば、カメラにコップと箱が写り、「コップを箱に入れて」と指示します。モデルは両方を使い、ハンドの目標姿勢の変化など、そのモデルの形式で行動を出します。別のシステム部品が、その表現を設備で実行できる動きへ変換します。"
             ]
           },
           {
@@ -597,13 +608,14 @@
       },
       "children": {
         "title": "視覚・言語・行動モデル",
-        "short_description": "画像と指示を行動へ結びつけ、制御ループとの役割を分ける。",
+        "short_description": "VLAは、カメラの画像と言葉の指示を、動くための指令へ結び付けた、学習済みのロボット用プログラムだ。",
         "sections": [
           {
             "id": "idea",
-            "title": "画像と言葉から指令へ",
+            "title": "どんな技術か",
             "paragraphs": [
-              "「コップを箱に入れて」と頼み、カメラが机を見る場面を考えよう。VLAは、画像と言葉をロボットへの指令と結びつけるよう学ぶモデル群だ。場面を文章で説明するだけのモデルとは、学ぶ接続が違う。"
+              "VLAは、カメラの画像と言葉の指示を、動くための指令へ結び付けた、学習済みのロボット用プログラムだ。",
+              "例えば、カメラにコップと箱が写り、「コップを箱に入れて」と指示します。モデルは両方を使い、ハンドの目標姿勢の変化など、そのモデルの形式で行動を出します。別のシステム部品が、その表現を設備で実行できる動きへ変換します。"
             ]
           },
           {

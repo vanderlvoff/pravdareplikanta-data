@@ -9,9 +9,9 @@
     "ja": "強化学習"
   },
   "short_description": {
-    "ru": "Как действие и его последствия становятся данными для обучения policy.",
-    "en": "How actions and their consequences become data for learning a policy.",
-    "ja": "行動とその結果を、方策を学ぶためのデータにする。"
+    "ru": "Обучение с подкреплением — метод машинного обучения правила действий по опыту взаимодействия и числовой награде за результаты.",
+    "en": "Reinforcement learning is learning an action-selection rule from interaction experience and numerical rewards for outcomes.",
+    "ja": "強化学習は、環境とのやり取りと数値の報酬を使い、行動を選ぶ規則を学ぶ方法です。"
   },
   "related_technologies": [
     {
@@ -46,20 +46,21 @@
       "year": 2021
     }
   ],
-  "last_reviewed": "2026-11-13",
+  "last_reviewed": "2026-11-14",
   "content_status": "ready",
   "diagram": null,
   "localizations": {
     "en": {
       "engineer": {
         "title": "Reinforcement learning",
-        "short_description": "How actions and their consequences become data for learning a policy.",
+        "short_description": "Reinforcement learning is learning an action-selection rule from interaction experience and numerical rewards for outcomes.",
         "sections": [
           {
             "id": "overview",
-            "title": "Learning through consequences",
+            "title": "What it is",
             "paragraphs": [
-              "Reinforcement learning (RL) optimizes a policy using interaction data and a reward objective. A robot observes a state or partial observation, selects an action and receives the next observation and reward. The objective usually includes future rewards, so an immediately attractive action can be undesirable over an entire trajectory. The reward is designed feedback, not a machine's understanding of purpose."
+              "Reinforcement learning (RL) is a machine-learning framework for sequential decision policies. It comprises an agent, environment, actions and rewards, with a learning objective accounting for cumulative outcomes over time.",
+              "For example, a simulated robot tries to walk. Software records measurements, chosen commands and outcomes, while a specified formula scores progress and accounts for unwanted events. The learning algorithm uses the experience to adjust the action rule. Evaluation then measures whether behavior better matches the task."
             ]
           },
           {
@@ -116,13 +117,14 @@
       },
       "business": {
         "title": "Reinforcement learning",
-        "short_description": "How actions and their consequences become data for learning a policy.",
+        "short_description": "Reinforcement learning is learning an action-selection rule from interaction experience and numerical rewards for outcomes.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Useful when outcomes can be measured",
+            "title": "What it is",
             "paragraphs": [
-              "Reinforcement learning trains a policy from actions and their consequences. It is relevant when a useful outcome can be evaluated but writing every action rule is difficult. The business question is not simply whether RL is advanced, but whether the organization can define the outcome and collect enough representative interaction data."
+              "Reinforcement learning is training decision models from interaction experience in which outcomes receive a numerical score called a reward.",
+              "For example, a simulated robot tries to walk. Software records measurements, chosen commands and outcomes, while a specified formula scores progress and accounts for unwanted events. The learning algorithm uses the experience to adjust the action rule. Evaluation then measures whether behavior better matches the task."
             ]
           },
           {
@@ -157,13 +159,14 @@
       },
       "enthusiast": {
         "title": "Reinforcement learning",
-        "short_description": "How actions and their consequences become data for learning a policy.",
+        "short_description": "Reinforcement learning is learning an action-selection rule from interaction experience and numerical rewards for outcomes.",
         "sections": [
           {
             "id": "idea",
-            "title": "Actions change what happens next",
+            "title": "What it is",
             "paragraphs": [
-              "In reinforcement learning, a model chooses actions and learns from the consequences. A reward signal says which outcomes the designer values. The aim is not merely to choose the action with the largest immediate score: an action can make later progress easier or harder. This is different from simply copying an example."
+              "Reinforcement learning is learning an action-selection rule from trials and outcomes evaluated by a reward specified by the developer.",
+              "For example, a simulated robot tries to walk. Software records measurements, chosen commands and outcomes, while a specified formula scores progress and accounts for unwanted events. The learning algorithm uses the experience to adjust the action rule. Evaluation then measures whether behavior better matches the task."
             ]
           },
           {
@@ -198,13 +201,14 @@
       },
       "children": {
         "title": "Reinforcement learning",
-        "short_description": "How actions and their consequences become data for learning a policy.",
+        "short_description": "Reinforcement learning is a way to adjust a program using experience of actions and scores for their results. These scores are called rewards.",
         "sections": [
           {
             "id": "idea",
-            "title": "Learning from what happens",
+            "title": "What it is",
             "paragraphs": [
-              "Imagine a computer trying different ways to move a simulated robot. After an action, the program checks the result and gives a score called a reward. Reinforcement learning uses these experiences to improve a rule for choosing actions. The reward does not mean the computer feels pleased."
+              "Reinforcement learning is a way to adjust a program using experience of actions and scores for their results. These scores are called rewards.",
+              "For example, a simulated robot tries to walk. Software records measurements, chosen commands and outcomes, while a specified formula scores progress and accounts for unwanted events. The learning algorithm uses the experience to adjust the action rule. Evaluation then measures whether behavior better matches the task."
             ]
           },
           {
@@ -241,13 +245,14 @@
     "ru": {
       "engineer": {
         "title": "Обучение с подкреплением",
-        "short_description": "Как действие и его последствия становятся данными для обучения policy.",
+        "short_description": "Обучение с подкреплением — метод машинного обучения правила действий по опыту взаимодействия и числовой награде за результаты.",
         "sections": [
           {
             "id": "overview",
-            "title": "Обучение по последствиям действий",
+            "title": "Что это такое",
             "paragraphs": [
-              "Обучение с подкреплением, reinforcement learning (RL), оптимизирует policy по данным взаимодействия и заданной награде. Робот получает наблюдение, выбирает действие, затем новое наблюдение и награду. Обычно учитываются будущие результаты: немедленно выгодная команда может мешать на длинном горизонте. Награда является спроектированным сигналом, а не пониманием цели машиной."
+              "Обучение с подкреплением (RL) — метод машинного обучения политики последовательных решений. Его постановка включает агента, среду, действия и награду; критерий обучения учитывает суммарный результат действий во времени.",
+              "Например, виртуальный робот пробует ходить. Программа записывает измерения, выбранные команды и результат, а заданная формула начисляет оценку за продвижение и учитывает нежелательные события. Алгоритм использует накопленный опыт, чтобы изменить правило действий. Затем испытания показывают, стало ли поведение соответствовать задаче."
             ]
           },
           {
@@ -304,13 +309,14 @@
       },
       "business": {
         "title": "Обучение с подкреплением",
-        "short_description": "Как действие и его последствия становятся данными для обучения policy.",
+        "short_description": "Обучение с подкреплением — метод машинного обучения правила действий по опыту взаимодействия и числовой награде за результаты.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Когда результат можно измерить",
+            "title": "Что это такое",
             "paragraphs": [
-              "RL учит выбор действий по их последствиям. Подход имеет смысл, если полезный результат можно оценить, а вручную описать все правила сложно. Главный вопрос — не современность алгоритма, а способность организации задать правильный результат и получить достаточно представительных взаимодействий для обучения."
+              "Обучение с подкреплением — способ подготовки модели решений на опыте взаимодействия, где каждому результату назначают числовую оценку — награду.",
+              "Например, виртуальный робот пробует ходить. Программа записывает измерения, выбранные команды и результат, а заданная формула начисляет оценку за продвижение и учитывает нежелательные события. Алгоритм использует накопленный опыт, чтобы изменить правило действий. Затем испытания показывают, стало ли поведение соответствовать задаче."
             ]
           },
           {
@@ -345,13 +351,14 @@
       },
       "enthusiast": {
         "title": "Обучение с подкреплением",
-        "short_description": "Как действие и его последствия становятся данными для обучения policy.",
+        "short_description": "Обучение с подкреплением — метод машинного обучения правила действий по опыту взаимодействия и числовой награде за результаты.",
         "sections": [
           {
             "id": "idea",
-            "title": "Действие меняет следующий шаг",
+            "title": "Что это такое",
             "paragraphs": [
-              "В обучении с подкреплением модель выбирает действия и учится по последствиям. Награда сообщает, какие результаты ценит разработчик. Нужно не просто заработать максимальный балл сейчас: действие способно облегчить или затруднить дальнейшую работу. Поэтому такой способ отличается от непосредственного копирования примера."
+              "Обучение с подкреплением — обучение правила выбора действий на пробах и их результатах, оценённых наградой, которую задаёт разработчик.",
+              "Например, виртуальный робот пробует ходить. Программа записывает измерения, выбранные команды и результат, а заданная формула начисляет оценку за продвижение и учитывает нежелательные события. Алгоритм использует накопленный опыт, чтобы изменить правило действий. Затем испытания показывают, стало ли поведение соответствовать задаче."
             ]
           },
           {
@@ -386,13 +393,14 @@
       },
       "children": {
         "title": "Обучение с подкреплением",
-        "short_description": "Как действие и его последствия становятся данными для обучения policy.",
+        "short_description": "Обучение с подкреплением — способ настроить программу по опыту действий и баллам за результаты. Баллы в этом методе называют наградой.",
         "sections": [
           {
             "id": "idea",
-            "title": "Учиться по результату",
+            "title": "Что это такое",
             "paragraphs": [
-              "Представь компьютер, пробующий разные способы двигать виртуального робота. После действия программа проверяет результат и начисляет балл — награду. Обучение с подкреплением использует такой опыт, чтобы улучшать правило выбора действий. Награда не означает, что компьютер чувствует радость."
+              "Обучение с подкреплением — способ настроить программу по опыту действий и баллам за результаты. Баллы в этом методе называют наградой.",
+              "Например, виртуальный робот пробует ходить. Программа записывает измерения, выбранные команды и результат, а заданная формула начисляет оценку за продвижение и учитывает нежелательные события. Алгоритм использует накопленный опыт, чтобы изменить правило действий. Затем испытания показывают, стало ли поведение соответствовать задаче."
             ]
           },
           {
@@ -429,13 +437,14 @@
     "ja": {
       "engineer": {
         "title": "強化学習",
-        "short_description": "行動とその結果を、方策を学ぶためのデータにする。",
+        "short_description": "強化学習は、環境とのやり取りと数値の報酬を使い、行動を選ぶ規則を学ぶ方法です。",
         "sections": [
           {
             "id": "overview",
-            "title": "結果を使って方策を改善する",
+            "title": "どんな技術か",
             "paragraphs": [
-              "強化学習（Reinforcement Learning、RL）は、環境との相互作用と報酬を使って方策を最適化します。観測から行動を選び、次の観測と報酬を受け取ります。通常は将来の報酬も含めるため、直後に有利な行動が長い軌跡では不利な場合もあります。報酬は設計した信号であり、機械が目的を理解した証拠ではありません。"
+              "強化学習（RL）は、逐次的な意思決定の方策を学ぶ機械学習の枠組みです。エージェント、環境、行動、報酬からなり、時間を通した結果の合計を学習の目的に含めます。",
+              "例えば、仮想ロボットが歩行を試します。測定値、指令、結果を記録し、決めた式で前進や望ましくない出来事を点数にします。アルゴリズムは、その経験を使って動作の規則を変えます。その後の試験で、課題に合う振る舞いになったかを調べます。"
             ]
           },
           {
@@ -492,13 +501,14 @@
       },
       "business": {
         "title": "強化学習",
-        "short_description": "行動とその結果を、方策を学ぶためのデータにする。",
+        "short_description": "強化学習は、環境とのやり取りと数値の報酬を使い、行動を選ぶ規則を学ぶ方法です。",
         "sections": [
           {
             "id": "purpose",
-            "title": "成果を評価できる工程",
+            "title": "どんな技術か",
             "paragraphs": [
-              "強化学習は、行動とその結果から選び方を学ぶ手法です。成果を評価できる一方、全動作の規則を書きにくい場合に検討できます。重要なのは新しさではなく、必要な成果を定義し、代表的な経験を十分集められるかという点です。"
+              "強化学習は、結果へ報酬という数値の評価を付け、環境とのやり取りの経験から判断モデルを訓練する方法です。",
+              "例えば、仮想ロボットが歩行を試します。測定値、指令、結果を記録し、決めた式で前進や望ましくない出来事を点数にします。アルゴリズムは、その経験を使って動作の規則を変えます。その後の試験で、課題に合う振る舞いになったかを調べます。"
             ]
           },
           {
@@ -533,13 +543,14 @@
       },
       "enthusiast": {
         "title": "強化学習",
-        "short_description": "行動とその結果を、方策を学ぶためのデータにする。",
+        "short_description": "強化学習は、環境とのやり取りと数値の報酬を使い、行動を選ぶ規則を学ぶ方法です。",
         "sections": [
           {
             "id": "idea",
-            "title": "行動が次の状況を変える",
+            "title": "どんな技術か",
             "paragraphs": [
-              "強化学習では、モデルが行動を選び、その結果から学びます。設計者が重視する結果を報酬という信号で表します。今すぐ高得点になる行動だけでなく、後の成功を助ける行動を探す点が大切です。お手本の動作をそのまま写す学習とは違います。"
+              "強化学習は、試した動きと結果の経験を、開発者が決めた報酬で評価し、動作を選ぶ規則を学ぶ方法です。",
+              "例えば、仮想ロボットが歩行を試します。測定値、指令、結果を記録し、決めた式で前進や望ましくない出来事を点数にします。アルゴリズムは、その経験を使って動作の規則を変えます。その後の試験で、課題に合う振る舞いになったかを調べます。"
             ]
           },
           {
@@ -574,13 +585,14 @@
       },
       "children": {
         "title": "強化学習",
-        "short_description": "行動とその結果を、方策を学ぶためのデータにする。",
+        "short_description": "強化学習（きょうかがくしゅう）は、動かした経験と結果の点数を使い、プログラムを調整する方法だ。この点数を報酬（ほうしゅう）という。",
         "sections": [
           {
             "id": "idea",
-            "title": "結果を見て学ぶ",
+            "title": "どんな技術か",
             "paragraphs": [
-              "コンピューターが、仮想（かそう）のロボットを動かす方法をいろいろ試すとしよう。行動の後で結果を調べ、報酬（ほうしゅう）という点数を与える。強化学習はその経験を使い、行動の選び方を直していく。コンピューターが喜ぶという意味ではないよ。"
+              "強化学習（きょうかがくしゅう）は、動かした経験と結果の点数を使い、プログラムを調整する方法だ。この点数を報酬（ほうしゅう）という。",
+              "例えば、仮想ロボットが歩行を試します。測定値、指令、結果を記録し、決めた式で前進や望ましくない出来事を点数にします。アルゴリズムは、その経験を使って動作の規則を変えます。その後の試験で、課題に合う振る舞いになったかを調べます。"
             ]
           },
           {

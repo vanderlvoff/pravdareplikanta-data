@@ -9,9 +9,9 @@
     "ja": "ACT：動作のまとまりを予測する"
   },
   "short_description": {
-    "ru": "Трансформер, вариационное обучение и объединение перекрывающихся предсказаний.",
-    "en": "Transformers, variational learning and aggregation of overlapping predictions.",
-    "ja": "Transformer、変分学習、重なった予測の統合を理解する。"
+    "ru": "ACT — нейросетевая архитектура, обучаемая по демонстрациям и выдающая блок будущих действий за один расчёт.",
+    "en": "ACT is a neural architecture trained on demonstrations to produce a block of future actions in one computation.",
+    "ja": "ACTは、実演から学び、一回の計算で複数時刻の行動をまとめて出すニューラルネットワークの構成です。"
   },
   "related_technologies": [
     {
@@ -68,20 +68,21 @@
       "year": 2023
     }
   ],
-  "last_reviewed": "2026-11-13",
+  "last_reviewed": "2026-11-14",
   "content_status": "ready",
   "diagram": "act",
   "localizations": {
     "en": {
       "engineer": {
         "title": "ACT: predicting action chunks",
-        "short_description": "Transformers, variational learning and aggregation of overlapping predictions.",
+        "short_description": "ACT is a neural architecture trained on demonstrations to produce a block of future actions in one computation.",
         "sections": [
           {
             "id": "overview",
-            "title": "What ACT changes",
+            "title": "What it is",
             "paragraphs": [
-              "Action Chunking with Transformers (ACT) is an imitation-learning architecture for predicting several future robot actions together. In the original ALOHA system, synchronized camera images and current joint positions condition a chunk of joint-position targets. The learned model does not replace the actuator's feedback controller, and a chunk is not a proof that a complete task will succeed."
+              "ACT is a neural robot-policy architecture combining a transformer with learning from demonstrations. Its output is a numerical action sequence for several future timesteps.",
+              "For example, a robot places a battery into a holder. The original ACT implementation takes camera images and joint positions, then outputs several future joint-position targets. A controller uses the commands for movement, the camera provides another image and the model can calculate the next overlapping block."
             ]
           },
           {
@@ -137,13 +138,14 @@
       },
       "business": {
         "title": "ACT: predicting action chunks",
-        "short_description": "Transformers, variational learning and aggregation of overlapping predictions.",
+        "short_description": "ACT is a neural architecture trained on demonstrations to produce a block of future actions in one computation.",
         "sections": [
           {
             "id": "purpose",
-            "title": "A way to reuse demonstrated work",
+            "title": "What it is",
             "paragraphs": [
-              "ACT turns recorded examples into short sequences of robot actions. Its practical appeal is coordinated manipulation that would be tedious to program as many individual movements. A demonstration-learning project remains tied to the objects, cameras and robot interface represented in its training data; it is not a general replacement for process engineering."
+              "ACT is a learned action model that uses examples of an operation and then calculates short command sequences for a robot.",
+              "For example, a robot places a battery into a holder. The original ACT implementation takes camera images and joint positions, then outputs several future joint-position targets. A controller uses the commands for movement, the camera provides another image and the model can calculate the next overlapping block."
             ]
           },
           {
@@ -178,13 +180,14 @@
       },
       "enthusiast": {
         "title": "ACT: predicting action chunks",
-        "short_description": "Transformers, variational learning and aggregation of overlapping predictions.",
+        "short_description": "ACT is a neural architecture trained on demonstrations to produce a block of future actions in one computation.",
         "sections": [
           {
             "id": "idea",
-            "title": "Why predict a little sequence?",
+            "title": "What it is",
             "paragraphs": [
-              "Imagine drawing a curve by planning a short stretch rather than choosing each dot separately. ACT uses a related idea for robot actions: predict several upcoming targets as one chunk. These are commands expressed in the robot's action format, not a video of an imagined future or a full plan for every step of a task."
+              "ACT is a neural-network design in which a robot receives a connected block of upcoming movements rather than one isolated next command.",
+              "For example, a robot places a battery into a holder. The original ACT implementation takes camera images and joint positions, then outputs several future joint-position targets. A controller uses the commands for movement, the camera provides another image and the model can calculate the next overlapping block."
             ]
           },
           {
@@ -219,13 +222,14 @@
       },
       "children": {
         "title": "ACT: predicting action chunks",
-        "short_description": "Transformers, variational learning and aggregation of overlapping predictions.",
+        "short_description": "ACT is a movement-selection program with a neural network that calculates several upcoming commands together in one block.",
         "sections": [
           {
             "id": "idea",
-            "title": "A few movements at a time",
+            "title": "What it is",
             "paragraphs": [
-              "Suppose a robot must put a small battery into a holder. It needs several connected movements, not just one. ACT is a learning method that predicts a short group of upcoming robot commands. It does not decide the whole future in advance."
+              "ACT is a movement-selection program with a neural network that calculates several upcoming commands together in one block.",
+              "For example, a robot places a battery into a holder. The original ACT implementation takes camera images and joint positions, then outputs several future joint-position targets. A controller uses the commands for movement, the camera provides another image and the model can calculate the next overlapping block."
             ]
           },
           {
@@ -262,13 +266,14 @@
     "ru": {
       "engineer": {
         "title": "ACT: действия последовательностями",
-        "short_description": "Трансформер, вариационное обучение и объединение перекрывающихся предсказаний.",
+        "short_description": "ACT — нейросетевая архитектура, обучаемая по демонстрациям и выдающая блок будущих действий за один расчёт.",
         "sections": [
           {
             "id": "overview",
-            "title": "Что меняет ACT",
+            "title": "Что это такое",
             "paragraphs": [
-              "Action Chunking with Transformers (ACT) — архитектура обучения по демонстрациям, которая предсказывает сразу несколько будущих действий. В исходной системе ALOHA входом служат синхронизированные изображения камер и текущие положения суставов, выходом — блок целевых суставных положений. Модель не заменяет обратную связь сервоприводов и не доказывает выполнимость всей задачи."
+              "ACT — нейросетевая архитектура политики робота, объединяющая трансформер и обучение по демонстрациям. Её выход — числовая последовательность действий для нескольких будущих моментов.",
+              "Например, робот помещает батарейку в держатель. В исходной реализации ACT получает изображения камер и положения суставов и выдаёт несколько будущих целевых положений суставов. Контроллер использует команды для движения, камера получает новый кадр, и модель может рассчитать следующий перекрывающийся блок."
             ]
           },
           {
@@ -324,13 +329,14 @@
       },
       "business": {
         "title": "ACT: действия последовательностями",
-        "short_description": "Трансформер, вариационное обучение и объединение перекрывающихся предсказаний.",
+        "short_description": "ACT — нейросетевая архитектура, обучаемая по демонстрациям и выдающая блок будущих действий за один расчёт.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Повторить показанную операцию",
+            "title": "Что это такое",
             "paragraphs": [
-              "ACT превращает записанные примеры работы в короткие последовательности команд. Это полезный кандидат для согласованных манипуляций, которые неудобно программировать как множество отдельных движений. Однако решение остаётся связано с представленными в данных предметами, камерами и интерфейсом робота. Оно не заменяет разработку производственного процесса."
+              "ACT — обучаемая модель действий, которая получает примеры выполнения операции и затем рассчитывает короткие последовательности команд роботу.",
+              "Например, робот помещает батарейку в держатель. В исходной реализации ACT получает изображения камер и положения суставов и выдаёт несколько будущих целевых положений суставов. Контроллер использует команды для движения, камера получает новый кадр, и модель может рассчитать следующий перекрывающийся блок."
             ]
           },
           {
@@ -365,13 +371,14 @@
       },
       "enthusiast": {
         "title": "ACT: действия последовательностями",
-        "short_description": "Трансформер, вариационное обучение и объединение перекрывающихся предсказаний.",
+        "short_description": "ACT — нейросетевая архитектура, обучаемая по демонстрациям и выдающая блок будущих действий за один расчёт.",
         "sections": [
           {
             "id": "idea",
-            "title": "Зачем предсказывать кусок движения",
+            "title": "Что это такое",
             "paragraphs": [
-              "Кривую удобнее рисовать небольшими связанными участками, а не каждый раз выбирать отдельную точку. ACT использует похожую идею для действий робота: предсказывает несколько будущих целей одним блоком. Это команды в определённом формате, а не фильм о будущем и не готовый план всей работы."
+              "ACT — устройство нейронной сети, в котором робот получает не одну следующую команду, а сразу связанный блок будущих движений.",
+              "Например, робот помещает батарейку в держатель. В исходной реализации ACT получает изображения камер и положения суставов и выдаёт несколько будущих целевых положений суставов. Контроллер использует команды для движения, камера получает новый кадр, и модель может рассчитать следующий перекрывающийся блок."
             ]
           },
           {
@@ -406,13 +413,14 @@
       },
       "children": {
         "title": "ACT: действия последовательностями",
-        "short_description": "Трансформер, вариационное обучение и объединение перекрывающихся предсказаний.",
+        "short_description": "ACT — программа выбора движений с нейронной сетью, которая рассчитывает несколько следующих команд одним блоком.",
         "sections": [
           {
             "id": "idea",
-            "title": "Несколько движений сразу",
+            "title": "Что это такое",
             "paragraphs": [
-              "Представь робота, который вставляет маленькую батарейку в держатель. Одной команды ему недостаточно: движения должны соединяться. ACT — способ обучения, при котором модель предсказывает короткую группу будущих команд. Всю работу наперёд она при этом не решает."
+              "ACT — программа выбора движений с нейронной сетью, которая рассчитывает несколько следующих команд одним блоком.",
+              "Например, робот помещает батарейку в держатель. В исходной реализации ACT получает изображения камер и положения суставов и выдаёт несколько будущих целевых положений суставов. Контроллер использует команды для движения, камера получает новый кадр, и модель может рассчитать следующий перекрывающийся блок."
             ]
           },
           {
@@ -449,13 +457,14 @@
     "ja": {
       "engineer": {
         "title": "ACT：動作のまとまりを予測する",
-        "short_description": "Transformer、変分学習、重なった予測の統合を理解する。",
+        "short_description": "ACTは、実演から学び、一回の計算で複数時刻の行動をまとめて出すニューラルネットワークの構成です。",
         "sections": [
           {
             "id": "overview",
-            "title": "ACTが予測するもの",
+            "title": "どんな技術か",
             "paragraphs": [
-              "Action Chunking with Transformers（ACT）は、実演から複数時刻の行動をまとめて予測する模倣学習の構成です。元のALOHAでは、同期した画像と現在の関節位置から将来の関節位置目標を出力します。方策が目標を選ぶ処理と、駆動部のフィードバック制御は別です。"
+              "ACTは、Transformerと実演に基づく学習を組み合わせたロボット方策の構成です。出力は、複数の将来時刻に対応する数値の行動列です。",
+              "例えば、電池を入れ物にはめるロボットを考えます。元のACT実装は、カメラ画像と関節位置を受け取り、先の複数時刻の関節目標値を出します。制御器が指令を使って機体を動かし、新しい画像を得たら、次の重なった動作列を計算できます。"
             ]
           },
           {
@@ -511,13 +520,14 @@
       },
       "business": {
         "title": "ACT：動作のまとまりを予測する",
-        "short_description": "Transformer、変分学習、重なった予測の統合を理解する。",
+        "short_description": "ACTは、実演から学び、一回の計算で複数時刻の行動をまとめて出すニューラルネットワークの構成です。",
         "sections": [
           {
             "id": "purpose",
-            "title": "実演した工程を再利用する",
+            "title": "どんな技術か",
             "paragraphs": [
-              "ACTは記録した作業例から短いロボット動作列を作る手法です。細かくプログラムしにくい協調操作で検討できます。ただし学習した物体、カメラ、指令形式に依存します。工程設計や治具の検討が不要になる仕組みではありません。"
+              "ACTは、作業例を使って訓練し、短い指令列をまとめて計算する行動モデルです。",
+              "例えば、電池を入れ物にはめるロボットを考えます。元のACT実装は、カメラ画像と関節位置を受け取り、先の複数時刻の関節目標値を出します。制御器が指令を使って機体を動かし、新しい画像を得たら、次の重なった動作列を計算できます。"
             ]
           },
           {
@@ -552,13 +562,14 @@
       },
       "enthusiast": {
         "title": "ACT：動作のまとまりを予測する",
-        "short_description": "Transformer、変分学習、重なった予測の統合を理解する。",
+        "short_description": "ACTは、実演から学び、一回の計算で複数時刻の行動をまとめて出すニューラルネットワークの構成です。",
         "sections": [
           {
             "id": "idea",
-            "title": "短い動作列を考える",
+            "title": "どんな技術か",
             "paragraphs": [
-              "曲線を描くとき、一点ずつ考えるより短い区間として形を考える方が自然な場合があります。ACTはロボット動作をまとまりで予測します。作るのは指令列で、未来の映像や、作業をすべて解決した計画ではありません。"
+              "ACTは、次の指令だけでなく、少し先までの動きをひとまとまりで出すニューラルネットワークの構造です。",
+              "例えば、電池を入れ物にはめるロボットを考えます。元のACT実装は、カメラ画像と関節位置を受け取り、先の複数時刻の関節目標値を出します。制御器が指令を使って機体を動かし、新しい画像を得たら、次の重なった動作列を計算できます。"
             ]
           },
           {
@@ -593,13 +604,14 @@
       },
       "children": {
         "title": "ACT：動作のまとまりを予測する",
-        "short_description": "Transformer、変分学習、重なった予測の統合を理解する。",
+        "short_description": "ACTは、いくつかの次の動きを一つの組にして計算する、ニューラルネットワークを使った仕組みだ。",
         "sections": [
           {
             "id": "idea",
-            "title": "動きを少しまとめる",
+            "title": "どんな技術か",
             "paragraphs": [
-              "電池を入れ物にはめるロボットを考えてみよう。一つの指示だけでは足りず、いくつかの動きをつなぐ必要があるね。ACTは、少し先までの指令を一まとまりで予測（よそく）する学び方だ。未来を全部決めるわけではない。"
+              "ACTは、いくつかの次の動きを一つの組にして計算する、ニューラルネットワークを使った仕組みだ。",
+              "例えば、電池を入れ物にはめるロボットを考えます。元のACT実装は、カメラ画像と関節位置を受け取り、先の複数時刻の関節目標値を出します。制御器が指令を使って機体を動かし、新しい画像を得たら、次の重なった動作列を計算できます。"
             ]
           },
           {

@@ -9,9 +9,9 @@
     "ja": "Transformerと注意機構"
   },
   "short_description": {
-    "ru": "Как связывают элементы последовательности и почему внимание ещё не означает понимание физики.",
-    "en": "Connecting sequence elements without assuming that attention understands physics.",
-    "ja": "系列内の情報を結びつける仕組みと、物理理解との違い。"
+    "ru": "Трансформер — архитектура нейронной сети из блоков внимания и преобразования признаков, работающих с числовыми представлениями данных.",
+    "en": "A transformer is a neural architecture of attention and feature-transformation blocks operating on numerical data representations.",
+    "ja": "Transformerは、数値表現を扱う注意機構と特徴変換のブロックを組み合わせたニューラルネットワーク構成です。"
   },
   "related_technologies": [],
   "prerequisites": [],
@@ -36,20 +36,21 @@
       "year": 2021
     }
   ],
-  "last_reviewed": "2026-11-13",
+  "last_reviewed": "2026-11-14",
   "content_status": "ready",
   "diagram": null,
   "localizations": {
     "en": {
       "engineer": {
         "title": "Transformers and attention",
-        "short_description": "Connecting sequence elements without assuming that attention understands physics.",
+        "short_description": "A transformer is a neural architecture of attention and feature-transformation blocks operating on numerical data representations.",
         "sections": [
           {
             "id": "overview",
-            "title": "An architecture, not a learning objective",
+            "title": "What it is",
             "paragraphs": [
-              "A transformer is a neural architecture built around attention and learned feature transformations. It can process language tokens, image patches, robot-state embeddings or action representations. The architecture alone does not define a controller, a world model or a training task. A text generator and an action-chunk predictor can use related components while solving different problems."
+              "A transformer is a neural-network architecture in which attention blocks connect elements of an input representation and learned transformations update their features. These elements are usually called tokens.",
+              "For example, an image of a table can be divided into patches, each represented as a numerical token. An attention block calculates how information from different patches affects an updated token. After several layers, another component uses the resulting representations, such as a scene-description model or an action generator."
             ]
           },
           {
@@ -106,13 +107,14 @@
       },
       "business": {
         "title": "Transformers and attention",
-        "short_description": "Connecting sequence elements without assuming that attention understands physics.",
+        "short_description": "A transformer is a neural architecture of attention and feature-transformation blocks operating on numerical data representations.",
         "sections": [
           {
             "id": "purpose",
-            "title": "A flexible component, not a robot product",
+            "title": "What it is",
             "paragraphs": [
-              "Transformers are a widely used neural architecture for relating information across sequences and modalities. In robotics they may combine images, language and machine state. Buying or selecting a transformer-based model does not specify the rest of the automation system or establish that it can perform an operational task."
+              "A transformer is a neural-network design for related pieces of information, built from repeated attention and numerical feature-transformation blocks.",
+              "For example, an image of a table can be divided into patches, each represented as a numerical token. An attention block calculates how information from different patches affects an updated token. After several layers, another component uses the resulting representations, such as a scene-description model or an action generator."
             ]
           },
           {
@@ -147,13 +149,14 @@
       },
       "enthusiast": {
         "title": "Transformers and attention",
-        "short_description": "Connecting sequence elements without assuming that attention understands physics.",
+        "short_description": "A transformer is a neural architecture of attention and feature-transformation blocks operating on numerical data representations.",
         "sections": [
           {
             "id": "idea",
-            "title": "Relating pieces of information",
+            "title": "What it is",
             "paragraphs": [
-              "A transformer processes a collection or sequence of numerical representations called tokens. Tokens might represent words, image patches or robot measurements. Its attention mechanism helps information from one position influence another. This is a mathematical operation, not a model literally looking around or deciding what matters as a person does."
+              "A transformer is a way to organize a neural network so that representations of words, image regions or other data exchange information through attention.",
+              "For example, an image of a table can be divided into patches, each represented as a numerical token. An attention block calculates how information from different patches affects an updated token. After several layers, another component uses the resulting representations, such as a scene-description model or an action generator."
             ]
           },
           {
@@ -188,13 +191,14 @@
       },
       "children": {
         "title": "Transformers and attention",
-        "short_description": "Connecting sequence elements without assuming that attention understands physics.",
+        "short_description": "A transformer is a neural-network design in which information is divided into groups of numbers and special blocks connect those groups during computation.",
         "sections": [
           {
             "id": "idea",
-            "title": "Pieces that can be connected",
+            "title": "What it is",
             "paragraphs": [
-              "A transformer is a kind of computer model. It turns pieces of information into lists of numbers called tokens. A piece might be a word, part of a picture or a robot measurement. The model then learns useful ways to connect information from those pieces."
+              "A transformer is a neural-network design in which information is divided into groups of numbers and special blocks connect those groups during computation.",
+              "For example, an image of a table can be divided into patches, each represented as a numerical token. An attention block calculates how information from different patches affects an updated token. After several layers, another component uses the resulting representations, such as a scene-description model or an action generator."
             ]
           },
           {
@@ -231,13 +235,14 @@
     "ru": {
       "engineer": {
         "title": "Трансформеры и внимание",
-        "short_description": "Как связывают элементы последовательности и почему внимание ещё не означает понимание физики.",
+        "short_description": "Трансформер — архитектура нейронной сети из блоков внимания и преобразования признаков, работающих с числовыми представлениями данных.",
         "sections": [
           {
             "id": "overview",
-            "title": "Архитектура, а не учебная цель",
+            "title": "Что это такое",
             "paragraphs": [
-              "Трансформер — нейросетевая архитектура на основе внимания и обучаемых преобразований признаков. Она может работать с языковыми токенами, участками изображений, представлениями состояния и действий робота. Архитектура сама не задаёт ни контроллер, ни модель мира, ни задачу обучения. Генератор текста и предсказатель блоков действий способны использовать родственные компоненты для разных задач."
+              "Трансформер — архитектура нейронной сети, в которой блоки внимания связывают элементы входного представления, а обучаемые преобразования изменяют их признаки. Элементы обычно называют токенами.",
+              "Например, изображение стола можно разделить на участки и превратить каждый в числовой токен. Блок внимания рассчитывает, как информация из разных участков влияет на обновление одного токена. После нескольких слоёв полученные представления использует следующий компонент — например, модель описания сцены или генератор действий."
             ]
           },
           {
@@ -294,13 +299,14 @@
       },
       "business": {
         "title": "Трансформеры и внимание",
-        "short_description": "Как связывают элементы последовательности и почему внимание ещё не означает понимание физики.",
+        "short_description": "Трансформер — архитектура нейронной сети из блоков внимания и преобразования признаков, работающих с числовыми представлениями данных.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Гибкий компонент, не готовый робот",
+            "title": "Что это такое",
             "paragraphs": [
-              "Трансформеры — распространённая архитектура для связей в последовательностях и между разными видами информации. В робототехнике они могут объединять изображения, язык и состояние машины. Выбор модели с трансформером не задаёт остальную систему автоматизации и не подтверждает способность выполнить рабочую операцию."
+              "Трансформер — устройство нейронной сети для обработки взаимосвязанных частей информации. Оно состоит из повторяющихся блоков внимания и преобразования числовых признаков.",
+              "Например, изображение стола можно разделить на участки и превратить каждый в числовой токен. Блок внимания рассчитывает, как информация из разных участков влияет на обновление одного токена. После нескольких слоёв полученные представления использует следующий компонент — например, модель описания сцены или генератор действий."
             ]
           },
           {
@@ -335,13 +341,14 @@
       },
       "enthusiast": {
         "title": "Трансформеры и внимание",
-        "short_description": "Как связывают элементы последовательности и почему внимание ещё не означает понимание физики.",
+        "short_description": "Трансформер — архитектура нейронной сети из блоков внимания и преобразования признаков, работающих с числовыми представлениями данных.",
         "sections": [
           {
             "id": "idea",
-            "title": "Связать части информации",
+            "title": "Что это такое",
             "paragraphs": [
-              "Трансформер обрабатывает последовательность числовых представлений — токенов. Они могут соответствовать словам, частям картинки и измерениям робота. Внимание помогает информации из одной позиции влиять на другую. Это математическая операция, а не буквальное рассматривание мира или человеческое решение о важности."
+              "Трансформер — способ организации нейронной сети, где числовые представления слов, частей изображения или других данных обмениваются информацией через механизм внимания.",
+              "Например, изображение стола можно разделить на участки и превратить каждый в числовой токен. Блок внимания рассчитывает, как информация из разных участков влияет на обновление одного токена. После нескольких слоёв полученные представления использует следующий компонент — например, модель описания сцены или генератор действий."
             ]
           },
           {
@@ -376,13 +383,14 @@
       },
       "children": {
         "title": "Трансформеры и внимание",
-        "short_description": "Как связывают элементы последовательности и почему внимание ещё не означает понимание физики.",
+        "short_description": "Трансформер — устройство нейронной сети, в котором информация разбита на числовые группы, а специальные блоки связывают эти группы при вычислении.",
         "sections": [
           {
             "id": "idea",
-            "title": "Части, которые можно связывать",
+            "title": "Что это такое",
             "paragraphs": [
-              "Трансформер — разновидность компьютерной модели. Он превращает части информации в наборы чисел, токены. Частью бывает слово, участок изображения или измерение робота. Затем модель учится полезным связям между такими представлениями."
+              "Трансформер — устройство нейронной сети, в котором информация разбита на числовые группы, а специальные блоки связывают эти группы при вычислении.",
+              "Например, изображение стола можно разделить на участки и превратить каждый в числовой токен. Блок внимания рассчитывает, как информация из разных участков влияет на обновление одного токена. После нескольких слоёв полученные представления использует следующий компонент — например, модель описания сцены или генератор действий."
             ]
           },
           {
@@ -419,13 +427,14 @@
     "ja": {
       "engineer": {
         "title": "Transformerと注意機構",
-        "short_description": "系列内の情報を結びつける仕組みと、物理理解との違い。",
+        "short_description": "Transformerは、数値表現を扱う注意機構と特徴変換のブロックを組み合わせたニューラルネットワーク構成です。",
         "sections": [
           {
             "id": "overview",
-            "title": "構成方式と学習目的は別",
+            "title": "どんな技術か",
             "paragraphs": [
-              "Transformerは、注意機構と学習可能な特徴変換を中心にしたニューラルネットワーク構成です。言語トークン、画像パッチ、機体状態、行動の表現などを処理できます。構成だけで制御器、世界モデル、学習課題が決まるわけではありません。文章生成と動作列予測で共通部品を使うこともできます。"
+              "Transformerは、入力表現の要素を注意機構で結び、学習可能な変換で特徴を更新するニューラルネットワーク構成です。こうした要素を通常トークンと呼びます。",
+              "例えば、机の画像を小さい区画に分け、各区画を数値のトークンにします。注意機構は、別の区画の情報をどのように参照してトークンを更新するか計算します。複数層を通した表現を、場面の説明や行動生成などの後段へ渡します。"
             ]
           },
           {
@@ -482,13 +491,14 @@
       },
       "business": {
         "title": "Transformerと注意機構",
-        "short_description": "系列内の情報を結びつける仕組みと、物理理解との違い。",
+        "short_description": "Transformerは、数値表現を扱う注意機構と特徴変換のブロックを組み合わせたニューラルネットワーク構成です。",
         "sections": [
           {
             "id": "purpose",
-            "title": "柔軟な部品である",
+            "title": "どんな技術か",
             "paragraphs": [
-              "Transformerは、系列や種類の違う情報の関係を扱う広く使われた構成です。ロボットでは画像、言語、機体状態を組み合わせる場合があります。ただし、この名前のモデルを選んでも設備の残りの構成は決まらず、作業を実行できる証拠にもなりません。"
+              "Transformerは、関連する情報を扱うネットワークの構造です。注意機構と数値特徴の変換を、複数のブロックとして組み合わせます。",
+              "例えば、机の画像を小さい区画に分け、各区画を数値のトークンにします。注意機構は、別の区画の情報をどのように参照してトークンを更新するか計算します。複数層を通した表現を、場面の説明や行動生成などの後段へ渡します。"
             ]
           },
           {
@@ -523,13 +533,14 @@
       },
       "enthusiast": {
         "title": "Transformerと注意機構",
-        "short_description": "系列内の情報を結びつける仕組みと、物理理解との違い。",
+        "short_description": "Transformerは、数値表現を扱う注意機構と特徴変換のブロックを組み合わせたニューラルネットワーク構成です。",
         "sections": [
           {
             "id": "idea",
-            "title": "情報の部分どうしを結ぶ",
+            "title": "どんな技術か",
             "paragraphs": [
-              "Transformerは、トークンという数値表現の列を処理します。単語、画像の一部分、ロボットの測定値などを表せます。注意機構によって、ある位置の情報を別の位置へ反映します。これは数学的な処理であり、人のように重要さを理解して見回すことではありません。"
+              "Transformerは、単語や画像の部分などの数値表現が、注意機構を通じて情報を参照し合うネットワークの組み立て方です。",
+              "例えば、机の画像を小さい区画に分け、各区画を数値のトークンにします。注意機構は、別の区画の情報をどのように参照してトークンを更新するか計算します。複数層を通した表現を、場面の説明や行動生成などの後段へ渡します。"
             ]
           },
           {
@@ -564,13 +575,14 @@
       },
       "children": {
         "title": "Transformerと注意機構",
-        "short_description": "系列内の情報を結びつける仕組みと、物理理解との違い。",
+        "short_description": "Transformerは、情報を数のグループに分け、特別な計算のブロックでグループ同士を結ぶニューラルネットワークの構造だ。",
         "sections": [
           {
             "id": "idea",
-            "title": "情報のかけらをつなぐ",
+            "title": "どんな技術か",
             "paragraphs": [
-              "Transformerはコンピューターのモデルの一種だ。単語や画像の一部分、ロボットの測定値を、トークンと呼ぶ数値の組に変える。そして、そのかけらの情報を役立つ形で結ぶ規則を学んでいく。"
+              "Transformerは、情報を数のグループに分け、特別な計算のブロックでグループ同士を結ぶニューラルネットワークの構造だ。",
+              "例えば、机の画像を小さい区画に分け、各区画を数値のトークンにします。注意機構は、別の区画の情報をどのように参照してトークンを更新するか計算します。複数層を通した表現を、場面の説明や行動生成などの後段へ渡します。"
             ]
           },
           {
