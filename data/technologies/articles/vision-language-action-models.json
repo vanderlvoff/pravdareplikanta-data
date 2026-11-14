@@ -4,32 +4,32 @@
   "category": "generalist-models",
   "technology_type": "model-family",
   "title": {
-    "ru": "Модели vision-language-action",
-    "en": "Vision-language-action models",
-    "ja": "視覚・言語・行動モデル"
+    "ru": "VLA: зрение, язык и действие",
+    "en": "Vision-language-action models (VLA)",
+    "ja": "視覚・言語・行動モデル（VLA）"
   },
   "short_description": {
-    "ru": "VLA — семейство обучаемых моделей, связывающих изображение сцены и языковое задание с выходным представлением действий робота.",
-    "en": "VLA is a family of learned models linking a scene image and language task to a robot-action representation.",
-    "ja": "VLAは、場面の画像と言語の課題を、ロボットの行動表現へ結び付ける学習モデル群です。"
+    "ru": "VLA — обученная нейросетевая модель управления роботом, которая по изображению сцены и заданию словами рассчитывает команды для физических действий.",
+    "en": "A VLA is a trained neural robot-control model that calculates physical-action commands from a scene image and a task expressed in words.",
+    "ja": "VLAは、場面の画像と言葉による課題から、ロボットの動作指令を計算する学習済みニューラルモデルです。"
   },
   "related_technologies": [
     {
       "target": "vision-language-models",
       "type": "evolved_from",
       "explanation": {
-        "ru": "Роботизированное обучение связывает зрительно-языковые представления с действием.",
-        "en": "Robot training connects vision-language representations to action.",
-        "ja": "視覚言語の表現をロボットの行動と結びつける。"
+        "ru": "Зрительно-языковая модель связывает изображения с текстом. Обучение на записях действий робота добавляет к этой основе связь с командами движения.",
+        "en": "A vision-language model connects images and text. Training on robot action recordings adds a connection from that foundation to movement commands.",
+        "ja": "視覚言語モデルは画像と文章を結び付けます。ロボットの動作記録で学習し、その土台と動作指令を結び付けます。"
       }
     },
     {
       "target": "flow-matching-policies",
       "type": "implemented_by",
       "explanation": {
-        "ru": "Flow matching — один из вариантов генератора действий, например в π0; не обязательная часть VLA.",
-        "en": "Flow matching is one possible action generator, as in π0, not a requirement for every VLA.",
-        "ja": "π0のように行動生成へ使う例があるが、すべてのVLAに必須ではない。"
+        "ru": "Некоторые VLA используют flow matching: обучаемое преобразование случайных чисел в блок будущих движений с учётом сцены и задания. Пример — модель π0 («пи-ноль»).",
+        "en": "Some VLAs use flow matching: a learned transformation of random numbers into an upcoming action block conditioned on the scene and task. Original π0, pronounced pi-zero, is an example.",
+        "ja": "場面と課題を条件に、ランダムな数値を次の動作ブロックへ変えるflow matchingを使うVLAもあります。元のπ0、パイ・ゼロがその一例です。"
       }
     }
   ],
@@ -78,190 +78,310 @@
   "localizations": {
     "en": {
       "engineer": {
-        "title": "Vision-language-action models",
-        "short_description": "VLA is a family of learned models linking a scene image and language task to a robot-action representation.",
+        "title": "VLA architecture: from camera input to the execution loop",
+        "short_description": "Vision-language-action models are learned control models that predict robot actions from images, language instructions and, in some implementations, robot state. A manipulation example connects input representation, action interfaces, training and execution.",
         "sections": [
           {
             "id": "overview",
-            "title": "What it is",
+            "title": "Define the controlled task first",
             "paragraphs": [
-              "A vision-language-action model (VLA) is a learned robot policy with visual and language inputs and outputs in an action representation. Its design connects scene processing, task conditioning and command generation.",
-              "For example, a camera sees a cup and a box, and the instruction is to put the cup in the box. The model uses both inputs and outputs actions in its chosen format, such as changes in a gripper target pose. Separate system components turn that representation into executable equipment movements."
+              "A VLA is a trained neural model or model system connecting visual observations and a language task to robot actions. Consider an arm and gripper facing a red cup, a blue cup and a box. The instruction asks for the red cup to be placed in the box. Execution requires selecting the object from the instruction and relating its position to movement of the mechanism.",
+              "Fix one action interface for this explanation: the model outputs increments of gripper position and orientation plus an opening command. This is a particular problem formulation, not a universal VLA requirement. It lets us specify the training data, prediction objective and interpretation of the resulting commands."
             ]
           },
           {
             "id": "inputs",
-            "title": "Observations and embodiment",
+            "title": "Representing the inputs",
             "paragraphs": [
-              "A system may consume images, a task instruction and robot state, but the exact inputs differ. Camera configuration, proprioception, action normalization and the physical embodiment belong to the contract. Cross-embodiment data requires explicit handling of those differences; identical-looking numerical actions do not necessarily mean the same thing on two robots."
+              "An image arrives as pixels and passes through a visual encoder, a network that converts it into numerical features. Text is split into vocabulary elements called tokens and also converted into numerical representations. Later layers connect these inputs so that action prediction depends on both the observation and the task.",
+              "Some systems also supply robot state, such as joint positions or the current gripper pose. Architecture determines the inputs. Multiple cameras or a frame history introduce synchronization and ordering requirements. Runtime observations need the same agreed format used when preparing the model.",
+              "For our example, changing the requested cup color should change the command with the image held constant. Moving that cup should change the command with the instruction held constant. These provide separate, concrete probes of how the system uses language and vision."
+            ]
+          },
+          {
+            "id": "actions",
+            "title": "Give the action a physical meaning",
+            "paragraphs": [
+              "A position increment requires a coordinate frame, units and limits. Motion along a camera axis is not the same as motion along the robot base’s axis. The output vector therefore needs a full specification: component order, rotation convention, scale and gripper-command interpretation. This agreement turns a number into a physical command.",
+              "Some models predict one action, others a chunk covering several upcoming time steps. A chunk needs a time interval and a decision about how much is executed before obtaining another observation. Output size therefore describes both controlled quantities and a proposed motion horizon."
             ]
           },
           {
             "id": "architecture",
-            "title": "Backbone and action interface",
+            "title": "Two concrete output mechanisms",
             "paragraphs": [
-              "A vision-language backbone can supply representations, while an output mechanism predicts actions. In the original RT-2 and OpenVLA recipes, action discretization connects robot outputs to token generation. The original π0 uses a flow-based action expert. Autoregressive tokens and continuous chunk generation have different latency and representation trade-offs; none defines every VLA."
+              "Original RT-2 and OpenVLA discretize action components: divide a continuous range into bins and represent a selected bin with a token. Predicted codes are decoded into commands. This allows action generation to use a mechanism for sequential token prediction.",
+              "Original π0 instead generates a continuous action chunk through flow matching. Its network learns a transformation from initial noise to actions conditioned on the observation and instruction. These choices imply different learning objectives and inference procedures, while both qualify as VLA through the information they connect.",
+              "The article’s diagram is a functional chain. It does not require vision, language and action to be three independent programs running in strict sequence. A particular architecture can connect them inside shared layers."
             ]
           },
           {
             "id": "training",
-            "title": "What robot data adds",
+            "title": "Connecting observations to recorded actions",
             "paragraphs": [
-              "Visual-language pretraining provides useful semantic information but not automatically the motor behavior of a new robot. Robot trajectories connect observations and instructions to actions. Training or adaptation may tune the backbone, an action head or selected parameters. Evaluate train/test separation by objects, tasks, environments and embodiments rather than assuming that diverse pretraining removes leakage."
+              "A robot demonstration records task execution with observations and actions over time. An operator might guide the gripper to the red cup and transfer it into the box while images, instruction, state and commands are recorded. Samples pair a chosen input history with the required action or action chunk.",
+              "A discrete output can be trained by reducing error in predicted action tokens. A continuous generative output needs its corresponding objective, as with flow matching. In both cases the algorithm adjusts model parameters from data. Frame alignment, units and timing matter because a recording error can also be learned.",
+              "Vision-language pretraining supplies a foundation for processing scenes and instructions. Robot recordings connect that foundation to the action interface. When the arm or gripper changes, check whether the new interface matches the learned one and fine-tune on data from the new setup when necessary."
             ]
           },
           {
             "id": "execution",
-            "title": "A VLA need not drive motors directly",
+            "title": "Connecting the prediction to mechanics",
             "paragraphs": [
-              "Outputs can be target poses, motion increments or other action representations passed to specialized controllers. Inverse kinematics, servo feedback, command limits and safety interlocks can remain outside the model. A natural-language instruction should not bypass that execution contract. Define exactly which component validates an action and how execution failures are reported."
+              "The requested gripper displacement is passed to an execution system. It may calculate the joint positions needed to achieve the motion, an inverse-kinematics task, and use joint controllers to execute them. Workspace restrictions, effort limits and stopping behavior are assigned at this level according to the robot’s design.",
+              "Images and state change while the arm moves. The next prediction on an updated observation closes the loop. In our example, this allows the approach to be adjusted if the cup shifts. Correction depends on the model inputs, update timing and any actions already queued for execution."
             ]
           },
           {
             "id": "timing",
-            "title": "Several loops, several deadlines",
+            "title": "Include time in the control problem",
             "paragraphs": [
-              "The semantic model, action generator and low-level controller may operate at different rates. Account for image age, language processing, sequential token generation or iterative sampling, network transfer and execution. Buffering or asynchronous prediction may help, but can also make commands stale. Test the complete timing behavior instead of quoting a single model throughput number."
+              "Suppose a camera frame was captured while the gripper was far from the cup. By the time prediction completes, the arm may have approached it. Frame age and inference delay directly affect whether the command remains suitable. Joint controllers can meanwhile operate at a shorter period than the VLA.",
+              "Measure the entire chain: observation acquisition, input preparation, model computation, decoding and command delivery. With chunks, include buffering and replacement of targets not yet executed. Rates are chosen using the installation’s dynamics and measured delays."
             ]
           },
           {
             "id": "evaluation",
-            "title": "What generalization means here",
+            "title": "Test individual dependencies and the complete operation",
             "paragraphs": [
-              "Measure instruction following and complete physical tasks under held-out variations. Include ambiguous requests, sensor faults, unfamiliar objects, recovery and interventions. A language benchmark cannot establish manipulator reliability. Compare against task-specific policies using the same action interface, data access and compute budget."
+              "First separate variations: change the requested cup color in the same scene, then move the cup while keeping the instruction. Next assess the entire operation—approach, secure grasp, transfer and release. Record success, interventions and failure types to distinguish object-selection errors from motion or holding failures.",
+              "Separate training and test data according to the claimed transfer, whether by recording, object, scene or robot. Otherwise neighboring frames from one demonstration can create a misleading impression of new-condition performance. Comparisons require known data access, matching action interfaces and comparable execution conditions."
             ]
           },
           {
             "id": "limits",
-            "title": "Transfer remains conditional",
+            "title": "What changes in the next application",
             "paragraphs": [
-              "A broad model can still fail through hallucinated semantics, poor geometry, action mismatch or contact changes. Fine-tuning may help one task and alter another. Public demonstrations and benchmark results describe tested conditions, not unrestricted autonomy. Robot safety and permitted operating conditions require separate engineering and validation."
+              "After a successful trial, another installation introduces specific changes: a new camera alters images, a new gripper changes contact geometry and another controller changes command response. Breaking these differences down helps identify where new data, interface alignment or retraining is needed.",
+              "A working VLA therefore comprises more than network parameters. It needs consistent observations, actions with defined physical meaning, an execution loop and a testable task. The sources below describe particular implementations of these connections; their reported version and problem formulation matter when using them."
             ]
           }
         ]
       },
       "business": {
-        "title": "Vision-language-action models",
-        "short_description": "VLA is a family of learned models linking a scene image and language task to a robot-action representation.",
+        "title": "VLA in robot operations: from a spoken task to completed work",
+        "short_description": "A VLA is a trained model connecting camera images and tasks expressed in words to robot actions. A cup-sorting example explains its role in automation, the required data and equipment, and how to assess results at an intended workstation.",
         "sections": [
           {
             "id": "purpose",
-            "title": "What it is",
+            "title": "Start with the work to be done",
             "paragraphs": [
-              "A VLA is a trained robot-action model that uses camera data and a verbal instruction together as inputs for computing commands.",
-              "For example, a camera sees a cup and a box, and the instruction is to put the cup in the box. The model uses both inputs and outputs actions in its chosen format, such as changes in a gripper target pose. Separate system components turn that representation into executable equipment movements."
+              "Imagine a workstation sorting objects into boxes. Object positions vary, as do instructions: select a red cup, then a blue one, or place an item in another box. A company is considering a robot with a camera, arm and gripper to carry out these operations.",
+              "A vision-language-action model, or VLA, is trained software that receives the workstation image and a task in words and calculates robot actions. Here it must connect the request for a red cup to the correct object in view, then produce commands for moving it.",
+              "The practical interest is the possibility of using a shared model for several related operations and changing tasks through language. Business value depends on completing useful work with acceptable preparation and support effort. The following sections show where that effort and outcome come from."
             ]
           },
           {
-            "id": "resources",
-            "title": "Adaptation is part of the investment",
+            "id": "mechanism",
+            "title": "What happens after the request",
             "paragraphs": [
-              "Plan for representative robot trajectories, camera integration, action-interface alignment, compute and on-site validation. A pretrained model may still need adaptation to the robot and work objects. Review licenses, deployment access, data handling and maintenance rather than assuming that publicly available weights imply a ready production system."
+              "A camera supplies the current scene and the instruction supplies the goal. The model uses both. Moving the cup changes the required motion; requesting the blue cup changes object selection. Evaluation must therefore connect the movement to the particular task, rather than assess a visually impressive arm motion alone.",
+              "The output consists of commands in an agreed format. They might specify a gripper displacement, orientation and closing action. The robot’s control system converts these into motor operation. A fresh camera image then shows the new situation and can inform the continuation.",
+              "Completing the operation involves many such decisions: approach, hold, transfer and release. Depending on the model, one prediction supplies a single action or a short sequence. The customer’s useful result is the whole completed transfer."
+            ]
+          },
+          {
+            "id": "data",
+            "title": "Why training needs robot actions",
+            "paragraphs": [
+              "Developers may start from a model already trained on images and text. That foundation supports processing object appearances and verbal instructions. Robot demonstrations add the connection to arm operation: a person carries out the task while observations and commands are recorded.",
+              "The recording shows what the gripper did for a particular image and instruction. A learning algorithm adjusts the model’s internal parameters over many examples. A cup workstation needs experience relevant to its objects, camera arrangement and equipment. The relevance of an existing dataset determines how much of it can be reused.",
+              "Additional training of an existing model on new examples is called fine-tuning. Its place in an implementation project follows from the mechanism: a different gripper, object appearance or camera position changes the relationship between image and required motion. The necessary demonstrations are determined after selecting the setup and task."
             ]
           },
           {
             "id": "integration",
-            "title": "Where the model ends",
+            "title": "Define the delivered system",
             "paragraphs": [
-              "The action output can go through pose conversion, kinematics and a conventional controller. Emergency stops and independent safety measures remain necessary. Require a clear account of what the model may command, how unsupported requests are rejected and how a failed action becomes an operational exception."
+              "Our operation needs a camera, robot arm, suitable gripper, computer and control software. The VLA connects observations and tasks to commands within that system. The manufacturer or integrator determines how commands reach the robot, how execution is checked and what happens after an unsuccessful grasp.",
+              "For a complete product, establish supported objects and operations, the way instructions are provided, who prepares data and who maintains the model. A company developing the system itself also needs model interfaces and access to training tools.",
+              "These deliveries involve different work. Public model parameters or source code can help an internal development team. A complete sorting cell needs those components connected to equipment and the operating process. Establishing the required delivery comes before estimating the project."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Derive costs from the process",
+            "paragraphs": [
+              "Data collection takes effort: conducting demonstrations, recording them correctly and covering relevant situations. Training and execution require computing resources. The physical setup adds equipment, integration and time when the workstation is occupied by trials. The amount depends on the selected solution.",
+              "Regular operation also includes occasions requiring assistance: an awkward object position, a failed hold or an unfinished task. Recovery time contributes to operating effort. There is no universal VLA price in this explanation; these are the parts of the process a project needs to count."
             ]
           },
           {
             "id": "acceptance",
-            "title": "A business-oriented trial",
+            "title": "Why a trial with the intended objects is needed",
             "paragraphs": [
-              "Use real instructions, held-out object variants and complete operations. Count successful output, interventions, recovery effort, timing variation and time to adapt a new task. Compare with a smaller specialized policy or established automation on the same job. Do not treat a model's language skills as a substitute for physical acceptance tests."
+              "A pre-adoption trial can now be specified. At the selected workstation, define operations with real cups and boxes and repeat them across allowed arrangements. Reserve some variations for evaluation rather than model preparation to test conditions not shown during adaptation.",
+              "Measure completed operations, object-selection errors, damage, execution time and operator interventions. Also vary the instructions: choosing the cup by color should produce the corresponding change. This connects language capability to a physical outcome.",
+              "Compare other ways to do the work, including specialized automation, a simpler learned model and the existing process. A shared VLA may offer value through task variety or easier reconfiguration. That remains a hypothesis to assess at the particular workstation."
             ]
           },
           {
             "id": "risk",
-            "title": "Scaling a generalist model",
+            "title": "After a successful trial",
             "paragraphs": [
-              "Generalist training can offer reuse, but performance may still depend strongly on camera placement, gripper, action format and task distribution. Updating a shared model can affect several operations. Plan version control, regression trials, rollback and a staffed exception path. A claim of broad capability is not evidence of unattended reliability in your facility."
+              "Results apply to defined objects, equipment and conditions. A new camera, gripper or product mix changes the system. Assign responsibility for assessing such changes, preparing additional data and confirming readiness.",
+              "When one model serves several operations, test updates on all affected tasks and retain a route back to the previous version. This follows the same logic as the mechanism: a VLA connects several kinds of information, and operational quality depends on how well that connection matches the real process."
             ]
           }
         ]
       },
       "enthusiast": {
-        "title": "Vision-language-action models",
-        "short_description": "VLA is a family of learned models linking a scene image and language task to a robot-action representation.",
+        "title": "VLA: connecting what a robot sees, reads and does",
+        "short_description": "A VLA is a trained neural model for robot control: it takes an image and a task expressed in words, then produces commands for physical actions. A cup-and-box example follows the whole process, from inputs and training to the movement of a gripper.",
         "sections": [
           {
             "id": "idea",
-            "title": "What it is",
+            "title": "What a VLA is and the problem it addresses",
             "paragraphs": [
-              "A VLA is a neural model or model system combining an image, a language task and numerical commands for robot actions.",
-              "For example, a camera sees a cup and a box, and the instruction is to put the cup in the box. The model uses both inputs and outputs actions in its chosen format, such as changes in a gripper target pose. Separate system components turn that representation into executable equipment movements."
+              "Imagine a table holding a red cup, a blue cup and a box. Beside it stands a robot with a camera and an arm ending in a gripper—a device that can hold an object. We ask it to put the red cup in the box. The robot needs to connect the words to the scene, bring its gripper to the right cup, pick it up and move it. We will follow this example throughout the article.",
+              "VLA stands for vision-language-action. It describes a trained neural model, or a system of models, that takes visual observations and a language task and calculates robot actions. It is software with many adjustable numbers, called parameters. Training adjusts these numbers so that the program produces appropriate commands from the information it receives.",
+              "The three words name the connection being learned. The image shows the scene now. The instruction specifies what to do in that scene. The output is intended to control movement. Moving the cup across the table or asking for the blue cup changes the required action even though the robot and its trained software remain the same."
             ]
           },
           {
-            "id": "examples",
-            "title": "Three implementations are not one recipe",
+            "id": "vision",
+            "title": "What actually arrives from the camera",
             "paragraphs": [
-              "RT-2 and the original OpenVLA show ways to represent robot actions through token outputs. The original π0 combines a vision-language backbone with a flow-based action generator. These examples explain why VLA and diffusion or flow matching are not competing names at the same level: one describes the overall connection, the others can describe the generator."
+              "The camera supplies an image: an array of numbers describing pixel brightness and color. There is no ready-made label saying where the red cup is. The visual part of the network converts the image into numerical features, an internal description that later computations can use to distinguish aspects of the scene.",
+              "Representation is the name given to such an internal description. It need not be a readable list of objects and coordinates. Training makes combinations of numbers useful for the task. Features can help distinguish appearance and arrangement, for example, but their exact organization depends on the model.",
+              "In our example, both the cup’s red color and its position relative to the gripper and box matter. Selecting the right object is only part of the work. Approaching a cup on the right edge requires different movements from approaching the same cup on the left. Robot control therefore needs the current image, as well as general information about what cups look like."
             ]
           },
           {
-            "id": "learning",
-            "title": "Where motion experience comes from",
+            "id": "language",
+            "title": "How words change an action in the same scene",
             "paragraphs": [
-              "Image–text pretraining can contribute semantic patterns, but robot demonstrations teach how observations and instructions relate to actions. A new robot may use different coordinates or joints. Transferring a model therefore requires more than attaching the same numbers to another machine's motors."
+              "The instruction is also converted into numbers. Text is divided into smaller elements—words or parts of words—and prepared for the network. These elements are called tokens. Tokenization is a way to represent text for computation; the term alone says nothing about how the motors will move.",
+              "Language processing is connected to the visual features. Asking for the red cup and then the blue cup can give the model the same camera image but require different movement. Training needs to make the action depend on that distinction. Otherwise, the program could react to an image while ignoring the task.",
+              "There need not be a separate step in which the program states aloud that it selected the red cup. The connection between image, instruction and movement can be distributed through the network’s computations. We describe the inputs separately to explain what information each one contributes."
+            ]
+          },
+          {
+            "id": "actions",
+            "title": "What it means to output an action",
+            "paragraphs": [
+              "Asking for a cup to be placed in a box does not specify every arm movement. The robot needs a concrete command format. One model response might contain numbers describing a small gripper displacement, a change of orientation and an open-or-close command. Displacement specifies where to move, orientation specifies how to turn, and the gripper command allows an object to be held or released.",
+              "To imagine the meaning of such an output, translate it into everyday language: bring the open gripper a little closer to the cup. This explains a numerical command; it is not a sentence every VLA must write. Other implementations output joint-position targets or a short sequence of movements. Understanding a model therefore includes asking what its output numbers mean.",
+              "Commands can also be encoded differently inside the network. For now, the essential connection is that the result must correspond to defined movements of a particular robot. VLA names the relationship between vision, language and action without prescribing one universal action format."
             ]
           },
           {
             "id": "control",
-            "title": "The controller can remain separate",
+            "title": "How a numerical answer becomes movement",
             "paragraphs": [
-              "A VLA can propose a pose or movement increment, leaving a conventional controller to execute it. Other components may handle kinematics and limits. The model might update more slowly than the motor-control loop. A meaningful system description should make those responsibilities visible."
+              "Return to the gripper approaching the cup. If the model requests a displacement, the execution system must determine how to move the arm joints to achieve it. A controller—the software directly operating the hardware—then sends signals to actuators and uses measurements to follow the requested targets.",
+              "This division has a practical reason: proposing a gripper movement and coordinating several motors are different parts of the task. In this arrangement, the VLA proposes movement and the execution system translates it into mechanical operation. That system also accounts for specified motion and effort limits. The precise allocation of responsibilities depends on the robot.",
+              "Movement changes the scene. The hand is closer, the cup may be between the fingers, or it may have shifted. A new image and other available measurements inform the next prediction. The robot can adjust its continuation using the previous outcome. When a model outputs several movements together, the developers determine how many to execute before using fresh observations again."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Who teaches the model to pick up a cup?",
+            "paragraphs": [
+              "How does the program learn which numbers suit this image of the cup? A major source of experience is robot demonstrations. A person operates the arm through a control device or another interface while a recording captures images, the instruction, available state measurements and commands over time.",
+              "One recording can cover the entire transfer: approach with an open gripper, close it, lift the cup, move above the box and release. It yields many examples of the form: given this observation and task, this was the action. The model predicts an action, and a learning algorithm adjusts its parameters to reduce disagreement with the recorded example. Learning from demonstrations is the name for this approach.",
+              "Examples need to cover the changes the network is expected to handle. Repeating one ideal movement from one cup position provides less evidence for a new arrangement than varied demonstrations do. This explains why robot data includes more than photographs: the image must be connected to what the arm did at the corresponding moment."
+            ]
+          },
+          {
+            "id": "foundation",
+            "title": "Why prior knowledge of images and language helps",
+            "paragraphs": [
+              "Before learning from robot movements, a model may already have a vision-language foundation: a network trained to connect pictures and text. Such data can help connect object names with appearances and make use of verbal attributes. Robot demonstrations add a connection from that foundation to physical commands.",
+              "These sources of experience have different roles. Images and text help relate a request to the object it concerns. Action recordings show how an arm was controlled in the corresponding circumstances. Recognizing the red cup helps our example, but a successful grasp also requires suitable movement and the right time to close the fingers.",
+              "Further training of an existing model on new examples is called fine-tuning. It may be needed for a different camera, arm, gripper or operation. The shared foundation becomes a development starting point, while additional recordings connect it to the hardware actually being used."
+            ]
+          },
+          {
+            "id": "examples",
+            "title": "Why VLAs can encode commands differently",
+            "paragraphs": [
+              "We can now examine action encoding. Original RT-2 and OpenVLA convert numerical action components into discrete codes and predict sequences of tokens. As an analogy, consider choosing numbered marks on a scale and converting a chosen mark back into a movement value. This explains the principle; actual ranges and coding rules are specified by the system.",
+              "The original π0 model, pronounced pi-zero, takes another approach. Its action generator uses flow matching: learning to progressively transform an initial set of random numbers into a suitable continuous block of movements, conditioned on the image and instruction. A block here means several upcoming actions prepared together.",
+              "These examples distinguish levels of description. VLA describes the information connected by the model. Tokens and flow matching describe possible ways to produce its output. Understanding the overall loop does not require mastering every output method first: an image and task still lead to actions, and those actions produce new observations."
             ]
           },
           {
             "id": "limits",
-            "title": "What to watch in a demonstration",
+            "title": "What counts as completing the task?",
             "paragraphs": [
-              "Ask which objects and instructions were held out, whether tasks are shown from start to finish and how failure is recovered. Fluent interpretation is not proof of correct geometry or reliable contact. Generalization is a measured ability under stated conditions, not permission to assume unlimited robot competence."
+              "Our example has a visible result: the requested cup is in the box. The next question is which changes allow that result to be repeated. Move the cup, add a similar object, rephrase the request or replace the gripper. These probe different abilities: using words, responding to position and acting with appropriate hardware.",
+              "Success with a new cup position demonstrates transfer to that particular change. It does not establish every other task or object. A useful report therefore specifies the training experience, the changes introduced for testing and the number of complete successful attempts. Failures help identify where more data or a different control approach was needed.",
+              "The full idea can now be followed in one pass: a camera provides an observation, words specify a goal, a trained model calculates an action, the execution system moves the arm and the next image shows the outcome. Training connects those parts through examples. VLA is this approach to producing physical behavior from observations and a task together."
             ]
           }
         ]
       },
       "children": {
-        "title": "Vision-language-action models",
-        "short_description": "A VLA is a trained robot program linking a camera picture and an instruction in words to movement commands.",
+        "title": "VLA: how words become a robot arm’s actions",
+        "short_description": "A VLA is a trained program that uses a camera image and a person’s request to choose robot actions. Follow the task of putting a red cup into a box, from the information it receives to the movements it learns to make.",
         "sections": [
           {
             "id": "idea",
-            "title": "What it is",
+            "title": "Three parts of one task",
             "paragraphs": [
-              "A VLA is a trained robot program linking a camera picture and an instruction in words to movement commands.",
-              "For example, a camera sees a cup and a box, and the instruction is to put the cup in the box. The model uses both inputs and outputs actions in its chosen format, such as changes in a gripper target pose. Separate system components turn that representation into executable equipment movements."
+              "A red cup, a blue cup and a box are on a table. Beside them is a robot with a camera and an arm ending in a gripper, a device for holding objects. We ask the robot to put the red cup in the box.",
+              "Three things need to be connected. The robot needs an image of the table, the words identifying what to do and a way to move. A program trained to connect these is called a VLA. The letters stand for vision, language and action.",
+              "Inside the program is a neural network: a system of calculations with many adjustable values. Training changes those values so that examples help the program produce useful commands. We will follow the information it receives and what happens next."
             ]
           },
           {
-            "id": "learning",
-            "title": "The robot needs movement examples",
+            "id": "picture",
+            "title": "What the camera image contributes",
             "paragraphs": [
-              "A picture can show what a cup looks like, but not by itself teach the right commands for a particular gripper. Robot demonstrations connect observations and instructions with movements. A different robot may need different commands even when the task sounds the same."
+              "The camera sends an image to the computer. For the program, it is made of numbers describing the colors of tiny dots called pixels. There is no ready-written note saying where the red cup is. The neural network processes the numbers to extract useful features.",
+              "Our request requires distinguishing the red cup from the blue cup and relating its location to the arm and box. Move the red cup to the left and the request can stay the same, but the arm must move differently. The current image supplies information about that change."
             ]
           },
           {
-            "id": "recipes",
-            "title": "There is more than one way",
+            "id": "words",
+            "title": "Why the words are needed too",
             "paragraphs": [
-              "Some systems represent commands with tokens, which are groups of numerical symbols. Others generate a short sequence by changing noisy numbers. These are different design choices inside the wider VLA idea. No single recipe is required for every model in the family."
+              "Now leave everything in place and ask for the blue cup. The image stays the same but the required action changes. The model needs both the picture and the task; the picture alone cannot specify which cup we requested.",
+              "Words are also converted into numbers for the network. Training connects instructions to relevant parts of the scene and actions. The difference between red and blue should affect object selection, while putting something in the box should affect what follows the grasp."
             ]
           },
           {
             "id": "control",
-            "title": "Another part still moves the motors",
+            "title": "What the model’s answer looks like",
             "paragraphs": [
-              "A model may suggest where the hand should go, while a controller handles the motors and checks their feedback. The model's answer and the motor's update need not happen at the same speed. Engineers define the connection and keep limits and stopping mechanisms."
+              "We can describe the first step as bringing the open gripper closer to the red cup. Robot control needs more specific commands. A model might output numbers for a small arm displacement, a gripper rotation and whether the gripper should be open. That is one possible way to describe an action.",
+              "Another part of the program, the controller, turns that target into motor operation. The joints move and the gripper approaches the cup. A new image helps the model choose what comes next: close the gripper, lift the cup, move it and release it.",
+              "The picture, words and movement form a repeating process. A new image matters because movement changes the scene. The cup might have shifted slightly, for example. The next commands need information about what actually happened."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Who shows the robot the movements?",
+            "paragraphs": [
+              "Initially, the network does not know which commands will pick up the cup. One way to teach it is to record demonstrations. A person operates the robot through a control device while the computer saves images, the task and the arm’s commands. The recording can cover the complete cup transfer.",
+              "Many examples come from it: what the camera saw, what the task was and what the robot did at that moment. The network tries to choose an action, and a learning program changes its internal values to make the answer better match the demonstration. This is learning from demonstrations.",
+              "Showing a cup in just one location provides little experience of other arrangements. Varied positions and appropriate tasks supply more examples. A photograph can help identify a cup’s appearance; action recordings add what the robot did with it."
+            ]
+          },
+          {
+            "id": "recipes",
+            "title": "Where knowledge of objects can come from",
+            "paragraphs": [
+              "Developers can start from a network already trained to connect pictures and text. That provides useful preparation for processing object appearances and requests. Robot examples then teach a connection from those observations to arm commands.",
+              "Think of knowing what a musical instrument looks like while still learning to play it. Appearance and movement experience contribute different things. The comparison is only about those types of experience: a robot learns from data, and its program works through numerical calculations.",
+              "A different arm or gripper may require additional training. The same numbers can move another mechanism differently. Developers therefore check whether a prepared model fits the machine being used."
+            ]
+          },
+          {
+            "id": "checking",
+            "title": "How to check that the request was completed",
+            "paragraphs": [
+              "Return to the table. Success means the red cup is in the box and remains intact. Move it, add another object or request the blue cup. These changes help check whether the robot uses new images and changing instructions.",
+              "After an error, investigate where it occurred: the wrong cup was selected, the grasp failed or the cup did not reach the box. These need different improvements. Watching the whole attempt gives more information than watching only the moment when the fingers already hold the cup."
             ]
           },
           {
             "id": "limits",
-            "title": "A good answer can still lead to a mistake",
+            "title": "Follow the whole process once more",
             "paragraphs": [
-              "The model may confuse objects, use an old picture or propose a movement unsuitable for the machine. People test complete tasks and changed conditions, including failures. Following some instructions well does not mean a robot understands every request like a person or can work safely without checks."
+              "The camera shows the table. The request specifies what to do. A trained model selects commands, a controller moves the arm and another image allows continuation based on the outcome. Recordings of such connections provide training examples.",
+              "When you see a robot following words, ask what its inputs are, how it represents an action and what examples taught it that relationship. Those questions help explain its design. VLA names an approach connecting vision, language and physical action in a trainable system."
             ]
           }
         ]
@@ -269,190 +389,310 @@
     },
     "ru": {
       "engineer": {
-        "title": "Модели vision-language-action",
-        "short_description": "VLA — семейство обучаемых моделей, связывающих изображение сцены и языковое задание с выходным представлением действий робота.",
+        "title": "VLA: устройство модели от входного кадра до исполнительного контура",
+        "short_description": "Vision-language-action — семейство обучаемых моделей управления, которые по изображению, языковой инструкции и, в некоторых реализациях, состоянию робота предсказывают действия. Разберём входы, представление команд, обучение и исполнение на одном примере манипуляции.",
         "sections": [
           {
             "id": "overview",
-            "title": "Что это такое",
+            "title": "Сначала определим управляемую задачу",
             "paragraphs": [
-              "Модель vision-language-action (VLA) — обучаемая модель роботической политики с визуальными и языковыми входами и выходом в виде представления действий. В её устройстве соединены восприятие сцены, условие задания и генератор команд.",
-              "Например, камера видит чашку и коробку, а задание — «поставь чашку в коробку». Модель использует оба входа и выдаёт действия в своём формате: например, изменения целевого положения захвата. Отдельные компоненты системы переводят это представление в исполняемые движения оборудования."
+              "VLA — обученная нейросетевая модель или система моделей, связывающая визуальные наблюдения и языковое задание с действиями робота. Рассмотрим руку с захватом перед столом: на столе стоят красная и синяя чашки и коробка, а инструкция требует положить красную чашку в коробку. Для выполнения задачи надо выбрать предмет по инструкции и преобразовать его расположение в движение механизма.",
+              "Зафиксируем один исполнительный интерфейс: модель выдаёт приращения положения и ориентации захвата и команду его открытия. Это пример постановки, а не общее требование к VLA. Именно выбранный интерфейс позволяет далее определить состав данных, цель обучения и способ проверки полученных команд."
             ]
           },
           {
             "id": "inputs",
-            "title": "Наблюдения и тело машины",
+            "title": "Что представляют собой входы модели",
             "paragraphs": [
-              "Система может получать изображения, инструкцию и состояние, но точный состав входов различается. Камеры, проприоцепция, нормализация команд и физическое тело входят в контракт. Общие данные нескольких роботов требуют явно учитывать различия; похожие числовые команды не обязательно означают одинаковое движение двух машин."
+              "Изображение поступает как массив пикселей и обрабатывается зрительным кодировщиком — нейросетью, преобразующей его в числовые признаки. Текст разбивают на токены, то есть элементы словаря, и также преобразуют в числовое представление. Дальнейшие слои связывают эти входы так, чтобы прогноз действия зависел и от наблюдения, и от задания.",
+              "В некоторых системах добавляют состояние робота: например, положения суставов или текущую позу захвата. Состав входов задаёт конкретная архитектура. Если используется несколько камер или история кадров, к данным добавляются требования к синхронизации и порядку. Модель должна получать наблюдение в том же согласованном формате, который использовался при её подготовке.",
+              "Для нашего примера это означает, что запрос «красная чашка» должен влиять на команду при неизменном кадре, а перенос этой чашки по столу — менять команду при неизменной инструкции. Эти два случая дают отдельные, понятные проверки того, как модель использует язык и зрение."
+            ]
+          },
+          {
+            "id": "actions",
+            "title": "Действие как определённый интерфейс",
+            "paragraphs": [
+              "У приращения положения есть система координат, единицы и пределы. Смещение вдоль оси камеры не совпадает со смещением вдоль оси основания робота. Поэтому выходной вектор нужно описывать полностью: порядок компонентов, смысл поворотов, масштаб и трактовку команды захвата. Число становится физической командой благодаря этому соглашению.",
+              "Некоторые модели предсказывают одно действие, другие — блок на несколько следующих моментов времени. При выдаче блока заранее определяют его временной шаг и то, какая часть будет исполнена до нового наблюдения. Таким образом, размер выхода описывает не только число управляемых величин, но и горизонт предложенного движения."
             ]
           },
           {
             "id": "architecture",
-            "title": "Основа и интерфейс действий",
+            "title": "Как строят выход: два конкретных примера",
             "paragraphs": [
-              "Зрительно-языковая основа может выдавать представления, а выходной механизм — действия. В исходных RT-2 и OpenVLA дискретизация связывает действия с генерацией токенов. Исходная π0 использует генератор на flow matching. Авторегрессионные токены и непрерывные блоки имеют разные ограничения задержки и формата; ни один способ не определяет все VLA."
+              "В исходных RT-2 и OpenVLA компоненты действий дискретизируют: непрерывный диапазон разбивают на участки и представляют выбранный участок токеном. Модель предсказывает коды, которые затем декодируют в команды. Благодаря этому генерацию действий можно связать с механизмом последовательного предсказания токенов.",
+              "В исходной π0 используется другой выходной механизм — генерация непрерывного блока действий через flow matching. Сеть обучается преобразованию начального шума в действия при условии наблюдения и инструкции. Это различие важно для выбора функции обучения и процедуры вычисления, но оба случая относятся к VLA по своим входам и назначению выхода.",
+              "Схема статьи показывает функциональную цепочку. Она не требует, чтобы зрение, язык и действия были тремя независимыми программами или исполнялись строго последовательно: конкретная модель может соединять их внутри общих слоёв."
             ]
           },
           {
             "id": "training",
-            "title": "Что добавляют роботизированные данные",
+            "title": "Какие примеры связывают наблюдение с действием",
             "paragraphs": [
-              "Предобучение на изображениях и языке даёт полезные смысловые связи, но не автоматически движения нового робота. Траектории связывают наблюдения и задания с действиями. Адаптация может менять основу, головку или отдельные параметры. Разделять обучение и тесты следует по объектам, задачам, средам и телам, не считая разнообразие предобучения защитой от утечки."
+              "Роботизированная демонстрация — запись выполнения задания с наблюдениями и действиями во времени. Например, оператор подводит захват к красной чашке и переносит её в коробку; система сохраняет кадры, инструкцию, состояние и команды. Из записи формируют обучающие примеры с выбранной историей входов и нужным действием или блоком действий на выходе.",
+              "Для дискретного выхода обучение может уменьшать ошибку предсказания правильных токенов. Для генеративного непрерывного выхода нужна соответствующая цель, как в flow matching. В обоих случаях алгоритм меняет параметры модели по данным. Качество связи зависит от согласования кадров, команд, единиц и времени: ошибку записи модель тоже способна усвоить.",
+              "Зрительно-языковое предобучение даёт основу для обработки сцен и инструкций. Роботизированные записи связывают эту основу с исполнительным интерфейсом. Если меняется рука или захват, проверяют, соответствует ли новый интерфейс уже выученному, и при необходимости дообучают модель на данных новой установки."
             ]
           },
           {
             "id": "execution",
-            "title": "Модель не обязана управлять моторами прямо",
+            "title": "Как модель соединяется с механикой",
             "paragraphs": [
-              "Выходом могут быть целевые позы, приращения движения или другие представления, поступающие специализированным контроллерам. Внешними остаются обратная кинематика, сервосвязь, ограничения и блокировки. Языковая инструкция не должна обходить исполнительный контракт. Требуется указать, кто проверяет действие и как сообщает о сбое исполнения."
+              "Предсказанное смещение захвата передают исполнительной системе. Она может вычислять положения суставов для требуемого перемещения — это задача обратной кинематики — и затем использовать суставные регуляторы. На этом уровне учитываются рабочая область, допустимые усилия и предусмотренные остановки. Распределение этих функций фиксируют для конкретного робота.",
+              "Пока рука движется, меняются кадр и состояние. Контур замыкается новым прогнозом по обновлённому наблюдению. В нашем примере это даёт возможность скорректировать подход, если чашка сдвинулась. Возможность коррекции зависит от входов модели, момента обновления и того, какие действия уже находятся в очереди на исполнение."
             ]
           },
           {
             "id": "timing",
-            "title": "Несколько циклов и сроков",
+            "title": "Почему время входит в постановку задачи",
             "paragraphs": [
-              "Смысловая модель, генератор действий и нижний контроллер способны работать с разными частотами. Учитывают возраст кадра, обработку языка, токены или итеративную генерацию, передачу и исполнение. Буферизация и асинхронное предсказание иногда помогают, но способны сделать команды устаревшими. Измеряют всю временную схему, не одну производительность модели."
+              "Пусть модель получила кадр, когда захват ещё находился далеко от чашки. К моменту готовности выхода рука могла приблизиться к ней. Возраст кадра и задержка вычисления тогда непосредственно влияют на пригодность команды. Суставные регуляторы при этом могут работать с более коротким периодом, чем VLA.",
+              "Поэтому измеряют всю цепочку: получение наблюдений, подготовку входов, вычисление модели, декодирование и доставку команды. Для блока действий дополнительно учитывают буфер и порядок замены ещё не исполненных целей. Конкретные решения о частотах принимают по динамике установки и измеренным задержкам."
             ]
           },
           {
             "id": "evaluation",
-            "title": "Что именно считается переносом",
+            "title": "Как проверить отдельные способности и полный результат",
             "paragraphs": [
-              "Проверяют следование инструкциям и полные физические операции на отложенных вариациях. Включают неоднозначные запросы, отказы датчиков, незнакомые предметы, восстановление и вмешательства. Языковой тест не устанавливает надёжность манипулятора. Сравнивают со специализированной политикой при равных интерфейсе действий, доступе к данным и вычислениях."
+              "Сначала полезно разделить изменения: при той же сцене менять цвет запрошенной чашки, а при той же инструкции — положение предмета. Затем проверяют полную операцию: подход, надёжный захват, перенос и отпускание в нужное место. Регистрируют успех, вмешательства и характер ошибок, чтобы различать неверный выбор предмета, ошибку движения и неудачное удержание.",
+              "Обучающие и проверочные данные разделяют в соответствии с заявленным переносом: по записям, предметам, сценам или роботам. Иначе соседние кадры одного показа могут создать впечатление работы в новых условиях. Сравнение с другой политикой имеет смысл при известном доступе к данным, одинаковом выходном интерфейсе и сопоставимых условиях исполнения."
             ]
           },
           {
             "id": "limits",
-            "title": "Обобщение остаётся условным",
+            "title": "Что меняется при следующем применении",
             "paragraphs": [
-              "Широкая модель ошибается в семантике, геометрии, формате действия и изменившемся контакте. Дообучение одной операции может менять другую. Демонстрации и результаты статьи описывают проверенные условия, не неограниченную автономность. Безопасность робота и разрешённые режимы требуют отдельного проектирования и подтверждения."
+              "После успешной проверки перенос на другую установку раскладывается на конкретные изменения: другая камера меняет изображение, новый захват — геометрию контакта, другой контроллер — реакцию на команду. Это помогает решить, где нужны новые данные, согласование интерфейса или повторное обучение.",
+              "Таким образом, рабочая VLA определяется не только файлом параметров сети. Нужны согласованные наблюдения, действие с определённым физическим смыслом, исполнительный контур и проверяемая задача. Исследования и код ниже показывают конкретные реализации этих связей; при их использовании важно сохранять указанную авторами версию и постановку."
             ]
           }
         ]
       },
       "business": {
-        "title": "Модели vision-language-action",
-        "short_description": "VLA — семейство обучаемых моделей, связывающих изображение сцены и языковое задание с выходным представлением действий робота.",
+        "title": "VLA в работе робота: от словесного задания к выполненной операции",
+        "short_description": "VLA — обученная модель, которая связывает изображение с камеры и задание словами с действиями робота. На примере сортировки чашек разберём, какую часть автоматизации она даёт, какие данные и оборудование нужны и как оценить результат на своём рабочем месте.",
         "sections": [
           {
             "id": "purpose",
-            "title": "Что это такое",
+            "title": "Какую работу хотим поручить роботу",
             "paragraphs": [
-              "VLA — обученная модель действий робота, в которой данные камеры и инструкция словами являются совместными входами для расчёта команд.",
-              "Например, камера видит чашку и коробку, а задание — «поставь чашку в коробку». Модель использует оба входа и выдаёт действия в своём формате: например, изменения целевого положения захвата. Отдельные компоненты системы переводят это представление в исполняемые движения оборудования."
+              "Представим рабочее место, где нужно раскладывать предметы по коробкам. Положение предметов немного меняется, а задания различаются: сегодня взять красную чашку, затем синюю, потом положить подходящий предмет в другую коробку. Компания рассматривает робота с камерой, рукой и захватом, чтобы выполнять такие операции.",
+              "Модель vision-language-action, сокращённо VLA, — обученная программа, которая получает изображение рабочего места и словесное задание, а рассчитывает действия робота. В нашем примере она должна связать просьбу о красной чашке с нужным предметом перед камерой и выдать команды, позволяющие его переместить.",
+              "Это определяет практический интерес к технологии: можно исследовать управление несколькими похожими операциями через общую модель и менять задание словами. Деловая ценность возникает, если такой способ позволяет выполнять нужную работу с приемлемыми затратами на подготовку и сопровождение. Дальше разберём, из чего эти затраты и результат складываются."
             ]
           },
           {
-            "id": "resources",
-            "title": "Адаптация входит в инвестиции",
+            "id": "mechanism",
+            "title": "Что происходит после просьбы взять чашку",
             "paragraphs": [
-              "Планируют представительные траектории, камеры, согласование интерфейса действий, вычисления и испытания на месте. Готовая модель может нуждаться в адаптации к телу робота и изделиям. Проверяют лицензии, доступ к развёртыванию, обращение с данными и обслуживание. Открытые веса — не готовность производственного решения."
+              "Камера передаёт текущую сцену, а текст инструкции задаёт цель. Модель использует оба входа. Если чашка сдвинулась, нужное движение меняется; если вместо красной попросили синюю, меняется выбираемый предмет. Поэтому проверять надо не просто красивое движение руки, а соответствие её действий конкретному заданию.",
+              "Выход модели — команды в заданном формате. Например, они могут указывать, куда сдвинуть и как повернуть захват и когда его закрыть. Управляющая система робота переводит это в движения моторов. После движения камера показывает новую ситуацию, и система может рассчитать продолжение.",
+              "Полная операция складывается из многих таких решений: приблизиться к чашке, удержать её, перенести и отпустить в коробку. В зависимости от модели за один расчёт готовят одно действие или короткую последовательность. Для заказчика важен итог всего переноса, поскольку именно он выполняет рабочее задание."
+            ]
+          },
+          {
+            "id": "data",
+            "title": "Почему модель нужно учить на действиях робота",
+            "paragraphs": [
+              "Разработчики могут начать с модели, уже обученной на изображениях и тексте. Такая основа помогает обрабатывать внешний вид предметов и словесные указания. Чтобы связать их с работой руки, используют записи роботизированных демонстраций: человек выполняет задание, а система сохраняет наблюдения и команды.",
+              "Из записи получается пример того, что делал захват при определённой картинке и инструкции. На множестве примеров алгоритм подбирает внутренние параметры модели. Для рабочего места с чашками важны показы с соответствующими предметами, расположением камеры и оснащением. Насколько можно использовать уже собранные данные, зависит от их соответствия новой задаче.",
+              "Дополнительную настройку подготовленной модели по новым примерам называют дообучением. Теперь понятно, почему она может входить в проект внедрения: новый захват, вид предметов или положение камеры меняют связь между увиденным и нужным движением. Состав необходимых показов определяют после выбора конкретной установки и задачи."
             ]
           },
           {
             "id": "integration",
-            "title": "Где заканчивается модель",
+            "title": "Что должно войти в поставляемую систему",
             "paragraphs": [
-              "Команда способна пройти преобразование позы, кинематику и обычный контроллер. Аварийная остановка и независимая защита остаются необходимыми. Нужны точные границы того, что модель вправе приказать, как отклоняются неподдержанные запросы и как неудачное действие становится исключением в рабочем процессе."
+              "Для выполнения нашей операции нужны камера, роботизированная рука, подходящий захват, вычислитель и программы управления. VLA связывает наблюдение и задание с командами внутри этой системы. Производитель или интегратор определяет, как эти команды получает робот, как контролируется исполнение и как обрабатывается ситуация, когда чашка не взята.",
+              "Поэтому при покупке готового решения уточняют его рабочую область: какие предметы и операции поддержаны, как задаётся инструкция, кто готовит данные и кто обслуживает модель. Если компания сама разрабатывает систему, ей также нужны технические интерфейсы модели и доступ к средствам обучения.",
+              "Эти варианты поставки различаются объёмом работы. Открытые параметры сети или доступный код могут помочь собственной команде разработки. Готовая ячейка для сортировки должна уже соединять их с оборудованием и рабочим процессом. Сначала стоит установить, какой из этих результатов требуется компании."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Как из устройства технологии следуют расходы",
+            "paragraphs": [
+              "У сборки данных есть трудозатраты: провести показы, сохранить их без ошибок и убедиться, что они покрывают нужные ситуации. У обучения и исполнения есть вычислительные требования. У физической системы есть стоимость оборудования, наладки и времени, когда рабочее место занято испытаниями. Конкретный объём этих работ оценивают для выбранного решения.",
+              "После запуска остаются случаи, когда нужна помощь человека: предмет оказался неудобно расположен, захват не удержал чашку или система не завершила задание. Поэтому в расчёт регулярной работы включают время такого восстановления. Эта статья не даёт универсальную цену VLA: она объясняет, какие части процесса нужно посчитать."
             ]
           },
           {
             "id": "acceptance",
-            "title": "Проверка на языке бизнеса",
+            "title": "Зачем проводить пробную работу на своих предметах",
             "paragraphs": [
-              "Используют настоящие инструкции, отложенные варианты предметов и завершённые операции. Считают полезный выпуск, вмешательства, восстановление, разброс времени и обучение новой задаче. Сравнивают с меньшей специализированной моделью и существующей автоматизацией. Языковые способности не заменяют физические приёмочные испытания."
+              "Теперь можно сформулировать проверку до регулярного использования. На выбранном рабочем месте задают набор операций с реальными чашками и коробками. Повторяют задания при разных допустимых расположениях предметов. Часть вариантов оставляют для проверки и не используют при подготовке модели, чтобы увидеть результат в ещё не показанных ей условиях.",
+              "Считают завершённые операции, ошибки выбора, повреждения, время выполнения и вмешательства оператора. Полезно отдельно менять формулировки заданий: робот должен реагировать на нужную разницу, например на цвет выбранной чашки. Так проверка связывает возможности языка с физическим результатом.",
+              "Для сравнения рассматривают и другие способы выполнить эту работу: специализированную автоматизацию, более простую обученную модель или действующий процесс. Выигрыш общей VLA может быть связан с разнообразием заданий и удобством перенастройки, но это проверяемая гипотеза для конкретного рабочего места."
             ]
           },
           {
             "id": "risk",
-            "title": "Масштабирование общей модели",
+            "title": "Что учитывать после успешной проверки",
             "paragraphs": [
-              "Общее обучение полезно для переиспользования, но результат зависит от камеры, захвата, формата команд и распределения задач. Обновление общей модели может затронуть несколько операций. Нужны версии, повторные испытания, откат и путь помощи человеком. Широкая способность сама не доказывает работу без надзора на вашем объекте."
+              "Результат испытаний относится к определённым предметам, оборудованию и условиям. Замена камеры, новый захват или другой набор изделий меняют эту систему. Заранее определяют, кто оценивает такие изменения, готовит дополнительные данные и подтверждает готовность к работе.",
+              "Если одна модель используется в нескольких операциях, её обновление проверяют на всех затронутых задачах и сохраняют возможность вернуться к предыдущей версии. Это продолжение той же логики: VLA связывает несколько видов информации, а качество работы определяется тем, насколько эта связь подходит реальному процессу."
             ]
           }
         ]
       },
       "enthusiast": {
-        "title": "Модели vision-language-action",
-        "short_description": "VLA — семейство обучаемых моделей, связывающих изображение сцены и языковое задание с выходным представлением действий робота.",
+        "title": "VLA: как робот связывает увиденное, слова и движение",
+        "short_description": "VLA — обученная нейросетевая модель управления роботом: она получает изображение и задание словами, а выдаёт команды для физических действий. На примере чашки и коробки разберём весь путь: что поступает в модель, чему её обучают и как её ответ становится движением.",
         "sections": [
           {
             "id": "idea",
-            "title": "Что это такое",
+            "title": "Что такое VLA и какую задачу она решает",
             "paragraphs": [
-              "VLA — нейросетевая модель или система моделей, объединяющая картинку, словесное задание и числовые команды для действий робота.",
-              "Например, камера видит чашку и коробку, а задание — «поставь чашку в коробку». Модель использует оба входа и выдаёт действия в своём формате: например, изменения целевого положения захвата. Отдельные компоненты системы переводят это представление в исполняемые движения оборудования."
+              "Представьте стол с красной чашкой, синей чашкой и коробкой. Рядом находится робот с камерой и рукой, на конце которой установлен захват — устройство, способное удерживать предмет. Мы просим: «Положи красную чашку в коробку». Роботу предстоит связать слова с тем, что находится перед ним, подвести захват к нужной чашке, взять её и перенести. Именно на этом примере мы будем разбирать устройство VLA.",
+              "VLA расшифровывается как vision-language-action: зрение, язык, действие. Так называют обученную нейросетевую модель или систему моделей, которая получает зрительные наблюдения и языковое задание и по ним рассчитывает действия робота. Это программа с большим количеством настраиваемых чисел — параметров. Во время обучения их подбирают так, чтобы по входным данным программа выдавала подходящие команды.",
+              "Три слова в названии обозначают связь, которую строит модель. Картинка сообщает, какая сцена перед роботом сейчас. Инструкция задаёт, что в этой сцене нужно сделать. Выход предназначен для управления движением. Если переместить чашку на столе или попросить взять синюю вместо красной, требуемое действие изменится, хотя робот и сама обученная программа останутся теми же."
             ]
           },
           {
-            "id": "examples",
-            "title": "Три реализации — разные рецепты",
+            "id": "vision",
+            "title": "Что именно приходит от камеры",
             "paragraphs": [
-              "RT-2 и исходная OpenVLA показывают представление действий через выходные токены. Исходная π0 сочетает зрительно-языковую основу и flow-генератор. Поэтому VLA и flow matching — не конкурирующие названия одного уровня. Первое описывает общую связь, второе может описывать устройство её генератора."
+              "Камера передаёт изображение — массив чисел, описывающих яркость и цвет пикселей. В нём нет готовой надписи «красная чашка находится здесь». Чтобы использовать изображение, зрительная часть сети преобразует его в набор числовых признаков: внутреннее описание, на основе которого дальнейшие вычисления могут различать особенности сцены.",
+              "Представление — просто название такого внутреннего описания. Его не обязательно можно прочитать как список предметов с координатами. Сеть обучается использовать сочетания чисел, полезные для её задач. Например, признаки могут помогать различать предметы, их внешний вид и расположение. Как именно они устроены, зависит от конкретной модели.",
+              "В нашем примере важны и красный цвет чашки, и её положение относительно захвата и коробки. Найти нужный предмет — лишь часть работы: подвести руку к чашке на правом краю стола нужно иначе, чем к такой же чашке слева. Поэтому для управления имеет значение текущая картинка, а не только общее знание о том, как выглядят чашки."
             ]
           },
           {
-            "id": "learning",
-            "title": "Откуда берётся двигательный опыт",
+            "id": "language",
+            "title": "Как слова меняют действие на той же картинке",
             "paragraphs": [
-              "Изображения и подписи дают смысловые закономерности, а роботизированные демонстрации связывают увиденное и команду с действиями. Новое тело может иметь другую систему координат и суставы. Перенос требует большего, чем подключения тех же чисел к моторам другой машины."
+              "Инструкция тоже поступает в виде чисел. Текст делят на небольшие элементы — слова или части слов — и преобразуют для обработки сетью. Эти элементы называют токенами. Это способ представить текст вычислительной программе; сам термин ещё ничего не говорит о том, как будут двигаться моторы.",
+              "Обработка языка связывается со зрительными признаками. Если на одном и том же изображении попросить взять сначала красную, а потом синюю чашку, вход от камеры может быть одинаковым, но требуемые движения различаются. Обучение должно сделать модель чувствительной к этой разнице. Иначе получится управление по картинке, которое не использует смысл задания.",
+              "Здесь не обязательно существует отдельный этап, на котором программа вслух формулирует «я выбрала красную чашку». Связь изображения, задания и движения может быть распределена по вычислениям сети. Для объяснения мы разделяем их на части, чтобы проследить, какую информацию приносит каждый вход."
+            ]
+          },
+          {
+            "id": "actions",
+            "title": "Что значит «модель выдаёт действие»",
+            "paragraphs": [
+              "Попросить «положи чашку» — ещё не определить каждое движение руки. У робота должен быть конкретный формат команды. Например, один ответ модели может содержать числа для небольшого смещения захвата, изменения его ориентации и команды на открытие или закрытие. Смещение сообщает, куда двигаться, ориентация — как повернуть захват, а последняя команда позволяет взять или отпустить предмет.",
+              "Чтобы представить смысл такого ответа, его можно перевести на обычный язык: «немного приблизить открытый захват к чашке». Это пояснение числовой команды, а не обязательная фраза, которую пишет VLA. Другие реализации задают целевые положения суставов или сразу короткий отрезок последовательности движений. Поэтому при знакомстве с моделью важно выяснить, что именно означают её выходные числа.",
+              "Внутри модели эти команды тоже могут кодироваться по-разному. Пока достаточно зафиксировать главное: результат вычисления должен быть связан с определёнными движениями конкретного робота. Название VLA обозначает связь зрения, языка и действия, но не устанавливает единственный формат этого действия."
             ]
           },
           {
             "id": "control",
-            "title": "Контроллер может оставаться отдельным",
+            "title": "Как числовой ответ превращается в движение",
             "paragraphs": [
-              "VLA способна предлагать позу или приращение движения, а обычный контроллер — выполнять цель. Другие части занимаются кинематикой и ограничениями. Модель может обновляться медленнее приводного контура. Полезное описание системы должно показывать это разделение ролей."
+              "Вернёмся к захвату, который нужно подвести к чашке. Если модель выдала желаемое смещение, исполнительная часть должна определить, как для этого изменить положения суставов руки. Затем контроллер — программа непосредственного управления оборудованием — посылает сигналы приводам и использует измерения, чтобы следовать полученным целям.",
+              "Такое разделение важно по простой причине: решение «подвинуть захват сюда» и точная работа нескольких моторов — разные части задачи. В рассматриваемой системе VLA предлагает движение, а исполнительная часть переводит его в работу механизма. Она также учитывает заданные пределы перемещения и усилий. Конкретное распределение ролей зависит от устройства робота.",
+              "После движения сцена меняется. Приблизилась рука, чашка оказалась между пальцами или, наоборот, чуть сдвинулась. Новый кадр и другие доступные измерения поступают на следующий расчёт. Робот может уточнить продолжение действия по результату предыдущего. Если модель выдаёт сразу несколько движений, разработчики определяют, сколько из них выполнить до следующего обращения к свежим наблюдениям."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Кто учит модель брать чашку",
+            "paragraphs": [
+              "Теперь возникает главный вопрос: откуда программе известно, какие числа нужны для чашки на этой картинке? Один из основных источников — демонстрации робота. Человек управляет рукой через специальное устройство или другую систему управления, а запись сохраняет изображения, инструкцию, доступные измерения и команды в последовательные моменты времени.",
+              "Одна такая запись может показывать весь перенос: открытый захват приближается к чашке, закрывается, поднимает её, перемещается над коробкой и отпускает. Для обучения из записи получают много примеров: «при таком наблюдении и таком задании было выбрано такое действие». Модель пробует предсказать действие, а алгоритм меняет её параметры, уменьшая ошибку относительно записанного примера. Этот способ учиться по показу называют обучением по демонстрациям.",
+              "Чтобы сеть научилась действовать при разном расположении предметов, ей нужны примеры соответствующих изменений. Запись одного идеально повторённого движения даёт меньше оснований для нового размещения чашки, чем разнообразные показы. Это объясняет, почему данные для робота включают не только фотографии: нужна связь фотографии с тем, что делала рука в тот же момент."
+            ]
+          },
+          {
+            "id": "foundation",
+            "title": "Зачем тогда знания об изображениях и языке",
+            "paragraphs": [
+              "До обучения на движениях у модели уже может быть зрительно-языковая основа — сеть, обученная находить связи между картинками и текстом. Например, такие данные помогают связать название предмета с его внешним видом и использовать словесные признаки. Обучение на роботизированных примерах добавляет к этой основе связь с физическими командами.",
+              "У этих двух видов опыта разная роль. Тексты и изображения помогают с тем, что означает просьба и на какой предмет она указывает. Записи действий показывают, как управлять рукой при соответствующих наблюдениях. В нашем примере полезно распознать красную чашку, но для успешного захвата также нужно правильно выбрать движение и момент закрытия пальцев.",
+              "Дальнейшая настройка на конкретной установке называется дообучением: параметры уже подготовленной модели дополнительно меняют по новым примерам. Оно может понадобиться при другой камере, руке, захвате или операции. Так общая основа становится исходной точкой разработки, а конкретные записи связывают её с используемым оборудованием."
+            ]
+          },
+          {
+            "id": "examples",
+            "title": "Почему разные VLA по-разному записывают команды",
+            "paragraphs": [
+              "Теперь можно вернуться к внутреннему формату действий. В исходных RT-2 и OpenVLA числовые компоненты действий переводят в дискретные коды и предсказывают как последовательность токенов. Условно это похоже на выбор пронумерованных отметок на шкале: выбранную отметку затем преобразуют обратно в величину движения. Сравнение со шкалой объясняет принцип, а реальные диапазоны и правила задаются конкретной системой.",
+              "Другой вариант использован в исходной модели π0, название которой читается «пи-ноль». Там механизм выдачи действий строится на методе flow matching. Он обучает сеть постепенно преобразовывать начальный набор случайных чисел в подходящий непрерывный блок движений, используя изображение и задание как условия. Здесь «блок» означает несколько следующих действий, подготовленных вместе.",
+              "Эти примеры нужны, чтобы различать уровни описания. VLA отвечает на вопрос, какие виды информации модель связывает. Токены или flow matching описывают, как устроен один из способов получить её выход. Для понимания общего цикла не требуется сначала изучать каждый из этих способов: картинка и задание по-прежнему приводят к действиям, после которых появляются новые наблюдения."
             ]
           },
           {
             "id": "limits",
-            "title": "Как смотреть демонстрацию",
+            "title": "Что значит, что модель справилась с задачей",
             "paragraphs": [
-              "Спросите, какие предметы и инструкции не участвовали в обучении, показана ли полная попытка и как устраняют сбой. Уверенная интерпретация не доказывает правильной геометрии или контакта. Обобщение измеряют в названных условиях, а не предполагают неограниченную компетентность машины."
+              "В нашем примере результат виден в конце: нужная чашка оказалась в коробке. Но важно понять, при каких изменениях это удаётся повторить. Можно переставить чашку, добавить похожий предмет, иначе сформулировать просьбу или заменить захват. Эти изменения проверяют разные способности: следовать словам, учитывать положение и действовать подходящим механизмом.",
+              "Если робот справился с новым расположением чашки, это говорит о переносе на данное изменение. Из этого ещё не следует, что он умеет выполнять любую просьбу с любым предметом. Поэтому полезное описание результата указывает, что было в обучении, что изменили при проверке и сколько полных попыток завершилось. Рассказ о неудачах тоже помогает понять, где потребовались новые данные или другой способ управления.",
+              "Теперь всю идею можно собрать в один проход: камера даёт наблюдение, слова задают цель, обученная модель рассчитывает действие, исполнительная система двигает руку, а следующий кадр показывает результат. Обучение связывает эти части на примерах. В этом состоит смысл VLA — получать физическое поведение из совместной обработки наблюдения и задания."
             ]
           }
         ]
       },
       "children": {
-        "title": "Модели vision-language-action",
-        "short_description": "VLA — обученная программа для робота, у которой картинка с камеры и задание словами связаны с командами движения.",
+        "title": "VLA: как робот получает задание словами и двигает рукой",
+        "short_description": "VLA — обученная программа, которая использует картинку с камеры и просьбу человека, чтобы выбрать действия робота. Проследим, как задание «положи красную чашку в коробку» превращается в движение руки, и откуда программа этому учится.",
         "sections": [
           {
             "id": "idea",
-            "title": "Что это такое",
+            "title": "Три части одной задачи",
             "paragraphs": [
-              "VLA — обученная программа для робота, у которой картинка с камеры и задание словами связаны с командами движения.",
-              "Например, камера видит чашку и коробку, а задание — «поставь чашку в коробку». Модель использует оба входа и выдаёт действия в своём формате: например, изменения целевого положения захвата. Отдельные компоненты системы переводят это представление в исполняемые движения оборудования."
+              "На столе стоят красная чашка, синяя чашка и коробка. Рядом находится робот: у него есть камера и рука с захватом. Захват — это устройство на конце руки, которым можно удерживать предмет. Мы просим робота положить красную чашку в коробку.",
+              "Для этого нужны три связанные вещи. Надо получить изображение стола, использовать слова просьбы, чтобы выбрать нужный предмет, и выполнить движение. Программа, которую учат связывать эти вещи, называется VLA. Английские слова vision, language, action означают «зрение, язык, действие».",
+              "Внутри программы работает нейронная сеть. Это система вычислений с большим числом настраиваемых значений. Во время обучения эти значения меняют, чтобы программа по примерам научилась выдавать полезные команды. Рассмотрим, какие сведения она получает и что с ними происходит."
             ]
           },
           {
-            "id": "learning",
-            "title": "Нужны примеры настоящих движений",
+            "id": "picture",
+            "title": "Что даёт картинка с камеры",
             "paragraphs": [
-              "Картинка показывает вид чашки, но сама не учит нужным командам конкретного захвата. Демонстрации робота связывают наблюдения и задания с действиями. Другой машине могут требоваться другие числа даже для той же просьбы. Смысл команды надо согласовать с устройством."
+              "Камера отправляет компьютеру изображение. Для программы оно состоит из чисел, которые описывают цвета маленьких точек — пикселей. В картинке не написано готовым текстом, где находится красная чашка. Нейронная сеть обрабатывает числа и выделяет полезные особенности изображения.",
+              "Для нашей просьбы важно отличить красную чашку от синей и определить, как она расположена относительно руки и коробки. Если переставить красную чашку левее, просить можно теми же словами, а двигать руку придётся иначе. Поэтому программе нужна картинка того, что перед роботом сейчас."
             ]
           },
           {
-            "id": "recipes",
-            "title": "Рецептов бывает несколько",
+            "id": "words",
+            "title": "Зачем программе ещё и слова",
             "paragraphs": [
-              "Одни системы представляют команды токенами — числовыми символами. Другие создают короткую последовательность из зашумлённых чисел. Это разные решения внутри общей идеи VLA. У всех моделей семейства не обязан быть один и тот же способ."
+              "Теперь оставим предметы на тех же местах, но попросим взять синюю чашку. Картинка осталась прежней, а нужное действие изменилось. Поэтому модель должна использовать и изображение, и задание. По одной картинке нельзя определить, какую из двух чашек мы попросили взять.",
+              "Слова тоже преобразуют в числа, с которыми работает сеть. При обучении она учится связывать указания с нужными особенностями сцены и действиями. Например, разница между словами «красная» и «синяя» должна влиять на выбор предмета, а просьба «положи в коробку» — на продолжение движения после захвата."
             ]
           },
           {
             "id": "control",
-            "title": "Моторы двигает исполнительная часть",
+            "title": "Как выглядит ответ модели",
             "paragraphs": [
-              "Модель может предложить, куда переместить руку, а контроллер следит за двигателями и их измерениями. Ответ модели и обновления моторов не обязаны происходить одинаково часто. Инженеры определяют соединение и сохраняют ограничения и остановку."
+              "Удобно описать первый шаг словами: «приблизить открытый захват к красной чашке». Но для управления роботом нужны конкретные команды. Например, модель может выдать числа, задающие небольшое перемещение руки, поворот захвата и то, должен ли он быть открыт. Это один возможный способ записать действие.",
+              "Другая часть программы — контроллер — переводит полученную цель в работу моторов. Суставы руки меняют положение, и захват приближается к чашке. Камера снимает новую картинку, по которой модель выбирает продолжение. Дальше надо закрыть захват, поднять чашку, перенести её и отпустить.",
+              "Так картинка, слова и движение соединяются в повторяющийся процесс. Новая картинка нужна потому, что после каждого движения обстановка меняется. Например, чашка могла немного сдвинуться. Следующие команды должны учитывать то, что получилось на самом деле."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Кто показывает роботу нужные движения",
+            "paragraphs": [
+              "Сначала сеть не знает, какие команды помогут взять чашку. Один способ обучить её — записать демонстрации. Человек управляет роботом с помощью специального устройства, а компьютер сохраняет картинки, задание и команды, которые получала рука. Получается запись всего переноса чашки.",
+              "Из неё берут много примеров: вот что видела камера, вот какое было задание, а вот что в этот момент делал робот. Сеть пробует выбрать действие, а программа обучения меняет её внутренние значения, чтобы ответ лучше совпадал с показанным. Такой способ называется обучением по демонстрациям.",
+              "Если показывать только чашку в одном месте, у программы будет мало опыта для других случаев. Поэтому полезны разные положения предметов и разные подходящие задания. Обычная фотография чашки может помочь узнать её внешний вид, а запись действий добавляет сведения о том, как робот с ней обращается."
+            ]
+          },
+          {
+            "id": "recipes",
+            "title": "Откуда берутся знания о предметах",
+            "paragraphs": [
+              "Разработчики могут начать с сети, которая уже училась связывать картинки и текст. Тогда у неё есть полезная подготовка для распознавания предметов и обработки просьб. Потом на примерах робота её учат связывать эти сведения с командами руки.",
+              "Представь, что ты знаешь, как выглядит музыкальный инструмент, но ещё учишься на нём играть. Знание внешнего вида и опыт движения решают разные части задачи. Сравнение относится только к различию видов опыта: робот всё равно учится по данным, а его работа устроена как вычисления программы.",
+              "Когда меняется сама рука или захват, может понадобиться дополнительное обучение. У другого робота те же числа могут двигать механизм иначе. Поэтому разработчики проверяют, подходит ли подготовленная модель к используемой машине."
+            ]
+          },
+          {
+            "id": "checking",
+            "title": "Как убедиться, что просьба выполнена",
+            "paragraphs": [
+              "Вернёмся к нашему столу. Успех — красная чашка оказалась в коробке и осталась целой. Для проверки можно переставить её, добавить ещё один предмет или попросить взять синюю чашку. Так выясняют, использует ли робот новые картинки и меняющееся задание.",
+              "Если он ошибся, важно посмотреть, где именно: выбрал не ту чашку, не смог удержать её или не донёс до коробки. Эти случаи требуют разных улучшений. Поэтому наблюдают за полной попыткой, а не только за удачным моментом, когда пальцы уже держат предмет."
             ]
           },
           {
             "id": "limits",
-            "title": "Хороший ответ ещё может ошибиться",
+            "title": "Соберём весь путь ещё раз",
             "paragraphs": [
-              "Модель способна перепутать предметы, использовать старую картинку или предложить неподходящее движение. Люди проверяют полные задачи и новые условия, включая неудачи. Успешно выполнить несколько инструкций не означает понимать любую просьбу как человек и безопасно обходиться без проверки."
+              "Камера показывает стол. Просьба указывает, что с ним сделать. Обученная модель выбирает команды, контроллер двигает руку, а новое изображение позволяет продолжить с учётом результата. Записи таких связей служат примерами для обучения.",
+              "Теперь, когда ты видишь робота, которому дают задание словами, можно спросить, что он получает на вход, как записывает действие и на каких примерах этому учился. Это помогает понять его устройство. VLA — название подхода, который объединяет зрение, язык и физическое действие в одной обучаемой системе."
             ]
           }
         ]
@@ -460,190 +700,310 @@
     },
     "ja": {
       "engineer": {
-        "title": "視覚・言語・行動モデル",
-        "short_description": "VLAは、場面の画像と言語の課題を、ロボットの行動表現へ結び付ける学習モデル群です。",
+        "title": "VLAの構成：カメラ入力から実行ループまで",
+        "short_description": "VLAは、画像、言語指示、構成によっては機体の状態から行動を予測する学習モデル群です。一つの操作課題を使い、入力、行動インターフェース、学習、実行の関係を追います。",
         "sections": [
           {
             "id": "overview",
-            "title": "どんな技術か",
+            "title": "制御する課題を先に定める",
             "paragraphs": [
-              "視覚・言語・行動モデル（VLA）は、視覚と言語を入力とし、行動表現を出力する学習済みロボット方策です。場面の処理、課題の条件、指令生成を結び付けます。",
-              "例えば、カメラにコップと箱が写り、「コップを箱に入れて」と指示します。モデルは両方を使い、ハンドの目標姿勢の変化など、そのモデルの形式で行動を出します。別のシステム部品が、その表現を設備で実行できる動きへ変換します。"
+              "VLAは視覚観測と言語の課題をロボットの行動に結び付ける、学習済みニューラルモデル、またはモデル群です。腕とグリッパーの前に赤と青のカップ、箱があり、赤いカップを箱へ入れる指示を考えます。指示に対応する物を選び、その位置を機構の動作に結び付けます。",
+              "説明では、手先の位置と姿勢の増分、および開閉の指令を出すインターフェースを固定します。これは一つの設定であり、全VLAの要件ではありません。この設定によって、データの構成、学習目標、出力の解釈を具体的に定められます。"
             ]
           },
           {
             "id": "inputs",
-            "title": "入力と機体の契約",
+            "title": "入力をどう表すか",
             "paragraphs": [
-              "画像、作業指示、機体状態などを使いますが、入力の組は方式ごとに異なります。カメラ配置、固有感覚、行動の正規化、機体の違いを仕様に含めます。複数機体のデータを使う場合も、この対応が必要です。同じような数値でも、別のロボットで同じ動きを意味するとは限りません。"
+              "画素の配列を視覚エンコーダーへ渡し、数値特徴へ変換します。文章は語彙の要素であるトークンに分け、数値表現へ変換します。後続の層は両者を結び付け、観測と課題に依存する行動予測を作ります。",
+              "関節位置や手先の姿勢など、機体の状態を加える構成もあります。複数カメラや過去のフレームを使えば、同期と順序も仕様に含まれます。実行時の入力は、モデルの準備に使った形式と一致させます。",
+              "例では、同じ画像で要求する色を変えると指令が変わる必要があります。同じ指示でカップの位置を変えても指令が変わります。この二つは、言語と視覚への依存を分けて調べる具体的な試験になります。"
+            ]
+          },
+          {
+            "id": "actions",
+            "title": "行動の物理的な意味を決める",
+            "paragraphs": [
+              "位置の増分には座標系、単位、範囲が必要です。カメラの軸に沿う変位と、機体の基準軸に沿う変位は同じではありません。成分の順序、回転の表し方、尺度、グリッパー指令の意味を明記します。この取り決めが数値を物理的な指令にします。",
+              "一回分の行動を予測するモデルも、先の複数時刻のブロックを出すモデルもあります。後者では時間間隔と、新しい観測までに実行する範囲を決めます。出力の大きさは、操作する量だけでなく、提案する動作の時間範囲も表します。"
             ]
           },
           {
             "id": "architecture",
-            "title": "基盤と行動の出し方",
+            "title": "出力を作る二つの構成例",
             "paragraphs": [
-              "視覚言語の基盤が表現を作り、出力機構が行動を予測できます。元のRT-2とOpenVLAは、離散化した行動をトークン生成へ結びつけます。元のπ0はFlow Matchingの行動生成部を使います。自己回帰トークンと連続的な動作列では、形式と遅延の特性が異なります。"
+              "元のRT-2とOpenVLAでは、連続量の範囲を区間に分け、行動の成分をトークンで表します。予測したコードを指令へ復号します。これにより、行動の生成をトークンの逐次予測と接続できます。",
+              "元のπ0は、flow matchingで連続行動のブロックを生成します。観測と指示を条件に、初期ノイズを行動へ変える変換を学びます。学習目標と実行手順は異なりますが、入力と行動を結び付ける点でどちらもVLAです。",
+              "図は機能上の連鎖を表しています。視覚、言語、行動が独立した三つのプログラムであることや、厳密な順番で動くことを要求しません。実際の構成では共有の層の中で結び付けることもできます。"
             ]
           },
           {
             "id": "training",
-            "title": "ロボットの経験を加える",
+            "title": "観測と記録した行動を結び付ける",
             "paragraphs": [
-              "画像と言語の事前学習は意味的な情報を提供しますが、新しい機体の運動を自動的には教えません。軌跡で観測、指示、行動を結びつけ、基盤、出力部、一部のパラメータなどを適応させます。物体、作業、環境、機体で訓練と試験を分け、広い事前学習だけで漏えいを防げるとは考えません。"
+              "実演データは、課題を実行した際の観測と行動の時系列です。操作者が赤いカップを箱へ運ぶ間、画像、指示、状態、指令を保存します。そこから、選択した入力履歴と、対応する一回分またはブロックの行動を組にして学習例を作ります。",
+              "離散出力では、行動トークンの予測誤差を減らす目標を使えます。連続生成には、flow matchingのような対応する学習目標が必要です。どちらもデータからパラメータを変えます。フレームと指令のずれや単位の誤りも学習されるため、記録の整合が重要です。",
+              "視覚言語の事前学習は場面と指示を処理する土台になります。ロボットの記録はそれを実行インターフェースへ結び付けます。腕やグリッパーを変える際は、学んだ指令の意味と一致するかを調べ、必要なら新しい設備のデータで追加学習します。"
             ]
           },
           {
             "id": "execution",
-            "title": "直接モーターを動かすとは限らない",
+            "title": "予測と機構を接続する",
             "paragraphs": [
-              "目標姿勢、移動量、別の行動表現を専用制御器へ渡す場合があります。逆運動学、サーボ、制限、インターロックはモデルの外に残せます。自然言語の指示でこの契約を迂回させません。行動の検証担当と、実行失敗の報告方法を定義します。"
+              "予測した手先の変位を実行系へ渡します。実行系は、必要な関節位置を求める逆運動学を使い、関節制御器でそれを実現する場合があります。可動範囲、出力上限、停止機能も、機体の設計に応じて担当を定めます。",
+              "腕が動く間に画像と状態は変わります。新しい観測で次の予測を行うとループが閉じます。カップがずれた際に接近を直せるかは、モデルの入力、更新の時点、実行待ちの行動によって決まります。"
             ]
           },
           {
             "id": "timing",
-            "title": "複数のループの期限",
+            "title": "時間も制御の設定に含める",
             "paragraphs": [
-              "意味処理、行動生成、低レベル制御が違う周期で動く場合があります。画像の古さ、言語処理、逐次トークン生成や反復サンプリング、通信、実行を計測します。バッファや非同期予測は役立つ反面、指令を古くすることもあります。モデル単体の処理量だけでは判断できません。"
+              "手先がカップから離れた時点の画像を得ても、予測が終わるまでに腕は近づくかもしれません。画像の古さと計算の遅れは、指令の適切さに直接影響します。一方、関節制御器はVLAより短い周期で動くことがあります。",
+              "観測取得、入力準備、モデル計算、復号、指令の配送までを測ります。行動ブロックでは、待ち行列と未実行の目標を置き換える順序も扱います。必要な周期は、設備の動特性と実測した遅れから決めます。"
             ]
           },
           {
             "id": "evaluation",
-            "title": "何が一般化したか",
+            "title": "入力への依存と作業全体を試す",
             "paragraphs": [
-              "未使用の条件で指示への対応と物理作業の完了を測ります。曖昧な要求、センサー故障、未知の物体、復帰、介入も含めます。言語ベンチマークは操作の信頼性を示しません。専用方策との比較では行動形式、データ、計算予算をそろえます。"
+              "まず、同じ場面で要求する色を変え、同じ指示でカップの位置を変えます。次に接近、把持、運搬、解放という作業全体を測ります。成功、介入、失敗の種類を記録すると、物の選択、動作、保持の問題を区別できます。",
+              "学習と試験は、主張する移行に合わせて記録、物体、場面、機体などで分けます。同じ実演の隣り合う画像が混ざれば、新条件の結果を過大に見せる場合があります。比較する方策のデータ、指令形式、実行条件もそろえます。"
             ]
           },
           {
             "id": "limits",
-            "title": "転移には条件がある",
+            "title": "次の設備で変わる部分を見つける",
             "paragraphs": [
-              "意味の誤認、幾何のずれ、指令の不整合、接触変化で失敗します。一つの作業への追加学習が別の作業へ影響する場合もあります。公開された結果は試験した範囲を示すもので、無制限の自律性ではありません。安全と許可する運用条件は別に設計し検証します。"
+              "カメラを替えれば画像が、グリッパーを替えれば接触の形状が、制御器を替えれば指令への反応が変わります。変更を分けて考えると、追加データ、インターフェースの調整、再学習が必要な箇所を特定できます。",
+              "動作するVLAには、ネットワークのパラメータに加え、整合する観測、物理的な意味が定まった行動、実行ループ、検証できる課題が必要です。以下の資料は、その具体的な接続例です。利用時には、著者が示す版と課題設定を確認します。"
             ]
           }
         ]
       },
       "business": {
-        "title": "視覚・言語・行動モデル",
-        "short_description": "VLAは、場面の画像と言語の課題を、ロボットの行動表現へ結び付ける学習モデル群です。",
+        "title": "VLAの業務利用：言葉による依頼から作業の完了まで",
+        "short_description": "VLAは、カメラ画像と言葉の課題をロボットの動作へ結び付ける学習モデルです。カップの仕分けを例に、自動化での役割、必要なデータと設備、現場での結果の確かめ方を説明します。",
         "sections": [
           {
             "id": "purpose",
-            "title": "どんな技術か",
+            "title": "まず任せたい仕事を定める",
             "paragraphs": [
-              "VLAは、カメラ情報と言葉の指示を一緒に入力し、動作の指令を計算する学習済みモデルです。",
-              "例えば、カメラにコップと箱が写り、「コップを箱に入れて」と指示します。モデルは両方を使い、ハンドの目標姿勢の変化など、そのモデルの形式で行動を出します。別のシステム部品が、その表現を設備で実行できる動きへ変換します。"
+              "物を箱へ仕分ける作業台を考えます。物の位置は少しずつ異なり、赤いカップ、次に青いカップ、別の箱へ移す作業と、要求も変わります。企業がカメラ、腕、グリッパーを備えたロボットの利用を検討しているとします。",
+              "視覚・言語・行動モデル、略してVLAは、作業場所の画像と言葉の課題から、行動を計算する学習済みプログラムです。この例では、赤いカップという依頼をカメラに映る物と結び付け、運ぶための指令を出します。",
+              "関連する複数の作業を共通のモデルで扱い、言葉で課題を変える可能性が、導入を検討する理由になります。準備と保守の負担を含め、必要な仕事をこなせることが業務上の価値です。その負担と成果がどこから生まれるかを順に見ます。"
             ]
           },
           {
-            "id": "resources",
-            "title": "適応の費用も含める",
+            "id": "mechanism",
+            "title": "カップを取る依頼の後に起きること",
             "paragraphs": [
-              "代表的な軌跡、カメラ接続、指令形式の整合、計算機、現場試験を準備します。事前学習済みでも、機体や対象物への適応が必要な場合があります。利用許諾、導入方法、データ管理、保守を確認します。公開された重みは、完成した生産設備ではありません。"
+              "カメラは現在の場面を、指示は目的を伝えます。カップがずれれば動作が変わり、青いカップを指定すれば選ぶ物が変わります。腕が動く様子だけでなく、具体的な依頼と行動の対応を評価する必要があります。",
+              "出力は定められた形式の指令です。例えば手先の移動量、向き、閉じる動作を示します。ロボットの制御系がモーターの動作へ変換します。その後の新しい画像を使って、続きの動きを計算できます。",
+              "接近、保持、運搬、解放という複数の判断をつなげて、一つの作業を終えます。一回に出すのは一行動の場合も短い動作列の場合もあります。顧客にとって有用なのは、運搬全体が完了したという結果です。"
+            ]
+          },
+          {
+            "id": "data",
+            "title": "なぜロボットの動作データが必要か",
+            "paragraphs": [
+              "開発者は画像と文章で学習済みのモデルから始められる場合があります。見た目や言葉を処理する土台になります。腕の動作とのつながりには、人が作業を実演し、観測と指令を保存したデータを使います。",
+              "記録は、特定の画像と指示に対して手先が何をしたかを示します。多数の例からモデル内部の数値を調整します。カップの作業台には、その物、カメラの配置、設備に対応する経験が必要です。既存データを再利用できる範囲は、新しい課題との対応によります。",
+              "準備済みのモデルを新しい例で調整することを、追加学習やファインチューニングと呼びます。グリッパー、物の外観、カメラ位置が変わると、画像と必要な動作の関係も変わるためです。必要な実演は、設備と課題を選んでから具体化します。"
             ]
           },
           {
             "id": "integration",
-            "title": "モデルの役割の終点",
+            "title": "納入されるシステムの範囲を決める",
             "paragraphs": [
-              "出力を姿勢変換、運動学、従来の制御器へ渡すことがあります。非常停止や独立した保護は必要です。モデルが指令できる範囲、対応外の要求の拒否、失敗を運用上の例外にする手順を明確にしてもらいます。"
+              "作業にはカメラ、腕、適切なグリッパー、計算機、制御ソフトが必要です。VLAはその中で観測と課題を指令へ結び付けます。メーカーや構築会社は、指令を渡す方法、実行の確認、つかめなかった際の処理を決めます。",
+              "完成品なら、対応する物と作業、依頼の入力方法、データ準備と保守の担当を確認します。自社開発なら、技術的な入出力の仕様と学習手段へのアクセスも必要です。",
+              "公開モデルやコードは開発チームを助けますが、仕分け設備の納入には、それらを機器と作業工程へ接続する仕事が含まれます。どの成果物を必要とするかを先に明らかにすると、見積もる作業も定まります。"
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "仕組みから費用の項目を考える",
+            "paragraphs": [
+              "データ収集には、実演、正しい記録、必要な場面の網羅という作業があります。学習と実行には計算資源が必要です。設備、接続の調整、試験中に作業台を使う時間も含まれます。量は選択した構成によって変わります。",
+              "運用では、物の位置が扱いにくい、保持に失敗した、作業が終わらないといった場面の介助時間も数えます。ここでは一律の価格を示すのではなく、何を費用として把握する必要があるかを整理しています。"
             ]
           },
           {
             "id": "acceptance",
-            "title": "業務としての試験",
+            "title": "実際の物と場所で試す理由",
             "paragraphs": [
-              "実際の指示と未使用の物体条件で、工程を最後まで実行します。有効な処理量、介入、復旧工数、時間変動、新作業への適応時間を数えます。小さい専用方策や既存設備と同じ仕事で比べ、言語の能力を物理的な受入試験の代わりにしません。"
+              "通常運用の前に、選んだ作業台で実際のカップと箱を使い、決めた操作を繰り返します。許容する配置を変え、一部の条件は追加学習に使わず試験用に残します。準備時に見せていない条件への対応を調べるためです。",
+              "完了した操作、物の選び間違い、損傷、時間、人の介入を測ります。指示も変え、色の指定など必要な違いが動作へ反映されるかを見ます。言語能力を実際の成果に結び付ける確認です。",
+              "専用の自動化、より単純な学習モデル、現在の作業方法も比較対象になります。VLAの利点となり得る作業の多様さや変更のしやすさは、その作業場所で検証する仮説として扱います。"
             ]
           },
           {
             "id": "risk",
-            "title": "共有モデルを広げるとき",
+            "title": "試験に成功した後の扱い",
             "paragraphs": [
-              "再利用が可能でも、カメラ、グリッパー、指令形式、課題分布への依存は残ります。共有モデルの更新は複数工程へ影響し得ます。版管理、再試験、ロールバック、人が例外を処理する経路を用意します。広い能力の主張だけで無人運転の信頼性は示せません。"
+              "結果は、確認した物、設備、条件に対応します。カメラやグリッパー、品目を替えればシステムも変わります。変更の評価、追加データの準備、使用可能かの確認を誰が担うかを決めます。",
+              "一つのモデルを複数作業で使う場合、更新は影響する作業すべてで試し、以前の版へ戻す手段も保持します。複数種類の情報を結び付けるモデルだからこそ、そのつながりが現実の工程に合うかを継続して確かめます。"
             ]
           }
         ]
       },
       "enthusiast": {
-        "title": "視覚・言語・行動モデル",
-        "short_description": "VLAは、場面の画像と言語の課題を、ロボットの行動表現へ結び付ける学習モデル群です。",
+        "title": "VLA：ロボットは画像、言葉、動作をどう結び付けるか",
+        "short_description": "VLAは、画像と言葉による課題からロボットの動作指令を計算する、学習済みのニューラルモデルです。カップを箱へ入れる例で、入力、学習、出力、実際の動きまでを順に説明します。",
         "sections": [
           {
             "id": "idea",
-            "title": "どんな技術か",
+            "title": "VLAとは何をする仕組みなのか",
             "paragraphs": [
-              "VLAは、画像、言葉による課題、行動の数値指令をつないだニューラルモデル、またはモデルの組み合わせです。",
-              "例えば、カメラにコップと箱が写り、「コップを箱に入れて」と指示します。モデルは両方を使い、ハンドの目標姿勢の変化など、そのモデルの形式で行動を出します。別のシステム部品が、その表現を設備で実行できる動きへ変換します。"
+              "机に赤いカップ、青いカップ、箱があるとします。隣のロボットにはカメラと腕があり、先端には物をつかむグリッパーが付いています。「赤いカップを箱に入れて」と頼みます。言葉を目の前の場面に結び付け、目的のカップへ手先を近づけ、つかんで運ぶ必要があります。この例を最後まで使って説明します。",
+              "VLAはvision-language-action、つまり視覚・言語・行動の略です。画像と言葉の課題からロボットの行動を計算する、学習済みのニューラルモデル、またはモデルの組合せを指します。内部にはパラメータと呼ぶ多数の調整可能な数値があります。学習では、入力に対して適切な指令が出るよう、その数値を調整します。",
+              "名前の三語は、学ぶつながりを表します。画像は現在の場面を伝え、指示はその場面で何をするかを伝え、出力は動作に使われます。カップの位置を変えたり、青いカップを頼んだりすれば、同じロボットとプログラムでも必要な行動は変わります。"
             ]
           },
           {
-            "id": "examples",
-            "title": "具体例の違い",
+            "id": "vision",
+            "title": "カメラから何が届くのか",
             "paragraphs": [
-              "RT-2と元のOpenVLAは、行動をトークンの出力で表す例です。元のπ0は視覚言語の基盤とFlow生成器を組み合わせます。VLAは全体の接続を、拡散やFlow Matchingはその中の生成方法を表せるので、同じ階層の別名ではありません。"
+              "画像は、画素の明るさや色を表す数値の配列です。そこに「ここが赤いカップ」という文字が最初から付いているわけではありません。ネットワークの視覚部分は、画像を数値の特徴へ変換します。後の計算で場面の違いを利用するための内部的な記述です。",
+              "この内部記述を表現と呼びます。人が読める物体と座標の一覧であるとは限りません。学習によって、課題に役立つ数値の組合せが作られます。見た目や配置の違いを扱う手掛かりになりますが、具体的な構造はモデルによって異なります。",
+              "例ではカップの赤色と、グリッパーや箱に対する位置が重要です。目的の物を選ぶだけでは終わりません。同じカップでも机の右端と左端では、近づく動作が変わります。カップ一般の知識に加えて、今の画像が必要になる理由です。"
             ]
           },
           {
-            "id": "learning",
-            "title": "動作の経験が必要",
+            "id": "language",
+            "title": "同じ画像でも言葉で動作が変わる",
             "paragraphs": [
-              "画像と文章の事前学習は意味の関係を学ぶ助けになります。実機の実演は、観測や指示と行動を結びつけます。別の機体では座標や関節が違うため、同じ数値を別のモーターへつなぐだけで転移が完了するわけではありません。"
+              "指示文も数値に変換します。文章を単語や単語の一部といった要素に分け、ネットワークが処理できる形にします。この要素がトークンです。文章を計算用に表す方法であり、これだけでモーターの動きが決まるわけではありません。",
+              "言語の処理を視覚の特徴と結び付けます。同じ画像で赤いカップ、次に青いカップを求めれば、必要な動作は異なります。学習は、その指示の違いを行動へ反映させる必要があります。画像にだけ反応して課題を無視する動作では、この要求を満たせません。",
+              "途中で必ず「赤いカップを選んだ」と文章を作る必要はありません。画像、指示、動作の関係は、ネットワークの計算に分散していても構いません。説明では、それぞれの入力が何を伝えるかを確認するために分けて追っています。"
+            ]
+          },
+          {
+            "id": "actions",
+            "title": "行動を出力するとはどういうことか",
+            "paragraphs": [
+              "「箱へ入れて」という依頼には、腕の細かな動きは書かれていません。ロボットには具体的な指令の形式が必要です。例えば、手先を少し動かす量、向きを変える量、グリッパーの開閉を表す数値を出せます。位置を動かし、向きをそろえ、つかむか離すかを指示するわけです。",
+              "意味を日常の言葉に直すと、「開いたグリッパーを少しカップへ近づける」と考えられます。これは数値指令の説明で、VLAが必ずその文章を書くという意味ではありません。関節の目標位置を出す構成や、短い動作列をまとめて出す構成もあります。出力の数値が何を意味するかを確認することが重要です。",
+              "ネットワーク内部で指令を表す方法にも違いがあります。まず押さえるのは、計算結果を特定のロボットの動きへ結び付ける点です。VLAという名前は視覚、言語、行動の関係を示しますが、行動の形式を一つには定めません。"
             ]
           },
           {
             "id": "control",
-            "title": "制御器を分けられる",
+            "title": "数値の答えが腕の動きになるまで",
             "paragraphs": [
-              "VLAが姿勢や移動量を提案し、通常の制御器が実行する構成もあります。運動学や制限を別の部分で扱えます。モデルの更新はモーターのループより遅い場合もあります。システムの説明では、この役割分担を確認すると役立ちます。"
+              "カップに近づく手先へ戻りましょう。モデルが移動量を出したら、実行側はその移動を実現する関節の動かし方を求めます。続いて、機器を直接扱う制御プログラムが駆動部へ信号を送り、測定値を使って目標に従わせます。",
+              "手先をどちらへ動かすかと、複数のモーターをどう動かすかは、課題の異なる部分です。この構成ではVLAが動作を提案し、実行側が機構の運転へ変換します。指定された移動範囲や力の上限も考慮します。実際の役割分担は機体の設計によります。",
+              "動けば場面も変わります。手が近づき、指の間にカップが入るか、カップが少しずれるかもしれません。新しい画像と利用可能な測定値から次を計算します。複数の動作をまとめて出す場合も、新しい観測へ戻るまでに何個実行するかを設計します。"
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "カップをつかむ動作は誰が教えるのか",
+            "paragraphs": [
+              "この画像にどんな数値を出せばよいと、プログラムはどう学ぶのでしょうか。主な経験の一つがロボットの実演です。人が操作装置などで腕を動かし、画像、指示、利用できる状態の測定値、指令を時刻に沿って記録します。",
+              "一つの記録で、開いた手先を近づけ、閉じ、持ち上げ、箱の上へ運び、離すまでを示せます。そこから「この観測と課題なら、この行動を選んだ」という多数の例を作ります。モデルが行動を予測し、記録との誤差を減らすようパラメータを変えます。これが実演から学ぶ方法です。",
+              "別の位置に置かれたカップへ対応したいなら、その変化を扱う経験が必要です。一つの位置で同じ動きを繰り返す記録より、多様な実演の方が新しい配置の手掛かりを与えます。ロボットのデータに写真だけでなく、同じ瞬間の腕の行動が必要になる理由です。"
+            ]
+          },
+          {
+            "id": "foundation",
+            "title": "画像と言葉の事前学習は何に役立つか",
+            "paragraphs": [
+              "動作を学ぶ前に、画像と文章の関係を学んだ視覚言語モデルを土台にできる場合があります。物の名前と見た目、言葉による特徴を扱う準備になります。ロボットの実演は、その土台を物理的な指令へ結び付ける役割を持ちます。",
+              "二つの経験は担当が違います。画像と文章は、依頼が何を指しているかを扱う助けになります。動作の記録は、その観測で腕をどう制御したかを示します。赤いカップを識別できることに加えて、つかむには適切な動きと指を閉じるタイミングが必要です。",
+              "準備されたモデルを新しい例でさらに調整することを、追加学習やファインチューニングと呼びます。別のカメラ、腕、グリッパー、作業に合わせる際に必要になる場合があります。共通の土台を出発点に、使用する設備とのつながりを新しい記録で作ります。"
+            ]
+          },
+          {
+            "id": "examples",
+            "title": "指令の記録方法に違いがある理由",
+            "paragraphs": [
+              "ここで出力の形式を詳しく見られます。元のRT-2とOpenVLAでは、行動の数値を離散的なコードへ変換し、トークンの列として予測します。目盛りの番号を選び、それを動作の量へ戻すように考えると原理をつかめます。具体的な範囲や符号の規則は各システムが定めます。",
+              "元のπ0、パイ・ゼロというモデルでは、flow matchingを用います。画像と指示を条件に、初期のランダムな数値を適切な連続動作のブロックへ段階的に変換する方法を学びます。ここでブロックは、まとめて用意する複数の次の行動を指します。",
+              "VLAは何の情報を結び付けるかを示し、トークンやflow matchingは出力をどう作るかの方式を示します。全体を理解する前に、個別方式をすべて習得する必要はありません。画像と課題から行動を作り、その結果を新しく観測する流れは共通して追えます。"
             ]
           },
           {
             "id": "limits",
-            "title": "動画の何を確かめるか",
+            "title": "課題を達成したとは何を確かめることか",
             "paragraphs": [
-              "どの物体や指示が訓練に含まれなかったか、最初から最後までの試行か、失敗からどう戻るかを見ます。指示の解釈が自然でも、幾何や接触が正しい保証はありません。一般化は、決めた条件で測る能力であり、無制限の理解とは違います。"
+              "例の成功は、指定したカップが箱へ入ったという結果です。次は、どんな変化でも繰り返せるかを調べます。カップを動かす、似た物を追加する、依頼を言い換える、グリッパーを替える。言葉、配置、機器への対応という、異なる能力を確かめられます。",
+              "新しい位置での成功は、その変化への対応を示します。ほかのすべての物や依頼について証明したことにはなりません。学習した経験、試験で変えた条件、完了した試行の回数を記すと、結果が具体的になります。失敗も、追加データや別の制御が必要な箇所を知る情報です。",
+              "全体を一巡できます。カメラが観測を与え、言葉が目標を定め、学習済みモデルが行動を計算し、実行側が腕を動かし、次の画像が結果を示します。学習はこれらを例から結び付けます。観測と課題を一緒に処理して身体の行動を得ることが、VLAの考え方です。"
             ]
           }
         ]
       },
       "children": {
-        "title": "視覚・言語・行動モデル",
-        "short_description": "VLAは、カメラの画像と言葉の指示を、動くための指令へ結び付けた、学習済みのロボット用プログラムだ。",
+        "title": "VLA：言葉のお願いがロボットの動きになるまで",
+        "short_description": "VLAは、カメラの画像と人のお願いを使い、ロボットの行動を選ぶ学習済みプログラムです。「赤いカップを箱へ入れて」という課題が、どんな情報と学習を通して腕の動きになるかを追います。",
         "sections": [
           {
             "id": "idea",
-            "title": "どんな技術か",
+            "title": "一つの課題に三つの要素がある",
             "paragraphs": [
-              "VLAは、カメラの画像と言葉の指示を、動くための指令へ結び付けた、学習済みのロボット用プログラムだ。",
-              "例えば、カメラにコップと箱が写り、「コップを箱に入れて」と指示します。モデルは両方を使い、ハンドの目標姿勢の変化など、そのモデルの形式で行動を出します。別のシステム部品が、その表現を設備で実行できる動きへ変換します。"
+              "机に赤いカップ、青いカップ、箱があります。隣のロボットにはカメラと腕があり、先端に物をつかむグリッパーが付いています。「赤いカップを箱へ入れて」と頼んでみましょう。",
+              "机を見る画像、何をするかを伝える言葉、実際の動作を結び付ける必要があります。その関係を学ぶプログラムをVLAと呼びます。vision、language、actionの頭文字で、視覚（しかく）、言語、行動という意味です。",
+              "内部にはニューラルネットワークがあります。調整できる多数の数値を持つ計算の仕組みです。学習ではその数値を変え、例から役に立つ指令を出せるようにします。どんな情報を受け取り、次に何が起きるかを見ていきます。"
             ]
           },
           {
-            "id": "learning",
-            "title": "動きのお手本も必要",
+            "id": "picture",
+            "title": "カメラの画像は何を伝えるか",
             "paragraphs": [
-              "画像はコップの見た目を教えるけれど、その機体のつかむ部分への正しい指令までは教えない。ロボットの実演（じつえん）が、観測と指示を動作へ結ぶ。別のロボットでは、同じ作業でも別の数値が必要になるかもしれないね。"
+              "画像は、小さな点である画素（がそ）の色などを表す数値でできています。「ここが赤いカップ」という文章が付いているわけではありません。ネットワークは数値を処理し、画像の役立つ特徴を取り出します。",
+              "赤と青を区別することに加え、腕や箱に対するカップの位置が重要です。赤いカップを左へ動かせば、同じ言葉で頼んでも腕は違う動きをする必要があります。現在の画像は、その変化を知らせます。"
             ]
           },
           {
-            "id": "recipes",
-            "title": "作り方は一つではない",
+            "id": "words",
+            "title": "なぜ言葉も必要なのか",
             "paragraphs": [
-              "指令をトークンという数値の記号で表す方式も、ノイズから短い動作列を作る方式もある。VLAという大きな考え方の中で、いろいろな設計を選べる。すべてのモデルが同じ作り方である必要はない。"
+              "今度は物を動かさず、青いカップを頼みます。画像は同じでも、必要な行動は変わります。画像だけではどちらを頼まれたかが分からないため、モデルはお願いも使う必要があります。",
+              "言葉もネットワークで計算する数値へ変えます。学習によって、指示を場面の特徴や行動に結び付けます。「赤」と「青」の違いは物の選択に、「箱へ入れる」という依頼はつかんだ後の動作に関係します。"
             ]
           },
           {
             "id": "control",
-            "title": "モーターを動かす部分",
+            "title": "モデルの答えはどんな形か",
             "paragraphs": [
-              "モデルが手の行き先を提案し、制御器（せいぎょき）がモーターと測定値を扱うこともある。モデルの答えとモーターの更新は、同じ速さとは限らない。技術者が接続の決まりを作り、制限や止める仕組みを残しておく。"
+              "最初の動きを言葉にすると、開いたグリッパーを赤いカップへ近づける、と説明できます。ロボットの制御（せいぎょ）には、さらに具体的な指令が必要です。例えば、小さく動かす量、向きを変える量、開閉を表す数値を出せます。行動を記録する方法の一つです。",
+              "制御器と呼ぶ別のプログラムが、その目標をモーターの動作へ変えます。腕の関節が動き、手先がカップへ近づきます。新しい画像を使って次を選び、つかみ、持ち上げ、運び、離す動作へ進みます。",
+              "画像、言葉、動作は繰り返す流れになります。動くと場面が変わるため、新しい画像が必要です。例えばカップが少しずれたら、次の指令にはその結果を反映しなければなりません。"
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "動かし方は誰が見せるのか",
+            "paragraphs": [
+              "最初のネットワークは、どの指令でカップを取れるかを知りません。一つの教え方が実演（じつえん）の記録です。人が操作装置でロボットを動かし、画像、課題、腕に与えた指令を保存します。カップを箱へ運ぶ一連の記録を作れます。",
+              "その中から、カメラに何が映り、何を頼まれ、その時ロボットが何をしたか、という多数の例を取り出します。ネットワークが行動を選び、学習プログラムが、示した行動に近づくよう内部の数値を変えます。実演から学ぶ方法です。",
+              "一つの位置しか見せなければ、別の配置の経験は少なくなります。位置や適切な課題を変えると、学べる例が増えます。写真は見た目を知る助けになり、動作の記録はそれをロボットがどう扱ったかを加えます。"
+            ]
+          },
+          {
+            "id": "recipes",
+            "title": "物についての知識はどこから来るか",
+            "paragraphs": [
+              "開発者は、すでに画像と文章を結び付ける学習をしたネットワークから始められる場合があります。物の見た目や依頼を処理する準備になります。その後、ロボットの例で腕の指令とのつながりを学ばせます。",
+              "楽器の見た目を知っていても、演奏は別に練習することを考えてみてください。外観と動作の経験は、それぞれ役割が違います。似ているのはこの違いだけで、ロボットはデータから学び、数値の計算で働きます。",
+              "腕やグリッパーを替えると、追加の学習が必要になる場合があります。同じ数値でも別の機構は違う動きをするためです。開発者は、準備したモデルが使用する機体に合うかを確認します。"
+            ]
+          },
+          {
+            "id": "checking",
+            "title": "お願いを達成したとどう確かめるか",
+            "paragraphs": [
+              "机へ戻りましょう。成功は、赤いカップが壊れずに箱へ入ったことです。カップを動かす、別の物を追加する、青いカップを頼むといった変更で、新しい画像と指示を使えているかを調べられます。",
+              "失敗したら、違うカップを選んだのか、つかめなかったのか、箱まで運べなかったのかを調べます。必要な改善が違うからです。すでにつかんだ瞬間だけでなく、最初から最後までを見ると、課題を詳しく確認できます。"
             ]
           },
           {
             "id": "limits",
-            "title": "よい答えでも間違うことがある",
+            "title": "全体の流れをもう一度たどる",
             "paragraphs": [
-              "物を取り違えたり、古い画像を使ったり、その機体に合わない動きを出したりする場合がある。人は一連の作業と変わった条件を試し、失敗も調べる。一部の指示にうまく従えても、何でも人のように理解し、安全に確認なしで働けるとは限らない。"
+              "カメラが机を映し、お願いが目的を伝えます。学習済みのモデルが指令を選び、制御器が腕を動かし、新しい画像で結果を見て続きを決めます。その関係を記録した例が学習に使われます。",
+              "言葉で動くロボットを見たら、何を入力し、行動をどう記録し、どんな例で学んだのかを考えてみてください。仕組みを知る手掛かりです。VLAは、視覚、言語、身体の行動を一つの学習するシステムで結び付ける考え方の名前です。"
             ]
           }
         ]

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-labelledby="locomotion-ru-title locomotion-ru-desc">
-<title id="locomotion-ru-title">Пример policy с суставными целями</title>
-<desc id="locomotion-ru-desc">Показан один вариант: policy не обязана выдавать момент.</desc>
+<title id="locomotion-ru-title">Как команда движения проходит через систему управления</title>
+<desc id="locomotion-ru-desc">Один вариант управления: сеть задаёт цели суставам, контроллер управляет приводами, а новые измерения возвращаются на вход.</desc>
 <style>text{font-family:Arial,sans-serif;fill:#202421}@media(prefers-reduced-motion:reduce){.atlas-pulse{display:none}}</style>
 <defs><marker id="locomotion-ru-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#596259"/></marker></defs>
 <path d="M183.0 65.0 L217.0 65.0" fill="none" stroke="#596259" stroke-width="1.5" marker-end="url(#locomotion-ru-arrow)"/>
@@ -10,22 +10,22 @@
 <path d="M183.0 385.0 L217.0 385.0" fill="none" stroke="#596259" stroke-width="1.5" marker-end="url(#locomotion-ru-arrow)"/>
 <path d="M385 385 L394 385 L394 8 L100 8 L100 24" fill="none" stroke="#596259" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#locomotion-ru-arrow)"/>
 <rect x="15" y="25" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
-<text x="100" y="57" text-anchor="middle" font-size="14">Датчики + команда</text>
-<text x="100" y="80" text-anchor="middle" font-size="14">целевой скорости</text>
+<text x="100" y="57" text-anchor="middle" font-size="14">Датчики и задание</text>
+<text x="100" y="80" text-anchor="middle" font-size="14">на движение</text>
 <rect x="215" y="25" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
-<text x="300" y="57" text-anchor="middle" font-size="14">Нейросетевая</text>
-<text x="300" y="80" text-anchor="middle" font-size="14">policy</text>
+<text x="300" y="57" text-anchor="middle" font-size="14">Обученная</text>
+<text x="300" y="80" text-anchor="middle" font-size="14">нейронная сеть</text>
 <rect x="15" y="185" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
-<text x="100" y="217" text-anchor="middle" font-size="14">Суставные цели</text>
-<text x="100" y="240" text-anchor="middle" font-size="14">PD-контроллер</text>
+<text x="100" y="217" text-anchor="middle" font-size="14">Цели для суставов</text>
+<text x="100" y="240" text-anchor="middle" font-size="14">Контроллер суставов</text>
 <rect x="215" y="185" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
 <text x="300" y="217" text-anchor="middle" font-size="14">Приводы</text>
-<text x="300" y="240" text-anchor="middle" font-size="14">Ограничения усилия</text>
+<text x="300" y="240" text-anchor="middle" font-size="14">Движение суставов</text>
 <rect x="15" y="345" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
 <text x="100" y="377" text-anchor="middle" font-size="14">Тело и поверхность</text>
-<text x="100" y="400" text-anchor="middle" font-size="14">Контакты</text>
+<text x="100" y="400" text-anchor="middle" font-size="14">Опора стоп</text>
 <rect x="215" y="345" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
-<text x="300" y="377" text-anchor="middle" font-size="14">Датчики движения</text>
-<text x="300" y="400" text-anchor="middle" font-size="14">Замкнутый цикл</text>
+<text x="300" y="377" text-anchor="middle" font-size="14">Новые измерения</text>
+<text x="300" y="400" text-anchor="middle" font-size="14">Обратная связь</text>
 <g class="atlas-pulse" opacity="0"><circle r="3" fill="#8b2020"><animateMotion dur="6s" repeatCount="indefinite" path="M183.0 65.0 L217.0 65.0"/></circle><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.7;0.8;1" dur="6s" repeatCount="indefinite"/></g>
 </svg>
