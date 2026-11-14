@@ -1,0 +1,642 @@
+{
+  "schema_version": "1.0",
+  "id": "sim-to-real-transfer",
+  "category": "training-simulation",
+  "technology_type": "method",
+  "title": {
+    "ru": "Перенос из симуляции на робота",
+    "en": "Sim-to-real transfer",
+    "ja": "シミュレーションから実機への転移"
+  },
+  "short_description": {
+    "ru": "Sim-to-real — процесс переноса решения из компьютерной симуляции на физического робота с согласованием модели, датчиков и управления.",
+    "en": "Sim-to-real is transferring a solution from simulation to a physical robot while aligning models, sensing and control.",
+    "ja": "Sim-to-realは、モデル、計測、制御の対応を整えながら、シミュレーションの成果を実機へ移す工程です。"
+  },
+  "related_technologies": [
+    {
+      "target": "neural-locomotion-policies",
+      "type": "complements",
+      "explanation": {
+        "ru": "Проверка реальных приводов и контактов необходима после обучения походки в симуляторе.",
+        "en": "Real actuators and contacts need evaluation after simulated gait training.",
+        "ja": "仮想環境で歩行を学んだ後に実機の駆動部と接触を評価する。"
+      }
+    }
+  ],
+  "prerequisites": [],
+  "term_refs": [
+    "sim-to-real",
+    "domain-randomization",
+    "robot-simulation",
+    "robot-evaluation"
+  ],
+  "sources": [
+    {
+      "id": "visual-randomization",
+      "title": "Domain Randomization for Transferring Deep Neural Networks from Simulation to the Real World",
+      "url": "https://arxiv.org/abs/1703.06907",
+      "kind": "paper",
+      "year": 2017
+    },
+    {
+      "id": "dynamics-randomization",
+      "title": "Sim-to-Real Transfer of Robotic Control with Dynamics Randomization",
+      "url": "https://arxiv.org/abs/1710.06537",
+      "kind": "paper",
+      "year": 2018
+    },
+    {
+      "id": "rma",
+      "title": "RMA: Rapid Motor Adaptation for Legged Robots",
+      "url": "https://arxiv.org/abs/2107.04034",
+      "kind": "paper",
+      "year": 2021
+    }
+  ],
+  "last_reviewed": "2026-11-14",
+  "content_status": "ready",
+  "diagram": null,
+  "localizations": {
+    "en": {
+      "engineer": {
+        "title": "Sim-to-real transfer",
+        "short_description": "Sim-to-real is transferring a solution from simulation to a physical robot while aligning models, sensing and control.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "What it is",
+            "paragraphs": [
+              "Sim-to-real transfer is the engineering process of moving a policy, model or other solution from simulation into a physical system. It includes aligning observation and action interfaces, addressing environment differences and testing real equipment.",
+              "For example, a walking policy is trained on a simulated four-legged robot. The same input and command meanings are then connected to the physical robot's sensors and actuators. Engineers measure differences in delays, friction and load, adjust modeling or training and test movements on the equipment in stages."
+            ]
+          },
+          {
+            "id": "gaps",
+            "title": "Visual, dynamic and interface differences",
+            "paragraphs": [
+              "Rendering and camera calibration can shift perception. Friction, mass, compliance, contact impulses and actuator behavior can shift dynamics. Time delays, control conventions and sensor preprocessing can introduce interface mismatches even when the geometry looks correct. Identify which gap is relevant instead of treating all failure as insufficient randomization."
+            ]
+          },
+          {
+            "id": "methods",
+            "title": "Randomization and identification",
+            "paragraphs": [
+              "Domain randomization varies selected training conditions so the policy cannot rely on one narrow simulator configuration. Visual randomization and dynamics randomization address different mechanisms. System identification can improve a nominal model; domain adaptation can adjust representations. These methods can complement one another, but their parameter distributions need an engineering rationale."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Choose variability that matters",
+            "paragraphs": [
+              "Varying parameters too narrowly can miss the real plant. Arbitrarily broad variability can make learning unnecessarily difficult or teach behavior for impossible conditions. Use measured ranges where available, document correlations and retain held-out transfer conditions. The robot's deployed sensors must provide the policy's required observations without privileged simulator information."
+            ]
+          },
+          {
+            "id": "deployment",
+            "title": "Preserve the action contract",
+            "paragraphs": [
+              "Check units, coordinate frames, joint order, command meaning, saturation, normalization and update frequency. Include sensor and actuator delay in the end-to-end budget. A joint target recorded under one servo can have a different effect under another. Perform transfer in controlled stages with independent protections and a defined response to divergence."
+            ]
+          },
+          {
+            "id": "applications",
+            "title": "Why the approach is useful",
+            "paragraphs": [
+              "Simulation enables repeated trials, controlled variation and training scenarios that are costly to collect physically. It can support locomotion and perception before real-machine commissioning. Those advantages depend on the task and model fidelity. Sim-to-real is not limited to neural policies, and a digital twin is not a synonym for every randomized simulator."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Measure the transfer gap explicitly",
+            "paragraphs": [
+              "Separate simulated evaluation from real evaluation. Test task completion, tracking, contacts, interventions, recovery and latency under relevant loads and surfaces. Log the conditions and model version. Diagnose failures by observation, dynamics and interface layers; avoid claiming successful transfer from a few selected trials."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Coverage is always finite",
+            "paragraphs": [
+              "Randomization does not include every possible real event, and matching an average behavior can hide rare failures. Contact-rich work and changing hardware can remain difficult. A result for one robot or task does not establish another installation's reliability. Keep explicit restrictions, monitoring and independent stopping functions through rollout and later updates."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Sim-to-real transfer",
+        "short_description": "Sim-to-real is transferring a solution from simulation to a physical robot while aligning models, sensing and control.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "What it is",
+            "paragraphs": [
+              "Sim-to-real is preparing a solution developed or trained in a simulated environment for use on physical equipment.",
+              "For example, a walking policy is trained on a simulated four-legged robot. The same input and command meanings are then connected to the physical robot's sensors and actuators. Engineers measure differences in delays, friction and load, adjust modeling or training and test movements on the equipment in stages."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Where the budget goes",
+            "paragraphs": [
+              "Include robot and environment models, parameter measurement, training, data interfaces and supervised real trials. Randomization, model calibration and adaptation require expertise and compute. Even with a good simulator, commissioning and exception handling remain costs. Review which parts of the process can actually be tested virtually."
+            ]
+          },
+          {
+            "id": "integration",
+            "title": "Check the less visible interfaces",
+            "paragraphs": [
+              "Camera positions, units, joint ordering, control timing and actuator response can defeat transfer. Ask for documented input and command conventions and a plan for validating them. A model file that loads correctly does not establish that its numbers mean the same thing on real hardware."
+            ]
+          },
+          {
+            "id": "acceptance",
+            "title": "Require separate physical evidence",
+            "paragraphs": [
+              "Compare performance in simulation and on the target robot using realistic objects, loads and surfaces. Count complete tasks, interventions and recovery work, with the tested conditions recorded. Ask how a failure is diagnosed and what work is needed when the environment or hardware changes."
+            ]
+          },
+          {
+            "id": "risk",
+            "title": "Scale within a validated envelope",
+            "paragraphs": [
+              "Domain randomization does not cover everything the real world can do. New wear, friction, contact geometry or sensor delay can change behavior. Define operating restrictions, monitoring and a stopping route. Savings from virtual trials should be weighed against continuing validation and maintenance, not used to remove them."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Sim-to-real transfer",
+        "short_description": "Sim-to-real is transferring a solution from simulation to a physical robot while aligning models, sensing and control.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "What it is",
+            "paragraphs": [
+              "Sim-to-real is transferring the result of virtual experiments to a real robot while checking the correspondence between the two environments.",
+              "For example, a walking policy is trained on a simulated four-legged robot. The same input and command meanings are then connected to the physical robot's sensors and actuators. Engineers measure differences in delays, friction and load, adjust modeling or training and test movements on the equipment in stages."
+            ]
+          },
+          {
+            "id": "differences",
+            "title": "Several gaps can look like one",
+            "paragraphs": [
+              "A camera image may look different because of lighting or calibration. A foot may slip because friction was modeled poorly. Commands can also use the wrong units or arrive late. These are different problems, even if they all appear as a failed robot attempt. Diagnosis matters before choosing a remedy."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Varying the virtual world",
+            "paragraphs": [
+              "Domain randomization changes chosen conditions during training. Varying visual appearance can help perception; varying mass, friction or actuator behavior can help control. Variation should be plausible and relevant. Making every parameter wildly random does not automatically teach better behavior."
+            ]
+          },
+          {
+            "id": "correction",
+            "title": "Measure and adapt",
+            "paragraphs": [
+              "Engineers can identify physical parameters to improve the simulator or adapt learned representations using suitable data. Some policies also estimate changing conditions from sensor history. These ideas can be combined, but none means that every unseen real situation has been solved."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "What counts as transfer evidence",
+            "paragraphs": [
+              "Look for repeated physical tests, stated surfaces and loads, full tasks and recovery after failures. A good simulated score or one edited success video is not enough. The real robot still needs sensing, controls, limits and stopping behavior. Simulation is an engineering tool, not a replacement for evidence from the actual machine."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Sim-to-real transfer",
+        "short_description": "Sim-to-real is the work of taking a movement program from a computer model to a physical robot and checking it on the real machine.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "What it is",
+            "paragraphs": [
+              "Sim-to-real is the work of taking a movement program from a computer model to a physical robot and checking it on the real machine.",
+              "For example, a walking policy is trained on a simulated four-legged robot. The same input and command meanings are then connected to the physical robot's sensors and actuators. Engineers measure differences in delays, friction and load, adjust modeling or training and test movements on the equipment in stages."
+            ]
+          },
+          {
+            "id": "differences",
+            "title": "Why the same command can act differently",
+            "paragraphs": [
+              "A real floor might be more slippery. A motor might respond later, or a camera might see different lighting. The command's units could also be wrong. These are different reasons for failure. Engineers need to discover which one matters rather than just ask the model to try harder."
+            ]
+          },
+          {
+            "id": "practice",
+            "title": "Change the practice conditions",
+            "paragraphs": [
+              "During training, a program can change selected surfaces, appearances or robot properties. This is called domain randomization. It can make a learned rule less dependent on one exact setup. The changes still need to make sense; random changes to everything are not automatically useful."
+            ]
+          },
+          {
+            "id": "checking",
+            "title": "Measure the real machine",
+            "paragraphs": [
+              "People measure the equipment, check what each command means and test carefully on the robot. Sometimes they improve the simulator or adjust the model with new data. They also decide what should happen if the real movement does not match the prediction."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Practice is not proof",
+            "paragraphs": [
+              "Doing well in a virtual world does not prove the robot will work on every real floor with every load. People test repeated attempts and record the conditions, failures and recovery. Limits and stop mechanisms are still necessary. A simulator helps engineers ask questions; the real machine supplies evidence too."
+            ]
+          }
+        ]
+      }
+    },
+    "ru": {
+      "engineer": {
+        "title": "Перенос из симуляции на робота",
+        "short_description": "Sim-to-real — процесс переноса решения из компьютерной симуляции на физического робота с согласованием модели, датчиков и управления.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Что это такое",
+            "paragraphs": [
+              "Sim-to-real transfer — инженерный процесс переноса политики, модели или другого решения из симуляции в физическую систему. Его части — согласование интерфейсов наблюдений и действий, учёт различий сред и испытания на реальном оборудовании.",
+              "Например, политику ходьбы обучают на виртуальном четырёхногом роботе. Затем те же значения входов и команд связывают с датчиками и приводами реальной машины. Инженеры измеряют различия в задержках, трении и нагрузке, настраивают модель или обучение и поэтапно проверяют движения на оборудовании.",
+              "Разрыв включает визуальные различия, ошибки динамики и несовпадение интерфейсов. Масса, трение, жёсткость контакта, люфт, задержка привода и шум датчиков влияют на замкнутый контур. Неверные единицы измерения или порядок суставов способны разрушить перенос даже при хорошем совпадении физики."
+            ]
+          },
+          {
+            "id": "interface",
+            "title": "Входы, выходы и контракт управления",
+            "paragraphs": [
+              "Сначала фиксируют контракт: какие наблюдения получает политика, в какой системе координат и с какой историей; что означают действия — моменты, положения или приращения целей; кто ограничивает команды. Нормализация, частота опроса и период удержания действия должны соответствовать обучению.",
+              "При обучении симулятор может предоставлять недоступные на роботе состояния. Их допустимо использовать для критика или учителя, но исполнительная политика должна работать с реально доступными измерениями либо с проверенным оценивателем. Подмена истинного состояния шумным измерением только при запуске создаёт дополнительный сдвиг распределения."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Рандомизация и идентификация",
+            "paragraphs": [
+              "Domain randomization меняет параметры между эпизодами или по заданному процессу: массу, трение, освещение, задержки. Политика учится решать задачу в семействе сред. Диапазоны выбирают по измерениям и предполагаемым условиям эксплуатации; чрезмерно широкие диапазоны могут сделать обучение нерезультативным.",
+              "System identification, напротив, уточняет модель по измерениям робота. Эти подходы совместимы: идентификация задаёт номинальную модель и неопределённость, рандомизация проверяет устойчивость к остаточным различиям. Работа Peng и соавторов показывает перенос навыков с рандомизацией динамики в конкретной экспериментальной постановке, а не универсальную гарантию."
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "Развёртывание и адаптация",
+            "paragraphs": [
+              "При inference симулятор может вообще не участвовать: политика получает датчики, вычисляет действие и передаёт его штатному контроллеру. Если предусмотрена онлайн-адаптация, отдельный модуль оценивает скрытые свойства среды по истории наблюдений. Это дополнительный механизм, который также нуждается в проверке.",
+              "Измеряют задержку всего пути от датчика до привода, включая фильтрацию и транспорт. При нарушении срока, выходе за допустимые состояния или сбое измерений нужен независимый переход к безопасному поведению. Высокая средняя частота вычисления не исключает опасных редких задержек."
+            ]
+          },
+          {
+            "id": "applications",
+            "title": "Где перенос полезен",
+            "paragraphs": [
+              "Симуляция позволяет массово получать эпизоды для ходьбы, захвата и адаптации к нагрузке без износа реального оборудования. Визуальная рандомизация полезна при изменении фона и освещения; динамическая — при вариациях контакта и механики. Сложные деформируемые объекты и точные контактные процессы могут требовать значительного реального дообучения."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Проверка переноса",
+            "paragraphs": [
+              "Разделяют наборы параметров обучения, отложенной симуляции и реальных испытаний. Считают успех задачи, вмешательства, нарушения ограничений, время цикла и восстановление после возмущения. Условия и число физических попыток фиксируют отдельно от большого числа виртуальных эпизодов.",
+              "Первые испытания проводят поэтапно с ограничениями энергии, скорости и доступной области. Хорошее совпадение одной траектории недостаточно: проверяют новые начальные состояния, нагрузку, освещение и износ. Процедура остановки должна работать независимо от обученной политики."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Когда симулятор вводит в заблуждение",
+            "paragraphs": [
+              "Политика может использовать ошибку модели контакта или виртуальный сигнал, отсутствующий у робота. Визуально реалистичная сцена не гарантирует правильную динамику. Рандомизация не покрывает неизвестные эффекты автоматически; коррелированные реальные изменения могут отсутствовать в независимо варьируемых параметрах."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Перенос и соседние методы",
+            "paragraphs": [
+              "Sim-to-real обозначает направление переноса, domain randomization — один из способов его подготовки, а адаптация — изменение поведения или представления при новых условиях. Цифровой двойник описывает моделируемый объект и его связь с измерениями, но сам по себе не обучает политику. Нейросетевая локомоция использует перенос как часть процесса, а не как замену обратной связи."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Перенос из симуляции на робота",
+        "short_description": "Sim-to-real — процесс переноса решения из компьютерной симуляции на физического робота с согласованием модели, датчиков и управления.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Что это такое",
+            "paragraphs": [
+              "Sim-to-real — процесс подготовки к применению на настоящем оборудовании решения, разработанного или обученного в компьютерной модели среды.",
+              "Например, политику ходьбы обучают на виртуальном четырёхногом роботе. Затем те же значения входов и команд связывают с датчиками и приводами реальной машины. Инженеры измеряют различия в задержках, трении и нагрузке, настраивают модель или обучение и поэтапно проверяют движения на оборудовании."
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "Как устроен процесс",
+            "paragraphs": [
+              "Команда описывает задачу, оборудование, датчики и действия, создаёт модель и обучает поведение в виртуальных эпизодах. Затем переносит тот же интерфейс на устройство и проверяет результат. Различия между виртуальными и реальными условиями устраняют уточнением модели, вариацией параметров и, при необходимости, дополнительными реальными данными."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Из чего складываются затраты",
+            "paragraphs": [
+              "Нужны инженеры моделирования и управления, вычисления для обучения, измерения реального оборудования и площадка испытаний. Модели контакта, мягких объектов и нестандартных приводов могут потребовать больше работы, чем сама нейросеть. Необходимо учитывать обслуживание модели после смены захвата, нагрузки или версии прошивки."
+            ]
+          },
+          {
+            "id": "decision",
+            "title": "Когда подход уместен",
+            "paragraphs": [
+              "Симуляция особенно полезна, когда можно достаточно точно описать существенные для задачи эффекты и требуется много повторений. Для редких, плохо моделируемых контактных операций реальное обучение или демонстрации могут оказаться практичнее. Сравнение проводят по полному сроку подготовки и стоимости одного надёжно выполненного задания."
+            ]
+          },
+          {
+            "id": "risk",
+            "title": "Какие доказательства требовать",
+            "paragraphs": [
+              "Запросите отдельные результаты на настоящем оборудовании: число попыток, долю успеха, вмешательства и нарушения ограничений в согласованных условиях. Уточните, какие изменения потребуют переобучения и кто отвечает за безопасную остановку. Рандомизация параметров — способ повысить устойчивость, но не сертификат безопасности и не обещание переноса на любой робот."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Перенос из симуляции на робота",
+        "short_description": "Sim-to-real — процесс переноса решения из компьютерной симуляции на физического робота с согласованием модели, датчиков и управления.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Что это такое",
+            "paragraphs": [
+              "Sim-to-real — перенос результата виртуальных экспериментов на реального робота с проверкой того, как соотносятся обе среды.",
+              "Например, политику ходьбы обучают на виртуальном четырёхногом роботе. Затем те же значения входов и команд связывают с датчиками и приводами реальной машины. Инженеры измеряют различия в задержках, трении и нагрузке, настраивают модель или обучение и поэтапно проверяют движения на оборудовании."
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "Как готовят перенос",
+            "paragraphs": [
+              "Инженеры задают одинаковые значения входов и действий в обеих средах. Если модель выдаёт целевое положение сустава, реальный контроллер должен понимать ту же единицу измерения и работать с нужным периодом. Даже очень хорошая картинка виртуальной сцены не исправит ошибку в этом контракте."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Зачем менять виртуальный мир",
+            "paragraphs": [
+              "Во время обучения можно менять массу, трение, свет или задержки. Такой приём называется рандомизацией домена: решение должно выдерживать разные правдоподобные варианты среды. Другой путь — измерить свойства реального робота и уточнить симулятор. Эти способы часто применяют вместе."
+            ]
+          },
+          {
+            "id": "application",
+            "title": "Пример с ходьбой",
+            "paragraphs": [
+              "Политика ходьбы учится удерживать движение при разных нагрузках и сцеплении. На устройстве она получает реальные показания датчиков и обновляет команды в замкнутом контуре. Иногда отдельный модуль подстраивает поведение по недавней истории измерений. Симулятор при этом не обязан работать внутри робота."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Чего перенос не обещает",
+            "paragraphs": [
+              "Виртуальная политика может случайно использовать ошибку симулятора. Слишком широкое изменение параметров тоже не всегда помогает: задачу становится трудно освоить. Поэтому навык испытывают на реальном устройстве поэтапно и с независимыми ограничениями. Успех в симуляции — основание для испытаний, а не доказательство безопасности."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Перенос из симуляции на робота",
+        "short_description": "Sim-to-real — работа по переносу программы движений из компьютерной модели на настоящего робота и её проверке на реальной машине.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Что это такое",
+            "paragraphs": [
+              "Sim-to-real — работа по переносу программы движений из компьютерной модели на настоящего робота и её проверке на реальной машине.",
+              "Например, политику ходьбы обучают на виртуальном четырёхногом роботе. Затем те же значения входов и команд связывают с датчиками и приводами реальной машины. Инженеры измеряют различия в задержках, трении и нагрузке, настраивают модель или обучение и поэтапно проверяют движения на оборудовании."
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "Почему возникает разница",
+            "paragraphs": [
+              "В программе пол может иметь одно сцепление, а настоящий ковёр — другое. Двигатель реагирует с задержкой, камера видит тени. Правило управления получает числа от датчиков и выдаёт команды. Значение этих чисел и команд должно быть одинаковым в программе и на устройстве."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Зачем нужны разные условия",
+            "paragraphs": [
+              "При обучении инженеры меняют виртуальный свет, вес груза и свойства пола. Так правило проверяется в нескольких условиях, а не только в одном удобном случае. Иногда сначала измеряют настоящего робота, чтобы точнее настроить программу. Случайные изменения полезны, только если они имеют смысл для задачи."
+            ]
+          },
+          {
+            "id": "application",
+            "title": "Пример с коробкой",
+            "paragraphs": [
+              "Робот учится брать коробки разной массы. В настоящей комнате датчики показывают, как движется захват, и программа снова вычисляет команду. Если коробка оказалась совсем другой или датчик сломался, прежнего обучения может не хватить. Поэтому у устройства должны быть ограничения скорости и способ остановки."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Как узнать, что получилось",
+            "paragraphs": [
+              "Успех в игре или симуляторе ещё не означает успеха в комнате. Специалисты проводят настоящие испытания с защитными мерами и записывают ошибки. Это делают подготовленные взрослые, а не случайный прохожий. Робот не понимает ситуацию как человек: программа использует измерения и правило, качество которого нужно проверить."
+            ]
+          }
+        ]
+      }
+    },
+    "ja": {
+      "engineer": {
+        "title": "シミュレーションから実機への転移",
+        "short_description": "Sim-to-realは、モデル、計測、制御の対応を整えながら、シミュレーションの成果を実機へ移す工程です。",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "Sim-to-realは、方策やモデルなどをシミュレーションから実機へ移す工学的な工程です。観測と行動のインタフェースを合わせ、環境の差を扱い、実機で試験する作業が含まれます。",
+              "例えば、四脚ロボットの歩行方策を仮想環境で学習します。同じ意味の入力と指令を、実機のセンサや駆動部へ接続します。遅延、摩擦、荷重の差を測り、モデルや訓練を調整しながら、段階的に実機の動きを試します。"
+            ]
+          },
+          {
+            "id": "interface",
+            "title": "観測と行動の契約",
+            "paragraphs": [
+              "方策が使う座標系、単位、履歴、正規化を固定し、出力がトルク、関節目標値、目標の差分のどれかを明確にする。制御周期と行動を保持する時間も合わせる。関節の並び順や遅延の不一致は、物理モデルが良くても転移を壊しうる。",
+              "訓練時だけ使える真の状態は教師や価値関数へ渡せるが、実行方策には実機で得られる観測を与える。必要なら状態推定器も評価対象に含める。実行時だけ真の状態を雑音のある計測へ置き換えると、入力分布が変わる。"
+            ]
+          },
+          {
+            "id": "training",
+            "title": "ランダム化と同定",
+            "paragraphs": [
+              "Domain randomizationでは質量、摩擦、光、遅延などを妥当な範囲で変える。System identificationは実測からモデルを同定する。両者は対立せず、同定した中心値と残る不確かさを基に訓練分布を設計できる。範囲を広げすぎると、学習自体が難しくなる。"
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "実機での実行",
+            "paragraphs": [
+              "実行中にシミュレータが必要とは限らない。センサ値から行動を計算し、既存の制御器へ渡す。適応モジュールを使う場合は、観測履歴から隠れた環境特性を推定するが、その誤差や応答時間も検証する。",
+              "センサから駆動までの遅延を測り、締切超過や観測異常に対する退避動作を設ける。平均計算速度だけでは、まれな長時間停止を評価できない。"
+            ]
+          },
+          {
+            "id": "application",
+            "title": "適する用途",
+            "paragraphs": [
+              "歩行、把持、荷重変化への対応など、多数の試行が必要な用途で有用である。視覚のランダム化と動力学のランダム化は異なる差を扱う。変形物や精密な接触ではモデル化の費用が増え、実データによる調整が必要になることもある。"
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "評価の分離",
+            "paragraphs": [
+              "訓練用、未使用の仮想条件、実機条件を分ける。成功率だけでなく、介入、制約違反、処理時間、外乱からの回復を測る。実機試行の回数と条件は、仮想試行と区別して記録する。試験は独立した停止手段の下で段階的に広げる。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "失敗しやすい点",
+            "paragraphs": [
+              "方策が接触モデルの誤差や実機にはない信号を利用することがある。写実的な画像でも動力学が正しいとは限らない。独立に変えたパラメータでは、実際に連動して変化する条件を覆えない場合もある。"
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "近い概念との違い",
+            "paragraphs": [
+              "Sim-to-realは転移の方向、ランダム化は準備の手法、適応は変化への対処である。デジタルツインを作ること自体は方策の訓練ではない。Pengらの成果は特定の実験条件での検証であり、任意の機体へそのまま使えるという意味ではない。"
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "シミュレーションから実機への転移",
+        "short_description": "Sim-to-realは、モデル、計測、制御の対応を整えながら、シミュレーションの成果を実機へ移す工程です。",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "Sim-to-realは、仮想環境で開発・訓練した仕組みを、実際の設備で使うために準備し検証する工程です。",
+              "例えば、四脚ロボットの歩行方策を仮想環境で学習します。同じ意味の入力と指令を、実機のセンサや駆動部へ接続します。遅延、摩擦、荷重の差を測り、モデルや訓練を調整しながら、段階的に実機の動きを試します。"
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "準備から実行まで",
+            "paragraphs": [
+              "作業、機体、センサ、行動の意味を定義し、仮想試行で方策を訓練する。同じ入出力を実機へ接続した後、差を計測してモデルや訓練条件を調整する。必要に応じて実機データによる追加学習も行う。"
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "費用が発生する場所",
+            "paragraphs": [
+              "計算資源に加え、動力学や制御の技術者、実測、試験設備が必要になる。柔らかい物体や特殊な駆動装置では、モデル作成が大きな費用を占めうる。ハンドや荷重を変更した後のモデル保守も見積もる必要がある。"
+            ]
+          },
+          {
+            "id": "decision",
+            "title": "採用の判断",
+            "paragraphs": [
+              "重要な物理現象を十分に表現でき、多数の反復が必要な作業に適する。モデル化が難しい少量の作業では、実機での実演収集の方が合理的なこともある。比較するのは仮想試行の数ではなく、信頼できる一作業当たりの総費用である。"
+            ]
+          },
+          {
+            "id": "risk",
+            "title": "確認すべき証拠",
+            "paragraphs": [
+              "実機での成功、介入、制約違反、試行回数を別に提示してもらう。条件変更時の再検証と停止手段の責任者も決める。パラメータのランダム化は頑健性を高める手段であり、安全認証や無条件の転移保証ではない。"
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "シミュレーションから実機への転移",
+        "short_description": "Sim-to-realは、モデル、計測、制御の対応を整えながら、シミュレーションの成果を実機へ移す工程です。",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "Sim-to-realは、仮想実験の成果を実際のロボットへ移し、二つの環境の対応を確かめる作業です。",
+              "例えば、四脚ロボットの歩行方策を仮想環境で学習します。同じ意味の入力と指令を、実機のセンサや駆動部へ接続します。遅延、摩擦、荷重の差を測り、モデルや訓練を調整しながら、段階的に実機の動きを試します。"
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "入出力を合わせる",
+            "paragraphs": [
+              "方策が関節の目標角度を出すなら、実機の制御器も同じ単位と周期で受け取る必要がある。見た目が精密な仮想部屋でも、行動の意味が違えばうまく動かない。センサの雑音や命令の遅れも無視できない。"
+            ]
+          },
+          {
+            "id": "training",
+            "title": "いろいろな仮想条件",
+            "paragraphs": [
+              "訓練中に重さ、摩擦、照明を変える方法をドメインランダム化という。ひとつの都合のよい世界だけに合う方策を避ける狙いがある。一方、実機を測ってモデルを近づける方法もあり、二つは組み合わせられる。"
+            ]
+          },
+          {
+            "id": "application",
+            "title": "歩行への応用",
+            "paragraphs": [
+              "異なる荷重や床で歩く方策を訓練し、実機ではセンサを使って行動を繰り返し更新する。観測の履歴から環境に適応する仕組みを加えることもある。実行中のロボットの中でシミュレータを動かす必要は必ずしもない。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "試験は省けない",
+            "paragraphs": [
+              "方策がシミュレータの誤りを利用している場合もある。条件を広く変えれば何でも解決するわけではなく、学習が難しくなることもある。そこで実機試験を段階的に行い、独立した停止手段を用意する。仮想環境での成功は試験への入口である。"
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "シミュレーションから実機への転移",
+        "short_description": "Sim-to-realは、画面の中のロボットで使った動作プログラムを、本物へ移し、実際の機械で確かめる作業だ。",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "Sim-to-realは、画面の中のロボットで使った動作プログラムを、本物へ移し、実際の機械で確かめる作業だ。",
+              "例えば、四脚ロボットの歩行方策を仮想環境で学習します。同じ意味の入力と指令を、実機のセンサや駆動部へ接続します。遅延、摩擦、荷重の差を測り、モデルや訓練を調整しながら、段階的に実機の動きを試します。"
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "何がちがうのかな",
+            "paragraphs": [
+              "本物の床は画面の床よりすべるかもしれない。モータの反応には遅れがあり、カメラには影が写る。動作の規則（きそく）はセンサの数値を受け取り、命令を出す。この数値や命令の意味を両方でそろえることが大切だ。"
+            ]
+          },
+          {
+            "id": "training",
+            "title": "条件を変えて試す",
+            "paragraphs": [
+              "技術者は仮想（かそう）の光、荷物の重さ、床の性質を変えて訓練する。ひとつの場面だけに合う規則を避けるためだ。本物の機械を測って、画面のモデルを直す方法もある。変える条件は、作業と関係のあるものを選ぶ。"
+            ]
+          },
+          {
+            "id": "application",
+            "title": "箱を運ぶ例",
+            "paragraphs": [
+              "違う重さの箱を持つ練習をした後、本物の箱で動きを調べる。センサの値を使って次の命令を計算するが、まったく違う箱や故障には対応できないこともある。速度の上限や停止（ていし）の仕組みも必要になる。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "本当に使えるか確かめる",
+            "paragraphs": [
+              "画面で成功しても、本物の部屋での成功はまだ分からない。専門家が保護の仕組みを用意し、試験の結果と失敗を記録する。ロボットは人のように状況を理解しているのではなく、測った数値と学んだ規則を使って動く機械だ。"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

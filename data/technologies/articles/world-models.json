@@ -1,0 +1,641 @@
+{
+  "schema_version": "1.0",
+  "id": "world-models",
+  "category": "world-models-planning",
+  "technology_type": "model-family",
+  "title": {
+    "ru": "Модели мира",
+    "en": "World models",
+    "ja": "世界モデル"
+  },
+  "short_description": {
+    "ru": "Модель мира — математическое представление окружающей среды и закономерностей её изменения.",
+    "en": "A world model is a mathematical representation of an environment and the dynamics of its changes.",
+    "ja": "世界モデルとは、環境の状態と変化の関係を数理的に表したものです。"
+  },
+  "related_technologies": [
+    {
+      "target": "reinforcement-learning",
+      "type": "complements",
+      "explanation": {
+        "ru": "Dreamer — семейство алгоритмов обучения с подкреплением. В них правило действий обучают на прогнозах модели среды: какие изменения и награды могут последовать за выбранными действиями.",
+        "en": "Dreamer is a family of reinforcement-learning algorithms. They train an action-selection rule using an environment model's predictions of outcomes and rewards following chosen actions.",
+        "ja": "Dreamerは、モデルを使う強化学習（きょうかがくしゅう）の手法の集まりです。モデルが予測する行動の結果や報酬（ほうしゅう）を使い、動き方を選ぶ規則を学ばせます。"
+      }
+    }
+  ],
+  "prerequisites": [],
+  "term_refs": [
+    "world-model",
+    "robot-dynamics",
+    "uncertainty-estimation"
+  ],
+  "sources": [
+    {
+      "id": "world-models",
+      "title": "World Models",
+      "url": "https://arxiv.org/abs/1803.10122",
+      "kind": "paper",
+      "year": 2018
+    },
+    {
+      "id": "dreamerv3",
+      "title": "Mastering Diverse Domains through World Models",
+      "url": "https://arxiv.org/abs/2301.04104",
+      "kind": "paper",
+      "year": 2024
+    },
+    {
+      "id": "pets",
+      "title": "Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models",
+      "url": "https://arxiv.org/abs/1805.12114",
+      "kind": "paper",
+      "year": 2018
+    },
+    {
+      "id": "dreamer-code",
+      "title": "DreamerV3 — author implementation",
+      "url": "https://github.com/danijar/dreamerv3",
+      "kind": "code",
+      "year": 2023
+    }
+  ],
+  "last_reviewed": "2026-11-14",
+  "content_status": "ready",
+  "diagram": "world",
+  "localizations": {
+    "en": {
+      "engineer": {
+        "title": "World models",
+        "short_description": "A world model is a mathematical representation of an environment and the dynamics of its changes.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "What is a world model?",
+            "paragraphs": [
+              "A world model is a computational representation of an environment that couples a description of state with a model of state changes. For a robot, state might include object positions, velocities and contacts; dynamics specifies how these evolve over time and under actions. In learned world models, neural-network parameters fitted to recorded experience encode these relationships.",
+              "For example, a block model can take its current position and velocity together with a proposed push, then estimate its next position and velocity. A latent model instead operates on a compact numerical state. In either case the software contains both a representation of the situation and relationships describing its evolution."
+            ]
+          },
+          {
+            "id": "state",
+            "title": "Latent representations and observation history",
+            "paragraphs": [
+              "An encoder can map high-dimensional observations into a compact state. A recurrent or sequence-based dynamics model then uses state, action and history to predict later representations. Partial observability matters: one frame may not reveal velocity, hidden objects or contact state. Compression can discard details that are essential for a downstream manipulation task."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Objectives and available evidence",
+            "paragraphs": [
+              "A model can learn by reconstructing observations, predicting transitions and fitting rewards or other signals. Variational formulations add distribution-matching terms. The loss reflects the chosen representation and dataset; good one-step image prediction does not establish accurate long-horizon dynamics. Data coverage must include actions and outcomes relevant to the intended decisions."
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "What an action-conditioned prediction gives",
+            "paragraphs": [
+              "For a candidate action, the model produces a predicted next-state distribution or representation. Repeated rollout can evaluate several futures. Errors can accumulate and the model may become overconfident away from recorded data. Some video models are not action-conditioned at all; they should not be treated as robot simulators merely because their output looks coherent."
+            ]
+          },
+          {
+            "id": "uses",
+            "title": "Planning and imagined training",
+            "paragraphs": [
+              "A planner can compare action sequences through predicted consequences. Another use is training a policy on model-generated sequences of states, actions and rewards. Dreamer is a family of model-based reinforcement-learning algorithms using this approach. Planning during execution and training a policy within a model are distinct uses of predictive information. The 2018 World Models work and the Dreamer family describe specific research designs rather than a single architecture for all world models."
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "Connecting predictions to measurements",
+            "paragraphs": [
+              "A real controller must execute selected actions and receive new measurements. Replanning can limit the period over which model error grows unchecked. Track the age of observations, synchronization and the computational cost of rollouts. Predictions are not a replacement for runtime sensing or an excuse to ignore contact and actuator constraints."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Evaluate decisions as well as predictions",
+            "paragraphs": [
+              "Use held-out trajectories, action interventions, longer rollouts and downstream closed-loop tasks. Check contact events, uncertainty and changes in objects or lighting. A low pixel error can coexist with wrong object motion; a compressed model can be useful without photorealistic decoding. Select metrics according to the purpose, not a visual impression alone."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "The boundary of learned physics",
+            "paragraphs": [
+              "Models can violate conservation, miss rare contacts or hallucinate objects. More convincing video does not prove causal fidelity. Uncertainty estimates also require calibration and operating-condition checks. Keep validation and safety constraints independent, and distinguish the authors' benchmark results from claims about arbitrary real-world environments."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "World models",
+        "short_description": "A world model is a mathematical representation of an environment and the dynamics of its changes.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "What is a world model?",
+            "paragraphs": [
+              "A world model is a software description of an operating environment and how its state changes. For example, it can relate the position of a box to the motion of a conveyor belt. That description may be expressed through mathematical relationships or a neural network fitted to recorded operations.",
+              "The system takes current measurements and a proposed intervention, calculates a possible later process state and passes the result to a decision-making component. This can support comparing belt movements or robot actions before execution. Deployment begins by specifying which objects, changes and decisions the model needs to describe."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "What must be recorded",
+            "paragraphs": [
+              "Useful data includes observations, actions and their outcomes with correct timing. A model intended for new contact situations needs evidence about such situations, not only many attractive videos. Budget for data collection, model training, validation and the compute needed for repeated predictive rollouts."
+            ]
+          },
+          {
+            "id": "integration",
+            "title": "Where the model contributes",
+            "paragraphs": [
+              "A planner may score possible action sequences, or another policy may learn using imagined trajectories. Those options have different runtime costs. The final machine still needs sensors, a controller and exception handling. Predictions must be compared with real outcomes, with a process for detecting when their usefulness has degraded."
+            ]
+          },
+          {
+            "id": "acceptance",
+            "title": "Tie the metric to a decision",
+            "paragraphs": [
+              "Measure whether planning, data efficiency or task completion improves under the intended conditions. Test consequences of wrong predictions and performance when objects, loads or contacts change. Do not accept visual realism as the only criterion. A simpler analytic model may be preferable when it already supports the required decision reliably."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Return on investment is conditional",
+            "paragraphs": [
+              "A learned model can reduce some experiments while adding uncertainty and maintenance work. Errors grow during long predictions and outside the data distribution. Keep safety and engineering validation separate. Published simulated results or plausible videos are not evidence that a model is a certified digital twin of your equipment."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "World models",
+        "short_description": "A world model is a mathematical representation of an environment and the dynamics of its changes.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "What is a world model?",
+            "paragraphs": [
+              "A world model is a description of an environment and the relationships between its changes, held inside a computer system. Imagine a block on a table: numbers can describe its position and speed, while mathematical relationships describe how a push changes its motion. A learned world model obtains such relationships from recorded experience.",
+              "The program can then enter different proposed pushes into that description and calculate where the block could end up. Predictions come from this internal representation of a scene and its changes. In a large neural network, the representation may be compressed numerical features rather than an explicit list of named objects."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "A compressed view of experience",
+            "paragraphs": [
+              "Observations can be encoded into a smaller representation, and another network learns how that representation changes with actions. The representation is selective. It may preserve useful movement information while losing a detail that matters for a different task. A single image also cannot reveal every hidden state."
+            ]
+          },
+          {
+            "id": "futures",
+            "title": "Predicting a scene is not proving physics",
+            "paragraphs": [
+              "A video can look convincing without responding correctly to a chosen robot action. For planning, the relevant question is whether changing the proposed action changes the predicted consequences appropriately. Repeating a small modeling error over many steps can produce a very wrong future even when the first prediction looks reasonable."
+            ]
+          },
+          {
+            "id": "uses",
+            "title": "Two ways to use an imagined future",
+            "paragraphs": [
+              "A planner can compare commands using predictions, while a learning program can use calculated actions and outcomes as training experience. The second approach is used by Dreamer, a family of reinforcement-learning algorithms that train an action-selection rule within an environment model. These are different uses of the model. A physical robot still receives fresh observations while carrying out the resulting commands."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Ask what was actually tested",
+            "paragraphs": [
+              "Useful tests include held-out actions, longer rollouts and complete robot tasks. Pixel similarity alone can hide incorrect contacts or motion. A numerical model can be useful without photorealism, while a photorealistic video can be unsuitable for control. The purpose and the evidence determine what can reasonably be claimed."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "World models",
+        "short_description": "A description of the surroundings inside a program: what it contains and how it represents a moving block.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "What is a world model?",
+            "paragraphs": [
+              "A world model is a simplified description of the surroundings inside a program, containing information about things and how they change. In a simple description of a block on a table, numbers give its position and speed. The program also has a rule connecting a push to a change in motion.",
+              "That rule can be learned from recorded examples of how a block was pushed and where it moved. The program can then enter a new push and calculate where the block might go. This is how an internal description of the surroundings helps a robot estimate an outcome before making a real movement."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Learning from recorded changes",
+            "paragraphs": [
+              "Engineers record observations, actions and results. A model learns connections between them. It may use a smaller numerical description instead of every pixel. Keeping less information makes some work easier, but can also lose an important detail such as a hidden edge."
+            ]
+          },
+          {
+            "id": "pictures",
+            "title": "A believable film can still be wrong",
+            "paragraphs": [
+              "A generated film might show a block moving smoothly. That does not prove it will predict what happens when a real robot pushes at a chosen place. The image may look right while the contact is wrong. The model has to be tested with actions and measured results."
+            ]
+          },
+          {
+            "id": "choosing",
+            "title": "Trying ideas in a model",
+            "paragraphs": [
+              "A planner can compare several possible commands using predicted results. Some learning systems also practice with model-generated experience. These are useful ideas, but the robot still needs real measurements after it acts. It cannot keep assuming its imagined future is correct."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Mistakes can grow",
+            "paragraphs": [
+              "A small prediction error can become large after many predicted steps. An unfamiliar surface or a slipping object can also cause trouble. Engineers check which conditions were tested and how the model helps a real task. A convincing picture is not proof of exact physics or safe robot behavior."
+            ]
+          }
+        ]
+      }
+    },
+    "ru": {
+      "engineer": {
+        "title": "Модели мира",
+        "short_description": "Модель мира — математическое представление окружающей среды и закономерностей её изменения.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Что такое модель мира",
+            "paragraphs": [
+              "Модель мира — это вычислительное представление среды, в котором описание её состояния связано с моделью изменения этого состояния. В робототехнической задаче оно может включать положение и скорость объектов, состояние контактов и зависимость этих величин от времени и управляющего воздействия. В обучаемых моделях эти связи задаются параметрами нейросети, настроенными по данным.",
+              "Например, для кубика на столе входом могут быть его текущее положение, скорость и предполагаемое усилие толчка. Модель рассчитывает возможное положение и скорость на следующем шаге. Если вместо явных физических величин используется компактное скрытое состояние, смысл остаётся тем же: внутри программы есть представление ситуации и зависимость, описывающая её развитие."
+            ]
+          },
+          {
+            "id": "state",
+            "title": "Латентное состояние и история",
+            "paragraphs": [
+              "Энкодер способен переводить многомерные наблюдения в компактное состояние. Рекуррентная или последовательностная модель динамики использует состояние, действие и историю для следующих представлений. Один кадр не обязательно показывает скорость, скрытый предмет и контакт. Сжатие может потерять деталь, существенную именно для манипуляции."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Цели и доступные свидетельства",
+            "paragraphs": [
+              "Модель может восстанавливать наблюдения, предсказывать переходы и подгонять награды или другие сигналы. В вариационных формулировках добавляют согласование распределений. Цель определяется выбранным представлением и данными. Хороший прогноз одного изображения не устанавливает верной длинной динамики; нужны действия и результаты, существенные для будущих решений."
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "Прогноз при заданном действии",
+            "paragraphs": [
+              "Для кандидатного действия модель выдаёт распределение следующего состояния или его представление. Последовательный прогон позволяет сравнить разные будущие траектории. Но ошибка растёт, а за пределами записей модель может быть чрезмерно уверенной. Некоторые видеогенераторы вообще не условлены действиями; связная картинка не делает их симулятором робота."
+            ]
+          },
+          {
+            "id": "uses",
+            "title": "Планирование и воображаемое обучение",
+            "paragraphs": [
+              "Планировщик может сравнивать последовательности действий по предсказанным последствиям. Другой вариант — обучать политику на рассчитанных моделью последовательностях состояний, действий и наград. Этот подход использует Dreamer — семейство алгоритмов обучения с подкреплением на основе обучаемой модели среды. Планирование при исполнении и обучение политики внутри модели — разные способы использования прогноза. Работа World Models 2018 года и семейство Dreamer описывают конкретные исследовательские конструкции, а не единственную архитектуру модели мира."
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "Связь с настоящими измерениями",
+            "paragraphs": [
+              "Контроллер исполняет выбранные действия и получает новые измерения. Перепланирование сокращает период бесконтрольного накопления ошибки модели. Учитывают возраст наблюдений, синхронизацию и стоимость прогнозных прогонов. Предсказания не заменяют датчики и не отменяют ограничения контакта и приводов."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Проверять решения, а не только картинки",
+            "paragraphs": [
+              "Нужны отложенные траектории, изменения действий, длинные прогнозы и полные замкнутые задачи. Проверяют контакты, неопределённость, новые предметы и освещение. Низкая пиксельная ошибка совместима с неверным движением объекта. Компактная модель может быть полезной без фотореалистичного декодера. Метрики выбирают под назначение."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Границы выученной физики",
+            "paragraphs": [
+              "Модели способны нарушать сохранение, пропускать редкий контакт и выдумывать предметы. Более убедительное видео не доказывает причинной точности. Оценка неопределённости тоже требует калибровки и эксплуатационной проверки. Валидацию и безопасность сохраняют отдельно, а результаты авторов не распространяют на произвольный реальный мир."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Модели мира",
+        "short_description": "Модель мира — математическое представление окружающей среды и закономерностей её изменения.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "Что такое модель мира",
+            "paragraphs": [
+              "Модель мира — программное описание того, как устроена рабочая среда и как в ней меняется обстановка. Оно связывает измеряемое состояние процесса с его дальнейшим развитием: например, положение коробки на ленте — с движением конвейера. Такое описание может быть набором математических зависимостей или обученной по данным нейросетью.",
+              "Система получает текущие измерения и вариант воздействия, рассчитывает возможное состояние процесса после него и передаёт результат системе принятия решений. Практическое применение — заранее сравнить варианты движения ленты или робота. Для внедрения сначала определяют, какие объекты, изменения и решения должна описывать модель."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Что записывать и считать",
+            "paragraphs": [
+              "Нужны наблюдения, действия и результаты с правильным временем. Для новых контактных ситуаций важны свидетельства именно о таких ситуациях, а не просто много привлекательных видео. Учитывают сбор, обучение, валидацию и вычисления многократного предсказания траекторий."
+            ]
+          },
+          {
+            "id": "integration",
+            "title": "Где модель приносит пользу",
+            "paragraphs": [
+              "Планировщик может оценивать варианты действий, либо другая политика учится на воображаемом опыте. У вариантов разные эксплуатационные затраты. Настоящей машине всё равно нужны датчики, контроллер и исключения. Прогнозы сравнивают с фактами и заранее определяют обнаружение ухудшения их полезности."
+            ]
+          },
+          {
+            "id": "acceptance",
+            "title": "Связать метрику с решением",
+            "paragraphs": [
+              "Измеряйте улучшение планирования, эффективности данных или завершения задач в нужных условиях. Проверяйте последствия ошибочного прогноза при смене объектов, нагрузок и контакта. Не принимайте внешний реализм единственным критерием. Иногда простая аналитическая модель надёжнее поддерживает нужное решение."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Экономический результат условен",
+            "paragraphs": [
+              "Модель может сократить часть экспериментов, одновременно добавив неопределённость и обслуживание. Ошибки растут на длинном прогнозе и вне данных. Инженерное подтверждение и безопасность остаются отдельными. Правдоподобный ролик не доказывает наличия сертифицированного цифрового двойника оборудования."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Модели мира",
+        "short_description": "Модель мира — математическое представление окружающей среды и закономерностей её изменения.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Что такое модель мира",
+            "paragraphs": [
+              "Модель мира — это описание среды и связей между происходящими в ней изменениями, которое существует внутри программы. Представь стол с кубиком: числа могут описывать место и скорость кубика, а математические зависимости — то, как его движение меняется после толчка. В обучаемой модели такие зависимости получают из записанного опыта.",
+              "Теперь программа может подставить в это описание разные варианты толчка и рассчитать, где окажется кубик. Именно наличие внутреннего описания сцены и её изменений позволяет получать прогноз. В сложной нейросети описание бывает сжатым набором числовых признаков, а не списком именованных предметов."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Сжатый взгляд на опыт",
+            "paragraphs": [
+              "Наблюдения переводят в меньшее представление, а другая сеть учит его изменение с учётом действий. Такое представление избирательно. Оно может сохранить полезные сведения о движении и потерять деталь, нужную другой задаче. Кроме того, один кадр не раскрывает все скрытые состояния."
+            ]
+          },
+          {
+            "id": "futures",
+            "title": "Прогноз сцены не является доказательством физики",
+            "paragraphs": [
+              "Видео способно выглядеть убедительно, но неверно отвечать на выбранное действие. Для планирования важно, меняются ли последствия правильно при смене предложенной команды. Даже небольшая ошибка, повторенная много шагов, создаёт неверное будущее, хотя первый кадр выглядел разумным."
+            ]
+          },
+          {
+            "id": "uses",
+            "title": "Два применения воображаемого будущего",
+            "paragraphs": [
+              "Планировщик может сравнивать команды по прогнозу, а программа обучения — использовать рассчитанные действия и их результаты как учебный опыт. Второй подход применяется в Dreamer: так называется семейство алгоритмов обучения с подкреплением, которые обучают правило действий внутри модели среды. Это разные способы использования модели. При работе с настоящим роботом полученные команды по-прежнему проверяют новыми наблюдениями."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Спросить, что проверено",
+            "paragraphs": [
+              "Нужны новые действия, длинные прогоны и полные задачи. Сходство пикселей может скрывать неправильный контакт. Числовая модель полезна без фотореализма, а фотореалистичный ролик бывает бесполезен для управления. Обоснованные выводы определяют назначение модели и результаты испытаний."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Модели мира",
+        "short_description": "Описание окружающей обстановки внутри программы: из чего оно состоит и как по нему рассчитывают движение кубика.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Что такое модель мира",
+            "paragraphs": [
+              "Модель мира — это упрощённое описание окружающей обстановки внутри программы, в котором есть сведения о предметах и их изменениях. Например, в простом описании стола с кубиком числа показывают место кубика и его скорость. В программе также есть правило, связывающее толчок с изменением движения.",
+              "Такое правило можно получить из записанных примеров: как толкнули кубик и куда он сдвинулся. После этого программа подставляет новый толчок и рассчитывает, где кубик может оказаться. Вот зачем роботу внутреннее описание обстановки: по нему можно оценивать результат действия до настоящего движения."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Учиться на изменениях",
+            "paragraphs": [
+              "Инженеры записывают наблюдения, действия и результаты. Модель учит связи между ними. Вместо всех пикселей она может использовать меньшее числовое описание. Это упрощает часть вычислений, но способно потерять важную деталь — например, скрытый край предмета."
+            ]
+          },
+          {
+            "id": "pictures",
+            "title": "Убедительный фильм бывает неверным",
+            "paragraphs": [
+              "Программа может показать плавно движущийся кубик. Это ещё не доказывает верный результат толчка настоящего робота в выбранном месте. Картинка выглядит правдоподобно, а контакт рассчитан неправильно. Поэтому прогнозы сравнивают с действиями и измеренными результатами."
+            ]
+          },
+          {
+            "id": "choosing",
+            "title": "Попробовать идеи внутри модели",
+            "paragraphs": [
+              "Планировщик может сравнивать разные команды по предсказанным результатам. Некоторые системы также учатся на таком воображаемом опыте. Но после реального действия всё равно нужны настоящие измерения. Робот не может бесконечно считать придуманное будущее правильным."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Ошибка способна расти",
+            "paragraphs": [
+              "Небольшая ошибка прогноза через много шагов становится большой. Незнакомая поверхность и выскользнувший предмет тоже создают трудности. Инженеры проверяют условия испытаний и помощь реальной задаче. Убедительное изображение не доказывает точную физику или безопасное поведение."
+            ]
+          }
+        ]
+      }
+    },
+    "ja": {
+      "engineer": {
+        "title": "世界モデル",
+        "short_description": "世界モデルとは、環境の状態と変化の関係を数理的に表したものです。",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "世界モデルとは",
+            "paragraphs": [
+              "世界モデルとは、環境の状態を表す情報と、その状態が変化する関係を組み合わせた計算上の表現です。ロボットでは、物体の位置、速度、接触状態などと、それらが時間や操作によって変わる関係を扱います。学習型では、経験の記録から調整したニューラルネットワークのパラメータが、その関係を表します。",
+              "例えば、机の上の積み木の現在位置と速度、加える予定の力を入力し、次の位置や速度を計算します。明示的な物理量の代わりに、圧縮した潜在状態を使う構成もあります。いずれも、システム内部に状況の表現と変化の関係があるため、先の状態を予測できます。"
+            ]
+          },
+          {
+            "id": "state",
+            "title": "潜在表現と履歴",
+            "paragraphs": [
+              "高次元の観測をエンコーダーで圧縮し、状態、行動、履歴から次を予測する構成があります。一枚の画像では、速度、隠れた物体、接触状態は分からない場合があります。圧縮によって、後段の操作に不可欠な細部が失われる可能性もあります。"
+            ]
+          },
+          {
+            "id": "training",
+            "title": "目的とデータ",
+            "paragraphs": [
+              "観測の再構成、状態遷移、報酬などを学習できます。変分的な方式では分布を合わせる項も使います。損失は選んだ表現とデータを反映するもので、一時刻先の画像が正しくても長期の動力学が正しいとは限りません。判断に関係する行動と結果を収録する必要があります。"
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "行動を条件に予測する",
+            "paragraphs": [
+              "候補の行動から次状態の分布や表現を出し、繰り返して複数の未来を比べられます。ただし誤差が蓄積し、記録の外で過信することもあります。動画モデルには行動を条件にしないものもあるため、映像が滑らかという理由だけでロボットのシミュレーターとして扱えません。"
+            ]
+          },
+          {
+            "id": "uses",
+            "title": "計画と想像上の学習",
+            "paragraphs": [
+              "計画器が予測結果によって行動列を比較する使い方と、モデルで計算した状態・行動・報酬の列で方策を訓練する使い方があります。Dreamerは後者を用いる、学習した環境モデルに基づく強化学習アルゴリズム群です。実行時の計画とモデル内での方策訓練は、予測情報の異なる用途です。2018年のWorld ModelsとDreamerは具体的な研究方式であり、世界モデルすべての共通構成ではありません。"
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "実測へ戻す",
+            "paragraphs": [
+              "実機は選んだ行動を実行し、新しい測定を得ます。計画を更新することで、誤差を放置する時間を短くできます。観測の古さ、同期、予測軌跡の計算費用も管理します。予測がセンサーを置き換えたり、接触や駆動部の制約を無視する理由になったりはしません。"
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "予測と判断の両方を測る",
+            "paragraphs": [
+              "未使用の軌跡、行動の変更、長期予測、閉ループの仕事を試します。接触、不確かさ、物体や照明の変化を調べます。画素誤差が小さくても運動は誤り得ます。圧縮モデルは写実的な画像なしでも役立つので、目的に合わせて指標を選びます。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "学習した物理の境界",
+            "paragraphs": [
+              "保存則の違反、まれな接触の見落とし、架空の物体の生成が起こります。映像が自然になっても因果関係の正確さは証明されません。不確かさも校正と現場確認が必要です。安全と工学的検証を分け、論文の結果を任意の実世界へ広げないようにします。"
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "世界モデル",
+        "short_description": "世界モデルとは、環境の状態と変化の関係を数理的に表したものです。",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "世界モデルとは",
+            "paragraphs": [
+              "世界モデルとは、作業環境の状態と、その変化の関係をソフトウェアで記述したものです。例えば、箱の位置がコンベヤーの動作によってどう変わるかを扱います。数学的な関係式や、稼働データから訓練したニューラルネットワークとして実装できます。",
+              "現在の測定値と操作案から、その後の工程の状態を計算し、判断を行う仕組みへ渡します。ベルトの動かし方やロボットの操作を実行前に比較する用途があります。導入時には、どの物体、変化、判断を表す必要があるのかを最初に決めます。"
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "記録する情報",
+            "paragraphs": [
+              "観測、行動、結果の時刻を合わせたデータが必要です。新しい接触条件を扱うなら、その条件に関する経験が重要で、見栄えのよい映像が大量にあるだけでは足りません。収集、学習、検証、反復的な予測計算の資源を見積もります。"
+            ]
+          },
+          {
+            "id": "integration",
+            "title": "どこで使うか",
+            "paragraphs": [
+              "行動候補を評価する計画器に使うか、想像上の軌跡で別の方策を学ぶかで、運用時の費用が変わります。最終的な機体には測定、制御、例外処理が必要です。予測と実際の結果を比較し、有用性が低下したときの検出と対応を決めます。"
+            ]
+          },
+          {
+            "id": "acceptance",
+            "title": "判断につながる指標",
+            "paragraphs": [
+              "想定条件で計画、データ効率、作業成功が改善したかを測ります。物体、荷重、接触が変わった場合の誤予測の影響を試します。映像の自然さだけを受入基準にしません。必要な判断を支えられるなら、単純な解析モデルが適する場合もあります。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "費用対効果には条件がある",
+            "paragraphs": [
+              "実験を減らしても、不確かさや保守の仕事が増える可能性があります。長期予測やデータ範囲の外では誤差が大きくなります。安全と工学的確認は別途必要です。もっともらしい動画は、設備の認証済みデジタルツインができた証拠ではありません。"
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "世界モデル",
+        "short_description": "世界モデルとは、環境の状態と変化の関係を数理的に表したものです。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "世界モデルとは",
+            "paragraphs": [
+              "世界モデルとは、周りの状況と変化のつながりをコンピューター内に表したものです。机の上の積み木なら、場所と速さを数値で表し、押す力と運動の変化を数学的な関係で結び付けられます。学習型のモデルは、その関係を経験の記録から身に付けます。",
+              "この説明に違う押し方を入力すると、その後に積み木がどこへ動くかを計算できます。予測の基になるのは、場面と変化の内部表現です。大きなニューラルネットワークでは、物体名の一覧ではなく、圧縮された数値の特徴で表す場合もあります。"
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "経験を圧縮して扱う",
+            "paragraphs": [
+              "観測を小さい表現へ変換し、行動によってどう変わるかを別のネットワークが学べます。表現は選択的です。ある作業に役立つ運動情報を残し、別の操作に必要な細部を失う場合もあります。一枚の画像から隠れた状態がすべて分かるわけでもありません。"
+            ]
+          },
+          {
+            "id": "futures",
+            "title": "映像と物理を分ける",
+            "paragraphs": [
+              "映像が自然でも、ロボットの行動を変えた結果を正しく表せるとは限りません。計画では、提案する行動の違いに予測が適切に応答するかが重要です。初めの誤差が小さくても、何ステップも進めると大きくずれる場合があります。"
+            ]
+          },
+          {
+            "id": "uses",
+            "title": "予測の二つの使い方",
+            "paragraphs": [
+              "計画器が予測で指令を比較する使い方と、学習用プログラムがモデルの計算結果を経験として使う方法があります。Dreamerは、後者で行動の規則を学ぶ、強化学習のアルゴリズム群の名前です。モデルの使い方が違います。実際のロボットが動く間には、新しい観測も引き続き使います。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "実際に何を試したか",
+            "paragraphs": [
+              "未使用の行動、長い予測、ロボットの仕事を試します。画素の似方だけでは接触や動きの誤りを隠せます。写実性のない数値モデルが役立つ一方、写実的な動画が制御には使えないこともあります。目的と検証が主張できる範囲を決めます。"
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "世界モデル",
+        "short_description": "周りの様子と変わり方をコンピューターの中に表す仕組みを、積み木で考えてみよう。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "世界モデルとは",
+            "paragraphs": [
+              "世界モデルは、周りの様子とその変わり方を、コンピューターの中に表したものだ。例えば、机の上の積み木の場所と速さを数値で表せる。そこに、押し方と動きの変化を結び付ける規則（きそく）も加える。これで、積み木の様子と動き方の説明がプログラムの中にできる。",
+              "その規則は、積み木を押して、どう動いたかを記録した例から学べる。次に別の押し方を入力すれば、その後の場所を計算できる。こうして、ロボットが実際に動く前に、結果を予測（よそく）するための材料になるんだ。"
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "変化を記録して学ぶ",
+            "paragraphs": [
+              "技術者は、観測（かんそく）、行動、結果を一緒に記録する。モデルはそれらの関係を学ぶ。全画素の代わりに小さな数値の説明を使えば計算しやすいが、見えない端などの大切な情報を失う可能性もある。"
+            ]
+          },
+          {
+            "id": "pictures",
+            "title": "映画が本当らしくても",
+            "paragraphs": [
+              "生成した映像で積み木が滑らかに動いても、本物のロボットが決めた場所を押した結果と合うとは限らない。画像は自然でも、接触の予測が間違う場合がある。実際の行動と測定した結果を使って確かめる必要があるんだ。"
+            ]
+          },
+          {
+            "id": "choosing",
+            "title": "モデルの中で案を比べる",
+            "paragraphs": [
+              "計画器は、いくつかの指令の結果を予測して比べられる。モデルが作る経験で学ぶ方式もあるよ。ただし実機が動いた後には、本物の測定が必要だ。想像した未来を、いつまでも正しいと思い込んでよいわけではない。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "小さな間違いが大きくなる",
+            "paragraphs": [
+              "少しの予測のずれが、何段階も先では大きくなることがある。初めての床や滑った物でも困るかもしれない。人は試した条件と、本当の作業に役立ったかを調べる。よくできた画像だけでは、正確な物理や安全な動きの証明にはならない。"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

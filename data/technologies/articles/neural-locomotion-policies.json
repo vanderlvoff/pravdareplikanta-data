@@ -1,0 +1,646 @@
+{
+  "schema_version": "1.0",
+  "id": "neural-locomotion-policies",
+  "category": "control",
+  "technology_type": "model-family",
+  "title": {
+    "ru": "Нейросетевые политики движения",
+    "en": "Neural locomotion policies",
+    "ja": "移動を制御するニューラル方策"
+  },
+  "short_description": {
+    "ru": "Нейросетевая политика движения — обученная нейронная сеть, связывающая измерения и цель движения с командами шагающему роботу.",
+    "en": "A neural locomotion policy is a trained neural network linking measurements and a motion goal to commands for a legged robot.",
+    "ja": "ニューラル移動方策は、測定値と動作の目標を、脚ロボットの指令へ結び付ける学習済みネットワークです。"
+  },
+  "related_technologies": [
+    {
+      "target": "reinforcement-learning",
+      "type": "uses",
+      "explanation": {
+        "ru": "Один из основных способов обучить политику движений в симуляции.",
+        "en": "One common way to train a locomotion policy in simulation.",
+        "ja": "移動方策をシミュレーションで学ぶ代表的な方法。"
+      }
+    },
+    {
+      "target": "sim-to-real-transfer",
+      "type": "complements",
+      "explanation": {
+        "ru": "Перенос проверяет отличие модели контактов от реального робота.",
+        "en": "Transfer tests the gap between simulated contacts and the physical robot.",
+        "ja": "接触のモデルと実機との差を調べる。"
+      }
+    }
+  ],
+  "prerequisites": [
+    "reinforcement-learning"
+  ],
+  "term_refs": [
+    "robot-policy",
+    "legged-locomotion",
+    "feedback-control",
+    "robot-dynamics"
+  ],
+  "sources": [
+    {
+      "id": "rma",
+      "title": "RMA: Rapid Motor Adaptation for Legged Robots",
+      "url": "https://arxiv.org/abs/2107.04034",
+      "kind": "paper",
+      "year": 2021
+    },
+    {
+      "id": "legged-gym",
+      "title": "Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2109.11978",
+      "kind": "paper",
+      "year": 2021
+    },
+    {
+      "id": "legged-code",
+      "title": "legged_gym — author environments",
+      "url": "https://github.com/leggedrobotics/legged_gym",
+      "kind": "code",
+      "year": 2021
+    }
+  ],
+  "last_reviewed": "2026-11-14",
+  "content_status": "ready",
+  "diagram": "locomotion",
+  "localizations": {
+    "en": {
+      "engineer": {
+        "title": "Neural locomotion policies",
+        "short_description": "A neural locomotion policy is a trained neural network linking measurements and a motion goal to commands for a legged robot.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "What it is",
+            "paragraphs": [
+              "A neural locomotion policy is a neural-network-parameterized control rule for a legged robot. Inputs describe robot state and desired motion, while outputs specify actions for the execution control loop.",
+              "For example, a four-legged robot is asked to move forward. Its network receives a velocity request, body orientation and joint measurements. In one implementation, outputs are joint-position targets executed by a separate controller. The next calculation uses updated measurements, so commands change with body motion."
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "One concrete control chain",
+            "paragraphs": [
+              "In a common joint-target design, the policy predicts desired joint positions. A faster PD loop uses joint feedback to turn target error into torque commands, subject to actuator limits. Other systems organize these layers differently. Calling the outer policy end-to-end should not hide state estimation, actuator electronics or independent protections below it."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Learning with simulated contacts",
+            "paragraphs": [
+              "Many policies are trained with RL on simulated robots. Rewards can balance command tracking, posture, energy, action smoothness and contact behavior. Training needs credible actuator and contact models, appropriate resets and a distribution of terrain and disturbances. A reward that produces a visually attractive gait may still exploit an inaccurate simulator."
+            ]
+          },
+          {
+            "id": "adaptation",
+            "title": "Privileged information and adaptation",
+            "paragraphs": [
+              "Some training methods use information available only in simulation. RMA, for example, combines a base policy with an adaptation module to estimate useful environment-related latent information from a history of observations. Deployment must use the actual permitted sensors; privileged simulator values cannot silently remain policy inputs on the physical robot."
+            ]
+          },
+          {
+            "id": "timing",
+            "title": "Feedback at several frequencies",
+            "paragraphs": [
+              "A learned policy update and a servo update are separate loops. A velocity command need not arrive at either loop's frequency. Specify deadlines for estimation, network inference, command transmission and motor control. For illustration, a 50 Hz policy has a 20 ms update interval; this arithmetic is not a claim that 50 Hz suits every machine or that computation may consume the whole interval."
+            ]
+          },
+          {
+            "id": "contacts",
+            "title": "Physical limits shape the problem",
+            "paragraphs": [
+              "Support changes when feet make or break contact. Friction, impacts, compliance, slip and actuator bandwidth affect what commands are feasible. A policy trained for one torque range or payload may fail when those conditions change. Feedback helps react to disturbances, but only within the sensing, action and training limits of the system."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Test the robot, not just simulated return",
+            "paragraphs": [
+              "Evaluate command tracking, falls, slips, contact loads, energy, interventions and recovery across held-out terrain and payloads. Record sensor delay and calibration changes. Include safe real-world validation after simulation. Rapid simulated learning reported in a paper does not imply that commissioning a new robot takes the same amount of time."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Neural policy, WBC and MPC",
+            "paragraphs": [
+              "Whole-body control and model predictive control can be classical optimization-based components, not necessarily neural networks. They may complement a learned policy or provide alternative structures for parts of the control problem. Compare systems at matched hardware limits and terrain. Neither a learned policy nor a classical solver automatically supplies a complete safety case."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Neural locomotion policies",
+        "short_description": "A neural locomotion policy is a trained neural network linking measurements and a motion goal to commands for a legged robot.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "What it is",
+            "paragraphs": [
+              "A neural locomotion policy is a learned software module connecting sensors and a movement request to the robot's leg-control system.",
+              "For example, a four-legged robot is asked to move forward. Its network receives a velocity request, body orientation and joint measurements. In one implementation, outputs are joint-position targets executed by a separate controller. The next calculation uses updated measurements, so commands change with body motion."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "The development work behind the gait",
+            "paragraphs": [
+              "Training can require a robot model, calibrated actuators, contact simulation, many training trials and safe hardware tests. Sensor placement and latency matter. Even when training code is public, adapting it to a different machine requires engineering effort. Plan for test areas, supervision and recovery after falls."
+            ]
+          },
+          {
+            "id": "integration",
+            "title": "Where it sits in the product",
+            "paragraphs": [
+              "The policy can output targets to a lower-level controller rather than control every motor detail itself. Navigation, task planning, emergency stopping and fleet operations are separate functions. Ask suppliers to explain those interfaces and which functions remain available when the policy or a sensor fails."
+            ]
+          },
+          {
+            "id": "acceptance",
+            "title": "What to measure in a pilot",
+            "paragraphs": [
+              "Test real routes and payloads, repeated starts and stops, surface changes and predictable disturbances. Count falls, slips, interventions, recovery time, energy and useful mission completion. Compare against wheeled solutions or alternative control stacks where they can perform the same operational job."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Reliability and scaling",
+            "paragraphs": [
+              "A change in friction, carried weight or motor behavior can move the robot outside its validated conditions. Simulated success cannot establish a field reliability target. Define allowed areas and procedures for exceptions, and keep safety functions independent. Scaling depends on maintenance and supervision effort as well as locomotion performance."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Neural locomotion policies",
+        "short_description": "A neural locomotion policy is a trained neural network linking measurements and a motion goal to commands for a legged robot.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "What it is",
+            "paragraphs": [
+              "A neural walking policy is a rule represented by a trained network, linking body measurements and a motion request to leg commands.",
+              "For example, a four-legged robot is asked to move forward. Its network receives a velocity request, body orientation and joint measurements. In one implementation, outputs are joint-position targets executed by a separate controller. The next calculation uses updated measurements, so commands change with body motion."
+            ]
+          },
+          {
+            "id": "loop",
+            "title": "Sensing and acting repeatedly",
+            "paragraphs": [
+              "Sensors provide information about orientation, joints and motion. The policy proposes an action, and a controller helps the motors follow it. New measurements then reveal what actually happened. This feedback loop matters because touching the ground changes support, and the next movement depends on that contact."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Why virtual terrain is useful",
+            "paragraphs": [
+              "RL can train a robot through many simulated attempts, rewarding useful tracking and discouraging undesirable behavior. Designers still choose observations, rewards and physical models. A simulated foot may grip or bounce differently from a real one, so successful virtual walking must be tested on actual hardware."
+            ]
+          },
+          {
+            "id": "adaptation",
+            "title": "Changing conditions",
+            "paragraphs": [
+              "Some systems use a short history of movement to estimate information about changing conditions and adapt their behavior. RMA is one research example. That does not mean a robot recognizes every possible surface or can ignore a failing sensor. Adaptation still works with limited observations and learned experience."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "A neural network is one part of control",
+            "paragraphs": [
+              "Methods called WBC and MPC can use classical mathematics and optimization rather than neural networks. They can coexist with learned policies. To understand a demonstration, ask what the policy outputs, what the controller does and how falls or slips are measured. Stable-looking movement alone does not explain the whole system."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Neural locomotion policies",
+        "short_description": "A neural locomotion policy is a program with a trained network that uses sensor readings and a request to calculate commands for a robot's legs.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "What it is",
+            "paragraphs": [
+              "A neural locomotion policy is a program with a trained network that uses sensor readings and a request to calculate commands for a robot's legs.",
+              "For example, a four-legged robot is asked to move forward. Its network receives a velocity request, body orientation and joint measurements. In one implementation, outputs are joint-position targets executed by a separate controller. The next calculation uses updated measurements, so commands change with body motion."
+            ]
+          },
+          {
+            "id": "measurements",
+            "title": "What the robot can measure",
+            "paragraphs": [
+              "Sensors may report how the body is tilted, where the joints are and how they move. The model proposes targets, and another controller helps the motors follow them. Engineers must agree on what those numbers mean. A joint target is not the same number as a motor's force or torque."
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "The ground changes the next move",
+            "paragraphs": [
+              "When a foot touches the ground, it supports the body differently. The robot measures again before choosing later commands. A slippery surface or a heavy load can change what happens. Looking at new measurements is therefore important even after the model has learned a useful gait."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Practice in a simulated world",
+            "paragraphs": [
+              "Engineers can train a policy with many attempts in a virtual environment. They give scores for useful results and model the robot and ground. Virtual ground is not exactly real ground, so tests on a real machine are still needed. People arrange those tests to limit danger."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Walking well in one place is not enough",
+            "paragraphs": [
+              "A model can still fail on an unfamiliar surface or with a damaged sensor. Other control methods also exist, and some do not use neural networks. Engineers count falls and slips, check how the robot recovers and provide ways to stop it. Learning a gait does not give unlimited balance or human understanding."
+            ]
+          }
+        ]
+      }
+    },
+    "ru": {
+      "engineer": {
+        "title": "Нейросетевые политики движения",
+        "short_description": "Нейросетевая политика движения — обученная нейронная сеть, связывающая измерения и цель движения с командами шагающему роботу.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Что это такое",
+            "paragraphs": [
+              "Нейросетевая политика движения — параметризованное нейронной сетью правило управления шагающим роботом. Её входы описывают состояние и требуемое движение, а выходы — действия для исполнительного контура.",
+              "Например, четырёхногому роботу задано движение вперёд. В сеть поступают запрос скорости, ориентация корпуса и измерения суставов. В одном варианте реализации выходом служат целевые положения суставов, которые исполняет отдельный контроллер. Следующий расчёт использует новые измерения, поэтому команды меняются вместе с движением тела."
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "Один вариант исполнительной цепочки",
+            "paragraphs": [
+              "В распространённой схеме политика предсказывает желаемые положения суставов. Более быстрый PD-контур по суставной обратной связи преобразует ошибку цели в команды момента с ограничениями приводов. Возможны другие разделения уровней. Слово end-to-end не должно скрывать оценку состояния, электронику приводов и независимую защиту."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Обучение с моделью контактов",
+            "paragraphs": [
+              "Многие политики обучаются RL на виртуальном роботе. Награда может учитывать следование команде, позу, энергию, плавность и контактное поведение. Нужны правдоподобные модели привода и контакта, сбросы и распределение рельефа и возмущений. Внешне красивая походка иногда использует неточность симулятора."
+            ]
+          },
+          {
+            "id": "adaptation",
+            "title": "Недоступная при работе информация",
+            "paragraphs": [
+              "Некоторые методы при обучении используют сведения, существующие только в симуляции. Например, RMA сочетает основную политику с модулем адаптации, который оценивает полезное латентное представление условий по истории наблюдений. На настоящей машине остаются только доступные датчики; привилегированные величины симулятора нельзя незаметно оставить входом."
+            ]
+          },
+          {
+            "id": "timing",
+            "title": "Несколько частот обратной связи",
+            "paragraphs": [
+              "Обновление нейросети и сервопривода — разные контуры. Команда скорости не обязана поступать с их частотой. Задают сроки для оценки состояния, вычисления сети, передачи и управления мотором. Например, при 50 Гц интервал обновления равен 20 мс. Это арифметический пример, не рекомендация любой машине и не разрешение занимать вычислением весь интервал."
+            ]
+          },
+          {
+            "id": "contacts",
+            "title": "Физика определяет допустимость",
+            "paragraphs": [
+              "При постановке и отрыве стопы меняется опора тела. Трение, удары, податливость, скольжение и полоса привода влияют на выполнимые команды. Политика для одного момента моторов или полезной нагрузки может отказать при их изменении. Обратная связь помогает лишь в пределах наблюдений, действий и условий обучения."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Проверять робота, а не одну награду",
+            "paragraphs": [
+              "Измеряют следование скорости, падения, скольжение, контактные нагрузки, энергию, вмешательства и восстановление на отложенных поверхностях и нагрузках. Учитывают задержку датчиков и калибровку. После симуляции нужны безопасные испытания реальной машины. Быстрое обучение из статьи не означает столь же быстрого ввода другого робота в эксплуатацию."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Нейросеть, WBC и MPC",
+            "paragraphs": [
+              "Whole-body control и model predictive control могут быть классическими оптимизационными компонентами, а не нейросетями. Они способны дополнять обученную политику или иначе организовывать часть управления. Сравнивать следует при одинаковых пределах оборудования и рельефе. Ни нейросеть, ни классический решатель сами не составляют полной оценки безопасности."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Нейросетевые политики движения",
+        "short_description": "Нейросетевая политика движения — обученная нейронная сеть, связывающая измерения и цель движения с командами шагающему роботу.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "Что это такое",
+            "paragraphs": [
+              "Нейросетевая политика движения — обучаемый программный модуль между датчиками, запросом на перемещение и системой управления ногами робота.",
+              "Например, четырёхногому роботу задано движение вперёд. В сеть поступают запрос скорости, ориентация корпуса и измерения суставов. В одном варианте реализации выходом служат целевые положения суставов, которые исполняет отдельный контроллер. Следующий расчёт использует новые измерения, поэтому команды меняются вместе с движением тела."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Работа за красивой походкой",
+            "paragraphs": [
+              "Нужны модель робота, калибровка приводов, контакты в симуляции, учебные прогоны и безопасные испытания оборудования. Важны расположение датчиков и задержки. Открытый учебный код не устраняет адаптацию к другой машине. Планируют испытательную зону, надзор и восстановление после падений."
+            ]
+          },
+          {
+            "id": "integration",
+            "title": "Где заканчивается этот компонент",
+            "paragraphs": [
+              "Политика может отправлять цели нижнему контроллеру, а не управлять всеми деталями привода. Навигация, планирование заданий, аварийная остановка и управление парком — отдельные функции. Поставщик должен объяснить интерфейсы и доступное поведение при отказе модели или датчика."
+            ]
+          },
+          {
+            "id": "acceptance",
+            "title": "Что измерять на пилоте",
+            "paragraphs": [
+              "Проверяют настоящие маршруты и нагрузки, повторные старты и остановки, смену поверхностей и предусмотренные возмущения. Считают падения, скольжение, вмешательства, восстановление, энергию и завершённые миссии. Если задачу решает колёсная платформа, сравнение с ней тоже полезно."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Надёжность при расширении",
+            "paragraphs": [
+              "Изменение трения, веса или поведения мотора способно вывести машину за подтверждённые условия. Симуляция не устанавливает эксплуатационную надёжность. Ограничивают зоны работы, предусматривают исключения и независимую безопасность. Масштабирование определяется обслуживанием и надзором не меньше, чем качеством походки."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Нейросетевые политики движения",
+        "short_description": "Нейросетевая политика движения — обученная нейронная сеть, связывающая измерения и цель движения с командами шагающему роботу.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Что это такое",
+            "paragraphs": [
+              "Нейросетевая политика ходьбы — правило в виде обученной нейронной сети, которое связывает измерения о теле робота и запрос на движение с командами ногам.",
+              "Например, четырёхногому роботу задано движение вперёд. В сеть поступают запрос скорости, ориентация корпуса и измерения суставов. В одном варианте реализации выходом служат целевые положения суставов, которые исполняет отдельный контроллер. Следующий расчёт использует новые измерения, поэтому команды меняются вместе с движением тела."
+            ]
+          },
+          {
+            "id": "loop",
+            "title": "Наблюдать и действовать снова",
+            "paragraphs": [
+              "Датчики сообщают об ориентации, суставах и движении. Политика предлагает действие, контроллер помогает приводу его выполнить, а новые измерения показывают результат. Обратная связь важна: прикосновение ноги меняет опору и условия следующего движения."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Зачем виртуальный рельеф",
+            "paragraphs": [
+              "RL позволяет учить движение многими попытками, поощряя нужный результат и ограничивая нежелательное наградой. Наблюдения, цели и физические модели выбирает разработчик. Виртуальная стопа может цепляться и отскакивать иначе реальной, поэтому виртуальной ходьбы недостаточно для проверки."
+            ]
+          },
+          {
+            "id": "adaptation",
+            "title": "Когда условия меняются",
+            "paragraphs": [
+              "Некоторые системы по короткой истории измерений оценивают сведения об условиях и меняют поведение; RMA — исследовательский пример. Это не распознавание любой поверхности и не возможность игнорировать сломанный датчик. Адаптация ограничена наблюдениями и выученным опытом."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Не всякое управление нейросетевое",
+            "paragraphs": [
+              "WBC и MPC могут опираться на классическую математику и оптимизацию. Они способны работать вместе с обученной политикой. Разбирая демонстрацию, спрашивайте, что выдаёт модель, что делает контроллер и как считают падения и скольжение. Стабильный вид движения не раскрывает устройство всей системы."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Нейросетевые политики движения",
+        "short_description": "Нейросетевая политика движения — программа с обученной сетью, которая по показаниям датчиков и заданию рассчитывает команды для ног робота.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Что это такое",
+            "paragraphs": [
+              "Нейросетевая политика движения — программа с обученной сетью, которая по показаниям датчиков и заданию рассчитывает команды для ног робота.",
+              "Например, четырёхногому роботу задано движение вперёд. В сеть поступают запрос скорости, ориентация корпуса и измерения суставов. В одном варианте реализации выходом служат целевые положения суставов, которые исполняет отдельный контроллер. Следующий расчёт использует новые измерения, поэтому команды меняются вместе с движением тела."
+            ]
+          },
+          {
+            "id": "measurements",
+            "title": "Что измеряет робот",
+            "paragraphs": [
+              "Датчики могут сообщать о наклоне корпуса, положении суставов и их движении. Модель предлагает цели, а контроллер помогает двигателям им следовать. Важно согласовать смысл чисел: желаемое положение сустава — не то же самое, что сила или момент мотора."
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "Земля меняет следующий шаг",
+            "paragraphs": [
+              "Когда стопа касается пола, меняется опора тела. Перед следующими командами робот снова измеряет состояние. Скользкая поверхность и тяжёлый груз меняют результат. Поэтому новые показания нужны даже после того, как модель выучила полезную походку."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Пробовать в симуляции",
+            "paragraphs": [
+              "Политику можно учить многими попытками в виртуальной среде. Инженеры задают баллы за полезный результат и моделируют робота с землёй. Виртуальная поверхность не точно совпадает с настоящей. Поэтому нужны испытания машины, устроенные так, чтобы уменьшить опасность."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Одного удачного места недостаточно",
+            "paragraphs": [
+              "Модель всё ещё ошибается на незнакомой поверхности или при поломке датчика. Есть и другие способы управления, некоторые без нейросетей. Инженеры считают падения и скольжение, проверяют восстановление и возможность остановки. Выученная походка не даёт безграничного равновесия или человеческого понимания."
+            ]
+          }
+        ]
+      }
+    },
+    "ja": {
+      "engineer": {
+        "title": "移動を制御するニューラル方策",
+        "short_description": "ニューラル移動方策は、測定値と動作の目標を、脚ロボットの指令へ結び付ける学習済みネットワークです。",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "ニューラル移動方策は、脚ロボットの制御規則をニューラルネットワークで表したものです。入力は機体の状態と目標動作、出力は実行制御系へ渡す行動です。",
+              "例えば、四脚ロボットに前進を指示します。目標速度、胴体の向き、関節の測定値をネットワークへ入れます。一つの実装では、関節目標位置を出力し、別の制御器で実行します。次の計算には新しい測定を使うので、体の動きに応じて指令も変わります。"
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "制御の連鎖の一例",
+            "paragraphs": [
+              "よく使う構成では、方策が関節位置目標を予測し、より速いPDループが関節フィードバックからトルク指令を作ります。駆動部の制限も適用します。別の分担も可能です。end-to-endという呼称で、状態推定、駆動回路、独立した保護を隠してはいけません。"
+            ]
+          },
+          {
+            "id": "training",
+            "title": "接触を含む学習",
+            "paragraphs": [
+              "シミュレーションでRLを使う方式が多くあります。速度追従、姿勢、エネルギー、滑らかさ、接触などを報酬に含められます。適切な駆動・接触モデル、初期化、地形や外乱の分布が必要です。見た目のよい歩容でも、仮想環境の誤差を利用している可能性があります。"
+            ]
+          },
+          {
+            "id": "adaptation",
+            "title": "特権情報の扱い",
+            "paragraphs": [
+              "訓練でだけ得られる情報を使う手法もあります。RMAは基礎方策と適応モジュールを組み合わせ、観測履歴から環境に関わる有用な潜在情報を推定します。実機では許可したセンサーだけを使います。シミュレーターの真値を、気づかず入力へ残すことはできません。"
+            ]
+          },
+          {
+            "id": "timing",
+            "title": "複数の周期",
+            "paragraphs": [
+              "ニューラル方策とサーボは異なる周期のループです。速度の要求も同じ頻度で来るとは限りません。推定、推論、通信、モーター制御の期限を定義します。例えば50 Hzの更新間隔は20 msですが、これは計算例であり、すべての機体に適切という推奨値ではありません。"
+            ]
+          },
+          {
+            "id": "contacts",
+            "title": "物理的な制約",
+            "paragraphs": [
+              "接地と離地で支持が変わります。摩擦、衝撃、柔らかさ、滑り、駆動部の帯域が、実行できる動作を左右します。異なる最大トルクや積載量では失敗する場合があります。フィードバックも、観測、行動、学習した条件の範囲を越えて万能には働きません。"
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "実機での評価",
+            "paragraphs": [
+              "未使用の路面と荷重で、追従誤差、転倒、滑り、接触負荷、エネルギー、介入、復帰を測ります。遅延や校正の変化も記録します。仮想学習後の実機検証を安全に行います。論文で訓練が短時間だったことは、新しい機体の導入も同じ時間で済む意味ではありません。"
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "WBCやMPCとの違い",
+            "paragraphs": [
+              "全身制御WBCやモデル予測制御MPCは、古典的な最適化方式でも構成でき、必ずしもニューラルネットワークではありません。方策と組み合わせたり、制御の一部を別の構造にしたりできます。同じ機器制約と路面で比較し、どの方式にも別途安全の検討が必要だと考えます。"
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "移動を制御するニューラル方策",
+        "short_description": "ニューラル移動方策は、測定値と動作の目標を、脚ロボットの指令へ結び付ける学習済みネットワークです。",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "ニューラル移動方策は、センサと移動要求を、脚の制御システムへつなぐ学習済みソフトウェア部品です。",
+              "例えば、四脚ロボットに前進を指示します。目標速度、胴体の向き、関節の測定値をネットワークへ入れます。一つの実装では、関節目標位置を出力し、別の制御器で実行します。次の計算には新しい測定を使うので、体の動きに応じて指令も変わります。"
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "歩容の背後にある開発",
+            "paragraphs": [
+              "機体モデル、駆動部の校正、接触シミュレーション、多数の訓練、実機試験が必要です。センサー位置と遅延も重要です。公開コードを使っても、別の機体への調整は残ります。試験場所、監督、転倒からの復旧も準備します。"
+            ]
+          },
+          {
+            "id": "integration",
+            "title": "製品の中の一部",
+            "paragraphs": [
+              "方策が低レベル制御器へ目標を出す構成があります。移動経路、作業計画、非常停止、複数台の運用は別の機能です。接続の仕様と、方策やセンサーが故障したときに利用できる機能を説明してもらう必要があります。"
+            ]
+          },
+          {
+            "id": "acceptance",
+            "title": "現場で測ること",
+            "paragraphs": [
+              "実際のルートと荷重で、開始と停止、路面の切替、想定した外乱を反復します。転倒、滑り、人の介入、復旧時間、エネルギー、任務完了を数えます。同じ仕事を車輪で実行できるなら、その方式とも比較します。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "規模を広げる条件",
+            "paragraphs": [
+              "摩擦、積載、モーター特性が変わると、検証範囲から外れる可能性があります。仮想環境の成功だけでは現場の信頼性を示せません。運用区域、例外対応、独立した安全機能を定めます。拡大の可否は歩容だけでなく保守と監督の負担でも決まります。"
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "移動を制御するニューラル方策",
+        "short_description": "ニューラル移動方策は、測定値と動作の目標を、脚ロボットの指令へ結び付ける学習済みネットワークです。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "ニューラル歩行方策は、機体の測定値や動作の要求から脚の指令を求める、訓練されたネットワークの規則です。",
+              "例えば、四脚ロボットに前進を指示します。目標速度、胴体の向き、関節の測定値をネットワークへ入れます。一つの実装では、関節目標位置を出力し、別の制御器で実行します。次の計算には新しい測定を使うので、体の動きに応じて指令も変わります。"
+            ]
+          },
+          {
+            "id": "loop",
+            "title": "測って動かし、また測る",
+            "paragraphs": [
+              "センサーが姿勢、関節、運動の情報を出し、方策が行動を提案します。制御器がモーターを動かし、新しい測定が結果を知らせます。足が地面に触れると支持が変わるため、次の動作を選ぶにはこのフィードバックが重要です。"
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "仮想の地形で学ぶ",
+            "paragraphs": [
+              "RLでは、多くの試行を通し、目標に沿う動作などを報酬で評価できます。観測や物理モデル、報酬は設計者が決めます。仮想の足は実機と違う滑り方や跳ね方をするかもしれず、実際の機体での確認が必要です。"
+            ]
+          },
+          {
+            "id": "adaptation",
+            "title": "条件への適応",
+            "paragraphs": [
+              "短い運動履歴から環境の情報を推定し、動作を調整する構成もあります。RMAは研究上の一例です。しかし、すべての路面を認識することや、壊れたセンサーを無視できることではありません。使える測定と学習経験に限界があります。"
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "制御はニューラルだけではない",
+            "paragraphs": [
+              "WBCやMPCは、古典的な数学や最適化を使う場合もあり、方策と組み合わせられます。動画を見るときは、方策の出力、制御器の役割、転倒や滑りの評価方法を確かめます。見た目の安定さだけでシステム全体は分かりません。"
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "移動を制御するニューラル方策",
+        "short_description": "ニューラル移動方策は、センサの値と動くための指示を使い、脚への指令を計算する学習済みプログラムだ。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "ニューラル移動方策は、センサの値と動くための指示を使い、脚への指令を計算する学習済みプログラムだ。",
+              "例えば、四脚ロボットに前進を指示します。目標速度、胴体の向き、関節の測定値をネットワークへ入れます。一つの実装では、関節目標位置を出力し、別の制御器で実行します。次の計算には新しい測定を使うので、体の動きに応じて指令も変わります。"
+            ]
+          },
+          {
+            "id": "measurements",
+            "title": "体から何が分かるか",
+            "paragraphs": [
+              "センサーは体の傾き、関節（かんせつ）の位置や動きを測る場合がある。モデルが目標を出し、制御器（せいぎょき）がモーターを動かす。数字の意味をそろえることが大切だ。関節の目標位置と、モーターが出す力の値は別なんだ。"
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "地面が次の動きに関わる",
+            "paragraphs": [
+              "足が地面に触れると体の支え方が変わる。次の指令を決める前に、また測る。滑る床や重い荷物でも結果は変わるね。役立つ歩き方を一度学んでも、新しい測定が不要になるわけではない。"
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "仮想の世界で練習する",
+            "paragraphs": [
+              "技術者は、シミュレーションで多くの動きを試し、役立つ結果に点数を付けて方策を学ばせる。ロボットと地面のモデルを用意する必要がある。仮想の地面は本物と完全には同じでないので、安全を考えて実機でも試す。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "一か所で歩けても十分ではない",
+            "paragraphs": [
+              "初めての路面やセンサーの故障では、モデルが失敗することもある。ニューラルネットワークを使わない制御もあるよ。技術者は転倒や滑りを数え、戻り方や止め方を調べる。歩き方を学んでも、無限にバランスが取れるわけではない。"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

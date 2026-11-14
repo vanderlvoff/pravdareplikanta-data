@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-14",
+  "issue_id": "daily-2026-11-14",
+  "edition": "business",
+  "language": "en",
+  "generated_at": "2026-11-13T21:02:43.279476Z",
+  "title": "Leadership at NVIDIA, deployment conditions at GXO",
+  "lead": "NVIDIA confirmed chief executive Jensen Huang’s resignation and finance chief Colette Kress’s interim appointment. Logistics company GXO and robot developer Apptronik discuss up to a thousand machines, tying expansion to warehouse-trial results.",
+  "news": [
+    {
+      "id": "nvidia-leadership",
+      "title": "NVIDIA changes leadership amid an investigation",
+      "summary": "NVIDIA confirmed chief executive Jensen Huang’s resignation and finance chief Colette Kress’s interim appointment. The board promises operational and product continuity, without removing uncertainty around a major computing supplier.",
+      "details": "On November 12, NVIDIA announced Jensen Huang's departure as president, chief executive and board member. Colette Kress became interim chief executive while retaining her chief financial officer duties; a permanent successor is still being sought. NVIDIA's filing with the U.S. Securities and Exchange Commission says the board accepted the resignation on November 11. That is the decision date, whereas November 12 is the public announcement date. The leadership change at a supplier of AI computing equipment is a confirmed event, rather than an inference from reports about the scandal.",
+      "technical_novelty": "NVIDIA confirmed chief executive Jensen Huang’s resignation and finance chief Colette Kress’s interim appointment. The board promises operational and product continuity, without removing uncertainty around a major computing supplier. The crisis surrounding Huang has a separate investigative process: on November 10, independent directors said they had engaged outside lawyers to investigate. TechCrunch describes the controversy as arising from reported extramarital relationships and scrutiny of China-related chip sales. TechCrunch and Reuters independently reported the resignation, but reports of possible misconduct are not findings of that investigation. The cited official documents do not publish such findings. NVIDIA's board says operations, customer commitments and product plans should continue without interruption. That is the company's position about future operations; it does not independently establish that customers will see no disruption. Financial results and the accompanying investor call remain scheduled for November 17.",
+      "engineering_impact": "NVIDIA confirmed chief executive Jensen Huang’s resignation and finance chief Colette Kress’s interim appointment. The board promises operational and product continuity, without removing uncertainty around a major computing supplier. The continuity statement must be assessed against actual delivery of commitments rather than the intensity of the scandal. Scheduled financial disclosure on November 17 is the next company-named opportunity for business information. The resignation announcement date itself does not measure harm to customers or establish a change in their contractual terms.",
+      "limitations": "NVIDIA confirmed chief executive Jensen Huang’s resignation and finance chief Colette Kress’s interim appointment. The board promises operational and product continuity, without removing uncertainty around a major computing supplier. The continuity statement must be assessed against actual delivery of commitments rather than the intensity of the scandal. Scheduled financial disclosure on November 17 is the next company-named opportunity for business information. The resignation announcement date itself does not measure harm to customers or establish a change in their contractual terms.",
+      "evidence_status": "Leadership change is confirmed by the official release and U.S. Securities and Exchange Commission filing; an investigation and reported allegations are not findings of guilt.",
+      "published_at": "2026-11-12",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "nv-transition",
+        "nv-filing",
+        "nv-board",
+        "nv-tc",
+        "nv-reuters"
+      ],
+      "time_window": "72h",
+      "body": "On November 12, NVIDIA announced Jensen Huang's departure as president, chief executive and board member. Colette Kress became interim chief executive while retaining her chief financial officer duties; a permanent successor is still being sought. NVIDIA's filing with the U.S. Securities and Exchange Commission says the board accepted the resignation on November 11. That is the decision date, whereas November 12 is the public announcement date. The leadership change at a supplier of AI computing equipment is a confirmed event, rather than an inference from reports about the scandal.\n\nThe crisis surrounding Huang has a separate investigative process: on November 10, independent directors said they had engaged outside lawyers to investigate. TechCrunch describes the controversy as arising from reported extramarital relationships and scrutiny of China-related chip sales. TechCrunch and Reuters independently reported the resignation, but reports of possible misconduct are not findings of that investigation. The cited official documents do not publish such findings. NVIDIA's board says operations, customer commitments and product plans should continue without interruption. That is the company's position about future operations; it does not independently establish that customers will see no disruption. Financial results and the accompanying investor call remain scheduled for November 17.\n\nFor an automation buyer, the event concerns supplier dependence: hardware, model training and partner solutions may rely on one ecosystem. That is an editorial assessment of exposure, not a report of a particular broken contract. The official announcement contains no new compute price, export rule or canceled customer shipment.\n\nThe continuity statement must be assessed against actual delivery of commitments rather than the intensity of the scandal. Scheduled financial disclosure on November 17 is the next company-named opportunity for business information. The resignation announcement date itself does not measure harm to customers or establish a change in their contractual terms.",
+      "image": null
+    },
+    {
+      "id": "gxo-apollo-framework",
+      "title": "GXO's thousand-Apollo plan is conditional scale, not a completed purchase",
+      "summary": "GXO and Apptronik signed a letter of intent for expanded warehouse trials. The plan for up to 1,000 robots depends on results, while service pricing and operating responsibilities remain undisclosed.",
+      "details": "Logistics company GXO and robot developer Apptronik announced a letter of intent on November 12 to expand warehouse trials of the human-shaped Apollo robot. Tests in live operations are planned from 2027, covering picking, case and tote movement, packing and sorting. The proposed scale is up to 1,000 robots over four years, explicitly conditional on meeting agreed productivity, safety and operational measures. Initial commercial deployment in North America is intended for late 2027. This is a conditional expansion plan, not an announcement that a thousand machines have been delivered.",
+      "technical_novelty": "GXO and Apptronik signed a letter of intent for expanded warehouse trials. The plan for up to 1,000 robots depends on results, while service pricing and operating responsibilities remain undisclosed. GXO and Apptronik envisage a service model: robot use would be provided as a service that can expand as applications become ready. Prices, maintenance coverage and the allocation of individual costs are not disclosed. GXO reports an earlier pilot for picking small consumer goods and evaluations of more than 50 logistics tasks at Apptronik's training facility. That facility is not fifty customer warehouses. Independent Forbes coverage highlights an economic limitation: GXO's chief executive had previously said humanoid investment had not yet paid off. The agreement itself provides no payback calculation for the future program.",
+      "engineering_impact": "GXO and Apptronik signed a letter of intent for expanded warehouse trials. The plan for up to 1,000 robots depends on results, while service pricing and operating responsibilities remain undisclosed. Cost assessment would need to distinguish payment for machine availability from payment for successfully completed work. The announcement specifies neither billing unit. The service model changes how deployment is being organized, but does not yet supply a price comparison with the customer's existing staffed shift.",
+      "limitations": "GXO and Apptronik signed a letter of intent for expanded warehouse trials. The plan for up to 1,000 robots depends on results, while service pricing and operating responsibilities remain undisclosed. Cost assessment would need to distinguish payment for machine availability from payment for successfully completed work. The announcement specifies neither billing unit. The service model changes how deployment is being organized, but does not yet supply a price comparison with the customer's existing staffed shift.",
+      "evidence_status": "Developer announcement; stated plans and capabilities are not an independent test.",
+      "published_at": "2026-11-12",
+      "organization": "GXO; Apptronik",
+      "source_ids": [
+        "gxo-intent",
+        "gxo-forbes"
+      ],
+      "time_window": "72h",
+      "body": "Logistics company GXO and robot developer Apptronik announced a letter of intent on November 12 to expand warehouse trials of the human-shaped Apollo robot. Tests in live operations are planned from 2027, covering picking, case and tote movement, packing and sorting. The proposed scale is up to 1,000 robots over four years, explicitly conditional on meeting agreed productivity, safety and operational measures. Initial commercial deployment in North America is intended for late 2027. This is a conditional expansion plan, not an announcement that a thousand machines have been delivered.\n\nGXO and Apptronik envisage a service model: robot use would be provided as a service that can expand as applications become ready. Prices, maintenance coverage and the allocation of individual costs are not disclosed. GXO reports an earlier pilot for picking small consumer goods and evaluations of more than 50 logistics tasks at Apptronik's training facility. That facility is not fifty customer warehouses. Independent Forbes coverage highlights an economic limitation: GXO's chief executive had previously said humanoid investment had not yet paid off. The agreement itself provides no payback calculation for the future program.\n\nThe market significance is an attempt to organize staged service expansion after validating particular warehouse jobs. It links a hardware developer with a large live operating network. Potential robot counts cannot be converted into supplier revenue, however: rates, minimum paid volumes and conditions for abandoning further expansion are not published.\n\nCost assessment would need to distinguish payment for machine availability from payment for successfully completed work. The announcement specifies neither billing unit. The service model changes how deployment is being organized, but does not yet supply a price comparison with the customer's existing staffed shift.",
+      "image": null
+    },
+    {
+      "id": "asus-gallop-station",
+      "title": "ASUS starts with its own packing station",
+      "summary": "ASUS is testing a two-arm robot at a group factory and plans customer pilots for 2027. The stated 99.5%-within-20-seconds figure is a work requirement, not established sales readiness.",
+      "details": "On November 13, ASUS described Gallop, its robot program for factory workstations. Today it is a fixed-base, two-arm system learning to pack accessories for motherboards, the main circuit boards connecting a computer’s components, at an ASUS group plant. The station contains 15 small parts, many in thin transparent bags. ASUS sets a target of 99.5% success while completing a kit within 20 seconds. In the article, that is the required standard, not a published measurement of reliability already achieved. A wheeled version, customer pilots in 2027 and market availability in the second half of 2028 remain plans.",
+      "technical_novelty": "ASUS is testing a two-arm robot at a group factory and plans customer pilots for 2027. The stated 99.5%-within-20-seconds figure is a work requirement, not established sales readiness. ASUS describes four control layers: planning steps, separately checking their execution, reaching and grasping skills, and precise arm control. Fixed interfaces — agreed rules for exchanging data — connect them so that models can change without rebuilding the whole robot. An onboard NVIDIA Jetson AGX Thor computer runs the system. Training uses recordings of consenting workers, variations in computer-simulated conditions and demonstrations guided by a person wearing a headset and gloves. ASUS still plans to integrate its own touch-sensitive hand. The intended design should therefore not be mistaken for the exact configuration already operating on the current rig.",
+      "engineering_impact": "ASUS is testing a two-arm robot at a group factory and plans customer pilots for 2027. The stated 99.5%-within-20-seconds figure is a work requirement, not established sales readiness. Market availability is targeted only for the second half of 2028. Even successful internal testing would not turn that date into a delivery guarantee or an implementation price. Until measured success at the stated cycle is published, the 99.5% target cannot be inserted into savings calculations as an actual production result.",
+      "limitations": "ASUS is testing a two-arm robot at a group factory and plans customer pilots for 2027. The stated 99.5%-within-20-seconds figure is a work requirement, not established sales readiness. Market availability is targeted only for the second half of 2028. Even successful internal testing would not turn that date into a delivery guarantee or an implementation price. Until measured success at the stated cycle is published, the 99.5% target cannot be inserted into savings calculations as an actual production result.",
+      "evidence_status": "Developer announcement; stated plans and capabilities are not an independent test.",
+      "published_at": "2026-11-13",
+      "organization": "ASUS",
+      "source_ids": [
+        "asus-station"
+      ],
+      "time_window": "72h",
+      "body": "On November 13, ASUS described Gallop, its robot program for factory workstations. Today it is a fixed-base, two-arm system learning to pack accessories for motherboards, the main circuit boards connecting a computer’s components, at an ASUS group plant. The station contains 15 small parts, many in thin transparent bags. ASUS sets a target of 99.5% success while completing a kit within 20 seconds. In the article, that is the required standard, not a published measurement of reliability already achieved. A wheeled version, customer pilots in 2027 and market availability in the second half of 2028 remain plans.\n\nASUS describes four control layers: planning steps, separately checking their execution, reaching and grasping skills, and precise arm control. Fixed interfaces — agreed rules for exchanging data — connect them so that models can change without rebuilding the whole robot. An onboard NVIDIA Jetson AGX Thor computer runs the system. Training uses recordings of consenting workers, variations in computer-simulated conditions and demonstrations guided by a person wearing a headset and gloves. ASUS still plans to integrate its own touch-sensitive hand. The intended design should therefore not be mistaken for the exact configuration already operating on the current rig.\n\nAn internal factory gives the developer access to parts, workflows and quality criteria. That is more relevant to a buyer than an abstract demonstration, but does not test the buyer's own assortment. Transfer depends on packaging, object arrangement and how much work remains with people; adaptation cost is not disclosed.\n\nMarket availability is targeted only for the second half of 2028. Even successful internal testing would not turn that date into a delivery guarantee or an implementation price. Until measured success at the stated cycle is published, the 99.5% target cannot be inserted into savings calculations as an actual production result.",
+      "image": null
+    },
+    {
+      "id": "munich-autoware-bus",
+      "title": "Munich's bus project covers technology and operating conditions",
+      "summary": "TIER IV and the Technical University of Munich are preparing automated driving for a full-size bus. Federal support covers the wider Munich project, while planned route operation still includes safety personnel.",
+      "details": "Japan's TIER IV and the Technical University of Munich announced support on November 11 for automated-driving development on a full-size city bus in Munich. The basis is Autoware, automated-driving software whose development TIER IV leads. Its source code is available for study and modification. The bus still needs adaptation to local roads and testing. Bus manufacturer MAN is responsible for vehicle-control mechanisms and low-level software; the university handles sensor configuration and the driving system. After tests in controlled conditions, the partners plan operation on existing routes with personnel aboard to ensure safety.",
+      "technical_novelty": "TIER IV and the Technical University of Munich are preparing automated driving for a full-size bus. Federal support covers the wider Munich project, while planned route operation still includes safety personnel. The effort uses a joint research center established in October. It draws on experience deploying the Autoware automated-driving software in Japanese buses, but does not simply install unchanged software on another vehicle: both the vehicle platform and road conditions differ. A university professor describes federal support of 20 million euros over three years for the Munich bus-development project. That is project-wide funding, not an announced budget solely for Autoware software. The release supplies no Munich route-trial results, measured reduction in crashes or promise to remove the onboard safety personnel at the outset.",
+      "engineering_impact": "TIER IV and the Technical University of Munich are preparing automated driving for a full-size bus. Federal support covers the wider Munich project, while planned route operation still includes safety personnel. Twenty million euros over three years is project support, not a finished-bus price or promised operator saving. Without fleet size, route availability and safety-staff operating rules, that budget cannot be converted into the cost of an autonomous journey or a comparison with the existing service.",
+      "limitations": "TIER IV and the Technical University of Munich are preparing automated driving for a full-size bus. Federal support covers the wider Munich project, while planned route operation still includes safety personnel. Twenty million euros over three years is project support, not a finished-bus price or promised operator saving. Without fleet size, route availability and safety-staff operating rules, that budget cannot be converted into the cost of an autonomous journey or a comparison with the existing service.",
+      "evidence_status": "Developer announcement; stated plans and capabilities are not an independent test.",
+      "published_at": "2026-11-11",
+      "organization": "TIER IV; Technical University of Munich; MAN",
+      "source_ids": [
+        "tier-bus"
+      ],
+      "time_window": "72h",
+      "body": "Japan's TIER IV and the Technical University of Munich announced support on November 11 for automated-driving development on a full-size city bus in Munich. The basis is Autoware, automated-driving software whose development TIER IV leads. Its source code is available for study and modification. The bus still needs adaptation to local roads and testing. Bus manufacturer MAN is responsible for vehicle-control mechanisms and low-level software; the university handles sensor configuration and the driving system. After tests in controlled conditions, the partners plan operation on existing routes with personnel aboard to ensure safety.\n\nThe effort uses a joint research center established in October. It draws on experience deploying the Autoware automated-driving software in Japanese buses, but does not simply install unchanged software on another vehicle: both the vehicle platform and road conditions differ. A university professor describes federal support of 20 million euros over three years for the Munich bus-development project. That is project-wide funding, not an announced budget solely for Autoware software. The release supplies no Munich route-trial results, measured reduction in crashes or promise to remove the onboard safety personnel at the outset.\n\nA transport buyer needs a service that can run a timetable under specified conditions, not merely a software brand. Vehicle manufacturer, driving-system developer and transport operator therefore have distinct roles. Controlled testing precedes route work; announcing a partnership does not itself authorize independent passenger operation in normal traffic.\n\nTwenty million euros over three years is project support, not a finished-bus price or promised operator saving. Without fleet size, route availability and safety-staff operating rules, that budget cannot be converted into the cost of an autonomous journey or a comparison with the existing service.",
+      "image": null
+    },
+    {
+      "id": "carter-workflow-report",
+      "title": "Robust AI proposes changing transport rather than rebuilding the warehouse",
+      "summary": "In an MIT News interview, Robust AI's founders describe staged integration of transport robots into human work. The report discusses existing uses without publishing measured payback or comparative productivity.",
+      "details": "On November 13, MIT News published an interview about how Robust AI integrates its Carter transport robot into human warehouse and factory work. This is a new account of its operating approach, not a new robot launch. The cart has a force-sensitive handle that lets a worker guide it by hand. Its wheels allow motion in different directions without first turning the whole body. The report describes workflows in which the robot follows a person, guides a picker to an item location or independently transports goods between workstations.",
+      "technical_novelty": "In an MIT News interview, Robust AI's founders describe staged integration of transport robots into human work. The report discusses existing uses without publishing measured payback or comparative productivity. Company founders Anthony Jules and Rodney Brooks discuss dividing work among people, robots and information systems. Rather than rebuilding an entire warehouse, they propose introducing carts in stages. In that approach, letting a person quickly redirect the device is part of normal interaction, not necessarily emergency intervention. The interview, however, provides no comparable before-and-after productivity measurement, installed-fleet count or incident rate. Described capabilities and deployments rely on developer accounts; the article is not an independent safety test.",
+      "engineering_impact": "In an MIT News interview, Robust AI's founders describe staged integration of transport robots into human work. The report discusses existing uses without publishing measured payback or comparative productivity. Comparing carts with a full warehouse rebuild does not replace a site-specific calculation. Distances, utilization, redirection frequency and downtime would be needed to assess this option. The report contains no complete set of those measurements, so the founders' account cannot establish an investment payback period.",
+      "limitations": "In an MIT News interview, Robust AI's founders describe staged integration of transport robots into human work. The report discusses existing uses without publishing measured payback or comparative productivity. Comparing carts with a full warehouse rebuild does not replace a site-specific calculation. Distances, utilization, redirection frequency and downtime would be needed to assess this option. The report contains no complete set of those measurements, so the founders' account cannot establish an investment payback period.",
+      "evidence_status": "MIT News interview with developers; the new report is not an independent safety test.",
+      "published_at": "2026-11-13",
+      "organization": "Robust AI",
+      "source_ids": [
+        "mit-carter"
+      ],
+      "time_window": "24h",
+      "body": "On November 13, MIT News published an interview about how Robust AI integrates its Carter transport robot into human warehouse and factory work. This is a new account of its operating approach, not a new robot launch. The cart has a force-sensitive handle that lets a worker guide it by hand. Its wheels allow motion in different directions without first turning the whole body. The report describes workflows in which the robot follows a person, guides a picker to an item location or independently transports goods between workstations.\n\nCompany founders Anthony Jules and Rodney Brooks discuss dividing work among people, robots and information systems. Rather than rebuilding an entire warehouse, they propose introducing carts in stages. In that approach, letting a person quickly redirect the device is part of normal interaction, not necessarily emergency intervention. The interview, however, provides no comparable before-and-after productivity measurement, installed-fleet count or incident rate. Described capabilities and deployments rely on developer accounts; the article is not an independent safety test.\n\nA production manager's choice is which portion of movement to assign to a machine while people retain picking and loading. Hand guidance may make interaction less awkward, but that is not a calculated saving. The interview explains work allocation rather than a universal benefit from adding any chosen number of transport robots.\n\nComparing carts with a full warehouse rebuild does not replace a site-specific calculation. Distances, utilization, redirection frequency and downtime would be needed to assess this option. The report contains no complete set of those measurements, so the founders' account cannot establish an investment payback period.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Leadership at NVIDIA, deployment conditions at GXO",
+    "summary": "NVIDIA confirmed chief executive Jensen Huang’s resignation and finance chief Colette Kress’s interim appointment. Logistics company GXO and robot developer Apptronik discuss up to a thousand machines, tying expansion to warehouse-trial results.",
+    "implications": "NVIDIA promises continuity in customer commitments after its leadership change. In a separate story, GXO conditions robot expansion on productivity and safety checks: the planned thousand machines are neither completed deliveries nor a payback calculation."
+  },
+  "sources": [
+    {
+      "id": "nv-transition",
+      "title": "NVIDIA Announces CEO Transition",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition/",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "nv-filing",
+      "title": "NVIDIA Corporation, Form 8-K: leadership changes",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
+      "domain": "www.sec.gov",
+      "organization": "NVIDIA; U.S. Securities and Exchange Commission",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "nv-board",
+      "title": "Statement from the Independent Members of the NVIDIA Board",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/Statement-from-the-Independent-Members-of-the-NVIDIA-Board/default.aspx",
+      "domain": "investor.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-10"
+    },
+    {
+      "id": "nv-tc",
+      "title": "The unfolding Jensen Huang scandal: a timeline",
+      "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
+      "domain": "techcrunch.com",
+      "organization": "TechCrunch",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "nv-reuters",
+      "title": "Nvidia's Huang turns to Paul Weiss, law firm that inked deal with Trump",
+      "url": "https://www.reuters.com/legal/transactional/nvidias-huang-turns-paul-weiss-law-firm-that-inked-deal-with-trump-2026-11-13/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "gxo-intent",
+      "title": "GXO and Apptronik Expand Partnership to Scale Humanoid Deployment",
+      "url": "https://investors.gxo.com/news-releases/news-release-details/gxo-and-apptronik-expand-partnership-scale-humanoid-deployment",
+      "domain": "investors.gxo.com",
+      "organization": "GXO; Apptronik",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "gxo-forbes",
+      "title": "GXO Doubles Down On Humanoids With Plan For Up To 1,000 Apptronik Robots",
+      "url": "https://www.forbes.com/sites/johnkoetsier/2026/11/12/gxo-doubles-down-on-humanoids-with-plan-for-up-to-1000-apptronik-robots/",
+      "domain": "www.forbes.com",
+      "organization": "Forbes",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "asus-station",
+      "title": "Factory-Proven Physical AI: Why ASUS Is Building a Humanoid Robot",
+      "url": "https://press.asus.com/blog/factory-proven-physical-ai-asus-gallop-humanoid-robot/",
+      "domain": "press.asus.com",
+      "organization": "ASUS",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "tier-bus",
+      "title": "ティアフォーとミュンヘン工科大学、「Autoware」を活用した自動運転システムをミュンヘン市内の路線バス開発に展開",
+      "url": "https://prtimes.jp/main/html/rd/p/000000149.000040119.html",
+      "domain": "prtimes.jp",
+      "organization": "TIER IV; Technical University of Munich",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "mit-carter",
+      "title": "Helping robots fit into the human workplace",
+      "url": "https://news.mit.edu/2026/helping-robots-fit-into-human-workplace-1113",
+      "domain": "news.mit.edu",
+      "organization": "MIT News; Robust AI",
+      "published_at": "2026-11-13"
+    }
+  ]
+}

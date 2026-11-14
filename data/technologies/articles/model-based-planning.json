@@ -1,0 +1,633 @@
+{
+  "schema_version": "1.0",
+  "id": "model-based-planning",
+  "category": "world-models-planning",
+  "technology_type": "method",
+  "title": {
+    "ru": "Планирование с моделью",
+    "en": "Model-based planning",
+    "ja": "モデルに基づく計画"
+  },
+  "short_description": {
+    "ru": "Планирование с моделью — способ выбора действий через расчёт их последствий в модели среды и сравнение результатов по заданному критерию.",
+    "en": "Model-based planning is action selection through simulated consequences and comparison under a specified objective.",
+    "ja": "モデルに基づく計画は、環境モデルで行動の結果を計算し、目的に沿って候補を比較する意思決定手法です。"
+  },
+  "related_technologies": [
+    {
+      "target": "world-models",
+      "type": "uses",
+      "explanation": {
+        "ru": "Обученная модель последствий может оценивать кандидатов; классический планировщик может использовать и аналитическую модель.",
+        "en": "A learned consequences model can score candidates; classical planners can instead use analytical models.",
+        "ja": "学習した予測モデルを利用できるが、解析的なモデルを使う計画器もある。"
+      }
+    }
+  ],
+  "prerequisites": [
+    "world-models"
+  ],
+  "term_refs": [
+    "model-predictive-control",
+    "motion-planning",
+    "world-model",
+    "feedback-control"
+  ],
+  "sources": [
+    {
+      "id": "pets",
+      "title": "Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models",
+      "url": "https://arxiv.org/abs/1805.12114",
+      "kind": "paper",
+      "year": 2018
+    },
+    {
+      "id": "dreamerv3",
+      "title": "Mastering Diverse Domains through World Models",
+      "url": "https://arxiv.org/abs/2301.04104",
+      "kind": "paper",
+      "year": 2024
+    }
+  ],
+  "last_reviewed": "2026-11-14",
+  "content_status": "ready",
+  "diagram": null,
+  "localizations": {
+    "en": {
+      "engineer": {
+        "title": "Model-based planning",
+        "short_description": "Model-based planning is action selection through simulated consequences and comparison under a specified objective.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "What it is",
+            "paragraphs": [
+              "Model-based planning is an action-computation method combining an environment dynamics model, candidate solutions and an evaluation objective. The model may use specified equations or be learned from data.",
+              "For example, a robot needs to move a block without colliding with another object. The planner enters several push sequences into the model, obtains future positions and evaluates the alternatives. It executes the chosen plan's beginning, then a fresh observation allows replanning."
+            ]
+          },
+          {
+            "id": "formulation",
+            "title": "State, horizon and objective",
+            "paragraphs": [
+              "Define an initial state estimate, candidate action sequences, transition model, stage costs, optional terminal cost and constraints. The timestep and horizon express a physical prediction interval. A common objective sums predicted costs along the rollout. Changing the state representation or action convention changes what the optimization problem actually describes."
+            ],
+            "formula": "minimize Σₖ c(sₖ, aₖ) + c_terminal(s_H), with sₖ₊₁ = f(sₖ, aₖ)"
+          },
+          {
+            "id": "model",
+            "title": "Learning a predictor when needed",
+            "paragraphs": [
+              "A learned dynamics model can fit next-state changes from recorded transitions. Probabilistic models and ensembles can represent some uncertainty; PETS is a research example combining uncertainty-aware dynamics and trajectory sampling. They do not automatically provide a calibrated confidence bound in new conditions. An accurate analytic model may be preferable when the physics is sufficiently known."
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "Search or optimize over candidates",
+            "paragraphs": [
+              "A planner rolls out action candidates and uses their predicted outcomes to choose a sequence. Sampling, iterative optimization and gradient-based methods make different assumptions. Their computational cost grows with candidates, horizon and model complexity. Warm starts can reuse an earlier solution, but do not remove the need to check changed state and constraints."
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "Receding horizon and real feedback",
+            "paragraphs": [
+              "In model predictive control, execute the first action or a defined short prefix, obtain a new state estimate and solve again. This distinguishes closed-loop planning from blindly executing an entire open-loop sequence. State estimation, planning and actuator feedback have separate deadlines. Define behavior for missed deadlines or failure to find a feasible solution."
+            ]
+          },
+          {
+            "id": "uncertainty",
+            "title": "What uncertainty changes",
+            "paragraphs": [
+              "A planner may account for prediction uncertainty through its objective or constraints, but the meaning depends on the model and calibration. More optimization can discover trajectories that exploit model error rather than succeed physically. Avoid treating a low predicted cost as evidence of low real-world risk. Compare predictions with actual outcomes continuously."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Test the whole decision loop",
+            "paragraphs": [
+              "Measure closed-loop task success, model error over relevant horizons, constraint violations, solve-time distribution and fallback use. Include disturbances, changed contacts and incorrect state estimates. Hold the prediction model and compute budget explicit when comparing planners. A successful simulation rollout alone does not show the behavior of the real controlled machine."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Planner versus learned policy",
+            "paragraphs": [
+              "A policy can produce an action in one inference without runtime search; it may have learned using model-generated trajectories. A planner evaluates candidates during operation. Hybrid systems can combine both. Compare them at the same sensing and actuation interface, and keep independent safety and feasibility handling rather than assuming that either family inherently guarantees them."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Model-based planning",
+        "short_description": "Model-based planning is action selection through simulated consequences and comparison under a specified objective.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "What it is",
+            "paragraphs": [
+              "Model-based planning is a decision scheme with two main parts: a model calculates process evolution and an algorithm compares action options under an operating objective.",
+              "For example, a robot needs to move a block without colliding with another object. The planner enters several push sequences into the model, obtains future positions and evaluates the alternatives. It executes the chosen plan's beginning, then a fresh observation allows replanning."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Compute and model maintenance",
+            "paragraphs": [
+              "Plan for state estimation, a model, cost and constraint design, an optimizer and runtime compute. A learned model additionally needs representative transitions and validation. The number of candidates and prediction horizon affect response time. Equipment commissioning includes checking that the planner receives current measurements rather than an outdated state."
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "How it reacts to change",
+            "paragraphs": [
+              "A receding-horizon system executes a small part of the plan, measures again and replans. This can help adapt to disturbances, but requires reliable deadlines and a clear fallback if solving fails. Explain which changes are expected, who monitors failures and how execution remains bounded while the next plan is calculated."
+            ]
+          },
+          {
+            "id": "acceptance",
+            "title": "What a useful comparison measures",
+            "paragraphs": [
+              "Compare complete job performance, constraint violations, interventions, planning-time variation and recovery. Use the intended payloads, contacts and starting states. A planner reporting low predicted cost is not enough; the realized outcome matters. Compare with a simpler controller or policy under the same hardware and operational limits."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "The model can be wrong in expensive ways",
+            "paragraphs": [
+              "Contact or friction mismatch may make an apparently good plan fail. An optimizer can even seek out weak spots in its own model. Include model updates, exception labor and independent safety assessment in the business case. Prefer the least complex model and planner that reliably support the required operating envelope."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Model-based planning",
+        "short_description": "Model-based planning is action selection through simulated consequences and comparison under a specified objective.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "What it is",
+            "paragraphs": [
+              "Model-based planning is choosing actions through internal calculations of possible outcomes, using both a description of environmental changes and a rule for comparing futures.",
+              "For example, a robot needs to move a block without colliding with another object. The planner enters several push sequences into the model, obtains future positions and evaluates the alternatives. It executes the chosen plan's beginning, then a fresh observation allows replanning."
+            ]
+          },
+          {
+            "id": "pieces",
+            "title": "What the planner needs",
+            "paragraphs": [
+              "It needs an estimate of the current state, a way to predict change, a definition of useful outcomes and limits on permitted actions. The prediction horizon says how far ahead to look. Looking farther is not always better if errors grow or the extra computation delays the decision."
+            ]
+          },
+          {
+            "id": "loop",
+            "title": "Plan a little, act a little",
+            "paragraphs": [
+              "A system can execute only the first part of a plan, observe the real result and plan again. This is the receding-horizon idea used in model predictive control. The new observation matters because the world may not follow the earlier prediction. It is different from sending a long sequence and ignoring later measurements."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "When the model comes from data",
+            "paragraphs": [
+              "Recorded actions and next states can train a dynamics predictor. PETS is a research example using uncertainty-aware learned models for decisions. Estimated uncertainty can be helpful, but must itself be checked. It is not a promise that the model knows how wrong it will be in every unfamiliar situation."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "The best prediction can still choose a bad action",
+            "paragraphs": [
+              "A planner can exploit an error in its model, especially when searching aggressively. Real tests therefore examine complete behavior, constraint violations and fallback use. A learned policy offers a different arrangement, often without online candidate search. Both need a well-defined link to sensors, controllers and safety measures."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Model-based planning",
+        "short_description": "Model-based planning is a way to make robot movement plans using a computer description of what could happen after different choices.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "What it is",
+            "paragraphs": [
+              "Model-based planning is a way to make robot movement plans using a computer description of what could happen after different choices.",
+              "For example, a robot needs to move a block without colliding with another object. The planner enters several push sequences into the model, obtains future positions and evaluates the alternatives. It executes the chosen plan's beginning, then a fresh observation allows replanning."
+            ]
+          },
+          {
+            "id": "pieces",
+            "title": "Know the starting point",
+            "paragraphs": [
+              "To compare moves, the planner needs an estimate of where things are now. It also needs a rule for how a command changes the scene and a way to score possible results. If the starting measurement is wrong, even careful calculations can point to the wrong choice."
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "Move a little, then check",
+            "paragraphs": [
+              "Imagine planning a route across a room. After taking a short part of it, the robot can measure again and update its plan. This helps when something has moved. Making a plan does not mean it should ignore all new information until the entire route is finished."
+            ]
+          },
+          {
+            "id": "model",
+            "title": "A prediction is still an estimate",
+            "paragraphs": [
+              "A model learned from records may not know a new slippery surface. A model written with equations can also leave something out. Looking many steps ahead repeats these errors. A farther-looking plan is not automatically a better one if its predictions are poor or too slow."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Check the real result",
+            "paragraphs": [
+              "Engineers compare predicted and actual outcomes, count failures and define what happens if no suitable plan is found. Controllers and stopping rules still matter. A low score for a bad outcome inside a model does not physically prevent the real machine from making that mistake."
+            ]
+          }
+        ]
+      }
+    },
+    "ru": {
+      "engineer": {
+        "title": "Планирование с моделью",
+        "short_description": "Планирование с моделью — способ выбора действий через расчёт их последствий в модели среды и сравнение результатов по заданному критерию.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Что это такое",
+            "paragraphs": [
+              "Планирование с моделью — метод вычисления действий, в котором сочетаются модель изменения среды, множество кандидатных решений и критерий их оценки. Модель может быть задана уравнениями или обучена по данным.",
+              "Например, робот должен передвинуть кубик, не столкнув его с другим предметом. Планировщик подставляет в модель несколько последовательностей толчков, получает будущие положения и оценивает варианты. Выбранное начало плана исполняется, затем новое наблюдение позволяет пересчитать решение."
+            ]
+          },
+          {
+            "id": "formulation",
+            "title": "Состояние, горизонт и цель",
+            "paragraphs": [
+              "Задают начальную оценку состояния, последовательности действий, переходы, текущие и возможную конечную стоимость, ограничения. Шаг и горизонт описывают физический интервал предсказания. Распространённая цель суммирует ожидаемые затраты вдоль траектории. Смена состояния или формата действия меняет смысл задачи оптимизации."
+            ],
+            "formula": "minimize Σₖ c(sₖ, aₖ) + c_terminal(s_H), with sₖ₊₁ = f(sₖ, aₖ)"
+          },
+          {
+            "id": "model",
+            "title": "Когда нужна обученная динамика",
+            "paragraphs": [
+              "Модель может учить следующие состояния по записанным переходам. Вероятностные модели и ансамбли представляют часть неопределённости; PETS — пример их использования вместе с выборкой траекторий. Это не автоматическая калиброванная граница ошибки в новых условиях. Если механика достаточно известна, хорошая аналитическая модель может быть предпочтительнее."
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "Поиск или оптимизация вариантов",
+            "paragraphs": [
+              "Планировщик прогоняет кандидатные действия через модель и выбирает последовательность по последствиям. Выборка, итеративная оптимизация и градиентные методы предъявляют разные требования. Цена растёт с числом кандидатов, горизонтом и сложностью модели. Начальное приближение из прошлого решения помогает, но не отменяет новую проверку состояния и ограничений."
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "Скользящий горизонт и обратная связь",
+            "paragraphs": [
+              "При MPC выполняют первое действие или короткое предусмотренное начало, получают новую оценку состояния и решают задачу снова. Это отличается от слепого исполнения всей разомкнутой последовательности. Оценка состояния, планирование и приводная связь имеют отдельные сроки. Нужна определённая реакция на опоздавшее или недопустимое решение."
+            ]
+          },
+          {
+            "id": "uncertainty",
+            "title": "Что даёт оценка неопределённости",
+            "paragraphs": [
+              "Неопределённость можно учитывать в цели или ограничениях, но её смысл зависит от модели и калибровки. Более тщательная оптимизация способна найти действия, эксплуатирующие ошибку модели, а не достигающие цели в мире. Малая прогнозная стоимость не является свидетельством малого реального риска. Предсказания регулярно сверяют с фактами."
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "Оценивать весь цикл решения",
+            "paragraphs": [
+              "Измеряют физический успех, ошибку модели на нужном горизонте, нарушения ограничений, распределение времени решения и обращения к резервному режиму. Проверяют возмущения, новые контакты и неверную оценку состояния. При сравнении явно фиксируют модель и бюджет. Удачный прогноз в симуляции ещё не показывает поведения настоящей управляемой машины."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Планировщик и выученная политика",
+            "paragraphs": [
+              "Политика может выдавать действие одним выводом без рабочего поиска; её могли учить на модельных траекториях. Планировщик сравнивает варианты во время работы. Возможны гибриды. Сравнивают при одинаковых датчиках и приводах, сохраняя независимую проверку безопасности и допустимости, а не приписывая её автоматически любому семейству."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "Планирование с моделью",
+        "short_description": "Планирование с моделью — способ выбора действий через расчёт их последствий в модели среды и сравнение результатов по заданному критерию.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "Что это такое",
+            "paragraphs": [
+              "Планирование с моделью — схема принятия решений из двух основных частей: модель рассчитывает развитие процесса, а алгоритм сравнивает варианты действий по рабочему критерию.",
+              "Например, робот должен передвинуть кубик, не столкнув его с другим предметом. Планировщик подставляет в модель несколько последовательностей толчков, получает будущие положения и оценивает варианты. Выбранное начало плана исполняется, затем новое наблюдение позволяет пересчитать решение."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Вычисления и поддержка модели",
+            "paragraphs": [
+              "Планируют оценку состояния, модель, разработку цели и ограничений, оптимизатор и рабочие вычисления. Обученная модель требует переходов среды и проверки. Число кандидатов и длина горизонта влияют на время ответа. При вводе проверяют, что поступают свежие измерения, а не устаревшее состояние."
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "Как реагировать на перемены",
+            "paragraphs": [
+              "Система на скользящем горизонте исполняет часть плана, измеряет результат и планирует заново. Это помогает с возмущениями, но требует соблюдения сроков и резервного поведения при сбое решателя. Нужно назвать ожидаемые изменения, наблюдение за отказами и допустимые команды во время ожидания следующего расчёта."
+            ]
+          },
+          {
+            "id": "acceptance",
+            "title": "Что сравнивать в работе",
+            "paragraphs": [
+              "Измеряют полные операции, нарушения ограничений, вмешательства, разброс времени расчёта и восстановление. Используют целевые нагрузки, контакты и начальные состояния. Низкой стоимости внутри программы мало — важен реализованный результат. Сравнивают с простым контроллером и политикой при тех же рабочих пределах."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Ошибка модели бывает дорогой",
+            "paragraphs": [
+              "Несоответствие контакта или трения способно испортить хороший на вид план. Оптимизатор иногда специально находит слабые места предсказателя. Учитывают обновление модели, исключения и независимую безопасность. Выбирают минимальную сложность, которая подтверждённо поддерживает нужную область эксплуатации."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "Планирование с моделью",
+        "short_description": "Планирование с моделью — способ выбора действий через расчёт их последствий в модели среды и сравнение результатов по заданному критерию.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Что это такое",
+            "paragraphs": [
+              "Планирование с моделью — способ выбирать действия по внутреннему расчёту возможных результатов. В нём есть описание изменений среды и правило сравнения будущих вариантов.",
+              "Например, робот должен передвинуть кубик, не столкнув его с другим предметом. Планировщик подставляет в модель несколько последовательностей толчков, получает будущие положения и оценивает варианты. Выбранное начало плана исполняется, затем новое наблюдение позволяет пересчитать решение."
+            ]
+          },
+          {
+            "id": "pieces",
+            "title": "Что необходимо для выбора",
+            "paragraphs": [
+              "Нужны оценка текущего состояния, способ предсказать изменение, описание полезного результата и разрешённых действий. Горизонт задаёт глубину просмотра будущего. Дальше не всегда лучше: ошибки растут, а дополнительные вычисления могут опоздать с решением."
+            ]
+          },
+          {
+            "id": "loop",
+            "title": "Немного спланировать и выполнить",
+            "paragraphs": [
+              "Можно выполнить только начало плана, измерить настоящий результат и рассчитать продолжение. Это идея скользящего горизонта в MPC. Новое наблюдение важно, потому что мир мог не последовать прежнему прогнозу. Такую схему не следует путать с длинной последовательностью без учёта дальнейших измерений."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Если модель построена по данным",
+            "paragraphs": [
+              "Записи действий и следующих состояний позволяют учить предсказатель динамики. PETS — исследовательский пример решений по обученным моделям с неопределённостью. Её оценка полезна, но тоже требует проверки. Она не обещает знания своей ошибки в любой неизвестной ситуации."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Лучший прогноз может дать плохую команду",
+            "paragraphs": [
+              "Планировщик способен использовать неточность модели, особенно при интенсивном поиске. Поэтому смотрят полное поведение, нарушения и резервные режимы. Выученная политика организует задачу иначе, нередко без рабочего поиска вариантов. Обоим подходам нужны правильная связь с датчиками, контроллер и защита."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "Планирование с моделью",
+        "short_description": "Планирование с моделью — способ составить движения робота с помощью компьютерного описания того, что может произойти после каждого варианта.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Что это такое",
+            "paragraphs": [
+              "Планирование с моделью — способ составить движения робота с помощью компьютерного описания того, что может произойти после каждого варианта.",
+              "Например, робот должен передвинуть кубик, не столкнув его с другим предметом. Планировщик подставляет в модель несколько последовательностей толчков, получает будущие положения и оценивает варианты. Выбранное начало плана исполняется, затем новое наблюдение позволяет пересчитать решение."
+            ]
+          },
+          {
+            "id": "pieces",
+            "title": "Узнать исходную точку",
+            "paragraphs": [
+              "Чтобы сравнить движения, надо оценить, где сейчас находятся предметы. Ещё нужны правило изменения сцены от команды и способ оценить результат. Если начальное измерение неверно, даже очень аккуратное вычисление может предложить неправильный вариант."
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "Немного пройти и проверить",
+            "paragraphs": [
+              "Представь план дороги через комнату. Выполнив короткую часть, робот может снова измерить окружение и поправить путь. Это помогает, когда что-нибудь сдвинули. Наличие плана не означает, что нужно игнорировать новую информацию до окончания всей дороги."
+            ]
+          },
+          {
+            "id": "model",
+            "title": "Прогноз остаётся оценкой",
+            "paragraphs": [
+              "Модель, обученная по записям, может не знать новую скользкую поверхность. В уравнениях тоже способны что-то пропустить. Прогноз на много шагов повторяет эти ошибки. Дальний план не обязательно лучше, если его предположения неверны или расчёт слишком медленный."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Проверить настоящий результат",
+            "paragraphs": [
+              "Инженеры сравнивают ожидаемый и фактический исход, считают неудачи и решают, что делать при отсутствии пригодного плана. Контроллер и остановка по-прежнему важны. Штраф за плохой результат внутри программы физически не мешает настоящей машине ошибиться."
+            ]
+          }
+        ]
+      }
+    },
+    "ja": {
+      "engineer": {
+        "title": "モデルに基づく計画",
+        "short_description": "モデルに基づく計画は、環境モデルで行動の結果を計算し、目的に沿って候補を比較する意思決定手法です。",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "モデルに基づく計画は、環境変化のモデル、候補の行動、評価基準を組み合わせて行動を計算する手法です。モデルは方程式で与えることも、データから学習することもできます。",
+              "例えば、積み木を別の物にぶつけず移す課題です。計画器は、いくつかの押し方の列をモデルへ入力し、先の位置を求めて候補を評価します。選んだ計画の初めを実行し、新しい観測から計画を更新します。"
+            ]
+          },
+          {
+            "id": "formulation",
+            "title": "状態、区間、目的",
+            "paragraphs": [
+              "初期状態の推定、行動列、遷移、各時刻の費用、必要なら終端費用と制約を定めます。刻みとホライズンは物理的な予測区間です。代表的な目的は軌跡上の費用の和になります。状態表現や行動形式を変えると、最適化問題が記述する対象も変わります。"
+            ],
+            "formula": "min Σₖ c(sₖ, aₖ) + c_terminal(s_H), sₖ₊₁ = f(sₖ, aₖ)"
+          },
+          {
+            "id": "model",
+            "title": "必要なら動力学を学ぶ",
+            "paragraphs": [
+              "記録した遷移から次の状態変化を学べます。確率モデルやアンサンブルは一部の不確かさを表せ、PETSはそれらと軌跡サンプリングを組み合わせた研究例です。新条件で校正された誤差境界が自動的に得られるわけではありません。物理が十分分かる場合は解析モデルが適することもあります。"
+            ]
+          },
+          {
+            "id": "inference",
+            "title": "候補を探索する",
+            "paragraphs": [
+              "行動候補をモデルで進め、予測結果から列を選びます。サンプリング、反復最適化、勾配法では前提が違います。候補数、区間、モデルの複雑さが計算量を左右します。前回の解を初期値に使っても、変わった状態と制約の確認は省けません。"
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "実測で計画を更新する",
+            "paragraphs": [
+              "モデル予測制御MPCでは、最初の行動や短い先頭部分を実行し、再推定して解き直します。長い開ループ列を盲目的に実行する方法とは異なります。推定、計画、サーボの期限を分け、時間切れや実行可能解が見つからない場合の動作を決めます。"
+            ]
+          },
+          {
+            "id": "uncertainty",
+            "title": "不確かさの役割",
+            "paragraphs": [
+              "予測の不確かさを目的や制約へ反映できますが、意味はモデルと校正に依存します。最適化が進むほど、実世界で成功するのでなく、モデルの誤りを利用する軌跡が見つかる場合もあります。小さな予測費用を低い現実の危険と同一視せず、結果を実測と比較します。"
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "判断ループ全体の試験",
+            "paragraphs": [
+              "閉ループの完了率、必要な区間のモデル誤差、制約違反、計算時間の分布、代替動作の使用を測ります。外乱、接触変化、推定の誤りも試します。比較ではモデルと計算予算を明示します。仮想の軌跡だけでは実機の挙動を示せません。"
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "方策との役割の違い",
+            "paragraphs": [
+              "学習済み方策は、運用中の探索なしに一度の推論で行動を出せる場合があります。計画器は運用時に候補を評価します。組み合わせも可能です。同じ観測と駆動の接続で比較し、どちらにも独立した安全と実行可能性の扱いを設けます。"
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "モデルに基づく計画",
+        "short_description": "モデルに基づく計画は、環境モデルで行動の結果を計算し、目的に沿って候補を比較する意思決定手法です。",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "モデルに基づく計画は、工程の変化を計算するモデルと、業務の基準で操作案を比較するアルゴリズムを組み合わせた意思決定方式です。",
+              "例えば、積み木を別の物にぶつけず移す課題です。計画器は、いくつかの押し方の列をモデルへ入力し、先の位置を求めて候補を評価します。選んだ計画の初めを実行し、新しい観測から計画を更新します。"
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "計算と保守の準備",
+            "paragraphs": [
+              "状態推定、モデル、費用と制約の設計、最適化器、運用時の計算機が必要です。学習モデルには代表的な遷移データと検証も要ります。候補数と予測区間は応答時間に影響します。導入時には、古い状態でなく最新の測定を受け取ることも確認します。"
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "変化へ対応する仕組み",
+            "paragraphs": [
+              "短い区間を実行して測り直し、計画を更新すれば外乱に対応しやすくなります。ただし期限を守り、計算が失敗したときの代替動作が必要です。想定する変化、監視の担当、次の計画を待つ間に許可する実行を説明できるようにします。"
+            ]
+          },
+          {
+            "id": "acceptance",
+            "title": "工程での比較",
+            "paragraphs": [
+              "完了、制約違反、介入、計算時間の変動、復旧を測ります。対象の荷重、接触、開始状態で試験します。モデル内の低い費用だけでは足りず、実際に実現した結果が重要です。同じ機器制限の下で、単純な制御器や方策とも比較します。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "予測の誤りが高くつく場合",
+            "paragraphs": [
+              "摩擦や接触がずれると、よい計画に見えても失敗します。最適化器がモデルの弱点を選ぶことさえあります。更新、例外対応、独立した安全評価を費用に含めます。必要な運用範囲を安定して支える中で、最も単純なモデルと計画方式を選びます。"
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "モデルに基づく計画",
+        "short_description": "モデルに基づく計画は、環境モデルで行動の結果を計算し、目的に沿って候補を比較する意思決定手法です。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "モデルに基づく計画は、環境がどう変わるかの記述と、将来の結果を比べる規則を使い、行動を選ぶ方法です。",
+              "例えば、積み木を別の物にぶつけず移す課題です。計画器は、いくつかの押し方の列をモデルへ入力し、先の位置を求めて候補を評価します。選んだ計画の初めを実行し、新しい観測から計画を更新します。"
+            ]
+          },
+          {
+            "id": "pieces",
+            "title": "選ぶための材料",
+            "paragraphs": [
+              "現在の状態の推定、変化を予測する方法、役立つ結果の基準、許可する動作が必要です。ホライズンは、どれほど先まで予測するかを表します。誤差が増えたり計算が遅れたりするなら、遠くを見るほどよいとはいえません。"
+            ]
+          },
+          {
+            "id": "loop",
+            "title": "少し動いて計画し直す",
+            "paragraphs": [
+              "最初の部分だけを実行し、実測した結果から更新するのがMPCの考え方です。世界は前の予測どおりとは限らないので、新しい観測が重要です。長い列を送って、その後の測定を無視する仕組みとは異なります。"
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "データから作るモデル",
+            "paragraphs": [
+              "行動と次状態の記録から動力学を学べます。PETSは、不確かさを扱う予測モデルを判断に使う研究例です。その推定も検証が必要で、あらゆる未知の状況で自分の誤りを正しく知るという約束ではありません。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "予測上の最良が失敗することも",
+            "paragraphs": [
+              "強い探索によってモデルの誤差を利用した行動が選ばれる場合があります。だから動作全体、制約違反、代替動作を評価します。学習した方策は別の構成で、実行時に候補探索をしないこともあります。どちらもセンサー、制御、安全への適切な接続が必要です。"
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "モデルに基づく計画",
+        "short_description": "モデルに基づく計画は、違う動きをした後に何が起こりそうかを、コンピューター内の説明を使って計算し、動き方を組み立てる方法だ。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "モデルに基づく計画は、違う動きをした後に何が起こりそうかを、コンピューター内の説明を使って計算し、動き方を組み立てる方法だ。",
+              "例えば、積み木を別の物にぶつけず移す課題です。計画器は、いくつかの押し方の列をモデルへ入力し、先の位置を求めて候補を評価します。選んだ計画の初めを実行し、新しい観測から計画を更新します。"
+            ]
+          },
+          {
+            "id": "pieces",
+            "title": "今どこにあるかを知る",
+            "paragraphs": [
+              "動きを比べるには、今、物やロボットがどこにあるかを推定（すいてい）する。さらに、指令でどう変わるかという規則と、結果を比べる基準が必要だ。最初の測定が間違うと、丁寧な計算でも誤った選択をするかもしれない。"
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "少し進んで確かめる",
+            "paragraphs": [
+              "部屋を通る道を考えよう。ロボットは短い部分を進んでから、また周りを測って道を直せる。物が動いたときに役立つ方法だ。一度計画を作ったからといって、最後まで新しい情報を無視してよいわけではない。"
+            ]
+          },
+          {
+            "id": "model",
+            "title": "予測も見積もりである",
+            "paragraphs": [
+              "記録から学んだモデルが、新しい滑る床を知らない場合もある。方程式にも抜けがあるかもしれない。多くの先を予測すると、ずれも繰り返される。予測が悪い、または遅すぎるなら、遠い未来の計画が必ず優れるわけではない。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "現実の結果を見る",
+            "paragraphs": [
+              "技術者は予測と実測を比べ、失敗を数え、使える案が見つからないときの動作を決める。制御器（せいぎょき）や停止の仕組みも必要だ。モデル内で悪い結果を減点しても、実機がその間違いを物理的に起こせなくなるわけではない。"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

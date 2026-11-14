@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-14",
+  "article_id": "nvidia-leadership",
+  "article_title": {
+    "ru": "NVIDIA сменила руководителя, заявив о сохранении планов выпуска продукции",
+    "en": "NVIDIA changes leadership while pledging to maintain its product plans",
+    "ja": "NVIDIAが経営交代、製品計画の継続方針を示す"
+  },
+  "article_urls": {
+    "ru": "https://repravda.com/ru/engineer/issues/2026-11-14/articles/nvidia-leadership/",
+    "en": "https://repravda.com/en/engineer/issues/2026-11-14/articles/nvidia-leadership/",
+    "ja": "https://repravda.com/ja/engineer/issues/2026-11-14/articles/nvidia-leadership/"
+  },
+  "edition": "engineer",
+  "image_path": "data/images/2026-11-14/nvidia-leadership.webp",
+  "caption": {
+    "ru": "Смена руководства NVIDIA сама по себе не определяет судьбу вычислительных платформ, от которых зависят разработчики роботов. Обобщённая редакционная сцена: азиатские инженеры подключают и настраивают компьютер. На стене — монохромная редакционная адаптация советского лозунга «Станем мастерами своего дела!» из плаката П. Голубя и А. Чернова 1946 года; рисунок не является точной копией оригинала. Сцена не изображает реальную лабораторию NVIDIA или конкретный продукт и не подтверждает исполнение обещаний совета директоров.",
+    "en": "NVIDIA’s leadership change does not by itself establish the future of computing platforms on which robot developers depend. In a generalized editorial scene, East Asian engineers connect and set up a computer. A wall poster offers a monochrome editorial adaptation of the slogan “Let us become masters of our craft!” from the 1946 Soviet poster by P. Golub and A. Chernov; its drawing is not an exact reproduction. The scene depicts neither an actual NVIDIA laboratory nor a specific product and does not demonstrate delivery of the board’s commitments.",
+    "ja": "NVIDIAの経営交代だけで、ロボット開発者が依存する計算基盤の行方が決まるわけではない。東アジア系の技術者がコンピューターを接続し、設定する様子を一般化した編集イラスト。壁には、P・ゴルブとA・チェルノフによる1946年のソ連のポスターで使われた、仕事の熟練者になろうという標語を白黒で再構成したポスターを置いた。絵柄は原作の正確な複製ではない。実在するNVIDIAの研究室や特定の製品を描いたものではなく、取締役会の約束が果たされたと示す場面でもない。"
+  },
+  "alt": {
+    "ru": "Чёрно-белая гравюра. Двое азиатских инженеров сидят на эргономичных креслах за футуристичным столом с тонкой закруглённой столешницей и опорами по краям. У каждого видны обе ноги в брюках и две ступни в закрытой обуви, опирающиеся на пол. Слева женщина придерживает корпус компьютера и подключает сетевой кабель; питание подключено отдельно. Справа мужчина в очках и свитере печатает на клавиатуре. На стене плакат: «СТАНЕМ МАСТЕРАМИ СВОЕГО ДЕЛА!»; под надписью двое молодых специалистов изучают чертёж и книгу.",
+    "en": "Black-and-white engraving. Two East Asian engineers sit on ergonomic chairs at a futuristic desk with a thin rounded top and supports at its outer ends. Each has two visible trousered legs and two closed shoes resting on the floor. At left, a woman steadies the computer housing while connecting a network cable; power is connected separately. At right, a man in glasses and a sweater types. A wall poster shows two young specialists studying a drawing and a book beneath the Russian slogan “Let us become masters of our craft!”",
+    "ja": "白黒の版画。東アジア系の二人の技術者が、薄く丸みのある天板と両端の支柱を備えた近未来的な机で、椅子に座って働く。二人ともズボンをはいた両脚と、床に着いた二足の靴が見える。左の女性は筐体を支えながらネットワークケーブルを差し、電源は別の接続口につながる。右の眼鏡とセーター姿の男性はキーボードを操作する。壁には、仕事の熟練者を目指そうと呼びかけるロシア語の標語と、図面や本を学ぶ二人の若い技術者を描いたポスターがある。"
+  },
+  "visual_thesis": "Корпоративная смена руководства и техническое состояние вычислительной платформы — разные уровни фактов. Один обобщённый эпизод инженерной работы подчёркивает зависимость робототехники от вычислительной инфраструктуры, не утверждая ни остановки продуктов NVIDIA, ни уже доказанной непрерывности их поддержки. Основание — статья nvidia-leadership; сюжеты других статей не используются.",
+  "visual_brief": "Correct the supplied editorial engraving. Preserve the two East Asian adult engineers, their individual pleasant realistic faces, woman's working jacket, man's glasses and knitted sweater, their actual work on the same closed unbranded computing tower, the woman's network-plug connection and separate seated power plug, and man's keyboard action. Preserve futuristic furniture, black ink on pure white, strong outlines, restrained hatching, light faces/hands, no colour or sepia, no logos, no political emblems.\n\nTWO REQUIRED CORRECTIONS:\n1. FULL, PLAUSIBLE HUMAN LEGS. The current image hides or omits their lower bodies. Recompose the view so BOTH people have TWO VISIBLE ANATOMICALLY COMPLETE LEGS EACH, four legs total. Zoom out slightly and use a slightly elevated three-quarter view from the front, leaving open sightlines beneath the tabletop. Show each person's hips naturally seated on the actual chair seat, thighs connected to hips, knees comfortably bent, lower legs, ankles and two shoes flat on the floor. Ordinary full-length work trousers and sensible closed shoes. All four feet must be comfortably inside the frame with white margin, visibly on the same floor plane. No amputations, legs merging into desk supports, disembodied calves, extra limbs or feet cropped by the image. The woman remains seated on her ergonomic chair, leaning forward enough to connect the network plug. The man remains seated on his own chair, forearms reaching keyboard with relaxed shoulders. Each has their own actual chair seat supporting their pelvis. Their legs remain separate from each other's, chairs and cables.\nRebuild the futuristic DESK with a thin rounded white composite tabletop and slim but solid structurally connected end supports at the FAR OUTER ENDS only. OPEN UNDER-DESK LEGROOM at both seats. No broad front fascia, central solid panel, thick pedestal under a person's knees or horizontal floor bar across the front. End supports have broad stable feet to carry the table weight; chairs have proper stable wheeled bases, wheels behind/alongside the human feet. Keep desk height and seat height ergonomically credible. A little supporting furniture may be occluded, but no essential part of either person's legs can be hidden by furniture. Computer/monitor remain safely supported, power/network cables visibly run across desk and behind it, not across people's shins or through furniture. This is the main correction: make the four connected legs unmistakable, not just a token shoe.\n\n2. REPLACE THE SEMICONDUCTOR POSTER COMPLETELY with a Soviet LABOUR AND PROFESSIONAL MASTERY poster. Use the historically documented 1946 slogan of the Golub/Chernov poster, rendered EXACTLY in clear Cyrillic across four lines:\nСТАНЕМ\nМАСТЕРАМИ\nСВОЕГО\nДЕЛА!\nDo not use the wafer/chip diagram. The small secondary poster should be a monochrome editorial adaptation of a mid-century Soviet vocational-work poster: two young technical apprentices in plain period work uniforms study an engineering drawing and books, dignity of skilled labour. No military badges, stars, hammer and sickle, flags, party symbols, portraits of leaders or extra text. This is an illustrative adaptation with a historically verified slogan, not a claim of a pixel-exact facsimile. Print the slogan in bold clean Soviet-era block lettering with enough spacing. No invented Cyrillic or misspelled words. Keep the poster modest, flat on the wall behind the workbench, not covering faces/hands. The article remains about computing-platform dependencies during NVIDIA's leadership transition, not a Soviet event; poster is contextual decor only.\n\nFinal audit before output: exactly two humans, four anatomically joined visible legs, four shoes resting on the floor, two supported seated hips; two purposeful work actions; network plug aligned and seated, separate power cable, supported tower/monitor; futuristic minimalist table does not obstruct knees; poster reads СТАНЕМ МАСТЕРАМИ СВОЕГО ДЕЛА! correctly. Landscape composition. No pseudo-UI, metrics, robot, other stories or unnecessary props.",
+  "source_ids": [
+    "nv-transition",
+    "nv-filing",
+    "nv-board",
+    "nv-tc",
+    "nv-reuters"
+  ],
+  "illustration_type": "editorial_concept",
+  "width": 1600,
+  "height": 1067,
+  "generation_method": "image_gen",
+  "poster_reference": {
+    "title": "Станем мастерами своего дела!",
+    "artists": [
+      "Пётр Голубь",
+      "Анатолий Чернов"
+    ],
+    "year": 1946,
+    "treatment": "Monochrome editorial adaptation of the verified historical slogan; not an exact reproduction of the historical composition.",
+    "verification_urls": [
+      "https://electro.nekrasovka.ru/books/6147478/pages/2",
+      "https://tramvaiiskusstv.ru/661-chernov-anatolij-mikhajlovich-1914-1980/"
+    ]
+  }
+}

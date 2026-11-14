@@ -1,0 +1,353 @@
+{
+  "$defs": {
+    "Article": {
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "minLength": 3,
+          "title": "Title",
+          "type": "string"
+        },
+        "short_description": {
+          "minLength": 15,
+          "title": "Short Description",
+          "type": "string"
+        },
+        "sections": {
+          "items": {
+            "$ref": "#/$defs/Section"
+          },
+          "minItems": 5,
+          "title": "Sections",
+          "type": "array"
+        }
+      },
+      "required": [
+        "title",
+        "short_description",
+        "sections"
+      ],
+      "title": "Article",
+      "type": "object"
+    },
+    "Localized": {
+      "additionalProperties": false,
+      "properties": {
+        "ru": {
+          "minLength": 1,
+          "title": "Ru",
+          "type": "string"
+        },
+        "en": {
+          "minLength": 1,
+          "title": "En",
+          "type": "string"
+        },
+        "ja": {
+          "minLength": 1,
+          "title": "Ja",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ru",
+        "en",
+        "ja"
+      ],
+      "title": "Localized",
+      "type": "object"
+    },
+    "Relation": {
+      "additionalProperties": false,
+      "properties": {
+        "target": {
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "title": "Target",
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "depends_on",
+            "uses",
+            "alternative_to",
+            "complements",
+            "evolved_from",
+            "implemented_by"
+          ],
+          "title": "Type",
+          "type": "string"
+        },
+        "explanation": {
+          "$ref": "#/$defs/Localized"
+        }
+      },
+      "required": [
+        "target",
+        "type",
+        "explanation"
+      ],
+      "title": "Relation",
+      "type": "object"
+    },
+    "Section": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "paragraphs": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Paragraphs",
+          "type": "array"
+        },
+        "items": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Items",
+          "type": "array"
+        },
+        "formula": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Formula"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "paragraphs"
+      ],
+      "title": "Section",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "minLength": 5,
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "format": "uri",
+          "maxLength": 2083,
+          "minLength": 1,
+          "title": "Url",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "paper",
+            "documentation",
+            "code",
+            "project"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "year": {
+          "maximum": 2100,
+          "minimum": 1950,
+          "title": "Year",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "url",
+        "kind",
+        "year"
+      ],
+      "title": "Source",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "content_status": {
+            "const": "ready"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "localizations": {
+            "additionalProperties": {
+              "required": [
+                "engineer",
+                "business",
+                "enthusiast",
+                "children"
+              ]
+            },
+            "required": [
+              "ru",
+              "en",
+              "ja"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "id": {
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "title": "Id",
+      "type": "string"
+    },
+    "category": {
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "title": "Category",
+      "type": "string"
+    },
+    "technology_type": {
+      "enum": [
+        "method",
+        "architecture",
+        "model-family",
+        "concept",
+        "tool"
+      ],
+      "title": "Technology Type",
+      "type": "string"
+    },
+    "title": {
+      "$ref": "#/$defs/Localized"
+    },
+    "short_description": {
+      "$ref": "#/$defs/Localized"
+    },
+    "related_technologies": {
+      "items": {
+        "$ref": "#/$defs/Relation"
+      },
+      "title": "Related Technologies",
+      "type": "array"
+    },
+    "prerequisites": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Prerequisites",
+      "type": "array"
+    },
+    "term_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Term Refs",
+      "type": "array"
+    },
+    "sources": {
+      "items": {
+        "$ref": "#/$defs/Source"
+      },
+      "minItems": 1,
+      "title": "Sources",
+      "type": "array"
+    },
+    "last_reviewed": {
+      "format": "date",
+      "title": "Last Reviewed",
+      "type": "string"
+    },
+    "content_status": {
+      "enum": [
+        "draft",
+        "ready",
+        "withdrawn"
+      ],
+      "title": "Content Status",
+      "type": "string"
+    },
+    "diagram": {
+      "anyOf": [
+        {
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Diagram"
+    },
+    "localizations": {
+      "additionalProperties": {
+        "additionalProperties": {
+          "$ref": "#/$defs/Article"
+        },
+        "propertyNames": {
+          "enum": [
+            "engineer",
+            "business",
+            "enthusiast",
+            "children"
+          ]
+        },
+        "type": "object"
+      },
+      "propertyNames": {
+        "enum": [
+          "ru",
+          "en",
+          "ja"
+        ]
+      },
+      "title": "Localizations",
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "category",
+    "technology_type",
+    "title",
+    "short_description",
+    "related_technologies",
+    "prerequisites",
+    "term_refs",
+    "sources",
+    "last_reviewed",
+    "content_status",
+    "localizations"
+  ],
+  "title": "Technology",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

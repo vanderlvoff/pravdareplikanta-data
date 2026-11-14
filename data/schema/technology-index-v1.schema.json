@@ -1,0 +1,93 @@
+{
+  "$defs": {
+    "Category": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "$ref": "#/$defs/Localized"
+        },
+        "description": {
+          "$ref": "#/$defs/Localized"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "description"
+      ],
+      "title": "Category",
+      "type": "object"
+    },
+    "Localized": {
+      "additionalProperties": false,
+      "properties": {
+        "ru": {
+          "minLength": 1,
+          "title": "Ru",
+          "type": "string"
+        },
+        "en": {
+          "minLength": 1,
+          "title": "En",
+          "type": "string"
+        },
+        "ja": {
+          "minLength": 1,
+          "title": "Ja",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ru",
+        "en",
+        "ja"
+      ],
+      "title": "Localized",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "title": {
+      "$ref": "#/$defs/Localized"
+    },
+    "introduction": {
+      "$ref": "#/$defs/Localized"
+    },
+    "categories": {
+      "items": {
+        "$ref": "#/$defs/Category"
+      },
+      "minItems": 1,
+      "title": "Categories",
+      "type": "array"
+    },
+    "technology_ids": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Technology Ids",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "title",
+    "introduction",
+    "categories",
+    "technology_ids"
+  ],
+  "title": "Index",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-14",
+  "issue_id": "daily-2026-11-14",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-13T21:02:43.279476Z",
+  "title": "A thousand-robot plan begins with testing the job",
+  "lead": "GXO runs warehouse operations, while Apptronik builds robots. They want to test more jobs and then expand to as many as a thousand machines if work and safety requirements are met.",
+  "news": [
+    {
+      "id": "gxo-apollo-framework",
+      "title": "A thousand warehouse robots is still a conditional plan",
+      "summary": "GXO and robot maker Apptronik want to expand warehouse-helper trials. A possible 1,000 machines would depend on meeting requirements agreed in advance.",
+      "details": "GXO organizes warehouse work, while Apptronik builds humanoid robots. The companies agreed to test more ways for those machines to pick goods, move boxes and help with packing. They announced the expanded plan on November 12.",
+      "technical_novelty": "GXO and robot maker Apptronik want to expand warehouse-helper trials. A possible 1,000 machines would depend on meeting requirements agreed in advance. Its big number is up to a thousand robots over four years. That does not mean a thousand helpers are already working. Each job must first pass checks: is the machine fast enough, safe enough and suitable for the real warehouse?",
+      "engineering_impact": "GXO and robot maker Apptronik want to expand warehouse-helper trials. A possible 1,000 machines would depend on meeting requirements agreed in advance. A useful trial and a large purchase are different steps. If the agreed requirements are not met, the announced number does not become an achieved result. The agreement also gives no price or calculation of how long the new program would take to earn back its costs.",
+      "limitations": "GXO and robot maker Apptronik want to expand warehouse-helper trials. A possible 1,000 machines would depend on meeting requirements agreed in advance. A useful trial and a large purchase are different steps. If the agreed requirements are not met, the announced number does not become an achieved result. The agreement also gives no price or calculation of how long the new program would take to earn back its costs.",
+      "evidence_status": "This is the developers’ account or plan, not a new independent test.",
+      "published_at": "2026-11-12",
+      "organization": "GXO; Apptronik",
+      "source_ids": [
+        "gxo-intent",
+        "gxo-forbes"
+      ],
+      "time_window": "72h",
+      "body": "GXO organizes warehouse work, while Apptronik builds humanoid robots. The companies agreed to test more ways for those machines to pick goods, move boxes and help with packing. They announced the expanded plan on November 12.\n\nIts big number is up to a thousand robots over four years. That does not mean a thousand helpers are already working. Each job must first pass checks: is the machine fast enough, safe enough and suitable for the real warehouse?\n\nExpanded trials are planned for 2027, with the first commercial use in North America intended for late that year. The companies want to provide robots as a service. A warehouse would get access to the machines, but exact charges and maintenance coverage are not announced.\n\nA useful trial and a large purchase are different steps. If the agreed requirements are not met, the announced number does not become an achieved result. The agreement also gives no price or calculation of how long the new program would take to earn back its costs.",
+      "image": null
+    },
+    {
+      "id": "asus-gallop-station",
+      "title": "ASUS teaches two robot arms to pack accessory kits",
+      "summary": "ASUS described a robot learning to pack accessories for computer boards. High success and a short working time are still targets rather than completed results.",
+      "details": "At an ASUS factory, a robot with two arms is learning to pack accessories for computer boards. The workstation has 15 small items. Many are inside thin clear bags that can change shape when touched, making them awkward for a gripper to handle.",
+      "technical_novelty": "ASUS described a robot learning to pack accessories for computer boards. High success and a short working time are still targets rather than completed results. Workers wear a small camera with their consent to show how they do the job. Other examples come from a person guiding the robot using special gloves and a headset. Computer experiments create variations so the program does not see only one identical situation.",
+      "engineering_impact": "ASUS described a robot learning to pack accessories for computer boards. High success and a short working time are still targets rather than completed results. Today's robot is fixed in place. Wheels and the company's own touch-sensitive hand are still planned additions. Customer trials are intended for 2027 and market availability for the second half of 2028, so today's setup is not the promised finished machine.",
+      "limitations": "ASUS described a robot learning to pack accessories for computer boards. High success and a short working time are still targets rather than completed results. Today's robot is fixed in place. Wheels and the company's own touch-sensitive hand are still planned additions. Customer trials are intended for 2027 and market availability for the second half of 2028, so today's setup is not the promised finished machine.",
+      "evidence_status": "This is the developers’ account or plan, not a new independent test.",
+      "published_at": "2026-11-13",
+      "organization": "ASUS",
+      "source_ids": [
+        "asus-station"
+      ],
+      "time_window": "72h",
+      "body": "At an ASUS factory, a robot with two arms is learning to pack accessories for computer boards. The workstation has 15 small items. Many are inside thin clear bags that can change shape when touched, making them awkward for a gripper to handle.\n\nWorkers wear a small camera with their consent to show how they do the job. Other examples come from a person guiding the robot using special gloves and a headset. Computer experiments create variations so the program does not see only one identical situation.\n\nASUS wants the robot to finish a kit within 20 seconds and succeed 99.5% of the time. That is about 995 successes in a thousand attempts. The company does not say it has already reached that result; this is the standard it wants to meet.\n\nToday's robot is fixed in place. Wheels and the company's own touch-sensitive hand are still planned additions. Customer trials are intended for 2027 and market availability for the second half of 2028, so today's setup is not the promised finished machine.",
+      "image": null
+    },
+    {
+      "id": "heir-human-context",
+      "title": "Showing a robot which object a person is looking at",
+      "summary": "A team including Tsinghua University recorded people's words, gaze and robot movements. It is testing whether these cues help complete a request, rather than merely identify an object.",
+      "details": "Someone asks a robot to bring that thing, but several objects are nearby. Researchers including a Tsinghua University team recorded speech and gaze direction to help the program identify the intended object. They posted their research paper on November 12.",
+      "technical_novelty": "A team including Tsinghua University recorded people's words, gaze and robot movements. It is testing whether these cues help complete a request, rather than merely identify an object. Special glasses measure gaze direction. This is a clue about where someone looks, not a way to read thoughts. The recordings include views from both the person and the robot, plus machine movements that a human operator controlled during data collection.",
+      "engineering_impact": "A team including Tsinghua University recorded people's words, gaze and robot movements. It is testing whether these cues help complete a request, rather than merely identify an object. A gaze clue does not automatically fix a failed grasp or a wrong movement. Mistakes can appear at different steps and add up. Even after choosing the correct object, the robot still has to bring it, so researchers score complete requests separately from individual actions.",
+      "limitations": "A team including Tsinghua University recorded people's words, gaze and robot movements. It is testing whether these cues help complete a request, rather than merely identify an object. A gaze clue does not automatically fix a failed grasp or a wrong movement. Mistakes can appear at different steps and add up. Even after choosing the correct object, the robot still has to bring it, so researchers score complete requests separately from individual actions.",
+      "evidence_status": "These are the researchers’ own tests; repetition by another team is not confirmed.",
+      "published_at": "2026-11-12",
+      "organization": "Tsinghua University; Beijing Academy of Artificial Intelligence; Fudan University; Yangu Robotics",
+      "source_ids": [
+        "heir-preprint"
+      ],
+      "time_window": "72h",
+      "body": "Someone asks a robot to bring that thing, but several objects are nearby. Researchers including a Tsinghua University team recorded speech and gaze direction to help the program identify the intended object. They posted their research paper on November 12.\n\nSpecial glasses measure gaze direction. This is a clue about where someone looks, not a way to read thoughts. The recordings include views from both the person and the robot, plus machine movements that a human operator controlled during data collection.\n\nIn a separate test, the robot acted independently. It had to interpret the request, travel to the right place, pick up an object and finish without help. It completed about five out of 27 requests. Recorded teaching examples cannot be counted as the same kind of independent success.\n\nA gaze clue does not automatically fix a failed grasp or a wrong movement. Mistakes can appear at different steps and add up. Even after choosing the correct object, the robot still has to bring it, so researchers score complete requests separately from individual actions.",
+      "image": null
+    },
+    {
+      "id": "carter-workflow-report",
+      "title": "A worker can guide this robot cart by hand",
+      "summary": "In a new interview, Robust AI's founders described a transport robot whose direction a person can change by hand. They explain shared warehouse work without publishing a new safety test.",
+      "details": "A warehouse worker needs to choose and load items, then move them somewhere else. Robust AI makes a robot cart for working alongside people. In a November 13 MIT News interview, its founders explained why a person should have a convenient way to guide the machine by hand.",
+      "technical_novelty": "In a new interview, Robust AI's founders described a transport robot whose direction a person can change by hand. They explain shared warehouse work without publishing a new safety test. A sensor in the handle measures pushing or pulling force. That gives the control system a signal for movement. The wheels let the cart shift in different directions without first turning its whole body, so redirecting it does not have to require a long command each time.",
+      "engineering_impact": "In a new interview, Robust AI's founders described a transport robot whose direction a person can change by hand. They explain shared warehouse work without publishing a new safety test. However, this interview explains the developers' approach rather than a new independent experiment. It gives no measurement of how much faster work became or how often incidents happened. The report also does not say how often workers had to redirect the cart during a working shift.",
+      "limitations": "In a new interview, Robust AI's founders described a transport robot whose direction a person can change by hand. They explain shared warehouse work without publishing a new safety test. However, this interview explains the developers' approach rather than a new independent experiment. It gives no measurement of how much faster work became or how often incidents happened. The report also does not say how often workers had to redirect the cart during a working shift.",
+      "evidence_status": "This is the developers’ account or plan, not a new independent test.",
+      "published_at": "2026-11-13",
+      "organization": "Robust AI",
+      "source_ids": [
+        "mit-carter"
+      ],
+      "time_window": "24h",
+      "body": "A warehouse worker needs to choose and load items, then move them somewhere else. Robust AI makes a robot cart for working alongside people. In a November 13 MIT News interview, its founders explained why a person should have a convenient way to guide the machine by hand.\n\nA sensor in the handle measures pushing or pulling force. That gives the control system a signal for movement. The wheels let the cart shift in different directions without first turning its whole body, so redirecting it does not have to require a long command each time.\n\nThe developers describe several workflows. The cart can follow someone, guide a person to an item location or carry goods independently between workstations. It need not take over the entire job: people can still choose and load the items.\n\nHowever, this interview explains the developers' approach rather than a new independent experiment. It gives no measurement of how much faster work became or how often incidents happened. The report also does not say how often workers had to redirect the cart during a working shift.",
+      "image": null
+    },
+    {
+      "id": "munich-autoware-bus",
+      "title": "A city bus will be tested before ordinary route work",
+      "summary": "Japan's TIER IV and the Technical University of Munich are helping develop automated driving for a full-size bus. Planned route operation after controlled trials still includes a safety worker aboard.",
+      "details": "Japan's TIER IV and the Technical University of Munich are helping develop driving control for a full-size city bus in Munich. They announced the work on November 11. A computer must use sensor information to choose movements, but development does not mean a driverless passenger journey is already ready.",
+      "technical_novelty": "Japan's TIER IV and the Technical University of Munich are helping develop automated driving for a full-size bus. Planned route operation after controlled trials still includes a safety worker aboard. The partners have divided the work. The vehicle maker handles the mechanisms through which software can control the bus. The university chooses sensors and develops the driving system using open-source software: its underlying code is available for study and improvement.",
+      "engineering_impact": "Japan's TIER IV and the Technical University of Munich are helping develop automated driving for a full-size bus. Planned route operation after controlled trials still includes a safety worker aboard. Only afterward do they intend operation on an existing route, with personnel aboard for safety. The announcement supplies no result from that route trial. It cannot be read as permission for ordinary unmonitored passenger trips or as proof that the safety worker is no longer needed.",
+      "limitations": "Japan's TIER IV and the Technical University of Munich are helping develop automated driving for a full-size bus. Planned route operation after controlled trials still includes a safety worker aboard. Only afterward do they intend operation on an existing route, with personnel aboard for safety. The announcement supplies no result from that route trial. It cannot be read as permission for ordinary unmonitored passenger trips or as proof that the safety worker is no longer needed.",
+      "evidence_status": "This is the developers’ account or plan, not a new independent test.",
+      "published_at": "2026-11-11",
+      "organization": "TIER IV; Technical University of Munich; MAN",
+      "source_ids": [
+        "tier-bus"
+      ],
+      "time_window": "72h",
+      "body": "Japan's TIER IV and the Technical University of Munich are helping develop driving control for a full-size city bus in Munich. They announced the work on November 11. A computer must use sensor information to choose movements, but development does not mean a driverless passenger journey is already ready.\n\nThe partners have divided the work. The vehicle maker handles the mechanisms through which software can control the bus. The university chooses sensors and develops the driving system using open-source software: its underlying code is available for study and improvement.\n\nExperience from bus projects in Japan helps, but the German vehicle and roads differ. Software therefore needs adaptation and fresh testing. The partners first plan tests under controlled conditions, where the machine's behavior can be observed more easily.\n\nOnly afterward do they intend operation on an existing route, with personnel aboard for safety. The announcement supplies no result from that route trial. It cannot be read as permission for ordinary unmonitored passenger trips or as proof that the safety worker is no longer needed.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "A thousand-robot plan begins with testing the job",
+    "summary": "GXO runs warehouse operations, while Apptronik builds robots. They want to test more jobs and then expand to as many as a thousand machines if work and safety requirements are met.",
+    "implications": "GXO’s plan for a thousand robots does not mean a thousand helpers are already working. ASUS also sets a target for its packing robot: finish a kit within 20 seconds and succeed 99.5% of the time. In both cases, distinguish the intended result from what has already happened."
+  },
+  "sources": [
+    {
+      "id": "gxo-intent",
+      "title": "GXO and Apptronik Expand Partnership to Scale Humanoid Deployment",
+      "url": "https://investors.gxo.com/news-releases/news-release-details/gxo-and-apptronik-expand-partnership-scale-humanoid-deployment",
+      "domain": "investors.gxo.com",
+      "organization": "GXO; Apptronik",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "gxo-forbes",
+      "title": "GXO Doubles Down On Humanoids With Plan For Up To 1,000 Apptronik Robots",
+      "url": "https://www.forbes.com/sites/johnkoetsier/2026/11/12/gxo-doubles-down-on-humanoids-with-plan-for-up-to-1000-apptronik-robots/",
+      "domain": "www.forbes.com",
+      "organization": "Forbes",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "asus-station",
+      "title": "Factory-Proven Physical AI: Why ASUS Is Building a Humanoid Robot",
+      "url": "https://press.asus.com/blog/factory-proven-physical-ai-asus-gallop-humanoid-robot/",
+      "domain": "press.asus.com",
+      "organization": "ASUS",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "heir-preprint",
+      "title": "HEIR: Harness Egocentric Intent for Human-Robot Interactions",
+      "url": "https://arxiv.org/abs/2611.17238",
+      "domain": "arxiv.org",
+      "organization": "Tsinghua University; Beijing Academy of Artificial Intelligence; Fudan University; Yangu Robotics",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "mit-carter",
+      "title": "Helping robots fit into the human workplace",
+      "url": "https://news.mit.edu/2026/helping-robots-fit-into-human-workplace-1113",
+      "domain": "news.mit.edu",
+      "organization": "MIT News; Robust AI",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "tier-bus",
+      "title": "ティアフォーとミュンヘン工科大学、「Autoware」を活用した自動運転システムをミュンヘン市内の路線バス開発に展開",
+      "url": "https://prtimes.jp/main/html/rd/p/000000149.000040119.html",
+      "domain": "prtimes.jp",
+      "organization": "TIER IV; Technical University of Munich",
+      "published_at": "2026-11-11"
+    }
+  ]
+}

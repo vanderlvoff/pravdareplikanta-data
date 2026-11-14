@@ -1,0 +1,649 @@
+{
+  "schema_version": "1.0",
+  "id": "act",
+  "category": "manipulation",
+  "technology_type": "architecture",
+  "title": {
+    "ru": "ACT: действия последовательностями",
+    "en": "ACT: predicting action chunks",
+    "ja": "ACT：動作のまとまりを予測する"
+  },
+  "short_description": {
+    "ru": "ACT — нейросетевая архитектура, обучаемая по демонстрациям и выдающая блок будущих действий за один расчёт.",
+    "en": "ACT is a neural architecture trained on demonstrations to produce a block of future actions in one computation.",
+    "ja": "ACTは、実演から学び、一回の計算で複数時刻の行動をまとめて出すニューラルネットワークの構成です。"
+  },
+  "related_technologies": [
+    {
+      "target": "transformers",
+      "type": "uses",
+      "explanation": {
+        "ru": "Трансформер связывает наблюдения с блоком будущих действий.",
+        "en": "A transformer connects observations to a future action chunk.",
+        "ja": "観測と将来の動作列をTransformerで結びつける。"
+      }
+    },
+    {
+      "target": "imitation-learning",
+      "type": "evolved_from",
+      "explanation": {
+        "ru": "ACT расширяет обучение по демонстрациям предсказанием блоков действий.",
+        "en": "ACT extends demonstration learning with action-chunk prediction.",
+        "ja": "実演からの学習を、まとまった動作列の予測へ発展させる。"
+      }
+    },
+    {
+      "target": "diffusion-policy",
+      "type": "alternative_to",
+      "explanation": {
+        "ru": "Оба подхода учатся на демонстрациях, но по-разному представляют распределение действий.",
+        "en": "Both learn from demonstrations but represent action distributions differently.",
+        "ja": "どちらも実演から学ぶが、動作の分布の表し方が異なる。"
+      }
+    }
+  ],
+  "prerequisites": [
+    "imitation-learning",
+    "transformers"
+  ],
+  "term_refs": [
+    "action-chunking",
+    "transformer",
+    "imitation-learning",
+    "action-representation"
+  ],
+  "sources": [
+    {
+      "id": "act-paper",
+      "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+      "url": "https://arxiv.org/abs/2304.13705",
+      "kind": "paper",
+      "year": 2023
+    },
+    {
+      "id": "act-code",
+      "title": "ACT — author implementation",
+      "url": "https://github.com/tonyzhaozh/act",
+      "kind": "code",
+      "year": 2023
+    }
+  ],
+  "last_reviewed": "2026-11-14",
+  "content_status": "ready",
+  "diagram": "act",
+  "localizations": {
+    "en": {
+      "engineer": {
+        "title": "ACT: predicting action chunks",
+        "short_description": "ACT is a neural architecture trained on demonstrations to produce a block of future actions in one computation.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "What it is",
+            "paragraphs": [
+              "ACT is a neural robot-policy architecture combining a transformer with learning from demonstrations. Its output is a numerical action sequence for several future timesteps.",
+              "For example, a robot places a battery into a holder. The original ACT implementation takes camera images and joint positions, then outputs several future joint-position targets. A controller uses the commands for movement, the camera provides another image and the model can calculate the next overlapping block."
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "Architecture and representations",
+            "paragraphs": [
+              "Image features, proprioceptive information and a latent style variable enter a transformer encoder–decoder. The output has a horizon dimension and an action dimension: H future steps, each with D coordinates. The original bimanual setting uses the robot's joint-space action convention; porting ACT to Cartesian targets requires a corresponding dataset and execution interface."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Learning from demonstrations",
+            "paragraphs": [
+              "The original method uses a conditional variational autoencoder objective. A training-only encoder infers a latent distribution from demonstrated actions and robot state. Reconstruction encourages accurate action chunks, while a KL term regularizes the latent distribution toward its prior. This helps model variation in demonstrations; it does not automatically make unfamiliar contact states recoverable."
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "Inference and temporal aggregation",
+            "paragraphs": [
+              "At inference, the demonstration encoder is removed and the latent variable is set to the prior mean in the original implementation. The policy can predict a new overlapping chunk at each update. Temporal aggregation combines predictions for the same physical timestep from different chunks, weighting them by age. This is different from averaging all timesteps inside one chunk."
+            ]
+          },
+          {
+            "id": "timing",
+            "title": "Prediction horizon is not execution horizon",
+            "paragraphs": [
+              "Predicting H actions does not require executing all H before looking again. A rolling execution loop can use only the current aggregated target, obtain another observation and predict again. Horizon, policy update frequency, camera latency and servo frequency are separate configuration choices. Measure their combined deadline and the age of observations reaching the model."
+            ]
+          },
+          {
+            "id": "applications",
+            "title": "Where it is useful",
+            "paragraphs": [
+              "ACT is suited to tasks with repeatable observation and action interfaces, particularly coordinated manipulation for which demonstrations are practical. Action chunks represent local temporal structure and reduce the need to predict every future command independently. The original project's results describe its evaluated hardware and tasks, not a universal demonstration budget."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Evaluation and failure modes",
+            "paragraphs": [
+              "Split evaluation by demonstration session, objects and initial conditions. Measure closed-loop task success, interventions, contact failures and recovery after disturbances, rather than reconstruction loss alone. Camera changes, occlusion, shifted objects and inconsistent demonstrations can cause drift. Temporal averaging can smooth useful rapid reactions as well as unwanted jumps."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "ACT versus other action generators",
+            "paragraphs": [
+              "Unlike a standard single-action regressor, ACT predicts a structured chunk. Unlike Diffusion Policy, its original inference does not iteratively denoise an action sample. Both still require aligned demonstrations, a well-defined action representation and a verified controller. Changing the generator does not resolve calibration, force limiting or emergency-stop requirements."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "ACT: predicting action chunks",
+        "short_description": "ACT is a neural architecture trained on demonstrations to produce a block of future actions in one computation.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "What it is",
+            "paragraphs": [
+              "ACT is a learned action model that uses examples of an operation and then calculates short command sequences for a robot.",
+              "For example, a robot places a battery into a holder. The original ACT implementation takes camera images and joint positions, then outputs several future joint-position targets. A controller uses the commands for movement, the camera provides another image and the model can calculate the next overlapping block."
+            ]
+          },
+          {
+            "id": "inputs",
+            "title": "What a pilot needs",
+            "paragraphs": [
+              "Plan for a teleoperation interface, synchronized video and robot states, consistent gripper commands, data review and repeatable task setup. Operators must demonstrate successful work and useful variation in starting conditions. Data quality work is part of the cost, even when a paper describes a small demonstration collection."
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "How work is executed",
+            "paragraphs": [
+              "The model predicts a block of future targets. A controller executes commands while new observations allow the policy to update its prediction. Overlapping predictions may be combined to reduce abrupt changes. A longer predicted block does not mean that the production cell should run blind for that entire interval."
+            ]
+          },
+          {
+            "id": "decision",
+            "title": "What to compare before choosing it",
+            "paragraphs": [
+              "Compare ACT with a simpler behavior-cloning baseline and, when justified, another action generator on the same demonstrations and acceptance protocol. Count complete tasks, cycle-time variation, interventions and recovery labor. Include integration, compute provisioning, camera maintenance and retraining after process changes in the comparison."
+            ]
+          },
+          {
+            "id": "risk",
+            "title": "Limits of the business case",
+            "paragraphs": [
+              "An attractive laboratory demonstration does not establish uptime for a new factory. Changes in packaging, lighting or contact geometry can remove the conditions that made the policy work. Begin with a bounded task and a staffed exception path. Scaling needs evidence across shifts and object variations, plus independent safety controls."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "ACT: predicting action chunks",
+        "short_description": "ACT is a neural architecture trained on demonstrations to produce a block of future actions in one computation.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "What it is",
+            "paragraphs": [
+              "ACT is a neural-network design in which a robot receives a connected block of upcoming movements rather than one isolated next command.",
+              "For example, a robot places a battery into a holder. The original ACT implementation takes camera images and joint positions, then outputs several future joint-position targets. A controller uses the commands for movement, the camera provides another image and the model can calculate the next overlapping block."
+            ]
+          },
+          {
+            "id": "observations",
+            "title": "What the model sees",
+            "paragraphs": [
+              "In the original system, camera images and the positions of the robot's joints provide the context. A transformer connects this information to a sequence of future joint targets. The software sending those targets still needs a controller that can move the actual machine and react through its own feedback loop."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Learning the pattern of a demonstration",
+            "paragraphs": [
+              "People teleoperate the robot while images and actions are recorded together. Training compares predicted chunks with the demonstrated chunks. The original architecture also learns a latent representation of variation in demonstrations. This is a statistical way to represent different examples, not a robot acquiring intentions."
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "Overlapping predictions",
+            "paragraphs": [
+              "A robot can predict a new chunk before the previous chunk has ended. Several predictions then refer to the same next moment. Temporal aggregation combines those overlapping estimates. It can make targets smoother, but smoothing is not always helpful when the robot needs to react quickly to an unexpected event."
+            ]
+          },
+          {
+            "id": "boundaries",
+            "title": "What this does not solve",
+            "paragraphs": [
+              "ACT can reproduce useful coordinated movements, yet an object placed outside the demonstrated conditions can still cause failure. Compare it with Diffusion Policy: both learn from demonstrations, but they generate chunks differently. To judge either one, watch complete attempts and recoveries, not only a carefully selected successful video."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "ACT: predicting action chunks",
+        "short_description": "ACT is a movement-selection program with a neural network that calculates several upcoming commands together in one block.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "What it is",
+            "paragraphs": [
+              "ACT is a movement-selection program with a neural network that calculates several upcoming commands together in one block.",
+              "For example, a robot places a battery into a holder. The original ACT implementation takes camera images and joint positions, then outputs several future joint-position targets. A controller uses the commands for movement, the camera provides another image and the model can calculate the next overlapping block."
+            ]
+          },
+          {
+            "id": "seeing",
+            "title": "Pictures and joint positions",
+            "paragraphs": [
+              "The robot receives camera pictures and measurements of its joints. A computer model called a transformer connects those inputs to the next group of commands. Another program, the controller, sends suitable instructions to the motors. These are different jobs."
+            ]
+          },
+          {
+            "id": "practice",
+            "title": "Learning from examples",
+            "paragraphs": [
+              "A person first guides the robot through the task. The computer records what the robot saw and how it moved. During training, the model's predicted commands are compared with these examples. Poorly matched pictures and movements can teach an unhelpful pattern."
+            ]
+          },
+          {
+            "id": "checking",
+            "title": "Looking again while moving",
+            "paragraphs": [
+              "Before the predicted group is finished, the robot can look again and predict another group. The groups overlap. ACT can combine their predictions for the next moment, a little like using several recent sketches to choose one smooth line. It still needs new measurements."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "A changed situation needs checking",
+            "paragraphs": [
+              "If someone moves the holder or hides the battery from the camera, the learned movement may fail. Predicting smooth commands does not prove they are safe. Engineers test different starts, watch unsuccessful attempts and provide a way to stop the robot. ACT learns a pattern; it does not understand the task like a person."
+            ]
+          }
+        ]
+      }
+    },
+    "ru": {
+      "engineer": {
+        "title": "ACT: действия последовательностями",
+        "short_description": "ACT — нейросетевая архитектура, обучаемая по демонстрациям и выдающая блок будущих действий за один расчёт.",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "Что это такое",
+            "paragraphs": [
+              "ACT — нейросетевая архитектура политики робота, объединяющая трансформер и обучение по демонстрациям. Её выход — числовая последовательность действий для нескольких будущих моментов.",
+              "Например, робот помещает батарейку в держатель. В исходной реализации ACT получает изображения камер и положения суставов и выдаёт несколько будущих целевых положений суставов. Контроллер использует команды для движения, камера получает новый кадр, и модель может рассчитать следующий перекрывающийся блок."
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "Архитектура и представления",
+            "paragraphs": [
+              "Признаки изображений, проприоцептивные данные и латентная переменная стиля поступают в трансформер. Выход организован как H будущих шагов по D координат действий. Суставное представление исходной двурукой установки нельзя без преобразования подключить к интерфейсу декартовых команд: должны совпадать система координат, нормализация, единицы и смысл команды захвата."
+            ]
+          },
+          {
+            "id": "training",
+            "title": "Обучение по демонстрациям",
+            "paragraphs": [
+              "Исходный метод использует условный вариационный автоэнкодер. Обучающий энкодер оценивает распределение латентной переменной по показанным действиям и состоянию. Ошибка восстановления приближает предсказанные блоки к демонстрациям, а KL-слагаемое сближает латентное распределение с априорным. Это способ учитывать вариативность примеров, а не гарантия восстановления из незнакомого контакта."
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "Вывод и временное объединение",
+            "paragraphs": [
+              "При исполнении энкодер демонстраций удаляют; в исходной реализации латентную переменную устанавливают в среднее априорного распределения. На каждом обновлении можно предсказывать новый перекрывающийся блок. Temporal aggregation объединяет прогнозы разных блоков, относящиеся к одному физическому моменту, с весами по их возрасту. Усреднять все шаги одного блока — другая операция."
+            ]
+          },
+          {
+            "id": "timing",
+            "title": "Горизонт прогноза и частота управления",
+            "paragraphs": [
+              "Длина предсказания не обязывает выполнять весь блок без новых наблюдений. Можно отправлять только следующую объединённую цель, снова получать изображение и пересчитывать блок. Отдельно задаются горизонт, частота обновления policy, частота сервоконтура и допустимый возраст кадра. Проверяют суммарную задержку, а не только скорость одного вызова нейросети."
+            ]
+          },
+          {
+            "id": "applications",
+            "title": "Применение и полезные свойства",
+            "paragraphs": [
+              "ACT подходит для согласованной манипуляции, когда доступны качественные демонстрации и повторяемый интерфейс наблюдений и команд. Блоки представляют локальную структуру движения, включая координацию двух рук. Результаты исходной статьи относятся к её оборудованию и проверенным задачам; их нельзя превращать в обещание того же объёма данных для любого изделия."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Проверка и ошибки",
+            "paragraphs": [
+              "Тестовые эпизоды отделяют по сессиям записи, объектам и начальным условиям. Измеряют завершение задачи, вмешательства, нарушения контакта и восстановление после возмущений. Низкая ошибка восстановления ещё не означает хорошего поведения в замкнутом цикле. Окклюзия, смена камеры и смещение предмета вызывают дрейф; сглаживание может задерживать нужную быструю реакцию."
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "Сравнение с соседними методами",
+            "paragraphs": [
+              "В отличие от регрессора одиночного действия ACT предсказывает структурированную последовательность. В отличие от Diffusion Policy исходный ACT при выводе не выполняет итеративное удаление шума из действий. Оба подхода нуждаются в согласованных демонстрациях и проверенном контроллере. Новый генератор действий не отменяет калибровку, ограничения усилий и аварийную остановку."
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "ACT: действия последовательностями",
+        "short_description": "ACT — нейросетевая архитектура, обучаемая по демонстрациям и выдающая блок будущих действий за один расчёт.",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "Что это такое",
+            "paragraphs": [
+              "ACT — обучаемая модель действий, которая получает примеры выполнения операции и затем рассчитывает короткие последовательности команд роботу.",
+              "Например, робот помещает батарейку в держатель. В исходной реализации ACT получает изображения камер и положения суставов и выдаёт несколько будущих целевых положений суставов. Контроллер использует команды для движения, камера получает новый кадр, и модель может рассчитать следующий перекрывающийся блок."
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "Что понадобится для пилота",
+            "paragraphs": [
+              "В бюджет входят телеуправление, синхронная запись видео и состояний, единообразные команды захвата, просмотр данных и воспроизводимая постановка задачи. Операторам нужно показать успешную работу и допустимые варианты начальных условий. Даже небольшой набор демонстраций требует подготовки, проверки и обслуживания оборудования записи."
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "Как выполняется работа",
+            "paragraphs": [
+              "Модель выдаёт блок будущих целей, но это не разрешение выполнять весь блок вслепую. Контроллер отправляет команды, а новые наблюдения позволяют обновлять прогноз. Перекрывающиеся предсказания можно объединять для плавности. Подходящую частоту обновления определяет динамика конкретной операции и доступное вычислительное оборудование."
+            ]
+          },
+          {
+            "id": "choice",
+            "title": "Что сравнивать",
+            "paragraphs": [
+              "Сопоставляйте ACT с простым обучением по демонстрациям и, при обоснованной необходимости, другим генератором действий на одинаковых исходных данных. Считайте завершённые операции, разброс времени цикла, вмешательства и затраты на восстановление. Стоимость интеграции, камер и переобучения после изменений процесса должна входить в расчёт."
+            ]
+          },
+          {
+            "id": "risk",
+            "title": "Границы экономического вывода",
+            "paragraphs": [
+              "Успешная лабораторная демонстрация не устанавливает доступность оборудования в новой смене. Изменения упаковки, света или контактной геометрии могут вывести систему за условия обучения. Начинайте с ограниченной операции и понятного пути обработки исключений человеком. Масштабирование требует проверки разных условий и независимых мер безопасности."
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "ACT: действия последовательностями",
+        "short_description": "ACT — нейросетевая архитектура, обучаемая по демонстрациям и выдающая блок будущих действий за один расчёт.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Что это такое",
+            "paragraphs": [
+              "ACT — устройство нейронной сети, в котором робот получает не одну следующую команду, а сразу связанный блок будущих движений.",
+              "Например, робот помещает батарейку в держатель. В исходной реализации ACT получает изображения камер и положения суставов и выдаёт несколько будущих целевых положений суставов. Контроллер использует команды для движения, камера получает новый кадр, и модель может рассчитать следующий перекрывающийся блок."
+            ]
+          },
+          {
+            "id": "inputs",
+            "title": "Что видит модель",
+            "paragraphs": [
+              "В исходной системе контекст дают изображения камер и положения суставов. Трансформер связывает эти данные с будущими суставными целями. До двигателей команды доходят через отдельный контроллер. Он выполняет свою задачу обратной связи, тогда как обученная модель выбирает, какое движение предложить."
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "Откуда берётся навык",
+            "paragraphs": [
+              "Человек управляет роботом, а программа одновременно записывает картинки и действия. На обучении предсказанные блоки сравнивают с показанными. Исходная архитектура также учит латентное представление различий между демонстрациями. Это статистический способ учесть вариативность, а не появление намерений у машины."
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "Перекрывающиеся предсказания",
+            "paragraphs": [
+              "Робот может построить новый блок, пока предыдущий ещё не закончился. Несколько прогнозов тогда относятся к одному следующему моменту. Temporal aggregation объединяет такие оценки. Это помогает сглаживать цели, но может мешать, если неожиданное событие требует немедленно изменить движение."
+            ]
+          },
+          {
+            "id": "boundaries",
+            "title": "Чего метод не обещает",
+            "paragraphs": [
+              "ACT способен воспроизводить согласованные действия, однако предмет за пределами показанных условий может вызвать сбой. Diffusion Policy тоже учится на демонстрациях, но иначе генерирует последовательности. Сравнивать стоит полные попытки, включая ошибки и восстановление, а не только удачно выбранный видеоролик."
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "ACT: действия последовательностями",
+        "short_description": "ACT — программа выбора движений с нейронной сетью, которая рассчитывает несколько следующих команд одним блоком.",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "Что это такое",
+            "paragraphs": [
+              "ACT — программа выбора движений с нейронной сетью, которая рассчитывает несколько следующих команд одним блоком.",
+              "Например, робот помещает батарейку в держатель. В исходной реализации ACT получает изображения камер и положения суставов и выдаёт несколько будущих целевых положений суставов. Контроллер использует команды для движения, камера получает новый кадр, и модель может рассчитать следующий перекрывающийся блок."
+            ]
+          },
+          {
+            "id": "seeing",
+            "title": "Картинки и суставы",
+            "paragraphs": [
+              "На вход поступают изображения камер и измеренные положения суставов. Модель под названием трансформер связывает их с группой следующих команд. Другая программа, контроллер, помогает передать подходящие указания двигателям. Выбрать цель и управлять двигателем — разные задачи."
+            ]
+          },
+          {
+            "id": "practice",
+            "title": "Учиться по примерам",
+            "paragraphs": [
+              "Сначала человек направляет робота через нужную операцию. Компьютер записывает, что робот видел и как двигался. При обучении предсказанные команды сравнивают с этими примерами. Если картинка и движение записаны несогласованно, полезного образца может не получиться."
+            ]
+          },
+          {
+            "id": "checking",
+            "title": "Посмотреть ещё раз",
+            "paragraphs": [
+              "Робот может получить новое изображение до окончания предсказанной группы и построить следующую. Группы перекрываются. ACT умеет объединять их прогнозы для ближайшего момента: примерно как выбрать плавную линию по нескольким недавним наброскам. Для этого всё равно нужны новые измерения."
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "Когда условия изменились",
+            "paragraphs": [
+              "Если держатель передвинули или батарейку закрыли от камеры, выученное движение может не сработать. Плавная команда ещё не обязательно безопасна. Инженеры проверяют разные начальные положения, разбирают неудачные попытки и предусматривают остановку. Модель учит закономерности, а не понимает цель как человек."
+            ]
+          }
+        ]
+      }
+    },
+    "ja": {
+      "engineer": {
+        "title": "ACT：動作のまとまりを予測する",
+        "short_description": "ACTは、実演から学び、一回の計算で複数時刻の行動をまとめて出すニューラルネットワークの構成です。",
+        "sections": [
+          {
+            "id": "overview",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "ACTは、Transformerと実演に基づく学習を組み合わせたロボット方策の構成です。出力は、複数の将来時刻に対応する数値の行動列です。",
+              "例えば、電池を入れ物にはめるロボットを考えます。元のACT実装は、カメラ画像と関節位置を受け取り、先の複数時刻の関節目標値を出します。制御器が指令を使って機体を動かし、新しい画像を得たら、次の重なった動作列を計算できます。"
+            ]
+          },
+          {
+            "id": "architecture",
+            "title": "構成と入出力",
+            "paragraphs": [
+              "画像の特徴、固有感覚の情報、潜在変数をTransformerへ渡します。出力は予測区間Hと行動次元Dを持つ配列です。関節空間で学んだモデルを、そのまま手先の座標指令へ接続できません。座標系、単位、正規化、グリッパーの値の意味までデータと実行側で一致させます。"
+            ]
+          },
+          {
+            "id": "training",
+            "title": "実演からの学習",
+            "paragraphs": [
+              "元の手法は条件付き変分オートエンコーダーを使います。学習時だけ使うエンコーダーが、実演された動作列と状態から潜在変数の分布を推定します。再構成誤差で動作列を実演に近づけ、KL項で事前分布とのずれを抑えます。これは実演のばらつきを扱う仕組みであり、未知の接触状態からの復帰を保証しません。"
+            ]
+          },
+          {
+            "id": "execution",
+            "title": "推論と予測の統合",
+            "paragraphs": [
+              "推論時には実演用エンコーダーを除き、元の実装では潜在変数を事前分布の平均に固定します。更新ごとに動作列を予測すると、同じ実時刻に対する予測が複数できます。Temporal aggregationは、それらを予測の古さに応じて統合します。一つの列の全時刻を平均する操作とは異なります。"
+            ]
+          },
+          {
+            "id": "timing",
+            "title": "予測区間と実行周期",
+            "paragraphs": [
+              "Hステップを予測しても、すべてを観測なしで実行する必要はありません。次の目標だけを使い、観測を更新して再予測できます。予測区間、方策周期、サーボ周期、画像の遅延は別の設計項目です。推論時間だけでなく、撮影から実際の指令までの遅延を測ります。"
+            ]
+          },
+          {
+            "id": "applications",
+            "title": "適した場面",
+            "paragraphs": [
+              "質のよい実演を集められ、観測と行動の形式が一定した協調操作に向いています。動作列は両腕の局所的な時間関係を表現できます。論文の成果は、その機体と評価した作業についての結果です。別の製品でも同じ量のデータで済む、とは限りません。"
+            ]
+          },
+          {
+            "id": "evaluation",
+            "title": "評価と失敗",
+            "paragraphs": [
+              "収録セッション、物体、初期条件を分け、閉ループでの完了率、介入、接触の失敗、外乱後の復帰を調べます。再構成誤差が小さくても実機の誤差は蓄積します。遮蔽、カメラの変更、物体の位置ずれで条件が変わり、平滑化が必要な素早い修正を遅らせる場合もあります。"
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "他の方法との違い",
+            "paragraphs": [
+              "単一行動の回帰に対し、ACTはまとまった列を予測します。元の推論はDiffusion Policyのように反復的なノイズ除去を行いません。どちらも同期した実演、適切な行動表現、検証済みの制御器が必要です。生成方式を替えても、校正、力の制限、非常停止の設計は残ります。"
+            ]
+          }
+        ]
+      },
+      "business": {
+        "title": "ACT：動作のまとまりを予測する",
+        "short_description": "ACTは、実演から学び、一回の計算で複数時刻の行動をまとめて出すニューラルネットワークの構成です。",
+        "sections": [
+          {
+            "id": "purpose",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "ACTは、作業例を使って訓練し、短い指令列をまとめて計算する行動モデルです。",
+              "例えば、電池を入れ物にはめるロボットを考えます。元のACT実装は、カメラ画像と関節位置を受け取り、先の複数時刻の関節目標値を出します。制御器が指令を使って機体を動かし、新しい画像を得たら、次の重なった動作列を計算できます。"
+            ]
+          },
+          {
+            "id": "resources",
+            "title": "試験導入の準備",
+            "paragraphs": [
+              "遠隔操作、同期した映像と状態の記録、統一されたグリッパー指令、データ確認、再現可能な作業環境を準備します。担当者は成功例と初期条件の違いを示します。実演件数が少なくても収録設備や品質確認の費用は残ります。"
+            ]
+          },
+          {
+            "id": "operation",
+            "title": "予測と実行を分ける",
+            "paragraphs": [
+              "先の目標をまとめて出しても、その区間を観測なしで実行する必要はありません。新しい画像で予測を更新し、制御器が機体を動かします。重なった予測を統合して滑らかにする場合もあります。更新周期は作業と計算資源から決めます。"
+            ]
+          },
+          {
+            "id": "comparison",
+            "title": "比較する指標",
+            "paragraphs": [
+              "同じ実演と受入試験で単純な模倣学習や別の生成法と比べます。完了率、作業時間のばらつき、人の介入、復旧工数を数えます。カメラの保守、設備への接続、品種変更後の再学習まで含む総費用で判断します。"
+            ]
+          },
+          {
+            "id": "risk",
+            "title": "範囲を限定して確かめる",
+            "paragraphs": [
+              "成功動画だけで新しい工場の稼働率は証明できません。包装、照明、接触形状が変われば学習条件から外れます。対象工程を限定し、人が例外を引き取れる運用から始めます。拡大には異なる条件での評価と独立した安全対策が必要です。"
+            ]
+          }
+        ]
+      },
+      "enthusiast": {
+        "title": "ACT：動作のまとまりを予測する",
+        "short_description": "ACTは、実演から学び、一回の計算で複数時刻の行動をまとめて出すニューラルネットワークの構成です。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "ACTは、次の指令だけでなく、少し先までの動きをひとまとまりで出すニューラルネットワークの構造です。",
+              "例えば、電池を入れ物にはめるロボットを考えます。元のACT実装は、カメラ画像と関節位置を受け取り、先の複数時刻の関節目標値を出します。制御器が指令を使って機体を動かし、新しい画像を得たら、次の重なった動作列を計算できます。"
+            ]
+          },
+          {
+            "id": "inputs",
+            "title": "何を見て予測するか",
+            "paragraphs": [
+              "元のシステムはカメラ画像と現在の関節位置を入力します。Transformerがそれらと将来の目標を結びつけます。モーターを動かす段階では別の制御器が働きます。動作の目標を選ぶ役割と、駆動部を制御する役割は異なります。"
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "人のお手本から学ぶ",
+            "paragraphs": [
+              "人が遠隔操作し、その画像と動作を同時に記録します。学習では予測した列と実演の列を比べます。元の構成には実演の違いを表す潜在変数もあります。これは統計的なばらつきの表現で、機械に意図が生まれる意味ではありません。"
+            ]
+          },
+          {
+            "id": "feedback",
+            "title": "重なった予測",
+            "paragraphs": [
+              "前の列が終わる前に新しい列を予測すると、同じ次の瞬間への予測がいくつか重なります。それらを統合するのがTemporal aggregationです。滑らかさに役立ちますが、急な変化へすぐ対応したい場合には平均化が不利になることもあります。"
+            ]
+          },
+          {
+            "id": "boundaries",
+            "title": "成功例だけで判断しない",
+            "paragraphs": [
+              "協調操作を再現できても、物体を見慣れない場所へ置くと失敗します。Diffusion Policyも実演から学びますが、動作列を作る計算は異なります。選ばれた成功例だけでなく、最初から最後までの試行と、失敗からの復帰を比べることが大切です。"
+            ]
+          }
+        ]
+      },
+      "children": {
+        "title": "ACT：動作のまとまりを予測する",
+        "short_description": "ACTは、いくつかの次の動きを一つの組にして計算する、ニューラルネットワークを使った仕組みだ。",
+        "sections": [
+          {
+            "id": "idea",
+            "title": "どんな技術か",
+            "paragraphs": [
+              "ACTは、いくつかの次の動きを一つの組にして計算する、ニューラルネットワークを使った仕組みだ。",
+              "例えば、電池を入れ物にはめるロボットを考えます。元のACT実装は、カメラ画像と関節位置を受け取り、先の複数時刻の関節目標値を出します。制御器が指令を使って機体を動かし、新しい画像を得たら、次の重なった動作列を計算できます。"
+            ]
+          },
+          {
+            "id": "seeing",
+            "title": "画像と関節の位置",
+            "paragraphs": [
+              "カメラの画像と関節（かんせつ）の位置が入力になる。Transformerというモデルが、それらを次の指令と結びつける。モーターを実際に動かすのは制御器（せいぎょき）の役目だ。目標を選ぶことと、モーターを動かすことは別の仕事になる。"
+            ]
+          },
+          {
+            "id": "learning",
+            "title": "お手本を記録する",
+            "paragraphs": [
+              "最初は人がロボットを操作して作業を見せる。コンピューターは画像と動きを一緒に記録し、学習中に予測した指令をお手本と比べて直す。記録の時刻がずれると、画像と動きの正しい関係を学びにくくなる。"
+            ]
+          },
+          {
+            "id": "checking",
+            "title": "もう一度見て直す",
+            "paragraphs": [
+              "前のまとまりが終わる前に、もう一度見て新しい予測を作れる。同じ次の瞬間への予測が重なったら、それらをまとめて目標を選ぶ。何枚かの下書きから滑らかな線を選ぶ感じだ。ただし新しい測定を省いてよいわけではない。"
+            ]
+          },
+          {
+            "id": "limits",
+            "title": "条件が変わると",
+            "paragraphs": [
+              "入れ物をずらしたり、電池をカメラから隠したりすると、学んだ動きは失敗することがある。滑らかな指令でも安全とは限らない。技術者は違う開始位置や失敗を調べ、止める仕組みを用意する。人と同じように目的を理解しているわけではない。"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

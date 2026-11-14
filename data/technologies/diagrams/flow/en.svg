@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-labelledby="flow-en-title flow-en-desc">
+<title id="flow-en-title">Flow matching in action space</title>
+<desc id="flow-en-desc">Generative velocity is not the motor velocity.</desc>
+<style>text{font-family:Arial,sans-serif;fill:#202421}@media(prefers-reduced-motion:reduce){.atlas-pulse{display:none}}</style>
+<defs><marker id="flow-en-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#596259"/></marker></defs>
+<path d="M100.0 103.0 L100.0 187.0" fill="none" stroke="#596259" stroke-width="1.5" marker-end="url(#flow-en-arrow)"/>
+<path d="M252.5 103.0 L147.5 187.0" fill="none" stroke="#596259" stroke-width="1.5" marker-end="url(#flow-en-arrow)"/>
+<path d="M183.0 225.0 L217.0 225.0" fill="none" stroke="#596259" stroke-width="1.5" marker-end="url(#flow-en-arrow)"/>
+<path d="M252.5 263.0 L147.5 347.0" fill="none" stroke="#596259" stroke-width="1.5" marker-end="url(#flow-en-arrow)"/>
+<path d="M183.0 385.0 L217.0 385.0" fill="none" stroke="#596259" stroke-width="1.5" marker-end="url(#flow-en-arrow)"/>
+<path d="M385 385 L394 385 L394 8 L100 8 L100 24" fill="none" stroke="#596259" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#flow-en-arrow)"/>
+<rect x="15" y="25" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
+<text x="100" y="57" text-anchor="middle" font-size="14">Observations</text>
+<text x="100" y="80" text-anchor="middle" font-size="14">Conditioning</text>
+<rect x="215" y="25" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
+<text x="300" y="57" text-anchor="middle" font-size="14">Initial</text>
+<text x="300" y="80" text-anchor="middle" font-size="14">noise sample</text>
+<rect x="15" y="185" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
+<text x="100" y="217" text-anchor="middle" font-size="14">Velocity field</text>
+<text x="100" y="240" text-anchor="middle" font-size="14">Integration</text>
+<rect x="215" y="185" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
+<text x="300" y="217" text-anchor="middle" font-size="14">Generated</text>
+<text x="300" y="240" text-anchor="middle" font-size="14">action sequence</text>
+<rect x="15" y="345" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
+<text x="100" y="377" text-anchor="middle" font-size="14">Execute prefix</text>
+<text x="100" y="400" text-anchor="middle" font-size="14">Controller</text>
+<rect x="215" y="345" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
+<text x="300" y="377" text-anchor="middle" font-size="14">New observations</text>
+<text x="300" y="400" text-anchor="middle" font-size="14">Repeat the loop</text>
+<g class="atlas-pulse" opacity="0"><circle r="3" fill="#8b2020"><animateMotion dur="6s" repeatCount="indefinite" path="M100.0 103.0 L100.0 187.0"/></circle><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.7;0.8;1" dur="6s" repeatCount="indefinite"/></g>
+</svg>

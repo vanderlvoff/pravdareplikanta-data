@@ -2,150 +2,159 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-13",
-  "issue_id": "daily-2026-11-13",
+  "issue_date": "2026-11-14",
+  "issue_id": "daily-2026-11-14",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-12T20:46:06.640875Z",
-  "title": "Lights off. What did the robot see?",
-  "lead": "A researcher dimmed the room where a robot moved a ball into a basket. One recorded view barely became darker, probably because of the cameras’ automatic settings.",
+  "generated_at": "2026-11-13T21:02:43.279476Z",
+  "title": "A thousand-robot plan begins with testing the job",
+  "lead": "GXO runs warehouse operations, while Apptronik builds robots. They want to test more jobs and then expand to as many as a thousand machines if work and safety requirements are met.",
   "news": [
     {
-      "id": "ntt-action-preview",
-      "title": "Check whether the stack will fall first",
-      "summary": "Japan's NTT made software compare what could happen after different robot movements. In a small experiment, the check helped a robot place objects on a shelf more successfully.",
-      "details": "NTT researchers built a world model: software that predicts changes around a robot. It estimates object properties from images and uses the laws of motion to help generate video predictions of a load falling or staying in place.",
-      "technical_novelty": "Japan's NTT made software compare what could happen after different robot movements. In a small experiment, the check helped a robot place objects on a shelf more successfully.",
-      "engineering_impact": "NTT wants to apply this approach to airport baggage. It has not yet shown that result on an operating baggage line. Real bags vary in shape and weight, while the reported experiment used a small test setup.",
-      "limitations": "The company wants to apply this approach to airport baggage. It has not yet shown that result on an operating baggage line. Real bags vary in shape and weight, while the reported experiment used a small test setup.",
-      "evidence_status": "The company itself reports the tests, specifications or plans. The announcement supplies no independent verification.",
-      "published_at": "2026-11-11",
-      "organization": "NTT",
-      "source_ids": [
-        "ntt-world-20261111"
-      ],
-      "time_window": "72h",
-      "body": "Putting something on a shelf can go wrong even when the arm reaches the right place. A neighboring object might fall. Researchers at Japan's NTT tried calculating the consequences of several movements before choosing which one to use.\n\nThey built a world model: software that predicts changes around a robot. It estimates object position, speed and other properties from images. Calculations using the laws of motion then help produce a video of a possible outcome, such as a load staying in place or falling.\n\nA small robot tested the idea by stacking objects on a shelf. Reported success rose from 73.1% to 92.3%. Those shares are roughly 73 and 92 successes out of a hundred; the announcement does not say that exactly a hundred attempts were made.\n\nThe company wants to apply this approach to airport baggage. It has not yet shown that result on an operating baggage line. Real bags vary in shape and weight, while the reported experiment used a small test setup.",
-      "image": null
-    },
-    {
-      "id": "atlas-wheel-test",
-      "title": "Wheels help engineers test a robot's motors",
-      "summary": "Boston Dynamics engineers replaced a humanoid robot's feet with wheels. They used it to check how real motors carry out movements learned on a computer.",
-      "details": "In the Boston Dynamics experiment, robot movements are first tried in simulation, a computer experiment. Software learns using scores for its results, while measurements of real motors help keep the computer model from granting them unrealistic strength.",
-      "technical_novelty": "Boston Dynamics engineers replaced a humanoid robot's feet with wheels. They used it to check how real motors carry out movements learned on a computer.",
-      "engineering_impact": "Some movements followed recordings of a person. During a quick sideways movement, the robot rolled where the person slid their feet. The experiment does not tell us motor lifetime: the company gives no number of hours under these loads. For reference, the robot is called Atlas.",
-      "limitations": "Some movements followed recordings of a person. During a quick sideways movement, the robot rolled where the person slid their feet. The experiment does not tell us motor lifetime: the company gives no number of hours under these loads. For reference, the robot is called Atlas.",
-      "evidence_status": "The company itself reports the tests, specifications or plans. The announcement supplies no independent verification.",
-      "published_at": "2026-11-09",
-      "organization": "Boston Dynamics",
-      "source_ids": [
-        "bd-roll-20261109"
-      ],
-      "time_window": "7d",
-      "body": "The robot rolls, turns and stops sharply. Its wheels are not the launch of a new machine for sale. Boston Dynamics engineers wanted to test motors while they worked quickly and pushed hard for sustained periods.\n\nThe movements are first tried in a simulation, a computer experiment with a virtual robot. Software receives scores for the results and gradually finds useful movements. This is called reinforcement learning. If a virtual motor is stronger than the real one, the learned movement might fail on the laboratory floor.\n\nThe team therefore measured the real actuators, the devices that move robot parts. They adjusted the computer model to match those measurements. A special adapter attached each wheel to a drive that had previously moved a foot.\n\nSome movements followed recordings of a person. During a quick sideways movement, the robot rolled where the person slid their feet. The experiment does not tell us motor lifetime: the company gives no number of hours under these loads. For reference, the robot is called Atlas.",
-      "image": null
-    },
-    {
-      "id": "camera-lighting",
-      "title": "Why a dark room did not make a dark picture",
-      "summary": "A researcher in Denmark tested a robot in normal and low light. One recorded view barely became darker, probably because of the cameras’ automatic settings.",
-      "details": "Simon Cowling tested four robot-arm controllers. Success was 20 out of 40 attempts in normal light and 19 out of 40 in low light, but the camera pictures did not dim nearly as much as the room.",
-      "technical_novelty": "A researcher in Denmark tested a robot in normal and low light. One recorded view barely became darker, probably because of the cameras’ automatic settings.",
-      "engineering_impact": "That setting probably helped, but no separate comparison switched the automatic control off. The test therefore did not show how the programs handle genuinely dark pictures. Camera settings matter here because the program receives its pictures through the camera, rather than seeing the room directly.",
-      "limitations": "That setting probably helped, but no separate comparison switched the automatic control off. The test therefore did not show how the programs handle genuinely dark pictures. Camera settings matter here because the program receives its pictures through the camera, rather than seeing the room directly.",
-      "evidence_status": "The researchers describe their own tests. Repetition by another team has not been confirmed.",
-      "published_at": "2026-11-10",
-      "organization": "fysical.ai",
-      "source_ids": [
-        "cowling-light-261113810"
-      ],
-      "time_window": "72h",
-      "body": "A robot arm must pick the green ball instead of two red ones and put it in a basket. Simon Cowling of Denmark's fysical.ai tested four programs controlling that arm. They all learned from the same 50 demonstrations by a person.\n\nThe researcher then dimmed the room substantially. In normal light, 20 attempts out of 40 succeeded; in low light, 19 out of 40 succeeded. It would be tempting to say that darkness hardly mattered. But first we need to check what the cameras actually recorded.\n\nThe front camera's pictures became only 3% dimmer, even though light at the table fell roughly elevenfold. The camera on the arm recorded pictures 19% dimmer. Afterward, the author found automatic exposure enabled: the cameras could adjust how they collected light.\n\nThat setting probably helped, but no separate comparison switched the automatic control off. The test therefore did not show how the programs handle genuinely dark pictures. Camera settings matter here because the program receives its pictures through the camera, rather than seeing the room directly.",
-      "image": null
-    },
-    {
-      "id": "cable-action-context",
-      "title": "A robot uses what happened to a cable before",
-      "summary": "University of Bologna researchers compared ways to shape a cable on a table. Records of earlier movements helped control it, while a better prediction did not always lead to a better action.",
-      "details": "Bologna researchers compared ways to control a cable. One used stiffness, how hard it is to bend, and friction, which resists sliding; another used up to five previous movements and the shape changes they caused.",
-      "technical_novelty": "University of Bologna researchers compared ways to shape a cable on a table. Records of earlier movements helped control it, while a better prediction did not always lead to a better action.",
-      "engineering_impact": "Each trial allowed up to ten actions. Required accuracy meant cable points were, on average, no more than a centimeter from their targets, not that every point matched perfectly. The study only tested shaping on a plane. A person reset the cable, so starting shapes were not exactly identical across comparisons.",
-      "limitations": "Each trial allowed up to ten actions. Required accuracy meant cable points were, on average, no more than a centimeter from their targets, not that every point matched perfectly. The study only tested shaping on a plane. A person reset the cable, so starting shapes were not exactly identical across comparisons.",
-      "evidence_status": "The researchers describe their own tests. Repetition by another team has not been confirmed.",
-      "published_at": "2026-11-10",
-      "organization": "University of Bologna",
-      "source_ids": [
-        "bologna-cable-261114274"
-      ],
-      "time_window": "72h",
-      "body": "Imagine a cable on a table that needs to match a target shape. Pulling one spot changes more than that spot alone. University of Bologna researchers tested what information helps a robot choose where to grasp and how to move.\n\nOne program used estimates of stiffness and friction. Stiffness describes how hard the cable is to bend; friction resists sliding along the table. Another program used up to five earlier movements and the changes in shape they produced.\n\nThe programs learned in computer experiments first. Researchers then moved them to a real robot without extra training on that robot. The version using previous interactions reached the required accuracy more often: in 88.3% of trials, compared with 76.7% for a version using shape alone.\n\nEach trial allowed up to ten actions. Required accuracy meant cable points were, on average, no more than a centimeter from their targets, not that every point matched perfectly. The study only tested shaping on a plane. A person reset the cable, so starting shapes were not exactly identical across comparisons.",
-      "image": null
-    },
-    {
-      "id": "hachioji-crane-sim",
-      "title": "A robot waits for a truck in a computer-built yard",
-      "summary": "Japan's Space Data created a hypothetical construction yard with people, robots and vehicles. Inside the program, users can examine where participants need to wait for one another.",
-      "details": "Space Data placed a hypothetical construction yard on terrain around Hachioji Junction. Its program includes ten workers and fourteen robots, with adjustable numbers and tasks for comparing movement arrangements.",
-      "technical_novelty": "Japan's Space Data created a hypothetical construction yard with people, robots and vehicles. Inside the program, users can examine where participants need to wait for one another.",
-      "engineering_impact": "A safe route on screen does not prove that a physical robot will follow it safely. Some machine properties are estimates because exact values are not public. Nor does this announcement plan that construction at the junction: the company explicitly says the work is hypothetical.",
-      "limitations": "A safe route on screen does not prove that a physical robot will follow it safely. Some machine properties are estimates because exact values are not public. Nor does this announcement plan that construction at the junction: the company explicitly says the work is hypothetical.",
-      "evidence_status": "The company itself reports the tests, specifications or plans. The announcement supplies no independent verification.",
+      "id": "gxo-apollo-framework",
+      "title": "A thousand warehouse robots is still a conditional plan",
+      "summary": "GXO and robot maker Apptronik want to expand warehouse-helper trials. A possible 1,000 machines would depend on meeting requirements agreed in advance.",
+      "details": "GXO organizes warehouse work, while Apptronik builds humanoid robots. The companies agreed to test more ways for those machines to pick goods, move boxes and help with packing. They announced the expanded plan on November 12.",
+      "technical_novelty": "GXO and robot maker Apptronik want to expand warehouse-helper trials. A possible 1,000 machines would depend on meeting requirements agreed in advance. Its big number is up to a thousand robots over four years. That does not mean a thousand helpers are already working. Each job must first pass checks: is the machine fast enough, safe enough and suitable for the real warehouse?",
+      "engineering_impact": "GXO and robot maker Apptronik want to expand warehouse-helper trials. A possible 1,000 machines would depend on meeting requirements agreed in advance. A useful trial and a large purchase are different steps. If the agreed requirements are not met, the announced number does not become an achieved result. The agreement also gives no price or calculation of how long the new program would take to earn back its costs.",
+      "limitations": "GXO and robot maker Apptronik want to expand warehouse-helper trials. A possible 1,000 machines would depend on meeting requirements agreed in advance. A useful trial and a large purchase are different steps. If the agreed requirements are not met, the announced number does not become an achieved result. The agreement also gives no price or calculation of how long the new program would take to earn back its costs.",
+      "evidence_status": "This is the developers’ account or plan, not a new independent test.",
       "published_at": "2026-11-12",
-      "organization": "Space Data",
+      "organization": "GXO; Apptronik",
       "source_ids": [
-        "spacedata-hachioji-20261112"
+        "gxo-intent",
+        "gxo-forbes"
+      ],
+      "time_window": "72h",
+      "body": "GXO organizes warehouse work, while Apptronik builds humanoid robots. The companies agreed to test more ways for those machines to pick goods, move boxes and help with packing. They announced the expanded plan on November 12.\n\nIts big number is up to a thousand robots over four years. That does not mean a thousand helpers are already working. Each job must first pass checks: is the machine fast enough, safe enough and suitable for the real warehouse?\n\nExpanded trials are planned for 2027, with the first commercial use in North America intended for late that year. The companies want to provide robots as a service. A warehouse would get access to the machines, but exact charges and maintenance coverage are not announced.\n\nA useful trial and a large purchase are different steps. If the agreed requirements are not met, the announced number does not become an achieved result. The agreement also gives no price or calculation of how long the new program would take to earn back its costs.",
+      "image": null
+    },
+    {
+      "id": "asus-gallop-station",
+      "title": "ASUS teaches two robot arms to pack accessory kits",
+      "summary": "ASUS described a robot learning to pack accessories for computer boards. High success and a short working time are still targets rather than completed results.",
+      "details": "At an ASUS factory, a robot with two arms is learning to pack accessories for computer boards. The workstation has 15 small items. Many are inside thin clear bags that can change shape when touched, making them awkward for a gripper to handle.",
+      "technical_novelty": "ASUS described a robot learning to pack accessories for computer boards. High success and a short working time are still targets rather than completed results. Workers wear a small camera with their consent to show how they do the job. Other examples come from a person guiding the robot using special gloves and a headset. Computer experiments create variations so the program does not see only one identical situation.",
+      "engineering_impact": "ASUS described a robot learning to pack accessories for computer boards. High success and a short working time are still targets rather than completed results. Today's robot is fixed in place. Wheels and the company's own touch-sensitive hand are still planned additions. Customer trials are intended for 2027 and market availability for the second half of 2028, so today's setup is not the promised finished machine.",
+      "limitations": "ASUS described a robot learning to pack accessories for computer boards. High success and a short working time are still targets rather than completed results. Today's robot is fixed in place. Wheels and the company's own touch-sensitive hand are still planned additions. Customer trials are intended for 2027 and market availability for the second half of 2028, so today's setup is not the promised finished machine.",
+      "evidence_status": "This is the developers’ account or plan, not a new independent test.",
+      "published_at": "2026-11-13",
+      "organization": "ASUS",
+      "source_ids": [
+        "asus-station"
+      ],
+      "time_window": "72h",
+      "body": "At an ASUS factory, a robot with two arms is learning to pack accessories for computer boards. The workstation has 15 small items. Many are inside thin clear bags that can change shape when touched, making them awkward for a gripper to handle.\n\nWorkers wear a small camera with their consent to show how they do the job. Other examples come from a person guiding the robot using special gloves and a headset. Computer experiments create variations so the program does not see only one identical situation.\n\nASUS wants the robot to finish a kit within 20 seconds and succeed 99.5% of the time. That is about 995 successes in a thousand attempts. The company does not say it has already reached that result; this is the standard it wants to meet.\n\nToday's robot is fixed in place. Wheels and the company's own touch-sensitive hand are still planned additions. Customer trials are intended for 2027 and market availability for the second half of 2028, so today's setup is not the promised finished machine.",
+      "image": null
+    },
+    {
+      "id": "heir-human-context",
+      "title": "Showing a robot which object a person is looking at",
+      "summary": "A team including Tsinghua University recorded people's words, gaze and robot movements. It is testing whether these cues help complete a request, rather than merely identify an object.",
+      "details": "Someone asks a robot to bring that thing, but several objects are nearby. Researchers including a Tsinghua University team recorded speech and gaze direction to help the program identify the intended object. They posted their research paper on November 12.",
+      "technical_novelty": "A team including Tsinghua University recorded people's words, gaze and robot movements. It is testing whether these cues help complete a request, rather than merely identify an object. Special glasses measure gaze direction. This is a clue about where someone looks, not a way to read thoughts. The recordings include views from both the person and the robot, plus machine movements that a human operator controlled during data collection.",
+      "engineering_impact": "A team including Tsinghua University recorded people's words, gaze and robot movements. It is testing whether these cues help complete a request, rather than merely identify an object. A gaze clue does not automatically fix a failed grasp or a wrong movement. Mistakes can appear at different steps and add up. Even after choosing the correct object, the robot still has to bring it, so researchers score complete requests separately from individual actions.",
+      "limitations": "A team including Tsinghua University recorded people's words, gaze and robot movements. It is testing whether these cues help complete a request, rather than merely identify an object. A gaze clue does not automatically fix a failed grasp or a wrong movement. Mistakes can appear at different steps and add up. Even after choosing the correct object, the robot still has to bring it, so researchers score complete requests separately from individual actions.",
+      "evidence_status": "These are the researchers’ own tests; repetition by another team is not confirmed.",
+      "published_at": "2026-11-12",
+      "organization": "Tsinghua University; Beijing Academy of Artificial Intelligence; Fudan University; Yangu Robotics",
+      "source_ids": [
+        "heir-preprint"
+      ],
+      "time_window": "72h",
+      "body": "Someone asks a robot to bring that thing, but several objects are nearby. Researchers including a Tsinghua University team recorded speech and gaze direction to help the program identify the intended object. They posted their research paper on November 12.\n\nSpecial glasses measure gaze direction. This is a clue about where someone looks, not a way to read thoughts. The recordings include views from both the person and the robot, plus machine movements that a human operator controlled during data collection.\n\nIn a separate test, the robot acted independently. It had to interpret the request, travel to the right place, pick up an object and finish without help. It completed about five out of 27 requests. Recorded teaching examples cannot be counted as the same kind of independent success.\n\nA gaze clue does not automatically fix a failed grasp or a wrong movement. Mistakes can appear at different steps and add up. Even after choosing the correct object, the robot still has to bring it, so researchers score complete requests separately from individual actions.",
+      "image": null
+    },
+    {
+      "id": "carter-workflow-report",
+      "title": "A worker can guide this robot cart by hand",
+      "summary": "In a new interview, Robust AI's founders described a transport robot whose direction a person can change by hand. They explain shared warehouse work without publishing a new safety test.",
+      "details": "A warehouse worker needs to choose and load items, then move them somewhere else. Robust AI makes a robot cart for working alongside people. In a November 13 MIT News interview, its founders explained why a person should have a convenient way to guide the machine by hand.",
+      "technical_novelty": "In a new interview, Robust AI's founders described a transport robot whose direction a person can change by hand. They explain shared warehouse work without publishing a new safety test. A sensor in the handle measures pushing or pulling force. That gives the control system a signal for movement. The wheels let the cart shift in different directions without first turning its whole body, so redirecting it does not have to require a long command each time.",
+      "engineering_impact": "In a new interview, Robust AI's founders described a transport robot whose direction a person can change by hand. They explain shared warehouse work without publishing a new safety test. However, this interview explains the developers' approach rather than a new independent experiment. It gives no measurement of how much faster work became or how often incidents happened. The report also does not say how often workers had to redirect the cart during a working shift.",
+      "limitations": "In a new interview, Robust AI's founders described a transport robot whose direction a person can change by hand. They explain shared warehouse work without publishing a new safety test. However, this interview explains the developers' approach rather than a new independent experiment. It gives no measurement of how much faster work became or how often incidents happened. The report also does not say how often workers had to redirect the cart during a working shift.",
+      "evidence_status": "This is the developers’ account or plan, not a new independent test.",
+      "published_at": "2026-11-13",
+      "organization": "Robust AI",
+      "source_ids": [
+        "mit-carter"
       ],
       "time_window": "24h",
-      "body": "A truck approaches, and a robot stops to wait. This is not a report from a real construction site. Japan's Space Data built a simulation, a computer experiment showing people and machines working in a shared space.\n\nThe terrain comes from the real Hachioji Junction, but the construction yard is invented. It includes ten workers, fourteen robots, cranes and construction vehicles. Users can change participant numbers and tasks to examine whether there is enough space for movement and work.\n\nAccording to the company, the program predicts where a vehicle will be 2.5 seconds later. A virtual robot waits for it to pass and avoids going under a suspended load. The system also calculates cable tension and load swing, rather than merely drawing a moving picture.\n\nA safe route on screen does not prove that a physical robot will follow it safely. Some machine properties are estimates because exact values are not public. Nor does this announcement plan that construction at the junction: the company explicitly says the work is hypothetical.",
+      "body": "A warehouse worker needs to choose and load items, then move them somewhere else. Robust AI makes a robot cart for working alongside people. In a November 13 MIT News interview, its founders explained why a person should have a convenient way to guide the machine by hand.\n\nA sensor in the handle measures pushing or pulling force. That gives the control system a signal for movement. The wheels let the cart shift in different directions without first turning its whole body, so redirecting it does not have to require a long command each time.\n\nThe developers describe several workflows. The cart can follow someone, guide a person to an item location or carry goods independently between workstations. It need not take over the entire job: people can still choose and load the items.\n\nHowever, this interview explains the developers' approach rather than a new independent experiment. It gives no measurement of how much faster work became or how often incidents happened. The report also does not say how often workers had to redirect the cart during a working shift.",
+      "image": null
+    },
+    {
+      "id": "munich-autoware-bus",
+      "title": "A city bus will be tested before ordinary route work",
+      "summary": "Japan's TIER IV and the Technical University of Munich are helping develop automated driving for a full-size bus. Planned route operation after controlled trials still includes a safety worker aboard.",
+      "details": "Japan's TIER IV and the Technical University of Munich are helping develop driving control for a full-size city bus in Munich. They announced the work on November 11. A computer must use sensor information to choose movements, but development does not mean a driverless passenger journey is already ready.",
+      "technical_novelty": "Japan's TIER IV and the Technical University of Munich are helping develop automated driving for a full-size bus. Planned route operation after controlled trials still includes a safety worker aboard. The partners have divided the work. The vehicle maker handles the mechanisms through which software can control the bus. The university chooses sensors and develops the driving system using open-source software: its underlying code is available for study and improvement.",
+      "engineering_impact": "Japan's TIER IV and the Technical University of Munich are helping develop automated driving for a full-size bus. Planned route operation after controlled trials still includes a safety worker aboard. Only afterward do they intend operation on an existing route, with personnel aboard for safety. The announcement supplies no result from that route trial. It cannot be read as permission for ordinary unmonitored passenger trips or as proof that the safety worker is no longer needed.",
+      "limitations": "Japan's TIER IV and the Technical University of Munich are helping develop automated driving for a full-size bus. Planned route operation after controlled trials still includes a safety worker aboard. Only afterward do they intend operation on an existing route, with personnel aboard for safety. The announcement supplies no result from that route trial. It cannot be read as permission for ordinary unmonitored passenger trips or as proof that the safety worker is no longer needed.",
+      "evidence_status": "This is the developers’ account or plan, not a new independent test.",
+      "published_at": "2026-11-11",
+      "organization": "TIER IV; Technical University of Munich; MAN",
+      "source_ids": [
+        "tier-bus"
+      ],
+      "time_window": "72h",
+      "body": "Japan's TIER IV and the Technical University of Munich are helping develop driving control for a full-size city bus in Munich. They announced the work on November 11. A computer must use sensor information to choose movements, but development does not mean a driverless passenger journey is already ready.\n\nThe partners have divided the work. The vehicle maker handles the mechanisms through which software can control the bus. The university chooses sensors and develops the driving system using open-source software: its underlying code is available for study and improvement.\n\nExperience from bus projects in Japan helps, but the German vehicle and roads differ. Software therefore needs adaptation and fresh testing. The partners first plan tests under controlled conditions, where the machine's behavior can be observed more easily.\n\nOnly afterward do they intend operation on an existing route, with personnel aboard for safety. The announcement supplies no result from that route trial. It cannot be read as permission for ordinary unmonitored passenger trips or as proof that the safety worker is no longer needed.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Lights off. What did the robot see?",
-    "summary": "A researcher dimmed the room where a robot moved a ball into a basket. One recorded view barely became darker, probably because of the cameras’ automatic settings.",
-    "implications": "To find out whether a program handles a dark picture, switching off a lamp is not enough. The picture itself must be checked: a camera can brighten it before sending it to the robot."
+    "title": "A thousand-robot plan begins with testing the job",
+    "summary": "GXO runs warehouse operations, while Apptronik builds robots. They want to test more jobs and then expand to as many as a thousand machines if work and safety requirements are met.",
+    "implications": "GXO’s plan for a thousand robots does not mean a thousand helpers are already working. ASUS also sets a target for its packing robot: finish a kit within 20 seconds and succeed 99.5% of the time. In both cases, distinguish the intended result from what has already happened."
   },
   "sources": [
     {
-      "id": "ntt-world-20261111",
-      "title": "ロボットが「動く前に未来を予測」、失敗を回避するフィジカルAI技術を開発",
-      "url": "https://group.ntt/jp/newsrelease/2026/11/11/261111b.html",
-      "domain": "group.ntt",
-      "organization": "NTT",
-      "published_at": "2026-11-11"
-    },
-    {
-      "id": "bd-roll-20261109",
-      "title": "Atlas On a Roll: Bridging Classical Motor Controls and Whole-Body RL",
-      "url": "https://bostondynamics.com/blog/atlas-on-a-roll/",
-      "domain": "bostondynamics.com",
-      "organization": "Boston Dynamics",
-      "published_at": "2026-11-09"
-    },
-    {
-      "id": "cowling-light-261113810",
-      "title": "Camera equalisation of an 11.5x drop in environmental illuminance: four imitation-learning policies on an SO-101 arm",
-      "url": "https://arxiv.org/abs/2611.13810",
-      "domain": "arxiv.org",
-      "organization": "fysical.ai",
-      "published_at": "2026-11-10"
-    },
-    {
-      "id": "bologna-cable-261114274",
-      "title": "From Prediction to Action: Learning Physical Context for Deformable Linear Object Manipulation",
-      "url": "https://arxiv.org/abs/2611.14274",
-      "domain": "arxiv.org",
-      "organization": "University of Bologna",
-      "published_at": "2026-11-10"
-    },
-    {
-      "id": "spacedata-hachioji-20261112",
-      "title": "スペースデータ、八王子ジャンクションを舞台に人とロボットが働くクレーン作業シミュレーションを開発",
-      "url": "https://prtimes.jp/main/html/rd/p/000000275.000080352.html",
-      "domain": "prtimes.jp",
-      "organization": "Space Data",
+      "id": "gxo-intent",
+      "title": "GXO and Apptronik Expand Partnership to Scale Humanoid Deployment",
+      "url": "https://investors.gxo.com/news-releases/news-release-details/gxo-and-apptronik-expand-partnership-scale-humanoid-deployment",
+      "domain": "investors.gxo.com",
+      "organization": "GXO; Apptronik",
       "published_at": "2026-11-12"
+    },
+    {
+      "id": "gxo-forbes",
+      "title": "GXO Doubles Down On Humanoids With Plan For Up To 1,000 Apptronik Robots",
+      "url": "https://www.forbes.com/sites/johnkoetsier/2026/11/12/gxo-doubles-down-on-humanoids-with-plan-for-up-to-1000-apptronik-robots/",
+      "domain": "www.forbes.com",
+      "organization": "Forbes",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "asus-station",
+      "title": "Factory-Proven Physical AI: Why ASUS Is Building a Humanoid Robot",
+      "url": "https://press.asus.com/blog/factory-proven-physical-ai-asus-gallop-humanoid-robot/",
+      "domain": "press.asus.com",
+      "organization": "ASUS",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "heir-preprint",
+      "title": "HEIR: Harness Egocentric Intent for Human-Robot Interactions",
+      "url": "https://arxiv.org/abs/2611.17238",
+      "domain": "arxiv.org",
+      "organization": "Tsinghua University; Beijing Academy of Artificial Intelligence; Fudan University; Yangu Robotics",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "mit-carter",
+      "title": "Helping robots fit into the human workplace",
+      "url": "https://news.mit.edu/2026/helping-robots-fit-into-human-workplace-1113",
+      "domain": "news.mit.edu",
+      "organization": "MIT News; Robust AI",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "tier-bus",
+      "title": "ティアフォーとミュンヘン工科大学、「Autoware」を活用した自動運転システムをミュンヘン市内の路線バス開発に展開",
+      "url": "https://prtimes.jp/main/html/rd/p/000000149.000040119.html",
+      "domain": "prtimes.jp",
+      "organization": "TIER IV; Technical University of Munich",
+      "published_at": "2026-11-11"
     }
   ]
 }
