@@ -2,159 +2,168 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-14",
-  "issue_id": "daily-2026-11-14",
+  "issue_date": "2026-11-15",
+  "issue_id": "daily-2026-11-15",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-13T21:02:43.279476Z",
-  "title": "A thousand-robot plan begins with testing the job",
-  "lead": "GXO runs warehouse operations, while Apptronik builds robots. They want to test more jobs and then expand to as many as a thousand machines if work and safety requirements are met.",
+  "generated_at": "2026-11-14T21:27:09.324372Z",
+  "title": "What a robot needs to do a job",
+  "lead": "Japan wants to connect waste-processing knowledge with robotics developers. Researchers in Singapore have prepared computer-based tasks for comparing how machines learn to act.",
   "news": [
     {
-      "id": "gxo-apollo-framework",
-      "title": "A thousand warehouse robots is still a conditional plan",
-      "summary": "GXO and robot maker Apptronik want to expand warehouse-helper trials. A possible 1,000 machines would depend on meeting requirements agreed in advance.",
-      "details": "GXO organizes warehouse work, while Apptronik builds humanoid robots. The companies agreed to test more ways for those machines to pick goods, move boxes and help with packing. They announced the expanded plan on November 12.",
-      "technical_novelty": "GXO and robot maker Apptronik want to expand warehouse-helper trials. A possible 1,000 machines would depend on meeting requirements agreed in advance. Its big number is up to a thousand robots over four years. That does not mean a thousand helpers are already working. Each job must first pass checks: is the machine fast enough, safe enough and suitable for the real warehouse?",
-      "engineering_impact": "GXO and robot maker Apptronik want to expand warehouse-helper trials. A possible 1,000 machines would depend on meeting requirements agreed in advance. A useful trial and a large purchase are different steps. If the agreed requirements are not met, the announced number does not become an achieved result. The agreement also gives no price or calculation of how long the new program would take to earn back its costs.",
-      "limitations": "GXO and robot maker Apptronik want to expand warehouse-helper trials. A possible 1,000 machines would depend on meeting requirements agreed in advance. A useful trial and a large purchase are different steps. If the agreed requirements are not met, the announced number does not become an achieved result. The agreement also gives no price or calculation of how long the new program would take to earn back its costs.",
-      "evidence_status": "This is the developers’ account or plan, not a new independent test.",
-      "published_at": "2026-11-12",
-      "organization": "GXO; Apptronik",
-      "source_ids": [
-        "gxo-intent",
-        "gxo-forbes"
-      ],
-      "time_window": "72h",
-      "body": "GXO organizes warehouse work, while Apptronik builds humanoid robots. The companies agreed to test more ways for those machines to pick goods, move boxes and help with packing. They announced the expanded plan on November 12.\n\nIts big number is up to a thousand robots over four years. That does not mean a thousand helpers are already working. Each job must first pass checks: is the machine fast enough, safe enough and suitable for the real warehouse?\n\nExpanded trials are planned for 2027, with the first commercial use in North America intended for late that year. The companies want to provide robots as a service. A warehouse would get access to the machines, but exact charges and maintenance coverage are not announced.\n\nA useful trial and a large purchase are different steps. If the agreed requirements are not met, the announced number does not become an achieved result. The agreement also gives no price or calculation of how long the new program would take to earn back its costs.",
-      "image": null
-    },
-    {
-      "id": "asus-gallop-station",
-      "title": "ASUS teaches two robot arms to pack accessory kits",
-      "summary": "ASUS described a robot learning to pack accessories for computer boards. High success and a short working time are still targets rather than completed results.",
-      "details": "At an ASUS factory, a robot with two arms is learning to pack accessories for computer boards. The workstation has 15 small items. Many are inside thin clear bags that can change shape when touched, making them awkward for a gripper to handle.",
-      "technical_novelty": "ASUS described a robot learning to pack accessories for computer boards. High success and a short working time are still targets rather than completed results. Workers wear a small camera with their consent to show how they do the job. Other examples come from a person guiding the robot using special gloves and a headset. Computer experiments create variations so the program does not see only one identical situation.",
-      "engineering_impact": "ASUS described a robot learning to pack accessories for computer boards. High success and a short working time are still targets rather than completed results. Today's robot is fixed in place. Wheels and the company's own touch-sensitive hand are still planned additions. Customer trials are intended for 2027 and market availability for the second half of 2028, so today's setup is not the promised finished machine.",
-      "limitations": "ASUS described a robot learning to pack accessories for computer boards. High success and a short working time are still targets rather than completed results. Today's robot is fixed in place. Wheels and the company's own touch-sensitive hand are still planned additions. Customer trials are intended for 2027 and market availability for the second half of 2028, so today's setup is not the promised finished machine.",
-      "evidence_status": "This is the developers’ account or plan, not a new independent test.",
+      "id": "waste-physical-ai-consortium",
+      "title": "Japan brings recycling workers and robot builders into one discussion",
+      "summary": "Japan's environment ministry is forming a group for developers and waste-processing organizations. It will collect workplace problems and help find partners for trials.",
+      "details": "Discarded products are becoming more complicated, with different materials joined inside one item. On November 13, Japan's environment ministry announced a group connecting waste-processing facilities and robotics developers. The aim is to help technology builders learn about the actual difficulties at a working site.",
+      "technical_novelty": "Japan's environment ministry is forming a group for developers and waste-processing organizations. It will collect workplace problems and help find partners for trials. The announcement names growing sorting categories, worker shortages and safety. It uses physical AI to mean programs connected to machines that act on real objects. Choosing a suitable device requires knowing which items arrive at a facility and what must happen to them.",
+      "engineering_impact": "Japan's environment ministry is forming a group for developers and waste-processing organizations. It will collect workplace problems and help find partners for trials. The new group is a consortium: organizations sharing knowledge and discussing common problems. Companies, local authorities and industry groups can participate. Its organizers want to gather facility requests and help identify partners for technical trials. There is no membership fee.",
+      "limitations": "Japan's environment ministry is forming a group for developers and waste-processing organizations. It will collect workplace problems and help find partners for trials. Applications close on December 3, and the first meeting is planned for December 17. It will explain the group's aims and present examples of work. The group begins with that exchange of information; decisions about particular machines will be made in individual projects.",
+      "evidence_status": "This is a ministry announcement about cooperation and planned meetings.",
       "published_at": "2026-11-13",
-      "organization": "ASUS",
+      "organization": "Ministry of the Environment, Japan",
       "source_ids": [
-        "asus-station"
+        "env-consortium"
       ],
       "time_window": "72h",
-      "body": "At an ASUS factory, a robot with two arms is learning to pack accessories for computer boards. The workstation has 15 small items. Many are inside thin clear bags that can change shape when touched, making them awkward for a gripper to handle.\n\nWorkers wear a small camera with their consent to show how they do the job. Other examples come from a person guiding the robot using special gloves and a headset. Computer experiments create variations so the program does not see only one identical situation.\n\nASUS wants the robot to finish a kit within 20 seconds and succeed 99.5% of the time. That is about 995 successes in a thousand attempts. The company does not say it has already reached that result; this is the standard it wants to meet.\n\nToday's robot is fixed in place. Wheels and the company's own touch-sensitive hand are still planned additions. Customer trials are intended for 2027 and market availability for the second half of 2028, so today's setup is not the promised finished machine.",
+      "body": "Discarded products are becoming more complicated, with different materials joined inside one item. On November 13, Japan's environment ministry announced a group connecting waste-processing facilities and robotics developers. The aim is to help technology builders learn about the actual difficulties at a working site.\n\nThe announcement names growing sorting categories, worker shortages and safety. It uses physical AI to mean programs connected to machines that act on real objects. Choosing a suitable device requires knowing which items arrive at a facility and what must happen to them.\n\nThe new group is a consortium: organizations sharing knowledge and discussing common problems. Companies, local authorities and industry groups can participate. Its organizers want to gather facility requests and help identify partners for technical trials. There is no membership fee.\n\nApplications close on December 3, and the first meeting is planned for December 17. It will explain the group's aims and present examples of work. The group begins with that exchange of information; decisions about particular machines will be made in individual projects.",
       "image": null
     },
     {
-      "id": "heir-human-context",
-      "title": "Showing a robot which object a person is looking at",
-      "summary": "A team including Tsinghua University recorded people's words, gaze and robot movements. It is testing whether these cues help complete a request, rather than merely identify an object.",
-      "details": "Someone asks a robot to bring that thing, but several objects are nearby. Researchers including a Tsinghua University team recorded speech and gaze direction to help the program identify the intended object. They posted their research paper on November 12.",
-      "technical_novelty": "A team including Tsinghua University recorded people's words, gaze and robot movements. It is testing whether these cues help complete a request, rather than merely identify an object. Special glasses measure gaze direction. This is a clue about where someone looks, not a way to read thoughts. The recordings include views from both the person and the robot, plus machine movements that a human operator controlled during data collection.",
-      "engineering_impact": "A team including Tsinghua University recorded people's words, gaze and robot movements. It is testing whether these cues help complete a request, rather than merely identify an object. A gaze clue does not automatically fix a failed grasp or a wrong movement. Mistakes can appear at different steps and add up. Even after choosing the correct object, the robot still has to bring it, so researchers score complete requests separately from individual actions.",
-      "limitations": "A team including Tsinghua University recorded people's words, gaze and robot movements. It is testing whether these cues help complete a request, rather than merely identify an object. A gaze clue does not automatically fix a failed grasp or a wrong movement. Mistakes can appear at different steps and add up. Even after choosing the correct object, the robot still has to bring it, so researchers score complete requests separately from individual actions.",
-      "evidence_status": "These are the researchers’ own tests; repetition by another team is not confirmed.",
-      "published_at": "2026-11-12",
-      "organization": "Tsinghua University; Beijing Academy of Artificial Intelligence; Fudan University; Yangu Robotics",
-      "source_ids": [
-        "heir-preprint"
-      ],
-      "time_window": "72h",
-      "body": "Someone asks a robot to bring that thing, but several objects are nearby. Researchers including a Tsinghua University team recorded speech and gaze direction to help the program identify the intended object. They posted their research paper on November 12.\n\nSpecial glasses measure gaze direction. This is a clue about where someone looks, not a way to read thoughts. The recordings include views from both the person and the robot, plus machine movements that a human operator controlled during data collection.\n\nIn a separate test, the robot acted independently. It had to interpret the request, travel to the right place, pick up an object and finish without help. It completed about five out of 27 requests. Recorded teaching examples cannot be counted as the same kind of independent success.\n\nA gaze clue does not automatically fix a failed grasp or a wrong movement. Mistakes can appear at different steps and add up. Even after choosing the correct object, the robot still has to bring it, so researchers score complete requests separately from individual actions.",
-      "image": null
-    },
-    {
-      "id": "carter-workflow-report",
-      "title": "A worker can guide this robot cart by hand",
-      "summary": "In a new interview, Robust AI's founders described a transport robot whose direction a person can change by hand. They explain shared warehouse work without publishing a new safety test.",
-      "details": "A warehouse worker needs to choose and load items, then move them somewhere else. Robust AI makes a robot cart for working alongside people. In a November 13 MIT News interview, its founders explained why a person should have a convenient way to guide the machine by hand.",
-      "technical_novelty": "In a new interview, Robust AI's founders described a transport robot whose direction a person can change by hand. They explain shared warehouse work without publishing a new safety test. A sensor in the handle measures pushing or pulling force. That gives the control system a signal for movement. The wheels let the cart shift in different directions without first turning its whole body, so redirecting it does not have to require a long command each time.",
-      "engineering_impact": "In a new interview, Robust AI's founders described a transport robot whose direction a person can change by hand. They explain shared warehouse work without publishing a new safety test. However, this interview explains the developers' approach rather than a new independent experiment. It gives no measurement of how much faster work became or how often incidents happened. The report also does not say how often workers had to redirect the cart during a working shift.",
-      "limitations": "In a new interview, Robust AI's founders described a transport robot whose direction a person can change by hand. They explain shared warehouse work without publishing a new safety test. However, this interview explains the developers' approach rather than a new independent experiment. It gives no measurement of how much faster work became or how often incidents happened. The report also does not say how often workers had to redirect the cart during a working shift.",
-      "evidence_status": "This is the developers’ account or plan, not a new independent test.",
-      "published_at": "2026-11-13",
-      "organization": "Robust AI",
-      "source_ids": [
-        "mit-carter"
-      ],
-      "time_window": "24h",
-      "body": "A warehouse worker needs to choose and load items, then move them somewhere else. Robust AI makes a robot cart for working alongside people. In a November 13 MIT News interview, its founders explained why a person should have a convenient way to guide the machine by hand.\n\nA sensor in the handle measures pushing or pulling force. That gives the control system a signal for movement. The wheels let the cart shift in different directions without first turning its whole body, so redirecting it does not have to require a long command each time.\n\nThe developers describe several workflows. The cart can follow someone, guide a person to an item location or carry goods independently between workstations. It need not take over the entire job: people can still choose and load the items.\n\nHowever, this interview explains the developers' approach rather than a new independent experiment. It gives no measurement of how much faster work became or how often incidents happened. The report also does not say how often workers had to redirect the cart during a working shift.",
-      "image": null
-    },
-    {
-      "id": "munich-autoware-bus",
-      "title": "A city bus will be tested before ordinary route work",
-      "summary": "Japan's TIER IV and the Technical University of Munich are helping develop automated driving for a full-size bus. Planned route operation after controlled trials still includes a safety worker aboard.",
-      "details": "Japan's TIER IV and the Technical University of Munich are helping develop driving control for a full-size city bus in Munich. They announced the work on November 11. A computer must use sensor information to choose movements, but development does not mean a driverless passenger journey is already ready.",
-      "technical_novelty": "Japan's TIER IV and the Technical University of Munich are helping develop automated driving for a full-size bus. Planned route operation after controlled trials still includes a safety worker aboard. The partners have divided the work. The vehicle maker handles the mechanisms through which software can control the bus. The university chooses sensors and develops the driving system using open-source software: its underlying code is available for study and improvement.",
-      "engineering_impact": "Japan's TIER IV and the Technical University of Munich are helping develop automated driving for a full-size bus. Planned route operation after controlled trials still includes a safety worker aboard. Only afterward do they intend operation on an existing route, with personnel aboard for safety. The announcement supplies no result from that route trial. It cannot be read as permission for ordinary unmonitored passenger trips or as proof that the safety worker is no longer needed.",
-      "limitations": "Japan's TIER IV and the Technical University of Munich are helping develop automated driving for a full-size bus. Planned route operation after controlled trials still includes a safety worker aboard. Only afterward do they intend operation on an existing route, with personnel aboard for safety. The announcement supplies no result from that route trial. It cannot be read as permission for ordinary unmonitored passenger trips or as proof that the safety worker is no longer needed.",
-      "evidence_status": "This is the developers’ account or plan, not a new independent test.",
+      "id": "dexremo-force-frame",
+      "title": "A robot hand learns which way its fingers are pushing",
+      "summary": "A University of York team and partners tested a three-finger hand for detachment and cleaning. Its program benefited from describing different fingers' forces relative to one shared reference at the wrist.",
+      "details": "An object stuck to a surface needs to be detached before it can move away. Researchers at the University of York and partner universities published a study on November 11 about a three-finger hand learning this work. Their experiments also cover cleaning surfaces and retrieving hidden objects.",
+      "technical_novelty": "A University of York team and partners tested a three-finger hand for detachment and cleaning. Its program benefited from describing different fingers' forces relative to one shared reference at the wrist. Sensors on the fingers measure forces from contact. However, bending a finger also turns its sensor. The program uses joint positions to describe force directions relative to one place at the wrist. That makes different fingers' measurements easier to compare.",
+      "engineering_impact": "A University of York team and partners tested a three-finger hand for detachment and cleaning. Its program benefited from describing different fingers' forces relative to one shared reference at the wrist. Each job received 20 successful teaching examples recorded while a person controlled the machine. The programs were then tested separately. Across six main tasks, adding finger-position information and transformed forces raised mean success from 24 to 83 percent. Cameras and joint information remained common to the compared programs.",
+      "limitations": "A University of York team and partners tested a three-finger hand for detachment and cleaning. Its program benefited from describing different fingers' forces relative to one shared reference at the wrist. The hand was positioned near its target in advance. Its wrist stayed fixed, while another mechanism raised and lowered it. The authors identify a further task: connect the skill to a whole arm that can bring the hand to the required working position.",
+      "evidence_status": "These are the researchers’ tests on a physical hand; the comparison covers six core tasks.",
       "published_at": "2026-11-11",
-      "organization": "TIER IV; Technical University of Munich; MAN",
+      "organization": "University of York; University of Edinburgh; Friedrich Schiller University Jena; King’s College London",
       "source_ids": [
-        "tier-bus"
+        "dexremo-paper"
+      ],
+      "time_window": "7d",
+      "body": "An object stuck to a surface needs to be detached before it can move away. Researchers at the University of York and partner universities published a study on November 11 about a three-finger hand learning this work. Their experiments also cover cleaning surfaces and retrieving hidden objects.\n\nSensors on the fingers measure forces from contact. However, bending a finger also turns its sensor. The program uses joint positions to describe force directions relative to one place at the wrist. That makes different fingers' measurements easier to compare.\n\nEach job received 20 successful teaching examples recorded while a person controlled the machine. The programs were then tested separately. Across six main tasks, adding finger-position information and transformed forces raised mean success from 24 to 83 percent. Cameras and joint information remained common to the compared programs.\n\nThe hand was positioned near its target in advance. Its wrist stayed fixed, while another mechanism raised and lowered it. The authors identify a further task: connect the skill to a whole arm that can bring the hand to the required working position.",
+      "image": null
+    },
+    {
+      "id": "maniladder-difficulty",
+      "title": "Robots get 112 tasks in four difficulty levels",
+      "summary": "Researchers including a National University of Singapore team created a set of computer-based robot tests. They assign difficulty using one program that receives the same number of teaching examples for each task.",
+      "details": "Hanging a mug on a rack and closing a box with two arms require different movements. A team including the National University of Singapore published 112 simulated robot tasks on November 12. They include solid objects, flexible items and work using one or two arms.",
+      "technical_novelty": "Researchers including a National University of Singapore team created a set of computer-based robot tests. They assign difficulty using one program that receives the same number of teaching examples for each task. How do the researchers decide which task is harder? They give the same program 20 examples of each task and teach it using the same procedure. They then check how often it succeeds. This is learning from demonstrations: the program works out how to reproduce useful movements in another attempt.",
+      "engineering_impact": "Researchers including a National University of Singapore team created a set of computer-based robot tests. They assign difficulty using one program that receives the same number of teaching examples for each task. If a task is too easy or too hard for its intended level, its conditions are changed. A mug's starting position or a box's size can be adjusted. The result is four difficulty levels rather than just a long list of objects. The researchers also check the ordering with other programs.",
+      "limitations": "Researchers including a National University of Singapore team created a set of computer-based robot tests. They assign difficulty using one program that receives the same number of teaching examples for each task. Final comparisons try each task 50 times with prepared starting conditions. This helps compare programs more fairly. Giving a program more teaching examples can change its result, so the number of examples is part of the test conditions too.",
+      "evidence_status": "The researchers describe their own computer-based tests and conditions for comparing programs.",
+      "published_at": "2026-11-12",
+      "organization": "National University of Singapore and collaborating universities",
+      "source_ids": [
+        "maniladder-paper"
       ],
       "time_window": "72h",
-      "body": "Japan's TIER IV and the Technical University of Munich are helping develop driving control for a full-size city bus in Munich. They announced the work on November 11. A computer must use sensor information to choose movements, but development does not mean a driverless passenger journey is already ready.\n\nThe partners have divided the work. The vehicle maker handles the mechanisms through which software can control the bus. The university chooses sensors and develops the driving system using open-source software: its underlying code is available for study and improvement.\n\nExperience from bus projects in Japan helps, but the German vehicle and roads differ. Software therefore needs adaptation and fresh testing. The partners first plan tests under controlled conditions, where the machine's behavior can be observed more easily.\n\nOnly afterward do they intend operation on an existing route, with personnel aboard for safety. The announcement supplies no result from that route trial. It cannot be read as permission for ordinary unmonitored passenger trips or as proof that the safety worker is no longer needed.",
+      "body": "Hanging a mug on a rack and closing a box with two arms require different movements. A team including the National University of Singapore published 112 simulated robot tasks on November 12. They include solid objects, flexible items and work using one or two arms.\n\nHow do the researchers decide which task is harder? They give the same program 20 examples of each task and teach it using the same procedure. They then check how often it succeeds. This is learning from demonstrations: the program works out how to reproduce useful movements in another attempt.\n\nIf a task is too easy or too hard for its intended level, its conditions are changed. A mug's starting position or a box's size can be adjusted. The result is four difficulty levels rather than just a long list of objects. The researchers also check the ordering with other programs.\n\nFinal comparisons try each task 50 times with prepared starting conditions. This helps compare programs more fairly. Giving a program more teaching examples can change its result, so the number of examples is part of the test conditions too.",
+      "image": null
+    },
+    {
+      "id": "serve-developer-portal",
+      "title": "A shop can request a robot delivery through its own program",
+      "summary": "Serve Robotics opened software access to its delivery-robot service. Developers can first test requests with virtual machines; physical trips require company approval.",
+      "details": "A small shop wants to send a purchase to a customer but owns no robot. On November 11, U.S. company Serve Robotics opened software access to its sidewalk delivery network. A shop's application can say where to collect an item, where to take it and how to follow the trip.",
+      "technical_novelty": "Serve Robotics opened software access to its delivery-robot service. Developers can first test requests with virtual machines; physical trips require company approval. This connection is called a programming interface: one program sends another commands in an agreed format. Serve remains responsible for the trip. It assigns robots, chooses routes and supervises the machines. The developer works on the application and how the shop and customer use it.",
+      "engineering_impact": "Serve Robotics opened software access to its delivery-robot service. Developers can first test requests with virtual machines; physical trips require company approval. Commands can first be checked in a test environment containing virtual robots. Developers can run through the delivery sequence and try unusual situations there. This gives them a chance to find software errors before their requests affect a physical machine's journey.",
+      "limitations": "Serve Robotics opened software access to its delivery-robot service. Developers can first test requests with virtual machines; physical trips require company approval. Real deliveries need Serve's permission. Both addresses also have to fit its current service coverage. The company reports 2,000 robots across 20 U.S. cities, so a first project starts by choosing a place the network can serve.",
+      "evidence_status": "The delivery operator reported how the service works and how many robots its network includes.",
+      "published_at": "2026-11-11",
+      "organization": "Serve Robotics",
+      "source_ids": [
+        "serve-release",
+        "serve-technical"
+      ],
+      "time_window": "7d",
+      "body": "A small shop wants to send a purchase to a customer but owns no robot. On November 11, U.S. company Serve Robotics opened software access to its sidewalk delivery network. A shop's application can say where to collect an item, where to take it and how to follow the trip.\n\nThis connection is called a programming interface: one program sends another commands in an agreed format. Serve remains responsible for the trip. It assigns robots, chooses routes and supervises the machines. The developer works on the application and how the shop and customer use it.\n\nCommands can first be checked in a test environment containing virtual robots. Developers can run through the delivery sequence and try unusual situations there. This gives them a chance to find software errors before their requests affect a physical machine's journey.\n\nReal deliveries need Serve's permission. Both addresses also have to fit its current service coverage. The company reports 2,000 robots across 20 U.S. cities, so a first project starts by choosing a place the network can serve.",
+      "image": null
+    },
+    {
+      "id": "japan-robot-investment",
+      "title": "Japan discusses helping robots start work at real sites",
+      "summary": "Japan's prime minister met robot and component makers. Companies requested support for development, teaching data and several years of early adoption.",
+      "details": "Japan’s prime minister Sanae Takaichi met robot and component makers on November 12. They discussed support for developing the technology and using it at factories and other workplaces. Companies requested help across several stages, from building devices to putting the first systems into use.",
+      "technical_novelty": "Japan's prime minister met robot and component makers. Companies requested support for development, teaching data and several years of early adoption. One request covers parts and production, from research to making many devices. Another concerns programs that learn to control actions. Those programs need records of work, so companies also asked for help collecting data and supporting early installations across several years.",
+      "engineering_impact": "Japan's prime minister met robot and component makers. Companies requested support for development, teaching data and several years of early adoption. The government discusses reducing heavy and dangerous work and responding to worker shortages. Its 2040 ambition includes roughly 10 million robots using artificial intelligence. Here that means learning programs involved in selecting a machine's actions.",
+      "limitations": "Japan's prime minister met robot and component makers. Companies requested support for development, teaching data and several years of early adoption. Officials must now put the requests into the growth-strategy implementation plan. It should clarify which support will be offered and what budgets are required. The eventual program will show how technology builders and workplaces can take part in those measures.",
+      "evidence_status": "This is a published government speech about future support measures.",
+      "published_at": "2026-11-12",
+      "organization": "Prime Minister’s Office of Japan",
+      "source_ids": [
+        "japan-pm-1112",
+        "japan-sankei-1113"
+      ],
+      "time_window": "7d",
+      "body": "Japan’s prime minister Sanae Takaichi met robot and component makers on November 12. They discussed support for developing the technology and using it at factories and other workplaces. Companies requested help across several stages, from building devices to putting the first systems into use.\n\nOne request covers parts and production, from research to making many devices. Another concerns programs that learn to control actions. Those programs need records of work, so companies also asked for help collecting data and supporting early installations across several years.\n\nThe government discusses reducing heavy and dangerous work and responding to worker shortages. Its 2040 ambition includes roughly 10 million robots using artificial intelligence. Here that means learning programs involved in selecting a machine's actions.\n\nOfficials must now put the requests into the growth-strategy implementation plan. It should clarify which support will be offered and what budgets are required. The eventual program will show how technology builders and workplaces can take part in those measures.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "A thousand-robot plan begins with testing the job",
-    "summary": "GXO runs warehouse operations, while Apptronik builds robots. They want to test more jobs and then expand to as many as a thousand machines if work and safety requirements are met.",
-    "implications": "GXO’s plan for a thousand robots does not mean a thousand helpers are already working. ASUS also sets a target for its packing robot: finish a kit within 20 seconds and succeed 99.5% of the time. In both cases, distinguish the intended result from what has already happened."
+    "title": "What a robot needs to do a job",
+    "summary": "Japan wants to connect waste-processing knowledge with robotics developers. Researchers in Singapore have prepared computer-based tasks for comparing how machines learn to act.",
+    "implications": "Waste operators can explain their actual working conditions to developers. In the computer tests, researchers set conditions in advance: both stories show why a task needs a precise description before choosing equipment or software."
   },
   "sources": [
     {
-      "id": "gxo-intent",
-      "title": "GXO and Apptronik Expand Partnership to Scale Humanoid Deployment",
-      "url": "https://investors.gxo.com/news-releases/news-release-details/gxo-and-apptronik-expand-partnership-scale-humanoid-deployment",
-      "domain": "investors.gxo.com",
-      "organization": "GXO; Apptronik",
-      "published_at": "2026-11-12"
-    },
-    {
-      "id": "gxo-forbes",
-      "title": "GXO Doubles Down On Humanoids With Plan For Up To 1,000 Apptronik Robots",
-      "url": "https://www.forbes.com/sites/johnkoetsier/2026/11/12/gxo-doubles-down-on-humanoids-with-plan-for-up-to-1000-apptronik-robots/",
-      "domain": "www.forbes.com",
-      "organization": "Forbes",
-      "published_at": "2026-11-12"
-    },
-    {
-      "id": "asus-station",
-      "title": "Factory-Proven Physical AI: Why ASUS Is Building a Humanoid Robot",
-      "url": "https://press.asus.com/blog/factory-proven-physical-ai-asus-gallop-humanoid-robot/",
-      "domain": "press.asus.com",
-      "organization": "ASUS",
+      "id": "env-consortium",
+      "title": "「廃棄物・資源循環分野のフィジカルAIコンソーシアム」の設立と会員の募集について",
+      "url": "https://www.env.go.jp/press/press_05819.html",
+      "domain": "www.env.go.jp",
+      "organization": "Ministry of the Environment, Japan",
       "published_at": "2026-11-13"
     },
     {
-      "id": "heir-preprint",
-      "title": "HEIR: Harness Egocentric Intent for Human-Robot Interactions",
-      "url": "https://arxiv.org/abs/2611.17238",
+      "id": "dexremo-paper",
+      "title": "DexRemo: A Force-Sensing Hand Platform and Task Suite for Contact-Rich Removal Manipulation",
+      "url": "https://arxiv.org/abs/2611.15981",
       "domain": "arxiv.org",
-      "organization": "Tsinghua University; Beijing Academy of Artificial Intelligence; Fudan University; Yangu Robotics",
+      "organization": "University of York; University of Edinburgh; Friedrich Schiller University Jena; King’s College London",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "maniladder-paper",
+      "title": "ManiLadder: Benchmarking Robot Manipulation Through a Categorized and Multi-Difficulty Level Task Ladder",
+      "url": "https://arxiv.org/abs/2611.16374",
+      "domain": "arxiv.org",
+      "organization": "National University of Singapore and collaborating universities",
       "published_at": "2026-11-12"
     },
     {
-      "id": "mit-carter",
-      "title": "Helping robots fit into the human workplace",
-      "url": "https://news.mit.edu/2026/helping-robots-fit-into-human-workplace-1113",
-      "domain": "news.mit.edu",
-      "organization": "MIT News; Robust AI",
-      "published_at": "2026-11-13"
+      "id": "serve-release",
+      "title": "Serve Robotics Opens Its Robot Delivery Network for Anyone to Build On",
+      "url": "https://serverobotics.gcs-web.com/news-releases/news-release-details/serve-robotics-opens-its-robot-delivery-network-anyone-build",
+      "domain": "serverobotics.gcs-web.com",
+      "organization": "Serve Robotics",
+      "published_at": "2026-11-11"
     },
     {
-      "id": "tier-bus",
-      "title": "ティアフォーとミュンヘン工科大学、「Autoware」を活用した自動運転システムをミュンヘン市内の路線バス開発に展開",
-      "url": "https://prtimes.jp/main/html/rd/p/000000149.000040119.html",
-      "domain": "prtimes.jp",
-      "organization": "TIER IV; Technical University of Munich",
+      "id": "serve-technical",
+      "title": "Introducing the Serve Developer Portal: Build With Our Robots",
+      "url": "https://www.serverobotics.com/blog/introducing-the-serve-developer-portal-build-with-our-robots/index.html",
+      "domain": "www.serverobotics.com",
+      "organization": "Serve Robotics",
       "published_at": "2026-11-11"
+    },
+    {
+      "id": "japan-pm-1112",
+      "title": "フィジカルＡＩ関連企業との意見交換会",
+      "url": "https://www.kantei.go.jp/jp/105/actions/202611/12ikenkoukan.html",
+      "domain": "www.kantei.go.jp",
+      "organization": "Prime Minister’s Office of Japan",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "japan-sankei-1113",
+      "title": "虎柄ロボットに「阪神君」と命名　首相、フィジカルAIを体験　関連企業と意見交換",
+      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003182/",
+      "domain": "www.itmedia.co.jp",
+      "organization": "Sankei Shimbun; ITmedia",
+      "published_at": "2026-11-13"
     }
   ]
 }

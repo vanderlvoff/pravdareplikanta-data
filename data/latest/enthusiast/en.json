@@ -2,195 +2,186 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-14",
-  "issue_id": "daily-2026-11-14",
+  "issue_date": "2026-11-15",
+  "issue_id": "daily-2026-11-15",
   "edition": "enthusiast",
   "language": "en",
-  "generated_at": "2026-11-13T21:02:43.279476Z",
-  "title": "GXO and ASUS: separating robot plans from results",
-  "lead": "Logistics company GXO plans to expand humanoid use after warehouse trials. ASUS is teaching a two-arm robot to pack computer accessories, but its stated speed and success rate remain targets.",
+  "generated_at": "2026-11-14T21:27:09.324372Z",
+  "title": "How to measure a robot’s difficult work",
+  "lead": "Researchers including a National University of Singapore team organized 112 simulated robot tasks into four levels. They assigned difficulty by observing how a reference program learns from the same number of examples.",
   "news": [
     {
-      "id": "nvidia-leadership",
-      "title": "Why NVIDIA's leadership change matters to robotics",
-      "summary": "NVIDIA confirmed chief executive Jensen Huang’s resignation and finance chief Colette Kress’s interim appointment. The change matters to an industry dependent on computing platforms, but does not establish that hardware production will stop.",
-      "details": "On November 12, NVIDIA announced Jensen Huang's departure as president, chief executive and board member. Colette Kress became interim chief executive while retaining her chief financial officer duties; a permanent successor is still being sought. NVIDIA's filing with the U.S. Securities and Exchange Commission says the board accepted the resignation on November 11. That is the decision date, whereas November 12 is the public announcement date. The leadership change at a supplier of AI computing equipment is a confirmed event, rather than an inference from reports about the scandal.",
-      "technical_novelty": "NVIDIA confirmed chief executive Jensen Huang’s resignation and finance chief Colette Kress’s interim appointment. The change matters to an industry dependent on computing platforms, but does not establish that hardware production will stop. The crisis surrounding Huang has a separate investigative process: on November 10, independent directors said they had engaged outside lawyers to investigate. TechCrunch describes the controversy as arising from reported extramarital relationships and scrutiny of China-related chip sales. TechCrunch and Reuters independently reported the resignation, but reports of possible misconduct are not findings of that investigation. The cited official documents do not publish such findings. NVIDIA's board says operations, customer commitments and product plans should continue without interruption. That is the company's position about future operations; it does not independently establish that customers will see no disruption. Financial results and the accompanying investor call remain scheduled for November 17.",
-      "engineering_impact": "NVIDIA confirmed chief executive Jensen Huang’s resignation and finance chief Colette Kress’s interim appointment. The change matters to an industry dependent on computing platforms, but does not establish that hardware production will stop. The useful follow-up is whether concrete decisions support the promised continuity. NVIDIA kept its November 17 reporting date. Until further evidence appears, a change in executive leadership and a change in hardware capability remain different events, even when discussed in the same news cycle.",
-      "limitations": "NVIDIA confirmed chief executive Jensen Huang’s resignation and finance chief Colette Kress’s interim appointment. The change matters to an industry dependent on computing platforms, but does not establish that hardware production will stop. The useful follow-up is whether concrete decisions support the promised continuity. NVIDIA kept its November 17 reporting date. Until further evidence appears, a change in executive leadership and a change in hardware capability remain different events, even when discussed in the same news cycle.",
-      "evidence_status": "Leadership change is confirmed by the official release and U.S. Securities and Exchange Commission filing; an investigation and reported allegations are not findings of guilt.",
+      "id": "maniladder-difficulty",
+      "title": "Robot tasks get a difficulty ladder tested through learning",
+      "summary": "A National University of Singapore team and partners proposed 112 simulated robot tasks. Four levels are assigned by observing how the same model learns from the same number of examples.",
+      "details": "A team including the National University of Singapore posted ManiLadder on November 12, a study introducing 112 simulated object-manipulation tasks organized into four difficulty levels. The collection covers rigid and deformable objects, one or two arms, simple grippers and multi-finger hands. The researchers want to measure not only the variety of actions a robot learns but also how demanding a task it can solve under a common learning budget.",
+      "technical_novelty": "A National University of Singapore team and partners proposed 112 simulated robot tasks. Four levels are assigned by observing how the same model learns from the same number of examples. Calibration gives each task 20 demonstrations and the same reference control model with fixed training settings. The model learns to reproduce demonstrated actions, and its success determines the task's level. It trains for 40,000 steps, with 50 evaluation attempts every 5,000 steps. Task conditions are revised until performance falls within the intended range. Final method comparisons also use 50 test attempts per task, with evaluation starting conditions separated from those used to collect demonstrations.",
+      "engineering_impact": "A National University of Singapore team and partners proposed 112 simulated robot tasks. Four levels are assigned by observing how the same model learns from the same number of examples. The idea resembles selecting tasks for progressively developing a skill, but here difficulty comes from experiments with a learning program. Changing a mug's starting position or a box's size can require a different movement sequence. The authors vary such conditions and observe the reference program's success. This organizes comparison around the demands of the actions rather than a long list of task names. Further tests with other models examine how much of the ordering survives beyond the original calibration setup.",
+      "limitations": "A National University of Singapore team and partners proposed 112 simulated robot tasks. Four levels are assigned by observing how the same model learns from the same number of examples. The scale has a specific anchor: a reference model and twenty examples per task. More data or a different learning method can change where a task sits on that scale. Training conditions therefore remain part of the comparison, alongside the displayed success rate.",
+      "evidence_status": "An author-published research paper and evaluation protocol; the reported results were obtained by the research team.",
       "published_at": "2026-11-12",
-      "organization": "NVIDIA",
+      "organization": "National University of Singapore and collaborating universities",
       "source_ids": [
-        "nv-transition",
-        "nv-filing",
-        "nv-board",
-        "nv-tc",
-        "nv-reuters"
+        "maniladder-paper"
       ],
       "time_window": "72h",
-      "body": "On November 12, NVIDIA announced Jensen Huang's departure as president, chief executive and board member. Colette Kress became interim chief executive while retaining her chief financial officer duties; a permanent successor is still being sought. NVIDIA's filing with the U.S. Securities and Exchange Commission says the board accepted the resignation on November 11. That is the decision date, whereas November 12 is the public announcement date. The leadership change at a supplier of AI computing equipment is a confirmed event, rather than an inference from reports about the scandal.\n\nThe crisis surrounding Huang has a separate investigative process: on November 10, independent directors said they had engaged outside lawyers to investigate. TechCrunch describes the controversy as arising from reported extramarital relationships and scrutiny of China-related chip sales. TechCrunch and Reuters independently reported the resignation, but reports of possible misconduct are not findings of that investigation. The cited official documents do not publish such findings. NVIDIA's board says operations, customer commitments and product plans should continue without interruption. That is the company's position about future operations; it does not independently establish that customers will see no disruption. Financial results and the accompanying investor call remain scheduled for November 17.\n\nRobots need more than motors: their programs learn using computers and later run on selected hardware. Events at a major supplier therefore reach beyond its own offices. That connection does not justify inventing a particular consequence, however; the leadership statement does not announce the closure of a robotics program or the withdrawal of an engineering tool.\n\nThe useful follow-up is whether concrete decisions support the promised continuity. NVIDIA kept its November 17 reporting date. Until further evidence appears, a change in executive leadership and a change in hardware capability remain different events, even when discussed in the same news cycle.",
+      "body": "A team including the National University of Singapore posted ManiLadder on November 12, a study introducing 112 simulated object-manipulation tasks organized into four difficulty levels. The collection covers rigid and deformable objects, one or two arms, simple grippers and multi-finger hands. The researchers want to measure not only the variety of actions a robot learns but also how demanding a task it can solve under a common learning budget.\n\nCalibration gives each task 20 demonstrations and the same reference control model with fixed training settings. The model learns to reproduce demonstrated actions, and its success determines the task's level. It trains for 40,000 steps, with 50 evaluation attempts every 5,000 steps. Task conditions are revised until performance falls within the intended range. Final method comparisons also use 50 test attempts per task, with evaluation starting conditions separated from those used to collect demonstrations.\n\nThe idea resembles selecting tasks for progressively developing a skill, but here difficulty comes from experiments with a learning program. Changing a mug's starting position or a box's size can require a different movement sequence. The authors vary such conditions and observe the reference program's success. This organizes comparison around the demands of the actions rather than a long list of task names. Further tests with other models examine how much of the ordering survives beyond the original calibration setup.\n\nThe scale has a specific anchor: a reference model and twenty examples per task. More data or a different learning method can change where a task sits on that scale. Training conditions therefore remain part of the comparison, alongside the displayed success rate.",
       "image": null
     },
     {
-      "id": "asus-gallop-station",
-      "title": "ASUS teaches a robot to handle small bagged parts",
-      "summary": "ASUS described a two-arm robot for packing motherboard accessories. At its own factory, it is testing learning from people's work, while high success remains a stated target.",
-      "details": "On November 13, ASUS described Gallop, its robot program for factory workstations. Today it is a fixed-base, two-arm system learning to pack accessories for motherboards, the main circuit boards connecting a computer’s components, at an ASUS group plant. The station contains 15 small parts, many in thin transparent bags. ASUS sets a target of 99.5% success while completing a kit within 20 seconds. In the article, that is the required standard, not a published measurement of reliability already achieved. A wheeled version, customer pilots in 2027 and market availability in the second half of 2028 remain plans.",
-      "technical_novelty": "ASUS described a two-arm robot for packing motherboard accessories. At its own factory, it is testing learning from people's work, while high success remains a stated target. ASUS describes four control layers: planning steps, separately checking their execution, reaching and grasping skills, and precise arm control. Fixed interfaces — agreed rules for exchanging data — connect them so that models can change without rebuilding the whole robot. An onboard NVIDIA Jetson AGX Thor computer runs the system. Training uses recordings of consenting workers, variations in computer-simulated conditions and demonstrations guided by a person wearing a headset and gloves. ASUS still plans to integrate its own touch-sensitive hand. The intended design should therefore not be mistaken for the exact configuration already operating on the current rig.",
-      "engineering_impact": "ASUS described a two-arm robot for packing motherboard accessories. At its own factory, it is testing learning from people's work, while high success remains a stated target. The current fixed system and the planned wheeled robot also need separating. Moving between workstations and manipulating items at one table are different capabilities. ASUS describes development of the latter and plans to add the former, rather than demonstrating both together as a ready production offering.",
-      "limitations": "ASUS described a two-arm robot for packing motherboard accessories. At its own factory, it is testing learning from people's work, while high success remains a stated target. The current fixed system and the planned wheeled robot also need separating. Moving between workstations and manipulating items at one table are different capabilities. ASUS describes development of the latter and plans to add the former, rather than demonstrating both together as a ready production offering.",
-      "evidence_status": "Developer announcement; stated plans and capabilities are not an independent test.",
-      "published_at": "2026-11-13",
-      "organization": "ASUS",
-      "source_ids": [
-        "asus-station"
-      ],
-      "time_window": "72h",
-      "body": "On November 13, ASUS described Gallop, its robot program for factory workstations. Today it is a fixed-base, two-arm system learning to pack accessories for motherboards, the main circuit boards connecting a computer’s components, at an ASUS group plant. The station contains 15 small parts, many in thin transparent bags. ASUS sets a target of 99.5% success while completing a kit within 20 seconds. In the article, that is the required standard, not a published measurement of reliability already achieved. A wheeled version, customer pilots in 2027 and market availability in the second half of 2028 remain plans.\n\nASUS describes four control layers: planning steps, separately checking their execution, reaching and grasping skills, and precise arm control. Fixed interfaces — agreed rules for exchanging data — connect them so that models can change without rebuilding the whole robot. An onboard NVIDIA Jetson AGX Thor computer runs the system. Training uses recordings of consenting workers, variations in computer-simulated conditions and demonstrations guided by a person wearing a headset and gloves. ASUS still plans to integrate its own touch-sensitive hand. The intended design should therefore not be mistaken for the exact configuration already operating on the current rig.\n\nA thin bag is difficult to handle because contact can change its shape. A robot needs not only to move its hand but also to check that the item arrived where required. ASUS assigns step checking to a separate layer. Its detailed tests are not published, so no particular checking reliability can be attributed to that description.\n\nThe current fixed system and the planned wheeled robot also need separating. Moving between workstations and manipulating items at one table are different capabilities. ASUS describes development of the latter and plans to add the former, rather than demonstrating both together as a ready production offering.",
-      "image": null
-    },
-    {
-      "id": "heir-human-context",
-      "title": "A person's gaze helps identify which object to fetch",
-      "summary": "A team including Tsinghua University recorded speech, gaze and robot actions to study household requests. The extra cue can clarify the intended object, while the integrated assistant still often fails to finish the job.",
-      "details": "A team including Tsinghua University posted a research preprint on November 12 about grounding household robot requests in speech, measured gaze and video from the person's viewpoint. Its HEIR dataset pairs those signals with robot observations and recorded movements. An operator controlled the robot during data collection: these are demonstrations, not thousands of independently completed requests. Seventeen participants contributed 300 sessions totaling 38.56 hours. The evaluation covers identifying the intended object, planning steps, moving around and manipulating objects with the arms.",
-      "technical_novelty": "A team including Tsinghua University recorded speech, gaze and robot actions to study household requests. The extra cue can clarify the intended object, while the integrated assistant still often fails to finish the job. The Tsinghua team’s system first interprets a request, then uses the current state to decide whether to continue a step, switch to the next one or finish. The authors compared models on recordings and ran separate autonomous experiments on a physical robot. The integrated system completed 18.52% of 27 evaluated requests. Better scores for individual actions do not establish equal reliability for the whole assistant. Gaze contributions were isolated mainly through controlled comparisons on recorded data; live sessions diverge in human behavior and object arrangement. The result does not establish dependable assistance in an arbitrary home or for a person outside the tested setting.",
-      "engineering_impact": "A team including Tsinghua University recorded speech, gaze and robot actions to study household requests. The extra cue can clarify the intended object, while the integrated assistant still often fails to finish the job. The cue has a clear boundary: looking information does not replace locomotion or grasping. Errors accumulated between stages in the integrated test, so whole requests succeeded less often than individual actions. A useful source of data is therefore different from a ready independent household assistant.",
-      "limitations": "A team including Tsinghua University recorded speech, gaze and robot actions to study household requests. The extra cue can clarify the intended object, while the integrated assistant still often fails to finish the job. The cue has a clear boundary: looking information does not replace locomotion or grasping. Errors accumulated between stages in the integrated test, so whole requests succeeded less often than individual actions. A useful source of data is therefore different from a ready independent household assistant.",
-      "evidence_status": "Preprint and author-run experiments; independent reproduction is not confirmed.",
-      "published_at": "2026-11-12",
-      "organization": "Tsinghua University; Beijing Academy of Artificial Intelligence; Fudan University; Yangu Robotics",
-      "source_ids": [
-        "heir-preprint"
-      ],
-      "time_window": "72h",
-      "body": "A team including Tsinghua University posted a research preprint on November 12 about grounding household robot requests in speech, measured gaze and video from the person's viewpoint. Its HEIR dataset pairs those signals with robot observations and recorded movements. An operator controlled the robot during data collection: these are demonstrations, not thousands of independently completed requests. Seventeen participants contributed 300 sessions totaling 38.56 hours. The evaluation covers identifying the intended object, planning steps, moving around and manipulating objects with the arms.\n\nThe Tsinghua team’s system first interprets a request, then uses the current state to decide whether to continue a step, switch to the next one or finish. The authors compared models on recordings and ran separate autonomous experiments on a physical robot. The integrated system completed 18.52% of 27 evaluated requests. Better scores for individual actions do not establish equal reliability for the whole assistant. Gaze contributions were isolated mainly through controlled comparisons on recorded data; live sessions diverge in human behavior and object arrangement. The result does not establish dependable assistance in an arbitrary home or for a person outside the tested setting.\n\nWhen someone says to bring that thing, sound alone may not identify the chosen object. Gaze direction supplies another observable cue. This is not mind reading: researchers align measurements with images and words, then separately test whether the robot can travel, grasp the item and complete the request rather than merely name the right object.\n\nThe cue has a clear boundary: looking information does not replace locomotion or grasping. Errors accumulated between stages in the integrated test, so whole requests succeeded less often than individual actions. A useful source of data is therefore different from a ready independent household assistant.",
-      "image": null
-    },
-    {
-      "id": "gxo-apollo-framework",
-      "title": "Why a thousand-robot plan begins with conditions",
-      "summary": "GXO and Apptronik want to expand warehouse humanoid trials. Up to 1,000 refers to a possible future scale after validation, not warehouses already filled with those robots.",
-      "details": "Logistics company GXO and robot developer Apptronik announced a letter of intent on November 12 to expand warehouse trials of the human-shaped Apollo robot. Tests in live operations are planned from 2027, covering picking, case and tote movement, packing and sorting. The proposed scale is up to 1,000 robots over four years, explicitly conditional on meeting agreed productivity, safety and operational measures. Initial commercial deployment in North America is intended for late 2027. This is a conditional expansion plan, not an announcement that a thousand machines have been delivered.",
-      "technical_novelty": "GXO and Apptronik want to expand warehouse humanoid trials. Up to 1,000 refers to a possible future scale after validation, not warehouses already filled with those robots. GXO and Apptronik envisage a service model: robot use would be provided as a service that can expand as applications become ready. Prices, maintenance coverage and the allocation of individual costs are not disclosed. GXO reports an earlier pilot for picking small consumer goods and evaluations of more than 50 logistics tasks at Apptronik's training facility. That facility is not fifty customer warehouses. Independent Forbes coverage highlights an economic limitation: GXO's chief executive had previously said humanoid investment had not yet paid off. The agreement itself provides no payback calculation for the future program.",
-      "engineering_impact": "GXO and Apptronik want to expand warehouse humanoid trials. Up to 1,000 refers to a possible future scale after validation, not warehouses already filled with those robots. A service format describes how robots might be provided, not an automatic guarantee of value. Prices are not disclosed. The criteria allowing expansion are therefore more informative than the headline ceiling: they will distinguish a possible thousand machines from the smaller number that may prove useful on suitable jobs.",
-      "limitations": "GXO and Apptronik want to expand warehouse humanoid trials. Up to 1,000 refers to a possible future scale after validation, not warehouses already filled with those robots. A service format describes how robots might be provided, not an automatic guarantee of value. Prices are not disclosed. The criteria allowing expansion are therefore more informative than the headline ceiling: they will distinguish a possible thousand machines from the smaller number that may prove useful on suitable jobs.",
-      "evidence_status": "Developer announcement; stated plans and capabilities are not an independent test.",
-      "published_at": "2026-11-12",
-      "organization": "GXO; Apptronik",
-      "source_ids": [
-        "gxo-intent",
-        "gxo-forbes"
-      ],
-      "time_window": "72h",
-      "body": "Logistics company GXO and robot developer Apptronik announced a letter of intent on November 12 to expand warehouse trials of the human-shaped Apollo robot. Tests in live operations are planned from 2027, covering picking, case and tote movement, packing and sorting. The proposed scale is up to 1,000 robots over four years, explicitly conditional on meeting agreed productivity, safety and operational measures. Initial commercial deployment in North America is intended for late 2027. This is a conditional expansion plan, not an announcement that a thousand machines have been delivered.\n\nGXO and Apptronik envisage a service model: robot use would be provided as a service that can expand as applications become ready. Prices, maintenance coverage and the allocation of individual costs are not disclosed. GXO reports an earlier pilot for picking small consumer goods and evaluations of more than 50 logistics tasks at Apptronik's training facility. That facility is not fifty customer warehouses. Independent Forbes coverage highlights an economic limitation: GXO's chief executive had previously said humanoid investment had not yet paid off. The agreement itself provides no payback calculation for the future program.\n\nThe shift is from asking whether a machine can lift an object to asking whether it can fit into warehouse work. Picking, transport and packing connect with people and existing equipment. One device succeeding in an empty test area does not show how many should be added to an operating shift or which tasks justify them.\n\nA service format describes how robots might be provided, not an automatic guarantee of value. Prices are not disclosed. The criteria allowing expansion are therefore more informative than the headline ceiling: they will distinguish a possible thousand machines from the smaller number that may prove useful on suitable jobs.",
-      "image": null
-    },
-    {
-      "id": "munich-autoware-bus",
-      "title": "Japanese driving software is being adapted for a Munich bus",
-      "summary": "TIER IV and the Technical University of Munich will apply experience with the Autoware automated-driving software to a full-size city bus. Controlled testing comes first, followed by planned route operation with safety personnel aboard.",
-      "details": "Japan's TIER IV and the Technical University of Munich announced support on November 11 for automated-driving development on a full-size city bus in Munich. The basis is Autoware, automated-driving software whose development TIER IV leads. Its source code is available for study and modification. The bus still needs adaptation to local roads and testing. Bus manufacturer MAN is responsible for vehicle-control mechanisms and low-level software; the university handles sensor configuration and the driving system. After tests in controlled conditions, the partners plan operation on existing routes with personnel aboard to ensure safety.",
-      "technical_novelty": "TIER IV and the Technical University of Munich will apply experience with the Autoware automated-driving software to a full-size city bus. Controlled testing comes first, followed by planned route operation with safety personnel aboard. The effort uses a joint research center established in October. It draws on experience deploying the Autoware automated-driving software in Japanese buses, but does not simply install unchanged software on another vehicle: both the vehicle platform and road conditions differ. A university professor describes federal support of 20 million euros over three years for the Munich bus-development project. That is project-wide funding, not an announced budget solely for Autoware software. The release supplies no Munich route-trial results, measured reduction in crashes or promise to remove the onboard safety personnel at the outset.",
-      "engineering_impact": "TIER IV and the Technical University of Munich will apply experience with the Autoware automated-driving software to a full-size city bus. Controlled testing comes first, followed by planned route operation with safety personnel aboard. Passenger-route work is a planned stage in the announcement, not a published result. An onboard safety worker is part of that plan too. Automated does not mean people can already stop monitoring the journey, or that the road evaluation has been completed and the bus is ready for unrestricted service.",
-      "limitations": "TIER IV and the Technical University of Munich will apply experience with the Autoware automated-driving software to a full-size city bus. Controlled testing comes first, followed by planned route operation with safety personnel aboard. Passenger-route work is a planned stage in the announcement, not a published result. An onboard safety worker is part of that plan too. Automated does not mean people can already stop monitoring the journey, or that the road evaluation has been completed and the bus is ready for unrestricted service.",
-      "evidence_status": "Developer announcement; stated plans and capabilities are not an independent test.",
+      "id": "dexremo-force-frame",
+      "title": "A robot hand benefits when its fingers describe force in the same frame",
+      "summary": "A University of York team and partners built a hand for detaching objects and cleaning surfaces. Finger signals are transformed into shared coordinates so the program can compare force directions consistently.",
+      "details": "Researchers at the University of York, with colleagues in Edinburgh, Jena and King's College London, posted a paper on November 11 about DexRemo, a three-finger robotic hand for detaching adhered objects, cleaning surfaces and retrieving obscured targets. Each fingertip measures force along three axes. To compare readings as the fingers bend, the authors transform them into a shared coordinate frame attached to the wrist. Each force direction is then described relative to the same reference rather than a differently oriented finger.",
+      "technical_novelty": "A University of York team and partners built a hand for detaching objects and cleaning surfaces. Finger signals are transformed into shared coordinates so the program can compare force directions consistently. Each control program learns from 20 successful demonstrations collected through human operation. It receives three camera views, joint states and selected fingertip observations. Across six core tasks, mean success rose from 24% with cameras and joint information alone to 83% when fingertip position and orientation, along with forces expressed in wrist coordinates, were added. That comparison changes several inputs together; intermediate configurations help examine their contributions. Three further scenarios were evaluated with the full configuration. The paper has been accepted by IEEE Transactions on Robotics, a research journal.",
+      "engineering_impact": "A University of York team and partners built a hand for detaching objects and cleaning surfaces. Finger signals are transformed into shared coordinates so the program can compare force directions consistently. Imagine an arrow drawn on a glove: turning your hand also turns the arrow relative to the table. A sensor attached to a finger creates a similar description problem. Researchers use joint geometry to express forces relative to one wrist reference. The physical contact stays the same; the representation supplied to the program changes. It illustrates how useful sensor data depend on both the measurement and the coordinate system that gives its components meaning, especially when several fingers move independently.",
+      "limitations": "A University of York team and partners built a hand for detaching objects and cleaning surfaces. Finger signals are transformed into shared coordinates so the program can compare force directions consistently. The experiments cover a place where the hand has already been positioned: the wrist remains fixed and a stage raises or lowers it. Searching a large room and positioning an entire robotic arm are outside this experimental setup and are identified by the authors as further integration work.",
+      "evidence_status": "Author-run experiments; accepted by IEEE Transactions on Robotics. Input comparisons cover six core tasks; independent reproduction is not established here.",
       "published_at": "2026-11-11",
-      "organization": "TIER IV; Technical University of Munich; MAN",
+      "organization": "University of York; University of Edinburgh; Friedrich Schiller University Jena; King’s College London",
       "source_ids": [
-        "tier-bus"
+        "dexremo-paper"
+      ],
+      "time_window": "7d",
+      "body": "Researchers at the University of York, with colleagues in Edinburgh, Jena and King's College London, posted a paper on November 11 about DexRemo, a three-finger robotic hand for detaching adhered objects, cleaning surfaces and retrieving obscured targets. Each fingertip measures force along three axes. To compare readings as the fingers bend, the authors transform them into a shared coordinate frame attached to the wrist. Each force direction is then described relative to the same reference rather than a differently oriented finger.\n\nEach control program learns from 20 successful demonstrations collected through human operation. It receives three camera views, joint states and selected fingertip observations. Across six core tasks, mean success rose from 24% with cameras and joint information alone to 83% when fingertip position and orientation, along with forces expressed in wrist coordinates, were added. That comparison changes several inputs together; intermediate configurations help examine their contributions. Three further scenarios were evaluated with the full configuration. The paper has been accepted by IEEE Transactions on Robotics, a research journal.\n\nImagine an arrow drawn on a glove: turning your hand also turns the arrow relative to the table. A sensor attached to a finger creates a similar description problem. Researchers use joint geometry to express forces relative to one wrist reference. The physical contact stays the same; the representation supplied to the program changes. It illustrates how useful sensor data depend on both the measurement and the coordinate system that gives its components meaning, especially when several fingers move independently.\n\nThe experiments cover a place where the hand has already been positioned: the wrist remains fixed and a stage raises or lowers it. Searching a large room and positioning an entire robotic arm are outside this experimental setup and are identified by the authors as further integration work.",
+      "image": null
+    },
+    {
+      "id": "japan-robot-investment",
+      "title": "Japan discusses what will help robots reach working sites",
+      "summary": "Japan's government met robot and component makers. Alongside machines and software, companies requested support for data and several years of early adoption.",
+      "details": "Japan's prime minister Sanae Takaichi met robot and component makers on November 12 to discuss support for physical AI, artificial-intelligence systems that guide actions in the physical world. She instructed ministers to reflect company requests in the growth-strategy implementation plan and provide predictable information about support measures and required budgets. The meeting reiterated 2040 ambitions: deploying roughly 10 million AI robots and securing a global market share for Japanese industry of more than 30%, or 20 trillion yen.",
+      "technical_novelty": "Japan's government met robot and component makers. Alongside machines and software, companies requested support for data and several years of early adoption. Companies identified four needs: support from domestic robot and component research through volume production; faster development of domestic AI technologies; mechanisms for accumulating data; and multi-year support for early adoption. The government links robotics to worker shortages, physical workload and hazardous operations. The published speech assigns these issues to further planning, with specific support amounts still to be set out. A separate Sankei report published by ITmedia on November 13 corroborates the meeting and the targets.",
+      "engineering_impact": "Japan's government met robot and component makers. Alongside machines and software, companies requested support for data and several years of early adoption. Behind a robot demonstration lies a chain of work: making components, teaching control, finding a suitable site and checking operation alongside people. The meeting considered those parts together. The industry story therefore concerns conditions under which different developers can offer systems to customers. The market target signals policy direction, while the request for multi-year support explains why participants need planning beyond a short demonstration. The government assigned the question of predictable support to the responsible minister as part of the implementation plan.",
+      "limitations": "Japan's government met robot and component makers. Alongside machines and software, companies requested support for data and several years of early adoption. The published speech identifies the next step: put company requests into the growth-strategy plan and specify support measures with required budgets. Market participants will then be able to examine the programs on which they could rely when organizing actual deployments.",
+      "evidence_status": "Official policy speech corroborated by Sankei reporting; targets and instructions are presented as government plans.",
+      "published_at": "2026-11-12",
+      "organization": "Prime Minister’s Office of Japan",
+      "source_ids": [
+        "japan-pm-1112",
+        "japan-sankei-1113"
+      ],
+      "time_window": "7d",
+      "body": "Japan's prime minister Sanae Takaichi met robot and component makers on November 12 to discuss support for physical AI, artificial-intelligence systems that guide actions in the physical world. She instructed ministers to reflect company requests in the growth-strategy implementation plan and provide predictable information about support measures and required budgets. The meeting reiterated 2040 ambitions: deploying roughly 10 million AI robots and securing a global market share for Japanese industry of more than 30%, or 20 trillion yen.\n\nCompanies identified four needs: support from domestic robot and component research through volume production; faster development of domestic AI technologies; mechanisms for accumulating data; and multi-year support for early adoption. The government links robotics to worker shortages, physical workload and hazardous operations. The published speech assigns these issues to further planning, with specific support amounts still to be set out. A separate Sankei report published by ITmedia on November 13 corroborates the meeting and the targets.\n\nBehind a robot demonstration lies a chain of work: making components, teaching control, finding a suitable site and checking operation alongside people. The meeting considered those parts together. The industry story therefore concerns conditions under which different developers can offer systems to customers. The market target signals policy direction, while the request for multi-year support explains why participants need planning beyond a short demonstration. The government assigned the question of predictable support to the responsible minister as part of the implementation plan.\n\nThe published speech identifies the next step: put company requests into the growth-strategy plan and specify support measures with required budgets. Market participants will then be able to examine the programs on which they could rely when organizing actual deployments.",
+      "image": null
+    },
+    {
+      "id": "serve-developer-portal",
+      "title": "Outside applications can request trips from Serve's sidewalk robots",
+      "summary": "Serve Robotics opened software access to its delivery service. Developers can first test requests with simulated robots and then seek permission to use the physical network.",
+      "details": "U.S. company Serve Robotics opened a developer portal for its sidewalk delivery-robot network on November 11. An application can request a delivery, specify collection and drop-off, and track the trip through an application programming interface, or API: a set of commands for communicating with the service. Serve also provides a test environment containing simulated robots. Documentation and this environment are available immediately; live-robot access requires company approval and service coverage at the requested location.",
+      "technical_novelty": "Serve Robotics opened software access to its delivery service. Developers can first test requests with simulated robots and then seek permission to use the physical network. Serve reports a network of 2,000 robots across more than 150 neighborhoods in 20 U.S. cities. Dispatch, routes, navigation and operational supervision remain with the operator. Developers build services on top of that infrastructure, such as delivery for a local shop. The simulated environment allows them to test the full delivery sequence and unusual situations before using a physical machine. The network figures are company-reported, and the allocation of operating responsibilities also comes from Serve’s description.",
+      "engineering_impact": "Serve Robotics opened software access to its delivery service. Developers can first test requests with simulated robots and then seek permission to use the physical network. A new participant can focus on a shop or ordering application rather than developing a wheeled machine. It specifies collection and handover using commands the service understands, while Serve remains responsible for routing and supervision. Robotics becomes one part of a broader service: the customer wants a purchase to arrive, and the application must coordinate shop, operator and recipient. The simulated environment allows this sequence to be checked without a street trip, including unusual situations that a team wants to investigate before physical delivery.",
+      "limitations": "Serve Robotics opened software access to its delivery service. Developers can first test requests with simulated robots and then seek permission to use the physical network. The next boundary is the service map and operator approval. Developers need actual collection and handover points within the supported network. Planning a useful integration therefore includes the physical geography of the trip as well as communication between pieces of software.",
+      "evidence_status": "Official Serve release and technical explanation; network size and available functions are operator-reported.",
+      "published_at": "2026-11-11",
+      "organization": "Serve Robotics",
+      "source_ids": [
+        "serve-release",
+        "serve-technical"
+      ],
+      "time_window": "7d",
+      "body": "U.S. company Serve Robotics opened a developer portal for its sidewalk delivery-robot network on November 11. An application can request a delivery, specify collection and drop-off, and track the trip through an application programming interface, or API: a set of commands for communicating with the service. Serve also provides a test environment containing simulated robots. Documentation and this environment are available immediately; live-robot access requires company approval and service coverage at the requested location.\n\nServe reports a network of 2,000 robots across more than 150 neighborhoods in 20 U.S. cities. Dispatch, routes, navigation and operational supervision remain with the operator. Developers build services on top of that infrastructure, such as delivery for a local shop. The simulated environment allows them to test the full delivery sequence and unusual situations before using a physical machine. The network figures are company-reported, and the allocation of operating responsibilities also comes from Serve’s description.\n\nA new participant can focus on a shop or ordering application rather than developing a wheeled machine. It specifies collection and handover using commands the service understands, while Serve remains responsible for routing and supervision. Robotics becomes one part of a broader service: the customer wants a purchase to arrive, and the application must coordinate shop, operator and recipient. The simulated environment allows this sequence to be checked without a street trip, including unusual situations that a team wants to investigate before physical delivery.\n\nThe next boundary is the service map and operator approval. Developers need actual collection and handover points within the supported network. Planning a useful integration therefore includes the physical geography of the trip as well as communication between pieces of software.",
+      "image": null
+    },
+    {
+      "id": "agile-series-f",
+      "title": "Five hundred million dollars backs industrial robotics expansion",
+      "summary": "Agile Robots raised new capital in a SoftBank Group-led round. The company, valued at $8.5 billion, combines arms, hands, mobile robots and humanoids.",
+      "details": "Agile Robots raised $500 million in a Series F financing round at an $8.5 billion valuation, reported by Reuters and Forbes on November 12. A financing round is a further stage of raising capital from investors. SoftBank Group led it, with NVIDIA, Hitachi and Hitachi Ventures, and T.Capital among the participants. Total capital raised reached $2 billion. The company links the new money to U.S. expansion, greater production capacity including in Germany, and entry into new markets.",
+      "technical_novelty": "Agile Robots raised new capital in a SoftBank Group-led round. The company, valued at $8.5 billion, combines arms, hands, mobile robots and humanoids. Agile Robots offers industrial arms, robotic hands, mobile systems and humanoids. It reports more than 20,000 industrial robotic solutions installed with customers. Its Fürstenfeldbruck site near Munich has stated capacity for up to 10,000 legged or wheeled humanoid robots a year. These figures describe different parts of the business: installed industrial equipment and capacity to produce new machines. Forbes connects investor interest with the combination of manufacturing, software and established industrial-automation experience.",
+      "engineering_impact": "Agile Robots raised new capital in a SoftBank Group-led round. The company, valued at $8.5 billion, combines arms, hands, mobile robots and humanoids. The investment shows which capabilities market participants are backing. Here the company connects device development with integration into industrial work. Acquired businesses such as Franka Robotics contribute different parts of that offer. Robot adoption also involves fitting equipment into a customer's operation and supporting it afterward. Money for manufacturing sites and international expansion therefore affects where customers may obtain hardware and assistance, in addition to the design of an individual robot. That industrial network is part of the investment story described by the company and Forbes.",
+      "limitations": "Agile Robots raised new capital in a SoftBank Group-led round. The company, valued at $8.5 billion, combines arms, hands, mobile robots and humanoids. The official announcement names the United States and capacity expansion including Germany. It does not disclose utilization of new lines or individual order terms, leaving subsequent production information as the basis for assessing how quickly that planned capacity is being used.",
+      "evidence_status": "Company financing announcement checked against Forbes and Reuters; production capacity and installed base are company-reported.",
+      "published_at": "2026-11-12",
+      "organization": "Agile Robots; SoftBank Group",
+      "source_ids": [
+        "agile-official",
+        "agile-forbes",
+        "agile-reuters"
       ],
       "time_window": "72h",
-      "body": "Japan's TIER IV and the Technical University of Munich announced support on November 11 for automated-driving development on a full-size city bus in Munich. The basis is Autoware, automated-driving software whose development TIER IV leads. Its source code is available for study and modification. The bus still needs adaptation to local roads and testing. Bus manufacturer MAN is responsible for vehicle-control mechanisms and low-level software; the university handles sensor configuration and the driving system. After tests in controlled conditions, the partners plan operation on existing routes with personnel aboard to ensure safety.\n\nThe effort uses a joint research center established in October. It draws on experience deploying the Autoware automated-driving software in Japanese buses, but does not simply install unchanged software on another vehicle: both the vehicle platform and road conditions differ. A university professor describes federal support of 20 million euros over three years for the Munich bus-development project. That is project-wide funding, not an announced budget solely for Autoware software. The release supplies no Munich route-trial results, measured reduction in crashes or promise to remove the onboard safety personnel at the outset.\n\nAutomated driving cannot be transferred like a file that works identically on every vehicle. A computer needs sensor information and a way to change motion through the bus's mechanisms. The project therefore separates vehicle work from software work. Local roads add another set of conditions to check before an ordinary route can become the operating environment.\n\nPassenger-route work is a planned stage in the announcement, not a published result. An onboard safety worker is part of that plan too. Automated does not mean people can already stop monitoring the journey, or that the road evaluation has been completed and the bus is ready for unrestricted service.",
+      "body": "Agile Robots raised $500 million in a Series F financing round at an $8.5 billion valuation, reported by Reuters and Forbes on November 12. A financing round is a further stage of raising capital from investors. SoftBank Group led it, with NVIDIA, Hitachi and Hitachi Ventures, and T.Capital among the participants. Total capital raised reached $2 billion. The company links the new money to U.S. expansion, greater production capacity including in Germany, and entry into new markets.\n\nAgile Robots offers industrial arms, robotic hands, mobile systems and humanoids. It reports more than 20,000 industrial robotic solutions installed with customers. Its Fürstenfeldbruck site near Munich has stated capacity for up to 10,000 legged or wheeled humanoid robots a year. These figures describe different parts of the business: installed industrial equipment and capacity to produce new machines. Forbes connects investor interest with the combination of manufacturing, software and established industrial-automation experience.\n\nThe investment shows which capabilities market participants are backing. Here the company connects device development with integration into industrial work. Acquired businesses such as Franka Robotics contribute different parts of that offer. Robot adoption also involves fitting equipment into a customer's operation and supporting it afterward. Money for manufacturing sites and international expansion therefore affects where customers may obtain hardware and assistance, in addition to the design of an individual robot. That industrial network is part of the investment story described by the company and Forbes.\n\nThe official announcement names the United States and capacity expansion including Germany. It does not disclose utilization of new lines or individual order terms, leaving subsequent production information as the basis for assessing how quickly that planned capacity is being used.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "GXO and ASUS: separating robot plans from results",
-    "summary": "Logistics company GXO plans to expand humanoid use after warehouse trials. ASUS is teaching a two-arm robot to pack computer accessories, but its stated speed and success rate remain targets.",
-    "implications": "For GXO, up to a thousand warehouse robots is a conditional expansion plan. For ASUS, 99.5% success within 20 seconds is a kit-packing requirement rather than a published achieved result. The numbers describe different things and cannot be treated as equivalent measures of readiness."
+    "title": "How to measure a robot’s difficult work",
+    "summary": "Researchers including a National University of Singapore team organized 112 simulated robot tasks into four levels. They assigned difficulty by observing how a reference program learns from the same number of examples.",
+    "implications": "ManiLadder ties task difficulty to specific learning conditions. Comparing programs therefore requires both the number of successful attempts and the amount of example data each program received."
   },
   "sources": [
     {
-      "id": "nv-transition",
-      "title": "NVIDIA Announces CEO Transition",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition/",
-      "domain": "nvidianews.nvidia.com",
-      "organization": "NVIDIA",
+      "id": "maniladder-paper",
+      "title": "ManiLadder: Benchmarking Robot Manipulation Through a Categorized and Multi-Difficulty Level Task Ladder",
+      "url": "https://arxiv.org/abs/2611.16374",
+      "domain": "arxiv.org",
+      "organization": "National University of Singapore and collaborating universities",
       "published_at": "2026-11-12"
     },
     {
-      "id": "nv-filing",
-      "title": "NVIDIA Corporation, Form 8-K: leadership changes",
-      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000082/nvda-20261111.htm",
-      "domain": "www.sec.gov",
-      "organization": "NVIDIA; U.S. Securities and Exchange Commission",
+      "id": "dexremo-paper",
+      "title": "DexRemo: A Force-Sensing Hand Platform and Task Suite for Contact-Rich Removal Manipulation",
+      "url": "https://arxiv.org/abs/2611.15981",
+      "domain": "arxiv.org",
+      "organization": "University of York; University of Edinburgh; Friedrich Schiller University Jena; King’s College London",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "japan-pm-1112",
+      "title": "フィジカルＡＩ関連企業との意見交換会",
+      "url": "https://www.kantei.go.jp/jp/105/actions/202611/12ikenkoukan.html",
+      "domain": "www.kantei.go.jp",
+      "organization": "Prime Minister’s Office of Japan",
       "published_at": "2026-11-12"
     },
     {
-      "id": "nv-board",
-      "title": "Statement from the Independent Members of the NVIDIA Board",
-      "url": "https://investor.nvidia.com/news/press-release-details/2026/Statement-from-the-Independent-Members-of-the-NVIDIA-Board/default.aspx",
-      "domain": "investor.nvidia.com",
-      "organization": "NVIDIA",
+      "id": "japan-sankei-1113",
+      "title": "虎柄ロボットに「阪神君」と命名　首相、フィジカルAIを体験　関連企業と意見交換",
+      "url": "https://www.itmedia.co.jp/news/article/2611/13/2000003182/",
+      "domain": "www.itmedia.co.jp",
+      "organization": "Sankei Shimbun; ITmedia",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "serve-release",
+      "title": "Serve Robotics Opens Its Robot Delivery Network for Anyone to Build On",
+      "url": "https://serverobotics.gcs-web.com/news-releases/news-release-details/serve-robotics-opens-its-robot-delivery-network-anyone-build",
+      "domain": "serverobotics.gcs-web.com",
+      "organization": "Serve Robotics",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "serve-technical",
+      "title": "Introducing the Serve Developer Portal: Build With Our Robots",
+      "url": "https://www.serverobotics.com/blog/introducing-the-serve-developer-portal-build-with-our-robots/index.html",
+      "domain": "www.serverobotics.com",
+      "organization": "Serve Robotics",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "agile-official",
+      "title": "Physical AI leader Agile Robots raises $500 million Series F at $8.5 billion valuation to accelerate global growth",
+      "url": "https://www.agile-robots.com/en/news/detail/physical-ai-leader-agile-robots-raises-500-million-series-f-funding/",
+      "domain": "www.agile-robots.com",
+      "organization": "Agile Robots",
       "published_at": "2026-11-10"
     },
     {
-      "id": "nv-tc",
-      "title": "The unfolding Jensen Huang scandal: a timeline",
-      "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/",
-      "domain": "techcrunch.com",
-      "organization": "TechCrunch",
-      "published_at": "2026-11-13"
-    },
-    {
-      "id": "nv-reuters",
-      "title": "Nvidia's Huang turns to Paul Weiss, law firm that inked deal with Trump",
-      "url": "https://www.reuters.com/legal/transactional/nvidias-huang-turns-paul-weiss-law-firm-that-inked-deal-with-trump-2026-11-13/",
-      "domain": "www.reuters.com",
-      "organization": "Reuters",
-      "published_at": "2026-11-13"
-    },
-    {
-      "id": "asus-station",
-      "title": "Factory-Proven Physical AI: Why ASUS Is Building a Humanoid Robot",
-      "url": "https://press.asus.com/blog/factory-proven-physical-ai-asus-gallop-humanoid-robot/",
-      "domain": "press.asus.com",
-      "organization": "ASUS",
-      "published_at": "2026-11-13"
-    },
-    {
-      "id": "heir-preprint",
-      "title": "HEIR: Harness Egocentric Intent for Human-Robot Interactions",
-      "url": "https://arxiv.org/abs/2611.17238",
-      "domain": "arxiv.org",
-      "organization": "Tsinghua University; Beijing Academy of Artificial Intelligence; Fudan University; Yangu Robotics",
-      "published_at": "2026-11-12"
-    },
-    {
-      "id": "gxo-intent",
-      "title": "GXO and Apptronik Expand Partnership to Scale Humanoid Deployment",
-      "url": "https://investors.gxo.com/news-releases/news-release-details/gxo-and-apptronik-expand-partnership-scale-humanoid-deployment",
-      "domain": "investors.gxo.com",
-      "organization": "GXO; Apptronik",
-      "published_at": "2026-11-12"
-    },
-    {
-      "id": "gxo-forbes",
-      "title": "GXO Doubles Down On Humanoids With Plan For Up To 1,000 Apptronik Robots",
-      "url": "https://www.forbes.com/sites/johnkoetsier/2026/11/12/gxo-doubles-down-on-humanoids-with-plan-for-up-to-1000-apptronik-robots/",
+      "id": "agile-forbes",
+      "title": "Germany’s Agile Robots Raises $500 Million From Softbank, Nvidia At $8.5 Billion Valuation",
+      "url": "https://www.forbes.com/sites/johnkoetsier/2026/11/12/germanys-agile-robots-raises-500-million-from-softbank-nvidia-at-85-billion-valuation/",
       "domain": "www.forbes.com",
       "organization": "Forbes",
       "published_at": "2026-11-12"
     },
     {
-      "id": "tier-bus",
-      "title": "ティアフォーとミュンヘン工科大学、「Autoware」を活用した自動運転システムをミュンヘン市内の路線バス開発に展開",
-      "url": "https://prtimes.jp/main/html/rd/p/000000149.000040119.html",
-      "domain": "prtimes.jp",
-      "organization": "TIER IV; Technical University of Munich",
-      "published_at": "2026-11-11"
+      "id": "agile-reuters",
+      "title": "SoftBank, Nvidia back Germany’s Agile Robots at $8.5 billion valuation",
+      "url": "https://www.reuters.com/business/media-telecom/softbank-nvidia-back-germanys-agile-robots-85-billion-valuation-2026-11-12/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-12"
     }
   ]
 }
