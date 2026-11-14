@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-labelledby="locomotion-en-title locomotion-en-desc">
-<title id="locomotion-en-title">Example: a policy with joint targets</title>
-<desc id="locomotion-en-desc">One example: the policy need not output motor torque.</desc>
+<title id="locomotion-en-title">Following a movement command through the control loop</title>
+<desc id="locomotion-en-desc">One control arrangement: the network sets joint targets, a controller drives the actuators, and new measurements return to the input.</desc>
 <style>text{font-family:Arial,sans-serif;fill:#202421}@media(prefers-reduced-motion:reduce){.atlas-pulse{display:none}}</style>
 <defs><marker id="locomotion-en-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#596259"/></marker></defs>
 <path d="M183.0 65.0 L217.0 65.0" fill="none" stroke="#596259" stroke-width="1.5" marker-end="url(#locomotion-en-arrow)"/>
@@ -10,22 +10,22 @@
 <path d="M183.0 385.0 L217.0 385.0" fill="none" stroke="#596259" stroke-width="1.5" marker-end="url(#locomotion-en-arrow)"/>
 <path d="M385 385 L394 385 L394 8 L100 8 L100 24" fill="none" stroke="#596259" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#locomotion-en-arrow)"/>
 <rect x="15" y="25" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
-<text x="100" y="57" text-anchor="middle" font-size="14">Sensors + desired</text>
-<text x="100" y="80" text-anchor="middle" font-size="14">velocity command</text>
+<text x="100" y="57" text-anchor="middle" font-size="14">Sensors and desired</text>
+<text x="100" y="80" text-anchor="middle" font-size="14">motion</text>
 <rect x="215" y="25" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
-<text x="300" y="57" text-anchor="middle" font-size="14">Neural</text>
-<text x="300" y="80" text-anchor="middle" font-size="14">locomotion policy</text>
+<text x="300" y="57" text-anchor="middle" font-size="14">Trained</text>
+<text x="300" y="80" text-anchor="middle" font-size="14">neural network</text>
 <rect x="15" y="185" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
 <text x="100" y="217" text-anchor="middle" font-size="14">Joint targets</text>
-<text x="100" y="240" text-anchor="middle" font-size="14">PD controller</text>
+<text x="100" y="240" text-anchor="middle" font-size="14">Joint controller</text>
 <rect x="215" y="185" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
 <text x="300" y="217" text-anchor="middle" font-size="14">Actuators</text>
-<text x="300" y="240" text-anchor="middle" font-size="14">Torque limits</text>
+<text x="300" y="240" text-anchor="middle" font-size="14">Joint movement</text>
 <rect x="15" y="345" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
-<text x="100" y="377" text-anchor="middle" font-size="14">Body and ground</text>
-<text x="100" y="400" text-anchor="middle" font-size="14">Contacts</text>
+<text x="100" y="377" text-anchor="middle" font-size="14">Robot and ground</text>
+<text x="100" y="400" text-anchor="middle" font-size="14">Foot contacts</text>
 <rect x="215" y="345" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
-<text x="300" y="377" text-anchor="middle" font-size="14">Motion sensors</text>
-<text x="300" y="400" text-anchor="middle" font-size="14">Closed-loop feedback</text>
+<text x="300" y="377" text-anchor="middle" font-size="14">New measurements</text>
+<text x="300" y="400" text-anchor="middle" font-size="14">Feedback</text>
 <g class="atlas-pulse" opacity="0"><circle r="3" fill="#8b2020"><animateMotion dur="6s" repeatCount="indefinite" path="M183.0 65.0 L217.0 65.0"/></circle><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.7;0.8;1" dur="6s" repeatCount="indefinite"/></g>
 </svg>

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-labelledby="locomotion-ja-title locomotion-ja-desc">
-<title id="locomotion-ja-title">関節目標を出す方策の例</title>
-<desc id="locomotion-ja-desc">一例です。方策が直接トルクを出すとは限りません。</desc>
+<title id="locomotion-ja-title">移動指令が制御ループを通る流れ</title>
+<desc id="locomotion-ja-desc">一つの構成例です。ネットワークが関節の目標位置を出し、制御器が駆動部を動かし、新しい測定値を入力に戻します。</desc>
 <style>text{font-family:Arial,sans-serif;fill:#202421}@media(prefers-reduced-motion:reduce){.atlas-pulse{display:none}}</style>
 <defs><marker id="locomotion-ja-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M0 0 10 5 0 10Z" fill="#596259"/></marker></defs>
 <path d="M183.0 65.0 L217.0 65.0" fill="none" stroke="#596259" stroke-width="1.5" marker-end="url(#locomotion-ja-arrow)"/>
@@ -11,21 +11,21 @@
 <path d="M385 385 L394 385 L394 8 L100 8 L100 24" fill="none" stroke="#596259" stroke-width="1.5" stroke-dasharray="5 4" marker-end="url(#locomotion-ja-arrow)"/>
 <rect x="15" y="25" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
 <text x="100" y="57" text-anchor="middle" font-size="14">センサーと</text>
-<text x="100" y="80" text-anchor="middle" font-size="14">目標速度の指令</text>
+<text x="100" y="80" text-anchor="middle" font-size="14">動作の指令</text>
 <rect x="215" y="25" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
-<text x="300" y="57" text-anchor="middle" font-size="14">移動を選ぶ</text>
-<text x="300" y="80" text-anchor="middle" font-size="14">ニューラル方策</text>
+<text x="300" y="57" text-anchor="middle" font-size="14">学習済み</text>
+<text x="300" y="80" text-anchor="middle" font-size="14">ニューラルネット</text>
 <rect x="15" y="185" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
-<text x="100" y="217" text-anchor="middle" font-size="14">関節の目標値</text>
-<text x="100" y="240" text-anchor="middle" font-size="14">PD制御器</text>
+<text x="100" y="217" text-anchor="middle" font-size="14">関節の目標位置</text>
+<text x="100" y="240" text-anchor="middle" font-size="14">関節の制御器</text>
 <rect x="215" y="185" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
-<text x="300" y="217" text-anchor="middle" font-size="14">駆動部</text>
-<text x="300" y="240" text-anchor="middle" font-size="14">トルクの制限</text>
+<text x="300" y="217" text-anchor="middle" font-size="14">モーター</text>
+<text x="300" y="240" text-anchor="middle" font-size="14">関節が動く</text>
 <rect x="15" y="345" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
-<text x="100" y="377" text-anchor="middle" font-size="14">機体と地面</text>
-<text x="100" y="400" text-anchor="middle" font-size="14">接触</text>
+<text x="100" y="377" text-anchor="middle" font-size="14">ロボットと地面</text>
+<text x="100" y="400" text-anchor="middle" font-size="14">足の接触</text>
 <rect x="215" y="345" width="170" height="80" rx="6" fill="white" stroke="#899289"/>
-<text x="300" y="377" text-anchor="middle" font-size="14">運動のセンサー</text>
-<text x="300" y="400" text-anchor="middle" font-size="14">閉ループ</text>
+<text x="300" y="377" text-anchor="middle" font-size="14">新しい測定値</text>
+<text x="300" y="400" text-anchor="middle" font-size="14">フィードバック</text>
 <g class="atlas-pulse" opacity="0"><circle r="3" fill="#8b2020"><animateMotion dur="6s" repeatCount="indefinite" path="M183.0 65.0 L217.0 65.0"/></circle><animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.06;0.7;0.8;1" dur="6s" repeatCount="indefinite"/></g>
 </svg>
