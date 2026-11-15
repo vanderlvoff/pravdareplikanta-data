@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-16",
+  "issue_id": "daily-2026-11-16",
+  "edition": "business",
+  "language": "en",
+  "generated_at": "2026-11-15T21:28:33.029249Z",
+  "title": "Export controls bring new questions for NVIDIA’s board",
+  "lead": "U.S. Treasury Secretary Scott Bessent called for answers from NVIDIA’s board and outside counsel on export compliance within ten days. On November 15, he also urged the company to recruit its permanent chief executive externally.",
+  "news": [
+    {
+      "id": "nvidia-bessent-export-questions",
+      "title": "Bessent increases pressure on NVIDIA's board and succession",
+      "summary": "The U.S. Treasury secretary urged NVIDIA to appoint an outside leader and answer export-compliance questions within ten days. This is a new public demand following the leadership transition already confirmed by the company.",
+      "details": "U.S. Treasury Secretary Scott Bessent urged NVIDIA to recruit its next chief executive from outside the company on November 15. He also called for answers from its board and outside counsel within ten days about compliance with export restrictions. He spoke on Sunday Morning Futures, and Reuters independently reported the remarks. The new development is public pressure on the succession process and controls over chip sales. His allegations about possible compliance failures remain attributed to him; the report does not present findings from a completed investigation.",
+      "technical_novelty": "The U.S. Treasury secretary urged NVIDIA to appoint an outside leader and answer export-compliance questions within ten days. This is a new public demand following the leadership transition already confirmed by the company. The company-confirmed leadership position is that Jensen Huang left his roles as president, chief executive and director, with chief financial officer Colette Kress becoming interim chief executive. In its November 12 announcement, the board said it would consider internal and external candidates and expected operations, customer commitments and product plans to continue. Financial results are scheduled for November 17. Bessent's proposal therefore calls for a narrower candidate pool than the board's previously announced process. The checked reports do not name a permanent appointment resulting from Sunday's intervention.",
+      "engineering_impact": "The U.S. Treasury secretary urged NVIDIA to appoint an outside leader and answer export-compliance questions within ten days. This is a new public demand following the leadership transition already confirmed by the company. For computing-infrastructure buyers, the development concerns confidence in governance at a key supplier. The company continues to seek a permanent leader, while a government official links that choice to sales controls. Further restrictions are a possible planning scenario, but the remarks announce no specific new rule. The concrete information to watch is the board and counsel's answers, followed by decisions on the permanent appointment. Those developments can clarify the supplier's position without treating a forecast about hardware access as an established event.",
+      "limitations": "The U.S. Treasury secretary urged NVIDIA to appoint an outside leader and answer export-compliance questions within ten days. This is a new public demand following the leadership transition already confirmed by the company. The board's existing promise to maintain customer commitments remains NVIDIA's stated position. Further conclusions about deliveries and agreements require new company or regulatory documents; Bessent's remarks do not discuss the terms of individual customer contracts.",
+      "evidence_status": "Bessent’s public remarks checked against FOX Business and Reuters; leadership status confirmed by NVIDIA’s announcement.",
+      "published_at": "2026-11-15",
+      "organization": "U.S. Department of the Treasury; NVIDIA",
+      "source_ids": [
+        "bessent-fox-1115",
+        "bessent-reuters-1115",
+        "nvidia-transition"
+      ],
+      "time_window": "24h",
+      "body": "U.S. Treasury Secretary Scott Bessent urged NVIDIA to recruit its next chief executive from outside the company on November 15. He also called for answers from its board and outside counsel within ten days about compliance with export restrictions. He spoke on Sunday Morning Futures, and Reuters independently reported the remarks. The new development is public pressure on the succession process and controls over chip sales. His allegations about possible compliance failures remain attributed to him; the report does not present findings from a completed investigation.\n\nThe company-confirmed leadership position is that Jensen Huang left his roles as president, chief executive and director, with chief financial officer Colette Kress becoming interim chief executive. In its November 12 announcement, the board said it would consider internal and external candidates and expected operations, customer commitments and product plans to continue. Financial results are scheduled for November 17. Bessent's proposal therefore calls for a narrower candidate pool than the board's previously announced process. The checked reports do not name a permanent appointment resulting from Sunday's intervention.\n\nFor computing-infrastructure buyers, the development concerns confidence in governance at a key supplier. The company continues to seek a permanent leader, while a government official links that choice to sales controls. Further restrictions are a possible planning scenario, but the remarks announce no specific new rule. The concrete information to watch is the board and counsel's answers, followed by decisions on the permanent appointment. Those developments can clarify the supplier's position without treating a forecast about hardware access as an established event.\n\nThe board's existing promise to maintain customer commitments remains NVIDIA's stated position. Further conclusions about deliveries and agreements require new company or regulatory documents; Bessent's remarks do not discuss the terms of individual customer contracts.",
+      "image": null
+    },
+    {
+      "id": "europe-physical-ai-survey",
+      "title": "Survey of robot and autonomous-system builders identifies growth barriers",
+      "summary": "Amazon's cloud business AWS published a survey of 500 European founders and senior leaders building technologies for robots and autonomous machines. Many already sell systems, while converting trials into paid work and financing production remain distinct growth problems.",
+      "details": "Amazon Web Services, Amazon's cloud-computing business, published research on European physical-AI startups on November 14. Physical AI here covers technologies enabling machines to perceive and act in the real world. Strand Partners surveyed 500 founders and senior leaders for AWS in August. Fifty-one percent reported technology in commercial use, and 76% sell to large enterprises and industrial groups. The sample includes robotics, drones, autonomous vehicles, control models and development tools, with several types of enabling technology represented.",
+      "technical_novelty": "Amazon's cloud business AWS published a survey of 500 European founders and senior leaders building technologies for robots and autonomous machines. Many already sell systems, while converting trials into paid work and financing production remain distinct growth problems. Among respondents who had run pilots, only 36% said most or all had become paid deployments. Slow enterprise purchasing was identified by 64%, while 59% described access to capital as a major challenge. These are answers to different survey questions; the pilot-conversion figure specifically concerns companies that had conducted pilots. AWS links further growth to manufacturing finance, customers willing to co-develop, technical skills and more consistent rules. The publication is new in November, while the opinions and business conditions measured by the survey date from August.",
+      "engineering_impact": "Amazon's cloud business AWS published a survey of 500 European founders and senior leaders building technologies for robots and autonomous machines. Many already sell systems, while converting trials into paid work and financing production remain distinct growth problems. The survey separates demand for a trial from willingness to fund continuing operations. Six in ten respondents report more pilot demand than they can serve, while conversion of most pilots into paid deployment is less common. For a buyer, that raises a management question about its own trial program: who decides whether to proceed, and which resources the next stage requires. AWS recommends that enterprises establish a clear route from pilot to deployment, while investors engage earlier with firms approaching manufacturing and customer-support requirements.",
+      "limitations": "Amazon's cloud business AWS published a survey of 500 European founders and senior leaders building technologies for robots and autonomous machines. Many already sell systems, while converting trials into paid work and financing production remain distinct growth problems. The survey records executives' August assessments of their companies. Publication on November 14 provides a dated market snapshot; later contract outcomes and funding rounds fall outside its data-collection period.",
+      "evidence_status": "Executive survey commissioned by AWS and conducted by Strand Partners in August; findings published November 14.",
+      "published_at": "2026-11-14",
+      "organization": "Amazon Web Services; Strand Partners",
+      "source_ids": [
+        "aws-survey-1114"
+      ],
+      "time_window": "72h",
+      "body": "Amazon Web Services, Amazon's cloud-computing business, published research on European physical-AI startups on November 14. Physical AI here covers technologies enabling machines to perceive and act in the real world. Strand Partners surveyed 500 founders and senior leaders for AWS in August. Fifty-one percent reported technology in commercial use, and 76% sell to large enterprises and industrial groups. The sample includes robotics, drones, autonomous vehicles, control models and development tools, with several types of enabling technology represented.\n\nAmong respondents who had run pilots, only 36% said most or all had become paid deployments. Slow enterprise purchasing was identified by 64%, while 59% described access to capital as a major challenge. These are answers to different survey questions; the pilot-conversion figure specifically concerns companies that had conducted pilots. AWS links further growth to manufacturing finance, customers willing to co-develop, technical skills and more consistent rules. The publication is new in November, while the opinions and business conditions measured by the survey date from August.\n\nThe survey separates demand for a trial from willingness to fund continuing operations. Six in ten respondents report more pilot demand than they can serve, while conversion of most pilots into paid deployment is less common. For a buyer, that raises a management question about its own trial program: who decides whether to proceed, and which resources the next stage requires. AWS recommends that enterprises establish a clear route from pilot to deployment, while investors engage earlier with firms approaching manufacturing and customer-support requirements.\n\nThe survey records executives' August assessments of their companies. Publication on November 14 provides a dated market snapshot; later contract outcomes and funding rounds fall outside its data-collection period.",
+      "image": null
+    },
+    {
+      "id": "komatsu-autonomous-haulage",
+      "title": "Komatsu and TIER IV target two markets for autonomous dump trucks",
+      "summary": "Construction-machine maker Komatsu and autonomous-driving developer TIER IV identified three truck groups for planned 2027 introduction in Japan and North America. Development includes driving and management of transport across a site.",
+      "details": "Komatsu and Japan's TIER IV announced joint development of autonomous control for three dump-truck groups on November 13. Deployment at quarry and civil-engineering sites in Japan and North America is targeted for 2027. The partners combine vehicle design and control with autonomous-driving technology. Development and validation will cover loading, hauling and dumping within actual site operations. A connection to the fleet-management system developed by Komatsu subsidiary EARTHBRAIN is intended to coordinate the wider worksite as well as individual vehicles.",
+      "technical_novelty": "Construction-machine maker Komatsu and autonomous-driving developer TIER IV identified three truck groups for planned 2027 introduction in Japan and North America. Development includes driving and management of transport across a site. The program covers rigid-frame HD785 trucks with a maximum payload of 93.9 tonnes, HD605 trucks at 64.1 tonnes, and the articulated HM400/460 group at 42 tonnes. These are the vehicles’ rated payloads. Collaboration began in September 2025; the new announcement identifies specific machines and deployment settings for its next stage. The release shows an HD785 operating at a Komatsu test site. The companies plan to accumulate operating knowledge through trials and site introductions, connecting vehicle-level control with the organization of transport across a working location.",
+      "engineering_impact": "Construction-machine maker Komatsu and autonomous-driving developer TIER IV identified three truck groups for planned 2027 introduction in Japan and North America. Development includes driving and management of transport across a site. The intended offer automates a chain of work, so a customer's assessment extends beyond the price of one vehicle. Loading, travel and dumping must fit the overall site operation. EARTHBRAIN adds traffic management to the vehicle system. This remains the scope of joint development: availability of a specific configuration, maintenance terms and deployment cost are not set out. For an adviser, the named components provide a useful structure for separating future responsibilities: the machine, autonomous control and site dispatch each form part of the proposed solution.",
+      "limitations": "Construction-machine maker Komatsu and autonomous-driving developer TIER IV identified three truck groups for planned 2027 introduction in Japan and North America. Development includes driving and management of transport across a site. The selected vehicles cover different payload classes. A commercial comparison needs route, loading and dumping conditions. The published development plan does not yet supply those operating calculations.",
+      "evidence_status": "Official joint development and testing plan; vehicle specifications are company-reported.",
+      "published_at": "2026-11-13",
+      "organization": "Komatsu; TIER IV; EARTHBRAIN",
+      "source_ids": [
+        "komatsu-1113"
+      ],
+      "time_window": "7d",
+      "body": "Komatsu and Japan's TIER IV announced joint development of autonomous control for three dump-truck groups on November 13. Deployment at quarry and civil-engineering sites in Japan and North America is targeted for 2027. The partners combine vehicle design and control with autonomous-driving technology. Development and validation will cover loading, hauling and dumping within actual site operations. A connection to the fleet-management system developed by Komatsu subsidiary EARTHBRAIN is intended to coordinate the wider worksite as well as individual vehicles.\n\nThe program covers rigid-frame HD785 trucks with a maximum payload of 93.9 tonnes, HD605 trucks at 64.1 tonnes, and the articulated HM400/460 group at 42 tonnes. These are the vehicles’ rated payloads. Collaboration began in September 2025; the new announcement identifies specific machines and deployment settings for its next stage. The release shows an HD785 operating at a Komatsu test site. The companies plan to accumulate operating knowledge through trials and site introductions, connecting vehicle-level control with the organization of transport across a working location.\n\nThe intended offer automates a chain of work, so a customer's assessment extends beyond the price of one vehicle. Loading, travel and dumping must fit the overall site operation. EARTHBRAIN adds traffic management to the vehicle system. This remains the scope of joint development: availability of a specific configuration, maintenance terms and deployment cost are not set out. For an adviser, the named components provide a useful structure for separating future responsibilities: the machine, autonomous control and site dispatch each form part of the proposed solution.\n\nThe selected vehicles cover different payload classes. A commercial comparison needs route, loading and dumping conditions. The published development plan does not yet supply those operating calculations.",
+      "image": null
+    },
+    {
+      "id": "xinfer-fleet-serving",
+      "title": "A shared robot-control server is measured by supported fleet size",
+      "summary": "X Square Robot proposed XInfer for sharing the computation required by learned robot controllers. Tests increased the population of emulated machines that met a defined response criterion.",
+      "details": "The X Square Robot team introduced XInfer on November 11, a server system that shares computation across requests from multiple robots. It targets vision-language-action models, usually called VLA models, which turn images, a language instruction and machine state into actions. Image processing, context preparation and motion generation use computing resources differently. XInfer allows independent stages to overlap but postpones additional work when it would threaten another robot's response deadline. Priorities depend on the computation still required and the load already running on the processor.",
+      "technical_novelty": "X Square Robot proposed XInfer for sharing the computation required by learned robot controllers. Tests increased the population of emulated machines that met a defined response criterion. The authors compared three control models, VLA-2B, Wall-OSS-0.5 and π0.5, on consumer NVIDIA Blackwell graphics processors, keeping each model's inputs and computing settings fixed across serving systems. XInfer supported validated populations of 18, 15 and 24 emulated robots, against 11, 10 and 19 for a reimplementation of the Robion serving system. This comparison required no request errors and median response latency below 150 milliseconds in all three measurement windows. Image capture, input packing and parsing the returned answer are outside that latency measurement. A separate scheduling study uses a different criterion based on meeting individual response budgets.",
+      "engineering_impact": "X Square Robot proposed XInfer for sharing the computation required by learned robot controllers. Tests increased the population of emulated machines that met a defined response criterion. The practical aim is to use a graphics processor, a device performing many calculations in parallel, more efficiently. This server runs models connecting observations and instructions to movement; its job extends beyond storing data. As queues grow, delays change the request rhythm because a robot's next request depends on the preceding answer. Infrastructure cost therefore needs to be considered with the feedback time permitted by the operation. Holding inputs and model settings fixed makes the paper's population comparison evidence about server execution itself, rather than a change in the learned task.",
+      "limitations": "X Square Robot proposed XInfer for sharing the computation required by learned robot controllers. Tests increased the population of emulated machines that met a defined response criterion. The learned parameters of VLA-2B, one of the three tested control models, are not public. Supported population alone does not measure total ownership cost: communication and site support add deployment-specific expenses beyond this computing-system comparison.",
+      "evidence_status": "Author preprint and serving measurements using production-derived workloads; the capacity comparison uses emulated robot requests.",
+      "published_at": "2026-11-11",
+      "organization": "X Square Robot",
+      "source_ids": [
+        "xinfer-paper"
+      ],
+      "time_window": "7d",
+      "body": "The X Square Robot team introduced XInfer on November 11, a server system that shares computation across requests from multiple robots. It targets vision-language-action models, usually called VLA models, which turn images, a language instruction and machine state into actions. Image processing, context preparation and motion generation use computing resources differently. XInfer allows independent stages to overlap but postpones additional work when it would threaten another robot's response deadline. Priorities depend on the computation still required and the load already running on the processor.\n\nThe authors compared three control models, VLA-2B, Wall-OSS-0.5 and π0.5, on consumer NVIDIA Blackwell graphics processors, keeping each model's inputs and computing settings fixed across serving systems. XInfer supported validated populations of 18, 15 and 24 emulated robots, against 11, 10 and 19 for a reimplementation of the Robion serving system. This comparison required no request errors and median response latency below 150 milliseconds in all three measurement windows. Image capture, input packing and parsing the returned answer are outside that latency measurement. A separate scheduling study uses a different criterion based on meeting individual response budgets.\n\nThe practical aim is to use a graphics processor, a device performing many calculations in parallel, more efficiently. This server runs models connecting observations and instructions to movement; its job extends beyond storing data. As queues grow, delays change the request rhythm because a robot's next request depends on the preceding answer. Infrastructure cost therefore needs to be considered with the feedback time permitted by the operation. Holding inputs and model settings fixed makes the paper's population comparison evidence about server execution itself, rather than a change in the learned task.\n\nThe learned parameters of VLA-2B, one of the three tested control models, are not public. Supported population alone does not measure total ownership cost: communication and site support add deployment-specific expenses beyond this computing-system comparison.",
+      "image": null
+    },
+    {
+      "id": "kyoto-physical-ai-training",
+      "title": "NTT West and Kyoto University prepare training for putting AI into machines",
+      "summary": "Japanese communications company NTT West and Kyoto University are developing training combining theory with actual robotic equipment. The curriculum connects several technologies with validation for a particular workplace.",
+      "details": "NTT West announced stronger cooperation with Kyoto University on November 13 to train people working on physical AI, systems in which artificial intelligence guides machine actions. The planned program combines classroom theory with hands-on work using actual equipment. Development was commissioned to the university's growth-strategy division. XPAC, the organization operating the university-based KUPAC community, takes the central role in designing the curriculum. The aim is to connect image recognition, motion control and model learning with problems at a specific working site.",
+      "technical_novelty": "Japanese communications company NTT West and Kyoto University are developing training combining theory with actual robotic equipment. The curriculum connects several technologies with validation for a particular workplace. The published plan covers development and validation on physical equipment as well as explanation of principles. Opportunities to experience the program are planned at the NTT R&D FORUM in Musashino on November 18–25 and the Smart Building EXPO at Tokyo Big Sight on December 2–4. The partners are still considering how to provide the course afterward. The announcement identifies curriculum responsibilities and demonstration venues, while course duration, pricing and measured outcomes for graduates are not specified.",
+      "engineering_impact": "Japanese communications company NTT West and Kyoto University are developing training combining theory with actual robotic equipment. The curriculum connects several technologies with validation for a particular workplace. For an organization planning adoption, the course develops the people who must implement and validate a system for a workplace. The description emphasizes developing a model, implementing it and checking the outcome. A participant needs to understand image acquisition and mechanism control as well as model learning and site conditions. The announcement currently identifies curriculum contributors and exhibition opportunities. That separates responsibility for designing the teaching material from the later commercial provision of the course, whose format the partners are still considering.",
+      "limitations": "Japanese communications company NTT West and Kyoto University are developing training combining theory with actual robotic equipment. The curriculum connects several technologies with validation for a particular workplace. The next dates are demonstrations beginning November 18 and December 2. Purchasing training will require the specific syllabus, price and criteria for acquiring skills, which this announcement does not disclose.",
+      "evidence_status": "Partner’s official announcement of training development and forthcoming demonstrations.",
+      "published_at": "2026-11-13",
+      "organization": "NTT West; Kyoto University; XPAC",
+      "source_ids": [
+        "ntt-training-1113"
+      ],
+      "time_window": "7d",
+      "body": "NTT West announced stronger cooperation with Kyoto University on November 13 to train people working on physical AI, systems in which artificial intelligence guides machine actions. The planned program combines classroom theory with hands-on work using actual equipment. Development was commissioned to the university's growth-strategy division. XPAC, the organization operating the university-based KUPAC community, takes the central role in designing the curriculum. The aim is to connect image recognition, motion control and model learning with problems at a specific working site.\n\nThe published plan covers development and validation on physical equipment as well as explanation of principles. Opportunities to experience the program are planned at the NTT R&D FORUM in Musashino on November 18–25 and the Smart Building EXPO at Tokyo Big Sight on December 2–4. The partners are still considering how to provide the course afterward. The announcement identifies curriculum responsibilities and demonstration venues, while course duration, pricing and measured outcomes for graduates are not specified.\n\nFor an organization planning adoption, the course develops the people who must implement and validate a system for a workplace. The description emphasizes developing a model, implementing it and checking the outcome. A participant needs to understand image acquisition and mechanism control as well as model learning and site conditions. The announcement currently identifies curriculum contributors and exhibition opportunities. That separates responsibility for designing the teaching material from the later commercial provision of the course, whose format the partners are still considering.\n\nThe next dates are demonstrations beginning November 18 and December 2. Purchasing training will require the specific syllabus, price and criteria for acquiring skills, which this announcement does not disclose.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Export controls bring new questions for NVIDIA’s board",
+    "summary": "U.S. Treasury Secretary Scott Bessent called for answers from NVIDIA’s board and outside counsel on export compliance within ten days. On November 15, he also urged the company to recruit its permanent chief executive externally.",
+    "implications": "The new NVIDIA development concerns succession and controls over international sales. Supply planning depends on the company’s forthcoming answers and official decisions; the minister’s remarks do not announce a new export rule."
+  },
+  "sources": [
+    {
+      "id": "bessent-fox-1115",
+      "title": "Bessent calls for Nvidia leadership shake-up amid China chip scandal, urges outside CEO",
+      "url": "https://www.foxbusiness.com/business-leaders/bessent-calls-nvidia-leadership-shake-up-amid-china-chip-scandal-urges-outside-ceo",
+      "domain": "www.foxbusiness.com",
+      "organization": "FOX Business",
+      "published_at": "2026-11-15"
+    },
+    {
+      "id": "bessent-reuters-1115",
+      "title": "Bessent says Nvidia must 'go outside the company' to find new CEO",
+      "url": "https://www.reuters.com/world/bessent-says-nvidia-must-go-outside-company-find-new-ceo-2026-11-15/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-15"
+    },
+    {
+      "id": "nvidia-transition",
+      "title": "NVIDIA Announces CEO Transition",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "aws-survey-1114",
+      "title": "Physical AI is a major opportunity for Europe, but founders say capital is holding back scale",
+      "url": "https://www.aboutamazon.eu/news/aws/physical-ai-is-a-major-opportunity-for-europe-but-founders-say-capital-is-holding-back-scale",
+      "domain": "www.aboutamazon.eu",
+      "organization": "Amazon Web Services; Strand Partners",
+      "published_at": "2026-11-14"
+    },
+    {
+      "id": "komatsu-1113",
+      "title": "ティアフォー・コマツ、国内・北米の採石・土木現場への2027年導入に向けて、ダンプトラック３機種に関する自動運転システムの共同開発を開始",
+      "url": "https://www.komatsu.jp/ja/newsroom/2026/20261113",
+      "domain": "www.komatsu.jp",
+      "organization": "Komatsu; TIER IV; EARTHBRAIN",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "xinfer-paper",
+      "title": "Scaling VLA Serving Under Robotic Execution Constraints",
+      "url": "https://arxiv.org/abs/2611.14969",
+      "domain": "arxiv.org",
+      "organization": "X Square Robot",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "ntt-training-1113",
+      "title": "NTT西日本がフィジカルAIの発展・振興に向け京都大学と連携を強化 ～フィジカルAIの社会実装を担う人材育成を推進～",
+      "url": "https://www.ntt-west.co.jp/news/2611/261113a.html",
+      "domain": "www.ntt-west.co.jp",
+      "organization": "NTT West; Kyoto University; XPAC",
+      "published_at": "2026-11-13"
+    }
+  ]
+}

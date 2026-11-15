@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-16",
+  "issue_id": "daily-2026-11-16",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-15T21:28:33.029249Z",
+  "title": "A virtual arm helps teach a physical one",
+  "lead": "University of Technology Nuremberg researchers and partners show a person a robotic arm through a headset. This helps record movements that respect how far the arm’s joints can bend.",
+  "news": [
+    {
+      "id": "rumi-recording-constraints",
+      "title": "A virtual arm helps record a useful example for a robot",
+      "summary": "Researchers at the University of Technology Nuremberg and partners made a handheld device for recording movements. A headset shows whether a robot arm can reproduce what the person demonstrates.",
+      "details": "Researchers at the University of Technology Nuremberg and partner institutions developed a handheld tool for moving objects and recording examples for a robot. Their paper appeared on November 11. Its fingers move like those of the chosen robot gripper, while sensors record contact with the object.",
+      "technical_novelty": "Researchers at the University of Technology Nuremberg and partners made a handheld device for recording movements. A headset shows whether a robot arm can reproduce what the person demonstrates. The person wears a headset that adds an image of the robotic arm to the real table. Moving the tool changes the displayed robot pose. That makes it easier to notice a movement that would require a joint to bend beyond its permitted range.",
+      "engineering_impact": "Researchers at the University of Technology Nuremberg and partners made a handheld device for recording movements. A headset shows whether a robot arm can reproduce what the person demonstrates. Five participants each moved a box ten times in each of two conditions. With the arm display and help matching the starting position, three of fifty recordings exceeded joint limits. Without that assistance, sixteen did. The test combined two forms of help, so it does not separate their individual contributions.",
+      "limitations": "Researchers at the University of Technology Nuremberg and partners made a handheld device for recording movements. A headset shows whether a robot arm can reproduce what the person demonstrates. The recorded examples can train a control program. The box test covers one task and a small group, and the device's camera sees from the wrist area. For reference, the developers call their device RUMI.",
+      "evidence_status": "The research team reported these results. Five people took part in the guidance comparison.",
+      "published_at": "2026-11-11",
+      "organization": "University of Technology Nuremberg; Siemens; Technical University of Munich",
+      "source_ids": [
+        "rumi-paper"
+      ],
+      "time_window": "7d",
+      "body": "Researchers at the University of Technology Nuremberg and partner institutions developed a handheld tool for moving objects and recording examples for a robot. Their paper appeared on November 11. Its fingers move like those of the chosen robot gripper, while sensors record contact with the object.\n\nThe person wears a headset that adds an image of the robotic arm to the real table. Moving the tool changes the displayed robot pose. That makes it easier to notice a movement that would require a joint to bend beyond its permitted range.\n\nFive participants each moved a box ten times in each of two conditions. With the arm display and help matching the starting position, three of fifty recordings exceeded joint limits. Without that assistance, sixteen did. The test combined two forms of help, so it does not separate their individual contributions.\n\nThe recorded examples can train a control program. The box test covers one task and a small group, and the device's camera sees from the wrist area. For reference, the developers call their device RUMI.",
+      "image": null
+    },
+    {
+      "id": "protovis-local-navigation",
+      "title": "A simulated drone predicts the next part of its route",
+      "summary": "Beijing Institute of Technology tested a program that navigates from pictures and words. Predicting features of the region ahead helped it stop near its target more often in computer experiments.",
+      "details": "Beijing Institute of Technology researchers are teaching a program to guide a drone from images and language instructions. In their November 12 paper, it first predicts features of the place it plans to approach. It then uses that information to choose the next point on its route.",
+      "technical_novelty": "Beijing Institute of Technology tested a program that navigates from pictures and words. Predicting features of the region ahead helped it stop near its target more often in computer experiments. After a turn, the surrounding view should change. The program describes the expected region using numbers representing image features. It receives a new picture after moving and makes another decision. The researchers tested this sequence in a computer world where flights can be repeated under prepared conditions.",
+      "engineering_impact": "Beijing Institute of Technology tested a program that navigates from pictures and words. Predicting features of the region ahead helped it stop near its target more often in computer experiments. In familiar scenes, successful stopping rose from about 46 to 51 percent; in unfamiliar scenes, from 28 to 30 percent. This test counts a stop within twenty metres of the target as successful. Those figures therefore include a particular distance allowance when judging arrival.",
+      "limitations": "Beijing Institute of Technology tested a program that navigates from pictures and words. Predicting features of the region ahead helped it stop near its target more often in computer experiments. Most reported failures involved collisions, especially trees and thin obstacles. Branches, poles and wires can occupy little space in a picture or be partly hidden. Flights with a physical drone and actual sensors remain to be tested.",
+      "evidence_status": "These are the researchers’ results. Flights in this comparison took place in computer simulation.",
+      "published_at": "2026-11-12",
+      "organization": "Beijing Institute of Technology",
+      "source_ids": [
+        "protovis-paper"
+      ],
+      "time_window": "7d",
+      "body": "Beijing Institute of Technology researchers are teaching a program to guide a drone from images and language instructions. In their November 12 paper, it first predicts features of the place it plans to approach. It then uses that information to choose the next point on its route.\n\nAfter a turn, the surrounding view should change. The program describes the expected region using numbers representing image features. It receives a new picture after moving and makes another decision. The researchers tested this sequence in a computer world where flights can be repeated under prepared conditions.\n\nIn familiar scenes, successful stopping rose from about 46 to 51 percent; in unfamiliar scenes, from 28 to 30 percent. This test counts a stop within twenty metres of the target as successful. Those figures therefore include a particular distance allowance when judging arrival.\n\nMost reported failures involved collisions, especially trees and thin obstacles. Branches, poles and wires can occupy little space in a picture or be partly hidden. Flights with a physical drone and actual sensors remain to be tested.",
+      "image": null
+    },
+    {
+      "id": "komatsu-autonomous-haulage",
+      "title": "Big dump trucks will learn to work within a whole site",
+      "summary": "Japanese companies are developing autonomous control for quarry and construction dump trucks. They plan to connect driving with loading, dumping and management of traffic across the site.",
+      "details": "A Japanese construction-machine maker and an autonomous-driving developer announced a new stage of cooperation on November 13. They are preparing dump trucks to carry material at quarries and building sites. Introduction in Japan and North America is targeted for 2027.",
+      "technical_novelty": "Japanese companies are developing autonomous control for quarry and construction dump trucks. They plan to connect driving with loading, dumping and management of traffic across the site. A truck's work is a chain of actions. It is loaded, travels across the site and tips material out at the required place. The partners plan to validate control for these parts of the job. A separate program will coordinate vehicle movements across the worksite.",
+      "engineering_impact": "Japanese companies are developing autonomous control for quarry and construction dump trucks. They plan to connect driving with loading, dumping and management of traffic across the site. Three truck groups were selected. The largest rated payload listed is 93.9 tonnes. That specification describes the load the vehicle is designed to carry. The new announcement does not yet measure how quickly autonomous work will proceed at the selected customer sites.",
+      "limitations": "Japanese companies are developing autonomous control for quarry and construction dump trucks. They plan to connect driving with loading, dumping and management of traffic across the site. The companies plan to gather operating knowledge through further trials. Vehicle capability must connect with the organization of the surrounding work. For reference, the project partners are Komatsu, TIER IV and EARTHBRAIN.",
+      "evidence_status": "This is the companies’ plan to develop and test the trucks.",
+      "published_at": "2026-11-13",
+      "organization": "Komatsu; TIER IV; EARTHBRAIN",
+      "source_ids": [
+        "komatsu-1113"
+      ],
+      "time_window": "7d",
+      "body": "A Japanese construction-machine maker and an autonomous-driving developer announced a new stage of cooperation on November 13. They are preparing dump trucks to carry material at quarries and building sites. Introduction in Japan and North America is targeted for 2027.\n\nA truck's work is a chain of actions. It is loaded, travels across the site and tips material out at the required place. The partners plan to validate control for these parts of the job. A separate program will coordinate vehicle movements across the worksite.\n\nThree truck groups were selected. The largest rated payload listed is 93.9 tonnes. That specification describes the load the vehicle is designed to carry. The new announcement does not yet measure how quickly autonomous work will proceed at the selected customer sites.\n\nThe companies plan to gather operating knowledge through further trials. Vehicle capability must connect with the organization of the surrounding work. For reference, the project partners are Komatsu, TIER IV and EARTHBRAIN.",
+      "image": null
+    },
+    {
+      "id": "europe-physical-ai-survey",
+      "title": "Who helps a robot move from a trial into regular work?",
+      "summary": "Amazon published a survey of European startup leaders developing robots and other machines with learned software. Respondents described the need for production money and customers willing to keep developing a system with them.",
+      "details": "Amazon published a survey of 500 European startup founders and senior leaders on November 14. They build technologies that let robots and other machines observe and act in the world. Their answers were collected in August, so they describe business conditions at that time. An outside research company conducted the survey.",
+      "technical_novelty": "Amazon published a survey of European startup leaders developing robots and other machines with learned software. Respondents described the need for production money and customers willing to keep developing a system with them. A customer may first try a device on a small job. Later, someone must decide whether it will work regularly and who will pay. Among firms that had run such trials, 36% converted most or all into paid work. That figure answers one particular question for the group with trial experience.",
+      "engineering_impact": "Amazon published a survey of European startup leaders developing robots and other machines with learned software. Respondents described the need for production money and customers willing to keep developing a system with them. Builders also need money to make more devices and help customers after installation. Fifty-nine percent described access to capital as a major challenge. Many found it helpful to be near industrial customers, where they could learn about a real workplace and improve a system together.",
+      "limitations": "Amazon published a survey of European startup leaders developing robots and other machines with learned software. Respondents described the need for production money and customers willing to keep developing a system with them. The survey studied technology builders. Businesses that only buy others' systems were excluded. It describes the developers' view of reaching regular work; learning what all potential customers think would require a separate survey.",
+      "evidence_status": "These are company leaders’ answers collected in August and published in November.",
+      "published_at": "2026-11-14",
+      "organization": "Amazon Web Services; Strand Partners",
+      "source_ids": [
+        "aws-survey-1114"
+      ],
+      "time_window": "72h",
+      "body": "Amazon published a survey of 500 European startup founders and senior leaders on November 14. They build technologies that let robots and other machines observe and act in the world. Their answers were collected in August, so they describe business conditions at that time. An outside research company conducted the survey.\n\nA customer may first try a device on a small job. Later, someone must decide whether it will work regularly and who will pay. Among firms that had run such trials, 36% converted most or all into paid work. That figure answers one particular question for the group with trial experience.\n\nBuilders also need money to make more devices and help customers after installation. Fifty-nine percent described access to capital as a major challenge. Many found it helpful to be near industrial customers, where they could learn about a real workplace and improve a system together.\n\nThe survey studied technology builders. Businesses that only buy others' systems were excluded. It describes the developers' view of reaching regular work; learning what all potential customers think would require a separate survey.",
+      "image": null
+    },
+    {
+      "id": "kyoto-physical-ai-training",
+      "title": "Future robot developers will learn at a desk and beside a machine",
+      "summary": "A Japanese communications company and Kyoto University are preparing training in software that controls machines. It will combine explanations with development and tests using actual equipment.",
+      "details": "A Japanese communications company announced new work with Kyoto University on November 13: training people who will build and introduce robotic systems. The program combines classroom learning with practice on physical devices. It is aimed at developers who need to connect a program to a working machine.",
+      "technical_novelty": "A Japanese communications company and Kyoto University are preparing training in software that controls machines. It will combine explanations with development and tests using actual equipment. Several subjects need to come together. Image recognition extracts information from pictures. Motion control directs a mechanism. Model learning lets software use examples. In the course description, these subjects work together to solve a problem at a particular workplace.",
+      "engineering_impact": "A Japanese communications company and Kyoto University are preparing training in software that controls machines. It will combine explanations with development and tests using actual equipment. A university team and the organization running a specialist community are designing the content. Visitors are expected to experience the program at exhibitions beginning November 18 in Musashino and December 2 in Tokyo. The partners will continue considering how to provide the training afterward.",
+      "limitations": "A Japanese communications company and Kyoto University are preparing training in software that controls machines. It will combine explanations with development and tests using actual equipment. This is a planned program for developing people's skills. Its length, price and method of assessing those skills are not yet stated. For reference, the communications company is NTT West.",
+      "evidence_status": "This is the partners’ announcement about developing training and future exhibitions.",
+      "published_at": "2026-11-13",
+      "organization": "NTT West; Kyoto University; XPAC",
+      "source_ids": [
+        "ntt-training-1113"
+      ],
+      "time_window": "7d",
+      "body": "A Japanese communications company announced new work with Kyoto University on November 13: training people who will build and introduce robotic systems. The program combines classroom learning with practice on physical devices. It is aimed at developers who need to connect a program to a working machine.\n\nSeveral subjects need to come together. Image recognition extracts information from pictures. Motion control directs a mechanism. Model learning lets software use examples. In the course description, these subjects work together to solve a problem at a particular workplace.\n\nA university team and the organization running a specialist community are designing the content. Visitors are expected to experience the program at exhibitions beginning November 18 in Musashino and December 2 in Tokyo. The partners will continue considering how to provide the training afterward.\n\nThis is a planned program for developing people's skills. Its length, price and method of assessing those skills are not yet stated. For reference, the communications company is NTT West.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "A virtual arm helps teach a physical one",
+    "summary": "University of Technology Nuremberg researchers and partners show a person a robotic arm through a headset. This helps record movements that respect how far the arm’s joints can bend.",
+    "implications": "In the box experiment, the arm display was combined with help matching the starting position. Together, these cues reduced recordings of movements beyond the robot joints’ permitted range."
+  },
+  "sources": [
+    {
+      "id": "rumi-paper",
+      "title": "RUMI: A Robotiq-Matched Universal Manipulation Interface for Robot Learning with Augmented Reality and Haptic Feedback",
+      "url": "https://arxiv.org/abs/2611.15802",
+      "domain": "arxiv.org",
+      "organization": "University of Technology Nuremberg; Siemens; Technical University of Munich",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "protovis-paper",
+      "title": "ProtoVis-Nav: Prototypical Visual Imagination for Visual-Spatial Aligned UAV Navigation",
+      "url": "https://arxiv.org/abs/2611.17330",
+      "domain": "arxiv.org",
+      "organization": "Beijing Institute of Technology",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "komatsu-1113",
+      "title": "ティアフォー・コマツ、国内・北米の採石・土木現場への2027年導入に向けて、ダンプトラック３機種に関する自動運転システムの共同開発を開始",
+      "url": "https://www.komatsu.jp/ja/newsroom/2026/20261113",
+      "domain": "www.komatsu.jp",
+      "organization": "Komatsu; TIER IV; EARTHBRAIN",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "aws-survey-1114",
+      "title": "Physical AI is a major opportunity for Europe, but founders say capital is holding back scale",
+      "url": "https://www.aboutamazon.eu/news/aws/physical-ai-is-a-major-opportunity-for-europe-but-founders-say-capital-is-holding-back-scale",
+      "domain": "www.aboutamazon.eu",
+      "organization": "Amazon Web Services; Strand Partners",
+      "published_at": "2026-11-14"
+    },
+    {
+      "id": "ntt-training-1113",
+      "title": "NTT西日本がフィジカルAIの発展・振興に向け京都大学と連携を強化 ～フィジカルAIの社会実装を担う人材育成を推進～",
+      "url": "https://www.ntt-west.co.jp/news/2611/261113a.html",
+      "domain": "www.ntt-west.co.jp",
+      "organization": "NTT West; Kyoto University; XPAC",
+      "published_at": "2026-11-13"
+    }
+  ]
+}

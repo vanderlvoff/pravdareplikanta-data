@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-16",
+  "issue_id": "daily-2026-11-16",
+  "edition": "enthusiast",
+  "language": "en",
+  "generated_at": "2026-11-15T21:28:33.029249Z",
+  "title": "A navigation program checks the route against an expected local view",
+  "lead": "Beijing Institute of Technology proposed predicting visual features of the region ahead during drone navigation. Computer tests improved completion near the target, while collisions with thin obstacles remain a problem.",
+  "news": [
+    {
+      "id": "protovis-local-navigation",
+      "title": "A simulated drone checks its route against an expected local view",
+      "summary": "Beijing Institute of Technology proposed predicting visual features of the region a drone will approach. Simulation improved the share of successful stops near the target, while thin obstacles remain difficult.",
+      "details": "Beijing Institute of Technology researchers published ProtoVis-Nav on November 12, a method for drone navigation from images and language instructions. Before predicting the next waypoint, the model estimates visual features of the region it intends to approach. This supplies a compact internal description of a local view. The predicted features then provide context for choosing movement. Evaluation uses closed-loop computer simulation, with each new decision depending on observations after the preceding step.",
+      "technical_novelty": "Beijing Institute of Technology proposed predicting visual features of the region a drone will approach. Simulation improved the share of successful stops near the target, while thin obstacles remain difficult. The authors trained models on 9,152 trajectories in the OpenUAV flight benchmark. On its full seen-scene test, successful completion rose from 46.47% for their own baseline to 50.78%; on unseen scenes, it rose from 27.91% to 30.12%. Success means stopping within 20 metres of the target, so that spatial tolerance is part of the result. The team also tested obstacle-aware traversal in another simulated benchmark and changed the predicted features to examine their contribution. The paper identifies collisions with thin or partly hidden obstacles as a major source of failure.",
+      "engineering_impact": "Beijing Institute of Technology proposed predicting visual features of the region a drone will approach. Simulation improved the share of successful stops near the target, while thin obstacles remain difficult. The idea resembles checking what should come into view after a turn, although the program works with numerical image features. Those features add context to the instruction and current view. The authors separately replaced predicted features with those from other samples or with random information; performance declined. This tests whether the program uses information specific to the scene. Reaching a target and maintaining a safe route also require different measurements: final proximity alone does not describe every close encounter with an obstacle during the journey.",
+      "limitations": "Beijing Institute of Technology proposed predicting visual features of the region a drone will approach. Simulation improved the share of successful stops near the target, while thin obstacles remain difficult. The evaluated flights took place in simulation. The authors connect most failures with trees and thin obstacles such as branches, poles and wires. Physical flights and tests involving real sensing and control remain future validation work.",
+      "evidence_status": "Author preprint; navigation results obtained in closed-loop simulation.",
+      "published_at": "2026-11-12",
+      "organization": "Beijing Institute of Technology",
+      "source_ids": [
+        "protovis-paper"
+      ],
+      "time_window": "7d",
+      "body": "Beijing Institute of Technology researchers published ProtoVis-Nav on November 12, a method for drone navigation from images and language instructions. Before predicting the next waypoint, the model estimates visual features of the region it intends to approach. This supplies a compact internal description of a local view. The predicted features then provide context for choosing movement. Evaluation uses closed-loop computer simulation, with each new decision depending on observations after the preceding step.\n\nThe authors trained models on 9,152 trajectories in the OpenUAV flight benchmark. On its full seen-scene test, successful completion rose from 46.47% for their own baseline to 50.78%; on unseen scenes, it rose from 27.91% to 30.12%. Success means stopping within 20 metres of the target, so that spatial tolerance is part of the result. The team also tested obstacle-aware traversal in another simulated benchmark and changed the predicted features to examine their contribution. The paper identifies collisions with thin or partly hidden obstacles as a major source of failure.\n\nThe idea resembles checking what should come into view after a turn, although the program works with numerical image features. Those features add context to the instruction and current view. The authors separately replaced predicted features with those from other samples or with random information; performance declined. This tests whether the program uses information specific to the scene. Reaching a target and maintaining a safe route also require different measurements: final proximity alone does not describe every close encounter with an obstacle during the journey.\n\nThe evaluated flights took place in simulation. The authors connect most failures with trees and thin obstacles such as branches, poles and wires. Physical flights and tests involving real sensing and control remain future validation work.",
+      "image": null
+    },
+    {
+      "id": "rumi-recording-constraints",
+      "title": "A robot shadow helps people record movements an arm can repeat",
+      "summary": "The University of Technology Nuremberg and partners proposed a handheld device for teaching robots. A virtual arm in the headset helps record demonstrations within the real arm's joint constraints.",
+      "details": "Researchers from the University of Technology Nuremberg, Siemens and the Technical University of Munich posted RUMI on November 11, a study of a handheld device for recording robot demonstrations. Its gripper matches the geometry of the commercial Robotiq 2F-85, including the nonlinear relation between opening and finger movement. A person moves the device with an object while interchangeable fingertip sensors record contact information. A headset also displays the target robot arm's configuration, allowing the operator to compare the demonstrated motion with what that arm can execute.",
+      "technical_novelty": "The University of Technology Nuremberg and partners proposed a handheld device for teaching robots. A virtual arm in the headset helps record demonstrations within the real arm's joint constraints. Five participants with limited experience of this form of control each recorded ten box transfers under two conditions. Joint-position limits were exceeded in 3 of 50 episodes with robot visualization and starting-pose alignment, compared with 16 of 50 without that assistance. The supported condition combined two features, so the comparison concerns their combined effect. A separate experiment examined force-aware demonstrations for moving a fragile bulb and a heavy block in simulation.",
+      "engineering_impact": "The University of Technology Nuremberg and partners proposed a handheld device for teaching robots. A virtual arm in the headset helps record demonstrations within the real arm's joint constraints. Moving a handheld tool is easier than mentally anticipating every joint rotation of a robotic arm. The device addresses this with matched fingers and a visible representation of the eventual machine. As the person moves, software computes a corresponding robot configuration. That connects a familiar action with the mechanics of a different body. Recording contact is another part of the idea: fingertip sensors capture interactions that can be difficult to reconstruct from pictures alone. A separate control program can then learn from those examples of movement and contact.",
+      "limitations": "The University of Technology Nuremberg and partners proposed a handheld device for teaching robots. A virtual arm in the headset helps record demonstrations within the real arm's joint constraints. The box result comes from five participants on one task. The authors also identify the restricted wrist-camera view and contact information that the current interface does not convey as limits of the recording setup.",
+      "evidence_status": "Author preprint with a small user study, separate physical-robot trials and a separate simulated contact experiment.",
+      "published_at": "2026-11-11",
+      "organization": "University of Technology Nuremberg; Siemens; Technical University of Munich",
+      "source_ids": [
+        "rumi-paper"
+      ],
+      "time_window": "7d",
+      "body": "Researchers from the University of Technology Nuremberg, Siemens and the Technical University of Munich posted RUMI on November 11, a study of a handheld device for recording robot demonstrations. Its gripper matches the geometry of the commercial Robotiq 2F-85, including the nonlinear relation between opening and finger movement. A person moves the device with an object while interchangeable fingertip sensors record contact information. A headset also displays the target robot arm's configuration, allowing the operator to compare the demonstrated motion with what that arm can execute.\n\nFive participants with limited experience of this form of control each recorded ten box transfers under two conditions. Joint-position limits were exceeded in 3 of 50 episodes with robot visualization and starting-pose alignment, compared with 16 of 50 without that assistance. The supported condition combined two features, so the comparison concerns their combined effect. A separate experiment examined force-aware demonstrations for moving a fragile bulb and a heavy block in simulation.\n\nMoving a handheld tool is easier than mentally anticipating every joint rotation of a robotic arm. The device addresses this with matched fingers and a visible representation of the eventual machine. As the person moves, software computes a corresponding robot configuration. That connects a familiar action with the mechanics of a different body. Recording contact is another part of the idea: fingertip sensors capture interactions that can be difficult to reconstruct from pictures alone. A separate control program can then learn from those examples of movement and contact.\n\nThe box result comes from five participants on one task. The authors also identify the restricted wrist-camera view and contact information that the current interface does not convey as limits of the recording setup.",
+      "image": null
+    },
+    {
+      "id": "komatsu-autonomous-haulage",
+      "title": "A quarry truck's autonomous job includes the whole transport chain",
+      "summary": "Komatsu and TIER IV began developing autonomous driving for large dump trucks. Validation will cover travel together with loading, dumping and the site's dispatch system.",
+      "details": "Komatsu and Japan's TIER IV announced joint development of autonomous control for three dump-truck groups on November 13. Deployment at quarry and civil-engineering sites in Japan and North America is targeted for 2027. The partners combine vehicle design and control with autonomous-driving technology. Development and validation will cover loading, hauling and dumping within actual site operations. A connection to the fleet-management system developed by Komatsu subsidiary EARTHBRAIN is intended to coordinate the wider worksite as well as individual vehicles.",
+      "technical_novelty": "Komatsu and TIER IV began developing autonomous driving for large dump trucks. Validation will cover travel together with loading, dumping and the site's dispatch system. The program covers rigid-frame HD785 trucks with a maximum payload of 93.9 tonnes, HD605 trucks at 64.1 tonnes, and the articulated HM400/460 group at 42 tonnes. These are the vehicles’ rated payloads. Collaboration began in September 2025; the new announcement identifies specific machines and deployment settings for its next stage. The release shows an HD785 operating at a Komatsu test site. The companies plan to accumulate operating knowledge through trials and site introductions, connecting vehicle-level control with the organization of transport across a working location.",
+      "engineering_impact": "Komatsu and TIER IV began developing autonomous driving for large dump trucks. Validation will cover travel together with loading, dumping and the site's dispatch system. A worksite trip consists of connected actions. The truck must reach the loading location, carry material and arrive at the correct dumping point. That gives dispatch a separate role in the project: organizing traffic across the site. The selected trucks also have different structures. A rigid-frame truck carries its front and load sections on one frame, whereas an articulated truck has a joint between sections. Software control must be integrated with the chosen machine and the sequence of work around it, rather than considering its route in isolation.",
+      "limitations": "Komatsu and TIER IV began developing autonomous driving for large dump trucks. Validation will cover travel together with loading, dumping and the site's dispatch system. The companies target deployment in 2027. They have published the project's participants and vehicle classes; measurements from autonomous operation at the target sites are to develop through further testing and operating experience.",
+      "evidence_status": "Official joint development and testing plan; vehicle specifications are company-reported.",
+      "published_at": "2026-11-13",
+      "organization": "Komatsu; TIER IV; EARTHBRAIN",
+      "source_ids": [
+        "komatsu-1113"
+      ],
+      "time_window": "7d",
+      "body": "Komatsu and Japan's TIER IV announced joint development of autonomous control for three dump-truck groups on November 13. Deployment at quarry and civil-engineering sites in Japan and North America is targeted for 2027. The partners combine vehicle design and control with autonomous-driving technology. Development and validation will cover loading, hauling and dumping within actual site operations. A connection to the fleet-management system developed by Komatsu subsidiary EARTHBRAIN is intended to coordinate the wider worksite as well as individual vehicles.\n\nThe program covers rigid-frame HD785 trucks with a maximum payload of 93.9 tonnes, HD605 trucks at 64.1 tonnes, and the articulated HM400/460 group at 42 tonnes. These are the vehicles’ rated payloads. Collaboration began in September 2025; the new announcement identifies specific machines and deployment settings for its next stage. The release shows an HD785 operating at a Komatsu test site. The companies plan to accumulate operating knowledge through trials and site introductions, connecting vehicle-level control with the organization of transport across a working location.\n\nA worksite trip consists of connected actions. The truck must reach the loading location, carry material and arrive at the correct dumping point. That gives dispatch a separate role in the project: organizing traffic across the site. The selected trucks also have different structures. A rigid-frame truck carries its front and load sections on one frame, whereas an articulated truck has a joint between sections. Software control must be integrated with the chosen machine and the sequence of work around it, rather than considering its route in isolation.\n\nThe companies target deployment in 2027. They have published the project's participants and vehicle classes; measurements from autonomous operation at the target sites are to develop through further testing and operating experience.",
+      "image": null
+    },
+    {
+      "id": "europe-physical-ai-survey",
+      "title": "European robot builders need customers willing to move beyond trials",
+      "summary": "Research published by Amazon’s cloud business AWS covered 500 founders and senior leaders developing technologies for robots and autonomous machines. It distinguishes demand for an experimental project from the transition to continuing paid work.",
+      "details": "Amazon Web Services, Amazon's cloud-computing business, published research on European physical-AI startups on November 14. Physical AI here covers technologies enabling machines to perceive and act in the real world. Strand Partners surveyed 500 founders and senior leaders for AWS in August. Fifty-one percent reported technology in commercial use, and 76% sell to large enterprises and industrial groups. The sample includes robotics, drones, autonomous vehicles, control models and development tools, with several types of enabling technology represented.",
+      "technical_novelty": "Research published by Amazon’s cloud business AWS covered 500 founders and senior leaders developing technologies for robots and autonomous machines. It distinguishes demand for an experimental project from the transition to continuing paid work. Among respondents who had run pilots, only 36% said most or all had become paid deployments. Slow enterprise purchasing was identified by 64%, while 59% described access to capital as a major challenge. These are answers to different survey questions; the pilot-conversion figure specifically concerns companies that had conducted pilots. AWS links further growth to manufacturing finance, customers willing to co-develop, technical skills and more consistent rules. The publication is new in November, while the opinions and business conditions measured by the survey date from August.",
+      "engineering_impact": "Research published by Amazon’s cloud business AWS covered 500 founders and senior leaders developing technologies for robots and autonomous machines. It distinguishes demand for an experimental project from the transition to continuing paid work. Robot development has costs after an initial successful demonstration: devices must be made, installed and supported near customers. Capital therefore matters particularly when production expands. Seventy-eight percent of respondents said proximity to European industrial customers accelerates their path to production. Builders can learn about the actual workplace while a customer participates in refining the system. This helps explain why the industry story involves relationships among developer, buyer and investor alongside the quality of a model. The survey describes what founders see as enabling that transition.",
+      "limitations": "Research published by Amazon’s cloud business AWS covered 500 founders and senior leaders developing technologies for robots and autonomous machines. It distinguishes demand for an experimental project from the transition to continuing paid work. Answers were collected in August from technology builders. Organizations that only purchase and use other companies' systems were excluded. Understanding their own assessment of adoption would require a different survey.",
+      "evidence_status": "Executive survey commissioned by AWS and conducted by Strand Partners in August; findings published November 14.",
+      "published_at": "2026-11-14",
+      "organization": "Amazon Web Services; Strand Partners",
+      "source_ids": [
+        "aws-survey-1114"
+      ],
+      "time_window": "72h",
+      "body": "Amazon Web Services, Amazon's cloud-computing business, published research on European physical-AI startups on November 14. Physical AI here covers technologies enabling machines to perceive and act in the real world. Strand Partners surveyed 500 founders and senior leaders for AWS in August. Fifty-one percent reported technology in commercial use, and 76% sell to large enterprises and industrial groups. The sample includes robotics, drones, autonomous vehicles, control models and development tools, with several types of enabling technology represented.\n\nAmong respondents who had run pilots, only 36% said most or all had become paid deployments. Slow enterprise purchasing was identified by 64%, while 59% described access to capital as a major challenge. These are answers to different survey questions; the pilot-conversion figure specifically concerns companies that had conducted pilots. AWS links further growth to manufacturing finance, customers willing to co-develop, technical skills and more consistent rules. The publication is new in November, while the opinions and business conditions measured by the survey date from August.\n\nRobot development has costs after an initial successful demonstration: devices must be made, installed and supported near customers. Capital therefore matters particularly when production expands. Seventy-eight percent of respondents said proximity to European industrial customers accelerates their path to production. Builders can learn about the actual workplace while a customer participates in refining the system. This helps explain why the industry story involves relationships among developer, buyer and investor alongside the quality of a model. The survey describes what founders see as enabling that transition.\n\nAnswers were collected in August from technology builders. Organizations that only purchase and use other companies' systems were excluded. Understanding their own assessment of adoption would require a different survey.",
+      "image": null
+    },
+    {
+      "id": "nvidia-bessent-export-questions",
+      "title": "The U.S. Treasury secretary asks NVIDIA's leaders for explanations",
+      "summary": "U.S. Treasury Secretary Scott Bessent urged NVIDIA to seek an outside permanent leader and answer export-control questions within ten days. These demands came on November 15 after the already-confirmed leadership change.",
+      "details": "U.S. Treasury Secretary Scott Bessent urged NVIDIA to recruit its next chief executive from outside the company on November 15. He also called for answers from its board and outside counsel within ten days about compliance with export restrictions. He spoke on Sunday Morning Futures, and Reuters independently reported the remarks. The new development is public pressure on the succession process and controls over chip sales. His allegations about possible compliance failures remain attributed to him; the report does not present findings from a completed investigation.",
+      "technical_novelty": "U.S. Treasury Secretary Scott Bessent urged NVIDIA to seek an outside permanent leader and answer export-control questions within ten days. These demands came on November 15 after the already-confirmed leadership change. The company-confirmed leadership position is that Jensen Huang left his roles as president, chief executive and director, with chief financial officer Colette Kress becoming interim chief executive. In its November 12 announcement, the board said it would consider internal and external candidates and expected operations, customer commitments and product plans to continue. Financial results are scheduled for November 17. Bessent's proposal therefore calls for a narrower candidate pool than the board's previously announced process. The checked reports do not name a permanent appointment resulting from Sunday's intervention.",
+      "engineering_impact": "U.S. Treasury Secretary Scott Bessent urged NVIDIA to seek an outside permanent leader and answer export-control questions within ten days. These demands came on November 15 after the already-confirmed leadership change. Export controls are government rules restricting sales of specified technologies across borders. Bessent is questioning how the company checks compliance when selling chips. NVIDIA matters to robotics as a computing-platform supplier, so its governance concerns a wider group of developers. The new event remains a minister's demands rather than an announcement of changed technical conditions. Further reporting can compare management's answers with the commitments the company has made to customers and partners, keeping the public statement separate from an established finding of wrongdoing.",
+      "limitations": "U.S. Treasury Secretary Scott Bessent urged NVIDIA to seek an outside permanent leader and answer export-control questions within ten days. These demands came on November 15 after the already-confirmed leadership change. Colette Kress remains interim leader under NVIDIA's confirmed announcement. The ten-day period concerns requested answers, while the checked material does not announce a new permanent chief executive.",
+      "evidence_status": "Bessent’s public remarks checked against FOX Business and Reuters; leadership status confirmed by NVIDIA’s announcement.",
+      "published_at": "2026-11-15",
+      "organization": "U.S. Department of the Treasury; NVIDIA",
+      "source_ids": [
+        "bessent-fox-1115",
+        "bessent-reuters-1115",
+        "nvidia-transition"
+      ],
+      "time_window": "24h",
+      "body": "U.S. Treasury Secretary Scott Bessent urged NVIDIA to recruit its next chief executive from outside the company on November 15. He also called for answers from its board and outside counsel within ten days about compliance with export restrictions. He spoke on Sunday Morning Futures, and Reuters independently reported the remarks. The new development is public pressure on the succession process and controls over chip sales. His allegations about possible compliance failures remain attributed to him; the report does not present findings from a completed investigation.\n\nThe company-confirmed leadership position is that Jensen Huang left his roles as president, chief executive and director, with chief financial officer Colette Kress becoming interim chief executive. In its November 12 announcement, the board said it would consider internal and external candidates and expected operations, customer commitments and product plans to continue. Financial results are scheduled for November 17. Bessent's proposal therefore calls for a narrower candidate pool than the board's previously announced process. The checked reports do not name a permanent appointment resulting from Sunday's intervention.\n\nExport controls are government rules restricting sales of specified technologies across borders. Bessent is questioning how the company checks compliance when selling chips. NVIDIA matters to robotics as a computing-platform supplier, so its governance concerns a wider group of developers. The new event remains a minister's demands rather than an announcement of changed technical conditions. Further reporting can compare management's answers with the commitments the company has made to customers and partners, keeping the public statement separate from an established finding of wrongdoing.\n\nColette Kress remains interim leader under NVIDIA's confirmed announcement. The ten-day period concerns requested answers, while the checked material does not announce a new permanent chief executive.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "A navigation program checks the route against an expected local view",
+    "summary": "Beijing Institute of Technology proposed predicting visual features of the region ahead during drone navigation. Computer tests improved completion near the target, while collisions with thin obstacles remain a problem.",
+    "implications": "ProtoVis-Nav predicts a compact description of the local view to help select the next waypoint. Results come from simulation, where a successful stop permits a distance of up to twenty metres from the target."
+  },
+  "sources": [
+    {
+      "id": "protovis-paper",
+      "title": "ProtoVis-Nav: Prototypical Visual Imagination for Visual-Spatial Aligned UAV Navigation",
+      "url": "https://arxiv.org/abs/2611.17330",
+      "domain": "arxiv.org",
+      "organization": "Beijing Institute of Technology",
+      "published_at": "2026-11-12"
+    },
+    {
+      "id": "rumi-paper",
+      "title": "RUMI: A Robotiq-Matched Universal Manipulation Interface for Robot Learning with Augmented Reality and Haptic Feedback",
+      "url": "https://arxiv.org/abs/2611.15802",
+      "domain": "arxiv.org",
+      "organization": "University of Technology Nuremberg; Siemens; Technical University of Munich",
+      "published_at": "2026-11-11"
+    },
+    {
+      "id": "komatsu-1113",
+      "title": "ティアフォー・コマツ、国内・北米の採石・土木現場への2027年導入に向けて、ダンプトラック３機種に関する自動運転システムの共同開発を開始",
+      "url": "https://www.komatsu.jp/ja/newsroom/2026/20261113",
+      "domain": "www.komatsu.jp",
+      "organization": "Komatsu; TIER IV; EARTHBRAIN",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "aws-survey-1114",
+      "title": "Physical AI is a major opportunity for Europe, but founders say capital is holding back scale",
+      "url": "https://www.aboutamazon.eu/news/aws/physical-ai-is-a-major-opportunity-for-europe-but-founders-say-capital-is-holding-back-scale",
+      "domain": "www.aboutamazon.eu",
+      "organization": "Amazon Web Services; Strand Partners",
+      "published_at": "2026-11-14"
+    },
+    {
+      "id": "bessent-fox-1115",
+      "title": "Bessent calls for Nvidia leadership shake-up amid China chip scandal, urges outside CEO",
+      "url": "https://www.foxbusiness.com/business-leaders/bessent-calls-nvidia-leadership-shake-up-amid-china-chip-scandal-urges-outside-ceo",
+      "domain": "www.foxbusiness.com",
+      "organization": "FOX Business",
+      "published_at": "2026-11-15"
+    },
+    {
+      "id": "bessent-reuters-1115",
+      "title": "Bessent says Nvidia must 'go outside the company' to find new CEO",
+      "url": "https://www.reuters.com/world/bessent-says-nvidia-must-go-outside-company-find-new-ceo-2026-11-15/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-15"
+    },
+    {
+      "id": "nvidia-transition",
+      "title": "NVIDIA Announces CEO Transition",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-12"
+    }
+  ]
+}
