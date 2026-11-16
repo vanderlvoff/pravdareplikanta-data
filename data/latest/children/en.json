@@ -2,150 +2,150 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-16",
-  "issue_id": "daily-2026-11-16",
+  "issue_date": "2026-11-17",
+  "issue_id": "daily-2026-11-17",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-15T21:28:33.029249Z",
-  "title": "A virtual arm helps teach a physical one",
-  "lead": "University of Technology Nuremberg researchers and partners show a person a robotic arm through a headset. This helps record movements that respect how far the arm’s joints can bend.",
+  "generated_at": "2026-11-16T21:12:35.406Z",
+  "title": "A camera helps robots work together",
+  "lead": "Two Japanese companies tested how a building camera supplies information to a cleaning robot. In another example, different robots shared information and divided work according to what each could do.",
   "news": [
     {
-      "id": "rumi-recording-constraints",
-      "title": "A virtual arm helps record a useful example for a robot",
-      "summary": "Researchers at the University of Technology Nuremberg and partners made a handheld device for recording movements. A headset shows whether a robot arm can reproduce what the person demonstrates.",
-      "details": "Researchers at the University of Technology Nuremberg and partner institutions developed a handheld tool for moving objects and recording examples for a robot. Their paper appeared on November 11. Its fingers move like those of the chosen robot gripper, while sensors record contact with the object.",
-      "technical_novelty": "Researchers at the University of Technology Nuremberg and partners made a handheld device for recording movements. A headset shows whether a robot arm can reproduce what the person demonstrates. The person wears a headset that adds an image of the robotic arm to the real table. Moving the tool changes the displayed robot pose. That makes it easier to notice a movement that would require a joint to bend beyond its permitted range.",
-      "engineering_impact": "Researchers at the University of Technology Nuremberg and partners made a handheld device for recording movements. A headset shows whether a robot arm can reproduce what the person demonstrates. Five participants each moved a box ten times in each of two conditions. With the arm display and help matching the starting position, three of fifty recordings exceeded joint limits. Without that assistance, sixteen did. The test combined two forms of help, so it does not separate their individual contributions.",
-      "limitations": "Researchers at the University of Technology Nuremberg and partners made a handheld device for recording movements. A headset shows whether a robot arm can reproduce what the person demonstrates. The recorded examples can train a control program. The box test covers one task and a small group, and the device's camera sees from the wrist area. For reference, the developers call their device RUMI.",
-      "evidence_status": "The research team reported these results. Five people took part in the guidance comparison.",
+      "id": "facility-camera-robot-coordination",
+      "title": "A building camera helps different robots share a job",
+      "summary": "Two Japanese companies connected a building camera to a cleaning robot and tested information sharing between different machines. The image helps a shared program understand the scene and send a task to a robot.",
+      "details": "A Japanese equipment maker and a communications company reported a building-robot experiment on November 16. A program analyzed an image from a security camera and used it to instruct a cleaning machine. Another test shared information between the cleaner and a human-shaped robot.",
+      "technical_novelty": "Two Japanese companies connected a building camera to a cleaning robot and tested information sharing between different machines. The image helps a shared program understand the scene and send a task to a robot. Imagine different workers seeing the same situation but being able to do different jobs. Noticing what happens is only one step; someone also has to choose who should act. Here a shared management system collects device information and helps assign work among robots.",
+      "engineering_impact": "Two Japanese companies connected a building camera to a cleaning robot and tested information sharing between different machines. The image helps a shared program understand the scene and send a task to a robot. Several programs have different roles. One connects pictures with words to describe the surroundings. Another works with instructions. An action program helps a machine choose movement from an image and a request. The companies say they checked that these parts could be connected and function technically.",
+      "limitations": "Two Japanese companies connected a building camera to a cleaning robot and tested information sharing between different machines. The image helps a shared program understand the scene and send a task to a robot. They did not publish a count of completed jobs or an error rate. Exhibition demonstrations start on November 18, with different examples at different venues. For reference, the companies are Iris Ohyama and NTT West; the robots are called JILBY and ugo Nova.",
+      "evidence_status": "This is the companies' account of connecting devices. They have not published error counts.",
+      "published_at": "2026-11-16",
+      "organization": "Iris Ohyama; NTT West",
+      "source_ids": [
+        "ntt-iris-1116"
+      ],
+      "time_window": "24h",
+      "body": "A Japanese equipment maker and a communications company reported a building-robot experiment on November 16. A program analyzed an image from a security camera and used it to instruct a cleaning machine. Another test shared information between the cleaner and a human-shaped robot.\n\nImagine different workers seeing the same situation but being able to do different jobs. Noticing what happens is only one step; someone also has to choose who should act. Here a shared management system collects device information and helps assign work among robots.\n\nSeveral programs have different roles. One connects pictures with words to describe the surroundings. Another works with instructions. An action program helps a machine choose movement from an image and a request. The companies say they checked that these parts could be connected and function technically.\n\nThey did not publish a count of completed jobs or an error rate. Exhibition demonstrations start on November 18, with different examples at different venues. For reference, the companies are Iris Ohyama and NTT West; the robots are called JILBY and ugo Nova.",
+      "image": null
+    },
+    {
+      "id": "robotera-hand-demonstration-mapping",
+      "title": "A robot hand learns from movements recorded on a person's hand",
+      "summary": "A Chinese manufacturer announced a robot hand matched to a wearable device for recording human movement. In demonstrations, a robot used those recordings to learn sequences of object-handling actions.",
+      "details": "A Chinese robot manufacturer announced a new five-finger hand for sale on November 16. Its joints match a recording device that a person wears on their own hand. The design links what human fingers demonstrate with what the machine can later do.",
+      "technical_novelty": "A Chinese manufacturer announced a robot hand matched to a wearable device for recording human movement. In demonstrations, a robot used those recordings to learn sequences of object-handling actions. The person handles real objects while the device records movement and force at the fingertips. Those records are used for more training of the robot's control program. A robot with two arms and two matching hands then performs the task. The person does not have to operate that target robot remotely during recording.",
+      "engineering_impact": "A Chinese manufacturer announced a robot hand matched to a wearable device for recording human movement. In demonstrations, a robot used those recordings to learn sequences of object-handling actions. The examples included making banana yogurt, scooping granola and a separate laboratory task with a match and lamp. The manufacturer reported success in 60, 80 and 75 percent of attempts respectively. Each number concerns a whole action sequence.",
+      "limitations": "A Chinese manufacturer announced a robot hand matched to a wearable device for recording human movement. In demonstrations, a robot used those recordings to learn sequences of object-handling actions. The announcement does not say how many attempts produced each percentage. The first order batch contains 40 hands. For reference, the maker is ROBOTERA; the hand is XHAND 1 Pro-U, the recorder DexUMI and the control model GR00T 2.",
+      "evidence_status": "These results come from the manufacturer. It does not state the number of attempts behind the percentages.",
+      "published_at": "2026-11-16",
+      "organization": "ROBOTERA",
+      "source_ids": [
+        "robotera-1116"
+      ],
+      "time_window": "24h",
+      "body": "A Chinese robot manufacturer announced a new five-finger hand for sale on November 16. Its joints match a recording device that a person wears on their own hand. The design links what human fingers demonstrate with what the machine can later do.\n\nThe person handles real objects while the device records movement and force at the fingertips. Those records are used for more training of the robot's control program. A robot with two arms and two matching hands then performs the task. The person does not have to operate that target robot remotely during recording.\n\nThe examples included making banana yogurt, scooping granola and a separate laboratory task with a match and lamp. The manufacturer reported success in 60, 80 and 75 percent of attempts respectively. Each number concerns a whole action sequence.\n\nThe announcement does not say how many attempts produced each percentage. The first order batch contains 40 hands. For reference, the maker is ROBOTERA; the hand is XHAND 1 Pro-U, the recorder DexUMI and the control model GR00T 2.",
+      "image": null
+    },
+    {
+      "id": "heavy-loader-learned-dynamic-control",
+      "title": "A heavy loader learns to balance on two wheels",
+      "summary": "Researchers in Zurich and their partners taught a five-tonne construction machine to balance and move on its front wheels. They trained its controller in a computer simulation before testing it on the real loader.",
+      "details": "A Swiss university team and its partners trained a five-tonne loader to rise onto its front wheels and keep its balance. The work was published on November 11. The physical machine moved in that position, turned and returned to four wheels.",
+      "technical_novelty": "Researchers in Zurich and their partners taught a five-tonne construction machine to balance and move on its front wheels. They trained its controller in a computer simulation before testing it on the real loader. The control program first tried movements in simulation, a computer environment that calculates how the machine moves. Better performance earned a higher score, and the program changed its behavior from those results. This method is called reinforcement learning.",
+      "engineering_impact": "Researchers in Zurich and their partners taught a five-tonne construction machine to balance and move on its front wheels. They trained its controller in a computer simulation before testing it on the real loader. The team divided the job into parts: building momentum, lifting the rear wheels, holding the tilt, moving and landing gently. It resembles learning several connected movements, but the machine receives numerical evaluations rather than a coach's explanation. The trained control was then transferred to the physical loader.",
+      "limitations": "Researchers in Zurich and their partners taught a five-tonne construction machine to balance and move on its front wheels. They trained its controller in a computer simulation before testing it on the real loader. Its hydraulic drive transmits force through fluid and responds with delays. Testing the program on actual equipment therefore mattered. Commands were also smoothed during balanced travel. For reference, ETH Zurich led the research and the machine is a John Deere 332G.",
+      "evidence_status": "The researchers trained in a computer simulation and tested the physical machine.",
       "published_at": "2026-11-11",
-      "organization": "University of Technology Nuremberg; Siemens; Technical University of Munich",
+      "organization": "ETH Zurich; Blue River Technology; Gravis Robotics; Intel",
       "source_ids": [
-        "rumi-paper"
+        "loader-paper"
       ],
       "time_window": "7d",
-      "body": "Researchers at the University of Technology Nuremberg and partner institutions developed a handheld tool for moving objects and recording examples for a robot. Their paper appeared on November 11. Its fingers move like those of the chosen robot gripper, while sensors record contact with the object.\n\nThe person wears a headset that adds an image of the robotic arm to the real table. Moving the tool changes the displayed robot pose. That makes it easier to notice a movement that would require a joint to bend beyond its permitted range.\n\nFive participants each moved a box ten times in each of two conditions. With the arm display and help matching the starting position, three of fifty recordings exceeded joint limits. Without that assistance, sixteen did. The test combined two forms of help, so it does not separate their individual contributions.\n\nThe recorded examples can train a control program. The box test covers one task and a small group, and the device's camera sees from the wrist area. For reference, the developers call their device RUMI.",
+      "body": "A Swiss university team and its partners trained a five-tonne loader to rise onto its front wheels and keep its balance. The work was published on November 11. The physical machine moved in that position, turned and returned to four wheels.\n\nThe control program first tried movements in simulation, a computer environment that calculates how the machine moves. Better performance earned a higher score, and the program changed its behavior from those results. This method is called reinforcement learning.\n\nThe team divided the job into parts: building momentum, lifting the rear wheels, holding the tilt, moving and landing gently. It resembles learning several connected movements, but the machine receives numerical evaluations rather than a coach's explanation. The trained control was then transferred to the physical loader.\n\nIts hydraulic drive transmits force through fluid and responds with delays. Testing the program on actual equipment therefore mattered. Commands were also smoothed during balanced travel. For reference, ETH Zurich led the research and the machine is a John Deere 332G.",
       "image": null
     },
     {
-      "id": "protovis-local-navigation",
-      "title": "A simulated drone predicts the next part of its route",
-      "summary": "Beijing Institute of Technology tested a program that navigates from pictures and words. Predicting features of the region ahead helped it stop near its target more often in computer experiments.",
-      "details": "Beijing Institute of Technology researchers are teaching a program to guide a drone from images and language instructions. In their November 12 paper, it first predicts features of the place it plans to approach. It then uses that information to choose the next point on its route.",
-      "technical_novelty": "Beijing Institute of Technology tested a program that navigates from pictures and words. Predicting features of the region ahead helped it stop near its target more often in computer experiments. After a turn, the surrounding view should change. The program describes the expected region using numbers representing image features. It receives a new picture after moving and makes another decision. The researchers tested this sequence in a computer world where flights can be repeated under prepared conditions.",
-      "engineering_impact": "Beijing Institute of Technology tested a program that navigates from pictures and words. Predicting features of the region ahead helped it stop near its target more often in computer experiments. In familiar scenes, successful stopping rose from about 46 to 51 percent; in unfamiliar scenes, from 28 to 30 percent. This test counts a stop within twenty metres of the target as successful. Those figures therefore include a particular distance allowance when judging arrival.",
-      "limitations": "Beijing Institute of Technology tested a program that navigates from pictures and words. Predicting features of the region ahead helped it stop near its target more often in computer experiments. Most reported failures involved collisions, especially trees and thin obstacles. Branches, poles and wires can occupy little space in a picture or be partly hidden. Flights with a physical drone and actual sensors remain to be tested.",
-      "evidence_status": "These are the researchers’ results. Flights in this comparison took place in computer simulation.",
-      "published_at": "2026-11-12",
-      "organization": "Beijing Institute of Technology",
+      "id": "lunar-optical-communications-power-study",
+      "title": "How could Moon machines receive data and power?",
+      "summary": "Two Japanese companies agreed to study light-based Earth–Moon communications and laser power delivery. They will first choose uses, requirements and ways of testing the proposed systems.",
+      "details": "A Japanese communications company and a lunar-transport company announced joint work on November 16. They plan to study sending data by light between Earth and the Moon, and directing laser energy toward a receiver on equipment.",
+      "technical_novelty": "Two Japanese companies agreed to study light-based Earth–Moon communications and laser power delivery. They will first choose uses, requirements and ways of testing the proposed systems. A future explorer needs to send pictures and measurements. Machines also need power, while the Moon has no everyday electricity grid like the ones used on Earth. Communications and energy supply therefore become separate jobs that must be planned alongside the machine's own work. Besides pictures, the partners consider information from moving machines and construction equipment.",
+      "engineering_impact": "Two Japanese companies agreed to study light-based Earth–Moon communications and laser power delivery. They will first choose uses, requirements and ways of testing the proposed systems. The partners will begin by asking which equipment needs support, what the system must do and how to test it. They are considering tests in stages on Earth and in space. One partner brings knowledge of optical technology; the other contributes lunar-transport and mission experience.",
+      "limitations": "Two Japanese companies agreed to study light-based Earth–Moon communications and laser power delivery. They will first choose uses, requirements and ways of testing the proposed systems. No data speed, received power or joint experiment date has been announced. The work begins with investigating requirements for a future system. For reference, the partners are NTT and ispace.",
+      "evidence_status": "This announces the start of joint research. A joint experiment's result has not been published.",
+      "published_at": "2026-11-16",
+      "organization": "NTT; ispace",
       "source_ids": [
-        "protovis-paper"
-      ],
-      "time_window": "7d",
-      "body": "Beijing Institute of Technology researchers are teaching a program to guide a drone from images and language instructions. In their November 12 paper, it first predicts features of the place it plans to approach. It then uses that information to choose the next point on its route.\n\nAfter a turn, the surrounding view should change. The program describes the expected region using numbers representing image features. It receives a new picture after moving and makes another decision. The researchers tested this sequence in a computer world where flights can be repeated under prepared conditions.\n\nIn familiar scenes, successful stopping rose from about 46 to 51 percent; in unfamiliar scenes, from 28 to 30 percent. This test counts a stop within twenty metres of the target as successful. Those figures therefore include a particular distance allowance when judging arrival.\n\nMost reported failures involved collisions, especially trees and thin obstacles. Branches, poles and wires can occupy little space in a picture or be partly hidden. Flights with a physical drone and actual sensors remain to be tested.",
-      "image": null
-    },
-    {
-      "id": "komatsu-autonomous-haulage",
-      "title": "Big dump trucks will learn to work within a whole site",
-      "summary": "Japanese companies are developing autonomous control for quarry and construction dump trucks. They plan to connect driving with loading, dumping and management of traffic across the site.",
-      "details": "A Japanese construction-machine maker and an autonomous-driving developer announced a new stage of cooperation on November 13. They are preparing dump trucks to carry material at quarries and building sites. Introduction in Japan and North America is targeted for 2027.",
-      "technical_novelty": "Japanese companies are developing autonomous control for quarry and construction dump trucks. They plan to connect driving with loading, dumping and management of traffic across the site. A truck's work is a chain of actions. It is loaded, travels across the site and tips material out at the required place. The partners plan to validate control for these parts of the job. A separate program will coordinate vehicle movements across the worksite.",
-      "engineering_impact": "Japanese companies are developing autonomous control for quarry and construction dump trucks. They plan to connect driving with loading, dumping and management of traffic across the site. Three truck groups were selected. The largest rated payload listed is 93.9 tonnes. That specification describes the load the vehicle is designed to carry. The new announcement does not yet measure how quickly autonomous work will proceed at the selected customer sites.",
-      "limitations": "Japanese companies are developing autonomous control for quarry and construction dump trucks. They plan to connect driving with loading, dumping and management of traffic across the site. The companies plan to gather operating knowledge through further trials. Vehicle capability must connect with the organization of the surrounding work. For reference, the project partners are Komatsu, TIER IV and EARTHBRAIN.",
-      "evidence_status": "This is the companies’ plan to develop and test the trucks.",
-      "published_at": "2026-11-13",
-      "organization": "Komatsu; TIER IV; EARTHBRAIN",
-      "source_ids": [
-        "komatsu-1113"
-      ],
-      "time_window": "7d",
-      "body": "A Japanese construction-machine maker and an autonomous-driving developer announced a new stage of cooperation on November 13. They are preparing dump trucks to carry material at quarries and building sites. Introduction in Japan and North America is targeted for 2027.\n\nA truck's work is a chain of actions. It is loaded, travels across the site and tips material out at the required place. The partners plan to validate control for these parts of the job. A separate program will coordinate vehicle movements across the worksite.\n\nThree truck groups were selected. The largest rated payload listed is 93.9 tonnes. That specification describes the load the vehicle is designed to carry. The new announcement does not yet measure how quickly autonomous work will proceed at the selected customer sites.\n\nThe companies plan to gather operating knowledge through further trials. Vehicle capability must connect with the organization of the surrounding work. For reference, the project partners are Komatsu, TIER IV and EARTHBRAIN.",
-      "image": null
-    },
-    {
-      "id": "europe-physical-ai-survey",
-      "title": "Who helps a robot move from a trial into regular work?",
-      "summary": "Amazon published a survey of European startup leaders developing robots and other machines with learned software. Respondents described the need for production money and customers willing to keep developing a system with them.",
-      "details": "Amazon published a survey of 500 European startup founders and senior leaders on November 14. They build technologies that let robots and other machines observe and act in the world. Their answers were collected in August, so they describe business conditions at that time. An outside research company conducted the survey.",
-      "technical_novelty": "Amazon published a survey of European startup leaders developing robots and other machines with learned software. Respondents described the need for production money and customers willing to keep developing a system with them. A customer may first try a device on a small job. Later, someone must decide whether it will work regularly and who will pay. Among firms that had run such trials, 36% converted most or all into paid work. That figure answers one particular question for the group with trial experience.",
-      "engineering_impact": "Amazon published a survey of European startup leaders developing robots and other machines with learned software. Respondents described the need for production money and customers willing to keep developing a system with them. Builders also need money to make more devices and help customers after installation. Fifty-nine percent described access to capital as a major challenge. Many found it helpful to be near industrial customers, where they could learn about a real workplace and improve a system together.",
-      "limitations": "Amazon published a survey of European startup leaders developing robots and other machines with learned software. Respondents described the need for production money and customers willing to keep developing a system with them. The survey studied technology builders. Businesses that only buy others' systems were excluded. It describes the developers' view of reaching regular work; learning what all potential customers think would require a separate survey.",
-      "evidence_status": "These are company leaders’ answers collected in August and published in November.",
-      "published_at": "2026-11-14",
-      "organization": "Amazon Web Services; Strand Partners",
-      "source_ids": [
-        "aws-survey-1114"
+        "ispace-1116"
       ],
       "time_window": "72h",
-      "body": "Amazon published a survey of 500 European startup founders and senior leaders on November 14. They build technologies that let robots and other machines observe and act in the world. Their answers were collected in August, so they describe business conditions at that time. An outside research company conducted the survey.\n\nA customer may first try a device on a small job. Later, someone must decide whether it will work regularly and who will pay. Among firms that had run such trials, 36% converted most or all into paid work. That figure answers one particular question for the group with trial experience.\n\nBuilders also need money to make more devices and help customers after installation. Fifty-nine percent described access to capital as a major challenge. Many found it helpful to be near industrial customers, where they could learn about a real workplace and improve a system together.\n\nThe survey studied technology builders. Businesses that only buy others' systems were excluded. It describes the developers' view of reaching regular work; learning what all potential customers think would require a separate survey.",
+      "body": "A Japanese communications company and a lunar-transport company announced joint work on November 16. They plan to study sending data by light between Earth and the Moon, and directing laser energy toward a receiver on equipment.\n\nA future explorer needs to send pictures and measurements. Machines also need power, while the Moon has no everyday electricity grid like the ones used on Earth. Communications and energy supply therefore become separate jobs that must be planned alongside the machine's own work. Besides pictures, the partners consider information from moving machines and construction equipment.\n\nThe partners will begin by asking which equipment needs support, what the system must do and how to test it. They are considering tests in stages on Earth and in space. One partner brings knowledge of optical technology; the other contributes lunar-transport and mission experience.\n\nNo data speed, received power or joint experiment date has been announced. The work begins with investigating requirements for a future system. For reference, the partners are NTT and ispace.",
       "image": null
     },
     {
-      "id": "kyoto-physical-ai-training",
-      "title": "Future robot developers will learn at a desk and beside a machine",
-      "summary": "A Japanese communications company and Kyoto University are preparing training in software that controls machines. It will combine explanations with development and tests using actual equipment.",
-      "details": "A Japanese communications company announced new work with Kyoto University on November 13: training people who will build and introduce robotic systems. The program combines classroom learning with practice on physical devices. It is aimed at developers who need to connect a program to a working machine.",
-      "technical_novelty": "A Japanese communications company and Kyoto University are preparing training in software that controls machines. It will combine explanations with development and tests using actual equipment. Several subjects need to come together. Image recognition extracts information from pictures. Motion control directs a mechanism. Model learning lets software use examples. In the course description, these subjects work together to solve a problem at a particular workplace.",
-      "engineering_impact": "A Japanese communications company and Kyoto University are preparing training in software that controls machines. It will combine explanations with development and tests using actual equipment. A university team and the organization running a specialist community are designing the content. Visitors are expected to experience the program at exhibitions beginning November 18 in Musashino and December 2 in Tokyo. The partners will continue considering how to provide the training afterward.",
-      "limitations": "A Japanese communications company and Kyoto University are preparing training in software that controls machines. It will combine explanations with development and tests using actual equipment. This is a planned program for developing people's skills. Its length, price and method of assessing those skills are not yet stated. For reference, the communications company is NTT West.",
-      "evidence_status": "This is the partners’ announcement about developing training and future exhibitions.",
+      "id": "fort-safety-supplier-financial-disclosure",
+      "title": "A robot safety supplier reports higher sales",
+      "summary": "An American supplier of robot safety systems reported higher sales. As it prepares a proposed combination with another company, it has disclosed how many devices and customers use its products.",
+      "details": "An American company supplying safety systems for robots reported business growth on November 16. Revenue for the first nine months of the year reached 12.5 million dollars. That was 52.5 percent more than during the same period a year earlier.",
+      "technical_novelty": "An American supplier of robot safety systems reported higher sales. As it prepares a proposed combination with another company, it has disclosed how many devices and customers use its products. Revenue means money from sales before all expenses are deducted. The company says its products operate in more than 23,000 devices for over 680 customers, including robot builders and other equipment users. Such suppliers form their own part of the robotics industry.",
+      "engineering_impact": "An American supplier of robot safety systems reported higher sales. As it prepares a proposed combination with another company, it has disclosed how many devices and customers use its products. A buyer needs more than a robot's movement program. Equipment makers, safety-system suppliers and support services all contribute to a working machine. Sales at one of those businesses help show the wider group involved in developing this technology.",
+      "limitations": "An American supplier of robot safety systems reported higher sales. As it prepares a proposed combination with another company, it has disclosed how many devices and customers use its products. The company filed documents for a combination with another business on November 13 and discussed them on November 16. Document review and approvals are still needed for the proposed combination. For reference, the supplier is FORT Robotics and its combination partner is Newbury Street II.",
+      "evidence_status": "These are the company's figures about sales and documents for its proposed combination.",
       "published_at": "2026-11-13",
-      "organization": "NTT West; Kyoto University; XPAC",
+      "organization": "FORT Robotics; Newbury Street II Acquisition Corp",
       "source_ids": [
-        "ntt-training-1113"
+        "fort-1116"
       ],
       "time_window": "7d",
-      "body": "A Japanese communications company announced new work with Kyoto University on November 13: training people who will build and introduce robotic systems. The program combines classroom learning with practice on physical devices. It is aimed at developers who need to connect a program to a working machine.\n\nSeveral subjects need to come together. Image recognition extracts information from pictures. Motion control directs a mechanism. Model learning lets software use examples. In the course description, these subjects work together to solve a problem at a particular workplace.\n\nA university team and the organization running a specialist community are designing the content. Visitors are expected to experience the program at exhibitions beginning November 18 in Musashino and December 2 in Tokyo. The partners will continue considering how to provide the training afterward.\n\nThis is a planned program for developing people's skills. Its length, price and method of assessing those skills are not yet stated. For reference, the communications company is NTT West.",
+      "body": "An American company supplying safety systems for robots reported business growth on November 16. Revenue for the first nine months of the year reached 12.5 million dollars. That was 52.5 percent more than during the same period a year earlier.\n\nRevenue means money from sales before all expenses are deducted. The company says its products operate in more than 23,000 devices for over 680 customers, including robot builders and other equipment users. Such suppliers form their own part of the robotics industry.\n\nA buyer needs more than a robot's movement program. Equipment makers, safety-system suppliers and support services all contribute to a working machine. Sales at one of those businesses help show the wider group involved in developing this technology.\n\nThe company filed documents for a combination with another business on November 13 and discussed them on November 16. Document review and approvals are still needed for the proposed combination. For reference, the supplier is FORT Robotics and its combination partner is Newbury Street II.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "A virtual arm helps teach a physical one",
-    "summary": "University of Technology Nuremberg researchers and partners show a person a robotic arm through a headset. This helps record movements that respect how far the arm’s joints can bend.",
-    "implications": "In the box experiment, the arm display was combined with help matching the starting position. Together, these cues reduced recordings of movements beyond the robot joints’ permitted range."
+    "title": "A camera helps robots work together",
+    "summary": "Two Japanese companies tested how a building camera supplies information to a cleaning robot. In another example, different robots shared information and divided work according to what each could do.",
+    "implications": "Working together means connecting an observation, a task choice and an action. The companies checked that connection, but have not published completed-job counts or error rates."
   },
   "sources": [
     {
-      "id": "rumi-paper",
-      "title": "RUMI: A Robotiq-Matched Universal Manipulation Interface for Robot Learning with Augmented Reality and Haptic Feedback",
-      "url": "https://arxiv.org/abs/2611.15802",
-      "domain": "arxiv.org",
-      "organization": "University of Technology Nuremberg; Siemens; Technical University of Munich",
-      "published_at": "2026-11-11"
-    },
-    {
-      "id": "protovis-paper",
-      "title": "ProtoVis-Nav: Prototypical Visual Imagination for Visual-Spatial Aligned UAV Navigation",
-      "url": "https://arxiv.org/abs/2611.17330",
-      "domain": "arxiv.org",
-      "organization": "Beijing Institute of Technology",
-      "published_at": "2026-11-12"
-    },
-    {
-      "id": "komatsu-1113",
-      "title": "ティアフォー・コマツ、国内・北米の採石・土木現場への2027年導入に向けて、ダンプトラック３機種に関する自動運転システムの共同開発を開始",
-      "url": "https://www.komatsu.jp/ja/newsroom/2026/20261113",
-      "domain": "www.komatsu.jp",
-      "organization": "Komatsu; TIER IV; EARTHBRAIN",
-      "published_at": "2026-11-13"
-    },
-    {
-      "id": "aws-survey-1114",
-      "title": "Physical AI is a major opportunity for Europe, but founders say capital is holding back scale",
-      "url": "https://www.aboutamazon.eu/news/aws/physical-ai-is-a-major-opportunity-for-europe-but-founders-say-capital-is-holding-back-scale",
-      "domain": "www.aboutamazon.eu",
-      "organization": "Amazon Web Services; Strand Partners",
-      "published_at": "2026-11-14"
-    },
-    {
-      "id": "ntt-training-1113",
-      "title": "NTT西日本がフィジカルAIの発展・振興に向け京都大学と連携を強化 ～フィジカルAIの社会実装を担う人材育成を推進～",
-      "url": "https://www.ntt-west.co.jp/news/2611/261113a.html",
+      "id": "ntt-iris-1116",
+      "title": "アイリスオーヤマとNTT西日本「マルチロボティクスプラットフォーム」を活用したフィジカルAIの共同実証成果を発表",
+      "url": "https://www.ntt-west.co.jp/news/2611/261116a.html",
       "domain": "www.ntt-west.co.jp",
-      "organization": "NTT West; Kyoto University; XPAC",
+      "organization": "Iris Ohyama; NTT West",
+      "published_at": "2026-11-16"
+    },
+    {
+      "id": "robotera-1116",
+      "title": "ROBOTERA Launches XHAND 1 Pro-U, Featured in NVIDIA's GR00T 2 DexUMI Demonstration",
+      "url": "https://www.prnewswire.co.uk/news-releases/robotera-launches-xhand-1-pro-u-featured-in-nvidias-gr00t-2-dexumi-demonstration-302940296.html",
+      "domain": "www.prnewswire.co.uk",
+      "organization": "ROBOTERA",
+      "published_at": "2026-11-16"
+    },
+    {
+      "id": "loader-paper",
+      "title": "Heavy Metal Acrobatics: Learning Dynamic Control for Skid-Steer Loaders",
+      "url": "https://arxiv.org/abs/2611.18365",
+      "domain": "arxiv.org",
+      "organization": "ETH Zurich; Blue River Technology; Gravis Robotics; Intel",
       "published_at": "2026-11-13"
+    },
+    {
+      "id": "ispace-1116",
+      "title": "NTT and ispace Enter into Collaboration Agreement to Realize Cislunar and Lunar Infrastructure Using IOWN Optical Communication Technologies",
+      "url": "https://www.ispace-inc.com/2026/11/16/ntt-and-ispace-enter-into-collaboration-agreement-to-realize-cislunar-and-lunar-infrastructure-using-iown-optical-communication-technologies/",
+      "domain": "www.ispace-inc.com",
+      "organization": "NTT; ispace",
+      "published_at": "2026-11-16"
+    },
+    {
+      "id": "fort-1116",
+      "title": "FORT Robotics Reports Strong 2026 Momentum as Company Progresses Towards a Public Listing in Partnership with Newbury Street II Acquisition Corp",
+      "url": "https://www.globenewswire.com/news-release/2026/11/16/3403468/0/en/fort-robotics-reports-strong-2026-momentum-as-company-progresses-towards-a-public-listing-in-partnership-with-newbury-street-ii-acquisition-corp.html",
+      "domain": "www.globenewswire.com",
+      "organization": "FORT Robotics; Newbury Street II Acquisition Corp",
+      "published_at": "2026-11-16"
     }
   ]
 }
