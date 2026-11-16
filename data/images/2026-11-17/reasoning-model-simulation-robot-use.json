@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-17",
+  "edition": "engineer",
+  "article_id": "reasoning-model-simulation-robot-use",
+  "article_title": {
+    "ru": "Модель рассуждений научили управлять роботом через симуляцию",
+    "en": "Simulation training teaches a reasoning model to operate a robot",
+    "ja": "仮想環境の試行で推論モデルを学習させ、実物の腕へ動作を移す"
+  },
+  "article_urls": {
+    "ru": "https://repravda.com/ru/engineer/issues/2026-11-17/articles/reasoning-model-simulation-robot-use/",
+    "en": "https://repravda.com/en/engineer/issues/2026-11-17/articles/reasoning-model-simulation-robot-use/",
+    "ja": "https://repravda.com/ja/engineer/issues/2026-11-17/articles/reasoning-model-simulation-robot-use/"
+  },
+  "image_path": "data/images/2026-11-17/reasoning-model-simulation-robot-use.png",
+  "width": 1600,
+  "height": 1067,
+  "caption": {
+    "ru": "Робот поднимает предмет — одно из заданий, на которых команда MIT и партнёров проверяла модель после обучения в симуляции. Стенд показан условно.",
+    "en": "Lifting an object was one of the physical tests the MIT-led team used after training the model in simulation. The engraving depicts a conceptual setup.",
+    "ja": "MITなどの研究チームは、仮想環境で学習させたモデルを実機で試した。図は、その課題の一つである物の持ち上げを描いた模式図。"
+  },
+  "alt": {
+    "ru": "Инженер с карандашом наблюдает за захватом, который сжимает брусок с двух сторон и держит его над столом. Вторая рука робота отведена назад.",
+    "en": "An engineer takes notes as the gripper holds a block above the bench between two opposing jaws. The second arm is parked behind it.",
+    "ja": "技術者が鉛筆を手に記録を取る。手前のロボットアームはブロックを左右から挟み、作業台の上に持ち上げている。奥のアームは待機している。"
+  },
+  "visual_thesis": "Перенос обучения из симуляции проверяют на физическом действии: может ли робот поднять и удержать предмет.",
+  "visual_brief": "Чёрно-белая гравюра. На переднем плане захват держит брусок за противоположные грани. Просвет и тень под бруском показывают подъём. Инженер наблюдает за предметом и записывает результат. Облик оборудования условный.",
+  "source_ids": [
+    "pear-paper"
+  ]
+}
