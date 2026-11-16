@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-17",
+  "issue_id": "daily-2026-11-17",
+  "edition": "engineer",
+  "language": "en",
+  "generated_at": "2026-11-16T21:12:35.406Z",
+  "title": "Teaching a model to operate a robot arm",
+  "lead": "An MIT-led team trained a reasoning model to select tool poses in simulation. On a physical dual-arm robot it completed 60% of 30 trials, with separate joint-solving and arm-control computations executing those poses.",
+  "news": [
+    {
+      "id": "reasoning-model-simulation-robot-use",
+      "title": "Simulation training teaches a reasoning model to operate a robot",
+      "summary": "An MIT-led team trained an open-weight reasoning model to choose robot-arm movements using simulated trials alone. On a real dual-arm robot, the trained model completed 60% of 30 trials, while the starting model completed none.",
+      "details": "Researchers from MIT, UC Berkeley, UC San Diego, NVIDIA and Inco AI presented simulation-based robot training for a reasoning model on November 13. Qwen3.8-27B, a model with 27 billion learned parameters, receives images, arm state and an instruction, works through intermediate reasoning steps and selects the tool's next pose. Inverse kinematics converts that target into a joint configuration executed by the arm controller. The reported additional training did not use demonstrations of the desired actions.",
+      "technical_novelty": "An MIT-led team trained an open-weight reasoning model to choose robot-arm movements using simulated trials alone. On a real dual-arm robot, the trained model completed 60% of 30 trials, while the starting model completed none. The team built PEAR, a software engine for training through robot trials, and used the LIBERO and RoboDojo simulated task environments. Reinforcement learning adjusts behavior according to the outcome of attempts. LIBERO success rose from 1.6% to 74.4%. For physical transfer, each model received 30 trials on a dual-arm robot, covering lifting different objects by ten centimeters and aligning three blocks using a set square. The trained model succeeded in 60%, versus none for the base model. Trials had a limit of 25 observation-and-action rounds; retrying an invalid action also consumed a round.",
+      "engineering_impact": "An MIT-led team trained an open-weight reasoning model to choose robot-arm movements using simulated trials alone. On a real dual-arm robot, the trained model completed 60% of 30 trials, while the starting model completed none. The architectural boundary separates selecting the next tool pose from executing it. The reasoning model chooses the target, while joint solving and low-level control remain distinct computations. Transfer therefore tests a complete chain with real cameras and arms. Training code and model weights are released, allowing others to examine the behavioral change after reinforcement learning. Physical evidence still covers the specified object lifts and block-alignment protocol, with its explicit round limit. That is the practical scope against which the simulation-to-hardware transfer can be assessed.",
+      "limitations": "An MIT-led team trained an open-weight reasoning model to choose robot-arm movements using simulated trials alone. On a real dual-arm robot, the trained model completed 60% of 30 trials, while the starting model completed none. Limited computing resources stopped further RoboDojo training after two tasks. The reported training covers two simulators and starts from one 27-billion-parameter model, leaving broader scaling untested.",
+      "evidence_status": "Author preprint with simulated evaluation and 30 physical trials per model; no independent replication is established here.",
+      "published_at": "2026-11-13",
+      "organization": "MIT; UC Berkeley; UC San Diego; NVIDIA; Inco AI",
+      "source_ids": [
+        "pear-paper"
+      ],
+      "time_window": "7d",
+      "body": "Researchers from MIT, UC Berkeley, UC San Diego, NVIDIA and Inco AI presented simulation-based robot training for a reasoning model on November 13. Qwen3.8-27B, a model with 27 billion learned parameters, receives images, arm state and an instruction, works through intermediate reasoning steps and selects the tool's next pose. Inverse kinematics converts that target into a joint configuration executed by the arm controller. The reported additional training did not use demonstrations of the desired actions.\n\nThe team built PEAR, a software engine for training through robot trials, and used the LIBERO and RoboDojo simulated task environments. Reinforcement learning adjusts behavior according to the outcome of attempts. LIBERO success rose from 1.6% to 74.4%. For physical transfer, each model received 30 trials on a dual-arm robot, covering lifting different objects by ten centimeters and aligning three blocks using a set square. The trained model succeeded in 60%, versus none for the base model. Trials had a limit of 25 observation-and-action rounds; retrying an invalid action also consumed a round.\n\nThe architectural boundary separates selecting the next tool pose from executing it. The reasoning model chooses the target, while joint solving and low-level control remain distinct computations. Transfer therefore tests a complete chain with real cameras and arms. Training code and model weights are released, allowing others to examine the behavioral change after reinforcement learning. Physical evidence still covers the specified object lifts and block-alignment protocol, with its explicit round limit. That is the practical scope against which the simulation-to-hardware transfer can be assessed.\n\nLimited computing resources stopped further RoboDojo training after two tasks. The reported training covers two simulators and starts from one 27-billion-parameter model, leaving broader scaling untested.",
+      "image": null
+    },
+    {
+      "id": "facility-camera-robot-coordination",
+      "title": "NTT West and Iris Ohyama connect building cameras with robots",
+      "summary": "Iris Ohyama and NTT West tested camera-to-cleaner instructions and coordination between different robot types. The companies report technical feasibility for a chain linking image interpretation with machine action.",
+      "details": "Iris Ohyama and communications company NTT West reported a second stage of facility-and-robot integration trials on November 16. Images from a security camera were analyzed and the resulting information used to instruct the JILBY cleaning robot. Another example linked that machine with the ugo Nova humanoid, sharing information and allocating tasks according to their respective capabilities. The announcement describes verification that the connections could work technically, without specifying trial counts or completed-job rates.",
+      "technical_novelty": "Iris Ohyama and NTT West tested camera-to-cleaner instructions and coordination between different robot types. The companies report technical feasibility for a chain linking image interpretation with machine action. NTT West develops the shared management system, called the Multi-Robotics Platform. It consolidates equipment information on remote servers. In its architecture, a vision-language model interprets the surroundings; a large language model generates instructions. A vision-language-action model supports choosing actions from images and instructions. These are the roles referred to as VLM, LLM and VLA. An earlier stage connected human communication and cleaning-data analysis with suggestions for routes, cleaning frequency and timing. The newly described work connects facility observations with coordination across different machines.",
+      "engineering_impact": "Iris Ohyama and NTT West tested camera-to-cleaner instructions and coordination between different robot types. The companies report technical feasibility for a chain linking image interpretation with machine action. The integration question is how a camera observation, a task instruction and a physical action refer to the same facility state. These transitions give an engineer distinct places to evaluate recognition, instruction generation and execution. The release describes them as components of one architecture, demonstrated with a cleaner and a pair of different robot platforms. It does not provide trial counts, communication latency or task-success percentages, so its evidence concerns the feasibility of the connections described. The facility information targeted by the shared platform also includes elevators and access gates.",
+      "limitations": "Iris Ohyama and NTT West tested camera-to-cleaner instructions and coordination between different robot types. The companies report technical feasibility for a chain linking image interpretation with machine action. NTT plans robot-coordination demonstrations in Musashino on November 18–20 and 24–25. The release cautions that research demonstrations can differ from the specifications of eventual products.",
+      "evidence_status": "The partners' report of technical feasibility; quantitative reliability measurements are not published.",
+      "published_at": "2026-11-16",
+      "organization": "Iris Ohyama; NTT West",
+      "source_ids": [
+        "ntt-iris-1116"
+      ],
+      "time_window": "24h",
+      "body": "Iris Ohyama and communications company NTT West reported a second stage of facility-and-robot integration trials on November 16. Images from a security camera were analyzed and the resulting information used to instruct the JILBY cleaning robot. Another example linked that machine with the ugo Nova humanoid, sharing information and allocating tasks according to their respective capabilities. The announcement describes verification that the connections could work technically, without specifying trial counts or completed-job rates.\n\nNTT West develops the shared management system, called the Multi-Robotics Platform. It consolidates equipment information on remote servers. In its architecture, a vision-language model interprets the surroundings; a large language model generates instructions. A vision-language-action model supports choosing actions from images and instructions. These are the roles referred to as VLM, LLM and VLA. An earlier stage connected human communication and cleaning-data analysis with suggestions for routes, cleaning frequency and timing. The newly described work connects facility observations with coordination across different machines.\n\nThe integration question is how a camera observation, a task instruction and a physical action refer to the same facility state. These transitions give an engineer distinct places to evaluate recognition, instruction generation and execution. The release describes them as components of one architecture, demonstrated with a cleaner and a pair of different robot platforms. It does not provide trial counts, communication latency or task-success percentages, so its evidence concerns the feasibility of the connections described. The facility information targeted by the shared platform also includes elevators and access gates.\n\nNTT plans robot-coordination demonstrations in Musashino on November 18–20 and 24–25. The release cautions that research demonstrations can differ from the specifications of eventual products.",
+      "image": null
+    },
+    {
+      "id": "robotera-hand-demonstration-mapping",
+      "title": "ROBOTERA aligns a robot hand with human demonstration hardware",
+      "summary": "ROBOTERA opened orders for its five-finger XHAND 1 Pro-U robot hand. Matching its joints to the wearable DexUMI recorder supports transferring human demonstrations to a two-arm robot.",
+      "details": "ROBOTERA announced the commercial release of XHAND 1 Pro-U on November 16. The five-finger hand has 16 degrees of freedom, meaning independent directions in which its joints can change configuration. Its mechanism closely matches DexUMI, a wearable hand exoskeleton from NVIDIA GEAR Lab that records human demonstrations. Corresponding joints make it easier to map demonstrated motion to the robot. The redesign also changes thumb placement, hand articulation and tactile sensing on the palm side.",
+      "technical_novelty": "ROBOTERA opened orders for its five-finger XHAND 1 Pro-U robot hand. Matching its joints to the wearable DexUMI recorder supports transferring human demonstrations to a two-arm robot. A person wearing the exoskeleton handles real objects while the recorder collects hand movement and fingertip force information. Those demonstrations are used for additional training of the GR00T 2 robot-control model, after which a dual-arm robot uses two matching hands. The release describes three multi-step evaluations: banana-yogurt preparation, granola scooping and a match-and-lamp chemistry task. Reported overall success rates are respectively 60%, 80% and 75%. For the tasks shown, the company says training used DexUMI demonstrations without extra task-specific recordings made by remotely controlling the target robot or additional robot-practice data.",
+      "engineering_impact": "ROBOTERA opened orders for its five-finger XHAND 1 Pro-U robot hand. Matching its joints to the wearable DexUMI recorder supports transferring human demonstrations to a two-arm robot. Joint correspondence changes the source of training data: fewer transformations are needed between the recorded human gesture and the target hand. The reported percentages, however, evaluate the complete model-and-robot task sequence. Reproducing the described workflow requires compatible recording hardware, model training and both robot hands. The sequences included tool use, object transfer, lid handling and coordination between the two hands. The company connects this configuration with a demonstration presented by NVIDIA's Jim Fan at CoRL, the international Conference on Robot Learning.",
+      "limitations": "ROBOTERA opened orders for its five-finger XHAND 1 Pro-U robot hand. Matching its joints to the wearable DexUMI recorder supports transferring human demonstrations to a two-arm robot. The initial commercial release is limited to 40 units. The announcement gives no trial count for each success percentage, preventing calculation of its sampling uncertainty from the release alone.",
+      "evidence_status": "Manufacturer-reported results for three multi-step tasks; trial counts are not stated in the release.",
+      "published_at": "2026-11-16",
+      "organization": "ROBOTERA",
+      "source_ids": [
+        "robotera-1116"
+      ],
+      "time_window": "24h",
+      "body": "ROBOTERA announced the commercial release of XHAND 1 Pro-U on November 16. The five-finger hand has 16 degrees of freedom, meaning independent directions in which its joints can change configuration. Its mechanism closely matches DexUMI, a wearable hand exoskeleton from NVIDIA GEAR Lab that records human demonstrations. Corresponding joints make it easier to map demonstrated motion to the robot. The redesign also changes thumb placement, hand articulation and tactile sensing on the palm side.\n\nA person wearing the exoskeleton handles real objects while the recorder collects hand movement and fingertip force information. Those demonstrations are used for additional training of the GR00T 2 robot-control model, after which a dual-arm robot uses two matching hands. The release describes three multi-step evaluations: banana-yogurt preparation, granola scooping and a match-and-lamp chemistry task. Reported overall success rates are respectively 60%, 80% and 75%. For the tasks shown, the company says training used DexUMI demonstrations without extra task-specific recordings made by remotely controlling the target robot or additional robot-practice data.\n\nJoint correspondence changes the source of training data: fewer transformations are needed between the recorded human gesture and the target hand. The reported percentages, however, evaluate the complete model-and-robot task sequence. Reproducing the described workflow requires compatible recording hardware, model training and both robot hands. The sequences included tool use, object transfer, lid handling and coordination between the two hands. The company connects this configuration with a demonstration presented by NVIDIA's Jim Fan at CoRL, the international Conference on Robot Learning.\n\nThe initial commercial release is limited to 40 units. The announcement gives no trial count for each success percentage, preventing calculation of its sampling uncertainty from the release alone.",
+      "image": null
+    },
+    {
+      "id": "heavy-loader-learned-dynamic-control",
+      "title": "A five-tonne loader learns to balance on two wheels",
+      "summary": "ETH Zurich and partners trained hydraulic-loader controllers in simulation and transferred them to a physical machine. A John Deere 332G balanced on its front wheels, moved while balancing and returned to four-wheel support.",
+      "details": "Researchers from ETH Zurich, Blue River Technology, Gravis Robotics and Intel trained a five-tonne John Deere 332G loader to perform dynamic maneuvers autonomously. The work appeared in Science Robotics on November 11, with an author manuscript posted to arXiv on November 13. Controllers learned in simulation and were then deployed on the actual machine. It could swing onto its front wheels, maintain balance while moving and articulating the bucket, and return to four wheels.",
+      "technical_novelty": "ETH Zurich and partners trained hydraulic-loader controllers in simulation and transferred them to a physical machine. A John Deere 332G balanced on its front wheels, moved while balancing and returned to four-wheel support. Hydraulic actuation makes this demanding: fluids, flexible components and delays create a nonlinear relationship between commands and movement. Reinforcement learning improves a controller according to the results of attempted behavior. The authors divided the maneuver into swing-up, stabilization, velocity tracking and soft landing. They varied simulated conditions so training would not depend on one exact set of machine parameters. A separate simulated swing-up evaluation covered one thousand randomized environments. The evaluation examined final pitch before switching to the stabilizing controller, tying its success criterion to the transition between two behaviors.",
+      "engineering_impact": "ETH Zurich and partners trained hydraulic-loader controllers in simulation and transferred them to a physical machine. A John Deere 332G balanced on its front wheels, moved while balancing and returned to four-wheel support. The engineering result concerns transitions between support regimes. Four-wheel travel and balancing on the front pair impose different control problems. Switching conditions connect learned behaviors into a complete maneuver, making the required handoff state between controllers explicit. That provides a concrete way to assess what an earlier controller must achieve before the next takes over. For a hydraulic machine, actuator modeling and delay matter at that transition because an error changes the attitude of a heavy chassis, with contact conditions changing during the motion.",
+      "limitations": "ETH Zurich and partners trained hydraulic-loader controllers in simulation and transferred them to a physical machine. A John Deere 332G balanced on its front wheels, moved while balancing and returned to four-wheel support. For velocity tracking while balancing, the authors also smoothed commands with a filter. This is a separate execution adjustment documented alongside the learned controller, rather than an unspecified property of simulation transfer.",
+      "evidence_status": "Research combining simulation training and physical-loader demonstrations; published in Science Robotics on November 11.",
+      "published_at": "2026-11-11",
+      "organization": "ETH Zurich; Blue River Technology; Gravis Robotics; Intel",
+      "source_ids": [
+        "loader-paper"
+      ],
+      "time_window": "7d",
+      "body": "Researchers from ETH Zurich, Blue River Technology, Gravis Robotics and Intel trained a five-tonne John Deere 332G loader to perform dynamic maneuvers autonomously. The work appeared in Science Robotics on November 11, with an author manuscript posted to arXiv on November 13. Controllers learned in simulation and were then deployed on the actual machine. It could swing onto its front wheels, maintain balance while moving and articulating the bucket, and return to four wheels.\n\nHydraulic actuation makes this demanding: fluids, flexible components and delays create a nonlinear relationship between commands and movement. Reinforcement learning improves a controller according to the results of attempted behavior. The authors divided the maneuver into swing-up, stabilization, velocity tracking and soft landing. They varied simulated conditions so training would not depend on one exact set of machine parameters. A separate simulated swing-up evaluation covered one thousand randomized environments. The evaluation examined final pitch before switching to the stabilizing controller, tying its success criterion to the transition between two behaviors.\n\nThe engineering result concerns transitions between support regimes. Four-wheel travel and balancing on the front pair impose different control problems. Switching conditions connect learned behaviors into a complete maneuver, making the required handoff state between controllers explicit. That provides a concrete way to assess what an earlier controller must achieve before the next takes over. For a hydraulic machine, actuator modeling and delay matter at that transition because an error changes the attitude of a heavy chassis, with contact conditions changing during the motion.\n\nFor velocity tracking while balancing, the authors also smoothed commands with a filter. This is a separate execution adjustment documented alongside the learned controller, rather than an unspecified property of simulation transfer.",
+      "image": null
+    },
+    {
+      "id": "fort-safety-supplier-financial-disclosure",
+      "title": "Robot-safety supplier FORT discloses growth ahead of a proposed listing",
+      "summary": "FORT Robotics reported $12.5 million in revenue for the first nine months of 2026, up 52.5% year over year. Its proposed combination with Newbury Street II also brings disclosures about the installed base for robot-safety infrastructure.",
+      "details": "FORT Robotics, a supplier of safety systems for robotic machines, published financial and operating information on November 16 as it prepares a proposed combination with Newbury Street II. Revenue for the nine months ended September 30 reached $12.5 million, an increase of 52.5% from the corresponding period a year earlier. Gross margin, the share of revenue remaining after cost of sales, rose to 67.6% from 66.6%. The figures concern a business supplying protective infrastructure to robot developers and users.",
+      "technical_novelty": "FORT Robotics reported $12.5 million in revenue for the first nine months of 2026, up 52.5% year over year. Its proposed combination with Newbury Street II also brings disclosures about the installed base for robot-safety infrastructure. FORT says its products are deployed across more than 23,000 units for over 680 customers. Named customers include Agility Robotics, DoorDash, Cobot, Zoox and Google DeepMind. The companies publicly filed a Form S-4, a U.S. Securities and Exchange Commission registration statement for the proposed combination, on November 13. The November 16 release says it has not yet become effective. Closing is expected in the fourth quarter of 2026 or first quarter of 2027, conditional on the stated approvals and other requirements.",
+      "engineering_impact": "FORT Robotics reported $12.5 million in revenue for the first nine months of 2026, up 52.5% year over year. Its proposed combination with Newbury Street II also brings disclosures about the installed base for robot-safety infrastructure. For robot developers, the industry signal concerns suppliers of a separate system layer. Safety infrastructure has its own products, support and manufacturing requirements alongside the control model. Revenue and installed-base disclosures indicate the scale of that supplier business. They complement a technical dependency assessment without providing specifications for a particular component. The reported 23,000 units span multiple industries; the release does not break them down by robot type or safety-product version, which limits how closely the total can be matched to a developer's platform. The same release gives trailing-four-quarter revenue of $15.9 million.",
+      "limitations": "FORT Robotics reported $12.5 million in revenue for the first nine months of 2026, up 52.5% year over year. Its proposed combination with Newbury Street II also brings disclosures about the installed base for robot-safety infrastructure. Closing requires Newbury Street II shareholder approval, completion of SEC review and Nasdaq listing approval.",
+      "evidence_status": "Company disclosure discussing registration documents; the proposed combination remains subject to approvals.",
+      "published_at": "2026-11-13",
+      "organization": "FORT Robotics; Newbury Street II Acquisition Corp",
+      "source_ids": [
+        "fort-1116"
+      ],
+      "time_window": "7d",
+      "body": "FORT Robotics, a supplier of safety systems for robotic machines, published financial and operating information on November 16 as it prepares a proposed combination with Newbury Street II. Revenue for the nine months ended September 30 reached $12.5 million, an increase of 52.5% from the corresponding period a year earlier. Gross margin, the share of revenue remaining after cost of sales, rose to 67.6% from 66.6%. The figures concern a business supplying protective infrastructure to robot developers and users.\n\nFORT says its products are deployed across more than 23,000 units for over 680 customers. Named customers include Agility Robotics, DoorDash, Cobot, Zoox and Google DeepMind. The companies publicly filed a Form S-4, a U.S. Securities and Exchange Commission registration statement for the proposed combination, on November 13. The November 16 release says it has not yet become effective. Closing is expected in the fourth quarter of 2026 or first quarter of 2027, conditional on the stated approvals and other requirements.\n\nFor robot developers, the industry signal concerns suppliers of a separate system layer. Safety infrastructure has its own products, support and manufacturing requirements alongside the control model. Revenue and installed-base disclosures indicate the scale of that supplier business. They complement a technical dependency assessment without providing specifications for a particular component. The reported 23,000 units span multiple industries; the release does not break them down by robot type or safety-product version, which limits how closely the total can be matched to a developer's platform. The same release gives trailing-four-quarter revenue of $15.9 million.\n\nClosing requires Newbury Street II shareholder approval, completion of SEC review and Nasdaq listing approval.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Teaching a model to operate a robot arm",
+    "summary": "An MIT-led team trained a reasoning model to select tool poses in simulation. On a physical dual-arm robot it completed 60% of 30 trials, with separate joint-solving and arm-control computations executing those poses.",
+    "implications": "Transfer should be assessed across the boundaries between pose selection, joint solving and actuation. The MIT team's physical result covers specified object lifts and block-alignment trials."
+  },
+  "sources": [
+    {
+      "id": "pear-paper",
+      "title": "Training Reasoning Models in Simulation to Natively Use Real Robots",
+      "url": "https://arxiv.org/abs/2611.18562",
+      "domain": "arxiv.org",
+      "organization": "MIT; UC Berkeley; UC San Diego; NVIDIA; Inco AI",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "ntt-iris-1116",
+      "title": "アイリスオーヤマとNTT西日本「マルチロボティクスプラットフォーム」を活用したフィジカルAIの共同実証成果を発表",
+      "url": "https://www.ntt-west.co.jp/news/2611/261116a.html",
+      "domain": "www.ntt-west.co.jp",
+      "organization": "Iris Ohyama; NTT West",
+      "published_at": "2026-11-16"
+    },
+    {
+      "id": "robotera-1116",
+      "title": "ROBOTERA Launches XHAND 1 Pro-U, Featured in NVIDIA's GR00T 2 DexUMI Demonstration",
+      "url": "https://www.prnewswire.co.uk/news-releases/robotera-launches-xhand-1-pro-u-featured-in-nvidias-gr00t-2-dexumi-demonstration-302940296.html",
+      "domain": "www.prnewswire.co.uk",
+      "organization": "ROBOTERA",
+      "published_at": "2026-11-16"
+    },
+    {
+      "id": "loader-paper",
+      "title": "Heavy Metal Acrobatics: Learning Dynamic Control for Skid-Steer Loaders",
+      "url": "https://arxiv.org/abs/2611.18365",
+      "domain": "arxiv.org",
+      "organization": "ETH Zurich; Blue River Technology; Gravis Robotics; Intel",
+      "published_at": "2026-11-13"
+    },
+    {
+      "id": "fort-1116",
+      "title": "FORT Robotics Reports Strong 2026 Momentum as Company Progresses Towards a Public Listing in Partnership with Newbury Street II Acquisition Corp",
+      "url": "https://www.globenewswire.com/news-release/2026/11/16/3403468/0/en/fort-robotics-reports-strong-2026-momentum-as-company-progresses-towards-a-public-listing-in-partnership-with-newbury-street-ii-acquisition-corp.html",
+      "domain": "www.globenewswire.com",
+      "organization": "FORT Robotics; Newbury Street II Acquisition Corp",
+      "published_at": "2026-11-16"
+    }
+  ]
+}
