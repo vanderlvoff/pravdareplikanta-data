@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 660" width="1100" height="660" role="img" aria-label="Hospital delivery orchestration at Sheba">
+<rect width="1100" height="660" fill="white"/>
+<text x="550" y="58" text-anchor="middle" font-family=""Noto Sans CJK JP", "Noto Sans", sans-serif" font-size="31" font-weight="700" fill="#1d1d1d">Hospital delivery orchestration at Sheba</text>
+<text x="550" y="93" text-anchor="middle" font-family=""Noto Sans CJK JP", "Noto Sans", sans-serif" font-size="18" font-weight="400" fill="#555">One dispatcher, different types of couriers</text>
+<rect x="340" y="126" width="420" height="94" rx="11" fill="#fff" stroke="#252525" stroke-width="2"/>
+<text x="550" y="164" text-anchor="middle" font-family=""Noto Sans CJK JP", "Noto Sans", sans-serif" font-size="23" font-weight="700" fill="#1d1d1d">Delivery request</text>
+<text x="550" y="197" text-anchor="middle" font-family=""Noto Sans CJK JP", "Noto Sans", sans-serif" font-size="17" font-weight="400" fill="#1d1d1d">Location · priority · availability</text>
+<path d="M550 220V259" stroke="#333" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<rect x="290" y="265" width="520" height="144" rx="11" fill="#fff" stroke="#252525" stroke-width="2"/>
+<text x="550" y="304" text-anchor="middle" font-family=""Noto Sans CJK JP", "Noto Sans", sans-serif" font-size="27" font-weight="700" fill="#1d1d1d">deliverz.ai</text>
+<text x="550" y="339" text-anchor="middle" font-family=""Noto Sans CJK JP", "Noto Sans", sans-serif" font-size="21" font-weight="400" fill="#1d1d1d">Task allocation</text>
+<text x="550" y="374" text-anchor="middle" font-family=""Noto Sans CJK JP", "Noto Sans", sans-serif" font-size="19" font-weight="400" fill="#1d1d1d">Central monitoring</text>
+<path d="M550 409V439 M183 439H917 M183 439V476 M550 439V476 M917 439V476" fill="none" stroke="#333" stroke-width="2.5"/>
+<rect x="35" y="482" width="296" height="76" rx="11" fill="#fff" stroke="#252525" stroke-width="2"/>
+<text x="183" y="527" text-anchor="middle" font-family=""Noto Sans CJK JP", "Noto Sans", sans-serif" font-size="21" font-weight="600" fill="#1d1d1d">Ottonomy robot</text>
+<rect x="402" y="482" width="296" height="76" rx="11" fill="#fff" stroke="#252525" stroke-width="2"/>
+<text x="550" y="527" text-anchor="middle" font-family=""Noto Sans CJK JP", "Noto Sans", sans-serif" font-size="21" font-weight="600" fill="#1d1d1d">Other vendors’ robots</text>
+<rect x="769" y="482" width="296" height="76" rx="11" fill="#fff" stroke="#252525" stroke-width="2"/>
+<text x="917" y="527" text-anchor="middle" font-family=""Noto Sans CJK JP", "Noto Sans", sans-serif" font-size="21" font-weight="600" fill="#1d1d1d">Human courier</text>
+<text x="550" y="619" text-anchor="middle" font-family=""Noto Sans CJK JP", "Noto Sans", sans-serif" font-size="18" font-weight="400" fill="#555">Reported by Gix; performance metrics not published</text>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="6" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#333"/></marker></defs>
+</svg>
