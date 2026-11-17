@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-17",
+  "edition": "engineer",
+  "article_id": "reasoning-model-simulation-robot-use",
+  "article_title": {
+    "ru": "Рассуждающую ИИ-модель научили управлять роботом в симуляции",
+    "en": "Simulation training teaches a reasoning model to operate a robot",
+    "ja": "仮想環境の試行で推論モデルを学習させ、実物の腕へ動作を移す"
+  },
+  "article_urls": {
+    "ru": "https://repravda.com/ru/issues/2026-11-17/articles/reasoning-model-simulation-robot-use/",
+    "en": "https://repravda.com/en/issues/2026-11-17/articles/reasoning-model-simulation-robot-use/",
+    "ja": "https://repravda.com/ja/issues/2026-11-17/articles/reasoning-model-simulation-robot-use/"
+  },
+  "image_path": "data/images/2026-11-17/reasoning-model-simulation-robot-use.webp",
+  "width": 1600,
+  "height": 1067,
+  "caption": {
+    "ru": "Робот поднимает предмет — одно из заданий, на которых команда MIT и партнёров проверяла модель после обучения в симуляции. Стенд показан условно.",
+    "en": "Lifting an object was one of the physical tests the MIT-led team used after training the model in simulation. The engraving depicts a conceptual setup.",
+    "ja": "MITなどの研究チームは、仮想環境で学習させたモデルを実機で試した。図は、その課題の一つである物の持ち上げを描いた模式図。"
+  },
+  "alt": {
+    "ru": "Два шарнирных манипулятора закреплены на столе. Губки правого захвата сжимают брусок с двух сторон и удерживают его над столом. Левый захват раскрыт.",
+    "en": "Two articulated robot arms are mounted on a bench. The right gripper holds a block above the surface by its opposite faces. The left gripper is open.",
+    "ja": "作業台に2本のロボットアームが固定されている。右のアームはブロックを左右から挟んで持ち上げ、左のアームは先端のつかみ具を開いている。"
+  },
+  "visual_thesis": "Перенос обучения из симуляции проверяют на физическом действии: может ли робот поднять и удержать предмет.",
+  "visual_brief": "Два манипулятора на общей столешнице. Профилированные звенья, поворотные сочленения и фланец запястья различимы по силуэту. Справа захват удерживает брусок над его тенью, слева виден раскрытый захват. Конструкция показана условно.",
+  "source_ids": [
+    "pear-paper"
+  ]
+}
