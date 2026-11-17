@@ -4,16 +4,16 @@
   "edition": "engineer",
   "article_id": "reasoning-model-simulation-robot-use",
   "article_title": {
-    "ru": "Модель рассуждений научили управлять роботом через симуляцию",
+    "ru": "Рассуждающую ИИ-модель научили управлять роботом в симуляции",
     "en": "Simulation training teaches a reasoning model to operate a robot",
     "ja": "仮想環境の試行で推論モデルを学習させ、実物の腕へ動作を移す"
   },
   "article_urls": {
-    "ru": "https://repravda.com/ru/engineer/issues/2026-11-17/articles/reasoning-model-simulation-robot-use/",
-    "en": "https://repravda.com/en/engineer/issues/2026-11-17/articles/reasoning-model-simulation-robot-use/",
-    "ja": "https://repravda.com/ja/engineer/issues/2026-11-17/articles/reasoning-model-simulation-robot-use/"
+    "ru": "https://repravda.com/ru/issues/2026-11-17/articles/reasoning-model-simulation-robot-use/",
+    "en": "https://repravda.com/en/issues/2026-11-17/articles/reasoning-model-simulation-robot-use/",
+    "ja": "https://repravda.com/ja/issues/2026-11-17/articles/reasoning-model-simulation-robot-use/"
   },
-  "image_path": "data/images/2026-11-17/reasoning-model-simulation-robot-use.png",
+  "image_path": "data/images/2026-11-17/reasoning-model-simulation-robot-use.webp",
   "width": 1600,
   "height": 1067,
   "caption": {
