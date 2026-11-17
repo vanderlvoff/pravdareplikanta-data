@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-17",
+  "edition": "engineer",
+  "language": "ru",
+  "visualizations": [
+    {
+      "news_id": "reasoning-model-simulation-robot-use",
+      "type": "process_diagram",
+      "path": "data/visualizations/2026-11-17/01_robot_reasoning_architecture.svg",
+      "caption": "Разделение выбора целевой позы и её исполнения: схема по описанию PEAR.",
+      "source_ids": [
+        "pear-paper"
+      ],
+      "format": "image/svg+xml",
+      "status": "draft",
+      "layout_qa": "basic_structural_only"
+    },
+    {
+      "news_id": "reasoning-model-simulation-robot-use",
+      "type": "comparison_chart",
+      "path": "data/visualizations/2026-11-17/02_robot_reasoning_results.svg",
+      "caption": "Результаты, сообщённые авторами: успешность в LIBERO и на физическом роботе.",
+      "source_ids": [
+        "pear-paper"
+      ],
+      "format": "image/svg+xml",
+      "status": "draft",
+      "layout_qa": "basic_structural_only"
+    },
+    {
+      "news_id": "facility-camera-robot-coordination",
+      "type": "process_diagram",
+      "path": "data/visualizations/2026-11-17/03_facility_robot_coordination.svg",
+      "caption": "Сообщённая NTT West и Iris Ohyama цепочка наблюдения и постановки задачи роботам.",
+      "source_ids": [
+        "ntt-iris-1116"
+      ],
+      "format": "image/svg+xml",
+      "status": "draft",
+      "layout_qa": "basic_structural_only"
+    }
+  ]
+}
