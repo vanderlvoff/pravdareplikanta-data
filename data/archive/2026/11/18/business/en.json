@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-18",
+  "issue_id": "daily-2026-11-18",
+  "edition": "business",
+  "language": "en",
+  "generated_at": "2026-11-17T21:17:31.399621Z",
+  "title": "Capital and infrastructure push robots into service",
+  "lead": "Robotics companies are moving from demonstrations into manufacturing, multi-site operations and paid services. Buyers now need integration cost, support capacity, supplier responsibility and reliable access to computing infrastructure.",
+  "news": [
+    {
+      "id": "genesis-funding",
+      "title": "Genesis AI raises $500 million to expand production of Eno robots",
+      "summary": "Genesis AI announced a $500 million Series A at a $3.5 billion post-money valuation. It plans to expand Eno production, data collection, model training and customer deployments.",
+      "details": "The company is building an integrated stack comprising the robot, dexterous hand, motion-recording glove, GENE model and Genesis World simulator.",
+      "technical_novelty": "The proposed loop connects human motion data, simulation, model training and physical deployment within one organization.",
+      "engineering_impact": "For a customer, the round means the supplier can finance manufacturing and support, but it does not replace product validation. A pilot agreement needs scope, integration cost, staff training, spare-parts availability and measurable conditions for moving from a trial to procurement.",
+      "limitations": "Capability and rollout claims come from the company; independent success rates and sustained uptime are not published.",
+      "evidence_status": "Company announcement of financing and plans; technical capability claims have not been independently replicated.",
+      "published_at": "2026-11-17",
+      "organization": "Genesis AI",
+      "source_ids": [
+        "genesis-1117"
+      ],
+      "time_window": "24h",
+      "body": "Genesis AI announced a $500 million Series A on November 17 at a $3.5 billion post-money valuation. It plans to use the capital to increase production of its Eno general-purpose robot, expand data acquisition and large-scale model training, and place more systems with customers. Manufacturing, logistics and laboratories are the first target environments, and the company expects broader customer rollout in 2027.\n\nGenesis is developing the robotics stack within one organization. A glove records human hand motion, a dexterous robot hand is designed around corresponding joints, the GENE model learns from collected data, and Genesis World provides simulation for training and evaluation. Eno is the physical platform on which behavior is deployed. The arrangement reduces organizational boundaries between data collection, model development, mechanics and testing.\n\nFor a customer, the round means the supplier can finance manufacturing and support, but it does not replace product validation. A pilot agreement needs scope, integration cost, staff training, spare-parts availability and measurable conditions for moving from a trial to procurement.\n\nFunding does not measure robot performance. The announcement gives no installed customer count, task success rate, sustained autonomous operating time or human-intervention frequency. Statements about long multi-step work come from the company and its investors. The verified event is therefore the financing and the stated plan to expand manufacturing and trials, while reliability over production-length workflows remains unquantified.",
+      "image": null
+    },
+    {
+      "id": "robotera-postal",
+      "title": "ROBOTERA humanoids operate across 11 Guangdong postal hubs",
+      "summary": "ROBOTERA says its humanoid robots now operate at 11 postal hubs in eight Guangdong cities. It reports an average induction rate above 1,500 parcels per hour for the pilot that began in Guangzhou in March.",
+      "details": "The robots feed parcels into sorting lines, reject irregular items and adjust speed to reduce jams, collisions and missed items.",
+      "technical_novelty": "The deployment combines a humanoid platform, a five-finger hand, adaptive speed control and configuration for different sorting lines.",
+      "engineering_impact": "A multi-site rollout can reveal repeatable costs: setup time for a new hub, required line changes and the number of operators supporting the robots. Without site-level results, a buyer cannot calculate cost per processed parcel or the economics of expansion.",
+      "limitations": "The 1,500-parcel figure is manufacturer-reported; robot counts, observation hours, error rates and independent verification are not published.",
+      "evidence_status": "Manufacturer and partner report of an operating deployment; quantitative performance has not been independently audited.",
+      "published_at": "2026-11-17",
+      "organization": "ROBOTERA; China Post Group Guangdong Branch",
+      "source_ids": [
+        "robotera-post-1117"
+      ],
+      "time_window": "24h",
+      "body": "ROBOTERA said on November 17 that its humanoid robots are operating at 11 postal hubs in eight cities across China's Guangdong province. The project is run with China Post's Guangdong branch. A pilot began at the Guangzhou Postal District Center in March, after which the system was extended to sites with different parcel flows and sorting-line configurations.\n\nThe principal operation is parcel induction onto a sorting line. The company also describes irregular-item rejection and adaptive speed control intended to reduce jams, collisions and missed items. Its own five-finger hand handles parcels. ROBOTERA reports an average induction rate above 1,500 parcels per hour in the original pilot and compares that rate with an experienced human worker.\n\nA multi-site rollout can reveal repeatable costs: setup time for a new hub, required line changes and the number of operators supporting the robots. Without site-level results, a buyer cannot calculate cost per processed parcel or the economics of expansion.\n\nThe release does not disclose the robot count at each site, measurement duration, throughput distribution, error share or downtime. The 1,500-parcel figure therefore cannot be assigned to all 11 hubs. The material development is replication of one workflow across multiple locations. Comparable site-level metrics and operator-intervention records are needed to judge the system as a fleet.",
+      "image": null
+    },
+    {
+      "id": "hospital-orchestration",
+      "title": "Sheba hospital coordinates robots from multiple vendors through one system",
+      "summary": "Gix says an Ottonomy robot has entered service at Sheba Medical Center alongside existing robots. The deliverz.ai platform assigns work to robots from different manufacturers and human couriers by location, priority and availability.",
+      "details": "The system supports internal logistics including chemotherapy medication, blood and bone-marrow transport, with centralized assignment and monitoring.",
+      "technical_novelty": "The orchestration layer separates mission allocation and operational oversight from each robot maker's fleet-management system.",
+      "engineering_impact": "A shared dispatcher creates value if the hospital can add vendors without another separate console while keeping one set of delivery rules. Expansion requires clear failure responsibility, door and elevator compatibility, data protection, round-the-clock support and a known connection cost for each robot model.",
+      "limitations": "The company reports that Ottonomy entered service; claimed benefits, scalability and US expansion are forward-looking statements.",
+      "evidence_status": "Supplier report of commercial operation at one hospital; no independent operating metrics are published.",
+      "published_at": "2026-11-17",
+      "organization": "Gix Internet; deliverz.ai; Sheba Medical Center; Ottonomy",
+      "source_ids": [
+        "gix-sheba-1117"
+      ],
+      "time_window": "24h",
+      "body": "Gix announced on November 17 that an Ottonomy robot had entered operational service at Sheba Medical Center in Israel. It works alongside robots from other manufacturers. The deliverz.ai platform allocates internal deliveries among robots and human couriers according to location, mission priority and resource availability, while operators receive centralized assignment and monitoring.\n\nThe system supports live hospital logistics, including chemotherapy medication, blood and bone-marrow transport. The technical problem sits above the navigation stack of any one robot: the orchestrator must match a mission with an available machine or person and the hospital's operating rules. Vendor controllers still execute motion on each platform, while deliverz.ai coordinates missions and fleet state.\n\nA shared dispatcher creates value if the hospital can add vendors without another separate console while keeping one set of delivery rules. Expansion requires clear failure responsibility, door and elevator compatibility, data protection, round-the-clock support and a known connection cost for each robot model.\n\nThe company publishes no delivery count, assignment latency, completion rate or recovery time after failure. The supplier confirms that Ottonomy is operating in the mixed fleet. Claims about reducing vendor dependence and expanding into the United States are forward-looking and depend on technical compatibility, site requirements and customer approvals.",
+      "image": null
+    },
+    {
+      "id": "nvidia-export-oversight",
+      "title": "NVIDIA board creates a national-security and export-control committee",
+      "summary": "NVIDIA's board created a standing committee for national-security policy, export-control compliance and global trade risk. The move follows Jensen Huang's resignation; operational compliance teams will report to the committee and interim CEO Colette Kress.",
+      "details": "Director Suzanne Nora Johnson chairs the committee, which will meet at least quarterly and retain independent legal, national-security and trade experts.",
+      "technical_novelty": "For physical-AI developers, the issue reaches accelerator supply, access to compute and compliance obligations across development and deployment chains.",
+      "engineering_impact": "Organizations dependent on NVIDIA should review cloud and hardware contracts, delivery regions and export-control duties. The committee does not itself change price or availability, but it may lengthen transaction reviews and makes a documented alternative-supply plan more important.",
+      "limitations": "Reuters describes investigated relationships and political pressure; allegations remain under review, and the board has not announced Huang's return.",
+      "evidence_status": "Official NVIDIA governance decision plus independent Reuters reporting on context; some allegations remain unresolved.",
+      "published_at": "2026-11-17",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "nvidia-committee-1117",
+        "nvidia-reuters-1117"
+      ],
+      "time_window": "24h",
+      "body": "NVIDIA's board created a standing National Security and Export Control Oversight Committee on November 17. Suzanne Nora Johnson chairs it, and it must meet at least quarterly with support from outside experts. The company's national-security and global-trade compliance teams will report to the committee and to interim chief executive Colette Kress on day-to-day operations.\n\nThe decision follows Jensen Huang's immediate resignation as chief executive and board member on November 12. Reuters reported on November 17 that Huang would consider returning if the board judged it beneficial, while the agency's sources said the board was not considering reinstatement. Reuters also described investigated relationships and political pressure around accelerator exports to China; those allegations have not reached a final determination.\n\nOrganizations dependent on NVIDIA should review cloud and hardware contracts, delivery regions and export-control duties. The committee does not itself change price or availability, but it may lengthen transaction reviews and makes a documented alternative-supply plan more important.\n\nPhysical-AI developers care about the event because the sector depends on NVIDIA accelerators, software platforms and investment. Stronger oversight may affect sales procedures, access to compute and partner compliance. The official notice changes no product interface, roadmap or delivery date, so the immediate evidence is a governance and supply-chain risk rather than an announced technical disruption.",
+      "image": null
+    },
+    {
+      "id": "pony-toyota-robotaxi",
+      "title": "Pony.ai and Toyota launch commercial driverless bZ4X service",
+      "summary": "Pony.ai and Toyota announced fully driverless commercial service with their seventh-generation bZ4X robotaxi in Guangzhou. Passengers can hail it around the clock, while the partners target roughly 1,000 vehicles across major Chinese cities.",
+      "details": "The vehicle was engineered for Level 4 autonomy with redundancy and fail-operational capability intended to preserve safe operation after a component failure.",
+      "technical_novelty": "Scaling covers the driving system, mass production, charging, maintenance and routine fleet service rather than the autonomy model alone.",
+      "engineering_impact": "Commercial service joins the vehicle, software, charging, maintenance and passenger operations into one product. Economics will depend not just on fleet size but on paid trips, empty mileage, charging downtime, remote support and the permitted operating area.",
+      "limitations": "The 1,000-vehicle figure is a future plan; crash rates, remote interventions and the available operating area are not published.",
+      "evidence_status": "Joint company announcement of commercial launch; operating performance is not independently documented in the release.",
+      "published_at": "2026-11-16",
+      "organization": "Pony.ai; Toyota",
+      "source_ids": [
+        "pony-toyota-1116"
+      ],
+      "time_window": "72h",
+      "body": "Pony.ai and Toyota announced on November 16 that their jointly developed seventh-generation bZ4X robotaxi had entered fully driverless commercial service in Guangzhou. Passengers can hail it around the clock through PonyPilot and partner mini-programs. The model joined an operating commercial fleet after vehicle development, mass production, testing and validation.\n\nThe vehicle was engineered for Level 4 autonomy, in which the automated system performs the driving task within a defined operating domain. The partners emphasize redundancy and fail-operational capability intended to preserve safe operation after a component failure. The first production vehicle left the line in February. Scaling also requires charging, maintenance and routine fleet service rather than model updates alone.\n\nCommercial service joins the vehicle, software, charging, maintenance and passenger operations into one product. Economics will depend not just on fleet size but on paid trips, empty mileage, charging downtime, remote support and the permitted operating area.\n\nThe companies target roughly 1,000 bZ4X robotaxis across major Chinese cities, but that is a future plan. The release gives no current vehicle count, trip count, service area, crash rate or remote-intervention frequency. The confirmed change is the commercial introduction of one production model in Guangzhou. Comparative safety and availability require operational data that the announcement does not contain.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Capital and infrastructure push robots into service",
+    "summary": "Robotics companies are moving from demonstrations into manufacturing, multi-site operations and paid services. Buyers now need integration cost, support capacity, supplier responsibility and reliable access to computing infrastructure.",
+    "implications": "Deployment decisions require workload, support cost, downtime, supplier responsibilities and clear conditions for adding sites or machines."
+  },
+  "sources": [
+    {
+      "id": "genesis-1117",
+      "title": "Genesis AI Raises $500M Series A at $3.5B Valuation to Master Human-Level Dexterity in General-Purpose Robots and Deploy at Scale",
+      "url": "https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-3-5b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302941249.html",
+      "domain": "prnewswire.com",
+      "organization": "Genesis AI",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "robotera-post-1117",
+      "title": "ROBOTERA Expands Humanoid Robot Deployment Across China Post's Guangdong Network, Reaching Eight Cities Province-Wide",
+      "url": "https://www.prnewswire.co.uk/news-releases/robotera-expands-humanoid-robot-deployment-across-china-posts-guangdong-network-reaching-eight-cities-province-wide-302941879.html",
+      "domain": "prnewswire.co.uk",
+      "organization": "ROBOTERA; China Post Group Guangdong Branch",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "gix-sheba-1117",
+      "title": "Gix Deploys New Advanced AI-Powered L4 Autonomous Robot with Multi-Environment Navigation and Smart Access Capabilities at One of the World's Top Hospitals",
+      "url": "https://www.globenewswire.com/news-release/2026/11/17/3404625/0/en/gix-deploys-new-advanced-ai-powered-l4-autonomous-robot-with-multi-environment-navigation-and-smart-access-capabilities-at-one-of-the-world-s-top-hospitals.html",
+      "domain": "globenewswire.com",
+      "organization": "Gix Internet; deliverz.ai; Sheba Medical Center; Ottonomy",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "nvidia-committee-1117",
+      "title": "NVIDIA Board of Directors Establishes National Security and Export Control Oversight Committee",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "nvidia-reuters-1117",
+      "title": "Huang open to Nvidia return as scandal-hit chipmaker heads into results",
+      "url": "https://www.reuters.com/business/nvidia-board-forms-committee-national-security-export-control-oversight-2026-11-17/",
+      "domain": "reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "pony-toyota-1116",
+      "title": "PONY AI Inc. and Toyota Launch Fully Driverless Commercial Services with Gen-7 bZ4X Robotaxi",
+      "url": "https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-and-toyota-launch-fully-driverless-commercial",
+      "domain": "ir.pony.ai",
+      "organization": "Pony.ai; Toyota",
+      "published_at": "2026-11-16"
+    }
+  ]
+}

@@ -2,149 +2,158 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-17",
-  "issue_id": "daily-2026-11-17",
+  "issue_date": "2026-11-18",
+  "issue_id": "daily-2026-11-18",
   "edition": "business",
   "language": "en",
-  "generated_at": "2026-11-16T21:12:35.406Z",
-  "title": "The business behind robot safety grows",
-  "lead": "FORT Robotics disclosed 52.5% revenue growth for the first nine months of 2026. Its proposed combination with Newbury Street II highlights a specialist safety supplier serving robot developers and equipment users.",
+  "generated_at": "2026-11-17T21:17:31.399621Z",
+  "title": "Capital and infrastructure push robots into service",
+  "lead": "Robotics companies are moving from demonstrations into manufacturing, multi-site operations and paid services. Buyers now need integration cost, support capacity, supplier responsibility and reliable access to computing infrastructure.",
   "news": [
     {
-      "id": "fort-safety-supplier-financial-disclosure",
-      "title": "Robot-safety supplier FORT discloses growth ahead of a proposed listing",
-      "summary": "FORT Robotics reported $12.5 million in revenue for the first nine months of 2026, up 52.5% year over year. Its proposed combination with Newbury Street II also brings disclosures about the installed base for robot-safety infrastructure.",
-      "details": "FORT Robotics, a supplier of safety systems for robotic machines, published financial and operating information on November 16 as it prepares a proposed combination with Newbury Street II. Revenue for the nine months ended September 30 reached $12.5 million, an increase of 52.5% from the corresponding period a year earlier. Gross margin, the share of revenue remaining after cost of sales, rose to 67.6% from 66.6%. The figures concern a business supplying protective infrastructure to robot developers and users.",
-      "technical_novelty": "FORT Robotics reported $12.5 million in revenue for the first nine months of 2026, up 52.5% year over year. Its proposed combination with Newbury Street II also brings disclosures about the installed base for robot-safety infrastructure. FORT says its products are deployed across more than 23,000 units for over 680 customers. Named customers include Agility Robotics, DoorDash, Cobot, Zoox and Google DeepMind. The companies publicly filed a Form S-4, a U.S. Securities and Exchange Commission registration statement for the proposed combination, on November 13. The November 16 release says it has not yet become effective. Closing is expected in the fourth quarter of 2026 or first quarter of 2027, conditional on the stated approvals and other requirements.",
-      "engineering_impact": "FORT Robotics reported $12.5 million in revenue for the first nine months of 2026, up 52.5% year over year. Its proposed combination with Newbury Street II also brings disclosures about the installed base for robot-safety infrastructure. The disclosure illustrates a market surrounding robot manufacturers: a specialist supplier sells the protective systems on which deployments depend. Buyers have an interest in support continuity and the resilience of that supply chain. Revenue and margin growth describe this business over a defined period; selecting an actual product also requires contractual and technical terms. The proposed combination uses a company established to acquire a business. After closing, the planned name is FORT Robotics Holdings and the intended trading symbol is FROB.",
-      "limitations": "FORT Robotics reported $12.5 million in revenue for the first nine months of 2026, up 52.5% year over year. Its proposed combination with Newbury Street II also brings disclosures about the installed base for robot-safety infrastructure. Completion remains conditional on shareholder approval, regulatory review and Nasdaq admission. The company gives an expected quarter, rather than a confirmed completion date for those procedures.",
-      "evidence_status": "Company disclosure discussing registration documents; the proposed combination remains subject to approvals.",
-      "published_at": "2026-11-13",
-      "organization": "FORT Robotics; Newbury Street II Acquisition Corp",
+      "id": "genesis-funding",
+      "title": "Genesis AI raises $500 million to expand production of Eno robots",
+      "summary": "Genesis AI announced a $500 million Series A at a $3.5 billion post-money valuation. It plans to expand Eno production, data collection, model training and customer deployments.",
+      "details": "The company is building an integrated stack comprising the robot, dexterous hand, motion-recording glove, GENE model and Genesis World simulator.",
+      "technical_novelty": "The proposed loop connects human motion data, simulation, model training and physical deployment within one organization.",
+      "engineering_impact": "For a customer, the round means the supplier can finance manufacturing and support, but it does not replace product validation. A pilot agreement needs scope, integration cost, staff training, spare-parts availability and measurable conditions for moving from a trial to procurement.",
+      "limitations": "Capability and rollout claims come from the company; independent success rates and sustained uptime are not published.",
+      "evidence_status": "Company announcement of financing and plans; technical capability claims have not been independently replicated.",
+      "published_at": "2026-11-17",
+      "organization": "Genesis AI",
       "source_ids": [
-        "fort-1116"
-      ],
-      "time_window": "7d",
-      "body": "FORT Robotics, a supplier of safety systems for robotic machines, published financial and operating information on November 16 as it prepares a proposed combination with Newbury Street II. Revenue for the nine months ended September 30 reached $12.5 million, an increase of 52.5% from the corresponding period a year earlier. Gross margin, the share of revenue remaining after cost of sales, rose to 67.6% from 66.6%. The figures concern a business supplying protective infrastructure to robot developers and users.\n\nFORT says its products are deployed across more than 23,000 units for over 680 customers. Named customers include Agility Robotics, DoorDash, Cobot, Zoox and Google DeepMind. The companies publicly filed a Form S-4, a U.S. Securities and Exchange Commission registration statement for the proposed combination, on November 13. The November 16 release says it has not yet become effective. Closing is expected in the fourth quarter of 2026 or first quarter of 2027, conditional on the stated approvals and other requirements.\n\nThe disclosure illustrates a market surrounding robot manufacturers: a specialist supplier sells the protective systems on which deployments depend. Buyers have an interest in support continuity and the resilience of that supply chain. Revenue and margin growth describe this business over a defined period; selecting an actual product also requires contractual and technical terms. The proposed combination uses a company established to acquire a business. After closing, the planned name is FORT Robotics Holdings and the intended trading symbol is FROB.\n\nCompletion remains conditional on shareholder approval, regulatory review and Nasdaq admission. The company gives an expected quarter, rather than a confirmed completion date for those procedures.",
-      "image": null
-    },
-    {
-      "id": "facility-camera-robot-coordination",
-      "title": "NTT West and Iris Ohyama connect building cameras with robots",
-      "summary": "Iris Ohyama and NTT West tested camera-to-cleaner instructions and coordination between different robot types. The companies report technical feasibility for a chain linking image interpretation with machine action.",
-      "details": "Iris Ohyama and communications company NTT West reported a second stage of facility-and-robot integration trials on November 16. Images from a security camera were analyzed and the resulting information used to instruct the JILBY cleaning robot. Another example linked that machine with the ugo Nova humanoid, sharing information and allocating tasks according to their respective capabilities. The announcement describes verification that the connections could work technically, without specifying trial counts or completed-job rates.",
-      "technical_novelty": "Iris Ohyama and NTT West tested camera-to-cleaner instructions and coordination between different robot types. The companies report technical feasibility for a chain linking image interpretation with machine action. NTT West develops the shared management system, called the Multi-Robotics Platform. It consolidates equipment information on remote servers. In its architecture, a vision-language model interprets the surroundings; a large language model generates instructions. A vision-language-action model supports choosing actions from images and instructions. These are the roles referred to as VLM, LLM and VLA. An earlier stage connected human communication and cleaning-data analysis with suggestions for routes, cleaning frequency and timing. The newly described work connects facility observations with coordination across different machines.",
-      "engineering_impact": "Iris Ohyama and NTT West tested camera-to-cleaner instructions and coordination between different robot types. The companies report technical feasibility for a chain linking image interpretation with machine action. For a facility owner, the proposal's value depends on making installed cameras and different workers function together. Separating scene interpretation, task assignment and robot execution helps identify responsibility for each connection. Its economics need assessment for a particular building: the published trial gives no connectivity costs, support costs or measured reduction in cleaning time. The partners plan to use what they learned to clarify customer needs and commercialization possibilities before defining a future offer.",
-      "limitations": "Iris Ohyama and NTT West tested camera-to-cleaner instructions and coordination between different robot types. The companies report technical feasibility for a chain linking image interpretation with machine action. Camera-to-cleaner demonstrations are planned at Tokyo Big Sight on November 18–20. They use research-stage technologies whose behavior may differ from an eventual service specification.",
-      "evidence_status": "The partners' report of technical feasibility; quantitative reliability measurements are not published.",
-      "published_at": "2026-11-16",
-      "organization": "Iris Ohyama; NTT West",
-      "source_ids": [
-        "ntt-iris-1116"
+        "genesis-1117"
       ],
       "time_window": "24h",
-      "body": "Iris Ohyama and communications company NTT West reported a second stage of facility-and-robot integration trials on November 16. Images from a security camera were analyzed and the resulting information used to instruct the JILBY cleaning robot. Another example linked that machine with the ugo Nova humanoid, sharing information and allocating tasks according to their respective capabilities. The announcement describes verification that the connections could work technically, without specifying trial counts or completed-job rates.\n\nNTT West develops the shared management system, called the Multi-Robotics Platform. It consolidates equipment information on remote servers. In its architecture, a vision-language model interprets the surroundings; a large language model generates instructions. A vision-language-action model supports choosing actions from images and instructions. These are the roles referred to as VLM, LLM and VLA. An earlier stage connected human communication and cleaning-data analysis with suggestions for routes, cleaning frequency and timing. The newly described work connects facility observations with coordination across different machines.\n\nFor a facility owner, the proposal's value depends on making installed cameras and different workers function together. Separating scene interpretation, task assignment and robot execution helps identify responsibility for each connection. Its economics need assessment for a particular building: the published trial gives no connectivity costs, support costs or measured reduction in cleaning time. The partners plan to use what they learned to clarify customer needs and commercialization possibilities before defining a future offer.\n\nCamera-to-cleaner demonstrations are planned at Tokyo Big Sight on November 18–20. They use research-stage technologies whose behavior may differ from an eventual service specification.",
+      "body": "Genesis AI announced a $500 million Series A on November 17 at a $3.5 billion post-money valuation. It plans to use the capital to increase production of its Eno general-purpose robot, expand data acquisition and large-scale model training, and place more systems with customers. Manufacturing, logistics and laboratories are the first target environments, and the company expects broader customer rollout in 2027.\n\nGenesis is developing the robotics stack within one organization. A glove records human hand motion, a dexterous robot hand is designed around corresponding joints, the GENE model learns from collected data, and Genesis World provides simulation for training and evaluation. Eno is the physical platform on which behavior is deployed. The arrangement reduces organizational boundaries between data collection, model development, mechanics and testing.\n\nFor a customer, the round means the supplier can finance manufacturing and support, but it does not replace product validation. A pilot agreement needs scope, integration cost, staff training, spare-parts availability and measurable conditions for moving from a trial to procurement.\n\nFunding does not measure robot performance. The announcement gives no installed customer count, task success rate, sustained autonomous operating time or human-intervention frequency. Statements about long multi-step work come from the company and its investors. The verified event is therefore the financing and the stated plan to expand manufacturing and trials, while reliability over production-length workflows remains unquantified.",
       "image": null
     },
     {
-      "id": "robotera-hand-demonstration-mapping",
-      "title": "ROBOTERA aligns a robot hand with human demonstration hardware",
-      "summary": "ROBOTERA opened orders for its five-finger XHAND 1 Pro-U robot hand. Matching its joints to the wearable DexUMI recorder supports transferring human demonstrations to a two-arm robot.",
-      "details": "ROBOTERA announced the commercial release of XHAND 1 Pro-U on November 16. The five-finger hand has 16 degrees of freedom, meaning independent directions in which its joints can change configuration. Its mechanism closely matches DexUMI, a wearable hand exoskeleton from NVIDIA GEAR Lab that records human demonstrations. Corresponding joints make it easier to map demonstrated motion to the robot. The redesign also changes thumb placement, hand articulation and tactile sensing on the palm side.",
-      "technical_novelty": "ROBOTERA opened orders for its five-finger XHAND 1 Pro-U robot hand. Matching its joints to the wearable DexUMI recorder supports transferring human demonstrations to a two-arm robot. A person wearing the exoskeleton handles real objects while the recorder collects hand movement and fingertip force information. Those demonstrations are used for additional training of the GR00T 2 robot-control model, after which a dual-arm robot uses two matching hands. The release describes three multi-step evaluations: banana-yogurt preparation, granola scooping and a match-and-lamp chemistry task. Reported overall success rates are respectively 60%, 80% and 75%. For the tasks shown, the company says training used DexUMI demonstrations without extra task-specific recordings made by remotely controlling the target robot or additional robot-practice data.",
-      "engineering_impact": "ROBOTERA opened orders for its five-finger XHAND 1 Pro-U robot hand. Matching its joints to the wearable DexUMI recorder supports transferring human demonstrations to a two-arm robot. For research-equipment buyers, the offer concerns compatibility with a specific data-collection method as well as the physical hand. The operator directly handles objects, changing the recording workflow compared with remotely operating the target robot. Adopting that chain requires considering the recorder, model training and dual-arm platform together. Task-success percentages give reference points for three demonstrations, but the release supplies no training cost, maintenance cycle or productivity measurement at a customer workplace. Those are separate inputs to a purchasing decision.",
-      "limitations": "ROBOTERA opened orders for its five-finger XHAND 1 Pro-U robot hand. Matching its joints to the wearable DexUMI recorder supports transferring human demonstrations to a two-arm robot. Orders cover an initial limited batch of 40 units. The announcement gives neither a price nor a buyer-specific delivery date, and does not state evaluation sample sizes.",
-      "evidence_status": "Manufacturer-reported results for three multi-step tasks; trial counts are not stated in the release.",
-      "published_at": "2026-11-16",
-      "organization": "ROBOTERA",
+      "id": "robotera-postal",
+      "title": "ROBOTERA humanoids operate across 11 Guangdong postal hubs",
+      "summary": "ROBOTERA says its humanoid robots now operate at 11 postal hubs in eight Guangdong cities. It reports an average induction rate above 1,500 parcels per hour for the pilot that began in Guangzhou in March.",
+      "details": "The robots feed parcels into sorting lines, reject irregular items and adjust speed to reduce jams, collisions and missed items.",
+      "technical_novelty": "The deployment combines a humanoid platform, a five-finger hand, adaptive speed control and configuration for different sorting lines.",
+      "engineering_impact": "A multi-site rollout can reveal repeatable costs: setup time for a new hub, required line changes and the number of operators supporting the robots. Without site-level results, a buyer cannot calculate cost per processed parcel or the economics of expansion.",
+      "limitations": "The 1,500-parcel figure is manufacturer-reported; robot counts, observation hours, error rates and independent verification are not published.",
+      "evidence_status": "Manufacturer and partner report of an operating deployment; quantitative performance has not been independently audited.",
+      "published_at": "2026-11-17",
+      "organization": "ROBOTERA; China Post Group Guangdong Branch",
       "source_ids": [
-        "robotera-1116"
+        "robotera-post-1117"
       ],
       "time_window": "24h",
-      "body": "ROBOTERA announced the commercial release of XHAND 1 Pro-U on November 16. The five-finger hand has 16 degrees of freedom, meaning independent directions in which its joints can change configuration. Its mechanism closely matches DexUMI, a wearable hand exoskeleton from NVIDIA GEAR Lab that records human demonstrations. Corresponding joints make it easier to map demonstrated motion to the robot. The redesign also changes thumb placement, hand articulation and tactile sensing on the palm side.\n\nA person wearing the exoskeleton handles real objects while the recorder collects hand movement and fingertip force information. Those demonstrations are used for additional training of the GR00T 2 robot-control model, after which a dual-arm robot uses two matching hands. The release describes three multi-step evaluations: banana-yogurt preparation, granola scooping and a match-and-lamp chemistry task. Reported overall success rates are respectively 60%, 80% and 75%. For the tasks shown, the company says training used DexUMI demonstrations without extra task-specific recordings made by remotely controlling the target robot or additional robot-practice data.\n\nFor research-equipment buyers, the offer concerns compatibility with a specific data-collection method as well as the physical hand. The operator directly handles objects, changing the recording workflow compared with remotely operating the target robot. Adopting that chain requires considering the recorder, model training and dual-arm platform together. Task-success percentages give reference points for three demonstrations, but the release supplies no training cost, maintenance cycle or productivity measurement at a customer workplace. Those are separate inputs to a purchasing decision.\n\nOrders cover an initial limited batch of 40 units. The announcement gives neither a price nor a buyer-specific delivery date, and does not state evaluation sample sizes.",
+      "body": "ROBOTERA said on November 17 that its humanoid robots are operating at 11 postal hubs in eight cities across China's Guangdong province. The project is run with China Post's Guangdong branch. A pilot began at the Guangzhou Postal District Center in March, after which the system was extended to sites with different parcel flows and sorting-line configurations.\n\nThe principal operation is parcel induction onto a sorting line. The company also describes irregular-item rejection and adaptive speed control intended to reduce jams, collisions and missed items. Its own five-finger hand handles parcels. ROBOTERA reports an average induction rate above 1,500 parcels per hour in the original pilot and compares that rate with an experienced human worker.\n\nA multi-site rollout can reveal repeatable costs: setup time for a new hub, required line changes and the number of operators supporting the robots. Without site-level results, a buyer cannot calculate cost per processed parcel or the economics of expansion.\n\nThe release does not disclose the robot count at each site, measurement duration, throughput distribution, error share or downtime. The 1,500-parcel figure therefore cannot be assigned to all 11 hubs. The material development is replication of one workflow across multiple locations. Comparable site-level metrics and operator-intervention records are needed to judge the system as a fleet.",
       "image": null
     },
     {
-      "id": "lunar-optical-communications-power-study",
-      "title": "NTT and ispace begin studying communications and power for lunar machines",
-      "summary": "NTT and ispace signed an agreement covering Earth–Moon optical communications and laser power delivery. They will begin by defining uses, requirements and demonstration methods for the proposed infrastructure.",
-      "details": "NTT and lunar-transport company ispace announced a collaboration agreement on November 16 to study communications and power infrastructure for future lunar missions. Optical communications transmit data using light; the other technology under consideration directs laser energy toward equipment fitted with a receiver. The companies plan to combine NTT's optical-technology expertise with ispace's experience of lunar transport, exploration and mission operations. Their initial work concerns whether those technologies can be applied in the lunar environment.",
-      "technical_novelty": "NTT and ispace signed an agreement covering Earth–Moon optical communications and laser power delivery. They will begin by defining uses, requirements and demonstration methods for the proposed infrastructure. The stated next steps are use-case studies, system architecture, technical requirements and demonstration methods. Staged demonstrations on Earth and in space are being considered. Communications would carry imagery, scientific observations and information from mobile equipment; power delivery would serve machines where no distribution grid exists. Separately, ispace describes Mission 3's planned lunar landing in 2028 and a first lunar-orbiting satellite under Mission 2.5 as early as 2027. Those dates describe company missions, while the joint optical-infrastructure demonstration timetable remains to be defined.",
-      "engineering_impact": "NTT and ispace signed an agreement covering Earth–Moon optical communications and laser power delivery. They will begin by defining uses, requirements and demonstration methods for the proposed infrastructure. This is a move toward an infrastructure business on which future autonomous lunar equipment could depend. A transport operator and a communications supplier first need to agree which services are required and how to demonstrate them. Data transmission and energy delivery serve different functions and require different receiving equipment and tests. The agreement connects them through the common aim of supporting lunar operations. For prospective partners, the concrete current activity is defining system requirements and the sequence of feasibility work.",
-      "limitations": "NTT and ispace signed an agreement covering Earth–Moon optical communications and laser power delivery. They will begin by defining uses, requirements and demonstration methods for the proposed infrastructure. The announcement supplies no target data rate, received power, investment amount or joint trial date. Requirements and demonstration methods are among the subjects the partners are starting to study.",
-      "evidence_status": "Joint announcement of an agreement and research plans; no joint optical demonstration result is reported.",
-      "published_at": "2026-11-16",
-      "organization": "NTT; ispace",
+      "id": "hospital-orchestration",
+      "title": "Sheba hospital coordinates robots from multiple vendors through one system",
+      "summary": "Gix says an Ottonomy robot has entered service at Sheba Medical Center alongside existing robots. The deliverz.ai platform assigns work to robots from different manufacturers and human couriers by location, priority and availability.",
+      "details": "The system supports internal logistics including chemotherapy medication, blood and bone-marrow transport, with centralized assignment and monitoring.",
+      "technical_novelty": "The orchestration layer separates mission allocation and operational oversight from each robot maker's fleet-management system.",
+      "engineering_impact": "A shared dispatcher creates value if the hospital can add vendors without another separate console while keeping one set of delivery rules. Expansion requires clear failure responsibility, door and elevator compatibility, data protection, round-the-clock support and a known connection cost for each robot model.",
+      "limitations": "The company reports that Ottonomy entered service; claimed benefits, scalability and US expansion are forward-looking statements.",
+      "evidence_status": "Supplier report of commercial operation at one hospital; no independent operating metrics are published.",
+      "published_at": "2026-11-17",
+      "organization": "Gix Internet; deliverz.ai; Sheba Medical Center; Ottonomy",
       "source_ids": [
-        "ispace-1116"
+        "gix-sheba-1117"
+      ],
+      "time_window": "24h",
+      "body": "Gix announced on November 17 that an Ottonomy robot had entered operational service at Sheba Medical Center in Israel. It works alongside robots from other manufacturers. The deliverz.ai platform allocates internal deliveries among robots and human couriers according to location, mission priority and resource availability, while operators receive centralized assignment and monitoring.\n\nThe system supports live hospital logistics, including chemotherapy medication, blood and bone-marrow transport. The technical problem sits above the navigation stack of any one robot: the orchestrator must match a mission with an available machine or person and the hospital's operating rules. Vendor controllers still execute motion on each platform, while deliverz.ai coordinates missions and fleet state.\n\nA shared dispatcher creates value if the hospital can add vendors without another separate console while keeping one set of delivery rules. Expansion requires clear failure responsibility, door and elevator compatibility, data protection, round-the-clock support and a known connection cost for each robot model.\n\nThe company publishes no delivery count, assignment latency, completion rate or recovery time after failure. The supplier confirms that Ottonomy is operating in the mixed fleet. Claims about reducing vendor dependence and expanding into the United States are forward-looking and depend on technical compatibility, site requirements and customer approvals.",
+      "image": null
+    },
+    {
+      "id": "nvidia-export-oversight",
+      "title": "NVIDIA board creates a national-security and export-control committee",
+      "summary": "NVIDIA's board created a standing committee for national-security policy, export-control compliance and global trade risk. The move follows Jensen Huang's resignation; operational compliance teams will report to the committee and interim CEO Colette Kress.",
+      "details": "Director Suzanne Nora Johnson chairs the committee, which will meet at least quarterly and retain independent legal, national-security and trade experts.",
+      "technical_novelty": "For physical-AI developers, the issue reaches accelerator supply, access to compute and compliance obligations across development and deployment chains.",
+      "engineering_impact": "Organizations dependent on NVIDIA should review cloud and hardware contracts, delivery regions and export-control duties. The committee does not itself change price or availability, but it may lengthen transaction reviews and makes a documented alternative-supply plan more important.",
+      "limitations": "Reuters describes investigated relationships and political pressure; allegations remain under review, and the board has not announced Huang's return.",
+      "evidence_status": "Official NVIDIA governance decision plus independent Reuters reporting on context; some allegations remain unresolved.",
+      "published_at": "2026-11-17",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "nvidia-committee-1117",
+        "nvidia-reuters-1117"
+      ],
+      "time_window": "24h",
+      "body": "NVIDIA's board created a standing National Security and Export Control Oversight Committee on November 17. Suzanne Nora Johnson chairs it, and it must meet at least quarterly with support from outside experts. The company's national-security and global-trade compliance teams will report to the committee and to interim chief executive Colette Kress on day-to-day operations.\n\nThe decision follows Jensen Huang's immediate resignation as chief executive and board member on November 12. Reuters reported on November 17 that Huang would consider returning if the board judged it beneficial, while the agency's sources said the board was not considering reinstatement. Reuters also described investigated relationships and political pressure around accelerator exports to China; those allegations have not reached a final determination.\n\nOrganizations dependent on NVIDIA should review cloud and hardware contracts, delivery regions and export-control duties. The committee does not itself change price or availability, but it may lengthen transaction reviews and makes a documented alternative-supply plan more important.\n\nPhysical-AI developers care about the event because the sector depends on NVIDIA accelerators, software platforms and investment. Stronger oversight may affect sales procedures, access to compute and partner compliance. The official notice changes no product interface, roadmap or delivery date, so the immediate evidence is a governance and supply-chain risk rather than an announced technical disruption.",
+      "image": null
+    },
+    {
+      "id": "pony-toyota-robotaxi",
+      "title": "Pony.ai and Toyota launch commercial driverless bZ4X service",
+      "summary": "Pony.ai and Toyota announced fully driverless commercial service with their seventh-generation bZ4X robotaxi in Guangzhou. Passengers can hail it around the clock, while the partners target roughly 1,000 vehicles across major Chinese cities.",
+      "details": "The vehicle was engineered for Level 4 autonomy with redundancy and fail-operational capability intended to preserve safe operation after a component failure.",
+      "technical_novelty": "Scaling covers the driving system, mass production, charging, maintenance and routine fleet service rather than the autonomy model alone.",
+      "engineering_impact": "Commercial service joins the vehicle, software, charging, maintenance and passenger operations into one product. Economics will depend not just on fleet size but on paid trips, empty mileage, charging downtime, remote support and the permitted operating area.",
+      "limitations": "The 1,000-vehicle figure is a future plan; crash rates, remote interventions and the available operating area are not published.",
+      "evidence_status": "Joint company announcement of commercial launch; operating performance is not independently documented in the release.",
+      "published_at": "2026-11-16",
+      "organization": "Pony.ai; Toyota",
+      "source_ids": [
+        "pony-toyota-1116"
       ],
       "time_window": "72h",
-      "body": "NTT and lunar-transport company ispace announced a collaboration agreement on November 16 to study communications and power infrastructure for future lunar missions. Optical communications transmit data using light; the other technology under consideration directs laser energy toward equipment fitted with a receiver. The companies plan to combine NTT's optical-technology expertise with ispace's experience of lunar transport, exploration and mission operations. Their initial work concerns whether those technologies can be applied in the lunar environment.\n\nThe stated next steps are use-case studies, system architecture, technical requirements and demonstration methods. Staged demonstrations on Earth and in space are being considered. Communications would carry imagery, scientific observations and information from mobile equipment; power delivery would serve machines where no distribution grid exists. Separately, ispace describes Mission 3's planned lunar landing in 2028 and a first lunar-orbiting satellite under Mission 2.5 as early as 2027. Those dates describe company missions, while the joint optical-infrastructure demonstration timetable remains to be defined.\n\nThis is a move toward an infrastructure business on which future autonomous lunar equipment could depend. A transport operator and a communications supplier first need to agree which services are required and how to demonstrate them. Data transmission and energy delivery serve different functions and require different receiving equipment and tests. The agreement connects them through the common aim of supporting lunar operations. For prospective partners, the concrete current activity is defining system requirements and the sequence of feasibility work.\n\nThe announcement supplies no target data rate, received power, investment amount or joint trial date. Requirements and demonstration methods are among the subjects the partners are starting to study.",
-      "image": null
-    },
-    {
-      "id": "photosynth-tsukuba-research-operations",
-      "title": "Photosynth and Tsukuba connect robotics research with building operations",
-      "summary": "Photosynth began joint research with the University of Tsukuba's Digital Nature Development Research Center. The partners aim to connect scene recognition, decisions and robot actions with knowledge of operating real facilities.",
-      "details": "Japan's Photosynth announced joint robot research on November 16 with the University of Tsukuba's Digital Nature Development Research Center, led by Professor Yoichi Ochiai. Photosynth contributes experience of day-to-day operations in physical spaces, while the university supplies research knowledge and infrastructure. Their subject is artificial intelligence that perceives its surroundings, makes decisions and acts through robotic equipment. The partnership treats those stages as a connected problem rather than separate product features.",
-      "technical_novelty": "Photosynth began joint research with the University of Tsukuba's Digital Nature Development Research Center. The partners aim to connect scene recognition, decisions and robot actions with knowledge of operating real facilities. The announced process includes work in simulation, implementation on robots and validation in actual environments. Security, facility operations, logistics and cleaning are possible application areas. Photosynth already works with its Akerun access-management system and facility operations, and opened a Physical AI research laboratory in March. Physical AI here means intelligence that acts through machines in the real world. The university relationship adds research capacity to that existing direction. Ochiai is also scheduled to speak at the company's November 18 event at Tokyo Midtown Hall.",
-      "engineering_impact": "Photosynth began joint research with the University of Tsukuba's Digital Nature Development Research Center. The partners aim to connect scene recognition, decisions and robot actions with knowledge of operating real facilities. For customers, the partnership brings operating knowledge and university research into the same development process. Facility tasks can determine which observations to collect and what outcome matters before a robot form is selected. That makes this an organizational development in service robotics, while the announcement does not yet support a payback calculation. It identifies no first operational task, machine specification, service price or delivery schedule. Applications across several sectors are areas for consideration, with a process for developing and validating the technology now being established.",
-      "limitations": "Photosynth began joint research with the University of Tsukuba's Digital Nature Development Research Center. The partners aim to connect scene recognition, decisions and robot actions with knowledge of operating real facilities. The announced process includes real-environment validation, simulation work and robot implementation. The release does not yet report measured outcomes from that joint validation.",
-      "evidence_status": "Company announcement of the start of joint research; measured project outcomes are not yet reported.",
-      "published_at": "2026-11-16",
-      "organization": "Photosynth; University of Tsukuba",
-      "source_ids": [
-        "photosynth-1116"
-      ],
-      "time_window": "24h",
-      "body": "Japan's Photosynth announced joint robot research on November 16 with the University of Tsukuba's Digital Nature Development Research Center, led by Professor Yoichi Ochiai. Photosynth contributes experience of day-to-day operations in physical spaces, while the university supplies research knowledge and infrastructure. Their subject is artificial intelligence that perceives its surroundings, makes decisions and acts through robotic equipment. The partnership treats those stages as a connected problem rather than separate product features.\n\nThe announced process includes work in simulation, implementation on robots and validation in actual environments. Security, facility operations, logistics and cleaning are possible application areas. Photosynth already works with its Akerun access-management system and facility operations, and opened a Physical AI research laboratory in March. Physical AI here means intelligence that acts through machines in the real world. The university relationship adds research capacity to that existing direction. Ochiai is also scheduled to speak at the company's November 18 event at Tokyo Midtown Hall.\n\nFor customers, the partnership brings operating knowledge and university research into the same development process. Facility tasks can determine which observations to collect and what outcome matters before a robot form is selected. That makes this an organizational development in service robotics, while the announcement does not yet support a payback calculation. It identifies no first operational task, machine specification, service price or delivery schedule. Applications across several sectors are areas for consideration, with a process for developing and validating the technology now being established.\n\nThe announced process includes real-environment validation, simulation work and robot implementation. The release does not yet report measured outcomes from that joint validation.",
+      "body": "Pony.ai and Toyota announced on November 16 that their jointly developed seventh-generation bZ4X robotaxi had entered fully driverless commercial service in Guangzhou. Passengers can hail it around the clock through PonyPilot and partner mini-programs. The model joined an operating commercial fleet after vehicle development, mass production, testing and validation.\n\nThe vehicle was engineered for Level 4 autonomy, in which the automated system performs the driving task within a defined operating domain. The partners emphasize redundancy and fail-operational capability intended to preserve safe operation after a component failure. The first production vehicle left the line in February. Scaling also requires charging, maintenance and routine fleet service rather than model updates alone.\n\nCommercial service joins the vehicle, software, charging, maintenance and passenger operations into one product. Economics will depend not just on fleet size but on paid trips, empty mileage, charging downtime, remote support and the permitted operating area.\n\nThe companies target roughly 1,000 bZ4X robotaxis across major Chinese cities, but that is a future plan. The release gives no current vehicle count, trip count, service area, crash rate or remote-intervention frequency. The confirmed change is the commercial introduction of one production model in Guangzhou. Comparative safety and availability require operational data that the announcement does not contain.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "The business behind robot safety grows",
-    "summary": "FORT Robotics disclosed 52.5% revenue growth for the first nine months of 2026. Its proposed combination with Newbury Street II highlights a specialist safety supplier serving robot developers and equipment users.",
-    "implications": "Safety-component suppliers and support for installed products belong in a robot-adoption assessment. FORT's figures describe the scale of that business, while its combination still requires review and approvals."
+    "title": "Capital and infrastructure push robots into service",
+    "summary": "Robotics companies are moving from demonstrations into manufacturing, multi-site operations and paid services. Buyers now need integration cost, support capacity, supplier responsibility and reliable access to computing infrastructure.",
+    "implications": "Deployment decisions require workload, support cost, downtime, supplier responsibilities and clear conditions for adding sites or machines."
   },
   "sources": [
     {
-      "id": "fort-1116",
-      "title": "FORT Robotics Reports Strong 2026 Momentum as Company Progresses Towards a Public Listing in Partnership with Newbury Street II Acquisition Corp",
-      "url": "https://www.globenewswire.com/news-release/2026/11/16/3403468/0/en/fort-robotics-reports-strong-2026-momentum-as-company-progresses-towards-a-public-listing-in-partnership-with-newbury-street-ii-acquisition-corp.html",
-      "domain": "www.globenewswire.com",
-      "organization": "FORT Robotics; Newbury Street II Acquisition Corp",
-      "published_at": "2026-11-16"
+      "id": "genesis-1117",
+      "title": "Genesis AI Raises $500M Series A at $3.5B Valuation to Master Human-Level Dexterity in General-Purpose Robots and Deploy at Scale",
+      "url": "https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-3-5b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302941249.html",
+      "domain": "prnewswire.com",
+      "organization": "Genesis AI",
+      "published_at": "2026-11-17"
     },
     {
-      "id": "ntt-iris-1116",
-      "title": "アイリスオーヤマとNTT西日本「マルチロボティクスプラットフォーム」を活用したフィジカルAIの共同実証成果を発表",
-      "url": "https://www.ntt-west.co.jp/news/2611/261116a.html",
-      "domain": "www.ntt-west.co.jp",
-      "organization": "Iris Ohyama; NTT West",
-      "published_at": "2026-11-16"
+      "id": "robotera-post-1117",
+      "title": "ROBOTERA Expands Humanoid Robot Deployment Across China Post's Guangdong Network, Reaching Eight Cities Province-Wide",
+      "url": "https://www.prnewswire.co.uk/news-releases/robotera-expands-humanoid-robot-deployment-across-china-posts-guangdong-network-reaching-eight-cities-province-wide-302941879.html",
+      "domain": "prnewswire.co.uk",
+      "organization": "ROBOTERA; China Post Group Guangdong Branch",
+      "published_at": "2026-11-17"
     },
     {
-      "id": "robotera-1116",
-      "title": "ROBOTERA Launches XHAND 1 Pro-U, Featured in NVIDIA's GR00T 2 DexUMI Demonstration",
-      "url": "https://www.prnewswire.co.uk/news-releases/robotera-launches-xhand-1-pro-u-featured-in-nvidias-gr00t-2-dexumi-demonstration-302940296.html",
-      "domain": "www.prnewswire.co.uk",
-      "organization": "ROBOTERA",
-      "published_at": "2026-11-16"
+      "id": "gix-sheba-1117",
+      "title": "Gix Deploys New Advanced AI-Powered L4 Autonomous Robot with Multi-Environment Navigation and Smart Access Capabilities at One of the World's Top Hospitals",
+      "url": "https://www.globenewswire.com/news-release/2026/11/17/3404625/0/en/gix-deploys-new-advanced-ai-powered-l4-autonomous-robot-with-multi-environment-navigation-and-smart-access-capabilities-at-one-of-the-world-s-top-hospitals.html",
+      "domain": "globenewswire.com",
+      "organization": "Gix Internet; deliverz.ai; Sheba Medical Center; Ottonomy",
+      "published_at": "2026-11-17"
     },
     {
-      "id": "ispace-1116",
-      "title": "NTT and ispace Enter into Collaboration Agreement to Realize Cislunar and Lunar Infrastructure Using IOWN Optical Communication Technologies",
-      "url": "https://www.ispace-inc.com/2026/11/16/ntt-and-ispace-enter-into-collaboration-agreement-to-realize-cislunar-and-lunar-infrastructure-using-iown-optical-communication-technologies/",
-      "domain": "www.ispace-inc.com",
-      "organization": "NTT; ispace",
-      "published_at": "2026-11-16"
+      "id": "nvidia-committee-1117",
+      "title": "NVIDIA Board of Directors Establishes National Security and Export Control Oversight Committee",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-17"
     },
     {
-      "id": "photosynth-1116",
-      "title": "Photosynth、筑波大学 落合陽一教授とフィジカルAIの共同研究開発で協業",
-      "url": "https://photosynth.co.jp/topics/physical-ai_tsukuba-univ",
-      "domain": "photosynth.co.jp",
-      "organization": "Photosynth; University of Tsukuba",
+      "id": "nvidia-reuters-1117",
+      "title": "Huang open to Nvidia return as scandal-hit chipmaker heads into results",
+      "url": "https://www.reuters.com/business/nvidia-board-forms-committee-national-security-export-control-oversight-2026-11-17/",
+      "domain": "reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "pony-toyota-1116",
+      "title": "PONY AI Inc. and Toyota Launch Fully Driverless Commercial Services with Gen-7 bZ4X Robotaxi",
+      "url": "https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-and-toyota-launch-fully-driverless-commercial",
+      "domain": "ir.pony.ai",
+      "organization": "Pony.ai; Toyota",
       "published_at": "2026-11-16"
     }
   ]

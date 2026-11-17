@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-18",
+  "issue_id": "daily-2026-11-18",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-17T21:17:31.399621Z",
+  "title": "Robots take on real jobs",
+  "lead": "Robots have started doing specific jobs at postal centers, in a hospital and on city roads, while one company raised money to build more machines. Each story separates what already happened from results that developers have not yet measured or published.",
+  "news": [
+    {
+      "id": "genesis-funding",
+      "title": "A company raises money to build more robots",
+      "summary": "A robotics company has raised $500 million to expand manufacturing and testing. It plans to build more Eno robots, collect training data and place systems with customers.",
+      "details": "Investors put $500 million into Genesis AI on November 17. The company plans to spend it on Eno robot production and trials in manufacturing, logistics and laboratories. A broader customer rollout is planned for 2027. This is an expansion plan, not a measurement of robot performance.",
+      "technical_novelty": "The useful test is separate from the size of the investment. Readers need to know how many tasks a robot completed, how often it failed, how long it worked and when a person had to step in.",
+      "engineering_impact": "A robotics company has raised $500 million to expand manufacturing and testing. It plans to build more Eno robots, collect training data and place systems with customers.",
+      "limitations": "Capability and rollout claims come from the company; independent success rates and sustained uptime are not published.",
+      "evidence_status": "Company announcement of financing and plans; technical capability claims have not been independently replicated.",
+      "published_at": "2026-11-17",
+      "organization": "Genesis AI",
+      "source_ids": [
+        "genesis-1117"
+      ],
+      "time_window": "24h",
+      "body": "Investors put $500 million into Genesis AI on November 17. The company plans to spend it on Eno robot production and trials in manufacturing, logistics and laboratories. A broader customer rollout is planned for 2027. This is an expansion plan, not a measurement of robot performance.\n\nGenesis is developing the robotics stack within one organization. A glove records human hand motion, a dexterous robot hand is designed around corresponding joints, the GENE model learns from collected data, and Genesis World provides simulation for training and evaluation. Eno is the physical platform on which behavior is deployed. The arrangement reduces organizational boundaries between data collection, model development, mechanics and testing.\n\nThe useful test is separate from the size of the investment. Readers need to know how many tasks a robot completed, how often it failed, how long it worked and when a person had to step in.\n\nFunding does not measure robot performance. The announcement gives no installed customer count, task success rate, sustained autonomous operating time or human-intervention frequency. Statements about long multi-step work come from the company and its investors. The verified event is therefore the financing and the stated plan to expand manufacturing and trials, while reliability over production-length workflows remains unquantified.",
+      "image": null
+    },
+    {
+      "id": "robotera-postal",
+      "title": "Robots sort parcels at eleven postal hubs",
+      "summary": "Robots are feeding parcels into sorting lines at eleven postal hubs in Guangdong province. Their maker reports an average rate above 1,500 parcels an hour in the original trial.",
+      "details": "Humanoid robots now work at eleven postal hubs in eight Guangdong cities in China. They pick up parcels and feed them into sorting lines. The trial began in Guangzhou in March and was later extended to sites with different layouts and parcel flows.",
+      "technical_novelty": "Following one parcel makes the job clear: where the robot picks it up, where it places it and what happens to an awkward package. Parcels per hour matters only when errors, stops and help from workers are also counted.",
+      "engineering_impact": "Robots are feeding parcels into sorting lines at eleven postal hubs in Guangdong province. Their maker reports an average rate above 1,500 parcels an hour in the original trial.",
+      "limitations": "The 1,500-parcel figure is manufacturer-reported; robot counts, observation hours, error rates and independent verification are not published.",
+      "evidence_status": "Manufacturer and partner report of an operating deployment; quantitative performance has not been independently audited.",
+      "published_at": "2026-11-17",
+      "organization": "ROBOTERA; China Post Group Guangdong Branch",
+      "source_ids": [
+        "robotera-post-1117"
+      ],
+      "time_window": "24h",
+      "body": "Humanoid robots now work at eleven postal hubs in eight Guangdong cities in China. They pick up parcels and feed them into sorting lines. The trial began in Guangzhou in March and was later extended to sites with different layouts and parcel flows.\n\nThe principal operation is parcel induction onto a sorting line. The company also describes irregular-item rejection and adaptive speed control intended to reduce jams, collisions and missed items. Its own five-finger hand handles parcels. ROBOTERA reports an average induction rate above 1,500 parcels per hour in the original pilot and compares that rate with an experienced human worker.\n\nFollowing one parcel makes the job clear: where the robot picks it up, where it places it and what happens to an awkward package. Parcels per hour matters only when errors, stops and help from workers are also counted.\n\nThe release does not disclose the robot count at each site, measurement duration, throughput distribution, error share or downtime. The 1,500-parcel figure therefore cannot be assigned to all 11 hubs. The material development is replication of one workflow across multiple locations. Comparable site-level metrics and operator-intervention records are needed to judge the system as a fleet.",
+      "image": null
+    },
+    {
+      "id": "hospital-orchestration",
+      "title": "A hospital assigns deliveries to different robots",
+      "summary": "One hospital system assigns deliveries to robots from different companies and to people. It uses location, urgency and availability to choose who receives each job.",
+      "details": "A new robot at Sheba Medical Center in Israel is carrying items such as chemotherapy medicine, blood and bone marrow alongside other machines. The deliverz.ai system gives each delivery to an available robot or worker. It considers location and mission priority.",
+      "technical_novelty": "The difficult part is coordinating different workers, not teaching one robot to drive. A hospital needs a record of who received the item, when it changed hands and what happened if a route was blocked or a machine stopped.",
+      "engineering_impact": "One hospital system assigns deliveries to robots from different companies and to people. It uses location, urgency and availability to choose who receives each job.",
+      "limitations": "The company reports that Ottonomy entered service; claimed benefits, scalability and US expansion are forward-looking statements.",
+      "evidence_status": "Supplier report of commercial operation at one hospital; no independent operating metrics are published.",
+      "published_at": "2026-11-17",
+      "organization": "Gix Internet; deliverz.ai; Sheba Medical Center; Ottonomy",
+      "source_ids": [
+        "gix-sheba-1117"
+      ],
+      "time_window": "24h",
+      "body": "A new robot at Sheba Medical Center in Israel is carrying items such as chemotherapy medicine, blood and bone marrow alongside other machines. The deliverz.ai system gives each delivery to an available robot or worker. It considers location and mission priority.\n\nThe system supports live hospital logistics, including chemotherapy medication, blood and bone-marrow transport. The technical problem sits above the navigation stack of any one robot: the orchestrator must match a mission with an available machine or person and the hospital's operating rules. Vendor controllers still execute motion on each platform, while deliverz.ai coordinates missions and fleet state.\n\nThe difficult part is coordinating different workers, not teaching one robot to drive. A hospital needs a record of who received the item, when it changed hands and what happened if a route was blocked or a machine stopped.\n\nThe company publishes no delivery count, assignment latency, completion rate or recovery time after failure. The supplier confirms that Ottonomy is operating in the mixed fleet. Claims about reducing vendor dependence and expanding into the United States are forward-looking and depend on technical compatibility, site requirements and customer approvals.",
+      "image": null
+    },
+    {
+      "id": "nvidia-export-oversight",
+      "title": "NVIDIA creates a group to oversee chip-export rules",
+      "summary": "NVIDIA's board created a committee to oversee rules for shipping computing chips across borders. The decision matters to robotics because many developers depend on NVIDIA hardware and software.",
+      "details": "NVIDIA created a permanent group on November 17 to oversee national-security policy, export rules and global-trade risk. It must meet at least once every quarter and will receive reports from company staff. The decision followed Jensen Huang's resignation as chief executive.",
+      "technical_novelty": "This is not a new robot feature. It concerns access to powerful computing chips used to train and run many artificial-intelligence systems. NVIDIA has not announced a product change or a new delivery schedule in this notice.",
+      "engineering_impact": "NVIDIA's board created a committee to oversee rules for shipping computing chips across borders. The decision matters to robotics because many developers depend on NVIDIA hardware and software.",
+      "limitations": "Reuters describes investigated relationships and political pressure; allegations remain under review, and the board has not announced Huang's return.",
+      "evidence_status": "Official NVIDIA governance decision plus independent Reuters reporting on context; some allegations remain unresolved.",
+      "published_at": "2026-11-17",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "nvidia-committee-1117",
+        "nvidia-reuters-1117"
+      ],
+      "time_window": "24h",
+      "body": "NVIDIA created a permanent group on November 17 to oversee national-security policy, export rules and global-trade risk. It must meet at least once every quarter and will receive reports from company staff. The decision followed Jensen Huang's resignation as chief executive.\n\nThe decision follows Jensen Huang's immediate resignation as chief executive and board member on November 12. Reuters reported on November 17 that Huang would consider returning if the board judged it beneficial, while the agency's sources said the board was not considering reinstatement. Reuters also described investigated relationships and political pressure around accelerator exports to China; those allegations have not reached a final determination.\n\nThis is not a new robot feature. It concerns access to powerful computing chips used to train and run many artificial-intelligence systems. NVIDIA has not announced a product change or a new delivery schedule in this notice.\n\nPhysical-AI developers care about the event because the sector depends on NVIDIA accelerators, software platforms and investment. Stronger oversight may affect sales procedures, access to compute and partner compliance. The official notice changes no product interface, roadmap or delivery date, so the immediate evidence is a governance and supply-chain risk rather than an announced technical disruption.",
+      "image": null
+    },
+    {
+      "id": "pony-toyota-robotaxi",
+      "title": "A new driverless taxi enters service in Guangzhou",
+      "summary": "A paid taxi service in Guangzhou now uses a car with no driver in the front seat. Pony.ai and Toyota developed the vehicle, which passengers can request around the clock through an app.",
+      "details": "Passengers in Guangzhou can now order a new robotaxi that drives without a person at the wheel. Pony.ai and Toyota began commercial service with the model on November 16. It is based on Toyota's bZ4X and has joined an existing fleet.",
+      "technical_novelty": "The car is designed for Level 4 automation, which means its system performs all driving within defined conditions. The companies also describe backup equipment intended to preserve safe operation if one component fails.",
+      "engineering_impact": "A paid taxi service in Guangzhou now uses a car with no driver in the front seat. Pony.ai and Toyota developed the vehicle, which passengers can request around the clock through an app.",
+      "limitations": "The 1,000-vehicle figure is a future plan; crash rates, remote interventions and the available operating area are not published.",
+      "evidence_status": "Joint company announcement of commercial launch; operating performance is not independently documented in the release.",
+      "published_at": "2026-11-16",
+      "organization": "Pony.ai; Toyota",
+      "source_ids": [
+        "pony-toyota-1116"
+      ],
+      "time_window": "72h",
+      "body": "Passengers in Guangzhou can now order a new robotaxi that drives without a person at the wheel. Pony.ai and Toyota began commercial service with the model on November 16. It is based on Toyota's bZ4X and has joined an existing fleet.\n\nThe vehicle was engineered for Level 4 autonomy, in which the automated system performs the driving task within a defined operating domain. The partners emphasize redundancy and fail-operational capability intended to preserve safe operation after a component failure. The first production vehicle left the line in February. Scaling also requires charging, maintenance and routine fleet service rather than model updates alone.\n\nThe car is designed for Level 4 automation, which means its system performs all driving within defined conditions. The companies also describe backup equipment intended to preserve safe operation if one component fails.\n\nThe companies target roughly 1,000 bZ4X robotaxis across major Chinese cities, but that is a future plan. The release gives no current vehicle count, trip count, service area, crash rate or remote-intervention frequency. The confirmed change is the commercial introduction of one production model in Guangzhou. Comparative safety and availability require operational data that the announcement does not contain.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Robots take on real jobs",
+    "summary": "Robots have started doing specific jobs at postal centers, in a hospital and on city roads, while one company raised money to build more machines. Each story separates what already happened from results that developers have not yet measured or published.",
+    "implications": "A useful way to judge the news is to follow one job: who assigned it, what the machine did, how often it worked and when a person had to help."
+  },
+  "sources": [
+    {
+      "id": "genesis-1117",
+      "title": "Genesis AI Raises $500M Series A at $3.5B Valuation to Master Human-Level Dexterity in General-Purpose Robots and Deploy at Scale",
+      "url": "https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-3-5b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302941249.html",
+      "domain": "prnewswire.com",
+      "organization": "Genesis AI",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "robotera-post-1117",
+      "title": "ROBOTERA Expands Humanoid Robot Deployment Across China Post's Guangdong Network, Reaching Eight Cities Province-Wide",
+      "url": "https://www.prnewswire.co.uk/news-releases/robotera-expands-humanoid-robot-deployment-across-china-posts-guangdong-network-reaching-eight-cities-province-wide-302941879.html",
+      "domain": "prnewswire.co.uk",
+      "organization": "ROBOTERA; China Post Group Guangdong Branch",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "gix-sheba-1117",
+      "title": "Gix Deploys New Advanced AI-Powered L4 Autonomous Robot with Multi-Environment Navigation and Smart Access Capabilities at One of the World's Top Hospitals",
+      "url": "https://www.globenewswire.com/news-release/2026/11/17/3404625/0/en/gix-deploys-new-advanced-ai-powered-l4-autonomous-robot-with-multi-environment-navigation-and-smart-access-capabilities-at-one-of-the-world-s-top-hospitals.html",
+      "domain": "globenewswire.com",
+      "organization": "Gix Internet; deliverz.ai; Sheba Medical Center; Ottonomy",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "nvidia-committee-1117",
+      "title": "NVIDIA Board of Directors Establishes National Security and Export Control Oversight Committee",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "nvidia-reuters-1117",
+      "title": "Huang open to Nvidia return as scandal-hit chipmaker heads into results",
+      "url": "https://www.reuters.com/business/nvidia-board-forms-committee-national-security-export-control-oversight-2026-11-17/",
+      "domain": "reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "pony-toyota-1116",
+      "title": "PONY AI Inc. and Toyota Launch Fully Driverless Commercial Services with Gen-7 bZ4X Robotaxi",
+      "url": "https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-and-toyota-launch-fully-driverless-commercial",
+      "domain": "ir.pony.ai",
+      "organization": "Pony.ai; Toyota",
+      "published_at": "2026-11-16"
+    }
+  ]
+}
