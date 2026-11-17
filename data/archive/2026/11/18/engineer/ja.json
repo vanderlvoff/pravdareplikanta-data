@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-18",
+  "issue_id": "daily-2026-11-18",
+  "edition": "engineer",
+  "language": "ja",
+  "generated_at": "2026-11-17T21:17:31.399621Z",
+  "title": "ロボットが試験から運用システムへ進む",
+  "lead": "今日の材料は、一台の実演から量産、複数拠点での運用、共通管理基盤へ進む動きを示す。同時にNVIDIAの経営交代と輸出管理は、Physical AIを支える計算基盤のリスクになっている。",
+  "news": [
+    {
+      "id": "genesis-funding",
+      "title": "Genesis AI、ロボットEnoの生産拡大へ5億ドルを調達",
+      "summary": "Genesis AIは、企業価値を35億ドルとする5億ドルの資金調達を発表した。汎用ロボットEnoの生産、データ収集、モデル学習、顧客先での展開に資金を使う。",
+      "details": "同社はロボット本体、器用な手、動作記録用の手袋、GENEモデル、Genesis Worldシミュレーターを一体で開発する。",
+      "technical_novelty": "人の動作データ、仮想環境での学習、制御モデル、実機からのフィードバックを同じ開発循環につなぐ。",
+      "engineering_impact": "資金は生産と顧客試験を増やせるが、長時間の自律作業をどれだけ安定して続けられるかは測定値で確かめる必要がある。",
+      "limitations": "能力と展開計画は会社の発表であり、独立した成功率や連続稼働時間は示されていない。",
+      "evidence_status": "資金調達と計画に関する会社発表。技術性能の独立検証は確認できない。",
+      "published_at": "2026-11-17",
+      "organization": "Genesis AI",
+      "source_ids": [
+        "genesis-1117"
+      ],
+      "time_window": "24h",
+      "body": "Genesis AIは11月17日、5億ドルの資金をSeries Aで調達したと発表した。資金調達後の企業価値は35億ドル。同社は汎用ロボットEnoの生産を増やし、学習データの収集、大規模なモデル学習、顧客先での試験を広げる計画だ。最初は製造、物流、研究所を対象とし、より広い顧客展開を2027年に進めるとしている。\n\n同社はロボット開発に必要な要素を一体で作る。手袋で人の手の動きを記録し、対応する関節を持つロボットの手へ移し、GENEというモデルを学習させる。Genesis Worldは仮想環境での学習と評価に使い、Enoが実機で結果を試す役目を持つ。データ、モデル、機械、試験を同じ開発循環につなぐ考え方だ。\n\n開発循環を評価するには、学習記録の出所、仮想環境での結果、実機Enoでの結果を別々に残す必要がある。人の動作データが増えただけでは、ロボットの作業能力が上がった証拠にはならない。顧客先の試験では、課題、成功の条件、連続試験の時間、人が停止させた回数を先に決めて記録する。さらに、同じ課題を何度繰り返し、どの段階で失敗し、修正後に再現できたかも必要だ。資金額ではなく、こうした記録が開発の成熟度を示す。学習データの版と実機ソフトウェアの版を対応付け、同じ課題を再試験できるようにすることも再現性の条件になる。温度、電力、通信遅延など、長時間運転で変わる状態も一緒に残したい。\n\nただし、資金額はロボットの性能を表す数値ではない。発表には顧客先の設置台数、作業成功率、連続して自律運転した時間、人が介入した回数がない。長い複数手順の作業に関する評価も会社と投資家による説明である。確認できる事実は資金調達と生産・試験の拡大計画で、長時間作業の信頼性は今後の測定が必要だ。",
+      "image": null
+    },
+    {
+      "id": "robotera-postal",
+      "title": "ROBOTERAの人型ロボット、広東省11か所の郵便拠点で稼働",
+      "summary": "ROBOTERAは、広東省8都市の郵便拠点11か所に人型ロボットを展開したと発表した。3月に広州で始めた試験では、1時間に平均1500個を超える荷物を仕分けラインへ送ったとしている。",
+      "details": "ロボットは荷物をラインへ送り、形が不規則な物を除き、詰まりや取りこぼしを減らすため速度を調整する。",
+      "technical_novelty": "人型の機体、5本指の手、速度調整、異なる仕分けラインへの設定を組み合わせている。",
+      "engineering_impact": "同じ作業を複数拠点で運用する例だが、拠点ごとの処理量、停止時間、誤りの数は公表されていない。",
+      "limitations": "毎時1500個という値はメーカー発表で、ロボット台数、観測時間、誤り率、独立検証は示されていない。",
+      "evidence_status": "メーカーと事業者による稼働報告。数値の独立監査は確認できない。",
+      "published_at": "2026-11-17",
+      "organization": "ROBOTERA; China Post Group Guangdong Branch",
+      "source_ids": [
+        "robotera-post-1117"
+      ],
+      "time_window": "24h",
+      "body": "ROBOTERAは11月17日、中国広東省8都市の郵便拠点11か所で人型ロボットが稼働していると発表した。China Postの広東支社と共同で進める事業で、3月に広州の郵便区センターで試験を始めた。その後、荷物の流れや仕分けラインの形が異なるほかの拠点へ広げた。\n\n主な作業は、荷物を仕分けラインへ送ることだ。会社は、形が不規則な荷物を除く機能と、詰まり、衝突、取りこぼしを減らす速度調整も説明している。荷物を扱うため、自社開発の5本指の手を使う。最初の試験では、1時間に平均1500個を超える荷物を送ったと報告している。\n\n荷物をラインへ送る速さは、仕分け工程の一部分にすぎない。何をもって一個の処理完了と数えるか、除いた荷物をどこへ運ぶか、詰まりをだれが直すかを全拠点で同じ方法で記録する必要がある。荷物の大きさと重さ、不規則な包装の割合、手作業で助けた回数も重要だ。停止後にどのくらいで再開できたかも測れば、形の異なる拠点同士を比べられる。混雑する時間帯と荷物が少ない時間帯を分け、同じ条件で測ることも欠かせない。日ごとの変化と再現性も確認する。コンベヤー側の能力とロボット自身の能力を混同しないための基礎になる。測定には、腕が荷物へ触れてからラインが受け取るまでの時間と、次の荷物へ移るまでの時間を分けて残す必要がある。失敗後の再試行が処理量に含まれるかも統一しなければならない。\n\n発表には、各拠点のロボット台数、測定時間、処理量のばらつき、誤りの割合、停止時間がない。したがって毎時1500個という値を11拠点すべての性能とは扱えない。重要な変化は、同じ作業を一台の実演から複数拠点へ広げた点にある。運用評価には拠点ごとの共通指標と人の介入記録が必要だ。",
+      "image": null
+    },
+    {
+      "id": "hospital-orchestration",
+      "title": "Sheba病院、異なるメーカーのロボットを一つの仕組みで管理",
+      "summary": "Gixは、Sheba医療センターでOttonomyの搬送ロボットが既存のロボットと共に稼働を始めたと発表した。deliverz.aiは、場所、優先度、空き状況に応じて、異なるメーカーのロボットと人の搬送担当へ仕事を割り当てる。",
+      "details": "抗がん剤、血液、骨髄などの院内搬送を対象に、仕事の割当てと監視を一か所から行う。",
+      "technical_novelty": "仕事を配る上位の仕組みを、各メーカー固有のロボット管理機能から分けている。",
+      "engineering_impact": "一つの病院で異機種連携が実運用に入ったが、仕事の回数、通信遅延、成功率、故障後の復旧時間は公表されていない。",
+      "limitations": "Ottonomyの稼働開始は会社発表で、効果、拡張性、米国展開は将来の見通しとして書かれている。",
+      "evidence_status": "一病院での商用運用に関する供給者発表。独立した運用指標はない。",
+      "published_at": "2026-11-17",
+      "organization": "Gix Internet; deliverz.ai; Sheba Medical Center; Ottonomy",
+      "source_ids": [
+        "gix-sheba-1117"
+      ],
+      "time_window": "24h",
+      "body": "Gixは11月17日、イスラエルのSheba医療センターでOttonomyの搬送ロボットが運用を始めたと発表した。すでに動いている別メーカーのロボットと同じ現場で働く。deliverz.aiは、場所、仕事の優先度、空いている機体や人を見て、院内搬送をロボットと人の担当者へ割り当てる。\n\n対象には抗がん剤、血液、骨髄の搬送が含まれる。技術課題は一台のロボットの移動制御より上の層にある。どの仕事をどの機体または人へ渡すかを決め、病院の運用規則と結び付ける必要がある。各メーカーの制御装置はそれぞれの機体を動かし、deliverz.aiは仕事と機体の状態をまとめて管理する。\n\n異なる機体を一緒に使うには、仕事を作った人、特定の機体を選んだ理由、荷物を受け渡した時刻を記録する必要がある。エレベーターが使えない時や扉が開かない時に、仕事を別のロボットや人へ戻す手順も欠かせない。薬や血液を扱う病院では、操作できる人の権限と受け渡しの確認も必要だ。緊急の配送が通常の配送を追い越す時には、優先順位を変えた理由と遅れた仕事も記録する。引継ぎの失敗も記録する。こうした記録があれば、共通管理が本当に待ち時間を減らしたのか、管理画面を一つ増やしただけなのかを判断できる。上位の割当て機能と各機体の制御の間では、仕事の状態、位置、故障理由を共通形式で交換する必要がある。通信が切れた時に二台へ同じ仕事を出さない仕組みも検証項目になる。\n\n会社は、搬送回数、割当てにかかる時間、完了率、故障からの復旧時間を公表していない。Ottonomyが混成チームで運用に入ったことは供給者の発表である。一社への依存を減らせるという効果や米国展開は、互換性、現場の条件、顧客の承認に左右される将来計画だ。",
+      "image": null
+    },
+    {
+      "id": "nvidia-export-oversight",
+      "title": "NVIDIA取締役会、安全保障と輸出管理を監督する委員会を設置",
+      "summary": "NVIDIAの取締役会は、安全保障、輸出規制の順守、世界貿易のリスクを監督する常設委員会を設けた。ジェンスン・フアン氏の辞任後の対応で、実務チームは委員会と暫定CEOのコレット・クレス氏へ報告する。",
+      "details": "委員長は取締役のスザンヌ・ノラ・ジョンソン氏で、少なくとも四半期ごとに会合を開き、外部専門家も使う。",
+      "technical_novelty": "Physical AIの開発者には、計算用半導体の供給、計算資源へのアクセス、開発と導入に伴う輸出規制の順守が関係する。",
+      "engineering_impact": "貿易と安全保障の監督を取締役会の責任として明確にしたが、製品の仕様や出荷日程を変える発表ではない。",
+      "limitations": "Reutersは調査中の関係と政治的圧力を報じた。疑惑は未確定で、取締役会はフアン氏の復帰を発表していない。",
+      "evidence_status": "NVIDIAの公式な委員会設置とReutersの独立報道。疑惑の一部は調査中。",
+      "published_at": "2026-11-17",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "nvidia-committee-1117",
+        "nvidia-reuters-1117"
+      ],
+      "time_window": "24h",
+      "body": "NVIDIAの取締役会は11月17日、安全保障、輸出管理、世界貿易のリスクを監督する常設委員会を設けた。委員長はスザンヌ・ノラ・ジョンソン氏で、少なくとも四半期ごとに会合を開き、外部専門家も使う。社内の安全保障と貿易管理のチームは、委員会と暫定CEOのコレット・クレス氏へ報告する。\n\nこの決定は、ジェンスン・フアン氏が11月12日にCEOと取締役を辞任した後に出た。Reutersは17日、フアン氏が取締役会の判断なら復帰を受け入れる考えを示した一方、取締役会は復帰を検討していないと関係者が話したと報じた。中国向け半導体輸出をめぐる関係や疑惑は調査中で、確定した結論ではない。\n\n開発者は、会社の経営判断と、自分が使う技術基盤の状態を分けて考える必要がある。具体的には、半導体の出荷先、クラウド計算資源の利用条件、ソフトウェアの版、取引先の輸出手続き、代替できる機器を整理する。新委員会によって審査方法や承認までの時間が変わる可能性はある。しかし個別の開発への影響は、入手可能性、価格、納期、利用条件の実際の変更で確かめなければならない。委員会設置だけから技術停止を導くことはできない。依存関係を継続的に確認するには、機器の型番、輸出区分、利用地域、クラウドの契約条件を版管理する必要がある。代替機へ移る場合は、性能だけでなくソフトウェア互換性も測る。\n\nPhysical AIの開発は、NVIDIAの計算用半導体、ソフトウェア、投資に大きく依存する。監督の強化は販売手続き、計算資源へのアクセス、取引先の順守確認に影響する可能性がある。ただし公式発表は製品仕様、開発計画、出荷日を変更していない。現時点では技術停止ではなく、経営と供給網のリスクとして扱うべき事実だ。",
+      "image": null
+    },
+    {
+      "id": "pony-toyota-robotaxi",
+      "title": "Pony.aiとトヨタ、bZ4Xの無人タクシーを商用運行",
+      "summary": "Pony.aiとトヨタは、広州で第7世代bZ4Xロボタクシーの完全無人による商用運行を始めた。24時間呼び出せるとし、中国の主要都市で約1000台を展開する計画を示した。",
+      "details": "自動運転レベル4向けに開発し、一部の機器が故障しても安全な動作を続けるための多重化を組み込んだ。",
+      "technical_novelty": "規模を広げるには運転モデルだけでなく、量産、充電、整備、日々の車両管理を一体で運用する必要がある。",
+      "engineering_impact": "量産車が有料サービスへ移ったが、現在の運行台数や走行回数は公表されていない。",
+      "limitations": "約1000台は将来計画で、事故率、遠隔操作の介入回数、利用可能な地域は示されていない。",
+      "evidence_status": "両社による商用開始の発表。運行性能を示す独立データはない。",
+      "published_at": "2026-11-16",
+      "organization": "Pony.ai; Toyota",
+      "source_ids": [
+        "pony-toyota-1116"
+      ],
+      "time_window": "72h",
+      "body": "Pony.aiとトヨタは11月16日、共同開発した第7世代bZ4Xロボタクシーが広州で完全無人の商用運行を始めたと発表した。利用者はPonyPilotや提携サービスのミニアプリから24時間呼び出せる。車両開発、量産、試験、確認を経て、すでに動いている商用車両群へ加わった。\n\nこの車は自動運転レベル4向けに設計された。決められた運行条件の中では、自動運転システムが人に代わって運転する。両社は、一部の機器が故障しても安全な動作を続けるための多重化を組み込んだと説明する。最初の量産車は2月に完成した。規模を広げるには充電、整備、日々の車両管理も必要になる。\n\n無人運行の評価には、走る地区、時間帯、天候、道路の状態、走行を中止する条件を明確にする必要がある。機器の多重化は、センサー、計算装置、電源、通信の一部を実際に止めた試験で確かめる。さらに走行距離、運行時間、安全に関する出来事、遠隔担当者へ助けを求めた回数を一緒に記録する。乗客を乗せずに回送する距離や、予約を受けてから到着するまでの時間も運用の指標になる。充電や整備で使えない時間も分かれば、24時間呼び出せるサービスの実際の利用可能性を比較できる。安全評価では、故障を検出してから安全な状態へ移るまでの時間を測る。遠隔支援が判断だけを助けるのか、車両を直接操作するのかも区別し、介入回数の定義をそろえる必要がある。\n\n両社は中国の主要都市で約1000台を展開する計画だが、これは将来の目標である。発表には現在の台数、走行回数、利用地域、事故率、遠隔操作の介入回数がない。確認できる変化は、量産された一つの車種が広州の有料サービスに入ったことだ。安全性と利用可能時間の比較には今後の運行データが必要になる。",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "ロボットが試験から運用システムへ進む",
+    "summary": "今日の材料は、一台の実演から量産、複数拠点での運用、共通管理基盤へ進む動きを示す。同時にNVIDIAの経営交代と輸出管理は、Physical AIを支える計算基盤のリスクになっている。",
+    "implications": "技術評価では、上位の判断と実際に動かす制御を分け、遅延、故障時の処理、人の介入回数、全体の処理量を測る必要がある。"
+  },
+  "sources": [
+    {
+      "id": "genesis-1117",
+      "title": "Genesis AI Raises $500M Series A at $3.5B Valuation to Master Human-Level Dexterity in General-Purpose Robots and Deploy at Scale",
+      "url": "https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-3-5b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302941249.html",
+      "domain": "prnewswire.com",
+      "organization": "Genesis AI",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "robotera-post-1117",
+      "title": "ROBOTERA Expands Humanoid Robot Deployment Across China Post's Guangdong Network, Reaching Eight Cities Province-Wide",
+      "url": "https://www.prnewswire.co.uk/news-releases/robotera-expands-humanoid-robot-deployment-across-china-posts-guangdong-network-reaching-eight-cities-province-wide-302941879.html",
+      "domain": "prnewswire.co.uk",
+      "organization": "ROBOTERA; China Post Group Guangdong Branch",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "gix-sheba-1117",
+      "title": "Gix Deploys New Advanced AI-Powered L4 Autonomous Robot with Multi-Environment Navigation and Smart Access Capabilities at One of the World's Top Hospitals",
+      "url": "https://www.globenewswire.com/news-release/2026/11/17/3404625/0/en/gix-deploys-new-advanced-ai-powered-l4-autonomous-robot-with-multi-environment-navigation-and-smart-access-capabilities-at-one-of-the-world-s-top-hospitals.html",
+      "domain": "globenewswire.com",
+      "organization": "Gix Internet; deliverz.ai; Sheba Medical Center; Ottonomy",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "nvidia-committee-1117",
+      "title": "NVIDIA Board of Directors Establishes National Security and Export Control Oversight Committee",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "nvidia-reuters-1117",
+      "title": "Huang open to Nvidia return as scandal-hit chipmaker heads into results",
+      "url": "https://www.reuters.com/business/nvidia-board-forms-committee-national-security-export-control-oversight-2026-11-17/",
+      "domain": "reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "pony-toyota-1116",
+      "title": "PONY AI Inc. and Toyota Launch Fully Driverless Commercial Services with Gen-7 bZ4X Robotaxi",
+      "url": "https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-and-toyota-launch-fully-driverless-commercial",
+      "domain": "ir.pony.ai",
+      "organization": "Pony.ai; Toyota",
+      "published_at": "2026-11-16"
+    }
+  ]
+}
