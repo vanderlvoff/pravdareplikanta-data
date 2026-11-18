@@ -2,159 +2,159 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-18",
-  "issue_id": "daily-2026-11-18",
+  "issue_date": "2026-11-19",
+  "issue_id": "daily-2026-11-19",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-17T21:17:31.399621Z",
-  "title": "Robots take on real jobs",
-  "lead": "Robots have started doing specific jobs at postal centers, in a hospital and on city roads, while one company raised money to build more machines. Each story separates what already happened from results that developers have not yet measured or published.",
+  "generated_at": "2026-11-18T21:14:03.572374Z",
+  "title": "Robots take on jobs one step at a time",
+  "lead": "Some robots already inspect factories, others are only preparing for trials, and new machines need hands and places to test them. Each story follows a specific job, a measured result and something the developers have not yet checked.",
   "news": [
     {
-      "id": "genesis-funding",
-      "title": "A company raises money to build more robots",
-      "summary": "A robotics company has raised $500 million to expand manufacturing and testing. It plans to build more Eno robots, collect training data and place systems with customers.",
-      "details": "Investors put $500 million into Genesis AI on November 17. The company plans to spend it on Eno robot production and trials in manufacturing, logistics and laboratories. A broader customer rollout is planned for 2027. This is an expansion plan, not a measurement of robot performance.",
-      "technical_novelty": "The useful test is separate from the size of the investment. Readers need to know how many tasks a robot completed, how often it failed, how long it worked and when a person had to step in.",
-      "engineering_impact": "A robotics company has raised $500 million to expand manufacturing and testing. It plans to build more Eno robots, collect training data and place systems with customers.",
-      "limitations": "Capability and rollout claims come from the company; independent success rates and sustained uptime are not published.",
-      "evidence_status": "Company announcement of financing and plans; technical capability claims have not been independently replicated.",
-      "published_at": "2026-11-17",
-      "organization": "Genesis AI",
+      "id": "hido-mapping-rover",
+      "title": "A rover follows a route and maps a building",
+      "summary": "A new rover travels along a prepared route inside a building and gathers data for a map. A technician supervises while the machine avoids obstacles, climbs stairs and positions a measuring device with its robotic arm.",
+      "details": "Mapping a large building requires moving measuring instruments across floors and stairs. Hidonix has started a limited program for testing its Hido II rover at selected sites in the United States. The small wheeled machine surveys indoor spaces. It follows a prepared route and gathers data that can help a system locate people or equipment inside a building. A person stays on site to supervise it.",
+      "technical_novelty": "The rover has suspension for uneven floors and stairs, cameras, a laser distance sensor and an arm carrying an acquisition module. The arm places the instrument in a repeatable position so measurements can be compared. The company says a charge supports about five to eight hours, depending on the work.",
+      "engineering_impact": "A new rover travels along a prepared route inside a building and gathers data for a map. A technician supervises while the machine avoids obstacles, climbs stairs and positions a measuring device with its robotic arm.",
+      "limitations": "In its own comparison, Hidonix says the rover mapped an area in half the time of a manual method and produced positioning error up to five times lower. The company did not state how many buildings or repeated trials were used. The confirmed event is the limited launch; performance across different sites still needs measurement. A repeated run can show whether the map stays consistent after furniture moves or doors change position.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-18",
+      "organization": "Hidonix Industries",
       "source_ids": [
-        "genesis-1117"
+        "hidonix-1118"
       ],
       "time_window": "24h",
-      "body": "Investors put $500 million into Genesis AI on November 17. The company plans to spend it on Eno robot production and trials in manufacturing, logistics and laboratories. A broader customer rollout is planned for 2027. This is an expansion plan, not a measurement of robot performance.\n\nGenesis is developing the robotics stack within one organization. A glove records human hand motion, a dexterous robot hand is designed around corresponding joints, the GENE model learns from collected data, and Genesis World provides simulation for training and evaluation. Eno is the physical platform on which behavior is deployed. The arrangement reduces organizational boundaries between data collection, model development, mechanics and testing.\n\nThe useful test is separate from the size of the investment. Readers need to know how many tasks a robot completed, how often it failed, how long it worked and when a person had to step in.\n\nFunding does not measure robot performance. The announcement gives no installed customer count, task success rate, sustained autonomous operating time or human-intervention frequency. Statements about long multi-step work come from the company and its investors. The verified event is therefore the financing and the stated plan to expand manufacturing and trials, while reliability over production-length workflows remains unquantified.",
+      "body": "Mapping a large building requires moving measuring instruments across floors and stairs. Hidonix has started a limited program for testing its Hido II rover at selected sites in the United States. The small wheeled machine surveys indoor spaces. It follows a prepared route and gathers data that can help a system locate people or equipment inside a building. A person stays on site to supervise it.\n\nThe rover has suspension for uneven floors and stairs, cameras, a laser distance sensor and an arm carrying an acquisition module. The arm places the instrument in a repeatable position so measurements can be compared. The company says a charge supports about five to eight hours, depending on the work.\n\nIn its own comparison, Hidonix says the rover mapped an area in half the time of a manual method and produced positioning error up to five times lower. The company did not state how many buildings or repeated trials were used. The confirmed event is the limited launch; performance across different sites still needs measurement. A repeated run can show whether the map stays consistent after furniture moves or doors change position.",
       "image": null
     },
     {
-      "id": "robotera-postal",
-      "title": "Robots sort parcels at eleven postal hubs",
-      "summary": "Robots are feeding parcels into sorting lines at eleven postal hubs in Guangdong province. Their maker reports an average rate above 1,500 parcels an hour in the original trial.",
-      "details": "Humanoid robots now work at eleven postal hubs in eight Guangdong cities in China. They pick up parcels and feed them into sorting lines. The trial began in Guangzhou in March and was later extended to sites with different layouts and parcel flows.",
-      "technical_novelty": "Following one parcel makes the job clear: where the robot picks it up, where it places it and what happens to an awkward package. Parcels per hour matters only when errors, stops and help from workers are also counted.",
-      "engineering_impact": "Robots are feeding parcels into sorting lines at eleven postal hubs in Guangdong province. Their maker reports an average rate above 1,500 parcels an hour in the original trial.",
-      "limitations": "The 1,500-parcel figure is manufacturer-reported; robot counts, observation hours, error rates and independent verification are not published.",
-      "evidence_status": "Manufacturer and partner report of an operating deployment; quantitative performance has not been independently audited.",
-      "published_at": "2026-11-17",
-      "organization": "ROBOTERA; China Post Group Guangdong Branch",
+      "id": "agility-leadership-scale",
+      "title": "A humanoid company divides responsibility for growth",
+      "summary": "Agility Robotics appointed leaders for sales, product and company operations after listing on the stock market. They are meant to help build and support more Digit robots, but the announcement does not confirm a new delivery.",
+      "details": "A company building more robots needs separate responsibility for the product, customers and safe operations. Agility Robotics makes the human-shaped Digit robot and recently became a public company whose shares trade on a stock market. It has now appointed three leaders: one for sales, one for the product and customers, and one for rules, employees and risk.",
+      "technical_novelty": "Building more robots requires more than improving mechanics and software. A company must manufacture machines on time, install them, repair them and record problems. Agility reports more than 65,000 hours of real-world robot operation, although this release does not explain which tasks and conditions make up that total.",
+      "engineering_impact": "Agility Robotics appointed leaders for sales, product and company operations after listing on the stock market. They are meant to help build and support more Digit robots, but the announcement does not confirm a new delivery.",
+      "limitations": "The announcement also mentions orders with potential value above $300 million. That value depends on contract milestones and product requirements. The appointments show a plan to grow, but they are not a new robot delivery or evidence that Digit has become more reliable. The next clear result is how many robots arrive on time and how quickly customer-site problems are corrected.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-18",
+      "organization": "Agility Robotics",
       "source_ids": [
-        "robotera-post-1117"
+        "agility-leadership-1118"
       ],
       "time_window": "24h",
-      "body": "Humanoid robots now work at eleven postal hubs in eight Guangdong cities in China. They pick up parcels and feed them into sorting lines. The trial began in Guangzhou in March and was later extended to sites with different layouts and parcel flows.\n\nThe principal operation is parcel induction onto a sorting line. The company also describes irregular-item rejection and adaptive speed control intended to reduce jams, collisions and missed items. Its own five-finger hand handles parcels. ROBOTERA reports an average induction rate above 1,500 parcels per hour in the original pilot and compares that rate with an experienced human worker.\n\nFollowing one parcel makes the job clear: where the robot picks it up, where it places it and what happens to an awkward package. Parcels per hour matters only when errors, stops and help from workers are also counted.\n\nThe release does not disclose the robot count at each site, measurement duration, throughput distribution, error share or downtime. The 1,500-parcel figure therefore cannot be assigned to all 11 hubs. The material development is replication of one workflow across multiple locations. Comparable site-level metrics and operator-intervention records are needed to judge the system as a fleet.",
+      "body": "A company building more robots needs separate responsibility for the product, customers and safe operations. Agility Robotics makes the human-shaped Digit robot and recently became a public company whose shares trade on a stock market. It has now appointed three leaders: one for sales, one for the product and customers, and one for rules, employees and risk.\n\nBuilding more robots requires more than improving mechanics and software. A company must manufacture machines on time, install them, repair them and record problems. Agility reports more than 65,000 hours of real-world robot operation, although this release does not explain which tasks and conditions make up that total.\n\nThe announcement also mentions orders with potential value above $300 million. That value depends on contract milestones and product requirements. The appointments show a plan to grow, but they are not a new robot delivery or evidence that Digit has become more reliable. The next clear result is how many robots arrive on time and how quickly customer-site problems are corrected.",
       "image": null
     },
     {
-      "id": "hospital-orchestration",
-      "title": "A hospital assigns deliveries to different robots",
-      "summary": "One hospital system assigns deliveries to robots from different companies and to people. It uses location, urgency and availability to choose who receives each job.",
-      "details": "A new robot at Sheba Medical Center in Israel is carrying items such as chemotherapy medicine, blood and bone marrow alongside other machines. The deliverz.ai system gives each delivery to an available robot or worker. It considers location and mission priority.",
-      "technical_novelty": "The difficult part is coordinating different workers, not teaching one robot to drive. A hospital needs a record of who received the item, when it changed hands and what happened if a route was blocked or a machine stopped.",
-      "engineering_impact": "One hospital system assigns deliveries to robots from different companies and to people. It uses location, urgency and availability to choose who receives each job.",
-      "limitations": "The company reports that Ottonomy entered service; claimed benefits, scalability and US expansion are forward-looking statements.",
-      "evidence_status": "Supplier report of commercial operation at one hospital; no independent operating metrics are published.",
-      "published_at": "2026-11-17",
-      "organization": "Gix Internet; deliverz.ai; Sheba Medical Center; Ottonomy",
+      "id": "tactilia-robot-hand",
+      "title": "A new company is building a hand for different robots",
+      "summary": "Germany's TACTILIA is developing a modular robot hand for factory and warehouse jobs. It plans to test the hand with customers at fifteen SCHUNK application centers.",
+      "details": "A robot needs a hand that senses contact and controls force before it can handle ordinary objects. SCHUNK separated a robot-hand team into a company now called TACTILIA Robotics. Based in Munich, it is making a hand for several kinds of machines, including humanoids, factory arms and mobile manipulators.",
+      "technical_novelty": "A robotic hand must do more than close its fingers. It needs to notice contact, choose force and hold objects with different shapes. The team is combining mechanics, sensors, motors and software, and plans customer tests at fifteen application centers.",
+      "engineering_impact": "Germany's TACTILIA is developing a modular robot hand for factory and warehouse jobs. It plans to test the hand with customers at fifteen SCHUNK application centers.",
+      "limitations": "The company has not published the new hand's exact design, force, lifetime, price or delivery date. We know who is developing it and where tests can happen, but there is not yet enough evidence to judge reliability on a working production line. Future tests should count how often the hand holds different objects without dropping them and when its parts begin to wear.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-18",
+      "organization": "TACTILIA Robotics; SCHUNK",
       "source_ids": [
-        "gix-sheba-1117"
+        "tactilia-1118"
       ],
       "time_window": "24h",
-      "body": "A new robot at Sheba Medical Center in Israel is carrying items such as chemotherapy medicine, blood and bone marrow alongside other machines. The deliverz.ai system gives each delivery to an available robot or worker. It considers location and mission priority.\n\nThe system supports live hospital logistics, including chemotherapy medication, blood and bone-marrow transport. The technical problem sits above the navigation stack of any one robot: the orchestrator must match a mission with an available machine or person and the hospital's operating rules. Vendor controllers still execute motion on each platform, while deliverz.ai coordinates missions and fleet state.\n\nThe difficult part is coordinating different workers, not teaching one robot to drive. A hospital needs a record of who received the item, when it changed hands and what happened if a route was blocked or a machine stopped.\n\nThe company publishes no delivery count, assignment latency, completion rate or recovery time after failure. The supplier confirms that Ottonomy is operating in the mixed fleet. Claims about reducing vendor dependence and expanding into the United States are forward-looking and depend on technical compatibility, site requirements and customer approvals.",
+      "body": "A robot needs a hand that senses contact and controls force before it can handle ordinary objects. SCHUNK separated a robot-hand team into a company now called TACTILIA Robotics. Based in Munich, it is making a hand for several kinds of machines, including humanoids, factory arms and mobile manipulators.\n\nA robotic hand must do more than close its fingers. It needs to notice contact, choose force and hold objects with different shapes. The team is combining mechanics, sensors, motors and software, and plans customer tests at fifteen application centers.\n\nThe company has not published the new hand's exact design, force, lifetime, price or delivery date. We know who is developing it and where tests can happen, but there is not yet enough evidence to judge reliability on a working production line. Future tests should count how often the hand holds different objects without dropping them and when its parts begin to wear.",
       "image": null
     },
     {
-      "id": "nvidia-export-oversight",
-      "title": "NVIDIA creates a group to oversee chip-export rules",
-      "summary": "NVIDIA's board created a committee to oversee rules for shipping computing chips across borders. The decision matters to robotics because many developers depend on NVIDIA hardware and software.",
-      "details": "NVIDIA created a permanent group on November 17 to oversee national-security policy, export rules and global-trade risk. It must meet at least once every quarter and will receive reports from company staff. The decision followed Jensen Huang's resignation as chief executive.",
-      "technical_novelty": "This is not a new robot feature. It concerns access to powerful computing chips used to train and run many artificial-intelligence systems. NVIDIA has not announced a product change or a new delivery schedule in this notice.",
-      "engineering_impact": "NVIDIA's board created a committee to oversee rules for shipping computing chips across borders. The decision matters to robotics because many developers depend on NVIDIA hardware and software.",
-      "limitations": "Reuters describes investigated relationships and political pressure; allegations remain under review, and the board has not announced Huang's return.",
-      "evidence_status": "Official NVIDIA governance decision plus independent Reuters reporting on context; some allegations remain unresolved.",
-      "published_at": "2026-11-17",
-      "organization": "NVIDIA",
+      "id": "imo-robotics-lab",
+      "title": "A Tokyo lab prepares robots for real jobs",
+      "summary": "A new Tokyo site lets organizations see and test different robots. Its first display is a two-armed mobile robot, and future trials are expected to focus first on work in medical facilities.",
+      "details": "Before a robot begins regular work, it helps to watch it move and test one clear, limited job. ImageONE and Big Hands have opened a Tokyo space for robot demonstrations and tests. Visitors can see physical machines and discuss jobs they might perform. Big Hands supplies robots and engineers, while ImageONE operates the site and works with possible customers.",
+      "technical_novelty": "The first display is Galbot G1, a mobile robot with two arms. The organizers later want to add other humanoids, quadrupeds and robotic hands. They also plan to train engineers and prepare small trials before deployment, especially for medical facilities.",
+      "engineering_impact": "A new Tokyo site lets organizations see and test different robots. Its first display is a two-armed mobile robot, and future trials are expected to focus first on work in medical facilities.",
+      "limitations": "No hospital, exact job or number of successful tasks has been announced. The robot has therefore not started regular medical work. The confirmed event is the opening of a place to select and test a job; results from future trials are still unknown. Each trial should name the job and attempt count beforehand, then report successes, stops and help from engineers.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-18",
+      "organization": "ImageONE; Big Hands",
       "source_ids": [
-        "nvidia-committee-1117",
-        "nvidia-reuters-1117"
+        "imageone-lab-1118"
       ],
       "time_window": "24h",
-      "body": "NVIDIA created a permanent group on November 17 to oversee national-security policy, export rules and global-trade risk. It must meet at least once every quarter and will receive reports from company staff. The decision followed Jensen Huang's resignation as chief executive.\n\nThe decision follows Jensen Huang's immediate resignation as chief executive and board member on November 12. Reuters reported on November 17 that Huang would consider returning if the board judged it beneficial, while the agency's sources said the board was not considering reinstatement. Reuters also described investigated relationships and political pressure around accelerator exports to China; those allegations have not reached a final determination.\n\nThis is not a new robot feature. It concerns access to powerful computing chips used to train and run many artificial-intelligence systems. NVIDIA has not announced a product change or a new delivery schedule in this notice.\n\nPhysical-AI developers care about the event because the sector depends on NVIDIA accelerators, software platforms and investment. Stronger oversight may affect sales procedures, access to compute and partner compliance. The official notice changes no product interface, roadmap or delivery date, so the immediate evidence is a governance and supply-chain risk rather than an announced technical disruption.",
+      "body": "Before a robot begins regular work, it helps to watch it move and test one clear, limited job. ImageONE and Big Hands have opened a Tokyo space for robot demonstrations and tests. Visitors can see physical machines and discuss jobs they might perform. Big Hands supplies robots and engineers, while ImageONE operates the site and works with possible customers.\n\nThe first display is Galbot G1, a mobile robot with two arms. The organizers later want to add other humanoids, quadrupeds and robotic hands. They also plan to train engineers and prepare small trials before deployment, especially for medical facilities.\n\nNo hospital, exact job or number of successful tasks has been announced. The robot has therefore not started regular medical work. The confirmed event is the opening of a place to select and test a job; results from future trials are still unknown. Each trial should name the job and attempt count beforehand, then report successes, stops and help from engineers.",
       "image": null
     },
     {
-      "id": "pony-toyota-robotaxi",
-      "title": "A new driverless taxi enters service in Guangzhou",
-      "summary": "A paid taxi service in Guangzhou now uses a car with no driver in the front seat. Pony.ai and Toyota developed the vehicle, which passengers can request around the clock through an app.",
-      "details": "Passengers in Guangzhou can now order a new robotaxi that drives without a person at the wheel. Pony.ai and Toyota began commercial service with the model on November 16. It is based on Toyota's bZ4X and has joined an existing fleet.",
-      "technical_novelty": "The car is designed for Level 4 automation, which means its system performs all driving within defined conditions. The companies also describe backup equipment intended to preserve safe operation if one component fails.",
-      "engineering_impact": "A paid taxi service in Guangzhou now uses a car with no driver in the front seat. Pony.ai and Toyota developed the vehicle, which passengers can request around the clock through an app.",
-      "limitations": "The 1,000-vehicle figure is a future plan; crash rates, remote interventions and the available operating area are not published.",
-      "evidence_status": "Joint company announcement of commercial launch; operating performance is not independently documented in the release.",
-      "published_at": "2026-11-16",
-      "organization": "Pony.ai; Toyota",
+      "id": "globalfoundries-robot-fleet",
+      "title": "Robots inspect chip factories while a humanoid waits for trials",
+      "summary": "Spot quadruped robots will inspect equipment at more GlobalFoundries sites. Atlas humanoid testing is planned for 2027, but the companies are still choosing its specific work.",
+      "details": "Chip-factory equipment needs repeated inspection without interrupting production. GlobalFoundries makes semiconductor chips and must inspect complicated factory equipment. The company is expanding use of the four-legged Spot robot in the United States, Germany and Singapore. Spot walks through technical areas and gathers measurements so specialists can monitor machinery.",
+      "technical_novelty": "Two Spots in Singapore have traveled nearly 900 kilometers and completed more than 90,000 inspection missions since April. The companies report a 99% mission success rate. That number does not say how many faults the robots discovered or how often a person helped them.",
+      "engineering_impact": "Spot quadruped robots will inspect equipment at more GlobalFoundries sites. Atlas humanoid testing is planned for 2027, but the companies are still choosing its specific work.",
+      "limitations": "The human-shaped Atlas robot has not started this work. In 2027, specialists plan to look for suitable tasks and test how Atlas could fit into the factory. Spot is therefore expanding an operating service, while Atlas remains at the preparation stage. A fair comparison must count completed rounds, useful faults found and occasions when a person had to help the robot.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-17",
+      "organization": "Boston Dynamics; GlobalFoundries",
       "source_ids": [
-        "pony-toyota-1116"
+        "boston-gf-1117",
+        "gf-boston-1117"
       ],
       "time_window": "72h",
-      "body": "Passengers in Guangzhou can now order a new robotaxi that drives without a person at the wheel. Pony.ai and Toyota began commercial service with the model on November 16. It is based on Toyota's bZ4X and has joined an existing fleet.\n\nThe vehicle was engineered for Level 4 autonomy, in which the automated system performs the driving task within a defined operating domain. The partners emphasize redundancy and fail-operational capability intended to preserve safe operation after a component failure. The first production vehicle left the line in February. Scaling also requires charging, maintenance and routine fleet service rather than model updates alone.\n\nThe car is designed for Level 4 automation, which means its system performs all driving within defined conditions. The companies also describe backup equipment intended to preserve safe operation if one component fails.\n\nThe companies target roughly 1,000 bZ4X robotaxis across major Chinese cities, but that is a future plan. The release gives no current vehicle count, trip count, service area, crash rate or remote-intervention frequency. The confirmed change is the commercial introduction of one production model in Guangzhou. Comparative safety and availability require operational data that the announcement does not contain.",
+      "body": "Chip-factory equipment needs repeated inspection without interrupting production. GlobalFoundries makes semiconductor chips and must inspect complicated factory equipment. The company is expanding use of the four-legged Spot robot in the United States, Germany and Singapore. Spot walks through technical areas and gathers measurements so specialists can monitor machinery.\n\nTwo Spots in Singapore have traveled nearly 900 kilometers and completed more than 90,000 inspection missions since April. The companies report a 99% mission success rate. That number does not say how many faults the robots discovered or how often a person helped them.\n\nThe human-shaped Atlas robot has not started this work. In 2027, specialists plan to look for suitable tasks and test how Atlas could fit into the factory. Spot is therefore expanding an operating service, while Atlas remains at the preparation stage. A fair comparison must count completed rounds, useful faults found and occasions when a person had to help the robot.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Robots take on real jobs",
-    "summary": "Robots have started doing specific jobs at postal centers, in a hospital and on city roads, while one company raised money to build more machines. Each story separates what already happened from results that developers have not yet measured or published.",
-    "implications": "A useful way to judge the news is to follow one job: who assigned it, what the machine did, how often it worked and when a person had to help."
+    "title": "Robots take on jobs one step at a time",
+    "summary": "Some robots already inspect factories, others are only preparing for trials, and new machines need hands and places to test them. Each story follows a specific job, a measured result and something the developers have not yet checked.",
+    "implications": "The main signal is that real work begins with a clear job, repeated attempts and an honest record of mistakes, not an impressive demonstration."
   },
   "sources": [
     {
-      "id": "genesis-1117",
-      "title": "Genesis AI Raises $500M Series A at $3.5B Valuation to Master Human-Level Dexterity in General-Purpose Robots and Deploy at Scale",
-      "url": "https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-3-5b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302941249.html",
-      "domain": "prnewswire.com",
-      "organization": "Genesis AI",
-      "published_at": "2026-11-17"
-    },
-    {
-      "id": "robotera-post-1117",
-      "title": "ROBOTERA Expands Humanoid Robot Deployment Across China Post's Guangdong Network, Reaching Eight Cities Province-Wide",
-      "url": "https://www.prnewswire.co.uk/news-releases/robotera-expands-humanoid-robot-deployment-across-china-posts-guangdong-network-reaching-eight-cities-province-wide-302941879.html",
-      "domain": "prnewswire.co.uk",
-      "organization": "ROBOTERA; China Post Group Guangdong Branch",
-      "published_at": "2026-11-17"
-    },
-    {
-      "id": "gix-sheba-1117",
-      "title": "Gix Deploys New Advanced AI-Powered L4 Autonomous Robot with Multi-Environment Navigation and Smart Access Capabilities at One of the World's Top Hospitals",
-      "url": "https://www.globenewswire.com/news-release/2026/11/17/3404625/0/en/gix-deploys-new-advanced-ai-powered-l4-autonomous-robot-with-multi-environment-navigation-and-smart-access-capabilities-at-one-of-the-world-s-top-hospitals.html",
+      "id": "hidonix-1118",
+      "title": "Hidonix Industries Officially Launches Hido II Rover to Automate Indoor Spatial Mapping",
+      "url": "https://www.globenewswire.com/news-release/2026/11/18/3405711/0/en/hidonix-industries-officially-launches-hido-ii-rover-to-automate-indoor-spatial-mapping.html",
       "domain": "globenewswire.com",
-      "organization": "Gix Internet; deliverz.ai; Sheba Medical Center; Ottonomy",
+      "organization": "Hidonix Industries",
+      "published_at": "2026-11-18"
+    },
+    {
+      "id": "boston-gf-1117",
+      "title": "Boston Dynamics & GlobalFoundries Expand Robotics Collaboration",
+      "url": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+      "domain": "bostondynamics.com",
+      "organization": "Boston Dynamics; GlobalFoundries",
       "published_at": "2026-11-17"
     },
     {
-      "id": "nvidia-committee-1117",
-      "title": "NVIDIA Board of Directors Establishes National Security and Export Control Oversight Committee",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
-      "domain": "nvidianews.nvidia.com",
-      "organization": "NVIDIA",
+      "id": "gf-boston-1117",
+      "title": "Boston Dynamics and GlobalFoundries expand robotics collaboration",
+      "url": "https://gf.com/news-and-events/news/boston-dynamics-and-globalfoundries-expand-robotics-collaboration/",
+      "domain": "gf.com",
+      "organization": "GlobalFoundries; Boston Dynamics",
       "published_at": "2026-11-17"
     },
     {
-      "id": "nvidia-reuters-1117",
-      "title": "Huang open to Nvidia return as scandal-hit chipmaker heads into results",
-      "url": "https://www.reuters.com/business/nvidia-board-forms-committee-national-security-export-control-oversight-2026-11-17/",
-      "domain": "reuters.com",
-      "organization": "Reuters",
-      "published_at": "2026-11-17"
+      "id": "imageone-lab-1118",
+      "title": "【フィジカルAIロボット】「IMOロボティクスLAB」を開設。イメージワン本社内をロボット展示・実証拠点としてGalbot製ヒューマノイドロボット「G1」の実機展示を開始。",
+      "url": "https://prtimes.jp/main/html/rd/p/000000054.000049889.html",
+      "domain": "prtimes.jp",
+      "organization": "ImageONE; Big Hands",
+      "published_at": "2026-11-18"
     },
     {
-      "id": "pony-toyota-1116",
-      "title": "PONY AI Inc. and Toyota Launch Fully Driverless Commercial Services with Gen-7 bZ4X Robotaxi",
-      "url": "https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-and-toyota-launch-fully-driverless-commercial",
-      "domain": "ir.pony.ai",
-      "organization": "Pony.ai; Toyota",
-      "published_at": "2026-11-16"
+      "id": "tactilia-1118",
+      "title": "SCHUNK spin-off for humanoid robot hands becomes TACTILIA Robotics",
+      "url": "https://schunk.com/us/en/news/schunk-spin-off-for-humanoid-robot-hands-becomes-tactilia-robotics/41857",
+      "domain": "schunk.com",
+      "organization": "SCHUNK; TACTILIA Robotics",
+      "published_at": "2026-11-18"
+    },
+    {
+      "id": "agility-leadership-1118",
+      "title": "Agility Robotics Evolves Executive Leadership Team to Support Next Phase of Growth as a Public Company",
+      "url": "https://investors.agilityrobotics.com/news-releases/news-release-details/agility-robotics-evolves-executive-leadership-team-support-next",
+      "domain": "investors.agilityrobotics.com",
+      "organization": "Agility Robotics",
+      "published_at": "2026-11-18"
     }
   ]
 }

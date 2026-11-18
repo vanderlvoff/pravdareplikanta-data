@@ -2,159 +2,159 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-18",
-  "issue_id": "daily-2026-11-18",
+  "issue_date": "2026-11-19",
+  "issue_id": "daily-2026-11-19",
   "edition": "business",
   "language": "en",
-  "generated_at": "2026-11-17T21:17:31.399621Z",
-  "title": "Capital and infrastructure push robots into service",
-  "lead": "Robotics companies are moving from demonstrations into manufacturing, multi-site operations and paid services. Buyers now need integration cost, support capacity, supplier responsibility and reliable access to computing infrastructure.",
+  "generated_at": "2026-11-18T21:14:03.572374Z",
+  "title": "Deployment infrastructure becomes part of the product",
+  "lead": "Suppliers are building not only robots but also test sites, service teams and commercial-scaling structures. For buyers, maturity depends on integration cost, support, acceptance conditions and measured results at the operating site.",
   "news": [
     {
-      "id": "genesis-funding",
-      "title": "Genesis AI raises $500 million to expand production of Eno robots",
-      "summary": "Genesis AI announced a $500 million Series A at a $3.5 billion post-money valuation. It plans to expand Eno production, data collection, model training and customer deployments.",
-      "details": "The company is building an integrated stack comprising the robot, dexterous hand, motion-recording glove, GENE model and Genesis World simulator.",
-      "technical_novelty": "The proposed loop connects human motion data, simulation, model training and physical deployment within one organization.",
-      "engineering_impact": "For a customer, the round means the supplier can finance manufacturing and support, but it does not replace product validation. A pilot agreement needs scope, integration cost, staff training, spare-parts availability and measurable conditions for moving from a trial to procurement.",
-      "limitations": "Capability and rollout claims come from the company; independent success rates and sustained uptime are not published.",
-      "evidence_status": "Company announcement of financing and plans; technical capability claims have not been independently replicated.",
-      "published_at": "2026-11-17",
-      "organization": "Genesis AI",
+      "id": "hido-mapping-rover",
+      "title": "Hido II enters limited deployment for automated indoor mapping",
+      "summary": "Hidonix has launched a limited deployment program for the Hido II rover to collect spatial data inside buildings. Under technician supervision, it follows predefined routes, avoids obstacles, climbs stairs and positions an acquisition module with a robotic arm.",
+      "details": "Hidonix Industries announced the launch of Hido II on November 18 as a mobile rover for mapping complex indoor spaces. After showing a prototype at CES 2026, the company is selecting US venues for a limited early-access program. A technician remains on site and supervises operation, so the release describes controlled deployment rather than a fully independent surveying service.",
+      "technical_novelty": "The rover follows predefined routes, detects obstacles and replans its path. A rocker-bogie suspension is intended for uneven ground and conventional stairs; the platform can rotate in place and move laterally. A robotic arm repeatedly positions the geomagnetic acquisition module, while a 2K stereo camera and Ouster lidar provide depth reconstruction, obstacle awareness and a 360-degree point cloud. Stated runtime is about five to eight hours depending on activity.",
+      "engineering_impact": "A venue operator needs more than survey speed: crew travel, route preparation, closed walkways and repeat surveys after a building change all affect cost. The limited program discloses no price, fleet availability or service terms. Economics can be assessed only after comparing mapped area per shift, technician labor and the navigation quality produced from the collected data.",
+      "limitations": "In a comparative test, the company reports a 50% reduction in mapping time and positioning error up to five times lower than manual collection with the ION App. It does not publish the method, venue count, route area or error distribution. The figures are therefore supplier-reported internal results, not an independent evaluation of a production fleet.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-18",
+      "organization": "Hidonix Industries",
       "source_ids": [
-        "genesis-1117"
+        "hidonix-1118"
       ],
       "time_window": "24h",
-      "body": "Genesis AI announced a $500 million Series A on November 17 at a $3.5 billion post-money valuation. It plans to use the capital to increase production of its Eno general-purpose robot, expand data acquisition and large-scale model training, and place more systems with customers. Manufacturing, logistics and laboratories are the first target environments, and the company expects broader customer rollout in 2027.\n\nGenesis is developing the robotics stack within one organization. A glove records human hand motion, a dexterous robot hand is designed around corresponding joints, the GENE model learns from collected data, and Genesis World provides simulation for training and evaluation. Eno is the physical platform on which behavior is deployed. The arrangement reduces organizational boundaries between data collection, model development, mechanics and testing.\n\nFor a customer, the round means the supplier can finance manufacturing and support, but it does not replace product validation. A pilot agreement needs scope, integration cost, staff training, spare-parts availability and measurable conditions for moving from a trial to procurement.\n\nFunding does not measure robot performance. The announcement gives no installed customer count, task success rate, sustained autonomous operating time or human-intervention frequency. Statements about long multi-step work come from the company and its investors. The verified event is therefore the financing and the stated plan to expand manufacturing and trials, while reliability over production-length workflows remains unquantified.",
+      "body": "Hidonix Industries announced the launch of Hido II on November 18 as a mobile rover for mapping complex indoor spaces. After showing a prototype at CES 2026, the company is selecting US venues for a limited early-access program. A technician remains on site and supervises operation, so the release describes controlled deployment rather than a fully independent surveying service.\n\nThe rover follows predefined routes, detects obstacles and replans its path. A rocker-bogie suspension is intended for uneven ground and conventional stairs; the platform can rotate in place and move laterally. A robotic arm repeatedly positions the geomagnetic acquisition module, while a 2K stereo camera and Ouster lidar provide depth reconstruction, obstacle awareness and a 360-degree point cloud. Stated runtime is about five to eight hours depending on activity.\n\nA venue operator needs more than survey speed: crew travel, route preparation, closed walkways and repeat surveys after a building change all affect cost. The limited program discloses no price, fleet availability or service terms. Economics can be assessed only after comparing mapped area per shift, technician labor and the navigation quality produced from the collected data.\n\nIn a comparative test, the company reports a 50% reduction in mapping time and positioning error up to five times lower than manual collection with the ION App. It does not publish the method, venue count, route area or error distribution. The figures are therefore supplier-reported internal results, not an independent evaluation of a production fleet.",
       "image": null
     },
     {
-      "id": "robotera-postal",
-      "title": "ROBOTERA humanoids operate across 11 Guangdong postal hubs",
-      "summary": "ROBOTERA says its humanoid robots now operate at 11 postal hubs in eight Guangdong cities. It reports an average induction rate above 1,500 parcels per hour for the pilot that began in Guangzhou in March.",
-      "details": "The robots feed parcels into sorting lines, reject irregular items and adjust speed to reduce jams, collisions and missed items.",
-      "technical_novelty": "The deployment combines a humanoid platform, a five-finger hand, adaptive speed control and configuration for different sorting lines.",
-      "engineering_impact": "A multi-site rollout can reveal repeatable costs: setup time for a new hub, required line changes and the number of operators supporting the robots. Without site-level results, a buyer cannot calculate cost per processed parcel or the economics of expansion.",
-      "limitations": "The 1,500-parcel figure is manufacturer-reported; robot counts, observation hours, error rates and independent verification are not published.",
-      "evidence_status": "Manufacturer and partner report of an operating deployment; quantitative performance has not been independently audited.",
-      "published_at": "2026-11-17",
-      "organization": "ROBOTERA; China Post Group Guangdong Branch",
+      "id": "agility-leadership-scale",
+      "title": "Agility Robotics reshapes leadership after becoming a public company",
+      "summary": "Agility Robotics appointed a president, chief product officer and chief administrative officer after its November Nasdaq listing. It links the structure to scaling Digit 5 sales and deployments, while the cited $300 million represents potential order value subject to contractual milestones.",
+      "details": "Agility Robotics announced three appointments on November 18 after completing its combination with Churchill Capital Corp XI and listing on Nasdaq on November 4. Daniel Diez became president responsible for the commercial business. Christopher Sullivan became chief product officer while retaining a connection to customer success. Ana Lang became chief administrative officer and continues to oversee legal, people, governance and risk functions.",
+      "technical_novelty": "The company frames the change as preparation to move from individual programs toward larger Digit deployments. Diez leads sales and partnerships, Sullivan connects product strategy and execution with customer-site experience, and Lang builds public-company processes. Agility cites more than 65,000 hours of real-world robot operation and over $300 million in committed multi-year Digit 5 orders, but the latter is potential value subject to contractual milestones and product specifications.",
+      "engineering_impact": "Separating sales, product and corporate-control responsibility is a public-company move toward scale. Customers need to see whether it produces predictable delivery, support and contract terms. The potential $300 million cannot be treated as recognized revenue because fulfillment depends on contractual stages and product specifications.",
+      "limitations": "The release announces no new contract, robot delivery, production capacity or reliability result. The appointments show which functions Agility is strengthening: commercial scale, product-to-deployment feedback and corporate control. Future deployments and order value remain company expectations exposed to manufacturing, technical and market risks.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-18",
+      "organization": "Agility Robotics",
       "source_ids": [
-        "robotera-post-1117"
+        "agility-leadership-1118"
       ],
       "time_window": "24h",
-      "body": "ROBOTERA said on November 17 that its humanoid robots are operating at 11 postal hubs in eight cities across China's Guangdong province. The project is run with China Post's Guangdong branch. A pilot began at the Guangzhou Postal District Center in March, after which the system was extended to sites with different parcel flows and sorting-line configurations.\n\nThe principal operation is parcel induction onto a sorting line. The company also describes irregular-item rejection and adaptive speed control intended to reduce jams, collisions and missed items. Its own five-finger hand handles parcels. ROBOTERA reports an average induction rate above 1,500 parcels per hour in the original pilot and compares that rate with an experienced human worker.\n\nA multi-site rollout can reveal repeatable costs: setup time for a new hub, required line changes and the number of operators supporting the robots. Without site-level results, a buyer cannot calculate cost per processed parcel or the economics of expansion.\n\nThe release does not disclose the robot count at each site, measurement duration, throughput distribution, error share or downtime. The 1,500-parcel figure therefore cannot be assigned to all 11 hubs. The material development is replication of one workflow across multiple locations. Comparable site-level metrics and operator-intervention records are needed to judge the system as a fleet.",
+      "body": "Agility Robotics announced three appointments on November 18 after completing its combination with Churchill Capital Corp XI and listing on Nasdaq on November 4. Daniel Diez became president responsible for the commercial business. Christopher Sullivan became chief product officer while retaining a connection to customer success. Ana Lang became chief administrative officer and continues to oversee legal, people, governance and risk functions.\n\nThe company frames the change as preparation to move from individual programs toward larger Digit deployments. Diez leads sales and partnerships, Sullivan connects product strategy and execution with customer-site experience, and Lang builds public-company processes. Agility cites more than 65,000 hours of real-world robot operation and over $300 million in committed multi-year Digit 5 orders, but the latter is potential value subject to contractual milestones and product specifications.\n\nSeparating sales, product and corporate-control responsibility is a public-company move toward scale. Customers need to see whether it produces predictable delivery, support and contract terms. The potential $300 million cannot be treated as recognized revenue because fulfillment depends on contractual stages and product specifications.\n\nThe release announces no new contract, robot delivery, production capacity or reliability result. The appointments show which functions Agility is strengthening: commercial scale, product-to-deployment feedback and corporate control. Future deployments and order value remain company expectations exposed to manufacturing, technical and market risks.",
       "image": null
     },
     {
-      "id": "hospital-orchestration",
-      "title": "Sheba hospital coordinates robots from multiple vendors through one system",
-      "summary": "Gix says an Ottonomy robot has entered service at Sheba Medical Center alongside existing robots. The deliverz.ai platform assigns work to robots from different manufacturers and human couriers by location, priority and availability.",
-      "details": "The system supports internal logistics including chemotherapy medication, blood and bone-marrow transport, with centralized assignment and monitoring.",
-      "technical_novelty": "The orchestration layer separates mission allocation and operational oversight from each robot maker's fleet-management system.",
-      "engineering_impact": "A shared dispatcher creates value if the hospital can add vendors without another separate console while keeping one set of delivery rules. Expansion requires clear failure responsibility, door and elevator compatibility, data protection, round-the-clock support and a known connection cost for each robot model.",
-      "limitations": "The company reports that Ottonomy entered service; claimed benefits, scalability and US expansion are forward-looking statements.",
-      "evidence_status": "Supplier report of commercial operation at one hospital; no independent operating metrics are published.",
-      "published_at": "2026-11-17",
-      "organization": "Gix Internet; deliverz.ai; Sheba Medical Center; Ottonomy",
+      "id": "tactilia-robot-hand",
+      "title": "SCHUNK spin-off TACTILIA takes modular robot hand toward industrial market",
+      "summary": "SCHUNK Humanoid Robotics, founded in January, now operates as TACTILIA Robotics. It is developing a modular hand for humanoids, cobots and mobile manipulators, supported by testing access to 15 SCHUNK CoLabs.",
+      "details": "SCHUNK announced on November 18 that its January spin-off SCHUNK Humanoid Robotics now operates as TACTILIA Robotics. The independent Munich company is developing a modular robotic hand for production and logistics tasks. Markus Netzer leads the business, while the parent group supplies gripping expertise, test infrastructure and access to industrial customers.",
+      "technical_novelty": "The developers aim to combine mechanics, sensors, actuators, software and physical-AI methods in one platform. The hand is intended for humanoids, collaborative robots and mobile manipulators rather than one robot body. Customer testing is planned through 15 SCHUNK CoLabs, where specific operations can be evaluated and adapted before deployment.",
+      "engineering_impact": "The spin-off combines a focused team with access to SCHUNK's 15 application centers, but commercial terms are absent. Buyers need price, lead time, warranty, grip-skill training and responsibility for manipulator integration. The test network can reduce task-selection risk, yet it does not establish product lifetime.",
+      "limitations": "The release gives no finger count for the new platform, degrees of freedom, force, accuracy, cycle life, interfaces, price or delivery date. Language about bringing a product to market states the company's direction, not a confirmed production shipment. Verified facts are the new name, independent structure, location and stated development and validation program.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-18",
+      "organization": "TACTILIA Robotics; SCHUNK",
       "source_ids": [
-        "gix-sheba-1117"
+        "tactilia-1118"
       ],
       "time_window": "24h",
-      "body": "Gix announced on November 17 that an Ottonomy robot had entered operational service at Sheba Medical Center in Israel. It works alongside robots from other manufacturers. The deliverz.ai platform allocates internal deliveries among robots and human couriers according to location, mission priority and resource availability, while operators receive centralized assignment and monitoring.\n\nThe system supports live hospital logistics, including chemotherapy medication, blood and bone-marrow transport. The technical problem sits above the navigation stack of any one robot: the orchestrator must match a mission with an available machine or person and the hospital's operating rules. Vendor controllers still execute motion on each platform, while deliverz.ai coordinates missions and fleet state.\n\nA shared dispatcher creates value if the hospital can add vendors without another separate console while keeping one set of delivery rules. Expansion requires clear failure responsibility, door and elevator compatibility, data protection, round-the-clock support and a known connection cost for each robot model.\n\nThe company publishes no delivery count, assignment latency, completion rate or recovery time after failure. The supplier confirms that Ottonomy is operating in the mixed fleet. Claims about reducing vendor dependence and expanding into the United States are forward-looking and depend on technical compatibility, site requirements and customer approvals.",
+      "body": "SCHUNK announced on November 18 that its January spin-off SCHUNK Humanoid Robotics now operates as TACTILIA Robotics. The independent Munich company is developing a modular robotic hand for production and logistics tasks. Markus Netzer leads the business, while the parent group supplies gripping expertise, test infrastructure and access to industrial customers.\n\nThe developers aim to combine mechanics, sensors, actuators, software and physical-AI methods in one platform. The hand is intended for humanoids, collaborative robots and mobile manipulators rather than one robot body. Customer testing is planned through 15 SCHUNK CoLabs, where specific operations can be evaluated and adapted before deployment.\n\nThe spin-off combines a focused team with access to SCHUNK's 15 application centers, but commercial terms are absent. Buyers need price, lead time, warranty, grip-skill training and responsibility for manipulator integration. The test network can reduce task-selection risk, yet it does not establish product lifetime. A separate test should change objects without manual reprogramming: how many examples the hand needs, how grasp time changes and whether force remains stable as actuators warm. Those records would show whether modularity is a product property rather than only an organizational goal.\n\nThe release gives no finger count for the new platform, degrees of freedom, force, accuracy, cycle life, interfaces, price or delivery date. Language about bringing a product to market states the company's direction, not a confirmed production shipment. Verified facts are the new name, independent structure, location and stated development and validation program.",
       "image": null
     },
     {
-      "id": "nvidia-export-oversight",
-      "title": "NVIDIA board creates a national-security and export-control committee",
-      "summary": "NVIDIA's board created a standing committee for national-security policy, export-control compliance and global trade risk. The move follows Jensen Huang's resignation; operational compliance teams will report to the committee and interim CEO Colette Kress.",
-      "details": "Director Suzanne Nora Johnson chairs the committee, which will meet at least quarterly and retain independent legal, national-security and trade experts.",
-      "technical_novelty": "For physical-AI developers, the issue reaches accelerator supply, access to compute and compliance obligations across development and deployment chains.",
-      "engineering_impact": "Organizations dependent on NVIDIA should review cloud and hardware contracts, delivery regions and export-control duties. The committee does not itself change price or availability, but it may lengthen transaction reviews and makes a documented alternative-supply plan more important.",
-      "limitations": "Reuters describes investigated relationships and political pressure; allegations remain under review, and the board has not announced Huang's return.",
-      "evidence_status": "Official NVIDIA governance decision plus independent Reuters reporting on context; some allegations remain unresolved.",
-      "published_at": "2026-11-17",
-      "organization": "NVIDIA",
+      "id": "imo-robotics-lab",
+      "title": "Tokyo lab opens to demonstrate and test robots before deployment",
+      "summary": "ImageONE and Big Hands have opened IMO Robotics LAB in Tokyo to demonstrate robots and test possible use cases. Galbot G1 is the first displayed machine, while medical-facility work is the stated initial focus for future proofs of concept.",
+      "details": "ImageONE announced the opening of IMO Robotics LAB at its Osaki, Tokyo headquarters on November 18. It created the site with Big Hands, which provides robot products, specialist engineers and technical information. ImageONE supplies the facility and coordinates operations, marketing and contact with prospective customers.",
+      "technical_novelty": "The lab has begun displaying the mobile, dual-arm Galbot G1. Its operators plan to add humanoids from other manufacturers, bionic devices, quadrupeds and robotic hands. Beyond demonstrations, the site is intended for proofs of concept, deployment proposals, engineer training and seminars, with medical-facility work named as the first area of attention.",
+      "engineering_impact": "A local demonstration site can lower the cost of first evaluation but cannot replace a customer-site test. A proof of concept needs a process owner, integration budget, supplier responsibilities, data protection and support plan. The commercial signal will be a named paid project with a measured result.",
+      "limitations": "The company confirms the opening and the physical G1 display. It names no medical process, customer, test date, success criterion or paid project. The lab therefore creates a place for task selection and integration work, but it does not yet show that the displayed robot performs regular hospital duties.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-18",
+      "organization": "ImageONE; Big Hands",
       "source_ids": [
-        "nvidia-committee-1117",
-        "nvidia-reuters-1117"
+        "imageone-lab-1118"
       ],
       "time_window": "24h",
-      "body": "NVIDIA's board created a standing National Security and Export Control Oversight Committee on November 17. Suzanne Nora Johnson chairs it, and it must meet at least quarterly with support from outside experts. The company's national-security and global-trade compliance teams will report to the committee and to interim chief executive Colette Kress on day-to-day operations.\n\nThe decision follows Jensen Huang's immediate resignation as chief executive and board member on November 12. Reuters reported on November 17 that Huang would consider returning if the board judged it beneficial, while the agency's sources said the board was not considering reinstatement. Reuters also described investigated relationships and political pressure around accelerator exports to China; those allegations have not reached a final determination.\n\nOrganizations dependent on NVIDIA should review cloud and hardware contracts, delivery regions and export-control duties. The committee does not itself change price or availability, but it may lengthen transaction reviews and makes a documented alternative-supply plan more important.\n\nPhysical-AI developers care about the event because the sector depends on NVIDIA accelerators, software platforms and investment. Stronger oversight may affect sales procedures, access to compute and partner compliance. The official notice changes no product interface, roadmap or delivery date, so the immediate evidence is a governance and supply-chain risk rather than an announced technical disruption.",
+      "body": "ImageONE announced the opening of IMO Robotics LAB at its Osaki, Tokyo headquarters on November 18. It created the site with Big Hands, which provides robot products, specialist engineers and technical information. ImageONE supplies the facility and coordinates operations, marketing and contact with prospective customers.\n\nThe lab has begun displaying the mobile, dual-arm Galbot G1. Its operators plan to add humanoids from other manufacturers, bionic devices, quadrupeds and robotic hands. Beyond demonstrations, the site is intended for proofs of concept, deployment proposals, engineer training and seminars, with medical-facility work named as the first area of attention.\n\nA local demonstration site can lower the cost of first evaluation but cannot replace a customer-site test. A proof of concept needs a process owner, integration budget, supplier responsibilities, data protection and support plan. The commercial signal will be a named paid project with a measured result. Each proof of concept should end with a protocol rather than a demonstration: attempt count, success share, interventions, stops and site modifications. A later customer could then distinguish what is repeatable from what depended on a prepared scene and supplier specialists.\n\nThe company confirms the opening and the physical G1 display. It names no medical process, customer, test date, success criterion or paid project. The lab therefore creates a place for task selection and integration work, but it does not yet show that the displayed robot performs regular hospital duties.",
       "image": null
     },
     {
-      "id": "pony-toyota-robotaxi",
-      "title": "Pony.ai and Toyota launch commercial driverless bZ4X service",
-      "summary": "Pony.ai and Toyota announced fully driverless commercial service with their seventh-generation bZ4X robotaxi in Guangzhou. Passengers can hail it around the clock, while the partners target roughly 1,000 vehicles across major Chinese cities.",
-      "details": "The vehicle was engineered for Level 4 autonomy with redundancy and fail-operational capability intended to preserve safe operation after a component failure.",
-      "technical_novelty": "Scaling covers the driving system, mass production, charging, maintenance and routine fleet service rather than the autonomy model alone.",
-      "engineering_impact": "Commercial service joins the vehicle, software, charging, maintenance and passenger operations into one product. Economics will depend not just on fleet size but on paid trips, empty mileage, charging downtime, remote support and the permitted operating area.",
-      "limitations": "The 1,000-vehicle figure is a future plan; crash rates, remote interventions and the available operating area are not published.",
-      "evidence_status": "Joint company announcement of commercial launch; operating performance is not independently documented in the release.",
-      "published_at": "2026-11-16",
-      "organization": "Pony.ai; Toyota",
+      "id": "globalfoundries-robot-fleet",
+      "title": "GlobalFoundries expands Spot fleet and prepares first chip-fab trials for Atlas",
+      "summary": "GlobalFoundries will expand Spot quadruped deployments across semiconductor sites in the United States, Germany and Singapore. It also plans to begin Atlas humanoid trials in early 2027, although no specific Atlas task has been named.",
+      "details": "Boston Dynamics and GlobalFoundries announced an expanded semiconductor-fab robotics program on November 17. Spot will perform automated rounds and collect equipment data at sites in New York, Vermont, Dresden and Singapore. GlobalFoundries will also become the first Atlas customer outside the automotive industry, but onsite humanoid testing is scheduled only for early 2027.",
+      "technical_novelty": "Two Spots in Singapore have traveled nearly 900 kilometers and completed more than 90,000 inspections in sub-fab areas since April, according to the companies, with a 99% mission success rate. After hardware and software updates, 875 routine inspections were redeployed in two weeks, and GlobalFoundries plans to more than double that number. The release does not define mission success or disclose interventions and downtime.",
+      "engineering_impact": "Spot expansion follows four years with the customer and a measured volume of rounds, making it more mature than the future Atlas pilot. Economics depend on avoided downtime, support cost and the share of inspections that need no repeat visit by a person. The humanoid first needs a task where flexibility justifies integration effort and early-product risk.",
+      "limitations": "The Atlas program starts with a skills-development workshop to identify use cases, assess site readiness and integration needs, and begin training for specific actions. That is not yet humanoid production work or an order for a stated robot count. The confirmed operating deployment concerns Spot; Atlas remains a planned trial with tasks still to be selected.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-17",
+      "organization": "Boston Dynamics; GlobalFoundries",
       "source_ids": [
-        "pony-toyota-1116"
+        "boston-gf-1117",
+        "gf-boston-1117"
       ],
       "time_window": "72h",
-      "body": "Pony.ai and Toyota announced on November 16 that their jointly developed seventh-generation bZ4X robotaxi had entered fully driverless commercial service in Guangzhou. Passengers can hail it around the clock through PonyPilot and partner mini-programs. The model joined an operating commercial fleet after vehicle development, mass production, testing and validation.\n\nThe vehicle was engineered for Level 4 autonomy, in which the automated system performs the driving task within a defined operating domain. The partners emphasize redundancy and fail-operational capability intended to preserve safe operation after a component failure. The first production vehicle left the line in February. Scaling also requires charging, maintenance and routine fleet service rather than model updates alone.\n\nCommercial service joins the vehicle, software, charging, maintenance and passenger operations into one product. Economics will depend not just on fleet size but on paid trips, empty mileage, charging downtime, remote support and the permitted operating area.\n\nThe companies target roughly 1,000 bZ4X robotaxis across major Chinese cities, but that is a future plan. The release gives no current vehicle count, trip count, service area, crash rate or remote-intervention frequency. The confirmed change is the commercial introduction of one production model in Guangzhou. Comparative safety and availability require operational data that the announcement does not contain.",
+      "body": "Boston Dynamics and GlobalFoundries announced an expanded semiconductor-fab robotics program on November 17. Spot will perform automated rounds and collect equipment data at sites in New York, Vermont, Dresden and Singapore. GlobalFoundries will also become the first Atlas customer outside the automotive industry, but onsite humanoid testing is scheduled only for early 2027.\n\nTwo Spots in Singapore have traveled nearly 900 kilometers and completed more than 90,000 inspections in sub-fab areas since April, according to the companies, with a 99% mission success rate. After hardware and software updates, 875 routine inspections were redeployed in two weeks, and GlobalFoundries plans to more than double that number. The release does not define mission success or disclose interventions and downtime.\n\nSpot expansion follows four years with the customer and a measured volume of rounds, making it more mature than the future Atlas pilot. Economics depend on avoided downtime, support cost and the share of inspections that need no repeat visit by a person. The humanoid first needs a task where flexibility justifies integration effort and early-product risk.\n\nThe Atlas program starts with a skills-development workshop to identify use cases, assess site readiness and integration needs, and begin training for specific actions. That is not yet humanoid production work or an order for a stated robot count. The confirmed operating deployment concerns Spot; Atlas remains a planned trial with tasks still to be selected.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Capital and infrastructure push robots into service",
-    "summary": "Robotics companies are moving from demonstrations into manufacturing, multi-site operations and paid services. Buyers now need integration cost, support capacity, supplier responsibility and reliable access to computing infrastructure.",
-    "implications": "Deployment decisions require workload, support cost, downtime, supplier responsibilities and clear conditions for adding sites or machines."
+    "title": "Deployment infrastructure becomes part of the product",
+    "summary": "Suppliers are building not only robots but also test sites, service teams and commercial-scaling structures. For buyers, maturity depends on integration cost, support, acceptance conditions and measured results at the operating site.",
+    "implications": "The main signal is that a robot is sold with testing, integration and support; hardware capability alone does not become a dependable service."
   },
   "sources": [
     {
-      "id": "genesis-1117",
-      "title": "Genesis AI Raises $500M Series A at $3.5B Valuation to Master Human-Level Dexterity in General-Purpose Robots and Deploy at Scale",
-      "url": "https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-3-5b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302941249.html",
-      "domain": "prnewswire.com",
-      "organization": "Genesis AI",
-      "published_at": "2026-11-17"
-    },
-    {
-      "id": "robotera-post-1117",
-      "title": "ROBOTERA Expands Humanoid Robot Deployment Across China Post's Guangdong Network, Reaching Eight Cities Province-Wide",
-      "url": "https://www.prnewswire.co.uk/news-releases/robotera-expands-humanoid-robot-deployment-across-china-posts-guangdong-network-reaching-eight-cities-province-wide-302941879.html",
-      "domain": "prnewswire.co.uk",
-      "organization": "ROBOTERA; China Post Group Guangdong Branch",
-      "published_at": "2026-11-17"
-    },
-    {
-      "id": "gix-sheba-1117",
-      "title": "Gix Deploys New Advanced AI-Powered L4 Autonomous Robot with Multi-Environment Navigation and Smart Access Capabilities at One of the World's Top Hospitals",
-      "url": "https://www.globenewswire.com/news-release/2026/11/17/3404625/0/en/gix-deploys-new-advanced-ai-powered-l4-autonomous-robot-with-multi-environment-navigation-and-smart-access-capabilities-at-one-of-the-world-s-top-hospitals.html",
+      "id": "hidonix-1118",
+      "title": "Hidonix Industries Officially Launches Hido II Rover to Automate Indoor Spatial Mapping",
+      "url": "https://www.globenewswire.com/news-release/2026/11/18/3405711/0/en/hidonix-industries-officially-launches-hido-ii-rover-to-automate-indoor-spatial-mapping.html",
       "domain": "globenewswire.com",
-      "organization": "Gix Internet; deliverz.ai; Sheba Medical Center; Ottonomy",
+      "organization": "Hidonix Industries",
+      "published_at": "2026-11-18"
+    },
+    {
+      "id": "boston-gf-1117",
+      "title": "Boston Dynamics & GlobalFoundries Expand Robotics Collaboration",
+      "url": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+      "domain": "bostondynamics.com",
+      "organization": "Boston Dynamics; GlobalFoundries",
       "published_at": "2026-11-17"
     },
     {
-      "id": "nvidia-committee-1117",
-      "title": "NVIDIA Board of Directors Establishes National Security and Export Control Oversight Committee",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
-      "domain": "nvidianews.nvidia.com",
-      "organization": "NVIDIA",
+      "id": "gf-boston-1117",
+      "title": "Boston Dynamics and GlobalFoundries expand robotics collaboration",
+      "url": "https://gf.com/news-and-events/news/boston-dynamics-and-globalfoundries-expand-robotics-collaboration/",
+      "domain": "gf.com",
+      "organization": "GlobalFoundries; Boston Dynamics",
       "published_at": "2026-11-17"
     },
     {
-      "id": "nvidia-reuters-1117",
-      "title": "Huang open to Nvidia return as scandal-hit chipmaker heads into results",
-      "url": "https://www.reuters.com/business/nvidia-board-forms-committee-national-security-export-control-oversight-2026-11-17/",
-      "domain": "reuters.com",
-      "organization": "Reuters",
-      "published_at": "2026-11-17"
+      "id": "imageone-lab-1118",
+      "title": "【フィジカルAIロボット】「IMOロボティクスLAB」を開設。イメージワン本社内をロボット展示・実証拠点としてGalbot製ヒューマノイドロボット「G1」の実機展示を開始。",
+      "url": "https://prtimes.jp/main/html/rd/p/000000054.000049889.html",
+      "domain": "prtimes.jp",
+      "organization": "ImageONE; Big Hands",
+      "published_at": "2026-11-18"
     },
     {
-      "id": "pony-toyota-1116",
-      "title": "PONY AI Inc. and Toyota Launch Fully Driverless Commercial Services with Gen-7 bZ4X Robotaxi",
-      "url": "https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-and-toyota-launch-fully-driverless-commercial",
-      "domain": "ir.pony.ai",
-      "organization": "Pony.ai; Toyota",
-      "published_at": "2026-11-16"
+      "id": "tactilia-1118",
+      "title": "SCHUNK spin-off for humanoid robot hands becomes TACTILIA Robotics",
+      "url": "https://schunk.com/us/en/news/schunk-spin-off-for-humanoid-robot-hands-becomes-tactilia-robotics/41857",
+      "domain": "schunk.com",
+      "organization": "SCHUNK; TACTILIA Robotics",
+      "published_at": "2026-11-18"
+    },
+    {
+      "id": "agility-leadership-1118",
+      "title": "Agility Robotics Evolves Executive Leadership Team to Support Next Phase of Growth as a Public Company",
+      "url": "https://investors.agilityrobotics.com/news-releases/news-release-details/agility-robotics-evolves-executive-leadership-team-support-next",
+      "domain": "investors.agilityrobotics.com",
+      "organization": "Agility Robotics",
+      "published_at": "2026-11-18"
     }
   ]
 }
