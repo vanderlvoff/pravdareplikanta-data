@@ -2,159 +2,159 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-18",
-  "issue_id": "daily-2026-11-18",
+  "issue_date": "2026-11-19",
+  "issue_id": "daily-2026-11-19",
   "edition": "enthusiast",
   "language": "ja",
-  "generated_at": "2026-11-17T21:17:31.399621Z",
-  "title": "ロボットが日常の仕事へ入る五つの動き",
-  "lead": "一回の目立つ動きだけでなく、郵便拠点、病院、タクシー、生産計画へロボットが入る過程を見ると、技術の現在地が分かる。五つのニュースから、すでに動く部分と、まだ足りない測定を確かめる。",
+  "generated_at": "2026-11-18T21:14:03.572374Z",
+  "title": "ロボットが一台だけではできない仕事へ進む",
+  "lead": "今日のニュースでは、センサーが地図を作り、四足ロボットが工場を巡回し、ハンドを複数の機体へ使い、試験拠点が仕事を探す。すでに動く部分と、まだ計画の部分を分けると技術の現在地が見える。",
   "news": [
     {
-      "id": "genesis-funding",
-      "title": "Genesis AI、ロボットEnoの生産拡大へ5億ドルを調達",
-      "summary": "Genesis AIは、企業価値を35億ドルとする5億ドルの資金調達を発表した。汎用ロボットEnoの生産、データ収集、モデル学習、顧客先での展開に資金を使う。",
-      "details": "同社はロボット本体、器用な手、動作記録用の手袋、GENEモデル、Genesis Worldシミュレーターを一体で開発する。",
-      "technical_novelty": "人の動作データ、仮想環境での学習、制御モデル、実機からのフィードバックを同じ開発循環につなぐ。",
-      "engineering_impact": "この方法の特徴は、人の動作記録、仮想環境での学習、一台の実機での確認をつなぐ点にある。仮想環境で覚えた動きを長い手作業の調整なしで実機へ移せるか、物や周囲の条件が変わっても使えるかが注目点になる。資金調達後に、同じ課題を繰り返した成功率が公開されれば進歩を比べやすい。",
-      "limitations": "能力と展開計画は会社の発表であり、独立した成功率や連続稼働時間は示されていない。",
-      "evidence_status": "資金調達と計画に関する会社発表。技術性能の独立検証は確認できない。",
-      "published_at": "2026-11-17",
-      "organization": "Genesis AI",
+      "id": "hido-mapping-rover",
+      "title": "屋内地図作成ローバーHido II、限定導入を開始",
+      "summary": "Hidonixは、建物内の空間データを集めるローバーHido IIの限定導入を始めた。技術者が現場で監督する中、設定した経路を走り、障害物を避け、階段を通り、ロボットアームで計測装置を配置する。",
+      "details": "Hidonix Industriesは11月18日、複雑な建物内を測量する移動ローバーHido IIの提供開始を発表した。CES 2026で試作機を公開した後、米国内の限られた施設を選び、早期導入を進める。現場には技術者が残って監督するため、発表内容は管理された運用であり、完全に無人の測量サービスではない。",
+      "technical_novelty": "ローバーは事前に設定した経路を進み、障害物を検出して経路を変更する。rocker-bogie方式の足回りで凹凸や一般的な階段を通り、その場での旋回と横移動も行う。ロボットアームは地磁気の計測装置を繰り返し同じ位置へ置く。2KステレオカメラとOuster製LiDARは、奥行き、障害物、周囲360度の点群を取得する。稼働時間は作業条件により約5～8時間とされる。",
+      "engineering_impact": "このローバーは普通の写真地図だけを作るのではない。IONという仕組みが建物内の位置を求めるため、空間情報と地磁気の特徴を集める。アームは計測装置の位置をそろえ、移動台はセンサーを別の場所や階へ運ぶ。同じ経路を何度走っても同じ地図になるかが、仕組みを理解する重要な試験になる。",
+      "limitations": "会社の比較試験では、IONアプリを使う手作業より地図作成時間が50%短く、位置誤差が最大5分の1になったという。ただし試験方法、施設数、経路の面積、誤差の分布は公表されていない。この数値は供給者による社内試験の結果で、量産機を第三者が評価した値ではない。",
+      "evidence_status": "組織の公式発表。結果と計画は発表者の説明であり、第三者による運用検証ではない。",
+      "published_at": "2026-11-18",
+      "organization": "Hidonix Industries",
       "source_ids": [
-        "genesis-1117"
+        "hidonix-1118"
       ],
       "time_window": "24h",
-      "body": "Genesis AIは11月17日、5億ドルの資金をSeries Aで調達したと発表した。資金調達後の企業価値は35億ドル。同社は汎用ロボットEnoの生産を増やし、学習データの収集、大規模なモデル学習、顧客先での試験を広げる計画だ。最初は製造、物流、研究所を対象とし、より広い顧客展開を2027年に進めるとしている。\n\n同社はロボット開発に必要な要素を一体で作る。手袋で人の手の動きを記録し、対応する関節を持つロボットの手へ移し、GENEというモデルを学習させる。Genesis Worldは仮想環境での学習と評価に使い、Enoが実機で結果を試す役目を持つ。データ、モデル、機械、試験を同じ開発循環につなぐ考え方だ。\n\nこの方法の特徴は、人の動作記録、仮想環境での学習、一台の実機での確認をつなぐ点にある。仮想環境で覚えた動きを長い手作業の調整なしで実機へ移せるか、物や周囲の条件が変わっても使えるかが注目点になる。資金調達後に、同じ課題を繰り返した成功率が公開されれば進歩を比べやすい。同じ物を扱う時だけ成功するのか、初めて見る物にも動きを調整できるのかで、汎用という言葉の意味は大きく変わる。公開される試験の課題設定に注目したい。\n\nただし、資金額はロボットの性能を表す数値ではない。発表には顧客先の設置台数、作業成功率、連続して自律運転した時間、人が介入した回数がない。長い複数手順の作業に関する評価も会社と投資家による説明である。確認できる事実は資金調達と生産・試験の拡大計画で、長時間作業の信頼性は今後の測定が必要だ。",
+      "body": "Hidonix Industriesは11月18日、複雑な建物内を測量する移動ローバーHido IIの提供開始を発表した。CES 2026で試作機を公開した後、米国内の限られた施設を選び、早期導入を進める。現場には技術者が残って監督するため、発表内容は管理された運用であり、完全に無人の測量サービスではない。\n\nローバーは事前に設定した経路を進み、障害物を検出して経路を変更する。rocker-bogie方式の足回りで凹凸や一般的な階段を通り、その場での旋回と横移動も行う。ロボットアームは地磁気の計測装置を繰り返し同じ位置へ置く。2KステレオカメラとOuster製LiDARは、奥行き、障害物、周囲360度の点群を取得する。稼働時間は作業条件により約5～8時間とされる。\n\nこのローバーは普通の写真地図だけを作るのではない。IONという仕組みが建物内の位置を求めるため、空間情報と地磁気の特徴を集める。アームは計測装置の位置をそろえ、移動台はセンサーを別の場所や階へ運ぶ。同じ経路を何度走っても同じ地図になるかが、仕組みを理解する重要な試験になる。 屋内測位に使う場合は、地図を作った日と利用する日の間に、家具、扉、設備、人の流れが変わっても位置を求められるか確認する。再測量が必要になる条件と、古い地図を検出する方法も運用設計に含める必要がある。測量速度だけでなく、完成した地図を使った位置推定の成功率まで測って初めて、全体の性能を評価できる。\n\n会社の比較試験では、IONアプリを使う手作業より地図作成時間が50%短く、位置誤差が最大5分の1になったという。ただし試験方法、施設数、経路の面積、誤差の分布は公表されていない。この数値は供給者による社内試験の結果で、量産機を第三者が評価した値ではない。",
       "image": null
     },
     {
-      "id": "robotera-postal",
-      "title": "ROBOTERAの人型ロボット、広東省11か所の郵便拠点で稼働",
-      "summary": "ROBOTERAは、広東省8都市の郵便拠点11か所に人型ロボットを展開したと発表した。3月に広州で始めた試験では、1時間に平均1500個を超える荷物を仕分けラインへ送ったとしている。",
-      "details": "ロボットは荷物をラインへ送り、形が不規則な物を除き、詰まりや取りこぼしを減らすため速度を調整する。",
-      "technical_novelty": "人型の機体、5本指の手、速度調整、異なる仕分けラインへの設定を組み合わせている。",
-      "engineering_impact": "このニュースは、一回の実演と、繰り返し使える仕組みの違いを示す。一台が整えた場所で速く動くだけでなく、11か所の異なるライン、包装、作業の速さへ合わせる必要がある。拠点ごとの記録が出れば、設定を変える時間と、人が助ける回数を比べられる。そこで初めて、別の場所へ本当に移せたかが分かる。",
-      "limitations": "毎時1500個という値はメーカー発表で、ロボット台数、観測時間、誤り率、独立検証は示されていない。",
-      "evidence_status": "メーカーと事業者による稼働報告。数値の独立監査は確認できない。",
-      "published_at": "2026-11-17",
-      "organization": "ROBOTERA; China Post Group Guangdong Branch",
+      "id": "agility-leadership-scale",
+      "title": "Agility Robotics、株式上場後の事業拡大へ経営体制を再編",
+      "summary": "Agility Roboticsは、11月のNasdaq上場後に社長、最高製品責任者、最高管理責任者を任命した。Digit 5の販売と導入拡大を進める体制だが、3億ドル超という注文額は契約条件を満たした場合の潜在価値である。",
+      "details": "Agility Roboticsは11月18日、Churchill Capital Corp XIとの企業結合を終え、11月4日にNasdaqへ上場した後の三人の人事を発表した。Daniel Diez氏は社長として商用事業を担当する。Christopher Sullivan氏は最高製品責任者となり、顧客支援との接続を保つ。Ana Lang氏は最高管理責任者として法務、人事、企業統治、リスクを担当する。",
+      "technical_novelty": "会社は、個別案件からより大きなDigit導入へ進む準備として人事を説明する。Diez氏が販売と提携、Sullivan氏が顧客現場を反映した製品戦略、Lang氏が上場企業の管理体制を担う。Agilityは実環境で6万5000時間を超える稼働と、Digit 5の複数年注文3億ドル超を示すが、後者は契約段階と製品仕様を満たした場合の潜在価値だ。",
+      "engineering_impact": "これは人型ロボットの新しい動作ではなく、より多くの機体を作り支える会社の仕組みに関するニュースだ。一台の試験とは別に、量産には販売、顧客支援、製品管理、リスク管理が必要になる。次に見るべきなのは肩書ではなく、納入と運用の測定値がどう変わるかだ。",
+      "limitations": "発表には、新しい契約、機体の納入、生産能力、信頼性の測定結果はない。人事から分かるのは、販売拡大、製品と導入現場の接続、企業管理を強化する方向である。将来の導入と注文価値は会社の見通しで、製造、技術、市場のリスクを含む。",
+      "evidence_status": "組織の公式発表。結果と計画は発表者の説明であり、第三者による運用検証ではない。",
+      "published_at": "2026-11-18",
+      "organization": "Agility Robotics",
       "source_ids": [
-        "robotera-post-1117"
+        "agility-leadership-1118"
       ],
       "time_window": "24h",
-      "body": "ROBOTERAは11月17日、中国広東省8都市の郵便拠点11か所で人型ロボットが稼働していると発表した。China Postの広東支社と共同で進める事業で、3月に広州の郵便区センターで試験を始めた。その後、荷物の流れや仕分けラインの形が異なるほかの拠点へ広げた。\n\n主な作業は、荷物を仕分けラインへ送ることだ。会社は、形が不規則な荷物を除く機能と、詰まり、衝突、取りこぼしを減らす速度調整も説明している。荷物を扱うため、自社開発の5本指の手を使う。最初の試験では、1時間に平均1500個を超える荷物を送ったと報告している。\n\nこのニュースは、一回の実演と、繰り返し使える仕組みの違いを示す。一台が整えた場所で速く動くだけでなく、11か所の異なるライン、包装、作業の速さへ合わせる必要がある。拠点ごとの記録が出れば、設定を変える時間と、人が助ける回数を比べられる。そこで初めて、別の場所へ本当に移せたかが分かる。人型である理由も確かめたい。人向けに作られた作業場所を変えずに使える利点がある一方、単純な専用装置の方が速く安定する場合もあるためだ。\n\n発表には、各拠点のロボット台数、測定時間、処理量のばらつき、誤りの割合、停止時間がない。したがって毎時1500個という値を11拠点すべての性能とは扱えない。重要な変化は、同じ作業を一台の実演から複数拠点へ広げた点にある。運用評価には拠点ごとの共通指標と人の介入記録が必要だ。",
+      "body": "Agility Roboticsは11月18日、Churchill Capital Corp XIとの企業結合を終え、11月4日にNasdaqへ上場した後の三人の人事を発表した。Daniel Diez氏は社長として商用事業を担当する。Christopher Sullivan氏は最高製品責任者となり、顧客支援との接続を保つ。Ana Lang氏は最高管理責任者として法務、人事、企業統治、リスクを担当する。\n\n会社は、個別案件からより大きなDigit導入へ進む準備として人事を説明する。Diez氏が販売と提携、Sullivan氏が顧客現場を反映した製品戦略、Lang氏が上場企業の管理体制を担う。Agilityは実環境で6万5000時間を超える稼働と、Digit 5の複数年注文3億ドル超を示すが、後者は契約段階と製品仕様を満たした場合の潜在価値だ。\n\nこれは人型ロボットの新しい動作ではなく、より多くの機体を作り支える会社の仕組みに関するニュースだ。一台の試験とは別に、量産には販売、顧客支援、製品管理、リスク管理が必要になる。次に見るべきなのは肩書ではなく、納入と運用の測定値がどう変わるかだ。 組織変更の効果を確かめるには、顧客から報告された問題が製品要件へ入るまでの日数、修正版の配布時間、同じ故障の再発率を継続して測る必要がある。生産台数だけを増やしても、保守部品、現場技術者、教育が追い付かなければ利用可能時間は下がる。上場後の管理体制がこれらの指標を公開するかが次の確認点になる。\n\n発表には、新しい契約、機体の納入、生産能力、信頼性の測定結果はない。人事から分かるのは、販売拡大、製品と導入現場の接続、企業管理を強化する方向である。将来の導入と注文価値は会社の見通しで、製造、技術、市場のリスクを含む。",
       "image": null
     },
     {
-      "id": "hospital-orchestration",
-      "title": "Sheba病院、異なるメーカーのロボットを一つの仕組みで管理",
-      "summary": "Gixは、Sheba医療センターでOttonomyの搬送ロボットが既存のロボットと共に稼働を始めたと発表した。deliverz.aiは、場所、優先度、空き状況に応じて、異なるメーカーのロボットと人の搬送担当へ仕事を割り当てる。",
-      "details": "抗がん剤、血液、骨髄などの院内搬送を対象に、仕事の割当てと監視を一か所から行う。",
-      "technical_novelty": "仕事を配る上位の仕組みを、各メーカー固有のロボット管理機能から分けている。",
-      "engineering_impact": "共通管理の仕組みは、ロボットのモーターを直接動かすのではなく、仕事ごとに担当を選ぶ配車係に近い。能力の異なる機体をどう比べ、通れない場所があった時に別の機体や人へどう戻すかが注目点だ。急ぎの薬と通常の荷物が重なった時の優先順位も、仕組みの働きを理解する手掛かりになる。",
-      "limitations": "Ottonomyの稼働開始は会社発表で、効果、拡張性、米国展開は将来の見通しとして書かれている。",
-      "evidence_status": "一病院での商用運用に関する供給者発表。独立した運用指標はない。",
-      "published_at": "2026-11-17",
-      "organization": "Gix Internet; deliverz.ai; Sheba Medical Center; Ottonomy",
+      "id": "tactilia-robot-hand",
+      "title": "SCHUNKの新会社TACTILIA、産業向けモジュール式ロボットハンドを開発",
+      "summary": "1月に設立されたSCHUNK Humanoid Roboticsは、TACTILIA Roboticsへ社名を変えた。人型ロボット、協働ロボット、移動マニピュレーターに使えるモジュール式ハンドを開発し、SCHUNKの15拠点で顧客試験を行う方針だ。",
+      "details": "SCHUNKは11月18日、1月に設立したSCHUNK Humanoid RoboticsがTACTILIA Roboticsとして事業を進めると発表した。ミュンヘンに置く独立会社で、生産と物流向けのモジュール式ロボットハンドを開発する。Markus Netzer氏が経営し、SCHUNKは把持技術、試験設備、産業顧客との接点を提供する。",
+      "technical_novelty": "開発では、機械構造、センサー、駆動装置、ソフトウェア、Physical AIの手法を一つの基盤へまとめる。特定の人型ロボットだけでなく、協働ロボットや移動マニピュレーターにも使う考えだ。世界15か所のSCHUNK CoLabで顧客の作業を試し、用途ごとに改良する計画を示した。",
+      "engineering_impact": "ロボットハンドは指を閉じるだけの装置ではない。接触を感じ、物に合う力を選び、状態を制御プログラムへ伝える必要がある。TACTILIAはこの仕組みを別の種類のロボットでも使えるようにしたい。どんな物を繰り返し持てるか、保守まで何時間動くかが注目点だ。",
+      "limitations": "発表には、新製品の指の数、自由度、力、精度、耐久回数、接続方式、価格、出荷日がない。「市場へ投入する」という説明は会社の方向で、量産出荷の確認ではない。確認できるのは、新社名、独立した組織、開発拠点、試験網を使う計画である。",
+      "evidence_status": "組織の公式発表。結果と計画は発表者の説明であり、第三者による運用検証ではない。",
+      "published_at": "2026-11-18",
+      "organization": "TACTILIA Robotics; SCHUNK",
       "source_ids": [
-        "gix-sheba-1117"
+        "tactilia-1118"
       ],
       "time_window": "24h",
-      "body": "Gixは11月17日、イスラエルのSheba医療センターでOttonomyの搬送ロボットが運用を始めたと発表した。すでに動いている別メーカーのロボットと同じ現場で働く。deliverz.aiは、場所、仕事の優先度、空いている機体や人を見て、院内搬送をロボットと人の担当者へ割り当てる。\n\n対象には抗がん剤、血液、骨髄の搬送が含まれる。技術課題は一台のロボットの移動制御より上の層にある。どの仕事をどの機体または人へ渡すかを決め、病院の運用規則と結び付ける必要がある。各メーカーの制御装置はそれぞれの機体を動かし、deliverz.aiは仕事と機体の状態をまとめて管理する。\n\n共通管理の仕組みは、ロボットのモーターを直接動かすのではなく、仕事ごとに担当を選ぶ配車係に近い。能力の異なる機体をどう比べ、通れない場所があった時に別の機体や人へどう戻すかが注目点だ。急ぎの薬と通常の荷物が重なった時の優先順位も、仕組みの働きを理解する手掛かりになる。一台の地図や操作方法を全機体へ押し付けず、各機体が得意な移動を保ったまま仕事だけを共通化できるかが、異機種連携の面白いところだ。\n\n会社は、搬送回数、割当てにかかる時間、完了率、故障からの復旧時間を公表していない。Ottonomyが混成チームで運用に入ったことは供給者の発表である。一社への依存を減らせるという効果や米国展開は、互換性、現場の条件、顧客の承認に左右される将来計画だ。",
+      "body": "SCHUNKは11月18日、1月に設立したSCHUNK Humanoid RoboticsがTACTILIA Roboticsとして事業を進めると発表した。ミュンヘンに置く独立会社で、生産と物流向けのモジュール式ロボットハンドを開発する。Markus Netzer氏が経営し、SCHUNKは把持技術、試験設備、産業顧客との接点を提供する。\n\n開発では、機械構造、センサー、駆動装置、ソフトウェア、Physical AIの手法を一つの基盤へまとめる。特定の人型ロボットだけでなく、協働ロボットや移動マニピュレーターにも使う考えだ。世界15か所のSCHUNK CoLabで顧客の作業を試し、用途ごとに改良する計画を示した。\n\nロボットハンドは指を閉じるだけの装置ではない。接触を感じ、物に合う力を選び、状態を制御プログラムへ伝える必要がある。TACTILIAはこの仕組みを別の種類のロボットでも使えるようにしたい。どんな物を繰り返し持てるか、保守まで何時間動くかが注目点だ。 別の物へ持ち替える試験では、手作業でプログラムを直さずに必要な学習例の数、把持時間、滑り、落下、駆動部が温まった後の力を記録する。指先だけでなく手首と前腕を含む負荷、腕側へ伝わる反力、非常停止後の復帰も重要だ。こうした数値が公開されれば、モジュール性が開発方針だけでなく製品の性質かを判断できる。接続する腕を変えた時にも、同じ物を同じ精度で扱えるか確認したい。\n\n発表には、新製品の指の数、自由度、力、精度、耐久回数、接続方式、価格、出荷日がない。「市場へ投入する」という説明は会社の方向で、量産出荷の確認ではない。確認できるのは、新社名、独立した組織、開発拠点、試験網を使う計画である。",
       "image": null
     },
     {
-      "id": "nvidia-export-oversight",
-      "title": "NVIDIA取締役会、安全保障と輸出管理を監督する委員会を設置",
-      "summary": "NVIDIAの取締役会は、安全保障、輸出規制の順守、世界貿易のリスクを監督する常設委員会を設けた。ジェンスン・フアン氏の辞任後の対応で、実務チームは委員会と暫定CEOのコレット・クレス氏へ報告する。",
-      "details": "委員長は取締役のスザンヌ・ノラ・ジョンソン氏で、少なくとも四半期ごとに会合を開き、外部専門家も使う。",
-      "technical_novelty": "Physical AIの開発者には、計算用半導体の供給、計算資源へのアクセス、開発と導入に伴う輸出規制の順守が関係する。",
-      "engineering_impact": "Physical AIは、アルゴリズムと機械だけで進むわけではない。計算用半導体、クラウドの計算資源、ソフトウェアを使える条件が研究の速さを決める。会社の監督体制も開発条件になり得るが、今回の決定だけで特定の技術が止まったとは言えない。今後は供給条件や利用可能な地域の実際の変更を見る必要がある。",
-      "limitations": "Reutersは調査中の関係と政治的圧力を報じた。疑惑は未確定で、取締役会はフアン氏の復帰を発表していない。",
-      "evidence_status": "NVIDIAの公式な委員会設置とReutersの独立報道。疑惑の一部は調査中。",
-      "published_at": "2026-11-17",
-      "organization": "NVIDIA",
+      "id": "imo-robotics-lab",
+      "title": "東京にロボット導入前の展示・実証拠点が開設",
+      "summary": "ImageONEとBig Handsは、ロボットの実機展示と導入前の検証を行うIMO Robotics LABを東京に開設した。最初にGalbot G1を展示し、今後は医療施設の業務を中心に概念実証を進める方針だ。",
+      "details": "ImageONEは11月18日、東京都品川区大崎の本社内にIMO Robotics LABを開設したと発表した。Big Handsがロボット製品、専門技術者、技術情報を提供し、ImageONEが施設、運営調整、マーケティング、顧客開拓を担当する。ロボットを実際に見て、導入候補の作業を検討する接点を作る。",
+      "technical_novelty": "拠点では、車輪で移動し二本の腕を持つGalbot G1の展示を始めた。今後は他社の人型ロボット、四足歩行ロボット、バイオニック機器、ロボットハンドも段階的に加える。展示だけでなく、概念実証、導入提案、技術者教育、セミナーを行い、最初は医療施設の業務を重視する。",
+      "engineering_impact": "この拠点は展示会と本当の職場の間にある。機体を見て、仕事を選び、病院や工場へ運ぶ前に制限を確かめられる。注目点は、見せるだけの実演が、先に結果を決めた試験へ進み、その後に毎日の仕事へつながるかどうかだ。",
+      "limitations": "施設の開設とG1の実機展示は会社発表で確認できる。一方、対象となる医療作業、顧客、試験日、成功条件、有料案件は示されていない。したがって導入前の作業選定と接続試験を行う場所はできたが、展示機が病院で日常業務を行った結果ではない。",
+      "evidence_status": "組織の公式発表。結果と計画は発表者の説明であり、第三者による運用検証ではない。",
+      "published_at": "2026-11-18",
+      "organization": "ImageONE; Big Hands",
       "source_ids": [
-        "nvidia-committee-1117",
-        "nvidia-reuters-1117"
+        "imageone-lab-1118"
       ],
       "time_window": "24h",
-      "body": "NVIDIAの取締役会は11月17日、安全保障、輸出管理、世界貿易のリスクを監督する常設委員会を設けた。委員長はスザンヌ・ノラ・ジョンソン氏で、少なくとも四半期ごとに会合を開き、外部専門家も使う。社内の安全保障と貿易管理のチームは、委員会と暫定CEOのコレット・クレス氏へ報告する。\n\nこの決定は、ジェンスン・フアン氏が11月12日にCEOと取締役を辞任した後に出た。Reutersは17日、フアン氏が取締役会の判断なら復帰を受け入れる考えを示した一方、取締役会は復帰を検討していないと関係者が話したと報じた。中国向け半導体輸出をめぐる関係や疑惑は調査中で、確定した結論ではない。\n\nPhysical AIは、アルゴリズムと機械だけで進むわけではない。計算用半導体、クラウドの計算資源、ソフトウェアを使える条件が研究の速さを決める。会社の監督体制も開発条件になり得るが、今回の決定だけで特定の技術が止まったとは言えない。今後は供給条件や利用可能な地域の実際の変更を見る必要がある。研究室が同じ実験を続けられるかは、半導体だけでなく対応するドライバーや学習用ソフトウェアにも左右される。機器とソフトの組合せを追う必要がある。\n\nPhysical AIの開発は、NVIDIAの計算用半導体、ソフトウェア、投資に大きく依存する。監督の強化は販売手続き、計算資源へのアクセス、取引先の順守確認に影響する可能性がある。ただし公式発表は製品仕様、開発計画、出荷日を変更していない。現時点では技術停止ではなく、経営と供給網のリスクとして扱うべき事実だ。",
+      "body": "ImageONEは11月18日、東京都品川区大崎の本社内にIMO Robotics LABを開設したと発表した。Big Handsがロボット製品、専門技術者、技術情報を提供し、ImageONEが施設、運営調整、マーケティング、顧客開拓を担当する。ロボットを実際に見て、導入候補の作業を検討する接点を作る。\n\n拠点では、車輪で移動し二本の腕を持つGalbot G1の展示を始めた。今後は他社の人型ロボット、四足歩行ロボット、バイオニック機器、ロボットハンドも段階的に加える。展示だけでなく、概念実証、導入提案、技術者教育、セミナーを行い、最初は医療施設の業務を重視する。\n\nこの拠点は展示会と本当の職場の間にある。機体を見て、仕事を選び、病院や工場へ運ぶ前に制限を確かめられる。注目点は、見せるだけの実演が、先に結果を決めた試験へ進み、その後に毎日の仕事へつながるかどうかだ。 今後の概念実証は、見せる実演ではなく、試行回数、成功率、人の介入、停止時間、施設側で変更した設備を記録して終える必要がある。医療物資を扱うなら、受け渡した人、時刻、温度条件、誤配送時の回収手順も含める。後の顧客は、その記録から繰り返せる部分と、準備した場面や供給者の専門家に依存した部分を区別できる。試験後に設定と結果を保存し、別の日や別の機体で再現することも重要だ。 結果を同じ形式で保存すれば、後の試験とも比較できる。\n\n施設の開設とG1の実機展示は会社発表で確認できる。一方、対象となる医療作業、顧客、試験日、成功条件、有料案件は示されていない。したがって導入前の作業選定と接続試験を行う場所はできたが、展示機が病院で日常業務を行った結果ではない。",
       "image": null
     },
     {
-      "id": "pony-toyota-robotaxi",
-      "title": "Pony.aiとトヨタ、bZ4Xの無人タクシーを商用運行",
-      "summary": "Pony.aiとトヨタは、広州で第7世代bZ4Xロボタクシーの完全無人による商用運行を始めた。24時間呼び出せるとし、中国の主要都市で約1000台を展開する計画を示した。",
-      "details": "自動運転レベル4向けに開発し、一部の機器が故障しても安全な動作を続けるための多重化を組み込んだ。",
-      "technical_novelty": "規模を広げるには運転モデルだけでなく、量産、充電、整備、日々の車両管理を一体で運用する必要がある。",
-      "engineering_impact": "自動運転レベル4は、どこでも走れるという意味ではない。決められた地域や天候などの条件の中で、システムが運転を担当する。運行地域の境界、苦手な天候、停止する場面、遠隔担当者へ助けを求める条件が分かれば、今回の開始規模を理解しやすい。乗車できる時間と整備で止まる時間も重要だ。",
-      "limitations": "約1000台は将来計画で、事故率、遠隔操作の介入回数、利用可能な地域は示されていない。",
-      "evidence_status": "両社による商用開始の発表。運行性能を示す独立データはない。",
-      "published_at": "2026-11-16",
-      "organization": "Pony.ai; Toyota",
+      "id": "globalfoundries-robot-fleet",
+      "title": "GlobalFoundries、Spotを世界の半導体工場へ拡大しAtlas試験を準備",
+      "summary": "GlobalFoundriesは、米国、ドイツ、シンガポールの半導体工場で四足歩行ロボットSpotの利用を広げる。人型ロボットAtlasは2027年初めに試験を始める計画だが、担当する具体的な作業はまだ決まっていない。",
+      "details": "Boston DynamicsとGlobalFoundriesは11月17日、半導体工場のロボット利用を拡大すると発表した。Spotはニューヨーク州、バーモント州、ドレスデン、シンガポールの施設で、自動巡回と設備データの収集を行う。GlobalFoundriesは自動車業界以外で初めてAtlasを試す顧客になるが、現場試験は2027年初めの予定だ。",
+      "technical_novelty": "シンガポールのSpot二台は4月以降、約900キロを移動し、製造室の下にある設備区域で9万回を超える点検を終えた。両社は任務成功率99%と説明する。機器とソフトウェアの更新後、875件の定期点検を二週間でロボットへ移し、今後は倍以上に増やす計画だ。ただし成功の定義、人の介入回数、停止時間は公表されていない。",
+      "engineering_impact": "二種類のロボットは別の段階にいる。Spotはすでに設備区域を巡回してデータを集めるが、Atlasは工場と候補作業をこれから学ぶ。「試験」は導入と同じではない。最初に動作を選び、作業場所を整え、安全を確かめてから、毎日の仕事へ進むことが分かる例だ。",
+      "limitations": "Atlasの計画は、技能開発のワークショップから始まる。候補作業を探し、施設の準備、接続条件、具体的な動作の学習を確認する。これは人型ロボットが生産作業に入ったという発表ではなく、台数の注文でもない。現在の実運用はSpotで、Atlasは作業を選ぶ前の試験計画にある。",
+      "evidence_status": "組織の公式発表。結果と計画は発表者の説明であり、第三者による運用検証ではない。",
+      "published_at": "2026-11-17",
+      "organization": "Boston Dynamics; GlobalFoundries",
       "source_ids": [
-        "pony-toyota-1116"
+        "boston-gf-1117",
+        "gf-boston-1117"
       ],
       "time_window": "72h",
-      "body": "Pony.aiとトヨタは11月16日、共同開発した第7世代bZ4Xロボタクシーが広州で完全無人の商用運行を始めたと発表した。利用者はPonyPilotや提携サービスのミニアプリから24時間呼び出せる。車両開発、量産、試験、確認を経て、すでに動いている商用車両群へ加わった。\n\nこの車は自動運転レベル4向けに設計された。決められた運行条件の中では、自動運転システムが人に代わって運転する。両社は、一部の機器が故障しても安全な動作を続けるための多重化を組み込んだと説明する。最初の量産車は2月に完成した。規模を広げるには充電、整備、日々の車両管理も必要になる。\n\n自動運転レベル4は、どこでも走れるという意味ではない。決められた地域や天候などの条件の中で、システムが運転を担当する。運行地域の境界、苦手な天候、停止する場面、遠隔担当者へ助けを求める条件が分かれば、今回の開始規模を理解しやすい。乗車できる時間と整備で止まる時間も重要だ。一台が走れることと、利用者がいつでも呼べることは別の課題だ。車両の配置、充電、清掃、故障対応まで含めて、初めて交通サービスになる。\n\n両社は中国の主要都市で約1000台を展開する計画だが、これは将来の目標である。発表には現在の台数、走行回数、利用地域、事故率、遠隔操作の介入回数がない。確認できる変化は、量産された一つの車種が広州の有料サービスに入ったことだ。安全性と利用可能時間の比較には今後の運行データが必要になる。",
+      "body": "Boston DynamicsとGlobalFoundriesは11月17日、半導体工場のロボット利用を拡大すると発表した。Spotはニューヨーク州、バーモント州、ドレスデン、シンガポールの施設で、自動巡回と設備データの収集を行う。GlobalFoundriesは自動車業界以外で初めてAtlasを試す顧客になるが、現場試験は2027年初めの予定だ。\n\nシンガポールのSpot二台は4月以降、約900キロを移動し、製造室の下にある設備区域で9万回を超える点検を終えた。両社は任務成功率99%と説明する。機器とソフトウェアの更新後、875件の定期点検を二週間でロボットへ移し、今後は倍以上に増やす計画だ。ただし成功の定義、人の介入回数、停止時間は公表されていない。\n\n二種類のロボットは別の段階にいる。Spotはすでに設備区域を巡回してデータを集めるが、Atlasは工場と候補作業をこれから学ぶ。「試験」は導入と同じではない。最初に動作を選び、作業場所を整え、安全を確かめてから、毎日の仕事へ進むことが分かる例だ。 半導体工場では、ロボットが止まることだけでなく、測定漏れや誤った警報も生産へ影響する。点検結果を設備の保守記録へ自動で結び付け、人が確認した結果との差を残す必要がある。Atlasについては、候補作業ごとに人の作業時間、工具、部品、清浄度、安全距離を基準として記録し、導入前後を比較できるようにする。\n\nAtlasの計画は、技能開発のワークショップから始まる。候補作業を探し、施設の準備、接続条件、具体的な動作の学習を確認する。これは人型ロボットが生産作業に入ったという発表ではなく、台数の注文でもない。現在の実運用はSpotで、Atlasは作業を選ぶ前の試験計画にある。",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "ロボットが日常の仕事へ入る五つの動き",
-    "summary": "一回の目立つ動きだけでなく、郵便拠点、病院、タクシー、生産計画へロボットが入る過程を見ると、技術の現在地が分かる。五つのニュースから、すでに動く部分と、まだ足りない測定を確かめる。",
-    "implications": "注目点は、どの部分が実際の現場で動き、何を数値で測り、どの情報がまだ開発者の発表だけなのかということだ。"
+    "title": "ロボットが一台だけではできない仕事へ進む",
+    "summary": "今日のニュースでは、センサーが地図を作り、四足ロボットが工場を巡回し、ハンドを複数の機体へ使い、試験拠点が仕事を探す。すでに動く部分と、まだ計画の部分を分けると技術の現在地が見える。",
+    "implications": "主要な信号は、ロボットの価値が職場、人、データとのつながりから生まれることだ。見た目より、計画、試験、運用のどの段階にいるかが重要になる。"
   },
   "sources": [
     {
-      "id": "genesis-1117",
-      "title": "Genesis AI Raises $500M Series A at $3.5B Valuation to Master Human-Level Dexterity in General-Purpose Robots and Deploy at Scale",
-      "url": "https://www.prnewswire.com/news-releases/genesis-ai-raises-500m-series-a-at-3-5b-valuation-to-master-human-level-dexterity-in-general-purpose-robots-and-deploy-at-scale-302941249.html",
-      "domain": "prnewswire.com",
-      "organization": "Genesis AI",
-      "published_at": "2026-11-17"
-    },
-    {
-      "id": "robotera-post-1117",
-      "title": "ROBOTERA Expands Humanoid Robot Deployment Across China Post's Guangdong Network, Reaching Eight Cities Province-Wide",
-      "url": "https://www.prnewswire.co.uk/news-releases/robotera-expands-humanoid-robot-deployment-across-china-posts-guangdong-network-reaching-eight-cities-province-wide-302941879.html",
-      "domain": "prnewswire.co.uk",
-      "organization": "ROBOTERA; China Post Group Guangdong Branch",
-      "published_at": "2026-11-17"
-    },
-    {
-      "id": "gix-sheba-1117",
-      "title": "Gix Deploys New Advanced AI-Powered L4 Autonomous Robot with Multi-Environment Navigation and Smart Access Capabilities at One of the World's Top Hospitals",
-      "url": "https://www.globenewswire.com/news-release/2026/11/17/3404625/0/en/gix-deploys-new-advanced-ai-powered-l4-autonomous-robot-with-multi-environment-navigation-and-smart-access-capabilities-at-one-of-the-world-s-top-hospitals.html",
+      "id": "hidonix-1118",
+      "title": "Hidonix Industries Officially Launches Hido II Rover to Automate Indoor Spatial Mapping",
+      "url": "https://www.globenewswire.com/news-release/2026/11/18/3405711/0/en/hidonix-industries-officially-launches-hido-ii-rover-to-automate-indoor-spatial-mapping.html",
       "domain": "globenewswire.com",
-      "organization": "Gix Internet; deliverz.ai; Sheba Medical Center; Ottonomy",
+      "organization": "Hidonix Industries",
+      "published_at": "2026-11-18"
+    },
+    {
+      "id": "boston-gf-1117",
+      "title": "Boston Dynamics & GlobalFoundries Expand Robotics Collaboration",
+      "url": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+      "domain": "bostondynamics.com",
+      "organization": "Boston Dynamics; GlobalFoundries",
       "published_at": "2026-11-17"
     },
     {
-      "id": "nvidia-committee-1117",
-      "title": "NVIDIA Board of Directors Establishes National Security and Export Control Oversight Committee",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-board-of-directors-establishes-national-security-and-export-control-oversight-committee",
-      "domain": "nvidianews.nvidia.com",
-      "organization": "NVIDIA",
+      "id": "gf-boston-1117",
+      "title": "Boston Dynamics and GlobalFoundries expand robotics collaboration",
+      "url": "https://gf.com/news-and-events/news/boston-dynamics-and-globalfoundries-expand-robotics-collaboration/",
+      "domain": "gf.com",
+      "organization": "GlobalFoundries; Boston Dynamics",
       "published_at": "2026-11-17"
     },
     {
-      "id": "nvidia-reuters-1117",
-      "title": "Huang open to Nvidia return as scandal-hit chipmaker heads into results",
-      "url": "https://www.reuters.com/business/nvidia-board-forms-committee-national-security-export-control-oversight-2026-11-17/",
-      "domain": "reuters.com",
-      "organization": "Reuters",
-      "published_at": "2026-11-17"
+      "id": "imageone-lab-1118",
+      "title": "【フィジカルAIロボット】「IMOロボティクスLAB」を開設。イメージワン本社内をロボット展示・実証拠点としてGalbot製ヒューマノイドロボット「G1」の実機展示を開始。",
+      "url": "https://prtimes.jp/main/html/rd/p/000000054.000049889.html",
+      "domain": "prtimes.jp",
+      "organization": "ImageONE; Big Hands",
+      "published_at": "2026-11-18"
     },
     {
-      "id": "pony-toyota-1116",
-      "title": "PONY AI Inc. and Toyota Launch Fully Driverless Commercial Services with Gen-7 bZ4X Robotaxi",
-      "url": "https://ir.pony.ai/news-releases/news-release-details/pony-ai-inc-and-toyota-launch-fully-driverless-commercial",
-      "domain": "ir.pony.ai",
-      "organization": "Pony.ai; Toyota",
-      "published_at": "2026-11-16"
+      "id": "tactilia-1118",
+      "title": "SCHUNK spin-off for humanoid robot hands becomes TACTILIA Robotics",
+      "url": "https://schunk.com/us/en/news/schunk-spin-off-for-humanoid-robot-hands-becomes-tactilia-robotics/41857",
+      "domain": "schunk.com",
+      "organization": "SCHUNK; TACTILIA Robotics",
+      "published_at": "2026-11-18"
+    },
+    {
+      "id": "agility-leadership-1118",
+      "title": "Agility Robotics Evolves Executive Leadership Team to Support Next Phase of Growth as a Public Company",
+      "url": "https://investors.agilityrobotics.com/news-releases/news-release-details/agility-robotics-evolves-executive-leadership-team-support-next",
+      "domain": "investors.agilityrobotics.com",
+      "organization": "Agility Robotics",
+      "published_at": "2026-11-18"
     }
   ]
 }

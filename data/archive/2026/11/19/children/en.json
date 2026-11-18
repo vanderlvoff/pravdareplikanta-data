@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-19",
+  "issue_id": "daily-2026-11-19",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-18T21:14:03.572374Z",
+  "title": "Robots take on jobs one step at a time",
+  "lead": "Some robots already inspect factories, others are only preparing for trials, and new machines need hands and places to test them. Each story follows a specific job, a measured result and something the developers have not yet checked.",
+  "news": [
+    {
+      "id": "hido-mapping-rover",
+      "title": "A rover follows a route and maps a building",
+      "summary": "A new rover travels along a prepared route inside a building and gathers data for a map. A technician supervises while the machine avoids obstacles, climbs stairs and positions a measuring device with its robotic arm.",
+      "details": "Mapping a large building requires moving measuring instruments across floors and stairs. Hidonix has started a limited program for testing its Hido II rover at selected sites in the United States. The small wheeled machine surveys indoor spaces. It follows a prepared route and gathers data that can help a system locate people or equipment inside a building. A person stays on site to supervise it.",
+      "technical_novelty": "The rover has suspension for uneven floors and stairs, cameras, a laser distance sensor and an arm carrying an acquisition module. The arm places the instrument in a repeatable position so measurements can be compared. The company says a charge supports about five to eight hours, depending on the work.",
+      "engineering_impact": "A new rover travels along a prepared route inside a building and gathers data for a map. A technician supervises while the machine avoids obstacles, climbs stairs and positions a measuring device with its robotic arm.",
+      "limitations": "In its own comparison, Hidonix says the rover mapped an area in half the time of a manual method and produced positioning error up to five times lower. The company did not state how many buildings or repeated trials were used. The confirmed event is the limited launch; performance across different sites still needs measurement. A repeated run can show whether the map stays consistent after furniture moves or doors change position.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-18",
+      "organization": "Hidonix Industries",
+      "source_ids": [
+        "hidonix-1118"
+      ],
+      "time_window": "24h",
+      "body": "Mapping a large building requires moving measuring instruments across floors and stairs. Hidonix has started a limited program for testing its Hido II rover at selected sites in the United States. The small wheeled machine surveys indoor spaces. It follows a prepared route and gathers data that can help a system locate people or equipment inside a building. A person stays on site to supervise it.\n\nThe rover has suspension for uneven floors and stairs, cameras, a laser distance sensor and an arm carrying an acquisition module. The arm places the instrument in a repeatable position so measurements can be compared. The company says a charge supports about five to eight hours, depending on the work.\n\nIn its own comparison, Hidonix says the rover mapped an area in half the time of a manual method and produced positioning error up to five times lower. The company did not state how many buildings or repeated trials were used. The confirmed event is the limited launch; performance across different sites still needs measurement. A repeated run can show whether the map stays consistent after furniture moves or doors change position.",
+      "image": null
+    },
+    {
+      "id": "agility-leadership-scale",
+      "title": "A humanoid company divides responsibility for growth",
+      "summary": "Agility Robotics appointed leaders for sales, product and company operations after listing on the stock market. They are meant to help build and support more Digit robots, but the announcement does not confirm a new delivery.",
+      "details": "A company building more robots needs separate responsibility for the product, customers and safe operations. Agility Robotics makes the human-shaped Digit robot and recently became a public company whose shares trade on a stock market. It has now appointed three leaders: one for sales, one for the product and customers, and one for rules, employees and risk.",
+      "technical_novelty": "Building more robots requires more than improving mechanics and software. A company must manufacture machines on time, install them, repair them and record problems. Agility reports more than 65,000 hours of real-world robot operation, although this release does not explain which tasks and conditions make up that total.",
+      "engineering_impact": "Agility Robotics appointed leaders for sales, product and company operations after listing on the stock market. They are meant to help build and support more Digit robots, but the announcement does not confirm a new delivery.",
+      "limitations": "The announcement also mentions orders with potential value above $300 million. That value depends on contract milestones and product requirements. The appointments show a plan to grow, but they are not a new robot delivery or evidence that Digit has become more reliable. The next clear result is how many robots arrive on time and how quickly customer-site problems are corrected.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-18",
+      "organization": "Agility Robotics",
+      "source_ids": [
+        "agility-leadership-1118"
+      ],
+      "time_window": "24h",
+      "body": "A company building more robots needs separate responsibility for the product, customers and safe operations. Agility Robotics makes the human-shaped Digit robot and recently became a public company whose shares trade on a stock market. It has now appointed three leaders: one for sales, one for the product and customers, and one for rules, employees and risk.\n\nBuilding more robots requires more than improving mechanics and software. A company must manufacture machines on time, install them, repair them and record problems. Agility reports more than 65,000 hours of real-world robot operation, although this release does not explain which tasks and conditions make up that total.\n\nThe announcement also mentions orders with potential value above $300 million. That value depends on contract milestones and product requirements. The appointments show a plan to grow, but they are not a new robot delivery or evidence that Digit has become more reliable. The next clear result is how many robots arrive on time and how quickly customer-site problems are corrected.",
+      "image": null
+    },
+    {
+      "id": "tactilia-robot-hand",
+      "title": "A new company is building a hand for different robots",
+      "summary": "Germany's TACTILIA is developing a modular robot hand for factory and warehouse jobs. It plans to test the hand with customers at fifteen SCHUNK application centers.",
+      "details": "A robot needs a hand that senses contact and controls force before it can handle ordinary objects. SCHUNK separated a robot-hand team into a company now called TACTILIA Robotics. Based in Munich, it is making a hand for several kinds of machines, including humanoids, factory arms and mobile manipulators.",
+      "technical_novelty": "A robotic hand must do more than close its fingers. It needs to notice contact, choose force and hold objects with different shapes. The team is combining mechanics, sensors, motors and software, and plans customer tests at fifteen application centers.",
+      "engineering_impact": "Germany's TACTILIA is developing a modular robot hand for factory and warehouse jobs. It plans to test the hand with customers at fifteen SCHUNK application centers.",
+      "limitations": "The company has not published the new hand's exact design, force, lifetime, price or delivery date. We know who is developing it and where tests can happen, but there is not yet enough evidence to judge reliability on a working production line. Future tests should count how often the hand holds different objects without dropping them and when its parts begin to wear.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-18",
+      "organization": "TACTILIA Robotics; SCHUNK",
+      "source_ids": [
+        "tactilia-1118"
+      ],
+      "time_window": "24h",
+      "body": "A robot needs a hand that senses contact and controls force before it can handle ordinary objects. SCHUNK separated a robot-hand team into a company now called TACTILIA Robotics. Based in Munich, it is making a hand for several kinds of machines, including humanoids, factory arms and mobile manipulators.\n\nA robotic hand must do more than close its fingers. It needs to notice contact, choose force and hold objects with different shapes. The team is combining mechanics, sensors, motors and software, and plans customer tests at fifteen application centers.\n\nThe company has not published the new hand's exact design, force, lifetime, price or delivery date. We know who is developing it and where tests can happen, but there is not yet enough evidence to judge reliability on a working production line. Future tests should count how often the hand holds different objects without dropping them and when its parts begin to wear.",
+      "image": null
+    },
+    {
+      "id": "imo-robotics-lab",
+      "title": "A Tokyo lab prepares robots for real jobs",
+      "summary": "A new Tokyo site lets organizations see and test different robots. Its first display is a two-armed mobile robot, and future trials are expected to focus first on work in medical facilities.",
+      "details": "Before a robot begins regular work, it helps to watch it move and test one clear, limited job. ImageONE and Big Hands have opened a Tokyo space for robot demonstrations and tests. Visitors can see physical machines and discuss jobs they might perform. Big Hands supplies robots and engineers, while ImageONE operates the site and works with possible customers.",
+      "technical_novelty": "The first display is Galbot G1, a mobile robot with two arms. The organizers later want to add other humanoids, quadrupeds and robotic hands. They also plan to train engineers and prepare small trials before deployment, especially for medical facilities.",
+      "engineering_impact": "A new Tokyo site lets organizations see and test different robots. Its first display is a two-armed mobile robot, and future trials are expected to focus first on work in medical facilities.",
+      "limitations": "No hospital, exact job or number of successful tasks has been announced. The robot has therefore not started regular medical work. The confirmed event is the opening of a place to select and test a job; results from future trials are still unknown. Each trial should name the job and attempt count beforehand, then report successes, stops and help from engineers.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-18",
+      "organization": "ImageONE; Big Hands",
+      "source_ids": [
+        "imageone-lab-1118"
+      ],
+      "time_window": "24h",
+      "body": "Before a robot begins regular work, it helps to watch it move and test one clear, limited job. ImageONE and Big Hands have opened a Tokyo space for robot demonstrations and tests. Visitors can see physical machines and discuss jobs they might perform. Big Hands supplies robots and engineers, while ImageONE operates the site and works with possible customers.\n\nThe first display is Galbot G1, a mobile robot with two arms. The organizers later want to add other humanoids, quadrupeds and robotic hands. They also plan to train engineers and prepare small trials before deployment, especially for medical facilities.\n\nNo hospital, exact job or number of successful tasks has been announced. The robot has therefore not started regular medical work. The confirmed event is the opening of a place to select and test a job; results from future trials are still unknown. Each trial should name the job and attempt count beforehand, then report successes, stops and help from engineers.",
+      "image": null
+    },
+    {
+      "id": "globalfoundries-robot-fleet",
+      "title": "Robots inspect chip factories while a humanoid waits for trials",
+      "summary": "Spot quadruped robots will inspect equipment at more GlobalFoundries sites. Atlas humanoid testing is planned for 2027, but the companies are still choosing its specific work.",
+      "details": "Chip-factory equipment needs repeated inspection without interrupting production. GlobalFoundries makes semiconductor chips and must inspect complicated factory equipment. The company is expanding use of the four-legged Spot robot in the United States, Germany and Singapore. Spot walks through technical areas and gathers measurements so specialists can monitor machinery.",
+      "technical_novelty": "Two Spots in Singapore have traveled nearly 900 kilometers and completed more than 90,000 inspection missions since April. The companies report a 99% mission success rate. That number does not say how many faults the robots discovered or how often a person helped them.",
+      "engineering_impact": "Spot quadruped robots will inspect equipment at more GlobalFoundries sites. Atlas humanoid testing is planned for 2027, but the companies are still choosing its specific work.",
+      "limitations": "The human-shaped Atlas robot has not started this work. In 2027, specialists plan to look for suitable tasks and test how Atlas could fit into the factory. Spot is therefore expanding an operating service, while Atlas remains at the preparation stage. A fair comparison must count completed rounds, useful faults found and occasions when a person had to help the robot.",
+      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
+      "published_at": "2026-11-17",
+      "organization": "Boston Dynamics; GlobalFoundries",
+      "source_ids": [
+        "boston-gf-1117",
+        "gf-boston-1117"
+      ],
+      "time_window": "72h",
+      "body": "Chip-factory equipment needs repeated inspection without interrupting production. GlobalFoundries makes semiconductor chips and must inspect complicated factory equipment. The company is expanding use of the four-legged Spot robot in the United States, Germany and Singapore. Spot walks through technical areas and gathers measurements so specialists can monitor machinery.\n\nTwo Spots in Singapore have traveled nearly 900 kilometers and completed more than 90,000 inspection missions since April. The companies report a 99% mission success rate. That number does not say how many faults the robots discovered or how often a person helped them.\n\nThe human-shaped Atlas robot has not started this work. In 2027, specialists plan to look for suitable tasks and test how Atlas could fit into the factory. Spot is therefore expanding an operating service, while Atlas remains at the preparation stage. A fair comparison must count completed rounds, useful faults found and occasions when a person had to help the robot.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Robots take on jobs one step at a time",
+    "summary": "Some robots already inspect factories, others are only preparing for trials, and new machines need hands and places to test them. Each story follows a specific job, a measured result and something the developers have not yet checked.",
+    "implications": "The main signal is that real work begins with a clear job, repeated attempts and an honest record of mistakes, not an impressive demonstration."
+  },
+  "sources": [
+    {
+      "id": "hidonix-1118",
+      "title": "Hidonix Industries Officially Launches Hido II Rover to Automate Indoor Spatial Mapping",
+      "url": "https://www.globenewswire.com/news-release/2026/11/18/3405711/0/en/hidonix-industries-officially-launches-hido-ii-rover-to-automate-indoor-spatial-mapping.html",
+      "domain": "globenewswire.com",
+      "organization": "Hidonix Industries",
+      "published_at": "2026-11-18"
+    },
+    {
+      "id": "boston-gf-1117",
+      "title": "Boston Dynamics & GlobalFoundries Expand Robotics Collaboration",
+      "url": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
+      "domain": "bostondynamics.com",
+      "organization": "Boston Dynamics; GlobalFoundries",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "gf-boston-1117",
+      "title": "Boston Dynamics and GlobalFoundries expand robotics collaboration",
+      "url": "https://gf.com/news-and-events/news/boston-dynamics-and-globalfoundries-expand-robotics-collaboration/",
+      "domain": "gf.com",
+      "organization": "GlobalFoundries; Boston Dynamics",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "imageone-lab-1118",
+      "title": "【フィジカルAIロボット】「IMOロボティクスLAB」を開設。イメージワン本社内をロボット展示・実証拠点としてGalbot製ヒューマノイドロボット「G1」の実機展示を開始。",
+      "url": "https://prtimes.jp/main/html/rd/p/000000054.000049889.html",
+      "domain": "prtimes.jp",
+      "organization": "ImageONE; Big Hands",
+      "published_at": "2026-11-18"
+    },
+    {
+      "id": "tactilia-1118",
+      "title": "SCHUNK spin-off for humanoid robot hands becomes TACTILIA Robotics",
+      "url": "https://schunk.com/us/en/news/schunk-spin-off-for-humanoid-robot-hands-becomes-tactilia-robotics/41857",
+      "domain": "schunk.com",
+      "organization": "SCHUNK; TACTILIA Robotics",
+      "published_at": "2026-11-18"
+    },
+    {
+      "id": "agility-leadership-1118",
+      "title": "Agility Robotics Evolves Executive Leadership Team to Support Next Phase of Growth as a Public Company",
+      "url": "https://investors.agilityrobotics.com/news-releases/news-release-details/agility-robotics-evolves-executive-leadership-team-support-next",
+      "domain": "investors.agilityrobotics.com",
+      "organization": "Agility Robotics",
+      "published_at": "2026-11-18"
+    }
+  ]
+}
