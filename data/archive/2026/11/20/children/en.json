@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-20",
+  "issue_id": "daily-2026-11-20",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-20T04:30:00Z",
+  "title": "How robots learn to complete jobs",
+  "lead": "Five stories show how robots learn hand movements, track progress and fly with tiny sensors, while companies and computer chips help make these ideas possible.",
+  "news": [
+    {
+      "id": "nvidia-california-subpoena",
+      "title": "Why powerful computer chips matter to robots",
+      "summary": "California officials are requesting information from Nvidia about a possible improper transfer of technology. The allegations have not been proved.",
+      "details": "On November 19, officials in California said they had asked computer-chip maker Nvidia for documents. They are investigating whether certain technology or confidential information may have been transferred improperly to China. Asking for documents does not prove that anyone broke the rules.",
+      "technical_novelty": "Powerful computer chips help researchers teach robots to understand images and choose actions. Many laboratories depend on them, which is why the investigation matters. But there is no evidence in this announcement that chip production or robot operation has stopped.",
+      "engineering_impact": "An investigation is a way of finding out what happened, not the same as a decision that someone is guilty. Any future effects on robotics will need to be checked separately.",
+      "limitations": "An investigation is a way of finding out what happened, not the same as a decision that someone is guilty. Any future effects on robotics will need to be checked separately.",
+      "evidence_status": "Reuters report of California attorney general's stated investigative action; underlying allegations are unresolved.",
+      "published_at": "2026-11-19",
+      "organization": "Nvidia; California Department of Justice",
+      "source_ids": [
+        "nvidia-reuters-1119"
+      ],
+      "time_window": "24h",
+      "body": "On November 19, officials in California said they had asked computer-chip maker Nvidia for documents. They are investigating whether certain technology or confidential information may have been transferred improperly to China. Asking for documents does not prove that anyone broke the rules.\n\nPowerful computer chips help researchers teach robots to understand images and choose actions. Many laboratories depend on them, which is why the investigation matters. But there is no evidence in this announcement that chip production or robot operation has stopped.\n\nAn investigation is a way of finding out what happened, not the same as a decision that someone is guilty. Any future effects on robotics will need to be checked separately.",
+      "image": null
+    },
+    {
+      "id": "marubun-realman-japan",
+      "title": "Robot arms will have a new seller in Japan",
+      "summary": "Marubun has agreed to sell RealMan Robotics equipment in Japan, including lightweight robot arms and remote-control tools.",
+      "details": "On November 19, Japanese company Marubun announced that it would sell robotic arms and other equipment made by China's RealMan Robotics. The products are intended for companies and researchers. Some tools let people operate machines from a distance.",
+      "technical_novelty": "One idea is to attach a robot arm to a four-legged machine. It could reach equipment in places that are unsafe for people. But the designers must connect electrical systems and make sure the moving parts do not collide.",
+      "engineering_impact": "This is an agreement to sell equipment, not a report that a completed robot has passed customer tests. Engineers still need to measure safety and reliability in real tasks.",
+      "limitations": "This is an agreement to sell equipment, not a report that a completed robot has passed customer tests. Engineers still need to measure safety and reliability in real tasks.",
+      "evidence_status": "Official Marubun company disclosure, not independent verification of robot field performance.",
+      "published_at": "2026-11-19",
+      "organization": "Marubun; RealMan Robotics",
+      "source_ids": [
+        "marubun-realman-1119"
+      ],
+      "time_window": "72h",
+      "body": "On November 19, Japanese company Marubun announced that it would sell robotic arms and other equipment made by China's RealMan Robotics. The products are intended for companies and researchers. Some tools let people operate machines from a distance.\n\nOne idea is to attach a robot arm to a four-legged machine. It could reach equipment in places that are unsafe for people. But the designers must connect electrical systems and make sure the moving parts do not collide.\n\nThis is an agreement to sell equipment, not a report that a completed robot has passed customer tests. Engineers still need to measure safety and reliability in real tasks.",
+      "image": null
+    },
+    {
+      "id": "grana-progress-rewards",
+      "title": "Can a robot tell when a job is getting done?",
+      "summary": "Researchers taught a program to estimate which steps of a task have been completed and which are still unfinished.",
+      "details": "Researchers have proposed a program that uses images to estimate how far a robot has progressed through a long task. Imagine placing several objects into a box in the correct order. The program tries to tell what has been done and what step remains.",
+      "technical_novelty": "The researchers used information from individual steps to train the system. They report early learning from 200 varied tasks and experiments involving five longer tasks. They call the research system Grana.",
+      "engineering_impact": "The results come from the team's experiments. A different object or environment could confuse the program, so much more testing is needed.",
+      "limitations": "The results come from the team's experiments. A different object or environment could confuse the program, so much more testing is needed.",
+      "evidence_status": "Author-reported arXiv preprint and experiments; independent replication not established.",
+      "published_at": "2026-11-18",
+      "organization": "Grana research team",
+      "source_ids": [
+        "grana-paper-1118"
+      ],
+      "time_window": "72h",
+      "body": "Researchers have proposed a program that uses images to estimate how far a robot has progressed through a long task. Imagine placing several objects into a box in the correct order. The program tries to tell what has been done and what step remains.\n\nThe researchers used information from individual steps to train the system. They report early learning from 200 varied tasks and experiments involving five longer tasks. They call the research system Grana.\n\nThe results come from the team's experiments. A different object or environment could confuse the program, so much more testing is needed.",
+      "image": null
+    },
+    {
+      "id": "shape-human-hand-learning",
+      "title": "Why copying a person's fingers is hard for robots",
+      "summary": "Researchers are teaching robot hands to turn a human demonstration into instructions for their own joints.",
+      "details": "When a person picks up an object, their fingers bend in a certain way. Robot fingers can have different shapes and joints. Watching a video of a person therefore does not tell the robot exactly how to control its motors.",
+      "technical_novelty": "Researchers built a system that learns from human movements and produces commands for robot joints. They tested it with a two-armed robot in six tasks. The system is called SHAPE.",
+      "engineering_impact": "The research team reported promising results under its test rules. This does not mean that every robot can pick up every object after seeing one video.",
+      "limitations": "The research team reported promising results under its test rules. This does not mean that every robot can pick up every object after seeing one video.",
+      "evidence_status": "Author-reported arXiv preprint; evaluation not independently reproduced.",
+      "published_at": "2026-11-18",
+      "organization": "SHAPE research team",
+      "source_ids": [
+        "shape-paper-1118"
+      ],
+      "time_window": "72h",
+      "body": "When a person picks up an object, their fingers bend in a certain way. Robot fingers can have different shapes and joints. Watching a video of a person therefore does not tell the robot exactly how to control its motors.\n\nResearchers built a system that learns from human movements and produces commands for robot joints. They tested it with a two-armed robot in six tasks. The system is called SHAPE.\n\nThe research team reported promising results under its test rules. This does not mean that every robot can pick up every object after seeing one video.",
+      "image": null
+    },
+    {
+      "id": "mit-microrobot-onboard-sensing",
+      "title": "A tiny flying robot senses its own movement",
+      "summary": "MIT researchers gave a miniature flying robot onboard sensors, although its electrical power still comes from outside.",
+      "details": "MIT researchers built a tiny robot that flaps its wings and carries sensors. Earlier versions depended on cameras in the laboratory to know their position. This version can estimate its movements using instruments it carries itself.",
+      "technical_novelty": "The team made the wings lift more weight and added electronics weighing only 244 milligrams. The sensors measure tilt, movement and height. In tests, the machine followed planned flight paths.",
+      "engineering_impact": "For now, it still needs an outside power supply. Researchers also want it to recognize obstacles. It is a step toward free flight, not yet a robot that can fly independently across a field.",
+      "limitations": "For now, it still needs an outside power supply. Researchers also want it to recognize obstacles. It is a step toward free flight, not yet a robot that can fly independently across a field.",
+      "evidence_status": "MIT institutional report about its researchers' experiment, with quantitative results attributed to the team.",
+      "published_at": "2026-11-18",
+      "organization": "MIT",
+      "source_ids": [
+        "mit-flying-robot-1118"
+      ],
+      "time_window": "72h",
+      "body": "MIT researchers built a tiny robot that flaps its wings and carries sensors. Earlier versions depended on cameras in the laboratory to know their position. This version can estimate its movements using instruments it carries itself.\n\nThe team made the wings lift more weight and added electronics weighing only 244 milligrams. The sensors measure tilt, movement and height. In tests, the machine followed planned flight paths.\n\nFor now, it still needs an outside power supply. Researchers also want it to recognize obstacles. It is a step toward free flight, not yet a robot that can fly independently across a field.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "What experiments actually show",
+    "summary": "Five stories show how robots learn hand movements, track progress and fly with tiny sensors, while companies and computer chips help make these ideas possible.",
+    "implications": "One demonstration does not prove a machine can do every job."
+  },
+  "sources": [
+    {
+      "id": "nvidia-reuters-1119",
+      "url": "https://www.reuters.com/legal/litigation/california-ag-subpoenas-nvidia-over-concerns-about-former-ceo-china-2026-11-19/",
+      "domain": "reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-19",
+      "title": "California AG subpoenas Nvidia over concerns about former CEO, China ties"
+    },
+    {
+      "id": "marubun-realman-1119",
+      "url": "https://kabuyoho-sls-disclose.ifis.co.jp/b5b/140120261119583264.pdf",
+      "domain": "kabuyoho-sls-disclose.ifis.co.jp",
+      "organization": "Marubun Corporation",
+      "published_at": "2026-11-19",
+      "title": "Marubun announces Japan distribution agreement with RealMan Robotics"
+    },
+    {
+      "id": "grana-paper-1118",
+      "url": "https://arxiv.org/abs/2611.24926",
+      "domain": "arxiv.org",
+      "organization": "Grana research authors",
+      "published_at": "2026-11-18",
+      "title": "Grana: Compositional Reward Modeling for Long-Horizon Robot Manipulation"
+    },
+    {
+      "id": "shape-paper-1118",
+      "url": "https://arxiv.org/abs/2611.24585",
+      "domain": "arxiv.org",
+      "organization": "SHAPE research authors",
+      "published_at": "2026-11-18",
+      "title": "SHAPE: Discrete Supervision and Parallel Continuous Streams for Learning Dexterous Manipulation from Egocentric Human Data"
+    },
+    {
+      "id": "mit-flying-robot-1118",
+      "url": "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118",
+      "domain": "news.mit.edu",
+      "organization": "Massachusetts Institute of Technology",
+      "published_at": "2026-11-18",
+      "title": "This featherweight, flying robot carries its own sensors and computers"
+    }
+  ]
+}

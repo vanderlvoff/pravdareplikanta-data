@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-20",
+  "issue_id": "daily-2026-11-20",
+  "edition": "children",
+  "language": "ja",
+  "generated_at": "2026-11-20T04:30:00Z",
+  "title": "ロボットはどうやって仕事を覚えるのか",
+  "lead": "仕事の進み具合を調べる方法、人の手を参考にする学習、小さな飛行ロボットの工夫を紹介する。会社の動きもロボット研究に関係している。",
+  "news": [
+    {
+      "id": "nvidia-california-subpoena",
+      "title": "ロボットに必要な強い計算機の部品",
+      "summary": "米国の役所がNVIDIAに資料を求めた。技術が決まりに反して渡されたか調べているが、違反が決まったわけではない。",
+      "details": "11月19日、米国カリフォルニア州の役所が、コンピューターの部品を作るNVIDIAに資料を出すよう求めた。ある技術や秘密の情報が中国へ正しくない方法で渡った可能性を調べている。これは、違反があったと決めたという意味ではない。",
+      "technical_novelty": "強力な計算機の部品は、ロボットに画像を理解させたり、動きを学ばせたりするために使われる。多くの研究者にとって大切な道具だ。でも今回の発表だけで、部品の生産が止まったとは言えない。",
+      "engineering_impact": "調査（ちょうさ）は何が起きたかを確かめるための作業だ。だれかが悪いと決まったわけではなく、今後の影響もまだ分からない。",
+      "limitations": "調査（ちょうさ）は何が起きたかを確かめるための作業だ。だれかが悪いと決まったわけではなく、今後の影響もまだ分からない。",
+      "evidence_status": "州司法長官の発言を報じたReutersの記事。疑惑は未確定。",
+      "published_at": "2026-11-19",
+      "organization": "NVIDIA、カリフォルニア州司法当局",
+      "source_ids": [
+        "nvidia-reuters-1119"
+      ],
+      "time_window": "24h",
+      "body": "11月19日、米国カリフォルニア州の役所が、コンピューターの部品を作るNVIDIAに資料を出すよう求めた。ある技術や秘密の情報が中国へ正しくない方法で渡った可能性を調べている。これは、違反があったと決めたという意味ではない。\n\n強力な計算機の部品は、ロボットに画像を理解させたり、動きを学ばせたりするために使われる。多くの研究者にとって大切な道具だ。でも今回の発表だけで、部品の生産が止まったとは言えない。\n\n調査（ちょうさ）は何が起きたかを確かめるための作業だ。だれかが悪いと決まったわけではなく、今後の影響もまだ分からない。",
+      "image": null
+    },
+    {
+      "id": "marubun-realman-japan",
+      "title": "日本で新しく売られるロボットの腕",
+      "summary": "日本の丸文が、海外で作られた軽いロボットアームなどを国内で販売すると発表した。",
+      "details": "11月19日、日本の会社である丸文は、中国のRealMan Roboticsが作ったロボットの腕などを売ると発表した。会社や研究所で使うための機器で、遠くから動きを操作する道具も含まれる。",
+      "technical_novelty": "4本脚で歩くロボットに腕を付ける案もある。人が近づくと危険な設備（せつび）に手を伸ばせるかもしれない。でも、2つの機械をつなぐだけでは不十分で、安全に動かす仕組みが必要だ。",
+      "engineering_impact": "今決まったのは販売の契約だ。実際の現場で何回仕事に成功できるかなどは、これから確かめる必要がある。",
+      "limitations": "今決まったのは販売の契約だ。実際の現場で何回仕事に成功できるかなどは、これから確かめる必要がある。",
+      "evidence_status": "丸文の公式発表。運用性能の独立評価ではない。",
+      "published_at": "2026-11-19",
+      "organization": "丸文、RealMan Robotics",
+      "source_ids": [
+        "marubun-realman-1119"
+      ],
+      "time_window": "72h",
+      "body": "11月19日、日本の会社である丸文は、中国のRealMan Roboticsが作ったロボットの腕などを売ると発表した。会社や研究所で使うための機器で、遠くから動きを操作する道具も含まれる。\n\n4本脚で歩くロボットに腕を付ける案もある。人が近づくと危険な設備（せつび）に手を伸ばせるかもしれない。でも、2つの機械をつなぐだけでは不十分で、安全に動かす仕組みが必要だ。\n\n今決まったのは販売の契約だ。実際の現場で何回仕事に成功できるかなどは、これから確かめる必要がある。",
+      "image": null
+    },
+    {
+      "id": "grana-progress-rewards",
+      "title": "ロボットは仕事が終わったか分かるかな",
+      "summary": "研究者は、仕事を小さな手順に分けて、どこまでできたかを調べる方法を考えた。",
+      "details": "ロボットが箱にいくつかの物を順番に入れるとしよう。腕を動かしただけでは仕事が進んだとは限らない。研究者はカメラの画像から、どの手順が終わったかを予想するプログラムを作った。",
+      "technical_novelty": "研究者は200種類の課題を使って学習させ、さらに5つの長い課題で試したと報告した。この方法の名前はGranaだ。終わった手順と今やっている手順を合わせて進み具合を考える。",
+      "engineering_impact": "まだ研究の実験結果であり、見たことのない物や場所でいつもうまくいくかは分からない。これからも試験が必要だ。",
+      "limitations": "まだ研究の実験結果であり、見たことのない物や場所でいつもうまくいくかは分からない。これからも試験が必要だ。",
+      "evidence_status": "著者のarXivプレプリント。独立した再現検証は未確認。",
+      "published_at": "2026-11-18",
+      "organization": "Grana研究チーム",
+      "source_ids": [
+        "grana-paper-1118"
+      ],
+      "time_window": "72h",
+      "body": "ロボットが箱にいくつかの物を順番に入れるとしよう。腕を動かしただけでは仕事が進んだとは限らない。研究者はカメラの画像から、どの手順が終わったかを予想するプログラムを作った。\n\n研究者は200種類の課題を使って学習させ、さらに5つの長い課題で試したと報告した。この方法の名前はGranaだ。終わった手順と今やっている手順を合わせて進み具合を考える。\n\nまだ研究の実験結果であり、見たことのない物や場所でいつもうまくいくかは分からない。これからも試験が必要だ。",
+      "image": null
+    },
+    {
+      "id": "shape-human-hand-learning",
+      "title": "人の手を見てロボットの指を動かすには",
+      "summary": "人の手とロボットの手は形が違う。研究者は、見せられた動きをロボット用の指示にする方法を考えた。",
+      "details": "人が物をつかむとき、指はいくつもの関節（かんせつ）で曲がる。でもロボットの手は人の手と同じ形ではない。そのため、人の動きを動画で見るだけでは、どのモーターを動かせばよいか分からない。",
+      "technical_novelty": "研究者は人の動きを参考に、ロボットの関節を動かす指示を作る仕組みを考えた。2本の腕を持つロボットを使い、6つの課題で試した。研究の名前はSHAPEだ。",
+      "engineering_impact": "研究では良い結果が報告されたが、どんな物でも一度見ただけで上手につかめるようになったわけではない。",
+      "limitations": "研究では良い結果が報告されたが、どんな物でも一度見ただけで上手につかめるようになったわけではない。",
+      "evidence_status": "arXiv掲載の著者報告。独立検証は未確認。",
+      "published_at": "2026-11-18",
+      "organization": "SHAPE研究チーム",
+      "source_ids": [
+        "shape-paper-1118"
+      ],
+      "time_window": "72h",
+      "body": "人が物をつかむとき、指はいくつもの関節（かんせつ）で曲がる。でもロボットの手は人の手と同じ形ではない。そのため、人の動きを動画で見るだけでは、どのモーターを動かせばよいか分からない。\n\n研究者は人の動きを参考に、ロボットの関節を動かす指示を作る仕組みを考えた。2本の腕を持つロボットを使い、6つの課題で試した。研究の名前はSHAPEだ。\n\n研究では良い結果が報告されたが、どんな物でも一度見ただけで上手につかめるようになったわけではない。",
+      "image": null
+    },
+    {
+      "id": "mit-microrobot-onboard-sensing",
+      "title": "小さな飛行ロボットが自分で飛び方を調べる",
+      "summary": "MITの研究者は、小さなロボットにセンサーを載せて飛行を調べられるようにした。電気はまだ外から送っている。",
+      "details": "MITの研究者は、羽を動かして飛ぶとても小さなロボットに、センサーを載せた。以前は研究室の外側に置いたカメラが必要だったが、今は自分でどのように動いているかを調べられる。",
+      "technical_novelty": "羽が持ち上げる力を強くし、重さ244ミリグラムの電子部品を載せた。センサーは体のかたむきや高さなどを測る。決められた道を飛ぶ実験にも取り組んだ。",
+      "engineering_impact": "電気はまだ外から送られるため、自由に遠くへ飛べない。障害物（しょうがいぶつ）を見つける機能も、これからの研究課題だ。",
+      "limitations": "電気はまだ外から送られるため、自由に遠くへ飛べない。障害物（しょうがいぶつ）を見つける機能も、これからの研究課題だ。",
+      "evidence_status": "MITによる研究発表。数値は研究チームの報告。",
+      "published_at": "2026-11-18",
+      "organization": "MIT",
+      "source_ids": [
+        "mit-flying-robot-1118"
+      ],
+      "time_window": "72h",
+      "body": "MITの研究者は、羽を動かして飛ぶとても小さなロボットに、センサーを載せた。以前は研究室の外側に置いたカメラが必要だったが、今は自分でどのように動いているかを調べられる。\n\n羽が持ち上げる力を強くし、重さ244ミリグラムの電子部品を載せた。センサーは体のかたむきや高さなどを測る。決められた道を飛ぶ実験にも取り組んだ。\n\n電気はまだ外から送られるため、自由に遠くへ飛べない。障害物（しょうがいぶつ）を見つける機能も、これからの研究課題だ。",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "実験で分かったこと",
+    "summary": "仕事の進み具合を調べる方法、人の手を参考にする学習、小さな飛行ロボットの工夫を紹介する。会社の動きもロボット研究に関係している。",
+    "implications": "一度できても、どんな場所でも成功するとは限らない。"
+  },
+  "sources": [
+    {
+      "id": "nvidia-reuters-1119",
+      "url": "https://www.reuters.com/legal/litigation/california-ag-subpoenas-nvidia-over-concerns-about-former-ceo-china-2026-11-19/",
+      "domain": "reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-19",
+      "title": "California AG subpoenas Nvidia over concerns about former CEO, China ties"
+    },
+    {
+      "id": "marubun-realman-1119",
+      "url": "https://kabuyoho-sls-disclose.ifis.co.jp/b5b/140120261119583264.pdf",
+      "domain": "kabuyoho-sls-disclose.ifis.co.jp",
+      "organization": "Marubun Corporation",
+      "published_at": "2026-11-19",
+      "title": "Marubun announces Japan distribution agreement with RealMan Robotics"
+    },
+    {
+      "id": "grana-paper-1118",
+      "url": "https://arxiv.org/abs/2611.24926",
+      "domain": "arxiv.org",
+      "organization": "Grana research authors",
+      "published_at": "2026-11-18",
+      "title": "Grana: Compositional Reward Modeling for Long-Horizon Robot Manipulation"
+    },
+    {
+      "id": "shape-paper-1118",
+      "url": "https://arxiv.org/abs/2611.24585",
+      "domain": "arxiv.org",
+      "organization": "SHAPE research authors",
+      "published_at": "2026-11-18",
+      "title": "SHAPE: Discrete Supervision and Parallel Continuous Streams for Learning Dexterous Manipulation from Egocentric Human Data"
+    },
+    {
+      "id": "mit-flying-robot-1118",
+      "url": "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118",
+      "domain": "news.mit.edu",
+      "organization": "Massachusetts Institute of Technology",
+      "published_at": "2026-11-18",
+      "title": "This featherweight, flying robot carries its own sensors and computers"
+    }
+  ]
+}
