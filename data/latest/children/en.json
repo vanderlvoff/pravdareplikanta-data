@@ -2,150 +2,159 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-20",
-  "issue_id": "daily-2026-11-20",
+  "issue_date": "2026-11-21",
+  "issue_id": "daily-2026-11-21",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-20T04:30:00Z",
-  "title": "How robots learn to complete jobs",
-  "lead": "Five stories show how robots learn hand movements, track progress and fly with tiny sensors, while companies and computer chips help make these ideas possible.",
+  "generated_at": "2026-11-20T21:15:18Z",
+  "title": "Who puts the next bottle of tea on the shelf?",
+  "lead": "Japanese shops have tested a robot that restocks drinks. While a customer chooses a tea, the machine can fetch another bottle from storage behind the fridge.",
   "news": [
     {
-      "id": "nvidia-california-subpoena",
-      "title": "Why powerful computer chips matter to robots",
-      "summary": "California officials are requesting information from Nvidia about a possible improper transfer of technology. The allegations have not been proved.",
-      "details": "On November 19, officials in California said they had asked computer-chip maker Nvidia for documents. They are investigating whether certain technology or confidential information may have been transferred improperly to China. Asking for documents does not prove that anyone broke the rules.",
-      "technical_novelty": "Powerful computer chips help researchers teach robots to understand images and choose actions. Many laboratories depend on them, which is why the investigation matters. But there is no evidence in this announcement that chip production or robot operation has stopped.",
-      "engineering_impact": "An investigation is a way of finding out what happened, not the same as a decision that someone is guilty. Any future effects on robotics will need to be checked separately.",
-      "limitations": "An investigation is a way of finding out what happened, not the same as a decision that someone is guilty. Any future effects on robotics will need to be checked separately.",
-      "evidence_status": "Reuters report of California attorney general's stated investigative action; underlying allegations are unresolved.",
+      "id": "familymart-drink-restocking",
+      "title": "Who puts the next bottle in the fridge?",
+      "summary": "Japan's FamilyMart plans to start installing drink-stocking robots in stages in January 2027. A worker fills a shelf with spare drinks, and the robot transfers them to the shelf facing the customers.",
+      "details": "A worker loads the reserve drinks first. The robot moves bottles onto the shelf facing the shoppers.",
+      "technical_novelty": "The system tracks the location of the drinks and uses the shop's sales history.",
+      "engineering_impact": "A drink that sells quickly can get priority when the machine restocks the display.",
+      "limitations": "The roughly 70 percent saving refers to staff time spent restocking drinks per day at the early stores.",
+      "evidence_status": "FamilyMart and Telexistence described the early stores and the phased rollout planned from January 2027.",
       "published_at": "2026-11-19",
-      "organization": "Nvidia; California Department of Justice",
+      "organization": "FamilyMart",
       "source_ids": [
-        "nvidia-reuters-1119"
+        "familymart",
+        "telexistence"
       ],
-      "time_window": "24h",
-      "body": "On November 19, officials in California said they had asked computer-chip maker Nvidia for documents. They are investigating whether certain technology or confidential information may have been transferred improperly to China. Asking for documents does not prove that anyone broke the rules.\n\nPowerful computer chips help researchers teach robots to understand images and choose actions. Many laboratories depend on them, which is why the investigation matters. But there is no evidence in this announcement that chip production or robot operation has stopped.\n\nAn investigation is a way of finding out what happened, not the same as a decision that someone is guilty. Any future effects on robotics will need to be checked separately.",
+      "time_window": "72h",
+      "body": "A shopper opens a fridge door at a FamilyMart in Japan and takes a drink. How does another bottle get to the front? The chain and a company that builds robots have been working on that question since 2020. FamilyMart has tried a machine that stocks drinks from behind the display. On November 19 it announced plans to start putting the equipment into more shops in January 2027.\n\nThink of a bottle as having two addresses before anyone buys it. Its first address is a storage shelf that a worker fills. Its second is the shelf within reach of the shopper. The machine takes care of the trip between those two addresses.\n\nThe chain kept track of the time people spent restocking drinks each day in the early stores. It says the new arrangement cut that time by about seven tenths. One part of the job is still in the hands of store workers. They have to keep the storage shelf supplied so there is a drink for the machine to pick up.",
       "image": null
     },
     {
-      "id": "marubun-realman-japan",
-      "title": "Robot arms will have a new seller in Japan",
-      "summary": "Marubun has agreed to sell RealMan Robotics equipment in Japan, including lightweight robot arms and remote-control tools.",
-      "details": "On November 19, Japanese company Marubun announced that it would sell robotic arms and other equipment made by China's RealMan Robotics. The products are intended for companies and researchers. Some tools let people operate machines from a distance.",
-      "technical_novelty": "One idea is to attach a robot arm to a four-legged machine. It could reach equipment in places that are unsafe for people. But the designers must connect electrical systems and make sure the moving parts do not collide.",
-      "engineering_impact": "This is an agreement to sell equipment, not a report that a completed robot has passed customer tests. Engineers still need to measure safety and reliability in real tasks.",
-      "limitations": "This is an agreement to sell equipment, not a report that a completed robot has passed customer tests. Engineers still need to measure safety and reliability in real tasks.",
-      "evidence_status": "Official Marubun company disclosure, not independent verification of robot field performance.",
+      "id": "apartment-locker-handover",
+      "title": "The trip from a parcel locker to an apartment door",
+      "summary": "Two Japanese companies have started testing how a robot could collect a parcel from a downstairs locker and bring it to an apartment door. The trial covers both the handover of the box and the ride in the lift.",
+      "details": "The robot is intended to collect the parcel downstairs, take the lift and leave the box outside an apartment.",
+      "technical_novelty": "The partners are improving the mechanism that transfers the parcel from a locker to the robot.",
+      "engineering_impact": "Delivery between floors requires the robot and the lift to work together.",
+      "limitations": "The companies announced the start of testing. They have yet to give a completed delivery rate.",
+      "evidence_status": "Fulltime System and NEC Magnus Communications set out the aims of their joint trial starting November 17.",
+      "published_at": "2026-11-17",
+      "organization": "Fulltime System and NEC Magnus Communications",
+      "source_ids": [
+        "locker"
+      ],
+      "time_window": "7d",
+      "body": "A courier leaves a parcel in a locker at the entrance to an apartment building. How does it get upstairs if the person who lives there wants it left outside their door? On November 17, two companies in Japan started testing a system in which a robot makes that second trip. They want to see how the equipment works together under conditions like those in a residential building.\n\nFirst comes the handover. Driving up to the locker gets the robot close to the parcel, but the box still has to move from the compartment onto the machine. The two companies are working together on that part. Once loaded, the robot needs to call the lift, get inside and get out on the right floor.\n\nThere is a return trip in the plan too. After leaving the parcel at the door, the robot must get back to its waiting spot. The companies are examining how safely it can set down the box and how the machines stand up to repeated use. Their announcement describes the start of that work.",
+      "image": null
+    },
+    {
+      "id": "handumi-towel-fold",
+      "title": "Showing two robot arms how to fold a towel",
+      "summary": "Brik Meza and his team recorded people folding a towel with a pair of gripping tools worn on their hands. One program trained with those recordings helped two real robot arms finish the fold in 12 of 20 attempts.",
+      "details": "A person folded a towel using two tools worn on the hands. The recordings were used to train programs for real robot arms.",
+      "technical_novelty": "Sensors recorded each hand's path and the gap between the parts that gripped the cloth.",
+      "engineering_impact": "People could collect examples away from the robot that would later attempt the fold.",
+      "limitations": "After training on 562 demonstrations, one program completed 12 of 20 folds and the other completed seven of 20.",
+      "evidence_status": "Brik Meza and colleagues described their test on physical robot arms in a paper posted November 17.",
+      "published_at": "2026-11-17",
+      "organization": "Mu Robotics and collaborators",
+      "source_ids": [
+        "hand"
+      ],
+      "time_window": "7d",
+      "body": "Brik Meza and his colleagues wanted to teach two robot arms how to fold a towel. For the lessons, they let people handle the cloth while wearing a gripping tool on each hand. The robot arms could stay somewhere else while the team collected examples of what to do.\n\nImagine telling a friend how to fold a towel over the phone. If you only say where to move their hands, they might make exactly the right sweep through the air and leave the towel on the table. They also need to know when to hold on. Each tool had two jaws, and a sensor measured the gap between them as the person worked.\n\nThe researchers collected 562 examples and used them to train two different programs. Then each program got twenty tries with a pair of real robot arms. One managed twelve folds and the other managed seven. The team also trained the first program using just the earliest 101 examples. That version finished none of its twenty attempts.",
+      "image": null
+    },
+    {
+      "id": "green-logistics-case-stacking",
+      "title": "Where should the next box go?",
+      "summary": "Six robots at Green Logistics in Japan are stacking boxes for shipment. Their builder, Mujin, described how a camera on each arm helps it locate a box and choose a place for it on a pallet.",
+      "details": "At the new Green Logistics centre, six machines receive cases from automated storage.",
+      "technical_novelty": "A camera on the arm measures depth. Software works out where to place the case.",
+      "engineering_impact": "The camera needs no separate stand beside the robot, which helps the equipment fit the available floor space.",
+      "limitations": "Around 500 cases an hour is the rate given for one machine at this site.",
+      "evidence_status": "Mujin, the supplier, described the installation and its rate in a report published on November 19.",
       "published_at": "2026-11-19",
-      "organization": "Marubun; RealMan Robotics",
+      "organization": "Mujin",
       "source_ids": [
-        "marubun-realman-1119"
+        "mujin"
       ],
       "time_window": "72h",
-      "body": "On November 19, Japanese company Marubun announced that it would sell robotic arms and other equipment made by China's RealMan Robotics. The products are intended for companies and researchers. Some tools let people operate machines from a distance.\n\nOne idea is to attach a robot arm to a four-legged machine. It could reach equipment in places that are unsafe for people. But the designers must connect electrical systems and make sure the moving parts do not collide.\n\nThis is an agreement to sell equipment, not a report that a completed robot has passed customer tests. Engineers still need to measure safety and reliability in real tasks.",
+      "body": "At a new Green Logistics warehouse in Japan, boxes come out of storage directly to six robots. In a report published on November 19, the company that built the machines explained how they stack boxes for shipping. They build each stack on a pallet, a flat base that lets someone move a whole load at once.\n\nIf you stack boxes of different sizes in any old order, you can run out of space quite quickly. The problem changes each time a box arrives. The robot needs to locate this particular box and work out where it can fit on the pallet. A camera on the arm gives its program a view with depth, so it can tell how far away the surfaces are. Mounting the camera there also saves room beside the machine.\n\nMujin says the equipment handles about a thousand different kinds of boxes. It gives another figure for how fast the work goes at this site. Each robot can pick and stack roughly five hundred boxes in an hour.",
       "image": null
     },
     {
-      "id": "grana-progress-rewards",
-      "title": "Can a robot tell when a job is getting done?",
-      "summary": "Researchers taught a program to estimate which steps of a task have been completed and which are still unfinished.",
-      "details": "Researchers have proposed a program that uses images to estimate how far a robot has progressed through a long task. Imagine placing several objects into a box in the correct order. The program tries to tell what has been done and what step remains.",
-      "technical_novelty": "The researchers used information from individual steps to train the system. They report early learning from 200 varied tasks and experiments involving five longer tasks. They call the research system Grana.",
-      "engineering_impact": "The results come from the team's experiments. A different object or environment could confuse the program, so much more testing is needed.",
-      "limitations": "The results come from the team's experiments. A different object or environment could confuse the program, so much more testing is needed.",
-      "evidence_status": "Author-reported arXiv preprint and experiments; independent replication not established.",
+      "id": "hand-checkpoint-steering",
+      "title": "Which virtual hand learns to screw in a bulb?",
+      "summary": "Researchers gave a hand in a computer kitchen two jobs, pressing a coffee machine button and screwing in a light bulb. The program that did best just after watching examples could fall behind another after more practice.",
+      "details": "In a virtual kitchen the hand pressed a coffee machine button and screwed in a light bulb.",
+      "technical_novelty": "The researchers saved the program at different points while it learned from examples and gave each copy more practice.",
+      "engineering_impact": "That allowed a direct comparison between each program's score after its first lesson and its result after the second.",
+      "limitations": "The tests shifted appliance position along one axis. Contact with the button and the bulb took place in the computer.",
+      "evidence_status": "Artur Kuramshin and colleagues reported the two simulated tests in a paper posted November 18.",
       "published_at": "2026-11-18",
-      "organization": "Grana research team",
+      "organization": "Mila, Université de Montréal and Renesas Electronics Canada",
       "source_ids": [
-        "grana-paper-1118"
+        "bulb"
       ],
       "time_window": "72h",
-      "body": "Researchers have proposed a program that uses images to estimate how far a robot has progressed through a long task. Imagine placing several objects into a box in the correct order. The program tries to tell what has been done and what step remains.\n\nThe researchers used information from individual steps to train the system. They report early learning from 200 varied tasks and experiments involving five longer tasks. They call the research system Grana.\n\nThe results come from the team's experiments. A different object or environment could confuse the program, so much more testing is needed.",
-      "image": null
-    },
-    {
-      "id": "shape-human-hand-learning",
-      "title": "Why copying a person's fingers is hard for robots",
-      "summary": "Researchers are teaching robot hands to turn a human demonstration into instructions for their own joints.",
-      "details": "When a person picks up an object, their fingers bend in a certain way. Robot fingers can have different shapes and joints. Watching a video of a person therefore does not tell the robot exactly how to control its motors.",
-      "technical_novelty": "Researchers built a system that learns from human movements and produces commands for robot joints. They tested it with a two-armed robot in six tasks. The system is called SHAPE.",
-      "engineering_impact": "The research team reported promising results under its test rules. This does not mean that every robot can pick up every object after seeing one video.",
-      "limitations": "The research team reported promising results under its test rules. This does not mean that every robot can pick up every object after seeing one video.",
-      "evidence_status": "Author-reported arXiv preprint; evaluation not independently reproduced.",
-      "published_at": "2026-11-18",
-      "organization": "SHAPE research team",
-      "source_ids": [
-        "shape-paper-1118"
-      ],
-      "time_window": "72h",
-      "body": "When a person picks up an object, their fingers bend in a certain way. Robot fingers can have different shapes and joints. Watching a video of a person therefore does not tell the robot exactly how to control its motors.\n\nResearchers built a system that learns from human movements and produces commands for robot joints. They tested it with a two-armed robot in six tasks. The system is called SHAPE.\n\nThe research team reported promising results under its test rules. This does not mean that every robot can pick up every object after seeing one video.",
-      "image": null
-    },
-    {
-      "id": "mit-microrobot-onboard-sensing",
-      "title": "A tiny flying robot senses its own movement",
-      "summary": "MIT researchers gave a miniature flying robot onboard sensors, although its electrical power still comes from outside.",
-      "details": "MIT researchers built a tiny robot that flaps its wings and carries sensors. Earlier versions depended on cameras in the laboratory to know their position. This version can estimate its movements using instruments it carries itself.",
-      "technical_novelty": "The team made the wings lift more weight and added electronics weighing only 244 milligrams. The sensors measure tilt, movement and height. In tests, the machine followed planned flight paths.",
-      "engineering_impact": "For now, it still needs an outside power supply. Researchers also want it to recognize obstacles. It is a step toward free flight, not yet a robot that can fly independently across a field.",
-      "limitations": "For now, it still needs an outside power supply. Researchers also want it to recognize obstacles. It is a step toward free flight, not yet a robot that can fly independently across a field.",
-      "evidence_status": "MIT institutional report about its researchers' experiment, with quantitative results attributed to the team.",
-      "published_at": "2026-11-18",
-      "organization": "MIT",
-      "source_ids": [
-        "mit-flying-robot-1118"
-      ],
-      "time_window": "72h",
-      "body": "MIT researchers built a tiny robot that flaps its wings and carries sensors. Earlier versions depended on cameras in the laboratory to know their position. This version can estimate its movements using instruments it carries itself.\n\nThe team made the wings lift more weight and added electronics weighing only 244 milligrams. The sensors measure tilt, movement and height. In tests, the machine followed planned flight paths.\n\nFor now, it still needs an outside power supply. Researchers also want it to recognize obstacles. It is a step toward free flight, not yet a robot that can fly independently across a field.",
+      "body": "Artur Kuramshin and his colleagues taught a many-fingered hand to work inside a computer kitchen. In one task, a finger had to press a coffee machine button. In the other, the hand had to pick up a bulb and twist it into its socket. The team wanted to find the best moment to save the program during its first lesson before starting a second kind of lesson.\n\nFirst a person controlled the hand in the virtual kitchen to show it the movements. As the program learned from these examples, the team saved copies at different points. Imagine being able to go back to different days of your practice and try a new training plan from each one. That is what saving the copies let the researchers do.\n\nIn the next lesson, a score told the program how well its choices worked. The researchers compared the saved copies before and after that extra practice. A hand that pressed the button well after the first lesson might gain less from the second than another copy did. To find out which would finish ahead, the team had to give more than one copy the second lesson.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "What experiments actually show",
-    "summary": "Five stories show how robots learn hand movements, track progress and fly with tiny sensors, while companies and computer chips help make these ideas possible.",
-    "implications": "One demonstration does not prove a machine can do every job."
+    "title": "A drink has two places in the shop: in reserve and on display",
+    "summary": "At Japan's FamilyMart, a worker fills a storage shelf and the robot moves drinks within reach of shoppers. The machine and the shelf were tested together.",
+    "implications": "To find out how much work people still had to do, the early shops tracked daily time spent replenishing drinks. The chain says it fell by about seven tenths."
   },
   "sources": [
     {
-      "id": "nvidia-reuters-1119",
-      "url": "https://www.reuters.com/legal/litigation/california-ag-subpoenas-nvidia-over-concerns-about-former-ceo-china-2026-11-19/",
-      "domain": "reuters.com",
-      "organization": "Reuters",
-      "published_at": "2026-11-19",
-      "title": "California AG subpoenas Nvidia over concerns about former CEO, China ties"
+      "id": "familymart",
+      "title": "店舗従業員の業務負荷軽減と省力化に向け 飲料補充ロボットを2027年1月から導入開始",
+      "url": "https://www.family.co.jp/company/news_releases/2026/20261119_02.html",
+      "domain": "www.family.co.jp",
+      "organization": "FamilyMart",
+      "published_at": "2026-11-19"
     },
     {
-      "id": "marubun-realman-1119",
-      "url": "https://kabuyoho-sls-disclose.ifis.co.jp/b5b/140120261119583264.pdf",
-      "domain": "kabuyoho-sls-disclose.ifis.co.jp",
-      "organization": "Marubun Corporation",
-      "published_at": "2026-11-19",
-      "title": "Marubun announces Japan distribution agreement with RealMan Robotics"
+      "id": "telexistence",
+      "title": "AIロボット「TX GHOST」を全国のファミリーマート店舗へ2027年1月から本格導入開始",
+      "url": "https://tx-inc.com/ja/blog/2026/11/19/12823/",
+      "domain": "tx-inc.com",
+      "organization": "Telexistence",
+      "published_at": "2026-11-19"
     },
     {
-      "id": "grana-paper-1118",
-      "url": "https://arxiv.org/abs/2611.24926",
+      "id": "locker",
+      "title": "スマートロッカーマンション内ロボット宅配システム NECマグナスコミュニケーションズとフルタイムシステムが共同で実証実験を開始",
+      "url": "https://www.fts.co.jp/news/release/2109",
+      "domain": "www.fts.co.jp",
+      "organization": "Fulltime System and NEC Magnus Communications",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "hand",
+      "title": "HandUMI: A Modular Hand-Worn Parallel-Jaw Interface for Robot-Free Bimanual Data Capture",
+      "url": "https://arxiv.org/abs/2611.22146",
       "domain": "arxiv.org",
-      "organization": "Grana research authors",
-      "published_at": "2026-11-18",
-      "title": "Grana: Compositional Reward Modeling for Long-Horizon Robot Manipulation"
+      "organization": "Mu Robotics and collaborators",
+      "published_at": "2026-11-17"
     },
     {
-      "id": "shape-paper-1118",
-      "url": "https://arxiv.org/abs/2611.24585",
+      "id": "mujin",
+      "title": "グリーンロジスティクス様、6台のフィジカルAIロボットで自動倉庫と連携した出荷ピッキングを自動化",
+      "url": "https://media.mujin.co.jp/news/11657/",
+      "domain": "media.mujin.co.jp",
+      "organization": "Mujin",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "bulb",
+      "title": "Finetuning VLAs for Dexterous Manipulation: The Right Checkpoint Is All You Need",
+      "url": "https://arxiv.org/abs/2611.23676",
       "domain": "arxiv.org",
-      "organization": "SHAPE research authors",
-      "published_at": "2026-11-18",
-      "title": "SHAPE: Discrete Supervision and Parallel Continuous Streams for Learning Dexterous Manipulation from Egocentric Human Data"
-    },
-    {
-      "id": "mit-flying-robot-1118",
-      "url": "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118",
-      "domain": "news.mit.edu",
-      "organization": "Massachusetts Institute of Technology",
-      "published_at": "2026-11-18",
-      "title": "This featherweight, flying robot carries its own sensors and computers"
+      "organization": "Mila, Université de Montréal and Renesas Electronics Canada",
+      "published_at": "2026-11-18"
     }
   ]
 }
