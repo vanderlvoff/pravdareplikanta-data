@@ -2,159 +2,150 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-19",
-  "issue_id": "daily-2026-11-19",
+  "issue_date": "2026-11-20",
+  "issue_id": "daily-2026-11-20",
   "edition": "engineer",
   "language": "en",
-  "generated_at": "2026-11-18T21:14:03.572374Z",
-  "title": "Robots move from individual machines to measurable systems",
-  "lead": "This issue connects mobile mapping, fab inspections, robot hands and test facilities through one engineering question: how to measure the complete system rather than one demonstration. Agility's organizational changes also show that scale requires customer feedback and risk control.",
+  "generated_at": "2026-11-20T04:30:00Z",
+  "title": "Physical AI: measuring progress, motion control and infrastructure risks",
+  "lead": "This issue covers long-horizon reward estimation, human-to-robot action transfer, miniature autonomous sensing, Japanese component distribution and compute supply-chain governance.",
   "news": [
     {
-      "id": "hido-mapping-rover",
-      "title": "Hido II enters limited deployment for automated indoor mapping",
-      "summary": "Hidonix has launched a limited deployment program for the Hido II rover to collect spatial data inside buildings. Under technician supervision, it follows predefined routes, avoids obstacles, climbs stairs and positions an acquisition module with a robotic arm.",
-      "details": "Hidonix Industries announced the launch of Hido II on November 18 as a mobile rover for mapping complex indoor spaces. After showing a prototype at CES 2026, the company is selecting US venues for a limited early-access program. A technician remains on site and supervises operation, so the release describes controlled deployment rather than a fully independent surveying service.",
-      "technical_novelty": "The rover follows predefined routes, detects obstacles and replans its path. A rocker-bogie suspension is intended for uneven ground and conventional stairs; the platform can rotate in place and move laterally. A robotic arm repeatedly positions the geomagnetic acquisition module, while a 2K stereo camera and Ouster lidar provide depth reconstruction, obstacle awareness and a 360-degree point cloud. Stated runtime is about five to eight hours depending on activity.",
-      "engineering_impact": "Engineering evaluation should separate geomagnetic measurement accuracy, rover localization and the quality of the resulting map. Repeated runs need route-replanning logs, stair success, sensor drift and the influence of metal structures. Arm placement time and the acquisition module's distance from magnetic interference should also be measured, because mobility and sensing errors enter the final map through different paths.",
-      "limitations": "In a comparative test, the company reports a 50% reduction in mapping time and positioning error up to five times lower than manual collection with the ION App. It does not publish the method, venue count, route area or error distribution. The figures are therefore supplier-reported internal results, not an independent evaluation of a production fleet.",
-      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
-      "published_at": "2026-11-18",
-      "organization": "Hidonix Industries",
+      "id": "nvidia-california-subpoena",
+      "title": "California opens formal inquiry into Nvidia amid leadership controversy",
+      "summary": "California's attorney general said on November 19 that an investigative subpoena was served on Nvidia over possible transfers of restricted technology or confidential information to China. The allegations remain unproven.",
+      "details": "California Attorney General Rob Bonta announced an investigative subpoena to Nvidia on November 19. The investigation follows reports concerning former chief executive Jensen Huang and a person suspected of intelligence ties to China. A subpoena seeks evidence; it is not a judicial finding that the allegations are true.",
+      "technical_novelty": "The central issue for Physical AI is supply-chain and access risk for AI accelerators and cloud compute. Investigators are examining whether technology or confidential information may have reached China. No finding of diversion is established by the announcement.",
+      "engineering_impact": "Engineering teams dependent on Nvidia hardware should inventory model-training and inference dependencies and review alternatives, while avoiding assumptions about immediate shortages. The investigation itself provides no technical performance data or demonstrated disruption.",
+      "limitations": "Reports of suspected espionage and inappropriate information transfers are allegations, not established facts. The investigation supplies no measured change in chip availability or robot-development capacity.",
+      "evidence_status": "Reuters report of California attorney general's stated investigative action; underlying allegations are unresolved.",
+      "published_at": "2026-11-19",
+      "organization": "Nvidia; California Department of Justice",
       "source_ids": [
-        "hidonix-1118"
+        "nvidia-reuters-1119"
       ],
       "time_window": "24h",
-      "body": "Hidonix Industries announced the launch of Hido II on November 18 as a mobile rover for mapping complex indoor spaces. After showing a prototype at CES 2026, the company is selecting US venues for a limited early-access program. A technician remains on site and supervises operation, so the release describes controlled deployment rather than a fully independent surveying service.\n\nThe rover follows predefined routes, detects obstacles and replans its path. A rocker-bogie suspension is intended for uneven ground and conventional stairs; the platform can rotate in place and move laterally. A robotic arm repeatedly positions the geomagnetic acquisition module, while a 2K stereo camera and Ouster lidar provide depth reconstruction, obstacle awareness and a 360-degree point cloud. Stated runtime is about five to eight hours depending on activity.\n\nEngineering evaluation should separate geomagnetic measurement accuracy, rover localization and the quality of the resulting map. Repeated runs need route-replanning logs, stair success, sensor drift and the influence of metal structures. Arm placement time and the acquisition module's distance from magnetic interference should also be measured, because mobility and sensing errors enter the final map through different paths.\n\nIn a comparative test, the company reports a 50% reduction in mapping time and positioning error up to five times lower than manual collection with the ION App. It does not publish the method, venue count, route area or error distribution. The figures are therefore supplier-reported internal results, not an independent evaluation of a production fleet.",
+      "body": "California Attorney General Rob Bonta said on November 19 that his office served an investigative subpoena on Nvidia concerning the possibility that restricted AI chips or confidential information reached China. The action comes amid controversy around former chief executive Jensen Huang. An investigative subpoena is a demand for information, not a finding of guilt.\n\nNvidia's processors are used to train and run large AI models, including systems intended to control physical robots. Whether access to those processors is affected depends on future regulatory findings and decisions, not on the existence of the subpoena alone. Reports describing suspected espionage have not been established as facts in this proceeding.\n\nEngineering teams dependent on Nvidia hardware should inventory model-training and inference dependencies and review alternatives, while avoiding assumptions about immediate shortages. The investigation itself provides no technical performance data or demonstrated disruption. Reports of suspected espionage and inappropriate information transfers are allegations, not established facts. The investigation supplies no measured change in chip availability or robot-development capacity.",
       "image": null
     },
     {
-      "id": "agility-leadership-scale",
-      "title": "Agility Robotics reshapes leadership after becoming a public company",
-      "summary": "Agility Robotics appointed a president, chief product officer and chief administrative officer after its November Nasdaq listing. It links the structure to scaling Digit 5 sales and deployments, while the cited $300 million represents potential order value subject to contractual milestones.",
-      "details": "Agility Robotics announced three appointments on November 18 after completing its combination with Churchill Capital Corp XI and listing on Nasdaq on November 4. Daniel Diez became president responsible for the commercial business. Christopher Sullivan became chief product officer while retaining a connection to customer success. Ana Lang became chief administrative officer and continues to oversee legal, people, governance and risk functions.",
-      "technical_novelty": "The company frames the change as preparation to move from individual programs toward larger Digit deployments. Diez leads sales and partnerships, Sullivan connects product strategy and execution with customer-site experience, and Lang builds public-company processes. Agility cites more than 65,000 hours of real-world robot operation and over $300 million in committed multi-year Digit 5 orders, but the latter is potential value subject to contractual milestones and product specifications.",
-      "engineering_impact": "Combining product and customer-success responsibility may shorten the path from field failures to requirements for Digit and Agility Arc. Engineering teams should watch for common measures of uptime, intervention, recovery and task success across customers. The reorganization itself changes no architecture and demonstrates no performance gain.",
-      "limitations": "The release announces no new contract, robot delivery, production capacity or reliability result. The appointments show which functions Agility is strengthening: commercial scale, product-to-deployment feedback and corporate control. Future deployments and order value remain company expectations exposed to manufacturing, technical and market risks.",
-      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
-      "published_at": "2026-11-18",
-      "organization": "Agility Robotics",
+      "id": "marubun-realman-japan",
+      "title": "Marubun adds RealMan robot arms and remote-operation tools to Japanese portfolio",
+      "summary": "On November 19 Japanese distributor Marubun announced a domestic agreement with China's RealMan Robotics for lightweight arms, joints, humanoids and tools for remote operation and AI-data collection.",
+      "details": "Japan's Marubun announced a distribution agreement with RealMan Robotics on November 19. It will handle lightweight arms, precision joint modules, humanoid robots, remote-operation systems and AI-data-collection products. The announcement also envisions combining arms with quadruped robots from suppliers such as Deep Robotics.",
+      "technical_novelty": "The commercial integration point is a lightweight arm on a mobile robot, which requires compatible mechanics, power, communication and safety control. The release describes product distribution and customization services rather than an independently benchmarked completed autonomous system.",
+      "engineering_impact": "Before integrating these products, engineers need verified payload curves, interfaces, control latency, software compatibility and end-to-end functional safety. A domestic channel may improve access to components, but it does not certify task reliability.",
+      "limitations": "No customer deployment, independently measured manipulation success, integration cost or production performance is documented in the release. Product and market-position claims are supplier statements.",
+      "evidence_status": "Official Marubun company disclosure, not independent verification of robot field performance.",
+      "published_at": "2026-11-19",
+      "organization": "Marubun; RealMan Robotics",
       "source_ids": [
-        "agility-leadership-1118"
-      ],
-      "time_window": "24h",
-      "body": "Agility Robotics announced three appointments on November 18 after completing its combination with Churchill Capital Corp XI and listing on Nasdaq on November 4. Daniel Diez became president responsible for the commercial business. Christopher Sullivan became chief product officer while retaining a connection to customer success. Ana Lang became chief administrative officer and continues to oversee legal, people, governance and risk functions.\n\nThe company frames the change as preparation to move from individual programs toward larger Digit deployments. Diez leads sales and partnerships, Sullivan connects product strategy and execution with customer-site experience, and Lang builds public-company processes. Agility cites more than 65,000 hours of real-world robot operation and over $300 million in committed multi-year Digit 5 orders, but the latter is potential value subject to contractual milestones and product specifications.\n\nCombining product and customer-success responsibility may shorten the path from field failures to requirements for Digit and Agility Arc. Engineering teams should watch for common measures of uptime, intervention, recovery and task success across customers. The reorganization itself changes no architecture and demonstrates no performance gain.\n\nThe release announces no new contract, robot delivery, production capacity or reliability result. The appointments show which functions Agility is strengthening: commercial scale, product-to-deployment feedback and corporate control. Future deployments and order value remain company expectations exposed to manufacturing, technical and market risks.",
-      "image": null
-    },
-    {
-      "id": "tactilia-robot-hand",
-      "title": "SCHUNK spin-off TACTILIA takes modular robot hand toward industrial market",
-      "summary": "SCHUNK Humanoid Robotics, founded in January, now operates as TACTILIA Robotics. It is developing a modular hand for humanoids, cobots and mobile manipulators, supported by testing access to 15 SCHUNK CoLabs.",
-      "details": "SCHUNK announced on November 18 that its January spin-off SCHUNK Humanoid Robotics now operates as TACTILIA Robotics. The independent Munich company is developing a modular robotic hand for production and logistics tasks. Markus Netzer leads the business, while the parent group supplies gripping expertise, test infrastructure and access to industrial customers.",
-      "technical_novelty": "The developers aim to combine mechanics, sensors, actuators, software and physical-AI methods in one platform. The hand is intended for humanoids, collaborative robots and mobile manipulators rather than one robot body. Customer testing is planned through 15 SCHUNK CoLabs, where specific operations can be evaluated and adapted before deployment.",
-      "engineering_impact": "Modularity needs mechanical and electrical interfaces, mass, center of gravity, control rate and a defined tactile-data path. Industrial acceptance also requires cycle testing, repeatable grip force, dust tolerance and replaceable wear parts. Without those specifications, compatibility with a particular arm and controller cannot be assessed.",
-      "limitations": "The release gives no finger count for the new platform, degrees of freedom, force, accuracy, cycle life, interfaces, price or delivery date. Language about bringing a product to market states the company's direction, not a confirmed production shipment. Verified facts are the new name, independent structure, location and stated development and validation program.",
-      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
-      "published_at": "2026-11-18",
-      "organization": "TACTILIA Robotics; SCHUNK",
-      "source_ids": [
-        "tactilia-1118"
-      ],
-      "time_window": "24h",
-      "body": "SCHUNK announced on November 18 that its January spin-off SCHUNK Humanoid Robotics now operates as TACTILIA Robotics. The independent Munich company is developing a modular robotic hand for production and logistics tasks. Markus Netzer leads the business, while the parent group supplies gripping expertise, test infrastructure and access to industrial customers.\n\nThe developers aim to combine mechanics, sensors, actuators, software and physical-AI methods in one platform. The hand is intended for humanoids, collaborative robots and mobile manipulators rather than one robot body. Customer testing is planned through 15 SCHUNK CoLabs, where specific operations can be evaluated and adapted before deployment.\n\nModularity needs mechanical and electrical interfaces, mass, center of gravity, control rate and a defined tactile-data path. Industrial acceptance also requires cycle testing, repeatable grip force, dust tolerance and replaceable wear parts. Without those specifications, compatibility with a particular arm and controller cannot be assessed. A separate test should change objects without manual reprogramming: how many examples the hand needs, how grasp time changes and whether force remains stable as actuators warm. Those records would show whether modularity is a product property rather than only an organizational goal.\n\nThe release gives no finger count for the new platform, degrees of freedom, force, accuracy, cycle life, interfaces, price or delivery date. Language about bringing a product to market states the company's direction, not a confirmed production shipment. Verified facts are the new name, independent structure, location and stated development and validation program.",
-      "image": null
-    },
-    {
-      "id": "imo-robotics-lab",
-      "title": "Tokyo lab opens to demonstrate and test robots before deployment",
-      "summary": "ImageONE and Big Hands have opened IMO Robotics LAB in Tokyo to demonstrate robots and test possible use cases. Galbot G1 is the first displayed machine, while medical-facility work is the stated initial focus for future proofs of concept.",
-      "details": "ImageONE announced the opening of IMO Robotics LAB at its Osaki, Tokyo headquarters on November 18. It created the site with Big Hands, which provides robot products, specialist engineers and technical information. ImageONE supplies the facility and coordinates operations, marketing and contact with prospective customers.",
-      "technical_novelty": "The lab has begun displaying the mobile, dual-arm Galbot G1. Its operators plan to add humanoids from other manufacturers, bionic devices, quadrupeds and robotic hands. Beyond demonstrations, the site is intended for proofs of concept, deployment proposals, engineer training and seminars, with medical-facility work named as the first area of attention.",
-      "engineering_impact": "The site's value will depend on test discipline: a defined task, interfaces, manual baseline and acceptance criteria. A medical case needs safety logs, door and elevator access, custody transfer and recovery after a stop. Robots from different vendors can be compared only under the same protocol.",
-      "limitations": "The company confirms the opening and the physical G1 display. It names no medical process, customer, test date, success criterion or paid project. The lab therefore creates a place for task selection and integration work, but it does not yet show that the displayed robot performs regular hospital duties.",
-      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
-      "published_at": "2026-11-18",
-      "organization": "ImageONE; Big Hands",
-      "source_ids": [
-        "imageone-lab-1118"
-      ],
-      "time_window": "24h",
-      "body": "ImageONE announced the opening of IMO Robotics LAB at its Osaki, Tokyo headquarters on November 18. It created the site with Big Hands, which provides robot products, specialist engineers and technical information. ImageONE supplies the facility and coordinates operations, marketing and contact with prospective customers.\n\nThe lab has begun displaying the mobile, dual-arm Galbot G1. Its operators plan to add humanoids from other manufacturers, bionic devices, quadrupeds and robotic hands. Beyond demonstrations, the site is intended for proofs of concept, deployment proposals, engineer training and seminars, with medical-facility work named as the first area of attention.\n\nThe site's value will depend on test discipline: a defined task, interfaces, manual baseline and acceptance criteria. A medical case needs safety logs, door and elevator access, custody transfer and recovery after a stop. Robots from different vendors can be compared only under the same protocol. Each proof of concept should end with a protocol rather than a demonstration: attempt count, success share, interventions, stops and site modifications. A later customer could then distinguish what is repeatable from what depended on a prepared scene and supplier specialists.\n\nThe company confirms the opening and the physical G1 display. It names no medical process, customer, test date, success criterion or paid project. The lab therefore creates a place for task selection and integration work, but it does not yet show that the displayed robot performs regular hospital duties.",
-      "image": null
-    },
-    {
-      "id": "globalfoundries-robot-fleet",
-      "title": "GlobalFoundries expands Spot fleet and prepares first chip-fab trials for Atlas",
-      "summary": "GlobalFoundries will expand Spot quadruped deployments across semiconductor sites in the United States, Germany and Singapore. It also plans to begin Atlas humanoid trials in early 2027, although no specific Atlas task has been named.",
-      "details": "Boston Dynamics and GlobalFoundries announced an expanded semiconductor-fab robotics program on November 17. Spot will perform automated rounds and collect equipment data at sites in New York, Vermont, Dresden and Singapore. GlobalFoundries will also become the first Atlas customer outside the automotive industry, but onsite humanoid testing is scheduled only for early 2027.",
-      "technical_novelty": "Two Spots in Singapore have traveled nearly 900 kilometers and completed more than 90,000 inspections in sub-fab areas since April, according to the companies, with a 99% mission success rate. After hardware and software updates, 875 routine inspections were redeployed in two weeks, and GlobalFoundries plans to more than double that number. The release does not define mission success or disclose interventions and downtime.",
-      "engineering_impact": "Spot evaluation needs separate navigation, inspection-data quality and anomaly-detection measures; a 99% mission-completion rate does not show how many useful defects were found. Atlas task selection must establish workspace, tooling, cleanliness, safety and production-system interfaces. Transferring a workshop skill to a fab will require its own acceptance protocol.",
-      "limitations": "The Atlas program starts with a skills-development workshop to identify use cases, assess site readiness and integration needs, and begin training for specific actions. That is not yet humanoid production work or an order for a stated robot count. The confirmed operating deployment concerns Spot; Atlas remains a planned trial with tasks still to be selected.",
-      "evidence_status": "Official organization announcement; reported results and plans remain source claims rather than independent operational verification.",
-      "published_at": "2026-11-17",
-      "organization": "Boston Dynamics; GlobalFoundries",
-      "source_ids": [
-        "boston-gf-1117",
-        "gf-boston-1117"
+        "marubun-realman-1119"
       ],
       "time_window": "72h",
-      "body": "Boston Dynamics and GlobalFoundries announced an expanded semiconductor-fab robotics program on November 17. Spot will perform automated rounds and collect equipment data at sites in New York, Vermont, Dresden and Singapore. GlobalFoundries will also become the first Atlas customer outside the automotive industry, but onsite humanoid testing is scheduled only for early 2027.\n\nTwo Spots in Singapore have traveled nearly 900 kilometers and completed more than 90,000 inspections in sub-fab areas since April, according to the companies, with a 99% mission success rate. After hardware and software updates, 875 routine inspections were redeployed in two weeks, and GlobalFoundries plans to more than double that number. The release does not define mission success or disclose interventions and downtime.\n\nSpot evaluation needs separate navigation, inspection-data quality and anomaly-detection measures; a 99% mission-completion rate does not show how many useful defects were found. Atlas task selection must establish workspace, tooling, cleanliness, safety and production-system interfaces. Transferring a workshop skill to a fab will require its own acceptance protocol.\n\nThe Atlas program starts with a skills-development workshop to identify use cases, assess site readiness and integration needs, and begin training for specific actions. That is not yet humanoid production work or an order for a stated robot count. The confirmed operating deployment concerns Spot; Atlas remains a planned trial with tasks still to be selected.",
+      "body": "Japanese electronics distributor Marubun announced on November 19 that it had signed a domestic distribution agreement with China's RealMan Robotics. The products include lightweight robotic arms, joint modules, humanoids, and equipment for remotely operating robots and collecting training data. Marubun says it will also provide customization and system integration.\n\nOne proposed configuration mounts a lightweight arm on a four-legged mobile robot, enabling work in locations that are awkward or dangerous for a person to reach. Such a system requires more than connecting two machines: arm weight, electrical power, control signals and emergency-stop behavior must work together. The announcement does not report a measured customer deployment.\n\nBefore integrating these products, engineers need verified payload curves, interfaces, control latency, software compatibility and end-to-end functional safety. A domestic channel may improve access to components, but it does not certify task reliability. No customer deployment, independently measured manipulation success, integration cost or production performance is documented in the release. Product and market-position claims are supplier statements.",
+      "image": null
+    },
+    {
+      "id": "grana-progress-rewards",
+      "title": "Grana estimates progress in multi-step manipulation without fixed task labels",
+      "summary": "Researchers introduced Grana, a vision-language reward model that selects unfinished subtasks and estimates progress. The paper reports pretraining over 200 diverse manipulation tasks and experiments on five longer tasks.",
+      "details": "A November 18 arXiv preprint describes Grana, a learned reward model for robot manipulation. It processes language descriptions of subtasks and observations to estimate whether a chosen subtask remains unfinished and how far the action has progressed.",
+      "technical_novelty": "The authors combine progress estimates from the active subtask with credit for completed earlier subtasks, and derive training targets from sparse subtask boundaries and action-quality annotations. Pretraining uses 200 mostly short tasks; experiments include adaptation to five long-horizon tasks.",
+      "engineering_impact": "The proposal is relevant to reward shaping, offline evaluation and long-horizon policy training. Replication should test failure recovery, misleading partial progress, observation changes and comparison with fixed subtask classifiers; the paper's reported gains remain author results.",
+      "limitations": "Results are reported by the paper's authors and are not evidence of universal robustness on unseen robots, sites or prolonged industrial operations. The abstract alone does not establish a production reliability rate.",
+      "evidence_status": "Author-reported arXiv preprint and experiments; independent replication not established.",
+      "published_at": "2026-11-18",
+      "organization": "Grana research team",
+      "source_ids": [
+        "grana-paper-1118"
+      ],
+      "time_window": "72h",
+      "body": "The authors of a November 18 research preprint introduced Grana, a system that estimates how much progress a robot has made through a task with several manipulation steps. It uses camera observations and language descriptions to identify the next unfinished subtask and assess its progress, addressing a difficult part of robot training: deciding when an action really helped.\n\nThe researchers train their vision-language reward model using information about subtask boundaries and action quality, rather than asking annotators to score every instant numerically. They report pretraining on 200 varied, mostly short manipulation tasks and tests involving adaptation to five multi-minute tasks. Combining completed-step credit with current-step progress aims to make a useful training signal for longer procedures.\n\nThe proposal is relevant to reward shaping, offline evaluation and long-horizon policy training. Replication should test failure recovery, misleading partial progress, observation changes and comparison with fixed subtask classifiers; the paper's reported gains remain author results. Results are reported by the paper's authors and are not evidence of universal robustness on unseen robots, sites or prolonged industrial operations. The abstract alone does not establish a production reliability rate.",
+      "image": null
+    },
+    {
+      "id": "shape-human-hand-learning",
+      "title": "SHAPE tests a bridge from human hand recordings to robot joint control",
+      "summary": "A November 18 preprint presents SHAPE, a robot-action model trained with human-view video and parallel action outputs. In six tasks on a bimanual robot, the authors report a mean score of 0.80 versus 0.63 for a baseline under their test protocol.",
+      "details": "SHAPE addresses the mismatch between human hand demonstrations and robot joints. Human recordings supply hand-motion goals but not the exact actuator commands for robot fingers. The researchers use discrete action tokens as an auxiliary training signal alongside continuous robot action outputs.",
+      "technical_novelty": "The proposed model predicts two execution streams: end-effector motion and robot joint movement. In the authors' matched study using a bimanual system with 22-degree-of-freedom hands, direct joint readout scored 0.80 over six tasks compared with 0.63 for π0.5 under the reported protocol.",
+      "engineering_impact": "The distinction between joint-space readout and inverse-kinematics-based end-effector readout is central to transfer. Engineers should reproduce the same demonstration budgets, camera viewpoint changes and per-task success definitions before attributing a gain to the architecture.",
+      "limitations": "The scores are task-specific results in a research preprint, not a standardized industrial success guarantee. Transfer conditions and hardware requirements matter, and direct human-to-robot use has differing strengths from robot-specific demonstrations.",
+      "evidence_status": "Author-reported arXiv preprint; evaluation not independently reproduced.",
+      "published_at": "2026-11-18",
+      "organization": "SHAPE research team",
+      "source_ids": [
+        "shape-paper-1118"
+      ],
+      "time_window": "72h",
+      "body": "A November 18 research preprint describes SHAPE, a model designed to help robots learn hand movements from recordings made from a person's viewpoint. The difficulty is that watching human fingers move does not reveal which commands a robot's joints need. SHAPE therefore learns both a general description of the hand's intended movement and a stream of precise robot-joint actions.\n\nThe model adds a training task involving discrete motion tokens and outputs two continuous action streams, one for an end effector and one for joints. On a two-armed robot with hands containing 22 degrees of freedom, the researchers report an average score of 0.80 across six tasks for direct joint control, compared with 0.63 for the comparison model π0.5. These numbers depend on the study's own setup.\n\nThe distinction between joint-space readout and inverse-kinematics-based end-effector readout is central to transfer. Engineers should reproduce the same demonstration budgets, camera viewpoint changes and per-task success definitions before attributing a gain to the architecture. The scores are task-specific results in a research preprint, not a standardized industrial success guarantee. Transfer conditions and hardware requirements matter, and direct human-to-robot use has differing strengths from robot-specific demonstrations.",
+      "image": null
+    },
+    {
+      "id": "mit-microrobot-onboard-sensing",
+      "title": "MIT flying microrobot navigates with onboard sensing while power remains tethered",
+      "summary": "MIT researchers fitted a tiny flapping-wing robot with onboard sensors and computation, allowing flight without external motion-tracking cameras. It still depends on an offboard power supply.",
+      "details": "MIT reported on November 18 a wing-flapping microrobot that carries its own sensors and computation. The team increased actuator dimensions, used an inertial measurement unit, optical-flow sensor and time-of-flight height sensor, and demonstrated controlled trajectories and landing near plants.",
+      "technical_novelty": "The researchers report a 244-milligram electronics package and a lift-to-weight ratio of 1.9. Larger soft actuators increased net lift forces by 46%. Electronics accounted for about 6% of the measured power use; the remainder principally drove the wings.",
+      "engineering_impact": "This is progress in payload allocation and state estimation for insect-scale robots. The next technical barriers include battery integration, perception for obstacle avoidance, drift outside controlled conditions and environmental robustness.",
+      "limitations": "The robot still receives power externally and lacks onboard object-recognition and obstacle-avoidance cameras. The report does not demonstrate independent free-flight operation over a field.",
+      "evidence_status": "MIT institutional report about its researchers' experiment, with quantitative results attributed to the team.",
+      "published_at": "2026-11-18",
+      "organization": "MIT",
+      "source_ids": [
+        "mit-flying-robot-1118"
+      ],
+      "time_window": "72h",
+      "body": "MIT researchers reported on November 18 that a tiny flapping-wing robot can now carry sensors and a processor needed to estimate its own movement in flight. It no longer needs laboratory motion-capture cameras to determine its position while following controlled trajectories. The robot still takes power from an external source.\n\nThe team enlarged and retuned the soft actuators that flap the wings, reporting 46% greater net lift force. An onboard electronics package weighing 244 milligrams includes inertial, optical-flow and distance sensors, plus a microcontroller. The researchers report a lift-to-weight ratio of 1.9 and say the electronics use roughly 6% of total power.\n\nThis is progress in payload allocation and state estimation for insect-scale robots. The next technical barriers include battery integration, perception for obstacle avoidance, drift outside controlled conditions and environmental robustness. The robot still receives power externally and lacks onboard object-recognition and obstacle-avoidance cameras. The report does not demonstrate independent free-flight operation over a field.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Robots move from individual machines to measurable systems",
-    "summary": "This issue connects mobile mapping, fab inspections, robot hands and test facilities through one engineering question: how to measure the complete system rather than one demonstration. Agility's organizational changes also show that scale requires customer feedback and risk control.",
-    "implications": "The main signal is system-level reproducibility: motion, sensing, data, integration and recovery need separate metrics across the complete chain."
+    "title": "System measurement",
+    "summary": "Benchmarked behavior must be distinguished from transfer to new hardware and operating conditions.",
+    "implications": "This issue covers long-horizon reward estimation, human-to-robot action transfer, miniature autonomous sensing, Japanese component distribution and compute supply-chain governance."
   },
   "sources": [
     {
-      "id": "hidonix-1118",
-      "title": "Hidonix Industries Officially Launches Hido II Rover to Automate Indoor Spatial Mapping",
-      "url": "https://www.globenewswire.com/news-release/2026/11/18/3405711/0/en/hidonix-industries-officially-launches-hido-ii-rover-to-automate-indoor-spatial-mapping.html",
-      "domain": "globenewswire.com",
-      "organization": "Hidonix Industries",
-      "published_at": "2026-11-18"
+      "id": "nvidia-reuters-1119",
+      "url": "https://www.reuters.com/legal/litigation/california-ag-subpoenas-nvidia-over-concerns-about-former-ceo-china-2026-11-19/",
+      "domain": "reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-19",
+      "title": "California AG subpoenas Nvidia over concerns about former CEO, China ties"
     },
     {
-      "id": "boston-gf-1117",
-      "title": "Boston Dynamics & GlobalFoundries Expand Robotics Collaboration",
-      "url": "https://bostondynamics.com/news/boston-dynamics-globalfoundries-expand-robotics-collaboration/",
-      "domain": "bostondynamics.com",
-      "organization": "Boston Dynamics; GlobalFoundries",
-      "published_at": "2026-11-17"
+      "id": "marubun-realman-1119",
+      "url": "https://kabuyoho-sls-disclose.ifis.co.jp/b5b/140120261119583264.pdf",
+      "domain": "kabuyoho-sls-disclose.ifis.co.jp",
+      "organization": "Marubun Corporation",
+      "published_at": "2026-11-19",
+      "title": "Marubun announces Japan distribution agreement with RealMan Robotics"
     },
     {
-      "id": "gf-boston-1117",
-      "title": "Boston Dynamics and GlobalFoundries expand robotics collaboration",
-      "url": "https://gf.com/news-and-events/news/boston-dynamics-and-globalfoundries-expand-robotics-collaboration/",
-      "domain": "gf.com",
-      "organization": "GlobalFoundries; Boston Dynamics",
-      "published_at": "2026-11-17"
+      "id": "grana-paper-1118",
+      "url": "https://arxiv.org/abs/2611.24926",
+      "domain": "arxiv.org",
+      "organization": "Grana research authors",
+      "published_at": "2026-11-18",
+      "title": "Grana: Compositional Reward Modeling for Long-Horizon Robot Manipulation"
     },
     {
-      "id": "imageone-lab-1118",
-      "title": "【フィジカルAIロボット】「IMOロボティクスLAB」を開設。イメージワン本社内をロボット展示・実証拠点としてGalbot製ヒューマノイドロボット「G1」の実機展示を開始。",
-      "url": "https://prtimes.jp/main/html/rd/p/000000054.000049889.html",
-      "domain": "prtimes.jp",
-      "organization": "ImageONE; Big Hands",
-      "published_at": "2026-11-18"
+      "id": "shape-paper-1118",
+      "url": "https://arxiv.org/abs/2611.24585",
+      "domain": "arxiv.org",
+      "organization": "SHAPE research authors",
+      "published_at": "2026-11-18",
+      "title": "SHAPE: Discrete Supervision and Parallel Continuous Streams for Learning Dexterous Manipulation from Egocentric Human Data"
     },
     {
-      "id": "tactilia-1118",
-      "title": "SCHUNK spin-off for humanoid robot hands becomes TACTILIA Robotics",
-      "url": "https://schunk.com/us/en/news/schunk-spin-off-for-humanoid-robot-hands-becomes-tactilia-robotics/41857",
-      "domain": "schunk.com",
-      "organization": "SCHUNK; TACTILIA Robotics",
-      "published_at": "2026-11-18"
-    },
-    {
-      "id": "agility-leadership-1118",
-      "title": "Agility Robotics Evolves Executive Leadership Team to Support Next Phase of Growth as a Public Company",
-      "url": "https://investors.agilityrobotics.com/news-releases/news-release-details/agility-robotics-evolves-executive-leadership-team-support-next",
-      "domain": "investors.agilityrobotics.com",
-      "organization": "Agility Robotics",
-      "published_at": "2026-11-18"
+      "id": "mit-flying-robot-1118",
+      "url": "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118",
+      "domain": "news.mit.edu",
+      "organization": "Massachusetts Institute of Technology",
+      "published_at": "2026-11-18",
+      "title": "This featherweight, flying robot carries its own sensors and computers"
     }
   ]
 }
