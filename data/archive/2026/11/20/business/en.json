@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-20",
+  "issue_id": "daily-2026-11-20",
+  "edition": "business",
+  "language": "en",
+  "generated_at": "2026-11-20T04:30:00Z",
+  "title": "Physical AI industry: integration channels and compute concentration",
+  "lead": "A new Japanese distribution arrangement meets research still awaiting commercial validation, while semiconductor governance warrants scenario planning.",
+  "news": [
+    {
+      "id": "nvidia-california-subpoena",
+      "title": "California opens formal inquiry into Nvidia amid leadership controversy",
+      "summary": "California's attorney general said on November 19 that an investigative subpoena was served on Nvidia over possible transfers of restricted technology or confidential information to China. The allegations remain unproven.",
+      "details": "California Attorney General Rob Bonta announced an investigative subpoena to Nvidia on November 19. The investigation follows reports concerning former chief executive Jensen Huang and a person suspected of intelligence ties to China. A subpoena seeks evidence; it is not a judicial finding that the allegations are true.",
+      "technical_novelty": "The central issue for Physical AI is supply-chain and access risk for AI accelerators and cloud compute. Investigators are examining whether technology or confidential information may have reached China. No finding of diversion is established by the announcement.",
+      "engineering_impact": "For industrial adopters, governance and export-control exposure are now a procurement and contingency-planning question. Buyers should examine vendor concentration, contractual assurances and lawful access to compute without treating unverified accusations as established misconduct.",
+      "limitations": "Reports of suspected espionage and inappropriate information transfers are allegations, not established facts. The investigation supplies no measured change in chip availability or robot-development capacity.",
+      "evidence_status": "Reuters report of California attorney general's stated investigative action; underlying allegations are unresolved.",
+      "published_at": "2026-11-19",
+      "organization": "Nvidia; California Department of Justice",
+      "source_ids": [
+        "nvidia-reuters-1119"
+      ],
+      "time_window": "24h",
+      "body": "California Attorney General Rob Bonta said on November 19 that his office served an investigative subpoena on Nvidia concerning the possibility that restricted AI chips or confidential information reached China. The action comes amid controversy around former chief executive Jensen Huang. An investigative subpoena is a demand for information, not a finding of guilt.\n\nNvidia's processors are used to train and run large AI models, including systems intended to control physical robots. Whether access to those processors is affected depends on future regulatory findings and decisions, not on the existence of the subpoena alone. Reports describing suspected espionage have not been established as facts in this proceeding.\n\nFor industrial adopters, governance and export-control exposure are now a procurement and contingency-planning question. Buyers should examine vendor concentration, contractual assurances and lawful access to compute without treating unverified accusations as established misconduct. Reports of suspected espionage and inappropriate information transfers are allegations, not established facts. The investigation supplies no measured change in chip availability or robot-development capacity.",
+      "image": null
+    },
+    {
+      "id": "marubun-realman-japan",
+      "title": "Marubun adds RealMan robot arms and remote-operation tools to Japanese portfolio",
+      "summary": "On November 19 Japanese distributor Marubun announced a domestic agreement with China's RealMan Robotics for lightweight arms, joints, humanoids and tools for remote operation and AI-data collection.",
+      "details": "Japan's Marubun announced a distribution agreement with RealMan Robotics on November 19. It will handle lightweight arms, precision joint modules, humanoid robots, remote-operation systems and AI-data-collection products. The announcement also envisions combining arms with quadruped robots from suppliers such as Deep Robotics.",
+      "technical_novelty": "The commercial integration point is a lightweight arm on a mobile robot, which requires compatible mechanics, power, communication and safety control. The release describes product distribution and customization services rather than an independently benchmarked completed autonomous system.",
+      "engineering_impact": "A local reseller and systems integrator could simplify procurement and support for Japanese plants. A pilot still needs an identified task, on-site safety assessment, total integration cost and acceptance metrics; the release supplies none of these.",
+      "limitations": "No customer deployment, independently measured manipulation success, integration cost or production performance is documented in the release. Product and market-position claims are supplier statements.",
+      "evidence_status": "Official Marubun company disclosure, not independent verification of robot field performance.",
+      "published_at": "2026-11-19",
+      "organization": "Marubun; RealMan Robotics",
+      "source_ids": [
+        "marubun-realman-1119"
+      ],
+      "time_window": "72h",
+      "body": "Japanese electronics distributor Marubun announced on November 19 that it had signed a domestic distribution agreement with China's RealMan Robotics. The products include lightweight robotic arms, joint modules, humanoids, and equipment for remotely operating robots and collecting training data. Marubun says it will also provide customization and system integration.\n\nOne proposed configuration mounts a lightweight arm on a four-legged mobile robot, enabling work in locations that are awkward or dangerous for a person to reach. Such a system requires more than connecting two machines: arm weight, electrical power, control signals and emergency-stop behavior must work together. The announcement does not report a measured customer deployment.\n\nA local reseller and systems integrator could simplify procurement and support for Japanese plants. A pilot still needs an identified task, on-site safety assessment, total integration cost and acceptance metrics; the release supplies none of these. No customer deployment, independently measured manipulation success, integration cost or production performance is documented in the release. Product and market-position claims are supplier statements.",
+      "image": null
+    },
+    {
+      "id": "grana-progress-rewards",
+      "title": "Grana estimates progress in multi-step manipulation without fixed task labels",
+      "summary": "Researchers introduced Grana, a vision-language reward model that selects unfinished subtasks and estimates progress. The paper reports pretraining over 200 diverse manipulation tasks and experiments on five longer tasks.",
+      "details": "A November 18 arXiv preprint describes Grana, a learned reward model for robot manipulation. It processes language descriptions of subtasks and observations to estimate whether a chosen subtask remains unfinished and how far the action has progressed.",
+      "technical_novelty": "The authors combine progress estimates from the active subtask with credit for completed earlier subtasks, and derive training targets from sparse subtask boundaries and action-quality annotations. Pretraining uses 200 mostly short tasks; experiments include adaptation to five long-horizon tasks.",
+      "engineering_impact": "For a customer, the possible value is fewer manually written completion checks when a task has many stages. That economic benefit is still hypothetical: the paper does not establish integration cost, monitoring workload or factory uptime.",
+      "limitations": "Results are reported by the paper's authors and are not evidence of universal robustness on unseen robots, sites or prolonged industrial operations. The abstract alone does not establish a production reliability rate.",
+      "evidence_status": "Author-reported arXiv preprint and experiments; independent replication not established.",
+      "published_at": "2026-11-18",
+      "organization": "Grana research team",
+      "source_ids": [
+        "grana-paper-1118"
+      ],
+      "time_window": "72h",
+      "body": "The authors of a November 18 research preprint introduced Grana, a system that estimates how much progress a robot has made through a task with several manipulation steps. It uses camera observations and language descriptions to identify the next unfinished subtask and assess its progress, addressing a difficult part of robot training: deciding when an action really helped.\n\nThe researchers train their vision-language reward model using information about subtask boundaries and action quality, rather than asking annotators to score every instant numerically. They report pretraining on 200 varied, mostly short manipulation tasks and tests involving adaptation to five multi-minute tasks. Combining completed-step credit with current-step progress aims to make a useful training signal for longer procedures.\n\nFor a customer, the possible value is fewer manually written completion checks when a task has many stages. That economic benefit is still hypothetical: the paper does not establish integration cost, monitoring workload or factory uptime. Results are reported by the paper's authors and are not evidence of universal robustness on unseen robots, sites or prolonged industrial operations. The abstract alone does not establish a production reliability rate.",
+      "image": null
+    },
+    {
+      "id": "shape-human-hand-learning",
+      "title": "SHAPE tests a bridge from human hand recordings to robot joint control",
+      "summary": "A November 18 preprint presents SHAPE, a robot-action model trained with human-view video and parallel action outputs. In six tasks on a bimanual robot, the authors report a mean score of 0.80 versus 0.63 for a baseline under their test protocol.",
+      "details": "SHAPE addresses the mismatch between human hand demonstrations and robot joints. Human recordings supply hand-motion goals but not the exact actuator commands for robot fingers. The researchers use discrete action tokens as an auxiliary training signal alongside continuous robot action outputs.",
+      "technical_novelty": "The proposed model predicts two execution streams: end-effector motion and robot joint movement. In the authors' matched study using a bimanual system with 22-degree-of-freedom hands, direct joint readout scored 0.80 over six tasks compared with 0.63 for π0.5 under the reported protocol.",
+      "engineering_impact": "Human demonstrations might reduce the amount of specialized robot teaching needed for some tasks. The study does not specify the cost of collecting usable recordings, retraining for new equipment or meeting industrial safety requirements.",
+      "limitations": "The scores are task-specific results in a research preprint, not a standardized industrial success guarantee. Transfer conditions and hardware requirements matter, and direct human-to-robot use has differing strengths from robot-specific demonstrations.",
+      "evidence_status": "Author-reported arXiv preprint; evaluation not independently reproduced.",
+      "published_at": "2026-11-18",
+      "organization": "SHAPE research team",
+      "source_ids": [
+        "shape-paper-1118"
+      ],
+      "time_window": "72h",
+      "body": "A November 18 research preprint describes SHAPE, a model designed to help robots learn hand movements from recordings made from a person's viewpoint. The difficulty is that watching human fingers move does not reveal which commands a robot's joints need. SHAPE therefore learns both a general description of the hand's intended movement and a stream of precise robot-joint actions.\n\nThe model adds a training task involving discrete motion tokens and outputs two continuous action streams, one for an end effector and one for joints. On a two-armed robot with hands containing 22 degrees of freedom, the researchers report an average score of 0.80 across six tasks for direct joint control, compared with 0.63 for the comparison model π0.5. These numbers depend on the study's own setup.\n\nHuman demonstrations might reduce the amount of specialized robot teaching needed for some tasks. The study does not specify the cost of collecting usable recordings, retraining for new equipment or meeting industrial safety requirements. The scores are task-specific results in a research preprint, not a standardized industrial success guarantee. Transfer conditions and hardware requirements matter, and direct human-to-robot use has differing strengths from robot-specific demonstrations.",
+      "image": null
+    },
+    {
+      "id": "mit-microrobot-onboard-sensing",
+      "title": "MIT flying microrobot navigates with onboard sensing while power remains tethered",
+      "summary": "MIT researchers fitted a tiny flapping-wing robot with onboard sensors and computation, allowing flight without external motion-tracking cameras. It still depends on an offboard power supply.",
+      "details": "MIT reported on November 18 a wing-flapping microrobot that carries its own sensors and computation. The team increased actuator dimensions, used an inertial measurement unit, optical-flow sensor and time-of-flight height sensor, and demonstrated controlled trajectories and landing near plants.",
+      "technical_novelty": "The researchers report a 244-milligram electronics package and a lift-to-weight ratio of 1.9. Larger soft actuators increased net lift forces by 46%. Electronics accounted for about 6% of the measured power use; the remainder principally drove the wings.",
+      "engineering_impact": "Potential uses such as plant inspection or pollination remain research prospects. Until onboard power, reliability and safe operation are demonstrated, procurement or cost-per-hectare claims would be premature.",
+      "limitations": "The robot still receives power externally and lacks onboard object-recognition and obstacle-avoidance cameras. The report does not demonstrate independent free-flight operation over a field.",
+      "evidence_status": "MIT institutional report about its researchers' experiment, with quantitative results attributed to the team.",
+      "published_at": "2026-11-18",
+      "organization": "MIT",
+      "source_ids": [
+        "mit-flying-robot-1118"
+      ],
+      "time_window": "72h",
+      "body": "MIT researchers reported on November 18 that a tiny flapping-wing robot can now carry sensors and a processor needed to estimate its own movement in flight. It no longer needs laboratory motion-capture cameras to determine its position while following controlled trajectories. The robot still takes power from an external source.\n\nThe team enlarged and retuned the soft actuators that flap the wings, reporting 46% greater net lift force. An onboard electronics package weighing 244 milligrams includes inertial, optical-flow and distance sensors, plus a microcontroller. The researchers report a lift-to-weight ratio of 1.9 and say the electronics use roughly 6% of total power.\n\nPotential uses such as plant inspection or pollination remain research prospects. Until onboard power, reliability and safe operation are demonstrated, procurement or cost-per-hectare claims would be premature. The robot still receives power externally and lacks onboard object-recognition and obstacle-avoidance cameras. The report does not demonstrate independent free-flight operation over a field.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "From experiment to deployment",
+    "summary": "Integration cost, purchasing terms and safety responsibility matter more than a striking demonstration.",
+    "implications": "A new Japanese distribution arrangement meets research still awaiting commercial validation, while semiconductor governance warrants scenario planning."
+  },
+  "sources": [
+    {
+      "id": "nvidia-reuters-1119",
+      "url": "https://www.reuters.com/legal/litigation/california-ag-subpoenas-nvidia-over-concerns-about-former-ceo-china-2026-11-19/",
+      "domain": "reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-19",
+      "title": "California AG subpoenas Nvidia over concerns about former CEO, China ties"
+    },
+    {
+      "id": "marubun-realman-1119",
+      "url": "https://kabuyoho-sls-disclose.ifis.co.jp/b5b/140120261119583264.pdf",
+      "domain": "kabuyoho-sls-disclose.ifis.co.jp",
+      "organization": "Marubun Corporation",
+      "published_at": "2026-11-19",
+      "title": "Marubun announces Japan distribution agreement with RealMan Robotics"
+    },
+    {
+      "id": "grana-paper-1118",
+      "url": "https://arxiv.org/abs/2611.24926",
+      "domain": "arxiv.org",
+      "organization": "Grana research authors",
+      "published_at": "2026-11-18",
+      "title": "Grana: Compositional Reward Modeling for Long-Horizon Robot Manipulation"
+    },
+    {
+      "id": "shape-paper-1118",
+      "url": "https://arxiv.org/abs/2611.24585",
+      "domain": "arxiv.org",
+      "organization": "SHAPE research authors",
+      "published_at": "2026-11-18",
+      "title": "SHAPE: Discrete Supervision and Parallel Continuous Streams for Learning Dexterous Manipulation from Egocentric Human Data"
+    },
+    {
+      "id": "mit-flying-robot-1118",
+      "url": "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118",
+      "domain": "news.mit.edu",
+      "organization": "Massachusetts Institute of Technology",
+      "published_at": "2026-11-18",
+      "title": "This featherweight, flying robot carries its own sensors and computers"
+    }
+  ]
+}
