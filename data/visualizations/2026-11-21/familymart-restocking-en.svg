@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 360 680" role="img">
+<title>FamilyMart · drinks</title>
+<rect width="360" height="680" fill="#FAF8F1"/>
+<rect x="8" y="8" width="344" height="664" fill="none" stroke="#30474A" stroke-width="1"/>
+<g font-family="Noto Sans CJK JP, Noto Sans, Arial, sans-serif" fill="#1C3238">
+<text x="22" y="46" font-size="21" font-weight="bold">FamilyMart · drinks</text>
+<text x="22" y="76" font-size="15">How the display is restocked</text>
+<line x1="22" y1="96" x2="338" y2="96" stroke="#88999C"/>
+<rect x="22" y="114" width="316" height="110" rx="5" fill="#EBEEE8" stroke="#A8B8B2"/>
+<text x="36" y="143" font-size="18" font-weight="bold">1 · Staff</text>
+<text x="36" y="171" font-size="15">Scan the first bottle</text>
+<text x="36" y="195" font-size="15">and load stock</text>
+<path d="M180 225 V240 m-5 -6 l5 6 5 -6" stroke="#386B6D" stroke-width="2" fill="none"/>
+<rect x="22" y="245" width="316" height="110" rx="5" fill="#EBEEE8" stroke="#A8B8B2"/>
+<text x="36" y="274" font-size="18" font-weight="bold">2 · Digital shelf</text>
+<text x="36" y="302" font-size="15">Tracks item, quantity</text>
+<text x="36" y="326" font-size="15">and storage position</text>
+<path d="M180 356 V371 m-5 -6 l5 6 5 -6" stroke="#386B6D" stroke-width="2" fill="none"/>
+<rect x="22" y="376" width="316" height="110" rx="5" fill="#EBEEE8" stroke="#A8B8B2"/>
+<text x="36" y="405" font-size="18" font-weight="bold">3 · Priority</text>
+<text x="36" y="433" font-size="15">Uses sales history</text>
+<text x="36" y="457" font-size="15">of this store</text>
+<path d="M180 487 V502 m-5 -6 l5 6 5 -6" stroke="#386B6D" stroke-width="2" fill="none"/>
+<rect x="22" y="507" width="316" height="110" rx="5" fill="#EBEEE8" stroke="#A8B8B2"/>
+<text x="36" y="536" font-size="18" font-weight="bold">4 · Robot</text>
+<text x="36" y="564" font-size="15">Moves drinks onto</text>
+<text x="36" y="588" font-size="15">the customer display</text>
+<line x1="22" y1="648" x2="338" y2="648" stroke="#88999C"/>
+<text x="22" y="666" font-size="13">Source: FamilyMart, Telexistence</text>
+</g></svg>
