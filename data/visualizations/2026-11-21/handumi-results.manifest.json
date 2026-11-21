@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-21",
+  "article_id": "handumi-towel-fold",
+  "edition": "engineer",
+  "diagram_type": "quantitative_comparison",
+  "source_ids": [
+    "hand"
+  ],
+  "data_points": [
+    {
+      "model": "ACT",
+      "demonstrations": 562,
+      "successful": 12,
+      "trials": 20
+    },
+    {
+      "model": "π0.5",
+      "demonstrations": 562,
+      "successful": 7,
+      "trials": 20
+    },
+    {
+      "model": "ACT",
+      "demonstrations": 101,
+      "successful": 0,
+      "trials": 20
+    }
+  ],
+  "files": [
+    {
+      "language": "ru",
+      "path": "data/visualizations/2026-11-21/handumi-results-ru.svg",
+      "git_blob_sha": "bdaa68446a335102bc331357a8bd212c85af31d3",
+      "xml_qa": {
+        "status": "passed",
+        "method": "Python xml.etree.ElementTree on byte-identical local SVG"
+      },
+      "render_qa": {
+        "status": "passed",
+        "method": "Chromium/Playwright text bounding boxes",
+        "viewport_widths": [
+          360,
+          390,
+          768
+        ],
+        "min_mobile_text_px": 12,
+        "scope": "text bounds and text-text overlap only"
+      },
+      "status": "published"
+    },
+    {
+      "language": "en",
+      "path": "data/visualizations/2026-11-21/handumi-results-en.svg",
+      "git_blob_sha": "c2f4473585a298d34fdc0e9732f0b3074cdcbfd9",
+      "xml_qa": {
+        "status": "passed",
+        "method": "Python xml.etree.ElementTree on byte-identical local SVG"
+      },
+      "render_qa": {
+        "status": "passed",
+        "method": "Chromium/Playwright text bounding boxes",
+        "viewport_widths": [
+          360,
+          390,
+          768
+        ],
+        "min_mobile_text_px": 12,
+        "scope": "text bounds and text-text overlap only"
+      },
+      "status": "published"
+    },
+    {
+      "language": "ja",
+      "path": "data/visualizations/2026-11-21/handumi-results-ja.svg",
+      "git_blob_sha": "a94fd1a5a6c6cf95dd9bfb9b5b8f363c329fadbb",
+      "xml_qa": {
+        "status": "passed",
+        "method": "Python xml.etree.ElementTree on byte-identical local SVG"
+      },
+      "render_qa": {
+        "status": "passed",
+        "method": "Chromium/Playwright text bounding boxes",
+        "viewport_widths": [
+          360,
+          390,
+          768
+        ],
+        "min_mobile_text_px": 12,
+        "scope": "text bounds and text-text overlap only"
+      },
+      "status": "published"
+    }
+  ]
+}
