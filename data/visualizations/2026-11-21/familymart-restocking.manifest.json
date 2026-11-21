@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-21",
+  "edition": "engineer",
+  "news_id": "familymart-drink-restocking",
+  "diagram_type": "process_flow",
+  "source_ids": [
+    "familymart",
+    "telexistence"
+  ],
+  "files": [
+    {
+      "language": "ru",
+      "path": "data/visualizations/2026-11-21/familymart-restocking-ru.svg",
+      "git_blob_sha": "a6b7be33c4bfe326806a75877f0de048da6eddcd",
+      "xml_qa": {
+        "status": "passed",
+        "method": "Python xml.etree.ElementTree; byte-identical Git blob SHA"
+      },
+      "render_qa": {
+        "status": "passed",
+        "method": "Chromium Playwright getBBox text bounds and text-text overlaps; content-box containment",
+        "widths": [
+          360,
+          390,
+          768
+        ],
+        "min_text_px_at_360": 12.42,
+        "scope": "text and text-to-card bounds; not all graphic-object intersections"
+      },
+      "status": "published"
+    },
+    {
+      "language": "en",
+      "path": "data/visualizations/2026-11-21/familymart-restocking-en.svg",
+      "git_blob_sha": "65a2fdaa07bb1f93c97f5864a4f7cec93c8ca81a",
+      "xml_qa": {
+        "status": "passed",
+        "method": "Python xml.etree.ElementTree; byte-identical Git blob SHA"
+      },
+      "render_qa": {
+        "status": "passed",
+        "method": "Chromium Playwright getBBox text bounds and text-text overlaps; content-box containment",
+        "widths": [
+          360,
+          390,
+          768
+        ],
+        "min_text_px_at_360": 12.42,
+        "scope": "text and text-to-card bounds; not all graphic-object intersections"
+      },
+      "status": "published"
+    },
+    {
+      "language": "ja",
+      "path": "data/visualizations/2026-11-21/familymart-restocking-ja.svg",
+      "git_blob_sha": "c9e83f592e6dd327a157353558f0f02aa966f728",
+      "xml_qa": {
+        "status": "passed",
+        "method": "Python xml.etree.ElementTree; byte-identical Git blob SHA"
+      },
+      "render_qa": {
+        "status": "passed",
+        "method": "Chromium Playwright getBBox text bounds and text-text overlaps; content-box containment",
+        "widths": [
+          360,
+          390,
+          768
+        ],
+        "min_text_px_at_360": 12.42,
+        "scope": "text and text-to-card bounds; not all graphic-object intersections"
+      },
+      "status": "published"
+    }
+  ],
+  "content_note": "Worker scans first bottle and loads digital stock shelf; inventory location/quantity tracked; sales history prioritizes robot display replenishment",
+  "generation_run": "svg-debug-iteration-11"
+}
