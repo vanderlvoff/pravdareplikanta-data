@@ -2,159 +2,186 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-21",
-  "issue_id": "daily-2026-11-21",
+  "issue_date": "2026-11-22",
+  "issue_id": "daily-2026-11-22",
   "edition": "engineer",
   "language": "en",
-  "generated_at": "2026-11-20T21:15:18Z",
-  "title": "How to encode a movement that takes two arms",
-  "lead": "At the National University of Singapore, researchers tested ways to represent two arms' movements in a robot controller. They gave the arms a shared system of codes and used the left arm's plan to help calculate commands for the right.",
+  "generated_at": "2026-11-21T21:08:55+00:00",
+  "title": "How a camera helps a robot arm place a suction cup",
+  "lead": "Chitose Robotics plans to show three ways of setting up industrial arms in Osaka. One setup will use an image of a reflective metal part to choose where to place a suction cup.",
+  "technology_signal": {
+    "title": "A robot arm will find a suction point from the outline of a part",
+    "summary": "Chitose Robotics plans to demonstrate metal part picking in Osaka with a camera on the arm. The software uses the visible outline to choose the position and angle of the suction cup.",
+    "implications": "Assessing the Chitose system for production will require cycle times and successful-pick rates for the actual shapes the line handles."
+  },
   "news": [
     {
-      "id": "bicat-two-arm-codes",
-      "title": "Singapore researchers encode one robot arm's movement with the other in mind",
-      "summary": "A National University of Singapore team introduced BiCAT, a way to represent movements of two robot arms with short codes. Across ten simulated tasks it improved mean success by 17.6 percentage points over the strongest of eight comparison methods.",
-      "details": "The model calculates the left arm's commands first. Within each arm's group it predicts the codes in parallel.",
-      "technical_novelty": "BiCAT gives the arms a shared motion representation and uses information from the partner arm to choose codes.",
-      "engineering_impact": "The left arm's plan becomes an input when calculating what the right arm will do.",
-      "limitations": "The gain of 17.6 percentage points applies to ten virtual tasks. Six physical tasks were evaluated separately.",
-      "evidence_status": "The National University of Singapore team published the comparison on November 17.",
-      "published_at": "2026-11-17",
-      "organization": "National University of Singapore",
+      "id": "chitose-robonext-three-arms",
+      "title": "Three industrial arms will show three ways to set up a job",
+      "summary": "Chitose Robotics plans to demonstrate its integration software with three brands of robot arm at RoboNext in Osaka. The planned jobs are picking loose metal parts, replaying a motion guided by an operator, and routing a flexible cable.",
+      "details": "Exhibition setups in Osaka will use arms from FANUC, Universal Robots and Elite Robots.",
+      "technical_novelty": "Chitose Robotics' software connects sensors and operator devices to industrial robot arms.",
+      "engineering_impact": "In the metal picking demonstration, software uses the outline of a part to find a place for a suction cup.",
+      "limitations": "The announcement gives no success rates or cycle times for the planned exhibition jobs.",
+      "evidence_status": "Chitose Robotics announced the demonstrations in its exhibit preview.",
+      "published_at": "2026-11-20",
+      "organization": "Chitose Robotics",
       "source_ids": [
-        "bicat"
+        "chitose"
       ],
-      "time_window": "7d",
-      "body": "National University of Singapore researchers tested how to encode actions for two robot arms. Their BiCAT method gives the arms a common motion representation and preserves information about their relationship when turning codes back into commands. In simulation, the team measured the difference in task success against eight other methods of encoding actions.\n\nWhen one arm holds an object, the path the other should follow depends on where the first one holds it. Yet both arms can perform similar movements. The researchers gave them a shared motion representation so that a similar piece of a path can be described with the same system of codes. When choosing the codes for either arm, the model also takes information from its partner into account. A joint decoder, the part that turns those symbols back into movements, reconstructs commands for both arms.\n\nWhen the controller chooses an action, it first predicts a set of codes for the left arm. It then predicts the set for the right arm using the left arm's prediction. Within each arm's set the codes are predicted in parallel. The joint decoder receives both sets, so at that stage of the calculation it has access to the left arm’s plan and the right arm’s response to it. The researchers compared the methods in the RoboTwin 2.0 simulator and separately evaluated six physical tasks on three robot configurations.\n\nThe authors report 40.5 milliseconds to produce a chunk of actions. Reproducing the comparison requires keeping two quantities distinct. The timing applies to a group of commands, while the 17.6 percentage point gain refers to mean success across ten virtual tasks. The paper evaluates its six physical tasks separately.",
+      "time_window": "72h",
+      "body": "Japan’s Chitose Robotics announced on November 20 that it would bring three working setups to the December RoboNext exhibition in Osaka. A robot arm will pick metal parts from a pile in one setup, replay a motion recorded under human control in another, and guide a cable around pins in the third. All three will use CruBo, software that Chitose Robotics developed to connect an arm with devices that supply information or control commands.\n\nFor the metal parts, the company plans to mount an ordinary camera directly on the end of the arm. The software traces the visible outline of a part and uses that shape to choose a spot and angle for a suction cup. The company says the demonstration needs neither a catalog of three-dimensional part shapes nor a training set for each individual part. At another station an operator moves a handheld device, while the system records the path and speed of the arm so that it can repeat the motion.\n\nFor the cable experiment, a tool uses friction to hold the cable. The software calculates a smooth path between a small number of positions specified during setup. Chitose separately reports having previously achieved 0.02 millimetres of positioning accuracy at the end of an arm using feedback from camera images. The announcement gives no successful-pick percentage for the pile or cycle time for routing the cable. Each job will therefore need its own measurements before a visitor can judge how the setup might perform on a production line.\n\nTo assess the positioning figure, an engineer would ask how the camera was installed, what load the arm carried and how the target position was measured. Routing a cable also requires observing the position of the cable itself.",
       "image": null
     },
     {
-      "id": "hand-checkpoint-steering",
-      "title": "A virtual hand's early score proved a poor guide to its next training run",
-      "summary": "Artur Kuramshin and colleagues used simulation to test how to adapt a robot controller to a many-fingered hand. A score taken just after learning from demonstrations gave little guidance about which saved version would make best use of a second training stage.",
-      "details": "In a virtual kitchen the hand pressed a coffee machine button and screwed in a light bulb.",
-      "technical_novelty": "The researchers saved the program at different points while it learned from examples and gave each copy more practice.",
-      "engineering_impact": "That allowed a direct comparison between each program's score after its first lesson and its result after the second.",
-      "limitations": "The tests shifted appliance position along one axis. Contact with the button and the bulb took place in the computer.",
-      "evidence_status": "Artur Kuramshin and colleagues reported the two simulated tests in a paper posted November 18.",
+      "id": "watco-seadrift-self-propelled-railcars",
+      "title": "Watco will bring self-propelled freight cars to a Texas industrial site",
+      "summary": "Intramotev announced an expanded agreement with rail operator Watco. The operator plans to deploy battery-powered freight cars that can propel themselves at an industrial facility in Seadrift, Texas.",
+      "details": "Watco plans to use Intramotev freight cars at an industrial site in Seadrift.",
+      "technical_novelty": "A battery and drive system can move the freight car under its own power along the rails.",
+      "engineering_impact": "For the assigned movement, the car can provide traction at its own wheels.",
+      "limitations": "The partners' announcement gives no deployment size or starting date for the Texas site.",
+      "evidence_status": "Manufacturer Intramotev reported the new agreement on November 20.",
+      "published_at": "2026-11-20",
+      "organization": "Intramotev and Watco",
+      "source_ids": [
+        "intramotev",
+        "railway-age"
+      ],
+      "time_window": "72h",
+      "body": "On November 20, US rail technology company Intramotev announced that Watco had picked another location for its self-propelled freight cars. This time the site is an industrial facility in Seadrift, Texas. The companies previously agreed to use the cars at Watco’s Wood River terminal in Illinois. The Texas agreement adds a new location to that partnership. It concerns an industrial operation where railcars need to move between places where work is carried out.\n\nThe basic vehicle performs the same cargo-carrying job as a conventional freight car. Intramotev adds a drive system that draws energy from a battery, allowing the car to move under its own power for the assigned operation. This changes how traction is provided: the vehicle carrying the freight can also supply the power at its wheels. How much work can fit into a shift will depend on the pattern of movements, the loading process and the time set aside to charge the batteries.\n\nA site operator can measure the movement from end to end, including the wait to load, the trip and the time needed to free the track after unloading. A loaded car may still have to wait for a work area to become available. Intramotev’s announcement gives neither the number of cars bound for Seadrift nor a starting date. It describes an agreement to extend the program. A comparison with Wood River would need actual workloads and operating conditions for both locations.\n\nTo size charging equipment for Seadrift, an engineer would need energy consumption per move, time available for charging and the distribution of loads. The agreement announcement gives no such operating profile for the Texas site.",
+      "image": null
+    },
+    {
+      "id": "brightai-infrastructure-financing",
+      "title": "BrightAI raises $97 million for monitoring physical infrastructure",
+      "summary": "BrightAI announced $97 million in financing to expand its systems for monitoring industrial and utility equipment. Smith Point Capital led the round, and GE Vernova participated as an existing customer.",
+      "details": "Smith Point Capital led the round, which also included GE Vernova.",
+      "technical_novelty": "The BrightAI system analyses sensor readings on a computer close to the equipment.",
+      "engineering_impact": "Local analysis can keep checking for changes when the connection to a remote server is interrupted.",
+      "limitations": "The financing announcement gives no fault detection results for a specific site.",
+      "evidence_status": "BrightAI announced the investment. Its lead investor described the system and its reported footprint.",
       "published_at": "2026-11-18",
-      "organization": "Mila, Université de Montréal and Renesas Electronics Canada",
+      "organization": "BrightAI",
       "source_ids": [
-        "bulb"
-      ],
-      "time_window": "72h",
-      "body": "Artur Kuramshin and colleagues compared methods for adapting the π0.5 controller to a simulated many-fingered hand pressing a coffee machine button or screwing in a bulb. They wanted to select a checkpoint, a saved set of parameters from which to start learning with reward feedback. Across the two tasks, high success immediately after training on demonstrations was an unreliable selection criterion.\n\nA person first operated the virtual hand remotely. The researchers used the resulting examples to adapt π0.5, a model that selects movements from visual input and instructions, to the new hand. The original model had not trained on the LEAP hand, which has sixteen degrees of freedom. The team saved intermediate versions as it adapted the model. This let it start the following stage from several points in the same training run, with different amounts of learning from demonstrations already behind each one.\n\nIn the second stage, a trainable component selected variations in the movement using feedback about the result. The team tested the controller at the two object placements used in that stage and at two more outside their range. It varied the location of a lamp on the counter in one task and the sideways offset of a coffee machine in the other. All the objects, contacts and finger movements were simulated. The comparison covered five ways of adapting the model and four saved versions for each recipe on each task.\n\nThe most steerable version kept the visual and language parameters fixed while fully training the component that selects actions. The comparison hinges on when the measurement was made. The team evaluated starting points before and after steering, and on the button task the relationship between the two scores could even run in the opposite direction.",
-      "image": null
-    },
-    {
-      "id": "handumi-towel-fold",
-      "title": "Robot arms learn a towel fold from movements recorded away from the robot",
-      "summary": "Brik Meza and colleagues presented HandUMI, a pair of wearable devices that record a person's movements without using a robot. One controller trained on 562 demonstrations completed a towel fold in 12 of 20 attempts on a physical pair of arms.",
-      "details": "A person folded a towel using two tools worn on the hands. The recordings were used to train programs for real robot arms.",
-      "technical_novelty": "Sensors recorded each hand's path and the gap between the parts that gripped the cloth.",
-      "engineering_impact": "People could collect examples away from the robot that would later attempt the fold.",
-      "limitations": "After training on 562 demonstrations, one program completed 12 of 20 folds and the other completed seven of 20.",
-      "evidence_status": "Brik Meza and colleagues described their test on physical robot arms in a paper posted November 17.",
-      "published_at": "2026-11-17",
-      "organization": "Mu Robotics and collaborators",
-      "source_ids": [
-        "hand"
+        "brightai",
+        "smith-point"
       ],
       "time_window": "7d",
-      "body": "Brik Meza's team presented HandUMI, a system that records the path and opening of each gripper during a two-handed demonstration without tying the data to the joints of a particular robot. The authors converted the recordings for simulated arms, then ran a separate physical test to see whether controllers trained on the data could fold a towel.\n\nThe demonstrator wears a tool on each hand with parallel jaws that slide together and apart. Swappable tips match the shape of the parts that will touch the object on the intended robot. Virtual reality controllers track the hands, while a separate sensor measures the gap between the jaws. This records both the path of a tool and when it closes or opens on the cloth. For another robot, software calculates how its joints would have to move to take its gripper along the recorded path.\n\nThe authors tested that calculation on seven simulated arm configurations. A separate physical experiment used a pair of PiPER arms to fold a towel. With the full set of 562 demonstrations, one controller, ACT, completed 12 of 20 attempts. A second, a fine-tuned model called π0.5, completed seven of twenty. Training ACT on only the first 101 demonstrations produced no completed folds in twenty attempts.\n\nAcross the simulated transfers, median position error was at most 1.2 millimetres and at most 4.7 percent of episodes were rejected. Those figures characterize the geometric conversion. Whether the machine could actually keep hold of the cloth and complete a fold was assessed by counting finished attempts on the physical arms.",
+      "body": "On November 18, BrightAI announced $97 million in financing. The company supplies equipment and software intended to detect changes in pumps, compressors and other industrial assets between visits by technicians. Smith Point Capital led the round. BrightAI identified one participant, GE Vernova, as an existing customer. The financing is intended to expand the reach of the system, and the lead investor described examples of how it is used.\n\nOne practical problem is taking measurements where a technician cannot constantly watch a piece of equipment. A sensor can record sound, temperature or vibration. A computer nearby analyses those signals and looks for unusual behaviour, which reduces dependence on a permanent connection to a remote server. When an area warrants a closer inspection, the investor describes the use of robots and drones. The fixed sensors do the regular watching, while a mobile device can gather more information at the place that needs attention.\n\nSmith Point Capital says the platform runs across more than 50,000 operating locations. Its count covers places that use the monitoring platform. To compare maintenance systems at one location, an operator would want to know when the first alert arrived, how long it took to check, and what the inspection found. Missed faults and false warnings would need separate counts. The financing announcement gives no such performance comparison for a specific site.\n\nEvaluating an alerting system also requires records of the faults a technician actually found. Without that link between the sensor record and the inspection, an alert count cannot provide a detection rate.",
       "image": null
     },
     {
-      "id": "green-logistics-case-stacking",
-      "title": "Cameras on six robot arms help a warehouse stack mixed cases",
-      "summary": "Mujin described six robots working at a new Green Logistics warehouse in Japan. They receive cases from automated storage, locate them and stack them on pallets for shipment.",
-      "details": "At the new Green Logistics centre, six machines receive cases from automated storage.",
-      "technical_novelty": "A camera on the arm measures depth. Software works out where to place the case.",
-      "engineering_impact": "The camera needs no separate stand beside the robot, which helps the equipment fit the available floor space.",
-      "limitations": "Around 500 cases an hour is the rate given for one machine at this site.",
-      "evidence_status": "Mujin, the supplier, described the installation and its rate in a report published on November 19.",
+      "id": "tokyo-skytree-mobile-vending",
+      "title": "Tokyo Skytree plans a trial for a moving toy shop",
+      "summary": "PIMT and the operator of Tokyo Skytree scheduled an eight-day trial of a mobile toy shop for November 21 to 28. They plan to move one machine around the entrance floor and track sales, the share of passersby who stop, and visitor satisfaction.",
+      "details": "One machine selling soft toys will move between locations on the Tokyo Skytree entrance floor.",
+      "technical_novelty": "The organizers plan to change the selling spot and use a camera to estimate the share of passersby who stop.",
+      "engineering_impact": "Counts of stops, purchases and survey responses give the tower operator different ways to evaluate a location.",
+      "limitations": "The tower announcement describes the trial and gives no sales results.",
+      "evidence_status": "The supplier and the operator of Tokyo Skytree announced the November 21–28 trial.",
       "published_at": "2026-11-19",
-      "organization": "Mujin",
+      "organization": "PIMT and Tobu Tower Skytree",
       "source_ids": [
-        "mujin"
+        "pimt",
+        "skytree"
       ],
       "time_window": "72h",
-      "body": "At the new Green Logistics centre, Mujin placed six palletizing cells at the outlet of an automated warehouse. In a November 19 case report, the supplier describes how it coupled case recognition with the calculation of a stacking position. Mounting vision equipment on the arm freed up space where the cells meet the storage system.\n\nCases arrive individually from storage. The machines have to stack them on a pallet, a flat base on which several cases can travel together as one load. For an arm, each placement changes the space available for the next case. The MujinOS software chooses a stacking position while the system is working. It uses a view with depth from a camera on the arm to recognize and locate the case in front of it. The supplier says the equipment handles roughly a thousand kinds of cases.\n\nFloor space also shaped the installation. The six work cells sit directly beside the automated storage system, packed into a limited area. Putting the camera on the arm dispenses with a separate stand alongside each robot. The system takes possible collisions into account as it plans the movement. Mujin reports a rate of about five hundred cases picked and stacked per hour for an individual machine at the site.\n\nReproducing the quoted rate would require a record of the sizes and sequence of the cases arriving during measurement. The supplier identifies the variety of stock and gives an hourly rate per cell, but its announcement does not break down cycle times by case size.",
+      "body": "Where should a shop go when the people it serves move around throughout the day? At Tokyo Skytree, the tower operator and a company called PIMT want to study that question with one mobile vending machine. The unit carries stuffed toys. During the eight-day trial scheduled to start on November 21, the company plans to change its position on the fourth-floor entrance level, where visitors approach the ticket counters. The two companies announced the trial on November 19.\n\nTheir measurements follow three different parts of a shopping trip. A visitor can notice the machine, stop to see what it sells and then walk away. The companies plan to use a camera and image analysis software to estimate how often people stop. Sales records show how often those encounters turn into purchases. A visitor survey asks a different question again: whether people liked the experience. Together, the measurements give the operator several ways to judge a selling spot.\n\nThe supplier has operated a machine of this type at Narita Airport since April 2026. It describes moving the shop to suit events and selling in areas without a nearby power outlet. At the tower, it plans to sell soft toys shaped like baked goods and show visitors how to photograph one against the skyline. Sales figures for the tower trial are still pending. To assess the value of changing position, it matters how many visitors passed each candidate spot as well as how many stopped there.\n\nTo interpret the camera counts, an engineer would need a record of the machine's position and the observation period. The announcement names the outcomes to measure and leaves the measurement protocol unspecified.",
       "image": null
     },
     {
-      "id": "familymart-drink-restocking",
-      "title": "FamilyMart connects the drinks fridge to the stock shelf",
-      "summary": "Japan's FamilyMart will begin a phased rollout of Telexistence drink-stocking robots in January 2027. Staff load a digital storage shelf, while sales at the individual shop help determine which drinks the robot puts on display first.",
-      "details": "A worker loads the reserve drinks first. The robot moves bottles onto the shelf facing the shoppers.",
-      "technical_novelty": "The system tracks the location of the drinks and uses the shop's sales history.",
-      "engineering_impact": "A drink that sells quickly can get priority when the machine restocks the display.",
-      "limitations": "The roughly 70 percent saving refers to staff time spent restocking drinks per day at the early stores.",
-      "evidence_status": "FamilyMart and Telexistence described the early stores and the phased rollout planned from January 2027.",
-      "published_at": "2026-11-19",
-      "organization": "FamilyMart",
+      "id": "abb-robotics-contingency-options",
+      "title": "Reuters reports that ABB is weighing options for its robotics business",
+      "summary": "Two people familiar with the talks told Reuters that ABB could spin off its robotics division if a sale to Japan’s SoftBank cannot be salvaged. ABB earlier confirmed that Chinese authorities had barred SoftBank from acquiring the robotics business in China.",
+      "details": "Reuters reports discussions about separating ABB Robotics' Chinese business from the rest of the division.",
+      "technical_novelty": "Reported alternatives include another buyer or a standalone company if the SoftBank sale falls through.",
+      "engineering_impact": "The structure can matter to industrial customers that arrange parts and maintenance for robots.",
+      "limitations": "The companies have not announced a final arrangement following the Reuters report.",
+      "evidence_status": "ABB confirmed the restriction in China. The potential alternatives come from unnamed Reuters sources.",
+      "published_at": "2026-11-20",
+      "organization": "ABB and SoftBank",
       "source_ids": [
-        "familymart",
-        "telexistence"
+        "reuters-abb",
+        "abb"
       ],
       "time_window": "72h",
-      "body": "FamilyMart’s drink-restocking system, announced on November 19, uses inventory and sales data to make different decisions about bottles moving through a Japanese convenience store. The shelf records where the stock is, and the store's sales determine which items the machine moves first. The chain plans to deploy the two pieces of equipment together starting in January 2027.\n\nStaff used to handle the same delivery at two points in its journey. They sorted the incoming drinks inside the fridge, then checked what customers had taken and carried bottles from storage to the display. In the new arrangement, the storage shelf marks the handover. A worker scans the first bottle and puts the stock away. The shelf keeps track of product locations and quantities, even when different items share the storage space. It can also suggest how many bottles of each item are needed.\n\nA separate machine takes care of the display. Its control system uses the store's sales history to give popular products priority. The retailer and its technology partner have been working together on the equipment since 2020. FamilyMart quotes a maximum of about 1,800 bottles stocked per day. That figure describes the machine's capacity. To assess the effect on staff, the chain tracked time spent replenishing drinks per store per day.\n\nAn engineer evaluating the installation could also measure how long a display slot stays empty during a rush. A daily capacity figure alone cannot answer that question. FamilyMart gave a different measure from the early installations: staff spent about 70 percent less time replenishing drinks.",
+      "body": "Reuters reported on November 20 that ABB and Japan’s SoftBank were looking at ways to restructure their industrial robotics deal. According to two unnamed people, ABB could turn the division into a separate company or sell it to another buyer if the SoftBank deal fell through. ABB announced the original sale in October 2025 with a value of $5.375 billion for the business as a whole. Completion depended on regulatory approvals.\n\nOn November 5, ABB said SoftBank had informed it that Chinese authorities had prohibited the acquisition of the robotics business in China. The new Reuters report describes one possible way to preserve the transaction: separating the Chinese operation from the rest. Reuters puts that operation at about 30 percent of the robotics unit, citing its sources. ABB and SoftBank both declined to comment on the new report. The eventual arrangement would have to satisfy the parties and the regulators involved.\n\nFor a new order or a long project, a decision to split a business could affect who sells the hardware and whom the customer deals with over support. The reports give no decision on how contracts would transfer. Reuters was also unable to establish where a standalone company might list its shares or how much ABB might seek in such a transaction.\n\nAn engineer designing a line needs to identify who will support its controllers and parts in the country where the equipment is installed. The scenarios described so far leave those support arrangements open.",
       "image": null
     }
   ],
-  "technology_signal": {
-    "title": "Shared motion codes improved two-arm coordination in tests",
-    "summary": "National University of Singapore researchers used their prediction for the left arm to calculate movements for the right. Across ten virtual tasks, mean success exceeded the strongest of eight comparison methods by 17.6 percentage points.",
-    "implications": "In the Singapore team’s BiCAT method, the controller calculates commands for the left arm and passes that plan into the calculation for the right. The researchers evaluated six physical tasks on three robot configurations separately."
-  },
   "sources": [
     {
-      "id": "bicat",
-      "title": "BiCAT: Bimanual Coordination Action Tokenization",
-      "url": "https://arxiv.org/abs/2611.23499",
-      "domain": "arxiv.org",
-      "organization": "National University of Singapore",
-      "published_at": "2026-11-17"
+      "id": "chitose",
+      "organization": "Chitose Robotics",
+      "published_at": "2026-11-20",
+      "url": "https://prtimes.jp/main/html/rd/p/000000029.000040625.html",
+      "domain": "prtimes.jp",
+      "title": "チトセロボティクス、RoboNext2026に出展"
     },
     {
-      "id": "bulb",
-      "title": "Finetuning VLAs for Dexterous Manipulation: The Right Checkpoint Is All You Need",
-      "url": "https://arxiv.org/abs/2611.23676",
-      "domain": "arxiv.org",
-      "organization": "Mila, Université de Montréal and Renesas Electronics Canada",
-      "published_at": "2026-11-18"
+      "id": "intramotev",
+      "organization": "Intramotev",
+      "published_at": "2026-11-20",
+      "url": "https://intramotev.com/newsroom",
+      "domain": "intramotev.com",
+      "title": "Intramotev, Watco Bringing Autonomous Railcars to Texas"
     },
     {
-      "id": "hand",
-      "title": "HandUMI: A Modular Hand-Worn Parallel-Jaw Interface for Robot-Free Bimanual Data Capture",
-      "url": "https://arxiv.org/abs/2611.22146",
-      "domain": "arxiv.org",
-      "organization": "Mu Robotics and collaborators",
-      "published_at": "2026-11-17"
+      "id": "railway-age",
+      "organization": "Railway Age",
+      "published_at": "2026-11-20",
+      "url": "https://www.railwayage.com/freight/short-lines-regionals/intramotev-watco-bringing-autonomous-railcars-to-texas/",
+      "domain": "www.railwayage.com",
+      "title": "Intramotev, Watco Bringing Autonomous Railcars to Texas"
     },
     {
-      "id": "mujin",
-      "title": "グリーンロジスティクス様、6台のフィジカルAIロボットで自動倉庫と連携した出荷ピッキングを自動化",
-      "url": "https://media.mujin.co.jp/news/11657/",
-      "domain": "media.mujin.co.jp",
-      "organization": "Mujin",
-      "published_at": "2026-11-19"
+      "id": "brightai",
+      "organization": "BrightAI",
+      "published_at": "2026-11-18",
+      "url": "https://www.businesswire.com/news/home/20261118838405/en/BrightAI-Announces-%2497-Million-Investment-to-Scale-Physical-AI-Across-the-Worlds-Essential-Services",
+      "domain": "www.businesswire.com",
+      "title": "BrightAI Announces $97 Million Investment to Scale Physical AI Across the World’s Essential Services"
     },
     {
-      "id": "familymart",
-      "title": "店舗従業員の業務負荷軽減と省力化に向け 飲料補充ロボットを2027年1月から導入開始",
-      "url": "https://www.family.co.jp/company/news_releases/2026/20261119_02.html",
-      "domain": "www.family.co.jp",
-      "organization": "FamilyMart",
-      "published_at": "2026-11-19"
+      "id": "smith-point",
+      "organization": "Smith Point Capital",
+      "published_at": "2026-11-18",
+      "url": "https://www.smithpointcapital.com/news/the-intelligence-layer-for-critical-infrastructure",
+      "domain": "www.smithpointcapital.com",
+      "title": "The Intelligence Layer for Critical Infrastructure: Why We’re Partnering with BrightAI"
     },
     {
-      "id": "telexistence",
-      "title": "AIロボット「TX GHOST」を全国のファミリーマート店舗へ2027年1月から本格導入開始",
-      "url": "https://tx-inc.com/ja/blog/2026/11/19/12823/",
-      "domain": "tx-inc.com",
-      "organization": "Telexistence",
-      "published_at": "2026-11-19"
+      "id": "pimt",
+      "organization": "PIMT",
+      "published_at": "2026-11-19",
+      "url": "https://prtimes.jp/main/html/rd/p/000000009.000179442.html",
+      "domain": "prtimes.jp",
+      "title": "東京スカイツリーで移動型無人販売ロボットのビジネス実証"
+    },
+    {
+      "id": "skytree",
+      "organization": "Tobu Tower Skytree",
+      "published_at": "2026-11-19",
+      "url": "https://www.tokyo-skytree.jp/press/post/730/",
+      "domain": "www.tokyo-skytree.jp",
+      "title": "移動型無人販売ロボットを活用した実証実験を実施"
+    },
+    {
+      "id": "reuters-abb",
+      "organization": "Reuters",
+      "published_at": "2026-11-20",
+      "url": "https://www.reuters.com/business/media-telecom/abb-considers-robotics-listing-if-sale-softbank-fails-sources-say-2026-11-20/",
+      "domain": "www.reuters.com",
+      "title": "ABB considers robotics listing if sale to SoftBank fails, sources say"
+    },
+    {
+      "id": "abb",
+      "organization": "ABB",
+      "published_at": "2026-11-05",
+      "url": "https://www.abb.com/global/en/news/140154/update-on-divestment-of-abb-robotics",
+      "domain": "www.abb.com",
+      "title": "Update on divestment of ABB Robotics"
     }
   ]
 }
