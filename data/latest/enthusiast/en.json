@@ -2,150 +2,159 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-20",
-  "issue_id": "daily-2026-11-20",
+  "issue_date": "2026-11-21",
+  "issue_id": "daily-2026-11-21",
   "edition": "enthusiast",
   "language": "en",
-  "generated_at": "2026-11-20T04:30:00Z",
-  "title": "How robots learn movements and depend on the wider technology world",
-  "lead": "From tiny flying machines to dexterous hands, five developments show what researchers have demonstrated and which questions remain open.",
+  "generated_at": "2026-11-20T21:15:18Z",
+  "title": "How to show a robot a movement when it is somewhere else",
+  "lead": "Brik Meza and colleagues recorded a person's hands folding a towel, including when the tools closed on the cloth and let it go. After training, two mechanical arms had a chance to repeat the job on a real towel.",
   "news": [
     {
-      "id": "nvidia-california-subpoena",
-      "title": "California seeks information from Nvidia amid unresolved technology-transfer allegations",
-      "summary": "California's attorney general said on November 19 that an investigative subpoena was served on Nvidia over possible transfers of restricted technology or confidential information to China. The allegations remain unproven.",
-      "details": "California Attorney General Rob Bonta announced an investigative subpoena to Nvidia on November 19. The investigation follows reports concerning former chief executive Jensen Huang and a person suspected of intelligence ties to China. A subpoena seeks evidence; it is not a judicial finding that the allegations are true.",
-      "technical_novelty": "The central issue for Physical AI is supply-chain and access risk for AI accelerators and cloud compute. Investigators are examining whether technology or confidential information may have reached China. No finding of diversion is established by the announcement.",
-      "engineering_impact": "This matters to robotics because advanced chips help machines learn and run complex actions. An investigation may affect future business decisions, but it does not establish wrongdoing or an immediate shortage.",
-      "limitations": "Reports of suspected espionage and inappropriate information transfers are allegations, not established facts. The investigation supplies no measured change in chip availability or robot-development capacity.",
-      "evidence_status": "Reuters report of California attorney general's stated investigative action; underlying allegations are unresolved.",
+      "id": "handumi-towel-fold",
+      "title": "How two robot arms learned a towel fold from someone else's hands",
+      "summary": "Brik Meza and colleagues presented HandUMI, a pair of wearable devices that record a person's movements without using a robot. One controller trained on 562 demonstrations completed a towel fold in 12 of 20 attempts on a physical pair of arms.",
+      "details": "A person folded a towel using two tools worn on the hands. The recordings were used to train programs for real robot arms.",
+      "technical_novelty": "Sensors recorded each hand's path and the gap between the parts that gripped the cloth.",
+      "engineering_impact": "People could collect examples away from the robot that would later attempt the fold.",
+      "limitations": "After training on 562 demonstrations, one program completed 12 of 20 folds and the other completed seven of 20.",
+      "evidence_status": "Brik Meza and colleagues described their test on physical robot arms in a paper posted November 17.",
+      "published_at": "2026-11-17",
+      "organization": "Mu Robotics and collaborators",
+      "source_ids": [
+        "hand"
+      ],
+      "time_window": "7d",
+      "body": "Can a robot learn to fold a towel while it is somewhere else during the lesson? Brik Meza and colleagues recorded a person's movements with a pair of wearable tools, then let two mechanical arms try the job on real cloth. The experiment let them follow a fold from a human demonstration all the way to a finished attempt by a robot.\n\nThe demonstrator wears a tool on each hand with parallel jaws that slide together and apart. Swappable tips match the shape of the parts that will touch the object on the intended robot. Virtual reality controllers track the hands, while a separate sensor measures the gap between the jaws. This records both the path of a tool and when it closes or opens on the cloth. For another robot, software calculates how its joints would have to move to take its gripper along the recorded path.\n\nThe authors tested that calculation on seven simulated arm configurations. A separate physical experiment used a pair of PiPER arms to fold a towel. With the full set of 562 demonstrations, one controller, ACT, completed 12 of 20 attempts. A second, a fine-tuned model called π0.5, completed seven of twenty. Training ACT on only the first 101 demonstrations produced no completed folds in twenty attempts.\n\nOne detail of the lesson concerns what actually touches the towel. The team changed the tips on the human demonstrator's tools to copy the surfaces on the robot. The robot kept its own grippers. In that arrangement it is possible to adapt the tool used to teach a fold without rebuilding the equipment that ultimately has to perform it.",
+      "image": null
+    },
+    {
+      "id": "hand-checkpoint-steering",
+      "title": "Which virtual hand makes the most of a second lesson?",
+      "summary": "Artur Kuramshin and colleagues used simulation to test how to adapt a robot controller to a many-fingered hand. A score taken just after learning from demonstrations gave little guidance about which saved version would make best use of a second training stage.",
+      "details": "In a virtual kitchen the hand pressed a coffee machine button and screwed in a light bulb.",
+      "technical_novelty": "The researchers saved the program at different points while it learned from examples and gave each copy more practice.",
+      "engineering_impact": "That allowed a direct comparison between each program's score after its first lesson and its result after the second.",
+      "limitations": "The tests shifted appliance position along one axis. Contact with the button and the bulb took place in the computer.",
+      "evidence_status": "Artur Kuramshin and colleagues reported the two simulated tests in a paper posted November 18.",
+      "published_at": "2026-11-18",
+      "organization": "Mila, Université de Montréal and Renesas Electronics Canada",
+      "source_ids": [
+        "bulb"
+      ],
+      "time_window": "72h",
+      "body": "Which copy of a program deserves another round of practice? Artur Kuramshin and colleagues gave a virtual hand two kitchen jobs, pressing a button and screwing in a light bulb. They found that performing well just after seeing examples was a poor guide to which saved version would benefit most from the next lesson.\n\nA person first operated the virtual hand remotely. The researchers used the resulting examples to adapt π0.5, a model that selects movements from visual input and instructions, to the new hand. The original model had not trained on the LEAP hand, which has sixteen degrees of freedom. The team saved intermediate versions as it adapted the model. This let it start the following stage from several points in the same training run, with different amounts of learning from demonstrations already behind each one.\n\nIn the second stage, a trainable component selected variations in the movement using feedback about the result. The team tested the controller at the two object placements used in that stage and at two more outside their range. It varied the location of a lamp on the counter in one task and the sideways offset of a coffee machine in the other. All the objects, contacts and finger movements were simulated. The comparison covered five ways of adapting the model and four saved versions for each recipe on each task.\n\nFor the bulb, the authors found no significant positive association between success before and after the second training stage. For the button the relationship was negative. The experiment varied appliance position along a single axis. Turning the coffee machine around or replacing its button with a different part would pose a new question about what the hand had learned.",
+      "image": null
+    },
+    {
+      "id": "familymart-drink-restocking",
+      "title": "How a robot chooses which drink to put back first",
+      "summary": "Japan's FamilyMart will begin a phased rollout of Telexistence drink-stocking robots in January 2027. Staff load a digital storage shelf, while sales at the individual shop help determine which drinks the robot puts on display first.",
+      "details": "A worker loads the reserve drinks first. The robot moves bottles onto the shelf facing the shoppers.",
+      "technical_novelty": "The system tracks the location of the drinks and uses the shop's sales history.",
+      "engineering_impact": "A drink that sells quickly can get priority when the machine restocks the display.",
+      "limitations": "The roughly 70 percent saving refers to staff time spent restocking drinks per day at the early stores.",
+      "evidence_status": "FamilyMart and Telexistence described the early stores and the phased rollout planned from January 2027.",
       "published_at": "2026-11-19",
-      "organization": "Nvidia; California Department of Justice",
+      "organization": "FamilyMart",
       "source_ids": [
-        "nvidia-reuters-1119"
+        "familymart",
+        "telexistence"
       ],
-      "time_window": "24h",
-      "body": "California Attorney General Rob Bonta said on November 19 that his office served an investigative subpoena on Nvidia concerning the possibility that restricted AI chips or confidential information reached China. The action comes amid controversy around former chief executive Jensen Huang. An investigative subpoena is a demand for information, not a finding of guilt.\n\nNvidia's processors are used to train and run large AI models, including systems intended to control physical robots. Whether access to those processors is affected depends on future regulatory findings and decisions, not on the existence of the subpoena alone. Reports describing suspected espionage have not been established as facts in this proceeding.\n\nThis matters to robotics because advanced chips help machines learn and run complex actions. An investigation may affect future business decisions, but it does not establish wrongdoing or an immediate shortage. Reports of suspected espionage and inappropriate information transfers are allegations, not established facts. The investigation supplies no measured change in chip availability or robot-development capacity.",
+      "time_window": "72h",
+      "body": "Which drink should a convenience store put back on display first? In Japan, FamilyMart and its technology partner Telexistence tested a system that lets a robot draw on the shop's sales history to make that choice. Beginning in January 2027, FamilyMart plans to introduce the machines in stages alongside digital shelves that track the drinks in reserve.\n\nStaff used to handle the same delivery at two points in its journey. They sorted the incoming drinks inside the fridge, then checked what customers had taken and carried bottles from storage to the display. In the new arrangement, the storage shelf marks the handover. A worker scans the first bottle and puts the stock away. The shelf keeps track of product locations and quantities, even when different items share the storage space. It can also suggest how many bottles of each item are needed.\n\nA separate machine takes care of the display. Its control system uses the store's sales history to give popular products priority. The retailer and its technology partner have been working together on the equipment since 2020. FamilyMart quotes a maximum of about 1,800 bottles stocked per day. That figure describes the machine's capacity. To assess the effect on staff, the chain tracked time spent replenishing drinks per store per day.\n\nA bottle's trip thus involves two quite different questions. Where is another one waiting, and which of the available drinks deserves the next spot? One answer comes from the storage shelf, the other from what sells in that shop. At early sites FamilyMart found that staff spent about 70 percent less time on the daily job of replenishing drinks.",
       "image": null
     },
     {
-      "id": "marubun-realman-japan",
-      "title": "Japan gains a new channel for lightweight robot arms",
-      "summary": "On November 19 Japanese distributor Marubun announced a domestic agreement with China's RealMan Robotics for lightweight arms, joints, humanoids and tools for remote operation and AI-data collection.",
-      "details": "Japan's Marubun announced a distribution agreement with RealMan Robotics on November 19. It will handle lightweight arms, precision joint modules, humanoid robots, remote-operation systems and AI-data-collection products. The announcement also envisions combining arms with quadruped robots from suppliers such as Deep Robotics.",
-      "technical_novelty": "The commercial integration point is a lightweight arm on a mobile robot, which requires compatible mechanics, power, communication and safety control. The release describes product distribution and customization services rather than an independently benchmarked completed autonomous system.",
-      "engineering_impact": "This is an agreement to sell components in Japan, rather than the unveiling of a new all-purpose robot. The difficult part is making a moving machine and its attached arm work safely together.",
-      "limitations": "No customer deployment, independently measured manipulation success, integration cost or production performance is documented in the release. Product and market-position claims are supplier statements.",
-      "evidence_status": "Official Marubun company disclosure, not independent verification of robot field performance.",
-      "published_at": "2026-11-19",
-      "organization": "Marubun; RealMan Robotics",
+      "id": "bicat-two-arm-codes",
+      "title": "Why plan the left arm's movement before the right's?",
+      "summary": "A National University of Singapore team introduced BiCAT, a way to represent movements of two robot arms with short codes. Across ten simulated tasks it improved mean success by 17.6 percentage points over the strongest of eight comparison methods.",
+      "details": "The model calculates the left arm's commands first. Within each arm's group it predicts the codes in parallel.",
+      "technical_novelty": "BiCAT gives the arms a shared motion representation and uses information from the partner arm to choose codes.",
+      "engineering_impact": "The left arm's plan becomes an input when calculating what the right arm will do.",
+      "limitations": "The gain of 17.6 percentage points applies to ten virtual tasks. Six physical tasks were evaluated separately.",
+      "evidence_status": "The National University of Singapore team published the comparison on November 17.",
+      "published_at": "2026-11-17",
+      "organization": "National University of Singapore",
       "source_ids": [
-        "marubun-realman-1119"
+        "bicat"
       ],
-      "time_window": "72h",
-      "body": "Japanese electronics distributor Marubun announced on November 19 that it had signed a domestic distribution agreement with China's RealMan Robotics. The products include lightweight robotic arms, joint modules, humanoids, and equipment for remotely operating robots and collecting training data. Marubun says it will also provide customization and system integration.\n\nOne proposed configuration mounts a lightweight arm on a four-legged mobile robot, enabling work in locations that are awkward or dangerous for a person to reach. Such a system requires more than connecting two machines: arm weight, electrical power, control signals and emergency-stop behavior must work together. The announcement does not report a measured customer deployment.\n\nThis is an agreement to sell components in Japan, rather than the unveiling of a new all-purpose robot. The difficult part is making a moving machine and its attached arm work safely together. No customer deployment, independently measured manipulation success, integration cost or production performance is documented in the release. Product and market-position claims are supplier statements.",
+      "time_window": "7d",
+      "body": "Two arms can move in much the same way and still do quite different jobs. A National University of Singapore team asked whether that observation could help a robot coordinate its arms. The researchers changed how a program describes movements, then compared how often it finished tasks in a virtual world and on physical machines.\n\nWhen one arm holds an object, the path the other should follow depends on where the first one holds it. Yet both arms can perform similar movements. The researchers gave them a shared motion representation so that a similar piece of a path can be described with the same system of codes. When choosing the codes for either arm, the model also takes information from its partner into account. A joint decoder, the part that turns those symbols back into movements, reconstructs commands for both arms.\n\nWhen the controller chooses an action, it first predicts a set of codes for the left arm. It then predicts the set for the right arm using the left arm's prediction. Within each arm's set the codes are predicted in parallel. The joint decoder receives both sets, so at that stage of the calculation it has access to the left arm’s plan and the right arm’s response to it. The researchers compared the methods in the RoboTwin 2.0 simulator and separately evaluated six physical tasks on three robot configurations.\n\nThe 17.6 percentage point difference comes from averaging success over ten simulated tasks. The team found its largest improvements on tasks that particularly depended on the arms working closely together. The physical trials gave the researchers a separate chance to test the idea where the arms actually touch the objects.",
       "image": null
     },
     {
-      "id": "grana-progress-rewards",
-      "title": "How can a robot tell whether a long task is progressing?",
-      "summary": "Researchers introduced Grana, a vision-language reward model that selects unfinished subtasks and estimates progress. The paper reports pretraining over 200 diverse manipulation tasks and experiments on five longer tasks.",
-      "details": "A November 18 arXiv preprint describes Grana, a learned reward model for robot manipulation. It processes language descriptions of subtasks and observations to estimate whether a chosen subtask remains unfinished and how far the action has progressed.",
-      "technical_novelty": "The authors combine progress estimates from the active subtask with credit for completed earlier subtasks, and derive training targets from sparse subtask boundaries and action-quality annotations. Pretraining uses 200 mostly short tasks; experiments include adaptation to five long-horizon tasks.",
-      "engineering_impact": "Imagine a robot setting a table: one cup placed is progress, but the job is not finished. The research aims to evaluate progress step by step instead of rewarding activity merely because time passes.",
-      "limitations": "Results are reported by the paper's authors and are not evidence of universal robustness on unseen robots, sites or prolonged industrial operations. The abstract alone does not establish a production reliability rate.",
-      "evidence_status": "Author-reported arXiv preprint and experiments; independent replication not established.",
-      "published_at": "2026-11-18",
-      "organization": "Grana research team",
+      "id": "apartment-locker-handover",
+      "title": "How a parcel changes carriers inside one building",
+      "summary": "Fulltime System and NEC Magnus Communications began joint testing on November 17 of a delivery system for apartment buildings. They will examine how a box leaves a shared locker, travels between floors and is set down safely outside a resident's door.",
+      "details": "The robot is intended to collect the parcel downstairs, take the lift and leave the box outside an apartment.",
+      "technical_novelty": "The partners are improving the mechanism that transfers the parcel from a locker to the robot.",
+      "engineering_impact": "Delivery between floors requires the robot and the lift to work together.",
+      "limitations": "The companies announced the start of testing. They have yet to give a completed delivery rate.",
+      "evidence_status": "Fulltime System and NEC Magnus Communications set out the aims of their joint trial starting November 17.",
+      "published_at": "2026-11-17",
+      "organization": "Fulltime System and NEC Magnus Communications",
       "source_ids": [
-        "grana-paper-1118"
+        "locker"
       ],
-      "time_window": "72h",
-      "body": "The authors of a November 18 research preprint introduced Grana, a system that estimates how much progress a robot has made through a task with several manipulation steps. It uses camera observations and language descriptions to identify the next unfinished subtask and assess its progress, addressing a difficult part of robot training: deciding when an action really helped.\n\nThe researchers train their vision-language reward model using information about subtask boundaries and action quality, rather than asking annotators to score every instant numerically. They report pretraining on 200 varied, mostly short manipulation tasks and tests involving adaptation to five multi-minute tasks. Combining completed-step credit with current-step progress aims to make a useful training signal for longer procedures.\n\nImagine a robot setting a table: one cup placed is progress, but the job is not finished. The research aims to evaluate progress step by step instead of rewarding activity merely because time passes. Results are reported by the paper's authors and are not evidence of universal robustness on unseen robots, sites or prolonged industrial operations. The abstract alone does not establish a production reliability rate.",
-      "image": null
-    },
-    {
-      "id": "shape-human-hand-learning",
-      "title": "Learning robot-hand motion from demonstrations by people",
-      "summary": "A November 18 preprint presents SHAPE, a robot-action model trained with human-view video and parallel action outputs. In six tasks on a bimanual robot, the authors report a mean score of 0.80 versus 0.63 for a baseline under their test protocol.",
-      "details": "SHAPE addresses the mismatch between human hand demonstrations and robot joints. Human recordings supply hand-motion goals but not the exact actuator commands for robot fingers. The researchers use discrete action tokens as an auxiliary training signal alongside continuous robot action outputs.",
-      "technical_novelty": "The proposed model predicts two execution streams: end-effector motion and robot joint movement. In the authors' matched study using a bimanual system with 22-degree-of-freedom hands, direct joint readout scored 0.80 over six tasks compared with 0.63 for π0.5 under the reported protocol.",
-      "engineering_impact": "A human can demonstrate a grasp, yet a robot hand has different joints. SHAPE explores how to translate observed movement into commands suited to the machine's own anatomy.",
-      "limitations": "The scores are task-specific results in a research preprint, not a standardized industrial success guarantee. Transfer conditions and hardware requirements matter, and direct human-to-robot use has differing strengths from robot-specific demonstrations.",
-      "evidence_status": "Author-reported arXiv preprint; evaluation not independently reproduced.",
-      "published_at": "2026-11-18",
-      "organization": "SHAPE research team",
-      "source_ids": [
-        "shape-paper-1118"
-      ],
-      "time_window": "72h",
-      "body": "A November 18 research preprint describes SHAPE, a model designed to help robots learn hand movements from recordings made from a person's viewpoint. The difficulty is that watching human fingers move does not reveal which commands a robot's joints need. SHAPE therefore learns both a general description of the hand's intended movement and a stream of precise robot-joint actions.\n\nThe model adds a training task involving discrete motion tokens and outputs two continuous action streams, one for an end effector and one for joints. On a two-armed robot with hands containing 22 degrees of freedom, the researchers report an average score of 0.80 across six tasks for direct joint control, compared with 0.63 for the comparison model π0.5. These numbers depend on the study's own setup.\n\nA human can demonstrate a grasp, yet a robot hand has different joints. SHAPE explores how to translate observed movement into commands suited to the machine's own anatomy. The scores are task-specific results in a research preprint, not a standardized industrial success guarantee. Transfer conditions and hardware requirements matter, and direct human-to-robot use has differing strengths from robot-specific demonstrations.",
-      "image": null
-    },
-    {
-      "id": "mit-microrobot-onboard-sensing",
-      "title": "A miniature flying robot navigates with its own sensors",
-      "summary": "MIT researchers fitted a tiny flapping-wing robot with onboard sensors and computation, allowing flight without external motion-tracking cameras. It still depends on an offboard power supply.",
-      "details": "MIT reported on November 18 a wing-flapping microrobot that carries its own sensors and computation. The team increased actuator dimensions, used an inertial measurement unit, optical-flow sensor and time-of-flight height sensor, and demonstrated controlled trajectories and landing near plants.",
-      "technical_novelty": "The researchers report a 244-milligram electronics package and a lift-to-weight ratio of 1.9. Larger soft actuators increased net lift forces by 46%. Electronics accounted for about 6% of the measured power use; the remainder principally drove the wings.",
-      "engineering_impact": "The achievement is not simply flapping wings; the tiny machine can estimate flight using sensors it carries. It still uses external electrical power, which limits independent operation.",
-      "limitations": "The robot still receives power externally and lacks onboard object-recognition and obstacle-avoidance cameras. The report does not demonstrate independent free-flight operation over a field.",
-      "evidence_status": "MIT institutional report about its researchers' experiment, with quantitative results attributed to the team.",
-      "published_at": "2026-11-18",
-      "organization": "MIT",
-      "source_ids": [
-        "mit-flying-robot-1118"
-      ],
-      "time_window": "72h",
-      "body": "MIT researchers reported on November 18 that a tiny flapping-wing robot can now carry sensors and a processor needed to estimate its own movement in flight. It no longer needs laboratory motion-capture cameras to determine its position while following controlled trajectories. The robot still takes power from an external source.\n\nThe team enlarged and retuned the soft actuators that flap the wings, reporting 46% greater net lift force. An onboard electronics package weighing 244 milligrams includes inertial, optical-flow and distance sensors, plus a microcontroller. The researchers report a lift-to-weight ratio of 1.9 and say the electronics use roughly 6% of total power.\n\nThe achievement is not simply flapping wings; the tiny machine can estimate flight using sensors it carries. It still uses external electrical power, which limits independent operation. The robot still receives power externally and lacks onboard object-recognition and obstacle-avoidance cameras. The report does not demonstrate independent free-flight operation over a field.",
+      "time_window": "7d",
+      "body": "What does it take for a robot to bring a parcel upstairs from the lobby? Fulltime System and NEC Magnus Communications in Japan began a joint trial on November 17. They divided the route into quite different actions, from retrieving the box from a locker to riding the lift and putting the parcel down at the door.\n\nIn the proposed service, a courier takes a parcel to a shared locker at the entrance. A resident who opts into the service would receive the box at the apartment door. In between, the machine takes the parcel from its compartment, calls the lift, boards it, gets out on the right floor and travels along the corridor. After unloading it returns to a waiting point. Following a single order through the service therefore means observing several handovers, including the transfer from a stationary locker to a mobile platform.\n\nFulltime System previously tested delivery linked to a lift at its Fukuoka branch in November 2023. The partners now plan to improve the parcel retrieval mechanism together. NEC Magnus Communications will develop the robot and its controls and test how practically and safely it can leave a parcel at the door. The partners will jointly assess operation and durability under conditions close to those in an apartment building.\n\nConsider the moment the box changes what it is resting on. A robot may drive very precisely up to the locker and still leave the parcel sitting on its shelf. The partners have made that physical transfer a distinct part of the mechanism they are developing together.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "What the evidence shows",
-    "summary": "From tiny flying machines to dexterous hands, five developments show what researchers have demonstrated and which questions remain open.",
-    "implications": "Experimental results are not the same as operational deployment."
+    "title": "A path through the air leaves out how a hand holds cloth",
+    "summary": "In Brik Meza's experiment, wearable tools recorded both gripper position and the gap between the jaws. One controller trained on 562 demonstrations helped two robot arms finish 12 of 20 folds.",
+    "implications": "The team matched the tips worn by the demonstrator to the robot's grippers. That gave the lesson and the physical trial a shared condition: the surfaces touching the towel had the same shape."
   },
   "sources": [
     {
-      "id": "nvidia-reuters-1119",
-      "url": "https://www.reuters.com/legal/litigation/california-ag-subpoenas-nvidia-over-concerns-about-former-ceo-china-2026-11-19/",
-      "domain": "reuters.com",
-      "organization": "Reuters",
-      "published_at": "2026-11-19",
-      "title": "California AG subpoenas Nvidia over concerns about former CEO, China ties"
-    },
-    {
-      "id": "marubun-realman-1119",
-      "url": "https://kabuyoho-sls-disclose.ifis.co.jp/b5b/140120261119583264.pdf",
-      "domain": "kabuyoho-sls-disclose.ifis.co.jp",
-      "organization": "Marubun Corporation",
-      "published_at": "2026-11-19",
-      "title": "Marubun announces Japan distribution agreement with RealMan Robotics"
-    },
-    {
-      "id": "grana-paper-1118",
-      "url": "https://arxiv.org/abs/2611.24926",
+      "id": "hand",
+      "title": "HandUMI: A Modular Hand-Worn Parallel-Jaw Interface for Robot-Free Bimanual Data Capture",
+      "url": "https://arxiv.org/abs/2611.22146",
       "domain": "arxiv.org",
-      "organization": "Grana research authors",
-      "published_at": "2026-11-18",
-      "title": "Grana: Compositional Reward Modeling for Long-Horizon Robot Manipulation"
+      "organization": "Mu Robotics and collaborators",
+      "published_at": "2026-11-17"
     },
     {
-      "id": "shape-paper-1118",
-      "url": "https://arxiv.org/abs/2611.24585",
+      "id": "bulb",
+      "title": "Finetuning VLAs for Dexterous Manipulation: The Right Checkpoint Is All You Need",
+      "url": "https://arxiv.org/abs/2611.23676",
       "domain": "arxiv.org",
-      "organization": "SHAPE research authors",
-      "published_at": "2026-11-18",
-      "title": "SHAPE: Discrete Supervision and Parallel Continuous Streams for Learning Dexterous Manipulation from Egocentric Human Data"
+      "organization": "Mila, Université de Montréal and Renesas Electronics Canada",
+      "published_at": "2026-11-18"
     },
     {
-      "id": "mit-flying-robot-1118",
-      "url": "https://news.mit.edu/2026/featherweight-flying-robot-carries-its-own-sensors-and-computers-1118",
-      "domain": "news.mit.edu",
-      "organization": "Massachusetts Institute of Technology",
-      "published_at": "2026-11-18",
-      "title": "This featherweight, flying robot carries its own sensors and computers"
+      "id": "familymart",
+      "title": "店舗従業員の業務負荷軽減と省力化に向け 飲料補充ロボットを2027年1月から導入開始",
+      "url": "https://www.family.co.jp/company/news_releases/2026/20261119_02.html",
+      "domain": "www.family.co.jp",
+      "organization": "FamilyMart",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "telexistence",
+      "title": "AIロボット「TX GHOST」を全国のファミリーマート店舗へ2027年1月から本格導入開始",
+      "url": "https://tx-inc.com/ja/blog/2026/11/19/12823/",
+      "domain": "tx-inc.com",
+      "organization": "Telexistence",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "bicat",
+      "title": "BiCAT: Bimanual Coordination Action Tokenization",
+      "url": "https://arxiv.org/abs/2611.23499",
+      "domain": "arxiv.org",
+      "organization": "National University of Singapore",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "locker",
+      "title": "スマートロッカーマンション内ロボット宅配システム NECマグナスコミュニケーションズとフルタイムシステムが共同で実証実験を開始",
+      "url": "https://www.fts.co.jp/news/release/2109",
+      "domain": "www.fts.co.jp",
+      "organization": "Fulltime System and NEC Magnus Communications",
+      "published_at": "2026-11-17"
     }
   ]
 }
