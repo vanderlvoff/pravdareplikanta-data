@@ -2,186 +2,213 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-22",
-  "issue_id": "daily-2026-11-22",
+  "issue_date": "2026-11-23",
+  "issue_id": "daily-2026-11-23",
   "edition": "enthusiast",
   "language": "ja",
-  "generated_at": "2026-11-21T21:08:55+00:00",
-  "title": "荷物を載せた貨車が、自分で車輪を回すとき",
-  "lead": "米Intramotevは、自社の自走式貨車を鉄道事業者Watcoが別の施設にも導入すると発表した。新たに計画が決まったのは、テキサス州の工業施設だ。",
-  "technology_signal": {
-    "title": "Watcoが電池で走る貨車をテキサス州でも使う計画",
-    "summary": "Watcoは、Intramotevの自走式貨車をテキサス州の工業施設に導入する。両社はこれに先立ち、イリノイ州の施設でも導入に合意していた。",
-    "implications": "テキサス州とイリノイ州の施設を比べるには、貨車の走行時間とともに、積み込みにかかる時間や充電の間隔も知る必要がある。"
-  },
+  "generated_at": "2026-11-22T21:16:24+00:00",
+  "title": "空気が二つの仕事をするロボット",
+  "lead": "米カリフォルニア大学サンディエゴ校の研究者は、圧縮空気でまず通り道を切り替え、同じ空気で柔らかい六本の脚を動かした。一体成形したロボットは試験で最高秒速4.72メートルに達した。",
   "news": [
     {
-      "id": "watco-seadrift-self-propelled-railcars",
-      "title": "米Watco、自走式の貨車をテキサス州の工業施設にも導入へ",
-      "summary": "米Intramotevは、鉄道事業者Watcoとの契約を拡大したと発表した。Watcoはテキサス州シードリフトの工業施設で、蓄電池の電力で自走できる貨車を使う計画だ。",
-      "details": "鉄道会社は、テキサス州シードリフトの工業施設で、この貨車（かしゃ）を使う計画です。",
-      "technical_novelty": "貨車は、充電（じゅうでん）できる電池の力で車輪を回します。",
-      "engineering_impact": "荷物を載せた車両が、別の車両に引かれずに進めます。",
-      "limitations": "テキサス州で使う台数と、運用を始める日は明らかにされていません。",
-      "evidence_status": "新しい場所で使う取り決めを、貨車を作った会社が11月20日に発表しました。",
-      "published_at": "2026-11-20",
-      "organization": "Intramotev and Watco",
-      "source_ids": [
-        "intramotev",
-        "railway-age"
-      ],
-      "time_window": "72h",
-      "body": "米国で貨車の自動化に取り組むIntramotevは11月20日、鉄道事業者Watcoが同社の貨車を使う施設を増やすと発表した。新たな導入先はテキサス州シードリフトの工業施設で、施設内で荷物を載せた貨車を動かす。両社はこれまでに、イリノイ州のウッドリバーにあるWatcoのターミナルで、この種の貨車を使うことで合意している。テキサス州の施設は、同じ事業者との取り組みに新たに加わる場所になる。\n\n貨車は荷物を載せるという役割を保ったまま、蓄電池の電力で車輪を動かす装置を備える。通常、貨車を動かす力は別の機関車から受けるが、この方式では、対象の作業で貨物を載せた車両そのものが動く力を出せる。施設で一日にどれだけ運べるかは、自走できることに加えて、どの順序で荷物を積み込むかや、充電の時間をいつ確保できるかにも左右される。\n\n導入する施設が作業全体を調べる場合は、貨車が出発してから着くまでの時間に加え、荷物を載せる順番を待つ時間や、荷物を降ろした後に線路を空けるまでの時間も測れる。貨車の移動が順調でも、次の作業場所が空くまで待つ場合がある。シードリフトで何両使い、いつ運用を始めるかは発表されていない。イリノイ州の先行施設と比べるには、両方の施設の荷物の量や作業の順序が分かってから、同じ単位で実績を見ることになる。\n\n線路があるので、貨車が通れる場所は決まっている。一方、何時に出発できるかは、荷物を載せてよい順番や次の作業場所が空く時刻にも左右される。",
-      "image": null
-    },
-    {
-      "id": "chitose-robonext-three-arms",
-      "title": "ロボットの腕は、どこに吸盤を当てるのか",
-      "summary": "チトセロボティクスは、大阪のロボット展で、三社の産業用アームを自社の制御ソフトにつないで動かす計画を発表した。山積みの金属部品を取り出すほか、人が操作して記録した動きを再現し、柔らかいケーブルをピンに沿って通す。",
-      "details": "大阪の会場には、三つのメーカーのロボットの腕を持ち込みます。",
-      "technical_novelty": "腕を動かす機械と、品物を見るカメラを、一つのソフトウェアでつなぎます。",
-      "engineering_impact": "金属の部品の形をカメラで調べ、吸盤（きゅうばん）を当てる場所を決めます。",
-      "limitations": "部品を取れた割合や、作業にかかる時間は発表されていません。",
-      "evidence_status": "実演の計画を発表したのは、制御ソフトを作ったチトセロボティクスです。",
-      "published_at": "2026-11-20",
-      "organization": "Chitose Robotics",
-      "source_ids": [
-        "chitose"
-      ],
-      "time_window": "72h",
-      "body": "チトセロボティクスは11月20日、12月に大阪で開かれるロボット展に三つの実演装置を持ち込むと発表した。一つ目は、重なった金属部品の中から一つを取る。二つ目は、人が操作したときの腕の動きを記録して再現する。三つ目は、柔らかいケーブルをピンに沿って通す。いずれも使うのは「クルーボ」。ロボットアームを、カメラや操作機器などと組み合わせて動かすために同社が開発したソフトウェアだ。\n\n金属部品を拾う装置では、腕の先に取り付けたカメラで部品を撮る。画像に映る輪郭から、吸盤を当てる場所や向きを決めるという。この実演では、部品の立体形状を前もって登録したり、品目ごとに学習用の画像を集めたりする必要がないと同社は説明する。別の装置では、人が手元の機器を動かして腕を操作する。そのときに腕が通った道と動く速さを記録し、あとで同じ動作を繰り返す仕組みだ。\n\nケーブルを扱う装置では、ケーブルが滑らないように摩擦で支える先端部と、少数の目印をもとに滑らかな動きを計算するソフトを使う。同社はまた、カメラの画像を見ながら動きを調整する制御で、腕の先を0.02ミリの精度で動かした実績があると発表した。三つの実演装置はそれぞれ仕事内容が違う。部品を取り出せた割合や、ケーブル一本を通すのにかかる時間は発表に記載されておらず、作業の速さを知るには実演ごとに測る必要がある。\n\nケーブルを通す実演では、腕の先とケーブルの両方に目を向けたい。腕に与える目印は数か所でも、線はその間ずっと形を変えながら移動する。",
-      "image": null
-    },
-    {
-      "id": "brightai-infrastructure-financing",
-      "title": "ポンプの音が設備の変化を知らせる",
-      "summary": "ブライトAIは、工場や電力、水道などの設備を監視するシステムの事業拡大に向け、9700万ドルを調達した。スミスポイント・キャピタルが主導し、同社の顧客でもあるGEベルノバが出資に加わった。",
-      "details": "9700万ドルの出資には、スミスポイント・キャピタルやGEベルノバなどが加わりました。",
-      "technical_novelty": "音や温度を調べる道具の記録を、近くのコンピューターで分析します。",
-      "engineering_impact": "遠くのコンピューターといつもつながっていなくても、機械の変化を調べられます。",
-      "limitations": "発表には、特定の場所で故障（こしょう）を見つけた回数は書かれていません。",
-      "evidence_status": "ブライトAIがお金を集めたことを発表し、お金を出した会社が仕組みを説明しました。",
+      "id": "ucsd-two-stage-pneumatic-hexapod",
+      "title": "柔らかいロボットが蒸気機関から借りた工夫",
+      "summary": "米カリフォルニア大学サンディエゴ校の研究者が、圧縮空気で走る六脚ロボットを一体成形した。一つの空気の流れに二つの仕事を順にさせて、最高秒速4.72メートルに達した。",
+      "details": "圧縮空気で動く脚と仕組みを、一種類の柔らかい材料でまとめて作った。",
+      "technical_novelty": "空気をまず弁に、次に脚に使う順番は、蒸気機関の仕組みを参考にした。",
+      "engineering_impact": "複数の地面に加え、水面と水中でも動作を試した。",
+      "limitations": "機体はホースで圧縮空気の供給源とつながっている。",
+      "evidence_status": "研究者と大学が実機の試験結果を説明した。",
       "published_at": "2026-11-18",
-      "organization": "BrightAI",
+      "organization": "University of California San Diego",
       "source_ids": [
-        "brightai",
-        "smith-point"
+        "ucsd",
+        "science-robotics"
       ],
       "time_window": "7d",
-      "body": "ブライトAIは11月18日、9700万ドルを調達したと発表した。同社の装置とソフトウェアは、作業員の巡回の間にも、ポンプや圧縮機などの状態に変化がないかを調べる。出資を主導したのはスミスポイント・キャピタルで、ブライトAIの顧客であるGEベルノバも参加した。調達した資金は事業の拡大に使う。出資を主導した会社は発表に合わせ、現場での使い方も紹介した。\n\n作業員がいつもそばにいるわけではない設備を、どう見守るかが課題になる。装置に取り付けたセンサーが音や温度、振動を記録し、近くのコンピューターがデータを調べて普段と違う動きを見つける。現場で計算するため、遠くのコンピューターとの通信が常につながっている必要性を下げられる。出資者の説明では、もっと詳しく点検したい場所には、移動するロボットやドローンを使うこともある。決まった場所での継続的な観測と、移動して詳しく見る作業を組み合わせる。\n\n出資を主導した会社によれば、この仕組みは五万を超える現場で使われている。数字が表すのは監視システムの利用場所である。設備の保守方法を比べるなら、最初にどんな知らせが出て、作業員がどれだけ早く確かめ、何を見つけたかを記録すると役立つ。見逃した故障と、故障がなかったときの警報も、それぞれ数える必要がある。今回の発表には、特定の現場でのこうした比較結果は掲載されていない。\n\n同じポンプでも、運転のしかたが変わると音が変わることがある。普段の記録と違う部分が見つかったら、点検員はその場所へ行き、どんな条件で変化が起きたかを確かめられる。",
+      "body": "米カリフォルニア大学サンディエゴ校の研究者は、圧縮した空気で脚を動かす柔らかいロボットを作り、どこまで速く走れるかを調べた。六本脚の新型は最高秒速4.72メートルまで達した。本体は3Dプリンターで一体成形され、水道管が建物の中で水を運ぶように、体の中の通り道が空気を必要な場所へ運ぶ。\n\n本体の内部には、空気を流す管と、空気の通り道を切り替える弁、空気が膨らむ部屋がつながっている。研究者は構造を大きくして強度を上げ、従来より高い圧力と大きな流量に対応させた。蒸気を段階的に膨張させる蒸気機関の考え方を取り入れ、まず圧力の高い小さな部屋で弁を動かし、次に圧力の低い大きな部屋で脚を動かす。高圧の空気を一段階で使って外に出す場合より、空気のエネルギーを使い切りやすくする狙いだ。\n\n同じ研究チームの以前の機体は秒速4センチだった。新型は最高で秒速4.72メートルに達した。大学によると、コンクリート、砂利、芝生、木片を敷いた地面や砂の上で試し、階段を下りる動作や、水面を泳いだり水中を歩いたりする動作も確認した。機体を動かすには、外部の圧縮空気源につなぐホースが必要になる。\n\n弁とは、空気の通り道を開いたり閉じたりする部品だ。空気は小さな部屋で弁を動かした後も別の部屋で膨らみ、脚を押す力を出せる。考え方のもとになった蒸気機関にも、最初の筒で仕事をした蒸気を、次の筒でさらに膨らませて使う仕組みがあった。研究者はこの順序を、ばらばらに組み立てる部品ではなく、柔らかい本体の内部に組み込んだ。機体に空気源を持たせる案もあるが、今回走ったロボットにはホースがつながっていた。",
       "image": null
     },
     {
-      "id": "abb-robotics-contingency-options",
-      "title": "ABBのロボット部門、売却難航で代替案を検討とロイター",
-      "summary": "ロイターは関係者二人の話として、ソフトバンクへの売却がまとまらなければ、ABBがロボット部門を独立させる可能性があると報じた。ABBはこれに先立ち、中国の当局が中国事業の買収を認めなかったことを明らかにしている。",
-      "details": "ロイターは、中国にある分の事業を分ける案が出ていると伝えました。",
-      "technical_novelty": "売買がまとまらない場合、別の買い手を探す案や、部門を一つの会社にする案もあるといいます。",
-      "engineering_impact": "工場がロボットを買ったり修理したりするときは、どの会社に頼むかが大切です。",
-      "limitations": "ロイターが伝えた案を選んだという発表は、会社から出ていません。",
-      "evidence_status": "中国での買収が認められなかったことはABBが発表しました。別の案はロイターが取材して伝えました。",
+      "id": "bagel-robodojo-suite-results",
+      "title": "板を持ち上げたロボットに、試験では何点入る？",
+      "summary": "カナダのBagel Labsは、ロボットの両腕を動かすプログラムの試験成績を項目別に公開した。仮想環境で行うRoboDojo-Simでは、作業が途中まで進んでも得点になるため、順位と作業を完了した割合はそれぞれ別のことを示す。",
+      "details": "公開された仮想環境での試行では、二つのつかみ具で板を持ち上げ、台に載せた。",
+      "technical_novelty": "三つのカメラの映像とロボットの状態を使って動作の計画を更新する。",
+      "engineering_impact": "項目別の成績から、どの種類の作業が最後まで進みやすかったかを比べられる。",
+      "limitations": "公開された成績はコンピューター上の試験で得たものだ。",
+      "evidence_status": "Bagel Labsがコードと成績表を公開した。",
       "published_at": "2026-11-20",
-      "organization": "ABB and SoftBank",
+      "organization": "Bagel Labs",
       "source_ids": [
-        "reuters-abb",
-        "abb"
+        "bagel-code",
+        "bagel-model"
       ],
-      "time_window": "72h",
-      "body": "ロイターは11月20日、産業用ロボットを手がけるABBと日本のソフトバンクが、事業売却の枠組みを見直そうとしていると報じた。匿名の関係者二人によれば、売却が成立しなかった場合、ABBは部門を別会社として切り出したり、別の相手に売ったりする案を検討している。ABBが当初の合意を発表したのは2025年10月で、事業全体の価値を53億7500万米ドルとしていた。取引を終えるには各国の当局の承認が必要だった。\n\nABBは11月5日、ソフトバンクから、中国当局が中国国内のロボット事業の買収を認めなかったと聞いた旨を公表した。ロイターが今回伝えた交渉案の一つは、中国事業をそれ以外から切り離すことだ。関係者の説明によると、中国事業は部門の約三割を占める。新たな報道についてABBとソフトバンクはコメントを控えた。どの事業をどの形で移すことになるかは、まだ明らかにされていない。ロイターによると、両社はまず、ソフトバンクへの売却を成立させる方法を探っている。\n\n長期の導入計画を立てる買い手にとっては、事業を分ける場合に、製品を販売し、保守を受け付ける会社がどこになるのかが実務上の問題になる。既存契約の移管について決定があったとは報じられていない。またロイターは、部門を独立させた場合の上場先や、ABBが求める金額は確認できなかったとしている。\n\nロボットの腕に記された一つの社名の下で、複数の国にまたがる製造や保守の仕事が行われている。当初は部門全体を売る合意だったため、中国にある事業だけを切り離せるかが論点になる。",
+      "time_window": "7d",
+      "body": "板を二つの台に載せる作業では、片方の腕が板の端をつかみそこねたり、下ろすときに板が台から外れたりする。カナダのBagel Labsは、こうした作業をコンピューター上のロボットで試すRoboDojo-Simで、両腕を動かすプログラムの成績を公開した。プログラムの名前はBagel-Robotics-1。公開された一回の試行では、両腕で一枚の板を持ち上げ、二つの台に載せることができた。\n\nモデルには、作業の指示文、頭部のカメラと左右の手首のカメラの映像、ロボットの現在の状態を入力する。モデルは一度に32ステップ分の動作を予測し、最初の16ステップを実行してから、改めて観測した情報をもとに次の動作を計算する。計画を立て直す時点で、腕や物の位置が前の動作からどう変わったかを反映できる。\n\n11月20日付のRoboDojo-Simの集計で、Bagel Labsのモデルは、別のソフトウェアが作業の進め方を補助する部門を除くと総合3位だった。平均は100点満点で38.65点、作業を最後まで達成した割合は平均31.91%だった。試験には初めての条件への対応や複数の手順からなる作業など五つの評価部門があり、順位を決める集計では各部門を同じ重みで扱う。途中までできた作業にも点が付く。達成方法の自由度が高い作業や、文章や画像の指示に従う作業を含む「Open」部門では、成功率が3.33%だった。\n\n途中までできた作業に点を付けておくと、新しいプログラムが何度も失敗している場合でも、目標に少しずつ近づいているのかを見比べられる。一方、板を置くところまで任せたいなら、最後までできた回数を調べる必要がある。板の映像には、左右の腕の動きがそろう場面が映っており、開発元の資料にはその一回を再現するための設定もある。どのくらいの頻度で同じようにできるかを知る手がかりは、一回の映像より多くの試行を集めた成績表にある。",
       "image": null
     },
     {
-      "id": "tokyo-skytree-mobile-vending",
-      "title": "東京スカイツリー、売り場を移せるロボットを試験",
-      "summary": "ピムトと東京スカイツリーの運営会社は、11月21日から28日まで、ぬいぐるみを売る移動式のロボットを試す計画だ。四階の入り口フロアで置き場所を変え、売り上げや立ち寄った人の割合、来場者の満足度を調べる。",
-      "details": "東京スカイツリーの入り口の階で、ぬいぐるみを売る機械一台の位置を変えます。",
-      "technical_novelty": "カメラを使い、近くを通った人のうち、足を止めた人の割合を調べます。",
-      "engineering_impact": "足を止めた人数、売れた数、買い物の感想から、売る場所ごとの特徴を調べられます。",
-      "limitations": "東京スカイツリーでの売り上げは、発表に出ていません。",
-      "evidence_status": "販売機を作った会社と塔の運営会社が、11月21日から28日までの実験を発表しました。",
-      "published_at": "2026-11-19",
-      "organization": "PIMT and Tobu Tower Skytree",
+      "id": "kashii-parcel-intercom-lift-trial",
+      "title": "オートロックの集合住宅で、配達ロボットはどう部屋まで行く？",
+      "summary": "福岡市の集合住宅で、4社がロボットによる住戸前への荷物の配達を試した。インターホンや宅配時に鍵を開ける仕組み、エレベーターをロボットとつなぎ、留守のときは玄関前に荷物を置く方法も調べた。",
+      "details": "試験は11月18日、福岡市東区香椎の集合住宅3号棟で行われた。",
+      "technical_novelty": "ロボットがインターホン、配達時に鍵を開ける仕組み、エレベーターと連携する。",
+      "engineering_impact": "住人に荷物を手渡す方法と、留守のときに玄関前に置く方法を想定した。",
+      "limitations": "配達を完了できた割合は公表されていない。",
+      "evidence_status": "ワールドサプライとネットスターが実証の内容を発表した。",
+      "published_at": "2026-11-18",
+      "organization": "Aiphone, NETSDAR Robot Solutions, Nippon Otis Elevator and World Supply",
       "source_ids": [
-        "pimt",
-        "skytree"
+        "world-supply",
+        "netsdar",
+        "ur-kashii"
       ],
-      "time_window": "72h",
-      "body": "東京スカイツリーの入り口で、どこに売り場を置くと、人が気づいて足を止めるのか。ピムトと塔の運営会社は、その場所を変えられる販売機を一台使い、四階のチケットカウンターがあるフロアで調べる。予定されている期間は11月21日から28日までの八日間。売るのは、パンやお菓子をかたどったぬいぐるみだ。両社は実験の予定を19日に発表した。\n\n売れた数だけでは、機械の前を通った人がどんな行動を取ったかまでは分からない。足を止め、商品を見てから通り過ぎる人もいる。そのため主催者は、カメラの画像をプログラムで調べて、通った人のうちどれだけが立ち寄ったかを測る。さらに、買い物を楽しめたかを来場者へのアンケートで尋ねる。売り上げ、足を止めた人の割合、アンケートは、それぞれ別の場面について知るための記録だ。\n\nピムトは成田空港で2026年4月から、この機械を使った販売を続けている。同社は、催し物に合わせて売り場を移したり、近くに電源の差し込み口がない場所で販売したりした例を挙げる。今回は、買ったぬいぐるみを展望台に持って行き、東京の街を背景に写真を撮る楽しみ方も映像で紹介する。塔での売り上げはまだ発表されていない。置き場所を変えた効果を見るには、各地点で立ち寄った人の数と、もともとその地点を通る人の数の両方が必要になる。\n\n同じ品物を載せた同じ店でも、チケットを買う前に通る場所と、買った後に通る場所とでは、目に留まる機会が違う。店を動かせると、商品の種類を変えずに、訪れる人と売り場の位置関係を調べられる。",
+      "time_window": "7d",
+      "body": "入口に鍵がかかったマンションで、ロボットはどうやって住人の玄関まで荷物を運ぶのか。福岡市東区香椎の集合住宅では11月18日、ネットスター、アイホン、日本オーチス・エレベータ、ワールドサプライが、ロボットで荷物を住戸前まで運ぶ試験を行った。受取人が留守でも、玄関前に荷物を置く「置き配」で配達を終えられるかも調べた。\n\n車輪で廊下を進むだけでは、入口の鍵を開けたり別の階に上がったりできない。そこでインターホンや宅配時に鍵を開ける仕組み、エレベーターとロボットをつないだ。建物を管理するUR都市機構が公表した実施イメージでは、配達員が伝票の情報をインターホンと連携させて入口を開け、ロビーで箱をロボットに預ける。そこからロボットはエレベーターに乗り、届け先の階で降りて部屋の前まで進む。\n\n留守の場合の流れも、UR都市機構が示した。ロボットが玄関前のトレーに荷物を下ろして戻る。住人は帰宅後に荷物を受け取り、インターホンからトレーの回収を指示する。留守中の配達では、荷物を下ろすところに加えて、預けたトレーを後で回収する手順も必要になる。\n\n前の年度には、ロボットが住戸の前まで運ぶ試験が行われていた。開発会社のネットスターによると、今回はインターホンとの連携と置き配を加え、配送事業者も参加した。届け先が留守でも玄関に置ければ、配達員がもう一度訪ねる手間を省ける。今回の発表では、実際に何件の荷物を再配達なしで届けられたかは示されていない。",
+      "image": null
+    },
+    {
+      "id": "shinshiro-pharmacy-drone-routes",
+      "title": "ドローンは薬をどこで受け取り、誰に渡す？",
+      "summary": "愛知県新城市で、自治体と企業が医薬品を運ぶ三つのルートを試した。一つのルートでは、空荷で出発した機体が薬局の近くに着陸し、薬を受け取ってから届け先に向かった。",
+      "details": "報道公開の便では、機体が約12分飛んで高齢者施設に箱を運んだ。",
+      "technical_novelty": "別の便では、途中で着陸した機体に薬局の職員が薬を積んだ。",
+      "engineering_impact": "複数のルートを使い、薬局や届け先の施設で必要になる仕事を調べた。",
+      "limitations": "飛行区間ごとの時間は、地上の作業を含まない。",
+      "evidence_status": "参加者が実証結果を公表し、物流専門媒体LNEWSが報じた。",
+      "published_at": "2026-11-20",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "source_ids": [
+        "aeronext",
+        "lnews-drone"
+      ],
+      "time_window": "7d",
+      "body": "薬を運ぶドローンには、出発地点で箱を積む方法と、途中で薬局に寄って受け取る方法がある。愛知県と新城市はエアロネクスト、グリーンサービスと両方のやり方を試し、高齢者施設への飛行を薬の用意や受け渡しにつなげられるかを調べた。11月20日には三つのルートについて結果を公表した。\n\n11月18日の報道公開では、市街地の薬局が薬を車で横川公民館の発着拠点に運んだ。会場では薬の箱を機体に載せた。主催者によると、機体は約8キロ先の特別養護老人ホームまで約12分で飛び、届けた箱を施設の職員が回収した。12分は拠点から施設までの飛行時間に当たる。\n\n別のルートでは、機体が荷物を積まずに拠点を出て薬局の近くで着陸し、薬局の職員が箱を載せた。その後、機体は別の特別養護老人ホームに薬を届けた。主催者によると、拠点から薬局までの飛行は約13分、薬局から届け先までは約5分で、この時間に拠点への帰路は含まれない。機体を運航したのは地域の医薬品配送会社グリーンサービスで、津島市の事業拠点から遠隔で運航を管理した。\n\n薬局付近に着陸するルートでは、薬局の職員が専用の箱を直接機体に取り付けた。受け取る人にも役割がある。薬のために作った箱は、登録した看護師が指紋で鍵を開ける仕組みだ。機体が箱を置いていった後でも、薬を取り出す人をあらかじめ決めておける。公表した数字から飛行区間ごとの時間は分かるが、職員が機体のところに出て箱を取り付け、受け取るまでの時間は別に示されていない。",
+      "image": null
+    },
+    {
+      "id": "nvidia-administration-interim-management-contact",
+      "title": "半導体の出荷をどう調べるか、米政権がエヌビディアに聞き取り",
+      "summary": "米国のベッセント財務長官はCBSの番組で、半導体を作るエヌビディアの暫定経営陣に米政権が連絡したと話した。中国向けの販売を調べる手がかりとして、出荷と支払いの記録を挙げた。",
+      "details": "政権はエヌビディア社内で誰が輸出規則を守る責任を負っていたかを調べている。",
+      "technical_novelty": "輸送の記録と支払いの記録を突き合わせると、出荷と取引の関係を調べられる。",
+      "engineering_impact": "エヌビディアなどの計算用半導体は、ロボットを動かすプログラムの学習にも使われる。",
+      "limitations": "取引の経緯や社内での担当者は確認が続いている。",
+      "evidence_status": "CBSが発言を公開し、ロイターも会社側への連絡を報じた。",
+      "published_at": "2026-11-22",
+      "organization": "US Department of the Treasury and NVIDIA",
+      "source_ids": [
+        "cbs-bessent",
+        "reuters-bessent",
+        "nvidia-board"
+      ],
+      "time_window": "24h",
+      "body": "米国のベッセント財務長官は11月22日のCBSの番組で、米政権がエヌビディアの暫定経営陣に連絡したと話した。エヌビディアは大量の計算を効率よくこなす半導体を作る。例えばロボットを動かすプログラムが多数の見本から学ぶ際に使われる。米政権はこの半導体の中国向けの出荷を巡り、社内で誰が輸出規則の順守を担当していたかをたずねている。\n\nベッセント氏は、政権がエヌビディアの暫定経営陣、取締役、弁護士と連絡を取ったと話した。取材の時点で、政権が求める回答はまだ得られていないという。確認したい点として、輸出規則を守る責任を誰が負っていたかと、調査の対象になっている出荷について社内のどの段階まで情報が伝わっていたかを挙げた。\n\n口頭で取り決めた取引でも、出荷や代金の記録をたどれば経緯を調べられると述べた。社内で輸出規則を軽視する傾向があったかは、今も調べている段階だと説明した。ロイターも政権による接触を報じた。エヌビディアの取締役会は11月12日、ジェンスン・フアン氏の辞任と、財務責任者のコレット・クレス氏の暫定CEO就任を発表した。CEOは経営の最高責任者を指す。ベッセント氏も番組で、財務責任者が会社を率いていると述べた。\n\n高価な機器を運ぶときには、輸送と支払いでそれぞれ記録が残る。何を誰が運んだかを示す資料と、代金の動きを示す資料を突き合わせると、取引のどの段階で誰がかかわったかを調べやすくなる。財務長官が番組で取り上げたのは、出荷を知っていた人が社内のどの段階までいたかという問いだ。現場で手続きした人から会社の経営を担う人へ、情報がどこまで届いたのかは調べている途中だ。",
       "image": null
     }
   ],
+  "technology_signal": {
+    "title": "空気を二段階で使う六脚ロボット",
+    "summary": "米カリフォルニア大学サンディエゴ校のロボットは、まず空気で体内の通り道を切り替え、次に同じ空気で脚を動かす。蒸気機関の仕組みを参考にした工夫だ。",
+    "implications": "試作機には空気を送るホースがつながっている。研究チームは、持ち運べる小さな容器で動かす方法を今後検討する。"
+  },
   "sources": [
     {
-      "id": "intramotev",
-      "organization": "Intramotev",
-      "published_at": "2026-11-20",
-      "url": "https://intramotev.com/newsroom",
-      "domain": "intramotev.com",
-      "title": "Intramotev, Watco Bringing Autonomous Railcars to Texas"
+      "id": "ucsd",
+      "organization": "University of California San Diego",
+      "published_at": "2026-11-18",
+      "url": "https://today.ucsd.edu/story/the-fastest-soft-robot-ever-built-doesnt-need-electronics-to-function",
+      "domain": "today.ucsd.edu",
+      "title": "The Fastest Soft Robot Ever Built Doesn’t Need Electronics to Function"
     },
     {
-      "id": "railway-age",
-      "organization": "Railway Age",
-      "published_at": "2026-11-20",
-      "url": "https://www.railwayage.com/freight/short-lines-regionals/intramotev-watco-bringing-autonomous-railcars-to-texas/",
-      "domain": "www.railwayage.com",
-      "title": "Intramotev, Watco Bringing Autonomous Railcars to Texas"
+      "id": "science-robotics",
+      "organization": "Science Robotics",
+      "published_at": "2026-11-18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43050495/",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "title": "Printing powerful soft robots on a desktop"
     },
     {
-      "id": "chitose",
-      "organization": "Chitose Robotics",
+      "id": "bagel-code",
+      "organization": "Bagel Labs",
       "published_at": "2026-11-20",
-      "url": "https://prtimes.jp/main/html/rd/p/000000029.000040625.html",
+      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
+      "domain": "github.com",
+      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
+    },
+    {
+      "id": "bagel-model",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-18",
+      "url": "https://www.bagel.com/bagel-robotics-1",
+      "domain": "www.bagel.com",
+      "title": "Bagel-Robotics-1"
+    },
+    {
+      "id": "world-supply",
+      "organization": "World Supply",
+      "published_at": "2026-11-18",
+      "url": "https://www.kyodo.co.jp/pr/2026-11-18_4050146/",
+      "domain": "www.kyodo.co.jp",
+      "title": "先進的なまちづくりを目指す「FUKUOKA Smart EAST」における館内配送サービスの実証実験に参画"
+    },
+    {
+      "id": "netsdar",
+      "organization": "NETSDAR Robot Solutions",
+      "published_at": "2026-11-17",
+      "url": "https://prtimes.jp/main/html/rd/p/000000005.000172258.html",
       "domain": "prtimes.jp",
-      "title": "チトセロボティクス、RoboNext2026に出展"
+      "title": "インターホン・エレベーターと連携した配送ロボットで「置き配」まで行う館内配送の実証実験を、福岡市のUR賃貸住宅で実施"
     },
     {
-      "id": "brightai",
-      "organization": "BrightAI",
-      "published_at": "2026-11-18",
-      "url": "https://www.businesswire.com/news/home/20261118838405/en/BrightAI-Announces-%2497-Million-Investment-to-Scale-Physical-AI-Across-the-Worlds-Essential-Services",
-      "domain": "www.businesswire.com",
-      "title": "BrightAI Announces $97 Million Investment to Scale Physical AI Across the World’s Essential Services"
+      "id": "ur-kashii",
+      "organization": "Urban Renaissance Agency",
+      "published_at": "2026-11-11",
+      "url": "https://www.ur-net.go.jp/news/pcbnj1000000c5sc-att/ur2026_press_1111_kyusyu.pdf",
+      "domain": "www.ur-net.go.jp",
+      "title": "物流事業者と配送ロボットの連携による集合住宅向け棟内配送サービスの実証実験を実施"
     },
     {
-      "id": "smith-point",
-      "organization": "Smith Point Capital",
-      "published_at": "2026-11-18",
-      "url": "https://www.smithpointcapital.com/news/the-intelligence-layer-for-critical-infrastructure",
-      "domain": "www.smithpointcapital.com",
-      "title": "The Intelligence Layer for Critical Infrastructure: Why We’re Partnering with BrightAI"
+      "id": "aeronext",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "published_at": "2026-11-20",
+      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
+      "domain": "aeronext.co.jp",
+      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
     },
     {
-      "id": "reuters-abb",
+      "id": "lnews-drone",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120502.html",
+      "domain": "www.lnews.jp",
+      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
+    },
+    {
+      "id": "cbs-bessent",
+      "organization": "CBS News",
+      "published_at": "2026-11-22",
+      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
+      "domain": "www.cbsnews.com",
+      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
+    },
+    {
+      "id": "reuters-bessent",
       "organization": "Reuters",
-      "published_at": "2026-11-20",
-      "url": "https://www.reuters.com/business/media-telecom/abb-considers-robotics-listing-if-sale-softbank-fails-sources-say-2026-11-20/",
+      "published_at": "2026-11-22",
+      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
       "domain": "www.reuters.com",
-      "title": "ABB considers robotics listing if sale to SoftBank fails, sources say"
+      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
     },
     {
-      "id": "abb",
-      "organization": "ABB",
-      "published_at": "2026-11-05",
-      "url": "https://www.abb.com/global/en/news/140154/update-on-divestment-of-abb-robotics",
-      "domain": "www.abb.com",
-      "title": "Update on divestment of ABB Robotics"
-    },
-    {
-      "id": "pimt",
-      "organization": "PIMT",
-      "published_at": "2026-11-19",
-      "url": "https://prtimes.jp/main/html/rd/p/000000009.000179442.html",
-      "domain": "prtimes.jp",
-      "title": "東京スカイツリーで移動型無人販売ロボットのビジネス実証"
-    },
-    {
-      "id": "skytree",
-      "organization": "Tobu Tower Skytree",
-      "published_at": "2026-11-19",
-      "url": "https://www.tokyo-skytree.jp/press/post/730/",
-      "domain": "www.tokyo-skytree.jp",
-      "title": "移動型無人販売ロボットを活用した実証実験を実施"
+      "id": "nvidia-board",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-12",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "domain": "nvidianews.nvidia.com",
+      "title": "NVIDIA Announces CEO Transition"
     }
   ]
 }

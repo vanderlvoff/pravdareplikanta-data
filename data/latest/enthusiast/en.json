@@ -2,186 +2,213 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-22",
-  "issue_id": "daily-2026-11-22",
+  "issue_date": "2026-11-23",
+  "issue_id": "daily-2026-11-23",
   "edition": "enthusiast",
   "language": "en",
-  "generated_at": "2026-11-21T21:08:55+00:00",
-  "title": "When the freight car turns its own wheels",
-  "lead": "US developer Intramotev says rail operator Watco has picked a second site for its battery-powered freight cars. The agreement covers an industrial facility in Texas.",
-  "technology_signal": {
-    "title": "Watco extends its use of battery-powered freight cars to Texas",
-    "summary": "Watco plans to run self-propelled Intramotev cars at a Texas industrial facility. The partners previously reached an agreement covering similar vehicles in Illinois.",
-    "implications": "To compare the two Watco sites, look at loading time, travel time and when the battery-powered cars can charge."
-  },
+  "generated_at": "2026-11-22T21:16:24+00:00",
+  "title": "When air has two jobs inside a robot",
+  "lead": "UC San Diego engineers used compressed air to open and close air passages and then move six soft legs. Their printed robot reached 4.72 meters per second in testing.",
   "news": [
     {
-      "id": "watco-seadrift-self-propelled-railcars",
-      "title": "Watco will bring self-propelled freight cars to a Texas industrial site",
-      "summary": "Intramotev announced an expanded agreement with rail operator Watco. The operator plans to deploy battery-powered freight cars that can propel themselves at an industrial facility in Seadrift, Texas.",
-      "details": "Watco plans to use Intramotev freight cars at an industrial site in Seadrift.",
-      "technical_novelty": "A battery and drive system can move the freight car under its own power along the rails.",
-      "engineering_impact": "For the assigned movement, the car can provide traction at its own wheels.",
-      "limitations": "The partners' announcement gives no deployment size or starting date for the Texas site.",
-      "evidence_status": "Manufacturer Intramotev reported the new agreement on November 20.",
-      "published_at": "2026-11-20",
-      "organization": "Intramotev and Watco",
-      "source_ids": [
-        "intramotev",
-        "railway-age"
-      ],
-      "time_window": "72h",
-      "body": "On November 20, US rail technology company Intramotev announced that Watco had picked another location for its self-propelled freight cars. This time the site is an industrial facility in Seadrift, Texas. The companies previously agreed to use the cars at Watco’s Wood River terminal in Illinois. The Texas agreement adds a new location to that partnership. It concerns an industrial operation where railcars need to move between places where work is carried out.\n\nThe basic vehicle performs the same cargo-carrying job as a conventional freight car. Intramotev adds a drive system that draws energy from a battery, allowing the car to move under its own power for the assigned operation. This changes how traction is provided: the vehicle carrying the freight can also supply the power at its wheels. How much work can fit into a shift will depend on the pattern of movements, the loading process and the time set aside to charge the batteries.\n\nA site operator can measure the movement from end to end, including the wait to load, the trip and the time needed to free the track after unloading. A loaded car may still have to wait for a work area to become available. Intramotev’s announcement gives neither the number of cars bound for Seadrift nor a starting date. It describes an agreement to extend the program. A comparison with Wood River would need actual workloads and operating conditions for both locations.\n\nThe track determines where the car can go, while the work at each end determines when it can move. Watching which cars are loaded and ready is one way to see where delays arise.",
-      "image": null
-    },
-    {
-      "id": "chitose-robonext-three-arms",
-      "title": "How a robot arm picks a spot for its suction cup",
-      "summary": "Chitose Robotics plans to demonstrate its integration software with three brands of robot arm at RoboNext in Osaka. The planned jobs are picking loose metal parts, replaying a motion guided by an operator, and routing a flexible cable.",
-      "details": "Exhibition setups in Osaka will use arms from FANUC, Universal Robots and Elite Robots.",
-      "technical_novelty": "Chitose Robotics' software connects sensors and operator devices to industrial robot arms.",
-      "engineering_impact": "In the metal picking demonstration, software uses the outline of a part to find a place for a suction cup.",
-      "limitations": "The announcement gives no success rates or cycle times for the planned exhibition jobs.",
-      "evidence_status": "Chitose Robotics announced the demonstrations in its exhibit preview.",
-      "published_at": "2026-11-20",
-      "organization": "Chitose Robotics",
-      "source_ids": [
-        "chitose"
-      ],
-      "time_window": "72h",
-      "body": "Japan’s Chitose Robotics announced on November 20 that it would bring three working setups to the December RoboNext exhibition in Osaka. A robot arm will pick metal parts from a pile in one setup, replay a motion recorded under human control in another, and guide a cable around pins in the third. All three will use CruBo, software that Chitose Robotics developed to connect an arm with devices that supply information or control commands.\n\nFor the metal parts, the company plans to mount an ordinary camera directly on the end of the arm. The software traces the visible outline of a part and uses that shape to choose a spot and angle for a suction cup. The company says the demonstration needs neither a catalog of three-dimensional part shapes nor a training set for each individual part. At another station an operator moves a handheld device, while the system records the path and speed of the arm so that it can repeat the motion.\n\nFor the cable experiment, a tool uses friction to hold the cable. The software calculates a smooth path between a small number of positions specified during setup. Chitose separately reports having previously achieved 0.02 millimetres of positioning accuracy at the end of an arm using feedback from camera images. The announcement gives no successful-pick percentage for the pile or cycle time for routing the cable. Each job will therefore need its own measurements before a visitor can judge how the setup might perform on a production line.\n\nThe cable station shifts attention from the arm to what it carries. The operators can specify a few points for the arm, but the flexible cable changes shape continuously as it travels past the pins.",
-      "image": null
-    },
-    {
-      "id": "brightai-infrastructure-financing",
-      "title": "What a pump’s sound can tell a technician",
-      "summary": "BrightAI announced $97 million in financing to expand its systems for monitoring industrial and utility equipment. Smith Point Capital led the round, and GE Vernova participated as an existing customer.",
-      "details": "Smith Point Capital led the round, which also included GE Vernova.",
-      "technical_novelty": "The BrightAI system analyses sensor readings on a computer close to the equipment.",
-      "engineering_impact": "Local analysis can keep checking for changes when the connection to a remote server is interrupted.",
-      "limitations": "The financing announcement gives no fault detection results for a specific site.",
-      "evidence_status": "BrightAI announced the investment. Its lead investor described the system and its reported footprint.",
+      "id": "ucsd-two-stage-pneumatic-hexapod",
+      "title": "What a soft robot borrowed from a steam engine",
+      "summary": "UC San Diego engineers printed a six-legged robot that runs on compressed air. To reach up to 4.72 meters per second, they made one flow of air do two jobs in turn.",
+      "details": "The legs and pneumatic mechanism were printed in one soft material.",
+      "technical_novelty": "Air switches the valves first and moves the legs next, following a principle used in compound steam engines.",
+      "engineering_impact": "The team tried the machine on several surfaces and in water.",
+      "limitations": "A hose still connects it to its air supply.",
+      "evidence_status": "The researchers and the university describe physical tests.",
       "published_at": "2026-11-18",
-      "organization": "BrightAI",
+      "organization": "University of California San Diego",
       "source_ids": [
-        "brightai",
-        "smith-point"
+        "ucsd",
+        "science-robotics"
       ],
       "time_window": "7d",
-      "body": "On November 18, BrightAI announced $97 million in financing. The company supplies equipment and software intended to detect changes in pumps, compressors and other industrial assets between visits by technicians. Smith Point Capital led the round. BrightAI identified one participant, GE Vernova, as an existing customer. The financing is intended to expand the reach of the system, and the lead investor described examples of how it is used.\n\nOne practical problem is taking measurements where a technician cannot constantly watch a piece of equipment. A sensor can record sound, temperature or vibration. A computer nearby analyses those signals and looks for unusual behaviour, which reduces dependence on a permanent connection to a remote server. When an area warrants a closer inspection, the investor describes the use of robots and drones. The fixed sensors do the regular watching, while a mobile device can gather more information at the place that needs attention.\n\nSmith Point Capital says the platform runs across more than 50,000 operating locations. Its count covers places that use the monitoring platform. To compare maintenance systems at one location, an operator would want to know when the first alert arrived, how long it took to check, and what the inspection found. Missed faults and false warnings would need separate counts. The financing announcement gives no such performance comparison for a specific site.\n\nThe same pump may sound different at a different operating speed. A measurement that looks unusual therefore gives a technician a place to start looking. The inspection can establish what changed.",
+      "body": "The six legs on a soft robot built at UC San Diego move on compressed air. The team wanted to speed up this kind of running machine and reached a reported top speed of 4.72 meters per second. The team printed the body in one piece, with passages that guide air through the robot like pipes carrying water through a building.\n\nThe body contains valves, chambers and tubes. The team enlarged and strengthened the design to handle higher pressure and flow. To make better use of the expanding air, the researchers borrowed the principle behind the compound steam engine. Compressed air first works in small, high-pressure chambers to run the valves. It then goes to larger, lower-pressure chambers and drives the legs.\n\nThe team’s earlier design moved at 4 centimeters per second. The new robot reached up to 4.72 meters per second. The university says the team tested it on concrete, gravel, grass, mulch and sand. It also went down stairs, swam and moved underwater. The robot works with a hose tether to an external source of compressed air.\n\nThe order of events is worth following. A valve opens or closes an air passage. After the air has done that first job, it still has energy to push against part of a leg. The researchers put that energy to work in the next chamber. The idea goes back to engines in which steam continued to expand from one cylinder into another. Here the sequence happens inside a printed body. Finding a way to carry the air supply remains an open design task: the six-legged runner used a tether during testing.",
       "image": null
     },
     {
-      "id": "abb-robotics-contingency-options",
-      "title": "Reuters reports that ABB is weighing options for its robotics business",
-      "summary": "Two people familiar with the talks told Reuters that ABB could spin off its robotics division if a sale to Japan’s SoftBank cannot be salvaged. ABB earlier confirmed that Chinese authorities had barred SoftBank from acquiring the robotics business in China.",
-      "details": "Reuters reports discussions about separating ABB Robotics' Chinese business from the rest of the division.",
-      "technical_novelty": "Reported alternatives include another buyer or a standalone company if the SoftBank sale falls through.",
-      "engineering_impact": "The structure can matter to industrial customers that arrange parts and maintenance for robots.",
-      "limitations": "The companies have not announced a final arrangement following the Reuters report.",
-      "evidence_status": "ABB confirmed the restriction in China. The potential alternatives come from unnamed Reuters sources.",
+      "id": "bagel-robodojo-suite-results",
+      "title": "How a two-armed robot earns credit before the board is in place",
+      "summary": "Canada’s Bagel Labs published a breakdown of how a program controls two robot arms. The virtual RoboDojo-Sim test awards credit for progress toward a goal, so a model’s ranking and its rate of finished tasks reveal different things.",
+      "details": "Two simulated grippers lift a board together and lower it onto supports in a documented example.",
+      "technical_novelty": "The model refreshes its plan from three camera views and the robot’s state.",
+      "engineering_impact": "Category scores show where the model more often finishes a task.",
+      "limitations": "The published scores come from simulation.",
+      "evidence_status": "Bagel Labs published code and a breakdown of its results.",
       "published_at": "2026-11-20",
-      "organization": "ABB and SoftBank",
+      "organization": "Bagel Labs",
       "source_ids": [
-        "reuters-abb",
-        "abb"
+        "bagel-code",
+        "bagel-model"
       ],
-      "time_window": "72h",
-      "body": "Reuters reported on November 20 that ABB and Japan’s SoftBank were looking at ways to restructure their industrial robotics deal. According to two unnamed people, ABB could turn the division into a separate company or sell it to another buyer if the SoftBank deal fell through. ABB announced the original sale in October 2025 with a value of $5.375 billion for the business as a whole. Completion depended on regulatory approvals.\n\nOn November 5, ABB said SoftBank had informed it that Chinese authorities had prohibited the acquisition of the robotics business in China. The new Reuters report describes one possible way to preserve the transaction: separating the Chinese operation from the rest. Reuters puts that operation at about 30 percent of the robotics unit, citing its sources. ABB and SoftBank both declined to comment on the new report. The eventual arrangement would have to satisfy the parties and the regulators involved.\n\nFor a new order or a long project, a decision to split a business could affect who sells the hardware and whom the customer deals with over support. The reports give no decision on how contracts would transfer. Reuters was also unable to establish where a standalone company might list its shares or how much ABB might seek in such a transaction.\n\nA name printed on a robot arm can stand for a manufacturing and service business operating in several countries. The restriction on the Chinese operation matters because the original sale was for the whole division.",
+      "time_window": "7d",
+      "body": "A robot trying to lay a board across two supports can fail at different moments: one gripper might miss an edge, or the board might come down past a support. Canada’s Bagel Labs showed this task in RoboDojo-Sim, a computer environment where programs operate virtual robots. The team released code for its Bagel-Robotics-1 model along with a breakdown of its performance. In one recorded run the robot picked up the board with both hands and laid it across the supports.\n\nThe model receives a task instruction, views from one head camera and two wrist cameras, and the robot's current state. It predicts 32 actions in a batch, executes 16 and then makes a new plan from fresh observations. That refresh lets the next prediction account for where the arms and objects are after the previous burst of movement.\n\nIn Bagel Labs' November 20 snapshot of RoboDojo-Sim, the model placed third among models evaluated without a separate software agent. It averaged 38.65 points out of 100, with an average full-task success rate of 31.91%. It completed 3.33% of trials in the Open category, which includes open-ended tasks and tasks guided by text or images. The ranking awards partial credit and gives each of the five main categories the same weight.\n\nA partial score helps a researcher see whether a new control program is getting any closer to its goal after a string of failures. The full completion rate answers a separate question: how often did it get all the way there? For the board example, Bagel Labs publishes settings for one successful run. The recording lets you trace how the two arms move together. To see how often the policy finishes work, look at the completion rates across the test rather than the recording of that single run.",
       "image": null
     },
     {
-      "id": "tokyo-skytree-mobile-vending",
-      "title": "Tokyo Skytree plans a trial for a moving toy shop",
-      "summary": "PIMT and the operator of Tokyo Skytree scheduled an eight-day trial of a mobile toy shop for November 21 to 28. They plan to move one machine around the entrance floor and track sales, the share of passersby who stop, and visitor satisfaction.",
-      "details": "One machine selling soft toys will move between locations on the Tokyo Skytree entrance floor.",
-      "technical_novelty": "The organizers plan to change the selling spot and use a camera to estimate the share of passersby who stop.",
-      "engineering_impact": "Counts of stops, purchases and survey responses give the tower operator different ways to evaluate a location.",
-      "limitations": "The tower announcement describes the trial and gives no sales results.",
-      "evidence_status": "The supplier and the operator of Tokyo Skytree announced the November 21–28 trial.",
-      "published_at": "2026-11-19",
-      "organization": "PIMT and Tobu Tower Skytree",
+      "id": "kashii-parcel-intercom-lift-trial",
+      "title": "How a delivery robot gets past a locked apartment entrance",
+      "summary": "Four companies tested apartment deliveries in a residential building in Fukuoka. They connected a robot to the intercom, building access system and elevator and tested leaving a parcel outside when the resident was away.",
+      "details": "The November 18 test took place in Building 3 of a residential complex in Kashii, Fukuoka.",
+      "technical_novelty": "The robot works with the intercom, delivery access system and elevator.",
+      "engineering_impact": "When nobody is home, a drop-off lets the resident collect the parcel later.",
+      "limitations": "The participants did not publish a route completion rate.",
+      "evidence_status": "World Supply and NETSDAR Robot Solutions described the trial.",
+      "published_at": "2026-11-18",
+      "organization": "Aiphone, NETSDAR Robot Solutions, Nippon Otis Elevator and World Supply",
       "source_ids": [
-        "pimt",
-        "skytree"
+        "world-supply",
+        "netsdar",
+        "ur-kashii"
       ],
-      "time_window": "72h",
-      "body": "Where should a shop go when the people it serves move around throughout the day? At Tokyo Skytree, the tower operator and a company called PIMT want to study that question with one mobile vending machine. The unit carries stuffed toys. During the eight-day trial scheduled to start on November 21, the company plans to change its position on the fourth-floor entrance level, where visitors approach the ticket counters. The two companies announced the trial on November 19.\n\nTheir measurements follow three different parts of a shopping trip. A visitor can notice the machine, stop to see what it sells and then walk away. The companies plan to use a camera and image analysis software to estimate how often people stop. Sales records show how often those encounters turn into purchases. A visitor survey asks a different question again: whether people liked the experience. Together, the measurements give the operator several ways to judge a selling spot.\n\nThe supplier has operated a machine of this type at Narita Airport since April 2026. It describes moving the shop to suit events and selling in areas without a nearby power outlet. At the tower, it plans to sell soft toys shaped like baked goods and show visitors how to photograph one against the skyline. Sales figures for the tower trial are still pending. To assess the value of changing position, it matters how many visitors passed each candidate spot as well as how many stopped there.\n\nMoving the shop allows the team to keep the merchandise and the machine the same. The question is where people have time and room to look around on a floor that also serves as a route to the ticket counters.",
+      "time_window": "7d",
+      "body": "Could a robot take a parcel through a locked entrance, get to the right floor and finish the delivery even if nobody is home? NETSDAR Robot Solutions, Aiphone, Nippon Otis Elevator and World Supply tested that kind of apartment delivery in Fukuoka on November 18. The partners examined whether a robot could carry a parcel to a resident’s door and leave it there when needed.\n\nWheels solve only part of the problem. In a building with controlled entry, the delivery needs to work with the intercom and the system that unlocks the entrance. For travel between floors the robot also has to work with the elevator. The housing agency’s test plan shows the courier using delivery paperwork with the intercom to unlock the entrance, then handing the parcel over in the lobby. Once it has the parcel, the robot takes the elevator to the right floor.\n\nA trial in the previous year had already looked at front-door delivery. This year the robot supplier said the partners added intercom integration, a drop-off option and a logistics company to the test. Leaving a parcel has a specific purpose: saving the courier another trip. The participants did not disclose how many deliveries finished without a return visit.",
+      "image": null
+    },
+    {
+      "id": "shinshiro-pharmacy-drone-routes",
+      "title": "Where a parcel’s flight begins and ends",
+      "summary": "Local authorities and companies in Shinshiro, Japan, tested three routes for flying medicines to recipients. One drone started out empty and landed near a pharmacy to collect a box before it flew on.",
+      "details": "In one trial flight the drone carried a box to a nursing home in about 12 minutes.",
+      "technical_novelty": "Another route included a landing at a pharmacy for loading.",
+      "engineering_impact": "The routes test which jobs fall to pharmacy staff and which to the recipient.",
+      "limitations": "Flight times were reported separately from work on the ground.",
+      "evidence_status": "Project partners and the industry publication LNEWS described the trial.",
+      "published_at": "2026-11-20",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "source_ids": [
+        "aeronext",
+        "lnews-drone"
+      ],
+      "time_window": "7d",
+      "body": "Does a medicine-carrying drone get its box before it takes off, or collect it at a pharmacy on the way? Aichi Prefecture and Shinshiro tried both arrangements with Aeronext and Green Service. They wanted to see how to connect a flight to preparing a package and handing it over to staff at a nursing home. The organizers released details of three routes on November 20.\n\nIn the public demonstration on November 18, a pharmacy brought the medicine by road to the launch site at Yokogawa community center. The crew loaded a box onto the drone. According to the organizers, it flew about eight kilometers in roughly 12 minutes to a nursing home, where staff collected the package. The time given was for the flight from the launch site to the destination.\n\nOn a different route, the aircraft left the hub empty, landed near a pharmacy for staff to load a box and flew on to a second nursing home. The organizers put the two outbound legs at about 13 and five minutes respectively, excluding the return. Local medical logistics company Green Service ran the flights, with remote operations based in Tsushima.\n\nAt the pharmacy stop, pharmacy staff could fasten a sealed box to the aircraft themselves. Staff at the destination had their own part to play. The partners developed a special box that a registered nurse could unlock with a fingerprint, so the intended recipient could open it after the box had been dropped off. The report gives the time in the air on individual legs. It leaves open how long it took staff to reach the aircraft and complete the handoff on the ground.",
+      "image": null
+    },
+    {
+      "id": "nvidia-administration-interim-management-contact",
+      "title": "What records can reveal about a shipment of NVIDIA chips",
+      "summary": "US Treasury Secretary Scott Bessent told CBS that the administration had contacted the interim leadership of chipmaker NVIDIA. He explained why shipping and payment records could help officials examine sales to China.",
+      "details": "Officials want to establish who handled export compliance inside NVIDIA.",
+      "technical_novelty": "Shipping and payment records can help connect a consignment with a transaction.",
+      "engineering_impact": "Computing chips from suppliers such as NVIDIA also help robotics developers train control models.",
+      "limitations": "Officials are still examining what happened and who was involved.",
+      "evidence_status": "The CBS transcript and a Reuters report document the administration’s contacts.",
+      "published_at": "2026-11-22",
+      "organization": "US Department of the Treasury and NVIDIA",
+      "source_ids": [
+        "cbs-bessent",
+        "reuters-bessent",
+        "nvidia-board"
+      ],
+      "time_window": "24h",
+      "body": "US Treasury Secretary Scott Bessent told CBS on November 22 that the administration had been in touch with NVIDIA’s interim leadership. The company makes chips for demanding computing jobs, including training programs to control robots by learning from many examples. Officials are asking about shipments of chips to China and who inside the company was responsible for following export rules.\n\nBessent said the administration had contacted NVIDIA’s interim leadership, board directors and lawyers. At the time of the interview, he said it was still waiting for the answers it wanted. He said officials wanted to find out who was responsible for compliance with export rules and what levels of the company knew about shipments under scrutiny.\n\nBessent pointed to shipping and payment records as a way to reconstruct transactions even where arrangements were informal. He described possible systemic noncompliance as something still being looked into. Reuters also reported the contacts. NVIDIA’s board announced on November 12 that Jensen Huang had resigned and that chief financial officer Colette Kress would serve as interim CEO. Bessent confirmed that the chief financial officer was in charge.\n\nA shipment of expensive equipment creates records in different places. Shipping documents can identify who sent the goods and what was shipped, while payment records track the money. Putting those records together helps officials piece together part of the story and find out who could authorize a transaction. Bessent identified one specific question: what employees knew about the shipments under review, and whether that knowledge reached the people running the company.",
       "image": null
     }
   ],
+  "technology_signal": {
+    "title": "Two stages of work for compressed air",
+    "summary": "In UC San Diego’s six-legged robot, the same air first opens and closes passages and then pushes the legs. The researchers borrowed the idea from compound steam engines.",
+    "implications": "The prototype uses air supplied through a hose. The team is exploring whether a future version could use a small portable air cartridge."
+  },
   "sources": [
     {
-      "id": "intramotev",
-      "organization": "Intramotev",
-      "published_at": "2026-11-20",
-      "url": "https://intramotev.com/newsroom",
-      "domain": "intramotev.com",
-      "title": "Intramotev, Watco Bringing Autonomous Railcars to Texas"
+      "id": "ucsd",
+      "organization": "University of California San Diego",
+      "published_at": "2026-11-18",
+      "url": "https://today.ucsd.edu/story/the-fastest-soft-robot-ever-built-doesnt-need-electronics-to-function",
+      "domain": "today.ucsd.edu",
+      "title": "The Fastest Soft Robot Ever Built Doesn’t Need Electronics to Function"
     },
     {
-      "id": "railway-age",
-      "organization": "Railway Age",
-      "published_at": "2026-11-20",
-      "url": "https://www.railwayage.com/freight/short-lines-regionals/intramotev-watco-bringing-autonomous-railcars-to-texas/",
-      "domain": "www.railwayage.com",
-      "title": "Intramotev, Watco Bringing Autonomous Railcars to Texas"
+      "id": "science-robotics",
+      "organization": "Science Robotics",
+      "published_at": "2026-11-18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43050495/",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "title": "Printing powerful soft robots on a desktop"
     },
     {
-      "id": "chitose",
-      "organization": "Chitose Robotics",
+      "id": "bagel-code",
+      "organization": "Bagel Labs",
       "published_at": "2026-11-20",
-      "url": "https://prtimes.jp/main/html/rd/p/000000029.000040625.html",
+      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
+      "domain": "github.com",
+      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
+    },
+    {
+      "id": "bagel-model",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-18",
+      "url": "https://www.bagel.com/bagel-robotics-1",
+      "domain": "www.bagel.com",
+      "title": "Bagel-Robotics-1"
+    },
+    {
+      "id": "world-supply",
+      "organization": "World Supply",
+      "published_at": "2026-11-18",
+      "url": "https://www.kyodo.co.jp/pr/2026-11-18_4050146/",
+      "domain": "www.kyodo.co.jp",
+      "title": "先進的なまちづくりを目指す「FUKUOKA Smart EAST」における館内配送サービスの実証実験に参画"
+    },
+    {
+      "id": "netsdar",
+      "organization": "NETSDAR Robot Solutions",
+      "published_at": "2026-11-17",
+      "url": "https://prtimes.jp/main/html/rd/p/000000005.000172258.html",
       "domain": "prtimes.jp",
-      "title": "チトセロボティクス、RoboNext2026に出展"
+      "title": "インターホン・エレベーターと連携した配送ロボットで「置き配」まで行う館内配送の実証実験を、福岡市のUR賃貸住宅で実施"
     },
     {
-      "id": "brightai",
-      "organization": "BrightAI",
-      "published_at": "2026-11-18",
-      "url": "https://www.businesswire.com/news/home/20261118838405/en/BrightAI-Announces-%2497-Million-Investment-to-Scale-Physical-AI-Across-the-Worlds-Essential-Services",
-      "domain": "www.businesswire.com",
-      "title": "BrightAI Announces $97 Million Investment to Scale Physical AI Across the World’s Essential Services"
+      "id": "ur-kashii",
+      "organization": "Urban Renaissance Agency",
+      "published_at": "2026-11-11",
+      "url": "https://www.ur-net.go.jp/news/pcbnj1000000c5sc-att/ur2026_press_1111_kyusyu.pdf",
+      "domain": "www.ur-net.go.jp",
+      "title": "物流事業者と配送ロボットの連携による集合住宅向け棟内配送サービスの実証実験を実施"
     },
     {
-      "id": "smith-point",
-      "organization": "Smith Point Capital",
-      "published_at": "2026-11-18",
-      "url": "https://www.smithpointcapital.com/news/the-intelligence-layer-for-critical-infrastructure",
-      "domain": "www.smithpointcapital.com",
-      "title": "The Intelligence Layer for Critical Infrastructure: Why We’re Partnering with BrightAI"
+      "id": "aeronext",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "published_at": "2026-11-20",
+      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
+      "domain": "aeronext.co.jp",
+      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
     },
     {
-      "id": "reuters-abb",
+      "id": "lnews-drone",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120502.html",
+      "domain": "www.lnews.jp",
+      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
+    },
+    {
+      "id": "cbs-bessent",
+      "organization": "CBS News",
+      "published_at": "2026-11-22",
+      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
+      "domain": "www.cbsnews.com",
+      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
+    },
+    {
+      "id": "reuters-bessent",
       "organization": "Reuters",
-      "published_at": "2026-11-20",
-      "url": "https://www.reuters.com/business/media-telecom/abb-considers-robotics-listing-if-sale-softbank-fails-sources-say-2026-11-20/",
+      "published_at": "2026-11-22",
+      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
       "domain": "www.reuters.com",
-      "title": "ABB considers robotics listing if sale to SoftBank fails, sources say"
+      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
     },
     {
-      "id": "abb",
-      "organization": "ABB",
-      "published_at": "2026-11-05",
-      "url": "https://www.abb.com/global/en/news/140154/update-on-divestment-of-abb-robotics",
-      "domain": "www.abb.com",
-      "title": "Update on divestment of ABB Robotics"
-    },
-    {
-      "id": "pimt",
-      "organization": "PIMT",
-      "published_at": "2026-11-19",
-      "url": "https://prtimes.jp/main/html/rd/p/000000009.000179442.html",
-      "domain": "prtimes.jp",
-      "title": "東京スカイツリーで移動型無人販売ロボットのビジネス実証"
-    },
-    {
-      "id": "skytree",
-      "organization": "Tobu Tower Skytree",
-      "published_at": "2026-11-19",
-      "url": "https://www.tokyo-skytree.jp/press/post/730/",
-      "domain": "www.tokyo-skytree.jp",
-      "title": "移動型無人販売ロボットを活用した実証実験を実施"
+      "id": "nvidia-board",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-12",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "domain": "nvidianews.nvidia.com",
+      "title": "NVIDIA Announces CEO Transition"
     }
   ]
 }

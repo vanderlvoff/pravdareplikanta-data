@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-23",
+  "issue_id": "daily-2026-11-23",
+  "edition": "enthusiast",
+  "language": "ja",
+  "generated_at": "2026-11-22T21:16:24+00:00",
+  "title": "空気が二つの仕事をするロボット",
+  "lead": "米カリフォルニア大学サンディエゴ校の研究者は、圧縮空気でまず通り道を切り替え、同じ空気で柔らかい六本の脚を動かした。一体成形したロボットは試験で最高秒速4.72メートルに達した。",
+  "news": [
+    {
+      "id": "ucsd-two-stage-pneumatic-hexapod",
+      "title": "柔らかいロボットが蒸気機関から借りた工夫",
+      "summary": "米カリフォルニア大学サンディエゴ校の研究者が、圧縮空気で走る六脚ロボットを一体成形した。一つの空気の流れに二つの仕事を順にさせて、最高秒速4.72メートルに達した。",
+      "details": "圧縮空気で動く脚と仕組みを、一種類の柔らかい材料でまとめて作った。",
+      "technical_novelty": "空気をまず弁に、次に脚に使う順番は、蒸気機関の仕組みを参考にした。",
+      "engineering_impact": "複数の地面に加え、水面と水中でも動作を試した。",
+      "limitations": "機体はホースで圧縮空気の供給源とつながっている。",
+      "evidence_status": "研究者と大学が実機の試験結果を説明した。",
+      "published_at": "2026-11-18",
+      "organization": "University of California San Diego",
+      "source_ids": [
+        "ucsd",
+        "science-robotics"
+      ],
+      "time_window": "7d",
+      "body": "米カリフォルニア大学サンディエゴ校の研究者は、圧縮した空気で脚を動かす柔らかいロボットを作り、どこまで速く走れるかを調べた。六本脚の新型は最高秒速4.72メートルまで達した。本体は3Dプリンターで一体成形され、水道管が建物の中で水を運ぶように、体の中の通り道が空気を必要な場所へ運ぶ。\n\n本体の内部には、空気を流す管と、空気の通り道を切り替える弁、空気が膨らむ部屋がつながっている。研究者は構造を大きくして強度を上げ、従来より高い圧力と大きな流量に対応させた。蒸気を段階的に膨張させる蒸気機関の考え方を取り入れ、まず圧力の高い小さな部屋で弁を動かし、次に圧力の低い大きな部屋で脚を動かす。高圧の空気を一段階で使って外に出す場合より、空気のエネルギーを使い切りやすくする狙いだ。\n\n同じ研究チームの以前の機体は秒速4センチだった。新型は最高で秒速4.72メートルに達した。大学によると、コンクリート、砂利、芝生、木片を敷いた地面や砂の上で試し、階段を下りる動作や、水面を泳いだり水中を歩いたりする動作も確認した。機体を動かすには、外部の圧縮空気源につなぐホースが必要になる。\n\n弁とは、空気の通り道を開いたり閉じたりする部品だ。空気は小さな部屋で弁を動かした後も別の部屋で膨らみ、脚を押す力を出せる。考え方のもとになった蒸気機関にも、最初の筒で仕事をした蒸気を、次の筒でさらに膨らませて使う仕組みがあった。研究者はこの順序を、ばらばらに組み立てる部品ではなく、柔らかい本体の内部に組み込んだ。機体に空気源を持たせる案もあるが、今回走ったロボットにはホースがつながっていた。",
+      "image": null
+    },
+    {
+      "id": "bagel-robodojo-suite-results",
+      "title": "板を持ち上げたロボットに、試験では何点入る？",
+      "summary": "カナダのBagel Labsは、ロボットの両腕を動かすプログラムの試験成績を項目別に公開した。仮想環境で行うRoboDojo-Simでは、作業が途中まで進んでも得点になるため、順位と作業を完了した割合はそれぞれ別のことを示す。",
+      "details": "公開された仮想環境での試行では、二つのつかみ具で板を持ち上げ、台に載せた。",
+      "technical_novelty": "三つのカメラの映像とロボットの状態を使って動作の計画を更新する。",
+      "engineering_impact": "項目別の成績から、どの種類の作業が最後まで進みやすかったかを比べられる。",
+      "limitations": "公開された成績はコンピューター上の試験で得たものだ。",
+      "evidence_status": "Bagel Labsがコードと成績表を公開した。",
+      "published_at": "2026-11-20",
+      "organization": "Bagel Labs",
+      "source_ids": [
+        "bagel-code",
+        "bagel-model"
+      ],
+      "time_window": "7d",
+      "body": "板を二つの台に載せる作業では、片方の腕が板の端をつかみそこねたり、下ろすときに板が台から外れたりする。カナダのBagel Labsは、こうした作業をコンピューター上のロボットで試すRoboDojo-Simで、両腕を動かすプログラムの成績を公開した。プログラムの名前はBagel-Robotics-1。公開された一回の試行では、両腕で一枚の板を持ち上げ、二つの台に載せることができた。\n\nモデルには、作業の指示文、頭部のカメラと左右の手首のカメラの映像、ロボットの現在の状態を入力する。モデルは一度に32ステップ分の動作を予測し、最初の16ステップを実行してから、改めて観測した情報をもとに次の動作を計算する。計画を立て直す時点で、腕や物の位置が前の動作からどう変わったかを反映できる。\n\n11月20日付のRoboDojo-Simの集計で、Bagel Labsのモデルは、別のソフトウェアが作業の進め方を補助する部門を除くと総合3位だった。平均は100点満点で38.65点、作業を最後まで達成した割合は平均31.91%だった。試験には初めての条件への対応や複数の手順からなる作業など五つの評価部門があり、順位を決める集計では各部門を同じ重みで扱う。途中までできた作業にも点が付く。達成方法の自由度が高い作業や、文章や画像の指示に従う作業を含む「Open」部門では、成功率が3.33%だった。\n\n途中までできた作業に点を付けておくと、新しいプログラムが何度も失敗している場合でも、目標に少しずつ近づいているのかを見比べられる。一方、板を置くところまで任せたいなら、最後までできた回数を調べる必要がある。板の映像には、左右の腕の動きがそろう場面が映っており、開発元の資料にはその一回を再現するための設定もある。どのくらいの頻度で同じようにできるかを知る手がかりは、一回の映像より多くの試行を集めた成績表にある。",
+      "image": null
+    },
+    {
+      "id": "kashii-parcel-intercom-lift-trial",
+      "title": "オートロックの集合住宅で、配達ロボットはどう部屋まで行く？",
+      "summary": "福岡市の集合住宅で、4社がロボットによる住戸前への荷物の配達を試した。インターホンや宅配時に鍵を開ける仕組み、エレベーターをロボットとつなぎ、留守のときは玄関前に荷物を置く方法も調べた。",
+      "details": "試験は11月18日、福岡市東区香椎の集合住宅3号棟で行われた。",
+      "technical_novelty": "ロボットがインターホン、配達時に鍵を開ける仕組み、エレベーターと連携する。",
+      "engineering_impact": "住人に荷物を手渡す方法と、留守のときに玄関前に置く方法を想定した。",
+      "limitations": "配達を完了できた割合は公表されていない。",
+      "evidence_status": "ワールドサプライとネットスターが実証の内容を発表した。",
+      "published_at": "2026-11-18",
+      "organization": "Aiphone, NETSDAR Robot Solutions, Nippon Otis Elevator and World Supply",
+      "source_ids": [
+        "world-supply",
+        "netsdar",
+        "ur-kashii"
+      ],
+      "time_window": "7d",
+      "body": "入口に鍵がかかったマンションで、ロボットはどうやって住人の玄関まで荷物を運ぶのか。福岡市東区香椎の集合住宅では11月18日、ネットスター、アイホン、日本オーチス・エレベータ、ワールドサプライが、ロボットで荷物を住戸前まで運ぶ試験を行った。受取人が留守でも、玄関前に荷物を置く「置き配」で配達を終えられるかも調べた。\n\n車輪で廊下を進むだけでは、入口の鍵を開けたり別の階に上がったりできない。そこでインターホンや宅配時に鍵を開ける仕組み、エレベーターとロボットをつないだ。建物を管理するUR都市機構が公表した実施イメージでは、配達員が伝票の情報をインターホンと連携させて入口を開け、ロビーで箱をロボットに預ける。そこからロボットはエレベーターに乗り、届け先の階で降りて部屋の前まで進む。\n\n留守の場合の流れも、UR都市機構が示した。ロボットが玄関前のトレーに荷物を下ろして戻る。住人は帰宅後に荷物を受け取り、インターホンからトレーの回収を指示する。留守中の配達では、荷物を下ろすところに加えて、預けたトレーを後で回収する手順も必要になる。\n\n前の年度には、ロボットが住戸の前まで運ぶ試験が行われていた。開発会社のネットスターによると、今回はインターホンとの連携と置き配を加え、配送事業者も参加した。届け先が留守でも玄関に置ければ、配達員がもう一度訪ねる手間を省ける。今回の発表では、実際に何件の荷物を再配達なしで届けられたかは示されていない。",
+      "image": null
+    },
+    {
+      "id": "shinshiro-pharmacy-drone-routes",
+      "title": "ドローンは薬をどこで受け取り、誰に渡す？",
+      "summary": "愛知県新城市で、自治体と企業が医薬品を運ぶ三つのルートを試した。一つのルートでは、空荷で出発した機体が薬局の近くに着陸し、薬を受け取ってから届け先に向かった。",
+      "details": "報道公開の便では、機体が約12分飛んで高齢者施設に箱を運んだ。",
+      "technical_novelty": "別の便では、途中で着陸した機体に薬局の職員が薬を積んだ。",
+      "engineering_impact": "複数のルートを使い、薬局や届け先の施設で必要になる仕事を調べた。",
+      "limitations": "飛行区間ごとの時間は、地上の作業を含まない。",
+      "evidence_status": "参加者が実証結果を公表し、物流専門媒体LNEWSが報じた。",
+      "published_at": "2026-11-20",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "source_ids": [
+        "aeronext",
+        "lnews-drone"
+      ],
+      "time_window": "7d",
+      "body": "薬を運ぶドローンには、出発地点で箱を積む方法と、途中で薬局に寄って受け取る方法がある。愛知県と新城市はエアロネクスト、グリーンサービスと両方のやり方を試し、高齢者施設への飛行を薬の用意や受け渡しにつなげられるかを調べた。11月20日には三つのルートについて結果を公表した。\n\n11月18日の報道公開では、市街地の薬局が薬を車で横川公民館の発着拠点に運んだ。会場では薬の箱を機体に載せた。主催者によると、機体は約8キロ先の特別養護老人ホームまで約12分で飛び、届けた箱を施設の職員が回収した。12分は拠点から施設までの飛行時間に当たる。\n\n別のルートでは、機体が荷物を積まずに拠点を出て薬局の近くで着陸し、薬局の職員が箱を載せた。その後、機体は別の特別養護老人ホームに薬を届けた。主催者によると、拠点から薬局までの飛行は約13分、薬局から届け先までは約5分で、この時間に拠点への帰路は含まれない。機体を運航したのは地域の医薬品配送会社グリーンサービスで、津島市の事業拠点から遠隔で運航を管理した。\n\n薬局付近に着陸するルートでは、薬局の職員が専用の箱を直接機体に取り付けた。受け取る人にも役割がある。薬のために作った箱は、登録した看護師が指紋で鍵を開ける仕組みだ。機体が箱を置いていった後でも、薬を取り出す人をあらかじめ決めておける。公表した数字から飛行区間ごとの時間は分かるが、職員が機体のところに出て箱を取り付け、受け取るまでの時間は別に示されていない。",
+      "image": null
+    },
+    {
+      "id": "nvidia-administration-interim-management-contact",
+      "title": "半導体の出荷をどう調べるか、米政権がエヌビディアに聞き取り",
+      "summary": "米国のベッセント財務長官はCBSの番組で、半導体を作るエヌビディアの暫定経営陣に米政権が連絡したと話した。中国向けの販売を調べる手がかりとして、出荷と支払いの記録を挙げた。",
+      "details": "政権はエヌビディア社内で誰が輸出規則を守る責任を負っていたかを調べている。",
+      "technical_novelty": "輸送の記録と支払いの記録を突き合わせると、出荷と取引の関係を調べられる。",
+      "engineering_impact": "エヌビディアなどの計算用半導体は、ロボットを動かすプログラムの学習にも使われる。",
+      "limitations": "取引の経緯や社内での担当者は確認が続いている。",
+      "evidence_status": "CBSが発言を公開し、ロイターも会社側への連絡を報じた。",
+      "published_at": "2026-11-22",
+      "organization": "US Department of the Treasury and NVIDIA",
+      "source_ids": [
+        "cbs-bessent",
+        "reuters-bessent",
+        "nvidia-board"
+      ],
+      "time_window": "24h",
+      "body": "米国のベッセント財務長官は11月22日のCBSの番組で、米政権がエヌビディアの暫定経営陣に連絡したと話した。エヌビディアは大量の計算を効率よくこなす半導体を作る。例えばロボットを動かすプログラムが多数の見本から学ぶ際に使われる。米政権はこの半導体の中国向けの出荷を巡り、社内で誰が輸出規則の順守を担当していたかをたずねている。\n\nベッセント氏は、政権がエヌビディアの暫定経営陣、取締役、弁護士と連絡を取ったと話した。取材の時点で、政権が求める回答はまだ得られていないという。確認したい点として、輸出規則を守る責任を誰が負っていたかと、調査の対象になっている出荷について社内のどの段階まで情報が伝わっていたかを挙げた。\n\n口頭で取り決めた取引でも、出荷や代金の記録をたどれば経緯を調べられると述べた。社内で輸出規則を軽視する傾向があったかは、今も調べている段階だと説明した。ロイターも政権による接触を報じた。エヌビディアの取締役会は11月12日、ジェンスン・フアン氏の辞任と、財務責任者のコレット・クレス氏の暫定CEO就任を発表した。CEOは経営の最高責任者を指す。ベッセント氏も番組で、財務責任者が会社を率いていると述べた。\n\n高価な機器を運ぶときには、輸送と支払いでそれぞれ記録が残る。何を誰が運んだかを示す資料と、代金の動きを示す資料を突き合わせると、取引のどの段階で誰がかかわったかを調べやすくなる。財務長官が番組で取り上げたのは、出荷を知っていた人が社内のどの段階までいたかという問いだ。現場で手続きした人から会社の経営を担う人へ、情報がどこまで届いたのかは調べている途中だ。",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "空気を二段階で使う六脚ロボット",
+    "summary": "米カリフォルニア大学サンディエゴ校のロボットは、まず空気で体内の通り道を切り替え、次に同じ空気で脚を動かす。蒸気機関の仕組みを参考にした工夫だ。",
+    "implications": "試作機には空気を送るホースがつながっている。研究チームは、持ち運べる小さな容器で動かす方法を今後検討する。"
+  },
+  "sources": [
+    {
+      "id": "ucsd",
+      "organization": "University of California San Diego",
+      "published_at": "2026-11-18",
+      "url": "https://today.ucsd.edu/story/the-fastest-soft-robot-ever-built-doesnt-need-electronics-to-function",
+      "domain": "today.ucsd.edu",
+      "title": "The Fastest Soft Robot Ever Built Doesn’t Need Electronics to Function"
+    },
+    {
+      "id": "science-robotics",
+      "organization": "Science Robotics",
+      "published_at": "2026-11-18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43050495/",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "title": "Printing powerful soft robots on a desktop"
+    },
+    {
+      "id": "bagel-code",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-20",
+      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
+      "domain": "github.com",
+      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
+    },
+    {
+      "id": "bagel-model",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-18",
+      "url": "https://www.bagel.com/bagel-robotics-1",
+      "domain": "www.bagel.com",
+      "title": "Bagel-Robotics-1"
+    },
+    {
+      "id": "world-supply",
+      "organization": "World Supply",
+      "published_at": "2026-11-18",
+      "url": "https://www.kyodo.co.jp/pr/2026-11-18_4050146/",
+      "domain": "www.kyodo.co.jp",
+      "title": "先進的なまちづくりを目指す「FUKUOKA Smart EAST」における館内配送サービスの実証実験に参画"
+    },
+    {
+      "id": "netsdar",
+      "organization": "NETSDAR Robot Solutions",
+      "published_at": "2026-11-17",
+      "url": "https://prtimes.jp/main/html/rd/p/000000005.000172258.html",
+      "domain": "prtimes.jp",
+      "title": "インターホン・エレベーターと連携した配送ロボットで「置き配」まで行う館内配送の実証実験を、福岡市のUR賃貸住宅で実施"
+    },
+    {
+      "id": "ur-kashii",
+      "organization": "Urban Renaissance Agency",
+      "published_at": "2026-11-11",
+      "url": "https://www.ur-net.go.jp/news/pcbnj1000000c5sc-att/ur2026_press_1111_kyusyu.pdf",
+      "domain": "www.ur-net.go.jp",
+      "title": "物流事業者と配送ロボットの連携による集合住宅向け棟内配送サービスの実証実験を実施"
+    },
+    {
+      "id": "aeronext",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "published_at": "2026-11-20",
+      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
+      "domain": "aeronext.co.jp",
+      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
+    },
+    {
+      "id": "lnews-drone",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120502.html",
+      "domain": "www.lnews.jp",
+      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
+    },
+    {
+      "id": "cbs-bessent",
+      "organization": "CBS News",
+      "published_at": "2026-11-22",
+      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
+      "domain": "www.cbsnews.com",
+      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
+    },
+    {
+      "id": "reuters-bessent",
+      "organization": "Reuters",
+      "published_at": "2026-11-22",
+      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
+      "domain": "www.reuters.com",
+      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
+    },
+    {
+      "id": "nvidia-board",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-12",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "domain": "nvidianews.nvidia.com",
+      "title": "NVIDIA Announces CEO Transition"
+    }
+  ]
+}

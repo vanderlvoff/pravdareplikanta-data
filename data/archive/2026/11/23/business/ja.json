@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-23",
+  "issue_id": "daily-2026-11-23",
+  "edition": "business",
+  "language": "ja",
+  "generated_at": "2026-11-22T21:16:24+00:00",
+  "title": "倉庫を開く前に、荷物が集中する時間帯を再現",
+  "lead": "スペースデータと霞ヶ関キャピタルは、国内の物流施設三拠点を候補に共同検討を始めた。荷物が集中したり機器が止まったりしたときの影響を、事前にコンピューターで調べる考えだ。",
+  "news": [
+    {
+      "id": "nvidia-administration-interim-management-contact",
+      "title": "米政権がエヌビディアに接触、輸出管理を巡る回答を待つ",
+      "summary": "米国のベッセント財務長官はCBSの番組で、中国向け半導体の出荷に関して米政権がエヌビディアの暫定経営陣に連絡したと述べた。輸出規則を守る責任を誰が負っていたかについて、回答はまだ得られていないという。",
+      "details": "米政権は暫定経営陣や取締役、弁護士と連絡を取った。",
+      "technical_novelty": "財務長官は、出荷や支払いの記録が取引を確認する手がかりになると指摘した。",
+      "engineering_impact": "計算資源を調達する企業にとっては、大手供給元が輸出手続きをどう管理していたかが焦点だ。",
+      "limitations": "違反の当事者や今後の個別の出荷条件は発表されていない。",
+      "evidence_status": "CBSが番組の記録を公開し、ロイターも米政権の接触を報じた。",
+      "published_at": "2026-11-22",
+      "organization": "US Department of the Treasury and NVIDIA",
+      "source_ids": [
+        "cbs-bessent",
+        "reuters-bessent",
+        "nvidia-board"
+      ],
+      "time_window": "24h",
+      "body": "米国のベッセント財務長官は11月22日、エヌビディアの中国向け半導体の出荷について、米政権が会社の暫定経営陣に連絡したとCBSの番組で明らかにした。政権は、供給元の社内で輸出規則を守る責任を誰が負い、確認の対象になっている出荷について誰が知っていたかを調べたいとしている。\n\nベッセント氏は、政権がエヌビディアの暫定経営陣、取締役、弁護士と連絡を取ったと話した。取材の時点で、政権が求める回答はまだ得られていないという。確認したい点として、輸出規則を守る責任を誰が負っていたかと、調査の対象になっている出荷について社内のどの段階まで情報が伝わっていたかを挙げた。\n\n口頭で取り決めた取引でも、出荷や代金の記録をたどれば経緯を調べられると述べた。社内で輸出規則を軽視する傾向があったかは、今も調べている段階だと説明した。ロイターも政権による接触を報じた。エヌビディアの取締役会は11月12日、ジェンスン・フアン氏の辞任と、財務責任者のコレット・クレス氏の暫定CEO就任を発表した。CEOは経営の最高責任者を指す。ベッセント氏も番組で、財務責任者が会社を率いていると述べた。\n\nロボット用のソフトウェアを開発するために計算資源を確保する企業には、取引に適用される規則を把握する仕事と、供給元が手続きを済ませたことを確認する仕事がある。今回の発言から分かったのは、政権が社内の責任分担や、出荷と支払いを記録した資料に関心を向けていることだ。個別の取引の条件や予定は示されておらず、今回の番組での発言から、個々の調達案件への影響は判断できない。",
+      "image": null
+    },
+    {
+      "id": "space-data-kasumigaseki-warehouse-design",
+      "title": "倉庫の設備を入れる前に荷物の流れを確認、国内三拠点を候補に",
+      "summary": "スペースデータと霞ヶ関キャピタルは、国内の物流施設三拠点を候補に、運用をコンピューターで再現する取り組みの検討を始めた。荷物が集中したり、一部の設備が止まったりしたときに、新設する倉庫がどれだけ出荷を続けられるかを計画段階から確かめたい考えだ。",
+      "details": "候補は自動倉庫の新設計画二件と、坂戸市の既存施設だ。",
+      "technical_novelty": "働く人や荷物が倉庫内をどう移動するかまで再現しようとしている。",
+      "engineering_impact": "設備の設置後に直すと時間や費用がかかる問題を、早い段階で見つける狙いがある。",
+      "limitations": "作業日程や、拠点ごとに期待できる効果は示されていない。",
+      "evidence_status": "両社の発表をもとに物流専門媒体LNEWSが候補拠点を報じた。",
+      "published_at": "2026-11-20",
+      "organization": "Space Data and Kasumigaseki Capital",
+      "source_ids": [
+        "space-data",
+        "lnews-space"
+      ],
+      "time_window": "7d",
+      "body": "物流施設を開発する霞ヶ関キャピタルと、コンピューターで施設や機器の動きを再現する技術を持つスペースデータが、倉庫の設計や運用にその技術を使う共同検討を始めた。候補の三拠点には常温倉庫と冷凍倉庫の新設計画が含まれる。荷物が集中したときや設備が止まったときの影響を、稼働前に確かめることを目指す。\n\n候補は三拠点ある。神奈川県厚木市には常温の自動倉庫を計画しており、竣工の目標は2029年春。静岡県袋井市には冷凍自動倉庫を計画し、2030年春の竣工を予定する。三つ目の埼玉県坂戸市のランドキューブ坂戸は既存施設で、そこで物流設備とシステムの連携などを検証することを考えている。\n\n両社が作ろうとしているのは、建物と機器だけでなく、人の移動や荷物の流れもコンピューター上に再現する環境だ。ロボットや搬送設備の数や位置を変えて、入荷や出荷が集中するときに扱える量や、一部の機器が止まったときの影響を調べる。具体的に何を試すか、いつ始めるかは共同検討の進み具合に応じて決める。\n\n倉庫の建物と自動化設備は、互いに関わる。稼働してから荷物が滞る場所を見つけると、機器を移したり、作業員の通路を引き直したりする対策が必要になることがある。そこで両社は、倉庫を開発して運営する知識と、コンピューター上で作業を再現する技術を組み合わせる。坂戸では、すでに使っている設備とシステムをつなぐ方法を検討する。発表の段階では、拠点ごとの処理能力や費用の改善幅は分からない。",
+      "image": null
+    },
+    {
+      "id": "shinshiro-pharmacy-drone-routes",
+      "title": "愛知の医薬品配送、車から空に移せる区間を新城市で検証",
+      "summary": "愛知県と新城市、民間2社が、ドローンで薬を届ける三つの方法を試した。薬を車で発着拠点へ運ぶ方法と、飛来した機体に薬局の職員が箱を載せる方法があった。",
+      "details": "グリーンサービスが飛行を担当し、エアロネクストが運航システムを提供した。",
+      "technical_novelty": "拠点に集める方法と、飛行途中に薬局で集荷する方法を試した。",
+      "engineering_impact": "既存の医薬品配送会社が運航と受け渡しにどう関われるかを検証した。",
+      "limitations": "定期的に運ぶ場合の配送一件あたりの総費用は公表していない。",
+      "evidence_status": "実証の参加者が発表し、物流専門媒体LNEWSが報じた。",
+      "published_at": "2026-11-20",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "source_ids": [
+        "aeronext",
+        "lnews-drone"
+      ],
+      "time_window": "7d",
+      "body": "愛知県と新城市は、エアロネクスト、グリーンサービスとともに、新城市の医薬品配送で車に代えてドローンを使える区間を調べた。11月20日の報告では三つのルートを示した。すでに薬を運んでいる地元企業が飛行も担い、届け先の職員へ箱を渡すところまで仕事を組み立てられるかが検証項目だった。\n\n11月18日の報道公開では、市街地の薬局が薬を車で横川公民館の発着拠点に運んだ。会場では薬の箱を機体に載せた。主催者によると、機体は約8キロ先の特別養護老人ホームまで約12分で飛び、届けた箱を施設の職員が回収した。12分は拠点から施設までの飛行時間に当たる。\n\n別のルートでは、機体が荷物を積まずに拠点を出て薬局の近くで着陸し、薬局の職員が箱を載せた。その後、機体は別の特別養護老人ホームに薬を届けた。主催者によると、拠点から薬局までの飛行は約13分、薬局から届け先までは約5分で、この時間に拠点への帰路は含まれない。機体を運航したのは地域の医薬品配送会社グリーンサービスで、津島市の事業拠点から遠隔で運航を管理した。\n\n試したルートによって、薬局の職員が担う仕事が変わる。薬を車で発着拠点まで運ぶ場合と、到着した機体に薬局で箱を積む場合がある。エアロネクストは運航システムを提供し、グリーンサービスの職員は同社の講習を受け、地元の事業者として飛行を担った。飛行区間ごとの時間は、配送にかかる費用を考えるうえで一つの材料になる。車で運ぶ場合と比べるには、拠点までの移動、離陸までの待ち時間、着陸後の受け渡しも含める必要がある。発表には、注文一件あたりの総費用は記載されていない。",
+      "image": null
+    },
+    {
+      "id": "arrive-ai-pro-forma-nasdaq-equity",
+      "title": "荷物の受け渡し設備を開発するArrive AI、債務を株式に替えた後の資本を試算",
+      "summary": "ドローンや配送員などの荷物の受け渡しに使う設備を開発する米Arrive AIが、米証券取引委員会に資金調達と債務の処理について届け出た。複数の取引を反映した株主資本の概算は約770万ドルで、同社に適用されるナスダックの最低基準250万ドルを上回るという。",
+      "details": "取引を反映する前の9月30日時点の株主資本は219万8652ドルだった。",
+      "technical_novelty": "貸し手のストリートビル・キャピタルには、債務と引き換えに優先株を渡した。",
+      "engineering_impact": "導入企業は、設備の利用期間を通じて保守を受けられるかにも注意を払う必要がある。",
+      "limitations": "試算は監査を受けておらず、債務交換の会計処理は確定していない。",
+      "evidence_status": "11月20日付の米証券取引委員会への届出書と、同社の投資家向け資料に基づく。",
+      "published_at": "2026-11-20",
+      "organization": "Arrive AI",
+      "source_ids": [
+        "arrive-sec",
+        "arrive-ir"
+      ],
+      "time_window": "7d",
+      "body": "荷物の受け渡し設備を開発する米Arrive AIが11月20日、資金調達と債務の処理に伴う株主資本の変化を報告した。株主資本は会計上、資産から負債を差し引いた会社の持ち分を表す。同社は一連の取引を反映すると約770万ドルになると試算し、米証券取引委員会に提出した書類で、上場先のナスダックが同社に求める250万ドルの基準を上回ったとの見方を示した。\n\n同社が報告した9月30日時点の株主資本は219万8652ドルだった。その後、特定の投資家に株式を売って諸費用を引く前で25万ドルを調達したほか、市場価格で株式を売る仕組みで約130万ドルを得た。また、ストリートビル・キャピタルに対する債務と引き換えに、普通株と異なる条件を持つ優先株を渡した。これらの取引を反映して、同社は株主資本の基準を再び満たしたとの見方を示している。\n\n同社の設備では、配送員やドローンなどが別々の時刻に到着して荷物を引き渡せる。設備を導入して長く使う顧客にとって、開発会社が保守を続けられるかは選定の一つの条件になる。今回の数字は、取引が9月30日までに済んでいたと仮定した試算で、決算日より後の事業成績は反映していない。この試算は監査を受けておらず、優先株を返済期限のない株主資本に分類できるとの同社の見通しを織り込む。債務と株式を交換した取引の会計処理は、最終的には確定していない。ナスダックは今後も、同社が株主資本の基準を満たしているかを確認する。",
+      "image": null
+    },
+    {
+      "id": "bagel-robodojo-suite-results",
+      "title": "Bagel Labsが双腕向けモデルを公開、企業の社内評価には有償契約",
+      "summary": "カナダのBagel Labsは、ロボットの両腕を動かすモデルのコードと試験成績を公開した。成績は仮想環境で得たもので、企業が社内評価に使う場合も別途有償契約が必要になる。",
+      "details": "コンピューター上の試験RoboDojo-Simでは、五つの部門で途中までできた作業にも点が付く。",
+      "technical_novelty": "学習で得た数値の集まりであるモデルの重みをダウンロードできる。",
+      "engineering_impact": "企業が社内の比較試験に使えるかどうかには利用許諾の条件が関わる。",
+      "limitations": "顧客の現場での稼働成績はこの発表では示されていない。",
+      "evidence_status": "開発元が仮想環境での成績と利用許諾の条件を公開した。",
+      "published_at": "2026-11-20",
+      "organization": "Bagel Labs",
+      "source_ids": [
+        "bagel-code",
+        "bagel-model"
+      ],
+      "time_window": "7d",
+      "body": "トロントのBagel Labsが公開したのは、作業の指示とカメラの情報をもとにロボットの両腕の動きを決めるプログラムだ。仮想環境でロボットの制御を比べる試験RoboDojo-Simの成績も、項目別に示した。現場で自動化したい作業と試験の課題が似ていれば、何を社内で詳しく検証するかを決める材料になる。例えば両腕で大きな物を持つ工程を任せる場合、物を持ち上げる段階と、所定の場所に置き終える段階は分けて確かめたい。\n\nモデルには、作業の指示文、頭部のカメラと左右の手首のカメラの映像、ロボットの現在の状態を入力する。モデルは一度に32ステップ分の動作を予測し、最初の16ステップを実行してから、改めて観測した情報をもとに次の動作を計算する。計画を立て直す時点で、腕や物の位置が前の動作からどう変わったかを反映できる。\n\n11月20日付のRoboDojo-Simの集計で、Bagel Labsのモデルは、別のソフトウェアが作業の進め方を補助する部門を除くと総合3位だった。平均は100点満点で38.65点、作業を最後まで達成した割合は平均31.91%だった。試験には初めての条件への対応や複数の手順からなる作業など五つの評価部門があり、順位を決める集計では各部門を同じ重みで扱う。途中までできた作業にも点が付く。達成方法の自由度が高い作業や、文章や画像の指示に従う作業を含む「Open」部門では、成功率が3.33%だった。\n\n公開された重みは、プログラムが手本から学んだ内容を表す数値の集まりで、実行時に必要になる。ダウンロードは可能だが、公開資料によると企業が業務で使ったり、企業のために第三者が使ったりする場合には別途有償契約が必要だ。対象には社内研究や他社モデルとの比較試験も含まれる。稟議の前に整理したいのは、どの作業を最後までこなせば導入の候補になるかという条件だ。順位は途中までこなした作業にも得点を与えるため、完了が必須の仕事では、試験項目ごとの成功率を確かめる必要がある。",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "設備を決める前に倉庫の作業を検証",
+    "summary": "スペースデータと霞ヶ関キャピタルは、倉庫内のロボットや荷物を運ぶ機器の台数と配置をコンピューター上で変え、倉庫がどれだけ荷物を処理できるかを調べたい考えだ。",
+    "implications": "荷物が滞る場所を早く把握できれば、機器を入れる前に計画を見直せる。具体的な検証項目は今後決める。"
+  },
+  "sources": [
+    {
+      "id": "cbs-bessent",
+      "organization": "CBS News",
+      "published_at": "2026-11-22",
+      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
+      "domain": "www.cbsnews.com",
+      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
+    },
+    {
+      "id": "reuters-bessent",
+      "organization": "Reuters",
+      "published_at": "2026-11-22",
+      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
+      "domain": "www.reuters.com",
+      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
+    },
+    {
+      "id": "nvidia-board",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-12",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "domain": "nvidianews.nvidia.com",
+      "title": "NVIDIA Announces CEO Transition"
+    },
+    {
+      "id": "space-data",
+      "organization": "Space Data",
+      "published_at": "2026-11-20",
+      "url": "https://prtimes.jp/main/html/rd/p/000000286.000080352.html",
+      "domain": "prtimes.jp",
+      "title": "スペースデータと霞ヶ関キャピタル、物流施設の設計から運用までをフィジカルAI・空間知能で高度化する共同検討を開始"
+    },
+    {
+      "id": "lnews-space",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120503.html",
+      "domain": "www.lnews.jp",
+      "title": "霞ヶ関キャピタルとスペースデータ／物流施設3拠点でフィジカルAI活用を共同検討"
+    },
+    {
+      "id": "aeronext",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "published_at": "2026-11-20",
+      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
+      "domain": "aeronext.co.jp",
+      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
+    },
+    {
+      "id": "lnews-drone",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120502.html",
+      "domain": "www.lnews.jp",
+      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
+    },
+    {
+      "id": "arrive-sec",
+      "organization": "Arrive AI",
+      "published_at": "2026-11-20",
+      "url": "https://www.sec.gov/Archives/edgar/data/1818274/000149315226053484/form8-k.htm",
+      "domain": "www.sec.gov",
+      "title": "Arrive AI Inc. Form 8-K"
+    },
+    {
+      "id": "arrive-ir",
+      "organization": "Arrive AI",
+      "published_at": "2026-11-20",
+      "url": "https://investors.arriveai.com/news-releases/news-release-details/arrive-ais-pro-forma-stockholders-equity-now-above-nasdaq",
+      "domain": "investors.arriveai.com",
+      "title": "Arrive AI’s Pro Forma Stockholders’ Equity Now Above Nasdaq Minimum Requirement Following Recent Transactions"
+    },
+    {
+      "id": "bagel-code",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-20",
+      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
+      "domain": "github.com",
+      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
+    },
+    {
+      "id": "bagel-model",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-18",
+      "url": "https://www.bagel.com/bagel-robotics-1",
+      "domain": "www.bagel.com",
+      "title": "Bagel-Robotics-1"
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-23",
+  "issue_id": "daily-2026-11-23",
+  "edition": "engineer",
+  "language": "en",
+  "generated_at": "2026-11-22T21:16:24+00:00",
+  "title": "Measuring success for a two-armed robot",
+  "lead": "Bagel Labs published results for its control model across five categories of a virtual test. The breakdown shows what changes when the score reflects partial progress or requires the whole task to finish.",
+  "news": [
+    {
+      "id": "bagel-robodojo-suite-results",
+      "title": "Bagel Labs breaks down its two-arm model’s simulator scores",
+      "summary": "Canada’s Bagel Labs published code and detailed results for Bagel-Robotics-1, a model that controls two robot arms. It scored 38.65 out of 100 with partial credit in the RoboDojo-Sim virtual benchmark.",
+      "details": "Each control cycle predicts 32 actions and executes the first 16.",
+      "technical_novelty": "Training changed the component that extracts video features while holding the action component fixed.",
+      "engineering_impact": "The release includes model weights, an evaluation adapter and a documented reproduction setup.",
+      "limitations": "The simulator scores do not measure reliability on physical equipment.",
+      "evidence_status": "Developer documentation and a November 20 snapshot of simulation results.",
+      "published_at": "2026-11-20",
+      "organization": "Bagel Labs",
+      "source_ids": [
+        "bagel-code",
+        "bagel-model"
+      ],
+      "time_window": "7d",
+      "body": "Bagel Labs released code for training and running Bagel-Robotics-1, which turns written tasks and observations into movements for two robot arms and their grippers. Its November 20 breakdown reports performance across categories in RoboDojo-Sim, a virtual benchmark for robot control. The accompanying tower-building example specifies an ARX X5 robot and the layout of the objects in the recorded run.\n\nThe model receives a task instruction, views from one head camera and two wrist cameras, and the robot's current state. It predicts 32 actions in a batch, executes 16 and then makes a new plan from fresh observations. That refresh lets the next prediction account for where the arms and objects are after the previous burst of movement.\n\nIn Bagel Labs' November 20 snapshot of RoboDojo-Sim, the model placed third among models evaluated without a separate software agent. It averaged 38.65 points out of 100, with an average full-task success rate of 31.91%. It completed 3.33% of trials in the Open category, which includes open-ended tasks and tasks guided by text or images. The ranking awards partial credit and gives each of the five main categories the same weight.\n\nThe team held the action component fixed and adjusted the video component using robot demonstrations. Training used 30,000 windows of recordings covering 35 tasks, with a further 1,119 windows to monitor training. The team reduced the video component’s parameter count by roughly 24%. The tower example shows both grippers picking up a board and placing it across two supports. The documentation ties the example to a specific set of weights and test settings, giving other teams a reference run before they vary the object layout.",
+      "image": null
+    },
+    {
+      "id": "ucsd-two-stage-pneumatic-hexapod",
+      "title": "Two-stage air expansion speeds up a soft six-legged robot",
+      "summary": "UC San Diego engineers printed a soft, six-legged body in a single material. The pneumatic robot reached up to 4.72 meters per second with compressed air supplied from outside.",
+      "details": "The team prints a single body containing channels and valves.",
+      "technical_novelty": "Compressed air operates the valves and then drives the legs.",
+      "engineering_impact": "Two stages of expansion put energy from the same flow to work in separate parts of the mechanism.",
+      "limitations": "The prototype needs an external air supply. Steering and object manipulation are future design goals.",
+      "evidence_status": "A physical prototype is described in Science Robotics and the university’s announcement.",
+      "published_at": "2026-11-18",
+      "organization": "University of California San Diego",
+      "source_ids": [
+        "ucsd",
+        "science-robotics"
+      ],
+      "time_window": "7d",
+      "body": "A UC San Diego team reports in Science Robotics on a soft six-legged robot printed in one piece from a single material. The researchers wanted to increase the speed of their earlier air-powered design while retaining leg control without onboard electronics. The new machine reached a reported top speed of 4.72 meters per second while receiving compressed air through a hose.\n\nThe body contains valves, chambers and tubes. The team enlarged and strengthened the design to handle higher pressure and flow. To make better use of the expanding air, the researchers borrowed the principle behind the compound steam engine. Compressed air first works in small, high-pressure chambers to run the valves. It then goes to larger, lower-pressure chambers and drives the legs.\n\nThe team’s earlier design moved at 4 centimeters per second. The new robot reached up to 4.72 meters per second. The university says the team tested it on concrete, gravel, grass, mulch and sand. It also went down stairs, swam and moved underwater. The robot works with a hose tether to an external source of compressed air.\n\nThe supply line matters when interpreting the result. The printed structure already integrates the leg actuators and the switching that sequences the gait, while the pressure source sits outside the body. The researchers want to reduce air use enough to run a future version from a portable supply such as a compressed-air cartridge. They also identify steering and object manipulation as goals for future designs. The measured speed describes the pneumatic mechanism when connected to an external supply.",
+      "image": null
+    },
+    {
+      "id": "shinshiro-pharmacy-drone-routes",
+      "title": "Aichi tests a medicine route with a drone landing for pickup",
+      "summary": "Aichi Prefecture, Shinshiro and two companies reported on three medicine delivery routes. On one, the drone landed near a pharmacy so staff could load a box, then flew on to the recipient.",
+      "details": "Pharmacy staff loaded the drone during an intermediate stop.",
+      "technical_novelty": "The system combines handoff sites, remote flight operations and a secured medicine box.",
+      "engineering_impact": "The trial exercised two ways of loading a payload: at the hub and at a stop near the sender.",
+      "limitations": "Flight times cover individual legs and do not capture the whole delivery.",
+      "evidence_status": "Trial participants reported the Shinshiro tests, with additional reporting from LNEWS.",
+      "published_at": "2026-11-20",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "source_ids": [
+        "aeronext",
+        "lnews-drone"
+      ],
+      "time_window": "7d",
+      "body": "Aichi Prefecture, Shinshiro, Aeronext and Green Service tried three drone routes for medicine delivery in Shinshiro. The engineering question was how to connect the flights to loading and receiving medicines, including a pickup after an intermediate landing. The partners published their results on November 20. They used the ACSL PF4 cargo drone in a configuration rated to carry up to 5.5 kilograms.\n\nIn the public demonstration on November 18, a pharmacy brought the medicine by road to the launch site at Yokogawa community center. The crew loaded a box onto the drone. According to the organizers, it flew about eight kilometers in roughly 12 minutes to a nursing home, where staff collected the package. The time given was for the flight from the launch site to the destination.\n\nOn a different route, the aircraft left the hub empty, landed near a pharmacy for staff to load a box and flew on to a second nursing home. The organizers put the two outbound legs at about 13 and five minutes respectively, excluding the return. Local medical logistics company Green Service ran the flights, with remote operations based in Tsushima.\n\nThe delivery also has a physical interface at the receiving end. The team developed a medicine box with a fingerprint lock for a registered nurse and material suitable for use with cooling packs. That design lets the unloading and identity check happen at separate points in the workflow. The published flight times leave out the loading stop and ground work. Assessing temperature control would require separate measurements covering the ground handoffs as well as the flights.",
+      "image": null
+    },
+    {
+      "id": "space-data-kasumigaseki-warehouse-design",
+      "title": "Space Data proposes testing equipment outages before a warehouse opens",
+      "summary": "Space Data and Kasumigaseki Capital have started exploring digital models for three Japanese warehouse sites. They want to test equipment layouts, peak loads and stoppages before the new warehouses enter service.",
+      "details": "The partners are considering two planned automated warehouses and one existing facility.",
+      "technical_novelty": "The proposed digital model would include flows of workers and goods as well as machinery layouts.",
+      "engineering_impact": "The study concerns how layouts, equipment and parcel flows affect one another.",
+      "limitations": "The companies have given no implementation results or measured throughput gains.",
+      "evidence_status": "Space Data announced the study and LNEWS reported on its scope.",
+      "published_at": "2026-11-20",
+      "organization": "Space Data and Kasumigaseki Capital",
+      "source_ids": [
+        "space-data",
+        "lnews-space"
+      ],
+      "time_window": "7d",
+      "body": "Japanese companies Space Data and Kasumigaseki Capital have started exploring digital models for three warehouse sites. They want to find out how the design of a building, the number of machines and the routes used to move goods affect throughput, especially at peak times or during an equipment outage. The virtual tests would inform engineering decisions before the new facilities open.\n\nThe partners identified three possible sites. Atsugi is the planned location for an automated ambient-temperature warehouse, and Fukuroi for a frozen-goods warehouse. The projects have target completion dates in spring 2029 and spring 2030 respectively. Landcube in Sakado is an existing facility where the partners are considering ways to link equipment and software.\n\nThe companies want to model buildings, equipment, workers’ movements and flows of goods. They would use the models to vary the placement and number of robots and transport equipment, check how much the system could handle at peak times and see what happens when equipment stops. The partners left the exact scope and schedule of the work open.\n\nThe speed of any individual robot is meaningful in relation to other operations. Can other machinery feed it quickly enough, and is there room to move goods if one line stops? Kasumigaseki Capital is contributing information about sites and experience running them. Space Data is studying how to represent them and simulate the equipment. Updating a model with operating data and using it to improve equipment control are longer-term plans in the announcement.",
+      "image": null
+    },
+    {
+      "id": "nvidia-administration-interim-management-contact",
+      "title": "US administration asks NVIDIA’s interim leadership about export compliance",
+      "summary": "US Treasury Secretary Scott Bessent told CBS that officials had contacted NVIDIA’s interim leadership over shipments of computing chips to China. The administration was still seeking answers about who handled compliance and who knew about the shipments.",
+      "details": "The administration contacted the chip supplier’s interim leadership, directors and lawyers.",
+      "technical_novelty": "Bessent singled out shipping and payment records as ways to trace the transactions.",
+      "engineering_impact": "Availability assessments need to connect a specific shipment with the rules that apply to it.",
+      "limitations": "The interview established no violations and set no new technical requirements for accelerators.",
+      "evidence_status": "A CBS transcript records Bessent’s remarks, and Reuters reported the administration’s contacts.",
+      "published_at": "2026-11-22",
+      "organization": "US Department of the Treasury and NVIDIA",
+      "source_ids": [
+        "cbs-bessent",
+        "reuters-bessent",
+        "nvidia-board"
+      ],
+      "time_window": "24h",
+      "body": "US Treasury Secretary Scott Bessent told CBS on November 22 that the administration had contacted NVIDIA’s interim leadership about shipments of computing chips to China. Officials want to establish who was responsible for following export rules inside the company. For robotics developers this concerns access to accelerators, chips that do much of the computation involved in training models.\n\nBessent said the administration had contacted NVIDIA’s interim leadership, board directors and lawyers. At the time of the interview, he said it was still waiting for the answers it wanted. He said officials wanted to find out who was responsible for compliance with export rules and what levels of the company knew about shipments under scrutiny.\n\nBessent pointed to shipping and payment records as a way to reconstruct transactions even where arrangements were informal. He described possible systemic noncompliance as something still being looked into. Reuters also reported the contacts. NVIDIA’s board announced on November 12 that Jensen Huang had resigned and that chief financial officer Colette Kress would serve as interim CEO. Bessent confirmed that the chief financial officer was in charge.\n\nSoftware support for an accelerator and the ability to obtain it at a particular site are separate considerations in an infrastructure plan. Officials want to determine who had responsibility for export compliance and who knew about the shipments under review. Bessent did not announce a new list of permitted hardware in the interview. Bessent gave no terms or dates for any specific shipment.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Two measures of two-arm control",
+    "summary": "Bagel-Robotics-1 averaged 38.65 points out of 100 with partial credit in the RoboDojo-Sim virtual test. It fully completed an average of 31.91% of tasks.",
+    "implications": "To compare robot control systems, check that they faced the same conditions and establish exactly what counts as a finished task."
+  },
+  "sources": [
+    {
+      "id": "bagel-code",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-20",
+      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
+      "domain": "github.com",
+      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
+    },
+    {
+      "id": "bagel-model",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-18",
+      "url": "https://www.bagel.com/bagel-robotics-1",
+      "domain": "www.bagel.com",
+      "title": "Bagel-Robotics-1"
+    },
+    {
+      "id": "ucsd",
+      "organization": "University of California San Diego",
+      "published_at": "2026-11-18",
+      "url": "https://today.ucsd.edu/story/the-fastest-soft-robot-ever-built-doesnt-need-electronics-to-function",
+      "domain": "today.ucsd.edu",
+      "title": "The Fastest Soft Robot Ever Built Doesn’t Need Electronics to Function"
+    },
+    {
+      "id": "science-robotics",
+      "organization": "Science Robotics",
+      "published_at": "2026-11-18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43050495/",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "title": "Printing powerful soft robots on a desktop"
+    },
+    {
+      "id": "aeronext",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "published_at": "2026-11-20",
+      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
+      "domain": "aeronext.co.jp",
+      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
+    },
+    {
+      "id": "lnews-drone",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120502.html",
+      "domain": "www.lnews.jp",
+      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
+    },
+    {
+      "id": "space-data",
+      "organization": "Space Data",
+      "published_at": "2026-11-20",
+      "url": "https://prtimes.jp/main/html/rd/p/000000286.000080352.html",
+      "domain": "prtimes.jp",
+      "title": "スペースデータと霞ヶ関キャピタル、物流施設の設計から運用までをフィジカルAI・空間知能で高度化する共同検討を開始"
+    },
+    {
+      "id": "lnews-space",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120503.html",
+      "domain": "www.lnews.jp",
+      "title": "霞ヶ関キャピタルとスペースデータ／物流施設3拠点でフィジカルAI活用を共同検討"
+    },
+    {
+      "id": "cbs-bessent",
+      "organization": "CBS News",
+      "published_at": "2026-11-22",
+      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
+      "domain": "www.cbsnews.com",
+      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
+    },
+    {
+      "id": "reuters-bessent",
+      "organization": "Reuters",
+      "published_at": "2026-11-22",
+      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
+      "domain": "www.reuters.com",
+      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
+    },
+    {
+      "id": "nvidia-board",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-12",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "domain": "nvidianews.nvidia.com",
+      "title": "NVIDIA Announces CEO Transition"
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-23",
+  "issue_id": "daily-2026-11-23",
+  "edition": "engineer",
+  "language": "ja",
+  "generated_at": "2026-11-22T21:16:24+00:00",
+  "title": "双腕ロボット、作業の成功をどう測るか",
+  "lead": "Bagel Labsが、ロボットの両腕を動かすモデルの成績を仮想試験の五つの部門ごとに公開した。途中までできた作業に点を付ける場合と、最後までできた場合だけを数える場合で、成績の見え方は変わる。",
+  "news": [
+    {
+      "id": "bagel-robodojo-suite-results",
+      "title": "Bagel Labs、双腕ロボット向けモデルのシミュレーション成績を項目別に公開",
+      "summary": "カナダのBagel Labsは、ロボットの両腕を動かすモデルBagel-Robotics-1のコードと詳細な試験結果を公開した。仮想環境の評価試験RoboDojo-Simでは、部分点を含む平均が100点満点で38.65点だった。",
+      "details": "一度に32ステップ分の動作を予測し、最初の16ステップを実行する。",
+      "technical_novelty": "映像から特徴を取り出す部分を学習させる間、腕の動作を予測する部分の重みは固定した。",
+      "engineering_impact": "モデルの重みのほか、評価環境に接続するコードと再現用の設定が公開されている。",
+      "limitations": "仮想環境の成績から実機での稼働の安定性は判断できない。",
+      "evidence_status": "開発元の技術資料と11月20日付のシミュレーション成績に基づく。",
+      "published_at": "2026-11-20",
+      "organization": "Bagel Labs",
+      "source_ids": [
+        "bagel-code",
+        "bagel-model"
+      ],
+      "time_window": "7d",
+      "body": "カナダのBagel Labsは、指示文とカメラなどの観測情報から、ロボットの両腕と物をつかむ機構の動作を計算するBagel-Robotics-1の学習・実行コードを公開した。11月20日に追記したのは、ロボットの制御モデルを仮想環境で比較する試験RoboDojo-Simの部門別成績だ。公開例では双腕ロボットARX X5が板を持ち上げ、二つの台に載せる。一回の成功例について、物の配置を含む再現用の条件も記載されている。\n\nモデルには、作業の指示文、頭部のカメラと左右の手首のカメラの映像、ロボットの現在の状態を入力する。モデルは一度に32ステップ分の動作を予測し、最初の16ステップを実行してから、改めて観測した情報をもとに次の動作を計算する。計画を立て直す時点で、腕や物の位置が前の動作からどう変わったかを反映できる。\n\n11月20日付のRoboDojo-Simの集計で、Bagel Labsのモデルは、別のソフトウェアが作業の進め方を補助する部門を除くと総合3位だった。平均は100点満点で38.65点、作業を最後まで達成した割合は平均31.91%だった。試験には初めての条件への対応や複数の手順からなる作業など五つの評価部門があり、順位を決める集計では各部門を同じ重みで扱う。途中までできた作業にも点が付く。達成方法の自由度が高い作業や、文章や画像の指示に従う作業を含む「Open」部門では、成功率が3.33%だった。\n\n学習では、腕の動作を決める部分を固定し、映像から特徴を抽出する部分を調整した。ロボットに見せる手本として収録した35種類の作業の記録から、学習用に3万区間、学習の経過を見るために1119区間を選んだ。映像処理部分では一部のパラメーターを削り、数を約24%減らした。公開された手順にはモデルの重みと評価環境の版が示されている。成功した配置で一度再現したうえで、配置を変えたときどの段階で失敗するかを比較できる。成績表の標準条件とランダム化した条件は別に集計されており、再現の条件を選ぶ際の手がかりになる。",
+      "image": null
+    },
+    {
+      "id": "ucsd-two-stage-pneumatic-hexapod",
+      "title": "圧縮空気を二段階で使い、柔らかい六脚ロボットが秒速4.72メートル",
+      "summary": "米カリフォルニア大学サンディエゴ校の研究チームは、単一の材料から柔らかい六脚ロボットを一体成形した。外部から圧縮空気を供給した試験で、最高秒速4.72メートルに達した。",
+      "details": "本体は内部に空気の流路と弁を持つ一体成形品だ。",
+      "technical_novelty": "圧縮空気をまず弁の駆動、次に脚の駆動に使う。",
+      "engineering_impact": "圧力の異なる二つの段階で、同じ空気の流れから動力を得る。",
+      "limitations": "機体には外部の空気源が必要で、進行方向の制御や物を扱う動作は今後の課題だ。",
+      "evidence_status": "実機の試験をScience Robotics誌と大学の発表が伝えた。",
+      "published_at": "2026-11-18",
+      "organization": "University of California San Diego",
+      "source_ids": [
+        "ucsd",
+        "science-robotics"
+      ],
+      "time_window": "7d",
+      "body": "米カリフォルニア大学サンディエゴ校の研究チームは、単一の柔らかい材料で一体成形した六脚ロボットをScience Robotics誌に報告した。実験では、電子回路を載せずに脚を動かす従来の仕組みを保ちながら、機体の移動速度を上げられるかを調べた。外部からホースで圧縮空気を送ったとき、新型の最高速度は秒速4.72メートルだった。動力の供給と脚の切り替えに空気を使う構造だ。\n\n本体の内部には、空気を流す管と、空気の通り道を切り替える弁、空気が膨らむ部屋がつながっている。研究者は構造を大きくして強度を上げ、従来より高い圧力と大きな流量に対応させた。蒸気を段階的に膨張させる蒸気機関の考え方を取り入れ、まず圧力の高い小さな部屋で弁を動かし、次に圧力の低い大きな部屋で脚を動かす。高圧の空気を一段階で使って外に出す場合より、空気のエネルギーを使い切りやすくする狙いだ。\n\n同じ研究チームの以前の機体は秒速4センチだった。新型は最高で秒速4.72メートルに達した。大学によると、コンクリート、砂利、芝生、木片を敷いた地面や砂の上で試し、階段を下りる動作や、水面を泳いだり水中を歩いたりする動作も確認した。機体を動かすには、外部の圧縮空気源につなぐホースが必要になる。\n\n一体成形した機体の中には脚を動かす機構と、脚の動きを繰り返し切り替える機構が収まっている。速度の測定は、圧縮空気を機体の外から送り続けられる条件で行った。研究者は流量を減らし、圧縮空気の小型容器など、持ち運べる空気源で動かす構造を今後検討する。進行方向を変えたり物を操作したりする仕組みも、今回の速度記録とは別の開発課題として挙げている。内蔵する空気源の大きさを決めるには、速度とあわせて空気の消費量を調べる必要がある。",
+      "image": null
+    },
+    {
+      "id": "shinshiro-pharmacy-drone-routes",
+      "title": "愛知の医薬品配送実証、ドローンが薬局に立ち寄って集荷",
+      "summary": "愛知県と新城市、運航・システムを担う2社が、医薬品を運ぶ三つのルートの実証結果を公表した。一つのルートでは、機体を薬局付近に着陸させ、職員が専用箱を積んでから届け先に向かった。",
+      "details": "途中で着陸した機体への積み込みは、薬局の職員が担当した。",
+      "technical_novelty": "受け渡し場所、遠隔での運航管理、受取人を限定する専用箱を組み合わせた。",
+      "engineering_impact": "発着拠点での積み込みと、飛行途中での集荷を試した。",
+      "limitations": "公表した飛行時間には、積み込みなどの地上作業は含まれていない。",
+      "evidence_status": "実証の参加者が報告し、物流専門媒体LNEWSが内容を伝えた。",
+      "published_at": "2026-11-20",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "source_ids": [
+        "aeronext",
+        "lnews-drone"
+      ],
+      "time_window": "7d",
+      "body": "愛知県と新城市、エアロネクスト、グリーンサービスは、新城市内で医薬品を運ぶドローンの三つのルートを試した。飛行とあわせて、途中で薬局の近くに着陸して薬を積み、到着先では施設の職員に箱を引き渡す手順を確認した。結果の公表は11月20日。機体はACSLの貨物用ドローンPF4で、最大積載量は5.5キロの仕様を使った。\n\n11月18日の報道公開では、市街地の薬局が薬を車で横川公民館の発着拠点に運んだ。会場では薬の箱を機体に載せた。主催者によると、機体は約8キロ先の特別養護老人ホームまで約12分で飛び、届けた箱を施設の職員が回収した。12分は拠点から施設までの飛行時間に当たる。\n\n別のルートでは、機体が荷物を積まずに拠点を出て薬局の近くで着陸し、薬局の職員が箱を載せた。その後、機体は別の特別養護老人ホームに薬を届けた。主催者によると、拠点から薬局までの飛行は約13分、薬局から届け先までは約5分で、この時間に拠点への帰路は含まれない。機体を運航したのは地域の医薬品配送会社グリーンサービスで、津島市の事業拠点から遠隔で運航を管理した。\n\n地上側では、受け取る職員と薬を結び付ける仕組みも試した。保冷剤を入れて使える専用箱を作り、登録された看護師が指紋で鍵を開ける。機体から荷物を下ろす時点と、受取人を確認して箱を開ける時点を分けられる。飛行区間ごとの所要時間からは、荷物を積み替えた待ち時間は分からない。温度管理が必要な薬を運ぶ場合には、空を飛んでいる間に加え、地上の受け渡しの間に箱の中の温度がどう変わるかも測る必要がある。11月の報告では、保冷剤を入れられる箱の仕様を紹介しているが、区間ごとの温度の測定値は示していない。",
+      "image": null
+    },
+    {
+      "id": "space-data-kasumigaseki-warehouse-design",
+      "title": "倉庫を開く前に設備停止を再現、スペースデータなどが共同検討",
+      "summary": "スペースデータと霞ヶ関キャピタルは、国内の物流施設三拠点を候補に、倉庫の動きをコンピューターで再現する仕組みの検討を始めた。設備の配置や荷物が集中する時間帯、設備が止まった場合の影響を、新しい施設の稼働前から調べる考えだ。",
+      "details": "新設予定の自動倉庫二つと、既存の物流施設一つを候補に挙げた。",
+      "technical_novelty": "機器の配置とあわせて、人の移動や荷物の流れをモデルに含める。",
+      "engineering_impact": "建物の設計、設備の構成、荷物の流れが互いにどう影響するかを調べる。",
+      "limitations": "モデルの導入結果や処理能力の測定値は発表されていない。",
+      "evidence_status": "スペースデータの発表と物流専門媒体LNEWSの報道に基づく。",
+      "published_at": "2026-11-20",
+      "organization": "Space Data and Kasumigaseki Capital",
+      "source_ids": [
+        "space-data",
+        "lnews-space"
+      ],
+      "time_window": "7d",
+      "body": "スペースデータと霞ヶ関キャピタルは、物流施設三拠点を候補に、建物や設備と構内の作業をコンピューター上で再現する仕組みの共同検討を始めた。設備の配置や台数、荷物の移動経路によって、倉庫全体が処理できる量がどう変わるかを調べる。特に荷物が集中的に出入りするときや、機器が止まったときに、前後の工程へどのような影響が出るかを、新しい倉庫の稼働前に確かめることを目指す。\n\n候補は三拠点ある。神奈川県厚木市には常温の自動倉庫を計画しており、竣工の目標は2029年春。静岡県袋井市には冷凍自動倉庫を計画し、2030年春の竣工を予定する。三つ目の埼玉県坂戸市のランドキューブ坂戸は既存施設で、そこで物流設備とシステムの連携などを検証することを考えている。\n\n両社が作ろうとしているのは、建物と機器だけでなく、人の移動や荷物の流れもコンピューター上に再現する環境だ。ロボットや搬送設備の数や位置を変えて、入荷や出荷が集中するときに扱える量や、一部の機器が止まったときの影響を調べる。具体的に何を試すか、いつ始めるかは共同検討の進み具合に応じて決める。\n\nロボット単体の速度だけでは、前の工程から荷物が十分に届くか、設備が止まっても荷物を運ぶ通路が残るかは分からない。施設に関する情報と運営の経験は霞ヶ関キャピタルが提供し、設備の動きをコンピューターでどう再現するかはスペースデータが技術面から検討する。運用中に得られるデータを仮想環境へ取り込み、設備の制御を改善する構想もあるが、両社はこれを中長期の取り組みとして挙げている。既存の坂戸の施設に関しては、新設倉庫の設計とは別に、現在の物流設備と運用システムをどう連携させるかも検討の対象に含める。",
+      "image": null
+    },
+    {
+      "id": "nvidia-administration-interim-management-contact",
+      "title": "米政権、半導体輸出を巡りエヌビディアの暫定経営陣に接触",
+      "summary": "米国のベッセント財務長官はCBSの番組で、中国向けの計算用半導体の出荷を巡って米政権がエヌビディアの暫定経営陣に連絡したと明らかにした。規則を守る責任が誰にあったのか、出荷を社内のどの段階まで把握していたのか、政権は回答を待っている。",
+      "details": "米政権は半導体メーカーの暫定経営陣、取締役、弁護士に連絡した。",
+      "technical_novelty": "財務長官は、取引の経緯を出荷や支払いの記録から確認できると指摘した。",
+      "engineering_impact": "計算用半導体を調達できるかは、個々の取引にどの輸出規則が適用されるかを踏まえて判断する必要がある。",
+      "limitations": "番組では規則違反の認定や、半導体への新たな技術要件の発表はなかった。",
+      "evidence_status": "CBSがインタビューを公開し、ロイターも政権と会社側の接触を報じた。",
+      "published_at": "2026-11-22",
+      "organization": "US Department of the Treasury and NVIDIA",
+      "source_ids": [
+        "cbs-bessent",
+        "reuters-bessent",
+        "nvidia-board"
+      ],
+      "time_window": "24h",
+      "body": "米国のベッセント財務長官は11月22日のCBSの番組で、中国向けの計算用半導体の出荷について、米政権がメーカーのエヌビディアの暫定経営陣に連絡したと述べた。政権は輸出規則の順守を社内で誰が担当していたのかを確認したいという。ロボットの制御モデルの学習にも使う計算用半導体について、供給元がどのように出荷を管理していたかが調査の対象になっている。\n\nベッセント氏は、政権がエヌビディアの暫定経営陣、取締役、弁護士と連絡を取ったと話した。取材の時点で、政権が求める回答はまだ得られていないという。確認したい点として、輸出規則を守る責任を誰が負っていたかと、調査の対象になっている出荷について社内のどの段階まで情報が伝わっていたかを挙げた。\n\n口頭で取り決めた取引でも、出荷や代金の記録をたどれば経緯を調べられると述べた。社内で輸出規則を軽視する傾向があったかは、今も調べている段階だと説明した。ロイターも政権による接触を報じた。エヌビディアの取締役会は11月12日、ジェンスン・フアン氏の辞任と、財務責任者のコレット・クレス氏の暫定CEO就任を発表した。CEOは経営の最高責任者を指す。ベッセント氏も番組で、財務責任者が会社を率いていると述べた。\n\n開発拠点の計算環境を設計する際は、使うソフトウェアが半導体に対応しているかに加え、その拠点で機器を入手できるかを確認する。今回聞き取りの対象となったのは出荷の経緯と、手続きを担った人や部署だ。財務長官は番組で、新たに調達が可能な製品の一覧や、手続き中の案件の扱いは示していない。個別の開発案件については、利用する地域や調達経路に照らして、適用される条件を確かめる必要がある。",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "双腕ロボットの成績を表す二つの指標",
+    "summary": "仮想試験RoboDojo-Simでは、Bagel-Robotics-1の部分点を含む平均は100点満点で38.65点、作業を完了した割合は平均31.91%だった。",
+    "implications": "制御モデルを比べるには、同じ条件で動かしたか、どこまで進めば作業の完了とみなすかを確認する必要がある。"
+  },
+  "sources": [
+    {
+      "id": "bagel-code",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-20",
+      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
+      "domain": "github.com",
+      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
+    },
+    {
+      "id": "bagel-model",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-18",
+      "url": "https://www.bagel.com/bagel-robotics-1",
+      "domain": "www.bagel.com",
+      "title": "Bagel-Robotics-1"
+    },
+    {
+      "id": "ucsd",
+      "organization": "University of California San Diego",
+      "published_at": "2026-11-18",
+      "url": "https://today.ucsd.edu/story/the-fastest-soft-robot-ever-built-doesnt-need-electronics-to-function",
+      "domain": "today.ucsd.edu",
+      "title": "The Fastest Soft Robot Ever Built Doesn’t Need Electronics to Function"
+    },
+    {
+      "id": "science-robotics",
+      "organization": "Science Robotics",
+      "published_at": "2026-11-18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43050495/",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "title": "Printing powerful soft robots on a desktop"
+    },
+    {
+      "id": "aeronext",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "published_at": "2026-11-20",
+      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
+      "domain": "aeronext.co.jp",
+      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
+    },
+    {
+      "id": "lnews-drone",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120502.html",
+      "domain": "www.lnews.jp",
+      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
+    },
+    {
+      "id": "space-data",
+      "organization": "Space Data",
+      "published_at": "2026-11-20",
+      "url": "https://prtimes.jp/main/html/rd/p/000000286.000080352.html",
+      "domain": "prtimes.jp",
+      "title": "スペースデータと霞ヶ関キャピタル、物流施設の設計から運用までをフィジカルAI・空間知能で高度化する共同検討を開始"
+    },
+    {
+      "id": "lnews-space",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120503.html",
+      "domain": "www.lnews.jp",
+      "title": "霞ヶ関キャピタルとスペースデータ／物流施設3拠点でフィジカルAI活用を共同検討"
+    },
+    {
+      "id": "cbs-bessent",
+      "organization": "CBS News",
+      "published_at": "2026-11-22",
+      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
+      "domain": "www.cbsnews.com",
+      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
+    },
+    {
+      "id": "reuters-bessent",
+      "organization": "Reuters",
+      "published_at": "2026-11-22",
+      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
+      "domain": "www.reuters.com",
+      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
+    },
+    {
+      "id": "nvidia-board",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-12",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "domain": "nvidianews.nvidia.com",
+      "title": "NVIDIA Announces CEO Transition"
+    }
+  ]
+}

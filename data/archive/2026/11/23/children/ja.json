@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-23",
+  "issue_id": "daily-2026-11-23",
+  "edition": "children",
+  "language": "ja",
+  "generated_at": "2026-11-22T21:16:24+00:00",
+  "title": "薬を取りに、ドローンが薬局へ",
+  "lead": "愛知県新城市で、薬局からドローンに薬をわたす方法を試した。機体が薬局の近くにおり、薬局の人が箱を取り付けると、ドローンはお年よりがくらす施設（しせつ）へ飛んだ。",
+  "news": [
+    {
+      "id": "shinshiro-pharmacy-drone-routes",
+      "title": "薬を受け取りに、薬局の近くへおりたドローン",
+      "summary": "愛知県新城市で、県や市、会社が協力して、ドローンで薬を運ぶ方法を試した。ある便では、薬局の近くで箱を受け取ってから、お年よりがくらす施設（しせつ）まで飛んだ。",
+      "details": "ある便では、ドローンが薬を積まずに出て、途中の薬局で箱を受け取った。",
+      "technical_novelty": "薬局の人が箱を積み、届いた先では施設の人が箱を拾い上げた。",
+      "engineering_impact": "別の便では、出発する場所から届け先まで、およそ8キロを12分ほどで飛んだ。",
+      "limitations": "12分は、一つの区間で空を飛んでいた時間だ。",
+      "evidence_status": "試した人たちが結果を発表した。",
+      "published_at": "2026-11-20",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "source_ids": [
+        "aeronext",
+        "lnews-drone"
+      ],
+      "time_window": "7d",
+      "body": "愛知県新城市で、県や市、配送（はいそう）の会社などが、ドローンでお年よりの施設（しせつ）へ薬を運べるかを試した。一つのルートでは、ドローンは荷物を積まずに出発し、薬局の近くにおりた。薬局の人が薬の入った箱を取り付けると、ドローンはもう一度飛び立って届け先に向かった。\n\n別のルートでは、薬局から車で出発場所まで薬を運び、そこでドローンに箱を積みかえた。箱はお年よりの施設に届き、職員が受け取った。ドローンが飛んだきょりはおよそ8キロ、空を飛んだ時間は12分ほどだった。機体は箱をおろすと、出発した場所へもどった。飛行のようすは、別の市にいる担当者も見守った。\n\n薬を入れるために、受け取り役の看護師（かんごし）が指のもようを読み取って開く箱も作った。ドローンが地面に箱をおいた後で、人が受け取って開ける仕組みだ。車で運ぶ場合とどちらが早いかを知るには、飛んでいる時間のほかに、箱を取り付け、着いた先で受け取るまでの時間も数える必要がある。",
+      "image": null
+    },
+    {
+      "id": "ucsd-two-stage-pneumatic-hexapod",
+      "title": "空気の力で走る、やわらかい六本足",
+      "summary": "アメリカの大学の研究チームが、ぎゅっとつめた空気の力で走るロボットを作った。やわらかい六本足のロボットは、試験で最高で一秒に4.72メートル進んだ。",
+      "details": "体と六本の足は、3Dプリンターで一つにつなげて作った。",
+      "technical_novelty": "空気はまず通り道を切りかえる部品を動かし、それから足をおす。",
+      "engineering_impact": "ロボットはいろいろな地面で走り、水の中でも動いた。",
+      "limitations": "体の外からホースで空気を送り続ける必要がある。",
+      "evidence_status": "大学の研究チームは、本物のロボットで試した結果を発表した。",
+      "published_at": "2026-11-18",
+      "organization": "University of California San Diego",
+      "source_ids": [
+        "ucsd",
+        "science-robotics"
+      ],
+      "time_window": "7d",
+      "body": "アメリカのカリフォルニア大学サンディエゴ校の研究チームは、やわらかい六本足のロボットを作り、空気の力でどこまで速く走れるかを調べた。小さな入れ物にたくさんの空気をぎゅっとつめたものを圧縮空気（あっしゅくくうき）という。これをホースで送ると、試験では最高で秒速4.72メートルまで速く走った。\n\nふうせんの口を開けると、中の空気が外に出て、ふうせんが飛んでいく。このロボットの中では、空気を小さな管に通して部品を動かす。先に空気が通り道を開け閉めする部品を動かし、次に同じ空気が別の部屋に入って足をおす。体の中の通り道も、足といっしょに3Dプリンターで作った。\n\n研究チームは、砂や芝生（しばふ）、コンクリートの上でロボットを走らせた。水の上を泳いだり、水の中を歩いたりするところもたしかめた。どの動きにも、ホースを通して外から空気を送る必要がある。もっと少ない空気で動けば、小さなタンクを使ってホースなしで走れるかもしれない。研究チームはその仕組みをこれから考える。",
+      "image": null
+    },
+    {
+      "id": "kashii-parcel-intercom-lift-trial",
+      "title": "荷物を持ったロボットが、エレベーターで玄関へ",
+      "summary": "福岡市のマンションで、4社がロボットに荷物を部屋の玄関まで運ばせる試験をした。ロボットはインターホンやエレベーターとつながり、住人がいない場合は玄関前に箱をおく方法も試した。",
+      "details": "試験は福岡市の一つのマンションで行われた。",
+      "technical_novelty": "ロボットはインターホンや入口のかぎ、エレベーターの仕組みを使う。",
+      "engineering_impact": "家に人がいないときに箱を玄関前におければ、配達に何度も来る手間をへらせる。",
+      "limitations": "何件の配達が最後までできたかは発表されていない。",
+      "evidence_status": "試験を行った会社が内容を発表した。",
+      "published_at": "2026-11-18",
+      "organization": "Aiphone, NETSDAR Robot Solutions, Nippon Otis Elevator and World Supply",
+      "source_ids": [
+        "world-supply",
+        "netsdar",
+        "ur-kashii"
+      ],
+      "time_window": "7d",
+      "body": "福岡市の香椎（かしい）にあるマンションで、四つの会社が、荷物を部屋の玄関までロボットで運べるかを調べた。住んでいる人が家にいれば箱を受け取れる。留守（るす）のときには、ロボットが箱を玄関前においていく方法も試した。\n\nこのマンションの入口にはかぎがかかっている。入口から部屋の人をよび出すには、インターホンを使う。ロボットはインターホンと、配達のときに入口のかぎを開ける仕組みにつながる。荷物を持って正しい階へ行くには、建物のエレベーターも必要だ。試験では、こうした設備（せつび）をロボットといっしょに使った。公開された試験の図では、配達する人が建物の中で箱をロボットにわたしている。\n\n前の年にも、ロボットで部屋の前まで箱を運ぶ試験があった。今回は、インターホンとのつながりと、玄関前に箱をおいて帰る「置き配」を加えた。置き配ができれば、留守だった家に配達員（はいたついん）がまた来る手間をへらせる。試した会社は、今回、何件の配達を終えられたかまでは発表していない。",
+      "image": null
+    },
+    {
+      "id": "bagel-robodojo-suite-results",
+      "title": "ロボットの左右のうでで、板を二つの台にのせる",
+      "summary": "カナダのチームが、コンピューターの中のロボットに、両うでで板を持ち上げて二つの台にのせる仕事をさせた。チームは、この試験に出たほかの作業もふくめて、どれくらい最後までできたかを発表した。",
+      "details": "ロボットには頭に一つ、左右の手首に一つずつカメラがあった。",
+      "technical_novelty": "プログラムは計画した動きの一部を行ったところで、うでと物の場所をたしかめ直す。",
+      "engineering_impact": "途中までできた作業にも点が入る試験だった。",
+      "limitations": "今回の成績はコンピューターの中で行った試験のものだ。",
+      "evidence_status": "プログラムを作ったカナダのチームが成績を発表した。",
+      "published_at": "2026-11-20",
+      "organization": "Bagel Labs",
+      "source_ids": [
+        "bagel-code",
+        "bagel-model"
+      ],
+      "time_window": "7d",
+      "body": "二つの台に長い板をのせるには、左右のうでがそろって動くとよさそうだ。カナダのチームは、コンピューターの中で動くロボットを使い、開発したプログラムが、板を両うでで持ち上げて二つの台にのせられるかを調べた。公開した一回分の記録では、二つのうでで板を持ち、決められた場所におくことができた。\n\nこのロボットには、頭に一つ、左右の手首に一つずつカメラがついていた。プログラムは三つのカメラの映像を受け取り、いくつかの動きをまとめて計画する。そのうちの一部をロボットが行うと、プログラムは新しい映像を受け取る。うでや板が動いたあとの場所をたしかめてから、続きを決めるためだ。\n\n試験には板を運ぶほかにもいろいろな作業があり、途中までできた場合にも点が入った。この点のつけ方で、ほかのプログラムの助けを借りずに動く部門では、チームのプログラムは3位だった。最後までできた作業の割合は、試験全体で平均およそ32パーセントだった。ちなみに、開発したBagel LabsはこのプログラムをBagel-Robotics-1と名づけた。",
+      "image": null
+    },
+    {
+      "id": "nvidia-administration-interim-management-contact",
+      "title": "計算用チップを外国へ送るとき、だれが決まりをたしかめる？",
+      "summary": "アメリカ政府が、中国に送られた計算用チップについて、作った会社に説明を求めた。アメリカの財務長官（ざいむちょうかん）は、会社の中でだれが決まりを守る役だったのかを調べていると話した。",
+      "details": "計算用チップは、コンピューターがたくさんの計算をするのを助ける部品だ。",
+      "technical_novelty": "アメリカ政府は、チップを外国へ送る決まりを会社の中のだれがたしかめたのかを調べている。",
+      "engineering_impact": "荷物を送った記録や代金をはらった記録が、調べるときの手がかりになる。",
+      "limitations": "取材の時点で、政府はほしい答えをまだ受け取っていなかった。",
+      "evidence_status": "財務長官がテレビ番組で話し、ニュースを伝えるロイターも報じた。",
+      "published_at": "2026-11-22",
+      "organization": "US Department of the Treasury and NVIDIA",
+      "source_ids": [
+        "cbs-bessent",
+        "reuters-bessent",
+        "nvidia-board"
+      ],
+      "time_window": "24h",
+      "body": "アメリカから中国へ計算用チップを送るときの決まりについて、アメリカ政府がチップを作った会社に連絡した。アメリカの財務長官（ざいむちょうかん）は11月22日にテレビで、会社の中でだれが決まりを守る係だったのかを調べていると話した。計算用チップは、コンピューターがたくさんの計算をするのを助ける。ロボットを動かすプログラムが見本から学ぶときに使うものもある。\n\n荷物を送ると、どこに何を送ったか、配達する会社に記録が残る。会社が高い機械を売ったときには、荷物を送った記録や、お金をはらった記録も残る。話し合いで売ることを決めた場合でも、こうした記録から取引の流れをたどれると長官は説明した。\n\n政府は、だれが決まりをたしかめる仕事をしていたのか、会社をまとめる人たちが出荷について知っていたのかを調べている。長官がテレビで話した時点では、会社からほしい答えはまだ届いていなかった。ちなみに、このチップを作った会社の名前はエヌビディアだ。",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "ドローンが途中で薬の箱を受け取る",
+    "summary": "新城市の試験では、何も積まずに飛び立ったドローンが薬局の近くにおりた。薬の箱を積んで、そこから届け先に向かった。",
+    "implications": "薬を車で運ぶときとくらべるには、飛んだ時間と、地上で人が箱を取り付けたり受け取ったりした時間を数える。"
+  },
+  "sources": [
+    {
+      "id": "aeronext",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "published_at": "2026-11-20",
+      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
+      "domain": "aeronext.co.jp",
+      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
+    },
+    {
+      "id": "lnews-drone",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120502.html",
+      "domain": "www.lnews.jp",
+      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
+    },
+    {
+      "id": "ucsd",
+      "organization": "University of California San Diego",
+      "published_at": "2026-11-18",
+      "url": "https://today.ucsd.edu/story/the-fastest-soft-robot-ever-built-doesnt-need-electronics-to-function",
+      "domain": "today.ucsd.edu",
+      "title": "The Fastest Soft Robot Ever Built Doesn’t Need Electronics to Function"
+    },
+    {
+      "id": "science-robotics",
+      "organization": "Science Robotics",
+      "published_at": "2026-11-18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43050495/",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "title": "Printing powerful soft robots on a desktop"
+    },
+    {
+      "id": "world-supply",
+      "organization": "World Supply",
+      "published_at": "2026-11-18",
+      "url": "https://www.kyodo.co.jp/pr/2026-11-18_4050146/",
+      "domain": "www.kyodo.co.jp",
+      "title": "先進的なまちづくりを目指す「FUKUOKA Smart EAST」における館内配送サービスの実証実験に参画"
+    },
+    {
+      "id": "netsdar",
+      "organization": "NETSDAR Robot Solutions",
+      "published_at": "2026-11-17",
+      "url": "https://prtimes.jp/main/html/rd/p/000000005.000172258.html",
+      "domain": "prtimes.jp",
+      "title": "インターホン・エレベーターと連携した配送ロボットで「置き配」まで行う館内配送の実証実験を、福岡市のUR賃貸住宅で実施"
+    },
+    {
+      "id": "ur-kashii",
+      "organization": "Urban Renaissance Agency",
+      "published_at": "2026-11-11",
+      "url": "https://www.ur-net.go.jp/news/pcbnj1000000c5sc-att/ur2026_press_1111_kyusyu.pdf",
+      "domain": "www.ur-net.go.jp",
+      "title": "物流事業者と配送ロボットの連携による集合住宅向け棟内配送サービスの実証実験を実施"
+    },
+    {
+      "id": "bagel-code",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-20",
+      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
+      "domain": "github.com",
+      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
+    },
+    {
+      "id": "bagel-model",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-18",
+      "url": "https://www.bagel.com/bagel-robotics-1",
+      "domain": "www.bagel.com",
+      "title": "Bagel-Robotics-1"
+    },
+    {
+      "id": "cbs-bessent",
+      "organization": "CBS News",
+      "published_at": "2026-11-22",
+      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
+      "domain": "www.cbsnews.com",
+      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
+    },
+    {
+      "id": "reuters-bessent",
+      "organization": "Reuters",
+      "published_at": "2026-11-22",
+      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
+      "domain": "www.reuters.com",
+      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
+    },
+    {
+      "id": "nvidia-board",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-12",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "domain": "nvidianews.nvidia.com",
+      "title": "NVIDIA Announces CEO Transition"
+    }
+  ]
+}
