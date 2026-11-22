@@ -2,159 +2,186 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-21",
-  "issue_id": "daily-2026-11-21",
+  "issue_date": "2026-11-22",
+  "issue_id": "daily-2026-11-22",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-20T21:15:18Z",
-  "title": "Who puts the next bottle of tea on the shelf?",
-  "lead": "Japanese shops have tested a robot that restocks drinks. While a customer chooses a tea, the machine can fetch another bottle from storage behind the fridge.",
+  "generated_at": "2026-11-21T21:08:55+00:00",
+  "title": "Where should the toy shop stop?",
+  "lead": "The operator of Tokyo Skytree and a vending company want to try several places for one moving toy shop. They plan to watch where people stop and count what sells.",
+  "technology_signal": {
+    "title": "A toy shop can change places at the tower entrance",
+    "summary": "At Tokyo Skytree, two companies have planned a trial for a toy shop that can move. They want to find out where more people stop to look and where more toys sell.",
+    "implications": "To compare the different spots at Tokyo Skytree, the organizers plan to count the people who walk past the shop and those who stop."
+  },
   "news": [
     {
-      "id": "familymart-drink-restocking",
-      "title": "Who puts the next bottle in the fridge?",
-      "summary": "Japan's FamilyMart plans to start installing drink-stocking robots in stages in January 2027. A worker fills a shelf with spare drinks, and the robot transfers them to the shelf facing the customers.",
-      "details": "A worker loads the reserve drinks first. The robot moves bottles onto the shelf facing the shoppers.",
-      "technical_novelty": "The system tracks the location of the drinks and uses the shop's sales history.",
-      "engineering_impact": "A drink that sells quickly can get priority when the machine restocks the display.",
-      "limitations": "The roughly 70 percent saving refers to staff time spent restocking drinks per day at the early stores.",
-      "evidence_status": "FamilyMart and Telexistence described the early stores and the phased rollout planned from January 2027.",
+      "id": "tokyo-skytree-mobile-vending",
+      "title": "A toy shop that can change places",
+      "summary": "At the entrance to Tokyo Skytree, two companies planned an eight-day test for a toy shop that can move. They want to see where visitors stop and where they buy something.",
+      "details": "One machine selling soft toys will move between locations on the Tokyo Skytree entrance floor.",
+      "technical_novelty": "The organizers plan to change the selling spot and use a camera to estimate the share of passersby who stop.",
+      "engineering_impact": "Counts of stops, purchases and survey responses give the tower operator different ways to evaluate a location.",
+      "limitations": "The tower announcement describes the trial and gives no sales results.",
+      "evidence_status": "The supplier and the operator of Tokyo Skytree announced the November 21–28 trial.",
       "published_at": "2026-11-19",
-      "organization": "FamilyMart",
+      "organization": "PIMT and Tobu Tower Skytree",
       "source_ids": [
-        "familymart",
-        "telexistence"
+        "pimt",
+        "skytree"
       ],
       "time_window": "72h",
-      "body": "A shopper opens a fridge door at a FamilyMart in Japan and takes a drink. How does another bottle get to the front? The chain and a company that builds robots have been working on that question since 2020. FamilyMart has tried a machine that stocks drinks from behind the display. On November 19 it announced plans to start putting the equipment into more shops in January 2027.\n\nThink of a bottle as having two addresses before anyone buys it. Its first address is a storage shelf that a worker fills. Its second is the shelf within reach of the shopper. The machine takes care of the trip between those two addresses.\n\nThe chain kept track of the time people spent restocking drinks each day in the early stores. It says the new arrangement cut that time by about seven tenths. One part of the job is still in the hands of store workers. They have to keep the storage shelf supplied so there is a drink for the machine to pick up.",
+      "body": "Imagine heading to the ticket counter for a tower in Tokyo and spotting a little shop. The soft toys inside look like buns and pastries. The companies behind the test plan to move the machine around the entrance floor of Tokyo Skytree from November 21 to 28. They will watch what happens when the same shop is put in different places.\n\nThe sales record can tell them how many toys people bought. But visitors can stop to look and then walk on. The team plans to use a camera to find out what share of the people walking past actually stop. The companies also want to ask visitors what they thought of the shop.\n\nA machine of this kind has operated at Narita Airport since April. The trial at the tower has its own surroundings, with many people heading for the ticket counters. The team will suggest taking a toy up to the viewing deck and photographing it with the city in the background. The companies have announced what they will measure, including how many people stop. The figures from the trial still have to be collected and reported.",
       "image": null
     },
     {
-      "id": "apartment-locker-handover",
-      "title": "The trip from a parcel locker to an apartment door",
-      "summary": "Two Japanese companies have started testing how a robot could collect a parcel from a downstairs locker and bring it to an apartment door. The trial covers both the handover of the box and the ride in the lift.",
-      "details": "The robot is intended to collect the parcel downstairs, take the lift and leave the box outside an apartment.",
-      "technical_novelty": "The partners are improving the mechanism that transfers the parcel from a locker to the robot.",
-      "engineering_impact": "Delivery between floors requires the robot and the lift to work together.",
-      "limitations": "The companies announced the start of testing. They have yet to give a completed delivery rate.",
-      "evidence_status": "Fulltime System and NEC Magnus Communications set out the aims of their joint trial starting November 17.",
-      "published_at": "2026-11-17",
-      "organization": "Fulltime System and NEC Magnus Communications",
+      "id": "watco-seadrift-self-propelled-railcars",
+      "title": "A freight car that turns its own wheels",
+      "summary": "Intramotev says a rail company plans to use its self-propelled freight cars at an industrial site in Texas. The cars have batteries and equipment that can drive their wheels along the track.",
+      "details": "Watco plans to use Intramotev freight cars at an industrial site in Seadrift.",
+      "technical_novelty": "A battery and drive system can move the freight car under its own power along the rails.",
+      "engineering_impact": "For the assigned movement, the car can provide traction at its own wheels.",
+      "limitations": "The partners' announcement gives no deployment size or starting date for the Texas site.",
+      "evidence_status": "Manufacturer Intramotev reported the new agreement on November 20.",
+      "published_at": "2026-11-20",
+      "organization": "Intramotev and Watco",
       "source_ids": [
-        "locker"
-      ],
-      "time_window": "7d",
-      "body": "A courier leaves a parcel in a locker at the entrance to an apartment building. How does it get upstairs if the person who lives there wants it left outside their door? On November 17, two companies in Japan started testing a system in which a robot makes that second trip. They want to see how the equipment works together under conditions like those in a residential building.\n\nFirst comes the handover. Driving up to the locker gets the robot close to the parcel, but the box still has to move from the compartment onto the machine. The two companies are working together on that part. Once loaded, the robot needs to call the lift, get inside and get out on the right floor.\n\nThere is a return trip in the plan too. After leaving the parcel at the door, the robot must get back to its waiting spot. The companies are examining how safely it can set down the box and how the machines stand up to repeated use. Their announcement describes the start of that work.",
-      "image": null
-    },
-    {
-      "id": "handumi-towel-fold",
-      "title": "Showing two robot arms how to fold a towel",
-      "summary": "Brik Meza and his team recorded people folding a towel with a pair of gripping tools worn on their hands. One program trained with those recordings helped two real robot arms finish the fold in 12 of 20 attempts.",
-      "details": "A person folded a towel using two tools worn on the hands. The recordings were used to train programs for real robot arms.",
-      "technical_novelty": "Sensors recorded each hand's path and the gap between the parts that gripped the cloth.",
-      "engineering_impact": "People could collect examples away from the robot that would later attempt the fold.",
-      "limitations": "After training on 562 demonstrations, one program completed 12 of 20 folds and the other completed seven of 20.",
-      "evidence_status": "Brik Meza and colleagues described their test on physical robot arms in a paper posted November 17.",
-      "published_at": "2026-11-17",
-      "organization": "Mu Robotics and collaborators",
-      "source_ids": [
-        "hand"
-      ],
-      "time_window": "7d",
-      "body": "Brik Meza and his colleagues wanted to teach two robot arms how to fold a towel. For the lessons, they let people handle the cloth while wearing a gripping tool on each hand. The robot arms could stay somewhere else while the team collected examples of what to do.\n\nImagine telling a friend how to fold a towel over the phone. If you only say where to move their hands, they might make exactly the right sweep through the air and leave the towel on the table. They also need to know when to hold on. Each tool had two jaws, and a sensor measured the gap between them as the person worked.\n\nThe researchers collected 562 examples and used them to train two different programs. Then each program got twenty tries with a pair of real robot arms. One managed twelve folds and the other managed seven. The team also trained the first program using just the earliest 101 examples. That version finished none of its twenty attempts.",
-      "image": null
-    },
-    {
-      "id": "green-logistics-case-stacking",
-      "title": "Where should the next box go?",
-      "summary": "Six robots at Green Logistics in Japan are stacking boxes for shipment. Their builder, Mujin, described how a camera on each arm helps it locate a box and choose a place for it on a pallet.",
-      "details": "At the new Green Logistics centre, six machines receive cases from automated storage.",
-      "technical_novelty": "A camera on the arm measures depth. Software works out where to place the case.",
-      "engineering_impact": "The camera needs no separate stand beside the robot, which helps the equipment fit the available floor space.",
-      "limitations": "Around 500 cases an hour is the rate given for one machine at this site.",
-      "evidence_status": "Mujin, the supplier, described the installation and its rate in a report published on November 19.",
-      "published_at": "2026-11-19",
-      "organization": "Mujin",
-      "source_ids": [
-        "mujin"
+        "intramotev",
+        "railway-age"
       ],
       "time_window": "72h",
-      "body": "At a new Green Logistics warehouse in Japan, boxes come out of storage directly to six robots. In a report published on November 19, the company that built the machines explained how they stack boxes for shipping. They build each stack on a pallet, a flat base that lets someone move a whole load at once.\n\nIf you stack boxes of different sizes in any old order, you can run out of space quite quickly. The problem changes each time a box arrives. The robot needs to locate this particular box and work out where it can fit on the pallet. A camera on the arm gives its program a view with depth, so it can tell how far away the surfaces are. Mounting the camera there also saves room beside the machine.\n\nMujin says the equipment handles about a thousand different kinds of boxes. It gives another figure for how fast the work goes at this site. Each robot can pick and stack roughly five hundred boxes in an hour.",
+      "body": "A locomotive usually pulls or pushes a freight car when it needs to move. Intramotev makes a freight car that can turn its own wheels. On November 20 the company said a rail operator called Watco had agreed to use the cars at an industrial site in Seadrift, Texas.\n\nLike a battery-powered toy car, this vehicle stores the electricity it needs to turn the wheels. Here the wheels have to carry a heavy load along rails. Once the car reaches the other end, someone still has to arrange for the load to come off and for the battery to be charged when needed.\n\nThe companies already made an agreement for a terminal in Illinois. Imagine a car making short trips there but waiting longer for its turn to load in Texas. Two identical cars could then carry different amounts of freight in a day. The company has yet to say how many cars will go to Seadrift or when they will begin moving freight there.",
       "image": null
     },
     {
-      "id": "hand-checkpoint-steering",
-      "title": "Which virtual hand learns to screw in a bulb?",
-      "summary": "Researchers gave a hand in a computer kitchen two jobs, pressing a coffee machine button and screwing in a light bulb. The program that did best just after watching examples could fall behind another after more practice.",
-      "details": "In a virtual kitchen the hand pressed a coffee machine button and screwed in a light bulb.",
-      "technical_novelty": "The researchers saved the program at different points while it learned from examples and gave each copy more practice.",
-      "engineering_impact": "That allowed a direct comparison between each program's score after its first lesson and its result after the second.",
-      "limitations": "The tests shifted appliance position along one axis. Contact with the button and the bulb took place in the computer.",
-      "evidence_status": "Artur Kuramshin and colleagues reported the two simulated tests in a paper posted November 18.",
+      "id": "chitose-robonext-three-arms",
+      "title": "One arm picks a part, another guides a cable",
+      "summary": "A Japanese company plans to take three robot arms to a show in Osaka. One will pick a metal part from a pile, one will repeat a movement shown by a person, and one will guide a cable around pins.",
+      "details": "Exhibition setups in Osaka will use arms from FANUC, Universal Robots and Elite Robots.",
+      "technical_novelty": "Chitose Robotics' software connects sensors and operator devices to industrial robot arms.",
+      "engineering_impact": "In the metal picking demonstration, software uses the outline of a part to find a place for a suction cup.",
+      "limitations": "The announcement gives no success rates or cycle times for the planned exhibition jobs.",
+      "evidence_status": "Chitose Robotics announced the demonstrations in its exhibit preview.",
+      "published_at": "2026-11-20",
+      "organization": "Chitose Robotics",
+      "source_ids": [
+        "chitose"
+      ],
+      "time_window": "72h",
+      "body": "At a show in Osaka in early December, a company called Chitose Robotics plans to give three robot arms different jobs. One arm will lift a metal part out of a pile. Another will follow a path a person previously showed it. The third will lay a soft cable around several pins.\n\nImagine trying to pick something up with a suction cup. If the cup lands halfway off the edge, it might lose its grip. The first arm gets a camera that looks at the pile. A program uses the outline of the part in the image to decide where to put the cup and how to turn it.\n\nThe cable presents a different puzzle. The arm has to hold on to a flexible wire while it moves from pin to pin. A person gives the program a few points to follow, and the program fills in a smooth path between them. The announcement describes the work the company plans to show. It does not give a count of the parts an arm could pick in a whole shift, or say how long the cable job takes.",
+      "image": null
+    },
+    {
+      "id": "brightai-infrastructure-financing",
+      "title": "What if a pump starts to sound different?",
+      "summary": "BrightAI announced $97 million to expand a system that watches industrial equipment. Sensors can listen to machines or measure how much they shake, so a computer nearby can pick up changes.",
+      "details": "Smith Point Capital led the round, which also included GE Vernova.",
+      "technical_novelty": "The BrightAI system analyses sensor readings on a computer close to the equipment.",
+      "engineering_impact": "Local analysis can keep checking for changes when the connection to a remote server is interrupted.",
+      "limitations": "The financing announcement gives no fault detection results for a specific site.",
+      "evidence_status": "BrightAI announced the investment. Its lead investor described the system and its reported footprint.",
       "published_at": "2026-11-18",
-      "organization": "Mila, Université de Montréal and Renesas Electronics Canada",
+      "organization": "BrightAI",
       "source_ids": [
-        "bulb"
+        "brightai",
+        "smith-point"
+      ],
+      "time_window": "7d",
+      "body": "Picture a pump running in a room where nobody is around. Who would hear it if the sound changed? A US company called BrightAI makes equipment to help watch places like that. On November 18 it announced $97 million from investors, people and companies that pay to help a business grow.\n\nSensors sit near the machine. One can record sound, while another measures how much the machine shakes. A small computer nearby checks whether the latest readings look like the usual ones. It can do that work locally even when a link to a distant computer is interrupted. The lead investor also describes using robots or flying cameras to get a closer look when needed.\n\nThe investor says more than 50,000 places use the system. If a sensor gives a warning, someone still has to find out what changed. A worker could check whether the pump really has a fault. The funding announcement did not say how often these warnings caught faults before they got worse.",
+      "image": null
+    },
+    {
+      "id": "abb-robotics-contingency-options",
+      "title": "Who will make and support the factory robots?",
+      "summary": "Reuters reported that Switzerland’s ABB was weighing other options for its industrial robot business. Chinese authorities have already barred Japan’s SoftBank from buying the part of that business in China.",
+      "details": "Reuters reports discussions about separating ABB Robotics' Chinese business from the rest of the division.",
+      "technical_novelty": "Reported alternatives include another buyer or a standalone company if the SoftBank sale falls through.",
+      "engineering_impact": "The structure can matter to industrial customers that arrange parts and maintenance for robots.",
+      "limitations": "The companies have not announced a final arrangement following the Reuters report.",
+      "evidence_status": "ABB confirmed the restriction in China. The potential alternatives come from unnamed Reuters sources.",
+      "published_at": "2026-11-20",
+      "organization": "ABB and SoftBank",
+      "source_ids": [
+        "reuters-abb",
+        "abb"
       ],
       "time_window": "72h",
-      "body": "Artur Kuramshin and his colleagues taught a many-fingered hand to work inside a computer kitchen. In one task, a finger had to press a coffee machine button. In the other, the hand had to pick up a bulb and twist it into its socket. The team wanted to find the best moment to save the program during its first lesson before starting a second kind of lesson.\n\nFirst a person controlled the hand in the virtual kitchen to show it the movements. As the program learned from these examples, the team saved copies at different points. Imagine being able to go back to different days of your practice and try a new training plan from each one. That is what saving the copies let the researchers do.\n\nIn the next lesson, a score told the program how well its choices worked. The researchers compared the saved copies before and after that extra practice. A hand that pressed the button well after the first lesson might gain less from the second than another copy did. To find out which would finish ahead, the team had to give more than one copy the second lesson.",
+      "body": "Picture a factory where a robot lifts heavy parts. If the factory wants another robot or needs something repaired, it can contact the company that supplies the machine. Switzerland’s ABB agreed to sell its industrial robot business to SoftBank, a Japanese company. Now there is a question over who will own that business.\n\nThe robot business operates in several countries. ABB said Chinese authorities had barred SoftBank from buying the part in China. On November 20 Reuters reported that the companies were discussing ways to make the sale work. It talked to two people familiar with the discussions, whose names it kept private.\n\nOne option Reuters described would leave the Chinese operation outside the sale. If the deal falls through, the report says ABB could look for another buyer or make the robotics business a company of its own. Neither company has announced that it will take any of those steps. A factory planning its next order still has to wait to see who will sell and support its equipment.",
       "image": null
     }
   ],
-  "technology_signal": {
-    "title": "A drink has two places in the shop: in reserve and on display",
-    "summary": "At Japan's FamilyMart, a worker fills a storage shelf and the robot moves drinks within reach of shoppers. The machine and the shelf were tested together.",
-    "implications": "To find out how much work people still had to do, the early shops tracked daily time spent replenishing drinks. The chain says it fell by about seven tenths."
-  },
   "sources": [
     {
-      "id": "familymart",
-      "title": "店舗従業員の業務負荷軽減と省力化に向け 飲料補充ロボットを2027年1月から導入開始",
-      "url": "https://www.family.co.jp/company/news_releases/2026/20261119_02.html",
-      "domain": "www.family.co.jp",
-      "organization": "FamilyMart",
-      "published_at": "2026-11-19"
+      "id": "pimt",
+      "organization": "PIMT",
+      "published_at": "2026-11-19",
+      "url": "https://prtimes.jp/main/html/rd/p/000000009.000179442.html",
+      "domain": "prtimes.jp",
+      "title": "東京スカイツリーで移動型無人販売ロボットのビジネス実証"
     },
     {
-      "id": "telexistence",
-      "title": "AIロボット「TX GHOST」を全国のファミリーマート店舗へ2027年1月から本格導入開始",
-      "url": "https://tx-inc.com/ja/blog/2026/11/19/12823/",
-      "domain": "tx-inc.com",
-      "organization": "Telexistence",
-      "published_at": "2026-11-19"
+      "id": "skytree",
+      "organization": "Tobu Tower Skytree",
+      "published_at": "2026-11-19",
+      "url": "https://www.tokyo-skytree.jp/press/post/730/",
+      "domain": "www.tokyo-skytree.jp",
+      "title": "移動型無人販売ロボットを活用した実証実験を実施"
     },
     {
-      "id": "locker",
-      "title": "スマートロッカーマンション内ロボット宅配システム NECマグナスコミュニケーションズとフルタイムシステムが共同で実証実験を開始",
-      "url": "https://www.fts.co.jp/news/release/2109",
-      "domain": "www.fts.co.jp",
-      "organization": "Fulltime System and NEC Magnus Communications",
-      "published_at": "2026-11-17"
+      "id": "intramotev",
+      "organization": "Intramotev",
+      "published_at": "2026-11-20",
+      "url": "https://intramotev.com/newsroom",
+      "domain": "intramotev.com",
+      "title": "Intramotev, Watco Bringing Autonomous Railcars to Texas"
     },
     {
-      "id": "hand",
-      "title": "HandUMI: A Modular Hand-Worn Parallel-Jaw Interface for Robot-Free Bimanual Data Capture",
-      "url": "https://arxiv.org/abs/2611.22146",
-      "domain": "arxiv.org",
-      "organization": "Mu Robotics and collaborators",
-      "published_at": "2026-11-17"
+      "id": "railway-age",
+      "organization": "Railway Age",
+      "published_at": "2026-11-20",
+      "url": "https://www.railwayage.com/freight/short-lines-regionals/intramotev-watco-bringing-autonomous-railcars-to-texas/",
+      "domain": "www.railwayage.com",
+      "title": "Intramotev, Watco Bringing Autonomous Railcars to Texas"
     },
     {
-      "id": "mujin",
-      "title": "グリーンロジスティクス様、6台のフィジカルAIロボットで自動倉庫と連携した出荷ピッキングを自動化",
-      "url": "https://media.mujin.co.jp/news/11657/",
-      "domain": "media.mujin.co.jp",
-      "organization": "Mujin",
-      "published_at": "2026-11-19"
+      "id": "chitose",
+      "organization": "Chitose Robotics",
+      "published_at": "2026-11-20",
+      "url": "https://prtimes.jp/main/html/rd/p/000000029.000040625.html",
+      "domain": "prtimes.jp",
+      "title": "チトセロボティクス、RoboNext2026に出展"
     },
     {
-      "id": "bulb",
-      "title": "Finetuning VLAs for Dexterous Manipulation: The Right Checkpoint Is All You Need",
-      "url": "https://arxiv.org/abs/2611.23676",
-      "domain": "arxiv.org",
-      "organization": "Mila, Université de Montréal and Renesas Electronics Canada",
-      "published_at": "2026-11-18"
+      "id": "brightai",
+      "organization": "BrightAI",
+      "published_at": "2026-11-18",
+      "url": "https://www.businesswire.com/news/home/20261118838405/en/BrightAI-Announces-%2497-Million-Investment-to-Scale-Physical-AI-Across-the-Worlds-Essential-Services",
+      "domain": "www.businesswire.com",
+      "title": "BrightAI Announces $97 Million Investment to Scale Physical AI Across the World’s Essential Services"
+    },
+    {
+      "id": "smith-point",
+      "organization": "Smith Point Capital",
+      "published_at": "2026-11-18",
+      "url": "https://www.smithpointcapital.com/news/the-intelligence-layer-for-critical-infrastructure",
+      "domain": "www.smithpointcapital.com",
+      "title": "The Intelligence Layer for Critical Infrastructure: Why We’re Partnering with BrightAI"
+    },
+    {
+      "id": "reuters-abb",
+      "organization": "Reuters",
+      "published_at": "2026-11-20",
+      "url": "https://www.reuters.com/business/media-telecom/abb-considers-robotics-listing-if-sale-softbank-fails-sources-say-2026-11-20/",
+      "domain": "www.reuters.com",
+      "title": "ABB considers robotics listing if sale to SoftBank fails, sources say"
+    },
+    {
+      "id": "abb",
+      "organization": "ABB",
+      "published_at": "2026-11-05",
+      "url": "https://www.abb.com/global/en/news/140154/update-on-divestment-of-abb-robotics",
+      "domain": "www.abb.com",
+      "title": "Update on divestment of ABB Robotics"
     }
   ]
 }

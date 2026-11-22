@@ -2,186 +2,195 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-21",
-  "issue_id": "daily-2026-11-21",
+  "issue_date": "2026-11-22",
+  "issue_id": "daily-2026-11-22",
   "edition": "business",
   "language": "ja",
-  "generated_at": "2026-11-20T21:15:18Z",
-  "title": "飲料補充をロボットに任せた店で、人が担う仕事は",
-  "lead": "ファミリーマートは、飲料の補充をどこまで人が担うかを具体化した。従業員が在庫棚に商品を入れ、ロボットがそこから選んで売り場に並べる。先行店では、この分担で一日の作業時間がどう変わるかを調べた。",
+  "generated_at": "2026-11-21T21:08:55+00:00",
+  "title": "ABBのロボット事業、売却範囲はどう変わるか",
+  "lead": "ロイターによると、ABBとソフトバンクは、中国での買収が認められなかったことを受け、取引を続けられる形を探っている。話し合いの行方によって、どの地域の事業が移るかが変わる。",
+  "technology_signal": {
+    "title": "ABBロボット部門、中国事業の切り離し案をロイターが報道",
+    "summary": "ABBとソフトバンクは中国事業を切り離す案を検討していると、ロイターは伝えた。両社は取引の新たな枠組みを発表していない。",
+    "implications": "ABBのロボットを調達する企業は、売却の範囲が変わる場合、国ごとに販売や保守を担う会社を確認する必要がある。"
+  },
   "news": [
     {
-      "id": "huang-senate-testimony-agreement",
-      "title": "米上院での公開証言にフアン氏が同意、スコット議員の補佐官が説明",
-      "summary": "米上院のティム・スコット議員の補佐官は、NVIDIAの前最高経営責任者であるジェンスン・フアン氏が公開の場で証言することに同意したとロイターに説明した。11月20日の報道時点で、同議員の事務所は公聴会の日程を明らかにしていない。",
-      "details": "証言への同意はスコット議員の補佐官が明らかにした。公開の公聴会の日程は確定していない。",
-      "technical_novelty": "議会は先端半導体の中国向け輸出を巡る判断の経緯を調べている。",
-      "engineering_impact": "NVIDIAではコレット・クレス氏が最高財務責任者を続けながら、暫定の最高経営責任者を務める。",
-      "limitations": "出席を求めた書簡に記載された日付は、開催日としては確定していない。",
-      "evidence_status": "証言への同意を伝えたロイターは議員事務所を情報源としている。経営交代はNVIDIAの取締役会の発表と決算資料で確認できる。",
+      "id": "abb-robotics-contingency-options",
+      "title": "ABBのロボット部門、売却難航で代替案を検討とロイター",
+      "summary": "ロイターは関係者二人の話として、ソフトバンクへの売却がまとまらなければ、ABBがロボット部門を独立させる可能性があると報じた。ABBはこれに先立ち、中国の当局が中国事業の買収を認めなかったことを明らかにしている。",
+      "details": "ロイターは、中国にある分の事業を分ける案が出ていると伝えました。",
+      "technical_novelty": "売買がまとまらない場合、別の買い手を探す案や、部門を一つの会社にする案もあるといいます。",
+      "engineering_impact": "工場がロボットを買ったり修理したりするときは、どの会社に頼むかが大切です。",
+      "limitations": "ロイターが伝えた案を選んだという発表は、会社から出ていません。",
+      "evidence_status": "中国での買収が認められなかったことはABBが発表しました。別の案はロイターが取材して伝えました。",
       "published_at": "2026-11-20",
-      "organization": "United States Senate and NVIDIA",
+      "organization": "ABB and SoftBank",
       "source_ids": [
-        "nvidia",
-        "abc",
-        "nvidia-board",
-        "nvidia-results"
+        "reuters-abb",
+        "abb"
+      ],
+      "time_window": "72h",
+      "body": "ロイターは11月20日、産業用ロボットを手がけるABBと日本のソフトバンクが、事業売却の枠組みを見直そうとしていると報じた。匿名の関係者二人によれば、売却が成立しなかった場合、ABBは部門を別会社として切り出したり、別の相手に売ったりする案を検討している。ABBが当初の合意を発表したのは2025年10月で、事業全体の価値を53億7500万米ドルとしていた。取引を終えるには各国の当局の承認が必要だった。\n\nABBは11月5日、ソフトバンクから、中国当局が中国国内のロボット事業の買収を認めなかったと聞いた旨を公表した。ロイターが今回伝えた交渉案の一つは、中国事業をそれ以外から切り離すことだ。関係者の説明によると、中国事業は部門の約三割を占める。新たな報道についてABBとソフトバンクはコメントを控えた。どの事業をどの形で移すことになるかは、まだ明らかにされていない。ロイターによると、両社はまず、ソフトバンクへの売却を成立させる方法を探っている。\n\n長期の導入計画を立てる買い手にとっては、事業を分ける場合に、製品を販売し、保守を受け付ける会社がどこになるのかが実務上の問題になる。既存契約の移管について決定があったとは報じられていない。またロイターは、部門を独立させた場合の上場先や、ABBが求める金額は確認できなかったとしている。\n\n当初示した金額の対象は事業全体だった。売却範囲が変わる場合に新たな金額をどう決めるかについて、両社から発表は出ていない。",
+      "image": null
+    },
+    {
+      "id": "bessent-older-chip-controls-position",
+      "title": "ベッセント米財務長官、対中半導体規制の追加に否定的",
+      "summary": "米国のスコット・ベッセント財務長官は、NVIDIAの旧世代の半導体について、中国向け販売に追加の規制は必要ないとの見方を示した。米下院の委員会は別途、NVIDIAとAMDの半導体の輸出許可に関する資料を公表した。",
+      "details": "米下院の委員会は、NVIDIAのH200とAMDのMI325Xの輸出許可申請に関する情報を公表した。",
+      "technical_novelty": "長官は半導体の販売規制と、先端半導体を遠隔で使う場合の制限について説明した。",
+      "engineering_impact": "半導体を買う場合も、データセンターの計算能力を借りる場合も、適用される条件の確認が必要になる。",
+      "limitations": "5月11日までに21件の申請で認められた87万9868個は、許可された数量である。",
+      "evidence_status": "長官の発言はAP通信が報じ、許可申請の情報は米下院の委員会が公表した。",
+      "published_at": "2026-11-20",
+      "organization": "US Department of the Treasury",
+      "source_ids": [
+        "ap-chips",
+        "house-chip-licenses"
       ],
       "time_window": "24h",
-      "body": "米上院のティム・スコット議員の補佐官は11月20日、NVIDIAの前最高経営責任者ジェンスン・フアン氏が公開の公聴会で証言することに同意したとロイターに語った。議会が関心を向けているのは先端半導体の中国向け輸出だ。こうした半導体をモデルの学習に使う企業には、過去の判断について前経営者が説明する場と、現在の供給元の方針を確認する場の双方が関係してくる。\n\n上院銀行委員会の委員長を務めるスコット氏は、フアン氏に委員会での証言を求めていた。フアン氏とハワード・ラトニック商務長官への書簡については、米ABCニュースも先に報じている。議員らが調べているのは、人工知能の計算に使う先端半導体の中国向け輸出を巡り、どのような事情が判断に影響した可能性があるかという点だ。フアン氏が公の場でどう説明するかは、実際の証言を待つことになる。同氏の広報担当者は、公聴会に関するロイターの取材にコメントしなかった。\n\n計算機器を調達する企業にとっては、フアン氏がどの立場で証言するかも重要になる。NVIDIAの取締役会は11月12日、同氏が社長、最高経営責任者、取締役を即日退任したと発表した。最高財務責任者のコレット・クレス氏が暫定の最高経営責任者を兼ね、17日の決算発表でも両方の役職が記載されている。現在の製品や供給計画について会社としての説明を求める相手は、現経営陣である。\n\n当初の出席要請には12月3日という日付があったが、同意が報じられた時点で議員事務所は開催日を確定していなかった。これとは別に、下院の委員会による非公開の聞き取りが12月1日に予定されている。証言の内容を公の場で確認できるのは、上院での公開の公聴会の方である。",
+      "body": "米国のベッセント財務長官は11月20日、CNBCのインタビューで、NVIDIAの旧世代の半導体を中国に販売する際に、追加の規制は必要ないと述べた。AP通信が報じた。対象となるアクセラレーターは、人工知能のモデルの学習や実行に必要な計算を担う半導体だ。企業が計算能力を確保する方法には、半導体を購入する方法と、データセンターにある装置を遠隔で使う方法がある。長官は、より先端の半導体を遠隔で使うことについては、すでに制限が設けられたと説明した。\n\nインタビューの前日、米下院外交委員会は、NVIDIAのH200とAMDのMI325Xに関する許可申請の情報を公表した。商務省が5月11日までに、21件の申請で輸出、再輸出または移転を認めたのは87万9868個で、申請された数量は340万個を超えていた。許可を受けた数は、条件を満たせば扱える数量を示す。企業が実際に購入した数や、引き渡された数を知るには、別の記録が必要になる。\n\nNVIDIAの広報担当者はAP通信に対し、以前に許可を得ていたものの、H200の中国向け出荷は停止したと述べた。モデルをどこで学習させるかを決める企業には、以前の許可情報と現在の供給状況の両方が関わる。長官が示したのはインタビューでの見解であり、実際の調達では、半導体の種類や仕向け先ごとに、どの許可条件が適用されるかを確認することになる。\n\n稼働日が決まっている案件では、以前にどれだけ許可が下りたかに加えて、実際に納品される日を確認する必要がある。",
       "image": null
     },
     {
-      "id": "familymart-drink-restocking",
-      "title": "ファミリーマート、飲料補充の作業時間を先行店で測定",
-      "summary": "ファミリーマートは、テレイグジスタンスと開発を進めた飲料補充ロボットを2027年1月から順次導入する。従業員がデジタル在庫棚に飲料を入れ、ロボットは店ごとの販売実績に応じて売れ筋から売り場に並べる。",
-      "details": "店員が予備の飲み物を棚に入れ、ロボットが売り場に並べます。",
-      "technical_novelty": "棚に何があるかを記録し、その店で何がよく売れるかも調べます。",
-      "engineering_impact": "よく売れる飲み物を選んで、先に売り場へ運べます。",
-      "limitations": "約7割短くなったのは、先に試した店で店員が一日に飲み物を足すのに使った時間です。",
-      "evidence_status": "ファミリーマートとロボットを作った会社が、先に試した店の様子と2027年1月からの計画を発表しました。",
-      "published_at": "2026-11-19",
-      "organization": "FamilyMart",
+      "id": "brightai-infrastructure-financing",
+      "title": "ブライトAI、設備を見守る事業の拡大に9700万ドルを調達",
+      "summary": "ブライトAIは、工場や電力、水道などの設備を監視するシステムの事業拡大に向け、9700万ドルを調達した。スミスポイント・キャピタルが主導し、同社の顧客でもあるGEベルノバが出資に加わった。",
+      "details": "9700万ドルの出資には、スミスポイント・キャピタルやGEベルノバなどが加わりました。",
+      "technical_novelty": "音や温度を調べる道具の記録を、近くのコンピューターで分析します。",
+      "engineering_impact": "遠くのコンピューターといつもつながっていなくても、機械の変化を調べられます。",
+      "limitations": "発表には、特定の場所で故障（こしょう）を見つけた回数は書かれていません。",
+      "evidence_status": "ブライトAIがお金を集めたことを発表し、お金を出した会社が仕組みを説明しました。",
+      "published_at": "2026-11-18",
+      "organization": "BrightAI",
       "source_ids": [
-        "familymart",
-        "telexistence"
-      ],
-      "time_window": "72h",
-      "body": "ファミリーマートは2027年1月から、飲料を売り場に並べる仕事を段階的にロボットに移す。先行店では、従業員が一日に飲料の補充にかける時間が約7割減ったという。導入する店に必要なのは、ボトルを運ぶ装置と、裏側で飲料の置き場所や本数を把握する在庫棚の両方だ。\n\nこれまでの作業では、同じ納品分の商品に従業員が二度手をかけていた。まず冷蔵庫の中で飲料を整理し、その後も売り場の棚を見て、少なくなった商品を在庫から取り出して並べる。新しい仕組みでは、在庫棚が人から機械への受け渡し場所になる。最初の一本を読み取って商品を置くと、棚がどの位置に何の商品が何本あるかを管理する。異なる商品を混ぜて置くこともできる。品目ごとに必要な本数を計算し、従業員に提案する機能もある。\n\n売り場への陳列は別の装置が受け持つ。店舗の販売実績をもとに、よく売れる商品を優先して並べる仕組みだ。ファミリーマートと開発元は2020年から店で実証と改良を重ねてきた。同社が示した陳列能力は一日あたり最大約1800本。一方、従業員への効果については、一店舗で一日に飲料補充にかかる作業時間を調べている。陳列できる本数と作業時間は、それぞれ別の方法で把握する指標となる。\n\n加盟店が自店で見込める効果を計算するには、まず、現在の各シフトで飲料の補充に何分かけているかを把握する必要がある。納品を受け取って商品を在庫棚に置くところは引き続き従業員の仕事で、その時間も含めて人員の配置を考えることになる。",
-      "image": null
-    },
-    {
-      "id": "green-logistics-case-stacking",
-      "title": "グリーンロジスティクス、自動倉庫から出たケースを六台のロボットで積み付け",
-      "summary": "Mujinは、グリーンロジスティクスの新しい物流センターで稼働する六台のロボットを紹介した。ロボットは自動倉庫から出てきたケースの位置を調べ、出荷用のパレットに積み付ける。",
-      "details": "新しい倉庫では、自動で箱を運び出す場所につなげて六台のロボットを置きました。",
-      "technical_novelty": "腕のカメラで箱の位置や形を調べ、次の箱を置く場所を計算します。",
-      "engineering_impact": "カメラを腕に付けたので、ロボットのそばにカメラ用の台を置かずにすみました。",
-      "limitations": "一時間に約五百箱というのは、この倉庫にあるロボット一台の数字です。",
-      "evidence_status": "設備を作った会社が11月19日、倉庫での使い方と一台で運べる箱の数を発表しました。",
-      "published_at": "2026-11-19",
-      "organization": "Mujin",
-      "source_ids": [
-        "mujin"
-      ],
-      "time_window": "72h",
-      "body": "グリーンロジスティクスは新物流センターで、自動保管と出荷の間にある積み付け作業をロボットに任せた。設備を納めたMujinが11月19日に導入事例を公開した。現場で使うのは六台で、一台あたりの処理能力として一時間に約五百ケースを挙げている。\n\n保管場所から出荷場所に移るとき、荷物のまとまり方が変わる。倉庫から出てくるのは個々のケースだが、発送するときには荷物をまとめて運ぶ台であるパレットに積む。一箱を置くたびに、次の箱に使える空間は変わっていく。ロボットの制御を担うMujinOSは、腕に取り付けたカメラで箱の形や奥行きを捉え、それぞれの位置を調べる。その情報を使い、作業が進むのに合わせて、次のケースをどこに置くかを計算する。Mujinによれば、このセンターで扱うケースは約千種類にのぼる。\n\n機器の構成には設置場所の広さもかかわっている。自動倉庫に直結させた六つの作業区画を、限られた面積に収める必要があった。腕にカメラを付ける方式なら、撮影用の架台をロボットのそばに別途設けずにすむ。ロボットを動かす際には、周囲との干渉も回避する。同社が公表した処理能力は、一台あたり一時間に約五百ケースを取り出して積むというものだ。\n\n導入を検討する事業者が出荷能力を見積もるには、自動倉庫からどの程度安定してケースが届き、完成したパレットをどの間隔で搬出できるかも確認したい。一台の数字から、必要な供給量の目安は得られる。センター全体が一勤務時間を通じて出荷したケース数は、今回の発表では明らかにされていない。",
-      "image": null
-    },
-    {
-      "id": "apartment-locker-handover",
-      "title": "宅配ロッカーからロボットへ、マンション内配送の受け渡しを検証",
-      "summary": "フルタイムシステムとNECマグナスコミュニケーションズは11月17日、マンション内の配送システムの共同実証を始めた。共用ロッカーから荷物を取り出し、別の階に運んで住戸前に安全に置くまでを検証する。",
-      "details": "ロボットが入り口で箱を受け取り、エレベーターで運んで、家のドアの前に置く計画です。",
-      "technical_novelty": "ロッカーからロボットに箱を移す仕組みを、二つの会社がいっしょに改良します。",
-      "engineering_impact": "別の階に運ぶために、ロボットとエレベーターが連絡を取り合う必要があります。",
-      "limitations": "実験を始めたという発表です。何回のうち何回最後まで届けられたかは、まだ発表されていません。",
-      "evidence_status": "ロッカーを作る会社とロボットを担当する会社が、11月17日に始めた共同実験の内容を発表しました。",
-      "published_at": "2026-11-17",
-      "organization": "Fulltime System and NEC Magnus Communications",
-      "source_ids": [
-        "locker"
+        "brightai",
+        "smith-point"
       ],
       "time_window": "7d",
-      "body": "マンション内の配送をどこから機械に任せられるのか。フルタイムシステムとNECマグナスコミュニケーションズは11月17日、共用の宅配ロッカーからエレベーターを経て住戸前に荷物を届ける共同実証を始めた。管理会社から見ると、ロッカー、エレベーター、玄関前のそれぞれで設備を連携させる案件になる。\n\n両社が想定するサービスでは、宅配事業者が建物の入り口にある共用ロッカーに荷物を預ける。住戸前への配送を希望する居住者には、そこからロボットが荷物を運ぶ。ロッカーから箱を受け取り、自分でエレベーターを呼んで乗り込み、目的の階で降りて廊下を進む。所定の場所に荷物を置くと、待機場所に戻る。一件の配送が完了するまでを評価するには、廊下を走る動作に加え、固定したロッカーから移動する機械に荷物が渡る場面も見る必要がある。\n\nフルタイムシステムには、2023年11月に福岡支店でエレベーターと連携する配送システムを試した経験がある。今回、二社で改良するのは、ロッカーからロボットが荷物を取り出す部分だ。NECマグナスコミュニケーションズはロボットと制御システムを改良し、玄関前に荷物を置く機構の実用性と安全性も検証する。マンションに近い条件で運用したときの使い勝手と繰り返し使用に耐えられるかどうかは、両社で調べる。\n\n導入を判断するには、その建物のエレベーターとの接続条件のほか、受け渡しが中断したときに荷物をどこで回収できるかも確認したい。両社が今回示したのは実証で調べる項目で、一勤務あたりの配達件数や、一件を運ぶ費用はまだ公表されていない。",
+      "body": "ブライトAIは11月18日、9700万ドルを調達したと発表した。同社の装置とソフトウェアは、作業員の巡回の間にも、ポンプや圧縮機などの状態に変化がないかを調べる。出資を主導したのはスミスポイント・キャピタルで、ブライトAIの顧客であるGEベルノバも参加した。調達した資金は事業の拡大に使う。出資を主導した会社は発表に合わせ、現場での使い方も紹介した。\n\n作業員がいつもそばにいるわけではない設備を、どう見守るかが課題になる。装置に取り付けたセンサーが音や温度、振動を記録し、近くのコンピューターがデータを調べて普段と違う動きを見つける。現場で計算するため、遠くのコンピューターとの通信が常につながっている必要性を下げられる。出資者の説明では、もっと詳しく点検したい場所には、移動するロボットやドローンを使うこともある。決まった場所での継続的な観測と、移動して詳しく見る作業を組み合わせる。\n\n出資を主導した会社によれば、この仕組みは五万を超える現場で使われている。数字が表すのは監視システムの利用場所である。設備の保守方法を比べるなら、最初にどんな知らせが出て、作業員がどれだけ早く確かめ、何を見つけたかを記録すると役立つ。見逃した故障と、故障がなかったときの警報も、それぞれ数える必要がある。今回の発表には、特定の現場でのこうした比較結果は掲載されていない。\n\nGEベルノバは出資者であり、同時に顧客でもある。今回の発表には、各社がいくらずつ出資したかや、この顧客が設備保守に使う費用をどれだけ減らせたかは書かれていない。",
       "image": null
     },
     {
-      "id": "handumi-towel-fold",
-      "title": "実機を使わず両手の手本を記録する装置、その費用と試験結果",
-      "summary": "ブリク・メサ氏らは、ロボットを使わず両手の動きを記録する装着型の道具「HandUMI」を発表した。562回の手本で学習した制御プログラムの一つは、実機で20回中12回タオルをたたみ終えた。",
-      "details": "人が両手に道具を着けてタオルをたたみ、その記録を使ってロボットの腕に動きを教えました。",
-      "technical_novelty": "手が通った道と、布をはさむ道具の先がどのくらい開いたかを記録しました。",
-      "engineering_impact": "手本を集めるときは、あとで布をたたむ本物のロボットがそこになくても作業ができます。",
-      "limitations": "562回分の手本で学んだ二つのプログラムが、それぞれ20回試しました。たためた回数は12回と7回でした。",
-      "evidence_status": "ブリク・メサ氏らが11月17日に発表した研究に、本物のロボットの腕で試した結果が書かれています。",
-      "published_at": "2026-11-17",
-      "organization": "Mu Robotics and collaborators",
+      "id": "watco-seadrift-self-propelled-railcars",
+      "title": "米Watco、自走式貨車の導入先を二カ所に拡大へ",
+      "summary": "米Intramotevは、鉄道事業者Watcoとの契約を拡大したと発表した。Watcoはテキサス州シードリフトの工業施設で、蓄電池の電力で自走できる貨車を使う計画だ。",
+      "details": "鉄道会社は、テキサス州シードリフトの工業施設で、この貨車（かしゃ）を使う計画です。",
+      "technical_novelty": "貨車は、充電（じゅうでん）できる電池の力で車輪を回します。",
+      "engineering_impact": "荷物を載せた車両が、別の車両に引かれずに進めます。",
+      "limitations": "テキサス州で使う台数と、運用を始める日は明らかにされていません。",
+      "evidence_status": "新しい場所で使う取り決めを、貨車を作った会社が11月20日に発表しました。",
+      "published_at": "2026-11-20",
+      "organization": "Intramotev and Watco",
       "source_ids": [
-        "hand"
+        "intramotev",
+        "railway-age"
       ],
-      "time_window": "7d",
-      "body": "ブリク・メサ氏らのHandUMIプロジェクトは、作業の手本を集めるたびにロボットアームを確保する負担に着目した。手に着けた道具で人がタオルをたたんで動きを記録するため、実機は学習したプログラムを布で試す段階で使える。チームは装置の設計とソフトウェアを公開している。\n\n実演者は左右の手に、二枚の爪が平行に開閉する道具を着ける。爪の先端は交換式で、実際に使うロボットが対象物に触れる部分と形を合わせる。手の動きは仮想現実用のコントローラーで追い、爪の開き具合は別のセンサーで直接測る。この組み合わせにより、布を持ってどこへ動かしたかと、どの位置で布をつかみ、あるいは放したかを記録できる。別の機種に同じ記録を使う場合は、記録した経路に沿ってつかみ具を動かすために必要な各関節の動きを計算する。\n\n研究チームは、七種類の双腕ロボットをコンピューター上に用意して、この変換を試した。これとは別に、実物の布を使う試験では、PiPERというロボットアームを二本使った。人が見せた562回分の手本で学んだ制御プログラムACTは、タオルを20回中12回たたみ終えた。同じデータで追加学習した別のモデルπ0.5では20回中7回だった。ACTに最初の101回分だけを与えた場合、20回試してたためた回数はゼロだった。\n\n研究者の見積もりでは、動きを追うQuest 3Sを含む両手分の記録装置が557米ドルで、制御用コンピューターと追加できるカメラは含まれない。この金額は記録機材の調達を検討する際の目安になる。対象作業を実演する人の時間や、結果を試すためにロボットを使う時間は、別途確保する必要がある。",
+      "time_window": "72h",
+      "body": "米国で貨車の自動化に取り組むIntramotevは11月20日、鉄道事業者Watcoが同社の貨車を使う施設を増やすと発表した。新たな導入先はテキサス州シードリフトの工業施設で、施設内で荷物を載せた貨車を動かす。両社はこれまでに、イリノイ州のウッドリバーにあるWatcoのターミナルで、この種の貨車を使うことで合意している。テキサス州の施設は、同じ事業者との取り組みに新たに加わる場所になる。\n\n貨車は荷物を載せるという役割を保ったまま、蓄電池の電力で車輪を動かす装置を備える。通常、貨車を動かす力は別の機関車から受けるが、この方式では、対象の作業で貨物を載せた車両そのものが動く力を出せる。施設で一日にどれだけ運べるかは、自走できることに加えて、どの順序で荷物を積み込むかや、充電の時間をいつ確保できるかにも左右される。\n\n導入する施設が作業全体を調べる場合は、貨車が出発してから着くまでの時間に加え、荷物を載せる順番を待つ時間や、荷物を降ろした後に線路を空けるまでの時間も測れる。貨車の移動が順調でも、次の作業場所が空くまで待つ場合がある。シードリフトで何両使い、いつ運用を始めるかは発表されていない。イリノイ州の先行施設と比べるには、両方の施設の荷物の量や作業の順序が分かってから、同じ単位で実績を見ることになる。\n\n二つ目の導入先について投資の効果を判断するなら、同じ時間にどれだけ荷物を動かせたかと、そのために使った費用を並べて見たい。施設ごとに積み込みの条件が違えば、その違いも比較に含める必要がある。",
+      "image": null
+    },
+    {
+      "id": "tokyo-skytree-mobile-vending",
+      "title": "東京スカイツリー、チケット売り場の空間で移動販売を試験",
+      "summary": "ピムトと東京スカイツリーの運営会社は、11月21日から28日まで、ぬいぐるみを売る移動式のロボットを試す計画だ。四階の入り口フロアで置き場所を変え、売り上げや立ち寄った人の割合、来場者の満足度を調べる。",
+      "details": "東京スカイツリーの入り口の階で、ぬいぐるみを売る機械一台の位置を変えます。",
+      "technical_novelty": "カメラを使い、近くを通った人のうち、足を止めた人の割合を調べます。",
+      "engineering_impact": "足を止めた人数、売れた数、買い物の感想から、売る場所ごとの特徴を調べられます。",
+      "limitations": "東京スカイツリーでの売り上げは、発表に出ていません。",
+      "evidence_status": "販売機を作った会社と塔の運営会社が、11月21日から28日までの実験を発表しました。",
+      "published_at": "2026-11-19",
+      "organization": "PIMT and Tobu Tower Skytree",
+      "source_ids": [
+        "pimt",
+        "skytree"
+      ],
+      "time_window": "72h",
+      "body": "東京スカイツリーの入り口で、どこに売り場を置くと、人が気づいて足を止めるのか。ピムトと塔の運営会社は、その場所を変えられる販売機を一台使い、四階のチケットカウンターがあるフロアで調べる。予定されている期間は11月21日から28日までの八日間。売るのは、パンやお菓子をかたどったぬいぐるみだ。両社は実験の予定を19日に発表した。\n\n売れた数だけでは、機械の前を通った人がどんな行動を取ったかまでは分からない。足を止め、商品を見てから通り過ぎる人もいる。そのため主催者は、カメラの画像をプログラムで調べて、通った人のうちどれだけが立ち寄ったかを測る。さらに、買い物を楽しめたかを来場者へのアンケートで尋ねる。売り上げ、足を止めた人の割合、アンケートは、それぞれ別の場面について知るための記録だ。\n\nピムトは成田空港で2026年4月から、この機械を使った販売を続けている。同社は、催し物に合わせて売り場を移したり、近くに電源の差し込み口がない場所で販売したりした例を挙げる。今回は、買ったぬいぐるみを展望台に持って行き、東京の街を背景に写真を撮る楽しみ方も映像で紹介する。塔での売り上げはまだ発表されていない。置き場所を変えた効果を見るには、各地点で立ち寄った人の数と、もともとその地点を通る人の数の両方が必要になる。\n\n塔の運営会社にとっては、店を新設せず、チケット売り場の空間を生かせるかが判断材料になる。販売時間あたりの売り上げを地点ごとに比べると、翌日も同じ場所に置くべきかを検討しやすい。",
       "image": null
     }
   ],
-  "technology_signal": {
-    "title": "ファミリーマート、先行店の補充時間を測って導入拡大へ",
-    "summary": "先行店では、従業員が飲料の補充にかける一日の時間が約7割減ったという。ファミリーマートは2027年1月から、ロボットとデジタル在庫棚を段階的に導入する。",
-    "implications": "各店での効果を見積もる出発点は、その店で現在、飲料補充に何分使っているかだ。商品の受け取りと在庫棚への補充は引き続き従業員が担う。"
-  },
   "sources": [
     {
-      "id": "nvidia",
-      "title": "Former Nvidia CEO Huang agreed to testify at public US Senate hearing, senator’s aide says",
-      "url": "https://www.reuters.com/world/us/former-nvidia-ceo-huang-agreed-testify-public-us-senate-hearing-senators-aide-2026-11-20/",
-      "domain": "www.reuters.com",
+      "id": "reuters-abb",
       "organization": "Reuters",
-      "published_at": "2026-11-20"
+      "published_at": "2026-11-20",
+      "url": "https://www.reuters.com/business/media-telecom/abb-considers-robotics-listing-if-sale-softbank-fails-sources-say-2026-11-20/",
+      "domain": "www.reuters.com",
+      "title": "ABB considers robotics listing if sale to SoftBank fails, sources say"
     },
     {
-      "id": "abc",
-      "title": "House and Senate Republicans call on Howard Lutnick, Jensen Huang to testify about Nvidia",
-      "url": "https://abcnews.go.com/Politics/house-senate-republicans-call-howard-lutnick-jensen-huang/story?id=138111390",
-      "domain": "abcnews.go.com",
-      "organization": "ABC News",
-      "published_at": "2026-11-18"
+      "id": "abb",
+      "organization": "ABB",
+      "published_at": "2026-11-05",
+      "url": "https://www.abb.com/global/en/news/140154/update-on-divestment-of-abb-robotics",
+      "domain": "www.abb.com",
+      "title": "Update on divestment of ABB Robotics"
     },
     {
-      "id": "nvidia-board",
-      "title": "NVIDIA Announces CEO Transition",
-      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx",
-      "domain": "investor.nvidia.com",
-      "organization": "NVIDIA",
-      "published_at": "2026-11-12"
+      "id": "ap-chips",
+      "organization": "Associated Press",
+      "published_at": "2026-11-20",
+      "url": "https://apnews.com/article/88142455395552afe74caec3399a648b",
+      "domain": "apnews.com",
+      "title": "Treasury secretary says no further restrictions are needed for Nvidia chip exports to China"
     },
     {
-      "id": "nvidia-results",
-      "title": "NVIDIA Announces Financial Results for Third Quarter Fiscal 2027",
-      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/",
-      "domain": "investor.nvidia.com",
-      "organization": "NVIDIA",
-      "published_at": "2026-11-17"
+      "id": "house-chip-licenses",
+      "organization": "US House Foreign Affairs Committee",
+      "published_at": "2026-11-19",
+      "url": "https://foreignaffairs.house.gov/news/press-releases/chairman-brian-mast-exercises-legislative-authority-to-publicly-release-ai-chip-license-information-for-china",
+      "domain": "foreignaffairs.house.gov",
+      "title": "Chairman Brian Mast Exercises Legislative Authority to Publicly Release AI Chip License Information for China"
     },
     {
-      "id": "familymart",
-      "title": "店舗従業員の業務負荷軽減と省力化に向け 飲料補充ロボットを2027年1月から導入開始",
-      "url": "https://www.family.co.jp/company/news_releases/2026/20261119_02.html",
-      "domain": "www.family.co.jp",
-      "organization": "FamilyMart",
-      "published_at": "2026-11-19"
+      "id": "brightai",
+      "organization": "BrightAI",
+      "published_at": "2026-11-18",
+      "url": "https://www.businesswire.com/news/home/20261118838405/en/BrightAI-Announces-%2497-Million-Investment-to-Scale-Physical-AI-Across-the-Worlds-Essential-Services",
+      "domain": "www.businesswire.com",
+      "title": "BrightAI Announces $97 Million Investment to Scale Physical AI Across the World’s Essential Services"
     },
     {
-      "id": "telexistence",
-      "title": "AIロボット「TX GHOST」を全国のファミリーマート店舗へ2027年1月から本格導入開始",
-      "url": "https://tx-inc.com/ja/blog/2026/11/19/12823/",
-      "domain": "tx-inc.com",
-      "organization": "Telexistence",
-      "published_at": "2026-11-19"
+      "id": "smith-point",
+      "organization": "Smith Point Capital",
+      "published_at": "2026-11-18",
+      "url": "https://www.smithpointcapital.com/news/the-intelligence-layer-for-critical-infrastructure",
+      "domain": "www.smithpointcapital.com",
+      "title": "The Intelligence Layer for Critical Infrastructure: Why We’re Partnering with BrightAI"
     },
     {
-      "id": "mujin",
-      "title": "グリーンロジスティクス様、6台のフィジカルAIロボットで自動倉庫と連携した出荷ピッキングを自動化",
-      "url": "https://media.mujin.co.jp/news/11657/",
-      "domain": "media.mujin.co.jp",
-      "organization": "Mujin",
-      "published_at": "2026-11-19"
+      "id": "intramotev",
+      "organization": "Intramotev",
+      "published_at": "2026-11-20",
+      "url": "https://intramotev.com/newsroom",
+      "domain": "intramotev.com",
+      "title": "Intramotev, Watco Bringing Autonomous Railcars to Texas"
     },
     {
-      "id": "locker",
-      "title": "スマートロッカーマンション内ロボット宅配システム NECマグナスコミュニケーションズとフルタイムシステムが共同で実証実験を開始",
-      "url": "https://www.fts.co.jp/news/release/2109",
-      "domain": "www.fts.co.jp",
-      "organization": "Fulltime System and NEC Magnus Communications",
-      "published_at": "2026-11-17"
+      "id": "railway-age",
+      "organization": "Railway Age",
+      "published_at": "2026-11-20",
+      "url": "https://www.railwayage.com/freight/short-lines-regionals/intramotev-watco-bringing-autonomous-railcars-to-texas/",
+      "domain": "www.railwayage.com",
+      "title": "Intramotev, Watco Bringing Autonomous Railcars to Texas"
     },
     {
-      "id": "hand",
-      "title": "HandUMI: A Modular Hand-Worn Parallel-Jaw Interface for Robot-Free Bimanual Data Capture",
-      "url": "https://arxiv.org/abs/2611.22146",
-      "domain": "arxiv.org",
-      "organization": "Mu Robotics and collaborators",
-      "published_at": "2026-11-17"
+      "id": "pimt",
+      "organization": "PIMT",
+      "published_at": "2026-11-19",
+      "url": "https://prtimes.jp/main/html/rd/p/000000009.000179442.html",
+      "domain": "prtimes.jp",
+      "title": "東京スカイツリーで移動型無人販売ロボットのビジネス実証"
+    },
+    {
+      "id": "skytree",
+      "organization": "Tobu Tower Skytree",
+      "published_at": "2026-11-19",
+      "url": "https://www.tokyo-skytree.jp/press/post/730/",
+      "domain": "www.tokyo-skytree.jp",
+      "title": "移動型無人販売ロボットを活用した実証実験を実施"
     }
   ]
 }
