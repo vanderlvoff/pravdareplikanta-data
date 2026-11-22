@@ -1,0 +1,645 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-22",
+  "visualizations": [
+    {
+      "issue_date": "2026-11-22",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "chitose-robonext-three-arms",
+      "path": "data/visualizations/2026-11-22/chitose-robonext-three-arms-ru.svg",
+      "type": "comparison_matrix",
+      "caption": "Три стенда Chitose Robotics",
+      "source_ids": [
+        "chitose"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "a6d134c0cc74771988d2ec45e4622c05c17d6fea"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "chitose-robonext-three-arms",
+      "path": "data/visualizations/2026-11-22/chitose-robonext-three-arms-ru.svg",
+      "type": "comparison_matrix",
+      "caption": "Три стенда Chitose Robotics",
+      "source_ids": [
+        "chitose"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "a6d134c0cc74771988d2ec45e4622c05c17d6fea"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "chitose-robonext-three-arms",
+      "path": "data/visualizations/2026-11-22/chitose-robonext-three-arms-ru.svg",
+      "type": "comparison_matrix",
+      "caption": "Три стенда Chitose Robotics",
+      "source_ids": [
+        "chitose"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "a6d134c0cc74771988d2ec45e4622c05c17d6fea"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "chitose-robonext-three-arms",
+      "path": "data/visualizations/2026-11-22/chitose-robonext-three-arms-en.svg",
+      "type": "comparison_matrix",
+      "caption": "Three Chitose Robotics demos",
+      "source_ids": [
+        "chitose"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "050678d3bb9fd8cbc489a63308016b8939e0e8cc"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "chitose-robonext-three-arms",
+      "path": "data/visualizations/2026-11-22/chitose-robonext-three-arms-en.svg",
+      "type": "comparison_matrix",
+      "caption": "Three Chitose Robotics demos",
+      "source_ids": [
+        "chitose"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "050678d3bb9fd8cbc489a63308016b8939e0e8cc"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "children",
+      "language": "en",
+      "news_id": "chitose-robonext-three-arms",
+      "path": "data/visualizations/2026-11-22/chitose-robonext-three-arms-en.svg",
+      "type": "comparison_matrix",
+      "caption": "Three Chitose Robotics demos",
+      "source_ids": [
+        "chitose"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "050678d3bb9fd8cbc489a63308016b8939e0e8cc"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "chitose-robonext-three-arms",
+      "path": "data/visualizations/2026-11-22/chitose-robonext-three-arms-ja.svg",
+      "type": "comparison_matrix",
+      "caption": "チトセロボティクスの三つの実演",
+      "source_ids": [
+        "chitose"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "ab71010c0bf794363036783a6a24d53a02c0de90"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "chitose-robonext-three-arms",
+      "path": "data/visualizations/2026-11-22/chitose-robonext-three-arms-ja.svg",
+      "type": "comparison_matrix",
+      "caption": "チトセロボティクスの三つの実演",
+      "source_ids": [
+        "chitose"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "ab71010c0bf794363036783a6a24d53a02c0de90"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "chitose-robonext-three-arms",
+      "path": "data/visualizations/2026-11-22/chitose-robonext-three-arms-ja.svg",
+      "type": "comparison_matrix",
+      "caption": "チトセロボティクスの三つの実演",
+      "source_ids": [
+        "chitose"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "ab71010c0bf794363036783a6a24d53a02c0de90"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "tokyo-skytree-mobile-vending",
+      "path": "data/visualizations/2026-11-22/tokyo-skytree-mobile-vending-ru.svg",
+      "type": "comparison_matrix",
+      "caption": "Передвижной магазин в башне",
+      "source_ids": [
+        "pimt",
+        "skytree"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "6b67d90acb652cdde996213b253f3f2297f7b7ec"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "tokyo-skytree-mobile-vending",
+      "path": "data/visualizations/2026-11-22/tokyo-skytree-mobile-vending-ru.svg",
+      "type": "comparison_matrix",
+      "caption": "Передвижной магазин в башне",
+      "source_ids": [
+        "pimt",
+        "skytree"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "6b67d90acb652cdde996213b253f3f2297f7b7ec"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "tokyo-skytree-mobile-vending",
+      "path": "data/visualizations/2026-11-22/tokyo-skytree-mobile-vending-ru.svg",
+      "type": "comparison_matrix",
+      "caption": "Передвижной магазин в башне",
+      "source_ids": [
+        "pimt",
+        "skytree"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "6b67d90acb652cdde996213b253f3f2297f7b7ec"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "tokyo-skytree-mobile-vending",
+      "path": "data/visualizations/2026-11-22/tokyo-skytree-mobile-vending-ru.svg",
+      "type": "comparison_matrix",
+      "caption": "Передвижной магазин в башне",
+      "source_ids": [
+        "pimt",
+        "skytree"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "6b67d90acb652cdde996213b253f3f2297f7b7ec"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "tokyo-skytree-mobile-vending",
+      "path": "data/visualizations/2026-11-22/tokyo-skytree-mobile-vending-en.svg",
+      "type": "comparison_matrix",
+      "caption": "A moving shop at Tokyo Skytree",
+      "source_ids": [
+        "pimt",
+        "skytree"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "2544b6167677c81c7f2fa4fa4c4062c5a54d4075"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "business",
+      "language": "en",
+      "news_id": "tokyo-skytree-mobile-vending",
+      "path": "data/visualizations/2026-11-22/tokyo-skytree-mobile-vending-en.svg",
+      "type": "comparison_matrix",
+      "caption": "A moving shop at Tokyo Skytree",
+      "source_ids": [
+        "pimt",
+        "skytree"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "2544b6167677c81c7f2fa4fa4c4062c5a54d4075"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "tokyo-skytree-mobile-vending",
+      "path": "data/visualizations/2026-11-22/tokyo-skytree-mobile-vending-en.svg",
+      "type": "comparison_matrix",
+      "caption": "A moving shop at Tokyo Skytree",
+      "source_ids": [
+        "pimt",
+        "skytree"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "2544b6167677c81c7f2fa4fa4c4062c5a54d4075"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "children",
+      "language": "en",
+      "news_id": "tokyo-skytree-mobile-vending",
+      "path": "data/visualizations/2026-11-22/tokyo-skytree-mobile-vending-en.svg",
+      "type": "comparison_matrix",
+      "caption": "A moving shop at Tokyo Skytree",
+      "source_ids": [
+        "pimt",
+        "skytree"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "2544b6167677c81c7f2fa4fa4c4062c5a54d4075"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "tokyo-skytree-mobile-vending",
+      "path": "data/visualizations/2026-11-22/tokyo-skytree-mobile-vending-ja.svg",
+      "type": "comparison_matrix",
+      "caption": "東京スカイツリーの移動販売",
+      "source_ids": [
+        "pimt",
+        "skytree"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "731c87c056d436cc126bef75f87c5858df036d9f"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "tokyo-skytree-mobile-vending",
+      "path": "data/visualizations/2026-11-22/tokyo-skytree-mobile-vending-ja.svg",
+      "type": "comparison_matrix",
+      "caption": "東京スカイツリーの移動販売",
+      "source_ids": [
+        "pimt",
+        "skytree"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "731c87c056d436cc126bef75f87c5858df036d9f"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "tokyo-skytree-mobile-vending",
+      "path": "data/visualizations/2026-11-22/tokyo-skytree-mobile-vending-ja.svg",
+      "type": "comparison_matrix",
+      "caption": "東京スカイツリーの移動販売",
+      "source_ids": [
+        "pimt",
+        "skytree"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "731c87c056d436cc126bef75f87c5858df036d9f"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "tokyo-skytree-mobile-vending",
+      "path": "data/visualizations/2026-11-22/tokyo-skytree-mobile-vending-ja.svg",
+      "type": "comparison_matrix",
+      "caption": "東京スカイツリーの移動販売",
+      "source_ids": [
+        "pimt",
+        "skytree"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "731c87c056d436cc126bef75f87c5858df036d9f"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "brightai-infrastructure-financing",
+      "path": "data/visualizations/2026-11-22/brightai-infrastructure-financing-ru.svg",
+      "type": "process_diagram",
+      "caption": "Как BrightAI наблюдает за техникой",
+      "source_ids": [
+        "smith-point"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "73665c224711152e5a708a7dacfd0ea0f96fd72f"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "brightai-infrastructure-financing",
+      "path": "data/visualizations/2026-11-22/brightai-infrastructure-financing-ru.svg",
+      "type": "process_diagram",
+      "caption": "Как BrightAI наблюдает за техникой",
+      "source_ids": [
+        "smith-point"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "73665c224711152e5a708a7dacfd0ea0f96fd72f"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "brightai-infrastructure-financing",
+      "path": "data/visualizations/2026-11-22/brightai-infrastructure-financing-ru.svg",
+      "type": "process_diagram",
+      "caption": "Как BrightAI наблюдает за техникой",
+      "source_ids": [
+        "smith-point"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "73665c224711152e5a708a7dacfd0ea0f96fd72f"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "brightai-infrastructure-financing",
+      "path": "data/visualizations/2026-11-22/brightai-infrastructure-financing-ru.svg",
+      "type": "process_diagram",
+      "caption": "Как BrightAI наблюдает за техникой",
+      "source_ids": [
+        "smith-point"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "73665c224711152e5a708a7dacfd0ea0f96fd72f"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "brightai-infrastructure-financing",
+      "path": "data/visualizations/2026-11-22/brightai-infrastructure-financing-en.svg",
+      "type": "process_diagram",
+      "caption": "How BrightAI monitors equipment",
+      "source_ids": [
+        "smith-point"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "99a2b92052a80d27919470feb9c778958926ff67"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "business",
+      "language": "en",
+      "news_id": "brightai-infrastructure-financing",
+      "path": "data/visualizations/2026-11-22/brightai-infrastructure-financing-en.svg",
+      "type": "process_diagram",
+      "caption": "How BrightAI monitors equipment",
+      "source_ids": [
+        "smith-point"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "99a2b92052a80d27919470feb9c778958926ff67"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "brightai-infrastructure-financing",
+      "path": "data/visualizations/2026-11-22/brightai-infrastructure-financing-en.svg",
+      "type": "process_diagram",
+      "caption": "How BrightAI monitors equipment",
+      "source_ids": [
+        "smith-point"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "99a2b92052a80d27919470feb9c778958926ff67"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "children",
+      "language": "en",
+      "news_id": "brightai-infrastructure-financing",
+      "path": "data/visualizations/2026-11-22/brightai-infrastructure-financing-en.svg",
+      "type": "process_diagram",
+      "caption": "How BrightAI monitors equipment",
+      "source_ids": [
+        "smith-point"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "99a2b92052a80d27919470feb9c778958926ff67"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "brightai-infrastructure-financing",
+      "path": "data/visualizations/2026-11-22/brightai-infrastructure-financing-ja.svg",
+      "type": "process_diagram",
+      "caption": "BrightAIの設備監視の仕組み",
+      "source_ids": [
+        "smith-point"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "dafe9dd193c982cd62284d8c2f0418585a268df6"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "brightai-infrastructure-financing",
+      "path": "data/visualizations/2026-11-22/brightai-infrastructure-financing-ja.svg",
+      "type": "process_diagram",
+      "caption": "BrightAIの設備監視の仕組み",
+      "source_ids": [
+        "smith-point"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "dafe9dd193c982cd62284d8c2f0418585a268df6"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "brightai-infrastructure-financing",
+      "path": "data/visualizations/2026-11-22/brightai-infrastructure-financing-ja.svg",
+      "type": "process_diagram",
+      "caption": "BrightAIの設備監視の仕組み",
+      "source_ids": [
+        "smith-point"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "dafe9dd193c982cd62284d8c2f0418585a268df6"
+    },
+    {
+      "issue_date": "2026-11-22",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "brightai-infrastructure-financing",
+      "path": "data/visualizations/2026-11-22/brightai-infrastructure-financing-ja.svg",
+      "type": "process_diagram",
+      "caption": "BrightAIの設備監視の仕組み",
+      "source_ids": [
+        "smith-point"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python ElementTree (before rendering and after GitHub readback)",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape vector render and text, panel and connector bounds at 360, 390 and 768 CSS px; font embedding checked.",
+      "blob_sha": "dafe9dd193c982cd62284d8c2f0418585a268df6"
+    }
+  ]
+}
