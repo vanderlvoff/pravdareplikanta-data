@@ -8,18 +8,19 @@
   <rect id="rect4" data-zone="background" x="20" y="98" width="278" height="66" fill="#234554" rx="6"/>
   <text id="text5" data-zone="text" x="33" y="124" fill="#FFFFFF" font-size="15" font-weight="400" text-anchor="start">観測情報と作業指示</text>
   <text id="text6" data-zone="text" x="33" y="146" fill="#FFFFFF" font-size="15" font-weight="400" text-anchor="start">カメラ3台 · ロボットの状態</text>
-  <path id="path7" data-zone="art" d="M156 169 V185 M150 179 L156 185 L162 179" fill="none" stroke="#A8CFD1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path7" data-zone="art" d="M84 164 V191 M79 184 L84 191 L89 184" fill="none" stroke="#A8CFD1" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
   <rect id="rect8" data-zone="background" x="20" y="192" width="128" height="115" fill="#234554" rx="6"/>
   <rect id="rect9" data-zone="background" x="170" y="192" width="128" height="115" fill="#234554" rx="6"/>
-  <path id="path10" data-zone="art" d="M154 247 H164 M160 243 L164 247 L160 251" fill="none" stroke="#A8CFD1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path10" data-zone="art" d="M148 247 H169 M163 242 L169 247 L163 252" fill="none" stroke="#A8CFD1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
   <text id="text11" data-zone="text" x="84" y="245" fill="#53C0B2" font-size="43" font-weight="700" text-anchor="middle">32</text>
   <text id="text12" data-zone="text" x="84" y="275" fill="#FFFFFF" font-size="14" font-weight="400" text-anchor="middle">ステップ</text>
   <text id="text13" data-zone="text" x="84" y="293" fill="#FFFFFF" font-size="14" font-weight="400" text-anchor="middle">動きを予測</text>
   <text id="text14" data-zone="text" x="234" y="245" fill="#F4B367" font-size="43" font-weight="700" text-anchor="middle">16</text>
   <text id="text15" data-zone="text" x="234" y="275" fill="#FFFFFF" font-size="14" font-weight="400" text-anchor="middle">ステップ</text>
   <text id="text16" data-zone="text" x="234" y="293" fill="#FFFFFF" font-size="14" font-weight="400" text-anchor="middle">先頭から実行</text>
-  <path id="path17" data-zone="art" d="M234 313 V327" fill="none" stroke="#F4B367" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path17" data-zone="art" d="M234 307 V330 M228 324 L234 330 L240 324" fill="none" stroke="#F4B367" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   <text id="text18" data-zone="text" x="298" y="350" fill="#FFFFFF" font-size="15" font-weight="700" text-anchor="end">動いた後の状態を</text>
   <text id="text19" data-zone="text" x="298" y="371" fill="#A8CFD1" font-size="14" font-weight="400" text-anchor="end">観測し直す</text>
-  <path id="path20" data-zone="art" d="M307 353 H329 V131 H306 M312 125 L306 131 L312 137" fill="none" stroke="#53C0B2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path20" data-zone="art" d="M303 346 H329 V131" fill="none" stroke="#53C0B2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path21" data-zone="art" d="M329 131 H299 M306 125 L299 131 L306 137" fill="none" stroke="#53C0B2" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

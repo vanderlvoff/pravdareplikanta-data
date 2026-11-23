@@ -1,32 +1,49 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="360" height="428" viewBox="0 0 360 428" role="img" lang="ru" aria-labelledby="title desc" font-family="Noto Sans, Arial, sans-serif">
-  <title id="title">Как посылка едет наверх</title>
-  <desc id="desc">ИСПЫТАНИЕ · КАСИИ, ФУКУОКА / У двери квартиры — Человек берёт коробку — или её оставляют / Лифт — Робот везёт коробку — на нужный этаж / Вход в дом — Курьер передаёт — посылку роботу / Разрез условный.</desc>
-  <rect id="rect1" data-zone="background" x="0" y="0" width="360" height="428" fill="#F8F5ED" rx="0"/>
-  <text id="text2" data-zone="text" x="20" y="32" fill="#15655E" font-size="14" font-weight="700" text-anchor="start">ИСПЫТАНИЕ · КАСИИ, ФУКУОКА</text>
-  <text id="text3" data-zone="text" x="20" y="67" fill="#16293B" font-size="22" font-weight="700" text-anchor="start">Как посылка едет наверх</text>
-  <path id="path4" data-zone="art" d="M21 143 L78 110 L135 143 V388 H21 Z" fill="#E9E6DB" stroke="#16293B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect id="rect5" data-zone="art" x="55" y="151" width="49" height="235" fill="#CBD9D6" rx="0" stroke="#16293B" stroke-width="1.5"/>
-  <path id="path6" data-zone="art" d="M79 171 V314" fill="none" stroke="#15655E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path id="path7" data-zone="art" d="M70 181 L79 171 L88 181" fill="none" stroke="#15655E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect id="rect8" data-zone="art" x="60" y="254" width="39" height="36" fill="#FAFAF1" rx="3" stroke="#16293B" stroke-width="1.6"/>
-  <path id="path9" data-zone="art" d="M79 256 V289" fill="none" stroke="#16293B" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
-  <path id="path10" data-zone="art" d="M22 209 H54 M105 209 H134 M22 320 H54 M105 320 H134" fill="none" stroke="#16293B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <rect id="rect11" data-zone="art" x="109" y="162" width="17" height="24" fill="#E9CAA9" rx="0" stroke="#16293B" stroke-width="1.2"/>
-  <rect id="rect12" data-zone="art" x="31" y="345" width="18" height="18" fill="#C8E5DF" rx="0" stroke="#16293B" stroke-width="1.2"/>
-  <circle id="circle13" data-zone="art" cx="35" cy="365" r="2" fill="#16293B"/>
-  <circle id="circle14" data-zone="art" cx="46" cy="365" r="2" fill="#16293B"/>
-  <path id="path15" data-zone="art" d="M134 169 H151" fill="none" stroke="#15655E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-  <text id="text16" data-zone="text" x="161" y="175" fill="#16293B" font-size="15" font-weight="700" text-anchor="start">У двери квартиры</text>
-  <text id="text17" data-zone="text" x="161" y="196" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Человек берёт коробку</text>
-  <text id="text18" data-zone="text" x="161" y="215" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">или её оставляют</text>
-  <path id="path19" data-zone="art" d="M134 258 H151" fill="none" stroke="#15655E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-  <text id="text20" data-zone="text" x="161" y="264" fill="#16293B" font-size="15" font-weight="700" text-anchor="start">Лифт</text>
-  <text id="text21" data-zone="text" x="161" y="285" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Робот везёт коробку</text>
-  <text id="text22" data-zone="text" x="161" y="304" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">на нужный этаж</text>
-  <path id="path23" data-zone="art" d="M134 341 H151" fill="none" stroke="#15655E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-  <text id="text24" data-zone="text" x="161" y="347" fill="#16293B" font-size="15" font-weight="700" text-anchor="start">Вход в дом</text>
-  <text id="text25" data-zone="text" x="161" y="368" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Курьер передаёт</text>
-  <text id="text26" data-zone="text" x="161" y="387" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">посылку роботу</text>
-  <text id="text27" data-zone="text" x="20" y="416" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Разрез условный.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="486" viewBox="0 0 360 486" role="img" lang="ru" aria-labelledby="title desc" font-family="Noto Sans, Arial, sans-serif">
+  <title id="title">Как робот едет в лифте</title>
+  <desc id="desc">ДОСТАВКА В ФУКУОКЕ / У двери квартиры — Передача жильцу — или коробка у двери / В кабине лифта — Лифт везёт робота — с коробкой наверх / Вестибюль — Курьер передаёт — коробку роботу / Стрелки показывают путь коробки.</desc>
+  <rect id="rect1" data-zone="background" x="0" y="0" width="360" height="486" fill="#F8F5ED" rx="0"/>
+  <text id="text2" data-zone="text" x="20" y="32" fill="#15655E" font-size="14" font-weight="700" text-anchor="start">ДОСТАВКА В ФУКУОКЕ</text>
+  <text id="text3" data-zone="text" x="20" y="67" fill="#16293B" font-size="22" font-weight="700" text-anchor="start">Как робот едет в лифте</text>
+  <rect id="rect4" data-zone="background" x="20" y="104" width="320" height="341" fill="#EEF1EB" rx="0"/>
+  <rect id="rect5" data-zone="background" x="33" y="117" width="130" height="306" fill="#F6F9F3" rx="0" stroke="#55717C" stroke-width="1"/>
+  <rect id="rect6" data-zone="background" x="46" y="131" width="52" height="268" fill="#DCE7E7" rx="0" stroke="#55717C" stroke-width="1.3"/>
+  <path id="path7" data-zone="art" d="M53 134 V395 M91 134 V395" fill="none" stroke="#55717C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path8" data-zone="art" d="M34 216 H45 M99 216 H162 M34 345 H45 M99 345 H162" fill="none" stroke="#55717C" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path9" data-zone="art" d="M34 400 H162" fill="none" stroke="#55717C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path10" data-zone="art" d="M168 219 H328" fill="none" stroke="#55717C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path11" data-zone="art" d="M168 330 H328" fill="none" stroke="#55717C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="rect12" data-zone="art" x="134" y="153" width="19" height="47" fill="#F0D8BF" rx="0" stroke="#16293B" stroke-width="1.3"/>
+  <circle id="circle13" data-zone="art" cx="147" cy="180" r="1.8" fill="#9E4A30"/>
+  <rect id="rect14" data-zone="art" x="134" y="361" width="18" height="31" fill="#E3E9DB" rx="0" stroke="#16293B" stroke-width="1.2"/>
+  <rect id="rect15" data-zone="art" x="48" y="242" width="48" height="69" fill="#F7FBF7" rx="2" stroke="#16293B" stroke-width="1.7"/>
+  <path id="path16" data-zone="art" d="M50 254 H94" fill="none" stroke="#55717C" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="rect17" data-zone="art" x="107" y="373" width="26" height="11" fill="#C4D9D2" rx="3" stroke="#16293B" stroke-width="1.4"/>
+  <rect id="rect18" data-zone="art" x="115" y="364" width="11" height="9" fill="#EBD1AB" rx="0" stroke="#16293B" stroke-width="1"/>
+  <circle id="circle19" data-zone="art" cx="112" cy="385" r="2.4" fill="#16293B"/>
+  <circle id="circle20" data-zone="art" cx="128" cy="385" r="2.4" fill="#16293B"/>
+  <rect id="rect21" data-zone="art" x="59" y="279" width="26" height="11" fill="#C4D9D2" rx="3" stroke="#16293B" stroke-width="1.4"/>
+  <rect id="rect22" data-zone="art" x="67" y="270" width="11" height="9" fill="#EBD1AB" rx="0" stroke="#16293B" stroke-width="1"/>
+  <circle id="circle23" data-zone="art" cx="64" cy="291" r="2.4" fill="#16293B"/>
+  <circle id="circle24" data-zone="art" cx="80" cy="291" r="2.4" fill="#16293B"/>
+  <path id="path25" data-zone="art" d="M108 388 H72 V311" fill="none" stroke="#15655E" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path26" data-zone="art" d="M66 319 L72 311 L78 319" fill="none" stroke="#15655E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path27" data-zone="art" d="M72 241 V181 H132" fill="none" stroke="#15655E" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path28" data-zone="art" d="M124 175 L132 181 L124 187" fill="none" stroke="#15655E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="circle29" data-zone="background" cx="180" cy="139" r="10" fill="#15655E"/>
+  <text id="text30" data-zone="text" x="180" y="144" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle">3</text>
+  <text id="text31" data-zone="text" x="198" y="145" fill="#16293B" font-size="14" font-weight="700" text-anchor="start">У двери квартиры</text>
+  <text id="text32" data-zone="text" x="198" y="167" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Передача жильцу</text>
+  <text id="text33" data-zone="text" x="198" y="186" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">или коробка у двери</text>
+  <circle id="circle34" data-zone="background" cx="180" cy="250" r="10" fill="#15655E"/>
+  <text id="text35" data-zone="text" x="180" y="255" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle">2</text>
+  <text id="text36" data-zone="text" x="198" y="256" fill="#16293B" font-size="14" font-weight="700" text-anchor="start">В кабине лифта</text>
+  <text id="text37" data-zone="text" x="198" y="278" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Лифт везёт робота</text>
+  <text id="text38" data-zone="text" x="198" y="297" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">с коробкой наверх</text>
+  <circle id="circle39" data-zone="background" cx="180" cy="361" r="10" fill="#15655E"/>
+  <text id="text40" data-zone="text" x="180" y="366" fill="#FFFFFF" font-size="14" font-weight="700" text-anchor="middle">1</text>
+  <text id="text41" data-zone="text" x="198" y="367" fill="#16293B" font-size="14" font-weight="700" text-anchor="start">Вестибюль</text>
+  <text id="text42" data-zone="text" x="198" y="389" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Курьер передаёт</text>
+  <text id="text43" data-zone="text" x="198" y="408" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">коробку роботу</text>
+  <text id="text44" data-zone="text" x="20" y="472" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Стрелки показывают путь коробки.</text>
 </svg>

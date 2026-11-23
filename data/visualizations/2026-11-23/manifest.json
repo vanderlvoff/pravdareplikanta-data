@@ -16,10 +16,10 @@
       "format": "image/svg+xml",
       "status": "ready",
       "xml_qa": "passed",
-      "xml_qa_method": "Strict lxml (recover=False) before render and on GitHub readback",
+      "xml_qa_method": "Strict lxml (recover=False) before rendering and on GitHub readback",
       "layout_qa": "passed",
-      "qa_notes": "Inkscape vector render at 360, 390 and 768 CSS px; measured painted text and geometry, verified fonts and visually inspected 360 px output.",
-      "blob_sha": "24b47981ce0f198751b78902618ddb4ac2a3dc15"
+      "qa_notes": "Inkscape at 360, 390 and 768 CSS px, measured text and geometry, fonts checked, arrows and endpoints inspected at 360 CSS px.",
+      "blob_sha": "238253e4552fc8ce47c6474a1e65beafe1e2e1fc"
     },
     {
       "issue_date": "2026-11-23",
@@ -35,10 +35,10 @@
       "format": "image/svg+xml",
       "status": "ready",
       "xml_qa": "passed",
-      "xml_qa_method": "Strict lxml (recover=False) before render and on GitHub readback",
+      "xml_qa_method": "Strict lxml (recover=False) before rendering and on GitHub readback",
       "layout_qa": "passed",
-      "qa_notes": "Inkscape vector render at 360, 390 and 768 CSS px; measured painted text and geometry, verified fonts and visually inspected 360 px output.",
-      "blob_sha": "24b47981ce0f198751b78902618ddb4ac2a3dc15"
+      "qa_notes": "Inkscape at 360, 390 and 768 CSS px, measured text and geometry, fonts checked, arrows and endpoints inspected at 360 CSS px.",
+      "blob_sha": "238253e4552fc8ce47c6474a1e65beafe1e2e1fc"
     },
     {
       "issue_date": "2026-11-23",
@@ -54,10 +54,10 @@
       "format": "image/svg+xml",
       "status": "ready",
       "xml_qa": "passed",
-      "xml_qa_method": "Strict lxml (recover=False) before render and on GitHub readback",
+      "xml_qa_method": "Strict lxml (recover=False) before rendering and on GitHub readback",
       "layout_qa": "passed",
-      "qa_notes": "Inkscape vector render at 360, 390 and 768 CSS px; measured painted text and geometry, verified fonts and visually inspected 360 px output.",
-      "blob_sha": "2e1f453ea61d4059f3b0235a689fa9c298082210"
+      "qa_notes": "Inkscape at 360, 390 and 768 CSS px, measured text and geometry, fonts checked, arrows and endpoints inspected at 360 CSS px.",
+      "blob_sha": "2268a4542c67a78efe7727e1986655aeb1089634"
     },
     {
       "issue_date": "2026-11-23",
@@ -73,10 +73,10 @@
       "format": "image/svg+xml",
       "status": "ready",
       "xml_qa": "passed",
-      "xml_qa_method": "Strict lxml (recover=False) before render and on GitHub readback",
+      "xml_qa_method": "Strict lxml (recover=False) before rendering and on GitHub readback",
       "layout_qa": "passed",
-      "qa_notes": "Inkscape vector render at 360, 390 and 768 CSS px; measured painted text and geometry, verified fonts and visually inspected 360 px output.",
-      "blob_sha": "2e1f453ea61d4059f3b0235a689fa9c298082210"
+      "qa_notes": "Inkscape at 360, 390 and 768 CSS px, measured text and geometry, fonts checked, arrows and endpoints inspected at 360 CSS px.",
+      "blob_sha": "2268a4542c67a78efe7727e1986655aeb1089634"
     },
     {
       "issue_date": "2026-11-23",
@@ -92,10 +92,10 @@
       "format": "image/svg+xml",
       "status": "ready",
       "xml_qa": "passed",
-      "xml_qa_method": "Strict lxml (recover=False) before render and on GitHub readback",
+      "xml_qa_method": "Strict lxml (recover=False) before rendering and on GitHub readback",
       "layout_qa": "passed",
-      "qa_notes": "Inkscape vector render at 360, 390 and 768 CSS px; measured painted text and geometry, verified fonts and visually inspected 360 px output.",
-      "blob_sha": "cc926f5db38614d5be2ffbf20916ec20cf8ba7e9"
+      "qa_notes": "Inkscape at 360, 390 and 768 CSS px, measured text and geometry, fonts checked, arrows and endpoints inspected at 360 CSS px.",
+      "blob_sha": "527bcaf11f6a565ac3a6eda8142536deb916f7c1"
     },
     {
       "issue_date": "2026-11-23",
@@ -111,10 +111,10 @@
       "format": "image/svg+xml",
       "status": "ready",
       "xml_qa": "passed",
-      "xml_qa_method": "Strict lxml (recover=False) before render and on GitHub readback",
+      "xml_qa_method": "Strict lxml (recover=False) before rendering and on GitHub readback",
       "layout_qa": "passed",
-      "qa_notes": "Inkscape vector render at 360, 390 and 768 CSS px; measured painted text and geometry, verified fonts and visually inspected 360 px output.",
-      "blob_sha": "cc926f5db38614d5be2ffbf20916ec20cf8ba7e9"
+      "qa_notes": "Inkscape at 360, 390 and 768 CSS px, measured text and geometry, fonts checked, arrows and endpoints inspected at 360 CSS px.",
+      "blob_sha": "527bcaf11f6a565ac3a6eda8142536deb916f7c1"
     },
     {
       "issue_date": "2026-11-23",
@@ -465,7 +465,7 @@
       "news_id": "kashii-parcel-intercom-lift-trial",
       "path": "data/visualizations/2026-11-23/kashii-parcel-intercom-lift-trial-ru.svg",
       "type": "process_flow",
-      "caption": "Как посылка едет наверх",
+      "caption": "Как робот едет в лифте",
       "source_ids": [
         "ur-kashii",
         "world-supply"
@@ -473,10 +473,10 @@
       "format": "image/svg+xml",
       "status": "ready",
       "xml_qa": "passed",
-      "xml_qa_method": "Strict lxml (recover=False) before render and on GitHub readback",
+      "xml_qa_method": "Strict lxml (recover=False) before rendering and on GitHub readback",
       "layout_qa": "passed",
-      "qa_notes": "Inkscape vector render at 360, 390 and 768 CSS px; measured painted text and geometry, verified fonts and visually inspected 360 px output.",
-      "blob_sha": "e6682d0c06b77e94999cf8f60f22d17e1bcf3c60"
+      "qa_notes": "Inkscape at 360, 390 and 768 CSS px, measured text and geometry, fonts checked, arrows and endpoints inspected at 360 CSS px.",
+      "blob_sha": "7e95c4ae0b44f7937150381813b916123efcb5ea"
     },
     {
       "issue_date": "2026-11-23",
@@ -485,7 +485,7 @@
       "news_id": "kashii-parcel-intercom-lift-trial",
       "path": "data/visualizations/2026-11-23/kashii-parcel-intercom-lift-trial-ru.svg",
       "type": "process_flow",
-      "caption": "Как посылка едет наверх",
+      "caption": "Как робот едет в лифте",
       "source_ids": [
         "ur-kashii",
         "world-supply"
@@ -493,10 +493,10 @@
       "format": "image/svg+xml",
       "status": "ready",
       "xml_qa": "passed",
-      "xml_qa_method": "Strict lxml (recover=False) before render and on GitHub readback",
+      "xml_qa_method": "Strict lxml (recover=False) before rendering and on GitHub readback",
       "layout_qa": "passed",
-      "qa_notes": "Inkscape vector render at 360, 390 and 768 CSS px; measured painted text and geometry, verified fonts and visually inspected 360 px output.",
-      "blob_sha": "e6682d0c06b77e94999cf8f60f22d17e1bcf3c60"
+      "qa_notes": "Inkscape at 360, 390 and 768 CSS px, measured text and geometry, fonts checked, arrows and endpoints inspected at 360 CSS px.",
+      "blob_sha": "7e95c4ae0b44f7937150381813b916123efcb5ea"
     },
     {
       "issue_date": "2026-11-23",
@@ -505,7 +505,7 @@
       "news_id": "kashii-parcel-intercom-lift-trial",
       "path": "data/visualizations/2026-11-23/kashii-parcel-intercom-lift-trial-en.svg",
       "type": "process_flow",
-      "caption": "A parcel goes upstairs",
+      "caption": "How a robot takes the lift",
       "source_ids": [
         "ur-kashii",
         "world-supply"
@@ -513,10 +513,10 @@
       "format": "image/svg+xml",
       "status": "ready",
       "xml_qa": "passed",
-      "xml_qa_method": "Strict lxml (recover=False) before render and on GitHub readback",
+      "xml_qa_method": "Strict lxml (recover=False) before rendering and on GitHub readback",
       "layout_qa": "passed",
-      "qa_notes": "Inkscape vector render at 360, 390 and 768 CSS px; measured painted text and geometry, verified fonts and visually inspected 360 px output.",
-      "blob_sha": "5ec0c6075d3dcaff780818bf91b49494c0278e09"
+      "qa_notes": "Inkscape at 360, 390 and 768 CSS px, measured text and geometry, fonts checked, arrows and endpoints inspected at 360 CSS px.",
+      "blob_sha": "825a857cb0fb281eb2919d3426b154feb3f3c545"
     },
     {
       "issue_date": "2026-11-23",
@@ -525,7 +525,7 @@
       "news_id": "kashii-parcel-intercom-lift-trial",
       "path": "data/visualizations/2026-11-23/kashii-parcel-intercom-lift-trial-en.svg",
       "type": "process_flow",
-      "caption": "A parcel goes upstairs",
+      "caption": "How a robot takes the lift",
       "source_ids": [
         "ur-kashii",
         "world-supply"
@@ -533,10 +533,10 @@
       "format": "image/svg+xml",
       "status": "ready",
       "xml_qa": "passed",
-      "xml_qa_method": "Strict lxml (recover=False) before render and on GitHub readback",
+      "xml_qa_method": "Strict lxml (recover=False) before rendering and on GitHub readback",
       "layout_qa": "passed",
-      "qa_notes": "Inkscape vector render at 360, 390 and 768 CSS px; measured painted text and geometry, verified fonts and visually inspected 360 px output.",
-      "blob_sha": "5ec0c6075d3dcaff780818bf91b49494c0278e09"
+      "qa_notes": "Inkscape at 360, 390 and 768 CSS px, measured text and geometry, fonts checked, arrows and endpoints inspected at 360 CSS px.",
+      "blob_sha": "825a857cb0fb281eb2919d3426b154feb3f3c545"
     },
     {
       "issue_date": "2026-11-23",
@@ -545,7 +545,7 @@
       "news_id": "kashii-parcel-intercom-lift-trial",
       "path": "data/visualizations/2026-11-23/kashii-parcel-intercom-lift-trial-ja.svg",
       "type": "process_flow",
-      "caption": "箱はどうやって上の階へ？",
+      "caption": "配達ロボットはどう上の階へ？",
       "source_ids": [
         "ur-kashii",
         "world-supply"
@@ -553,10 +553,10 @@
       "format": "image/svg+xml",
       "status": "ready",
       "xml_qa": "passed",
-      "xml_qa_method": "Strict lxml (recover=False) before render and on GitHub readback",
+      "xml_qa_method": "Strict lxml (recover=False) before rendering and on GitHub readback",
       "layout_qa": "passed",
-      "qa_notes": "Inkscape vector render at 360, 390 and 768 CSS px; measured painted text and geometry, verified fonts and visually inspected 360 px output.",
-      "blob_sha": "3e1ca3fdf33808fd0421ad90a82e8b501cf71371"
+      "qa_notes": "Inkscape at 360, 390 and 768 CSS px, measured text and geometry, fonts checked, arrows and endpoints inspected at 360 CSS px.",
+      "blob_sha": "a460f916c6c340fb291be9068d7bbd321e50a136"
     },
     {
       "issue_date": "2026-11-23",
@@ -565,7 +565,7 @@
       "news_id": "kashii-parcel-intercom-lift-trial",
       "path": "data/visualizations/2026-11-23/kashii-parcel-intercom-lift-trial-ja.svg",
       "type": "process_flow",
-      "caption": "箱はどうやって上の階へ？",
+      "caption": "配達ロボットはどう上の階へ？",
       "source_ids": [
         "ur-kashii",
         "world-supply"
@@ -573,10 +573,10 @@
       "format": "image/svg+xml",
       "status": "ready",
       "xml_qa": "passed",
-      "xml_qa_method": "Strict lxml (recover=False) before render and on GitHub readback",
+      "xml_qa_method": "Strict lxml (recover=False) before rendering and on GitHub readback",
       "layout_qa": "passed",
-      "qa_notes": "Inkscape vector render at 360, 390 and 768 CSS px; measured painted text and geometry, verified fonts and visually inspected 360 px output.",
-      "blob_sha": "3e1ca3fdf33808fd0421ad90a82e8b501cf71371"
+      "qa_notes": "Inkscape at 360, 390 and 768 CSS px, measured text and geometry, fonts checked, arrows and endpoints inspected at 360 CSS px.",
+      "blob_sha": "a460f916c6c340fb291be9068d7bbd321e50a136"
     },
     {
       "issue_date": "2026-11-23",
