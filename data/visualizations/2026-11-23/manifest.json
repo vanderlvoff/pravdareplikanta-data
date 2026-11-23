@@ -1,0 +1,813 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-23",
+  "visualizations": [
+    {
+      "issue_date": "2026-11-23",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "bagel-robodojo-suite-results",
+      "path": "data/visualizations/2026-11-23/bagel-robodojo-suite-results-ru.svg",
+      "type": "process_flow",
+      "caption": "Как модель ведёт две руки",
+      "source_ids": [
+        "bagel-code"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "b6b63787db75958dfb4207613d5056cfc4fac93a"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "bagel-robodojo-suite-results",
+      "path": "data/visualizations/2026-11-23/bagel-robodojo-suite-results-ru.svg",
+      "type": "process_flow",
+      "caption": "Как модель ведёт две руки",
+      "source_ids": [
+        "bagel-code"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "b6b63787db75958dfb4207613d5056cfc4fac93a"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "bagel-robodojo-suite-results",
+      "path": "data/visualizations/2026-11-23/bagel-robodojo-suite-results-en.svg",
+      "type": "process_flow",
+      "caption": "Moving two robot arms",
+      "source_ids": [
+        "bagel-code"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "0f2841203c8e520e530f77153ffee476bb258113"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "bagel-robodojo-suite-results",
+      "path": "data/visualizations/2026-11-23/bagel-robodojo-suite-results-en.svg",
+      "type": "process_flow",
+      "caption": "Moving two robot arms",
+      "source_ids": [
+        "bagel-code"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "0f2841203c8e520e530f77153ffee476bb258113"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "bagel-robodojo-suite-results",
+      "path": "data/visualizations/2026-11-23/bagel-robodojo-suite-results-ja.svg",
+      "type": "process_flow",
+      "caption": "両腕を動かす計画の立て方",
+      "source_ids": [
+        "bagel-code"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "4988595b8e12fe942bb0ff2d9c9346b06d8a343f"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "bagel-robodojo-suite-results",
+      "path": "data/visualizations/2026-11-23/bagel-robodojo-suite-results-ja.svg",
+      "type": "process_flow",
+      "caption": "両腕を動かす計画の立て方",
+      "source_ids": [
+        "bagel-code"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "4988595b8e12fe942bb0ff2d9c9346b06d8a343f"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "ucsd-two-stage-pneumatic-hexapod",
+      "path": "data/visualizations/2026-11-23/ucsd-two-stage-pneumatic-hexapod-ru.svg",
+      "type": "process_flow",
+      "caption": "Как воздух двигает ноги",
+      "source_ids": [
+        "ucsd"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "1d8cc6e12d480f8c04d26cf94200f047b0f1796d"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "ucsd-two-stage-pneumatic-hexapod",
+      "path": "data/visualizations/2026-11-23/ucsd-two-stage-pneumatic-hexapod-ru.svg",
+      "type": "process_flow",
+      "caption": "Как воздух двигает ноги",
+      "source_ids": [
+        "ucsd"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "1d8cc6e12d480f8c04d26cf94200f047b0f1796d"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "ucsd-two-stage-pneumatic-hexapod",
+      "path": "data/visualizations/2026-11-23/ucsd-two-stage-pneumatic-hexapod-ru.svg",
+      "type": "process_flow",
+      "caption": "Как воздух двигает ноги",
+      "source_ids": [
+        "ucsd"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "1d8cc6e12d480f8c04d26cf94200f047b0f1796d"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "ucsd-two-stage-pneumatic-hexapod",
+      "path": "data/visualizations/2026-11-23/ucsd-two-stage-pneumatic-hexapod-en.svg",
+      "type": "process_flow",
+      "caption": "Two jobs for compressed air",
+      "source_ids": [
+        "ucsd"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "dbec6a215dc9dbc3f2813b6df0e5d1d84ee2c016"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "ucsd-two-stage-pneumatic-hexapod",
+      "path": "data/visualizations/2026-11-23/ucsd-two-stage-pneumatic-hexapod-en.svg",
+      "type": "process_flow",
+      "caption": "Two jobs for compressed air",
+      "source_ids": [
+        "ucsd"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "dbec6a215dc9dbc3f2813b6df0e5d1d84ee2c016"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "children",
+      "language": "en",
+      "news_id": "ucsd-two-stage-pneumatic-hexapod",
+      "path": "data/visualizations/2026-11-23/ucsd-two-stage-pneumatic-hexapod-en.svg",
+      "type": "process_flow",
+      "caption": "Two jobs for compressed air",
+      "source_ids": [
+        "ucsd"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "dbec6a215dc9dbc3f2813b6df0e5d1d84ee2c016"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "ucsd-two-stage-pneumatic-hexapod",
+      "path": "data/visualizations/2026-11-23/ucsd-two-stage-pneumatic-hexapod-ja.svg",
+      "type": "process_flow",
+      "caption": "空気が二つの仕事をする",
+      "source_ids": [
+        "ucsd"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "dc6c4b78f48205b308b0da458f3a6529557c1481"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "ucsd-two-stage-pneumatic-hexapod",
+      "path": "data/visualizations/2026-11-23/ucsd-two-stage-pneumatic-hexapod-ja.svg",
+      "type": "process_flow",
+      "caption": "空気が二つの仕事をする",
+      "source_ids": [
+        "ucsd"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "dc6c4b78f48205b308b0da458f3a6529557c1481"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "ucsd-two-stage-pneumatic-hexapod",
+      "path": "data/visualizations/2026-11-23/ucsd-two-stage-pneumatic-hexapod-ja.svg",
+      "type": "process_flow",
+      "caption": "空気が二つの仕事をする",
+      "source_ids": [
+        "ucsd"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "dc6c4b78f48205b308b0da458f3a6529557c1481"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "shinshiro-pharmacy-drone-routes",
+      "path": "data/visualizations/2026-11-23/shinshiro-pharmacy-drone-routes-ru.svg",
+      "type": "comparison_matrix",
+      "caption": "Два маршрута дрона",
+      "source_ids": [
+        "aeronext"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "bd513cb005c6e167852d3233cf22f4d95e2f92ff"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "shinshiro-pharmacy-drone-routes",
+      "path": "data/visualizations/2026-11-23/shinshiro-pharmacy-drone-routes-ru.svg",
+      "type": "comparison_matrix",
+      "caption": "Два маршрута дрона",
+      "source_ids": [
+        "aeronext"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "bd513cb005c6e167852d3233cf22f4d95e2f92ff"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "shinshiro-pharmacy-drone-routes",
+      "path": "data/visualizations/2026-11-23/shinshiro-pharmacy-drone-routes-ru.svg",
+      "type": "comparison_matrix",
+      "caption": "Два маршрута дрона",
+      "source_ids": [
+        "aeronext"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "bd513cb005c6e167852d3233cf22f4d95e2f92ff"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "shinshiro-pharmacy-drone-routes",
+      "path": "data/visualizations/2026-11-23/shinshiro-pharmacy-drone-routes-ru.svg",
+      "type": "comparison_matrix",
+      "caption": "Два маршрута дрона",
+      "source_ids": [
+        "aeronext"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "bd513cb005c6e167852d3233cf22f4d95e2f92ff"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "shinshiro-pharmacy-drone-routes",
+      "path": "data/visualizations/2026-11-23/shinshiro-pharmacy-drone-routes-en.svg",
+      "type": "comparison_matrix",
+      "caption": "Where the drone collects medicine",
+      "source_ids": [
+        "aeronext"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "58309a1bdb54164b088784aada86e602e6ffffed"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "business",
+      "language": "en",
+      "news_id": "shinshiro-pharmacy-drone-routes",
+      "path": "data/visualizations/2026-11-23/shinshiro-pharmacy-drone-routes-en.svg",
+      "type": "comparison_matrix",
+      "caption": "Where the drone collects medicine",
+      "source_ids": [
+        "aeronext"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "58309a1bdb54164b088784aada86e602e6ffffed"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "shinshiro-pharmacy-drone-routes",
+      "path": "data/visualizations/2026-11-23/shinshiro-pharmacy-drone-routes-en.svg",
+      "type": "comparison_matrix",
+      "caption": "Where the drone collects medicine",
+      "source_ids": [
+        "aeronext"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "58309a1bdb54164b088784aada86e602e6ffffed"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "children",
+      "language": "en",
+      "news_id": "shinshiro-pharmacy-drone-routes",
+      "path": "data/visualizations/2026-11-23/shinshiro-pharmacy-drone-routes-en.svg",
+      "type": "comparison_matrix",
+      "caption": "Where the drone collects medicine",
+      "source_ids": [
+        "aeronext"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "58309a1bdb54164b088784aada86e602e6ffffed"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "shinshiro-pharmacy-drone-routes",
+      "path": "data/visualizations/2026-11-23/shinshiro-pharmacy-drone-routes-ja.svg",
+      "type": "comparison_matrix",
+      "caption": "ドローンはどこで薬を積む？",
+      "source_ids": [
+        "aeronext"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "0e50da2a64dce46dccfd21e352356125f60ada1a"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "shinshiro-pharmacy-drone-routes",
+      "path": "data/visualizations/2026-11-23/shinshiro-pharmacy-drone-routes-ja.svg",
+      "type": "comparison_matrix",
+      "caption": "ドローンはどこで薬を積む？",
+      "source_ids": [
+        "aeronext"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "0e50da2a64dce46dccfd21e352356125f60ada1a"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "shinshiro-pharmacy-drone-routes",
+      "path": "data/visualizations/2026-11-23/shinshiro-pharmacy-drone-routes-ja.svg",
+      "type": "comparison_matrix",
+      "caption": "ドローンはどこで薬を積む？",
+      "source_ids": [
+        "aeronext"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "0e50da2a64dce46dccfd21e352356125f60ada1a"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "shinshiro-pharmacy-drone-routes",
+      "path": "data/visualizations/2026-11-23/shinshiro-pharmacy-drone-routes-ja.svg",
+      "type": "comparison_matrix",
+      "caption": "ドローンはどこで薬を積む？",
+      "source_ids": [
+        "aeronext"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "0e50da2a64dce46dccfd21e352356125f60ada1a"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "space-data-kasumigaseki-warehouse-design",
+      "path": "data/visualizations/2026-11-23/space-data-kasumigaseki-warehouse-design-ru.svg",
+      "type": "comparison_matrix",
+      "caption": "Три складские площадки",
+      "source_ids": [
+        "space-data"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "94e16642bc6557a07a6c3368a6fb33b2a2e71dac"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "space-data-kasumigaseki-warehouse-design",
+      "path": "data/visualizations/2026-11-23/space-data-kasumigaseki-warehouse-design-ru.svg",
+      "type": "comparison_matrix",
+      "caption": "Три складские площадки",
+      "source_ids": [
+        "space-data"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "94e16642bc6557a07a6c3368a6fb33b2a2e71dac"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "space-data-kasumigaseki-warehouse-design",
+      "path": "data/visualizations/2026-11-23/space-data-kasumigaseki-warehouse-design-en.svg",
+      "type": "comparison_matrix",
+      "caption": "Three sites under consideration",
+      "source_ids": [
+        "space-data"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "c7c2de6b0faf7dc4fe7f5fc1020bcaec8fddc548"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "business",
+      "language": "en",
+      "news_id": "space-data-kasumigaseki-warehouse-design",
+      "path": "data/visualizations/2026-11-23/space-data-kasumigaseki-warehouse-design-en.svg",
+      "type": "comparison_matrix",
+      "caption": "Three sites under consideration",
+      "source_ids": [
+        "space-data"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "c7c2de6b0faf7dc4fe7f5fc1020bcaec8fddc548"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "space-data-kasumigaseki-warehouse-design",
+      "path": "data/visualizations/2026-11-23/space-data-kasumigaseki-warehouse-design-ja.svg",
+      "type": "comparison_matrix",
+      "caption": "検討対象の物流施設は三拠点",
+      "source_ids": [
+        "space-data"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "94eeb45cab2a782697be627fb05a20837be21aea"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "space-data-kasumigaseki-warehouse-design",
+      "path": "data/visualizations/2026-11-23/space-data-kasumigaseki-warehouse-design-ja.svg",
+      "type": "comparison_matrix",
+      "caption": "検討対象の物流施設は三拠点",
+      "source_ids": [
+        "space-data"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "94eeb45cab2a782697be627fb05a20837be21aea"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "kashii-parcel-intercom-lift-trial",
+      "path": "data/visualizations/2026-11-23/kashii-parcel-intercom-lift-trial-ru.svg",
+      "type": "process_flow",
+      "caption": "Путь посылки до квартиры",
+      "source_ids": [
+        "ur-kashii",
+        "world-supply"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "0332df2e255e15f800e7c5bc908b1f6236ae6585"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "kashii-parcel-intercom-lift-trial",
+      "path": "data/visualizations/2026-11-23/kashii-parcel-intercom-lift-trial-ru.svg",
+      "type": "process_flow",
+      "caption": "Путь посылки до квартиры",
+      "source_ids": [
+        "ur-kashii",
+        "world-supply"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "0332df2e255e15f800e7c5bc908b1f6236ae6585"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "kashii-parcel-intercom-lift-trial",
+      "path": "data/visualizations/2026-11-23/kashii-parcel-intercom-lift-trial-en.svg",
+      "type": "process_flow",
+      "caption": "A parcel’s route to the door",
+      "source_ids": [
+        "ur-kashii",
+        "world-supply"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "5679ac745cf8809074076a64c994aaa9197ca7dc"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "children",
+      "language": "en",
+      "news_id": "kashii-parcel-intercom-lift-trial",
+      "path": "data/visualizations/2026-11-23/kashii-parcel-intercom-lift-trial-en.svg",
+      "type": "process_flow",
+      "caption": "A parcel’s route to the door",
+      "source_ids": [
+        "ur-kashii",
+        "world-supply"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "5679ac745cf8809074076a64c994aaa9197ca7dc"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "kashii-parcel-intercom-lift-trial",
+      "path": "data/visualizations/2026-11-23/kashii-parcel-intercom-lift-trial-ja.svg",
+      "type": "process_flow",
+      "caption": "荷物はどうやって部屋まで行く？",
+      "source_ids": [
+        "ur-kashii",
+        "world-supply"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "e475d5a46a2a87b7a1539ae507ecca576e7ecde1"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "kashii-parcel-intercom-lift-trial",
+      "path": "data/visualizations/2026-11-23/kashii-parcel-intercom-lift-trial-ja.svg",
+      "type": "process_flow",
+      "caption": "荷物はどうやって部屋まで行く？",
+      "source_ids": [
+        "ur-kashii",
+        "world-supply"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px.",
+      "blob_sha": "e475d5a46a2a87b7a1539ae507ecca576e7ecde1"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "arrive-ai-pro-forma-nasdaq-equity",
+      "path": "data/visualizations/2026-11-23/arrive-ai-pro-forma-nasdaq-equity-ru.svg",
+      "type": "bar_chart",
+      "caption": "Капитал Arrive AI",
+      "source_ids": [
+        "arrive-sec",
+        "arrive-ir"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px. Bar lengths measured on a common 0–8 million USD scale.",
+      "blob_sha": "6cb59d31b747d0a423644bf34cae7292260301b4"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "business",
+      "language": "en",
+      "news_id": "arrive-ai-pro-forma-nasdaq-equity",
+      "path": "data/visualizations/2026-11-23/arrive-ai-pro-forma-nasdaq-equity-en.svg",
+      "type": "bar_chart",
+      "caption": "Arrive AI’s stockholders’ equity",
+      "source_ids": [
+        "arrive-sec",
+        "arrive-ir"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px. Bar lengths measured on a common 0–8 million USD scale.",
+      "blob_sha": "f6e36e17c26f1e0a76e6edd2228defa98f7ba9da"
+    },
+    {
+      "issue_date": "2026-11-23",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "arrive-ai-pro-forma-nasdaq-equity",
+      "path": "data/visualizations/2026-11-23/arrive-ai-pro-forma-nasdaq-equity-ja.svg",
+      "type": "bar_chart",
+      "caption": "Arrive AIの株主資本",
+      "source_ids": [
+        "arrive-sec",
+        "arrive-ir"
+      ],
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "Python lxml with recover=False before render and again on exact GitHub readback",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 vector render and painted bounds for text, rectangles and paths at 360, 390 and 768 CSS px; Noto font usage verified in render; visual review at 360 CSS px. Bar lengths measured on a common 0–8 million USD scale.",
+      "blob_sha": "06a9464d110204e1afb30f23065012331dc4f605"
+    }
+  ]
+}
