@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" lang="en" role="img" aria-labelledby="title desc" font-family="Noto Sans, Arial, sans-serif" height="462" viewBox="0 0 360 462">
+  <title id="title">Two jobs for compressed air</title>
+  <desc id="desc">Soft six-legged robot · UC San Diego / Air comes in through a hose — The supply is outside the robot / Small chambers — High-pressure air moves the valves / Large chambers — The same air, now at lower — pressure, moves the legs / Top speed in the test: 4.72 m/s.</desc>
+  <rect id="paper" x="0" y="0" width="360" height="462" fill="#F7F4ED" data-role="background"/>
+  <rect id="rule" x="20" y="16" width="52" height="4" fill="#0D615D"/>
+  <text id="head0" x="20" y="47" font-size="23" fill="#18283A" font-weight="700">Two jobs for compressed air</text>
+  <text id="subtitle" x="20" y="77" font-size="15" fill="#425468" font-weight="400">Soft six-legged robot · UC San Diego</text>
+  <rect id="panel0" x="20" y="106" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k0" x="32" y="132" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel0">01</text>
+  <text id="label0" x="64" y="132" font-size="17" fill="#18283A" font-weight="700" data-panel="panel0">Air comes in through a hose</text>
+  <text id="row0-0" x="32" y="160" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">The supply is outside the robot</text>
+  <path id="arrow0" d="M179 185 H181 V193 H185 L180 200 L175 193 H179 Z" fill="#0D615D"/>
+  <rect id="panel1" x="20" y="205" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k1" x="32" y="231" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel1">02</text>
+  <text id="label1" x="64" y="231" font-size="17" fill="#18283A" font-weight="700" data-panel="panel1">Small chambers</text>
+  <text id="row1-0" x="32" y="259" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">High-pressure air moves the valves</text>
+  <path id="arrow1" d="M179 284 H181 V292 H185 L180 299 L175 292 H179 Z" fill="#0D615D"/>
+  <rect id="panel2" x="20" y="304" width="320" height="98" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k2" x="32" y="330" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel2">03</text>
+  <text id="label2" x="64" y="330" font-size="17" fill="#18283A" font-weight="700" data-panel="panel2">Large chambers</text>
+  <text id="row2-0" x="32" y="358" font-size="16" fill="#18283A" font-weight="400" data-panel="panel2">The same air, now at lower</text>
+  <text id="row2-1" x="32" y="381" font-size="16" fill="#18283A" font-weight="400" data-panel="panel2">pressure, moves the legs</text>
+  <text id="note0" x="20" y="440" font-size="15" fill="#425468" font-weight="400">Top speed in the test: 4.72 m/s.</text>
+</svg>
