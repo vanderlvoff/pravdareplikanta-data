@@ -1,22 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="360" lang="ja" role="img" aria-labelledby="title desc" font-family="Noto Sans CJK JP, sans-serif" height="417" viewBox="0 0 360 417">
-  <title id="title">検討対象の物流施設は三拠点</title>
-  <desc id="desc">スペースデータと霞ヶ関キャピタル / 厚木 · 2029年春 — 常温の自動倉庫を計画 / 袋井 · 2030年春 — 冷凍の自動倉庫を計画 / 坂戸 · 既存の物流施設 — 設備と運用システムの連携を検討 / 厚木と袋井の日付は建物の完成予定。</desc>
-  <rect id="paper" x="0" y="0" width="360" height="417" fill="#F7F4ED" data-role="background"/>
-  <rect id="rule" x="20" y="16" width="52" height="4" fill="#0D615D"/>
-  <text id="head0" x="20" y="47" font-size="23" fill="#18283A" font-weight="700">検討対象の物流施設は三拠点</text>
-  <text id="subtitle" x="20" y="77" font-size="15" fill="#425468" font-weight="400">スペースデータと霞ヶ関キャピタル</text>
-  <rect id="panel0" x="20" y="106" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
-  <text id="k0" x="32" y="132" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel0">01</text>
-  <text id="label0" x="64" y="132" font-size="17" fill="#18283A" font-weight="700" data-panel="panel0">厚木 · 2029年春</text>
-  <text id="row0-0" x="32" y="160" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">常温の自動倉庫を計画</text>
-  <rect id="panel1" x="20" y="194" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
-  <text id="k1" x="32" y="220" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel1">02</text>
-  <text id="label1" x="64" y="220" font-size="17" fill="#18283A" font-weight="700" data-panel="panel1">袋井 · 2030年春</text>
-  <text id="row1-0" x="32" y="248" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">冷凍の自動倉庫を計画</text>
-  <rect id="panel2" x="20" y="282" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
-  <text id="k2" x="32" y="308" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel2">03</text>
-  <text id="label2" x="64" y="308" font-size="17" fill="#18283A" font-weight="700" data-panel="panel2">坂戸 · 既存の物流施設</text>
-  <text id="row2-0" x="32" y="336" font-size="16" fill="#18283A" font-weight="400" data-panel="panel2">設備と運用システムの連携を検討</text>
-  <text id="note0" x="20" y="395" font-size="15" fill="#425468" font-weight="400">厚木と袋井の日付は建物の完成予定。</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="396" viewBox="0 0 360 396" role="img" lang="ja" aria-labelledby="title desc" font-family="Noto Sans CJK JP, sans-serif">
+  <title id="title">倉庫の検討対象は三拠点</title>
+  <desc id="desc">スペースデータ · 霞ヶ関キャピタル / 厚木 — 常温の自動倉庫 — 2029年春 / 袋井 — 冷凍の自動倉庫 — 2030年春 / 坂戸 — 設備とシステムの連携 — 既存施設 / 厚木と袋井は建物の完成予定時期。</desc>
+  <rect id="rect1" data-zone="background" x="0" y="0" width="360" height="396" fill="#F8F5ED" rx="0"/>
+  <text id="text2" data-zone="text" x="20" y="32" fill="#15655E" font-size="14" font-weight="700" text-anchor="start">スペースデータ · 霞ヶ関キャピタル</text>
+  <text id="text3" data-zone="text" x="20" y="67" fill="#16293B" font-size="22" font-weight="700" text-anchor="start">倉庫の検討対象は三拠点</text>
+  <rect id="rect4" data-zone="background" x="20" y="98" width="58" height="60" fill="#EEDDC1" rx="3"/>
+  <path id="path5" data-zone="art" d="M30 130 L49 118 L68 130 V146 H30 Z" fill="none" stroke="#9E4A30" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="circle6" data-zone="art" cx="49" cy="110" r="4" fill="#9E4A30"/>
+  <text id="text7" data-zone="text" x="93" y="119" fill="#16293B" font-size="19" font-weight="700" text-anchor="start">厚木</text>
+  <text id="text8" data-zone="text" x="335" y="119" fill="#9E4A30" font-size="14" font-weight="700" text-anchor="end">2029年春</text>
+  <text id="text9" data-zone="text" x="93" y="145" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">常温の自動倉庫</text>
+  <path id="path10" data-zone="art" d="M20 172 H340" fill="none" stroke="#B6BEB9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="rect11" data-zone="background" x="20" y="186" width="58" height="60" fill="#D9E8EB" rx="3"/>
+  <path id="path12" data-zone="art" d="M30 218 L49 206 L68 218 V234 H30 Z" fill="none" stroke="#2E6378" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path13" data-zone="art" d="M49 218 V230 M43 224 H55 M45 220 L53 228 M53 220 L45 228" fill="none" stroke="#2E6378" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text14" data-zone="text" x="93" y="207" fill="#16293B" font-size="19" font-weight="700" text-anchor="start">袋井</text>
+  <text id="text15" data-zone="text" x="335" y="207" fill="#2E6378" font-size="14" font-weight="700" text-anchor="end">2030年春</text>
+  <text id="text16" data-zone="text" x="93" y="233" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">冷凍の自動倉庫</text>
+  <path id="path17" data-zone="art" d="M20 260 H340" fill="none" stroke="#B6BEB9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="rect18" data-zone="background" x="20" y="274" width="58" height="60" fill="#D6E6DA" rx="3"/>
+  <path id="path19" data-zone="art" d="M30 306 L49 294 L68 306 V322 H30 Z" fill="none" stroke="#15655E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="circle20" data-zone="art" cx="43" cy="314" r="3" fill="#15655E"/>
+  <circle id="circle21" data-zone="art" cx="55" cy="314" r="3" fill="#15655E"/>
+  <path id="path22" data-zone="art" d="M46 314 H52" fill="none" stroke="#15655E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text23" data-zone="text" x="93" y="295" fill="#16293B" font-size="19" font-weight="700" text-anchor="start">坂戸</text>
+  <text id="text24" data-zone="text" x="335" y="295" fill="#15655E" font-size="14" font-weight="700" text-anchor="end">既存施設</text>
+  <text id="text25" data-zone="text" x="93" y="321" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">設備とシステムの連携</text>
+  <path id="path26" data-zone="art" d="M20 348 H340" fill="none" stroke="#B6BEB9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text27" data-zone="text" x="20" y="381" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">厚木と袋井は建物の完成予定時期。</text>
 </svg>

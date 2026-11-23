@@ -1,25 +1,34 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="360" lang="en" role="img" aria-labelledby="title desc" font-family="Noto Sans, Arial, sans-serif" height="462" viewBox="0 0 360 462">
-  <title id="title">Two jobs for compressed air</title>
-  <desc id="desc">Soft six-legged robot · UC San Diego / Air comes in through a hose — The supply is outside the robot / Small chambers — High-pressure air moves the valves / Large chambers — The same air, now at lower — pressure, moves the legs / Top speed in the test: 4.72 m/s.</desc>
-  <rect id="paper" x="0" y="0" width="360" height="462" fill="#F7F4ED" data-role="background"/>
-  <rect id="rule" x="20" y="16" width="52" height="4" fill="#0D615D"/>
-  <text id="head0" x="20" y="47" font-size="23" fill="#18283A" font-weight="700">Two jobs for compressed air</text>
-  <text id="subtitle" x="20" y="77" font-size="15" fill="#425468" font-weight="400">Soft six-legged robot · UC San Diego</text>
-  <rect id="panel0" x="20" y="106" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
-  <text id="k0" x="32" y="132" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel0">01</text>
-  <text id="label0" x="64" y="132" font-size="17" fill="#18283A" font-weight="700" data-panel="panel0">Air comes in through a hose</text>
-  <text id="row0-0" x="32" y="160" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">The supply is outside the robot</text>
-  <path id="arrow0" d="M179 185 H181 V193 H185 L180 200 L175 193 H179 Z" fill="#0D615D"/>
-  <rect id="panel1" x="20" y="205" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
-  <text id="k1" x="32" y="231" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel1">02</text>
-  <text id="label1" x="64" y="231" font-size="17" fill="#18283A" font-weight="700" data-panel="panel1">Small chambers</text>
-  <text id="row1-0" x="32" y="259" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">High-pressure air moves the valves</text>
-  <path id="arrow1" d="M179 284 H181 V292 H185 L180 299 L175 292 H179 Z" fill="#0D615D"/>
-  <rect id="panel2" x="20" y="304" width="320" height="98" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
-  <text id="k2" x="32" y="330" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel2">03</text>
-  <text id="label2" x="64" y="330" font-size="17" fill="#18283A" font-weight="700" data-panel="panel2">Large chambers</text>
-  <text id="row2-0" x="32" y="358" font-size="16" fill="#18283A" font-weight="400" data-panel="panel2">The same air, now at lower</text>
-  <text id="row2-1" x="32" y="381" font-size="16" fill="#18283A" font-weight="400" data-panel="panel2">pressure, moves the legs</text>
-  <text id="note0" x="20" y="440" font-size="15" fill="#425468" font-weight="400">Top speed in the test: 4.72 m/s.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="449" viewBox="0 0 360 449" role="img" lang="en" aria-labelledby="title desc" font-family="Noto Sans, Arial, sans-serif">
+  <title id="title">How air drives six legs</title>
+  <desc id="desc">SOFT ROBOT · UC SAN DIEGO / Air supply — via hose / Valve drive — small chambers / Leg drive — large chambers / Up to 4.72 m/s — in a test with external air supply</desc>
+  <rect id="rect1" data-zone="background" x="0" y="0" width="360" height="449" fill="#F8F5ED" rx="0"/>
+  <text id="text2" data-zone="text" x="20" y="32" fill="#15655E" font-size="14" font-weight="700" text-anchor="start">SOFT ROBOT · UC SAN DIEGO</text>
+  <text id="text3" data-zone="text" x="20" y="67" fill="#16293B" font-size="22" font-weight="700" text-anchor="start">How air drives six legs</text>
+  <rect id="rect4" data-zone="background" x="20" y="99" width="320" height="193" fill="#EFE9D9" rx="9"/>
+  <path id="path5" data-zone="art" d="M26 174 H73 Q83 174 93 160 H107" fill="none" stroke="#15655E" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path6" data-zone="art" d="M97 160 Q106 124 143 122 H259 Q290 125 297 152 L310 193 Q299 222 274 224 H115 Q92 221 85 198 Z" fill="#F9F5EA" stroke="#16293B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path7" data-zone="art" d="M125 204 Q116 244 88 250 L67 275" fill="none" stroke="#6B8990" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path8" data-zone="art" d="M180 212 Q176 243 154 261 L146 278" fill="none" stroke="#6B8990" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path9" data-zone="art" d="M254 211 Q255 243 239 258 L229 277" fill="none" stroke="#6B8990" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path10" data-zone="art" d="M151 205 Q144 232 129 246 L121 268" fill="none" stroke="#16293B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path11" data-zone="art" d="M205 214 Q211 237 193 257 L185 278" fill="none" stroke="#16293B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path12" data-zone="art" d="M277 208 Q287 237 276 256 L270 275" fill="none" stroke="#16293B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="circle13" data-zone="art" cx="139" cy="164" r="21" fill="#C4E2D4" stroke="#15655E" stroke-width="2"/>
+  <circle id="circle14" data-zone="art" cx="139" cy="164" r="9" fill="#15655E"/>
+  <path id="path15" data-zone="art" d="M165 164 H211 M202 158 L210 164 L202 170" fill="none" stroke="#15655E" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="circle16" data-zone="art" cx="247" cy="164" r="29" fill="#F0C7A8" stroke="#9E4A30" stroke-width="2"/>
+  <circle id="circle17" data-zone="art" cx="247" cy="164" r="15" fill="#E6A476"/>
+  <path id="path18" data-zone="art" d="M247 197 V212 M242 208 L247 213 L252 208" fill="none" stroke="#9E4A30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path19" data-zone="art" d="M27 310 H71" fill="none" stroke="#15655E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text20" data-zone="text" x="49" y="337" fill="#16293B" font-size="14" font-weight="700" text-anchor="middle">Air supply</text>
+  <text id="text21" data-zone="text" x="49" y="358" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="middle">via hose</text>
+  <path id="path22" data-zone="art" d="M128 310 H172" fill="none" stroke="#15655E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text23" data-zone="text" x="150" y="337" fill="#16293B" font-size="14" font-weight="700" text-anchor="middle">Valve drive</text>
+  <text id="text24" data-zone="text" x="150" y="358" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="middle">small chambers</text>
+  <path id="path25" data-zone="art" d="M256 310 H300" fill="none" stroke="#9E4A30" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text26" data-zone="text" x="278" y="337" fill="#16293B" font-size="14" font-weight="700" text-anchor="middle">Leg drive</text>
+  <text id="text27" data-zone="text" x="278" y="358" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="middle">large chambers</text>
+  <text id="text28" data-zone="text" x="20" y="404" fill="#15655E" font-size="25" font-weight="700" text-anchor="start">Up to 4.72 m/s</text>
+  <text id="text29" data-zone="text" x="20" y="428" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">in a test with external air supply</text>
 </svg>

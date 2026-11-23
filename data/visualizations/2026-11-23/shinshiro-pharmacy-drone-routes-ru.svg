@@ -1,22 +1,36 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="360" lang="ru" role="img" aria-labelledby="title desc" font-family="Noto Sans, Arial, sans-serif" height="420" viewBox="0 0 360 420">
-  <title id="title">Два маршрута дрона</title>
-  <desc id="desc">Два испытательных маршрута · Синсиро / Загрузка у места взлёта — Аптека привозит коробку машиной — Дрон летит до дома престарелых / Загрузка по дороге — Дрон вылетает пустым и садится — у аптеки, где ему крепят коробку — Затем летит в дом престарелых / На обоих маршрутах коробку забирают люди.</desc>
-  <rect id="paper" x="0" y="0" width="360" height="420" fill="#F7F4ED" data-role="background"/>
-  <rect id="rule" x="20" y="16" width="52" height="4" fill="#0D615D"/>
-  <text id="head0" x="20" y="47" font-size="22" fill="#18283A" font-weight="700">Два маршрута дрона</text>
-  <text id="subtitle" x="20" y="77" font-size="15" fill="#425468" font-weight="400">Два испытательных маршрута · Синсиро</text>
-  <rect id="panel0" x="20" y="106" width="320" height="98" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
-  <text id="k0" x="32" y="132" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel0">01</text>
-  <text id="label0" x="64" y="132" font-size="17" fill="#18283A" font-weight="700" data-panel="panel0">Загрузка у места взлёта</text>
-  <text id="row0-0" x="32" y="160" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">Аптека привозит коробку машиной</text>
-  <text id="row0-1" x="32" y="183" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">Дрон летит до дома престарелых</text>
-  <rect id="panel1" x="20" y="217" width="320" height="121" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
-  <text id="k1" x="32" y="243" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel1">02</text>
-  <text id="label1" x="64" y="243" font-size="17" fill="#18283A" font-weight="700" data-panel="panel1">Загрузка по дороге</text>
-  <text id="row1-0" x="32" y="271" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">Дрон вылетает пустым и садится</text>
-  <text id="row1-1" x="32" y="294" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">у аптеки, где ему крепят коробку</text>
-  <text id="row1-2" x="32" y="317" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">Затем летит в дом престарелых</text>
-  <text id="note0" x="20" y="376" font-size="15" fill="#425468" font-weight="400">На обоих маршрутах коробку забирают</text>
-  <text id="note1" x="20" y="398" font-size="15" fill="#425468" font-weight="400">люди.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="413" viewBox="0 0 360 413" role="img" lang="ru" aria-labelledby="title desc" font-family="Noto Sans, Arial, sans-serif">
+  <title id="title">Два маршрута лекарств</title>
+  <desc id="desc">ИСПЫТАНИЯ В СИНСИРО / У места взлёта — Загрузка / По дороге — Загрузка / Аптека — Везёт коробку — на машине / Площадка — Дрон берёт груз / Площадка — Дрон летит — пустым / Аптека — Крепит коробку / Дом для пожилых — Приём коробки / Линии показывают этапы маршрута.</desc>
+  <rect id="rect1" data-zone="background" x="0" y="0" width="360" height="413" fill="#F8F5ED" rx="0"/>
+  <text id="text2" data-zone="text" x="20" y="32" fill="#15655E" font-size="14" font-weight="700" text-anchor="start">ИСПЫТАНИЯ В СИНСИРО</text>
+  <text id="text3" data-zone="text" x="20" y="67" fill="#16293B" font-size="22" font-weight="700" text-anchor="start">Два маршрута лекарств</text>
+  <text id="text4" data-zone="text" x="44" y="112" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Загрузка</text>
+  <text id="text5" data-zone="text" x="44" y="136" fill="#15655E" font-size="17" font-weight="700" text-anchor="start">У места взлёта</text>
+  <text id="text6" data-zone="text" x="205" y="112" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Загрузка</text>
+  <text id="text7" data-zone="text" x="205" y="136" fill="#9E4A30" font-size="17" font-weight="700" text-anchor="start">По дороге</text>
+  <path id="path8" data-zone="art" d="M25 155 V330" fill="none" stroke="#15655E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="circle9" data-zone="art" cx="25" cy="173" r="6" fill="#F8F5ED" stroke="#15655E" stroke-width="2.5"/>
+  <circle id="circle10" data-zone="art" cx="25" cy="248" r="6" fill="#F8F5ED" stroke="#15655E" stroke-width="2.5"/>
+  <circle id="circle11" data-zone="art" cx="25" cy="328" r="6" fill="#F8F5ED" stroke="#15655E" stroke-width="2.5"/>
+  <path id="path12" data-zone="art" d="M186 155 V330" fill="none" stroke="#9E4A30" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="circle13" data-zone="art" cx="186" cy="173" r="6" fill="#F8F5ED" stroke="#9E4A30" stroke-width="2.5"/>
+  <circle id="circle14" data-zone="art" cx="186" cy="248" r="6" fill="#F8F5ED" stroke="#9E4A30" stroke-width="2.5"/>
+  <circle id="circle15" data-zone="art" cx="186" cy="328" r="6" fill="#F8F5ED" stroke="#9E4A30" stroke-width="2.5"/>
+  <text id="text16" data-zone="text" x="44" y="178" fill="#16293B" font-size="16" font-weight="700" text-anchor="start">Аптека</text>
+  <text id="text17" data-zone="text" x="44" y="199" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Везёт коробку</text>
+  <text id="text18" data-zone="text" x="44" y="217" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">на машине</text>
+  <text id="text19" data-zone="text" x="44" y="253" fill="#16293B" font-size="16" font-weight="700" text-anchor="start">Площадка</text>
+  <text id="text20" data-zone="text" x="44" y="274" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Дрон берёт груз</text>
+  <text id="text21" data-zone="text" x="205" y="178" fill="#16293B" font-size="16" font-weight="700" text-anchor="start">Площадка</text>
+  <text id="text22" data-zone="text" x="205" y="199" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Дрон летит</text>
+  <text id="text23" data-zone="text" x="205" y="217" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">пустым</text>
+  <text id="text24" data-zone="text" x="205" y="253" fill="#16293B" font-size="16" font-weight="700" text-anchor="start">Аптека</text>
+  <text id="text25" data-zone="text" x="205" y="274" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Крепит коробку</text>
+  <text id="text26" data-zone="text" x="38" y="334" fill="#16293B" font-size="14" font-weight="700" text-anchor="start">Дом для пожилых</text>
+  <text id="text27" data-zone="text" x="38" y="356" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Приём коробки</text>
+  <text id="text28" data-zone="text" x="204" y="334" fill="#16293B" font-size="14" font-weight="700" text-anchor="start">Дом для пожилых</text>
+  <text id="text29" data-zone="text" x="204" y="356" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Приём коробки</text>
+  <path id="path30" data-zone="art" d="M20 376 H340" fill="none" stroke="#B6BEB9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text31" data-zone="text" x="20" y="400" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Линии показывают этапы маршрута.</text>
 </svg>

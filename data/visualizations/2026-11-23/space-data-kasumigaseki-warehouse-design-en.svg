@@ -1,26 +1,32 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" width="360" lang="en" role="img" aria-labelledby="title desc" font-family="Noto Sans, Arial, sans-serif" height="513" viewBox="0 0 360 513">
-  <title id="title">Three sites under consideration</title>
-  <desc id="desc">Space Data and Kasumigaseki Capital / Atsugi · spring 2029 — Planned warehouse for goods — kept at ambient temperature / Fukuroi · spring 2030 — Planned warehouse for frozen goods / Sakado · existing facility — Site for studying how equipment — and software work together / The dates refer to planned construction completion.</desc>
-  <rect id="paper" x="0" y="0" width="360" height="513" fill="#F7F4ED" data-role="background"/>
-  <rect id="rule" x="20" y="16" width="52" height="4" fill="#0D615D"/>
-  <text id="head0" x="20" y="47" font-size="23" fill="#18283A" font-weight="700">Three sites under</text>
-  <text id="head1" x="20" y="76" font-size="23" fill="#18283A" font-weight="700">consideration</text>
-  <text id="subtitle" x="20" y="106" font-size="15" fill="#425468" font-weight="400">Space Data and Kasumigaseki Capital</text>
-  <rect id="panel0" x="20" y="134" width="320" height="98" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
-  <text id="k0" x="32" y="160" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel0">01</text>
-  <text id="label0" x="64" y="160" font-size="17" fill="#18283A" font-weight="700" data-panel="panel0">Atsugi · spring 2029</text>
-  <text id="row0-0" x="32" y="188" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">Planned warehouse for goods</text>
-  <text id="row0-1" x="32" y="211" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">kept at ambient temperature</text>
-  <rect id="panel1" x="20" y="245" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
-  <text id="k1" x="32" y="271" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel1">02</text>
-  <text id="label1" x="64" y="271" font-size="17" fill="#18283A" font-weight="700" data-panel="panel1">Fukuroi · spring 2030</text>
-  <text id="row1-0" x="32" y="299" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">Planned warehouse for frozen goods</text>
-  <rect id="panel2" x="20" y="333" width="320" height="98" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
-  <text id="k2" x="32" y="359" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel2">03</text>
-  <text id="label2" x="64" y="359" font-size="17" fill="#18283A" font-weight="700" data-panel="panel2">Sakado · existing facility</text>
-  <text id="row2-0" x="32" y="387" font-size="16" fill="#18283A" font-weight="400" data-panel="panel2">Site for studying how equipment</text>
-  <text id="row2-1" x="32" y="410" font-size="16" fill="#18283A" font-weight="400" data-panel="panel2">and software work together</text>
-  <text id="note0" x="20" y="469" font-size="15" fill="#425468" font-weight="400">The dates refer to planned construction</text>
-  <text id="note1" x="20" y="491" font-size="15" fill="#425468" font-weight="400">completion.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="396" viewBox="0 0 360 396" role="img" lang="en" aria-labelledby="title desc" font-family="Noto Sans, Arial, sans-serif">
+  <title id="title">Three sites to study</title>
+  <desc id="desc">SPACE DATA · KASUMIGASEKI CAPITAL / Atsugi — Ambient-temperature goods — Spring 2029 / Fukuroi — Frozen goods — Spring 2030 / Sakado — Equipment and software links — Existing site / Target dates are for construction completion.</desc>
+  <rect id="rect1" data-zone="background" x="0" y="0" width="360" height="396" fill="#F8F5ED" rx="0"/>
+  <text id="text2" data-zone="text" x="20" y="32" fill="#15655E" font-size="14" font-weight="700" text-anchor="start">SPACE DATA · KASUMIGASEKI CAPITAL</text>
+  <text id="text3" data-zone="text" x="20" y="67" fill="#16293B" font-size="22" font-weight="700" text-anchor="start">Three sites to study</text>
+  <rect id="rect4" data-zone="background" x="20" y="98" width="58" height="60" fill="#EEDDC1" rx="3"/>
+  <path id="path5" data-zone="art" d="M30 130 L49 118 L68 130 V146 H30 Z" fill="none" stroke="#9E4A30" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="circle6" data-zone="art" cx="49" cy="110" r="4" fill="#9E4A30"/>
+  <text id="text7" data-zone="text" x="93" y="119" fill="#16293B" font-size="19" font-weight="700" text-anchor="start">Atsugi</text>
+  <text id="text8" data-zone="text" x="335" y="119" fill="#9E4A30" font-size="14" font-weight="700" text-anchor="end">Spring 2029</text>
+  <text id="text9" data-zone="text" x="93" y="145" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Ambient-temperature goods</text>
+  <path id="path10" data-zone="art" d="M20 172 H340" fill="none" stroke="#B6BEB9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="rect11" data-zone="background" x="20" y="186" width="58" height="60" fill="#D9E8EB" rx="3"/>
+  <path id="path12" data-zone="art" d="M30 218 L49 206 L68 218 V234 H30 Z" fill="none" stroke="#2E6378" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path13" data-zone="art" d="M49 218 V230 M43 224 H55 M45 220 L53 228 M53 220 L45 228" fill="none" stroke="#2E6378" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text14" data-zone="text" x="93" y="207" fill="#16293B" font-size="19" font-weight="700" text-anchor="start">Fukuroi</text>
+  <text id="text15" data-zone="text" x="335" y="207" fill="#2E6378" font-size="14" font-weight="700" text-anchor="end">Spring 2030</text>
+  <text id="text16" data-zone="text" x="93" y="233" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Frozen goods</text>
+  <path id="path17" data-zone="art" d="M20 260 H340" fill="none" stroke="#B6BEB9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="rect18" data-zone="background" x="20" y="274" width="58" height="60" fill="#D6E6DA" rx="3"/>
+  <path id="path19" data-zone="art" d="M30 306 L49 294 L68 306 V322 H30 Z" fill="none" stroke="#15655E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="circle20" data-zone="art" cx="43" cy="314" r="3" fill="#15655E"/>
+  <circle id="circle21" data-zone="art" cx="55" cy="314" r="3" fill="#15655E"/>
+  <path id="path22" data-zone="art" d="M46 314 H52" fill="none" stroke="#15655E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text23" data-zone="text" x="93" y="295" fill="#16293B" font-size="19" font-weight="700" text-anchor="start">Sakado</text>
+  <text id="text24" data-zone="text" x="335" y="295" fill="#15655E" font-size="14" font-weight="700" text-anchor="end">Existing site</text>
+  <text id="text25" data-zone="text" x="93" y="321" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Equipment and software links</text>
+  <path id="path26" data-zone="art" d="M20 348 H340" fill="none" stroke="#B6BEB9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text27" data-zone="text" x="20" y="381" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Target dates are for construction completion.</text>
 </svg>
