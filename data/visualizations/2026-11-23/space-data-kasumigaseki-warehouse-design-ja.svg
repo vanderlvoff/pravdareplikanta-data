@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" lang="ja" role="img" aria-labelledby="title desc" font-family="Noto Sans CJK JP, sans-serif" height="417" viewBox="0 0 360 417">
+  <title id="title">検討対象の物流施設は三拠点</title>
+  <desc id="desc">スペースデータと霞ヶ関キャピタル / 厚木 · 2029年春 — 常温の自動倉庫を計画 / 袋井 · 2030年春 — 冷凍の自動倉庫を計画 / 坂戸 · 既存の物流施設 — 設備と運用システムの連携を検討 / 厚木と袋井の日付は建物の完成予定。</desc>
+  <rect id="paper" x="0" y="0" width="360" height="417" fill="#F7F4ED" data-role="background"/>
+  <rect id="rule" x="20" y="16" width="52" height="4" fill="#0D615D"/>
+  <text id="head0" x="20" y="47" font-size="23" fill="#18283A" font-weight="700">検討対象の物流施設は三拠点</text>
+  <text id="subtitle" x="20" y="77" font-size="15" fill="#425468" font-weight="400">スペースデータと霞ヶ関キャピタル</text>
+  <rect id="panel0" x="20" y="106" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k0" x="32" y="132" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel0">01</text>
+  <text id="label0" x="64" y="132" font-size="17" fill="#18283A" font-weight="700" data-panel="panel0">厚木 · 2029年春</text>
+  <text id="row0-0" x="32" y="160" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">常温の自動倉庫を計画</text>
+  <rect id="panel1" x="20" y="194" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k1" x="32" y="220" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel1">02</text>
+  <text id="label1" x="64" y="220" font-size="17" fill="#18283A" font-weight="700" data-panel="panel1">袋井 · 2030年春</text>
+  <text id="row1-0" x="32" y="248" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">冷凍の自動倉庫を計画</text>
+  <rect id="panel2" x="20" y="282" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k2" x="32" y="308" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel2">03</text>
+  <text id="label2" x="64" y="308" font-size="17" fill="#18283A" font-weight="700" data-panel="panel2">坂戸 · 既存の物流施設</text>
+  <text id="row2-0" x="32" y="336" font-size="16" fill="#18283A" font-weight="400" data-panel="panel2">設備と運用システムの連携を検討</text>
+  <text id="note0" x="20" y="395" font-size="15" fill="#425468" font-weight="400">厚木と袋井の日付は建物の完成予定。</text>
+</svg>
