@@ -1,0 +1,1129 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-24",
+  "visualizations": [
+    {
+      "issue_date": "2026-11-24",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "manipscope-target-reassignment",
+      "path": "data/visualizations/2026-11-24/manipscope-target-reassignment-en.svg",
+      "type": "bar_chart",
+      "caption": "One starting layout, several commands",
+      "source_ids": [
+        "manipscope-paper"
+      ],
+      "sources": [
+        {
+          "id": "manipscope-paper",
+          "url": "https://arxiv.org/html/2611.27305v1"
+        }
+      ],
+      "article_content_sha256": "d4ee2c86baaea18c449a7e8a3c06b13537e9b9338a3313c0fe0cfa68e2cbdd49",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 3,
+        "line": 10,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "ccbac6a57feec9aa8639a8be0439eaab8e43f496"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "manipscope-target-reassignment",
+      "path": "data/visualizations/2026-11-24/manipscope-target-reassignment-en.svg",
+      "type": "bar_chart",
+      "caption": "One starting layout, several commands",
+      "source_ids": [
+        "manipscope-paper"
+      ],
+      "sources": [
+        {
+          "id": "manipscope-paper",
+          "url": "https://arxiv.org/html/2611.27305v1"
+        }
+      ],
+      "article_content_sha256": "ddb6a7731f72dfc4cb71d5ed1b3157924935150ad74d463f0f60d4395e1bd415",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 3,
+        "line": 10,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "ccbac6a57feec9aa8639a8be0439eaab8e43f496"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "manipscope-target-reassignment",
+      "path": "data/visualizations/2026-11-24/manipscope-target-reassignment-ja.svg",
+      "type": "bar_chart",
+      "caption": "同じ配置からすべての 指示に従えたか",
+      "source_ids": [
+        "manipscope-paper"
+      ],
+      "sources": [
+        {
+          "id": "manipscope-paper",
+          "url": "https://arxiv.org/html/2611.27305v1"
+        }
+      ],
+      "article_content_sha256": "e56ce763dbe9b9ce9e5aee244925e35b5e0c5a1d0083452dea5c02c281e2ebaf",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 3,
+        "line": 10,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "51927e68aa318fb824c8715353a2fb910d9f968a"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "manipscope-target-reassignment",
+      "path": "data/visualizations/2026-11-24/manipscope-target-reassignment-ja.svg",
+      "type": "bar_chart",
+      "caption": "同じ配置からすべての 指示に従えたか",
+      "source_ids": [
+        "manipscope-paper"
+      ],
+      "sources": [
+        {
+          "id": "manipscope-paper",
+          "url": "https://arxiv.org/html/2611.27305v1"
+        }
+      ],
+      "article_content_sha256": "9d4465de7d46219ecb4cb0ddd0c1b1f1e83c0587a7a01515919e8eb96eb7d587",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 3,
+        "line": 10,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "51927e68aa318fb824c8715353a2fb910d9f968a"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "manipscope-target-reassignment",
+      "path": "data/visualizations/2026-11-24/manipscope-target-reassignment-ru.svg",
+      "type": "bar_chart",
+      "caption": "Все команды для одной расстановки",
+      "source_ids": [
+        "manipscope-paper"
+      ],
+      "sources": [
+        {
+          "id": "manipscope-paper",
+          "url": "https://arxiv.org/html/2611.27305v1"
+        }
+      ],
+      "article_content_sha256": "49c723acb4062a21c7d3041014839f1fd0192354e0952f71f6f692913230522e",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 3,
+        "line": 10,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "7b61496479a85aa75f474f4df4f4114a78add101"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "manipscope-target-reassignment",
+      "path": "data/visualizations/2026-11-24/manipscope-target-reassignment-ru.svg",
+      "type": "bar_chart",
+      "caption": "Все команды для одной расстановки",
+      "source_ids": [
+        "manipscope-paper"
+      ],
+      "sources": [
+        {
+          "id": "manipscope-paper",
+          "url": "https://arxiv.org/html/2611.27305v1"
+        }
+      ],
+      "article_content_sha256": "ad14a606532709691a5e993c305d0e0c557bd0ae6866cb7c026ce5860b8d89dc",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 3,
+        "line": 10,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "7b61496479a85aa75f474f4df4f4114a78add101"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "omron-ld-orders",
+      "path": "data/visualizations/2026-11-24/omron-ld-orders-en.svg",
+      "type": "dimension_comparison",
+      "caption": "How the carriers fit in a one-metre aisle",
+      "source_ids": [
+        "omron-release"
+      ],
+      "sources": [
+        {
+          "id": "omron-release",
+          "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/"
+        }
+      ],
+      "article_content_sha256": "bb3e584ef9747a5e70c5f5f48ce36b6c62be8413607a7c64b04eea54af7c3a99",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 9,
+        "line": 7,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "b13e76b6854617107dd8e9ee097d4ac2c5f00585"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "business",
+      "language": "en",
+      "news_id": "omron-ld-orders",
+      "path": "data/visualizations/2026-11-24/omron-ld-orders-en.svg",
+      "type": "dimension_comparison",
+      "caption": "How the carriers fit in a one-metre aisle",
+      "source_ids": [
+        "omron-release"
+      ],
+      "sources": [
+        {
+          "id": "omron-release",
+          "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/"
+        }
+      ],
+      "article_content_sha256": "7ebe31b4f85486ca2491845cde1366ff12dbd64e96a69e1378d86554a592fe3f",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 9,
+        "line": 7,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "b13e76b6854617107dd8e9ee097d4ac2c5f00585"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "omron-ld-orders",
+      "path": "data/visualizations/2026-11-24/omron-ld-orders-en.svg",
+      "type": "dimension_comparison",
+      "caption": "How the carriers fit in a one-metre aisle",
+      "source_ids": [
+        "omron-release"
+      ],
+      "sources": [
+        {
+          "id": "omron-release",
+          "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/"
+        }
+      ],
+      "article_content_sha256": "82029f413d340270eb4e5c3340896aacdc7c60e5473fc02d1cba710bb19daa1c",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 9,
+        "line": 7,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "b13e76b6854617107dd8e9ee097d4ac2c5f00585"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "omron-ld-orders",
+      "path": "data/visualizations/2026-11-24/omron-ld-orders-ja.svg",
+      "type": "dimension_comparison",
+      "caption": "幅1メートルの通路を 走る搬送ロボット",
+      "source_ids": [
+        "omron-release"
+      ],
+      "sources": [
+        {
+          "id": "omron-release",
+          "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/"
+        }
+      ],
+      "article_content_sha256": "6bd676150439ee375595e7b45d881a3ff130ba22fd8337b0843232188ef8ad66",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 9,
+        "line": 7,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "0914ab0867ace020e49d97025e2fa46b4a7c8c54"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "omron-ld-orders",
+      "path": "data/visualizations/2026-11-24/omron-ld-orders-ja.svg",
+      "type": "dimension_comparison",
+      "caption": "幅1メートルの通路を 走る搬送ロボット",
+      "source_ids": [
+        "omron-release"
+      ],
+      "sources": [
+        {
+          "id": "omron-release",
+          "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/"
+        }
+      ],
+      "article_content_sha256": "8d370827ffa3b7f40c4357e4f4b2f03cba08c8ceaf274965b9c8867428eca656",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 9,
+        "line": 7,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "0914ab0867ace020e49d97025e2fa46b4a7c8c54"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "omron-ld-orders",
+      "path": "data/visualizations/2026-11-24/omron-ld-orders-ja.svg",
+      "type": "dimension_comparison",
+      "caption": "幅1メートルの通路を 走る搬送ロボット",
+      "source_ids": [
+        "omron-release"
+      ],
+      "sources": [
+        {
+          "id": "omron-release",
+          "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/"
+        }
+      ],
+      "article_content_sha256": "7fda1330c1262606e08ba456d6547d937ee99c584824d8e59c4f66a4fc2e94a1",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 9,
+        "line": 7,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "0914ab0867ace020e49d97025e2fa46b4a7c8c54"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "omron-ld-orders",
+      "path": "data/visualizations/2026-11-24/omron-ld-orders-ru.svg",
+      "type": "dimension_comparison",
+      "caption": "Два робота в метровом проходе",
+      "source_ids": [
+        "omron-release"
+      ],
+      "sources": [
+        {
+          "id": "omron-release",
+          "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/"
+        }
+      ],
+      "article_content_sha256": "dd301383323226c0223aa5273a96fa650d210990254f845026b41a963f4f806a",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 13,
+        "rect": 9,
+        "line": 7,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "d701856e5ccf8b6d3d6fc85d7f5fbe02f6011b88"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "omron-ld-orders",
+      "path": "data/visualizations/2026-11-24/omron-ld-orders-ru.svg",
+      "type": "dimension_comparison",
+      "caption": "Два робота в метровом проходе",
+      "source_ids": [
+        "omron-release"
+      ],
+      "sources": [
+        {
+          "id": "omron-release",
+          "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/"
+        }
+      ],
+      "article_content_sha256": "4f0930e085ce7be27e73908f1ca328cf10b849509984a75c1e824bf96e8a8bd5",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 13,
+        "rect": 9,
+        "line": 7,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "d701856e5ccf8b6d3d6fc85d7f5fbe02f6011b88"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "omron-ld-orders",
+      "path": "data/visualizations/2026-11-24/omron-ld-orders-ru.svg",
+      "type": "dimension_comparison",
+      "caption": "Два робота в метровом проходе",
+      "source_ids": [
+        "omron-release"
+      ],
+      "sources": [
+        {
+          "id": "omron-release",
+          "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/"
+        }
+      ],
+      "article_content_sha256": "2d66aaad7acfb094bee3d805d894a4300159ff5b9d3d2b633f03e67f1a264e54",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 13,
+        "rect": 9,
+        "line": 7,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "d701856e5ccf8b6d3d6fc85d7f5fbe02f6011b88"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "business",
+      "language": "en",
+      "news_id": "vetaion-control-cabinet-financing",
+      "path": "data/visualizations/2026-11-24/vetaion-control-cabinet-financing-en.svg",
+      "type": "illustrated_process",
+      "caption": "From circuit drawing to assembly plan",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "sources": [
+        {
+          "id": "vetaion-uvc",
+          "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future"
+        },
+        {
+          "id": "vetaion-tum",
+          "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/"
+        }
+      ],
+      "article_content_sha256": "7b4b1451d4a25e1c207da78ad6627f37f52d242a00c1c73c220aecce3c0b9aeb",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 8,
+        "line": 2,
+        "path": 10,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "873936d89a6729cf0fca0df3eafb59a3cb6da70a"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "vetaion-control-cabinet-financing",
+      "path": "data/visualizations/2026-11-24/vetaion-control-cabinet-financing-en.svg",
+      "type": "illustrated_process",
+      "caption": "From circuit drawing to assembly plan",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "sources": [
+        {
+          "id": "vetaion-uvc",
+          "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future"
+        },
+        {
+          "id": "vetaion-tum",
+          "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/"
+        }
+      ],
+      "article_content_sha256": "61f998ff9daa3d671d0adccfb60a7587449e9117b9b1b5c2dd732190c3adb500",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 8,
+        "line": 2,
+        "path": 10,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "873936d89a6729cf0fca0df3eafb59a3cb6da70a"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "children",
+      "language": "en",
+      "news_id": "vetaion-control-cabinet-financing",
+      "path": "data/visualizations/2026-11-24/vetaion-control-cabinet-financing-en.svg",
+      "type": "illustrated_process",
+      "caption": "From circuit drawing to assembly plan",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "sources": [
+        {
+          "id": "vetaion-uvc",
+          "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future"
+        },
+        {
+          "id": "vetaion-tum",
+          "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/"
+        }
+      ],
+      "article_content_sha256": "e7a20ebe31dab48bdaf9e9b66b6c5d9eb7ca18f4969b19a9f0a6e459ffcfc9c8",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 8,
+        "line": 2,
+        "path": 10,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "873936d89a6729cf0fca0df3eafb59a3cb6da70a"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "vetaion-control-cabinet-financing",
+      "path": "data/visualizations/2026-11-24/vetaion-control-cabinet-financing-ja.svg",
+      "type": "illustrated_process",
+      "caption": "電気の図面から 組み立ての計画へ",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "sources": [
+        {
+          "id": "vetaion-uvc",
+          "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future"
+        },
+        {
+          "id": "vetaion-tum",
+          "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/"
+        }
+      ],
+      "article_content_sha256": "9349b3024987e1d40a529d0deb0f36a7cb10550ac61e8b23f7e40a4f7fbec7eb",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 15,
+        "rect": 8,
+        "line": 2,
+        "path": 10,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "51886a8a6124318ae3fb2acc20519f2298374de0"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "vetaion-control-cabinet-financing",
+      "path": "data/visualizations/2026-11-24/vetaion-control-cabinet-financing-ja.svg",
+      "type": "illustrated_process",
+      "caption": "電気の図面から 組み立ての計画へ",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "sources": [
+        {
+          "id": "vetaion-uvc",
+          "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future"
+        },
+        {
+          "id": "vetaion-tum",
+          "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/"
+        }
+      ],
+      "article_content_sha256": "7ce85f91c187afa9e5421186809bd72021ce297675a3fa0364f38a41712e73e9",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 15,
+        "rect": 8,
+        "line": 2,
+        "path": 10,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "51886a8a6124318ae3fb2acc20519f2298374de0"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "vetaion-control-cabinet-financing",
+      "path": "data/visualizations/2026-11-24/vetaion-control-cabinet-financing-ja.svg",
+      "type": "illustrated_process",
+      "caption": "電気の図面から 組み立ての計画へ",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "sources": [
+        {
+          "id": "vetaion-uvc",
+          "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future"
+        },
+        {
+          "id": "vetaion-tum",
+          "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/"
+        }
+      ],
+      "article_content_sha256": "4fb858a815f1e412309eab678ef5dab6d948b3b54a9ebcad8f8b384f3375ef2a",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 15,
+        "rect": 8,
+        "line": 2,
+        "path": 10,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "51886a8a6124318ae3fb2acc20519f2298374de0"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "vetaion-control-cabinet-financing",
+      "path": "data/visualizations/2026-11-24/vetaion-control-cabinet-financing-ru.svg",
+      "type": "illustrated_process",
+      "caption": "Как схема становится планом сборки",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "sources": [
+        {
+          "id": "vetaion-uvc",
+          "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future"
+        },
+        {
+          "id": "vetaion-tum",
+          "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/"
+        }
+      ],
+      "article_content_sha256": "63b2da5db05869a4020c8dd0ad2594fceed2925a64867cb67fc9ddc85b40a336",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 8,
+        "line": 2,
+        "path": 10,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "bdceb5e4198cf75209127102fc3bb176dc9f4c6d"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "vetaion-control-cabinet-financing",
+      "path": "data/visualizations/2026-11-24/vetaion-control-cabinet-financing-ru.svg",
+      "type": "illustrated_process",
+      "caption": "Как схема становится планом сборки",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "sources": [
+        {
+          "id": "vetaion-uvc",
+          "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future"
+        },
+        {
+          "id": "vetaion-tum",
+          "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/"
+        }
+      ],
+      "article_content_sha256": "cf247a7eff0fd444bd0445a865cbccf034b90a749d51ec7e87a5a13f29a8d4a9",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 8,
+        "line": 2,
+        "path": 10,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "bdceb5e4198cf75209127102fc3bb176dc9f4c6d"
+    },
+    {
+      "issue_date": "2026-11-24",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "vetaion-control-cabinet-financing",
+      "path": "data/visualizations/2026-11-24/vetaion-control-cabinet-financing-ru.svg",
+      "type": "illustrated_process",
+      "caption": "Как схема становится планом сборки",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "sources": [
+        {
+          "id": "vetaion-uvc",
+          "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future"
+        },
+        {
+          "id": "vetaion-tum",
+          "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/"
+        }
+      ],
+      "article_content_sha256": "026885a90106e740e4b4b17357cc80658bb6f91acce30791012b8530b9128237",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 8,
+        "line": 2,
+        "path": 10,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "bdceb5e4198cf75209127102fc3bb176dc9f4c6d"
+    }
+  ]
+}
