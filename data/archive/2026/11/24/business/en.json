@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-24",
+  "issue_id": "daily-2026-11-24",
+  "edition": "business",
+  "language": "en",
+  "generated_at": "2026-11-24T06:20:56+09:00",
+  "title": "Fitting robots into a working warehouse",
+  "lead": "OMRON opened orders for two cargo carriers designed for metre-wide aisles. Warehouses with fixed racks can use the specification to select routes worth testing.",
+  "news": [
+    {
+      "id": "nvidia-huang-reinstatement",
+      "title": "Huang is back at NVIDIA as the chipmaker seeks a compliance chief",
+      "summary": "NVIDIA announced on November 23 that Jensen Huang had returned as chief executive. The company’s separate internal inquiry continues, and it has begun looking for someone to oversee compliance across the business.",
+      "details": "The board reinstated Huang as president, chief executive and director. Colette Kress remains chief financial officer.",
+      "technical_novelty": "A planned compliance chief complements the board’s national security and export control committee.",
+      "engineering_impact": "A computing supplier used by robotics teams is changing how it oversees trade compliance.",
+      "limitations": "The independent internal inquiry continues. The announcement gives no revised hardware delivery terms.",
+      "evidence_status": "NVIDIA’s announcement, its filing with the US securities regulator and Reuters confirm the leadership decision.",
+      "published_at": "2026-11-23",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "nv-board",
+        "nv-sec",
+        "nv-reuters"
+      ],
+      "time_window": "24h",
+      "body": "Jensen Huang is back at the head of NVIDIA, a major supplier of computing equipment for companies building artificial intelligence systems and robots. The board restored his roles as president, chief executive and director. Reuters reported that NVIDIA shares rose more than 30% in trading after the November 23 announcement. For customers and suppliers, the announcement settles who is currently in charge.\n\nIn its filing with the US securities regulator, NVIDIA dates the board action to November 22. The company made it public the following day, and Reuters independently reported Huang’s return. The directors voted unanimously. Colette Kress, who had been running the company on an interim basis, remains chief financial officer. Harvey Jones stays on as board chair.\n\nThe board said it had heard from senior US government officials and believes Huang’s return poses no national security risk. That is the board’s assessment. NVIDIA says it created a committee of independent directors after reports that Huang had been targeted by a foreign intelligence effort. The committee and its outside counsel will continue the inquiry. NVIDIA also began looking for a company-wide compliance chief to oversee adherence to rules. Its board has a dedicated committee supervising national security and export control.\n\nA buyer’s decision depends on getting the equipment to the right site on time and being able to support it once it is there. Those questions turn on the transaction and its terms. While the board already has a committee overseeing export controls, the search for a company-wide compliance chief has just begun. The announcement gives neither a timetable for filling that job nor new terms for customer deliveries.",
+      "image": null
+    },
+    {
+      "id": "omron-ld-orders",
+      "title": "OMRON opens orders for carriers that fit narrower warehouse aisles",
+      "summary": "OMRON Robotics began taking orders in the Americas and Europe for two indoor cargo carriers. It specifies a minimum aisle width of one metre for the series and expects shipments to start in January 2027.",
+      "details": "OMRON Robotics opened orders for two indoor carriers rated for 150 and 300 kilograms.",
+      "technical_novelty": "The carriers navigate using their surroundings without floor markers, while fleet software assigns transport jobs.",
+      "engineering_impact": "A site trial can establish how room to manoeuvre, charging and traffic in both directions affect the amount moved per shift.",
+      "limitations": "The published figures are product specifications. The company expects shipments to start in January 2027.",
+      "evidence_status": "The source is the manufacturer, whose announcement gives no throughput measurements from a customer site.",
+      "published_at": "2026-11-19",
+      "organization": "OMRON Robotics",
+      "source_ids": [
+        "omron-release"
+      ],
+      "time_window": "7d",
+      "body": "OMRON Robotics opened orders for two vehicles designed to move goods between work areas in a warehouse or factory. The rollout starts with customers in the Americas and Europe. The one-metre aisle specification gives operators a concrete number to compare with the space between existing racks. It can influence whether they examine a retrofit before budgeting for changes to the building.\n\nThe smaller LD-150 is rated to carry 150 kg and is 500 mm wide. For the LD-300 the corresponding figures are 300 kg and 580 mm. OMRON specifies operation in aisles as narrow as one metre, a series top speed of 2.1 m/s and the ability to handle a slope of up to five degrees. The vehicles estimate their position using features in their surroundings and do not require guide tape or floor markers.\n\nOMRON's FLOW Core software assigns jobs, plans routes and coordinates the movements of the fleet. The vendor says it can manage up to 100 compatible OMRON vehicles of different types. Inductive charging transfers power at a station without a plug and can take as little as 18 minutes according to the company. Orders opened in the Americas and Europe, with other regions to follow. The vendor expects shipments to begin in January 2027.\n\nThe fleet limit is a software capacity figure. For an investment decision, a buyer also needs the number of loaded trips per shift after accounting for queues, loading and time at the charger. The vendor provided no customer measurements for those inputs and gave no equipment or integration price. Its announcement can be used to screen sites and establish the expected shipping window while leaving the cost and throughput calculation open.",
+      "image": null
+    },
+    {
+      "id": "vetaion-control-cabinet-financing",
+      "title": "Vetaion raises €5.7 million to automate control cabinet assembly",
+      "summary": "Munich startup Vetaion secured early funding to develop equipment for assembling industrial control cabinets. Its software turns an electrical drawing into a spatial layout that the team intends to use for automated component placement and wiring.",
+      "details": "Munich startup Vetaion raised €5.7 million to develop equipment and software for industrial control cabinet assembly.",
+      "technical_novelty": "Its software converts two-dimensional electrical plans into a three-dimensional layout of cabinet components.",
+      "engineering_impact": "Vetaion intends to use the digital layout to develop automated component placement and wiring.",
+      "limitations": "The public announcements provide no verified measurements from customer factories.",
+      "evidence_status": "Investor UVC Partners and entrepreneurship centre UnternehmerTUM announced the funding.",
+      "published_at": "2026-11-19",
+      "organization": "Vetaion",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "time_window": "7d",
+      "body": "Munich startup Vetaion has raised funds to develop equipment for manufacturers of industrial control cabinets. A control cabinet houses electrical components that distribute power or help control a machine. Vetaion is working on both the step that converts a plan of the connections into a spatial layout and the tools that would use that layout during assembly.\n\nMunich startup Vetaion raised €5.7 million in an early funding round. UVC Partners and Visionaries Tomorrow led the round, with 2100 Ventures and Viessmann Generations Group also taking part. UVC Partners and the Munich entrepreneurship centre UnternehmerTUM announced the financing.\n\nVetaion's software uses a flat electrical drawing to produce a three-dimensional layout of the parts. A wiring diagram shows which elements are connected, while a spatial layout gives them positions inside the cabinet. The team is developing equipment intended to use that layout to mount components and connect them with wires. The funding supports work on this combination of software and machinery.\n\nFor a factory that builds cabinets in many configurations, the amount of manual work depends partly on how often an engineer or assembler has to resolve exceptions in a plan. The funding announcements give no measurements for switching between cabinet designs, wiring errors after a switch or the cost of inspecting finished units. Those inputs would affect the economics of the process. The announcement gives the total raised, without a breakdown by investor or a budget for the assembly equipment.",
+      "image": null
+    },
+    {
+      "id": "outsight-shift-azure-local",
+      "title": "Outsight offers on-site processing for tracking moving objects",
+      "summary": "Outsight announced that its object tracking software can run on Intel-based Azure Local servers. Customers can process sensor data at their own facilities with this setup, and the announcement provides no comparative cost or accuracy figures.",
+      "details": "Outsight announced that its three-dimensional tracking software runs on Intel-based servers managed through Azure Local.",
+      "technical_novelty": "The system processes sensor readings, including laser scans, into an updating representation of moving objects.",
+      "engineering_impact": "The described configuration runs on a central processor and gives customers a way to process the data on site.",
+      "limitations": "Outsight claims a delay under 50 milliseconds without the measurement conditions needed for comparison. It provides no accuracy or cost figures.",
+      "evidence_status": "Outsight reported the integration and did not include an independent test.",
+      "published_at": "2026-11-17",
+      "organization": "Outsight, Intel and Microsoft",
+      "source_ids": [
+        "outsight-shift"
+      ],
+      "time_window": "7d",
+      "body": "Outsight's Shift software tracks moving objects from sensor readings. The company announced a configuration for running it on a customer's own servers through Microsoft Azure Local, a system for managing computers installed on site. For an operator of a large building or industrial facility, the release adds a placement option: the tracking computation can take place close to the sensors.\n\nOutsight highlights lidar, a sensor that measures distances with pulses of laser light. The software uses those measurements to update the positions of objects moving through three-dimensional space. According to the company, the laser data can be combined with readings from other systems, including cameras or Wi-Fi. Outsight describes the output as anonymized and includes no independent audit of that claim.\n\nThe described setup uses an Intel Xeon 6 system-on-chip, a processor package that integrates key computing and support functions. It uses Intel AMX, on-chip hardware for speeding up matrix operations. In this configuration the tracking workload runs on the central processor without a separate graphics accelerator. Outsight claims a processing delay below 50 milliseconds without giving the conditions for that figure. The company announced a planned demonstration at Microsoft Ignite in San Francisco, which ran from November 17 to 20.\n\nComparing costs requires knowing how many servers are needed for a given site and what it takes to support them. An operator also needs to know what data leaves the site in the proposed deployment. Outsight gave no configuration cost or accuracy measurements under a stated site workload. A trial with the intended coverage and a defined measurement objective could supply the numbers the announcement leaves open.",
+      "image": null
+    },
+    {
+      "id": "robocap-workplace-video",
+      "title": "A workplace video collection expands the pool of robot training examples",
+      "summary": "Grounded Superintelligence and BitRobot described a collection of human work recorded in 11 countries. Cameras worn on the head help estimate hand positions for use in developing robot controllers.",
+      "details": "Grounded Superintelligence and BitRobot collected 10,000 hours of recordings of human work in 11 countries.",
+      "technical_novelty": "A headset with six synchronized cameras and inertial sensors supports three-dimensional estimates of head and hand movement.",
+      "engineering_impact": "The recordings provide examples of physical tasks for teams developing robot learning systems.",
+      "limitations": "The data contain no force or touch measurements. The paper does not evaluate training on a robot.",
+      "evidence_status": "The authors describe the dataset, hardware and processing in a preprint.",
+      "published_at": "2026-11-20",
+      "organization": "Grounded Superintelligence and BitRobot",
+      "source_ids": [
+        "robocap-paper"
+      ],
+      "time_window": "7d",
+      "body": "Grounded Superintelligence and BitRobot recorded people handling objects at work. For businesses looking at automation of manual tasks, the recordings could supply examples that show how workers perform a sequence of movements. The collection combines videos from viewpoints close to the worker's own with estimates of where the hands were during the task.\n\nThe 250-gram headset carries six synchronized cameras and two inertial measurement units that measure acceleration and rotation. The cameras view the wearer's hands from different angles. The processing combines the views and sensor readings to estimate head motion and three-dimensional hand positions. Each recording session has its own calibration, which lets the processing account for the positions and characteristics of the cameras.\n\nThe authors selected 10,000 hours of elapsed recording time. A minute filmed by several cameras counts as one minute. They segmented recordings from 11 countries into 1,378,462 clips with a median duration of 17.8 seconds. The authors say participants gave written consent and were compensated for taking part. Audio is excluded and faces are obscured.\n\nA buyer evaluating a specific workstation would need to determine what the robot must sense to perform the job there. If success depends on a precise amount of pressure, these images do not say how hard the worker pushed. The report sets out how the collection was made and how much it contains. It supplies no estimate of the work needed to transfer a recorded operation to a particular robotic gripper, nor a performance result for that transfer.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Aisle width as a criterion for choosing a carrier",
+    "summary": "OMRON Robotics lists widths of 500 and 580 millimetres for its new warehouse carriers. Shared software assigns trips and coordinates the vehicles' movements.",
+    "implications": "Operators can use the dimensions to shortlist routes. Estimating the cost of each trip also takes measurements of loading, waiting and charging time at the site."
+  },
+  "sources": [
+    {
+      "id": "nv-board",
+      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-sec",
+      "title": "NVIDIA Form 8-K: November 22 board action",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
+      "domain": "www.sec.gov",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-reuters",
+      "title": "Nvidia reinstates Jensen Huang as CEO, igniting tech surge",
+      "url": "https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "omron-release",
+      "title": "OMRON Robotics Announces Start of Orders for New LD Series Autonomous Mobile Robots",
+      "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/",
+      "domain": "robotics.omron.com",
+      "organization": "OMRON Robotics",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "vetaion-uvc",
+      "title": "€5.7 million for Vetaion: DeepTech startup builds the electrical infrastructure of the future",
+      "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future",
+      "domain": "www.uvcpartners.com",
+      "organization": "UVC Partners",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "vetaion-tum",
+      "title": "5,7 Mio. EUR für Vetaion: Deep-Tech-Startup baut die elektrische Infrastruktur der Zukunft auf",
+      "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/",
+      "domain": "www.unternehmertum.de",
+      "organization": "UnternehmerTUM",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "outsight-shift",
+      "title": "Outsight, Intel and Microsoft bring Dynamic World Models to the Enterprise Edge",
+      "url": "https://www.outsight.ai/insights/outsight-intel-and-microsoft-bring-dynamic-world-models-to-the-edge/",
+      "domain": "www.outsight.ai",
+      "organization": "Outsight",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "robocap-paper",
+      "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
+      "url": "https://arxiv.org/html/2611.26916v1",
+      "domain": "arxiv.org",
+      "organization": "Grounded Superintelligence and BitRobot",
+      "published_at": "2026-11-20"
+    }
+  ]
+}

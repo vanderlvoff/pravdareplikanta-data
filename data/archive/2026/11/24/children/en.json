@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-24",
+  "issue_id": "daily-2026-11-24",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-24T06:20:56+09:00",
+  "title": "Finding the right thing on the table",
+  "lead": "Researchers from China and their partners asked a robot inside a computer to move different objects. They kept everything on the same table and changed the request to see whether the arm would reach for something different.",
+  "news": [
+    {
+      "id": "omron-ld-orders",
+      "title": "How robots share a warehouse aisle",
+      "summary": "OMRON Robotics opened orders for two robots that carry loads inside buildings. They find their way using their surroundings, and a shared program hands out jobs to the machines.",
+      "details": "OMRON Robotics started taking orders for two indoor robots that carry loads.",
+      "technical_novelty": "Each carrier finds its way using its surroundings without following a line marked on the floor.",
+      "engineering_impact": "When there are several carriers, shared software assigns jobs and helps manage their traffic.",
+      "limitations": "The company expects to start shipping the robots in January 2027.",
+      "evidence_status": "The manufacturer gave the specifications. It reported no measurements from a customer's warehouse.",
+      "published_at": "2026-11-19",
+      "organization": "OMRON Robotics",
+      "source_ids": [
+        "omron-release"
+      ],
+      "time_window": "7d",
+      "body": "OMRON Robotics started taking orders for two robots that carry loads inside buildings. They can travel through a passage one metre wide, such as an aisle between racks. The robots use features around them to work out where they are, so they do not need a painted line to follow on the floor.\n\nThink of a school hallway where a few people are carrying boxes. One is picking up paper and another is returning books. If they have to use the same narrow passage, they may have to take turns. In a warehouse, a program hands out trips, plans routes and helps the robots share the available space.\n\nThe smaller carrier is rated for 150 kilograms and the larger for 300. The company expects to ship them starting in January 2027. It gave the width of the machines and the aisle they can travel through. How many boxes a warehouse can move in a day also depends on time spent charging or waiting for a passage to clear.",
+      "image": null
+    },
+    {
+      "id": "manipscope-target-reassignment",
+      "title": "What will the robot pick if you change the request?",
+      "summary": "Researchers at the University of Science and Technology of China and their partners tested a robot inside a computer. They changed the words of the request to see whether its arm would reach for a different object on the same table.",
+      "details": "The researchers changed the instruction while leaving the objects in the same places in a computer scene.",
+      "technical_novelty": "The test asks whether the program picks a different object when the words tell it to.",
+      "engineering_impact": "This can reveal a mistake before the arm carries the object anywhere.",
+      "limitations": "The test took place in a computer simulation.",
+      "evidence_status": "The researchers described the test and its results in a paper.",
+      "published_at": "2026-11-20",
+      "organization": "University of Science and Technology of China, Sharpa Robotics, Shanghai Jiao Tong University and The Chinese University of Hong Kong",
+      "source_ids": [
+        "manipscope-paper"
+      ],
+      "time_window": "7d",
+      "body": "A team at the University of Science and Technology of China and its partners put objects on a virtual table. They gave a robot different instructions about what to pick up or move. They wanted to see whether changing the words could change the robot's choice when everything in front of it looked the same.\n\nImagine asking a friend to pick up your notebook, then asking them to pick up their own. Both notebooks are in the same places. What they reach for depends on which request you make. The researchers tried something similar, putting the objects back in their starting spots before each new attempt.\n\nFor each setup, the programs had several requests to follow. Putting the programs’ results together, they followed every request in about four setups out of a hundred. In a separate set of trials, the researchers looked at the failed attempts and found that the arm often moved an object the request did not name. It's possible to move something smoothly and still have picked the wrong thing.",
+      "image": null
+    },
+    {
+      "id": "robocap-workplace-video",
+      "title": "How to film a pair of hands from different sides",
+      "summary": "Two research teams used tiny cameras worn on the head to film people using their hands at work. Videos from different sides help a program find where the hands moved and turn the recordings into examples for teaching robots.",
+      "details": "Teams from Grounded Superintelligence and BitRobot recorded people doing tasks with their hands.",
+      "technical_novelty": "Cameras worn on the head film from several viewpoints so software can work out where the hands were.",
+      "engineering_impact": "The recordings show the movements that make up a task and could become examples for teaching robots.",
+      "limitations": "The cameras did not measure how hard people pressed on objects.",
+      "evidence_status": "The teams described how they collected the recordings in a paper.",
+      "published_at": "2026-11-20",
+      "organization": "Grounded Superintelligence and BitRobot",
+      "source_ids": [
+        "robocap-paper"
+      ],
+      "time_window": "7d",
+      "body": "Two research teams gave people headsets with six small cameras to wear while working. The cameras recorded people picking up objects and doing things with them. The researchers wanted to work out where the hands moved so the recordings could serve as examples for teaching robots.\n\nAsk a friend to film you folding a towel. From one spot they might see you lift a corner, but the cloth might hide your other hand. From the other side they might see that hand as well. In the study all six cameras filmed at the same time, so a program could match their views even when a finger disappeared behind an object in one of them.\n\nThe teams collected ten thousand hours of video in eleven countries. You can see where somebody reaches, but the recordings do not measure force. If you watch someone wipe a glass, you can see where they hold the cloth. Measuring how hard they press it against the glass would take more than these videos.",
+      "image": null
+    },
+    {
+      "id": "vetaion-control-cabinet-financing",
+      "title": "How do you assemble the box that controls a machine?",
+      "summary": "Munich company Vetaion raised money to develop a tool for building electrical cabinets. Its software shows where parts could go inside the box and which ones need to be joined with wires.",
+      "details": "A company called Vetaion raised money to develop tools for building cabinets that control factory machines.",
+      "technical_novelty": "Its software turns a flat drawing into a model showing where parts fit inside the cabinet.",
+      "engineering_impact": "The team wants robots to use that layout to put parts in place and join them with wires.",
+      "limitations": "The announcement describes funding for development and gives no results from a customer's factory.",
+      "evidence_status": "An investor and a centre that supports young companies reported the funding.",
+      "published_at": "2026-11-19",
+      "organization": "Vetaion",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "time_window": "7d",
+      "body": "Vetaion, a company from Munich, raised €5.7 million to work on a machine that assembles electrical cabinets. A cabinet holds parts that help switch factory machines on and control them. The team wants its machine to place the parts and connect them with wires by following a plan.\n\nSuppose a drawing shows two parts with a line between them. You can tell they need to be connected. To put them in a real box, you also have to decide where each one goes and see if you can reach its socket. Vetaion’s software turns the flat plan into a model showing the parts inside a box.\n\nSeveral firms put money into making the system. The announcement does not say how many different cabinets the machine has managed to assemble in a factory.",
+      "image": null
+    },
+    {
+      "id": "nvidia-huang-reinstatement",
+      "title": "A chipmaker’s leader returns",
+      "summary": "NVIDIA’s board says Jensen Huang is back in charge of the company. Its chips help computers do the many calculations needed to train programs, including ones that move robots.",
+      "details": "The board announced the leader’s return on November 23.",
+      "technical_novelty": "Board members who do not run the company will continue their review.",
+      "engineering_impact": "A separate board group watches over rules about selling chips abroad.",
+      "limitations": "The review has yet to reach its conclusion.",
+      "evidence_status": "The company and Reuters confirmed the decision.",
+      "published_at": "2026-11-23",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "nv-board",
+        "nv-sec",
+        "nv-reuters"
+      ],
+      "time_window": "24h",
+      "body": "The people who make the big decisions at chipmaker NVIDIA said on November 23 that Jensen Huang was back in charge. The company makes chips that help computers do many calculations quickly. Those chips can help train a program that tells a robot how to move.\n\nThose decision-makers are called the board of directors. The board gave Huang his leadership job back and restored his seat on the board. Colette Kress had been running the company for a short time. She will continue taking care of its finances and financial reports.\n\nSome board members are still working with lawyers to find out what happened in the events they are reviewing. Another group watches over the rules for selling chips abroad. The company says the review will continue, and the board has not announced a date for the result.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "What changes when you ask for something else?",
+    "summary": "Researchers from the University of Science and Technology of China and their partners put the same objects in front of a robot inside a computer. They changed the request and watched what the arm reached for.",
+    "implications": "If the objects go back to the same spots after each try, it is easier to see whether the words changed what the arm picked. The researchers tested this on a computer."
+  },
+  "sources": [
+    {
+      "id": "omron-release",
+      "title": "OMRON Robotics Announces Start of Orders for New LD Series Autonomous Mobile Robots",
+      "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/",
+      "domain": "robotics.omron.com",
+      "organization": "OMRON Robotics",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "manipscope-paper",
+      "title": "ManipScope: A Diagnostic Benchmark for Instruction Following and Generalization in Robotic Manipulation",
+      "url": "https://arxiv.org/html/2611.27305v1",
+      "domain": "arxiv.org",
+      "organization": "Jiacheng Li et al.",
+      "published_at": "2026-11-20"
+    },
+    {
+      "id": "robocap-paper",
+      "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
+      "url": "https://arxiv.org/html/2611.26916v1",
+      "domain": "arxiv.org",
+      "organization": "Grounded Superintelligence and BitRobot",
+      "published_at": "2026-11-20"
+    },
+    {
+      "id": "vetaion-uvc",
+      "title": "€5.7 million for Vetaion: DeepTech startup builds the electrical infrastructure of the future",
+      "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future",
+      "domain": "www.uvcpartners.com",
+      "organization": "UVC Partners",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "vetaion-tum",
+      "title": "5,7 Mio. EUR für Vetaion: Deep-Tech-Startup baut die elektrische Infrastruktur der Zukunft auf",
+      "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/",
+      "domain": "www.unternehmertum.de",
+      "organization": "UnternehmerTUM",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "nv-board",
+      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-sec",
+      "title": "NVIDIA Form 8-K: November 22 board action",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
+      "domain": "www.sec.gov",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-reuters",
+      "title": "Nvidia reinstates Jensen Huang as CEO, igniting tech surge",
+      "url": "https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-23"
+    }
+  ]
+}

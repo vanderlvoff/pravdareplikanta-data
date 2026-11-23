@@ -2,213 +2,177 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-23",
-  "issue_id": "daily-2026-11-23",
+  "issue_date": "2026-11-24",
+  "issue_id": "daily-2026-11-24",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-22T21:16:24+00:00",
-  "title": "The drone flies in empty and leaves with medicine",
-  "lead": "A team in Shinshiro, Japan, tested how a pharmacy could hand a box of medicine to a drone. The aircraft landed near the pharmacy, staff loaded the box and the drone flew on to a nursing home.",
+  "generated_at": "2026-11-24T06:20:56+09:00",
+  "title": "Finding the right thing on the table",
+  "lead": "Researchers from China and their partners asked a robot inside a computer to move different objects. They kept everything on the same table and changed the request to see whether the arm would reach for something different.",
   "news": [
     {
-      "id": "shinshiro-pharmacy-drone-routes",
-      "title": "A drone stops at a pharmacy to pick up medicine",
-      "summary": "Local authorities and companies in Shinshiro, Japan, tested ways to fly medicine to people who needed it. On one route the drone first landed near a pharmacy to collect a box and then flew on to a nursing home.",
-      "details": "On one route the drone picked up its box along the way.",
-      "technical_novelty": "Pharmacy staff loaded the box and nursing home staff picked it up at the other end.",
-      "engineering_impact": "In another flight the drone covered about eight kilometers in 12 minutes from the hub to the recipient.",
-      "limitations": "The 12 minutes are for one leg of the flight.",
-      "evidence_status": "The people who ran the trial published the results.",
+      "id": "omron-ld-orders",
+      "title": "How robots share a warehouse aisle",
+      "summary": "OMRON Robotics opened orders for two robots that carry loads inside buildings. They find their way using their surroundings, and a shared program hands out jobs to the machines.",
+      "details": "OMRON Robotics started taking orders for two indoor robots that carry loads.",
+      "technical_novelty": "Each carrier finds its way using its surroundings without following a line marked on the floor.",
+      "engineering_impact": "When there are several carriers, shared software assigns jobs and helps manage their traffic.",
+      "limitations": "The company expects to start shipping the robots in January 2027.",
+      "evidence_status": "The manufacturer gave the specifications. It reported no measurements from a customer's warehouse.",
+      "published_at": "2026-11-19",
+      "organization": "OMRON Robotics",
+      "source_ids": [
+        "omron-release"
+      ],
+      "time_window": "7d",
+      "body": "OMRON Robotics started taking orders for two robots that carry loads inside buildings. They can travel through a passage one metre wide, such as an aisle between racks. The robots use features around them to work out where they are, so they do not need a painted line to follow on the floor.\n\nThink of a school hallway where a few people are carrying boxes. One is picking up paper and another is returning books. If they have to use the same narrow passage, they may have to take turns. In a warehouse, a program hands out trips, plans routes and helps the robots share the available space.\n\nThe smaller carrier is rated for 150 kilograms and the larger for 300. The company expects to ship them starting in January 2027. It gave the width of the machines and the aisle they can travel through. How many boxes a warehouse can move in a day also depends on time spent charging or waiting for a passage to clear.",
+      "image": null
+    },
+    {
+      "id": "manipscope-target-reassignment",
+      "title": "What will the robot pick if you change the request?",
+      "summary": "Researchers at the University of Science and Technology of China and their partners tested a robot inside a computer. They changed the words of the request to see whether its arm would reach for a different object on the same table.",
+      "details": "The researchers changed the instruction while leaving the objects in the same places in a computer scene.",
+      "technical_novelty": "The test asks whether the program picks a different object when the words tell it to.",
+      "engineering_impact": "This can reveal a mistake before the arm carries the object anywhere.",
+      "limitations": "The test took place in a computer simulation.",
+      "evidence_status": "The researchers described the test and its results in a paper.",
       "published_at": "2026-11-20",
-      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "organization": "University of Science and Technology of China, Sharpa Robotics, Shanghai Jiao Tong University and The Chinese University of Hong Kong",
       "source_ids": [
-        "aeronext",
-        "lnews-drone"
+        "manipscope-paper"
       ],
       "time_window": "7d",
-      "body": "In Shinshiro, Japan, a team tried using a drone to get medicine to nursing homes. On one route the drone left its base empty and landed near a pharmacy. People at the pharmacy strapped on a box of medicine, and the drone lifted off again and flew to the nursing home.\n\nOn another route, a car brought the medicine from a pharmacy to the launch site. The drone took it from there to another nursing home, where staff collected the box. That flight covered about eight kilometers in about 12 minutes. People monitored the flight from another city.\n\nThe team made a box that a nurse could unlock with a registered fingerprint. The aircraft could leave the box for staff to collect. To compare the whole trip with driving, the team would also need to know how long the loading and handoff took.",
+      "body": "A team at the University of Science and Technology of China and its partners put objects on a virtual table. They gave a robot different instructions about what to pick up or move. They wanted to see whether changing the words could change the robot's choice when everything in front of it looked the same.\n\nImagine asking a friend to pick up your notebook, then asking them to pick up their own. Both notebooks are in the same places. What they reach for depends on which request you make. The researchers tried something similar, putting the objects back in their starting spots before each new attempt.\n\nFor each setup, the programs had several requests to follow. Putting the programs’ results together, they followed every request in about four setups out of a hundred. In a separate set of trials, the researchers looked at the failed attempts and found that the arm often moved an object the request did not name. It's possible to move something smoothly and still have picked the wrong thing.",
       "image": null
     },
     {
-      "id": "ucsd-two-stage-pneumatic-hexapod",
-      "title": "Six soft legs run on air",
-      "summary": "Engineers at UC San Diego printed a flexible six-legged robot that runs on compressed air. In tests it reached up to 4.72 meters per second.",
-      "details": "The team printed the body and six legs as one piece.",
-      "technical_novelty": "Air switches passages inside the body and then pushes the legs.",
-      "engineering_impact": "The robot ran over different surfaces and could move in water.",
-      "limitations": "A hose supplies air from outside the robot.",
-      "evidence_status": "The university reported tests with a physical robot.",
-      "published_at": "2026-11-18",
-      "organization": "University of California San Diego",
-      "source_ids": [
-        "ucsd",
-        "science-robotics"
-      ],
-      "time_window": "7d",
-      "body": "Engineers at UC San Diego printed a soft robot with six legs and tested how fast it could run on compressed air. Compressed air is air squeezed into less space. The robot reached up to 4.72 meters per second in the team's tests.\n\nWhen you let go of a balloon, the escaping air can push it across the room. Air can push parts inside this robot too. First it moves valves, pieces that open and close paths for the air. Then the same flow goes into other chambers and pushes the legs. The little passages were printed right into the body.\n\nThe team tried it on sand, grass and concrete. The robot could also swim and walk underwater. To keep moving it needed air through a hose. The team wants to see if a future version could use little enough air to carry its own supply in a small canister.",
-      "image": null
-    },
-    {
-      "id": "kashii-parcel-intercom-lift-trial",
-      "title": "A parcel takes the elevator to an apartment door",
-      "summary": "Four companies in Fukuoka tested a robot that could carry a parcel to an apartment door. The robot worked with the building’s intercom and elevator, and a box could be left by the door when nobody was home.",
-      "details": "The test took place in one residential building in Fukuoka.",
-      "technical_novelty": "The robot worked with the building’s intercom, door access system and elevator.",
-      "engineering_impact": "Leaving a parcel outside can save a second trip when nobody is home.",
-      "limitations": "The team did not say how many deliveries were completed.",
-      "evidence_status": "The companies that ran the test reported what they tried.",
-      "published_at": "2026-11-18",
-      "organization": "Aiphone, NETSDAR Robot Solutions, Nippon Otis Elevator and World Supply",
-      "source_ids": [
-        "world-supply",
-        "netsdar",
-        "ur-kashii"
-      ],
-      "time_window": "7d",
-      "body": "Four companies in Fukuoka tried using a robot to take a parcel right to an apartment door. They chose a building in Kashii and looked at two situations. The resident might be at home to take the parcel. If nobody is home, the box can be left outside the apartment.\n\nThe building entrance is locked. The robot has to work with the intercom, which lets visitors call the apartment, and the system that unlocks the door for deliveries. It also needs the elevator to get to the right floor with the box. The test brought all of those pieces together.\n\nThe companies had tried delivery to apartment doors the year before. This time they added the intercom and tried leaving a box when nobody answered. That could save the courier another visit. The companies described the test but did not say how many deliveries finished.",
-      "image": null
-    },
-    {
-      "id": "bagel-robodojo-suite-results",
-      "title": "Two robot arms carry one board",
-      "summary": "A Canadian team showed a robot in a computer test lifting a board with both arms and putting it across two supports. The team also published how often its program finished the different tasks in the test.",
-      "details": "The test robot got pictures from a camera on its head and one on each wrist.",
-      "technical_novelty": "The program carries out some planned moves and then checks where the arms and objects are.",
-      "engineering_impact": "The test awards points even when a robot finishes only part of a task.",
-      "limitations": "These scores come from tasks run inside a computer.",
-      "evidence_status": "The program’s creators published the test results.",
+      "id": "robocap-workplace-video",
+      "title": "How to film a pair of hands from different sides",
+      "summary": "Two research teams used tiny cameras worn on the head to film people using their hands at work. Videos from different sides help a program find where the hands moved and turn the recordings into examples for teaching robots.",
+      "details": "Teams from Grounded Superintelligence and BitRobot recorded people doing tasks with their hands.",
+      "technical_novelty": "Cameras worn on the head film from several viewpoints so software can work out where the hands were.",
+      "engineering_impact": "The recordings show the movements that make up a task and could become examples for teaching robots.",
+      "limitations": "The cameras did not measure how hard people pressed on objects.",
+      "evidence_status": "The teams described how they collected the recordings in a paper.",
       "published_at": "2026-11-20",
-      "organization": "Bagel Labs",
+      "organization": "Grounded Superintelligence and BitRobot",
       "source_ids": [
-        "bagel-code",
-        "bagel-model"
+        "robocap-paper"
       ],
       "time_window": "7d",
-      "body": "A Canadian team used a computer test to see if a robot could lift a board with both arms and set it across two supports. If one hand drops its end, the other hand cannot finish the job alone. In one run the team recorded, the two arms moved together and the board ended up where it belonged.\n\nThe robot got pictures from a camera on its head and one on each wrist. The program planned a series of moves. After the robot made some of them, the program checked the pictures again to see where the arms and board had ended up.\n\nThe test had many tasks and awarded points for steps a robot completed along the way. On that scoring system the program placed third among programs that worked without help from a second program. On average it finished about 32% of the test tasks in full. The team, Bagel Labs, calls its program Bagel-Robotics-1.",
+      "body": "Two research teams gave people headsets with six small cameras to wear while working. The cameras recorded people picking up objects and doing things with them. The researchers wanted to work out where the hands moved so the recordings could serve as examples for teaching robots.\n\nAsk a friend to film you folding a towel. From one spot they might see you lift a corner, but the cloth might hide your other hand. From the other side they might see that hand as well. In the study all six cameras filmed at the same time, so a program could match their views even when a finger disappeared behind an object in one of them.\n\nThe teams collected ten thousand hours of video in eleven countries. You can see where somebody reaches, but the recordings do not measure force. If you watch someone wipe a glass, you can see where they hold the cloth. Measuring how hard they press it against the glass would take more than these videos.",
       "image": null
     },
     {
-      "id": "nvidia-administration-interim-management-contact",
-      "title": "Who checks where computing chips go?",
-      "summary": "US officials contacted the people temporarily in charge of a chipmaker about chips shipped to China. The US treasury secretary said officials wanted to know who had been responsible for following the shipping rules.",
-      "details": "The company makes chips that help computers do a lot of calculations.",
-      "technical_novelty": "Officials want to find out who checked that the company followed rules for sending chips abroad.",
-      "engineering_impact": "The treasury secretary said shipping and payment records could help answer questions.",
-      "limitations": "Officials were still waiting for answers at the time of the interview.",
-      "evidence_status": "The secretary spoke to CBS, and Reuters also reported the contacts.",
-      "published_at": "2026-11-22",
-      "organization": "US Department of the Treasury and NVIDIA",
+      "id": "vetaion-control-cabinet-financing",
+      "title": "How do you assemble the box that controls a machine?",
+      "summary": "Munich company Vetaion raised money to develop a tool for building electrical cabinets. Its software shows where parts could go inside the box and which ones need to be joined with wires.",
+      "details": "A company called Vetaion raised money to develop tools for building cabinets that control factory machines.",
+      "technical_novelty": "Its software turns a flat drawing into a model showing where parts fit inside the cabinet.",
+      "engineering_impact": "The team wants robots to use that layout to put parts in place and join them with wires.",
+      "limitations": "The announcement describes funding for development and gives no results from a customer's factory.",
+      "evidence_status": "An investor and a centre that supports young companies reported the funding.",
+      "published_at": "2026-11-19",
+      "organization": "Vetaion",
       "source_ids": [
-        "cbs-bessent",
-        "reuters-bessent",
-        "nvidia-board"
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "time_window": "7d",
+      "body": "Vetaion, a company from Munich, raised €5.7 million to work on a machine that assembles electrical cabinets. A cabinet holds parts that help switch factory machines on and control them. The team wants its machine to place the parts and connect them with wires by following a plan.\n\nSuppose a drawing shows two parts with a line between them. You can tell they need to be connected. To put them in a real box, you also have to decide where each one goes and see if you can reach its socket. Vetaion’s software turns the flat plan into a model showing the parts inside a box.\n\nSeveral firms put money into making the system. The announcement does not say how many different cabinets the machine has managed to assemble in a factory.",
+      "image": null
+    },
+    {
+      "id": "nvidia-huang-reinstatement",
+      "title": "A chipmaker’s leader returns",
+      "summary": "NVIDIA’s board says Jensen Huang is back in charge of the company. Its chips help computers do the many calculations needed to train programs, including ones that move robots.",
+      "details": "The board announced the leader’s return on November 23.",
+      "technical_novelty": "Board members who do not run the company will continue their review.",
+      "engineering_impact": "A separate board group watches over rules about selling chips abroad.",
+      "limitations": "The review has yet to reach its conclusion.",
+      "evidence_status": "The company and Reuters confirmed the decision.",
+      "published_at": "2026-11-23",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "nv-board",
+        "nv-sec",
+        "nv-reuters"
       ],
       "time_window": "24h",
-      "body": "In a November 22 CBS interview, the US treasury secretary said the government had contacted the people temporarily running the chip company. Officials are trying to find out who checked that shipments to China followed the rules. Some of these chips help computers train programs that control robots.\n\nWhen you send a parcel, the delivery service keeps a record of where it is going. There are records about deliveries and payments when businesses sell equipment, too. The secretary said these can help officials check how a deal happened, even if people agreed on some of the details in conversation.\n\nOfficials want to find out who was responsible for following the rules at the company and whether the people running it knew about the shipments. At the time of the interview the government was still waiting for answers. The company it contacted is called NVIDIA.",
+      "body": "The people who make the big decisions at chipmaker NVIDIA said on November 23 that Jensen Huang was back in charge. The company makes chips that help computers do many calculations quickly. Those chips can help train a program that tells a robot how to move.\n\nThose decision-makers are called the board of directors. The board gave Huang his leadership job back and restored his seat on the board. Colette Kress had been running the company for a short time. She will continue taking care of its finances and financial reports.\n\nSome board members are still working with lawyers to find out what happened in the events they are reviewing. Another group watches over the rules for selling chips abroad. The company says the review will continue, and the board has not announced a date for the result.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "A drone can pick up a load on the way",
-    "summary": "On one route in Shinshiro, a drone left its base empty, collected a box of medicine at a pharmacy and flew on to a nursing home.",
-    "implications": "Comparing the whole trip with driving means timing the flight and the work on the ground, from loading the box to handing it over."
+    "title": "What changes when you ask for something else?",
+    "summary": "Researchers from the University of Science and Technology of China and their partners put the same objects in front of a robot inside a computer. They changed the request and watched what the arm reached for.",
+    "implications": "If the objects go back to the same spots after each try, it is easier to see whether the words changed what the arm picked. The researchers tested this on a computer."
   },
   "sources": [
     {
-      "id": "aeronext",
-      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
-      "published_at": "2026-11-20",
-      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
-      "domain": "aeronext.co.jp",
-      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
+      "id": "omron-release",
+      "title": "OMRON Robotics Announces Start of Orders for New LD Series Autonomous Mobile Robots",
+      "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/",
+      "domain": "robotics.omron.com",
+      "organization": "OMRON Robotics",
+      "published_at": "2026-11-19"
     },
     {
-      "id": "lnews-drone",
-      "organization": "LNEWS",
-      "published_at": "2026-11-20",
-      "url": "https://www.lnews.jp/2026/11/s1120502.html",
-      "domain": "www.lnews.jp",
-      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
+      "id": "manipscope-paper",
+      "title": "ManipScope: A Diagnostic Benchmark for Instruction Following and Generalization in Robotic Manipulation",
+      "url": "https://arxiv.org/html/2611.27305v1",
+      "domain": "arxiv.org",
+      "organization": "Jiacheng Li et al.",
+      "published_at": "2026-11-20"
     },
     {
-      "id": "ucsd",
-      "organization": "University of California San Diego",
-      "published_at": "2026-11-18",
-      "url": "https://today.ucsd.edu/story/the-fastest-soft-robot-ever-built-doesnt-need-electronics-to-function",
-      "domain": "today.ucsd.edu",
-      "title": "The Fastest Soft Robot Ever Built Doesn’t Need Electronics to Function"
+      "id": "robocap-paper",
+      "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
+      "url": "https://arxiv.org/html/2611.26916v1",
+      "domain": "arxiv.org",
+      "organization": "Grounded Superintelligence and BitRobot",
+      "published_at": "2026-11-20"
     },
     {
-      "id": "science-robotics",
-      "organization": "Science Robotics",
-      "published_at": "2026-11-18",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43050495/",
-      "domain": "pubmed.ncbi.nlm.nih.gov",
-      "title": "Printing powerful soft robots on a desktop"
+      "id": "vetaion-uvc",
+      "title": "€5.7 million for Vetaion: DeepTech startup builds the electrical infrastructure of the future",
+      "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future",
+      "domain": "www.uvcpartners.com",
+      "organization": "UVC Partners",
+      "published_at": "2026-11-19"
     },
     {
-      "id": "world-supply",
-      "organization": "World Supply",
-      "published_at": "2026-11-18",
-      "url": "https://www.kyodo.co.jp/pr/2026-11-18_4050146/",
-      "domain": "www.kyodo.co.jp",
-      "title": "先進的なまちづくりを目指す「FUKUOKA Smart EAST」における館内配送サービスの実証実験に参画"
+      "id": "vetaion-tum",
+      "title": "5,7 Mio. EUR für Vetaion: Deep-Tech-Startup baut die elektrische Infrastruktur der Zukunft auf",
+      "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/",
+      "domain": "www.unternehmertum.de",
+      "organization": "UnternehmerTUM",
+      "published_at": "2026-11-19"
     },
     {
-      "id": "netsdar",
-      "organization": "NETSDAR Robot Solutions",
-      "published_at": "2026-11-17",
-      "url": "https://prtimes.jp/main/html/rd/p/000000005.000172258.html",
-      "domain": "prtimes.jp",
-      "title": "インターホン・エレベーターと連携した配送ロボットで「置き配」まで行う館内配送の実証実験を、福岡市のUR賃貸住宅で実施"
-    },
-    {
-      "id": "ur-kashii",
-      "organization": "Urban Renaissance Agency",
-      "published_at": "2026-11-11",
-      "url": "https://www.ur-net.go.jp/news/pcbnj1000000c5sc-att/ur2026_press_1111_kyusyu.pdf",
-      "domain": "www.ur-net.go.jp",
-      "title": "物流事業者と配送ロボットの連携による集合住宅向け棟内配送サービスの実証実験を実施"
-    },
-    {
-      "id": "bagel-code",
-      "organization": "Bagel Labs",
-      "published_at": "2026-11-20",
-      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
-      "domain": "github.com",
-      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
-    },
-    {
-      "id": "bagel-model",
-      "organization": "Bagel Labs",
-      "published_at": "2026-11-18",
-      "url": "https://www.bagel.com/bagel-robotics-1",
-      "domain": "www.bagel.com",
-      "title": "Bagel-Robotics-1"
-    },
-    {
-      "id": "cbs-bessent",
-      "organization": "CBS News",
-      "published_at": "2026-11-22",
-      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
-      "domain": "www.cbsnews.com",
-      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
-    },
-    {
-      "id": "reuters-bessent",
-      "organization": "Reuters",
-      "published_at": "2026-11-22",
-      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
-      "domain": "www.reuters.com",
-      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
-    },
-    {
-      "id": "nvidia-board",
-      "organization": "NVIDIA",
-      "published_at": "2026-11-12",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "id": "nv-board",
+      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
       "domain": "nvidianews.nvidia.com",
-      "title": "NVIDIA Announces CEO Transition"
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-sec",
+      "title": "NVIDIA Form 8-K: November 22 board action",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
+      "domain": "www.sec.gov",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-reuters",
+      "title": "Nvidia reinstates Jensen Huang as CEO, igniting tech surge",
+      "url": "https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-23"
     }
   ]
 }

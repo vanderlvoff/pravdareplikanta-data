@@ -2,213 +2,177 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-23",
-  "issue_id": "daily-2026-11-23",
+  "issue_date": "2026-11-24",
+  "issue_id": "daily-2026-11-24",
   "edition": "enthusiast",
   "language": "ja",
-  "generated_at": "2026-11-22T21:16:24+00:00",
-  "title": "空気が二つの仕事をするロボット",
-  "lead": "米カリフォルニア大学サンディエゴ校の研究者は、圧縮空気でまず通り道を切り替え、同じ空気で柔らかい六本の脚を動かした。一体成形したロボットは試験で最高秒速4.72メートルに達した。",
+  "generated_at": "2026-11-24T06:20:56+09:00",
+  "title": "カメラで手の動きをどこまで記録できるか",
+  "lead": "Grounded SuperintelligenceとBitRobotは頭につけるカメラを使い、人が作業する様子を1万時間にわたって記録した。いくつかの角度から撮ると、物を扱うときの手の位置を推定しやすくなる。",
   "news": [
     {
-      "id": "ucsd-two-stage-pneumatic-hexapod",
-      "title": "柔らかいロボットが蒸気機関から借りた工夫",
-      "summary": "米カリフォルニア大学サンディエゴ校の研究者が、圧縮空気で走る六脚ロボットを一体成形した。一つの空気の流れに二つの仕事を順にさせて、最高秒速4.72メートルに達した。",
-      "details": "圧縮空気で動く脚と仕組みを、一種類の柔らかい材料でまとめて作った。",
-      "technical_novelty": "空気をまず弁に、次に脚に使う順番は、蒸気機関の仕組みを参考にした。",
-      "engineering_impact": "複数の地面に加え、水面と水中でも動作を試した。",
-      "limitations": "機体はホースで圧縮空気の供給源とつながっている。",
-      "evidence_status": "研究者と大学が実機の試験結果を説明した。",
-      "published_at": "2026-11-18",
-      "organization": "University of California San Diego",
-      "source_ids": [
-        "ucsd",
-        "science-robotics"
-      ],
-      "time_window": "7d",
-      "body": "米カリフォルニア大学サンディエゴ校の研究者は、圧縮した空気で脚を動かす柔らかいロボットを作り、どこまで速く走れるかを調べた。六本脚の新型は最高秒速4.72メートルまで達した。本体は3Dプリンターで一体成形され、水道管が建物の中で水を運ぶように、体の中の通り道が空気を必要な場所へ運ぶ。\n\n本体の内部には、空気を流す管と、空気の通り道を切り替える弁、空気が膨らむ部屋がつながっている。研究者は構造を大きくして強度を上げ、従来より高い圧力と大きな流量に対応させた。蒸気を段階的に膨張させる蒸気機関の考え方を取り入れ、まず圧力の高い小さな部屋で弁を動かし、次に圧力の低い大きな部屋で脚を動かす。高圧の空気を一段階で使って外に出す場合より、空気のエネルギーを使い切りやすくする狙いだ。\n\n同じ研究チームの以前の機体は秒速4センチだった。新型は最高で秒速4.72メートルに達した。大学によると、コンクリート、砂利、芝生、木片を敷いた地面や砂の上で試し、階段を下りる動作や、水面を泳いだり水中を歩いたりする動作も確認した。機体を動かすには、外部の圧縮空気源につなぐホースが必要になる。\n\n弁とは、空気の通り道を開いたり閉じたりする部品だ。空気は小さな部屋で弁を動かした後も別の部屋で膨らみ、脚を押す力を出せる。考え方のもとになった蒸気機関にも、最初の筒で仕事をした蒸気を、次の筒でさらに膨らませて使う仕組みがあった。研究者はこの順序を、ばらばらに組み立てる部品ではなく、柔らかい本体の内部に組み込んだ。機体に空気源を持たせる案もあるが、今回走ったロボットにはホースがつながっていた。",
-      "image": null
-    },
-    {
-      "id": "bagel-robodojo-suite-results",
-      "title": "板を持ち上げたロボットに、試験では何点入る？",
-      "summary": "カナダのBagel Labsは、ロボットの両腕を動かすプログラムの試験成績を項目別に公開した。仮想環境で行うRoboDojo-Simでは、作業が途中まで進んでも得点になるため、順位と作業を完了した割合はそれぞれ別のことを示す。",
-      "details": "公開された仮想環境での試行では、二つのつかみ具で板を持ち上げ、台に載せた。",
-      "technical_novelty": "三つのカメラの映像とロボットの状態を使って動作の計画を更新する。",
-      "engineering_impact": "項目別の成績から、どの種類の作業が最後まで進みやすかったかを比べられる。",
-      "limitations": "公開された成績はコンピューター上の試験で得たものだ。",
-      "evidence_status": "Bagel Labsがコードと成績表を公開した。",
+      "id": "robocap-workplace-video",
+      "title": "手作業を六つのカメラで撮ると、何が分かるか",
+      "summary": "Grounded SuperintelligenceとBitRobotは人の手作業を、身につけるカメラで撮影した。いくつかの角度から撮ることで、手が空間のどこを通ったかを推定し、ロボットの学習に使える形で残す。",
+      "details": "Grounded SuperintelligenceとBitRobotは、11か国で人の作業を撮影し、1万時間分の記録をまとめた。",
+      "technical_novelty": "同期した6台のカメラと慣性センサーを備えたヘッドセットを使い、頭と手の動きを三次元で推定する。",
+      "engineering_impact": "物を扱うときの人の動きを、ロボット制御の学習用に検討できる。",
+      "limitations": "力や接触の測定値はなく、この論文ではロボットの学習結果を評価していない。",
+      "evidence_status": "記録の規模と装置、処理方法は、作成チームがプレプリントで報告した。",
       "published_at": "2026-11-20",
-      "organization": "Bagel Labs",
+      "organization": "Grounded Superintelligence and BitRobot",
       "source_ids": [
-        "bagel-code",
-        "bagel-model"
+        "robocap-paper"
       ],
       "time_window": "7d",
-      "body": "板を二つの台に載せる作業では、片方の腕が板の端をつかみそこねたり、下ろすときに板が台から外れたりする。カナダのBagel Labsは、こうした作業をコンピューター上のロボットで試すRoboDojo-Simで、両腕を動かすプログラムの成績を公開した。プログラムの名前はBagel-Robotics-1。公開された一回の試行では、両腕で一枚の板を持ち上げ、二つの台に載せることができた。\n\nモデルには、作業の指示文、頭部のカメラと左右の手首のカメラの映像、ロボットの現在の状態を入力する。モデルは一度に32ステップ分の動作を予測し、最初の16ステップを実行してから、改めて観測した情報をもとに次の動作を計算する。計画を立て直す時点で、腕や物の位置が前の動作からどう変わったかを反映できる。\n\n11月20日付のRoboDojo-Simの集計で、Bagel Labsのモデルは、別のソフトウェアが作業の進め方を補助する部門を除くと総合3位だった。平均は100点満点で38.65点、作業を最後まで達成した割合は平均31.91%だった。試験には初めての条件への対応や複数の手順からなる作業など五つの評価部門があり、順位を決める集計では各部門を同じ重みで扱う。途中までできた作業にも点が付く。達成方法の自由度が高い作業や、文章や画像の指示に従う作業を含む「Open」部門では、成功率が3.33%だった。\n\n途中までできた作業に点を付けておくと、新しいプログラムが何度も失敗している場合でも、目標に少しずつ近づいているのかを見比べられる。一方、板を置くところまで任せたいなら、最後までできた回数を調べる必要がある。板の映像には、左右の腕の動きがそろう場面が映っており、開発元の資料にはその一回を再現するための設定もある。どのくらいの頻度で同じようにできるかを知る手がかりは、一回の映像より多くの試行を集めた成績表にある。",
+      "body": "Grounded SuperintelligenceとBitRobotは、手で物を扱う作業の手本を集めるため、複数のカメラを載せたヘッドセットを使った。目指したのは、作業の途中で手がどこにあったかを記録することだ。物を手に取ると、一つのカメラからは指が物の陰に隠れることがある。別の角度にもカメラがあると、位置を推定する手がかりが増える。\n\n装置は重さ250グラムで、映像の時刻をそろえた6台のカメラと、加速度や回転を測る二つの慣性計測装置を載せている。カメラごとに手が違う角度から映る。処理ソフトは映像とセンサーの値を組み合わせ、頭の動きと手の位置を三次元で推定する。収録のたびにカメラの特性と互いの位置関係を確かめるので、同じ時刻の映像を対応づけられる。\n\n筆者らは11か国で撮った記録を選び、収録時間の合計を1万時間とした。複数のカメラで撮った1分間も、収録時間としては1分と数える。記録は137万8462本の短い動画に分けた。長さの中央値は17.8秒で、動画を長さ順に並べたときの中央に当たる。筆者らによると、参加者は書面で同意し、追加の報酬を受けた。データには音声を含めず、映り込んだ顔を隠す処理を施した。\n\n映像を追えば、手がどちらに動き、いつ次の物に手を伸ばしたかが分かる。例えば、紙タオルでビーカーを拭く場面では、指の位置から紙タオルの持ち方が見える。一方、ガラスに押しつけた力は記録していない。手の動きをどこまで記録できたかを示した研究であり、その記録からロボットがどの作業を覚えられるかは、この論文の実験結果には含まれない。",
       "image": null
     },
     {
-      "id": "kashii-parcel-intercom-lift-trial",
-      "title": "オートロックの集合住宅で、配達ロボットはどう部屋まで行く？",
-      "summary": "福岡市の集合住宅で、4社がロボットによる住戸前への荷物の配達を試した。インターホンや宅配時に鍵を開ける仕組み、エレベーターをロボットとつなぎ、留守のときは玄関前に荷物を置く方法も調べた。",
-      "details": "試験は11月18日、福岡市東区香椎の集合住宅3号棟で行われた。",
-      "technical_novelty": "ロボットがインターホン、配達時に鍵を開ける仕組み、エレベーターと連携する。",
-      "engineering_impact": "住人に荷物を手渡す方法と、留守のときに玄関前に置く方法を想定した。",
-      "limitations": "配達を完了できた割合は公表されていない。",
-      "evidence_status": "ワールドサプライとネットスターが実証の内容を発表した。",
-      "published_at": "2026-11-18",
-      "organization": "Aiphone, NETSDAR Robot Solutions, Nippon Otis Elevator and World Supply",
-      "source_ids": [
-        "world-supply",
-        "netsdar",
-        "ur-kashii"
-      ],
-      "time_window": "7d",
-      "body": "入口に鍵がかかったマンションで、ロボットはどうやって住人の玄関まで荷物を運ぶのか。福岡市東区香椎の集合住宅では11月18日、ネットスター、アイホン、日本オーチス・エレベータ、ワールドサプライが、ロボットで荷物を住戸前まで運ぶ試験を行った。受取人が留守でも、玄関前に荷物を置く「置き配」で配達を終えられるかも調べた。\n\n車輪で廊下を進むだけでは、入口の鍵を開けたり別の階に上がったりできない。そこでインターホンや宅配時に鍵を開ける仕組み、エレベーターとロボットをつないだ。建物を管理するUR都市機構が公表した実施イメージでは、配達員が伝票の情報をインターホンと連携させて入口を開け、ロビーで箱をロボットに預ける。そこからロボットはエレベーターに乗り、届け先の階で降りて部屋の前まで進む。\n\n留守の場合の流れも、UR都市機構が示した。ロボットが玄関前のトレーに荷物を下ろして戻る。住人は帰宅後に荷物を受け取り、インターホンからトレーの回収を指示する。留守中の配達では、荷物を下ろすところに加えて、預けたトレーを後で回収する手順も必要になる。\n\n前の年度には、ロボットが住戸の前まで運ぶ試験が行われていた。開発会社のネットスターによると、今回はインターホンとの連携と置き配を加え、配送事業者も参加した。届け先が留守でも玄関に置ければ、配達員がもう一度訪ねる手間を省ける。今回の発表では、実際に何件の荷物を再配達なしで届けられたかは示されていない。",
-      "image": null
-    },
-    {
-      "id": "shinshiro-pharmacy-drone-routes",
-      "title": "ドローンは薬をどこで受け取り、誰に渡す？",
-      "summary": "愛知県新城市で、自治体と企業が医薬品を運ぶ三つのルートを試した。一つのルートでは、空荷で出発した機体が薬局の近くに着陸し、薬を受け取ってから届け先に向かった。",
-      "details": "報道公開の便では、機体が約12分飛んで高齢者施設に箱を運んだ。",
-      "technical_novelty": "別の便では、途中で着陸した機体に薬局の職員が薬を積んだ。",
-      "engineering_impact": "複数のルートを使い、薬局や届け先の施設で必要になる仕事を調べた。",
-      "limitations": "飛行区間ごとの時間は、地上の作業を含まない。",
-      "evidence_status": "参加者が実証結果を公表し、物流専門媒体LNEWSが報じた。",
+      "id": "manipscope-target-reassignment",
+      "title": "ロボットは頼まれた物を選んだか",
+      "summary": "中国科学技術大学などの研究チームは、コンピューターの中でロボットの制御プログラムを試した。物の配置を変えずに頼み方を変え、指示を変えると取る物も変わるかを調べた。",
+      "details": "学習用の実演を用意していない48場面を評価に使った。うち10場面で、物の初期配置を固定したまま指示を変え、対象の選び方を調べた。",
+      "technical_novelty": "評価手法ManipScopeは、別の物や移動先を指示したときにロボットの制御モデルが動作を切り替えられるかを測る。",
+      "engineering_impact": "物を選ぶ段階の誤りを、選択後の動作の出来栄えと分けて検討できる。",
+      "limitations": "実験はシミュレーションで行い、実機での成績は測っていない。",
+      "evidence_status": "結果と比較用の試験は、研究チームがプレプリントで報告した。",
       "published_at": "2026-11-20",
-      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "organization": "University of Science and Technology of China, Sharpa Robotics, Shanghai Jiao Tong University and The Chinese University of Hong Kong",
       "source_ids": [
-        "aeronext",
-        "lnews-drone"
+        "manipscope-paper"
       ],
       "time_window": "7d",
-      "body": "薬を運ぶドローンには、出発地点で箱を積む方法と、途中で薬局に寄って受け取る方法がある。愛知県と新城市はエアロネクスト、グリーンサービスと両方のやり方を試し、高齢者施設への飛行を薬の用意や受け渡しにつなげられるかを調べた。11月20日には三つのルートについて結果を公表した。\n\n11月18日の報道公開では、市街地の薬局が薬を車で横川公民館の発着拠点に運んだ。会場では薬の箱を機体に載せた。主催者によると、機体は約8キロ先の特別養護老人ホームまで約12分で飛び、届けた箱を施設の職員が回収した。12分は拠点から施設までの飛行時間に当たる。\n\n別のルートでは、機体が荷物を積まずに拠点を出て薬局の近くで着陸し、薬局の職員が箱を載せた。その後、機体は別の特別養護老人ホームに薬を届けた。主催者によると、拠点から薬局までの飛行は約13分、薬局から届け先までは約5分で、この時間に拠点への帰路は含まれない。機体を運航したのは地域の医薬品配送会社グリーンサービスで、津島市の事業拠点から遠隔で運航を管理した。\n\n薬局付近に着陸するルートでは、薬局の職員が専用の箱を直接機体に取り付けた。受け取る人にも役割がある。薬のために作った箱は、登録した看護師が指紋で鍵を開ける仕組みだ。機体が箱を置いていった後でも、薬を取り出す人をあらかじめ決めておける。公表した数字から飛行区間ごとの時間は分かるが、職員が機体のところに出て箱を取り付け、受け取るまでの時間は別に示されていない。",
+      "body": "中国科学技術大学などの研究チームは、コンピューターの中でロボットに物を運ばせ、同じ机を前に別の物を頼んだとき、腕が伸びる先を変えられるかを調べた。試験には、失敗しても、机に置いた物をまったく同じ位置に戻してやり直せる環境を使った。研究チームはこの試験にManipScopeという名前を付けた。\n\n検証では、ロボットが手で物を扱う課題を六つの種類に分けた。評価に用いた48場面については、正解例となる動作の記録を学習用に与えていない。対象の選び方を調べた10場面では、物の置き方をそろえた。指示だけを変えると、見た目が同じ場面で、その都度ちがう正解を選ぶ必要がある。一度だけ正しく動けた場合よりも、指示の内容が動作の選択に反映されたかどうかを確かめやすい。\n\n筆者らの集計では、学習途中や学習後に保存したモデル10版の結果をまとめると、ある配置に対するすべての指示に従えたのは、評価した千の状態のうち39、つまり3.9％だった。指示文を入力しない比較用の方式は、同じ指標で16％だった。研究チームは別の分析でモデル12版を使い、11場面、計1万3200回の試行も調べた。その分析で、失敗した試行の84.6％では、指示の対象外にある物を動かしていた。前者の割合は初期状態ごとに指示の組全体を評価したもので、後者の分母は失敗した試行の数である。\n\n物を選ぶことと、持ち上げて運ぶことは、それぞれ別の仕事だ。腕の動きが滑らかで、持ち上げた物も途中で落とさなかったとしても、手に取った物が頼まれた物と違えば指示は達成できていない。研究チームがこの種の取り違えを数えたおかげで、何回成功したかに加え、どこでつまずいたかも見えてくる。一方、実際の机でどれほど取り違えるかは、この試験では測っていない。",
       "image": null
     },
     {
-      "id": "nvidia-administration-interim-management-contact",
-      "title": "半導体の出荷をどう調べるか、米政権がエヌビディアに聞き取り",
-      "summary": "米国のベッセント財務長官はCBSの番組で、半導体を作るエヌビディアの暫定経営陣に米政権が連絡したと話した。中国向けの販売を調べる手がかりとして、出荷と支払いの記録を挙げた。",
-      "details": "政権はエヌビディア社内で誰が輸出規則を守る責任を負っていたかを調べている。",
-      "technical_novelty": "輸送の記録と支払いの記録を突き合わせると、出荷と取引の関係を調べられる。",
-      "engineering_impact": "エヌビディアなどの計算用半導体は、ロボットを動かすプログラムの学習にも使われる。",
-      "limitations": "取引の経緯や社内での担当者は確認が続いている。",
-      "evidence_status": "CBSが発言を公開し、ロイターも会社側への連絡を報じた。",
-      "published_at": "2026-11-22",
-      "organization": "US Department of the Treasury and NVIDIA",
+      "id": "omron-ld-orders",
+      "title": "狭い通路を複数のロボットで使うには",
+      "summary": "OMRON Roboticsは米州と欧州で、建物の中で荷物を運ぶロボット2機種の受注を始めた。ロボットは周りの様子をもとに位置をつかみ、管理ソフトの指示を受けてほかの車両と通路を分け合う。",
+      "details": "OMRON Roboticsは、積載量が150キログラムと300キログラムの屋内搬送ロボット2機種の受注を始めた。",
+      "technical_novelty": "床の目印に頼らず周囲を見て走り、複数台を管理するソフトウェアが搬送作業を割り振る。",
+      "engineering_impact": "通路の余裕、充電場所、すれ違いが搬送量にどう影響するかは、導入先で確かめられる。",
+      "limitations": "公表された数値は仕様値で、出荷は2027年1月に始まる見込みだ。",
+      "evidence_status": "発表はメーカーによるもので、顧客の現場における搬送量の実測値は示されていない。",
+      "published_at": "2026-11-19",
+      "organization": "OMRON Robotics",
       "source_ids": [
-        "cbs-bessent",
-        "reuters-bessent",
-        "nvidia-board"
+        "omron-release"
+      ],
+      "time_window": "7d",
+      "body": "OMRON Roboticsは、建物の中で荷物を運ぶ小型車両2機種の受注を始めた。幅1メートルの通路に対応する。ロボットは周囲の特徴を手がかりに、棚などに対して自分がどこにいるかを推定する。1台が通れる道でも、何台も行き交う場合は、どの車両をどこに向かわせるかという別の問題が生まれる。\n\n小型のLD-150は積載量150キログラム、車体幅500ミリだ。LD-300は積載量300キログラムで、幅は580ミリある。メーカーは、幅1メートルの通路を走行できると説明している。シリーズの最高速度は毎秒2.1メートルで、走行できる傾斜は最大5度としている。周囲の特徴を手がかりに自分の位置を推定するため、床に走行用のテープや目印を貼る必要はない。\n\nOMRONの管理ソフトウェアFLOW Coreは、搬送の割り当てや経路の設定、複数台が行き交う場所での調整を担う。同社によると、対応するOMRON製の機種を組み合わせ、最大100台を管理できる。充電場所では、端子を差し込まずに電力を受け取る誘導式の充電を使い、メーカーは最短18分で充電できると説明する。まず米州と欧州で受注し、対象地域は順次広げる。出荷開始は2027年1月を見込む。\n\n自分の位置を知ることは車両の仕事だ。どの車両に荷物を取りに行かせるかを決め、各車両の経路を調整するのは管理ソフトウェアの仕事になる。例えば、荷物の行き先が違っても途中で同じ通路を使うことがある。発表では、そうした場所に搬送の依頼が集中したとき、何台がどれくらい待つかは分からない。待ち時間を測ると、車両の数を増やしたときにどれほど多くの荷物が運べるかを考えやすい。",
+      "image": null
+    },
+    {
+      "id": "vetaion-control-cabinet-financing",
+      "title": "配線図を、組み立てに使える立体の配置に",
+      "summary": "ミュンヘンのVetaionは、制御盤を組み立てる技術の開発に向け、570万ユーロを調達した。平面の電気図面を立体の配置に変え、機械が部品をどこに取り付けるかを判断するために使う。",
+      "details": "ミュンヘンのVetaionは、産業用の制御盤を組み立てる装置とソフトウェアの開発に向けて、570万ユーロを調達した。",
+      "technical_novelty": "同社のソフトウェアは、平面の電気図面を基に、部品の立体的な配置を作る。",
+      "engineering_impact": "同社はその配置データを使い、部品の取り付けや配線を自動化する装置の開発を進める。",
+      "limitations": "顧客の工場で測った結果は公表資料から確認できない。",
+      "evidence_status": "投資家のUVC Partnersと起業支援機関のUnternehmerTUMが調達を発表した。",
+      "published_at": "2026-11-19",
+      "organization": "Vetaion",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "time_window": "7d",
+      "body": "ミュンヘンのVetaionは、工場で使う制御盤の組み立て方法を開発する資金を集めた。制御盤は、機械に電力を配ったり、動かすための信号を送ったりする部品を収める箱だ。同社は、部品同士のつながりを表した図面から、部品を箱のどこに付け、どうつなぐかを決めるためのデータを作ろうとしている。\n\nミュンヘンの新興企業Vetaionが、開発の初期段階で570万ユーロを調達した。UVC PartnersとVisionaries Tomorrowが主導し、2100 VenturesとViessmann Generations Groupも参加した。出資したUVC Partnersとミュンヘンの起業支援機関UnternehmerTUMが、調達の内容を発表した。\n\nVetaionのソフトウェアは、平面の電気図面から部品の立体的な配置を作る。電気図面ではどの部品をどこにつなぐかが分かり、立体の配置では部品を箱の中のどこに収めるかが分かる。同社は、この配置データを使って、部品の取り付けや電線の接続を行う装置を開発している。図面を読み取るソフトウェアと、現物を組み立てる装置の両方が開発の対象だ。\n\n二つの部品をつなぐことが図面で分かっても、工具をどちらから近づければよいかは、周りの部品の位置で変わる。立体の配置が役立つのは、つなぎ方を示す図から、工具が実際に動ける組み立て手順を考える場面だ。今回の発表では、配置の違う制御盤を装置が何種類組み立てられたかといった試験結果は示されていない。",
+      "image": null
+    },
+    {
+      "id": "nvidia-huang-reinstatement",
+      "title": "フアン氏が復帰、エヌビディアを誰が動かす？",
+      "summary": "エヌビディアは、ジェンスン・フアン氏が最高経営責任者に戻ったと発表した。ロイターも復帰を報じ、取締役会が設けた独立委員会による社内調査は続いている。",
+      "details": "取締役会はフアン氏を社長、最高経営責任者、取締役に復帰させた。コレット・クレス氏は財務責任者を続ける。",
+      "technical_novelty": "安全保障と輸出管理を監督する取締役会の委員会に加え、法令順守を統括する役職の人選を始める。",
+      "engineering_impact": "ロボットの開発にも使われる計算機器の供給元が、輸出管理の監督体制を整え直している。",
+      "limitations": "社内の独立調査は継続中で、機器の納入条件の変更は発表されていない。",
+      "evidence_status": "会社発表、米証券規制当局への提出書類、ロイターの報道で経営トップの復帰を確認した。",
+      "published_at": "2026-11-23",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "nv-board",
+        "nv-sec",
+        "nv-reuters"
       ],
       "time_window": "24h",
-      "body": "米国のベッセント財務長官は11月22日のCBSの番組で、米政権がエヌビディアの暫定経営陣に連絡したと話した。エヌビディアは大量の計算を効率よくこなす半導体を作る。例えばロボットを動かすプログラムが多数の見本から学ぶ際に使われる。米政権はこの半導体の中国向けの出荷を巡り、社内で誰が輸出規則の順守を担当していたかをたずねている。\n\nベッセント氏は、政権がエヌビディアの暫定経営陣、取締役、弁護士と連絡を取ったと話した。取材の時点で、政権が求める回答はまだ得られていないという。確認したい点として、輸出規則を守る責任を誰が負っていたかと、調査の対象になっている出荷について社内のどの段階まで情報が伝わっていたかを挙げた。\n\n口頭で取り決めた取引でも、出荷や代金の記録をたどれば経緯を調べられると述べた。社内で輸出規則を軽視する傾向があったかは、今も調べている段階だと説明した。ロイターも政権による接触を報じた。エヌビディアの取締役会は11月12日、ジェンスン・フアン氏の辞任と、財務責任者のコレット・クレス氏の暫定CEO就任を発表した。CEOは経営の最高責任者を指す。ベッセント氏も番組で、財務責任者が会社を率いていると述べた。\n\n高価な機器を運ぶときには、輸送と支払いでそれぞれ記録が残る。何を誰が運んだかを示す資料と、代金の動きを示す資料を突き合わせると、取引のどの段階で誰がかかわったかを調べやすくなる。財務長官が番組で取り上げたのは、出荷を知っていた人が社内のどの段階までいたかという問いだ。現場で手続きした人から会社の経営を担う人へ、情報がどこまで届いたのかは調べている途中だ。",
+      "body": "ロボットに動作を覚えさせる計算にも使う半導体を手がける米エヌビディアが11月23日、ジェンスン・フアン氏の復帰を発表した。同氏は社長、最高経営責任者、取締役を再び務める。取締役会は会社の大きな方針を決め、最高経営責任者は日々の事業を取りまとめる立場だ。\n\n米証券規制当局に提出した書類によると、取締役会の決定は11月22日だった。エヌビディアは翌23日に公表し、ロイターも復帰を報じた。取締役は全員一致で復帰を決めた。暫定で最高経営責任者を務めていたコレット・クレス氏は財務責任者を続け、ハーベイ・ジョーンズ氏は取締役会の議長にとどまる。\n\n取締役会は米政府高官から意見を聞いたうえで、復帰によって国家安全保障上のリスクが生じることはないと判断したと説明している。同社は、フアン氏が外国の情報機関の活動の標的になったとする報道を受け、独立取締役による委員会を設けたという。この委員会は外部の弁護士とともに調査を続ける。会社は全社の法令順守を統括する責任者の人選にも着手した。安全保障や輸出規則への対応を監督するのは、取締役会が別に設けた委員会だ。\n\n今だれが会社を率いるかを決める仕事と、それまでの経緯を調べる仕事は、進み方が異なる。独立取締役と社外の弁護士は、調査に必要な確認を続ける。今回の公表では、経営陣や取締役の役割の分担が示された。調査を担当する委員会と、輸出の規則が守られているかを監督する委員会も別に置かれている。新たに選ぶ法令順守の責任者は、取締役の候補者や会社の運営の仕組みを扱う委員会に報告する。",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "空気を二段階で使う六脚ロボット",
-    "summary": "米カリフォルニア大学サンディエゴ校のロボットは、まず空気で体内の通り道を切り替え、次に同じ空気で脚を動かす。蒸気機関の仕組みを参考にした工夫だ。",
-    "implications": "試作機には空気を送るホースがつながっている。研究チームは、持ち運べる小さな容器で動かす方法を今後検討する。"
+    "title": "手本となる動きを複数の角度から残す",
+    "summary": "Grounded SuperintelligenceとBitRobotは、作業中の手を複数のカメラで同時に撮った。映像とセンサーの値を組み合わせ、頭と手が空間のどこを通ったかを推定した。",
+    "implications": "一連の動きは、ロボットの学習用の記録として使える。物を押したり握ったりするときの力は測っていない。"
   },
   "sources": [
     {
-      "id": "ucsd",
-      "organization": "University of California San Diego",
-      "published_at": "2026-11-18",
-      "url": "https://today.ucsd.edu/story/the-fastest-soft-robot-ever-built-doesnt-need-electronics-to-function",
-      "domain": "today.ucsd.edu",
-      "title": "The Fastest Soft Robot Ever Built Doesn’t Need Electronics to Function"
+      "id": "robocap-paper",
+      "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
+      "url": "https://arxiv.org/html/2611.26916v1",
+      "domain": "arxiv.org",
+      "organization": "Grounded Superintelligence and BitRobot",
+      "published_at": "2026-11-20"
     },
     {
-      "id": "science-robotics",
-      "organization": "Science Robotics",
-      "published_at": "2026-11-18",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43050495/",
-      "domain": "pubmed.ncbi.nlm.nih.gov",
-      "title": "Printing powerful soft robots on a desktop"
+      "id": "manipscope-paper",
+      "title": "ManipScope: A Diagnostic Benchmark for Instruction Following and Generalization in Robotic Manipulation",
+      "url": "https://arxiv.org/html/2611.27305v1",
+      "domain": "arxiv.org",
+      "organization": "Jiacheng Li et al.",
+      "published_at": "2026-11-20"
     },
     {
-      "id": "bagel-code",
-      "organization": "Bagel Labs",
-      "published_at": "2026-11-20",
-      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
-      "domain": "github.com",
-      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
+      "id": "omron-release",
+      "title": "OMRON Robotics Announces Start of Orders for New LD Series Autonomous Mobile Robots",
+      "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/",
+      "domain": "robotics.omron.com",
+      "organization": "OMRON Robotics",
+      "published_at": "2026-11-19"
     },
     {
-      "id": "bagel-model",
-      "organization": "Bagel Labs",
-      "published_at": "2026-11-18",
-      "url": "https://www.bagel.com/bagel-robotics-1",
-      "domain": "www.bagel.com",
-      "title": "Bagel-Robotics-1"
+      "id": "vetaion-uvc",
+      "title": "€5.7 million for Vetaion: DeepTech startup builds the electrical infrastructure of the future",
+      "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future",
+      "domain": "www.uvcpartners.com",
+      "organization": "UVC Partners",
+      "published_at": "2026-11-19"
     },
     {
-      "id": "world-supply",
-      "organization": "World Supply",
-      "published_at": "2026-11-18",
-      "url": "https://www.kyodo.co.jp/pr/2026-11-18_4050146/",
-      "domain": "www.kyodo.co.jp",
-      "title": "先進的なまちづくりを目指す「FUKUOKA Smart EAST」における館内配送サービスの実証実験に参画"
+      "id": "vetaion-tum",
+      "title": "5,7 Mio. EUR für Vetaion: Deep-Tech-Startup baut die elektrische Infrastruktur der Zukunft auf",
+      "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/",
+      "domain": "www.unternehmertum.de",
+      "organization": "UnternehmerTUM",
+      "published_at": "2026-11-19"
     },
     {
-      "id": "netsdar",
-      "organization": "NETSDAR Robot Solutions",
-      "published_at": "2026-11-17",
-      "url": "https://prtimes.jp/main/html/rd/p/000000005.000172258.html",
-      "domain": "prtimes.jp",
-      "title": "インターホン・エレベーターと連携した配送ロボットで「置き配」まで行う館内配送の実証実験を、福岡市のUR賃貸住宅で実施"
-    },
-    {
-      "id": "ur-kashii",
-      "organization": "Urban Renaissance Agency",
-      "published_at": "2026-11-11",
-      "url": "https://www.ur-net.go.jp/news/pcbnj1000000c5sc-att/ur2026_press_1111_kyusyu.pdf",
-      "domain": "www.ur-net.go.jp",
-      "title": "物流事業者と配送ロボットの連携による集合住宅向け棟内配送サービスの実証実験を実施"
-    },
-    {
-      "id": "aeronext",
-      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
-      "published_at": "2026-11-20",
-      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
-      "domain": "aeronext.co.jp",
-      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
-    },
-    {
-      "id": "lnews-drone",
-      "organization": "LNEWS",
-      "published_at": "2026-11-20",
-      "url": "https://www.lnews.jp/2026/11/s1120502.html",
-      "domain": "www.lnews.jp",
-      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
-    },
-    {
-      "id": "cbs-bessent",
-      "organization": "CBS News",
-      "published_at": "2026-11-22",
-      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
-      "domain": "www.cbsnews.com",
-      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
-    },
-    {
-      "id": "reuters-bessent",
-      "organization": "Reuters",
-      "published_at": "2026-11-22",
-      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
-      "domain": "www.reuters.com",
-      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
-    },
-    {
-      "id": "nvidia-board",
-      "organization": "NVIDIA",
-      "published_at": "2026-11-12",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "id": "nv-board",
+      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
       "domain": "nvidianews.nvidia.com",
-      "title": "NVIDIA Announces CEO Transition"
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-sec",
+      "title": "NVIDIA Form 8-K: November 22 board action",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
+      "domain": "www.sec.gov",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-reuters",
+      "title": "Nvidia reinstates Jensen Huang as CEO, igniting tech surge",
+      "url": "https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-23"
     }
   ]
 }
