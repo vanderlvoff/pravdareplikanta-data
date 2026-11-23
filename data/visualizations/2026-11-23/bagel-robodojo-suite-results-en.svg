@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" lang="en" role="img" aria-labelledby="title desc" font-family="Noto Sans, Arial, sans-serif" height="462" viewBox="0 0 360 462">
+  <title id="title">Moving two robot arms</title>
+  <desc id="desc">Bagel-Robotics-1 · simulation test / Read the inputs — Three cameras, robot state — and a written task / Predict 32 actions — The model plans for both arms / Execute the first 16 — Then collect fresh observations / Each cycle starts with fresh inputs.</desc>
+  <rect id="paper" x="0" y="0" width="360" height="462" fill="#F7F4ED" data-role="background"/>
+  <rect id="rule" x="20" y="16" width="52" height="4" fill="#0D615D"/>
+  <text id="head0" x="20" y="47" font-size="23" fill="#18283A" font-weight="700">Moving two robot arms</text>
+  <text id="subtitle" x="20" y="77" font-size="15" fill="#425468" font-weight="400">Bagel-Robotics-1 · simulation test</text>
+  <rect id="panel0" x="20" y="106" width="320" height="98" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k0" x="32" y="132" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel0">01</text>
+  <text id="label0" x="64" y="132" font-size="17" fill="#18283A" font-weight="700" data-panel="panel0">Read the inputs</text>
+  <text id="row0-0" x="32" y="160" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">Three cameras, robot state</text>
+  <text id="row0-1" x="32" y="183" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">and a written task</text>
+  <path id="arrow0" d="M179 208 H181 V216 H185 L180 223 L175 216 H179 Z" fill="#0D615D"/>
+  <rect id="panel1" x="20" y="228" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k1" x="32" y="254" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel1">02</text>
+  <text id="label1" x="64" y="254" font-size="17" fill="#18283A" font-weight="700" data-panel="panel1">Predict 32 actions</text>
+  <text id="row1-0" x="32" y="282" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">The model plans for both arms</text>
+  <path id="arrow1" d="M179 307 H181 V315 H185 L180 322 L175 315 H179 Z" fill="#0D615D"/>
+  <rect id="panel2" x="20" y="327" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k2" x="32" y="353" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel2">03</text>
+  <text id="label2" x="64" y="353" font-size="17" fill="#18283A" font-weight="700" data-panel="panel2">Execute the first 16</text>
+  <text id="row2-0" x="32" y="381" font-size="16" fill="#18283A" font-weight="400" data-panel="panel2">Then collect fresh observations</text>
+  <text id="note0" x="20" y="440" font-size="15" fill="#425468" font-weight="400">Each cycle starts with fresh inputs.</text>
+</svg>
