@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 540" width="360" height="540" xml:lang="ja" role="img" aria-labelledby="title desc">
+  <title id="title">電気の図面から 組み立ての計画へ</title>
+  <desc id="desc">平らな図面 立体の図 ロボットで組み立て 開発中（かいはつちゅう） しくみを示す例。大きさは模式的。</desc>
+  <rect x="0" y="0" width="360" height="540" rx="0" fill="#f6f7f2" stroke="none" stroke-width="1" data-qa-group="bg" id="g2"/>
+  <text x="24" y="32" fill="#116768" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="700" text-anchor="start" id="g3">Vetaion</text>
+  <text x="24" y="68" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g4">電気の図面から</text>
+  <text x="24" y="102" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g5">組み立ての計画へ</text>
+  <text x="24" y="145" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="16" font-weight="700" text-anchor="start" id="g6">平らな図面</text>
+  <text x="24" y="170" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g7">どの部品を線で</text>
+  <text x="24" y="191" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g8">つなぐかが分かる。</text>
+  <line x1="24" y1="223" x2="336" y2="223" stroke="#9caaaa" stroke-width="1" data-qa-group="separator0" id="g9"/>
+  <text x="24" y="249" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="16" font-weight="700" text-anchor="start" id="g10">立体の図</text>
+  <text x="24" y="274" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g11">箱のどこに部品が</text>
+  <text x="24" y="295" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g12">入るかが分かる。</text>
+  <line x1="24" y1="327" x2="336" y2="327" stroke="#9caaaa" stroke-width="1" data-qa-group="separator1" id="g13"/>
+  <text x="24" y="353" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="16" font-weight="700" text-anchor="start" id="g14">ロボットで組み立て</text>
+  <text x="24" y="378" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g15">部品を取り付け、</text>
+  <text x="24" y="399" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g16">線でつなぐ作業。</text>
+  <text x="24" y="450" fill="#9a4627" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="700" text-anchor="start" id="g17">開発中（かいはつちゅう）</text>
+  <text x="24" y="488" fill="#40575b" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g18">しくみを示す例。大きさは模式的。</text>
+  <text x="24" y="516" fill="#40575b" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g19">出典：UVC Partners、UnternehmerTUM</text>
+  <rect x="210" y="134" width="113" height="69" rx="2" fill="#fffefa" stroke="#9caaaa" stroke-width="1" data-qa-group="drawing" id="g20"/>
+  <rect x="221" y="146" width="27" height="17" rx="0" fill="#cde6e0" stroke="#116768" stroke-width="1" data-qa-group="drawing" id="g21"/>
+  <rect x="285" y="172" width="27" height="17" rx="0" fill="#f4d4ba" stroke="#9a4627" stroke-width="1" data-qa-group="drawing" id="g22"/>
+  <path d="M248 154.5 H269 V180.5 H285" fill="none" stroke="#116768" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" data-qa-group="drawing" id="g23"/>
+  <circle cx="248" cy="154.5" r="2.1" fill="#116768" stroke="none" data-qa-group="drawing" id="g24"/>
+  <circle cx="285" cy="180.5" r="2.1" fill="#9a4627" stroke="none" data-qa-group="drawing" id="g25"/>
+  <path d="M212 252 L292 267 L326 249 L246 234 Z" fill="#e1eee9" stroke="#116768" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" data-qa-group="layout" id="g26"/>
+  <path d="M212 252 L212 289 L292 304 L292 267 Z" fill="#fffefa" stroke="#116768" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" data-qa-group="layout" id="g27"/>
+  <path d="M292 304 L326 286 L326 249 L292 267 Z" fill="#d3e2df" stroke="#116768" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" data-qa-group="layout" id="g28"/>
+  <path d="M222 260 L243 264 L243 275 L222 271 Z" fill="#cde6e0" stroke="#116768" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" data-qa-group="layout" id="g29"/>
+  <path d="M259 277 L280 281 L280 292 L259 288 Z" fill="#f4d4ba" stroke="#9a4627" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" data-qa-group="layout" id="g30"/>
+  <path d="M243 270 L250 271 L250 281 L259 283" fill="none" stroke="#116768" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" data-qa-group="layout" id="g31"/>
+  <rect x="211" y="361" width="79" height="56" rx="2" fill="#fffefa" stroke="#9caaaa" stroke-width="1" data-qa-group="assembly" id="g32"/>
+  <rect x="223" y="373" width="22" height="11" rx="0" fill="#cde6e0" stroke="#116768" stroke-width="1" data-qa-group="assembly" id="g33"/>
+  <rect x="250" y="396" width="22" height="11" rx="0" fill="#f4d4ba" stroke="#9a4627" stroke-width="1" data-qa-group="assembly" id="g34"/>
+  <path d="M245 379 H254 V391 H260 V396" fill="none" stroke="#116768" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" data-qa-group="assembly" id="g35"/>
+  <rect x="293" y="404" width="34" height="13" rx="3" fill="#cde6e0" stroke="#116768" stroke-width="1" data-qa-group="assembly" id="g36"/>
+  <path d="M310 404 L319 370 L291 355 L276 369" fill="none" stroke="#116768" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" data-qa-group="assembly" id="g37"/>
+  <circle cx="310" cy="404" r="4" fill="#fffefa" stroke="#116768" data-qa-group="assembly" id="g38"/>
+  <circle cx="319" cy="370" r="4" fill="#fffefa" stroke="#116768" data-qa-group="assembly" id="g39"/>
+  <circle cx="291" cy="355" r="4" fill="#fffefa" stroke="#116768" data-qa-group="assembly" id="g40"/>
+  <path d="M277 368 L272 370 L268 377 L273 380 M277 368 L280 372 L277 380 L273 380" fill="none" stroke="#116768" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" data-qa-group="assembly" id="g41"/>
+</svg>
