@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" lang="ru" role="img" aria-labelledby="title desc" font-family="Noto Sans, Arial, sans-serif" height="508" viewBox="0 0 360 508">
+  <title id="title">Три складские площадки</title>
+  <desc id="desc">Space Data и Kasumigaseki Capital / Ацуги · весна 2029 — Планируемый склад для грузов — при обычной температуре / Фукурои · весна 2030 — Планируемый склад для — замороженных грузов / Сакадо · действующий склад — Площадка для изучения связи — оборудования и систем / Сроки относятся к завершению строительства.</desc>
+  <rect id="paper" x="0" y="0" width="360" height="508" fill="#F7F4ED" data-role="background"/>
+  <rect id="rule" x="20" y="16" width="52" height="4" fill="#0D615D"/>
+  <text id="head0" x="20" y="47" font-size="23" fill="#18283A" font-weight="700">Три складские площадки</text>
+  <text id="subtitle" x="20" y="77" font-size="15" fill="#425468" font-weight="400">Space Data и Kasumigaseki Capital</text>
+  <rect id="panel0" x="20" y="106" width="320" height="98" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k0" x="32" y="132" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel0">01</text>
+  <text id="label0" x="64" y="132" font-size="17" fill="#18283A" font-weight="700" data-panel="panel0">Ацуги · весна 2029</text>
+  <text id="row0-0" x="32" y="160" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">Планируемый склад для грузов</text>
+  <text id="row0-1" x="32" y="183" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">при обычной температуре</text>
+  <rect id="panel1" x="20" y="217" width="320" height="98" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k1" x="32" y="243" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel1">02</text>
+  <text id="label1" x="64" y="243" font-size="17" fill="#18283A" font-weight="700" data-panel="panel1">Фукурои · весна 2030</text>
+  <text id="row1-0" x="32" y="271" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">Планируемый склад для</text>
+  <text id="row1-1" x="32" y="294" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">замороженных грузов</text>
+  <rect id="panel2" x="20" y="328" width="320" height="98" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k2" x="32" y="354" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel2">03</text>
+  <text id="label2" x="64" y="354" font-size="17" fill="#18283A" font-weight="700" data-panel="panel2">Сакадо · действующий склад</text>
+  <text id="row2-0" x="32" y="382" font-size="16" fill="#18283A" font-weight="400" data-panel="panel2">Площадка для изучения связи</text>
+  <text id="row2-1" x="32" y="405" font-size="16" fill="#18283A" font-weight="400" data-panel="panel2">оборудования и систем</text>
+  <text id="note0" x="20" y="464" font-size="15" fill="#425468" font-weight="400">Сроки относятся к завершению</text>
+  <text id="note1" x="20" y="486" font-size="15" fill="#425468" font-weight="400">строительства.</text>
+</svg>
