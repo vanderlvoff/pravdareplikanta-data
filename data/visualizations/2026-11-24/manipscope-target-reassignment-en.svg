@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 449" width="360" height="449" xml:lang="en" role="img" aria-labelledby="title desc">
+  <title id="title">One starting layout, several commands</title>
+  <desc id="desc">Share of starting states where every command was followed, % 10 robot controller versions Random choice, no command 3.9% 16% Simulation · 10 target-selection scenes Controllers: 39 of 1,000 states</desc>
+  <rect x="0" y="0" width="360" height="449" rx="0" fill="#f6f7f2" stroke="none" stroke-width="1" data-qa-group="bg" id="g2"/>
+  <text x="24" y="32" fill="#116768" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="start" id="g3">ManipScope</text>
+  <text x="24" y="68" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g4">One starting layout,</text>
+  <text x="24" y="102" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g5">several commands</text>
+  <text x="24" y="139" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" id="g6">Share of starting states where every</text>
+  <text x="24" y="162" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" id="g7">command was followed, %</text>
+  <line x1="24.0" y1="217" x2="24.0" y2="238" stroke="#9caaaa" stroke-width="1" data-qa-group="bars" id="g8"/>
+  <line x1="24.0" y1="277" x2="24.0" y2="305" stroke="#9caaaa" stroke-width="1" data-qa-group="bars" id="g9"/>
+  <text x="24.0" y="332" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" id="g10">0</text>
+  <line x1="95.5" y1="217" x2="95.5" y2="238" stroke="#9caaaa" stroke-width="1" data-qa-group="bars" id="g11"/>
+  <line x1="95.5" y1="277" x2="95.5" y2="305" stroke="#9caaaa" stroke-width="1" data-qa-group="bars" id="g12"/>
+  <text x="95.5" y="332" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" id="g13">5</text>
+  <line x1="167.0" y1="217" x2="167.0" y2="238" stroke="#9caaaa" stroke-width="1" data-qa-group="bars" id="g14"/>
+  <line x1="167.0" y1="277" x2="167.0" y2="305" stroke="#9caaaa" stroke-width="1" data-qa-group="bars" id="g15"/>
+  <text x="167.0" y="332" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" id="g16">10</text>
+  <line x1="238.5" y1="217" x2="238.5" y2="238" stroke="#9caaaa" stroke-width="1" data-qa-group="bars" id="g17"/>
+  <line x1="238.5" y1="277" x2="238.5" y2="305" stroke="#9caaaa" stroke-width="1" data-qa-group="bars" id="g18"/>
+  <text x="238.5" y="332" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" id="g19">15</text>
+  <line x1="310.0" y1="217" x2="310.0" y2="238" stroke="#9caaaa" stroke-width="1" data-qa-group="bars" id="g20"/>
+  <line x1="310.0" y1="277" x2="310.0" y2="305" stroke="#9caaaa" stroke-width="1" data-qa-group="bars" id="g21"/>
+  <text x="310.0" y="332" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="middle" id="g22">20</text>
+  <rect x="24" y="217" width="55.769999999999996" height="16" rx="2" fill="#116768" stroke="none" stroke-width="1" data-qa-group="bars" id="g23" data-value="3.9"/>
+  <text x="24" y="209" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" id="g24">10 robot controller versions</text>
+  <text x="336" y="209" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="end" id="g25">3.9%</text>
+  <rect x="24" y="277" width="228.8" height="16" rx="2" fill="#9a4627" stroke="none" stroke-width="1" data-qa-group="bars" id="g26" data-value="16"/>
+  <text x="24" y="269" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" id="g27">Random choice, no command</text>
+  <text x="336" y="269" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="end" id="g28">16%</text>
+  <text x="24" y="364" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g29">Simulation · 10 target-selection scenes</text>
+  <text x="24" y="386" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g30">Controllers: 39 of 1,000 states</text>
+  <text x="24" y="425" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g31">Source: ManipScope, § 5.3</text>
+</svg>
