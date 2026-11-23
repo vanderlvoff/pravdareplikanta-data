@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" lang="ja" role="img" aria-labelledby="title desc" font-family="Noto Sans CJK JP, sans-serif" height="398" viewBox="0 0 360 398">
+  <title id="title">ドローンはどこで薬を積む？</title>
+  <desc id="desc">愛知県新城市で試した二つのルート / 出発する場所で積む — 薬局の人が車で薬の箱を運ぶ — ドローンがお年よりの施設へ運ぶ / とちゅうの薬局で積む — 空のまま出発し、薬局の近くにおりる — 薬局の人が薬の箱を取り付ける — ドローンが箱を施設へ運ぶ / どちらも、届いた箱は施設の人が受け取る。</desc>
+  <rect id="paper" x="0" y="0" width="360" height="398" fill="#F7F4ED" data-role="background"/>
+  <rect id="rule" x="20" y="16" width="52" height="4" fill="#0D615D"/>
+  <text id="head0" x="20" y="47" font-size="23" fill="#18283A" font-weight="700">ドローンはどこで薬を積む？</text>
+  <text id="subtitle" x="20" y="77" font-size="15" fill="#425468" font-weight="400">愛知県新城市で試した二つのルート</text>
+  <rect id="panel0" x="20" y="106" width="320" height="98" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k0" x="32" y="132" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel0">01</text>
+  <text id="label0" x="64" y="132" font-size="17" fill="#18283A" font-weight="700" data-panel="panel0">出発する場所で積む</text>
+  <text id="row0-0" x="32" y="160" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">薬局の人が車で薬の箱を運ぶ</text>
+  <text id="row0-1" x="32" y="183" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">ドローンがお年よりの施設へ運ぶ</text>
+  <rect id="panel1" x="20" y="217" width="320" height="121" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k1" x="32" y="243" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel1">02</text>
+  <text id="label1" x="64" y="243" font-size="17" fill="#18283A" font-weight="700" data-panel="panel1">とちゅうの薬局で積む</text>
+  <text id="row1-0" x="32" y="271" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">空のまま出発し、薬局の近くにおりる</text>
+  <text id="row1-1" x="32" y="294" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">薬局の人が薬の箱を取り付ける</text>
+  <text id="row1-2" x="32" y="317" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">ドローンが箱を施設へ運ぶ</text>
+  <text id="note0" x="20" y="376" font-size="15" fill="#425468" font-weight="400">どちらも、届いた箱は施設の人が受け取る。</text>
+</svg>
