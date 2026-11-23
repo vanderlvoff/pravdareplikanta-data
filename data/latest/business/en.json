@@ -2,204 +2,177 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-23",
-  "issue_id": "daily-2026-11-23",
+  "issue_date": "2026-11-24",
+  "issue_id": "daily-2026-11-24",
   "edition": "business",
   "language": "en",
-  "generated_at": "2026-11-22T21:16:24+00:00",
-  "title": "Testing a warehouse at peak load before it opens",
-  "lead": "Space Data and Kasumigaseki Capital are studying three Japanese logistics sites. They want to see how buildings and equipment could handle a rush of incoming goods or a machine outage.",
+  "generated_at": "2026-11-24T06:20:56+09:00",
+  "title": "Fitting robots into a working warehouse",
+  "lead": "OMRON opened orders for two cargo carriers designed for metre-wide aisles. Warehouses with fixed racks can use the specification to select routes worth testing.",
   "news": [
     {
-      "id": "nvidia-administration-interim-management-contact",
-      "title": "Washington is still seeking answers from NVIDIA’s interim leadership",
-      "summary": "US Treasury Secretary Scott Bessent told CBS that the administration had been in touch with NVIDIA’s interim leadership over chip shipments to China. He said he was still waiting for answers about who was responsible for complying with export rules.",
-      "details": "Officials contacted the interim leadership, directors and lawyers.",
-      "technical_novelty": "Bessent identified shipping and payment records as sources for reviewing the transactions.",
-      "engineering_impact": "For buyers of computing capacity, the inquiry concerns procedures at a major supplier.",
-      "limitations": "The public remarks assign no responsibility for violations and give no terms for future shipments.",
-      "evidence_status": "CBS published the interview transcript and Reuters separately reported the contacts.",
-      "published_at": "2026-11-22",
-      "organization": "US Department of the Treasury and NVIDIA",
+      "id": "nvidia-huang-reinstatement",
+      "title": "Huang is back at NVIDIA as the chipmaker seeks a compliance chief",
+      "summary": "NVIDIA announced on November 23 that Jensen Huang had returned as chief executive. The company’s separate internal inquiry continues, and it has begun looking for someone to oversee compliance across the business.",
+      "details": "The board reinstated Huang as president, chief executive and director. Colette Kress remains chief financial officer.",
+      "technical_novelty": "A planned compliance chief complements the board’s national security and export control committee.",
+      "engineering_impact": "A computing supplier used by robotics teams is changing how it oversees trade compliance.",
+      "limitations": "The independent internal inquiry continues. The announcement gives no revised hardware delivery terms.",
+      "evidence_status": "NVIDIA’s announcement, its filing with the US securities regulator and Reuters confirm the leadership decision.",
+      "published_at": "2026-11-23",
+      "organization": "NVIDIA",
       "source_ids": [
-        "cbs-bessent",
-        "reuters-bessent",
-        "nvidia-board"
+        "nv-board",
+        "nv-sec",
+        "nv-reuters"
       ],
       "time_window": "24h",
-      "body": "US Treasury Secretary Scott Bessent used a November 22 CBS interview to describe the administration’s questions about NVIDIA’s handling of chip shipments to China. He disclosed direct contact with people now overseeing the company. Officials want to know who was responsible for complying with export rules at the supplier and who knew about the transactions under review.\n\nBessent said the administration had contacted NVIDIA’s interim leadership, board directors and lawyers. At the time of the interview, he said it was still waiting for the answers it wanted. He said officials wanted to find out who was responsible for compliance with export rules and what levels of the company knew about shipments under scrutiny.\n\nBessent pointed to shipping and payment records as a way to reconstruct transactions even where arrangements were informal. He described possible systemic noncompliance as something still being looked into. Reuters also reported the contacts. NVIDIA’s board announced on November 12 that Jensen Huang had resigned and that chief financial officer Colette Kress would serve as interim CEO. Bessent confirmed that the chief financial officer was in charge.\n\nA business buying computing capacity for robotics faces separate uncertainties about the rules for a transaction and whether its supplier can document the necessary approvals. The new information from Bessent concerns the latter: officials are seeking to establish who signed off and what records are available. A procurement manager still has no basis to revise a delivery forecast from this interview alone. It did not provide terms or a timetable for specific transactions.",
+      "body": "Jensen Huang is back at the head of NVIDIA, a major supplier of computing equipment for companies building artificial intelligence systems and robots. The board restored his roles as president, chief executive and director. Reuters reported that NVIDIA shares rose more than 30% in trading after the November 23 announcement. For customers and suppliers, the announcement settles who is currently in charge.\n\nIn its filing with the US securities regulator, NVIDIA dates the board action to November 22. The company made it public the following day, and Reuters independently reported Huang’s return. The directors voted unanimously. Colette Kress, who had been running the company on an interim basis, remains chief financial officer. Harvey Jones stays on as board chair.\n\nThe board said it had heard from senior US government officials and believes Huang’s return poses no national security risk. That is the board’s assessment. NVIDIA says it created a committee of independent directors after reports that Huang had been targeted by a foreign intelligence effort. The committee and its outside counsel will continue the inquiry. NVIDIA also began looking for a company-wide compliance chief to oversee adherence to rules. Its board has a dedicated committee supervising national security and export control.\n\nA buyer’s decision depends on getting the equipment to the right site on time and being able to support it once it is there. Those questions turn on the transaction and its terms. While the board already has a committee overseeing export controls, the search for a company-wide compliance chief has just begun. The announcement gives neither a timetable for filling that job nor new terms for customer deliveries.",
       "image": null
     },
     {
-      "id": "space-data-kasumigaseki-warehouse-design",
-      "title": "Two Japanese partners want to test warehouse flows before fitting the equipment",
-      "summary": "Space Data and Kasumigaseki Capital are exploring computer models for three Japanese logistics sites. They want early estimates of whether planned warehouses can handle peak demand and what happens if equipment stops.",
-      "details": "The candidates include two planned automated warehouses and one existing site in Sakado.",
-      "technical_novelty": "The proposed models would show how workers and goods move through each facility.",
-      "engineering_impact": "Testing the layout early could expose problems that cost more to fix after installation.",
-      "limitations": "The partners have not set a study timetable or estimated gains for individual sites.",
-      "evidence_status": "The partners announced the study, and LNEWS reported the proposed sites.",
-      "published_at": "2026-11-20",
-      "organization": "Space Data and Kasumigaseki Capital",
+      "id": "omron-ld-orders",
+      "title": "OMRON opens orders for carriers that fit narrower warehouse aisles",
+      "summary": "OMRON Robotics began taking orders in the Americas and Europe for two indoor cargo carriers. It specifies a minimum aisle width of one metre for the series and expects shipments to start in January 2027.",
+      "details": "OMRON Robotics opened orders for two indoor carriers rated for 150 and 300 kilograms.",
+      "technical_novelty": "The carriers navigate using their surroundings without floor markers, while fleet software assigns transport jobs.",
+      "engineering_impact": "A site trial can establish how room to manoeuvre, charging and traffic in both directions affect the amount moved per shift.",
+      "limitations": "The published figures are product specifications. The company expects shipments to start in January 2027.",
+      "evidence_status": "The source is the manufacturer, whose announcement gives no throughput measurements from a customer site.",
+      "published_at": "2026-11-19",
+      "organization": "OMRON Robotics",
       "source_ids": [
-        "space-data",
-        "lnews-space"
+        "omron-release"
       ],
       "time_window": "7d",
-      "body": "Japanese developer Kasumigaseki Capital and technology company Space Data have started looking at ways to design and operate warehouses using computer models. They named three candidate sites, including planned warehouses for ambient-temperature and frozen goods. They want to evaluate peak loads and the effect of equipment stoppages before work begins at the new facilities.\n\nThe partners identified three possible sites. Atsugi is the planned location for an automated ambient-temperature warehouse, and Fukuroi for a frozen-goods warehouse. The projects have target completion dates in spring 2029 and spring 2030 respectively. Landcube in Sakado is an existing facility where the partners are considering ways to link equipment and software.\n\nThe companies want to model buildings, equipment, workers’ movements and flows of goods. They would use the models to vary the placement and number of robots and transport equipment, check how much the system could handle at peak times and see what happens when equipment stops. The partners left the exact scope and schedule of the work open.\n\nWarehouse automation is tied to the layout of the building. Fixing a bottleneck after opening could mean moving machinery or changing the routes workers use. The partners want to combine their experience designing and operating facilities with computer simulation. Sakado gives the study an existing site where they could examine how equipment and software already in place work together. The announcement says what the partners want to evaluate and gives no estimates for throughput or savings at individual sites.",
+      "body": "OMRON Robotics opened orders for two vehicles designed to move goods between work areas in a warehouse or factory. The rollout starts with customers in the Americas and Europe. The one-metre aisle specification gives operators a concrete number to compare with the space between existing racks. It can influence whether they examine a retrofit before budgeting for changes to the building.\n\nThe smaller LD-150 is rated to carry 150 kg and is 500 mm wide. For the LD-300 the corresponding figures are 300 kg and 580 mm. OMRON specifies operation in aisles as narrow as one metre, a series top speed of 2.1 m/s and the ability to handle a slope of up to five degrees. The vehicles estimate their position using features in their surroundings and do not require guide tape or floor markers.\n\nOMRON's FLOW Core software assigns jobs, plans routes and coordinates the movements of the fleet. The vendor says it can manage up to 100 compatible OMRON vehicles of different types. Inductive charging transfers power at a station without a plug and can take as little as 18 minutes according to the company. Orders opened in the Americas and Europe, with other regions to follow. The vendor expects shipments to begin in January 2027.\n\nThe fleet limit is a software capacity figure. For an investment decision, a buyer also needs the number of loaded trips per shift after accounting for queues, loading and time at the charger. The vendor provided no customer measurements for those inputs and gave no equipment or integration price. Its announcement can be used to screen sites and establish the expected shipping window while leaving the cost and throughput calculation open.",
       "image": null
     },
     {
-      "id": "shinshiro-pharmacy-drone-routes",
-      "title": "Shinshiro tests which part of a medicine delivery can move from road to air",
-      "summary": "Aichi Prefecture, Shinshiro and two companies tested three ways to fly medicines to recipients. One combined a road trip to the launch site with a flight, while another had pharmacy staff load the drone after it landed near them.",
-      "details": "Green Service ran flights and Aeronext provided the operating system.",
-      "technical_novelty": "A pharmacy can send a box to a hub or load the drone at a pickup stop.",
-      "engineering_impact": "The trial tests where an existing medical logistics operator can take responsibility for flights and handoffs.",
-      "limitations": "The partners did not disclose the full cost of regular deliveries.",
-      "evidence_status": "The project partners described the trial, and industry outlet LNEWS reported on the routes.",
-      "published_at": "2026-11-20",
-      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "id": "vetaion-control-cabinet-financing",
+      "title": "Vetaion raises €5.7 million to automate control cabinet assembly",
+      "summary": "Munich startup Vetaion secured early funding to develop equipment for assembling industrial control cabinets. Its software turns an electrical drawing into a spatial layout that the team intends to use for automated component placement and wiring.",
+      "details": "Munich startup Vetaion raised €5.7 million to develop equipment and software for industrial control cabinet assembly.",
+      "technical_novelty": "Its software converts two-dimensional electrical plans into a three-dimensional layout of cabinet components.",
+      "engineering_impact": "Vetaion intends to use the digital layout to develop automated component placement and wiring.",
+      "limitations": "The public announcements provide no verified measurements from customer factories.",
+      "evidence_status": "Investor UVC Partners and entrepreneurship centre UnternehmerTUM announced the funding.",
+      "published_at": "2026-11-19",
+      "organization": "Vetaion",
       "source_ids": [
-        "aeronext",
-        "lnews-drone"
+        "vetaion-uvc",
+        "vetaion-tum"
       ],
       "time_window": "7d",
-      "body": "Aichi Prefecture and Shinshiro worked with Aeronext and Green Service to see which part of a medicine delivery could move from road to air. The November 20 report sets out three routes. The practical question was whether a local company already in the business of delivering medicine could run the flights and organize handoffs to the recipients.\n\nIn the public demonstration on November 18, a pharmacy brought the medicine by road to the launch site at Yokogawa community center. The crew loaded a box onto the drone. According to the organizers, it flew about eight kilometers in roughly 12 minutes to a nursing home, where staff collected the package. The time given was for the flight from the launch site to the destination.\n\nOn a different route, the aircraft left the hub empty, landed near a pharmacy for staff to load a box and flew on to a second nursing home. The organizers put the two outbound legs at about 13 and five minutes respectively, excluding the return. Local medical logistics company Green Service ran the flights, with remote operations based in Tsushima.\n\nThe routes redistribute work. One requires an urban pharmacy to bring the box to a hub. Another has pharmacy staff wait for the drone and load the box where it lands. Aeronext provided the operating system and trained Green Service personnel, and the local company managed the flights. The individual flight times give the partners one part of the delivery economics. Comparing the service with driving would also require staff travel, waiting time and handling at the destination. The partners did not publish a full cost per delivery.",
+      "body": "Munich startup Vetaion has raised funds to develop equipment for manufacturers of industrial control cabinets. A control cabinet houses electrical components that distribute power or help control a machine. Vetaion is working on both the step that converts a plan of the connections into a spatial layout and the tools that would use that layout during assembly.\n\nMunich startup Vetaion raised €5.7 million in an early funding round. UVC Partners and Visionaries Tomorrow led the round, with 2100 Ventures and Viessmann Generations Group also taking part. UVC Partners and the Munich entrepreneurship centre UnternehmerTUM announced the financing.\n\nVetaion's software uses a flat electrical drawing to produce a three-dimensional layout of the parts. A wiring diagram shows which elements are connected, while a spatial layout gives them positions inside the cabinet. The team is developing equipment intended to use that layout to mount components and connect them with wires. The funding supports work on this combination of software and machinery.\n\nFor a factory that builds cabinets in many configurations, the amount of manual work depends partly on how often an engineer or assembler has to resolve exceptions in a plan. The funding announcements give no measurements for switching between cabinet designs, wiring errors after a switch or the cost of inspecting finished units. Those inputs would affect the economics of the process. The announcement gives the total raised, without a breakdown by investor or a budget for the assembly equipment.",
       "image": null
     },
     {
-      "id": "arrive-ai-pro-forma-nasdaq-equity",
-      "title": "Arrive AI estimates equity above Nasdaq’s threshold after debt exchange",
-      "summary": "Arrive AI, a US developer of parcel handoff stations for vehicles, drones and couriers, filed an update with the Securities and Exchange Commission. After several transactions, the company put stockholders’ equity at about $7.7 million against a Nasdaq minimum of $2.5 million.",
-      "details": "Stockholders’ equity was $2,198,652 on September 30 before the adjustments.",
-      "technical_novelty": "Lender Streeterville Capital received preferred stock in exchange for debt.",
-      "engineering_impact": "For buyers of logistics equipment, the vendor’s ability to support installed delivery stations matters.",
-      "limitations": "The estimate is unaudited, and final accounting for the debt exchange is pending.",
-      "evidence_status": "The company’s November 20 Form 8-K filing and its investor release document the update.",
-      "published_at": "2026-11-20",
-      "organization": "Arrive AI",
+      "id": "outsight-shift-azure-local",
+      "title": "Outsight offers on-site processing for tracking moving objects",
+      "summary": "Outsight announced that its object tracking software can run on Intel-based Azure Local servers. Customers can process sensor data at their own facilities with this setup, and the announcement provides no comparative cost or accuracy figures.",
+      "details": "Outsight announced that its three-dimensional tracking software runs on Intel-based servers managed through Azure Local.",
+      "technical_novelty": "The system processes sensor readings, including laser scans, into an updating representation of moving objects.",
+      "engineering_impact": "The described configuration runs on a central processor and gives customers a way to process the data on site.",
+      "limitations": "Outsight claims a delay under 50 milliseconds without the measurement conditions needed for comparison. It provides no accuracy or cost figures.",
+      "evidence_status": "Outsight reported the integration and did not include an independent test.",
+      "published_at": "2026-11-17",
+      "organization": "Outsight, Intel and Microsoft",
       "source_ids": [
-        "arrive-sec",
-        "arrive-ir"
+        "outsight-shift"
       ],
       "time_window": "7d",
-      "body": "US parcel-infrastructure developer Arrive AI reported a change in its capital structure on November 20. The company estimated stockholders’ equity, the accounting value left after subtracting liabilities from assets, at about $7.7 million after several transactions. In its Form 8-K filing with the US securities regulator, it compared that with the $2.5 million Nasdaq minimum applicable to the company.\n\nThe company reported stockholders’ equity of $2,198,652 on September 30. It later took in $250,000 in gross proceeds from a private share sale and about $1.3 million through a program to sell shares at market prices. It also exchanged debt owed to Streeterville Capital for preferred stock, shares with rights defined by their issue terms. Arrive AI says it believes it again meets the stockholders’ equity requirement.\n\nArrive AI develops parcel handoff points where a courier, vehicle or drone can leave goods for a recipient arriving later. Customers relying on maintenance over the life of that equipment have a reason to track the vendor’s finances. The equity estimate applies the transactions as though they had taken place on September 30. It excludes subsequent operating results, and Nasdaq will continue to monitor compliance.",
+      "body": "Outsight's Shift software tracks moving objects from sensor readings. The company announced a configuration for running it on a customer's own servers through Microsoft Azure Local, a system for managing computers installed on site. For an operator of a large building or industrial facility, the release adds a placement option: the tracking computation can take place close to the sensors.\n\nOutsight highlights lidar, a sensor that measures distances with pulses of laser light. The software uses those measurements to update the positions of objects moving through three-dimensional space. According to the company, the laser data can be combined with readings from other systems, including cameras or Wi-Fi. Outsight describes the output as anonymized and includes no independent audit of that claim.\n\nThe described setup uses an Intel Xeon 6 system-on-chip, a processor package that integrates key computing and support functions. It uses Intel AMX, on-chip hardware for speeding up matrix operations. In this configuration the tracking workload runs on the central processor without a separate graphics accelerator. Outsight claims a processing delay below 50 milliseconds without giving the conditions for that figure. The company announced a planned demonstration at Microsoft Ignite in San Francisco, which ran from November 17 to 20.\n\nComparing costs requires knowing how many servers are needed for a given site and what it takes to support them. An operator also needs to know what data leaves the site in the proposed deployment. Outsight gave no configuration cost or accuracy measurements under a stated site workload. A trial with the intended coverage and a defined measurement objective could supply the numbers the announcement leaves open.",
       "image": null
     },
     {
-      "id": "bagel-robodojo-suite-results",
-      "title": "Bagel Labs’ two-arm model comes with terms for commercial evaluation",
-      "summary": "Canada’s Bagel Labs published code and scores for a model that controls two robot arms. The results come from simulation, and companies need a separate paid agreement even to evaluate the model internally.",
-      "details": "The RoboDojo-Sim computer test awards partial credit across five categories.",
-      "technical_novelty": "Model weights, the numerical settings learned during training, are available for download.",
-      "engineering_impact": "The license determines whether a company can include the model in an internal evaluation.",
-      "limitations": "The developer has published no performance figures from a customer site in this release.",
-      "evidence_status": "Licensing terms and simulation results are published by the developer.",
+      "id": "robocap-workplace-video",
+      "title": "A workplace video collection expands the pool of robot training examples",
+      "summary": "Grounded Superintelligence and BitRobot described a collection of human work recorded in 11 countries. Cameras worn on the head help estimate hand positions for use in developing robot controllers.",
+      "details": "Grounded Superintelligence and BitRobot collected 10,000 hours of recordings of human work in 11 countries.",
+      "technical_novelty": "A headset with six synchronized cameras and inertial sensors supports three-dimensional estimates of head and hand movement.",
+      "engineering_impact": "The recordings provide examples of physical tasks for teams developing robot learning systems.",
+      "limitations": "The data contain no force or touch measurements. The paper does not evaluate training on a robot.",
+      "evidence_status": "The authors describe the dataset, hardware and processing in a preprint.",
       "published_at": "2026-11-20",
-      "organization": "Bagel Labs",
+      "organization": "Grounded Superintelligence and BitRobot",
       "source_ids": [
-        "bagel-code",
-        "bagel-model"
+        "robocap-paper"
       ],
       "time_window": "7d",
-      "body": "Toronto-based Bagel Labs released the code and weights for a program that uses instructions and camera images to work out how two robot arms should move. The release includes results from RoboDojo-Sim, a virtual test in which control programs operate simulated robots. The scores can help teams decide what to assess in more depth when the test tasks resemble the work they want to automate.\n\nThe model receives a task instruction, views from one head camera and two wrist cameras, and the robot's current state. It predicts 32 actions in a batch, executes 16 and then makes a new plan from fresh observations. That refresh lets the next prediction account for where the arms and objects are after the previous burst of movement.\n\nIn Bagel Labs' November 20 snapshot of RoboDojo-Sim, the model placed third among models evaluated without a separate software agent. It averaged 38.65 points out of 100, with an average full-task success rate of 31.91%. It completed 3.33% of trials in the Open category, which includes open-ended tasks and tasks guided by text or images. The ranking awards partial credit and gives each of the five main categories the same weight.\n\nDownloading the weights, the numerical settings obtained during training, is straightforward. Permission to use them depends on who is doing the work. Bagel Labs’ documentation requires a separate paid agreement for companies or anyone acting on their behalf, including for internal research and benchmarking. That condition matters before a team commits staff time to an evaluation. A prospective user can also choose in advance which operations need to finish in full: the completion rate helps answer that question, while the published ranking rewards intermediate progress too.",
+      "body": "Grounded Superintelligence and BitRobot recorded people handling objects at work. For businesses looking at automation of manual tasks, the recordings could supply examples that show how workers perform a sequence of movements. The collection combines videos from viewpoints close to the worker's own with estimates of where the hands were during the task.\n\nThe 250-gram headset carries six synchronized cameras and two inertial measurement units that measure acceleration and rotation. The cameras view the wearer's hands from different angles. The processing combines the views and sensor readings to estimate head motion and three-dimensional hand positions. Each recording session has its own calibration, which lets the processing account for the positions and characteristics of the cameras.\n\nThe authors selected 10,000 hours of elapsed recording time. A minute filmed by several cameras counts as one minute. They segmented recordings from 11 countries into 1,378,462 clips with a median duration of 17.8 seconds. The authors say participants gave written consent and were compensated for taking part. Audio is excluded and faces are obscured.\n\nA buyer evaluating a specific workstation would need to determine what the robot must sense to perform the job there. If success depends on a precise amount of pressure, these images do not say how hard the worker pushed. The report sets out how the collection was made and how much it contains. It supplies no estimate of the work needed to transfer a recorded operation to a particular robotic gripper, nor a performance result for that transfer.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Modeling the warehouse before equipment decisions",
-    "summary": "Space Data and Kasumigaseki Capital want to simulate different numbers and positions of robots and transport equipment and see how much each layout could handle.",
-    "implications": "The companies are still defining the study. Finding bottlenecks early could give them a chance to change a layout before installing machinery."
+    "title": "Aisle width as a criterion for choosing a carrier",
+    "summary": "OMRON Robotics lists widths of 500 and 580 millimetres for its new warehouse carriers. Shared software assigns trips and coordinates the vehicles' movements.",
+    "implications": "Operators can use the dimensions to shortlist routes. Estimating the cost of each trip also takes measurements of loading, waiting and charging time at the site."
   },
   "sources": [
     {
-      "id": "cbs-bessent",
-      "organization": "CBS News",
-      "published_at": "2026-11-22",
-      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
-      "domain": "www.cbsnews.com",
-      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
-    },
-    {
-      "id": "reuters-bessent",
-      "organization": "Reuters",
-      "published_at": "2026-11-22",
-      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
-      "domain": "www.reuters.com",
-      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
-    },
-    {
-      "id": "nvidia-board",
-      "organization": "NVIDIA",
-      "published_at": "2026-11-12",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "id": "nv-board",
+      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
       "domain": "nvidianews.nvidia.com",
-      "title": "NVIDIA Announces CEO Transition"
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
     },
     {
-      "id": "space-data",
-      "organization": "Space Data",
-      "published_at": "2026-11-20",
-      "url": "https://prtimes.jp/main/html/rd/p/000000286.000080352.html",
-      "domain": "prtimes.jp",
-      "title": "スペースデータと霞ヶ関キャピタル、物流施設の設計から運用までをフィジカルAI・空間知能で高度化する共同検討を開始"
-    },
-    {
-      "id": "lnews-space",
-      "organization": "LNEWS",
-      "published_at": "2026-11-20",
-      "url": "https://www.lnews.jp/2026/11/s1120503.html",
-      "domain": "www.lnews.jp",
-      "title": "霞ヶ関キャピタルとスペースデータ／物流施設3拠点でフィジカルAI活用を共同検討"
-    },
-    {
-      "id": "aeronext",
-      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
-      "published_at": "2026-11-20",
-      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
-      "domain": "aeronext.co.jp",
-      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
-    },
-    {
-      "id": "lnews-drone",
-      "organization": "LNEWS",
-      "published_at": "2026-11-20",
-      "url": "https://www.lnews.jp/2026/11/s1120502.html",
-      "domain": "www.lnews.jp",
-      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
-    },
-    {
-      "id": "arrive-sec",
-      "organization": "Arrive AI",
-      "published_at": "2026-11-20",
-      "url": "https://www.sec.gov/Archives/edgar/data/1818274/000149315226053484/form8-k.htm",
+      "id": "nv-sec",
+      "title": "NVIDIA Form 8-K: November 22 board action",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
       "domain": "www.sec.gov",
-      "title": "Arrive AI Inc. Form 8-K"
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
     },
     {
-      "id": "arrive-ir",
-      "organization": "Arrive AI",
-      "published_at": "2026-11-20",
-      "url": "https://investors.arriveai.com/news-releases/news-release-details/arrive-ais-pro-forma-stockholders-equity-now-above-nasdaq",
-      "domain": "investors.arriveai.com",
-      "title": "Arrive AI’s Pro Forma Stockholders’ Equity Now Above Nasdaq Minimum Requirement Following Recent Transactions"
+      "id": "nv-reuters",
+      "title": "Nvidia reinstates Jensen Huang as CEO, igniting tech surge",
+      "url": "https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-23"
     },
     {
-      "id": "bagel-code",
-      "organization": "Bagel Labs",
-      "published_at": "2026-11-20",
-      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
-      "domain": "github.com",
-      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
+      "id": "omron-release",
+      "title": "OMRON Robotics Announces Start of Orders for New LD Series Autonomous Mobile Robots",
+      "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/",
+      "domain": "robotics.omron.com",
+      "organization": "OMRON Robotics",
+      "published_at": "2026-11-19"
     },
     {
-      "id": "bagel-model",
-      "organization": "Bagel Labs",
-      "published_at": "2026-11-18",
-      "url": "https://www.bagel.com/bagel-robotics-1",
-      "domain": "www.bagel.com",
-      "title": "Bagel-Robotics-1"
+      "id": "vetaion-uvc",
+      "title": "€5.7 million for Vetaion: DeepTech startup builds the electrical infrastructure of the future",
+      "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future",
+      "domain": "www.uvcpartners.com",
+      "organization": "UVC Partners",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "vetaion-tum",
+      "title": "5,7 Mio. EUR für Vetaion: Deep-Tech-Startup baut die elektrische Infrastruktur der Zukunft auf",
+      "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/",
+      "domain": "www.unternehmertum.de",
+      "organization": "UnternehmerTUM",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "outsight-shift",
+      "title": "Outsight, Intel and Microsoft bring Dynamic World Models to the Enterprise Edge",
+      "url": "https://www.outsight.ai/insights/outsight-intel-and-microsoft-bring-dynamic-world-models-to-the-edge/",
+      "domain": "www.outsight.ai",
+      "organization": "Outsight",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "robocap-paper",
+      "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
+      "url": "https://arxiv.org/html/2611.26916v1",
+      "domain": "arxiv.org",
+      "organization": "Grounded Superintelligence and BitRobot",
+      "published_at": "2026-11-20"
     }
   ]
 }

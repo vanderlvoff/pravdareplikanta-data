@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-24",
+  "issue_id": "daily-2026-11-24",
+  "edition": "children",
+  "language": "ja",
+  "generated_at": "2026-11-24T06:20:56+09:00",
+  "title": "たのまれた物を、ロボットはどうえらぶ？",
+  "lead": "中国の大学などの研究チームは、コンピューターの中のロボットに物を取らせた。机に置いた物はそのままで、たのみ方を変えると、取る物も変わるかを調べた。",
+  "news": [
+    {
+      "id": "omron-ld-orders",
+      "title": "荷物を運ぶロボットが、せまい通路を分け合う",
+      "summary": "OMRON Roboticsは、建物の中で荷物を運ぶロボット2種類の注文を受け始めた。ロボットは周りの様子から道を見つけ、一つのプログラムが何台かの仕事を分ける。",
+      "details": "OMRON Roboticsは、建物の中で荷物を運ぶロボット2種類の注文を受け始めた。",
+      "technical_novelty": "ロボットは、床に引いた線をたどらなくても、周りの様子から道を見つける。",
+      "engineering_impact": "何台も使うときは、一つのプログラムが仕事を分け、通り道が重なるときの進み方を調整する。",
+      "limitations": "会社は2027年1月に買い手への出荷を始める予定だ。",
+      "evidence_status": "性能を発表したのは作った会社で、買い手の倉庫で実際に運んだ量は出ていない。",
+      "published_at": "2026-11-19",
+      "organization": "OMRON Robotics",
+      "source_ids": [
+        "omron-release"
+      ],
+      "time_window": "7d",
+      "body": "OMRON Roboticsは、建物の中で荷物を運ぶロボット2種類の注文を受け始めた。どちらも、たとえば物を置くたなの間にある、幅（はば）1メートルの通路を走れる。床に線を引いて、その線をたどらせる必要はない。ロボットは周りの様子を手がかりに、自分がどこにいるかを見つける。\n\n学校のろうかで何人かが箱を運んでいる場面を考えてみよう。一人は紙を取りに行き、もう一人は本を返しに行く。同じせまい場所を通るときは、順番を決めることもある。倉庫（そうこ）のロボットでは、プログラムが仕事を分け、何台かが同じ場所を通るときの進み方を考える。\n\n小さいほうは150キログラム、大きいほうは300キログラムまでの荷物を運べる。会社は2027年1月に、買い手に向けてロボットを送り始める予定だ。発表にはロボットの大きさと、走れる通路の幅が出ている。実際（じっさい）に一日で運べる量は、ロボットが充電（じゅうでん）する時間や、通路が空くまで待つ時間によっても変わる。",
+      "image": null
+    },
+    {
+      "id": "manipscope-target-reassignment",
+      "title": "たのみ方を変えると、ロボットは別の物を取る？",
+      "summary": "中国科学技術大学などの研究チームは、コンピューターの中のロボットに物を取らせた。机の上はそのままで、たのみ方を変えると、うでをのばす先も変わるかを調べた。",
+      "details": "研究チームは、コンピューターの中で物を同じ場所に置いたまま、指示の文を変えた。",
+      "technical_novelty": "別の物をえらぶように言われたとき、プログラムがえらび直せるかを調べた。",
+      "engineering_impact": "ロボットのうでが物を運ぶ前に、物のえらび方のまちがいに気づける。",
+      "limitations": "テストに使ったのは、コンピューターの中のロボットだ。",
+      "evidence_status": "研究チームはテストの方法と結果を論文で発表した。",
+      "published_at": "2026-11-20",
+      "organization": "University of Science and Technology of China, Sharpa Robotics, Shanghai Jiao Tong University and The Chinese University of Hong Kong",
+      "source_ids": [
+        "manipscope-paper"
+      ],
+      "time_window": "7d",
+      "body": "中国科学技術大学などの研究チームは、コンピューターの中に机を作り、いくつかの物を置いた。ロボットには、取ったり動かしたりしてほしい物を文で伝える。目の前に同じ物が同じ場所にあるとき、たのみ方のちがいに合わせて取る物を変えられるかを調べた。\n\n机に自分のノートと友だちのノートがあるとしよう。「わたしのを取って」と「きみのを取って」では、手をのばす先が変わる。研究チームも、物を動かしたあとは元の場所にもどして、次の指示を出した。そうすれば、前の動きで物の場所が変わったせいで、次の課題がむずかしくなることはない。\n\n一つの置き方につき、いくつかの指示を出した。いくつかのプログラムの結果をまとめると、同じ置き方で出した指示をすべてこなせたのは、百回に四回ほどだった。別の試験で失敗した回を調べると、うでは指示に出ていない物を動かすことが多かった。うまく持ち上げる力があっても、手をのばす先を取りちがえると、たのまれた仕事は終わらない。",
+      "image": null
+    },
+    {
+      "id": "robocap-workplace-video",
+      "title": "手の動きを、いろいろな向きからとる",
+      "summary": "二つの研究チームは、人が手を使って仕事をする様子を、頭につけた小さなカメラでとった。ちがう向きからの映像（えいぞう）を見くらべると、手の位置が分かり、ロボットに教えるときの手本にできる。",
+      "details": "Grounded SuperintelligenceとBitRobotのチームが、人が手を使って仕事をする様子を記録した。",
+      "technical_novelty": "頭につけたカメラでいくつかの向きからさつえいし、手がどこにあったかを計算する。",
+      "engineering_impact": "一つの仕事にどんな動きがあるかが分かり、ロボットに教えるときの手本に使える。",
+      "limitations": "人が物をおす力の強さは測っていない。",
+      "evidence_status": "二つのチームは、記録の取り方を論文で説明した。",
+      "published_at": "2026-11-20",
+      "organization": "Grounded Superintelligence and BitRobot",
+      "source_ids": [
+        "robocap-paper"
+      ],
+      "time_window": "7d",
+      "body": "二つの研究チームは、六つの小さなカメラが付いた道具を頭につけてもらい、人が手で物を取ったり動かしたりする様子を記録した。作業のとちゅうで手がどこを通ったかを調べ、ロボットに動きを教えるときの手本を集めるためだ。カメラには、作業をする人が見ている場所の近くが映る。\n\nたとえば、タオルをたたむところを友だちにとってもらうとする。一つの向きから見ると、すみを持ち上げた手は見えても、もう一つの手はタオルの後ろにかくれるかもしれない。ちがう向きからなら、その手も見えることがある。研究では六つのカメラで同時にとり、同じ時の映像を見くらべた。\n\nチームは11か国で合わせて1万時間分の映像を集めた。教えるときの手本には、手をどちらにのばしたかが大切だ。ただし、手をどちらに動かしたかは映像で分かるが、人が物をおす力の強さは測っていない。たとえばガラスを布でふくところを見ると、布をどこで持ったかは分かる。どれほど強くおしつけたかを知るには、別の測り方がいる。",
+      "image": null
+    },
+    {
+      "id": "vetaion-control-cabinet-financing",
+      "title": "機械を動かす電気の箱を、どう組み立てる？",
+      "summary": "ミュンヘンのVetaionという会社は、電気の箱を組み立てる道具の開発に、お金を集めた。プログラムを使って、どこに部品を置き、どれとどれを線でつなぐのかが分かる図を作る。",
+      "details": "Vetaionという会社が、工場の機械を動かす電気の箱を組み立てる道具の開発に、お金を集めた。",
+      "technical_novelty": "紙にかける平らな図をもとに、部品を箱のどこに置くかが分かる立体の図を作る。",
+      "engineering_impact": "会社はその図を使って、部品を置いたり線でつないだりする作業をロボットに任せようとしている。",
+      "limitations": "発表に出ているのは開発のために集めたお金で、買い手の工場で使った結果は出ていない。",
+      "evidence_status": "お金を出した会社と、新しい会社の活動を助ける団体が発表した。",
+      "published_at": "2026-11-19",
+      "organization": "Vetaion",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "time_window": "7d",
+      "body": "ミュンヘンにあるVetaionという会社は、電気の箱を組み立てる機械を作るため、570万ユーロを集めた。箱の中には、工場の機械に電気を送ったり、どんな動きをするかを伝えたりする部品が入る。会社は、部品を決めた場所に置いて、線でつなぐ作業を機械に任せたいと考えている。\n\n紙の上に二つの部品をかき、その間に線を引いたとしよう。それを見れば、どの二つをつなぐかが分かる。でも本物の箱に入れるときは、部品をどこに置くか、線をさす場所に手が届くかも考える必要がある。この会社のプログラムは、平らな図から、箱の中を立体で見られる図を作る。\n\nいくつかの会社がお金を出し、部品を取り付けたり線をつないだりする道具の開発を支えた。工場で何種類の箱を組み立てられたかは、今回の発表には出ていない。箱の形や大きさが変われば、部品の置き場所も、部品をつなぐ線を通す場所も変わる。そのときにも組み立てられるかは、ちがう箱を使ってみないと分からない。",
+      "image": null
+    },
+    {
+      "id": "nvidia-huang-reinstatement",
+      "title": "計算用の半導体を作る会社に、前の責任者がもどった",
+      "summary": "半導体（はんどうたい）を作るエヌビディアは、ジェンスン・フアンさんが会社をまとめる役にもどったと発表した。会社が作る半導体には、ロボットを動かすプログラムが計算するときに役立つものもある。",
+      "details": "会社の大事な決定をする取締役会（とりしまりやくかい）が、11月23日に発表した。",
+      "technical_novelty": "ふだん会社の運営に加わらない取締役が、何があったかをたしかめる調査（ちょうさ）を続ける。",
+      "engineering_impact": "半導体を外国に売るときの決まりを見守る役目も、別のグループが引き受ける。",
+      "limitations": "調査の最終結果はまだ出ていない。",
+      "evidence_status": "会社の発表をロイターも報じた。",
+      "published_at": "2026-11-23",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "nv-board",
+        "nv-sec",
+        "nv-reuters"
+      ],
+      "time_window": "24h",
+      "body": "半導体を作るエヌビディアは11月23日、ジェンスン・フアンさんが、ふたたび会社を率いると発表した。同社の半導体には、コンピューターがたくさんの計算を速くこなすのを助けるものがある。ロボットを動かすプログラムに、見本から動き方を学ばせるときにも使われる。\n\n会社の大事な決定をする人たちの集まりを、取締役会（とりしまりやくかい）という。フアンさんは会社をまとめる役に加え、取締役会の一員にももどった。しばらく会社を率いていたコレット・クレスさんは、これまでどおり、会社のお金をどう使い、いくら入ってきたかをまとめる。\n\n取締役の一部は、弁護士（べんごし）といっしょに、それまでに何があったのかを調べている。別のグループには、半導体を外国に売るときの決まりを会社が守っているかを見守る役目がある。責任者が決まった後も、何があったかをたしかめる作業は続く。会社は、いつその結果が出るかまでは発表していない。調べる人たちには、会社の外から協力する弁護士もいる。",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "たのみ方を変えると、取る物も変わる？",
+    "summary": "中国科学技術大学などの研究チームは、コンピューターの中のロボットの前に、いつも同じように物を置いた。たのむ物を変えると、うではどこにのびるのかを調べた。",
+    "implications": "試すたびに物を同じ場所にもどせば、言葉を変えたことで取る物が変わったかどうかが分かりやすい。研究チームはこの試験をコンピューターの中で行った。"
+  },
+  "sources": [
+    {
+      "id": "omron-release",
+      "title": "OMRON Robotics Announces Start of Orders for New LD Series Autonomous Mobile Robots",
+      "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/",
+      "domain": "robotics.omron.com",
+      "organization": "OMRON Robotics",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "manipscope-paper",
+      "title": "ManipScope: A Diagnostic Benchmark for Instruction Following and Generalization in Robotic Manipulation",
+      "url": "https://arxiv.org/html/2611.27305v1",
+      "domain": "arxiv.org",
+      "organization": "Jiacheng Li et al.",
+      "published_at": "2026-11-20"
+    },
+    {
+      "id": "robocap-paper",
+      "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
+      "url": "https://arxiv.org/html/2611.26916v1",
+      "domain": "arxiv.org",
+      "organization": "Grounded Superintelligence and BitRobot",
+      "published_at": "2026-11-20"
+    },
+    {
+      "id": "vetaion-uvc",
+      "title": "€5.7 million for Vetaion: DeepTech startup builds the electrical infrastructure of the future",
+      "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future",
+      "domain": "www.uvcpartners.com",
+      "organization": "UVC Partners",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "vetaion-tum",
+      "title": "5,7 Mio. EUR für Vetaion: Deep-Tech-Startup baut die elektrische Infrastruktur der Zukunft auf",
+      "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/",
+      "domain": "www.unternehmertum.de",
+      "organization": "UnternehmerTUM",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "nv-board",
+      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-sec",
+      "title": "NVIDIA Form 8-K: November 22 board action",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
+      "domain": "www.sec.gov",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-reuters",
+      "title": "Nvidia reinstates Jensen Huang as CEO, igniting tech surge",
+      "url": "https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-23"
+    }
+  ]
+}

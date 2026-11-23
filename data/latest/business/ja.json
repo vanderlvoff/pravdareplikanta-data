@@ -2,204 +2,177 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-23",
-  "issue_id": "daily-2026-11-23",
+  "issue_date": "2026-11-24",
+  "issue_id": "daily-2026-11-24",
   "edition": "business",
   "language": "ja",
-  "generated_at": "2026-11-22T21:16:24+00:00",
-  "title": "倉庫を開く前に、荷物が集中する時間帯を再現",
-  "lead": "スペースデータと霞ヶ関キャピタルは、国内の物流施設三拠点を候補に共同検討を始めた。荷物が集中したり機器が止まったりしたときの影響を、事前にコンピューターで調べる考えだ。",
+  "generated_at": "2026-11-24T06:20:56+09:00",
+  "title": "既存の倉庫に搬送ロボットを入れるには",
+  "lead": "OMRONは、幅1メートルの通路を走る搬送ロボットの受注を始めた。すでに棚が並ぶ倉庫では、どの経路を使って試せるかを考えるときの目安になる。",
   "news": [
     {
-      "id": "nvidia-administration-interim-management-contact",
-      "title": "米政権がエヌビディアに接触、輸出管理を巡る回答を待つ",
-      "summary": "米国のベッセント財務長官はCBSの番組で、中国向け半導体の出荷に関して米政権がエヌビディアの暫定経営陣に連絡したと述べた。輸出規則を守る責任を誰が負っていたかについて、回答はまだ得られていないという。",
-      "details": "米政権は暫定経営陣や取締役、弁護士と連絡を取った。",
-      "technical_novelty": "財務長官は、出荷や支払いの記録が取引を確認する手がかりになると指摘した。",
-      "engineering_impact": "計算資源を調達する企業にとっては、大手供給元が輸出手続きをどう管理していたかが焦点だ。",
-      "limitations": "違反の当事者や今後の個別の出荷条件は発表されていない。",
-      "evidence_status": "CBSが番組の記録を公開し、ロイターも米政権の接触を報じた。",
-      "published_at": "2026-11-22",
-      "organization": "US Department of the Treasury and NVIDIA",
+      "id": "nvidia-huang-reinstatement",
+      "title": "エヌビディアの経営トップにフアン氏、法令順守の責任者選びに着手",
+      "summary": "米エヌビディアは11月23日、ジェンスン・フアン氏を最高経営責任者に復帰させたと発表した。社内の独立調査を続ける一方、全社の法令順守を統括する新しい責任者の人選を始める。",
+      "details": "取締役会はフアン氏を社長、最高経営責任者、取締役に復帰させた。コレット・クレス氏は財務責任者を続ける。",
+      "technical_novelty": "安全保障と輸出管理を監督する取締役会の委員会に加え、法令順守を統括する役職の人選を始める。",
+      "engineering_impact": "ロボットの開発にも使われる計算機器の供給元が、輸出管理の監督体制を整え直している。",
+      "limitations": "社内の独立調査は継続中で、機器の納入条件の変更は発表されていない。",
+      "evidence_status": "会社発表、米証券規制当局への提出書類、ロイターの報道で経営トップの復帰を確認した。",
+      "published_at": "2026-11-23",
+      "organization": "NVIDIA",
       "source_ids": [
-        "cbs-bessent",
-        "reuters-bessent",
-        "nvidia-board"
+        "nv-board",
+        "nv-sec",
+        "nv-reuters"
       ],
       "time_window": "24h",
-      "body": "米国のベッセント財務長官は11月22日、エヌビディアの中国向け半導体の出荷について、米政権が会社の暫定経営陣に連絡したとCBSの番組で明らかにした。政権は、供給元の社内で輸出規則を守る責任を誰が負い、確認の対象になっている出荷について誰が知っていたかを調べたいとしている。\n\nベッセント氏は、政権がエヌビディアの暫定経営陣、取締役、弁護士と連絡を取ったと話した。取材の時点で、政権が求める回答はまだ得られていないという。確認したい点として、輸出規則を守る責任を誰が負っていたかと、調査の対象になっている出荷について社内のどの段階まで情報が伝わっていたかを挙げた。\n\n口頭で取り決めた取引でも、出荷や代金の記録をたどれば経緯を調べられると述べた。社内で輸出規則を軽視する傾向があったかは、今も調べている段階だと説明した。ロイターも政権による接触を報じた。エヌビディアの取締役会は11月12日、ジェンスン・フアン氏の辞任と、財務責任者のコレット・クレス氏の暫定CEO就任を発表した。CEOは経営の最高責任者を指す。ベッセント氏も番組で、財務責任者が会社を率いていると述べた。\n\nロボット用のソフトウェアを開発するために計算資源を確保する企業には、取引に適用される規則を把握する仕事と、供給元が手続きを済ませたことを確認する仕事がある。今回の発言から分かったのは、政権が社内の責任分担や、出荷と支払いを記録した資料に関心を向けていることだ。個別の取引の条件や予定は示されておらず、今回の番組での発言から、個々の調達案件への影響は判断できない。",
+      "body": "人工知能やロボットの開発に使う計算機器を供給する米エヌビディアで、ジェンスン・フアン氏が社長、最高経営責任者、取締役に復帰した。同社は11月23日に発表した。ロイターによると、発表後の取引で同社の株価は30％を超えて上昇した。取引先にとっては、会社の経営を誰が担うのかが明らかになった。\n\n米証券規制当局に提出した書類によると、取締役会の決定は11月22日だった。エヌビディアは翌23日に公表し、ロイターも復帰を報じた。取締役は全員一致で復帰を決めた。暫定で最高経営責任者を務めていたコレット・クレス氏は財務責任者を続け、ハーベイ・ジョーンズ氏は取締役会の議長にとどまる。\n\n取締役会は米政府高官から意見を聞いたうえで、復帰によって国家安全保障上のリスクが生じることはないと判断したと説明している。同社は、フアン氏が外国の情報機関の活動の標的になったとする報道を受け、独立取締役による委員会を設けたという。この委員会は外部の弁護士とともに調査を続ける。会社は全社の法令順守を統括する責任者の人選にも着手した。安全保障や輸出規則への対応を監督するのは、取締役会が別に設けた委員会だ。\n\n機器を買う企業には、必要な場所に予定どおり届くことと、導入後に保守を受けられることが重要になる。どちらも契約や利用する地域に応じて判断する事項だ。エヌビディアには輸出管理を監督する取締役会の委員会があり、全社の法令順守を担う責任者についてはこれから人を選ぶ。新しい責任者が決まる時期や個別の納入条件は発表に記載されていない。",
       "image": null
     },
     {
-      "id": "space-data-kasumigaseki-warehouse-design",
-      "title": "倉庫の設備を入れる前に荷物の流れを確認、国内三拠点を候補に",
-      "summary": "スペースデータと霞ヶ関キャピタルは、国内の物流施設三拠点を候補に、運用をコンピューターで再現する取り組みの検討を始めた。荷物が集中したり、一部の設備が止まったりしたときに、新設する倉庫がどれだけ出荷を続けられるかを計画段階から確かめたい考えだ。",
-      "details": "候補は自動倉庫の新設計画二件と、坂戸市の既存施設だ。",
-      "technical_novelty": "働く人や荷物が倉庫内をどう移動するかまで再現しようとしている。",
-      "engineering_impact": "設備の設置後に直すと時間や費用がかかる問題を、早い段階で見つける狙いがある。",
-      "limitations": "作業日程や、拠点ごとに期待できる効果は示されていない。",
-      "evidence_status": "両社の発表をもとに物流専門媒体LNEWSが候補拠点を報じた。",
-      "published_at": "2026-11-20",
-      "organization": "Space Data and Kasumigaseki Capital",
+      "id": "omron-ld-orders",
+      "title": "狭い通路向けの搬送ロボット、OMRONが受注を開始",
+      "summary": "OMRON Roboticsは米州と欧州で、建物内の荷物を運ぶロボット2機種の受注を始めた。幅1メートルの通路に対応し、出荷は2027年1月に始まる見込みだ。",
+      "details": "OMRON Roboticsは、積載量が150キログラムと300キログラムの屋内搬送ロボット2機種の受注を始めた。",
+      "technical_novelty": "床の目印に頼らず周囲を見て走り、複数台を管理するソフトウェアが搬送作業を割り振る。",
+      "engineering_impact": "通路の余裕、充電場所、すれ違いが搬送量にどう影響するかは、導入先で確かめられる。",
+      "limitations": "公表された数値は仕様値で、出荷は2027年1月に始まる見込みだ。",
+      "evidence_status": "発表はメーカーによるもので、顧客の現場における搬送量の実測値は示されていない。",
+      "published_at": "2026-11-19",
+      "organization": "OMRON Robotics",
       "source_ids": [
-        "space-data",
-        "lnews-space"
+        "omron-release"
       ],
       "time_window": "7d",
-      "body": "物流施設を開発する霞ヶ関キャピタルと、コンピューターで施設や機器の動きを再現する技術を持つスペースデータが、倉庫の設計や運用にその技術を使う共同検討を始めた。候補の三拠点には常温倉庫と冷凍倉庫の新設計画が含まれる。荷物が集中したときや設備が止まったときの影響を、稼働前に確かめることを目指す。\n\n候補は三拠点ある。神奈川県厚木市には常温の自動倉庫を計画しており、竣工の目標は2029年春。静岡県袋井市には冷凍自動倉庫を計画し、2030年春の竣工を予定する。三つ目の埼玉県坂戸市のランドキューブ坂戸は既存施設で、そこで物流設備とシステムの連携などを検証することを考えている。\n\n両社が作ろうとしているのは、建物と機器だけでなく、人の移動や荷物の流れもコンピューター上に再現する環境だ。ロボットや搬送設備の数や位置を変えて、入荷や出荷が集中するときに扱える量や、一部の機器が止まったときの影響を調べる。具体的に何を試すか、いつ始めるかは共同検討の進み具合に応じて決める。\n\n倉庫の建物と自動化設備は、互いに関わる。稼働してから荷物が滞る場所を見つけると、機器を移したり、作業員の通路を引き直したりする対策が必要になることがある。そこで両社は、倉庫を開発して運営する知識と、コンピューター上で作業を再現する技術を組み合わせる。坂戸では、すでに使っている設備とシステムをつなぐ方法を検討する。発表の段階では、拠点ごとの処理能力や費用の改善幅は分からない。",
+      "body": "OMRON Roboticsは、倉庫や工場で作業場所の間を行き来して荷物を運ぶ2機種を、米州と欧州から販売する。幅1メートルの通路を走れるという仕様は、棚や作業台の配置を大きく変えずに運搬を自動化できるか、現場を調べる際の目安になる。通行できそうな区間が見つかれば、搬送先や充電場所も含めて日々の動きを検討できる。\n\n小型のLD-150は積載量150キログラム、車体幅500ミリだ。LD-300は積載量300キログラムで、幅は580ミリある。メーカーは、幅1メートルの通路を走行できると説明している。シリーズの最高速度は毎秒2.1メートルで、走行できる傾斜は最大5度としている。周囲の特徴を手がかりに自分の位置を推定するため、床に走行用のテープや目印を貼る必要はない。\n\nOMRONの管理ソフトウェアFLOW Coreは、搬送の割り当てや経路の設定、複数台が行き交う場所での調整を担う。同社によると、対応するOMRON製の機種を組み合わせ、最大100台を管理できる。充電場所では、端子を差し込まずに電力を受け取る誘導式の充電を使い、メーカーは最短18分で充電できると説明する。まず米州と欧州で受注し、対象地域は順次広げる。出荷開始は2027年1月を見込む。\n\n採算を見積もるには、1台が1勤務あたり何往復できるかを知る必要がある。荷物の積み降ろしや充電、複数台で通路を使うときの待ち時間によって、その回数も変わる。発表には顧客の現場で測った往復数も、機器と既存設備をつなぐためにかかる費用も示されていない。出荷予定と仕様から候補地を絞り込めても、費用と搬送量を見積もるための資料はなお必要になる。",
       "image": null
     },
     {
-      "id": "shinshiro-pharmacy-drone-routes",
-      "title": "愛知の医薬品配送、車から空に移せる区間を新城市で検証",
-      "summary": "愛知県と新城市、民間2社が、ドローンで薬を届ける三つの方法を試した。薬を車で発着拠点へ運ぶ方法と、飛来した機体に薬局の職員が箱を載せる方法があった。",
-      "details": "グリーンサービスが飛行を担当し、エアロネクストが運航システムを提供した。",
-      "technical_novelty": "拠点に集める方法と、飛行途中に薬局で集荷する方法を試した。",
-      "engineering_impact": "既存の医薬品配送会社が運航と受け渡しにどう関われるかを検証した。",
-      "limitations": "定期的に運ぶ場合の配送一件あたりの総費用は公表していない。",
-      "evidence_status": "実証の参加者が発表し、物流専門媒体LNEWSが報じた。",
-      "published_at": "2026-11-20",
-      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "id": "vetaion-control-cabinet-financing",
+      "title": "制御盤の組み立て自動化へ、Vetaionが570万ユーロを調達",
+      "summary": "ミュンヘンのVetaionは、工場の機械を制御する電気部品を収める制御盤の組み立てを自動化するため、資金を調達した。電気図面を立体的な部品配置に変換するソフトウェアと、その配置を使って組み立てる装置を開発する。",
+      "details": "ミュンヘンのVetaionは、産業用の制御盤を組み立てる装置とソフトウェアの開発に向けて、570万ユーロを調達した。",
+      "technical_novelty": "同社のソフトウェアは、平面の電気図面を基に、部品の立体的な配置を作る。",
+      "engineering_impact": "同社はその配置データを使い、部品の取り付けや配線を自動化する装置の開発を進める。",
+      "limitations": "顧客の工場で測った結果は公表資料から確認できない。",
+      "evidence_status": "投資家のUVC Partnersと起業支援機関のUnternehmerTUMが調達を発表した。",
+      "published_at": "2026-11-19",
+      "organization": "Vetaion",
       "source_ids": [
-        "aeronext",
-        "lnews-drone"
+        "vetaion-uvc",
+        "vetaion-tum"
       ],
       "time_window": "7d",
-      "body": "愛知県と新城市は、エアロネクスト、グリーンサービスとともに、新城市の医薬品配送で車に代えてドローンを使える区間を調べた。11月20日の報告では三つのルートを示した。すでに薬を運んでいる地元企業が飛行も担い、届け先の職員へ箱を渡すところまで仕事を組み立てられるかが検証項目だった。\n\n11月18日の報道公開では、市街地の薬局が薬を車で横川公民館の発着拠点に運んだ。会場では薬の箱を機体に載せた。主催者によると、機体は約8キロ先の特別養護老人ホームまで約12分で飛び、届けた箱を施設の職員が回収した。12分は拠点から施設までの飛行時間に当たる。\n\n別のルートでは、機体が荷物を積まずに拠点を出て薬局の近くで着陸し、薬局の職員が箱を載せた。その後、機体は別の特別養護老人ホームに薬を届けた。主催者によると、拠点から薬局までの飛行は約13分、薬局から届け先までは約5分で、この時間に拠点への帰路は含まれない。機体を運航したのは地域の医薬品配送会社グリーンサービスで、津島市の事業拠点から遠隔で運航を管理した。\n\n試したルートによって、薬局の職員が担う仕事が変わる。薬を車で発着拠点まで運ぶ場合と、到着した機体に薬局で箱を積む場合がある。エアロネクストは運航システムを提供し、グリーンサービスの職員は同社の講習を受け、地元の事業者として飛行を担った。飛行区間ごとの時間は、配送にかかる費用を考えるうえで一つの材料になる。車で運ぶ場合と比べるには、拠点までの移動、離陸までの待ち時間、着陸後の受け渡しも含める必要がある。発表には、注文一件あたりの総費用は記載されていない。",
+      "body": "ミュンヘンのVetaionは、産業用の制御盤を作る工場向けに、組み立て装置を開発する資金を得た。制御盤には、機械に電力を配ったり、動作を制御したりする部品が入る。同社は、部品のつなぎ方を示した図を立体的な配置に変える工程と、その配置を使って実際に組み立てる工程を対象としている。\n\nミュンヘンの新興企業Vetaionが、開発の初期段階で570万ユーロを調達した。UVC PartnersとVisionaries Tomorrowが主導し、2100 VenturesとViessmann Generations Groupも参加した。出資したUVC Partnersとミュンヘンの起業支援機関UnternehmerTUMが、調達の内容を発表した。\n\nVetaionのソフトウェアは、平面の電気図面から部品の立体的な配置を作る。電気図面ではどの部品をどこにつなぐかが分かり、立体の配置では部品を箱の中のどこに収めるかが分かる。同社は、この配置データを使って、部品の取り付けや電線の接続を行う装置を開発している。図面を読み取るソフトウェアと、現物を組み立てる装置の両方が開発の対象だ。\n\n仕様の異なる制御盤を作る工場では、設計を切り替えるたびに現場で何を確認し、どこまで手で直すかが工数を左右する。発表には、別の制御盤に切り替えるのにかかった時間や、配線を誤った割合、完成品の検査費用の実測値はない。投資の対象と金額は明らかになったが、工場ごとの採算を試算するには、これらの工程でどれだけ人の手が必要になるかを確かめる必要がある。",
       "image": null
     },
     {
-      "id": "arrive-ai-pro-forma-nasdaq-equity",
-      "title": "荷物の受け渡し設備を開発するArrive AI、債務を株式に替えた後の資本を試算",
-      "summary": "ドローンや配送員などの荷物の受け渡しに使う設備を開発する米Arrive AIが、米証券取引委員会に資金調達と債務の処理について届け出た。複数の取引を反映した株主資本の概算は約770万ドルで、同社に適用されるナスダックの最低基準250万ドルを上回るという。",
-      "details": "取引を反映する前の9月30日時点の株主資本は219万8652ドルだった。",
-      "technical_novelty": "貸し手のストリートビル・キャピタルには、債務と引き換えに優先株を渡した。",
-      "engineering_impact": "導入企業は、設備の利用期間を通じて保守を受けられるかにも注意を払う必要がある。",
-      "limitations": "試算は監査を受けておらず、債務交換の会計処理は確定していない。",
-      "evidence_status": "11月20日付の米証券取引委員会への届出書と、同社の投資家向け資料に基づく。",
-      "published_at": "2026-11-20",
-      "organization": "Arrive AI",
+      "id": "outsight-shift-azure-local",
+      "title": "施設内のサーバーで動体追跡、Outsightが対応を発表",
+      "summary": "Outsightは、動く物体を追跡するソフトウェアがIntel製プロセッサーを搭載したAzure Localのサーバーで動くと発表した。施設内でセンサーの値を処理できるが、費用や追跡精度を比較できる数値は示していない。",
+      "details": "Outsightは、空間内の物体を追跡するソフトウェアが、Intel製プロセッサーを搭載したAzure Localのサーバーで動くと発表した。",
+      "technical_novelty": "レーザーで測った距離などを使い、人や物が動くたびに三次元の位置情報を書き換える。",
+      "engineering_impact": "公表された構成では中央処理装置が計算を担うため、利用先のサーバーで処理する構成を選べる。",
+      "limitations": "処理の遅れは50ミリ秒未満としているが、比較に必要な測定条件や、追跡精度と費用は示していない。",
+      "evidence_status": "Outsightによる発表で、独立した第三者による試験結果は掲載されていない。",
+      "published_at": "2026-11-17",
+      "organization": "Outsight, Intel and Microsoft",
       "source_ids": [
-        "arrive-sec",
-        "arrive-ir"
+        "outsight-shift"
       ],
       "time_window": "7d",
-      "body": "荷物の受け渡し設備を開発する米Arrive AIが11月20日、資金調達と債務の処理に伴う株主資本の変化を報告した。株主資本は会計上、資産から負債を差し引いた会社の持ち分を表す。同社は一連の取引を反映すると約770万ドルになると試算し、米証券取引委員会に提出した書類で、上場先のナスダックが同社に求める250万ドルの基準を上回ったとの見方を示した。\n\n同社が報告した9月30日時点の株主資本は219万8652ドルだった。その後、特定の投資家に株式を売って諸費用を引く前で25万ドルを調達したほか、市場価格で株式を売る仕組みで約130万ドルを得た。また、ストリートビル・キャピタルに対する債務と引き換えに、普通株と異なる条件を持つ優先株を渡した。これらの取引を反映して、同社は株主資本の基準を再び満たしたとの見方を示している。\n\n同社の設備では、配送員やドローンなどが別々の時刻に到着して荷物を引き渡せる。設備を導入して長く使う顧客にとって、開発会社が保守を続けられるかは選定の一つの条件になる。今回の数字は、取引が9月30日までに済んでいたと仮定した試算で、決算日より後の事業成績は反映していない。この試算は監査を受けておらず、優先株を返済期限のない株主資本に分類できるとの同社の見通しを織り込む。債務と株式を交換した取引の会計処理は、最終的には確定していない。ナスダックは今後も、同社が株主資本の基準を満たしているかを確認する。",
+      "body": "OutsightのShiftは、センサーの測定値から動く物体を追い、その位置を更新するソフトウェアだ。同社は、現地に設置したサーバーを管理するMicrosoftの仕組みAzure Localで動かせると発表した。大きな建物や工場では、観測する設備の近くに処理を置く構成を検討できる。\n\nOutsightが主要なセンサーとして挙げるのが、レーザー光を使って距離を測るライダーだ。ソフトウェアは測定値から物体の位置を求め、人や物が移動するたびに三次元の位置情報を更新する。同社によると、カメラやWi-Fiなど、別の仕組みで得た情報を組み合わせることもできる。同社は出力を匿名化したデータと説明しているが、この点を第三者が確認した結果は発表に含まれていない。\n\n公表された構成では、計算と周辺の機能をまとめたIntel Xeon 6の製品を使う。行列演算を高速化する機能Intel AMXを活用し、画像処理などに使う別の演算装置を加えず、中央処理装置で追跡処理を行う。同社は処理結果を50ミリ秒未満で得られるとしているが、その数値を得た条件は示していない。Outsightは、11月17日から20日までサンフランシスコで開かれたMicrosoft Igniteで、この構成を実演する予定だと発表した。\n\n費用を比べるには、対象の施設をカバーするのに何台のサーバーが必要か、日々の管理にどれだけ手がかかるかを把握する。施設の外にどんなデータが送られるかも、導入先ごとに確認する項目になる。今回の発表には、装置構成の費用も、特定の負荷で測った追跡精度も示されていない。運用前に精度や必要な機器の台数を知るには、観測する範囲と測定の目的を決めたうえで、現地の条件に合わせて検証する余地がある。",
       "image": null
     },
     {
-      "id": "bagel-robodojo-suite-results",
-      "title": "Bagel Labsが双腕向けモデルを公開、企業の社内評価には有償契約",
-      "summary": "カナダのBagel Labsは、ロボットの両腕を動かすモデルのコードと試験成績を公開した。成績は仮想環境で得たもので、企業が社内評価に使う場合も別途有償契約が必要になる。",
-      "details": "コンピューター上の試験RoboDojo-Simでは、五つの部門で途中までできた作業にも点が付く。",
-      "technical_novelty": "学習で得た数値の集まりであるモデルの重みをダウンロードできる。",
-      "engineering_impact": "企業が社内の比較試験に使えるかどうかには利用許諾の条件が関わる。",
-      "limitations": "顧客の現場での稼働成績はこの発表では示されていない。",
-      "evidence_status": "開発元が仮想環境での成績と利用許諾の条件を公開した。",
+      "id": "robocap-workplace-video",
+      "title": "ロボット学習向けに、職場の手作業を1万時間記録",
+      "summary": "Grounded SuperintelligenceとBitRobotは、11か国で人が仕事をする様子を記録した。頭に取り付けたカメラの映像から手の位置を推定し、ロボットに動きを覚えさせる手本にできる。",
+      "details": "Grounded SuperintelligenceとBitRobotは、11か国で人の作業を撮影し、1万時間分の記録をまとめた。",
+      "technical_novelty": "同期した6台のカメラと慣性センサーを備えたヘッドセットを使い、頭と手の動きを三次元で推定する。",
+      "engineering_impact": "物を扱うときの人の動きを、ロボット制御の学習用に検討できる。",
+      "limitations": "力や接触の測定値はなく、この論文ではロボットの学習結果を評価していない。",
+      "evidence_status": "記録の規模と装置、処理方法は、作成チームがプレプリントで報告した。",
       "published_at": "2026-11-20",
-      "organization": "Bagel Labs",
+      "organization": "Grounded Superintelligence and BitRobot",
       "source_ids": [
-        "bagel-code",
-        "bagel-model"
+        "robocap-paper"
       ],
       "time_window": "7d",
-      "body": "トロントのBagel Labsが公開したのは、作業の指示とカメラの情報をもとにロボットの両腕の動きを決めるプログラムだ。仮想環境でロボットの制御を比べる試験RoboDojo-Simの成績も、項目別に示した。現場で自動化したい作業と試験の課題が似ていれば、何を社内で詳しく検証するかを決める材料になる。例えば両腕で大きな物を持つ工程を任せる場合、物を持ち上げる段階と、所定の場所に置き終える段階は分けて確かめたい。\n\nモデルには、作業の指示文、頭部のカメラと左右の手首のカメラの映像、ロボットの現在の状態を入力する。モデルは一度に32ステップ分の動作を予測し、最初の16ステップを実行してから、改めて観測した情報をもとに次の動作を計算する。計画を立て直す時点で、腕や物の位置が前の動作からどう変わったかを反映できる。\n\n11月20日付のRoboDojo-Simの集計で、Bagel Labsのモデルは、別のソフトウェアが作業の進め方を補助する部門を除くと総合3位だった。平均は100点満点で38.65点、作業を最後まで達成した割合は平均31.91%だった。試験には初めての条件への対応や複数の手順からなる作業など五つの評価部門があり、順位を決める集計では各部門を同じ重みで扱う。途中までできた作業にも点が付く。達成方法の自由度が高い作業や、文章や画像の指示に従う作業を含む「Open」部門では、成功率が3.33%だった。\n\n公開された重みは、プログラムが手本から学んだ内容を表す数値の集まりで、実行時に必要になる。ダウンロードは可能だが、公開資料によると企業が業務で使ったり、企業のために第三者が使ったりする場合には別途有償契約が必要だ。対象には社内研究や他社モデルとの比較試験も含まれる。稟議の前に整理したいのは、どの作業を最後までこなせば導入の候補になるかという条件だ。順位は途中までこなした作業にも得点を与えるため、完了が必須の仕事では、試験項目ごとの成功率を確かめる必要がある。",
+      "body": "Grounded SuperintelligenceとBitRobotは、人が職場で物を扱う様子を記録した。手作業の自動化を検討する企業にとっては、作業の順序や手の動きをロボットに覚えさせるための候補になる。作業者に近い視点から撮った映像に、手がどこを通ったかの推定値を組み合わせている。\n\n装置は重さ250グラムで、映像の時刻をそろえた6台のカメラと、加速度や回転を測る二つの慣性計測装置を載せている。カメラごとに手が違う角度から映る。処理ソフトは映像とセンサーの値を組み合わせ、頭の動きと手の位置を三次元で推定する。収録のたびにカメラの特性と互いの位置関係を確かめるので、同じ時刻の映像を対応づけられる。\n\n筆者らは11か国で撮った記録を選び、収録時間の合計を1万時間とした。複数のカメラで撮った1分間も、収録時間としては1分と数える。記録は137万8462本の短い動画に分けた。長さの中央値は17.8秒で、動画を長さ順に並べたときの中央に当たる。筆者らによると、参加者は書面で同意し、追加の報酬を受けた。データには音声を含めず、映り込んだ顔を隠す処理を施した。\n\n導入先で作業を再現するには、その仕事を続けるために、ロボットが何を計測する必要があるかを見極めることになる。部品を一定の力で押す工程であれば、映像だけでは作業者が加えた力は分からない。論文は収録の規模と方法を詳しく説明しているが、記録した手順を特定のロボットの手で再現するための工数や、再現できた割合は示していない。",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "設備を決める前に倉庫の作業を検証",
-    "summary": "スペースデータと霞ヶ関キャピタルは、倉庫内のロボットや荷物を運ぶ機器の台数と配置をコンピューター上で変え、倉庫がどれだけ荷物を処理できるかを調べたい考えだ。",
-    "implications": "荷物が滞る場所を早く把握できれば、機器を入れる前に計画を見直せる。具体的な検証項目は今後決める。"
+    "title": "搬送ロボットを選ぶ際の目安になる通路幅",
+    "summary": "OMRON Roboticsが示した新機種の車幅は500ミリと580ミリだ。共通の管理ソフトウェアが作業を割り振り、複数の車両の動きを調整する。",
+    "implications": "仕様から試す経路を絞り込める。実際の搬送費用を見積もるには、積み降ろしや通行待ち、充電にかかる時間も測る必要がある。"
   },
   "sources": [
     {
-      "id": "cbs-bessent",
-      "organization": "CBS News",
-      "published_at": "2026-11-22",
-      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
-      "domain": "www.cbsnews.com",
-      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
-    },
-    {
-      "id": "reuters-bessent",
-      "organization": "Reuters",
-      "published_at": "2026-11-22",
-      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
-      "domain": "www.reuters.com",
-      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
-    },
-    {
-      "id": "nvidia-board",
-      "organization": "NVIDIA",
-      "published_at": "2026-11-12",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "id": "nv-board",
+      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
       "domain": "nvidianews.nvidia.com",
-      "title": "NVIDIA Announces CEO Transition"
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
     },
     {
-      "id": "space-data",
-      "organization": "Space Data",
-      "published_at": "2026-11-20",
-      "url": "https://prtimes.jp/main/html/rd/p/000000286.000080352.html",
-      "domain": "prtimes.jp",
-      "title": "スペースデータと霞ヶ関キャピタル、物流施設の設計から運用までをフィジカルAI・空間知能で高度化する共同検討を開始"
-    },
-    {
-      "id": "lnews-space",
-      "organization": "LNEWS",
-      "published_at": "2026-11-20",
-      "url": "https://www.lnews.jp/2026/11/s1120503.html",
-      "domain": "www.lnews.jp",
-      "title": "霞ヶ関キャピタルとスペースデータ／物流施設3拠点でフィジカルAI活用を共同検討"
-    },
-    {
-      "id": "aeronext",
-      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
-      "published_at": "2026-11-20",
-      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
-      "domain": "aeronext.co.jp",
-      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
-    },
-    {
-      "id": "lnews-drone",
-      "organization": "LNEWS",
-      "published_at": "2026-11-20",
-      "url": "https://www.lnews.jp/2026/11/s1120502.html",
-      "domain": "www.lnews.jp",
-      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
-    },
-    {
-      "id": "arrive-sec",
-      "organization": "Arrive AI",
-      "published_at": "2026-11-20",
-      "url": "https://www.sec.gov/Archives/edgar/data/1818274/000149315226053484/form8-k.htm",
+      "id": "nv-sec",
+      "title": "NVIDIA Form 8-K: November 22 board action",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
       "domain": "www.sec.gov",
-      "title": "Arrive AI Inc. Form 8-K"
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
     },
     {
-      "id": "arrive-ir",
-      "organization": "Arrive AI",
-      "published_at": "2026-11-20",
-      "url": "https://investors.arriveai.com/news-releases/news-release-details/arrive-ais-pro-forma-stockholders-equity-now-above-nasdaq",
-      "domain": "investors.arriveai.com",
-      "title": "Arrive AI’s Pro Forma Stockholders’ Equity Now Above Nasdaq Minimum Requirement Following Recent Transactions"
+      "id": "nv-reuters",
+      "title": "Nvidia reinstates Jensen Huang as CEO, igniting tech surge",
+      "url": "https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-23"
     },
     {
-      "id": "bagel-code",
-      "organization": "Bagel Labs",
-      "published_at": "2026-11-20",
-      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
-      "domain": "github.com",
-      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
+      "id": "omron-release",
+      "title": "OMRON Robotics Announces Start of Orders for New LD Series Autonomous Mobile Robots",
+      "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/",
+      "domain": "robotics.omron.com",
+      "organization": "OMRON Robotics",
+      "published_at": "2026-11-19"
     },
     {
-      "id": "bagel-model",
-      "organization": "Bagel Labs",
-      "published_at": "2026-11-18",
-      "url": "https://www.bagel.com/bagel-robotics-1",
-      "domain": "www.bagel.com",
-      "title": "Bagel-Robotics-1"
+      "id": "vetaion-uvc",
+      "title": "€5.7 million for Vetaion: DeepTech startup builds the electrical infrastructure of the future",
+      "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future",
+      "domain": "www.uvcpartners.com",
+      "organization": "UVC Partners",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "vetaion-tum",
+      "title": "5,7 Mio. EUR für Vetaion: Deep-Tech-Startup baut die elektrische Infrastruktur der Zukunft auf",
+      "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/",
+      "domain": "www.unternehmertum.de",
+      "organization": "UnternehmerTUM",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "outsight-shift",
+      "title": "Outsight, Intel and Microsoft bring Dynamic World Models to the Enterprise Edge",
+      "url": "https://www.outsight.ai/insights/outsight-intel-and-microsoft-bring-dynamic-world-models-to-the-edge/",
+      "domain": "www.outsight.ai",
+      "organization": "Outsight",
+      "published_at": "2026-11-17"
+    },
+    {
+      "id": "robocap-paper",
+      "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
+      "url": "https://arxiv.org/html/2611.26916v1",
+      "domain": "arxiv.org",
+      "organization": "Grounded Superintelligence and BitRobot",
+      "published_at": "2026-11-20"
     }
   ]
 }

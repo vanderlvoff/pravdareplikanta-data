@@ -2,213 +2,177 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-23",
-  "issue_id": "daily-2026-11-23",
+  "issue_date": "2026-11-24",
+  "issue_id": "daily-2026-11-24",
   "edition": "enthusiast",
   "language": "en",
-  "generated_at": "2026-11-22T21:16:24+00:00",
-  "title": "When air has two jobs inside a robot",
-  "lead": "UC San Diego engineers used compressed air to open and close air passages and then move six soft legs. Their printed robot reached 4.72 meters per second in testing.",
+  "generated_at": "2026-11-24T06:20:56+09:00",
+  "title": "What cameras can learn about hand movements",
+  "lead": "Grounded Superintelligence and BitRobot used cameras worn on the head to record 10,000 hours of work. Seeing the same action from several angles helps them locate the hand as it handles an object.",
   "news": [
     {
-      "id": "ucsd-two-stage-pneumatic-hexapod",
-      "title": "What a soft robot borrowed from a steam engine",
-      "summary": "UC San Diego engineers printed a six-legged robot that runs on compressed air. To reach up to 4.72 meters per second, they made one flow of air do two jobs in turn.",
-      "details": "The legs and pneumatic mechanism were printed in one soft material.",
-      "technical_novelty": "Air switches the valves first and moves the legs next, following a principle used in compound steam engines.",
-      "engineering_impact": "The team tried the machine on several surfaces and in water.",
-      "limitations": "A hose still connects it to its air supply.",
-      "evidence_status": "The researchers and the university describe physical tests.",
-      "published_at": "2026-11-18",
-      "organization": "University of California San Diego",
-      "source_ids": [
-        "ucsd",
-        "science-robotics"
-      ],
-      "time_window": "7d",
-      "body": "The six legs on a soft robot built at UC San Diego move on compressed air. The team wanted to speed up this kind of running machine and reached a reported top speed of 4.72 meters per second. The team printed the body in one piece, with passages that guide air through the robot like pipes carrying water through a building.\n\nThe body contains valves, chambers and tubes. The team enlarged and strengthened the design to handle higher pressure and flow. To make better use of the expanding air, the researchers borrowed the principle behind the compound steam engine. Compressed air first works in small, high-pressure chambers to run the valves. It then goes to larger, lower-pressure chambers and drives the legs.\n\nThe team’s earlier design moved at 4 centimeters per second. The new robot reached up to 4.72 meters per second. The university says the team tested it on concrete, gravel, grass, mulch and sand. It also went down stairs, swam and moved underwater. The robot works with a hose tether to an external source of compressed air.\n\nThe order of events is worth following. A valve opens or closes an air passage. After the air has done that first job, it still has energy to push against part of a leg. The researchers put that energy to work in the next chamber. The idea goes back to engines in which steam continued to expand from one cylinder into another. Here the sequence happens inside a printed body. Finding a way to carry the air supply remains an open design task: the six-legged runner used a tether during testing.",
-      "image": null
-    },
-    {
-      "id": "bagel-robodojo-suite-results",
-      "title": "How a two-armed robot earns credit before the board is in place",
-      "summary": "Canada’s Bagel Labs published a breakdown of how a program controls two robot arms. The virtual RoboDojo-Sim test awards credit for progress toward a goal, so a model’s ranking and its rate of finished tasks reveal different things.",
-      "details": "Two simulated grippers lift a board together and lower it onto supports in a documented example.",
-      "technical_novelty": "The model refreshes its plan from three camera views and the robot’s state.",
-      "engineering_impact": "Category scores show where the model more often finishes a task.",
-      "limitations": "The published scores come from simulation.",
-      "evidence_status": "Bagel Labs published code and a breakdown of its results.",
+      "id": "robocap-workplace-video",
+      "title": "What six cameras see when people work with their hands",
+      "summary": "Grounded Superintelligence and BitRobot used wearable cameras to record people doing physical work. The different viewpoints help locate the hands in space and preserve their movements as examples for robot learning.",
+      "details": "Grounded Superintelligence and BitRobot collected 10,000 hours of recordings of human work in 11 countries.",
+      "technical_novelty": "A headset with six synchronized cameras and inertial sensors supports three-dimensional estimates of head and hand movement.",
+      "engineering_impact": "The recordings provide examples of physical tasks for teams developing robot learning systems.",
+      "limitations": "The data contain no force or touch measurements. The paper does not evaluate training on a robot.",
+      "evidence_status": "The authors describe the dataset, hardware and processing in a preprint.",
       "published_at": "2026-11-20",
-      "organization": "Bagel Labs",
+      "organization": "Grounded Superintelligence and BitRobot",
       "source_ids": [
-        "bagel-code",
-        "bagel-model"
+        "robocap-paper"
       ],
       "time_window": "7d",
-      "body": "A robot trying to lay a board across two supports can fail at different moments: one gripper might miss an edge, or the board might come down past a support. Canada’s Bagel Labs showed this task in RoboDojo-Sim, a computer environment where programs operate virtual robots. The team released code for its Bagel-Robotics-1 model along with a breakdown of its performance. In one recorded run the robot picked up the board with both hands and laid it across the supports.\n\nThe model receives a task instruction, views from one head camera and two wrist cameras, and the robot's current state. It predicts 32 actions in a batch, executes 16 and then makes a new plan from fresh observations. That refresh lets the next prediction account for where the arms and objects are after the previous burst of movement.\n\nIn Bagel Labs' November 20 snapshot of RoboDojo-Sim, the model placed third among models evaluated without a separate software agent. It averaged 38.65 points out of 100, with an average full-task success rate of 31.91%. It completed 3.33% of trials in the Open category, which includes open-ended tasks and tasks guided by text or images. The ranking awards partial credit and gives each of the five main categories the same weight.\n\nA partial score helps a researcher see whether a new control program is getting any closer to its goal after a string of failures. The full completion rate answers a separate question: how often did it get all the way there? For the board example, Bagel Labs publishes settings for one successful run. The recording lets you trace how the two arms move together. To see how often the policy finishes work, look at the completion rates across the test rather than the recording of that single run.",
+      "body": "Grounded Superintelligence and BitRobot filmed people handling objects by mounting several cameras on a headset. The goal was to collect examples for robot learning and recover where the hands were at each point in a task. An object can hide part of the hand from one viewpoint, so having another angle can give the software information that a single recording would miss.\n\nThe 250-gram headset carries six synchronized cameras and two inertial measurement units that measure acceleration and rotation. The cameras view the wearer's hands from different angles. The processing combines the views and sensor readings to estimate head motion and three-dimensional hand positions. Each recording session has its own calibration, which lets the processing account for the positions and characteristics of the cameras.\n\nThe authors selected 10,000 hours of elapsed recording time. A minute filmed by several cameras counts as one minute. They segmented recordings from 11 countries into 1,378,462 clips with a median duration of 17.8 seconds. The authors say participants gave written consent and were compensated for taking part. Audio is excluded and faces are obscured.\n\nOn film you can tell the direction in which a worker moved a hand and when they reached for the next object. Some parts of the task are harder to see. If a person wipes a beaker, finger positions give clues about how they held the paper towel, but the team did not measure how hard they pressed on the glass. The paper describes what was captured and leaves the question of what a robot can learn from it for another study.",
       "image": null
     },
     {
-      "id": "kashii-parcel-intercom-lift-trial",
-      "title": "How a delivery robot gets past a locked apartment entrance",
-      "summary": "Four companies tested apartment deliveries in a residential building in Fukuoka. They connected a robot to the intercom, building access system and elevator and tested leaving a parcel outside when the resident was away.",
-      "details": "The November 18 test took place in Building 3 of a residential complex in Kashii, Fukuoka.",
-      "technical_novelty": "The robot works with the intercom, delivery access system and elevator.",
-      "engineering_impact": "When nobody is home, a drop-off lets the resident collect the parcel later.",
-      "limitations": "The participants did not publish a route completion rate.",
-      "evidence_status": "World Supply and NETSDAR Robot Solutions described the trial.",
-      "published_at": "2026-11-18",
-      "organization": "Aiphone, NETSDAR Robot Solutions, Nippon Otis Elevator and World Supply",
-      "source_ids": [
-        "world-supply",
-        "netsdar",
-        "ur-kashii"
-      ],
-      "time_window": "7d",
-      "body": "Could a robot take a parcel through a locked entrance, get to the right floor and finish the delivery even if nobody is home? NETSDAR Robot Solutions, Aiphone, Nippon Otis Elevator and World Supply tested that kind of apartment delivery in Fukuoka on November 18. The partners examined whether a robot could carry a parcel to a resident’s door and leave it there when needed.\n\nWheels solve only part of the problem. In a building with controlled entry, the delivery needs to work with the intercom and the system that unlocks the entrance. For travel between floors the robot also has to work with the elevator. The housing agency’s test plan shows the courier using delivery paperwork with the intercom to unlock the entrance, then handing the parcel over in the lobby. Once it has the parcel, the robot takes the elevator to the right floor.\n\nA trial in the previous year had already looked at front-door delivery. This year the robot supplier said the partners added intercom integration, a drop-off option and a logistics company to the test. Leaving a parcel has a specific purpose: saving the courier another trip. The participants did not disclose how many deliveries finished without a return visit.",
-      "image": null
-    },
-    {
-      "id": "shinshiro-pharmacy-drone-routes",
-      "title": "Where a parcel’s flight begins and ends",
-      "summary": "Local authorities and companies in Shinshiro, Japan, tested three routes for flying medicines to recipients. One drone started out empty and landed near a pharmacy to collect a box before it flew on.",
-      "details": "In one trial flight the drone carried a box to a nursing home in about 12 minutes.",
-      "technical_novelty": "Another route included a landing at a pharmacy for loading.",
-      "engineering_impact": "The routes test which jobs fall to pharmacy staff and which to the recipient.",
-      "limitations": "Flight times were reported separately from work on the ground.",
-      "evidence_status": "Project partners and the industry publication LNEWS described the trial.",
+      "id": "manipscope-target-reassignment",
+      "title": "Did the robot pick the thing it was asked for?",
+      "summary": "Researchers at the University of Science and Technology of China and their partners tested robot controllers in virtual scenes. They kept the arrangement of objects the same and changed the request to see whether the arm would pick a different target when asked.",
+      "details": "The test suite contains 48 held-out simulation scenes. In ten target-selection scenes, the team changed instructions while keeping the starting arrangement fixed.",
+      "technical_novelty": "ManipScope tests whether a robot controller changes its action when the instruction names a different object or destination.",
+      "engineering_impact": "The results help isolate errors in selecting a target before assessing execution of the chosen movement.",
+      "limitations": "The study ran in simulation and withheld demonstrations for the held-out scenes.",
+      "evidence_status": "The researchers reported their results and control runs in a preprint.",
       "published_at": "2026-11-20",
-      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "organization": "University of Science and Technology of China, Sharpa Robotics, Shanghai Jiao Tong University and The Chinese University of Hong Kong",
       "source_ids": [
-        "aeronext",
-        "lnews-drone"
+        "manipscope-paper"
       ],
       "time_window": "7d",
-      "body": "Does a medicine-carrying drone get its box before it takes off, or collect it at a pharmacy on the way? Aichi Prefecture and Shinshiro tried both arrangements with Aeronext and Green Service. They wanted to see how to connect a flight to preparing a package and handing it over to staff at a nursing home. The organizers released details of three routes on November 20.\n\nIn the public demonstration on November 18, a pharmacy brought the medicine by road to the launch site at Yokogawa community center. The crew loaded a box onto the drone. According to the organizers, it flew about eight kilometers in roughly 12 minutes to a nursing home, where staff collected the package. The time given was for the flight from the launch site to the destination.\n\nOn a different route, the aircraft left the hub empty, landed near a pharmacy for staff to load a box and flew on to a second nursing home. The organizers put the two outbound legs at about 13 and five minutes respectively, excluding the return. Local medical logistics company Green Service ran the flights, with remote operations based in Tsushima.\n\nAt the pharmacy stop, pharmacy staff could fasten a sealed box to the aircraft themselves. Staff at the destination had their own part to play. The partners developed a special box that a registered nurse could unlock with a fingerprint, so the intended recipient could open it after the box had been dropped off. The report gives the time in the air on individual legs. It leaves open how long it took staff to reach the aircraft and complete the handoff on the ground.",
+      "body": "A research team led by the University of Science and Technology of China asked a question that is easy to overlook when watching a robot demo. If the instructions name another object on the same table, will the arm change what it reaches for? To find out, the researchers built a virtual test called ManipScope, which lets them reset the table to the same layout after every attempt.\n\nThe team organized the tasks into six families and withheld demonstrations for the 48 evaluation scenes. To test the role of the instruction, it reused starting arrangements and varied the command in ten target-selection scenes. A single successful attempt can happen if a model picks the object that tends to appear in a familiar location. A series of instructions tests whether the same model can take the correct action for each command from an identical starting state.\n\nPooling the results of ten saved model versions, the team reported that all instructions were followed in 39 of 1,000 states, or 3.9%. A control that received no instruction text scored 16% on that measure. In a separate analysis of 12 model versions across 13,200 runs in 11 scenes, 84.6% of failed attempts involved moving a distractor, an object that was present but was not the intended target. The two figures count different things: one counts complete sets of instructions and the other describes how individual attempts failed.\n\nPicking a target and handling it are two separate skills. An arm can lift an object neatly and carry it to the right place while still making a mistake about which item was wanted. That is why the researchers looked for those slips separately. Their virtual table can be restored exactly between attempts, while a physical trial would also have to deal with objects shifting and differences in how the gripper makes contact.",
       "image": null
     },
     {
-      "id": "nvidia-administration-interim-management-contact",
-      "title": "What records can reveal about a shipment of NVIDIA chips",
-      "summary": "US Treasury Secretary Scott Bessent told CBS that the administration had contacted the interim leadership of chipmaker NVIDIA. He explained why shipping and payment records could help officials examine sales to China.",
-      "details": "Officials want to establish who handled export compliance inside NVIDIA.",
-      "technical_novelty": "Shipping and payment records can help connect a consignment with a transaction.",
-      "engineering_impact": "Computing chips from suppliers such as NVIDIA also help robotics developers train control models.",
-      "limitations": "Officials are still examining what happened and who was involved.",
-      "evidence_status": "The CBS transcript and a Reuters report document the administration’s contacts.",
-      "published_at": "2026-11-22",
-      "organization": "US Department of the Treasury and NVIDIA",
+      "id": "omron-ld-orders",
+      "title": "How a fleet of robots shares a narrow aisle",
+      "summary": "OMRON Robotics opened orders in the Americas and Europe for two robots that move loads inside buildings. Each finds its way using nearby features, while shared software assigns jobs and coordinates routes.",
+      "details": "OMRON Robotics opened orders for two indoor carriers rated for 150 and 300 kilograms.",
+      "technical_novelty": "The carriers navigate using their surroundings without floor markers, while fleet software assigns transport jobs.",
+      "engineering_impact": "A site trial can establish how room to manoeuvre, charging and traffic in both directions affect the amount moved per shift.",
+      "limitations": "The published figures are product specifications. The company expects shipments to start in January 2027.",
+      "evidence_status": "The source is the manufacturer, whose announcement gives no throughput measurements from a customer site.",
+      "published_at": "2026-11-19",
+      "organization": "OMRON Robotics",
       "source_ids": [
-        "cbs-bessent",
-        "reuters-bessent",
-        "nvidia-board"
+        "omron-release"
+      ],
+      "time_window": "7d",
+      "body": "OMRON Robotics has begun taking orders for two mobile carriers that move loads indoors. The carriers are narrow enough for a one-metre aisle. Each vehicle uses features in its surroundings to work out its position, but several vehicles in the same building also need a way to share the routes between pickup and drop-off points.\n\nThe smaller LD-150 is rated to carry 150 kg and is 500 mm wide. For the LD-300 the corresponding figures are 300 kg and 580 mm. OMRON specifies operation in aisles as narrow as one metre, a series top speed of 2.1 m/s and the ability to handle a slope of up to five degrees. The vehicles estimate their position using features in their surroundings and do not require guide tape or floor markers.\n\nOMRON's FLOW Core software assigns jobs, plans routes and coordinates the movements of the fleet. The vendor says it can manage up to 100 compatible OMRON vehicles of different types. Inductive charging transfers power at a station without a plug and can take as little as 18 minutes according to the company. Orders opened in the Americas and Europe, with other regions to follow. The vendor expects shipments to begin in January 2027.\n\nFinding your position and deciding which trip to make are different jobs. A vehicle needs a sense of where it is next to the racks, while fleet software can assign jobs across the group and coordinate routes that share an aisle. One figure the announcement leaves open is how long the robots wait for one another when several loaded trips converge. Measuring that delay would show how much extra work a larger fleet can actually do in an existing building.",
+      "image": null
+    },
+    {
+      "id": "vetaion-control-cabinet-financing",
+      "title": "How a wiring diagram becomes a physical assembly plan",
+      "summary": "Munich startup Vetaion raised €5.7 million to develop machinery and software for assembling control cabinets. Its software converts flat electrical drawings into spatial layouts intended to tell a robot where the components belong.",
+      "details": "Munich startup Vetaion raised €5.7 million to develop equipment and software for industrial control cabinet assembly.",
+      "technical_novelty": "Its software converts two-dimensional electrical plans into a three-dimensional layout of cabinet components.",
+      "engineering_impact": "Vetaion intends to use the digital layout to develop automated component placement and wiring.",
+      "limitations": "The public announcements provide no verified measurements from customer factories.",
+      "evidence_status": "Investor UVC Partners and entrepreneurship centre UnternehmerTUM announced the funding.",
+      "published_at": "2026-11-19",
+      "organization": "Vetaion",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "time_window": "7d",
+      "body": "Munich startup Vetaion has raised money to develop tools for assembling factory control cabinets, the boxes that hold parts which supply power and send control signals to machinery. The project tackles the step between seeing how the parts should be connected on a drawing and giving a machine enough information to put them into a real cabinet and wire them together.\n\nMunich startup Vetaion raised €5.7 million in an early funding round. UVC Partners and Visionaries Tomorrow led the round, with 2100 Ventures and Viessmann Generations Group also taking part. UVC Partners and the Munich entrepreneurship centre UnternehmerTUM announced the financing.\n\nVetaion's software uses a flat electrical drawing to produce a three-dimensional layout of the parts. A wiring diagram shows which elements are connected, while a spatial layout gives them positions inside the cabinet. The team is developing equipment intended to use that layout to mount components and connect them with wires. The funding supports work on this combination of software and machinery.\n\nKnowing which sockets should be connected still leaves a question about how to reach them. A component beside a socket can change the direction from which a tool can approach it. That is where a spatial layout becomes useful to an assembly machine. The announcements give no trial result that would establish how many different layouts the equipment has managed to assemble from start to finish.",
+      "image": null
+    },
+    {
+      "id": "nvidia-huang-reinstatement",
+      "title": "Who is running NVIDIA after Huang’s return?",
+      "summary": "NVIDIA says Jensen Huang is back in charge. Reuters confirmed the leadership change, while the separate internal inquiry described by the board continues.",
+      "details": "The board reinstated Huang as president, chief executive and director. Colette Kress remains chief financial officer.",
+      "technical_novelty": "A planned compliance chief complements the board’s national security and export control committee.",
+      "engineering_impact": "A computing supplier used by robotics teams is changing how it oversees trade compliance.",
+      "limitations": "The independent internal inquiry continues. The announcement gives no revised hardware delivery terms.",
+      "evidence_status": "NVIDIA’s announcement, its filing with the US securities regulator and Reuters confirm the leadership decision.",
+      "published_at": "2026-11-23",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "nv-board",
+        "nv-sec",
+        "nv-reuters"
       ],
       "time_window": "24h",
-      "body": "US Treasury Secretary Scott Bessent told CBS on November 22 that the administration had been in touch with NVIDIA’s interim leadership. The company makes chips for demanding computing jobs, including training programs to control robots by learning from many examples. Officials are asking about shipments of chips to China and who inside the company was responsible for following export rules.\n\nBessent said the administration had contacted NVIDIA’s interim leadership, board directors and lawyers. At the time of the interview, he said it was still waiting for the answers it wanted. He said officials wanted to find out who was responsible for compliance with export rules and what levels of the company knew about shipments under scrutiny.\n\nBessent pointed to shipping and payment records as a way to reconstruct transactions even where arrangements were informal. He described possible systemic noncompliance as something still being looked into. Reuters also reported the contacts. NVIDIA’s board announced on November 12 that Jensen Huang had resigned and that chief financial officer Colette Kress would serve as interim CEO. Bessent confirmed that the chief financial officer was in charge.\n\nA shipment of expensive equipment creates records in different places. Shipping documents can identify who sent the goods and what was shipped, while payment records track the money. Putting those records together helps officials piece together part of the story and find out who could authorize a transaction. Bessent identified one specific question: what employees knew about the shipments under review, and whether that knowledge reached the people running the company.",
+      "body": "Jensen Huang is back in charge at NVIDIA, a company that makes processors used, among other things, to train programs that control robots. NVIDIA made the announcement on November 23. Huang regained the positions of president, chief executive and director. The board makes major decisions for the company, while the chief executive is responsible for running it day to day.\n\nIn its filing with the US securities regulator, NVIDIA dates the board action to November 22. The company made it public the following day, and Reuters independently reported Huang’s return. The directors voted unanimously. Colette Kress, who had been running the company on an interim basis, remains chief financial officer. Harvey Jones stays on as board chair.\n\nThe board said it had heard from senior US government officials and believes Huang’s return poses no national security risk. That is the board’s assessment. NVIDIA says it created a committee of independent directors after reports that Huang had been targeted by a foreign intelligence effort. The committee and its outside counsel will continue the inquiry. NVIDIA also began looking for a company-wide compliance chief to oversee adherence to rules. Its board has a dedicated committee supervising national security and export control.\n\nPicking a person to run the company today and finding out what happened during the period under review are different pieces of work. The independent directors and their lawyers are still investigating. NVIDIA’s announcement therefore identifies who has which job, while the inquiry has yet to produce its conclusion. The compliance chief the company is now seeking will report to the board committee responsible for nominations and corporate governance.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Two stages of work for compressed air",
-    "summary": "In UC San Diego’s six-legged robot, the same air first opens and closes passages and then pushes the legs. The researchers borrowed the idea from compound steam engines.",
-    "implications": "The prototype uses air supplied through a hose. The team is exploring whether a future version could use a small portable air cartridge."
+    "title": "One training example from several viewpoints",
+    "summary": "Grounded Superintelligence and BitRobot filmed people's hands from several angles at once. Images and sensor readings let them estimate how the head and hands moved through space.",
+    "implications": "The recordings preserve sequences of movement that could be used to teach robots. They do not measure how much force a person applied to an object."
   },
   "sources": [
     {
-      "id": "ucsd",
-      "organization": "University of California San Diego",
-      "published_at": "2026-11-18",
-      "url": "https://today.ucsd.edu/story/the-fastest-soft-robot-ever-built-doesnt-need-electronics-to-function",
-      "domain": "today.ucsd.edu",
-      "title": "The Fastest Soft Robot Ever Built Doesn’t Need Electronics to Function"
+      "id": "robocap-paper",
+      "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
+      "url": "https://arxiv.org/html/2611.26916v1",
+      "domain": "arxiv.org",
+      "organization": "Grounded Superintelligence and BitRobot",
+      "published_at": "2026-11-20"
     },
     {
-      "id": "science-robotics",
-      "organization": "Science Robotics",
-      "published_at": "2026-11-18",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/43050495/",
-      "domain": "pubmed.ncbi.nlm.nih.gov",
-      "title": "Printing powerful soft robots on a desktop"
+      "id": "manipscope-paper",
+      "title": "ManipScope: A Diagnostic Benchmark for Instruction Following and Generalization in Robotic Manipulation",
+      "url": "https://arxiv.org/html/2611.27305v1",
+      "domain": "arxiv.org",
+      "organization": "Jiacheng Li et al.",
+      "published_at": "2026-11-20"
     },
     {
-      "id": "bagel-code",
-      "organization": "Bagel Labs",
-      "published_at": "2026-11-20",
-      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
-      "domain": "github.com",
-      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
+      "id": "omron-release",
+      "title": "OMRON Robotics Announces Start of Orders for New LD Series Autonomous Mobile Robots",
+      "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/",
+      "domain": "robotics.omron.com",
+      "organization": "OMRON Robotics",
+      "published_at": "2026-11-19"
     },
     {
-      "id": "bagel-model",
-      "organization": "Bagel Labs",
-      "published_at": "2026-11-18",
-      "url": "https://www.bagel.com/bagel-robotics-1",
-      "domain": "www.bagel.com",
-      "title": "Bagel-Robotics-1"
+      "id": "vetaion-uvc",
+      "title": "€5.7 million for Vetaion: DeepTech startup builds the electrical infrastructure of the future",
+      "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future",
+      "domain": "www.uvcpartners.com",
+      "organization": "UVC Partners",
+      "published_at": "2026-11-19"
     },
     {
-      "id": "world-supply",
-      "organization": "World Supply",
-      "published_at": "2026-11-18",
-      "url": "https://www.kyodo.co.jp/pr/2026-11-18_4050146/",
-      "domain": "www.kyodo.co.jp",
-      "title": "先進的なまちづくりを目指す「FUKUOKA Smart EAST」における館内配送サービスの実証実験に参画"
+      "id": "vetaion-tum",
+      "title": "5,7 Mio. EUR für Vetaion: Deep-Tech-Startup baut die elektrische Infrastruktur der Zukunft auf",
+      "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/",
+      "domain": "www.unternehmertum.de",
+      "organization": "UnternehmerTUM",
+      "published_at": "2026-11-19"
     },
     {
-      "id": "netsdar",
-      "organization": "NETSDAR Robot Solutions",
-      "published_at": "2026-11-17",
-      "url": "https://prtimes.jp/main/html/rd/p/000000005.000172258.html",
-      "domain": "prtimes.jp",
-      "title": "インターホン・エレベーターと連携した配送ロボットで「置き配」まで行う館内配送の実証実験を、福岡市のUR賃貸住宅で実施"
-    },
-    {
-      "id": "ur-kashii",
-      "organization": "Urban Renaissance Agency",
-      "published_at": "2026-11-11",
-      "url": "https://www.ur-net.go.jp/news/pcbnj1000000c5sc-att/ur2026_press_1111_kyusyu.pdf",
-      "domain": "www.ur-net.go.jp",
-      "title": "物流事業者と配送ロボットの連携による集合住宅向け棟内配送サービスの実証実験を実施"
-    },
-    {
-      "id": "aeronext",
-      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
-      "published_at": "2026-11-20",
-      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
-      "domain": "aeronext.co.jp",
-      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
-    },
-    {
-      "id": "lnews-drone",
-      "organization": "LNEWS",
-      "published_at": "2026-11-20",
-      "url": "https://www.lnews.jp/2026/11/s1120502.html",
-      "domain": "www.lnews.jp",
-      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
-    },
-    {
-      "id": "cbs-bessent",
-      "organization": "CBS News",
-      "published_at": "2026-11-22",
-      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
-      "domain": "www.cbsnews.com",
-      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
-    },
-    {
-      "id": "reuters-bessent",
-      "organization": "Reuters",
-      "published_at": "2026-11-22",
-      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
-      "domain": "www.reuters.com",
-      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
-    },
-    {
-      "id": "nvidia-board",
-      "organization": "NVIDIA",
-      "published_at": "2026-11-12",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "id": "nv-board",
+      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
       "domain": "nvidianews.nvidia.com",
-      "title": "NVIDIA Announces CEO Transition"
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-sec",
+      "title": "NVIDIA Form 8-K: November 22 board action",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
+      "domain": "www.sec.gov",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-reuters",
+      "title": "Nvidia reinstates Jensen Huang as CEO, igniting tech surge",
+      "url": "https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-23"
     }
   ]
 }

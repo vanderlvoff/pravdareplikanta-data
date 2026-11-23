@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 489" width="360" height="489" xml:lang="ja" role="img" aria-labelledby="title desc">
+  <title id="title">幅1メートルの通路を 走る搬送ロボット</title>
+  <desc id="desc">直線通路の幅：1,000 mm 500 mm 580 mm 積載量：最大150 kg 積載量：最大300 kg 横幅は同じ縮尺で表示。 荷物の大きさや曲がり角は、 実際に使う経路で確認する。</desc>
+  <rect x="0" y="0" width="360" height="489" rx="0" fill="#f6f7f2" stroke="none" stroke-width="1" data-qa-group="bg" id="g2"/>
+  <text x="24" y="32" fill="#116768" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="700" text-anchor="start" id="g3">OMRON Robotics</text>
+  <text x="24" y="68" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g4">幅1メートルの通路を</text>
+  <text x="24" y="102" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g5">走る搬送ロボット</text>
+  <text x="180" y="137" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="15" font-weight="700" text-anchor="middle" id="g6">直線通路の幅：1,000 mm</text>
+  <line x1="34" y1="151" x2="326" y2="151" stroke="#116768" stroke-width="1.4" data-qa-group="dimension" id="g7"/>
+  <line x1="34" y1="146" x2="34" y2="157" stroke="#116768" stroke-width="1.4" data-qa-group="dimension" id="g8"/>
+  <line x1="326" y1="146" x2="326" y2="157" stroke="#116768" stroke-width="1.4" data-qa-group="dimension" id="g9"/>
+  <rect x="26" y="166" width="8" height="41" rx="0" fill="#9caaaa" stroke="none" stroke-width="1" data-qa-group="carrier0" id="g10"/>
+  <rect x="326" y="166" width="8" height="41" rx="0" fill="#9caaaa" stroke="none" stroke-width="1" data-qa-group="carrier0" id="g11"/>
+  <rect x="107.0" y="168" width="146.0" height="37" rx="9" fill="#cde6e0" stroke="#116768" stroke-width="1.6" data-qa-group="carrier0" id="g12" data-width-mm="500"/>
+  <rect x="115.0" y="175" width="130.0" height="23" rx="4" fill="none" stroke="#116768" stroke-width="1" data-qa-group="carrier0" id="g13"/>
+  <line x1="124.0" y1="175" x2="124.0" y2="198" stroke="#116768" stroke-width="1" data-qa-group="carrier0" id="g14"/>
+  <line x1="236.0" y1="175" x2="236.0" y2="198" stroke="#116768" stroke-width="1" data-qa-group="carrier0" id="g15"/>
+  <text x="24" y="230" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="15" font-weight="700" text-anchor="start" id="g16">LD-150</text>
+  <text x="336" y="230" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="700" text-anchor="end" id="g17">500 mm  ·  積載量：最大150 kg</text>
+  <rect x="26" y="266" width="8" height="41" rx="0" fill="#9caaaa" stroke="none" stroke-width="1" data-qa-group="carrier1" id="g18"/>
+  <rect x="326" y="266" width="8" height="41" rx="0" fill="#9caaaa" stroke="none" stroke-width="1" data-qa-group="carrier1" id="g19"/>
+  <rect x="95.32" y="268" width="169.36" height="37" rx="9" fill="#cde6e0" stroke="#116768" stroke-width="1.6" data-qa-group="carrier1" id="g20" data-width-mm="580"/>
+  <rect x="103.32" y="275" width="153.36" height="23" rx="4" fill="none" stroke="#116768" stroke-width="1" data-qa-group="carrier1" id="g21"/>
+  <line x1="112.32" y1="275" x2="112.32" y2="298" stroke="#116768" stroke-width="1" data-qa-group="carrier1" id="g22"/>
+  <line x1="247.68" y1="275" x2="247.68" y2="298" stroke="#116768" stroke-width="1" data-qa-group="carrier1" id="g23"/>
+  <text x="24" y="330" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="15" font-weight="700" text-anchor="start" id="g24">LD-300</text>
+  <text x="336" y="330" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="700" text-anchor="end" id="g25">580 mm  ·  積載量：最大300 kg</text>
+  <text x="24" y="366" fill="#40575b" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g26">横幅は同じ縮尺で表示。</text>
+  <text x="24" y="413" fill="#40575b" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g27">荷物の大きさや曲がり角は、</text>
+  <text x="24" y="435" fill="#40575b" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g28">実際に使う経路で確認する。</text>
+  <text x="24" y="465" fill="#40575b" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g29">出典：OMRON Robotics</text>
+</svg>

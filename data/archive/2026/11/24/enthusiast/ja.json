@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-24",
+  "issue_id": "daily-2026-11-24",
+  "edition": "enthusiast",
+  "language": "ja",
+  "generated_at": "2026-11-24T06:20:56+09:00",
+  "title": "カメラで手の動きをどこまで記録できるか",
+  "lead": "Grounded SuperintelligenceとBitRobotは頭につけるカメラを使い、人が作業する様子を1万時間にわたって記録した。いくつかの角度から撮ると、物を扱うときの手の位置を推定しやすくなる。",
+  "news": [
+    {
+      "id": "robocap-workplace-video",
+      "title": "手作業を六つのカメラで撮ると、何が分かるか",
+      "summary": "Grounded SuperintelligenceとBitRobotは人の手作業を、身につけるカメラで撮影した。いくつかの角度から撮ることで、手が空間のどこを通ったかを推定し、ロボットの学習に使える形で残す。",
+      "details": "Grounded SuperintelligenceとBitRobotは、11か国で人の作業を撮影し、1万時間分の記録をまとめた。",
+      "technical_novelty": "同期した6台のカメラと慣性センサーを備えたヘッドセットを使い、頭と手の動きを三次元で推定する。",
+      "engineering_impact": "物を扱うときの人の動きを、ロボット制御の学習用に検討できる。",
+      "limitations": "力や接触の測定値はなく、この論文ではロボットの学習結果を評価していない。",
+      "evidence_status": "記録の規模と装置、処理方法は、作成チームがプレプリントで報告した。",
+      "published_at": "2026-11-20",
+      "organization": "Grounded Superintelligence and BitRobot",
+      "source_ids": [
+        "robocap-paper"
+      ],
+      "time_window": "7d",
+      "body": "Grounded SuperintelligenceとBitRobotは、手で物を扱う作業の手本を集めるため、複数のカメラを載せたヘッドセットを使った。目指したのは、作業の途中で手がどこにあったかを記録することだ。物を手に取ると、一つのカメラからは指が物の陰に隠れることがある。別の角度にもカメラがあると、位置を推定する手がかりが増える。\n\n装置は重さ250グラムで、映像の時刻をそろえた6台のカメラと、加速度や回転を測る二つの慣性計測装置を載せている。カメラごとに手が違う角度から映る。処理ソフトは映像とセンサーの値を組み合わせ、頭の動きと手の位置を三次元で推定する。収録のたびにカメラの特性と互いの位置関係を確かめるので、同じ時刻の映像を対応づけられる。\n\n筆者らは11か国で撮った記録を選び、収録時間の合計を1万時間とした。複数のカメラで撮った1分間も、収録時間としては1分と数える。記録は137万8462本の短い動画に分けた。長さの中央値は17.8秒で、動画を長さ順に並べたときの中央に当たる。筆者らによると、参加者は書面で同意し、追加の報酬を受けた。データには音声を含めず、映り込んだ顔を隠す処理を施した。\n\n映像を追えば、手がどちらに動き、いつ次の物に手を伸ばしたかが分かる。例えば、紙タオルでビーカーを拭く場面では、指の位置から紙タオルの持ち方が見える。一方、ガラスに押しつけた力は記録していない。手の動きをどこまで記録できたかを示した研究であり、その記録からロボットがどの作業を覚えられるかは、この論文の実験結果には含まれない。",
+      "image": null
+    },
+    {
+      "id": "manipscope-target-reassignment",
+      "title": "ロボットは頼まれた物を選んだか",
+      "summary": "中国科学技術大学などの研究チームは、コンピューターの中でロボットの制御プログラムを試した。物の配置を変えずに頼み方を変え、指示を変えると取る物も変わるかを調べた。",
+      "details": "学習用の実演を用意していない48場面を評価に使った。うち10場面で、物の初期配置を固定したまま指示を変え、対象の選び方を調べた。",
+      "technical_novelty": "評価手法ManipScopeは、別の物や移動先を指示したときにロボットの制御モデルが動作を切り替えられるかを測る。",
+      "engineering_impact": "物を選ぶ段階の誤りを、選択後の動作の出来栄えと分けて検討できる。",
+      "limitations": "実験はシミュレーションで行い、実機での成績は測っていない。",
+      "evidence_status": "結果と比較用の試験は、研究チームがプレプリントで報告した。",
+      "published_at": "2026-11-20",
+      "organization": "University of Science and Technology of China, Sharpa Robotics, Shanghai Jiao Tong University and The Chinese University of Hong Kong",
+      "source_ids": [
+        "manipscope-paper"
+      ],
+      "time_window": "7d",
+      "body": "中国科学技術大学などの研究チームは、コンピューターの中でロボットに物を運ばせ、同じ机を前に別の物を頼んだとき、腕が伸びる先を変えられるかを調べた。試験には、失敗しても、机に置いた物をまったく同じ位置に戻してやり直せる環境を使った。研究チームはこの試験にManipScopeという名前を付けた。\n\n検証では、ロボットが手で物を扱う課題を六つの種類に分けた。評価に用いた48場面については、正解例となる動作の記録を学習用に与えていない。対象の選び方を調べた10場面では、物の置き方をそろえた。指示だけを変えると、見た目が同じ場面で、その都度ちがう正解を選ぶ必要がある。一度だけ正しく動けた場合よりも、指示の内容が動作の選択に反映されたかどうかを確かめやすい。\n\n筆者らの集計では、学習途中や学習後に保存したモデル10版の結果をまとめると、ある配置に対するすべての指示に従えたのは、評価した千の状態のうち39、つまり3.9％だった。指示文を入力しない比較用の方式は、同じ指標で16％だった。研究チームは別の分析でモデル12版を使い、11場面、計1万3200回の試行も調べた。その分析で、失敗した試行の84.6％では、指示の対象外にある物を動かしていた。前者の割合は初期状態ごとに指示の組全体を評価したもので、後者の分母は失敗した試行の数である。\n\n物を選ぶことと、持ち上げて運ぶことは、それぞれ別の仕事だ。腕の動きが滑らかで、持ち上げた物も途中で落とさなかったとしても、手に取った物が頼まれた物と違えば指示は達成できていない。研究チームがこの種の取り違えを数えたおかげで、何回成功したかに加え、どこでつまずいたかも見えてくる。一方、実際の机でどれほど取り違えるかは、この試験では測っていない。",
+      "image": null
+    },
+    {
+      "id": "omron-ld-orders",
+      "title": "狭い通路を複数のロボットで使うには",
+      "summary": "OMRON Roboticsは米州と欧州で、建物の中で荷物を運ぶロボット2機種の受注を始めた。ロボットは周りの様子をもとに位置をつかみ、管理ソフトの指示を受けてほかの車両と通路を分け合う。",
+      "details": "OMRON Roboticsは、積載量が150キログラムと300キログラムの屋内搬送ロボット2機種の受注を始めた。",
+      "technical_novelty": "床の目印に頼らず周囲を見て走り、複数台を管理するソフトウェアが搬送作業を割り振る。",
+      "engineering_impact": "通路の余裕、充電場所、すれ違いが搬送量にどう影響するかは、導入先で確かめられる。",
+      "limitations": "公表された数値は仕様値で、出荷は2027年1月に始まる見込みだ。",
+      "evidence_status": "発表はメーカーによるもので、顧客の現場における搬送量の実測値は示されていない。",
+      "published_at": "2026-11-19",
+      "organization": "OMRON Robotics",
+      "source_ids": [
+        "omron-release"
+      ],
+      "time_window": "7d",
+      "body": "OMRON Roboticsは、建物の中で荷物を運ぶ小型車両2機種の受注を始めた。幅1メートルの通路に対応する。ロボットは周囲の特徴を手がかりに、棚などに対して自分がどこにいるかを推定する。1台が通れる道でも、何台も行き交う場合は、どの車両をどこに向かわせるかという別の問題が生まれる。\n\n小型のLD-150は積載量150キログラム、車体幅500ミリだ。LD-300は積載量300キログラムで、幅は580ミリある。メーカーは、幅1メートルの通路を走行できると説明している。シリーズの最高速度は毎秒2.1メートルで、走行できる傾斜は最大5度としている。周囲の特徴を手がかりに自分の位置を推定するため、床に走行用のテープや目印を貼る必要はない。\n\nOMRONの管理ソフトウェアFLOW Coreは、搬送の割り当てや経路の設定、複数台が行き交う場所での調整を担う。同社によると、対応するOMRON製の機種を組み合わせ、最大100台を管理できる。充電場所では、端子を差し込まずに電力を受け取る誘導式の充電を使い、メーカーは最短18分で充電できると説明する。まず米州と欧州で受注し、対象地域は順次広げる。出荷開始は2027年1月を見込む。\n\n自分の位置を知ることは車両の仕事だ。どの車両に荷物を取りに行かせるかを決め、各車両の経路を調整するのは管理ソフトウェアの仕事になる。例えば、荷物の行き先が違っても途中で同じ通路を使うことがある。発表では、そうした場所に搬送の依頼が集中したとき、何台がどれくらい待つかは分からない。待ち時間を測ると、車両の数を増やしたときにどれほど多くの荷物が運べるかを考えやすい。",
+      "image": null
+    },
+    {
+      "id": "vetaion-control-cabinet-financing",
+      "title": "配線図を、組み立てに使える立体の配置に",
+      "summary": "ミュンヘンのVetaionは、制御盤を組み立てる技術の開発に向け、570万ユーロを調達した。平面の電気図面を立体の配置に変え、機械が部品をどこに取り付けるかを判断するために使う。",
+      "details": "ミュンヘンのVetaionは、産業用の制御盤を組み立てる装置とソフトウェアの開発に向けて、570万ユーロを調達した。",
+      "technical_novelty": "同社のソフトウェアは、平面の電気図面を基に、部品の立体的な配置を作る。",
+      "engineering_impact": "同社はその配置データを使い、部品の取り付けや配線を自動化する装置の開発を進める。",
+      "limitations": "顧客の工場で測った結果は公表資料から確認できない。",
+      "evidence_status": "投資家のUVC Partnersと起業支援機関のUnternehmerTUMが調達を発表した。",
+      "published_at": "2026-11-19",
+      "organization": "Vetaion",
+      "source_ids": [
+        "vetaion-uvc",
+        "vetaion-tum"
+      ],
+      "time_window": "7d",
+      "body": "ミュンヘンのVetaionは、工場で使う制御盤の組み立て方法を開発する資金を集めた。制御盤は、機械に電力を配ったり、動かすための信号を送ったりする部品を収める箱だ。同社は、部品同士のつながりを表した図面から、部品を箱のどこに付け、どうつなぐかを決めるためのデータを作ろうとしている。\n\nミュンヘンの新興企業Vetaionが、開発の初期段階で570万ユーロを調達した。UVC PartnersとVisionaries Tomorrowが主導し、2100 VenturesとViessmann Generations Groupも参加した。出資したUVC Partnersとミュンヘンの起業支援機関UnternehmerTUMが、調達の内容を発表した。\n\nVetaionのソフトウェアは、平面の電気図面から部品の立体的な配置を作る。電気図面ではどの部品をどこにつなぐかが分かり、立体の配置では部品を箱の中のどこに収めるかが分かる。同社は、この配置データを使って、部品の取り付けや電線の接続を行う装置を開発している。図面を読み取るソフトウェアと、現物を組み立てる装置の両方が開発の対象だ。\n\n二つの部品をつなぐことが図面で分かっても、工具をどちらから近づければよいかは、周りの部品の位置で変わる。立体の配置が役立つのは、つなぎ方を示す図から、工具が実際に動ける組み立て手順を考える場面だ。今回の発表では、配置の違う制御盤を装置が何種類組み立てられたかといった試験結果は示されていない。",
+      "image": null
+    },
+    {
+      "id": "nvidia-huang-reinstatement",
+      "title": "フアン氏が復帰、エヌビディアを誰が動かす？",
+      "summary": "エヌビディアは、ジェンスン・フアン氏が最高経営責任者に戻ったと発表した。ロイターも復帰を報じ、取締役会が設けた独立委員会による社内調査は続いている。",
+      "details": "取締役会はフアン氏を社長、最高経営責任者、取締役に復帰させた。コレット・クレス氏は財務責任者を続ける。",
+      "technical_novelty": "安全保障と輸出管理を監督する取締役会の委員会に加え、法令順守を統括する役職の人選を始める。",
+      "engineering_impact": "ロボットの開発にも使われる計算機器の供給元が、輸出管理の監督体制を整え直している。",
+      "limitations": "社内の独立調査は継続中で、機器の納入条件の変更は発表されていない。",
+      "evidence_status": "会社発表、米証券規制当局への提出書類、ロイターの報道で経営トップの復帰を確認した。",
+      "published_at": "2026-11-23",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "nv-board",
+        "nv-sec",
+        "nv-reuters"
+      ],
+      "time_window": "24h",
+      "body": "ロボットに動作を覚えさせる計算にも使う半導体を手がける米エヌビディアが11月23日、ジェンスン・フアン氏の復帰を発表した。同氏は社長、最高経営責任者、取締役を再び務める。取締役会は会社の大きな方針を決め、最高経営責任者は日々の事業を取りまとめる立場だ。\n\n米証券規制当局に提出した書類によると、取締役会の決定は11月22日だった。エヌビディアは翌23日に公表し、ロイターも復帰を報じた。取締役は全員一致で復帰を決めた。暫定で最高経営責任者を務めていたコレット・クレス氏は財務責任者を続け、ハーベイ・ジョーンズ氏は取締役会の議長にとどまる。\n\n取締役会は米政府高官から意見を聞いたうえで、復帰によって国家安全保障上のリスクが生じることはないと判断したと説明している。同社は、フアン氏が外国の情報機関の活動の標的になったとする報道を受け、独立取締役による委員会を設けたという。この委員会は外部の弁護士とともに調査を続ける。会社は全社の法令順守を統括する責任者の人選にも着手した。安全保障や輸出規則への対応を監督するのは、取締役会が別に設けた委員会だ。\n\n今だれが会社を率いるかを決める仕事と、それまでの経緯を調べる仕事は、進み方が異なる。独立取締役と社外の弁護士は、調査に必要な確認を続ける。今回の公表では、経営陣や取締役の役割の分担が示された。調査を担当する委員会と、輸出の規則が守られているかを監督する委員会も別に置かれている。新たに選ぶ法令順守の責任者は、取締役の候補者や会社の運営の仕組みを扱う委員会に報告する。",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "手本となる動きを複数の角度から残す",
+    "summary": "Grounded SuperintelligenceとBitRobotは、作業中の手を複数のカメラで同時に撮った。映像とセンサーの値を組み合わせ、頭と手が空間のどこを通ったかを推定した。",
+    "implications": "一連の動きは、ロボットの学習用の記録として使える。物を押したり握ったりするときの力は測っていない。"
+  },
+  "sources": [
+    {
+      "id": "robocap-paper",
+      "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
+      "url": "https://arxiv.org/html/2611.26916v1",
+      "domain": "arxiv.org",
+      "organization": "Grounded Superintelligence and BitRobot",
+      "published_at": "2026-11-20"
+    },
+    {
+      "id": "manipscope-paper",
+      "title": "ManipScope: A Diagnostic Benchmark for Instruction Following and Generalization in Robotic Manipulation",
+      "url": "https://arxiv.org/html/2611.27305v1",
+      "domain": "arxiv.org",
+      "organization": "Jiacheng Li et al.",
+      "published_at": "2026-11-20"
+    },
+    {
+      "id": "omron-release",
+      "title": "OMRON Robotics Announces Start of Orders for New LD Series Autonomous Mobile Robots",
+      "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/",
+      "domain": "robotics.omron.com",
+      "organization": "OMRON Robotics",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "vetaion-uvc",
+      "title": "€5.7 million for Vetaion: DeepTech startup builds the electrical infrastructure of the future",
+      "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future",
+      "domain": "www.uvcpartners.com",
+      "organization": "UVC Partners",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "vetaion-tum",
+      "title": "5,7 Mio. EUR für Vetaion: Deep-Tech-Startup baut die elektrische Infrastruktur der Zukunft auf",
+      "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/",
+      "domain": "www.unternehmertum.de",
+      "organization": "UnternehmerTUM",
+      "published_at": "2026-11-19"
+    },
+    {
+      "id": "nv-board",
+      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-sec",
+      "title": "NVIDIA Form 8-K: November 22 board action",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
+      "domain": "www.sec.gov",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-reuters",
+      "title": "Nvidia reinstates Jensen Huang as CEO, igniting tech surge",
+      "url": "https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-23"
+    }
+  ]
+}
