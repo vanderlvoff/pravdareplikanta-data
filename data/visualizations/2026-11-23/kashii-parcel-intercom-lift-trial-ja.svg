@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" lang="ja" role="img" aria-labelledby="title desc" font-family="Noto Sans CJK JP, sans-serif" height="462" viewBox="0 0 360 462">
+  <title id="title">荷物はどうやって部屋まで行く？</title>
+  <desc id="desc">福岡市香椎（かしい）での試験の流れ / 建物の入口 — 配達する人がロボットに箱をわたす / 部屋のある階へ — ロボットがエレベーターで運ぶ / 部屋の玄関前 — 家にいれば、その場で受け取る — 留守（るす）なら、玄関前におく / 何件の配達が終わったかは発表されていない。</desc>
+  <rect id="paper" x="0" y="0" width="360" height="462" fill="#F7F4ED" data-role="background"/>
+  <rect id="rule" x="20" y="16" width="52" height="4" fill="#0D615D"/>
+  <text id="head0" x="20" y="47" font-size="22" fill="#18283A" font-weight="700">荷物はどうやって部屋まで行く？</text>
+  <text id="subtitle" x="20" y="77" font-size="15" fill="#425468" font-weight="400">福岡市香椎（かしい）での試験の流れ</text>
+  <rect id="panel0" x="20" y="106" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k0" x="32" y="132" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel0">01</text>
+  <text id="label0" x="64" y="132" font-size="17" fill="#18283A" font-weight="700" data-panel="panel0">建物の入口</text>
+  <text id="row0-0" x="32" y="160" font-size="16" fill="#18283A" font-weight="400" data-panel="panel0">配達する人がロボットに箱をわたす</text>
+  <path id="arrow0" d="M179 185 H181 V193 H185 L180 200 L175 193 H179 Z" fill="#0D615D"/>
+  <rect id="panel1" x="20" y="205" width="320" height="75" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k1" x="32" y="231" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel1">02</text>
+  <text id="label1" x="64" y="231" font-size="17" fill="#18283A" font-weight="700" data-panel="panel1">部屋のある階へ</text>
+  <text id="row1-0" x="32" y="259" font-size="16" fill="#18283A" font-weight="400" data-panel="panel1">ロボットがエレベーターで運ぶ</text>
+  <path id="arrow1" d="M179 284 H181 V292 H185 L180 299 L175 292 H179 Z" fill="#0D615D"/>
+  <rect id="panel2" x="20" y="304" width="320" height="98" fill="#FFFDF9" stroke="#BFC8CB" stroke-width="1" data-role="panel"/>
+  <text id="k2" x="32" y="330" font-size="15" fill="#0D615D" font-weight="700" data-panel="panel2">03</text>
+  <text id="label2" x="64" y="330" font-size="17" fill="#18283A" font-weight="700" data-panel="panel2">部屋の玄関前</text>
+  <text id="row2-0" x="32" y="358" font-size="16" fill="#18283A" font-weight="400" data-panel="panel2">家にいれば、その場で受け取る</text>
+  <text id="row2-1" x="32" y="381" font-size="16" fill="#18283A" font-weight="400" data-panel="panel2">留守（るす）なら、玄関前におく</text>
+  <text id="note0" x="20" y="440" font-size="15" fill="#425468" font-weight="400">何件の配達が終わったかは発表されていない。</text>
+</svg>
