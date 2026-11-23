@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="396" viewBox="0 0 360 396" role="img" lang="ru" aria-labelledby="title desc" font-family="Noto Sans, Arial, sans-serif">
+  <title id="title">Три склада для проверки</title>
+  <desc id="desc">SPACE DATA · KASUMIGASEKI CAPITAL / Ацуги — Обычная температура — Весна 2029 / Фукурои — Замороженные грузы — Весна 2030 / Сакадо — Связь оборудования и ПО — Уже работает / Даты — планы завершения строительства.</desc>
+  <rect id="rect1" data-zone="background" x="0" y="0" width="360" height="396" fill="#F8F5ED" rx="0"/>
+  <text id="text2" data-zone="text" x="20" y="32" fill="#15655E" font-size="14" font-weight="700" text-anchor="start">SPACE DATA · KASUMIGASEKI CAPITAL</text>
+  <text id="text3" data-zone="text" x="20" y="67" fill="#16293B" font-size="22" font-weight="700" text-anchor="start">Три склада для проверки</text>
+  <rect id="rect4" data-zone="background" x="20" y="98" width="58" height="60" fill="#EEDDC1" rx="3"/>
+  <path id="path5" data-zone="art" d="M30 130 L49 118 L68 130 V146 H30 Z" fill="none" stroke="#9E4A30" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="circle6" data-zone="art" cx="49" cy="110" r="4" fill="#9E4A30"/>
+  <text id="text7" data-zone="text" x="93" y="119" fill="#16293B" font-size="19" font-weight="700" text-anchor="start">Ацуги</text>
+  <text id="text8" data-zone="text" x="335" y="119" fill="#9E4A30" font-size="14" font-weight="700" text-anchor="end">Весна 2029</text>
+  <text id="text9" data-zone="text" x="93" y="145" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Обычная температура</text>
+  <path id="path10" data-zone="art" d="M20 172 H340" fill="none" stroke="#B6BEB9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="rect11" data-zone="background" x="20" y="186" width="58" height="60" fill="#D9E8EB" rx="3"/>
+  <path id="path12" data-zone="art" d="M30 218 L49 206 L68 218 V234 H30 Z" fill="none" stroke="#2E6378" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path id="path13" data-zone="art" d="M49 218 V230 M43 224 H55 M45 220 L53 228 M53 220 L45 228" fill="none" stroke="#2E6378" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text14" data-zone="text" x="93" y="207" fill="#16293B" font-size="19" font-weight="700" text-anchor="start">Фукурои</text>
+  <text id="text15" data-zone="text" x="335" y="207" fill="#2E6378" font-size="14" font-weight="700" text-anchor="end">Весна 2030</text>
+  <text id="text16" data-zone="text" x="93" y="233" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Замороженные грузы</text>
+  <path id="path17" data-zone="art" d="M20 260 H340" fill="none" stroke="#B6BEB9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect id="rect18" data-zone="background" x="20" y="274" width="58" height="60" fill="#D6E6DA" rx="3"/>
+  <path id="path19" data-zone="art" d="M30 306 L49 294 L68 306 V322 H30 Z" fill="none" stroke="#15655E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="circle20" data-zone="art" cx="43" cy="314" r="3" fill="#15655E"/>
+  <circle id="circle21" data-zone="art" cx="55" cy="314" r="3" fill="#15655E"/>
+  <path id="path22" data-zone="art" d="M46 314 H52" fill="none" stroke="#15655E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text23" data-zone="text" x="93" y="295" fill="#16293B" font-size="19" font-weight="700" text-anchor="start">Сакадо</text>
+  <text id="text24" data-zone="text" x="335" y="295" fill="#15655E" font-size="14" font-weight="700" text-anchor="end">Уже работает</text>
+  <text id="text25" data-zone="text" x="93" y="321" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Связь оборудования и ПО</text>
+  <path id="path26" data-zone="art" d="M20 348 H340" fill="none" stroke="#B6BEB9" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text27" data-zone="text" x="20" y="381" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Даты — планы завершения строительства.</text>
+</svg>

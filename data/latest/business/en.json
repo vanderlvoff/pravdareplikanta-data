@@ -2,195 +2,204 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-22",
-  "issue_id": "daily-2026-11-22",
+  "issue_date": "2026-11-23",
+  "issue_id": "daily-2026-11-23",
   "edition": "business",
   "language": "en",
-  "generated_at": "2026-11-21T21:08:55+00:00",
-  "title": "What happens next to ABB’s robotics deal?",
-  "lead": "Reuters reports that ABB and SoftBank are trying to preserve a sale after Chinese authorities blocked the purchase of the Chinese operation. The outcome will determine which parts of the robotics business change ownership.",
-  "technology_signal": {
-    "title": "Reuters reports that ABB Robotics’ Chinese business could be separated",
-    "summary": "Reuters says ABB and SoftBank are exploring a deal that could leave the Chinese operation outside the sale. The companies have yet to announce a revised deal.",
-    "implications": "Customers negotiating supply and service contracts for ABB robots will need to know who will support the equipment in each country if the proposed sale changes shape."
-  },
+  "generated_at": "2026-11-22T21:16:24+00:00",
+  "title": "Testing a warehouse at peak load before it opens",
+  "lead": "Space Data and Kasumigaseki Capital are studying three Japanese logistics sites. They want to see how buildings and equipment could handle a rush of incoming goods or a machine outage.",
   "news": [
     {
-      "id": "abb-robotics-contingency-options",
-      "title": "Reuters reports that ABB is weighing options for its robotics business",
-      "summary": "Two people familiar with the talks told Reuters that ABB could spin off its robotics division if a sale to Japan’s SoftBank cannot be salvaged. ABB earlier confirmed that Chinese authorities had barred SoftBank from acquiring the robotics business in China.",
-      "details": "Reuters reports discussions about separating ABB Robotics' Chinese business from the rest of the division.",
-      "technical_novelty": "Reported alternatives include another buyer or a standalone company if the SoftBank sale falls through.",
-      "engineering_impact": "The structure can matter to industrial customers that arrange parts and maintenance for robots.",
-      "limitations": "The companies have not announced a final arrangement following the Reuters report.",
-      "evidence_status": "ABB confirmed the restriction in China. The potential alternatives come from unnamed Reuters sources.",
-      "published_at": "2026-11-20",
-      "organization": "ABB and SoftBank",
+      "id": "nvidia-administration-interim-management-contact",
+      "title": "Washington is still seeking answers from NVIDIA’s interim leadership",
+      "summary": "US Treasury Secretary Scott Bessent told CBS that the administration had been in touch with NVIDIA’s interim leadership over chip shipments to China. He said he was still waiting for answers about who was responsible for complying with export rules.",
+      "details": "Officials contacted the interim leadership, directors and lawyers.",
+      "technical_novelty": "Bessent identified shipping and payment records as sources for reviewing the transactions.",
+      "engineering_impact": "For buyers of computing capacity, the inquiry concerns procedures at a major supplier.",
+      "limitations": "The public remarks assign no responsibility for violations and give no terms for future shipments.",
+      "evidence_status": "CBS published the interview transcript and Reuters separately reported the contacts.",
+      "published_at": "2026-11-22",
+      "organization": "US Department of the Treasury and NVIDIA",
       "source_ids": [
-        "reuters-abb",
-        "abb"
-      ],
-      "time_window": "72h",
-      "body": "Reuters reported on November 20 that ABB and Japan’s SoftBank were looking at ways to restructure their industrial robotics deal. According to two unnamed people, ABB could turn the division into a separate company or sell it to another buyer if the SoftBank deal fell through. ABB announced the original sale in October 2025 with a value of $5.375 billion for the business as a whole. Completion depended on regulatory approvals.\n\nOn November 5, ABB said SoftBank had informed it that Chinese authorities had prohibited the acquisition of the robotics business in China. The new Reuters report describes one possible way to preserve the transaction: separating the Chinese operation from the rest. Reuters puts that operation at about 30 percent of the robotics unit, citing its sources. ABB and SoftBank both declined to comment on the new report. The eventual arrangement would have to satisfy the parties and the regulators involved.\n\nFor a new order or a long project, a decision to split a business could affect who sells the hardware and whom the customer deals with over support. The reports give no decision on how contracts would transfer. Reuters was also unable to establish where a standalone company might list its shares or how much ABB might seek in such a transaction.\n\nFor SoftBank and ABB, the scope of the deal matters. The original price was for the whole business, while the scenarios described to Reuters could change what is included.",
-      "image": null
-    },
-    {
-      "id": "bessent-older-chip-controls-position",
-      "title": "Bessent says existing US chip export controls are sufficient",
-      "summary": "US Treasury Secretary Scott Bessent said he sees no need for further restrictions on sales of older NVIDIA accelerators to China. A House committee separately published data on previously approved export license applications from NVIDIA and AMD.",
-      "details": "A House committee released information on export license applications for NVIDIA H200 and AMD MI325X chips.",
-      "technical_novelty": "Bessent discussed the rules for chip sales and limits on remote use of advanced hardware.",
-      "engineering_impact": "Procurement teams need to check the applicable conditions for both chip purchase and remote computing services.",
-      "limitations": "The 879,868 chips approved across 21 applications as of May 11 describe authorized volumes.",
-      "evidence_status": "AP reported Bessent’s position. The House committee published the application data.",
-      "published_at": "2026-11-20",
-      "organization": "US Department of the Treasury",
-      "source_ids": [
-        "ap-chips",
-        "house-chip-licenses"
+        "cbs-bessent",
+        "reuters-bessent",
+        "nvidia-board"
       ],
       "time_window": "24h",
-      "body": "On November 20, US Treasury Secretary Scott Bessent told CNBC that he saw no need for further restrictions on sales of older NVIDIA chips to China, Associated Press reported. An accelerator is a chip that performs some of the calculations needed to train or run artificial intelligence models. A buyer can seek that computing power in two ways: by purchasing the chips or by using them remotely in a data centre. Bessent said remote access to the most advanced chips had already been curtailed.\n\nA day before the interview, the House Foreign Affairs Committee published licensing information for NVIDIA H200 and AMD MI325X chips. As of May 11 the Commerce Department had approved the export, re-export or transfer of 879,868 chips across 21 applications. The applications had requested more than 3.4 million chips. An approval describes the volume a supplier was allowed to handle under the conditions of the license. Actual purchases and deliveries are separate observations.\n\nAn NVIDIA spokesperson told AP that H200 shipments to China had stopped despite the earlier approvals. Buyers deciding where to train their models need information on current deliveries as well as an account of past licensing decisions. Bessent’s remarks set out the Treasury secretary’s position in the interview. A buyer evaluating an order would still need to check its particular chip, destination and license conditions.\n\nFor a project tied to a launch date, the decisive milestone is a confirmed delivery. An earlier approval gives little basis for scheduling installation if the supplier has since stopped shipping that chip.",
+      "body": "US Treasury Secretary Scott Bessent used a November 22 CBS interview to describe the administration’s questions about NVIDIA’s handling of chip shipments to China. He disclosed direct contact with people now overseeing the company. Officials want to know who was responsible for complying with export rules at the supplier and who knew about the transactions under review.\n\nBessent said the administration had contacted NVIDIA’s interim leadership, board directors and lawyers. At the time of the interview, he said it was still waiting for the answers it wanted. He said officials wanted to find out who was responsible for compliance with export rules and what levels of the company knew about shipments under scrutiny.\n\nBessent pointed to shipping and payment records as a way to reconstruct transactions even where arrangements were informal. He described possible systemic noncompliance as something still being looked into. Reuters also reported the contacts. NVIDIA’s board announced on November 12 that Jensen Huang had resigned and that chief financial officer Colette Kress would serve as interim CEO. Bessent confirmed that the chief financial officer was in charge.\n\nA business buying computing capacity for robotics faces separate uncertainties about the rules for a transaction and whether its supplier can document the necessary approvals. The new information from Bessent concerns the latter: officials are seeking to establish who signed off and what records are available. A procurement manager still has no basis to revise a delivery forecast from this interview alone. It did not provide terms or a timetable for specific transactions.",
       "image": null
     },
     {
-      "id": "brightai-infrastructure-financing",
-      "title": "BrightAI raises $97 million for monitoring physical infrastructure",
-      "summary": "BrightAI announced $97 million in financing to expand its systems for monitoring industrial and utility equipment. Smith Point Capital led the round, and GE Vernova participated as an existing customer.",
-      "details": "Smith Point Capital led the round, which also included GE Vernova.",
-      "technical_novelty": "The BrightAI system analyses sensor readings on a computer close to the equipment.",
-      "engineering_impact": "Local analysis can keep checking for changes when the connection to a remote server is interrupted.",
-      "limitations": "The financing announcement gives no fault detection results for a specific site.",
-      "evidence_status": "BrightAI announced the investment. Its lead investor described the system and its reported footprint.",
-      "published_at": "2026-11-18",
-      "organization": "BrightAI",
+      "id": "space-data-kasumigaseki-warehouse-design",
+      "title": "Two Japanese partners want to test warehouse flows before fitting the equipment",
+      "summary": "Space Data and Kasumigaseki Capital are exploring computer models for three Japanese logistics sites. They want early estimates of whether planned warehouses can handle peak demand and what happens if equipment stops.",
+      "details": "The candidates include two planned automated warehouses and one existing site in Sakado.",
+      "technical_novelty": "The proposed models would show how workers and goods move through each facility.",
+      "engineering_impact": "Testing the layout early could expose problems that cost more to fix after installation.",
+      "limitations": "The partners have not set a study timetable or estimated gains for individual sites.",
+      "evidence_status": "The partners announced the study, and LNEWS reported the proposed sites.",
+      "published_at": "2026-11-20",
+      "organization": "Space Data and Kasumigaseki Capital",
       "source_ids": [
-        "brightai",
-        "smith-point"
+        "space-data",
+        "lnews-space"
       ],
       "time_window": "7d",
-      "body": "On November 18, BrightAI announced $97 million in financing. The company supplies equipment and software intended to detect changes in pumps, compressors and other industrial assets between visits by technicians. Smith Point Capital led the round. BrightAI identified one participant, GE Vernova, as an existing customer. The financing is intended to expand the reach of the system, and the lead investor described examples of how it is used.\n\nOne practical problem is taking measurements where a technician cannot constantly watch a piece of equipment. A sensor can record sound, temperature or vibration. A computer nearby analyses those signals and looks for unusual behaviour, which reduces dependence on a permanent connection to a remote server. When an area warrants a closer inspection, the investor describes the use of robots and drones. The fixed sensors do the regular watching, while a mobile device can gather more information at the place that needs attention.\n\nSmith Point Capital says the platform runs across more than 50,000 operating locations. Its count covers places that use the monitoring platform. To compare maintenance systems at one location, an operator would want to know when the first alert arrived, how long it took to check, and what the inspection found. Missed faults and false warnings would need separate counts. The financing announcement gives no such performance comparison for a specific site.\n\nGE Vernova appears in two roles here, as a customer and as an investor. The announcement does not give the financing share of each participant or a return on investment figure for that customer.",
+      "body": "Japanese developer Kasumigaseki Capital and technology company Space Data have started looking at ways to design and operate warehouses using computer models. They named three candidate sites, including planned warehouses for ambient-temperature and frozen goods. They want to evaluate peak loads and the effect of equipment stoppages before work begins at the new facilities.\n\nThe partners identified three possible sites. Atsugi is the planned location for an automated ambient-temperature warehouse, and Fukuroi for a frozen-goods warehouse. The projects have target completion dates in spring 2029 and spring 2030 respectively. Landcube in Sakado is an existing facility where the partners are considering ways to link equipment and software.\n\nThe companies want to model buildings, equipment, workers’ movements and flows of goods. They would use the models to vary the placement and number of robots and transport equipment, check how much the system could handle at peak times and see what happens when equipment stops. The partners left the exact scope and schedule of the work open.\n\nWarehouse automation is tied to the layout of the building. Fixing a bottleneck after opening could mean moving machinery or changing the routes workers use. The partners want to combine their experience designing and operating facilities with computer simulation. Sakado gives the study an existing site where they could examine how equipment and software already in place work together. The announcement says what the partners want to evaluate and gives no estimates for throughput or savings at individual sites.",
       "image": null
     },
     {
-      "id": "watco-seadrift-self-propelled-railcars",
-      "title": "Watco picks a second site for self-propelled freight cars",
-      "summary": "Intramotev announced an expanded agreement with rail operator Watco. The operator plans to deploy battery-powered freight cars that can propel themselves at an industrial facility in Seadrift, Texas.",
-      "details": "Watco plans to use Intramotev freight cars at an industrial site in Seadrift.",
-      "technical_novelty": "A battery and drive system can move the freight car under its own power along the rails.",
-      "engineering_impact": "For the assigned movement, the car can provide traction at its own wheels.",
-      "limitations": "The partners' announcement gives no deployment size or starting date for the Texas site.",
-      "evidence_status": "Manufacturer Intramotev reported the new agreement on November 20.",
+      "id": "shinshiro-pharmacy-drone-routes",
+      "title": "Shinshiro tests which part of a medicine delivery can move from road to air",
+      "summary": "Aichi Prefecture, Shinshiro and two companies tested three ways to fly medicines to recipients. One combined a road trip to the launch site with a flight, while another had pharmacy staff load the drone after it landed near them.",
+      "details": "Green Service ran flights and Aeronext provided the operating system.",
+      "technical_novelty": "A pharmacy can send a box to a hub or load the drone at a pickup stop.",
+      "engineering_impact": "The trial tests where an existing medical logistics operator can take responsibility for flights and handoffs.",
+      "limitations": "The partners did not disclose the full cost of regular deliveries.",
+      "evidence_status": "The project partners described the trial, and industry outlet LNEWS reported on the routes.",
       "published_at": "2026-11-20",
-      "organization": "Intramotev and Watco",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
       "source_ids": [
-        "intramotev",
-        "railway-age"
+        "aeronext",
+        "lnews-drone"
       ],
-      "time_window": "72h",
-      "body": "On November 20, US rail technology company Intramotev announced that Watco had picked another location for its self-propelled freight cars. This time the site is an industrial facility in Seadrift, Texas. The companies previously agreed to use the cars at Watco’s Wood River terminal in Illinois. The Texas agreement adds a new location to that partnership. It concerns an industrial operation where railcars need to move between places where work is carried out.\n\nThe basic vehicle performs the same cargo-carrying job as a conventional freight car. Intramotev adds a drive system that draws energy from a battery, allowing the car to move under its own power for the assigned operation. This changes how traction is provided: the vehicle carrying the freight can also supply the power at its wheels. How much work can fit into a shift will depend on the pattern of movements, the loading process and the time set aside to charge the batteries.\n\nA site operator can measure the movement from end to end, including the wait to load, the trip and the time needed to free the track after unloading. A loaded car may still have to wait for a work area to become available. Intramotev’s announcement gives neither the number of cars bound for Seadrift nor a starting date. It describes an agreement to extend the program. A comparison with Wood River would need actual workloads and operating conditions for both locations.\n\nFor Watco, the job of a second site is to establish how much freight moves for a given amount of operating time and expense. That comparison depends on the loads and work schedules at the two facilities.",
+      "time_window": "7d",
+      "body": "Aichi Prefecture and Shinshiro worked with Aeronext and Green Service to see which part of a medicine delivery could move from road to air. The November 20 report sets out three routes. The practical question was whether a local company already in the business of delivering medicine could run the flights and organize handoffs to the recipients.\n\nIn the public demonstration on November 18, a pharmacy brought the medicine by road to the launch site at Yokogawa community center. The crew loaded a box onto the drone. According to the organizers, it flew about eight kilometers in roughly 12 minutes to a nursing home, where staff collected the package. The time given was for the flight from the launch site to the destination.\n\nOn a different route, the aircraft left the hub empty, landed near a pharmacy for staff to load a box and flew on to a second nursing home. The organizers put the two outbound legs at about 13 and five minutes respectively, excluding the return. Local medical logistics company Green Service ran the flights, with remote operations based in Tsushima.\n\nThe routes redistribute work. One requires an urban pharmacy to bring the box to a hub. Another has pharmacy staff wait for the drone and load the box where it lands. Aeronext provided the operating system and trained Green Service personnel, and the local company managed the flights. The individual flight times give the partners one part of the delivery economics. Comparing the service with driving would also require staff travel, waiting time and handling at the destination. The partners did not publish a full cost per delivery.",
       "image": null
     },
     {
-      "id": "tokyo-skytree-mobile-vending",
-      "title": "Tokyo Skytree tests locations for a mobile shop",
-      "summary": "PIMT and the operator of Tokyo Skytree scheduled an eight-day trial of a mobile toy shop for November 21 to 28. They plan to move one machine around the entrance floor and track sales, the share of passersby who stop, and visitor satisfaction.",
-      "details": "One machine selling soft toys will move between locations on the Tokyo Skytree entrance floor.",
-      "technical_novelty": "The organizers plan to change the selling spot and use a camera to estimate the share of passersby who stop.",
-      "engineering_impact": "Counts of stops, purchases and survey responses give the tower operator different ways to evaluate a location.",
-      "limitations": "The tower announcement describes the trial and gives no sales results.",
-      "evidence_status": "The supplier and the operator of Tokyo Skytree announced the November 21–28 trial.",
-      "published_at": "2026-11-19",
-      "organization": "PIMT and Tobu Tower Skytree",
+      "id": "arrive-ai-pro-forma-nasdaq-equity",
+      "title": "Arrive AI estimates equity above Nasdaq’s threshold after debt exchange",
+      "summary": "Arrive AI, a US developer of parcel handoff stations for vehicles, drones and couriers, filed an update with the Securities and Exchange Commission. After several transactions, the company put stockholders’ equity at about $7.7 million against a Nasdaq minimum of $2.5 million.",
+      "details": "Stockholders’ equity was $2,198,652 on September 30 before the adjustments.",
+      "technical_novelty": "Lender Streeterville Capital received preferred stock in exchange for debt.",
+      "engineering_impact": "For buyers of logistics equipment, the vendor’s ability to support installed delivery stations matters.",
+      "limitations": "The estimate is unaudited, and final accounting for the debt exchange is pending.",
+      "evidence_status": "The company’s November 20 Form 8-K filing and its investor release document the update.",
+      "published_at": "2026-11-20",
+      "organization": "Arrive AI",
       "source_ids": [
-        "pimt",
-        "skytree"
+        "arrive-sec",
+        "arrive-ir"
       ],
-      "time_window": "72h",
-      "body": "Where should a shop go when the people it serves move around throughout the day? At Tokyo Skytree, the tower operator and a company called PIMT want to study that question with one mobile vending machine. The unit carries stuffed toys. During the eight-day trial scheduled to start on November 21, the company plans to change its position on the fourth-floor entrance level, where visitors approach the ticket counters. The two companies announced the trial on November 19.\n\nTheir measurements follow three different parts of a shopping trip. A visitor can notice the machine, stop to see what it sells and then walk away. The companies plan to use a camera and image analysis software to estimate how often people stop. Sales records show how often those encounters turn into purchases. A visitor survey asks a different question again: whether people liked the experience. Together, the measurements give the operator several ways to judge a selling spot.\n\nThe supplier has operated a machine of this type at Narita Airport since April 2026. It describes moving the shop to suit events and selling in areas without a nearby power outlet. At the tower, it plans to sell soft toys shaped like baked goods and show visitors how to photograph one against the skyline. Sales figures for the tower trial are still pending. To assess the value of changing position, it matters how many visitors passed each candidate spot as well as how many stopped there.\n\nFor the tower operator, the practical question is whether unused floor space can support a shop without new permanent fixtures. Sales per hour at each location would give the operator a basis for comparing the locations.",
+      "time_window": "7d",
+      "body": "US parcel-infrastructure developer Arrive AI reported a change in its capital structure on November 20. The company estimated stockholders’ equity, the accounting value left after subtracting liabilities from assets, at about $7.7 million after several transactions. In its Form 8-K filing with the US securities regulator, it compared that with the $2.5 million Nasdaq minimum applicable to the company.\n\nThe company reported stockholders’ equity of $2,198,652 on September 30. It later took in $250,000 in gross proceeds from a private share sale and about $1.3 million through a program to sell shares at market prices. It also exchanged debt owed to Streeterville Capital for preferred stock, shares with rights defined by their issue terms. Arrive AI says it believes it again meets the stockholders’ equity requirement.\n\nArrive AI develops parcel handoff points where a courier, vehicle or drone can leave goods for a recipient arriving later. Customers relying on maintenance over the life of that equipment have a reason to track the vendor’s finances. The equity estimate applies the transactions as though they had taken place on September 30. It excludes subsequent operating results, and Nasdaq will continue to monitor compliance.",
+      "image": null
+    },
+    {
+      "id": "bagel-robodojo-suite-results",
+      "title": "Bagel Labs’ two-arm model comes with terms for commercial evaluation",
+      "summary": "Canada’s Bagel Labs published code and scores for a model that controls two robot arms. The results come from simulation, and companies need a separate paid agreement even to evaluate the model internally.",
+      "details": "The RoboDojo-Sim computer test awards partial credit across five categories.",
+      "technical_novelty": "Model weights, the numerical settings learned during training, are available for download.",
+      "engineering_impact": "The license determines whether a company can include the model in an internal evaluation.",
+      "limitations": "The developer has published no performance figures from a customer site in this release.",
+      "evidence_status": "Licensing terms and simulation results are published by the developer.",
+      "published_at": "2026-11-20",
+      "organization": "Bagel Labs",
+      "source_ids": [
+        "bagel-code",
+        "bagel-model"
+      ],
+      "time_window": "7d",
+      "body": "Toronto-based Bagel Labs released the code and weights for a program that uses instructions and camera images to work out how two robot arms should move. The release includes results from RoboDojo-Sim, a virtual test in which control programs operate simulated robots. The scores can help teams decide what to assess in more depth when the test tasks resemble the work they want to automate.\n\nThe model receives a task instruction, views from one head camera and two wrist cameras, and the robot's current state. It predicts 32 actions in a batch, executes 16 and then makes a new plan from fresh observations. That refresh lets the next prediction account for where the arms and objects are after the previous burst of movement.\n\nIn Bagel Labs' November 20 snapshot of RoboDojo-Sim, the model placed third among models evaluated without a separate software agent. It averaged 38.65 points out of 100, with an average full-task success rate of 31.91%. It completed 3.33% of trials in the Open category, which includes open-ended tasks and tasks guided by text or images. The ranking awards partial credit and gives each of the five main categories the same weight.\n\nDownloading the weights, the numerical settings obtained during training, is straightforward. Permission to use them depends on who is doing the work. Bagel Labs’ documentation requires a separate paid agreement for companies or anyone acting on their behalf, including for internal research and benchmarking. That condition matters before a team commits staff time to an evaluation. A prospective user can also choose in advance which operations need to finish in full: the completion rate helps answer that question, while the published ranking rewards intermediate progress too.",
       "image": null
     }
   ],
+  "technology_signal": {
+    "title": "Modeling the warehouse before equipment decisions",
+    "summary": "Space Data and Kasumigaseki Capital want to simulate different numbers and positions of robots and transport equipment and see how much each layout could handle.",
+    "implications": "The companies are still defining the study. Finding bottlenecks early could give them a chance to change a layout before installing machinery."
+  },
   "sources": [
     {
-      "id": "reuters-abb",
+      "id": "cbs-bessent",
+      "organization": "CBS News",
+      "published_at": "2026-11-22",
+      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
+      "domain": "www.cbsnews.com",
+      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
+    },
+    {
+      "id": "reuters-bessent",
       "organization": "Reuters",
-      "published_at": "2026-11-20",
-      "url": "https://www.reuters.com/business/media-telecom/abb-considers-robotics-listing-if-sale-softbank-fails-sources-say-2026-11-20/",
+      "published_at": "2026-11-22",
+      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
       "domain": "www.reuters.com",
-      "title": "ABB considers robotics listing if sale to SoftBank fails, sources say"
+      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
     },
     {
-      "id": "abb",
-      "organization": "ABB",
-      "published_at": "2026-11-05",
-      "url": "https://www.abb.com/global/en/news/140154/update-on-divestment-of-abb-robotics",
-      "domain": "www.abb.com",
-      "title": "Update on divestment of ABB Robotics"
+      "id": "nvidia-board",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-12",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "domain": "nvidianews.nvidia.com",
+      "title": "NVIDIA Announces CEO Transition"
     },
     {
-      "id": "ap-chips",
-      "organization": "Associated Press",
+      "id": "space-data",
+      "organization": "Space Data",
       "published_at": "2026-11-20",
-      "url": "https://apnews.com/article/88142455395552afe74caec3399a648b",
-      "domain": "apnews.com",
-      "title": "Treasury secretary says no further restrictions are needed for Nvidia chip exports to China"
-    },
-    {
-      "id": "house-chip-licenses",
-      "organization": "US House Foreign Affairs Committee",
-      "published_at": "2026-11-19",
-      "url": "https://foreignaffairs.house.gov/news/press-releases/chairman-brian-mast-exercises-legislative-authority-to-publicly-release-ai-chip-license-information-for-china",
-      "domain": "foreignaffairs.house.gov",
-      "title": "Chairman Brian Mast Exercises Legislative Authority to Publicly Release AI Chip License Information for China"
-    },
-    {
-      "id": "brightai",
-      "organization": "BrightAI",
-      "published_at": "2026-11-18",
-      "url": "https://www.businesswire.com/news/home/20261118838405/en/BrightAI-Announces-%2497-Million-Investment-to-Scale-Physical-AI-Across-the-Worlds-Essential-Services",
-      "domain": "www.businesswire.com",
-      "title": "BrightAI Announces $97 Million Investment to Scale Physical AI Across the World’s Essential Services"
-    },
-    {
-      "id": "smith-point",
-      "organization": "Smith Point Capital",
-      "published_at": "2026-11-18",
-      "url": "https://www.smithpointcapital.com/news/the-intelligence-layer-for-critical-infrastructure",
-      "domain": "www.smithpointcapital.com",
-      "title": "The Intelligence Layer for Critical Infrastructure: Why We’re Partnering with BrightAI"
-    },
-    {
-      "id": "intramotev",
-      "organization": "Intramotev",
-      "published_at": "2026-11-20",
-      "url": "https://intramotev.com/newsroom",
-      "domain": "intramotev.com",
-      "title": "Intramotev, Watco Bringing Autonomous Railcars to Texas"
-    },
-    {
-      "id": "railway-age",
-      "organization": "Railway Age",
-      "published_at": "2026-11-20",
-      "url": "https://www.railwayage.com/freight/short-lines-regionals/intramotev-watco-bringing-autonomous-railcars-to-texas/",
-      "domain": "www.railwayage.com",
-      "title": "Intramotev, Watco Bringing Autonomous Railcars to Texas"
-    },
-    {
-      "id": "pimt",
-      "organization": "PIMT",
-      "published_at": "2026-11-19",
-      "url": "https://prtimes.jp/main/html/rd/p/000000009.000179442.html",
+      "url": "https://prtimes.jp/main/html/rd/p/000000286.000080352.html",
       "domain": "prtimes.jp",
-      "title": "東京スカイツリーで移動型無人販売ロボットのビジネス実証"
+      "title": "スペースデータと霞ヶ関キャピタル、物流施設の設計から運用までをフィジカルAI・空間知能で高度化する共同検討を開始"
     },
     {
-      "id": "skytree",
-      "organization": "Tobu Tower Skytree",
-      "published_at": "2026-11-19",
-      "url": "https://www.tokyo-skytree.jp/press/post/730/",
-      "domain": "www.tokyo-skytree.jp",
-      "title": "移動型無人販売ロボットを活用した実証実験を実施"
+      "id": "lnews-space",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120503.html",
+      "domain": "www.lnews.jp",
+      "title": "霞ヶ関キャピタルとスペースデータ／物流施設3拠点でフィジカルAI活用を共同検討"
+    },
+    {
+      "id": "aeronext",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "published_at": "2026-11-20",
+      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
+      "domain": "aeronext.co.jp",
+      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
+    },
+    {
+      "id": "lnews-drone",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120502.html",
+      "domain": "www.lnews.jp",
+      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
+    },
+    {
+      "id": "arrive-sec",
+      "organization": "Arrive AI",
+      "published_at": "2026-11-20",
+      "url": "https://www.sec.gov/Archives/edgar/data/1818274/000149315226053484/form8-k.htm",
+      "domain": "www.sec.gov",
+      "title": "Arrive AI Inc. Form 8-K"
+    },
+    {
+      "id": "arrive-ir",
+      "organization": "Arrive AI",
+      "published_at": "2026-11-20",
+      "url": "https://investors.arriveai.com/news-releases/news-release-details/arrive-ais-pro-forma-stockholders-equity-now-above-nasdaq",
+      "domain": "investors.arriveai.com",
+      "title": "Arrive AI’s Pro Forma Stockholders’ Equity Now Above Nasdaq Minimum Requirement Following Recent Transactions"
+    },
+    {
+      "id": "bagel-code",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-20",
+      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
+      "domain": "github.com",
+      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
+    },
+    {
+      "id": "bagel-model",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-18",
+      "url": "https://www.bagel.com/bagel-robotics-1",
+      "domain": "www.bagel.com",
+      "title": "Bagel-Robotics-1"
     }
   ]
 }

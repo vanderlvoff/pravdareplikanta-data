@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="390" viewBox="0 0 360 390" role="img" lang="ru" aria-labelledby="title desc" font-family="Noto Sans, Arial, sans-serif">
+  <title id="title">Капитал Arrive AI</title>
+  <desc id="desc">МЛН ДОЛЛАРОВ США / Отчёт на 30 сентября — 2,20 / Минимум Nasdaq — 2,50 / Оценка с учётом сделок — ≈7,7 / Оценка с учётом сделок не аудирована.</desc>
+  <rect id="rect1" data-zone="background" x="0" y="0" width="360" height="390" fill="#F8F5ED" rx="0"/>
+  <text id="text2" data-zone="text" x="20" y="32" fill="#15655E" font-size="14" font-weight="700" text-anchor="start">МЛН ДОЛЛАРОВ США</text>
+  <text id="text3" data-zone="text" x="20" y="67" fill="#16293B" font-size="22" font-weight="700" text-anchor="start">Капитал Arrive AI</text>
+  <path id="path4" data-zone="art" d="M27.0 104 V327" fill="none" stroke="#D0D8D2" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text5" data-zone="text" x="27.0" y="349" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="middle">0</text>
+  <path id="path6" data-zone="art" d="M102.5 104 V327" fill="none" stroke="#D0D8D2" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text7" data-zone="text" x="102.5" y="349" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="middle">2</text>
+  <path id="path8" data-zone="art" d="M178.0 104 V327" fill="none" stroke="#D0D8D2" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text9" data-zone="text" x="178.0" y="349" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="middle">4</text>
+  <path id="path10" data-zone="art" d="M253.5 104 V327" fill="none" stroke="#D0D8D2" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text11" data-zone="text" x="253.5" y="349" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="middle">6</text>
+  <path id="path12" data-zone="art" d="M329.0 104 V327" fill="none" stroke="#D0D8D2" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+  <text id="text13" data-zone="text" x="329.0" y="349" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="middle">8</text>
+  <rect id="rect14" data-zone="background" x="20" y="110" width="319" height="23" fill="#F8F5ED" rx="0"/>
+  <text id="text15" data-zone="text" x="27" y="128" fill="#16293B" font-size="15" font-weight="700" text-anchor="start">Отчёт на 30 сентября</text>
+  <text id="text16" data-zone="text" x="329" y="128" fill="#15655E" font-size="16" font-weight="700" text-anchor="end">2,20</text>
+  <path id="path17" data-zone="art" d="M27 154 H110.05" fill="none" stroke="#15655E" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="circle18" data-zone="art" cx="110.05" cy="154" r="6" fill="#15655E" stroke="#15655E" stroke-width="2"/>
+  <rect id="rect19" data-zone="background" x="20" y="183" width="319" height="23" fill="#F8F5ED" rx="0"/>
+  <text id="text20" data-zone="text" x="27" y="201" fill="#16293B" font-size="15" font-weight="700" text-anchor="start">Минимум Nasdaq</text>
+  <text id="text21" data-zone="text" x="329" y="201" fill="#9E4A30" font-size="16" font-weight="700" text-anchor="end">2,50</text>
+  <path id="path22" data-zone="art" d="M27 227 H121.375" fill="none" stroke="#9E4A30" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 4"/>
+  <circle id="circle23" data-zone="art" cx="121.375" cy="227" r="6" fill="#F8F5ED" stroke="#9E4A30" stroke-width="2"/>
+  <rect id="rect24" data-zone="background" x="20" y="256" width="319" height="23" fill="#F8F5ED" rx="0"/>
+  <text id="text25" data-zone="text" x="27" y="274" fill="#16293B" font-size="15" font-weight="700" text-anchor="start">Оценка с учётом сделок</text>
+  <text id="text26" data-zone="text" x="329" y="274" fill="#15655E" font-size="16" font-weight="700" text-anchor="end">≈7,7</text>
+  <path id="path27" data-zone="art" d="M27 300 H317.675" fill="none" stroke="#15655E" stroke-width="3.1" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle id="circle28" data-zone="art" cx="317.675" cy="300" r="6" fill="#15655E" stroke="#15655E" stroke-width="2"/>
+  <text id="text29" data-zone="text" x="20" y="376" fill="#4B5B66" font-size="14" font-weight="400" text-anchor="start">Оценка с учётом сделок не аудирована.</text>
+</svg>

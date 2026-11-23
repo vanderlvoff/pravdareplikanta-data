@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-23",
+  "issue_id": "daily-2026-11-23",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-22T21:16:24+00:00",
+  "title": "The drone flies in empty and leaves with medicine",
+  "lead": "A team in Shinshiro, Japan, tested how a pharmacy could hand a box of medicine to a drone. The aircraft landed near the pharmacy, staff loaded the box and the drone flew on to a nursing home.",
+  "news": [
+    {
+      "id": "shinshiro-pharmacy-drone-routes",
+      "title": "A drone stops at a pharmacy to pick up medicine",
+      "summary": "Local authorities and companies in Shinshiro, Japan, tested ways to fly medicine to people who needed it. On one route the drone first landed near a pharmacy to collect a box and then flew on to a nursing home.",
+      "details": "On one route the drone picked up its box along the way.",
+      "technical_novelty": "Pharmacy staff loaded the box and nursing home staff picked it up at the other end.",
+      "engineering_impact": "In another flight the drone covered about eight kilometers in 12 minutes from the hub to the recipient.",
+      "limitations": "The 12 minutes are for one leg of the flight.",
+      "evidence_status": "The people who ran the trial published the results.",
+      "published_at": "2026-11-20",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "source_ids": [
+        "aeronext",
+        "lnews-drone"
+      ],
+      "time_window": "7d",
+      "body": "In Shinshiro, Japan, a team tried using a drone to get medicine to nursing homes. On one route the drone left its base empty and landed near a pharmacy. People at the pharmacy strapped on a box of medicine, and the drone lifted off again and flew to the nursing home.\n\nOn another route, a car brought the medicine from a pharmacy to the launch site. The drone took it from there to another nursing home, where staff collected the box. That flight covered about eight kilometers in about 12 minutes. People monitored the flight from another city.\n\nThe team made a box that a nurse could unlock with a registered fingerprint. The aircraft could leave the box for staff to collect. To compare the whole trip with driving, the team would also need to know how long the loading and handoff took.",
+      "image": null
+    },
+    {
+      "id": "ucsd-two-stage-pneumatic-hexapod",
+      "title": "Six soft legs run on air",
+      "summary": "Engineers at UC San Diego printed a flexible six-legged robot that runs on compressed air. In tests it reached up to 4.72 meters per second.",
+      "details": "The team printed the body and six legs as one piece.",
+      "technical_novelty": "Air switches passages inside the body and then pushes the legs.",
+      "engineering_impact": "The robot ran over different surfaces and could move in water.",
+      "limitations": "A hose supplies air from outside the robot.",
+      "evidence_status": "The university reported tests with a physical robot.",
+      "published_at": "2026-11-18",
+      "organization": "University of California San Diego",
+      "source_ids": [
+        "ucsd",
+        "science-robotics"
+      ],
+      "time_window": "7d",
+      "body": "Engineers at UC San Diego printed a soft robot with six legs and tested how fast it could run on compressed air. Compressed air is air squeezed into less space. The robot reached up to 4.72 meters per second in the team's tests.\n\nWhen you let go of a balloon, the escaping air can push it across the room. Air can push parts inside this robot too. First it moves valves, pieces that open and close paths for the air. Then the same flow goes into other chambers and pushes the legs. The little passages were printed right into the body.\n\nThe team tried it on sand, grass and concrete. The robot could also swim and walk underwater. To keep moving it needed air through a hose. The team wants to see if a future version could use little enough air to carry its own supply in a small canister.",
+      "image": null
+    },
+    {
+      "id": "kashii-parcel-intercom-lift-trial",
+      "title": "A parcel takes the elevator to an apartment door",
+      "summary": "Four companies in Fukuoka tested a robot that could carry a parcel to an apartment door. The robot worked with the building’s intercom and elevator, and a box could be left by the door when nobody was home.",
+      "details": "The test took place in one residential building in Fukuoka.",
+      "technical_novelty": "The robot worked with the building’s intercom, door access system and elevator.",
+      "engineering_impact": "Leaving a parcel outside can save a second trip when nobody is home.",
+      "limitations": "The team did not say how many deliveries were completed.",
+      "evidence_status": "The companies that ran the test reported what they tried.",
+      "published_at": "2026-11-18",
+      "organization": "Aiphone, NETSDAR Robot Solutions, Nippon Otis Elevator and World Supply",
+      "source_ids": [
+        "world-supply",
+        "netsdar",
+        "ur-kashii"
+      ],
+      "time_window": "7d",
+      "body": "Four companies in Fukuoka tried using a robot to take a parcel right to an apartment door. They chose a building in Kashii and looked at two situations. The resident might be at home to take the parcel. If nobody is home, the box can be left outside the apartment.\n\nThe building entrance is locked. The robot has to work with the intercom, which lets visitors call the apartment, and the system that unlocks the door for deliveries. It also needs the elevator to get to the right floor with the box. The test brought all of those pieces together.\n\nThe companies had tried delivery to apartment doors the year before. This time they added the intercom and tried leaving a box when nobody answered. That could save the courier another visit. The companies described the test but did not say how many deliveries finished.",
+      "image": null
+    },
+    {
+      "id": "bagel-robodojo-suite-results",
+      "title": "Two robot arms carry one board",
+      "summary": "A Canadian team showed a robot in a computer test lifting a board with both arms and putting it across two supports. The team also published how often its program finished the different tasks in the test.",
+      "details": "The test robot got pictures from a camera on its head and one on each wrist.",
+      "technical_novelty": "The program carries out some planned moves and then checks where the arms and objects are.",
+      "engineering_impact": "The test awards points even when a robot finishes only part of a task.",
+      "limitations": "These scores come from tasks run inside a computer.",
+      "evidence_status": "The program’s creators published the test results.",
+      "published_at": "2026-11-20",
+      "organization": "Bagel Labs",
+      "source_ids": [
+        "bagel-code",
+        "bagel-model"
+      ],
+      "time_window": "7d",
+      "body": "A Canadian team used a computer test to see if a robot could lift a board with both arms and set it across two supports. If one hand drops its end, the other hand cannot finish the job alone. In one run the team recorded, the two arms moved together and the board ended up where it belonged.\n\nThe robot got pictures from a camera on its head and one on each wrist. The program planned a series of moves. After the robot made some of them, the program checked the pictures again to see where the arms and board had ended up.\n\nThe test had many tasks and awarded points for steps a robot completed along the way. On that scoring system the program placed third among programs that worked without help from a second program. On average it finished about 32% of the test tasks in full. The team, Bagel Labs, calls its program Bagel-Robotics-1.",
+      "image": null
+    },
+    {
+      "id": "nvidia-administration-interim-management-contact",
+      "title": "Who checks where computing chips go?",
+      "summary": "US officials contacted the people temporarily in charge of a chipmaker about chips shipped to China. The US treasury secretary said officials wanted to know who had been responsible for following the shipping rules.",
+      "details": "The company makes chips that help computers do a lot of calculations.",
+      "technical_novelty": "Officials want to find out who checked that the company followed rules for sending chips abroad.",
+      "engineering_impact": "The treasury secretary said shipping and payment records could help answer questions.",
+      "limitations": "Officials were still waiting for answers at the time of the interview.",
+      "evidence_status": "The secretary spoke to CBS, and Reuters also reported the contacts.",
+      "published_at": "2026-11-22",
+      "organization": "US Department of the Treasury and NVIDIA",
+      "source_ids": [
+        "cbs-bessent",
+        "reuters-bessent",
+        "nvidia-board"
+      ],
+      "time_window": "24h",
+      "body": "In a November 22 CBS interview, the US treasury secretary said the government had contacted the people temporarily running the chip company. Officials are trying to find out who checked that shipments to China followed the rules. Some of these chips help computers train programs that control robots.\n\nWhen you send a parcel, the delivery service keeps a record of where it is going. There are records about deliveries and payments when businesses sell equipment, too. The secretary said these can help officials check how a deal happened, even if people agreed on some of the details in conversation.\n\nOfficials want to find out who was responsible for following the rules at the company and whether the people running it knew about the shipments. At the time of the interview the government was still waiting for answers. The company it contacted is called NVIDIA.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "A drone can pick up a load on the way",
+    "summary": "On one route in Shinshiro, a drone left its base empty, collected a box of medicine at a pharmacy and flew on to a nursing home.",
+    "implications": "Comparing the whole trip with driving means timing the flight and the work on the ground, from loading the box to handing it over."
+  },
+  "sources": [
+    {
+      "id": "aeronext",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "published_at": "2026-11-20",
+      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
+      "domain": "aeronext.co.jp",
+      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
+    },
+    {
+      "id": "lnews-drone",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120502.html",
+      "domain": "www.lnews.jp",
+      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
+    },
+    {
+      "id": "ucsd",
+      "organization": "University of California San Diego",
+      "published_at": "2026-11-18",
+      "url": "https://today.ucsd.edu/story/the-fastest-soft-robot-ever-built-doesnt-need-electronics-to-function",
+      "domain": "today.ucsd.edu",
+      "title": "The Fastest Soft Robot Ever Built Doesn’t Need Electronics to Function"
+    },
+    {
+      "id": "science-robotics",
+      "organization": "Science Robotics",
+      "published_at": "2026-11-18",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/43050495/",
+      "domain": "pubmed.ncbi.nlm.nih.gov",
+      "title": "Printing powerful soft robots on a desktop"
+    },
+    {
+      "id": "world-supply",
+      "organization": "World Supply",
+      "published_at": "2026-11-18",
+      "url": "https://www.kyodo.co.jp/pr/2026-11-18_4050146/",
+      "domain": "www.kyodo.co.jp",
+      "title": "先進的なまちづくりを目指す「FUKUOKA Smart EAST」における館内配送サービスの実証実験に参画"
+    },
+    {
+      "id": "netsdar",
+      "organization": "NETSDAR Robot Solutions",
+      "published_at": "2026-11-17",
+      "url": "https://prtimes.jp/main/html/rd/p/000000005.000172258.html",
+      "domain": "prtimes.jp",
+      "title": "インターホン・エレベーターと連携した配送ロボットで「置き配」まで行う館内配送の実証実験を、福岡市のUR賃貸住宅で実施"
+    },
+    {
+      "id": "ur-kashii",
+      "organization": "Urban Renaissance Agency",
+      "published_at": "2026-11-11",
+      "url": "https://www.ur-net.go.jp/news/pcbnj1000000c5sc-att/ur2026_press_1111_kyusyu.pdf",
+      "domain": "www.ur-net.go.jp",
+      "title": "物流事業者と配送ロボットの連携による集合住宅向け棟内配送サービスの実証実験を実施"
+    },
+    {
+      "id": "bagel-code",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-20",
+      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
+      "domain": "github.com",
+      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
+    },
+    {
+      "id": "bagel-model",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-18",
+      "url": "https://www.bagel.com/bagel-robotics-1",
+      "domain": "www.bagel.com",
+      "title": "Bagel-Robotics-1"
+    },
+    {
+      "id": "cbs-bessent",
+      "organization": "CBS News",
+      "published_at": "2026-11-22",
+      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
+      "domain": "www.cbsnews.com",
+      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
+    },
+    {
+      "id": "reuters-bessent",
+      "organization": "Reuters",
+      "published_at": "2026-11-22",
+      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
+      "domain": "www.reuters.com",
+      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
+    },
+    {
+      "id": "nvidia-board",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-12",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "domain": "nvidianews.nvidia.com",
+      "title": "NVIDIA Announces CEO Transition"
+    }
+  ]
+}

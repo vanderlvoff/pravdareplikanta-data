@@ -2,195 +2,204 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-22",
-  "issue_id": "daily-2026-11-22",
+  "issue_date": "2026-11-23",
+  "issue_id": "daily-2026-11-23",
   "edition": "business",
   "language": "ja",
-  "generated_at": "2026-11-21T21:08:55+00:00",
-  "title": "ABBのロボット事業、売却範囲はどう変わるか",
-  "lead": "ロイターによると、ABBとソフトバンクは、中国での買収が認められなかったことを受け、取引を続けられる形を探っている。話し合いの行方によって、どの地域の事業が移るかが変わる。",
-  "technology_signal": {
-    "title": "ABBロボット部門、中国事業の切り離し案をロイターが報道",
-    "summary": "ABBとソフトバンクは中国事業を切り離す案を検討していると、ロイターは伝えた。両社は取引の新たな枠組みを発表していない。",
-    "implications": "ABBのロボットを調達する企業は、売却の範囲が変わる場合、国ごとに販売や保守を担う会社を確認する必要がある。"
-  },
+  "generated_at": "2026-11-22T21:16:24+00:00",
+  "title": "倉庫を開く前に、荷物が集中する時間帯を再現",
+  "lead": "スペースデータと霞ヶ関キャピタルは、国内の物流施設三拠点を候補に共同検討を始めた。荷物が集中したり機器が止まったりしたときの影響を、事前にコンピューターで調べる考えだ。",
   "news": [
     {
-      "id": "abb-robotics-contingency-options",
-      "title": "ABBのロボット部門、売却難航で代替案を検討とロイター",
-      "summary": "ロイターは関係者二人の話として、ソフトバンクへの売却がまとまらなければ、ABBがロボット部門を独立させる可能性があると報じた。ABBはこれに先立ち、中国の当局が中国事業の買収を認めなかったことを明らかにしている。",
-      "details": "ロイターは、中国にある分の事業を分ける案が出ていると伝えました。",
-      "technical_novelty": "売買がまとまらない場合、別の買い手を探す案や、部門を一つの会社にする案もあるといいます。",
-      "engineering_impact": "工場がロボットを買ったり修理したりするときは、どの会社に頼むかが大切です。",
-      "limitations": "ロイターが伝えた案を選んだという発表は、会社から出ていません。",
-      "evidence_status": "中国での買収が認められなかったことはABBが発表しました。別の案はロイターが取材して伝えました。",
-      "published_at": "2026-11-20",
-      "organization": "ABB and SoftBank",
+      "id": "nvidia-administration-interim-management-contact",
+      "title": "米政権がエヌビディアに接触、輸出管理を巡る回答を待つ",
+      "summary": "米国のベッセント財務長官はCBSの番組で、中国向け半導体の出荷に関して米政権がエヌビディアの暫定経営陣に連絡したと述べた。輸出規則を守る責任を誰が負っていたかについて、回答はまだ得られていないという。",
+      "details": "米政権は暫定経営陣や取締役、弁護士と連絡を取った。",
+      "technical_novelty": "財務長官は、出荷や支払いの記録が取引を確認する手がかりになると指摘した。",
+      "engineering_impact": "計算資源を調達する企業にとっては、大手供給元が輸出手続きをどう管理していたかが焦点だ。",
+      "limitations": "違反の当事者や今後の個別の出荷条件は発表されていない。",
+      "evidence_status": "CBSが番組の記録を公開し、ロイターも米政権の接触を報じた。",
+      "published_at": "2026-11-22",
+      "organization": "US Department of the Treasury and NVIDIA",
       "source_ids": [
-        "reuters-abb",
-        "abb"
-      ],
-      "time_window": "72h",
-      "body": "ロイターは11月20日、産業用ロボットを手がけるABBと日本のソフトバンクが、事業売却の枠組みを見直そうとしていると報じた。匿名の関係者二人によれば、売却が成立しなかった場合、ABBは部門を別会社として切り出したり、別の相手に売ったりする案を検討している。ABBが当初の合意を発表したのは2025年10月で、事業全体の価値を53億7500万米ドルとしていた。取引を終えるには各国の当局の承認が必要だった。\n\nABBは11月5日、ソフトバンクから、中国当局が中国国内のロボット事業の買収を認めなかったと聞いた旨を公表した。ロイターが今回伝えた交渉案の一つは、中国事業をそれ以外から切り離すことだ。関係者の説明によると、中国事業は部門の約三割を占める。新たな報道についてABBとソフトバンクはコメントを控えた。どの事業をどの形で移すことになるかは、まだ明らかにされていない。ロイターによると、両社はまず、ソフトバンクへの売却を成立させる方法を探っている。\n\n長期の導入計画を立てる買い手にとっては、事業を分ける場合に、製品を販売し、保守を受け付ける会社がどこになるのかが実務上の問題になる。既存契約の移管について決定があったとは報じられていない。またロイターは、部門を独立させた場合の上場先や、ABBが求める金額は確認できなかったとしている。\n\n当初示した金額の対象は事業全体だった。売却範囲が変わる場合に新たな金額をどう決めるかについて、両社から発表は出ていない。",
-      "image": null
-    },
-    {
-      "id": "bessent-older-chip-controls-position",
-      "title": "ベッセント米財務長官、対中半導体規制の追加に否定的",
-      "summary": "米国のスコット・ベッセント財務長官は、NVIDIAの旧世代の半導体について、中国向け販売に追加の規制は必要ないとの見方を示した。米下院の委員会は別途、NVIDIAとAMDの半導体の輸出許可に関する資料を公表した。",
-      "details": "米下院の委員会は、NVIDIAのH200とAMDのMI325Xの輸出許可申請に関する情報を公表した。",
-      "technical_novelty": "長官は半導体の販売規制と、先端半導体を遠隔で使う場合の制限について説明した。",
-      "engineering_impact": "半導体を買う場合も、データセンターの計算能力を借りる場合も、適用される条件の確認が必要になる。",
-      "limitations": "5月11日までに21件の申請で認められた87万9868個は、許可された数量である。",
-      "evidence_status": "長官の発言はAP通信が報じ、許可申請の情報は米下院の委員会が公表した。",
-      "published_at": "2026-11-20",
-      "organization": "US Department of the Treasury",
-      "source_ids": [
-        "ap-chips",
-        "house-chip-licenses"
+        "cbs-bessent",
+        "reuters-bessent",
+        "nvidia-board"
       ],
       "time_window": "24h",
-      "body": "米国のベッセント財務長官は11月20日、CNBCのインタビューで、NVIDIAの旧世代の半導体を中国に販売する際に、追加の規制は必要ないと述べた。AP通信が報じた。対象となるアクセラレーターは、人工知能のモデルの学習や実行に必要な計算を担う半導体だ。企業が計算能力を確保する方法には、半導体を購入する方法と、データセンターにある装置を遠隔で使う方法がある。長官は、より先端の半導体を遠隔で使うことについては、すでに制限が設けられたと説明した。\n\nインタビューの前日、米下院外交委員会は、NVIDIAのH200とAMDのMI325Xに関する許可申請の情報を公表した。商務省が5月11日までに、21件の申請で輸出、再輸出または移転を認めたのは87万9868個で、申請された数量は340万個を超えていた。許可を受けた数は、条件を満たせば扱える数量を示す。企業が実際に購入した数や、引き渡された数を知るには、別の記録が必要になる。\n\nNVIDIAの広報担当者はAP通信に対し、以前に許可を得ていたものの、H200の中国向け出荷は停止したと述べた。モデルをどこで学習させるかを決める企業には、以前の許可情報と現在の供給状況の両方が関わる。長官が示したのはインタビューでの見解であり、実際の調達では、半導体の種類や仕向け先ごとに、どの許可条件が適用されるかを確認することになる。\n\n稼働日が決まっている案件では、以前にどれだけ許可が下りたかに加えて、実際に納品される日を確認する必要がある。",
+      "body": "米国のベッセント財務長官は11月22日、エヌビディアの中国向け半導体の出荷について、米政権が会社の暫定経営陣に連絡したとCBSの番組で明らかにした。政権は、供給元の社内で輸出規則を守る責任を誰が負い、確認の対象になっている出荷について誰が知っていたかを調べたいとしている。\n\nベッセント氏は、政権がエヌビディアの暫定経営陣、取締役、弁護士と連絡を取ったと話した。取材の時点で、政権が求める回答はまだ得られていないという。確認したい点として、輸出規則を守る責任を誰が負っていたかと、調査の対象になっている出荷について社内のどの段階まで情報が伝わっていたかを挙げた。\n\n口頭で取り決めた取引でも、出荷や代金の記録をたどれば経緯を調べられると述べた。社内で輸出規則を軽視する傾向があったかは、今も調べている段階だと説明した。ロイターも政権による接触を報じた。エヌビディアの取締役会は11月12日、ジェンスン・フアン氏の辞任と、財務責任者のコレット・クレス氏の暫定CEO就任を発表した。CEOは経営の最高責任者を指す。ベッセント氏も番組で、財務責任者が会社を率いていると述べた。\n\nロボット用のソフトウェアを開発するために計算資源を確保する企業には、取引に適用される規則を把握する仕事と、供給元が手続きを済ませたことを確認する仕事がある。今回の発言から分かったのは、政権が社内の責任分担や、出荷と支払いを記録した資料に関心を向けていることだ。個別の取引の条件や予定は示されておらず、今回の番組での発言から、個々の調達案件への影響は判断できない。",
       "image": null
     },
     {
-      "id": "brightai-infrastructure-financing",
-      "title": "ブライトAI、設備を見守る事業の拡大に9700万ドルを調達",
-      "summary": "ブライトAIは、工場や電力、水道などの設備を監視するシステムの事業拡大に向け、9700万ドルを調達した。スミスポイント・キャピタルが主導し、同社の顧客でもあるGEベルノバが出資に加わった。",
-      "details": "9700万ドルの出資には、スミスポイント・キャピタルやGEベルノバなどが加わりました。",
-      "technical_novelty": "音や温度を調べる道具の記録を、近くのコンピューターで分析します。",
-      "engineering_impact": "遠くのコンピューターといつもつながっていなくても、機械の変化を調べられます。",
-      "limitations": "発表には、特定の場所で故障（こしょう）を見つけた回数は書かれていません。",
-      "evidence_status": "ブライトAIがお金を集めたことを発表し、お金を出した会社が仕組みを説明しました。",
-      "published_at": "2026-11-18",
-      "organization": "BrightAI",
+      "id": "space-data-kasumigaseki-warehouse-design",
+      "title": "倉庫の設備を入れる前に荷物の流れを確認、国内三拠点を候補に",
+      "summary": "スペースデータと霞ヶ関キャピタルは、国内の物流施設三拠点を候補に、運用をコンピューターで再現する取り組みの検討を始めた。荷物が集中したり、一部の設備が止まったりしたときに、新設する倉庫がどれだけ出荷を続けられるかを計画段階から確かめたい考えだ。",
+      "details": "候補は自動倉庫の新設計画二件と、坂戸市の既存施設だ。",
+      "technical_novelty": "働く人や荷物が倉庫内をどう移動するかまで再現しようとしている。",
+      "engineering_impact": "設備の設置後に直すと時間や費用がかかる問題を、早い段階で見つける狙いがある。",
+      "limitations": "作業日程や、拠点ごとに期待できる効果は示されていない。",
+      "evidence_status": "両社の発表をもとに物流専門媒体LNEWSが候補拠点を報じた。",
+      "published_at": "2026-11-20",
+      "organization": "Space Data and Kasumigaseki Capital",
       "source_ids": [
-        "brightai",
-        "smith-point"
+        "space-data",
+        "lnews-space"
       ],
       "time_window": "7d",
-      "body": "ブライトAIは11月18日、9700万ドルを調達したと発表した。同社の装置とソフトウェアは、作業員の巡回の間にも、ポンプや圧縮機などの状態に変化がないかを調べる。出資を主導したのはスミスポイント・キャピタルで、ブライトAIの顧客であるGEベルノバも参加した。調達した資金は事業の拡大に使う。出資を主導した会社は発表に合わせ、現場での使い方も紹介した。\n\n作業員がいつもそばにいるわけではない設備を、どう見守るかが課題になる。装置に取り付けたセンサーが音や温度、振動を記録し、近くのコンピューターがデータを調べて普段と違う動きを見つける。現場で計算するため、遠くのコンピューターとの通信が常につながっている必要性を下げられる。出資者の説明では、もっと詳しく点検したい場所には、移動するロボットやドローンを使うこともある。決まった場所での継続的な観測と、移動して詳しく見る作業を組み合わせる。\n\n出資を主導した会社によれば、この仕組みは五万を超える現場で使われている。数字が表すのは監視システムの利用場所である。設備の保守方法を比べるなら、最初にどんな知らせが出て、作業員がどれだけ早く確かめ、何を見つけたかを記録すると役立つ。見逃した故障と、故障がなかったときの警報も、それぞれ数える必要がある。今回の発表には、特定の現場でのこうした比較結果は掲載されていない。\n\nGEベルノバは出資者であり、同時に顧客でもある。今回の発表には、各社がいくらずつ出資したかや、この顧客が設備保守に使う費用をどれだけ減らせたかは書かれていない。",
+      "body": "物流施設を開発する霞ヶ関キャピタルと、コンピューターで施設や機器の動きを再現する技術を持つスペースデータが、倉庫の設計や運用にその技術を使う共同検討を始めた。候補の三拠点には常温倉庫と冷凍倉庫の新設計画が含まれる。荷物が集中したときや設備が止まったときの影響を、稼働前に確かめることを目指す。\n\n候補は三拠点ある。神奈川県厚木市には常温の自動倉庫を計画しており、竣工の目標は2029年春。静岡県袋井市には冷凍自動倉庫を計画し、2030年春の竣工を予定する。三つ目の埼玉県坂戸市のランドキューブ坂戸は既存施設で、そこで物流設備とシステムの連携などを検証することを考えている。\n\n両社が作ろうとしているのは、建物と機器だけでなく、人の移動や荷物の流れもコンピューター上に再現する環境だ。ロボットや搬送設備の数や位置を変えて、入荷や出荷が集中するときに扱える量や、一部の機器が止まったときの影響を調べる。具体的に何を試すか、いつ始めるかは共同検討の進み具合に応じて決める。\n\n倉庫の建物と自動化設備は、互いに関わる。稼働してから荷物が滞る場所を見つけると、機器を移したり、作業員の通路を引き直したりする対策が必要になることがある。そこで両社は、倉庫を開発して運営する知識と、コンピューター上で作業を再現する技術を組み合わせる。坂戸では、すでに使っている設備とシステムをつなぐ方法を検討する。発表の段階では、拠点ごとの処理能力や費用の改善幅は分からない。",
       "image": null
     },
     {
-      "id": "watco-seadrift-self-propelled-railcars",
-      "title": "米Watco、自走式貨車の導入先を二カ所に拡大へ",
-      "summary": "米Intramotevは、鉄道事業者Watcoとの契約を拡大したと発表した。Watcoはテキサス州シードリフトの工業施設で、蓄電池の電力で自走できる貨車を使う計画だ。",
-      "details": "鉄道会社は、テキサス州シードリフトの工業施設で、この貨車（かしゃ）を使う計画です。",
-      "technical_novelty": "貨車は、充電（じゅうでん）できる電池の力で車輪を回します。",
-      "engineering_impact": "荷物を載せた車両が、別の車両に引かれずに進めます。",
-      "limitations": "テキサス州で使う台数と、運用を始める日は明らかにされていません。",
-      "evidence_status": "新しい場所で使う取り決めを、貨車を作った会社が11月20日に発表しました。",
+      "id": "shinshiro-pharmacy-drone-routes",
+      "title": "愛知の医薬品配送、車から空に移せる区間を新城市で検証",
+      "summary": "愛知県と新城市、民間2社が、ドローンで薬を届ける三つの方法を試した。薬を車で発着拠点へ運ぶ方法と、飛来した機体に薬局の職員が箱を載せる方法があった。",
+      "details": "グリーンサービスが飛行を担当し、エアロネクストが運航システムを提供した。",
+      "technical_novelty": "拠点に集める方法と、飛行途中に薬局で集荷する方法を試した。",
+      "engineering_impact": "既存の医薬品配送会社が運航と受け渡しにどう関われるかを検証した。",
+      "limitations": "定期的に運ぶ場合の配送一件あたりの総費用は公表していない。",
+      "evidence_status": "実証の参加者が発表し、物流専門媒体LNEWSが報じた。",
       "published_at": "2026-11-20",
-      "organization": "Intramotev and Watco",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
       "source_ids": [
-        "intramotev",
-        "railway-age"
+        "aeronext",
+        "lnews-drone"
       ],
-      "time_window": "72h",
-      "body": "米国で貨車の自動化に取り組むIntramotevは11月20日、鉄道事業者Watcoが同社の貨車を使う施設を増やすと発表した。新たな導入先はテキサス州シードリフトの工業施設で、施設内で荷物を載せた貨車を動かす。両社はこれまでに、イリノイ州のウッドリバーにあるWatcoのターミナルで、この種の貨車を使うことで合意している。テキサス州の施設は、同じ事業者との取り組みに新たに加わる場所になる。\n\n貨車は荷物を載せるという役割を保ったまま、蓄電池の電力で車輪を動かす装置を備える。通常、貨車を動かす力は別の機関車から受けるが、この方式では、対象の作業で貨物を載せた車両そのものが動く力を出せる。施設で一日にどれだけ運べるかは、自走できることに加えて、どの順序で荷物を積み込むかや、充電の時間をいつ確保できるかにも左右される。\n\n導入する施設が作業全体を調べる場合は、貨車が出発してから着くまでの時間に加え、荷物を載せる順番を待つ時間や、荷物を降ろした後に線路を空けるまでの時間も測れる。貨車の移動が順調でも、次の作業場所が空くまで待つ場合がある。シードリフトで何両使い、いつ運用を始めるかは発表されていない。イリノイ州の先行施設と比べるには、両方の施設の荷物の量や作業の順序が分かってから、同じ単位で実績を見ることになる。\n\n二つ目の導入先について投資の効果を判断するなら、同じ時間にどれだけ荷物を動かせたかと、そのために使った費用を並べて見たい。施設ごとに積み込みの条件が違えば、その違いも比較に含める必要がある。",
+      "time_window": "7d",
+      "body": "愛知県と新城市は、エアロネクスト、グリーンサービスとともに、新城市の医薬品配送で車に代えてドローンを使える区間を調べた。11月20日の報告では三つのルートを示した。すでに薬を運んでいる地元企業が飛行も担い、届け先の職員へ箱を渡すところまで仕事を組み立てられるかが検証項目だった。\n\n11月18日の報道公開では、市街地の薬局が薬を車で横川公民館の発着拠点に運んだ。会場では薬の箱を機体に載せた。主催者によると、機体は約8キロ先の特別養護老人ホームまで約12分で飛び、届けた箱を施設の職員が回収した。12分は拠点から施設までの飛行時間に当たる。\n\n別のルートでは、機体が荷物を積まずに拠点を出て薬局の近くで着陸し、薬局の職員が箱を載せた。その後、機体は別の特別養護老人ホームに薬を届けた。主催者によると、拠点から薬局までの飛行は約13分、薬局から届け先までは約5分で、この時間に拠点への帰路は含まれない。機体を運航したのは地域の医薬品配送会社グリーンサービスで、津島市の事業拠点から遠隔で運航を管理した。\n\n試したルートによって、薬局の職員が担う仕事が変わる。薬を車で発着拠点まで運ぶ場合と、到着した機体に薬局で箱を積む場合がある。エアロネクストは運航システムを提供し、グリーンサービスの職員は同社の講習を受け、地元の事業者として飛行を担った。飛行区間ごとの時間は、配送にかかる費用を考えるうえで一つの材料になる。車で運ぶ場合と比べるには、拠点までの移動、離陸までの待ち時間、着陸後の受け渡しも含める必要がある。発表には、注文一件あたりの総費用は記載されていない。",
       "image": null
     },
     {
-      "id": "tokyo-skytree-mobile-vending",
-      "title": "東京スカイツリー、チケット売り場の空間で移動販売を試験",
-      "summary": "ピムトと東京スカイツリーの運営会社は、11月21日から28日まで、ぬいぐるみを売る移動式のロボットを試す計画だ。四階の入り口フロアで置き場所を変え、売り上げや立ち寄った人の割合、来場者の満足度を調べる。",
-      "details": "東京スカイツリーの入り口の階で、ぬいぐるみを売る機械一台の位置を変えます。",
-      "technical_novelty": "カメラを使い、近くを通った人のうち、足を止めた人の割合を調べます。",
-      "engineering_impact": "足を止めた人数、売れた数、買い物の感想から、売る場所ごとの特徴を調べられます。",
-      "limitations": "東京スカイツリーでの売り上げは、発表に出ていません。",
-      "evidence_status": "販売機を作った会社と塔の運営会社が、11月21日から28日までの実験を発表しました。",
-      "published_at": "2026-11-19",
-      "organization": "PIMT and Tobu Tower Skytree",
+      "id": "arrive-ai-pro-forma-nasdaq-equity",
+      "title": "荷物の受け渡し設備を開発するArrive AI、債務を株式に替えた後の資本を試算",
+      "summary": "ドローンや配送員などの荷物の受け渡しに使う設備を開発する米Arrive AIが、米証券取引委員会に資金調達と債務の処理について届け出た。複数の取引を反映した株主資本の概算は約770万ドルで、同社に適用されるナスダックの最低基準250万ドルを上回るという。",
+      "details": "取引を反映する前の9月30日時点の株主資本は219万8652ドルだった。",
+      "technical_novelty": "貸し手のストリートビル・キャピタルには、債務と引き換えに優先株を渡した。",
+      "engineering_impact": "導入企業は、設備の利用期間を通じて保守を受けられるかにも注意を払う必要がある。",
+      "limitations": "試算は監査を受けておらず、債務交換の会計処理は確定していない。",
+      "evidence_status": "11月20日付の米証券取引委員会への届出書と、同社の投資家向け資料に基づく。",
+      "published_at": "2026-11-20",
+      "organization": "Arrive AI",
       "source_ids": [
-        "pimt",
-        "skytree"
+        "arrive-sec",
+        "arrive-ir"
       ],
-      "time_window": "72h",
-      "body": "東京スカイツリーの入り口で、どこに売り場を置くと、人が気づいて足を止めるのか。ピムトと塔の運営会社は、その場所を変えられる販売機を一台使い、四階のチケットカウンターがあるフロアで調べる。予定されている期間は11月21日から28日までの八日間。売るのは、パンやお菓子をかたどったぬいぐるみだ。両社は実験の予定を19日に発表した。\n\n売れた数だけでは、機械の前を通った人がどんな行動を取ったかまでは分からない。足を止め、商品を見てから通り過ぎる人もいる。そのため主催者は、カメラの画像をプログラムで調べて、通った人のうちどれだけが立ち寄ったかを測る。さらに、買い物を楽しめたかを来場者へのアンケートで尋ねる。売り上げ、足を止めた人の割合、アンケートは、それぞれ別の場面について知るための記録だ。\n\nピムトは成田空港で2026年4月から、この機械を使った販売を続けている。同社は、催し物に合わせて売り場を移したり、近くに電源の差し込み口がない場所で販売したりした例を挙げる。今回は、買ったぬいぐるみを展望台に持って行き、東京の街を背景に写真を撮る楽しみ方も映像で紹介する。塔での売り上げはまだ発表されていない。置き場所を変えた効果を見るには、各地点で立ち寄った人の数と、もともとその地点を通る人の数の両方が必要になる。\n\n塔の運営会社にとっては、店を新設せず、チケット売り場の空間を生かせるかが判断材料になる。販売時間あたりの売り上げを地点ごとに比べると、翌日も同じ場所に置くべきかを検討しやすい。",
+      "time_window": "7d",
+      "body": "荷物の受け渡し設備を開発する米Arrive AIが11月20日、資金調達と債務の処理に伴う株主資本の変化を報告した。株主資本は会計上、資産から負債を差し引いた会社の持ち分を表す。同社は一連の取引を反映すると約770万ドルになると試算し、米証券取引委員会に提出した書類で、上場先のナスダックが同社に求める250万ドルの基準を上回ったとの見方を示した。\n\n同社が報告した9月30日時点の株主資本は219万8652ドルだった。その後、特定の投資家に株式を売って諸費用を引く前で25万ドルを調達したほか、市場価格で株式を売る仕組みで約130万ドルを得た。また、ストリートビル・キャピタルに対する債務と引き換えに、普通株と異なる条件を持つ優先株を渡した。これらの取引を反映して、同社は株主資本の基準を再び満たしたとの見方を示している。\n\n同社の設備では、配送員やドローンなどが別々の時刻に到着して荷物を引き渡せる。設備を導入して長く使う顧客にとって、開発会社が保守を続けられるかは選定の一つの条件になる。今回の数字は、取引が9月30日までに済んでいたと仮定した試算で、決算日より後の事業成績は反映していない。この試算は監査を受けておらず、優先株を返済期限のない株主資本に分類できるとの同社の見通しを織り込む。債務と株式を交換した取引の会計処理は、最終的には確定していない。ナスダックは今後も、同社が株主資本の基準を満たしているかを確認する。",
+      "image": null
+    },
+    {
+      "id": "bagel-robodojo-suite-results",
+      "title": "Bagel Labsが双腕向けモデルを公開、企業の社内評価には有償契約",
+      "summary": "カナダのBagel Labsは、ロボットの両腕を動かすモデルのコードと試験成績を公開した。成績は仮想環境で得たもので、企業が社内評価に使う場合も別途有償契約が必要になる。",
+      "details": "コンピューター上の試験RoboDojo-Simでは、五つの部門で途中までできた作業にも点が付く。",
+      "technical_novelty": "学習で得た数値の集まりであるモデルの重みをダウンロードできる。",
+      "engineering_impact": "企業が社内の比較試験に使えるかどうかには利用許諾の条件が関わる。",
+      "limitations": "顧客の現場での稼働成績はこの発表では示されていない。",
+      "evidence_status": "開発元が仮想環境での成績と利用許諾の条件を公開した。",
+      "published_at": "2026-11-20",
+      "organization": "Bagel Labs",
+      "source_ids": [
+        "bagel-code",
+        "bagel-model"
+      ],
+      "time_window": "7d",
+      "body": "トロントのBagel Labsが公開したのは、作業の指示とカメラの情報をもとにロボットの両腕の動きを決めるプログラムだ。仮想環境でロボットの制御を比べる試験RoboDojo-Simの成績も、項目別に示した。現場で自動化したい作業と試験の課題が似ていれば、何を社内で詳しく検証するかを決める材料になる。例えば両腕で大きな物を持つ工程を任せる場合、物を持ち上げる段階と、所定の場所に置き終える段階は分けて確かめたい。\n\nモデルには、作業の指示文、頭部のカメラと左右の手首のカメラの映像、ロボットの現在の状態を入力する。モデルは一度に32ステップ分の動作を予測し、最初の16ステップを実行してから、改めて観測した情報をもとに次の動作を計算する。計画を立て直す時点で、腕や物の位置が前の動作からどう変わったかを反映できる。\n\n11月20日付のRoboDojo-Simの集計で、Bagel Labsのモデルは、別のソフトウェアが作業の進め方を補助する部門を除くと総合3位だった。平均は100点満点で38.65点、作業を最後まで達成した割合は平均31.91%だった。試験には初めての条件への対応や複数の手順からなる作業など五つの評価部門があり、順位を決める集計では各部門を同じ重みで扱う。途中までできた作業にも点が付く。達成方法の自由度が高い作業や、文章や画像の指示に従う作業を含む「Open」部門では、成功率が3.33%だった。\n\n公開された重みは、プログラムが手本から学んだ内容を表す数値の集まりで、実行時に必要になる。ダウンロードは可能だが、公開資料によると企業が業務で使ったり、企業のために第三者が使ったりする場合には別途有償契約が必要だ。対象には社内研究や他社モデルとの比較試験も含まれる。稟議の前に整理したいのは、どの作業を最後までこなせば導入の候補になるかという条件だ。順位は途中までこなした作業にも得点を与えるため、完了が必須の仕事では、試験項目ごとの成功率を確かめる必要がある。",
       "image": null
     }
   ],
+  "technology_signal": {
+    "title": "設備を決める前に倉庫の作業を検証",
+    "summary": "スペースデータと霞ヶ関キャピタルは、倉庫内のロボットや荷物を運ぶ機器の台数と配置をコンピューター上で変え、倉庫がどれだけ荷物を処理できるかを調べたい考えだ。",
+    "implications": "荷物が滞る場所を早く把握できれば、機器を入れる前に計画を見直せる。具体的な検証項目は今後決める。"
+  },
   "sources": [
     {
-      "id": "reuters-abb",
+      "id": "cbs-bessent",
+      "organization": "CBS News",
+      "published_at": "2026-11-22",
+      "url": "https://www.cbsnews.com/news/transcript-treasury-secretary-scott-bessent-face-the-nation-with-margaret-brennan-nov-22-2026/",
+      "domain": "www.cbsnews.com",
+      "title": "Transcript: Treasury Secretary Scott Bessent on Face the Nation, Nov. 22, 2026"
+    },
+    {
+      "id": "reuters-bessent",
       "organization": "Reuters",
-      "published_at": "2026-11-20",
-      "url": "https://www.reuters.com/business/media-telecom/abb-considers-robotics-listing-if-sale-softbank-fails-sources-say-2026-11-20/",
+      "published_at": "2026-11-22",
+      "url": "https://www.reuters.com/world/china/us-seeks-answers-nvidias-sale-chips-china-bessent-says-2026-11-22/",
       "domain": "www.reuters.com",
-      "title": "ABB considers robotics listing if sale to SoftBank fails, sources say"
+      "title": "US seeks answers on Nvidia’s sale of chips to China, Bessent says"
     },
     {
-      "id": "abb",
-      "organization": "ABB",
-      "published_at": "2026-11-05",
-      "url": "https://www.abb.com/global/en/news/140154/update-on-divestment-of-abb-robotics",
-      "domain": "www.abb.com",
-      "title": "Update on divestment of ABB Robotics"
+      "id": "nvidia-board",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-12",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition",
+      "domain": "nvidianews.nvidia.com",
+      "title": "NVIDIA Announces CEO Transition"
     },
     {
-      "id": "ap-chips",
-      "organization": "Associated Press",
+      "id": "space-data",
+      "organization": "Space Data",
       "published_at": "2026-11-20",
-      "url": "https://apnews.com/article/88142455395552afe74caec3399a648b",
-      "domain": "apnews.com",
-      "title": "Treasury secretary says no further restrictions are needed for Nvidia chip exports to China"
-    },
-    {
-      "id": "house-chip-licenses",
-      "organization": "US House Foreign Affairs Committee",
-      "published_at": "2026-11-19",
-      "url": "https://foreignaffairs.house.gov/news/press-releases/chairman-brian-mast-exercises-legislative-authority-to-publicly-release-ai-chip-license-information-for-china",
-      "domain": "foreignaffairs.house.gov",
-      "title": "Chairman Brian Mast Exercises Legislative Authority to Publicly Release AI Chip License Information for China"
-    },
-    {
-      "id": "brightai",
-      "organization": "BrightAI",
-      "published_at": "2026-11-18",
-      "url": "https://www.businesswire.com/news/home/20261118838405/en/BrightAI-Announces-%2497-Million-Investment-to-Scale-Physical-AI-Across-the-Worlds-Essential-Services",
-      "domain": "www.businesswire.com",
-      "title": "BrightAI Announces $97 Million Investment to Scale Physical AI Across the World’s Essential Services"
-    },
-    {
-      "id": "smith-point",
-      "organization": "Smith Point Capital",
-      "published_at": "2026-11-18",
-      "url": "https://www.smithpointcapital.com/news/the-intelligence-layer-for-critical-infrastructure",
-      "domain": "www.smithpointcapital.com",
-      "title": "The Intelligence Layer for Critical Infrastructure: Why We’re Partnering with BrightAI"
-    },
-    {
-      "id": "intramotev",
-      "organization": "Intramotev",
-      "published_at": "2026-11-20",
-      "url": "https://intramotev.com/newsroom",
-      "domain": "intramotev.com",
-      "title": "Intramotev, Watco Bringing Autonomous Railcars to Texas"
-    },
-    {
-      "id": "railway-age",
-      "organization": "Railway Age",
-      "published_at": "2026-11-20",
-      "url": "https://www.railwayage.com/freight/short-lines-regionals/intramotev-watco-bringing-autonomous-railcars-to-texas/",
-      "domain": "www.railwayage.com",
-      "title": "Intramotev, Watco Bringing Autonomous Railcars to Texas"
-    },
-    {
-      "id": "pimt",
-      "organization": "PIMT",
-      "published_at": "2026-11-19",
-      "url": "https://prtimes.jp/main/html/rd/p/000000009.000179442.html",
+      "url": "https://prtimes.jp/main/html/rd/p/000000286.000080352.html",
       "domain": "prtimes.jp",
-      "title": "東京スカイツリーで移動型無人販売ロボットのビジネス実証"
+      "title": "スペースデータと霞ヶ関キャピタル、物流施設の設計から運用までをフィジカルAI・空間知能で高度化する共同検討を開始"
     },
     {
-      "id": "skytree",
-      "organization": "Tobu Tower Skytree",
-      "published_at": "2026-11-19",
-      "url": "https://www.tokyo-skytree.jp/press/post/730/",
-      "domain": "www.tokyo-skytree.jp",
-      "title": "移動型無人販売ロボットを活用した実証実験を実施"
+      "id": "lnews-space",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120503.html",
+      "domain": "www.lnews.jp",
+      "title": "霞ヶ関キャピタルとスペースデータ／物流施設3拠点でフィジカルAI活用を共同検討"
+    },
+    {
+      "id": "aeronext",
+      "organization": "Aichi Prefecture, Shinshiro, Aeronext and Green Service",
+      "published_at": "2026-11-20",
+      "url": "https://aeronext.co.jp/news/shinshiro_poc_fy26/",
+      "domain": "aeronext.co.jp",
+      "title": "新城市でドローンを活用した定期的な「医薬品配送モデル」の創出を目指した長期事業化実施"
+    },
+    {
+      "id": "lnews-drone",
+      "organization": "LNEWS",
+      "published_at": "2026-11-20",
+      "url": "https://www.lnews.jp/2026/11/s1120502.html",
+      "domain": "www.lnews.jp",
+      "title": "エアロネクストほか／愛知県新城市でドローン活用し「医薬品配送モデル」実証"
+    },
+    {
+      "id": "arrive-sec",
+      "organization": "Arrive AI",
+      "published_at": "2026-11-20",
+      "url": "https://www.sec.gov/Archives/edgar/data/1818274/000149315226053484/form8-k.htm",
+      "domain": "www.sec.gov",
+      "title": "Arrive AI Inc. Form 8-K"
+    },
+    {
+      "id": "arrive-ir",
+      "organization": "Arrive AI",
+      "published_at": "2026-11-20",
+      "url": "https://investors.arriveai.com/news-releases/news-release-details/arrive-ais-pro-forma-stockholders-equity-now-above-nasdaq",
+      "domain": "investors.arriveai.com",
+      "title": "Arrive AI’s Pro Forma Stockholders’ Equity Now Above Nasdaq Minimum Requirement Following Recent Transactions"
+    },
+    {
+      "id": "bagel-code",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-20",
+      "url": "https://github.com/bageldotcom/Bagel-Robotics-1",
+      "domain": "github.com",
+      "title": "Bagel-Robotics-1: reference implementation and RoboDojo-Sim results"
+    },
+    {
+      "id": "bagel-model",
+      "organization": "Bagel Labs",
+      "published_at": "2026-11-18",
+      "url": "https://www.bagel.com/bagel-robotics-1",
+      "domain": "www.bagel.com",
+      "title": "Bagel-Robotics-1"
     }
   ]
 }
