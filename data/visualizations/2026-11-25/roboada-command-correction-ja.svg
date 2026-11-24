@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 633" width="360" height="633" xml:lang="ja" role="img" aria-labelledby="title desc">
+  <title id="title">動作指令の補正で 成功率は上がるか</title>
+  <desc id="desc">課題の成功率（％） 補正なし RoboAdaで補正 LIBERO 物理条件を変えた11通りの試験 5モデル、各4,400組の試行 RoboTwin 2.0 関節の目標角度にずれを設定 Fast-WAM、800組の試行 いずれもシミュレーションでの結果。</desc>
+  <rect x="0" y="0" width="360" height="633" rx="0" fill="#f6f7f2" stroke="none" stroke-width="1" data-qa-group="bg" id="g2"/>
+  <text x="24" y="32" fill="#116768" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="700" text-anchor="start" id="g3">二つのシミュレーション試験</text>
+  <text x="24" y="68" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g4">動作指令の補正で</text>
+  <text x="24" y="102" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g5">成功率は上がるか</text>
+  <text x="26" y="141" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="15" font-weight="700" text-anchor="start" id="g6">課題の成功率（％）</text>
+  <text x="26" y="174" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="700" text-anchor="start" id="g7">LIBERO</text>
+  <text x="26" y="198" fill="#40575b" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g8">物理条件を変えた11通りの試験</text>
+  <text x="26" y="218" fill="#40575b" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g9">5モデル、各4,400組の試行</text>
+  <text x="26" y="246" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g10">補正なし</text>
+  <text x="298" y="246" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="15" font-weight="700" text-anchor="end" id="g11">27.8%</text>
+  <rect x="26" y="253" width="272" height="10" rx="0" fill="#e1eae6" stroke="none" stroke-width="1" data-qa-group="bar-0-0" id="g12"/>
+  <rect x="26" y="253" width="75.616" height="10" rx="0" fill="#607574" stroke="none" stroke-width="1" data-qa-group="bar-0-0" id="g13" data-value="27.8"/>
+  <text x="26" y="292" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g14">RoboAdaで補正</text>
+  <text x="298" y="292" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="15" font-weight="700" text-anchor="end" id="g15">62.9%</text>
+  <rect x="26" y="299" width="272" height="10" rx="0" fill="#e1eae6" stroke="none" stroke-width="1" data-qa-group="bar-0-1" id="g16"/>
+  <rect x="26" y="299" width="171.088" height="10" rx="0" fill="#116768" stroke="none" stroke-width="1" data-qa-group="bar-0-1" id="g17" data-value="62.9"/>
+  <line x1="26" y1="312" x2="26" y2="319" stroke="#9caaaa" stroke-width="1" data-qa-group="axis-0" id="g18"/>
+  <text x="26" y="336" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g19">0</text>
+  <line x1="94" y1="312" x2="94" y2="319" stroke="#9caaaa" stroke-width="1" data-qa-group="axis-0" id="g20"/>
+  <text x="94" y="336" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g21">25</text>
+  <line x1="162" y1="312" x2="162" y2="319" stroke="#9caaaa" stroke-width="1" data-qa-group="axis-0" id="g22"/>
+  <text x="162" y="336" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g23">50</text>
+  <line x1="230" y1="312" x2="230" y2="319" stroke="#9caaaa" stroke-width="1" data-qa-group="axis-0" id="g24"/>
+  <text x="230" y="336" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g25">75</text>
+  <line x1="298" y1="312" x2="298" y2="319" stroke="#9caaaa" stroke-width="1" data-qa-group="axis-0" id="g26"/>
+  <text x="298" y="336" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g27">100</text>
+  <text x="26" y="379" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="17" font-weight="700" text-anchor="start" id="g28">RoboTwin 2.0</text>
+  <text x="26" y="403" fill="#40575b" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g29">関節の目標角度にずれを設定</text>
+  <text x="26" y="423" fill="#40575b" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g30">Fast-WAM、800組の試行</text>
+  <text x="26" y="451" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g31">補正なし</text>
+  <text x="298" y="451" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="15" font-weight="700" text-anchor="end" id="g32">24.9%</text>
+  <rect x="26" y="458" width="272" height="10" rx="0" fill="#e1eae6" stroke="none" stroke-width="1" data-qa-group="bar-1-0" id="g33"/>
+  <rect x="26" y="458" width="67.728" height="10" rx="0" fill="#607574" stroke="none" stroke-width="1" data-qa-group="bar-1-0" id="g34" data-value="24.9"/>
+  <text x="26" y="497" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g35">RoboAdaで補正</text>
+  <text x="298" y="497" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="15" font-weight="700" text-anchor="end" id="g36">78.8%</text>
+  <rect x="26" y="504" width="272" height="10" rx="0" fill="#e1eae6" stroke="none" stroke-width="1" data-qa-group="bar-1-1" id="g37"/>
+  <rect x="26" y="504" width="214.33599999999998" height="10" rx="0" fill="#116768" stroke="none" stroke-width="1" data-qa-group="bar-1-1" id="g38" data-value="78.8"/>
+  <line x1="26" y1="517" x2="26" y2="524" stroke="#9caaaa" stroke-width="1" data-qa-group="axis-1" id="g39"/>
+  <text x="26" y="541" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g40">0</text>
+  <line x1="94" y1="517" x2="94" y2="524" stroke="#9caaaa" stroke-width="1" data-qa-group="axis-1" id="g41"/>
+  <text x="94" y="541" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g42">25</text>
+  <line x1="162" y1="517" x2="162" y2="524" stroke="#9caaaa" stroke-width="1" data-qa-group="axis-1" id="g43"/>
+  <text x="162" y="541" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g44">50</text>
+  <line x1="230" y1="517" x2="230" y2="524" stroke="#9caaaa" stroke-width="1" data-qa-group="axis-1" id="g45"/>
+  <text x="230" y="541" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g46">75</text>
+  <line x1="298" y1="517" x2="298" y2="524" stroke="#9caaaa" stroke-width="1" data-qa-group="axis-1" id="g47"/>
+  <text x="298" y="541" fill="#182d33" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g48">100</text>
+  <text x="24" y="581" fill="#40575b" font-family="Noto Sans CJK JP, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g49">いずれもシミュレーションでの結果。</text>
+  <text x="24" y="609" fill="#40575b" font-family="Noto Sans CJK JP, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g50">出典：Zhang ほか</text>
+</svg>

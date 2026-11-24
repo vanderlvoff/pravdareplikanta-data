@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-25",
+  "issue_id": "daily-2026-11-25",
+  "edition": "business",
+  "language": "en",
+  "generated_at": "2026-11-25T06:12:05+09:00",
+  "title": "What it costs to move AI models to different chips",
+  "lead": "Amazon agreed to buy Decart technology to make computing on its own chips more efficient. Robotics developers have to consider the cost of moving their code, training a model and running it once trained.",
+  "news": [
+    {
+      "id": "nvidia-schumer-export-allegation",
+      "title": "NVIDIA’s chip exports to China face renewed scrutiny in Congress",
+      "summary": "Chuck Schumer alleged on November 24 that NVIDIA chief executive Jensen Huang violated limits on exports of advanced chips. A Senate committee is also preparing an open hearing on how US export rules are enforced.",
+      "details": "On November 24, Chuck Schumer alleged that Jensen Huang violated US export rules by shipping advanced chips to China.",
+      "technical_novelty": "The Senate Banking Committee scheduled a public hearing on export controls with Huang for December 3.",
+      "engineering_impact": "Congressional scrutiny of export controls matters to companies using NVIDIA chips in projects that span countries.",
+      "limitations": "The reports do not identify a chip model or shipment date for the senator’s allegation.",
+      "evidence_status": "Reuters and Investing.com reported the statement. NVIDIA confirms Huang’s position in the company.",
+      "published_at": "2026-11-24",
+      "organization": "United States Senate and NVIDIA",
+      "source_ids": [
+        "nv-schumer-reuters",
+        "nv-investing",
+        "nv-warren",
+        "nv-board-background"
+      ],
+      "time_window": "24h",
+      "body": "Chuck Schumer, the US Senate Democratic leader, accused NVIDIA chief executive Jensen Huang on November 24 of breaching rules on shipments of advanced chips to China. The statement added to the public scrutiny following Huang's return. Export controls are government limits on selling and shipping certain goods abroad. For NVIDIA customers, they can shape where they can get equipment and on what terms.\n\nReuters and Investing.com reported that Schumer made the allegation in a post on X. He urged Congress to tighten limits on shipments of US chips to China. Reuters said NVIDIA did not immediately respond to its request for comment. The accounts of the statement contain no chip model, batch, shipment date or court finding. They leave open which export authorization would apply to the transaction the senator had in mind.\n\nA day earlier, NVIDIA announced that Huang was back as president, chief executive and a board member. The company said its committee of independent directors would continue a separate internal inquiry. In a November 23 statement, Senator Elizabeth Warren called for answers about the company’s compliance with export rules. The Senate Banking Committee has scheduled a public hearing on export oversight for December 3 and lists Huang as its witness.\n\nFor a buyer sourcing chips across borders, the practical difference between a political statement and a regulatory decision shows up in the purchase agreement. Suppliers need to confirm what they can deliver, to whom and when. The reports about Schumer’s statement and the hearing notice give no decision concerning a specific shipment. The public committee agenda sets out a hearing on export oversight and lists Huang as the witness on December 3.",
+      "image": null
+    },
+    {
+      "id": "amazon-decart-trainium-agreement",
+      "title": "Amazon’s Decart deal adds software to its chip strategy",
+      "summary": "Amazon signed a deal for Decart technology that helps software run more efficiently on specific chips. The deal supports Amazon’s investment in computing infrastructure and remains subject to regulatory clearance.",
+      "details": "Amazon signed an agreement to buy Decart’s optimization technology and said it plans to hire the founders and team.",
+      "technical_novelty": "The software helps map model computation to specific chips, including Amazon’s Trainium hardware.",
+      "engineering_impact": "The agreement is relevant to teams choosing computing platforms for training and running robotics models.",
+      "limitations": "Closing requires regulatory clearance. Amazon did not disclose financial terms or comparative benchmarks.",
+      "evidence_status": "Amazon announced the agreement. Reuters independently reported that the company declined to disclose the price.",
+      "published_at": "2026-11-23",
+      "organization": "Amazon and Decart",
+      "source_ids": [
+        "amazon-agreement",
+        "amazon-reuters"
+      ],
+      "time_window": "72h",
+      "body": "Amazon has signed an agreement to acquire Decart technology for making more efficient use of computing chips. It is part of competition among providers that rent out computing power to train and run models. A robotics company has to consider how well its model fits the equipment on offer, because the price does not tell it how long the equipment will take to finish the job.\n\nAmazon announced the signed agreement on November 23. It covers the technology behind the Decart Optimization Stack, software that matches the work a model does to the hardware doing the calculation. Amazon also plans to hire Decart’s three co-founders and its researchers and engineers. The teams have worked together since 2025 on Amazon’s Trainium computing chips. Amazon names world models, programs that learn to predict how a scene can change after an action, among the relevant workloads.\n\nAmazon did not disclose the price. Reuters reported that Bloomberg put it at about $7.5 billion, citing a person familiar with the deal. Amazon did not confirm that figure. The deal remains subject to customary closing conditions, including regulatory clearance. Amazon describes reducing cost and increasing speed as goals and did not publish a comparative benchmark for a specific robotics workload.\n\nA buyer comparing clouds would need to consider rental charges, time to move its code and the cost of testing the relocated software with its own data. A cheaper hour of compute can bring little relief if training needs more hours or if the team must rebuild its tools. Amazon has given no price list, availability date or like-for-like performance figures for an updated service. Those inputs would determine whether there is any budget impact for a particular project.",
+      "image": null
+    },
+    {
+      "id": "bigwave-biped-automotive-line",
+      "title": "Bigwave tests a biped alongside existing factory equipment",
+      "summary": "Bigwave Robotics reported a robot trial at a South Korean automotive parts plant. The robot fed engine parts into an existing machine and stacked them after processing, using work signals from the equipment.",
+      "details": "Bigwave Robotics reported an on-site trial of a bipedal robot at a South Korean automotive parts factory. The robot handled engine parts.",
+      "technical_novelty": "It exchanged work signals with the straightening machine’s controller and walked about ten metres to the outfeed.",
+      "engineering_impact": "The trial linked loading, walking and stacking to the cycle of existing equipment.",
+      "limitations": "The announcement gives no cycle count, line rate or performance over a shift.",
+      "evidence_status": "The supplier described the trial, and trade publication Robot News covered the company’s report.",
+      "published_at": "2026-11-24",
+      "organization": "Bigwave Robotics",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "time_window": "24h",
+      "body": "Bigwave Robotics ran an on-site test of a walking robot at a South Korean automotive supplier. It assigned the machine both loading and unloading of engine parts. The plant already had its straightening equipment, so the project had to coordinate the robot with a production sequence that was already in place.\n\nAccording to Bigwave, the robot picked up engine parts and fed them into a straightening machine, which corrects the shape of a part. Once the machine completed its operation, the robot walked about ten metres to the outfeed and stacked the finished parts on a transfer cart. It exchanged work signals with the machine’s programmable logic controller, an industrial computer that sequences the machine’s operations and coordinates signals with other equipment.\n\nThe company connected Hyper Foundry, its robotics software platform, to NVIDIA tools for simulation and training. In millions of simulated runs it trained walking through reinforcement learning, in which actions are selected based on feedback about results. For grasping it used examples of the desired movements, helped by a separate model that locates parts. The company then transferred what it had trained in simulation to the physical robot for the on-site trial.\n\nThe same route would need to be timed over a sustained shift for a purchasing decision. Managers would want to know how many parts get through, how much operator intervention is needed and where a delay holds up the line. A plant might also be able to cover the work with fixed arms or a cart, depending on its layout. The announcement establishes the scope of Bigwave’s integration trial and gives no cost or sustained throughput figures for comparing those options.",
+      "image": null
+    },
+    {
+      "id": "innata-world-action-agent",
+      "title": "Robot software gets a separate check for finished work",
+      "summary": "The Beijing Academy of Artificial Intelligence presented a system that checks results between stages of a robot’s task. In a simulated kitchen, adding verification and recovery raised the share of completed tasks from 60.2% to 65.4%.",
+      "details": "The Beijing Academy of Artificial Intelligence proposed a system that sequences robot actions and checks how the work is progressing.",
+      "technical_novelty": "In Innata-0, a model generates movements while separate software checks the observed result and calls a recovery routine when needed.",
+      "engineering_impact": "Adding that layer to the same motion model raised success from 60.2% to 65.4% on simulated kitchen tasks.",
+      "limitations": "The simulated result applies to a specific test suite. Transfer to other robots and settings needs separate testing.",
+      "evidence_status": "The authors documented their comparison and examples of recovery in a preprint.",
+      "published_at": "2026-11-23",
+      "organization": "Beijing Academy of Artificial Intelligence",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "time_window": "72h",
+      "body": "Researchers at the Beijing Academy of Artificial Intelligence tested whether separate software can help a robot check its own work. The software compares the result of a movement with the intended outcome and can assign a corrective task. In a simulated kitchen, the team compared success with and without those checks while keeping the same underlying movement model.\n\nIn Innata-0, a world-action model interprets the scene, predicts changes and generates movement commands. It gets the full instruction, the current subtask and a record of confirmed progress. The other component, which the researchers call an agent, organizes the steps and compares the observed scene after a movement with the intended result. When it detects a mismatch, it can invoke a recovery routine and then return to the original task.\n\nIn RoboCasa365, a collection of simulated kitchen tasks, the researchers compared two setups using the same movement model. Overall success reached 60.2% without the agent and 65.4% with it. For combinations of steps the model had not seen before, success rose from 32.4% to 43.6%. One example in the paper shows the system noticing a misplaced pan and moving it onto the intended burner.\n\nA trial at a customer site could record the time spent checking each step as well as the number of errors corrected. Retrying a movement might reduce one kind of defect while also adding time to a production cycle. The authors call for broader tests across different robots and settings. Their simulated result provides no figure for machine downtime or for how often a person would have to take over at a customer site.",
+      "image": null
+    },
+    {
+      "id": "gmo-robot-hand-competition-judges",
+      "title": "GMO names judges for its robot hand competition",
+      "summary": "Organizers in Japan announced five judges for a contest in which robotic hands will transfer beans. Teams can develop their own equipment or try hardware at the organizers’ lab.",
+      "details": "Organizers in Japan named five judges for a competition in which robotic hands will transfer roasted beans.",
+      "technical_novelty": "Teams can direct the hand remotely or have a trained program control it.",
+      "engineering_impact": "The shared task and time limit give teams a way to try different approaches to handling small objects.",
+      "limitations": "The final is scheduled for March 26, 2027. The announcement concerns the judges; there are no entrant results yet.",
+      "evidence_status": "The organizers published the judges, eligibility and dates.",
+      "published_at": "2026-11-20",
+      "organization": "GMO Internet Group, GMO AIR and Singularity Society",
+      "source_ids": [
+        "gmo-judges",
+        "gmo-rules-release"
+      ],
+      "time_window": "7d",
+      "body": "GMO Internet Group and its partners named the judges of their first robotic hand contest in Japan. The common task measures speed and precision when moving small objects. Teams can begin with equipment supplied by the organizers or bring a hand they built themselves. The November 20 announcement identifies the five judges ahead of the first final.\n\nGMO Internet Group, its robotics company GMO AIR and the Singularity Society announced the judges on November 20. The five include engineer and entrepreneur Satoshi Nakajima and Telexistence co-founder Motoki Sano. Contestants have five minutes to move roasted beans one at a time between plates using chopsticks or tweezers held by a robotic hand with several fingers. Both remote control by a person and control by a program trained in advance are permitted.\n\nThe prize pool totals ¥10 million. Applications close on December 18, 2026, and the final is scheduled for March 26, 2027, in Tokyo. The organizers offer participants access to equipment at a laboratory in Shibuya as well as tools for control and training. The rules allow teams to bring their own hand, so they can work on how it is built as well as how it is controlled.\n\nAccess to test hardware can lower the cost of early attempts, particularly for a team that wants to focus on control software. A common competition task offers a reference for comparing designs. A manufacturer evaluating a tool would need other evidence as well. These rules measure performance with a single kind of object over five minutes and do not measure effects such as wear after repeated use.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Software is part of the competition among cloud chip suppliers",
+    "summary": "Amazon agreed to acquire technology from Decart that adapts model computation to hardware. One goal is to make Amazon’s Trainium chips more efficient.",
+    "implications": "Customers need results on matching workloads before they can estimate the cost of switching. Amazon gave no benchmark for a specific robotics model."
+  },
+  "sources": [
+    {
+      "id": "nv-schumer-reuters",
+      "title": "Schumer accuses Nvidia CEO of violating US export control law",
+      "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "nv-investing",
+      "title": "Schumer accuses Huang of violating US export law",
+      "url": "https://www.investing.com/news/stock-market-news/schumer-accuses-huang-of-violating-us-export-law-5048872",
+      "domain": "www.investing.com",
+      "organization": "Investing.com",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "nv-warren",
+      "title": "Senator Warren Statement on Jensen Huang Reinstatement as NVIDIA CEO",
+      "url": "https://www.banking.senate.gov/newsroom/minority/senator-warren-statement-on-jensen-huang-reinstatement-as-nvidia-ceo",
+      "domain": "www.banking.senate.gov",
+      "organization": "United States Senate Banking Committee",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-board-background",
+      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "amazon-agreement",
+      "title": "Amazon to purchase Decart’s AI optimization technology to advance chip and model innovation for customers",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+      "domain": "www.aboutamazon.com",
+      "organization": "Amazon",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "amazon-reuters",
+      "title": "Amazon to buy Decart’s AI chip optimization tech in latest AI talent grab",
+      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "big-company",
+      "title": "Bigwave Robotics Validates a Bipedal Humanoid on a Live Automotive Parts Line",
+      "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq",
+      "domain": "us.bigwaverobotics.com",
+      "organization": "Bigwave Robotics",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "big-robotnews",
+      "title": "빅웨이브로보틱스, 국내 최초 이족보행 휴머노이드 제조 현장 연계 공정 실증 성공",
+      "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763",
+      "domain": "www.irobotnews.com",
+      "organization": "Robot News",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "innata-paper",
+      "title": "Innata-0: A Native Embodied World System with Model-Agent Co-Design",
+      "url": "https://arxiv.org/html/2611.30254v1",
+      "domain": "arxiv.org",
+      "organization": "Innata Team",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "gmo-judges",
+      "title": "第1回GMOロボットハンドコンテスト 審査員が決定",
+      "url": "https://ai-robotics.gmo/news/article/gmo-robot-hand-competition/",
+      "domain": "ai-robotics.gmo",
+      "organization": "GMO AI & Robotics Corporation",
+      "published_at": "2026-11-20"
+    },
+    {
+      "id": "gmo-rules-release",
+      "title": "第1回GMOロボットハンドコンテスト 審査員が決定：コンテスト概要・募集要項",
+      "url": "https://www.techno-edge.net/release/prtimes2/20261120/25483.html",
+      "domain": "www.techno-edge.net",
+      "organization": "GMO Internet Group",
+      "published_at": "2026-11-20"
+    }
+  ]
+}

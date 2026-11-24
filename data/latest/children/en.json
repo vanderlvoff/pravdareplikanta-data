@@ -2,176 +2,176 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-24",
-  "issue_id": "daily-2026-11-24",
+  "issue_date": "2026-11-25",
+  "issue_id": "daily-2026-11-25",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-24T06:20:56+09:00",
-  "title": "Finding the right thing on the table",
-  "lead": "Researchers from China and their partners asked a robot inside a computer to move different objects. They kept everything on the same table and changed the request to see whether the arm would reach for something different.",
+  "generated_at": "2026-11-25T06:12:05+09:00",
+  "title": "Five minutes and a plate of beans",
+  "lead": "Organizers have named the judges for a robot hand contest in Japan. Teams will use chopsticks or tweezers to move roasted beans one at a time.",
   "news": [
     {
-      "id": "omron-ld-orders",
-      "title": "How robots share a warehouse aisle",
-      "summary": "OMRON Robotics opened orders for two robots that carry loads inside buildings. They find their way using their surroundings, and a shared program hands out jobs to the machines.",
-      "details": "OMRON Robotics started taking orders for two indoor robots that carry loads.",
-      "technical_novelty": "Each carrier finds its way using its surroundings without following a line marked on the floor.",
-      "engineering_impact": "When there are several carriers, shared software assigns jobs and helps manage their traffic.",
-      "limitations": "The company expects to start shipping the robots in January 2027.",
-      "evidence_status": "The manufacturer gave the specifications. It reported no measurements from a customer's warehouse.",
-      "published_at": "2026-11-19",
-      "organization": "OMRON Robotics",
-      "source_ids": [
-        "omron-release"
-      ],
-      "time_window": "7d",
-      "body": "OMRON Robotics started taking orders for two robots that carry loads inside buildings. They can travel through a passage one metre wide, such as an aisle between racks. The robots use features around them to work out where they are, so they do not need a painted line to follow on the floor.\n\nThink of a school hallway where a few people are carrying boxes. One is picking up paper and another is returning books. If they have to use the same narrow passage, they may have to take turns. In a warehouse, a program hands out trips, plans routes and helps the robots share the available space.\n\nThe smaller carrier is rated for 150 kilograms and the larger for 300. The company expects to ship them starting in January 2027. It gave the width of the machines and the aisle they can travel through. How many boxes a warehouse can move in a day also depends on time spent charging or waiting for a passage to clear.",
-      "image": null
-    },
-    {
-      "id": "manipscope-target-reassignment",
-      "title": "What will the robot pick if you change the request?",
-      "summary": "Researchers at the University of Science and Technology of China and their partners tested a robot inside a computer. They changed the words of the request to see whether its arm would reach for a different object on the same table.",
-      "details": "The researchers changed the instruction while leaving the objects in the same places in a computer scene.",
-      "technical_novelty": "The test asks whether the program picks a different object when the words tell it to.",
-      "engineering_impact": "This can reveal a mistake before the arm carries the object anywhere.",
-      "limitations": "The test took place in a computer simulation.",
-      "evidence_status": "The researchers described the test and its results in a paper.",
+      "id": "gmo-robot-hand-competition-judges",
+      "title": "Can a robot hand move beans with chopsticks?",
+      "summary": "Organizers in Japan picked judges for a contest in which robot hands will move roasted beans one at a time. Teams can use chopsticks or tweezers and will have five minutes.",
+      "details": "Organizers in Japan picked five judges for a robotic hand contest.",
+      "technical_novelty": "Each hand will move roasted beans from one plate to another, one bean at a time, with chopsticks or tweezers.",
+      "engineering_impact": "A team can control the hand from a distance or teach a program to do the job beforehand.",
+      "limitations": "Applications close December 18. The final is still ahead.",
+      "evidence_status": "The contest organizers published the rules and judges.",
       "published_at": "2026-11-20",
-      "organization": "University of Science and Technology of China, Sharpa Robotics, Shanghai Jiao Tong University and The Chinese University of Hong Kong",
+      "organization": "GMO Internet Group, GMO AIR and Singularity Society",
       "source_ids": [
-        "manipscope-paper"
+        "gmo-judges",
+        "gmo-rules-release"
       ],
       "time_window": "7d",
-      "body": "A team at the University of Science and Technology of China and its partners put objects on a virtual table. They gave a robot different instructions about what to pick up or move. They wanted to see whether changing the words could change the robot's choice when everything in front of it looked the same.\n\nImagine asking a friend to pick up your notebook, then asking them to pick up their own. Both notebooks are in the same places. What they reach for depends on which request you make. The researchers tried something similar, putting the objects back in their starting spots before each new attempt.\n\nFor each setup, the programs had several requests to follow. Putting the programs’ results together, they followed every request in about four setups out of a hundred. In a separate set of trials, the researchers looked at the failed attempts and found that the arm often moved an object the request did not name. It's possible to move something smoothly and still have picked the wrong thing.",
+      "body": "Five judges have been named for a contest in Japan where a robot hand will move roasted beans between plates. The organizers from GMO will give each team five minutes. The hand has to pick up one bean at a time with chopsticks or tweezers. The judges will look at speed and accuracy.\n\nImagine trying to lift one bean with chopsticks. If the sticks slip in your hand, their tips can come apart. If the tips hold the bean too loosely, it can fall. A person can control the robot's fingers from a distance or train a program to carry out the movements beforehand.\n\nApplications close December 18, and the final is planned for March 26 in Tokyo. Teams can try equipment at a lab before the event. That gives them time to check how their hand grips a tool and what happens when a bean rolls on the plate.",
       "image": null
     },
     {
-      "id": "robocap-workplace-video",
-      "title": "How to film a pair of hands from different sides",
-      "summary": "Two research teams used tiny cameras worn on the head to film people using their hands at work. Videos from different sides help a program find where the hands moved and turn the recordings into examples for teaching robots.",
-      "details": "Teams from Grounded Superintelligence and BitRobot recorded people doing tasks with their hands.",
-      "technical_novelty": "Cameras worn on the head film from several viewpoints so software can work out where the hands were.",
-      "engineering_impact": "The recordings show the movements that make up a task and could become examples for teaching robots.",
-      "limitations": "The cameras did not measure how hard people pressed on objects.",
-      "evidence_status": "The teams described how they collected the recordings in a paper.",
-      "published_at": "2026-11-20",
-      "organization": "Grounded Superintelligence and BitRobot",
+      "id": "bigwave-biped-automotive-line",
+      "title": "The robot loaded the machine, then walked over for the part",
+      "summary": "Bigwave Robotics tested a two-legged robot at a South Korean factory. It loaded an engine part, walked to the other station and set the finished part on a cart.",
+      "details": "At a factory in South Korea, a robot loaded an engine part into a machine and walked to the place where finished parts come out.",
+      "technical_novelty": "The robot and the machine exchanged signals so each could start at the right moment.",
+      "engineering_impact": "The trial shows how one robot can do several jobs at two places on a line.",
+      "limitations": "The company reported a test and gave no count for a full shift.",
+      "evidence_status": "Bigwave Robotics, which prepared the robot for the task, described the trial.",
+      "published_at": "2026-11-24",
+      "organization": "Bigwave Robotics",
       "source_ids": [
-        "robocap-paper"
-      ],
-      "time_window": "7d",
-      "body": "Two research teams gave people headsets with six small cameras to wear while working. The cameras recorded people picking up objects and doing things with them. The researchers wanted to work out where the hands moved so the recordings could serve as examples for teaching robots.\n\nAsk a friend to film you folding a towel. From one spot they might see you lift a corner, but the cloth might hide your other hand. From the other side they might see that hand as well. In the study all six cameras filmed at the same time, so a program could match their views even when a finger disappeared behind an object in one of them.\n\nThe teams collected ten thousand hours of video in eleven countries. You can see where somebody reaches, but the recordings do not measure force. If you watch someone wipe a glass, you can see where they hold the cloth. Measuring how hard they press it against the glass would take more than these videos.",
-      "image": null
-    },
-    {
-      "id": "vetaion-control-cabinet-financing",
-      "title": "How do you assemble the box that controls a machine?",
-      "summary": "Munich company Vetaion raised money to develop a tool for building electrical cabinets. Its software shows where parts could go inside the box and which ones need to be joined with wires.",
-      "details": "A company called Vetaion raised money to develop tools for building cabinets that control factory machines.",
-      "technical_novelty": "Its software turns a flat drawing into a model showing where parts fit inside the cabinet.",
-      "engineering_impact": "The team wants robots to use that layout to put parts in place and join them with wires.",
-      "limitations": "The announcement describes funding for development and gives no results from a customer's factory.",
-      "evidence_status": "An investor and a centre that supports young companies reported the funding.",
-      "published_at": "2026-11-19",
-      "organization": "Vetaion",
-      "source_ids": [
-        "vetaion-uvc",
-        "vetaion-tum"
-      ],
-      "time_window": "7d",
-      "body": "Vetaion, a company from Munich, raised €5.7 million to work on a machine that assembles electrical cabinets. A cabinet holds parts that help switch factory machines on and control them. The team wants its machine to place the parts and connect them with wires by following a plan.\n\nSuppose a drawing shows two parts with a line between them. You can tell they need to be connected. To put them in a real box, you also have to decide where each one goes and see if you can reach its socket. Vetaion’s software turns the flat plan into a model showing the parts inside a box.\n\nSeveral firms put money into making the system. The announcement does not say how many different cabinets the machine has managed to assemble in a factory.",
-      "image": null
-    },
-    {
-      "id": "nvidia-huang-reinstatement",
-      "title": "A chipmaker’s leader returns",
-      "summary": "NVIDIA’s board says Jensen Huang is back in charge of the company. Its chips help computers do the many calculations needed to train programs, including ones that move robots.",
-      "details": "The board announced the leader’s return on November 23.",
-      "technical_novelty": "Board members who do not run the company will continue their review.",
-      "engineering_impact": "A separate board group watches over rules about selling chips abroad.",
-      "limitations": "The review has yet to reach its conclusion.",
-      "evidence_status": "The company and Reuters confirmed the decision.",
-      "published_at": "2026-11-23",
-      "organization": "NVIDIA",
-      "source_ids": [
-        "nv-board",
-        "nv-sec",
-        "nv-reuters"
+        "big-company",
+        "big-robotnews"
       ],
       "time_window": "24h",
-      "body": "The people who make the big decisions at chipmaker NVIDIA said on November 23 that Jensen Huang was back in charge. The company makes chips that help computers do many calculations quickly. Those chips can help train a program that tells a robot how to move.\n\nThose decision-makers are called the board of directors. The board gave Huang his leadership job back and restored his seat on the board. Colette Kress had been running the company for a short time. She will continue taking care of its finances and financial reports.\n\nSome board members are still working with lawyers to find out what happened in the events they are reviewing. Another group watches over the rules for selling chips abroad. The company says the review will continue, and the board has not announced a date for the result.",
+      "body": "At a South Korean factory, a robot put an engine part into a machine that straightens it. After that machine did its work, the robot walked about ten metres to the place where finished parts come out. It put the processed part on a cart. Bigwave Robotics was testing whether one robot could do all of that on an existing line.\n\nTiming matters for both machines. If the robot comes for a part too soon, there is nothing ready to pick up. The equipment and the robot exchanged signals, a bit like a teammate telling you they have finished their part of a job. The signals tied together work going on in two different places.\n\nThe robot got practice at walking inside a computer simulation. It learned how to grab parts from examples of the movement. Then the company tried the sequence at a real factory. The announcement did not say how often it could repeat the whole trip during a work shift.",
+      "image": null
+    },
+    {
+      "id": "roboada-command-correction",
+      "title": "The box looks empty. What if it is heavy?",
+      "summary": "Yunbei Zhang and colleagues tested what happens when a robot inside a computer tries to move an object that gets heavier. Their program watches how the arm moved and uses that clue to adjust the next command.",
+      "details": "Researchers tested how to correct a robot’s motion when its arm became weaker or an object got heavier in a computer simulation.",
+      "technical_novelty": "The software checks how far the arm moved and adjusts the next command.",
+      "engineering_impact": "That gives the robot another way to carry out the same plan.",
+      "limitations": "The tests used a robot inside a computer.",
+      "evidence_status": "Yunbei Zhang and colleagues described the experiment and its results.",
+      "published_at": "2026-11-23",
+      "organization": "Tulane University, New York University, Nanyang Technological University, MIT and Harvard University",
+      "source_ids": [
+        "roboada-paper"
+      ],
+      "time_window": "72h",
+      "body": "Researchers led by Yunbei Zhang tested a robot inside a computer. They changed the weight of objects or how strongly its arm could move. They wanted to see if a program could notice the arm had moved less than intended and correct the next instruction.\n\nThink of two identical cardboard boxes. One is empty and one is full of books. Until you try to lift them, they look the same. When the robot's arm moved less than expected, that gave its program a clue. The program used the clue to decide whether to adjust the next movement or leave the command alone.\n\nIn one set of computer tests with changed conditions, about 28 attempts out of 100 worked before the adjustment and about 63 worked with it. The researchers measured those results in a simulation. They did not test whether a physical robot could use the same clue to lift a real box.",
+      "image": null
+    },
+    {
+      "id": "amazon-decart-trainium-agreement",
+      "title": "Helping a computer get through a big calculation",
+      "summary": "Amazon agreed to buy software technology that helps computer chips work more efficiently. Those chips can help developers train programs that control robots.",
+      "details": "Amazon agreed to buy technology that can help chips carry out large numbers of calculations more efficiently.",
+      "technical_novelty": "The software changes how calculations are carried out on different chips.",
+      "engineering_impact": "That can help computers train programs and run the ones they have already trained.",
+      "limitations": "The agreement still needs approval. Amazon gave no figure for how much faster programs would run after the purchase.",
+      "evidence_status": "Amazon announced the agreement. Reuters reported that the company declined to disclose the price.",
+      "published_at": "2026-11-23",
+      "organization": "Amazon and Decart",
+      "source_ids": [
+        "amazon-agreement",
+        "amazon-reuters"
+      ],
+      "time_window": "72h",
+      "body": "Amazon agreed to buy technology from a company called Decart. It helps a computer carry out many calculations on a chip. For example, people can use calculations like these when they show a program many examples of a robot arm moving and train it to choose what to do next.\n\nImagine a group of friends working on different parts of a big problem. If one person needs another’s answer right away, they may have to wait. Computers also split a big calculation into smaller pieces. This software helps choose an order that works well for the chip doing the work.\n\nThe two companies have worked together on Amazon’s chips since 2025. Amazon announced the agreement on November 23, and the deal still needs approval. Amazon has not said how much time it would save someone trying to train a program for their own robot.",
+      "image": null
+    },
+    {
+      "id": "innata-world-action-agent",
+      "title": "How do you tell if the pan went to the wrong place?",
+      "summary": "Researchers at the Beijing Academy of Artificial Intelligence tried a robot in a kitchen inside a computer. When the arm left a pan in the wrong place, software told it to move the pan onto the right burner.",
+      "details": "Researchers tested whether a robot can spot a mistake before moving on to its next job.",
+      "technical_novelty": "One part of the software controls movement. Another checks what happened.",
+      "engineering_impact": "If an object is in the wrong place, the program can give the robot a new instruction to put it right.",
+      "limitations": "The result comes from a kitchen inside a computer.",
+      "evidence_status": "Researchers showed an example of a correction in their paper.",
+      "published_at": "2026-11-23",
+      "organization": "Beijing Academy of Artificial Intelligence",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "time_window": "72h",
+      "body": "A team at the Beijing Academy of Artificial Intelligence tested a robot in a kitchen inside a computer. One of its jobs involved a pan. The team wanted to see if checking after a movement would help when the robot managed to lift the pan but set it down in the wrong place.\n\nSuppose you have to put a pan on the left burner and then put a spoon away. You want to check that the pan is in place before moving on to the spoon. In the test, one part of the software controlled the arm. Another checked the result and could ask for a new movement.\n\nAcross the computer kitchen’s tasks, about 60 attempts out of a hundred worked without that extra check and about 65 worked with it. The paper shows one example where the robot moved a pan again to get it right. The team wants to find out how the program deals with surprises in other places and with other robots.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "What changes when you ask for something else?",
-    "summary": "Researchers from the University of Science and Technology of China and their partners put the same objects in front of a robot inside a computer. They changed the request and watched what the arm reached for.",
-    "implications": "If the objects go back to the same spots after each try, it is easier to see whether the words changed what the arm picked. The researchers tested this on a computer."
+    "title": "One challenge for different robot hands",
+    "summary": "The GMO organizers set a five-minute limit for moving roasted beans. A person can control the hand from a distance or train a program to move it.",
+    "implications": "If the hand loses its grip on a chopstick, the tips can separate and the bean can fall. Teams have time to test their designs before the final in Tokyo."
   },
   "sources": [
     {
-      "id": "omron-release",
-      "title": "OMRON Robotics Announces Start of Orders for New LD Series Autonomous Mobile Robots",
-      "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/",
-      "domain": "robotics.omron.com",
-      "organization": "OMRON Robotics",
-      "published_at": "2026-11-19"
-    },
-    {
-      "id": "manipscope-paper",
-      "title": "ManipScope: A Diagnostic Benchmark for Instruction Following and Generalization in Robotic Manipulation",
-      "url": "https://arxiv.org/html/2611.27305v1",
-      "domain": "arxiv.org",
-      "organization": "Jiacheng Li et al.",
+      "id": "gmo-judges",
+      "title": "第1回GMOロボットハンドコンテスト 審査員が決定",
+      "url": "https://ai-robotics.gmo/news/article/gmo-robot-hand-competition/",
+      "domain": "ai-robotics.gmo",
+      "organization": "GMO AI & Robotics Corporation",
       "published_at": "2026-11-20"
     },
     {
-      "id": "robocap-paper",
-      "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
-      "url": "https://arxiv.org/html/2611.26916v1",
-      "domain": "arxiv.org",
-      "organization": "Grounded Superintelligence and BitRobot",
+      "id": "gmo-rules-release",
+      "title": "第1回GMOロボットハンドコンテスト 審査員が決定：コンテスト概要・募集要項",
+      "url": "https://www.techno-edge.net/release/prtimes2/20261120/25483.html",
+      "domain": "www.techno-edge.net",
+      "organization": "GMO Internet Group",
       "published_at": "2026-11-20"
     },
     {
-      "id": "vetaion-uvc",
-      "title": "€5.7 million for Vetaion: DeepTech startup builds the electrical infrastructure of the future",
-      "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future",
-      "domain": "www.uvcpartners.com",
-      "organization": "UVC Partners",
-      "published_at": "2026-11-19"
+      "id": "big-company",
+      "title": "Bigwave Robotics Validates a Bipedal Humanoid on a Live Automotive Parts Line",
+      "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq",
+      "domain": "us.bigwaverobotics.com",
+      "organization": "Bigwave Robotics",
+      "published_at": "2026-11-24"
     },
     {
-      "id": "vetaion-tum",
-      "title": "5,7 Mio. EUR für Vetaion: Deep-Tech-Startup baut die elektrische Infrastruktur der Zukunft auf",
-      "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/",
-      "domain": "www.unternehmertum.de",
-      "organization": "UnternehmerTUM",
-      "published_at": "2026-11-19"
+      "id": "big-robotnews",
+      "title": "빅웨이브로보틱스, 국내 최초 이족보행 휴머노이드 제조 현장 연계 공정 실증 성공",
+      "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763",
+      "domain": "www.irobotnews.com",
+      "organization": "Robot News",
+      "published_at": "2026-11-24"
     },
     {
-      "id": "nv-board",
-      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
-      "domain": "nvidianews.nvidia.com",
-      "organization": "NVIDIA",
+      "id": "roboada-paper",
+      "title": "RoboAda: Adapting Frozen Robot Policies at Test Time to Physics They Cannot See",
+      "url": "https://arxiv.org/html/2611.30209v1",
+      "domain": "arxiv.org",
+      "organization": "Yunbei Zhang et al.",
       "published_at": "2026-11-23"
     },
     {
-      "id": "nv-sec",
-      "title": "NVIDIA Form 8-K: November 22 board action",
-      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
-      "domain": "www.sec.gov",
-      "organization": "NVIDIA",
+      "id": "amazon-agreement",
+      "title": "Amazon to purchase Decart’s AI optimization technology to advance chip and model innovation for customers",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+      "domain": "www.aboutamazon.com",
+      "organization": "Amazon",
       "published_at": "2026-11-23"
     },
     {
-      "id": "nv-reuters",
-      "title": "Nvidia reinstates Jensen Huang as CEO, igniting tech surge",
-      "url": "https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/",
+      "id": "amazon-reuters",
+      "title": "Amazon to buy Decart’s AI chip optimization tech in latest AI talent grab",
+      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
       "domain": "www.reuters.com",
       "organization": "Reuters",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "innata-paper",
+      "title": "Innata-0: A Native Embodied World System with Model-Agent Co-Design",
+      "url": "https://arxiv.org/html/2611.30254v1",
+      "domain": "arxiv.org",
+      "organization": "Innata Team",
       "published_at": "2026-11-23"
     }
   ]

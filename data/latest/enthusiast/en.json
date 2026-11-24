@@ -2,174 +2,174 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-24",
-  "issue_id": "daily-2026-11-24",
+  "issue_date": "2026-11-25",
+  "issue_id": "daily-2026-11-25",
   "edition": "enthusiast",
   "language": "en",
-  "generated_at": "2026-11-24T06:20:56+09:00",
-  "title": "What cameras can learn about hand movements",
-  "lead": "Grounded Superintelligence and BitRobot used cameras worn on the head to record 10,000 hours of work. Seeing the same action from several angles helps them locate the hand as it handles an object.",
+  "generated_at": "2026-11-25T06:12:05+09:00",
+  "title": "When should a robot correct its own move?",
+  "lead": "In a simulated kitchen, a Beijing research team tested whether software could spot a pan on the wrong burner and tell the robot to move it. Checking the result helped complete more tasks.",
   "news": [
     {
-      "id": "robocap-workplace-video",
-      "title": "What six cameras see when people work with their hands",
-      "summary": "Grounded Superintelligence and BitRobot used wearable cameras to record people doing physical work. The different viewpoints help locate the hands in space and preserve their movements as examples for robot learning.",
-      "details": "Grounded Superintelligence and BitRobot collected 10,000 hours of recordings of human work in 11 countries.",
-      "technical_novelty": "A headset with six synchronized cameras and inertial sensors supports three-dimensional estimates of head and hand movement.",
-      "engineering_impact": "The recordings provide examples of physical tasks for teams developing robot learning systems.",
-      "limitations": "The data contain no force or touch measurements. The paper does not evaluate training on a robot.",
-      "evidence_status": "The authors describe the dataset, hardware and processing in a preprint.",
-      "published_at": "2026-11-20",
-      "organization": "Grounded Superintelligence and BitRobot",
-      "source_ids": [
-        "robocap-paper"
-      ],
-      "time_window": "7d",
-      "body": "Grounded Superintelligence and BitRobot filmed people handling objects by mounting several cameras on a headset. The goal was to collect examples for robot learning and recover where the hands were at each point in a task. An object can hide part of the hand from one viewpoint, so having another angle can give the software information that a single recording would miss.\n\nThe 250-gram headset carries six synchronized cameras and two inertial measurement units that measure acceleration and rotation. The cameras view the wearer's hands from different angles. The processing combines the views and sensor readings to estimate head motion and three-dimensional hand positions. Each recording session has its own calibration, which lets the processing account for the positions and characteristics of the cameras.\n\nThe authors selected 10,000 hours of elapsed recording time. A minute filmed by several cameras counts as one minute. They segmented recordings from 11 countries into 1,378,462 clips with a median duration of 17.8 seconds. The authors say participants gave written consent and were compensated for taking part. Audio is excluded and faces are obscured.\n\nOn film you can tell the direction in which a worker moved a hand and when they reached for the next object. Some parts of the task are harder to see. If a person wipes a beaker, finger positions give clues about how they held the paper towel, but the team did not measure how hard they pressed on the glass. The paper describes what was captured and leaves the question of what a robot can learn from it for another study.",
-      "image": null
-    },
-    {
-      "id": "manipscope-target-reassignment",
-      "title": "Did the robot pick the thing it was asked for?",
-      "summary": "Researchers at the University of Science and Technology of China and their partners tested robot controllers in virtual scenes. They kept the arrangement of objects the same and changed the request to see whether the arm would pick a different target when asked.",
-      "details": "The test suite contains 48 held-out simulation scenes. In ten target-selection scenes, the team changed instructions while keeping the starting arrangement fixed.",
-      "technical_novelty": "ManipScope tests whether a robot controller changes its action when the instruction names a different object or destination.",
-      "engineering_impact": "The results help isolate errors in selecting a target before assessing execution of the chosen movement.",
-      "limitations": "The study ran in simulation and withheld demonstrations for the held-out scenes.",
-      "evidence_status": "The researchers reported their results and control runs in a preprint.",
-      "published_at": "2026-11-20",
-      "organization": "University of Science and Technology of China, Sharpa Robotics, Shanghai Jiao Tong University and The Chinese University of Hong Kong",
-      "source_ids": [
-        "manipscope-paper"
-      ],
-      "time_window": "7d",
-      "body": "A research team led by the University of Science and Technology of China asked a question that is easy to overlook when watching a robot demo. If the instructions name another object on the same table, will the arm change what it reaches for? To find out, the researchers built a virtual test called ManipScope, which lets them reset the table to the same layout after every attempt.\n\nThe team organized the tasks into six families and withheld demonstrations for the 48 evaluation scenes. To test the role of the instruction, it reused starting arrangements and varied the command in ten target-selection scenes. A single successful attempt can happen if a model picks the object that tends to appear in a familiar location. A series of instructions tests whether the same model can take the correct action for each command from an identical starting state.\n\nPooling the results of ten saved model versions, the team reported that all instructions were followed in 39 of 1,000 states, or 3.9%. A control that received no instruction text scored 16% on that measure. In a separate analysis of 12 model versions across 13,200 runs in 11 scenes, 84.6% of failed attempts involved moving a distractor, an object that was present but was not the intended target. The two figures count different things: one counts complete sets of instructions and the other describes how individual attempts failed.\n\nPicking a target and handling it are two separate skills. An arm can lift an object neatly and carry it to the right place while still making a mistake about which item was wanted. That is why the researchers looked for those slips separately. Their virtual table can be restored exactly between attempts, while a physical trial would also have to deal with objects shifting and differences in how the gripper makes contact.",
-      "image": null
-    },
-    {
-      "id": "omron-ld-orders",
-      "title": "How a fleet of robots shares a narrow aisle",
-      "summary": "OMRON Robotics opened orders in the Americas and Europe for two robots that move loads inside buildings. Each finds its way using nearby features, while shared software assigns jobs and coordinates routes.",
-      "details": "OMRON Robotics opened orders for two indoor carriers rated for 150 and 300 kilograms.",
-      "technical_novelty": "The carriers navigate using their surroundings without floor markers, while fleet software assigns transport jobs.",
-      "engineering_impact": "A site trial can establish how room to manoeuvre, charging and traffic in both directions affect the amount moved per shift.",
-      "limitations": "The published figures are product specifications. The company expects shipments to start in January 2027.",
-      "evidence_status": "The source is the manufacturer, whose announcement gives no throughput measurements from a customer site.",
-      "published_at": "2026-11-19",
-      "organization": "OMRON Robotics",
-      "source_ids": [
-        "omron-release"
-      ],
-      "time_window": "7d",
-      "body": "OMRON Robotics has begun taking orders for two mobile carriers that move loads indoors. The carriers are narrow enough for a one-metre aisle. Each vehicle uses features in its surroundings to work out its position, but several vehicles in the same building also need a way to share the routes between pickup and drop-off points.\n\nThe smaller LD-150 is rated to carry 150 kg and is 500 mm wide. For the LD-300 the corresponding figures are 300 kg and 580 mm. OMRON specifies operation in aisles as narrow as one metre, a series top speed of 2.1 m/s and the ability to handle a slope of up to five degrees. The vehicles estimate their position using features in their surroundings and do not require guide tape or floor markers.\n\nOMRON's FLOW Core software assigns jobs, plans routes and coordinates the movements of the fleet. The vendor says it can manage up to 100 compatible OMRON vehicles of different types. Inductive charging transfers power at a station without a plug and can take as little as 18 minutes according to the company. Orders opened in the Americas and Europe, with other regions to follow. The vendor expects shipments to begin in January 2027.\n\nFinding your position and deciding which trip to make are different jobs. A vehicle needs a sense of where it is next to the racks, while fleet software can assign jobs across the group and coordinate routes that share an aisle. One figure the announcement leaves open is how long the robots wait for one another when several loaded trips converge. Measuring that delay would show how much extra work a larger fleet can actually do in an existing building.",
-      "image": null
-    },
-    {
-      "id": "vetaion-control-cabinet-financing",
-      "title": "How a wiring diagram becomes a physical assembly plan",
-      "summary": "Munich startup Vetaion raised €5.7 million to develop machinery and software for assembling control cabinets. Its software converts flat electrical drawings into spatial layouts intended to tell a robot where the components belong.",
-      "details": "Munich startup Vetaion raised €5.7 million to develop equipment and software for industrial control cabinet assembly.",
-      "technical_novelty": "Its software converts two-dimensional electrical plans into a three-dimensional layout of cabinet components.",
-      "engineering_impact": "Vetaion intends to use the digital layout to develop automated component placement and wiring.",
-      "limitations": "The public announcements provide no verified measurements from customer factories.",
-      "evidence_status": "Investor UVC Partners and entrepreneurship centre UnternehmerTUM announced the funding.",
-      "published_at": "2026-11-19",
-      "organization": "Vetaion",
-      "source_ids": [
-        "vetaion-uvc",
-        "vetaion-tum"
-      ],
-      "time_window": "7d",
-      "body": "Munich startup Vetaion has raised money to develop tools for assembling factory control cabinets, the boxes that hold parts which supply power and send control signals to machinery. The project tackles the step between seeing how the parts should be connected on a drawing and giving a machine enough information to put them into a real cabinet and wire them together.\n\nMunich startup Vetaion raised €5.7 million in an early funding round. UVC Partners and Visionaries Tomorrow led the round, with 2100 Ventures and Viessmann Generations Group also taking part. UVC Partners and the Munich entrepreneurship centre UnternehmerTUM announced the financing.\n\nVetaion's software uses a flat electrical drawing to produce a three-dimensional layout of the parts. A wiring diagram shows which elements are connected, while a spatial layout gives them positions inside the cabinet. The team is developing equipment intended to use that layout to mount components and connect them with wires. The funding supports work on this combination of software and machinery.\n\nKnowing which sockets should be connected still leaves a question about how to reach them. A component beside a socket can change the direction from which a tool can approach it. That is where a spatial layout becomes useful to an assembly machine. The announcements give no trial result that would establish how many different layouts the equipment has managed to assemble from start to finish.",
-      "image": null
-    },
-    {
-      "id": "nvidia-huang-reinstatement",
-      "title": "Who is running NVIDIA after Huang’s return?",
-      "summary": "NVIDIA says Jensen Huang is back in charge. Reuters confirmed the leadership change, while the separate internal inquiry described by the board continues.",
-      "details": "The board reinstated Huang as president, chief executive and director. Colette Kress remains chief financial officer.",
-      "technical_novelty": "A planned compliance chief complements the board’s national security and export control committee.",
-      "engineering_impact": "A computing supplier used by robotics teams is changing how it oversees trade compliance.",
-      "limitations": "The independent internal inquiry continues. The announcement gives no revised hardware delivery terms.",
-      "evidence_status": "NVIDIA’s announcement, its filing with the US securities regulator and Reuters confirm the leadership decision.",
+      "id": "roboada-command-correction",
+      "title": "The object looks the same. The robot may need a different command.",
+      "summary": "Yunbei Zhang and colleagues tested how a robot could respond to a heavier load or a weaker arm in a computer simulation. Their method looks at the movement that already happened and adjusts the next command.",
+      "details": "The RoboAda authors tested command adaptation under changes in load, delay or actuator response in simulation.",
+      "technical_novelty": "The method compares observed movement with the reference robot’s response and adjusts the next group of commands.",
+      "engineering_impact": "The method sits around a trained controller and leaves its weights fixed.",
+      "limitations": "The simulated averages do not measure reliability on physical hardware.",
+      "evidence_status": "The authors reported the experimental protocol and numbers in a preprint.",
       "published_at": "2026-11-23",
-      "organization": "NVIDIA",
+      "organization": "Tulane University, New York University, Nanyang Technological University, MIT and Harvard University",
       "source_ids": [
-        "nv-board",
-        "nv-sec",
-        "nv-reuters"
+        "roboada-paper"
+      ],
+      "time_window": "72h",
+      "body": "Yunbei Zhang and colleagues designed a way for robots to adjust to changes that their cameras cannot show. They simulated changes in the behaviour of a robot or the properties of an object, then checked whether adjusting the commands helped the robot finish. Their correction method is called RoboAda.\n\nAfter each group of commands, the method collects observations of how the simulated robot actually moved. A model of inverse dynamics estimates which commands the reference robot would have needed to produce that observed movement. The method then compares the estimate with the commands it sent. It uses that evidence to reweight hypotheses about the change in motion, including the possibility that the robot is responding normally. The result is a correction to the next group of commands.\n\nThe authors tested five trained controllers in LIBERO, a suite of simulated manipulation tasks, under eleven changes in physical conditions. Their average success rose from 27.8% to 62.9%. In a second simulator, RoboTwin 2.0, they tested two-armed tasks with systematic offsets in the target joint angles. Success there rose from 24.9% to 78.8%. Both results come from experiments with simulated robots.\n\nAn empty box can look like a full one, for example, but the difference matters the moment you start lifting. This method gets its clue after trying a movement. The motion it observes can reveal a mismatch between what was asked and what happened even before there is evidence about the object itself. The study does not show how reliable the correction would be with readings from noisy sensors on a physical robot.",
+      "image": null
+    },
+    {
+      "id": "bigwave-biped-automotive-line",
+      "title": "Ten metres from loading to stacking",
+      "summary": "Bigwave Robotics tested a walking humanoid at a South Korean automotive parts factory. It fed parts into a machine, walked to the outfeed and stacked the finished pieces.",
+      "details": "Bigwave Robotics reported an on-site trial of a bipedal robot at a South Korean automotive parts factory. The robot handled engine parts.",
+      "technical_novelty": "It exchanged work signals with the straightening machine’s controller and walked about ten metres to the outfeed.",
+      "engineering_impact": "The trial linked loading, walking and stacking to the cycle of existing equipment.",
+      "limitations": "The announcement gives no cycle count, line rate or performance over a shift.",
+      "evidence_status": "The supplier described the trial, and trade publication Robot News covered the company’s report.",
+      "published_at": "2026-11-24",
+      "organization": "Bigwave Robotics",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
       ],
       "time_window": "24h",
-      "body": "Jensen Huang is back in charge at NVIDIA, a company that makes processors used, among other things, to train programs that control robots. NVIDIA made the announcement on November 23. Huang regained the positions of president, chief executive and director. The board makes major decisions for the company, while the chief executive is responsible for running it day to day.\n\nIn its filing with the US securities regulator, NVIDIA dates the board action to November 22. The company made it public the following day, and Reuters independently reported Huang’s return. The directors voted unanimously. Colette Kress, who had been running the company on an interim basis, remains chief financial officer. Harvey Jones stays on as board chair.\n\nThe board said it had heard from senior US government officials and believes Huang’s return poses no national security risk. That is the board’s assessment. NVIDIA says it created a committee of independent directors after reports that Huang had been targeted by a foreign intelligence effort. The committee and its outside counsel will continue the inquiry. NVIDIA also began looking for a company-wide compliance chief to oversee adherence to rules. Its board has a dedicated committee supervising national security and export control.\n\nPicking a person to run the company today and finding out what happened during the period under review are different pieces of work. The independent directors and their lawyers are still investigating. NVIDIA’s announcement therefore identifies who has which job, while the inquiry has yet to produce its conclusion. The compliance chief the company is now seeking will report to the board committee responsible for nominations and corporate governance.",
+      "body": "Bigwave Robotics assigned a bipedal robot two jobs at an automotive supplier in South Korea. At one station it fed engine parts into a machine. At the other it picked them up after processing. The company tested whether one robot could walk between those places and do both jobs at the appropriate time.\n\nAccording to Bigwave, the robot picked up engine parts and fed them into a straightening machine, which corrects the shape of a part. Once the machine completed its operation, the robot walked about ten metres to the outfeed and stacked the finished parts on a transfer cart. It exchanged work signals with the machine’s programmable logic controller, an industrial computer that sequences the machine’s operations and coordinates signals with other equipment.\n\nThe company connected Hyper Foundry, its robotics software platform, to NVIDIA tools for simulation and training. In millions of simulated runs it trained walking through reinforcement learning, in which actions are selected based on feedback about results. For grasping it used examples of the desired movements, helped by a separate model that locates parts. The company then transferred what it had trained in simulation to the physical robot for the on-site trial.\n\nWalking the distance and turning up at the right time are distinct challenges. A simulation can provide practice at taking steps, but work on a real line depends on knowing where the machine is in its cycle. Signals from its controller supply that information. The company described the exchange and said it would release video. Its report leaves open how many complete sequences the robot performed without an operator stepping in.",
+      "image": null
+    },
+    {
+      "id": "gmo-robot-hand-competition-judges",
+      "title": "Five minutes to move beans one at a time",
+      "summary": "Organizers in Japan named five judges for a contest in which robotic hands will transfer roasted beans. Each team will use chopsticks or tweezers in a five-minute test.",
+      "details": "Organizers in Japan named five judges for a competition in which robotic hands will transfer roasted beans.",
+      "technical_novelty": "Teams can direct the hand remotely or have a trained program control it.",
+      "engineering_impact": "The shared task and time limit give teams a way to try different approaches to handling small objects.",
+      "limitations": "The final is scheduled for March 26, 2027. The announcement concerns the judges; there are no entrant results yet.",
+      "evidence_status": "The organizers published the judges, eligibility and dates.",
+      "published_at": "2026-11-20",
+      "organization": "GMO Internet Group, GMO AIR and Singularity Society",
+      "source_ids": [
+        "gmo-judges",
+        "gmo-rules-release"
+      ],
+      "time_window": "7d",
+      "body": "GMO Internet Group and its partners announced the judges of a robot hand contest in Tokyo. The timed task sounds simple: move roasted beans one at a time from plate to plate. A robotic hand will have to hold chopsticks or tweezers and use them to pick up each bean accurately.\n\nGMO Internet Group, its robotics company GMO AIR and the Singularity Society announced the judges on November 20. The five include engineer and entrepreneur Satoshi Nakajima and Telexistence co-founder Motoki Sano. Contestants have five minutes to move roasted beans one at a time between plates using chopsticks or tweezers held by a robotic hand with several fingers. Both remote control by a person and control by a program trained in advance are permitted.\n\nThe prize pool totals ¥10 million. Applications close on December 18, 2026, and the final is scheduled for March 26, 2027, in Tokyo. The organizers offer participants access to equipment at a laboratory in Shibuya as well as tools for control and training. The rules allow teams to bring their own hand, so they can work on how it is built as well as how it is controlled.\n\nWith chopsticks there are two things to keep steady: the tool in the fingers and the bean between its tips. If one stick slips in the hand, the tips can drift apart even though the fingers were told to make the same motion. A person controlling the hand remotely and a program trained before the event approach the same problem differently. The competition rules apply a multiplier of 0.5 to remote-control scores and 1.0 to scores from hands that run without an operator.",
+      "image": null
+    },
+    {
+      "id": "innata-world-action-agent",
+      "title": "How a robot notices a pan on the wrong burner",
+      "summary": "Researchers at the Beijing Academy of Artificial Intelligence built a system that checks the outcome of a robot’s actions. In a simulated kitchen, it noticed a misplaced pan and directed the arm to move it.",
+      "details": "The Beijing Academy of Artificial Intelligence proposed a system that sequences robot actions and checks how the work is progressing.",
+      "technical_novelty": "In Innata-0, a model generates movements while separate software checks the observed result and calls a recovery routine when needed.",
+      "engineering_impact": "Adding that layer to the same motion model raised success from 60.2% to 65.4% on simulated kitchen tasks.",
+      "limitations": "The simulated result applies to a specific test suite. Transfer to other robots and settings needs separate testing.",
+      "evidence_status": "The authors documented their comparison and examples of recovery in a preprint.",
+      "published_at": "2026-11-23",
+      "organization": "Beijing Academy of Artificial Intelligence",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "time_window": "72h",
+      "body": "The Beijing Academy of Artificial Intelligence tested what happens when a robot has to check the outcome as well as move an object. In its simulated kitchen, an arm can grasp a pan successfully and still set it down on the wrong burner. In the system called Innata-0, separate software looks at the resulting scene and can call a recovery routine.\n\nIn Innata-0, a world-action model interprets the scene, predicts changes and generates movement commands. It gets the full instruction, the current subtask and a record of confirmed progress. The other component, which the researchers call an agent, organizes the steps and compares the observed scene after a movement with the intended result. When it detects a mismatch, it can invoke a recovery routine and then return to the original task.\n\nIn RoboCasa365, a collection of simulated kitchen tasks, the researchers compared two setups using the same movement model. Overall success reached 60.2% without the agent and 65.4% with it. For combinations of steps the model had not seen before, success rose from 32.4% to 43.6%. One example in the paper shows the system noticing a misplaced pan and moving it onto the intended burner.\n\nA pan’s position is something the program can inspect after a movement. In a task spanning several actions, it also has to keep track of the intended burner and which previous steps were finished. That information helps it decide whether to repeat a step or move on. If a camera cannot see the target area, or a needed condition cannot be judged visually, another way to check it would be needed. The study does not measure how often that happens outside its selected tasks.",
+      "image": null
+    },
+    {
+      "id": "amazon-decart-trainium-agreement",
+      "title": "Why Amazon wants software for its own AI chips",
+      "summary": "Amazon agreed to buy Decart technology that helps adapt computation to particular chips. The software could affect how developers train and run models used for robotics.",
+      "details": "Amazon signed an agreement to buy Decart’s optimization technology and said it plans to hire the founders and team.",
+      "technical_novelty": "The software helps map model computation to specific chips, including Amazon’s Trainium hardware.",
+      "engineering_impact": "The agreement is relevant to teams choosing computing platforms for training and running robotics models.",
+      "limitations": "Closing requires regulatory clearance. Amazon did not disclose financial terms or comparative benchmarks.",
+      "evidence_status": "Amazon announced the agreement. Reuters independently reported that the company declined to disclose the price.",
+      "published_at": "2026-11-23",
+      "organization": "Amazon and Decart",
+      "source_ids": [
+        "amazon-agreement",
+        "amazon-reuters"
+      ],
+      "time_window": "72h",
+      "body": "Amazon signed an agreement to acquire Decart technology. It helps programs that do a lot of computation run on different chips. Robotics developers use that kind of processing to learn from recordings of movements, for instance, and then to put the resulting model to work on new images from a camera.\n\nAmazon announced the signed agreement on November 23. It covers the technology behind the Decart Optimization Stack, software that matches the work a model does to the hardware doing the calculation. Amazon also plans to hire Decart’s three co-founders and its researchers and engineers. The teams have worked together since 2025 on Amazon’s Trainium computing chips. Amazon names world models, programs that learn to predict how a scene can change after an action, among the relevant workloads.\n\nAmazon did not disclose the price. Reuters reported that Bloomberg put it at about $7.5 billion, citing a person familiar with the deal. Amazon did not confirm that figure. The deal remains subject to customary closing conditions, including regulatory clearance. Amazon describes reducing cost and increasing speed as goals and did not publish a comparative benchmark for a specific robotics workload.\n\nThink of dividing a big calculation among several workers. Changing the equipment affects how many pieces can be done at once and how long it takes to pass intermediate answers around. In a chip, that work involves computing units and memory, with software deciding how to organize it. Amazon did not give a worked example that shows how much faster a particular robotics model could be trained after the planned acquisition.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "One training example from several viewpoints",
-    "summary": "Grounded Superintelligence and BitRobot filmed people's hands from several angles at once. Images and sensor readings let them estimate how the head and hands moved through space.",
-    "implications": "The recordings preserve sequences of movement that could be used to teach robots. They do not measure how much force a person applied to an object."
+    "title": "Checking the result between robot movements",
+    "summary": "The Beijing Academy of Artificial Intelligence compared two setups in a simulated kitchen. They used the same movement model, and success rose from 60.2% to 65.4% when verification and recovery were added.",
+    "implications": "The software compares what it sees with the instruction before moving on. A condition that cannot be judged from a camera image would need another way to be checked."
   },
   "sources": [
     {
-      "id": "robocap-paper",
-      "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
-      "url": "https://arxiv.org/html/2611.26916v1",
+      "id": "roboada-paper",
+      "title": "RoboAda: Adapting Frozen Robot Policies at Test Time to Physics They Cannot See",
+      "url": "https://arxiv.org/html/2611.30209v1",
       "domain": "arxiv.org",
-      "organization": "Grounded Superintelligence and BitRobot",
-      "published_at": "2026-11-20"
-    },
-    {
-      "id": "manipscope-paper",
-      "title": "ManipScope: A Diagnostic Benchmark for Instruction Following and Generalization in Robotic Manipulation",
-      "url": "https://arxiv.org/html/2611.27305v1",
-      "domain": "arxiv.org",
-      "organization": "Jiacheng Li et al.",
-      "published_at": "2026-11-20"
-    },
-    {
-      "id": "omron-release",
-      "title": "OMRON Robotics Announces Start of Orders for New LD Series Autonomous Mobile Robots",
-      "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/",
-      "domain": "robotics.omron.com",
-      "organization": "OMRON Robotics",
-      "published_at": "2026-11-19"
-    },
-    {
-      "id": "vetaion-uvc",
-      "title": "€5.7 million for Vetaion: DeepTech startup builds the electrical infrastructure of the future",
-      "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future",
-      "domain": "www.uvcpartners.com",
-      "organization": "UVC Partners",
-      "published_at": "2026-11-19"
-    },
-    {
-      "id": "vetaion-tum",
-      "title": "5,7 Mio. EUR für Vetaion: Deep-Tech-Startup baut die elektrische Infrastruktur der Zukunft auf",
-      "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/",
-      "domain": "www.unternehmertum.de",
-      "organization": "UnternehmerTUM",
-      "published_at": "2026-11-19"
-    },
-    {
-      "id": "nv-board",
-      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
-      "domain": "nvidianews.nvidia.com",
-      "organization": "NVIDIA",
+      "organization": "Yunbei Zhang et al.",
       "published_at": "2026-11-23"
     },
     {
-      "id": "nv-sec",
-      "title": "NVIDIA Form 8-K: November 22 board action",
-      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
-      "domain": "www.sec.gov",
-      "organization": "NVIDIA",
+      "id": "big-company",
+      "title": "Bigwave Robotics Validates a Bipedal Humanoid on a Live Automotive Parts Line",
+      "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq",
+      "domain": "us.bigwaverobotics.com",
+      "organization": "Bigwave Robotics",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "big-robotnews",
+      "title": "빅웨이브로보틱스, 국내 최초 이족보행 휴머노이드 제조 현장 연계 공정 실증 성공",
+      "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763",
+      "domain": "www.irobotnews.com",
+      "organization": "Robot News",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "gmo-judges",
+      "title": "第1回GMOロボットハンドコンテスト 審査員が決定",
+      "url": "https://ai-robotics.gmo/news/article/gmo-robot-hand-competition/",
+      "domain": "ai-robotics.gmo",
+      "organization": "GMO AI & Robotics Corporation",
+      "published_at": "2026-11-20"
+    },
+    {
+      "id": "gmo-rules-release",
+      "title": "第1回GMOロボットハンドコンテスト 審査員が決定：コンテスト概要・募集要項",
+      "url": "https://www.techno-edge.net/release/prtimes2/20261120/25483.html",
+      "domain": "www.techno-edge.net",
+      "organization": "GMO Internet Group",
+      "published_at": "2026-11-20"
+    },
+    {
+      "id": "innata-paper",
+      "title": "Innata-0: A Native Embodied World System with Model-Agent Co-Design",
+      "url": "https://arxiv.org/html/2611.30254v1",
+      "domain": "arxiv.org",
+      "organization": "Innata Team",
       "published_at": "2026-11-23"
     },
     {
-      "id": "nv-reuters",
-      "title": "Nvidia reinstates Jensen Huang as CEO, igniting tech surge",
-      "url": "https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/",
+      "id": "amazon-agreement",
+      "title": "Amazon to purchase Decart’s AI optimization technology to advance chip and model innovation for customers",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+      "domain": "www.aboutamazon.com",
+      "organization": "Amazon",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "amazon-reuters",
+      "title": "Amazon to buy Decart’s AI chip optimization tech in latest AI talent grab",
+      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
       "domain": "www.reuters.com",
       "organization": "Reuters",
       "published_at": "2026-11-23"
