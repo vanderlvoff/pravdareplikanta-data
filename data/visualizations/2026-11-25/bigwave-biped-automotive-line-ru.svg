@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 551" width="360" height="551" xml:lang="ru" role="img" aria-labelledby="title desc">
+  <title id="title">Два поста, один робот</title>
+  <desc id="desc">Проверка на заводе автокомпонентов. Подача детали Ходьба между постами Укладка на тележку Робот загружает деталь в станок для правки. Обработка закончилась. Робот проходит ≈ 10 м. Робот забирает деталь у выхода станка. Станок и робот обмениваются сигналами о ходе работы. Условная схема испытания.</desc>
+  <rect x="0" y="0" width="360" height="551" rx="0" fill="#f6f7f2" stroke="none" stroke-width="1" data-qa-group="bg" id="g2"/>
+  <text x="24" y="32" fill="#116768" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="start" id="g3">Bigwave Robotics</text>
+  <text x="24" y="68" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g4">Два поста, один робот</text>
+  <text x="24" y="139" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="15" font-weight="400" text-anchor="start" id="g5">Проверка на заводе автокомпонентов.</text>
+  <text x="45" y="195" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" id="g6">Подача детали</text>
+  <text x="45" y="220" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g7">Робот загружает деталь</text>
+  <text x="45" y="241" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g8">в станок для правки.</text>
+  <circle cx="27" cy="190" r="6" fill="#116768" stroke="none" data-qa-group="step-0" id="g9"/>
+  <line x1="27" y1="196" x2="27" y2="278" stroke="#9caaaa" stroke-width="2" data-qa-group="step-0" id="g10"/>
+  <line x1="233" y1="246" x2="330" y2="246" stroke="#9caaaa" stroke-width="1.2" data-qa-group="illustration-0" id="g11"/>
+  <rect x="248" y="199" width="10" height="8" rx="2" fill="#cde6e0" stroke="#116768" stroke-width="1" data-qa-group="illustration-0" id="g12"/>
+  <rect x="245" y="211" width="16" height="18" rx="3" fill="#cde6e0" stroke="#116768" stroke-width="1" data-qa-group="illustration-0" id="g13"/>
+  <path d="M249 229 v15 h-5 M257 229 v15 h5 M245 216 l-5 12 M261 216 l6 4 9 -1" fill="none" stroke="#116768" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" data-qa-group="illustration-0" id="g14"/>
+  <rect x="282" y="203" width="46" height="42" rx="3" fill="#cde6e0" stroke="#116768" stroke-width="1" data-qa-group="illustration-0" id="g15"/>
+  <rect x="283" y="217" width="26" height="14" rx="0" fill="#fffefa" stroke="#116768" stroke-width="1" data-qa-group="illustration-0" id="g16"/>
+  <rect x="277" y="221" width="17" height="6" rx="1" fill="#f4d4ba" stroke="#9a4627" stroke-width="1" data-qa-group="illustration-0" id="g17"/>
+  <line x1="306" y1="209" x2="320" y2="209" stroke="#116768" stroke-width="1" data-qa-group="illustration-0" id="g18"/>
+  <text x="45" y="289" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" id="g19">Ходьба между постами</text>
+  <text x="45" y="314" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g20">Обработка закончилась.</text>
+  <text x="45" y="335" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g21">Робот проходит ≈ 10 м.</text>
+  <circle cx="27" cy="284" r="6" fill="#116768" stroke="none" data-qa-group="step-1" id="g22"/>
+  <line x1="27" y1="290" x2="27" y2="372" stroke="#9caaaa" stroke-width="2" data-qa-group="step-1" id="g23"/>
+  <line x1="233" y1="340" x2="330" y2="340" stroke="#9caaaa" stroke-width="1.2" data-qa-group="illustration-1" id="g24"/>
+  <rect x="277" y="292" width="10" height="8" rx="2" fill="#cde6e0" stroke="#116768" stroke-width="1" data-qa-group="illustration-1" id="g25"/>
+  <rect x="274" y="304" width="16" height="18" rx="3" fill="#cde6e0" stroke="#116768" stroke-width="1" data-qa-group="illustration-1" id="g26"/>
+  <path d="M278 322 l-4 9 -9 6 M286 322 l7 6 2 10 M274 309 l-6 8 1 6 M290 309 l6 4 4 -3" fill="none" stroke="#116768" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" data-qa-group="illustration-1" id="g27"/>
+  <line x1="237" y1="346" x2="245" y2="346" stroke="#116768" stroke-width="1.4" data-qa-group="illustration-1" id="g28"/>
+  <line x1="255" y1="346" x2="263" y2="346" stroke="#116768" stroke-width="1.4" data-qa-group="illustration-1" id="g29"/>
+  <line x1="273" y1="346" x2="281" y2="346" stroke="#116768" stroke-width="1.4" data-qa-group="illustration-1" id="g30"/>
+  <line x1="291" y1="346" x2="299" y2="346" stroke="#116768" stroke-width="1.4" data-qa-group="illustration-1" id="g31"/>
+  <line x1="309" y1="346" x2="317" y2="346" stroke="#116768" stroke-width="1.4" data-qa-group="illustration-1" id="g32"/>
+  <text x="45" y="383" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" id="g33">Укладка на тележку</text>
+  <text x="45" y="408" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g34">Робот забирает деталь</text>
+  <text x="45" y="429" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g35">у выхода станка.</text>
+  <circle cx="27" cy="378" r="6" fill="#116768" stroke="none" data-qa-group="step-2" id="g36"/>
+  <line x1="233" y1="434" x2="330" y2="434" stroke="#9caaaa" stroke-width="1.2" data-qa-group="illustration-2" id="g37"/>
+  <rect x="248" y="387" width="10" height="8" rx="2" fill="#cde6e0" stroke="#116768" stroke-width="1" data-qa-group="illustration-2" id="g38"/>
+  <rect x="245" y="399" width="16" height="18" rx="3" fill="#cde6e0" stroke="#116768" stroke-width="1" data-qa-group="illustration-2" id="g39"/>
+  <path d="M249 417 v15 h-5 M257 417 v15 h5 M245 404 l-5 12 M261 404 l6 4 9 -1" fill="none" stroke="#116768" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" data-qa-group="illustration-2" id="g40"/>
+  <path d="M278 419 H325 L328 403" fill="none" stroke="#116768" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" data-qa-group="illustration-2" id="g41"/>
+  <rect x="283" y="413" width="26" height="5" rx="1" fill="#f4d4ba" stroke="#9a4627" stroke-width="1" data-qa-group="illustration-2" id="g42"/>
+  <rect x="287" y="406" width="26" height="5" rx="1" fill="#f4d4ba" stroke="#9a4627" stroke-width="1" data-qa-group="illustration-2" id="g43"/>
+  <rect x="291" y="399" width="26" height="5" rx="1" fill="#f4d4ba" stroke="#9a4627" stroke-width="1" data-qa-group="illustration-2" id="g44"/>
+  <circle cx="289" cy="428" r="4" fill="#fffefa" stroke="#116768" data-qa-group="illustration-2" id="g45"/>
+  <circle cx="318" cy="428" r="4" fill="#fffefa" stroke="#116768" data-qa-group="illustration-2" id="g46"/>
+  <text x="24" y="460" fill="#116768" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" id="g47">Станок и робот обмениваются</text>
+  <text x="24" y="481" fill="#116768" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="700" text-anchor="start" id="g48">сигналами о ходе работы.</text>
+  <text x="24" y="507" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g49">Условная схема испытания.</text>
+  <text x="24" y="532" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g50">Источник: Bigwave Robotics</text>
+</svg>
