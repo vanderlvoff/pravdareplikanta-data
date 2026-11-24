@@ -1,0 +1,1416 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-25",
+  "visualizations": [
+    {
+      "issue_date": "2026-11-25",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "bigwave-biped-automotive-line",
+      "path": "data/visualizations/2026-11-25/bigwave-biped-automotive-line-en.svg",
+      "type": "illustrated_process",
+      "caption": "Two stations, one robot",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "sources": [
+        {
+          "id": "big-company",
+          "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq"
+        },
+        {
+          "id": "big-robotnews",
+          "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763"
+        }
+      ],
+      "article_content_sha256": "a74712892f9c84e6d3dac9277446f3632d75a3339903885b9dd519f5fe9eb636",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 13,
+        "line": 11,
+        "path": 4,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "LiberationSans",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "b5c5bb415072e66920ca73cc60a16148e681d265"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "business",
+      "language": "en",
+      "news_id": "bigwave-biped-automotive-line",
+      "path": "data/visualizations/2026-11-25/bigwave-biped-automotive-line-en.svg",
+      "type": "illustrated_process",
+      "caption": "Two stations, one robot",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "sources": [
+        {
+          "id": "big-company",
+          "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq"
+        },
+        {
+          "id": "big-robotnews",
+          "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763"
+        }
+      ],
+      "article_content_sha256": "925543b3c9dc59e937239d2bf5547f42fe123bd16f325251accfc0e670236d92",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 13,
+        "line": 11,
+        "path": 4,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "LiberationSans",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "b5c5bb415072e66920ca73cc60a16148e681d265"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "bigwave-biped-automotive-line",
+      "path": "data/visualizations/2026-11-25/bigwave-biped-automotive-line-en.svg",
+      "type": "illustrated_process",
+      "caption": "Two stations, one robot",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "sources": [
+        {
+          "id": "big-company",
+          "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq"
+        },
+        {
+          "id": "big-robotnews",
+          "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763"
+        }
+      ],
+      "article_content_sha256": "575da933a70d9b6d42eedff4f918b71755e9f6e1dac226294dc6d50a4cf356b3",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 13,
+        "line": 11,
+        "path": 4,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "LiberationSans",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "b5c5bb415072e66920ca73cc60a16148e681d265"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "children",
+      "language": "en",
+      "news_id": "bigwave-biped-automotive-line",
+      "path": "data/visualizations/2026-11-25/bigwave-biped-automotive-line-en.svg",
+      "type": "illustrated_process",
+      "caption": "Two stations, one robot",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "sources": [
+        {
+          "id": "big-company",
+          "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq"
+        },
+        {
+          "id": "big-robotnews",
+          "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763"
+        }
+      ],
+      "article_content_sha256": "a65fa64073722187083ccabcfe6a419e5d78f318b928473b1350c6edffc6a7fb",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 13,
+        "line": 11,
+        "path": 4,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "LiberationSans",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "b5c5bb415072e66920ca73cc60a16148e681d265"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "bigwave-biped-automotive-line",
+      "path": "data/visualizations/2026-11-25/bigwave-biped-automotive-line-ja.svg",
+      "type": "illustrated_process",
+      "caption": "一台のロボットが 二つの作業場所へ",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "sources": [
+        {
+          "id": "big-company",
+          "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq"
+        },
+        {
+          "id": "big-robotnews",
+          "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763"
+        }
+      ],
+      "article_content_sha256": "a0249b316a4af271b24baf474fcdf5747cece1fc027b4e5808d5983c75dcce8f",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 13,
+        "line": 11,
+        "path": 4,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "11f43230eca75cea22dfca5dff79b1ca6952c3cd"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "bigwave-biped-automotive-line",
+      "path": "data/visualizations/2026-11-25/bigwave-biped-automotive-line-ja.svg",
+      "type": "illustrated_process",
+      "caption": "一台のロボットが 二つの作業場所へ",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "sources": [
+        {
+          "id": "big-company",
+          "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq"
+        },
+        {
+          "id": "big-robotnews",
+          "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763"
+        }
+      ],
+      "article_content_sha256": "ace34e0fa1579bc504e7ecab259c9b8869a44fc1b633bce6531b727ba3207926",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 13,
+        "line": 11,
+        "path": 4,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "11f43230eca75cea22dfca5dff79b1ca6952c3cd"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "bigwave-biped-automotive-line",
+      "path": "data/visualizations/2026-11-25/bigwave-biped-automotive-line-ja.svg",
+      "type": "illustrated_process",
+      "caption": "一台のロボットが 二つの作業場所へ",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "sources": [
+        {
+          "id": "big-company",
+          "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq"
+        },
+        {
+          "id": "big-robotnews",
+          "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763"
+        }
+      ],
+      "article_content_sha256": "f688ba079899bd9a0178160738ea7b61d4a7f0929be22c7e1d5553568df949f1",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 13,
+        "line": 11,
+        "path": 4,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "11f43230eca75cea22dfca5dff79b1ca6952c3cd"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "bigwave-biped-automotive-line",
+      "path": "data/visualizations/2026-11-25/bigwave-biped-automotive-line-ja.svg",
+      "type": "illustrated_process",
+      "caption": "一台のロボットが 二つの作業場所へ",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "sources": [
+        {
+          "id": "big-company",
+          "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq"
+        },
+        {
+          "id": "big-robotnews",
+          "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763"
+        }
+      ],
+      "article_content_sha256": "f966d1153c967e231f107445f16fba38f85750d614797f4adad2740cfb27b8a9",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 13,
+        "line": 11,
+        "path": 4,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "11f43230eca75cea22dfca5dff79b1ca6952c3cd"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "bigwave-biped-automotive-line",
+      "path": "data/visualizations/2026-11-25/bigwave-biped-automotive-line-ru.svg",
+      "type": "illustrated_process",
+      "caption": "Два поста, один робот",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "sources": [
+        {
+          "id": "big-company",
+          "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq"
+        },
+        {
+          "id": "big-robotnews",
+          "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763"
+        }
+      ],
+      "article_content_sha256": "bc647ccd0e55b6bd889a05c7c04248125701f0cd013a9eec92a6ad63cc46405a",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 13,
+        "line": 11,
+        "path": 4,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "LiberationSans",
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "8f0aa2b6e6a639e2c5fcb16e9dbdfa979c6d7056"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "bigwave-biped-automotive-line",
+      "path": "data/visualizations/2026-11-25/bigwave-biped-automotive-line-ru.svg",
+      "type": "illustrated_process",
+      "caption": "Два поста, один робот",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "sources": [
+        {
+          "id": "big-company",
+          "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq"
+        },
+        {
+          "id": "big-robotnews",
+          "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763"
+        }
+      ],
+      "article_content_sha256": "86ae2d89eccc66c1c395de1d9d26301b71034e924242c4f878313f19ed13446d",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 13,
+        "line": 11,
+        "path": 4,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "LiberationSans",
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "8f0aa2b6e6a639e2c5fcb16e9dbdfa979c6d7056"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "bigwave-biped-automotive-line",
+      "path": "data/visualizations/2026-11-25/bigwave-biped-automotive-line-ru.svg",
+      "type": "illustrated_process",
+      "caption": "Два поста, один робот",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "sources": [
+        {
+          "id": "big-company",
+          "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq"
+        },
+        {
+          "id": "big-robotnews",
+          "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763"
+        }
+      ],
+      "article_content_sha256": "91d15c23ea8fa440cd618bfc4955a49c355e558e9b374bd73dd4c6d6deabac12",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 13,
+        "line": 11,
+        "path": 4,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "LiberationSans",
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "8f0aa2b6e6a639e2c5fcb16e9dbdfa979c6d7056"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "bigwave-biped-automotive-line",
+      "path": "data/visualizations/2026-11-25/bigwave-biped-automotive-line-ru.svg",
+      "type": "illustrated_process",
+      "caption": "Два поста, один робот",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "sources": [
+        {
+          "id": "big-company",
+          "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq"
+        },
+        {
+          "id": "big-robotnews",
+          "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763"
+        }
+      ],
+      "article_content_sha256": "35a6af09309db15079e70fd9ef9ecd24d1a9f72710200fdda79273774ec815bf",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 13,
+        "line": 11,
+        "path": 4,
+        "circle": 5
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "LiberationSans",
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "8f0aa2b6e6a639e2c5fcb16e9dbdfa979c6d7056"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "innata-world-action-agent",
+      "path": "data/visualizations/2026-11-25/innata-world-action-agent-en.svg",
+      "type": "spatial_comparison",
+      "caption": "Putting the pan on the right burner",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "sources": [
+        {
+          "id": "innata-paper",
+          "url": "https://arxiv.org/html/2611.30254v1"
+        }
+      ],
+      "article_content_sha256": "83eda97ceb305ce2063ae4fbba9fb58bb84fe5bf1d64ffbc1790b9d62a38ba77",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 5,
+        "line": 0,
+        "path": 0,
+        "circle": 19
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "ae5575eeb9de18fc639a3addd0b1ae2854753441"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "business",
+      "language": "en",
+      "news_id": "innata-world-action-agent",
+      "path": "data/visualizations/2026-11-25/innata-world-action-agent-en.svg",
+      "type": "spatial_comparison",
+      "caption": "Putting the pan on the right burner",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "sources": [
+        {
+          "id": "innata-paper",
+          "url": "https://arxiv.org/html/2611.30254v1"
+        }
+      ],
+      "article_content_sha256": "914fd543d110eb8cb5e968b0fc91b8b4fb2ec091ef682d53d370f830e187073b",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 5,
+        "line": 0,
+        "path": 0,
+        "circle": 19
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "ae5575eeb9de18fc639a3addd0b1ae2854753441"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "innata-world-action-agent",
+      "path": "data/visualizations/2026-11-25/innata-world-action-agent-en.svg",
+      "type": "spatial_comparison",
+      "caption": "Putting the pan on the right burner",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "sources": [
+        {
+          "id": "innata-paper",
+          "url": "https://arxiv.org/html/2611.30254v1"
+        }
+      ],
+      "article_content_sha256": "320a290430eec65cea5690bce564c38ed252a633dc737d97da860baf3e4fa9c4",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 5,
+        "line": 0,
+        "path": 0,
+        "circle": 19
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "ae5575eeb9de18fc639a3addd0b1ae2854753441"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "children",
+      "language": "en",
+      "news_id": "innata-world-action-agent",
+      "path": "data/visualizations/2026-11-25/innata-world-action-agent-en.svg",
+      "type": "spatial_comparison",
+      "caption": "Putting the pan on the right burner",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "sources": [
+        {
+          "id": "innata-paper",
+          "url": "https://arxiv.org/html/2611.30254v1"
+        }
+      ],
+      "article_content_sha256": "60f0f4f5b76762703f018557f3d2505a0f5f38022c275cecd8215ede9b842886",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 5,
+        "line": 0,
+        "path": 0,
+        "circle": 19
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "ae5575eeb9de18fc639a3addd0b1ae2854753441"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "innata-world-action-agent",
+      "path": "data/visualizations/2026-11-25/innata-world-action-agent-ja.svg",
+      "type": "spatial_comparison",
+      "caption": "フライパンを 指定の場所へ置き直す",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "sources": [
+        {
+          "id": "innata-paper",
+          "url": "https://arxiv.org/html/2611.30254v1"
+        }
+      ],
+      "article_content_sha256": "c9bcd2c3f062941e64a5d7c57427acb200b07fec0a1e864efa932c3baeed2a97",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 5,
+        "line": 0,
+        "path": 0,
+        "circle": 19
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular"
+      ],
+      "blob_sha": "3a35fa8e5852ae6f7e0ffcdff6bb6bbc4dd8e572"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "innata-world-action-agent",
+      "path": "data/visualizations/2026-11-25/innata-world-action-agent-ja.svg",
+      "type": "spatial_comparison",
+      "caption": "フライパンを 指定の場所へ置き直す",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "sources": [
+        {
+          "id": "innata-paper",
+          "url": "https://arxiv.org/html/2611.30254v1"
+        }
+      ],
+      "article_content_sha256": "f6b2c7cd78f7fbadb726d5799d4211c74096448feacd1713cbb8c114304e3337",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 5,
+        "line": 0,
+        "path": 0,
+        "circle": 19
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular"
+      ],
+      "blob_sha": "3a35fa8e5852ae6f7e0ffcdff6bb6bbc4dd8e572"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "innata-world-action-agent",
+      "path": "data/visualizations/2026-11-25/innata-world-action-agent-ja.svg",
+      "type": "spatial_comparison",
+      "caption": "フライパンを 指定の場所へ置き直す",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "sources": [
+        {
+          "id": "innata-paper",
+          "url": "https://arxiv.org/html/2611.30254v1"
+        }
+      ],
+      "article_content_sha256": "955ba0062358cd99f4974c06f5b00853cfc1e3e3127113b709119ce9cde5dcd9",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 5,
+        "line": 0,
+        "path": 0,
+        "circle": 19
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular"
+      ],
+      "blob_sha": "3a35fa8e5852ae6f7e0ffcdff6bb6bbc4dd8e572"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "innata-world-action-agent",
+      "path": "data/visualizations/2026-11-25/innata-world-action-agent-ja.svg",
+      "type": "spatial_comparison",
+      "caption": "フライパンを 指定の場所へ置き直す",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "sources": [
+        {
+          "id": "innata-paper",
+          "url": "https://arxiv.org/html/2611.30254v1"
+        }
+      ],
+      "article_content_sha256": "73190e0d29fa0e8e17812cc4d664bc22cecc824d2113ed81b33b883c0c2bbff1",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 5,
+        "line": 0,
+        "path": 0,
+        "circle": 19
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular"
+      ],
+      "blob_sha": "3a35fa8e5852ae6f7e0ffcdff6bb6bbc4dd8e572"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "innata-world-action-agent",
+      "path": "data/visualizations/2026-11-25/innata-world-action-agent-ru.svg",
+      "type": "spatial_comparison",
+      "caption": "Как робот исправляет положение сковороды",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "sources": [
+        {
+          "id": "innata-paper",
+          "url": "https://arxiv.org/html/2611.30254v1"
+        }
+      ],
+      "article_content_sha256": "7e635d75ebc6e3940f79eae1c7cfde2dad38af3ed32a8697ac47fc3fe8ef682c",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 5,
+        "line": 0,
+        "path": 0,
+        "circle": 19
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "06106f1d38b87a7a9e913d55848d393929ff1a51"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "innata-world-action-agent",
+      "path": "data/visualizations/2026-11-25/innata-world-action-agent-ru.svg",
+      "type": "spatial_comparison",
+      "caption": "Как робот исправляет положение сковороды",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "sources": [
+        {
+          "id": "innata-paper",
+          "url": "https://arxiv.org/html/2611.30254v1"
+        }
+      ],
+      "article_content_sha256": "5a6f3a5eac9aeb62b54179798973cb2726bf103664e32fc3588de636b72f09f3",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 5,
+        "line": 0,
+        "path": 0,
+        "circle": 19
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "06106f1d38b87a7a9e913d55848d393929ff1a51"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "innata-world-action-agent",
+      "path": "data/visualizations/2026-11-25/innata-world-action-agent-ru.svg",
+      "type": "spatial_comparison",
+      "caption": "Как робот исправляет положение сковороды",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "sources": [
+        {
+          "id": "innata-paper",
+          "url": "https://arxiv.org/html/2611.30254v1"
+        }
+      ],
+      "article_content_sha256": "f0cfe45ad11f807b0fefde455ee1e5a778998052160a0c1fa8df53a1d6717c66",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 5,
+        "line": 0,
+        "path": 0,
+        "circle": 19
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "06106f1d38b87a7a9e913d55848d393929ff1a51"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "innata-world-action-agent",
+      "path": "data/visualizations/2026-11-25/innata-world-action-agent-ru.svg",
+      "type": "spatial_comparison",
+      "caption": "Как робот исправляет положение сковороды",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "sources": [
+        {
+          "id": "innata-paper",
+          "url": "https://arxiv.org/html/2611.30254v1"
+        }
+      ],
+      "article_content_sha256": "a9c2dd4bbb3c468cfae343d852c7df95d5b9ad9060346bc71a1fd0bb57557cd6",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 5,
+        "line": 0,
+        "path": 0,
+        "circle": 19
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "06106f1d38b87a7a9e913d55848d393929ff1a51"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "roboada-command-correction",
+      "path": "data/visualizations/2026-11-25/roboada-command-correction-en.svg",
+      "type": "bar_comparison",
+      "caption": "Does correction help robots succeed?",
+      "source_ids": [
+        "roboada-paper"
+      ],
+      "sources": [
+        {
+          "id": "roboada-paper",
+          "url": "https://arxiv.org/html/2611.30209v1"
+        }
+      ],
+      "article_content_sha256": "e5fef0297946993bc565ef03efebc55ec59dadba3c0d9e83e025478209d7478b",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 30,
+        "rect": 9,
+        "line": 10,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "547643a6352a4ef4e7acb9b6c7cbbe2804c6080b"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "roboada-command-correction",
+      "path": "data/visualizations/2026-11-25/roboada-command-correction-en.svg",
+      "type": "bar_comparison",
+      "caption": "Does correction help robots succeed?",
+      "source_ids": [
+        "roboada-paper"
+      ],
+      "sources": [
+        {
+          "id": "roboada-paper",
+          "url": "https://arxiv.org/html/2611.30209v1"
+        }
+      ],
+      "article_content_sha256": "0e652ec67738ecfb393f441879f190bddb090d850a48a907c182b646987a2bcd",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 30,
+        "rect": 9,
+        "line": 10,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "547643a6352a4ef4e7acb9b6c7cbbe2804c6080b"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "roboada-command-correction",
+      "path": "data/visualizations/2026-11-25/roboada-command-correction-ja.svg",
+      "type": "bar_comparison",
+      "caption": "動作指令の補正で 成功率は上がるか",
+      "source_ids": [
+        "roboada-paper"
+      ],
+      "sources": [
+        {
+          "id": "roboada-paper",
+          "url": "https://arxiv.org/html/2611.30209v1"
+        }
+      ],
+      "article_content_sha256": "4e3682b4b3e14945b31bcdb25a1d96d01e88639603f05a9867e0b2270c16ce73",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 30,
+        "rect": 9,
+        "line": 10,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "e8700ccdfe0aab8d5c67d01ee27d8f081ed8a953"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "roboada-command-correction",
+      "path": "data/visualizations/2026-11-25/roboada-command-correction-ja.svg",
+      "type": "bar_comparison",
+      "caption": "動作指令の補正で 成功率は上がるか",
+      "source_ids": [
+        "roboada-paper"
+      ],
+      "sources": [
+        {
+          "id": "roboada-paper",
+          "url": "https://arxiv.org/html/2611.30209v1"
+        }
+      ],
+      "article_content_sha256": "7c3f9ff0e115f918a661642612aec0c1e462a7e3cb052fb3c9fb0359b1168f98",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 30,
+        "rect": 9,
+        "line": 10,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "e8700ccdfe0aab8d5c67d01ee27d8f081ed8a953"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "roboada-command-correction",
+      "path": "data/visualizations/2026-11-25/roboada-command-correction-ru.svg",
+      "type": "bar_comparison",
+      "caption": "Успех с поправкой к командам",
+      "source_ids": [
+        "roboada-paper"
+      ],
+      "sources": [
+        {
+          "id": "roboada-paper",
+          "url": "https://arxiv.org/html/2611.30209v1"
+        }
+      ],
+      "article_content_sha256": "c19a2ffe867cce2f4a757bcc176cc47827c92ba3a286a048e50d4f312cec4279",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 30,
+        "rect": 9,
+        "line": 10,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "7c469a2b43c264cd2c60c7af6c4ececd8da3b7ff"
+    },
+    {
+      "issue_date": "2026-11-25",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "roboada-command-correction",
+      "path": "data/visualizations/2026-11-25/roboada-command-correction-ru.svg",
+      "type": "bar_comparison",
+      "caption": "Успех с поправкой к командам",
+      "source_ids": [
+        "roboada-paper"
+      ],
+      "sources": [
+        {
+          "id": "roboada-paper",
+          "url": "https://arxiv.org/html/2611.30209v1"
+        }
+      ],
+      "article_content_sha256": "9208fac684aaade0a7bca0ffc8abe2d9b0876459411163723672ed5f8e8b3cf3",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 30,
+        "rect": 9,
+        "line": 10,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "7c469a2b43c264cd2c60c7af6c4ececd8da3b7ff"
+    }
+  ]
+}
