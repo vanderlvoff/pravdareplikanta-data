@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-25",
+  "issue_id": "daily-2026-11-25",
+  "edition": "children",
+  "language": "ja",
+  "generated_at": "2026-11-25T06:12:05+09:00",
+  "title": "お皿の豆を、一つずつ",
+  "lead": "日本で開くロボットの手の大会で、審査員（しんさいいん）が決まった。参加者はロボットにはしやピンセットを持たせて、いった豆を一つずつ運ぶ。",
+  "news": [
+    {
+      "id": "gmo-robot-hand-competition-judges",
+      "title": "ロボットの手は、はしで豆を運べる？",
+      "summary": "日本で、ロボットの手がいった豆を一つずつ運ぶ大会の審査員（しんさいいん）が決まった。参加するチームは、はしやピンセットを使い、5分間で豆を別の皿へ移す。",
+      "details": "日本でロボットの手を競う大会があり、審査員（しんさいいん）が5人決まった。",
+      "technical_novelty": "はしやピンセットを使い、いった豆を一つずつ別の皿へ移す。",
+      "engineering_impact": "人がはなれた場所から動かす方法と、プログラムに動かさせる方法がある。",
+      "limitations": "申し込みは12月18日までで、本選はこれからだ。",
+      "evidence_status": "大会を開く会社と団体が、ルールと審査員を発表した。",
+      "published_at": "2026-11-20",
+      "organization": "GMO Internet Group, GMO AIR and Singularity Society",
+      "source_ids": [
+        "gmo-judges",
+        "gmo-rules-release"
+      ],
+      "time_window": "7d",
+      "body": "日本で開くロボットの手の大会で、仕事の速さと正確さを見る審査員が5人決まった。大会を開くGMOなどは、いった豆を皿から皿へ移す課題を出す。ロボットの手は、はしかピンセットを持ち、5分のあいだに豆を一つずつつまんで運ぶ。豆を移す速さと、落とさずに移せるかが見どころだ。\n\nはしで豆を持ち上げるところを考えてみよう。手の中ではしがずれると、先が開くことがある。豆を弱くはさむと落としてしまう。大会では、人がはなれた場所からロボットの指を動かす方法と、前もってプログラムに動きを覚えさせる方法からえらべる。\n\n申しこみは12月18日までで、本選は3月26日に東京で開く予定だ。参加者は、大会の前に、用意された場所でロボットの手を試せる。たとえば、つまんだ豆がするりと落ちるなら、指の動かし方を変えてもう一度試せる。道具の形を工夫したい人は、自分で作ったロボットの手を持ちこむこともできる。豆を移すのにはしを使うかピンセットを使うかも、チームがえらべる。",
+      "image": null
+    },
+    {
+      "id": "bigwave-biped-automotive-line",
+      "title": "部品を機械に入れたら、取り出し口まで歩く",
+      "summary": "韓国の工場で、Bigwave Roboticsが二本の足で歩くロボットを試した。ロボットはエンジンの部品を機械に入れ、歩いて取り出し口へ行き、できた部品を台車（だいしゃ）に置いた。",
+      "details": "韓国の工場で、ロボットがエンジンの部品を機械に入れ、できあがった部品を受け取る場所まで歩いた。",
+      "technical_novelty": "機械とロボットは、次の仕事をいつ始めるかが分かるよう、合図をやり取りした。",
+      "engineering_impact": "一台のロボットが、二つの場所で別々の仕事をできるかを試した。",
+      "limitations": "仕事が始まってから終わるまでに何回くり返せたかは、まだ発表されていない。",
+      "evidence_status": "ロボットをこの仕事に合わせて準備したBigwave Roboticsが発表した。",
+      "published_at": "2026-11-24",
+      "organization": "Bigwave Robotics",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "time_window": "24h",
+      "body": "韓国の工場で、ロボットがエンジンの部品を、曲がりを直す機械に入れた。機械の仕事が終わると、ロボットは約10メートル先まで歩き、できた部品を台車にのせた。Bigwave Roboticsという会社が、一台でこれらの仕事を順番にできるかを調べた。\n\n部品がまだできていないうちに取りに行くと、ロボットは受け取れない。そこで、工場の機械とロボットは、仕事がどこまで進んだかを知らせる合図をやり取りした。ロボットが歩くのは、機械が部品の形を直した後だ。友だちと分けて作業をしているときに「こっちは終わったよ」と声をかけると、次に動き出す時が分かるのと似ている。\n\n歩き方は、コンピューターの中で何度も動かしながら覚えさせた。物をつかむ動きは、動きの手本をもとに覚えさせた。そのあと本物の工場で、部品を取り上げ、歩いて運ぶ一連の仕事を試した。運ぶ先には、部品を次の場所へ送るための台車がある。一回の仕事にかかった時間や、一日で何回できたかは、会社の発表には出ていない。",
+      "image": null
+    },
+    {
+      "id": "roboada-command-correction",
+      "title": "空に見える箱が重かったら？",
+      "summary": "ユンベイ・ジャンさんたちは、コンピューターの中で、ロボットが重くなった物を動かせるかを調べた。うでが思ったとおりに動かなかったとき、プログラムがその動きをもとに、次の指示を直した。",
+      "details": "研究チームは、ロボットのうでが弱くなったり物が重くなったりした場面を、コンピューターの中で試した。",
+      "technical_novelty": "うでがどれだけ動いたかをもとに、プログラムが次の指示を直す。",
+      "engineering_impact": "もとの計画を使ったまま、うでの動かし方を変えられる。",
+      "limitations": "試験はコンピューターの中で行った。",
+      "evidence_status": "ユンベイ・ジャンさんたちが、試し方と結果を論文で知らせた。",
+      "published_at": "2026-11-23",
+      "organization": "Tulane University, New York University, Nanyang Technological University, MIT and Harvard University",
+      "source_ids": [
+        "roboada-paper"
+      ],
+      "time_window": "72h",
+      "body": "ユンベイ・ジャンさんたちは、コンピューターの中でロボットに物を動かさせた。物を重くしたり、うでの力を弱くしたりして、指示したほどにうでが動かない場面を作った。そこで、すでに起きた動きから次の指示を直すと、うまくいく回が増えるかを調べた。\n\n同じ形の箱が二つあるとしよう。一つは空で、もう一つには本が入っている。見た目は同じでも、持ち上げてみるとうでにかかる力はちがう。ロボットのうでが思ったほど動かなければ、それがプログラムの手がかりになる。プログラムはその手がかりを使って、次はもっと強く動かすか、指示を変えずにもう一度動かすかを決めた。\n\nうでの動きやうでにかかる力などを変えた仮想（かそう）の試験では、指示を直す前にうまくいったのは百回におよそ28回だった。直すしくみを使うと、およそ63回になった。どちらの数も、コンピューターの中でロボットを動かして調べた結果だ。本物のうでで物を動かしたときの成績は、この試験では測っていない。",
+      "image": null
+    },
+    {
+      "id": "amazon-decart-trainium-agreement",
+      "title": "たくさんの計算を、コンピューターでどう進める？",
+      "summary": "Amazonは、計算を進めやすくするための技術を買うことで合意した。ロボットに動き方を覚えさせるプログラムにも、たくさんの計算がいる。",
+      "details": "Amazonは、半導体がたくさんの計算を進めやすくする技術を買うことで合意した。",
+      "technical_novelty": "使う半導体に合わせて、コンピューターの計算の進め方を工夫する技術だ。",
+      "engineering_impact": "プログラムに動き方などを覚えさせたり、覚えた内容を使って計算したりするのに役立つ。",
+      "limitations": "買うには、決まりを守っているかを調べる役所の許可がいる。どれだけ速くなるかは発表していない。",
+      "evidence_status": "Amazonが発表し、ロイターも会社への取材をもとに報じた。",
+      "published_at": "2026-11-23",
+      "organization": "Amazon and Decart",
+      "source_ids": [
+        "amazon-agreement",
+        "amazon-reuters"
+      ],
+      "time_window": "72h",
+      "body": "Amazonは、コンピューターの計算を速く進める技術をDecartという会社から買うことで合意した。たとえば、ロボットのうでを動かす見本をたくさん見せて、次にどう動くかをプログラムに覚えさせるときには、コンピューターが何度も計算をする。その計算を受け持つ小さな部品をチップという。画面で見るロボットの動きのうら側では、次の動き方を決めるための計算が進む。\n\n大きな問題を友だちと分けて考えるとしよう。自分のところが終わっても、友だちの答えがないと次へ進めないことがある。コンピューターも大きな計算をいくつかに分ける。買う予定の技術は、使うチップに合わせて、どの計算をどの順番で進めるかを工夫する。\n\n二つの会社は2025年からAmazonのチップを使う仕事で協力してきた。11月23日に買う契約（けいやく）を結んだと発表し、これから役所の許可（きょか）などがいる。自分たちのロボットに動きを覚えさせたい人が、実際にどれだけ時間を短くできるかは、会社の発表には出ていない。",
+      "image": null
+    },
+    {
+      "id": "innata-world-action-agent",
+      "title": "フライパンを置く場所がちがったら？",
+      "summary": "北京の研究チームは、コンピューターの中の台所でロボットを試した。プログラムは、フライパンがたのまれた場所にないことを見つけ、正しいコンロへ動かすように指示した。",
+      "details": "研究チームは、次の仕事に進む前にロボットのまちがいを見つける方法を試した。",
+      "technical_novelty": "一つのプログラムがうでを動かし、もう一つができあがった様子を調べる。",
+      "engineering_impact": "物の場所がちがえば、正しい場所へ動かすように、新しい指示を出せる。",
+      "limitations": "結果を調べたのは、コンピューターの中の台所だ。",
+      "evidence_status": "研究チームは、まちがいを直した例を論文で紹介した。",
+      "published_at": "2026-11-23",
+      "organization": "Beijing Academy of Artificial Intelligence",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "time_window": "72h",
+      "body": "北京の研究チームは、コンピューターの中の台所でロボットのうでを動かした。フライパンを持ち上げられても、たのまれた場所に置けるとはかぎらない。動かした後で置き場所を確かめれば、まちがいを直せるかを調べた。\n\nフライパンを左のコンロに置いてから、スプーンを片づけるとしよう。スプーンに手をのばす前に、フライパンが左にあるか見ておけば、ちがう場所に置いたまま次へ進むことをふせげる。試験では、一つのプログラムがうでを動かし、別のプログラムが置いた場所を調べた。場所がちがえば、直すための指示を出した。\n\nこの台所の課題には、道具を動かしたり、物を決められた場所に置いたりするものがある。全体では、確かめるしくみがないと、百回におよそ60回うまくいった。しくみを加えると、およそ65回になった。論文には、一度置いたフライパンをうでがつかみ直し、指示されたコンロへ移してうまくいった例もある。ちがう場所やちがうロボットでも同じようにまちがいを直せるかは、これからさらに調べる。",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "ちがうロボットの手で同じ課題に挑戦（ちょうせん）",
+    "summary": "大会を開くGMOなどは、豆を運ぶ時間を5分に決めた。人がはなれた場所から手を動かしても、前もってプログラムに動きを覚えさせてもよい。",
+    "implications": "ロボットの手の中ではしがずれると、先が開いて豆が落ちることがある。参加する人たちは、東京の本選までに自分たちの手を試せる。"
+  },
+  "sources": [
+    {
+      "id": "gmo-judges",
+      "title": "第1回GMOロボットハンドコンテスト 審査員が決定",
+      "url": "https://ai-robotics.gmo/news/article/gmo-robot-hand-competition/",
+      "domain": "ai-robotics.gmo",
+      "organization": "GMO AI & Robotics Corporation",
+      "published_at": "2026-11-20"
+    },
+    {
+      "id": "gmo-rules-release",
+      "title": "第1回GMOロボットハンドコンテスト 審査員が決定：コンテスト概要・募集要項",
+      "url": "https://www.techno-edge.net/release/prtimes2/20261120/25483.html",
+      "domain": "www.techno-edge.net",
+      "organization": "GMO Internet Group",
+      "published_at": "2026-11-20"
+    },
+    {
+      "id": "big-company",
+      "title": "Bigwave Robotics Validates a Bipedal Humanoid on a Live Automotive Parts Line",
+      "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq",
+      "domain": "us.bigwaverobotics.com",
+      "organization": "Bigwave Robotics",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "big-robotnews",
+      "title": "빅웨이브로보틱스, 국내 최초 이족보행 휴머노이드 제조 현장 연계 공정 실증 성공",
+      "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763",
+      "domain": "www.irobotnews.com",
+      "organization": "Robot News",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "roboada-paper",
+      "title": "RoboAda: Adapting Frozen Robot Policies at Test Time to Physics They Cannot See",
+      "url": "https://arxiv.org/html/2611.30209v1",
+      "domain": "arxiv.org",
+      "organization": "Yunbei Zhang et al.",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "amazon-agreement",
+      "title": "Amazon to purchase Decart’s AI optimization technology to advance chip and model innovation for customers",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+      "domain": "www.aboutamazon.com",
+      "organization": "Amazon",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "amazon-reuters",
+      "title": "Amazon to buy Decart’s AI chip optimization tech in latest AI talent grab",
+      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "innata-paper",
+      "title": "Innata-0: A Native Embodied World System with Model-Agent Co-Design",
+      "url": "https://arxiv.org/html/2611.30254v1",
+      "domain": "arxiv.org",
+      "organization": "Innata Team",
+      "published_at": "2026-11-23"
+    }
+  ]
+}

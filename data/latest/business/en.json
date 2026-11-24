@@ -2,116 +2,143 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-24",
-  "issue_id": "daily-2026-11-24",
+  "issue_date": "2026-11-25",
+  "issue_id": "daily-2026-11-25",
   "edition": "business",
   "language": "en",
-  "generated_at": "2026-11-24T06:20:56+09:00",
-  "title": "Fitting robots into a working warehouse",
-  "lead": "OMRON opened orders for two cargo carriers designed for metre-wide aisles. Warehouses with fixed racks can use the specification to select routes worth testing.",
+  "generated_at": "2026-11-25T06:12:05+09:00",
+  "title": "What it costs to move AI models to different chips",
+  "lead": "Amazon agreed to buy Decart technology to make computing on its own chips more efficient. Robotics developers have to consider the cost of moving their code, training a model and running it once trained.",
   "news": [
     {
-      "id": "nvidia-huang-reinstatement",
-      "title": "Huang is back at NVIDIA as the chipmaker seeks a compliance chief",
-      "summary": "NVIDIA announced on November 23 that Jensen Huang had returned as chief executive. The company’s separate internal inquiry continues, and it has begun looking for someone to oversee compliance across the business.",
-      "details": "The board reinstated Huang as president, chief executive and director. Colette Kress remains chief financial officer.",
-      "technical_novelty": "A planned compliance chief complements the board’s national security and export control committee.",
-      "engineering_impact": "A computing supplier used by robotics teams is changing how it oversees trade compliance.",
-      "limitations": "The independent internal inquiry continues. The announcement gives no revised hardware delivery terms.",
-      "evidence_status": "NVIDIA’s announcement, its filing with the US securities regulator and Reuters confirm the leadership decision.",
-      "published_at": "2026-11-23",
-      "organization": "NVIDIA",
+      "id": "nvidia-schumer-export-allegation",
+      "title": "NVIDIA’s chip exports to China face renewed scrutiny in Congress",
+      "summary": "Chuck Schumer alleged on November 24 that NVIDIA chief executive Jensen Huang violated limits on exports of advanced chips. A Senate committee is also preparing an open hearing on how US export rules are enforced.",
+      "details": "On November 24, Chuck Schumer alleged that Jensen Huang violated US export rules by shipping advanced chips to China.",
+      "technical_novelty": "The Senate Banking Committee scheduled a public hearing on export controls with Huang for December 3.",
+      "engineering_impact": "Congressional scrutiny of export controls matters to companies using NVIDIA chips in projects that span countries.",
+      "limitations": "The reports do not identify a chip model or shipment date for the senator’s allegation.",
+      "evidence_status": "Reuters and Investing.com reported the statement. NVIDIA confirms Huang’s position in the company.",
+      "published_at": "2026-11-24",
+      "organization": "United States Senate and NVIDIA",
       "source_ids": [
-        "nv-board",
-        "nv-sec",
-        "nv-reuters"
+        "nv-schumer-reuters",
+        "nv-investing",
+        "nv-warren",
+        "nv-board-background"
       ],
       "time_window": "24h",
-      "body": "Jensen Huang is back at the head of NVIDIA, a major supplier of computing equipment for companies building artificial intelligence systems and robots. The board restored his roles as president, chief executive and director. Reuters reported that NVIDIA shares rose more than 30% in trading after the November 23 announcement. For customers and suppliers, the announcement settles who is currently in charge.\n\nIn its filing with the US securities regulator, NVIDIA dates the board action to November 22. The company made it public the following day, and Reuters independently reported Huang’s return. The directors voted unanimously. Colette Kress, who had been running the company on an interim basis, remains chief financial officer. Harvey Jones stays on as board chair.\n\nThe board said it had heard from senior US government officials and believes Huang’s return poses no national security risk. That is the board’s assessment. NVIDIA says it created a committee of independent directors after reports that Huang had been targeted by a foreign intelligence effort. The committee and its outside counsel will continue the inquiry. NVIDIA also began looking for a company-wide compliance chief to oversee adherence to rules. Its board has a dedicated committee supervising national security and export control.\n\nA buyer’s decision depends on getting the equipment to the right site on time and being able to support it once it is there. Those questions turn on the transaction and its terms. While the board already has a committee overseeing export controls, the search for a company-wide compliance chief has just begun. The announcement gives neither a timetable for filling that job nor new terms for customer deliveries.",
+      "body": "Chuck Schumer, the US Senate Democratic leader, accused NVIDIA chief executive Jensen Huang on November 24 of breaching rules on shipments of advanced chips to China. The statement added to the public scrutiny following Huang's return. Export controls are government limits on selling and shipping certain goods abroad. For NVIDIA customers, they can shape where they can get equipment and on what terms.\n\nReuters and Investing.com reported that Schumer made the allegation in a post on X. He urged Congress to tighten limits on shipments of US chips to China. Reuters said NVIDIA did not immediately respond to its request for comment. The accounts of the statement contain no chip model, batch, shipment date or court finding. They leave open which export authorization would apply to the transaction the senator had in mind.\n\nA day earlier, NVIDIA announced that Huang was back as president, chief executive and a board member. The company said its committee of independent directors would continue a separate internal inquiry. In a November 23 statement, Senator Elizabeth Warren called for answers about the company’s compliance with export rules. The Senate Banking Committee has scheduled a public hearing on export oversight for December 3 and lists Huang as its witness.\n\nFor a buyer sourcing chips across borders, the practical difference between a political statement and a regulatory decision shows up in the purchase agreement. Suppliers need to confirm what they can deliver, to whom and when. The reports about Schumer’s statement and the hearing notice give no decision concerning a specific shipment. The public committee agenda sets out a hearing on export oversight and lists Huang as the witness on December 3.",
       "image": null
     },
     {
-      "id": "omron-ld-orders",
-      "title": "OMRON opens orders for carriers that fit narrower warehouse aisles",
-      "summary": "OMRON Robotics began taking orders in the Americas and Europe for two indoor cargo carriers. It specifies a minimum aisle width of one metre for the series and expects shipments to start in January 2027.",
-      "details": "OMRON Robotics opened orders for two indoor carriers rated for 150 and 300 kilograms.",
-      "technical_novelty": "The carriers navigate using their surroundings without floor markers, while fleet software assigns transport jobs.",
-      "engineering_impact": "A site trial can establish how room to manoeuvre, charging and traffic in both directions affect the amount moved per shift.",
-      "limitations": "The published figures are product specifications. The company expects shipments to start in January 2027.",
-      "evidence_status": "The source is the manufacturer, whose announcement gives no throughput measurements from a customer site.",
-      "published_at": "2026-11-19",
-      "organization": "OMRON Robotics",
+      "id": "amazon-decart-trainium-agreement",
+      "title": "Amazon’s Decart deal adds software to its chip strategy",
+      "summary": "Amazon signed a deal for Decart technology that helps software run more efficiently on specific chips. The deal supports Amazon’s investment in computing infrastructure and remains subject to regulatory clearance.",
+      "details": "Amazon signed an agreement to buy Decart’s optimization technology and said it plans to hire the founders and team.",
+      "technical_novelty": "The software helps map model computation to specific chips, including Amazon’s Trainium hardware.",
+      "engineering_impact": "The agreement is relevant to teams choosing computing platforms for training and running robotics models.",
+      "limitations": "Closing requires regulatory clearance. Amazon did not disclose financial terms or comparative benchmarks.",
+      "evidence_status": "Amazon announced the agreement. Reuters independently reported that the company declined to disclose the price.",
+      "published_at": "2026-11-23",
+      "organization": "Amazon and Decart",
       "source_ids": [
-        "omron-release"
+        "amazon-agreement",
+        "amazon-reuters"
       ],
-      "time_window": "7d",
-      "body": "OMRON Robotics opened orders for two vehicles designed to move goods between work areas in a warehouse or factory. The rollout starts with customers in the Americas and Europe. The one-metre aisle specification gives operators a concrete number to compare with the space between existing racks. It can influence whether they examine a retrofit before budgeting for changes to the building.\n\nThe smaller LD-150 is rated to carry 150 kg and is 500 mm wide. For the LD-300 the corresponding figures are 300 kg and 580 mm. OMRON specifies operation in aisles as narrow as one metre, a series top speed of 2.1 m/s and the ability to handle a slope of up to five degrees. The vehicles estimate their position using features in their surroundings and do not require guide tape or floor markers.\n\nOMRON's FLOW Core software assigns jobs, plans routes and coordinates the movements of the fleet. The vendor says it can manage up to 100 compatible OMRON vehicles of different types. Inductive charging transfers power at a station without a plug and can take as little as 18 minutes according to the company. Orders opened in the Americas and Europe, with other regions to follow. The vendor expects shipments to begin in January 2027.\n\nThe fleet limit is a software capacity figure. For an investment decision, a buyer also needs the number of loaded trips per shift after accounting for queues, loading and time at the charger. The vendor provided no customer measurements for those inputs and gave no equipment or integration price. Its announcement can be used to screen sites and establish the expected shipping window while leaving the cost and throughput calculation open.",
+      "time_window": "72h",
+      "body": "Amazon has signed an agreement to acquire Decart technology for making more efficient use of computing chips. It is part of competition among providers that rent out computing power to train and run models. A robotics company has to consider how well its model fits the equipment on offer, because the price does not tell it how long the equipment will take to finish the job.\n\nAmazon announced the signed agreement on November 23. It covers the technology behind the Decart Optimization Stack, software that matches the work a model does to the hardware doing the calculation. Amazon also plans to hire Decart’s three co-founders and its researchers and engineers. The teams have worked together since 2025 on Amazon’s Trainium computing chips. Amazon names world models, programs that learn to predict how a scene can change after an action, among the relevant workloads.\n\nAmazon did not disclose the price. Reuters reported that Bloomberg put it at about $7.5 billion, citing a person familiar with the deal. Amazon did not confirm that figure. The deal remains subject to customary closing conditions, including regulatory clearance. Amazon describes reducing cost and increasing speed as goals and did not publish a comparative benchmark for a specific robotics workload.\n\nA buyer comparing clouds would need to consider rental charges, time to move its code and the cost of testing the relocated software with its own data. A cheaper hour of compute can bring little relief if training needs more hours or if the team must rebuild its tools. Amazon has given no price list, availability date or like-for-like performance figures for an updated service. Those inputs would determine whether there is any budget impact for a particular project.",
       "image": null
     },
     {
-      "id": "vetaion-control-cabinet-financing",
-      "title": "Vetaion raises €5.7 million to automate control cabinet assembly",
-      "summary": "Munich startup Vetaion secured early funding to develop equipment for assembling industrial control cabinets. Its software turns an electrical drawing into a spatial layout that the team intends to use for automated component placement and wiring.",
-      "details": "Munich startup Vetaion raised €5.7 million to develop equipment and software for industrial control cabinet assembly.",
-      "technical_novelty": "Its software converts two-dimensional electrical plans into a three-dimensional layout of cabinet components.",
-      "engineering_impact": "Vetaion intends to use the digital layout to develop automated component placement and wiring.",
-      "limitations": "The public announcements provide no verified measurements from customer factories.",
-      "evidence_status": "Investor UVC Partners and entrepreneurship centre UnternehmerTUM announced the funding.",
-      "published_at": "2026-11-19",
-      "organization": "Vetaion",
+      "id": "bigwave-biped-automotive-line",
+      "title": "Bigwave tests a biped alongside existing factory equipment",
+      "summary": "Bigwave Robotics reported a robot trial at a South Korean automotive parts plant. The robot fed engine parts into an existing machine and stacked them after processing, using work signals from the equipment.",
+      "details": "Bigwave Robotics reported an on-site trial of a bipedal robot at a South Korean automotive parts factory. The robot handled engine parts.",
+      "technical_novelty": "It exchanged work signals with the straightening machine’s controller and walked about ten metres to the outfeed.",
+      "engineering_impact": "The trial linked loading, walking and stacking to the cycle of existing equipment.",
+      "limitations": "The announcement gives no cycle count, line rate or performance over a shift.",
+      "evidence_status": "The supplier described the trial, and trade publication Robot News covered the company’s report.",
+      "published_at": "2026-11-24",
+      "organization": "Bigwave Robotics",
       "source_ids": [
-        "vetaion-uvc",
-        "vetaion-tum"
+        "big-company",
+        "big-robotnews"
       ],
-      "time_window": "7d",
-      "body": "Munich startup Vetaion has raised funds to develop equipment for manufacturers of industrial control cabinets. A control cabinet houses electrical components that distribute power or help control a machine. Vetaion is working on both the step that converts a plan of the connections into a spatial layout and the tools that would use that layout during assembly.\n\nMunich startup Vetaion raised €5.7 million in an early funding round. UVC Partners and Visionaries Tomorrow led the round, with 2100 Ventures and Viessmann Generations Group also taking part. UVC Partners and the Munich entrepreneurship centre UnternehmerTUM announced the financing.\n\nVetaion's software uses a flat electrical drawing to produce a three-dimensional layout of the parts. A wiring diagram shows which elements are connected, while a spatial layout gives them positions inside the cabinet. The team is developing equipment intended to use that layout to mount components and connect them with wires. The funding supports work on this combination of software and machinery.\n\nFor a factory that builds cabinets in many configurations, the amount of manual work depends partly on how often an engineer or assembler has to resolve exceptions in a plan. The funding announcements give no measurements for switching between cabinet designs, wiring errors after a switch or the cost of inspecting finished units. Those inputs would affect the economics of the process. The announcement gives the total raised, without a breakdown by investor or a budget for the assembly equipment.",
+      "time_window": "24h",
+      "body": "Bigwave Robotics ran an on-site test of a walking robot at a South Korean automotive supplier. It assigned the machine both loading and unloading of engine parts. The plant already had its straightening equipment, so the project had to coordinate the robot with a production sequence that was already in place.\n\nAccording to Bigwave, the robot picked up engine parts and fed them into a straightening machine, which corrects the shape of a part. Once the machine completed its operation, the robot walked about ten metres to the outfeed and stacked the finished parts on a transfer cart. It exchanged work signals with the machine’s programmable logic controller, an industrial computer that sequences the machine’s operations and coordinates signals with other equipment.\n\nThe company connected Hyper Foundry, its robotics software platform, to NVIDIA tools for simulation and training. In millions of simulated runs it trained walking through reinforcement learning, in which actions are selected based on feedback about results. For grasping it used examples of the desired movements, helped by a separate model that locates parts. The company then transferred what it had trained in simulation to the physical robot for the on-site trial.\n\nThe same route would need to be timed over a sustained shift for a purchasing decision. Managers would want to know how many parts get through, how much operator intervention is needed and where a delay holds up the line. A plant might also be able to cover the work with fixed arms or a cart, depending on its layout. The announcement establishes the scope of Bigwave’s integration trial and gives no cost or sustained throughput figures for comparing those options.",
       "image": null
     },
     {
-      "id": "outsight-shift-azure-local",
-      "title": "Outsight offers on-site processing for tracking moving objects",
-      "summary": "Outsight announced that its object tracking software can run on Intel-based Azure Local servers. Customers can process sensor data at their own facilities with this setup, and the announcement provides no comparative cost or accuracy figures.",
-      "details": "Outsight announced that its three-dimensional tracking software runs on Intel-based servers managed through Azure Local.",
-      "technical_novelty": "The system processes sensor readings, including laser scans, into an updating representation of moving objects.",
-      "engineering_impact": "The described configuration runs on a central processor and gives customers a way to process the data on site.",
-      "limitations": "Outsight claims a delay under 50 milliseconds without the measurement conditions needed for comparison. It provides no accuracy or cost figures.",
-      "evidence_status": "Outsight reported the integration and did not include an independent test.",
-      "published_at": "2026-11-17",
-      "organization": "Outsight, Intel and Microsoft",
+      "id": "innata-world-action-agent",
+      "title": "Robot software gets a separate check for finished work",
+      "summary": "The Beijing Academy of Artificial Intelligence presented a system that checks results between stages of a robot’s task. In a simulated kitchen, adding verification and recovery raised the share of completed tasks from 60.2% to 65.4%.",
+      "details": "The Beijing Academy of Artificial Intelligence proposed a system that sequences robot actions and checks how the work is progressing.",
+      "technical_novelty": "In Innata-0, a model generates movements while separate software checks the observed result and calls a recovery routine when needed.",
+      "engineering_impact": "Adding that layer to the same motion model raised success from 60.2% to 65.4% on simulated kitchen tasks.",
+      "limitations": "The simulated result applies to a specific test suite. Transfer to other robots and settings needs separate testing.",
+      "evidence_status": "The authors documented their comparison and examples of recovery in a preprint.",
+      "published_at": "2026-11-23",
+      "organization": "Beijing Academy of Artificial Intelligence",
       "source_ids": [
-        "outsight-shift"
+        "innata-paper"
       ],
-      "time_window": "7d",
-      "body": "Outsight's Shift software tracks moving objects from sensor readings. The company announced a configuration for running it on a customer's own servers through Microsoft Azure Local, a system for managing computers installed on site. For an operator of a large building or industrial facility, the release adds a placement option: the tracking computation can take place close to the sensors.\n\nOutsight highlights lidar, a sensor that measures distances with pulses of laser light. The software uses those measurements to update the positions of objects moving through three-dimensional space. According to the company, the laser data can be combined with readings from other systems, including cameras or Wi-Fi. Outsight describes the output as anonymized and includes no independent audit of that claim.\n\nThe described setup uses an Intel Xeon 6 system-on-chip, a processor package that integrates key computing and support functions. It uses Intel AMX, on-chip hardware for speeding up matrix operations. In this configuration the tracking workload runs on the central processor without a separate graphics accelerator. Outsight claims a processing delay below 50 milliseconds without giving the conditions for that figure. The company announced a planned demonstration at Microsoft Ignite in San Francisco, which ran from November 17 to 20.\n\nComparing costs requires knowing how many servers are needed for a given site and what it takes to support them. An operator also needs to know what data leaves the site in the proposed deployment. Outsight gave no configuration cost or accuracy measurements under a stated site workload. A trial with the intended coverage and a defined measurement objective could supply the numbers the announcement leaves open.",
+      "time_window": "72h",
+      "body": "Researchers at the Beijing Academy of Artificial Intelligence tested whether separate software can help a robot check its own work. The software compares the result of a movement with the intended outcome and can assign a corrective task. In a simulated kitchen, the team compared success with and without those checks while keeping the same underlying movement model.\n\nIn Innata-0, a world-action model interprets the scene, predicts changes and generates movement commands. It gets the full instruction, the current subtask and a record of confirmed progress. The other component, which the researchers call an agent, organizes the steps and compares the observed scene after a movement with the intended result. When it detects a mismatch, it can invoke a recovery routine and then return to the original task.\n\nIn RoboCasa365, a collection of simulated kitchen tasks, the researchers compared two setups using the same movement model. Overall success reached 60.2% without the agent and 65.4% with it. For combinations of steps the model had not seen before, success rose from 32.4% to 43.6%. One example in the paper shows the system noticing a misplaced pan and moving it onto the intended burner.\n\nA trial at a customer site could record the time spent checking each step as well as the number of errors corrected. Retrying a movement might reduce one kind of defect while also adding time to a production cycle. The authors call for broader tests across different robots and settings. Their simulated result provides no figure for machine downtime or for how often a person would have to take over at a customer site.",
       "image": null
     },
     {
-      "id": "robocap-workplace-video",
-      "title": "A workplace video collection expands the pool of robot training examples",
-      "summary": "Grounded Superintelligence and BitRobot described a collection of human work recorded in 11 countries. Cameras worn on the head help estimate hand positions for use in developing robot controllers.",
-      "details": "Grounded Superintelligence and BitRobot collected 10,000 hours of recordings of human work in 11 countries.",
-      "technical_novelty": "A headset with six synchronized cameras and inertial sensors supports three-dimensional estimates of head and hand movement.",
-      "engineering_impact": "The recordings provide examples of physical tasks for teams developing robot learning systems.",
-      "limitations": "The data contain no force or touch measurements. The paper does not evaluate training on a robot.",
-      "evidence_status": "The authors describe the dataset, hardware and processing in a preprint.",
+      "id": "gmo-robot-hand-competition-judges",
+      "title": "GMO names judges for its robot hand competition",
+      "summary": "Organizers in Japan announced five judges for a contest in which robotic hands will transfer beans. Teams can develop their own equipment or try hardware at the organizers’ lab.",
+      "details": "Organizers in Japan named five judges for a competition in which robotic hands will transfer roasted beans.",
+      "technical_novelty": "Teams can direct the hand remotely or have a trained program control it.",
+      "engineering_impact": "The shared task and time limit give teams a way to try different approaches to handling small objects.",
+      "limitations": "The final is scheduled for March 26, 2027. The announcement concerns the judges; there are no entrant results yet.",
+      "evidence_status": "The organizers published the judges, eligibility and dates.",
       "published_at": "2026-11-20",
-      "organization": "Grounded Superintelligence and BitRobot",
+      "organization": "GMO Internet Group, GMO AIR and Singularity Society",
       "source_ids": [
-        "robocap-paper"
+        "gmo-judges",
+        "gmo-rules-release"
       ],
       "time_window": "7d",
-      "body": "Grounded Superintelligence and BitRobot recorded people handling objects at work. For businesses looking at automation of manual tasks, the recordings could supply examples that show how workers perform a sequence of movements. The collection combines videos from viewpoints close to the worker's own with estimates of where the hands were during the task.\n\nThe 250-gram headset carries six synchronized cameras and two inertial measurement units that measure acceleration and rotation. The cameras view the wearer's hands from different angles. The processing combines the views and sensor readings to estimate head motion and three-dimensional hand positions. Each recording session has its own calibration, which lets the processing account for the positions and characteristics of the cameras.\n\nThe authors selected 10,000 hours of elapsed recording time. A minute filmed by several cameras counts as one minute. They segmented recordings from 11 countries into 1,378,462 clips with a median duration of 17.8 seconds. The authors say participants gave written consent and were compensated for taking part. Audio is excluded and faces are obscured.\n\nA buyer evaluating a specific workstation would need to determine what the robot must sense to perform the job there. If success depends on a precise amount of pressure, these images do not say how hard the worker pushed. The report sets out how the collection was made and how much it contains. It supplies no estimate of the work needed to transfer a recorded operation to a particular robotic gripper, nor a performance result for that transfer.",
+      "body": "GMO Internet Group and its partners named the judges of their first robotic hand contest in Japan. The common task measures speed and precision when moving small objects. Teams can begin with equipment supplied by the organizers or bring a hand they built themselves. The November 20 announcement identifies the five judges ahead of the first final.\n\nGMO Internet Group, its robotics company GMO AIR and the Singularity Society announced the judges on November 20. The five include engineer and entrepreneur Satoshi Nakajima and Telexistence co-founder Motoki Sano. Contestants have five minutes to move roasted beans one at a time between plates using chopsticks or tweezers held by a robotic hand with several fingers. Both remote control by a person and control by a program trained in advance are permitted.\n\nThe prize pool totals ¥10 million. Applications close on December 18, 2026, and the final is scheduled for March 26, 2027, in Tokyo. The organizers offer participants access to equipment at a laboratory in Shibuya as well as tools for control and training. The rules allow teams to bring their own hand, so they can work on how it is built as well as how it is controlled.\n\nAccess to test hardware can lower the cost of early attempts, particularly for a team that wants to focus on control software. A common competition task offers a reference for comparing designs. A manufacturer evaluating a tool would need other evidence as well. These rules measure performance with a single kind of object over five minutes and do not measure effects such as wear after repeated use.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Aisle width as a criterion for choosing a carrier",
-    "summary": "OMRON Robotics lists widths of 500 and 580 millimetres for its new warehouse carriers. Shared software assigns trips and coordinates the vehicles' movements.",
-    "implications": "Operators can use the dimensions to shortlist routes. Estimating the cost of each trip also takes measurements of loading, waiting and charging time at the site."
+    "title": "Software is part of the competition among cloud chip suppliers",
+    "summary": "Amazon agreed to acquire technology from Decart that adapts model computation to hardware. One goal is to make Amazon’s Trainium chips more efficient.",
+    "implications": "Customers need results on matching workloads before they can estimate the cost of switching. Amazon gave no benchmark for a specific robotics model."
   },
   "sources": [
     {
-      "id": "nv-board",
+      "id": "nv-schumer-reuters",
+      "title": "Schumer accuses Nvidia CEO of violating US export control law",
+      "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "nv-investing",
+      "title": "Schumer accuses Huang of violating US export law",
+      "url": "https://www.investing.com/news/stock-market-news/schumer-accuses-huang-of-violating-us-export-law-5048872",
+      "domain": "www.investing.com",
+      "organization": "Investing.com",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "nv-warren",
+      "title": "Senator Warren Statement on Jensen Huang Reinstatement as NVIDIA CEO",
+      "url": "https://www.banking.senate.gov/newsroom/minority/senator-warren-statement-on-jensen-huang-reinstatement-as-nvidia-ceo",
+      "domain": "www.banking.senate.gov",
+      "organization": "United States Senate Banking Committee",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-board-background",
       "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
       "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
       "domain": "nvidianews.nvidia.com",
@@ -119,59 +146,59 @@
       "published_at": "2026-11-23"
     },
     {
-      "id": "nv-sec",
-      "title": "NVIDIA Form 8-K: November 22 board action",
-      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
-      "domain": "www.sec.gov",
-      "organization": "NVIDIA",
+      "id": "amazon-agreement",
+      "title": "Amazon to purchase Decart’s AI optimization technology to advance chip and model innovation for customers",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+      "domain": "www.aboutamazon.com",
+      "organization": "Amazon",
       "published_at": "2026-11-23"
     },
     {
-      "id": "nv-reuters",
-      "title": "Nvidia reinstates Jensen Huang as CEO, igniting tech surge",
-      "url": "https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/",
+      "id": "amazon-reuters",
+      "title": "Amazon to buy Decart’s AI chip optimization tech in latest AI talent grab",
+      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
       "domain": "www.reuters.com",
       "organization": "Reuters",
       "published_at": "2026-11-23"
     },
     {
-      "id": "omron-release",
-      "title": "OMRON Robotics Announces Start of Orders for New LD Series Autonomous Mobile Robots",
-      "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/",
-      "domain": "robotics.omron.com",
-      "organization": "OMRON Robotics",
-      "published_at": "2026-11-19"
+      "id": "big-company",
+      "title": "Bigwave Robotics Validates a Bipedal Humanoid on a Live Automotive Parts Line",
+      "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq",
+      "domain": "us.bigwaverobotics.com",
+      "organization": "Bigwave Robotics",
+      "published_at": "2026-11-24"
     },
     {
-      "id": "vetaion-uvc",
-      "title": "€5.7 million for Vetaion: DeepTech startup builds the electrical infrastructure of the future",
-      "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future",
-      "domain": "www.uvcpartners.com",
-      "organization": "UVC Partners",
-      "published_at": "2026-11-19"
+      "id": "big-robotnews",
+      "title": "빅웨이브로보틱스, 국내 최초 이족보행 휴머노이드 제조 현장 연계 공정 실증 성공",
+      "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763",
+      "domain": "www.irobotnews.com",
+      "organization": "Robot News",
+      "published_at": "2026-11-24"
     },
     {
-      "id": "vetaion-tum",
-      "title": "5,7 Mio. EUR für Vetaion: Deep-Tech-Startup baut die elektrische Infrastruktur der Zukunft auf",
-      "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/",
-      "domain": "www.unternehmertum.de",
-      "organization": "UnternehmerTUM",
-      "published_at": "2026-11-19"
-    },
-    {
-      "id": "outsight-shift",
-      "title": "Outsight, Intel and Microsoft bring Dynamic World Models to the Enterprise Edge",
-      "url": "https://www.outsight.ai/insights/outsight-intel-and-microsoft-bring-dynamic-world-models-to-the-edge/",
-      "domain": "www.outsight.ai",
-      "organization": "Outsight",
-      "published_at": "2026-11-17"
-    },
-    {
-      "id": "robocap-paper",
-      "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
-      "url": "https://arxiv.org/html/2611.26916v1",
+      "id": "innata-paper",
+      "title": "Innata-0: A Native Embodied World System with Model-Agent Co-Design",
+      "url": "https://arxiv.org/html/2611.30254v1",
       "domain": "arxiv.org",
-      "organization": "Grounded Superintelligence and BitRobot",
+      "organization": "Innata Team",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "gmo-judges",
+      "title": "第1回GMOロボットハンドコンテスト 審査員が決定",
+      "url": "https://ai-robotics.gmo/news/article/gmo-robot-hand-competition/",
+      "domain": "ai-robotics.gmo",
+      "organization": "GMO AI & Robotics Corporation",
+      "published_at": "2026-11-20"
+    },
+    {
+      "id": "gmo-rules-release",
+      "title": "第1回GMOロボットハンドコンテスト 審査員が決定：コンテスト概要・募集要項",
+      "url": "https://www.techno-edge.net/release/prtimes2/20261120/25483.html",
+      "domain": "www.techno-edge.net",
+      "organization": "GMO Internet Group",
       "published_at": "2026-11-20"
     }
   ]

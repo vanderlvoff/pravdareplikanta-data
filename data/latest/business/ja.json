@@ -2,116 +2,143 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-24",
-  "issue_id": "daily-2026-11-24",
+  "issue_date": "2026-11-25",
+  "issue_id": "daily-2026-11-25",
   "edition": "business",
   "language": "ja",
-  "generated_at": "2026-11-24T06:20:56+09:00",
-  "title": "既存の倉庫に搬送ロボットを入れるには",
-  "lead": "OMRONは、幅1メートルの通路を走る搬送ロボットの受注を始めた。すでに棚が並ぶ倉庫では、どの経路を使って試せるかを考えるときの目安になる。",
+  "generated_at": "2026-11-25T06:12:05+09:00",
+  "title": "AIモデルを別の半導体に移す費用",
+  "lead": "Amazonは、自社の半導体で計算を効率よく進めるため、Decartの技術を取得することで合意した。ロボットの開発会社が利用先を選ぶときは、機器を借りる料金だけでなく、プログラムを移し、モデルを学習させて動かすまでの費用がかかる。",
   "news": [
     {
-      "id": "nvidia-huang-reinstatement",
-      "title": "エヌビディアの経営トップにフアン氏、法令順守の責任者選びに着手",
-      "summary": "米エヌビディアは11月23日、ジェンスン・フアン氏を最高経営責任者に復帰させたと発表した。社内の独立調査を続ける一方、全社の法令順守を統括する新しい責任者の人選を始める。",
-      "details": "取締役会はフアン氏を社長、最高経営責任者、取締役に復帰させた。コレット・クレス氏は財務責任者を続ける。",
-      "technical_novelty": "安全保障と輸出管理を監督する取締役会の委員会に加え、法令順守を統括する役職の人選を始める。",
-      "engineering_impact": "ロボットの開発にも使われる計算機器の供給元が、輸出管理の監督体制を整え直している。",
-      "limitations": "社内の独立調査は継続中で、機器の納入条件の変更は発表されていない。",
-      "evidence_status": "会社発表、米証券規制当局への提出書類、ロイターの報道で経営トップの復帰を確認した。",
-      "published_at": "2026-11-23",
-      "organization": "NVIDIA",
+      "id": "nvidia-schumer-export-allegation",
+      "title": "エヌビディアの中国向け半導体輸出、米議会で再び焦点に",
+      "summary": "チャック・シューマー米上院議員は11月24日、エヌビディアのジェンスン・フアン氏が先端半導体の輸出規制に違反したと主張した。上院の委員会は輸出規制の運用について、公開公聴会を開く予定だ。",
+      "details": "米上院のチャック・シューマー議員は11月24日、ジェンスン・フアン氏が先端半導体を中国へ輸出する際、米国の規制に違反したと主張した。",
+      "technical_novelty": "上院銀行委員会は、フアン氏を招いて輸出規制に関する公開公聴会を12月3日に開く予定だ。",
+      "engineering_impact": "複数の国でエヌビディア製半導体を使う企業にとって、輸出規制の運用は調達に関わる。",
+      "limitations": "報じられた発言では、半導体の機種や出荷時期は明らかにされていない。",
+      "evidence_status": "ロイターとInvesting.comが発言を報じた。フアン氏の役職はエヌビディアが公表した。",
+      "published_at": "2026-11-24",
+      "organization": "United States Senate and NVIDIA",
       "source_ids": [
-        "nv-board",
-        "nv-sec",
-        "nv-reuters"
+        "nv-schumer-reuters",
+        "nv-investing",
+        "nv-warren",
+        "nv-board-background"
       ],
       "time_window": "24h",
-      "body": "人工知能やロボットの開発に使う計算機器を供給する米エヌビディアで、ジェンスン・フアン氏が社長、最高経営責任者、取締役に復帰した。同社は11月23日に発表した。ロイターによると、発表後の取引で同社の株価は30％を超えて上昇した。取引先にとっては、会社の経営を誰が担うのかが明らかになった。\n\n米証券規制当局に提出した書類によると、取締役会の決定は11月22日だった。エヌビディアは翌23日に公表し、ロイターも復帰を報じた。取締役は全員一致で復帰を決めた。暫定で最高経営責任者を務めていたコレット・クレス氏は財務責任者を続け、ハーベイ・ジョーンズ氏は取締役会の議長にとどまる。\n\n取締役会は米政府高官から意見を聞いたうえで、復帰によって国家安全保障上のリスクが生じることはないと判断したと説明している。同社は、フアン氏が外国の情報機関の活動の標的になったとする報道を受け、独立取締役による委員会を設けたという。この委員会は外部の弁護士とともに調査を続ける。会社は全社の法令順守を統括する責任者の人選にも着手した。安全保障や輸出規則への対応を監督するのは、取締役会が別に設けた委員会だ。\n\n機器を買う企業には、必要な場所に予定どおり届くことと、導入後に保守を受けられることが重要になる。どちらも契約や利用する地域に応じて判断する事項だ。エヌビディアには輸出管理を監督する取締役会の委員会があり、全社の法令順守を担う責任者についてはこれから人を選ぶ。新しい責任者が決まる時期や個別の納入条件は発表に記載されていない。",
+      "body": "米上院民主党トップのチャック・シューマー氏は11月24日、エヌビディアの最高経営責任者ジェンスン・フアン氏が中国向けの先端半導体の輸出規制に違反したと主張した。輸出規制とは、特定の品物を国外に販売したり運んだりする際に政府が設ける制限だ。半導体を買う企業にとっては、どの国の拠点に、どの条件で機器を入れられるかに関わる。\n\nロイターとInvesting.comによると、シューマー氏はSNSのXに投稿し、米国の半導体を中国へ輸出する際の規制を強めるよう議会に求めた。ロイターは、取材の申し入れにエヌビディアからすぐには回答がなかったと報じた。報道では、半導体の品番や出荷の時期、裁判所の判断は示されていない。どの取引にどの許可が必要だったのかは、公開された内容からは判断できない。\n\nエヌビディアは前日、フアン氏が社長、最高経営責任者、取締役に復帰したと発表した。独立取締役による委員会は別途、社内調査を続けるとしている。エリザベス・ウォーレン上院議員も11月23日の声明で、同社が輸出規制をどのように守ってきたかについて説明を求めた。上院銀行委員会は12月3日に輸出規制について公開公聴会を開く予定で、フアン氏を証人として記載している。\n\n国をまたいで機器を仕入れる企業は、どの製品をどの受取先へ、いつ納入できるかを供給元に確認する。議員の発言を伝えた記事にも、公聴会の案内にも、個別の出荷に対する規制当局の決定は記載されていない。上院の委員会が公表した予定では、12月3日に、輸出規制の運用についてフアン氏から説明を聞く。",
       "image": null
     },
     {
-      "id": "omron-ld-orders",
-      "title": "狭い通路向けの搬送ロボット、OMRONが受注を開始",
-      "summary": "OMRON Roboticsは米州と欧州で、建物内の荷物を運ぶロボット2機種の受注を始めた。幅1メートルの通路に対応し、出荷は2027年1月に始まる見込みだ。",
-      "details": "OMRON Roboticsは、積載量が150キログラムと300キログラムの屋内搬送ロボット2機種の受注を始めた。",
-      "technical_novelty": "床の目印に頼らず周囲を見て走り、複数台を管理するソフトウェアが搬送作業を割り振る。",
-      "engineering_impact": "通路の余裕、充電場所、すれ違いが搬送量にどう影響するかは、導入先で確かめられる。",
-      "limitations": "公表された数値は仕様値で、出荷は2027年1月に始まる見込みだ。",
-      "evidence_status": "発表はメーカーによるもので、顧客の現場における搬送量の実測値は示されていない。",
-      "published_at": "2026-11-19",
-      "organization": "OMRON Robotics",
+      "id": "amazon-decart-trainium-agreement",
+      "title": "Amazon、Decartの技術取得で自社半導体の活用を広げる",
+      "summary": "Amazonは、半導体の特性に合わせて計算を効率化するDecartの技術を取得する契約を結んだ。自社の計算基盤への投資を補う取引で、完了には規制当局の承認などが必要になる。",
+      "details": "Amazonは、Decartの計算最適化技術の取得で合意し、創業者と開発チームを迎える予定だと発表した。",
+      "technical_novelty": "計算の進め方を、AmazonのTrainiumなどの半導体の特性に合わせる技術だ。",
+      "engineering_impact": "ロボット開発では、モデルの学習と実行に使う計算機を選ぶ際、半導体に合うソフトウェアの有無も関わる。",
+      "limitations": "取引の完了には規制当局の承認が必要だ。金額や装置ごとの比較結果はAmazonから公表されていない。",
+      "evidence_status": "合意を発表したのはAmazonで、ロイターも取材し、同社が金額を明かさなかったと報じた。",
+      "published_at": "2026-11-23",
+      "organization": "Amazon and Decart",
       "source_ids": [
-        "omron-release"
+        "amazon-agreement",
+        "amazon-reuters"
       ],
-      "time_window": "7d",
-      "body": "OMRON Roboticsは、倉庫や工場で作業場所の間を行き来して荷物を運ぶ2機種を、米州と欧州から販売する。幅1メートルの通路を走れるという仕様は、棚や作業台の配置を大きく変えずに運搬を自動化できるか、現場を調べる際の目安になる。通行できそうな区間が見つかれば、搬送先や充電場所も含めて日々の動きを検討できる。\n\n小型のLD-150は積載量150キログラム、車体幅500ミリだ。LD-300は積載量300キログラムで、幅は580ミリある。メーカーは、幅1メートルの通路を走行できると説明している。シリーズの最高速度は毎秒2.1メートルで、走行できる傾斜は最大5度としている。周囲の特徴を手がかりに自分の位置を推定するため、床に走行用のテープや目印を貼る必要はない。\n\nOMRONの管理ソフトウェアFLOW Coreは、搬送の割り当てや経路の設定、複数台が行き交う場所での調整を担う。同社によると、対応するOMRON製の機種を組み合わせ、最大100台を管理できる。充電場所では、端子を差し込まずに電力を受け取る誘導式の充電を使い、メーカーは最短18分で充電できると説明する。まず米州と欧州で受注し、対象地域は順次広げる。出荷開始は2027年1月を見込む。\n\n採算を見積もるには、1台が1勤務あたり何往復できるかを知る必要がある。荷物の積み降ろしや充電、複数台で通路を使うときの待ち時間によって、その回数も変わる。発表には顧客の現場で測った往復数も、機器と既存設備をつなぐためにかかる費用も示されていない。出荷予定と仕様から候補地を絞り込めても、費用と搬送量を見積もるための資料はなお必要になる。",
+      "time_window": "72h",
+      "body": "Amazonは、計算用半導体を効率よく使うため、Decartの技術を取得する契約に署名した。クラウドで計算機を貸し出す会社は、利用者がモデルを学習させたり、学習済みモデルを動かしたりする際に、どれだけ速く安く処理できるかで競っている。ロボットを作る企業にとっても、機器そのものの性能に加え、自社のモデルをその装置でどれだけ効率よく動かせるかが選択に影響する。\n\nAmazonは11月23日、Decartの計算最適化ソフトウェアの技術を取得する契約に署名したと発表した。ソフトウェアは、モデルが行う計算を半導体の特性に合わせるためのものだ。Amazonは共同創業者3人と、研究者や技術者も迎える予定だ。両社は2025年からAmazonの計算用半導体Trainiumで協力してきた。活用先としてAmazonが挙げるものには、動作の後に周囲がどう変わるかを予測する世界モデルもある。\n\nAmazonは買収額を公表していない。ロイターによると、ブルームバーグは事情を知る関係者の話として約75億ドルと報じた。Amazonはこの金額を確認していない。取引を完了するには、規制当局の承認などの条件を満たす必要がある。Amazonは効率や速度の向上を目指しているが、ロボット用の特定の計算処理で、どれだけ改善したかを比べる数値は発表していない。\n\n利用先を選ぶ企業は、計算機を借りる料金に加え、プログラムを移す工数や、手元のデータで確かめるための費用も比較する。1時間あたりの単価が下がっても、学習に必要な時間が増えたり、環境を作り直したりすれば、全体の費用がかえって増えることもある。今回の発表には、新しいサービスの料金や提供時期、同じ作業で比べた処理時間は示されていない。",
       "image": null
     },
     {
-      "id": "vetaion-control-cabinet-financing",
-      "title": "制御盤の組み立て自動化へ、Vetaionが570万ユーロを調達",
-      "summary": "ミュンヘンのVetaionは、工場の機械を制御する電気部品を収める制御盤の組み立てを自動化するため、資金を調達した。電気図面を立体的な部品配置に変換するソフトウェアと、その配置を使って組み立てる装置を開発する。",
-      "details": "ミュンヘンのVetaionは、産業用の制御盤を組み立てる装置とソフトウェアの開発に向けて、570万ユーロを調達した。",
-      "technical_novelty": "同社のソフトウェアは、平面の電気図面を基に、部品の立体的な配置を作る。",
-      "engineering_impact": "同社はその配置データを使い、部品の取り付けや配線を自動化する装置の開発を進める。",
-      "limitations": "顧客の工場で測った結果は公表資料から確認できない。",
-      "evidence_status": "投資家のUVC Partnersと起業支援機関のUnternehmerTUMが調達を発表した。",
-      "published_at": "2026-11-19",
-      "organization": "Vetaion",
+      "id": "bigwave-biped-automotive-line",
+      "title": "既存の加工機と人型ロボットをつなぎ、部品工場で試験",
+      "summary": "Bigwave Roboticsは、韓国の自動車部品工場で二足歩行ロボットを試した。既存設備からの信号に合わせてエンジン部品を投入し、加工後は台車に積んだ。",
+      "details": "韓国の自動車部品工場で、Bigwave Roboticsが二足歩行ロボットによるエンジン部品の搬送を試した。",
+      "technical_novelty": "部品のゆがみを直す装置の制御器と信号をやり取りし、約10メートル先の取り出し場所まで歩いた。",
+      "engineering_impact": "部品の投入、移動、積み重ねを、既存設備の作業の流れに合わせた。",
+      "limitations": "試した回数、ラインの処理速度、1勤務を通した稼働実績は公表されていない。",
+      "evidence_status": "供給元が試験を発表し、業界紙も会社の説明をもとに報じた。",
+      "published_at": "2026-11-24",
+      "organization": "Bigwave Robotics",
       "source_ids": [
-        "vetaion-uvc",
-        "vetaion-tum"
+        "big-company",
+        "big-robotnews"
       ],
-      "time_window": "7d",
-      "body": "ミュンヘンのVetaionは、産業用の制御盤を作る工場向けに、組み立て装置を開発する資金を得た。制御盤には、機械に電力を配ったり、動作を制御したりする部品が入る。同社は、部品のつなぎ方を示した図を立体的な配置に変える工程と、その配置を使って実際に組み立てる工程を対象としている。\n\nミュンヘンの新興企業Vetaionが、開発の初期段階で570万ユーロを調達した。UVC PartnersとVisionaries Tomorrowが主導し、2100 VenturesとViessmann Generations Groupも参加した。出資したUVC Partnersとミュンヘンの起業支援機関UnternehmerTUMが、調達の内容を発表した。\n\nVetaionのソフトウェアは、平面の電気図面から部品の立体的な配置を作る。電気図面ではどの部品をどこにつなぐかが分かり、立体の配置では部品を箱の中のどこに収めるかが分かる。同社は、この配置データを使って、部品の取り付けや電線の接続を行う装置を開発している。図面を読み取るソフトウェアと、現物を組み立てる装置の両方が開発の対象だ。\n\n仕様の異なる制御盤を作る工場では、設計を切り替えるたびに現場で何を確認し、どこまで手で直すかが工数を左右する。発表には、別の制御盤に切り替えるのにかかった時間や、配線を誤った割合、完成品の検査費用の実測値はない。投資の対象と金額は明らかになったが、工場ごとの採算を試算するには、これらの工程でどれだけ人の手が必要になるかを確かめる必要がある。",
+      "time_window": "24h",
+      "body": "Bigwave Roboticsは、韓国の自動車部品メーカーの工場で、歩くロボットに部品の投入と取り出しを行わせた。同社が試験に使ったのは、部品のゆがみを直す装置がすでに設置されているラインだ。ロボットを導入する際に、従来の加工の流れに動作を合わせる必要があった。\n\n会社によると、ロボットはエンジン部品を取り上げ、曲がりを直す装置の投入口に入れた。装置の処理が終わると、約10メートル離れた取り出し場所まで歩き、処理済みの部品を運搬用の台車に積み重ねた。装置とロボットは、機械を決まった順序で動かす産業用の制御器を通じて、作業の進み具合を知らせる信号をやり取りした。\n\nBigwaveは、ロボットの学習と制御に使う自社基盤Hyper Foundryを、エヌビディアが提供するシミュレーションと学習のツールにつないだ。歩行は仮想環境で数百万回の試行を行い、どの動きがよい結果を生むかを評価しながら学ぶ強化学習で身につけさせた。部品をつかむ動作には、動きの手本から学ぶ方法を用いた。別のモデルで部品の位置を求め、仮想環境で学んだ動きも実機に移して工場で試した。\n\n導入の判断には、同じ工程を勤務時間のあいだ繰り返し、処理した部品の数や作業者が手を貸した時間を測った資料が要る。工場の配置によっては、固定式のロボットの腕や台車でも作業できるため、設備費とラインの速度を比べたいところだ。今回の発表は、すでにある装置にロボットをつないで二つの作業を試したことを伝えている。長時間の処理量や費用を比較できる値は示されていない。",
       "image": null
     },
     {
-      "id": "outsight-shift-azure-local",
-      "title": "施設内のサーバーで動体追跡、Outsightが対応を発表",
-      "summary": "Outsightは、動く物体を追跡するソフトウェアがIntel製プロセッサーを搭載したAzure Localのサーバーで動くと発表した。施設内でセンサーの値を処理できるが、費用や追跡精度を比較できる数値は示していない。",
-      "details": "Outsightは、空間内の物体を追跡するソフトウェアが、Intel製プロセッサーを搭載したAzure Localのサーバーで動くと発表した。",
-      "technical_novelty": "レーザーで測った距離などを使い、人や物が動くたびに三次元の位置情報を書き換える。",
-      "engineering_impact": "公表された構成では中央処理装置が計算を担うため、利用先のサーバーで処理する構成を選べる。",
-      "limitations": "処理の遅れは50ミリ秒未満としているが、比較に必要な測定条件や、追跡精度と費用は示していない。",
-      "evidence_status": "Outsightによる発表で、独立した第三者による試験結果は掲載されていない。",
-      "published_at": "2026-11-17",
-      "organization": "Outsight, Intel and Microsoft",
+      "id": "innata-world-action-agent",
+      "title": "ロボットの作業結果を、別のプログラムで確認",
+      "summary": "北京智源人工智能研究院は、ロボットの作業の途中で結果を調べる仕組みを発表した。仮想の台所では、確認と修正の処理を加えると、課題の成功率が60.2％から65.4％に上がった。",
+      "details": "北京智源人工智能研究院は、ロボットに一連の動作をさせ、途中の結果を確かめる仕組みを発表した。",
+      "technical_novelty": "Innata-0では、モデルが動きを作り、別のプログラムが観測結果を目標と照らし合わせ、必要に応じてやり直しの処理を呼び出す。",
+      "engineering_impact": "同じ動作モデルに確認の仕組みを加えると、仮想の台所での課題の成功率は60.2％から65.4％に上がった。",
+      "limitations": "仮想環境での結果は、試した課題に関するものだ。別のロボットや環境では個別の検証が要る。",
+      "evidence_status": "比較の条件とやり直しの例を、研究チームがプレプリントで報告した。",
+      "published_at": "2026-11-23",
+      "organization": "Beijing Academy of Artificial Intelligence",
       "source_ids": [
-        "outsight-shift"
+        "innata-paper"
       ],
-      "time_window": "7d",
-      "body": "OutsightのShiftは、センサーの測定値から動く物体を追い、その位置を更新するソフトウェアだ。同社は、現地に設置したサーバーを管理するMicrosoftの仕組みAzure Localで動かせると発表した。大きな建物や工場では、観測する設備の近くに処理を置く構成を検討できる。\n\nOutsightが主要なセンサーとして挙げるのが、レーザー光を使って距離を測るライダーだ。ソフトウェアは測定値から物体の位置を求め、人や物が移動するたびに三次元の位置情報を更新する。同社によると、カメラやWi-Fiなど、別の仕組みで得た情報を組み合わせることもできる。同社は出力を匿名化したデータと説明しているが、この点を第三者が確認した結果は発表に含まれていない。\n\n公表された構成では、計算と周辺の機能をまとめたIntel Xeon 6の製品を使う。行列演算を高速化する機能Intel AMXを活用し、画像処理などに使う別の演算装置を加えず、中央処理装置で追跡処理を行う。同社は処理結果を50ミリ秒未満で得られるとしているが、その数値を得た条件は示していない。Outsightは、11月17日から20日までサンフランシスコで開かれたMicrosoft Igniteで、この構成を実演する予定だと発表した。\n\n費用を比べるには、対象の施設をカバーするのに何台のサーバーが必要か、日々の管理にどれだけ手がかかるかを把握する。施設の外にどんなデータが送られるかも、導入先ごとに確認する項目になる。今回の発表には、装置構成の費用も、特定の負荷で測った追跡精度も示されていない。運用前に精度や必要な機器の台数を知るには、観測する範囲と測定の目的を決めたうえで、現地の条件に合わせて検証する余地がある。",
+      "time_window": "72h",
+      "body": "北京智源人工智能研究院は、ロボットが一つの動作を終えた後で、別のプログラムが作業結果を確かめる仕組みを試した。物の置き場所が目標と違えば、修正する指示を出す。仮想の台所で、動きを作るモデルは同じものを使い、確認と修正の処理がある場合とない場合を比べた。\n\nInnata-0のうち、世界・行動モデルは周囲の様子を読み取り、その後の変化を予測し、ロボットへ送る動作指令を作る。入力には、作業全体の指示、いま取り組む手順、完了を確認した手順が含まれる。別のプログラムを研究チームはエージェントと呼ぶ。手順を組み立て、動作後に観測した状態を目標と照らし合わせる。結果が違っていれば、修正用の処理を呼び出し、もとの作業を続けられる。\n\n仮想の台所でロボットを動かす課題集RoboCasa365では、同じ動作モデルを使い、エージェントを加えた場合と加えない場合を比べた。全体の成功率は60.2％から65.4％に上がった。学習時に見ていない手順の組み合わせでは32.4％から43.6％に上がった。論文には、フライパンが指定された場所にないことを検出し、目的のコンロに移し直した例がある。\n\n導入先で試す場合は、修正できた回数のほか、各手順を確かめる時間も測ると違いが分かる。やり直しは一部の失敗を減らせる一方で、一つの製品を扱い終えるまでに時間がかかることもある。研究チーム自身が、ロボットや環境を変えてさらに検証する必要があると記している。今回の仮想試験では、現場で機械が止まる時間や、人が操作を引き継ぐ頻度は測っていない。",
       "image": null
     },
     {
-      "id": "robocap-workplace-video",
-      "title": "ロボット学習向けに、職場の手作業を1万時間記録",
-      "summary": "Grounded SuperintelligenceとBitRobotは、11か国で人が仕事をする様子を記録した。頭に取り付けたカメラの映像から手の位置を推定し、ロボットに動きを覚えさせる手本にできる。",
-      "details": "Grounded SuperintelligenceとBitRobotは、11か国で人の作業を撮影し、1万時間分の記録をまとめた。",
-      "technical_novelty": "同期した6台のカメラと慣性センサーを備えたヘッドセットを使い、頭と手の動きを三次元で推定する。",
-      "engineering_impact": "物を扱うときの人の動きを、ロボット制御の学習用に検討できる。",
-      "limitations": "力や接触の測定値はなく、この論文ではロボットの学習結果を評価していない。",
-      "evidence_status": "記録の規模と装置、処理方法は、作成チームがプレプリントで報告した。",
+      "id": "gmo-robot-hand-competition-judges",
+      "title": "GMOがロボットハンド競技の審査員を発表、実機も貸し出し",
+      "summary": "日本で開くロボットハンドの大会で、主催者が5人の審査員を発表した。参加者は豆を移す競技に向けて、自作の手を持ち込んだり、主催者の機材を試したりできる。",
+      "details": "日本で開くロボットハンドの大会について、主催者が5人の審査員を発表した。競技では炒り豆を一粒ずつ別の皿へ移す。",
+      "technical_novelty": "人が離れた場所から操作する方法と、事前に学習させたプログラムに動かさせる方法がある。",
+      "engineering_impact": "同じ課題と制限時間の下で、小さな物を扱う技術をそれぞれ試せる。",
+      "limitations": "本選は2027年3月26日の予定だ。今回は審査員の発表で、参加者の成績はまだ出ていない。",
+      "evidence_status": "審査員、応募条件、日程を主催者が公表した。",
       "published_at": "2026-11-20",
-      "organization": "Grounded Superintelligence and BitRobot",
+      "organization": "GMO Internet Group, GMO AIR and Singularity Society",
       "source_ids": [
-        "robocap-paper"
+        "gmo-judges",
+        "gmo-rules-release"
       ],
       "time_window": "7d",
-      "body": "Grounded SuperintelligenceとBitRobotは、人が職場で物を扱う様子を記録した。手作業の自動化を検討する企業にとっては、作業の順序や手の動きをロボットに覚えさせるための候補になる。作業者に近い視点から撮った映像に、手がどこを通ったかの推定値を組み合わせている。\n\n装置は重さ250グラムで、映像の時刻をそろえた6台のカメラと、加速度や回転を測る二つの慣性計測装置を載せている。カメラごとに手が違う角度から映る。処理ソフトは映像とセンサーの値を組み合わせ、頭の動きと手の位置を三次元で推定する。収録のたびにカメラの特性と互いの位置関係を確かめるので、同じ時刻の映像を対応づけられる。\n\n筆者らは11か国で撮った記録を選び、収録時間の合計を1万時間とした。複数のカメラで撮った1分間も、収録時間としては1分と数える。記録は137万8462本の短い動画に分けた。長さの中央値は17.8秒で、動画を長さ順に並べたときの中央に当たる。筆者らによると、参加者は書面で同意し、追加の報酬を受けた。データには音声を含めず、映り込んだ顔を隠す処理を施した。\n\n導入先で作業を再現するには、その仕事を続けるために、ロボットが何を計測する必要があるかを見極めることになる。部品を一定の力で押す工程であれば、映像だけでは作業者が加えた力は分からない。論文は収録の規模と方法を詳しく説明しているが、記録した手順を特定のロボットの手で再現するための工数や、再現できた割合は示していない。",
+      "body": "GMOインターネットグループなどは、初めて開くロボットハンドの大会の審査員を発表した。複数の指を持つ機械の手で小さな物を移し、速さと正確さを競う。チームは自作の手を用意できるほか、主催者の機材で試作を始めることもできる。11月20日に発表したのは、来年の本選を審査する5人だ。\n\nGMOインターネットグループ、グループ会社のGMO AI＆ロボティクス商事、シンギュラリティ・ソサエティが、11月20日に審査員を公表した。5人の中には、エンジニアで起業家の中島聡氏と、テレイグジスタンス共同創業者の佐野元紀氏がいる。競技では、複数の指があるロボットの手に箸かピンセットを持たせ、炒り豆を一粒ずつ別の皿へ移す。制限時間は5分で、人が離れた所から動かす方式と、事前に学習させたプログラムが動かす方式を選べる。\n\n賞金総額は1000万円。応募は2026年12月18日まで受け付け、本選は2027年3月26日に東京で開く予定だ。参加者は渋谷の開発拠点で実機を試せるほか、操作や学習に使う機材や環境の提供を受けられる。自作した手を持ち込むこともできるため、どんな構造の手を使い、どう動かすかをチームごとに考えられる。\n\n実機を借りられれば、たとえば制御ソフトの工夫に集中したい参加者は、最初の試作にかける費用を抑えられる。同じ課題は異なる構造の手を比べる一つの基準になる。工場で使う装置を選ぶ場合は、長く使ったときの記録も要る。競技で試すのは、一種類の物を制限時間内に運ぶ能力であり、工具を長く使い続けたときの摩耗は測らない。",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "搬送ロボットを選ぶ際の目安になる通路幅",
-    "summary": "OMRON Roboticsが示した新機種の車幅は500ミリと580ミリだ。共通の管理ソフトウェアが作業を割り振り、複数の車両の動きを調整する。",
-    "implications": "仕様から試す経路を絞り込める。実際の搬送費用を見積もるには、積み降ろしや通行待ち、充電にかかる時間も測る必要がある。"
+    "title": "クラウドの計算用半導体と、それを支えるソフトウェア",
+    "summary": "Amazonは、モデルの計算を装置に合わせるDecartの技術を取得する契約を結んだ。自社の計算用半導体Trainiumなどで処理を効率化する狙いだ。",
+    "implications": "利用先を切り替える費用を試算するには、同じ作業をさせた測定値が要る。Amazonは、特定のロボット用モデルで比較した数値を示していない。"
   },
   "sources": [
     {
-      "id": "nv-board",
+      "id": "nv-schumer-reuters",
+      "title": "Schumer accuses Nvidia CEO of violating US export control law",
+      "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "nv-investing",
+      "title": "Schumer accuses Huang of violating US export law",
+      "url": "https://www.investing.com/news/stock-market-news/schumer-accuses-huang-of-violating-us-export-law-5048872",
+      "domain": "www.investing.com",
+      "organization": "Investing.com",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "nv-warren",
+      "title": "Senator Warren Statement on Jensen Huang Reinstatement as NVIDIA CEO",
+      "url": "https://www.banking.senate.gov/newsroom/minority/senator-warren-statement-on-jensen-huang-reinstatement-as-nvidia-ceo",
+      "domain": "www.banking.senate.gov",
+      "organization": "United States Senate Banking Committee",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-board-background",
       "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
       "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
       "domain": "nvidianews.nvidia.com",
@@ -119,59 +146,59 @@
       "published_at": "2026-11-23"
     },
     {
-      "id": "nv-sec",
-      "title": "NVIDIA Form 8-K: November 22 board action",
-      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000090/nvda-20261122.htm",
-      "domain": "www.sec.gov",
-      "organization": "NVIDIA",
+      "id": "amazon-agreement",
+      "title": "Amazon to purchase Decart’s AI optimization technology to advance chip and model innovation for customers",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+      "domain": "www.aboutamazon.com",
+      "organization": "Amazon",
       "published_at": "2026-11-23"
     },
     {
-      "id": "nv-reuters",
-      "title": "Nvidia reinstates Jensen Huang as CEO, igniting tech surge",
-      "url": "https://www.reuters.com/business/view-nvidia-reinstates-jensen-huang-ceo-igniting-tech-surge-2026-11-23/",
+      "id": "amazon-reuters",
+      "title": "Amazon to buy Decart’s AI chip optimization tech in latest AI talent grab",
+      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
       "domain": "www.reuters.com",
       "organization": "Reuters",
       "published_at": "2026-11-23"
     },
     {
-      "id": "omron-release",
-      "title": "OMRON Robotics Announces Start of Orders for New LD Series Autonomous Mobile Robots",
-      "url": "https://robotics.omron.com/news/new-ld-series-amr-launch/",
-      "domain": "robotics.omron.com",
-      "organization": "OMRON Robotics",
-      "published_at": "2026-11-19"
+      "id": "big-company",
+      "title": "Bigwave Robotics Validates a Bipedal Humanoid on a Live Automotive Parts Line",
+      "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq",
+      "domain": "us.bigwaverobotics.com",
+      "organization": "Bigwave Robotics",
+      "published_at": "2026-11-24"
     },
     {
-      "id": "vetaion-uvc",
-      "title": "€5.7 million for Vetaion: DeepTech startup builds the electrical infrastructure of the future",
-      "url": "https://www.uvcpartners.com/blog/eu5-7-million-for-vetaion-deeptech-startup-builds-the-electrical-infrastructure-of-the-future",
-      "domain": "www.uvcpartners.com",
-      "organization": "UVC Partners",
-      "published_at": "2026-11-19"
+      "id": "big-robotnews",
+      "title": "빅웨이브로보틱스, 국내 최초 이족보행 휴머노이드 제조 현장 연계 공정 실증 성공",
+      "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763",
+      "domain": "www.irobotnews.com",
+      "organization": "Robot News",
+      "published_at": "2026-11-24"
     },
     {
-      "id": "vetaion-tum",
-      "title": "5,7 Mio. EUR für Vetaion: Deep-Tech-Startup baut die elektrische Infrastruktur der Zukunft auf",
-      "url": "https://www.unternehmertum.de/en/press/5-7-mio-eur-fuer-vetaion-deep-tech-startup-baut-die-elektrische-infrastruktur-der-zukunft-auf/",
-      "domain": "www.unternehmertum.de",
-      "organization": "UnternehmerTUM",
-      "published_at": "2026-11-19"
-    },
-    {
-      "id": "outsight-shift",
-      "title": "Outsight, Intel and Microsoft bring Dynamic World Models to the Enterprise Edge",
-      "url": "https://www.outsight.ai/insights/outsight-intel-and-microsoft-bring-dynamic-world-models-to-the-edge/",
-      "domain": "www.outsight.ai",
-      "organization": "Outsight",
-      "published_at": "2026-11-17"
-    },
-    {
-      "id": "robocap-paper",
-      "title": "RoboCap-10k: A Metrically Accurate Egocentric Dataset for Robot Learning",
-      "url": "https://arxiv.org/html/2611.26916v1",
+      "id": "innata-paper",
+      "title": "Innata-0: A Native Embodied World System with Model-Agent Co-Design",
+      "url": "https://arxiv.org/html/2611.30254v1",
       "domain": "arxiv.org",
-      "organization": "Grounded Superintelligence and BitRobot",
+      "organization": "Innata Team",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "gmo-judges",
+      "title": "第1回GMOロボットハンドコンテスト 審査員が決定",
+      "url": "https://ai-robotics.gmo/news/article/gmo-robot-hand-competition/",
+      "domain": "ai-robotics.gmo",
+      "organization": "GMO AI & Robotics Corporation",
+      "published_at": "2026-11-20"
+    },
+    {
+      "id": "gmo-rules-release",
+      "title": "第1回GMOロボットハンドコンテスト 審査員が決定：コンテスト概要・募集要項",
+      "url": "https://www.techno-edge.net/release/prtimes2/20261120/25483.html",
+      "domain": "www.techno-edge.net",
+      "organization": "GMO Internet Group",
       "published_at": "2026-11-20"
     }
   ]

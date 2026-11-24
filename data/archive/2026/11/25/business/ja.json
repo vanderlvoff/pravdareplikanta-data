@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-25",
+  "issue_id": "daily-2026-11-25",
+  "edition": "business",
+  "language": "ja",
+  "generated_at": "2026-11-25T06:12:05+09:00",
+  "title": "AIモデルを別の半導体に移す費用",
+  "lead": "Amazonは、自社の半導体で計算を効率よく進めるため、Decartの技術を取得することで合意した。ロボットの開発会社が利用先を選ぶときは、機器を借りる料金だけでなく、プログラムを移し、モデルを学習させて動かすまでの費用がかかる。",
+  "news": [
+    {
+      "id": "nvidia-schumer-export-allegation",
+      "title": "エヌビディアの中国向け半導体輸出、米議会で再び焦点に",
+      "summary": "チャック・シューマー米上院議員は11月24日、エヌビディアのジェンスン・フアン氏が先端半導体の輸出規制に違反したと主張した。上院の委員会は輸出規制の運用について、公開公聴会を開く予定だ。",
+      "details": "米上院のチャック・シューマー議員は11月24日、ジェンスン・フアン氏が先端半導体を中国へ輸出する際、米国の規制に違反したと主張した。",
+      "technical_novelty": "上院銀行委員会は、フアン氏を招いて輸出規制に関する公開公聴会を12月3日に開く予定だ。",
+      "engineering_impact": "複数の国でエヌビディア製半導体を使う企業にとって、輸出規制の運用は調達に関わる。",
+      "limitations": "報じられた発言では、半導体の機種や出荷時期は明らかにされていない。",
+      "evidence_status": "ロイターとInvesting.comが発言を報じた。フアン氏の役職はエヌビディアが公表した。",
+      "published_at": "2026-11-24",
+      "organization": "United States Senate and NVIDIA",
+      "source_ids": [
+        "nv-schumer-reuters",
+        "nv-investing",
+        "nv-warren",
+        "nv-board-background"
+      ],
+      "time_window": "24h",
+      "body": "米上院民主党トップのチャック・シューマー氏は11月24日、エヌビディアの最高経営責任者ジェンスン・フアン氏が中国向けの先端半導体の輸出規制に違反したと主張した。輸出規制とは、特定の品物を国外に販売したり運んだりする際に政府が設ける制限だ。半導体を買う企業にとっては、どの国の拠点に、どの条件で機器を入れられるかに関わる。\n\nロイターとInvesting.comによると、シューマー氏はSNSのXに投稿し、米国の半導体を中国へ輸出する際の規制を強めるよう議会に求めた。ロイターは、取材の申し入れにエヌビディアからすぐには回答がなかったと報じた。報道では、半導体の品番や出荷の時期、裁判所の判断は示されていない。どの取引にどの許可が必要だったのかは、公開された内容からは判断できない。\n\nエヌビディアは前日、フアン氏が社長、最高経営責任者、取締役に復帰したと発表した。独立取締役による委員会は別途、社内調査を続けるとしている。エリザベス・ウォーレン上院議員も11月23日の声明で、同社が輸出規制をどのように守ってきたかについて説明を求めた。上院銀行委員会は12月3日に輸出規制について公開公聴会を開く予定で、フアン氏を証人として記載している。\n\n国をまたいで機器を仕入れる企業は、どの製品をどの受取先へ、いつ納入できるかを供給元に確認する。議員の発言を伝えた記事にも、公聴会の案内にも、個別の出荷に対する規制当局の決定は記載されていない。上院の委員会が公表した予定では、12月3日に、輸出規制の運用についてフアン氏から説明を聞く。",
+      "image": null
+    },
+    {
+      "id": "amazon-decart-trainium-agreement",
+      "title": "Amazon、Decartの技術取得で自社半導体の活用を広げる",
+      "summary": "Amazonは、半導体の特性に合わせて計算を効率化するDecartの技術を取得する契約を結んだ。自社の計算基盤への投資を補う取引で、完了には規制当局の承認などが必要になる。",
+      "details": "Amazonは、Decartの計算最適化技術の取得で合意し、創業者と開発チームを迎える予定だと発表した。",
+      "technical_novelty": "計算の進め方を、AmazonのTrainiumなどの半導体の特性に合わせる技術だ。",
+      "engineering_impact": "ロボット開発では、モデルの学習と実行に使う計算機を選ぶ際、半導体に合うソフトウェアの有無も関わる。",
+      "limitations": "取引の完了には規制当局の承認が必要だ。金額や装置ごとの比較結果はAmazonから公表されていない。",
+      "evidence_status": "合意を発表したのはAmazonで、ロイターも取材し、同社が金額を明かさなかったと報じた。",
+      "published_at": "2026-11-23",
+      "organization": "Amazon and Decart",
+      "source_ids": [
+        "amazon-agreement",
+        "amazon-reuters"
+      ],
+      "time_window": "72h",
+      "body": "Amazonは、計算用半導体を効率よく使うため、Decartの技術を取得する契約に署名した。クラウドで計算機を貸し出す会社は、利用者がモデルを学習させたり、学習済みモデルを動かしたりする際に、どれだけ速く安く処理できるかで競っている。ロボットを作る企業にとっても、機器そのものの性能に加え、自社のモデルをその装置でどれだけ効率よく動かせるかが選択に影響する。\n\nAmazonは11月23日、Decartの計算最適化ソフトウェアの技術を取得する契約に署名したと発表した。ソフトウェアは、モデルが行う計算を半導体の特性に合わせるためのものだ。Amazonは共同創業者3人と、研究者や技術者も迎える予定だ。両社は2025年からAmazonの計算用半導体Trainiumで協力してきた。活用先としてAmazonが挙げるものには、動作の後に周囲がどう変わるかを予測する世界モデルもある。\n\nAmazonは買収額を公表していない。ロイターによると、ブルームバーグは事情を知る関係者の話として約75億ドルと報じた。Amazonはこの金額を確認していない。取引を完了するには、規制当局の承認などの条件を満たす必要がある。Amazonは効率や速度の向上を目指しているが、ロボット用の特定の計算処理で、どれだけ改善したかを比べる数値は発表していない。\n\n利用先を選ぶ企業は、計算機を借りる料金に加え、プログラムを移す工数や、手元のデータで確かめるための費用も比較する。1時間あたりの単価が下がっても、学習に必要な時間が増えたり、環境を作り直したりすれば、全体の費用がかえって増えることもある。今回の発表には、新しいサービスの料金や提供時期、同じ作業で比べた処理時間は示されていない。",
+      "image": null
+    },
+    {
+      "id": "bigwave-biped-automotive-line",
+      "title": "既存の加工機と人型ロボットをつなぎ、部品工場で試験",
+      "summary": "Bigwave Roboticsは、韓国の自動車部品工場で二足歩行ロボットを試した。既存設備からの信号に合わせてエンジン部品を投入し、加工後は台車に積んだ。",
+      "details": "韓国の自動車部品工場で、Bigwave Roboticsが二足歩行ロボットによるエンジン部品の搬送を試した。",
+      "technical_novelty": "部品のゆがみを直す装置の制御器と信号をやり取りし、約10メートル先の取り出し場所まで歩いた。",
+      "engineering_impact": "部品の投入、移動、積み重ねを、既存設備の作業の流れに合わせた。",
+      "limitations": "試した回数、ラインの処理速度、1勤務を通した稼働実績は公表されていない。",
+      "evidence_status": "供給元が試験を発表し、業界紙も会社の説明をもとに報じた。",
+      "published_at": "2026-11-24",
+      "organization": "Bigwave Robotics",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "time_window": "24h",
+      "body": "Bigwave Roboticsは、韓国の自動車部品メーカーの工場で、歩くロボットに部品の投入と取り出しを行わせた。同社が試験に使ったのは、部品のゆがみを直す装置がすでに設置されているラインだ。ロボットを導入する際に、従来の加工の流れに動作を合わせる必要があった。\n\n会社によると、ロボットはエンジン部品を取り上げ、曲がりを直す装置の投入口に入れた。装置の処理が終わると、約10メートル離れた取り出し場所まで歩き、処理済みの部品を運搬用の台車に積み重ねた。装置とロボットは、機械を決まった順序で動かす産業用の制御器を通じて、作業の進み具合を知らせる信号をやり取りした。\n\nBigwaveは、ロボットの学習と制御に使う自社基盤Hyper Foundryを、エヌビディアが提供するシミュレーションと学習のツールにつないだ。歩行は仮想環境で数百万回の試行を行い、どの動きがよい結果を生むかを評価しながら学ぶ強化学習で身につけさせた。部品をつかむ動作には、動きの手本から学ぶ方法を用いた。別のモデルで部品の位置を求め、仮想環境で学んだ動きも実機に移して工場で試した。\n\n導入の判断には、同じ工程を勤務時間のあいだ繰り返し、処理した部品の数や作業者が手を貸した時間を測った資料が要る。工場の配置によっては、固定式のロボットの腕や台車でも作業できるため、設備費とラインの速度を比べたいところだ。今回の発表は、すでにある装置にロボットをつないで二つの作業を試したことを伝えている。長時間の処理量や費用を比較できる値は示されていない。",
+      "image": null
+    },
+    {
+      "id": "innata-world-action-agent",
+      "title": "ロボットの作業結果を、別のプログラムで確認",
+      "summary": "北京智源人工智能研究院は、ロボットの作業の途中で結果を調べる仕組みを発表した。仮想の台所では、確認と修正の処理を加えると、課題の成功率が60.2％から65.4％に上がった。",
+      "details": "北京智源人工智能研究院は、ロボットに一連の動作をさせ、途中の結果を確かめる仕組みを発表した。",
+      "technical_novelty": "Innata-0では、モデルが動きを作り、別のプログラムが観測結果を目標と照らし合わせ、必要に応じてやり直しの処理を呼び出す。",
+      "engineering_impact": "同じ動作モデルに確認の仕組みを加えると、仮想の台所での課題の成功率は60.2％から65.4％に上がった。",
+      "limitations": "仮想環境での結果は、試した課題に関するものだ。別のロボットや環境では個別の検証が要る。",
+      "evidence_status": "比較の条件とやり直しの例を、研究チームがプレプリントで報告した。",
+      "published_at": "2026-11-23",
+      "organization": "Beijing Academy of Artificial Intelligence",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "time_window": "72h",
+      "body": "北京智源人工智能研究院は、ロボットが一つの動作を終えた後で、別のプログラムが作業結果を確かめる仕組みを試した。物の置き場所が目標と違えば、修正する指示を出す。仮想の台所で、動きを作るモデルは同じものを使い、確認と修正の処理がある場合とない場合を比べた。\n\nInnata-0のうち、世界・行動モデルは周囲の様子を読み取り、その後の変化を予測し、ロボットへ送る動作指令を作る。入力には、作業全体の指示、いま取り組む手順、完了を確認した手順が含まれる。別のプログラムを研究チームはエージェントと呼ぶ。手順を組み立て、動作後に観測した状態を目標と照らし合わせる。結果が違っていれば、修正用の処理を呼び出し、もとの作業を続けられる。\n\n仮想の台所でロボットを動かす課題集RoboCasa365では、同じ動作モデルを使い、エージェントを加えた場合と加えない場合を比べた。全体の成功率は60.2％から65.4％に上がった。学習時に見ていない手順の組み合わせでは32.4％から43.6％に上がった。論文には、フライパンが指定された場所にないことを検出し、目的のコンロに移し直した例がある。\n\n導入先で試す場合は、修正できた回数のほか、各手順を確かめる時間も測ると違いが分かる。やり直しは一部の失敗を減らせる一方で、一つの製品を扱い終えるまでに時間がかかることもある。研究チーム自身が、ロボットや環境を変えてさらに検証する必要があると記している。今回の仮想試験では、現場で機械が止まる時間や、人が操作を引き継ぐ頻度は測っていない。",
+      "image": null
+    },
+    {
+      "id": "gmo-robot-hand-competition-judges",
+      "title": "GMOがロボットハンド競技の審査員を発表、実機も貸し出し",
+      "summary": "日本で開くロボットハンドの大会で、主催者が5人の審査員を発表した。参加者は豆を移す競技に向けて、自作の手を持ち込んだり、主催者の機材を試したりできる。",
+      "details": "日本で開くロボットハンドの大会について、主催者が5人の審査員を発表した。競技では炒り豆を一粒ずつ別の皿へ移す。",
+      "technical_novelty": "人が離れた場所から操作する方法と、事前に学習させたプログラムに動かさせる方法がある。",
+      "engineering_impact": "同じ課題と制限時間の下で、小さな物を扱う技術をそれぞれ試せる。",
+      "limitations": "本選は2027年3月26日の予定だ。今回は審査員の発表で、参加者の成績はまだ出ていない。",
+      "evidence_status": "審査員、応募条件、日程を主催者が公表した。",
+      "published_at": "2026-11-20",
+      "organization": "GMO Internet Group, GMO AIR and Singularity Society",
+      "source_ids": [
+        "gmo-judges",
+        "gmo-rules-release"
+      ],
+      "time_window": "7d",
+      "body": "GMOインターネットグループなどは、初めて開くロボットハンドの大会の審査員を発表した。複数の指を持つ機械の手で小さな物を移し、速さと正確さを競う。チームは自作の手を用意できるほか、主催者の機材で試作を始めることもできる。11月20日に発表したのは、来年の本選を審査する5人だ。\n\nGMOインターネットグループ、グループ会社のGMO AI＆ロボティクス商事、シンギュラリティ・ソサエティが、11月20日に審査員を公表した。5人の中には、エンジニアで起業家の中島聡氏と、テレイグジスタンス共同創業者の佐野元紀氏がいる。競技では、複数の指があるロボットの手に箸かピンセットを持たせ、炒り豆を一粒ずつ別の皿へ移す。制限時間は5分で、人が離れた所から動かす方式と、事前に学習させたプログラムが動かす方式を選べる。\n\n賞金総額は1000万円。応募は2026年12月18日まで受け付け、本選は2027年3月26日に東京で開く予定だ。参加者は渋谷の開発拠点で実機を試せるほか、操作や学習に使う機材や環境の提供を受けられる。自作した手を持ち込むこともできるため、どんな構造の手を使い、どう動かすかをチームごとに考えられる。\n\n実機を借りられれば、たとえば制御ソフトの工夫に集中したい参加者は、最初の試作にかける費用を抑えられる。同じ課題は異なる構造の手を比べる一つの基準になる。工場で使う装置を選ぶ場合は、長く使ったときの記録も要る。競技で試すのは、一種類の物を制限時間内に運ぶ能力であり、工具を長く使い続けたときの摩耗は測らない。",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "クラウドの計算用半導体と、それを支えるソフトウェア",
+    "summary": "Amazonは、モデルの計算を装置に合わせるDecartの技術を取得する契約を結んだ。自社の計算用半導体Trainiumなどで処理を効率化する狙いだ。",
+    "implications": "利用先を切り替える費用を試算するには、同じ作業をさせた測定値が要る。Amazonは、特定のロボット用モデルで比較した数値を示していない。"
+  },
+  "sources": [
+    {
+      "id": "nv-schumer-reuters",
+      "title": "Schumer accuses Nvidia CEO of violating US export control law",
+      "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "nv-investing",
+      "title": "Schumer accuses Huang of violating US export law",
+      "url": "https://www.investing.com/news/stock-market-news/schumer-accuses-huang-of-violating-us-export-law-5048872",
+      "domain": "www.investing.com",
+      "organization": "Investing.com",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "nv-warren",
+      "title": "Senator Warren Statement on Jensen Huang Reinstatement as NVIDIA CEO",
+      "url": "https://www.banking.senate.gov/newsroom/minority/senator-warren-statement-on-jensen-huang-reinstatement-as-nvidia-ceo",
+      "domain": "www.banking.senate.gov",
+      "organization": "United States Senate Banking Committee",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-board-background",
+      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "amazon-agreement",
+      "title": "Amazon to purchase Decart’s AI optimization technology to advance chip and model innovation for customers",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+      "domain": "www.aboutamazon.com",
+      "organization": "Amazon",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "amazon-reuters",
+      "title": "Amazon to buy Decart’s AI chip optimization tech in latest AI talent grab",
+      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "big-company",
+      "title": "Bigwave Robotics Validates a Bipedal Humanoid on a Live Automotive Parts Line",
+      "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq",
+      "domain": "us.bigwaverobotics.com",
+      "organization": "Bigwave Robotics",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "big-robotnews",
+      "title": "빅웨이브로보틱스, 국내 최초 이족보행 휴머노이드 제조 현장 연계 공정 실증 성공",
+      "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763",
+      "domain": "www.irobotnews.com",
+      "organization": "Robot News",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "innata-paper",
+      "title": "Innata-0: A Native Embodied World System with Model-Agent Co-Design",
+      "url": "https://arxiv.org/html/2611.30254v1",
+      "domain": "arxiv.org",
+      "organization": "Innata Team",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "gmo-judges",
+      "title": "第1回GMOロボットハンドコンテスト 審査員が決定",
+      "url": "https://ai-robotics.gmo/news/article/gmo-robot-hand-competition/",
+      "domain": "ai-robotics.gmo",
+      "organization": "GMO AI & Robotics Corporation",
+      "published_at": "2026-11-20"
+    },
+    {
+      "id": "gmo-rules-release",
+      "title": "第1回GMOロボットハンドコンテスト 審査員が決定：コンテスト概要・募集要項",
+      "url": "https://www.techno-edge.net/release/prtimes2/20261120/25483.html",
+      "domain": "www.techno-edge.net",
+      "organization": "GMO Internet Group",
+      "published_at": "2026-11-20"
+    }
+  ]
+}

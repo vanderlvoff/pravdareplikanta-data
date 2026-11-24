@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-25",
+  "issue_id": "daily-2026-11-25",
+  "edition": "engineer",
+  "language": "en",
+  "generated_at": "2026-11-25T06:12:05+09:00",
+  "title": "Correcting the next robot movement",
+  "lead": "Yunbei Zhang and colleagues tested how software could adjust commands to a simulated robot if its arm moved less than expected. Their software uses the measured movement to change the next command while keeping the original controller fixed.",
+  "news": [
+    {
+      "id": "roboada-command-correction",
+      "title": "Correcting robot commands without retraining the controller",
+      "summary": "Yunbei Zhang and colleagues introduced RoboAda, a command correction layer for robots under changing physical conditions. In two simulators it adjusted commands from observed motion while keeping the trained controller fixed.",
+      "details": "The RoboAda authors tested command adaptation under changes in load, delay or actuator response in simulation.",
+      "technical_novelty": "The method compares observed movement with the reference robot’s response and adjusts the next group of commands.",
+      "engineering_impact": "The method sits around a trained controller and leaves its weights fixed.",
+      "limitations": "The simulated averages do not measure reliability on physical hardware.",
+      "evidence_status": "The authors reported the experimental protocol and numbers in a preprint.",
+      "published_at": "2026-11-23",
+      "organization": "Tulane University, New York University, Nanyang Technological University, MIT and Harvard University",
+      "source_ids": [
+        "roboada-paper"
+      ],
+      "time_window": "72h",
+      "body": "Yunbei Zhang and colleagues proposed RoboAda in a preprint about changes in the physics of robot operation. A controller can ask for the right movement and still get the wrong displacement after a change in load or actuator strength. The researchers tested whether a command layer could compensate for those changes in simulation and measured how often the robot completed its task.\n\nAfter each group of commands, the method collects observations of how the simulated robot actually moved. A model of inverse dynamics estimates which commands the reference robot would have needed to produce that observed movement. The method then compares the estimate with the commands it sent. It uses that evidence to reweight hypotheses about the change in motion, including the possibility that the robot is responding normally. The result is a correction to the next group of commands.\n\nThe authors tested five trained controllers in LIBERO, a suite of simulated manipulation tasks, under eleven changes in physical conditions. Their average success rose from 27.8% to 62.9%. In a second simulator, RoboTwin 2.0, they tested two-armed tasks with systematic offsets in the target joint angles. Success there rose from 24.9% to 78.8%. Both results come from experiments with simulated robots.\n\nThe command layer needs no gradient updates during testing and no new demonstrations from the robot in its changed condition. It still needs a model trained on motion data from the original robot. In practical use the correction also depends on observations of the robot’s own motion. How much sensor noise the method could tolerate, and how well it would separate degraded actuation from unreliable measurement on real hardware, remain questions for physical experiments.",
+      "image": null
+    },
+    {
+      "id": "bigwave-biped-automotive-line",
+      "title": "A walking robot links two stations on an automotive parts line",
+      "summary": "Bigwave Robotics described a bipedal robot trial at a South Korean factory. The robot loaded a machine, walked about ten metres and stacked finished parts while coordinating with the machine’s work signals.",
+      "details": "Bigwave Robotics reported an on-site trial of a bipedal robot at a South Korean automotive parts factory. The robot handled engine parts.",
+      "technical_novelty": "It exchanged work signals with the straightening machine’s controller and walked about ten metres to the outfeed.",
+      "engineering_impact": "The trial linked loading, walking and stacking to the cycle of existing equipment.",
+      "limitations": "The announcement gives no cycle count, line rate or performance over a shift.",
+      "evidence_status": "The supplier described the trial, and trade publication Robot News covered the company’s report.",
+      "published_at": "2026-11-24",
+      "organization": "Bigwave Robotics",
+      "source_ids": [
+        "big-company",
+        "big-robotnews"
+      ],
+      "time_window": "24h",
+      "body": "Bigwave Robotics tested a walking humanoid on a working automotive parts line in South Korea. The company’s November 24 report describes how it tied locomotion and grasping to signals from equipment already used by the plant. The trial covered the route from loading at one workstation to picking up processed parts at another.\n\nAccording to Bigwave, the robot picked up engine parts and fed them into a straightening machine, which corrects the shape of a part. Once the machine completed its operation, the robot walked about ten metres to the outfeed and stacked the finished parts on a transfer cart. It exchanged work signals with the machine’s programmable logic controller, an industrial computer that sequences the machine’s operations and coordinates signals with other equipment.\n\nThe company connected Hyper Foundry, its robotics software platform, to NVIDIA tools for simulation and training. In millions of simulated runs it trained walking through reinforcement learning, in which actions are selected based on feedback about results. For grasping it used examples of the desired movements, helped by a separate model that locates parts. The company then transferred what it had trained in simulation to the physical robot for the on-site trial.\n\nThe interface joins two different kinds of control: the robot generates movement over time, while the machine advances through a sequence of work states. A signal that the machine has finished can determine when the robot proceeds. Bigwave did not publish the signal interface or the tolerances for grasping and stacking. It also did not give repeated-cycle timing. The delay from a finished part being available to the robot reaching the outfeed would help explain how this route fits the station’s cadence.",
+      "image": null
+    },
+    {
+      "id": "innata-world-action-agent",
+      "title": "Innata-0 checks what an action achieved before continuing",
+      "summary": "The Beijing Academy of Artificial Intelligence introduced Innata-0, a robot control system that checks outcomes with a separate program. In simulated kitchen tasks, that program compared the observed scene with the goal and could call a recovery routine.",
+      "details": "The Beijing Academy of Artificial Intelligence proposed a system that sequences robot actions and checks how the work is progressing.",
+      "technical_novelty": "In Innata-0, a model generates movements while separate software checks the observed result and calls a recovery routine when needed.",
+      "engineering_impact": "Adding that layer to the same motion model raised success from 60.2% to 65.4% on simulated kitchen tasks.",
+      "limitations": "The simulated result applies to a specific test suite. Transfer to other robots and settings needs separate testing.",
+      "evidence_status": "The authors documented their comparison and examples of recovery in a preprint.",
+      "published_at": "2026-11-23",
+      "organization": "Beijing Academy of Artificial Intelligence",
+      "source_ids": [
+        "innata-paper"
+      ],
+      "time_window": "72h",
+      "body": "Researchers at the Beijing Academy of Artificial Intelligence introduced Innata-0 to coordinate multi-step manipulation. One component produces arm movements, while a separate coordinator checks whether intermediate goals have been met. The researchers measured how adding that coordinator changed completion rates in simulated work with physical objects.\n\nIn Innata-0, a world-action model interprets the scene, predicts changes and generates movement commands. It gets the full instruction, the current subtask and a record of confirmed progress. The other component, which the researchers call an agent, organizes the steps and compares the observed scene after a movement with the intended result. When it detects a mismatch, it can invoke a recovery routine and then return to the original task.\n\nIn RoboCasa365, a collection of simulated kitchen tasks, the researchers compared two setups using the same movement model. Overall success reached 60.2% without the agent and 65.4% with it. For combinations of steps the model had not seen before, success rose from 32.4% to 43.6%. One example in the paper shows the system noticing a misplaced pan and moving it onto the intended burner.\n\nThe model has three transformer branches, neural networks that model relationships among elements in their input. The branches support scene understanding, prediction of changes and generation of action commands. The kitchen comparison held the movement model version and the full instruction fixed, so the gain describes adding the coordinator in that test suite. The paper calls for broader real-world validation. It leaves open how quickly the system will detect a new obstacle in a different working area.",
+      "image": null
+    },
+    {
+      "id": "amazon-decart-trainium-agreement",
+      "title": "Amazon agrees to buy software technology that tunes AI workloads for chips",
+      "summary": "Amazon signed an agreement for Decart technology that helps models run on specific hardware. It plans to apply the technology across its own chip portfolio, including Trainium.",
+      "details": "Amazon signed an agreement to buy Decart’s optimization technology and said it plans to hire the founders and team.",
+      "technical_novelty": "The software helps map model computation to specific chips, including Amazon’s Trainium hardware.",
+      "engineering_impact": "The agreement is relevant to teams choosing computing platforms for training and running robotics models.",
+      "limitations": "Closing requires regulatory clearance. Amazon did not disclose financial terms or comparative benchmarks.",
+      "evidence_status": "Amazon announced the agreement. Reuters independently reported that the company declined to disclose the price.",
+      "published_at": "2026-11-23",
+      "organization": "Amazon and Decart",
+      "source_ids": [
+        "amazon-agreement",
+        "amazon-reuters"
+      ],
+      "time_window": "72h",
+      "body": "Amazon has agreed to buy Decart technology for optimizing AI computation on particular chips. The workloads in Amazon’s announcement include models that predict how a physical scene will change. For teams building such models for robotics, a practical question is how much code and infrastructure work a change of hardware would require and how much time it would save.\n\nAmazon announced the signed agreement on November 23. It covers the technology behind the Decart Optimization Stack, software that matches the work a model does to the hardware doing the calculation. Amazon also plans to hire Decart’s three co-founders and its researchers and engineers. The teams have worked together since 2025 on Amazon’s Trainium computing chips. Amazon names world models, programs that learn to predict how a scene can change after an action, among the relevant workloads.\n\nAmazon did not disclose the price. Reuters reported that Bloomberg put it at about $7.5 billion, citing a person familiar with the deal. Amazon did not confirm that figure. The deal remains subject to customary closing conditions, including regulatory clearance. Amazon describes reducing cost and increasing speed as goals and did not publish a comparative benchmark for a specific robotics workload.\n\nDuring training, useful measurements depend on the specific operations in the model, the size of a batch of examples and how often accelerators exchange data. Running a trained controller raises a different question, such as the time from receiving a camera frame to producing a command. The announcement contains no profile of either kind for a robotics workload. It leaves open whether the proposed optimization would improve the slowest stage of a particular system.",
+      "image": null
+    },
+    {
+      "id": "nvidia-schumer-export-allegation",
+      "title": "Senator accuses Huang of violating chip export controls",
+      "summary": "US Senator Chuck Schumer said on November 24 that NVIDIA’s chief executive violated rules on advanced chip exports to China. Jensen Huang is listed as the witness for a Senate committee hearing on December 3.",
+      "details": "On November 24, Chuck Schumer alleged that Jensen Huang violated US export rules by shipping advanced chips to China.",
+      "technical_novelty": "The Senate Banking Committee scheduled a public hearing on export controls with Huang for December 3.",
+      "engineering_impact": "Congressional scrutiny of export controls matters to companies using NVIDIA chips in projects that span countries.",
+      "limitations": "The reports do not identify a chip model or shipment date for the senator’s allegation.",
+      "evidence_status": "Reuters and Investing.com reported the statement. NVIDIA confirms Huang’s position in the company.",
+      "published_at": "2026-11-24",
+      "organization": "United States Senate and NVIDIA",
+      "source_ids": [
+        "nv-schumer-reuters",
+        "nv-investing",
+        "nv-warren",
+        "nv-board-background"
+      ],
+      "time_window": "24h",
+      "body": "US Senator Chuck Schumer alleged on November 24 that Jensen Huang, back at the helm of NVIDIA, breached US limits on shipments of advanced chips to China. Reuters reported the claim that day. For teams that use computing accelerators to train robot models, the practical question raised by the dispute is which hardware they can obtain at each development site.\n\nReuters and Investing.com reported that Schumer made the allegation in a post on X. He urged Congress to tighten limits on shipments of US chips to China. Reuters said NVIDIA did not immediately respond to its request for comment. The accounts of the statement contain no chip model, batch, shipment date or court finding. They leave open which export authorization would apply to the transaction the senator had in mind.\n\nA day earlier, NVIDIA announced that Huang was back as president, chief executive and a board member. The company said its committee of independent directors would continue a separate internal inquiry. In a November 23 statement, Senator Elizabeth Warren called for answers about the company’s compliance with export rules. The Senate Banking Committee has scheduled a public hearing on export oversight for December 3 and lists Huang as its witness.\n\nA computing specification alone does not establish whether an accelerator can be installed at a planned site. The exact variant, customer and destination matter when assessing a shipment. Evaluating the implications for a project would take details specific to its configuration. The published account names no model of accelerator. The hearing notice specifies the witness and its oversight topic; hardware availability will depend on applicable rules and any separate regulatory action.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Actuator commands informed by observed motion",
+    "summary": "The RoboAda software compares a simulated robot’s movement with the expected response of a robot in its original configuration. Under changed physical conditions in the simulator, the correction raised average success from 27.8% to 62.9%.",
+    "implications": "Testing the method on hardware would require a model of the original robot’s response and measurements of actual motion. The study did not measure how sensor errors would affect the correction on a physical robot."
+  },
+  "sources": [
+    {
+      "id": "roboada-paper",
+      "title": "RoboAda: Adapting Frozen Robot Policies at Test Time to Physics They Cannot See",
+      "url": "https://arxiv.org/html/2611.30209v1",
+      "domain": "arxiv.org",
+      "organization": "Yunbei Zhang et al.",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "big-company",
+      "title": "Bigwave Robotics Validates a Bipedal Humanoid on a Live Automotive Parts Line",
+      "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq",
+      "domain": "us.bigwaverobotics.com",
+      "organization": "Bigwave Robotics",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "big-robotnews",
+      "title": "빅웨이브로보틱스, 국내 최초 이족보행 휴머노이드 제조 현장 연계 공정 실증 성공",
+      "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763",
+      "domain": "www.irobotnews.com",
+      "organization": "Robot News",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "innata-paper",
+      "title": "Innata-0: A Native Embodied World System with Model-Agent Co-Design",
+      "url": "https://arxiv.org/html/2611.30254v1",
+      "domain": "arxiv.org",
+      "organization": "Innata Team",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "amazon-agreement",
+      "title": "Amazon to purchase Decart’s AI optimization technology to advance chip and model innovation for customers",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
+      "domain": "www.aboutamazon.com",
+      "organization": "Amazon",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "amazon-reuters",
+      "title": "Amazon to buy Decart’s AI chip optimization tech in latest AI talent grab",
+      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-schumer-reuters",
+      "title": "Schumer accuses Nvidia CEO of violating US export control law",
+      "url": "https://www.reuters.com/world/china/schumer-accuses-nvidia-ceo-violating-us-export-control-law-2026-11-24/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "nv-investing",
+      "title": "Schumer accuses Huang of violating US export law",
+      "url": "https://www.investing.com/news/stock-market-news/schumer-accuses-huang-of-violating-us-export-law-5048872",
+      "domain": "www.investing.com",
+      "organization": "Investing.com",
+      "published_at": "2026-11-24"
+    },
+    {
+      "id": "nv-warren",
+      "title": "Senator Warren Statement on Jensen Huang Reinstatement as NVIDIA CEO",
+      "url": "https://www.banking.senate.gov/newsroom/minority/senator-warren-statement-on-jensen-huang-reinstatement-as-nvidia-ceo",
+      "domain": "www.banking.senate.gov",
+      "organization": "United States Senate Banking Committee",
+      "published_at": "2026-11-23"
+    },
+    {
+      "id": "nv-board-background",
+      "title": "NVIDIA Board Reinstates Jensen Huang as President, CEO and Board Director",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "domain": "nvidianews.nvidia.com",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23"
+    }
+  ]
+}
