@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 518" width="360" height="518" xml:lang="en" role="img" aria-labelledby="title desc">
+  <title id="title">When the gripper misses the bowl</title>
+  <desc id="desc">Missed grasp / The bowl stays behind / Successful retry / The bowl ends up on the plate / 21 successes in 24 trials. / Two successes followed a retry.</desc>
+  <rect x="0" y="0" width="360" height="518" rx="0" fill="#f6f7f2" stroke="none" stroke-width="1" data-qa-group="bg" id="g2"/>
+  <text x="24" y="32" fill="#116768" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="start" id="g3">University of Nottingham · schematic</text>
+  <text x="24" y="68" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g4">When the gripper</text>
+  <text x="24" y="102" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g5">misses the bowl</text>
+  <text x="25" y="150" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" id="g6">Missed grasp</text>
+  <text x="25" y="257" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g7">The bowl stays behind</text>
+  <rect x="25" y="164" width="310" height="74" rx="5" fill="#e8efeb" stroke="#9caaaa" stroke-width="1" data-qa-group="table-0" id="g8"/>
+  <circle cx="251" cy="201" r="26" fill="#fffefa" stroke="#116768" data-qa-group="table-0" id="g9"/>
+  <circle cx="251" cy="201" r="19" fill="none" stroke="#9caaaa" data-qa-group="table-0" id="g10"/>
+  <circle cx="138" cy="201" r="16" fill="#f4d4ba" stroke="#9a4627" data-qa-group="table-0" id="g11"/>
+  <circle cx="138" cy="201" r="10" fill="none" stroke="#9a4627" data-qa-group="table-0" id="g12"/>
+  <rect x="63" y="181" width="15" height="40" rx="3" fill="#cde6e0" stroke="#116768" stroke-width="1" data-qa-group="table-0" id="g13"/>
+  <path d="M78 187 h26 v8 M78 216 h26 v-8" fill="none" stroke="#116768" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round" data-qa-group="table-0" id="g14"/>
+  <text x="25" y="292" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" id="g15">Successful retry</text>
+  <text x="25" y="399" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g16">The bowl ends up on the plate</text>
+  <rect x="25" y="306" width="310" height="74" rx="5" fill="#e8efeb" stroke="#9caaaa" stroke-width="1" data-qa-group="table-1" id="g17"/>
+  <circle cx="251" cy="343" r="26" fill="#fffefa" stroke="#116768" data-qa-group="table-1" id="g18"/>
+  <circle cx="251" cy="343" r="19" fill="none" stroke="#9caaaa" data-qa-group="table-1" id="g19"/>
+  <circle cx="251" cy="343" r="16" fill="#f4d4ba" stroke="#9a4627" data-qa-group="table-1" id="g20"/>
+  <circle cx="251" cy="343" r="10" fill="none" stroke="#9a4627" data-qa-group="table-1" id="g21"/>
+  <text x="24" y="442" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g22">21 successes in 24 trials.</text>
+  <text x="24" y="464" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g23">Two successes followed a retry.</text>
+  <text x="24" y="494" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g24">Source: Magassouba, Fig. 2</text>
+</svg>
