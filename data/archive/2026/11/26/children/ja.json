@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-26",
+  "issue_id": "daily-2026-11-26",
+  "edition": "children",
+  "language": "ja",
+  "generated_at": "2026-11-25T21:13:38Z",
+  "title": "ロボットが工事の荷物を二十階まで運んだ",
+  "lead": "韓国の工事現場で、ロボットがエレベーターを使って荷物を運んだ。別の研究では、ロボットの手がボウルをつかみそこね、もう一度試した。",
+  "news": [
+    {
+      "id": "gole-construction-lift-and-loading",
+      "title": "工事の荷物をロボットがエレベーターで運んだ",
+      "summary": "韓国の会社が、ホテルの工事現場でロボットに建物の材料を運ばせた試験を発表した。ロボットは五階の外から建物に入り、エレベーターで二十階まで運んだ。",
+      "details": "韓国のGoLe Roboticsという会社は11月25日、工事に関わる人たちが集まる会で、ホテルの工事現場で荷物を運んだロボットを紹介した。試験を行ったのは10月28日だ。ロボットは、五階の屋外に置いた工事用の材料を、二十階のエレベーター前まで運んだ。",
+      "technical_novelty": "仕事には、外から建物の中に入る道と、上の階に行くためのエレベーターが必要だった。技術者は、ロボットがエレベーターを呼ぶときに使う装置を、エレベーターに取り付けた。",
+      "engineering_impact": "建物の上の階へ荷物を運ぶために、ロボットがエレベーターを呼ぶ装置を取り付けた。",
+      "limitations": "ホテルの所要時間は計画で決めた値だ。積み込みの試験で何回うまくいったかは発表されていない。",
+      "evidence_status": "供給元が二つの現場試験を報告。発表時点では一方が継続中だった。",
+      "published_at": "2026-11-25",
+      "organization": "GoLe Robotics",
+      "source_ids": [
+        "gole-construction-presentation"
+      ],
+      "time_window": "24h",
+      "body": "韓国のGoLe Roboticsという会社は11月25日、工事に関わる人たちが集まる会で、ホテルの工事現場で荷物を運んだロボットを紹介した。試験を行ったのは10月28日だ。ロボットは、五階の屋外に置いた工事用の材料を、二十階のエレベーター前まで運んだ。\n\n仕事には、外から建物の中に入る道と、上の階に行くためのエレベーターが必要だった。技術者は、ロボットがエレベーターを呼ぶときに使う装置を、エレベーターに取り付けた。計画では、25キログラムの材料が入ったふくろを100こ運ぶことになっていた。発表資料にある時間は計画で決めたもので、実際に何分かかったかはこの部分には書かれていない。\n\n別の町の工事現場では、ロボットが出発前に荷物を受け取る仕事を調べている。そこでは専用の台に行き、人に荷物を載せてもらわずに受け取ることを試す。会社が二つの現場を紹介した日には、後の試験はまだ続いていた。予定では11月27日まで調べる。",
+      "image": null
+    },
+    {
+      "id": "nottingham-screw-attention-bowl",
+      "title": "ボウルをつかみそこねたロボットが、もう一度試した",
+      "summary": "ノッティンガム大学の研究者が、ロボットの手をボウルまで動かすプログラムを試した。本物のロボットを使い、24回のうち21回、ボウルを皿に載せることができた。",
+      "details": "ノッティンガム大学のアリ・マガスバさんは、ロボットの腕が、机の上のボウルを持ち上げて皿に載せられるかを調べた。最初はコンピューターの中に作った腕でプログラムを練習させた。そのあと本物のロボット二台で使い、ボウルと皿を置く場所を変えながら試した。",
+      "technical_novelty": "物をつかむ部分を「グリッパー」と呼ぶ。研究者は、ボウルや皿がどこにあり、どちらを向いているかをプログラムに伝えた。",
+      "engineering_impact": "つかみそこねたあとも、手とボウルが今ある場所を使って次の動きを決められる。",
+      "limitations": "本物のロボットで確かめたのはボウルを皿に載せる仕事だ。",
+      "evidence_status": "査読前の論文。著者が実機で行った実現可能性の試験。",
+      "published_at": "2026-11-24",
+      "organization": "University of Nottingham",
+      "source_ids": [
+        "nottingham-screw-preprint"
+      ],
+      "time_window": "72h",
+      "body": "ノッティンガム大学のアリ・マガスバさんは、ロボットの腕が、机の上のボウルを持ち上げて皿に載せられるかを調べた。最初はコンピューターの中に作った腕でプログラムを練習させた。そのあと本物のロボット二台で使い、ボウルと皿を置く場所を変えながら試した。\n\n物をつかむ部分を「グリッパー」と呼ぶ。研究者は、ボウルや皿がどこにあり、どちらを向いているかをプログラムに伝えた。ボウルの場所が変わると、手が通る道も変わる。手が一度でボウルをつかめなかったときは、そのときの手とボウルの場所から次の動きを決められる。\n\n24回のうち21回、ボウルを皿に載せることができた。成功したうちの二回では、ロボットは一度つかみそこねてから、もう一度手をのばしてつかんだ。今回はボウルと皿を使う一つの仕事で調べた。たとえば持ち手が付いた物を別の向きに置く仕事でもうまくいくかは、試し方を変えて確かめる必要がある。物の形が変わると、手を近づける向きも変わるからだ。",
+      "image": null
+    },
+    {
+      "id": "omniact-robot-arm-transfer",
+      "title": "一つのプログラムで、形のちがう二つの腕を動かす",
+      "summary": "ワシントン大学などの研究チームは、ロボットの腕のつくりに合わせて動きを決めるプログラムを作った。二台の本物のロボットを使うと、物を持ち上げて移す試験で40回のうち27回成功した。",
+      "details": "ワシントン大学などの研究チームは、ロボットが物をつかんで別の場所に置くためのプログラムを作った。はじめはコンピューターの中のロボットの腕で練習させた。そのあと、つくりのちがう本物の腕二台で使い、それぞれの機械でもう一度練習させなくても物を運べるかを調べた。",
+      "technical_novelty": "同じ場所まで手をのばすとき、短い腕と長い腕では曲げ方が変わる。そこでチームは、腕がどんな部品でできていて、どこが曲がるかをプログラムに伝えた。",
+      "engineering_impact": "腕の部品や曲がる場所を伝えると、同じプログラムでつくりの違う腕の動きを決められる。",
+      "limitations": "本物のロボットで調べたのは二台で、一回に運ぶ物は一つだった。",
+      "evidence_status": "査読前の論文。著者らが実機で行った室内試験の結果。",
+      "published_at": "2026-11-24",
+      "organization": "University of Washington and collaborators",
+      "source_ids": [
+        "omniact-preprint"
+      ],
+      "time_window": "72h",
+      "body": "ワシントン大学などの研究チームは、ロボットが物をつかんで別の場所に置くためのプログラムを作った。はじめはコンピューターの中のロボットの腕で練習させた。そのあと、つくりのちがう本物の腕二台で使い、それぞれの機械でもう一度練習させなくても物を運べるかを調べた。\n\n同じ場所まで手をのばすとき、短い腕と長い腕では曲げ方が変わる。そこでチームは、腕がどんな部品でできていて、どこが曲がるかをプログラムに伝えた。練習にはコンピューターの中に作った100万通りの腕を使った。本物のロボットは、立方体を上からつかみ、うすい物を取るときには手首を回して横から近づいた。\n\n一台目は20回のうち14回、二台目は20回のうち13回成功した。合わせて40回のうち27回だ。試験では物が最初にある場所と、最後に置く場所を変えた。一回の試験で運ぶ物は一つだった。何個もの物を決まった順番で運ぶ仕事については、別に調べる必要がある。腕が届く範囲も機械によってちがう。",
+      "image": null
+    },
+    {
+      "id": "jizai-palmimo-tokyo-exhibit",
+      "title": "机の上のロボットに手をふってみよう",
+      "summary": "東京の展示場で、手をふったり声をかけたりすると応えるロボットが公開された。作った会社は、これから開く集まりでできた新しいプログラムも、同じロボットで動かす予定だ。",
+      "details": "東京・千代田区の展示場で、Jizaiという会社が机の上に小さなロボットを置いた。11月25日から、会場に来た人はロボットに話しかけたり、手をふったりできる。ロボットは声や動きで応える。会社はこの場所で、ほかにどんな受け答えができるかも試したいと考えている。",
+      "technical_novelty": "ロボットのカメラは、近くにある物や人を画像としてとらえる。マイクは人の声を拾い、スピーカーは音を出す。",
+      "engineering_impact": "カメラや足を取りかえずに、プログラムを変えて別の言葉や動きで応えるようにできる。",
+      "limitations": "これから作るアプリは、会社が動き方と安全を確かめてから展示で使う予定だ。",
+      "evidence_status": "展示を始めたことと、今後アプリを試す計画を出展者が発表した。",
+      "published_at": "2026-11-25",
+      "organization": "Jizai",
+      "source_ids": [
+        "jizai-palmimo-exhibit"
+      ],
+      "time_window": "24h",
+      "body": "東京・千代田区の展示場で、Jizaiという会社が机の上に小さなロボットを置いた。11月25日から、会場に来た人はロボットに話しかけたり、手をふったりできる。ロボットは声や動きで応える。会社はこの場所で、ほかにどんな受け答えができるかも試したいと考えている。\n\nロボットのカメラは、近くにある物や人を画像としてとらえる。マイクは人の声を拾い、スピーカーは音を出す。丸い画面と六本の足もある。たとえば手をふられたときの返事を変えるなら、足やマイクを取りかえる必要はない。どの動きや音で応えるかを決めるプログラムを変えればよい。\n\n新しいプログラムを書く人たちの最初の集まりは、12月10日に開かれる予定だ。作ったプログラムを会場で使うときは、会社の人がきちんと動くか、安全かを先に調べる。公開が始まったばかりの今は、最初から入っているプログラムでロボットがどう応えるかを見られる。展示は一階にあり、入場は無料だ。",
+      "image": null
+    },
+    {
+      "id": "bis-megaspeed-entity-list-rule",
+      "title": "七つの会社への機器の取り引きに、米国が許可を求める",
+      "summary": "米国の商務省は、東南アジアの七つの会社を、輸出を管理するためのリストに加えた。対象になる機器の取り引きにこれらの会社が関わると、米国の許可が必要になる。",
+      "details": "米国の商務省は11月25日、シンガポール、マレーシア、タイにある七つの会社が関わる取り引きについて、新しい規則を発表した。七つの会社を、輸出（ゆしゅつ）を管理するためのリストに加えた。輸出とは、品物を国の外へ送り出すことだ。対象の品物を送るときには、どの会社が取り引きに関わるかによって、政府の許可が必要になる。",
+      "technical_novelty": "計算用のチップは、コンピューターの中にあり、たくさんの計算を速く進めるための部品だ。ロボットを動かすためのプログラムに練習させるときにも使われることがある。",
+      "engineering_impact": "計算機器を送るときの許可は、どの会社が取り引きに関わるかによって必要になる。",
+      "limitations": "規則は名前が載った会社と、米国の輸出管理の対象品目について定めている。",
+      "evidence_status": "公式の輸出管理規則。関連する動きはロイター通信とタイムの報道で補った。",
+      "published_at": "2026-11-25",
+      "organization": "U.S. Bureau of Industry and Security",
+      "source_ids": [
+        "bis-entity-list-amendment",
+        "nvidia-form-8k",
+        "reuters-export-debate",
+        "time-megaspeed-ownership"
+      ],
+      "time_window": "72h",
+      "body": "米国の商務省は11月25日、シンガポール、マレーシア、タイにある七つの会社が関わる取り引きについて、新しい規則を発表した。七つの会社を、輸出（ゆしゅつ）を管理するためのリストに加えた。輸出とは、品物を国の外へ送り出すことだ。対象の品物を送るときには、どの会社が取り引きに関わるかによって、政府の許可が必要になる。\n\n計算用のチップは、コンピューターの中にあり、たくさんの計算を速く進めるための部品だ。ロボットを動かすためのプログラムに練習させるときにも使われることがある。一つのチップが、作った工場から実際に使う会社へ届くまでに、いくつもの会社を通ることもある。\n\nリストにはシンガポールのメガスピードという会社も入った。商務省は、高い性能（せいのう）を持つ計算機器が、予定とはちがう相手に届くおそれを理由に挙げた。この規則には、名前が載った会社が関わるときに必要な手続きが書かれている。今後チップがいくらで売られるのかは、ここからは分からない。",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "荷物を運ぶロボットがエレベーターを呼ぶ",
+    "summary": "韓国のホテルの工事現場で、ロボットは五階の外から二十階まで荷物を運んだ。エレベーターには、ロボットが呼び出しに使う装置を取り付けた。",
+    "implications": "別の工事現場では、出発する前にロボットが専用の台で荷物を受け取れるか調べている。"
+  },
+  "sources": [
+    {
+      "id": "gole-construction-presentation",
+      "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410",
+      "domain": "smartcona.co.kr",
+      "organization": "GoLe Robotics",
+      "published_at": "2026-11-25",
+      "title": "건설 자재운반 로봇 현장 실증 사례 — 정선 카지노호텔 · 광명 힐스테이트"
+    },
+    {
+      "id": "nottingham-screw-preprint",
+      "url": "https://arxiv.org/html/2611.32797v1",
+      "domain": "arxiv.org",
+      "organization": "University of Nottingham",
+      "published_at": "2026-11-24",
+      "title": "Supply Geometry, Learn Execution: Screw Attention for Zero-Shot Policy Transfer in Robot Manipulation"
+    },
+    {
+      "id": "omniact-preprint",
+      "url": "https://arxiv.org/abs/2611.33158",
+      "domain": "arxiv.org",
+      "organization": "University of Washington and collaborators",
+      "published_at": "2026-11-24",
+      "title": "OmniAct: One Policy, One Million Embodiments"
+    },
+    {
+      "id": "jizai-palmimo-exhibit",
+      "url": "https://prtimes.jp/main/html/rd/p/000000025.000145251.html",
+      "domain": "prtimes.jp",
+      "organization": "Jizai",
+      "published_at": "2026-11-25",
+      "title": "Jizai Begins Exhibiting Palmimo DevKit at Tokyo Innovation Base"
+    },
+    {
+      "id": "bis-entity-list-amendment",
+      "url": "https://public-inspection.federalregister.gov/2026-23999.pdf",
+      "domain": "public-inspection.federalregister.gov",
+      "organization": "U.S. Bureau of Industry and Security",
+      "published_at": "2026-11-23",
+      "title": "Additions to the Entity List"
+    },
+    {
+      "id": "nvidia-form-8k",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/d56080ad-0d8b-401a-b284-e3308341659a.pdf",
+      "domain": "d18rn0p25nwr6d.cloudfront.net",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23",
+      "title": "NVIDIA Corporation Form 8-K"
+    },
+    {
+      "id": "reuters-export-debate",
+      "url": "https://www.reuters.com/legal/government/jensen-huangs-return-nvidia-fuels-washington-fight-over-chinas-chip-access-2026-11-25/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-25",
+      "title": "Jensen Huang's return to Nvidia fuels Washington fight over China's chip access"
+    },
+    {
+      "id": "time-megaspeed-ownership",
+      "url": "https://time.com/article/2026/11/25/nvidia-megaspeed-china-investment/",
+      "domain": "time.com",
+      "organization": "Time",
+      "published_at": "2026-11-25",
+      "title": "The Red Flags Behind Nvidia Customer Megaspeed"
+    }
+  ]
+}

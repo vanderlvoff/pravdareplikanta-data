@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-26",
+  "issue_id": "daily-2026-11-26",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-25T21:13:38Z",
+  "title": "A robot rides to the twentieth floor",
+  "lead": "Engineers in South Korea tried using a lift to move building supplies with a robot. In another experiment, a robot arm missed a bowl and tried again.",
+  "news": [
+    {
+      "id": "gole-construction-lift-and-loading",
+      "title": "A robot took building supplies up a lift",
+      "summary": "South Korea's GoLe Robotics showed how its robot carried supplies at a hotel under construction. It entered the building from an outdoor area on the fifth floor and used a lift to reach the twentieth.",
+      "details": "At a meeting on November 25, GoLe Robotics showed the route a cargo robot took at a hotel in Jeongseon, South Korea. The trial itself was on October 28. The job was to move bags of building material from an outdoor loading point on the fifth floor to a lift lobby on the twentieth.",
+      "technical_novelty": "The robot first had to roll from outdoors into the building. Then it needed to call the lift.",
+      "engineering_impact": "Moving a load between floors required a separate device to connect the transport robot to the lift.",
+      "limitations": "The presentation gives planned time for the hotel trial and no success rate for automatic loading.",
+      "evidence_status": "Vendor presentation describing two field trials, one ongoing on the date of the report.",
+      "published_at": "2026-11-25",
+      "organization": "GoLe Robotics",
+      "source_ids": [
+        "gole-construction-presentation"
+      ],
+      "time_window": "24h",
+      "body": "At a meeting on November 25, GoLe Robotics showed the route a cargo robot took at a hotel in Jeongseon, South Korea. The trial itself was on October 28. The job was to move bags of building material from an outdoor loading point on the fifth floor to a lift lobby on the twentieth.\n\nThe robot first had to roll from outdoors into the building. Then it needed to call the lift. Engineers fitted a separate device to the lift to help the robot send that signal. The trial plan called for one hundred bags that each weighed 25 kilograms. The company gave a planned time for the job and did not report the actual travel time in that part of the presentation.\n\nA second site, in Gwangmyeong, poses another challenge. The robot has to get its load from a special station before the trip begins. That test was still underway when the company presented the two cases.",
+      "image": null
+    },
+    {
+      "id": "nottingham-screw-attention-bowl",
+      "title": "The robot missed the bowl, then tried again",
+      "summary": "A University of Nottingham researcher tested a program that guides a robot's gripper toward a bowl. With real robot arms, the program put the bowl on a plate in 21 out of 24 tries.",
+      "details": "Aly Magassouba at the University of Nottingham tested whether a robot arm could lift a bowl from a table and set it on a plate. He trained the program using a computer model of a robot arm, then tested it on two real arms. The positions of the bowl and the plate changed between attempts.",
+      "technical_novelty": "A gripper is the part of the robot arm that holds an object. The program gets told where the objects are and which way they face.",
+      "engineering_impact": "After a missed grasp, the program can plan another move using the new positions of the gripper and bowl.",
+      "limitations": "The real-world test measured one task: putting the bowl on the plate.",
+      "evidence_status": "Author-reported physical feasibility test in a preprint.",
+      "published_at": "2026-11-24",
+      "organization": "University of Nottingham",
+      "source_ids": [
+        "nottingham-screw-preprint"
+      ],
+      "time_window": "72h",
+      "body": "Aly Magassouba at the University of Nottingham tested whether a robot arm could lift a bowl from a table and set it on a plate. He trained the program using a computer model of a robot arm, then tested it on two real arms. The positions of the bowl and the plate changed between attempts.\n\nA gripper is the part of the robot arm that holds an object. The program gets told where the objects are and which way they face. If the bowl moves, the robot can send the gripper along a different path. If the gripper misses on the first move, the program can work out another move from where it is now.\n\nThe bowl ended up on the plate in 21 of 24 trials. Two successes started with a missed grasp and a second try. The researcher tested one task with a bowl and a plate. Other shapes would need their own trials.",
+      "image": null
+    },
+    {
+      "id": "omniact-robot-arm-transfer",
+      "title": "One program, two very different robot arms",
+      "summary": "Researchers at the University of Washington and elsewhere taught a program to choose moves from a description of a robot arm. On two real arms, the program picked up and moved an object successfully in 27 out of 40 tries.",
+      "details": "A research team led by the University of Washington built a program to help a robot pick up an object and set it down somewhere else. The team trained the program with robot arms inside a computer. Then the researchers tried it on two different real arms without giving the program extra practice on either machine.",
+      "technical_novelty": "A short arm and a long arm may bend differently to reach the same spot. The researchers told the program what parts each arm had and how they could move.",
+      "engineering_impact": "Supplying an arm’s structure lets the same program choose motions for arms that move differently.",
+      "limitations": "The physical experiment covered two arms and moved one object per trial.",
+      "evidence_status": "Research preprint reporting the authors’ physical laboratory trials.",
+      "published_at": "2026-11-24",
+      "organization": "University of Washington and collaborators",
+      "source_ids": [
+        "omniact-preprint"
+      ],
+      "time_window": "72h",
+      "body": "A research team led by the University of Washington built a program to help a robot pick up an object and set it down somewhere else. The team trained the program with robot arms inside a computer. Then the researchers tried it on two different real arms without giving the program extra practice on either machine.\n\nA short arm and a long arm may bend differently to reach the same spot. The researchers told the program what parts each arm had and how they could move. They made a million arm designs for computer training. In one real test the robot reached down to grab a cube. For a thin object it turned its wrist and came from the side.\n\nOne of the real arms succeeded in 14 of 20 tries. The other succeeded in 13 of 20. The team changed the starting point and the destination, but each attempt asked the robot to move just one object.",
+      "image": null
+    },
+    {
+      "id": "jizai-palmimo-tokyo-exhibit",
+      "title": "Wave to the little robot on the table",
+      "summary": "At an exhibition in Tokyo, Jizai has put out a tabletop robot that can respond when visitors wave or speak to it. The company plans to try software written by people at its developer events on the same machine.",
+      "details": "Jizai put a small robot on a table at an exhibition in Chiyoda, Tokyo. Since November 25, visitors have been able to talk to it or wave their hands. It can respond with sound or a movement. The company wants to use the exhibition to try new ways for the robot to interact with visitors.",
+      "technical_novelty": "A camera gives the program a picture of what is nearby. Microphones pick up voices, and a speaker lets the robot answer out loud.",
+      "engineering_impact": "Developers can change how the robot moves and answers using the same camera, speaker and legs.",
+      "limitations": "Public trials with apps from developer events are planned after checks of operation and safety.",
+      "evidence_status": "The exhibitor reported the opening and describes planned tests of new apps.",
+      "published_at": "2026-11-25",
+      "organization": "Jizai",
+      "source_ids": [
+        "jizai-palmimo-exhibit"
+      ],
+      "time_window": "24h",
+      "body": "Jizai put a small robot on a table at an exhibition in Chiyoda, Tokyo. Since November 25, visitors have been able to talk to it or wave their hands. It can respond with sound or a movement. The company wants to use the exhibition to try new ways for the robot to interact with visitors.\n\nA camera gives the program a picture of what is nearby. Microphones pick up voices, and a speaker lets the robot answer out loud. It also has a round screen and six legs. A new program could make it respond differently to the same greeting, while all of those parts stay in place.\n\nThe company has scheduled its first event for people who write programs on December 10. It plans to check the programs before putting them on the exhibit. For now, visitors can see what the software already on the machine does.",
+      "image": null
+    },
+    {
+      "id": "bis-megaspeed-entity-list-rule",
+      "title": "Some chip shipments will need an extra permit",
+      "summary": "The US Commerce Department added seven firms in Southeast Asia to its export control list. A shipment covered by US rules now needs a permit if one of those companies is involved.",
+      "details": "The US Commerce Department published a rule on November 25 about shipments involving seven companies in Singapore, Malaysia and Thailand. It put those companies on an export control list. Export controls are government rules for sending certain goods from one place to another. A shipment involving a company on the list can need a special permit.",
+      "technical_novelty": "Computing chips are parts that help computers do calculations quickly. Some of them help computers train programs for robots.",
+      "engineering_impact": "Licensing for covered shipments of computing equipment depends on which companies participate in the transaction.",
+      "limitations": "The rule concerns named firms and items covered by US export controls.",
+      "evidence_status": "Official export control rule, supplemented by separate Reuters and Time reporting.",
+      "published_at": "2026-11-25",
+      "organization": "U.S. Bureau of Industry and Security",
+      "source_ids": [
+        "bis-entity-list-amendment",
+        "nvidia-form-8k",
+        "reuters-export-debate",
+        "time-megaspeed-ownership"
+      ],
+      "time_window": "72h",
+      "body": "The US Commerce Department published a rule on November 25 about shipments involving seven companies in Singapore, Malaysia and Thailand. It put those companies on an export control list. Export controls are government rules for sending certain goods from one place to another. A shipment involving a company on the list can need a special permit.\n\nComputing chips are parts that help computers do calculations quickly. Some of them help computers train programs for robots. Between the factory that makes a chip and the company that uses it, there can be several sellers. That is why a rule about a shipment can depend on which companies are involved.\n\nOne of the seven companies is Megaspeed, based in Singapore. The department pointed to a risk that advanced equipment could be sent somewhere other than its intended destination. The rule tells suppliers which companies are on the list. It does not give a new price for computing chips.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "A delivery robot needs to call the lift",
+    "summary": "At a hotel under construction, GoLe Robotics tested a route from an outdoor loading area to the twentieth floor. Engineers attached a separate device to the lift.",
+    "implications": "At a second site, the company is testing whether a robot can get its load at a station before setting off."
+  },
+  "sources": [
+    {
+      "id": "gole-construction-presentation",
+      "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410",
+      "domain": "smartcona.co.kr",
+      "organization": "GoLe Robotics",
+      "published_at": "2026-11-25",
+      "title": "건설 자재운반 로봇 현장 실증 사례 — 정선 카지노호텔 · 광명 힐스테이트"
+    },
+    {
+      "id": "nottingham-screw-preprint",
+      "url": "https://arxiv.org/html/2611.32797v1",
+      "domain": "arxiv.org",
+      "organization": "University of Nottingham",
+      "published_at": "2026-11-24",
+      "title": "Supply Geometry, Learn Execution: Screw Attention for Zero-Shot Policy Transfer in Robot Manipulation"
+    },
+    {
+      "id": "omniact-preprint",
+      "url": "https://arxiv.org/abs/2611.33158",
+      "domain": "arxiv.org",
+      "organization": "University of Washington and collaborators",
+      "published_at": "2026-11-24",
+      "title": "OmniAct: One Policy, One Million Embodiments"
+    },
+    {
+      "id": "jizai-palmimo-exhibit",
+      "url": "https://prtimes.jp/main/html/rd/p/000000025.000145251.html",
+      "domain": "prtimes.jp",
+      "organization": "Jizai",
+      "published_at": "2026-11-25",
+      "title": "Jizai Begins Exhibiting Palmimo DevKit at Tokyo Innovation Base"
+    },
+    {
+      "id": "bis-entity-list-amendment",
+      "url": "https://public-inspection.federalregister.gov/2026-23999.pdf",
+      "domain": "public-inspection.federalregister.gov",
+      "organization": "U.S. Bureau of Industry and Security",
+      "published_at": "2026-11-23",
+      "title": "Additions to the Entity List"
+    },
+    {
+      "id": "nvidia-form-8k",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/d56080ad-0d8b-401a-b284-e3308341659a.pdf",
+      "domain": "d18rn0p25nwr6d.cloudfront.net",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23",
+      "title": "NVIDIA Corporation Form 8-K"
+    },
+    {
+      "id": "reuters-export-debate",
+      "url": "https://www.reuters.com/legal/government/jensen-huangs-return-nvidia-fuels-washington-fight-over-chinas-chip-access-2026-11-25/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-25",
+      "title": "Jensen Huang's return to Nvidia fuels Washington fight over China's chip access"
+    },
+    {
+      "id": "time-megaspeed-ownership",
+      "url": "https://time.com/article/2026/11/25/nvidia-megaspeed-china-investment/",
+      "domain": "time.com",
+      "organization": "Time",
+      "published_at": "2026-11-25",
+      "title": "The Red Flags Behind Nvidia Customer Megaspeed"
+    }
+  ]
+}
