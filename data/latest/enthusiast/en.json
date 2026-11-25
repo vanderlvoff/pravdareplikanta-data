@@ -2,177 +2,177 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-25",
-  "issue_id": "daily-2026-11-25",
+  "issue_date": "2026-11-26",
+  "issue_id": "daily-2026-11-26",
   "edition": "enthusiast",
   "language": "en",
-  "generated_at": "2026-11-25T06:12:05+09:00",
-  "title": "When should a robot correct its own move?",
-  "lead": "In a simulated kitchen, a Beijing research team tested whether software could spot a pan on the wrong burner and tell the robot to move it. Checking the result helped complete more tasks.",
+  "generated_at": "2026-11-25T21:13:38Z",
+  "title": "Finding a path to the bowl",
+  "lead": "A Nottingham researcher tested how a robot arm handles changes in where a bowl and plate are set down. At a Tokyo exhibit, visitors can see a tabletop robot respond to voices and gestures.",
   "news": [
     {
-      "id": "roboada-command-correction",
-      "title": "The object looks the same. The robot may need a different command.",
-      "summary": "Yunbei Zhang and colleagues tested how a robot could respond to a heavier load or a weaker arm in a computer simulation. Their method looks at the movement that already happened and adjusts the next command.",
-      "details": "The RoboAda authors tested command adaptation under changes in load, delay or actuator response in simulation.",
-      "technical_novelty": "The method compares observed movement with the reference robot’s response and adjusts the next group of commands.",
-      "engineering_impact": "The method sits around a trained controller and leaves its weights fixed.",
-      "limitations": "The simulated averages do not measure reliability on physical hardware.",
-      "evidence_status": "The authors reported the experimental protocol and numbers in a preprint.",
-      "published_at": "2026-11-23",
-      "organization": "Tulane University, New York University, Nanyang Technological University, MIT and Harvard University",
+      "id": "nottingham-screw-attention-bowl",
+      "title": "A compact controller uses geometry to move a bowl onto a plate",
+      "summary": "Aly Magassouba of the University of Nottingham published a robot control method that uses the position and orientation of objects to choose a gripper motion. After training in simulation, the controller completed 21 of 24 bowl placement trials on physical Franka Panda arms.",
+      "details": "A bowl can be moved across a table, but the gripper still needs a way to reach it. Aly Magassouba of the University of Nottingham trained a controller on one simulated arm and ran it on two physical Franka Panda arms. With the objects shifted between trials, the robots put the bowl on its plate 21 times in 24 attempts, including two that succeeded after a retry.",
+      "technical_novelty": "The program takes object positions and orientations as input. It works with the geometry of the objects relative to each other and to the gripper.",
+      "engineering_impact": "After a missed grasp, the program can plan another move using the new positions of the gripper and bowl.",
+      "limitations": "The real-world test measured one task: putting the bowl on the plate.",
+      "evidence_status": "Author-reported physical feasibility test in a preprint.",
+      "published_at": "2026-11-24",
+      "organization": "University of Nottingham",
       "source_ids": [
-        "roboada-paper"
+        "nottingham-screw-preprint"
       ],
       "time_window": "72h",
-      "body": "Yunbei Zhang and colleagues designed a way for robots to adjust to changes that their cameras cannot show. They simulated changes in the behaviour of a robot or the properties of an object, then checked whether adjusting the commands helped the robot finish. Their correction method is called RoboAda.\n\nAfter each group of commands, the method collects observations of how the simulated robot actually moved. A model of inverse dynamics estimates which commands the reference robot would have needed to produce that observed movement. The method then compares the estimate with the commands it sent. It uses that evidence to reweight hypotheses about the change in motion, including the possibility that the robot is responding normally. The result is a correction to the next group of commands.\n\nThe authors tested five trained controllers in LIBERO, a suite of simulated manipulation tasks, under eleven changes in physical conditions. Their average success rose from 27.8% to 62.9%. In a second simulator, RoboTwin 2.0, they tested two-armed tasks with systematic offsets in the target joint angles. Success there rose from 24.9% to 78.8%. Both results come from experiments with simulated robots.\n\nAn empty box can look like a full one, for example, but the difference matters the moment you start lifting. This method gets its clue after trying a movement. The motion it observes can reveal a mismatch between what was asked and what happened even before there is evidence about the object itself. The study does not show how reliable the correction would be with readings from noisy sensors on a physical robot.",
+      "body": "A bowl can be moved across a table, but the gripper still needs a way to reach it. Aly Magassouba of the University of Nottingham trained a controller on one simulated arm and ran it on two physical Franka Panda arms. With the objects shifted between trials, the robots put the bowl on its plate 21 times in 24 attempts, including two that succeeded after a retry.\n\nThe program takes object positions and orientations as input. It works with the geometry of the objects relative to each other and to the gripper. If the bowl is farther away or sits at a different angle, the controller can base its next movement on that difference. The method uses a screw representation, a way to describe rotation and translation together. Perception, the step that determines where objects are, supplies those inputs separately.\n\nThe real-world test supplied the same type of geometric scene description as the simulations. On a laptop CPU, computing a control action took 9 milliseconds in a system with a 50-millisecond control period. That timing concerns the controller itself. The accuracy of the upstream scene description remains important because an error there changes the relations from which the controller computes movement.\n\nWhen the first attempt misses the bowl, the relationship between the hand and the bowl changes. In two trials the program picked up the bowl on a second attempt and finished the job. The result so far covers one task with one kind of placement.",
       "image": null
     },
     {
-      "id": "bigwave-biped-automotive-line",
-      "title": "Ten metres from loading to stacking",
-      "summary": "Bigwave Robotics tested a walking humanoid at a South Korean automotive parts factory. It fed parts into a machine, walked to the outfeed and stacked the finished pieces.",
-      "details": "Bigwave Robotics reported an on-site trial of a bipedal robot at a South Korean automotive parts factory. The robot handled engine parts.",
-      "technical_novelty": "It exchanged work signals with the straightening machine’s controller and walked about ten metres to the outfeed.",
-      "engineering_impact": "The trial linked loading, walking and stacking to the cycle of existing equipment.",
-      "limitations": "The announcement gives no cycle count, line rate or performance over a shift.",
-      "evidence_status": "The supplier described the trial, and trade publication Robot News covered the company’s report.",
-      "published_at": "2026-11-24",
-      "organization": "Bigwave Robotics",
+      "id": "jizai-palmimo-tokyo-exhibit",
+      "title": "A tabletop robot opens to visitors and app developers in Tokyo",
+      "summary": "Jizai has put Palmimo DevKit, a programmable tabletop robot, on display at Tokyo Innovation Base. Visitors can talk or wave to it, and the company plans to run apps from developer events on the exhibit after checking operation and safety.",
+      "details": "At Tokyo Innovation Base in Chiyoda, visitors can wave to a small machine and watch how it answers. Jizai opened the free exhibit on November 25. It put a programmable tabletop robot called Palmimo DevKit on the first floor, where it plans to use the same hardware to test new ways of interacting with visitors.",
+      "technical_novelty": "The robot has a camera, a microphone array, a speaker, a round display and six legs. The camera and microphones give its software information about what is happening nearby, while the display, sound and motion allow it to respond.",
+      "engineering_impact": "Developers can change how the robot moves and answers using the same camera, speaker and legs.",
+      "limitations": "Public trials with apps from developer events are planned after checks of operation and safety.",
+      "evidence_status": "The exhibitor reported the opening and describes planned tests of new apps.",
+      "published_at": "2026-11-25",
+      "organization": "Jizai",
       "source_ids": [
-        "big-company",
-        "big-robotnews"
+        "jizai-palmimo-exhibit"
       ],
       "time_window": "24h",
-      "body": "Bigwave Robotics assigned a bipedal robot two jobs at an automotive supplier in South Korea. At one station it fed engine parts into a machine. At the other it picked them up after processing. The company tested whether one robot could walk between those places and do both jobs at the appropriate time.\n\nAccording to Bigwave, the robot picked up engine parts and fed them into a straightening machine, which corrects the shape of a part. Once the machine completed its operation, the robot walked about ten metres to the outfeed and stacked the finished parts on a transfer cart. It exchanged work signals with the machine’s programmable logic controller, an industrial computer that sequences the machine’s operations and coordinates signals with other equipment.\n\nThe company connected Hyper Foundry, its robotics software platform, to NVIDIA tools for simulation and training. In millions of simulated runs it trained walking through reinforcement learning, in which actions are selected based on feedback about results. For grasping it used examples of the desired movements, helped by a separate model that locates parts. The company then transferred what it had trained in simulation to the physical robot for the on-site trial.\n\nWalking the distance and turning up at the right time are distinct challenges. A simulation can provide practice at taking steps, but work on a real line depends on knowing where the machine is in its cycle. Signals from its controller supply that information. The company described the exchange and said it would release video. Its report leaves open how many complete sequences the robot performed without an operator stepping in.",
+      "body": "At Tokyo Innovation Base in Chiyoda, visitors can wave to a small machine and watch how it answers. Jizai opened the free exhibit on November 25. It put a programmable tabletop robot called Palmimo DevKit on the first floor, where it plans to use the same hardware to test new ways of interacting with visitors.\n\nThe robot has a camera, a microphone array, a speaker, a round display and six legs. The camera and microphones give its software information about what is happening nearby, while the display, sound and motion allow it to respond. Jizai publishes a software development kit for Python, a set of tools for writing programs for the robot. Programmers can change how the machine interacts with people while keeping the hardware in place.\n\nJizai scheduled its first developer event for December 10. The company plans to rotate applications on the exhibit after checking their operation and safety. A public setting will let developers observe whether a visitor understands the response without having read an instruction manual before approaching the table.\n\nA conversation and a little walk can come from the same hardware, depending on the program it is running. At the opening, visitors can see the behavior of the software already installed. Apps written at developer events are planned for later, after Jizai has reviewed them.",
       "image": null
     },
     {
-      "id": "gmo-robot-hand-competition-judges",
-      "title": "Five minutes to move beans one at a time",
-      "summary": "Organizers in Japan named five judges for a contest in which robotic hands will transfer roasted beans. Each team will use chopsticks or tweezers in a five-minute test.",
-      "details": "Organizers in Japan named five judges for a competition in which robotic hands will transfer roasted beans.",
-      "technical_novelty": "Teams can direct the hand remotely or have a trained program control it.",
-      "engineering_impact": "The shared task and time limit give teams a way to try different approaches to handling small objects.",
-      "limitations": "The final is scheduled for March 26, 2027. The announcement concerns the judges; there are no entrant results yet.",
-      "evidence_status": "The organizers published the judges, eligibility and dates.",
-      "published_at": "2026-11-20",
-      "organization": "GMO Internet Group, GMO AIR and Singularity Society",
+      "id": "gole-construction-lift-and-loading",
+      "title": "A construction robot took materials indoors and up a lift",
+      "summary": "South Korea's GoLe Robotics reported a construction-site trial at an industry meeting on November 25. The robot followed a route from an outdoor loading point on the fifth floor to a lift lobby on the twentieth, and the company described a second trial of automatic loading.",
+      "details": "GoLe Robotics used a November 25 South Korean construction industry meeting to present a practical question: how to get building materials from an outdoor loading point to a floor high inside a hotel. In a trial in Jeongseon on October 28, its transport robot used a route from an outdoor area on the fifth floor to the lift lobby on the twentieth. The route entered the building and used the lift.",
+      "technical_novelty": "Previously, the company had mainly carried boxed floor materials and tiles. The hotel trial plan called for one hundred sacks of dry building mix at 25 kilograms each.",
+      "engineering_impact": "Moving a load between floors required a separate device to connect the transport robot to the lift.",
+      "limitations": "The presentation gives planned time for the hotel trial and no success rate for automatic loading.",
+      "evidence_status": "Vendor presentation describing two field trials, one ongoing on the date of the report.",
+      "published_at": "2026-11-25",
+      "organization": "GoLe Robotics",
       "source_ids": [
-        "gmo-judges",
-        "gmo-rules-release"
+        "gole-construction-presentation"
       ],
-      "time_window": "7d",
-      "body": "GMO Internet Group and its partners announced the judges of a robot hand contest in Tokyo. The timed task sounds simple: move roasted beans one at a time from plate to plate. A robotic hand will have to hold chopsticks or tweezers and use them to pick up each bean accurately.\n\nGMO Internet Group, its robotics company GMO AIR and the Singularity Society announced the judges on November 20. The five include engineer and entrepreneur Satoshi Nakajima and Telexistence co-founder Motoki Sano. Contestants have five minutes to move roasted beans one at a time between plates using chopsticks or tweezers held by a robotic hand with several fingers. Both remote control by a person and control by a program trained in advance are permitted.\n\nThe prize pool totals ¥10 million. Applications close on December 18, 2026, and the final is scheduled for March 26, 2027, in Tokyo. The organizers offer participants access to equipment at a laboratory in Shibuya as well as tools for control and training. The rules allow teams to bring their own hand, so they can work on how it is built as well as how it is controlled.\n\nWith chopsticks there are two things to keep steady: the tool in the fingers and the bean between its tips. If one stick slips in the hand, the tips can drift apart even though the fingers were told to make the same motion. A person controlling the hand remotely and a program trained before the event approach the same problem differently. The competition rules apply a multiplier of 0.5 to remote-control scores and 1.0 to scores from hands that run without an operator.",
+      "time_window": "24h",
+      "body": "GoLe Robotics used a November 25 South Korean construction industry meeting to present a practical question: how to get building materials from an outdoor loading point to a floor high inside a hotel. In a trial in Jeongseon on October 28, its transport robot used a route from an outdoor area on the fifth floor to the lift lobby on the twentieth. The route entered the building and used the lift.\n\nPreviously, the company had mainly carried boxed floor materials and tiles. The hotel trial plan called for one hundred sacks of dry building mix at 25 kilograms each. The slides give about six hours as the planned duration including setup. A separate device attached to the lift handled lift calling and coordination. It was the company's first trial with the loading point outside the building.\n\nThe company also described a second site in Gwangmyeong, where it is working with a Hyundai Engineering & Construction robotics team. There, the test centers on loading the vehicle at a station without a worker helping. The schedule on the slides ran from November 2 to 27, extending beyond the day of the presentation.\n\nMoving the sacks between floors required the robot to reach and use the lift. The Gwangmyeong trial asks a different question before the wheels start moving: can the robot collect its load at a station without anyone placing it on the vehicle?",
       "image": null
     },
     {
-      "id": "innata-world-action-agent",
-      "title": "How a robot notices a pan on the wrong burner",
-      "summary": "Researchers at the Beijing Academy of Artificial Intelligence built a system that checks the outcome of a robot’s actions. In a simulated kitchen, it noticed a misplaced pan and directed the arm to move it.",
-      "details": "The Beijing Academy of Artificial Intelligence proposed a system that sequences robot actions and checks how the work is progressing.",
-      "technical_novelty": "In Innata-0, a model generates movements while separate software checks the observed result and calls a recovery routine when needed.",
-      "engineering_impact": "Adding that layer to the same motion model raised success from 60.2% to 65.4% on simulated kitchen tasks.",
-      "limitations": "The simulated result applies to a specific test suite. Transfer to other robots and settings needs separate testing.",
-      "evidence_status": "The authors documented their comparison and examples of recovery in a preprint.",
-      "published_at": "2026-11-23",
-      "organization": "Beijing Academy of Artificial Intelligence",
+      "id": "panasonic-robonext-control-and-safety",
+      "title": "Panasonic to demonstrate robot coordination and safety tools in Osaka",
+      "summary": "Panasonic Group has announced its program for the RoboNext trade show in Osaka on December 2–4. It plans to demonstrate control of multiple robots, collision assessment and software that generates sequences of robot actions.",
+      "details": "Panasonic Group plans to show how several robots can work under coordinated control and how users can assess their safety at RoboNext in Osaka. The program released on November 25 includes control software, simulation tools and emergency stopping equipment. The company says its December 2–4 exhibit will include demonstrations with physical robot arms and a simulation of collisions.",
+      "technical_novelty": "One part of the exhibit covers Robo Sync, a software platform for controlling and linking robots. Panasonic says visitors will see real robot arms in a demonstration of coordination and control.",
+      "engineering_impact": "Coordinating several robots and assessing their safety call for different tools.",
+      "limitations": "The show program does not specify how generated actions would be checked before they run on real machinery.",
+      "evidence_status": "Company announcement of planned trade show demonstrations.",
+      "published_at": "2026-11-25",
+      "organization": "Panasonic Group",
       "source_ids": [
-        "innata-paper"
+        "panasonic-osaka-program"
+      ],
+      "time_window": "24h",
+      "body": "Panasonic Group plans to show how several robots can work under coordinated control and how users can assess their safety at RoboNext in Osaka. The program released on November 25 includes control software, simulation tools and emergency stopping equipment. The company says its December 2–4 exhibit will include demonstrations with physical robot arms and a simulation of collisions.\n\nOne part of the exhibit covers Robo Sync, a software platform for controlling and linking robots. Panasonic says visitors will see real robot arms in a demonstration of coordination and control. A separate demonstration will cover generative AI, software that can produce new output from input conditions. Panasonic says it will use this technique to generate robot skills and scenarios, meaning individual actions and sequences for a robot to perform.\n\nThe safety section lists a collision simulator, services for evaluating robots that operate alongside people, and a wireless emergency stop device. Panasonic also lists a module for controlling a mobile robot, which it says meets IEC 62061. That technical standard sets out requirements for machinery control systems that carry out safety functions.\n\nCreating a new sequence of movements and assessing whether the machine may collide with something are two distinct engineering jobs. The company intends to display a collision simulator alongside its programs for coordinating robots, giving visitors a chance to see how those jobs differ.",
+      "image": null
+    },
+    {
+      "id": "bis-megaspeed-entity-list-rule",
+      "title": "US adds seven Southeast Asian firms to its export control list",
+      "summary": "The US Commerce Department published a rule on November 25 adding seven firms in Malaysia, Singapore and Thailand to a list that triggers extra export licensing requirements. It includes Singapore's Megaspeed, which Reuters and Time have linked to purchases of NVIDIA computing equipment.",
+      "details": "The US Bureau of Industry and Security added seven firms in three Southeast Asian countries to the Entity List, which triggers extra export controls when listed entities participate in covered transactions. The final rule was published on November 25. It names Megaspeed International in Singapore. In a filing with the US Securities and Exchange Commission, NVIDIA says its board reinstated Jensen Huang as chief executive on November 22.",
+      "technical_novelty": "The listings require a license for transactions involving the firms and items subject to US export rules. The published policy is a presumption of denial, meaning the review starts from the position that a license should be denied.",
+      "engineering_impact": "Licensing for covered shipments of computing equipment depends on which companies participate in the transaction.",
+      "limitations": "The rule concerns named firms and items covered by US export controls.",
+      "evidence_status": "Official export control rule, supplemented by separate Reuters and Time reporting.",
+      "published_at": "2026-11-25",
+      "organization": "U.S. Bureau of Industry and Security",
+      "source_ids": [
+        "bis-entity-list-amendment",
+        "nvidia-form-8k",
+        "reuters-export-debate",
+        "time-megaspeed-ownership"
       ],
       "time_window": "72h",
-      "body": "The Beijing Academy of Artificial Intelligence tested what happens when a robot has to check the outcome as well as move an object. In its simulated kitchen, an arm can grasp a pan successfully and still set it down on the wrong burner. In the system called Innata-0, separate software looks at the resulting scene and can call a recovery routine.\n\nIn Innata-0, a world-action model interprets the scene, predicts changes and generates movement commands. It gets the full instruction, the current subtask and a record of confirmed progress. The other component, which the researchers call an agent, organizes the steps and compares the observed scene after a movement with the intended result. When it detects a mismatch, it can invoke a recovery routine and then return to the original task.\n\nIn RoboCasa365, a collection of simulated kitchen tasks, the researchers compared two setups using the same movement model. Overall success reached 60.2% without the agent and 65.4% with it. For combinations of steps the model had not seen before, success rose from 32.4% to 43.6%. One example in the paper shows the system noticing a misplaced pan and moving it onto the intended burner.\n\nA pan’s position is something the program can inspect after a movement. In a task spanning several actions, it also has to keep track of the intended burner and which previous steps were finished. That information helps it decide whether to repeat a step or move on. If a camera cannot see the target area, or a needed condition cannot be judged visually, another way to check it would be needed. The study does not measure how often that happens outside its selected tasks.",
-      "image": null
-    },
-    {
-      "id": "amazon-decart-trainium-agreement",
-      "title": "Why Amazon wants software for its own AI chips",
-      "summary": "Amazon agreed to buy Decart technology that helps adapt computation to particular chips. The software could affect how developers train and run models used for robotics.",
-      "details": "Amazon signed an agreement to buy Decart’s optimization technology and said it plans to hire the founders and team.",
-      "technical_novelty": "The software helps map model computation to specific chips, including Amazon’s Trainium hardware.",
-      "engineering_impact": "The agreement is relevant to teams choosing computing platforms for training and running robotics models.",
-      "limitations": "Closing requires regulatory clearance. Amazon did not disclose financial terms or comparative benchmarks.",
-      "evidence_status": "Amazon announced the agreement. Reuters independently reported that the company declined to disclose the price.",
-      "published_at": "2026-11-23",
-      "organization": "Amazon and Decart",
-      "source_ids": [
-        "amazon-agreement",
-        "amazon-reuters"
-      ],
-      "time_window": "72h",
-      "body": "Amazon signed an agreement to acquire Decart technology. It helps programs that do a lot of computation run on different chips. Robotics developers use that kind of processing to learn from recordings of movements, for instance, and then to put the resulting model to work on new images from a camera.\n\nAmazon announced the signed agreement on November 23. It covers the technology behind the Decart Optimization Stack, software that matches the work a model does to the hardware doing the calculation. Amazon also plans to hire Decart’s three co-founders and its researchers and engineers. The teams have worked together since 2025 on Amazon’s Trainium computing chips. Amazon names world models, programs that learn to predict how a scene can change after an action, among the relevant workloads.\n\nAmazon did not disclose the price. Reuters reported that Bloomberg put it at about $7.5 billion, citing a person familiar with the deal. Amazon did not confirm that figure. The deal remains subject to customary closing conditions, including regulatory clearance. Amazon describes reducing cost and increasing speed as goals and did not publish a comparative benchmark for a specific robotics workload.\n\nThink of dividing a big calculation among several workers. Changing the equipment affects how many pieces can be done at once and how long it takes to pass intermediate answers around. In a chip, that work involves computing units and memory, with software deciding how to organize it. Amazon did not give a worked example that shows how much faster a particular robotics model could be trained after the planned acquisition.",
+      "body": "The US Bureau of Industry and Security added seven firms in three Southeast Asian countries to the Entity List, which triggers extra export controls when listed entities participate in covered transactions. The final rule was published on November 25. It names Megaspeed International in Singapore. In a filing with the US Securities and Exchange Commission, NVIDIA says its board reinstated Jensen Huang as chief executive on November 22.\n\nThe listings require a license for transactions involving the firms and items subject to US export rules. The published policy is a presumption of denial, meaning the review starts from the position that a license should be denied. The controls also cover specified reexports and transfers within a country. In projects that need computing equipment to train or test robot models, the obligations can therefore depend on the organizations involved in the supply chain and which one would receive the equipment.\n\nThe bureau cites the risk of advanced computing items being diverted. Time separately examined Megaspeed's historical ownership structure, while Reuters reported on the US debate over chip shipments following Huang's return. The rule sets out requirements for transactions involving the named firms. It contains no finding of personal liability against Huang.\n\nA chip can pass through several companies between the factory and the data center that uses it. The US rule names the companies that now trigger additional license requirements. It applies to those entities rather than every buyer in the three countries.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Checking the result between robot movements",
-    "summary": "The Beijing Academy of Artificial Intelligence compared two setups in a simulated kitchen. They used the same movement model, and success rose from 60.2% to 65.4% when verification and recovery were added.",
-    "implications": "The software compares what it sees with the instruction before moving on. A condition that cannot be judged from a camera image would need another way to be checked."
+    "title": "The arm chooses its motion from object positions",
+    "summary": "A University of Nottingham controller was given the positions and orientations of a bowl and plate. Physical robot arms succeeded in 21 out of 24 trials.",
+    "implications": "Two successful runs began with a missed grasp. The finding comes from a single task with a bowl and plate."
   },
   "sources": [
     {
-      "id": "roboada-paper",
-      "title": "RoboAda: Adapting Frozen Robot Policies at Test Time to Physics They Cannot See",
-      "url": "https://arxiv.org/html/2611.30209v1",
+      "id": "nottingham-screw-preprint",
+      "url": "https://arxiv.org/html/2611.32797v1",
       "domain": "arxiv.org",
-      "organization": "Yunbei Zhang et al.",
-      "published_at": "2026-11-23"
+      "organization": "University of Nottingham",
+      "published_at": "2026-11-24",
+      "title": "Supply Geometry, Learn Execution: Screw Attention for Zero-Shot Policy Transfer in Robot Manipulation"
     },
     {
-      "id": "big-company",
-      "title": "Bigwave Robotics Validates a Bipedal Humanoid on a Live Automotive Parts Line",
-      "url": "https://us.bigwaverobotics.com/investors/news/RKGuvR96jlmIkTbVccTq",
-      "domain": "us.bigwaverobotics.com",
-      "organization": "Bigwave Robotics",
-      "published_at": "2026-11-24"
+      "id": "jizai-palmimo-exhibit",
+      "url": "https://prtimes.jp/main/html/rd/p/000000025.000145251.html",
+      "domain": "prtimes.jp",
+      "organization": "Jizai",
+      "published_at": "2026-11-25",
+      "title": "Jizai Begins Exhibiting Palmimo DevKit at Tokyo Innovation Base"
     },
     {
-      "id": "big-robotnews",
-      "title": "빅웨이브로보틱스, 국내 최초 이족보행 휴머노이드 제조 현장 연계 공정 실증 성공",
-      "url": "https://www.irobotnews.com/news/articleView.html?idxno=49763",
-      "domain": "www.irobotnews.com",
-      "organization": "Robot News",
-      "published_at": "2026-11-24"
+      "id": "gole-construction-presentation",
+      "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410",
+      "domain": "smartcona.co.kr",
+      "organization": "GoLe Robotics",
+      "published_at": "2026-11-25",
+      "title": "건설 자재운반 로봇 현장 실증 사례 — 정선 카지노호텔 · 광명 힐스테이트"
     },
     {
-      "id": "gmo-judges",
-      "title": "第1回GMOロボットハンドコンテスト 審査員が決定",
-      "url": "https://ai-robotics.gmo/news/article/gmo-robot-hand-competition/",
-      "domain": "ai-robotics.gmo",
-      "organization": "GMO AI & Robotics Corporation",
-      "published_at": "2026-11-20"
+      "id": "panasonic-osaka-program",
+      "url": "https://prtimes.jp/main/html/rd/p/000006971.000003442.html",
+      "domain": "prtimes.jp",
+      "organization": "Panasonic Group",
+      "published_at": "2026-11-25",
+      "title": "パナソニックグループが「RoboNext2026」に出展"
     },
     {
-      "id": "gmo-rules-release",
-      "title": "第1回GMOロボットハンドコンテスト 審査員が決定：コンテスト概要・募集要項",
-      "url": "https://www.techno-edge.net/release/prtimes2/20261120/25483.html",
-      "domain": "www.techno-edge.net",
-      "organization": "GMO Internet Group",
-      "published_at": "2026-11-20"
+      "id": "bis-entity-list-amendment",
+      "url": "https://public-inspection.federalregister.gov/2026-23999.pdf",
+      "domain": "public-inspection.federalregister.gov",
+      "organization": "U.S. Bureau of Industry and Security",
+      "published_at": "2026-11-23",
+      "title": "Additions to the Entity List"
     },
     {
-      "id": "innata-paper",
-      "title": "Innata-0: A Native Embodied World System with Model-Agent Co-Design",
-      "url": "https://arxiv.org/html/2611.30254v1",
-      "domain": "arxiv.org",
-      "organization": "Innata Team",
-      "published_at": "2026-11-23"
+      "id": "nvidia-form-8k",
+      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/d56080ad-0d8b-401a-b284-e3308341659a.pdf",
+      "domain": "d18rn0p25nwr6d.cloudfront.net",
+      "organization": "NVIDIA",
+      "published_at": "2026-11-23",
+      "title": "NVIDIA Corporation Form 8-K"
     },
     {
-      "id": "amazon-agreement",
-      "title": "Amazon to purchase Decart’s AI optimization technology to advance chip and model innovation for customers",
-      "url": "https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization",
-      "domain": "www.aboutamazon.com",
-      "organization": "Amazon",
-      "published_at": "2026-11-23"
-    },
-    {
-      "id": "amazon-reuters",
-      "title": "Amazon to buy Decart’s AI chip optimization tech in latest AI talent grab",
-      "url": "https://www.reuters.com/business/retail-consumer/amazon-buy-decarts-ai-chip-optimization-tech-latest-ai-talent-grab-2026-11-23/",
+      "id": "reuters-export-debate",
+      "url": "https://www.reuters.com/legal/government/jensen-huangs-return-nvidia-fuels-washington-fight-over-chinas-chip-access-2026-11-25/",
       "domain": "www.reuters.com",
       "organization": "Reuters",
-      "published_at": "2026-11-23"
+      "published_at": "2026-11-25",
+      "title": "Jensen Huang's return to Nvidia fuels Washington fight over China's chip access"
+    },
+    {
+      "id": "time-megaspeed-ownership",
+      "url": "https://time.com/article/2026/11/25/nvidia-megaspeed-china-investment/",
+      "domain": "time.com",
+      "organization": "Time",
+      "published_at": "2026-11-25",
+      "title": "The Red Flags Behind Nvidia Customer Megaspeed"
     }
   ]
 }
