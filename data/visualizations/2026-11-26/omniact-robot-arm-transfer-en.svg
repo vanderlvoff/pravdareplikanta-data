@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 464" width="360" height="464" xml:lang="en" role="img" aria-labelledby="title desc">
+  <title id="title">One controller, two robot arms</title>
+  <desc id="desc">Successful transfers out of 20 trials / Franka Panda 14/20 / OpenYAM 13/20 / 27 out of 40 overall / One object transfer per trial. / No further training on either arm.</desc>
+  <rect x="0" y="0" width="360" height="464" rx="0" fill="#f6f7f2" stroke="none" stroke-width="1" data-qa-group="bg" id="g2"/>
+  <text x="24" y="32" fill="#116768" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="start" id="g3">OmniAct · trials on physical robots</text>
+  <text x="24" y="68" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g4">One controller,</text>
+  <text x="24" y="102" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g5">two robot arms</text>
+  <text x="26" y="144" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="15" font-weight="700" text-anchor="start" id="g6">Successful transfers out of 20 trials</text>
+  <text x="26" y="188" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" id="g7">Franka Panda</text>
+  <text x="298" y="188" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="end" id="g8">14/20</text>
+  <rect x="26" y="199" width="272" height="15" rx="0" fill="#dee7e2" stroke="none" stroke-width="1" data-qa-group="bar-0" id="g9"/>
+  <rect x="26" y="199" width="190.4" height="15" rx="0" fill="#116768" stroke="none" stroke-width="1" data-qa-group="bar-0" id="g10" data-value="14"/>
+  <text x="26" y="257" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" id="g11">OpenYAM</text>
+  <text x="298" y="257" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="end" id="g12">13/20</text>
+  <rect x="26" y="268" width="272" height="15" rx="0" fill="#dee7e2" stroke="none" stroke-width="1" data-qa-group="bar-1" id="g13"/>
+  <rect x="26" y="268" width="176.8" height="15" rx="0" fill="#116768" stroke="none" stroke-width="1" data-qa-group="bar-1" id="g14" data-value="13"/>
+  <line x1="26.0" y1="289" x2="26.0" y2="299" stroke="#40575b" stroke-width="1" data-qa-group="scale" id="g15"/>
+  <text x="26.0" y="316" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g16">0</text>
+  <line x1="94.0" y1="289" x2="94.0" y2="299" stroke="#40575b" stroke-width="1" data-qa-group="scale" id="g17"/>
+  <text x="94.0" y="316" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g18">5</text>
+  <line x1="162.0" y1="289" x2="162.0" y2="299" stroke="#40575b" stroke-width="1" data-qa-group="scale" id="g19"/>
+  <text x="162.0" y="316" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g20">10</text>
+  <line x1="230.0" y1="289" x2="230.0" y2="299" stroke="#40575b" stroke-width="1" data-qa-group="scale" id="g21"/>
+  <text x="230.0" y="316" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g22">15</text>
+  <line x1="298.0" y1="289" x2="298.0" y2="299" stroke="#40575b" stroke-width="1" data-qa-group="scale" id="g23"/>
+  <text x="298.0" y="316" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="middle" id="g24">20</text>
+  <text x="26" y="350" fill="#116768" font-family="Noto Sans, Arial, sans-serif" font-size="20" font-weight="700" text-anchor="start" id="g25">27 out of 40 overall</text>
+  <text x="24" y="382" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g26">One object transfer per trial.</text>
+  <text x="24" y="404" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g27">No further training on either arm.</text>
+  <text x="24" y="440" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g28">Source: OmniAct, Table 5</text>
+</svg>
