@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 478" width="360" height="478" xml:lang="en" role="img" aria-labelledby="title desc">
+  <title id="title">A robot rides the construction lift</title>
+  <desc id="desc">5th floor / Outdoor loading / Call device / on the lift / 20th floor / Lift lobby / Schematic route, not to scale.</desc>
+  <rect x="0" y="0" width="360" height="478" rx="0" fill="#f6f7f2" stroke="none" stroke-width="1" data-qa-group="bg" id="g2"/>
+  <text x="24" y="32" fill="#116768" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="start" id="g3">Jeongseon trial · October 28</text>
+  <text x="24" y="68" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g4">A robot rides</text>
+  <text x="24" y="102" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g5">the construction lift</text>
+  <text x="179" y="151" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" id="g6">20th floor</text>
+  <text x="179" y="174" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g7">Lift lobby</text>
+  <text x="199" y="334" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" id="g8">5th floor</text>
+  <text x="199" y="358" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g9">Outdoor loading</text>
+  <text x="183" y="247" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g10">Call device</text>
+  <text x="183" y="268" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g11">on the lift</text>
+  <rect x="72" y="144" width="86" height="244" rx="0" fill="#e8eeeb" stroke="#9caaaa" stroke-width="1" data-qa-group="cutaway" id="g12"/>
+  <rect x="92" y="144" width="46" height="244" rx="0" fill="#f1f4ee" stroke="#40575b" stroke-width="1" data-qa-group="cutaway" id="g13"/>
+  <line x1="158" y1="193" x2="331" y2="193" stroke="#40575b" stroke-width="2" data-qa-group="cutaway" id="g14"/>
+  <line x1="25" y1="388" x2="331" y2="388" stroke="#40575b" stroke-width="2" data-qa-group="cutaway" id="g15"/>
+  <line x1="158" y1="198" x2="163" y2="198" stroke="#9caaaa" stroke-width="1" data-qa-group="cutaway" id="g16"/>
+  <rect x="97" y="154" width="36" height="38" rx="0" fill="#fffefa" stroke="#116768" stroke-width="1.5" data-qa-group="cutaway" id="g17"/>
+  <line x1="115" y1="155" x2="115" y2="191" stroke="#9caaaa" stroke-width="1" data-qa-group="cutaway" id="g18"/>
+  <rect x="97" y="339" width="36" height="38" rx="0" fill="#fffefa" stroke="#116768" stroke-width="1.5" data-qa-group="cutaway" id="g19"/>
+  <line x1="115" y1="340" x2="115" y2="376" stroke="#9caaaa" stroke-width="1" data-qa-group="cutaway" id="g20"/>
+  <rect x="129" y="347" width="10" height="13" rx="2" fill="#f4d4ba" stroke="#9a4627" stroke-width="1.3" data-qa-group="cutaway" id="g21"/>
+  <path d="M139 354 H170 V246 H177" fill="none" stroke="#9a4627" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round" data-qa-group="cutaway" id="g22"/>
+  <path d="M69 379 H114 V184 H166" fill="none" stroke="#116768" stroke-width="3.1" stroke-linejoin="round" stroke-linecap="round" data-qa-group="cutaway" id="g23"/>
+  <circle cx="69" cy="379" r="4.6" fill="#fffefa" stroke="#116768" data-qa-group="cutaway" id="g24"/>
+  <circle cx="166" cy="184" r="4.6" fill="#fffefa" stroke="#116768" data-qa-group="cutaway" id="g25"/>
+  <rect x="30" y="361" width="36" height="12" rx="3" fill="#cde6e0" stroke="#116768" stroke-width="1" data-qa-group="cutaway" id="g26"/>
+  <rect x="36" y="353" width="24" height="7" rx="3" fill="#f4d4ba" stroke="#9a4627" stroke-width="1" data-qa-group="cutaway" id="g27"/>
+  <rect x="39" y="346" width="17" height="6" rx="3" fill="#f4d4ba" stroke="#9a4627" stroke-width="1" data-qa-group="cutaway" id="g28"/>
+  <circle cx="38" cy="376" r="4" fill="#116768" stroke="none" data-qa-group="cutaway" id="g29"/>
+  <circle cx="58" cy="376" r="4" fill="#116768" stroke="none" data-qa-group="cutaway" id="g30"/>
+  <text x="24" y="426" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g31">Schematic route, not to scale.</text>
+  <text x="24" y="454" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g32">Source: GoLe Robotics</text>
+</svg>
