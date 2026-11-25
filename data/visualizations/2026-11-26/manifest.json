@@ -1,0 +1,1350 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-26",
+  "visualizations": [
+    {
+      "issue_date": "2026-11-26",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "gole-construction-lift-and-loading",
+      "path": "data/visualizations/2026-11-26/gole-construction-lift-and-loading-en.svg",
+      "type": "route_section",
+      "caption": "A robot rides the construction lift",
+      "source_ids": [
+        "gole-construction-presentation"
+      ],
+      "sources": [
+        {
+          "id": "gole-construction-presentation",
+          "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410"
+        }
+      ],
+      "article_content_sha256": "83bd45446b3ca511504f23ab979b9e26f0fd7a8e6c8ad85368a8d5b7941d22cf",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 9,
+        "line": 5,
+        "path": 2,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "982b135263a69e591983a0f3dafb74411696d4d8"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "business",
+      "language": "en",
+      "news_id": "gole-construction-lift-and-loading",
+      "path": "data/visualizations/2026-11-26/gole-construction-lift-and-loading-en.svg",
+      "type": "route_section",
+      "caption": "A robot rides the construction lift",
+      "source_ids": [
+        "gole-construction-presentation"
+      ],
+      "sources": [
+        {
+          "id": "gole-construction-presentation",
+          "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410"
+        }
+      ],
+      "article_content_sha256": "cafabc7bb51eeb59cc980a672fe73a828a020a1870e1368a16f77f1854d34979",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 9,
+        "line": 5,
+        "path": 2,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "982b135263a69e591983a0f3dafb74411696d4d8"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "gole-construction-lift-and-loading",
+      "path": "data/visualizations/2026-11-26/gole-construction-lift-and-loading-en.svg",
+      "type": "route_section",
+      "caption": "A robot rides the construction lift",
+      "source_ids": [
+        "gole-construction-presentation"
+      ],
+      "sources": [
+        {
+          "id": "gole-construction-presentation",
+          "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410"
+        }
+      ],
+      "article_content_sha256": "6c1d10ce5213d182cbb0d02c0feba38aa76942f719e4f262a6b7fda2c2a28466",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 9,
+        "line": 5,
+        "path": 2,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "982b135263a69e591983a0f3dafb74411696d4d8"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "children",
+      "language": "en",
+      "news_id": "gole-construction-lift-and-loading",
+      "path": "data/visualizations/2026-11-26/gole-construction-lift-and-loading-en.svg",
+      "type": "route_section",
+      "caption": "A robot rides the construction lift",
+      "source_ids": [
+        "gole-construction-presentation"
+      ],
+      "sources": [
+        {
+          "id": "gole-construction-presentation",
+          "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410"
+        }
+      ],
+      "article_content_sha256": "801a9933bed9652c23be3128fcf244377e2bbac77cf88e16e193b7cb8744d051",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 9,
+        "line": 5,
+        "path": 2,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "982b135263a69e591983a0f3dafb74411696d4d8"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "gole-construction-lift-and-loading",
+      "path": "data/visualizations/2026-11-26/gole-construction-lift-and-loading-ja.svg",
+      "type": "route_section",
+      "caption": "建材を運ぶロボットと エレベーター",
+      "source_ids": [
+        "gole-construction-presentation"
+      ],
+      "sources": [
+        {
+          "id": "gole-construction-presentation",
+          "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410"
+        }
+      ],
+      "article_content_sha256": "ecad8cdeaecbfaae93d4fdb2f94f3e145a7a427833757a198073bbdcff92b8e8",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 9,
+        "line": 5,
+        "path": 2,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "1b5470708f1c286b8583df95fdf9bf580f7f3c14"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "gole-construction-lift-and-loading",
+      "path": "data/visualizations/2026-11-26/gole-construction-lift-and-loading-ja.svg",
+      "type": "route_section",
+      "caption": "建材を運ぶロボットと エレベーター",
+      "source_ids": [
+        "gole-construction-presentation"
+      ],
+      "sources": [
+        {
+          "id": "gole-construction-presentation",
+          "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410"
+        }
+      ],
+      "article_content_sha256": "89b92bdded43ced051aec80e9d87cce91cb2de841049dab199ae420757d34cc3",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 9,
+        "line": 5,
+        "path": 2,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "1b5470708f1c286b8583df95fdf9bf580f7f3c14"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "gole-construction-lift-and-loading",
+      "path": "data/visualizations/2026-11-26/gole-construction-lift-and-loading-ja.svg",
+      "type": "route_section",
+      "caption": "建材を運ぶロボットと エレベーター",
+      "source_ids": [
+        "gole-construction-presentation"
+      ],
+      "sources": [
+        {
+          "id": "gole-construction-presentation",
+          "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410"
+        }
+      ],
+      "article_content_sha256": "1dcb9b3fcaf87366935db4a45f5c1886abcb288970e5bb0e830bf0033f5dd64c",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 9,
+        "line": 5,
+        "path": 2,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "1b5470708f1c286b8583df95fdf9bf580f7f3c14"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "gole-construction-lift-and-loading",
+      "path": "data/visualizations/2026-11-26/gole-construction-lift-and-loading-ja.svg",
+      "type": "route_section",
+      "caption": "建材を運ぶロボットと エレベーター",
+      "source_ids": [
+        "gole-construction-presentation"
+      ],
+      "sources": [
+        {
+          "id": "gole-construction-presentation",
+          "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410"
+        }
+      ],
+      "article_content_sha256": "91e3c48d9077a0079e38df6d236d9bb57461a12d7ccd7ffef55ecc8654f197ef",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 9,
+        "line": 5,
+        "path": 2,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "1b5470708f1c286b8583df95fdf9bf580f7f3c14"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "gole-construction-lift-and-loading",
+      "path": "data/visualizations/2026-11-26/gole-construction-lift-and-loading-ru.svg",
+      "type": "route_section",
+      "caption": "Робот и строительный лифт",
+      "source_ids": [
+        "gole-construction-presentation"
+      ],
+      "sources": [
+        {
+          "id": "gole-construction-presentation",
+          "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410"
+        }
+      ],
+      "article_content_sha256": "0e18a777b8bd07d8551ddc90e24e2f6f3bf15761e5261080f4c92b40b69c4f1e",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 9,
+        "line": 5,
+        "path": 2,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "59a7f5925d1ab357e510c6de33e38b3319d81cac"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "gole-construction-lift-and-loading",
+      "path": "data/visualizations/2026-11-26/gole-construction-lift-and-loading-ru.svg",
+      "type": "route_section",
+      "caption": "Робот и строительный лифт",
+      "source_ids": [
+        "gole-construction-presentation"
+      ],
+      "sources": [
+        {
+          "id": "gole-construction-presentation",
+          "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410"
+        }
+      ],
+      "article_content_sha256": "5f846785535085fb1e2b8778aef0159a7c8336b1031bcad38f0a339bbb16366b",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 9,
+        "line": 5,
+        "path": 2,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "59a7f5925d1ab357e510c6de33e38b3319d81cac"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "gole-construction-lift-and-loading",
+      "path": "data/visualizations/2026-11-26/gole-construction-lift-and-loading-ru.svg",
+      "type": "route_section",
+      "caption": "Робот и строительный лифт",
+      "source_ids": [
+        "gole-construction-presentation"
+      ],
+      "sources": [
+        {
+          "id": "gole-construction-presentation",
+          "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410"
+        }
+      ],
+      "article_content_sha256": "e6b360f8534069183271ba3df4cafff06745a3f7b565be2a2b3e0f6d7bea0fa3",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 9,
+        "line": 5,
+        "path": 2,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "59a7f5925d1ab357e510c6de33e38b3319d81cac"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "gole-construction-lift-and-loading",
+      "path": "data/visualizations/2026-11-26/gole-construction-lift-and-loading-ru.svg",
+      "type": "route_section",
+      "caption": "Робот и строительный лифт",
+      "source_ids": [
+        "gole-construction-presentation"
+      ],
+      "sources": [
+        {
+          "id": "gole-construction-presentation",
+          "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410"
+        }
+      ],
+      "article_content_sha256": "825d5fc4b4fd5b681d45269fce32e75015ce7cab90df11ad658a8b5875551962",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 9,
+        "line": 5,
+        "path": 2,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "59a7f5925d1ab357e510c6de33e38b3319d81cac"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "nottingham-screw-attention-bowl",
+      "path": "data/visualizations/2026-11-26/nottingham-screw-attention-bowl-en.svg",
+      "type": "spatial_comparison",
+      "caption": "When the gripper misses the bowl",
+      "source_ids": [
+        "nottingham-screw-preprint"
+      ],
+      "sources": [
+        {
+          "id": "nottingham-screw-preprint",
+          "url": "https://arxiv.org/html/2611.32797v1"
+        }
+      ],
+      "article_content_sha256": "cf0a9a194efb98f169e280ca1aebb882f346a21a061eba0e273e7bc6c3bae9e3",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 10,
+        "rect": 4,
+        "line": 0,
+        "path": 1,
+        "circle": 8
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "1a03d7e84616ee7255750d5b8c8ef5f52514b951"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "nottingham-screw-attention-bowl",
+      "path": "data/visualizations/2026-11-26/nottingham-screw-attention-bowl-en.svg",
+      "type": "spatial_comparison",
+      "caption": "When the gripper misses the bowl",
+      "source_ids": [
+        "nottingham-screw-preprint"
+      ],
+      "sources": [
+        {
+          "id": "nottingham-screw-preprint",
+          "url": "https://arxiv.org/html/2611.32797v1"
+        }
+      ],
+      "article_content_sha256": "7beb358c09dc9e13574443cd3ff57c1ba462dab3dafcba310f96d22db3e9ae71",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 10,
+        "rect": 4,
+        "line": 0,
+        "path": 1,
+        "circle": 8
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "1a03d7e84616ee7255750d5b8c8ef5f52514b951"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "children",
+      "language": "en",
+      "news_id": "nottingham-screw-attention-bowl",
+      "path": "data/visualizations/2026-11-26/nottingham-screw-attention-bowl-en.svg",
+      "type": "spatial_comparison",
+      "caption": "When the gripper misses the bowl",
+      "source_ids": [
+        "nottingham-screw-preprint"
+      ],
+      "sources": [
+        {
+          "id": "nottingham-screw-preprint",
+          "url": "https://arxiv.org/html/2611.32797v1"
+        }
+      ],
+      "article_content_sha256": "dde159952474b87bf2c1f8d36429996c116caa88e77fc8738cd64d1cc84e4f4d",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 10,
+        "rect": 4,
+        "line": 0,
+        "path": 1,
+        "circle": 8
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "1a03d7e84616ee7255750d5b8c8ef5f52514b951"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "nottingham-screw-attention-bowl",
+      "path": "data/visualizations/2026-11-26/nottingham-screw-attention-bowl-ja.svg",
+      "type": "spatial_comparison",
+      "caption": "ボウルをつかみ そこねたら",
+      "source_ids": [
+        "nottingham-screw-preprint"
+      ],
+      "sources": [
+        {
+          "id": "nottingham-screw-preprint",
+          "url": "https://arxiv.org/html/2611.32797v1"
+        }
+      ],
+      "article_content_sha256": "ba451a1fd3c0bc6e4491a72878409e6df33e83f7c431a77d8371c2defabb0d4f",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 10,
+        "rect": 4,
+        "line": 0,
+        "path": 1,
+        "circle": 8
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular"
+      ],
+      "blob_sha": "7bc226daab651959be6ae4d637237a88cdf98fd4"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "nottingham-screw-attention-bowl",
+      "path": "data/visualizations/2026-11-26/nottingham-screw-attention-bowl-ja.svg",
+      "type": "spatial_comparison",
+      "caption": "ボウルをつかみ そこねたら",
+      "source_ids": [
+        "nottingham-screw-preprint"
+      ],
+      "sources": [
+        {
+          "id": "nottingham-screw-preprint",
+          "url": "https://arxiv.org/html/2611.32797v1"
+        }
+      ],
+      "article_content_sha256": "523aca65a3b0bac64dc571f2abbe59e2a61746b2cc5ac431bd31a656ca7fad1f",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 10,
+        "rect": 4,
+        "line": 0,
+        "path": 1,
+        "circle": 8
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular"
+      ],
+      "blob_sha": "7bc226daab651959be6ae4d637237a88cdf98fd4"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "nottingham-screw-attention-bowl",
+      "path": "data/visualizations/2026-11-26/nottingham-screw-attention-bowl-ja.svg",
+      "type": "spatial_comparison",
+      "caption": "ボウルをつかみ そこねたら",
+      "source_ids": [
+        "nottingham-screw-preprint"
+      ],
+      "sources": [
+        {
+          "id": "nottingham-screw-preprint",
+          "url": "https://arxiv.org/html/2611.32797v1"
+        }
+      ],
+      "article_content_sha256": "718b252efe8b60e09c1426aec485df03684b2704468f5d38627e1c0e9e6c41cf",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 10,
+        "rect": 4,
+        "line": 0,
+        "path": 1,
+        "circle": 8
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular"
+      ],
+      "blob_sha": "7bc226daab651959be6ae4d637237a88cdf98fd4"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "nottingham-screw-attention-bowl",
+      "path": "data/visualizations/2026-11-26/nottingham-screw-attention-bowl-ru.svg",
+      "type": "spatial_comparison",
+      "caption": "Если захват промахнулся",
+      "source_ids": [
+        "nottingham-screw-preprint"
+      ],
+      "sources": [
+        {
+          "id": "nottingham-screw-preprint",
+          "url": "https://arxiv.org/html/2611.32797v1"
+        }
+      ],
+      "article_content_sha256": "4e4861c3c6804168af78260ba3823f47d05c8afdb1a8ac757b85aee7467c4d5f",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 10,
+        "rect": 4,
+        "line": 0,
+        "path": 1,
+        "circle": 8
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "b2232e08c79dbeb37cfc35a01663f7860ea95626"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "nottingham-screw-attention-bowl",
+      "path": "data/visualizations/2026-11-26/nottingham-screw-attention-bowl-ru.svg",
+      "type": "spatial_comparison",
+      "caption": "Если захват промахнулся",
+      "source_ids": [
+        "nottingham-screw-preprint"
+      ],
+      "sources": [
+        {
+          "id": "nottingham-screw-preprint",
+          "url": "https://arxiv.org/html/2611.32797v1"
+        }
+      ],
+      "article_content_sha256": "30d81d9f3193059e4e96e3548cd7f4819dd3385cc400b71daa9ea27fe435cf5e",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 10,
+        "rect": 4,
+        "line": 0,
+        "path": 1,
+        "circle": 8
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "b2232e08c79dbeb37cfc35a01663f7860ea95626"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "nottingham-screw-attention-bowl",
+      "path": "data/visualizations/2026-11-26/nottingham-screw-attention-bowl-ru.svg",
+      "type": "spatial_comparison",
+      "caption": "Если захват промахнулся",
+      "source_ids": [
+        "nottingham-screw-preprint"
+      ],
+      "sources": [
+        {
+          "id": "nottingham-screw-preprint",
+          "url": "https://arxiv.org/html/2611.32797v1"
+        }
+      ],
+      "article_content_sha256": "df4a257fbcce44bb4604138b1c646eb4d2048298f56e26ed2d611fdc2760ae2d",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 10,
+        "rect": 4,
+        "line": 0,
+        "path": 1,
+        "circle": 8
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "b2232e08c79dbeb37cfc35a01663f7860ea95626"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "omniact-robot-arm-transfer",
+      "path": "data/visualizations/2026-11-26/omniact-robot-arm-transfer-en.svg",
+      "type": "bar_chart",
+      "caption": "One controller, two robot arms",
+      "source_ids": [
+        "omniact-preprint"
+      ],
+      "sources": [
+        {
+          "id": "omniact-preprint",
+          "url": "https://arxiv.org/abs/2611.33158"
+        }
+      ],
+      "article_content_sha256": "f5b48ea22b104b8956978e5024cbc941ded30e929cde70b50f43e61281d48778",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 5,
+        "line": 5,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "1826adbf08f7896ad6a4bed977acab4bd823c37f"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "business",
+      "language": "en",
+      "news_id": "omniact-robot-arm-transfer",
+      "path": "data/visualizations/2026-11-26/omniact-robot-arm-transfer-en.svg",
+      "type": "bar_chart",
+      "caption": "One controller, two robot arms",
+      "source_ids": [
+        "omniact-preprint"
+      ],
+      "sources": [
+        {
+          "id": "omniact-preprint",
+          "url": "https://arxiv.org/abs/2611.33158"
+        }
+      ],
+      "article_content_sha256": "9b093e2f6ce92f1174f62ea273ce100faf66c191e48e861599b629279091dc9d",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 5,
+        "line": 5,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "1826adbf08f7896ad6a4bed977acab4bd823c37f"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "children",
+      "language": "en",
+      "news_id": "omniact-robot-arm-transfer",
+      "path": "data/visualizations/2026-11-26/omniact-robot-arm-transfer-en.svg",
+      "type": "bar_chart",
+      "caption": "One controller, two robot arms",
+      "source_ids": [
+        "omniact-preprint"
+      ],
+      "sources": [
+        {
+          "id": "omniact-preprint",
+          "url": "https://arxiv.org/abs/2611.33158"
+        }
+      ],
+      "article_content_sha256": "37f7b625da8de78c4650df1eb483252cc36c84f4a693989d570791a8d9fe00d1",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 5,
+        "line": 5,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "1826adbf08f7896ad6a4bed977acab4bd823c37f"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "omniact-robot-arm-transfer",
+      "path": "data/visualizations/2026-11-26/omniact-robot-arm-transfer-ja.svg",
+      "type": "bar_chart",
+      "caption": "一つのプログラムで 二台のロボットアーム",
+      "source_ids": [
+        "omniact-preprint"
+      ],
+      "sources": [
+        {
+          "id": "omniact-preprint",
+          "url": "https://arxiv.org/abs/2611.33158"
+        }
+      ],
+      "article_content_sha256": "42bba9b8093bd6b02e25e968f78f750f0553965c25f929cfcccf219f5ce64b36",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 5,
+        "line": 5,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "8392489c8e73c6e2ad78013f20a10afe15a20411"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "omniact-robot-arm-transfer",
+      "path": "data/visualizations/2026-11-26/omniact-robot-arm-transfer-ja.svg",
+      "type": "bar_chart",
+      "caption": "一つのプログラムで 二台のロボットアーム",
+      "source_ids": [
+        "omniact-preprint"
+      ],
+      "sources": [
+        {
+          "id": "omniact-preprint",
+          "url": "https://arxiv.org/abs/2611.33158"
+        }
+      ],
+      "article_content_sha256": "6b9d6d625393470a054ebcd70dab89fd48e60572e4c826ad91cd1c2d399b97b0",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 5,
+        "line": 5,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "8392489c8e73c6e2ad78013f20a10afe15a20411"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "omniact-robot-arm-transfer",
+      "path": "data/visualizations/2026-11-26/omniact-robot-arm-transfer-ja.svg",
+      "type": "bar_chart",
+      "caption": "一つのプログラムで 二台のロボットアーム",
+      "source_ids": [
+        "omniact-preprint"
+      ],
+      "sources": [
+        {
+          "id": "omniact-preprint",
+          "url": "https://arxiv.org/abs/2611.33158"
+        }
+      ],
+      "article_content_sha256": "82ec3879e6580ebfd9e3653a7d135abfb84605a4cc5277e24f719ca4c646dddd",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 5,
+        "line": 5,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "8392489c8e73c6e2ad78013f20a10afe15a20411"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "omniact-robot-arm-transfer",
+      "path": "data/visualizations/2026-11-26/omniact-robot-arm-transfer-ru.svg",
+      "type": "bar_chart",
+      "caption": "Одна программа, две роборуки",
+      "source_ids": [
+        "omniact-preprint"
+      ],
+      "sources": [
+        {
+          "id": "omniact-preprint",
+          "url": "https://arxiv.org/abs/2611.33158"
+        }
+      ],
+      "article_content_sha256": "37ebe6444e205fac2280b9077c253a0073a5630ca2400cdbba80f75de31ab0d3",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 5,
+        "line": 5,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "798009cb132e24f746fb117a61083d42a0d49283"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "omniact-robot-arm-transfer",
+      "path": "data/visualizations/2026-11-26/omniact-robot-arm-transfer-ru.svg",
+      "type": "bar_chart",
+      "caption": "Одна программа, две роборуки",
+      "source_ids": [
+        "omniact-preprint"
+      ],
+      "sources": [
+        {
+          "id": "omniact-preprint",
+          "url": "https://arxiv.org/abs/2611.33158"
+        }
+      ],
+      "article_content_sha256": "6748002b0c87fb4a8bed84925e9d7c5e46d683452b567092116edb2b19ca2bae",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 5,
+        "line": 5,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "798009cb132e24f746fb117a61083d42a0d49283"
+    },
+    {
+      "issue_date": "2026-11-26",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "omniact-robot-arm-transfer",
+      "path": "data/visualizations/2026-11-26/omniact-robot-arm-transfer-ru.svg",
+      "type": "bar_chart",
+      "caption": "Одна программа, две роборуки",
+      "source_ids": [
+        "omniact-preprint"
+      ],
+      "sources": [
+        {
+          "id": "omniact-preprint",
+          "url": "https://arxiv.org/abs/2611.33158"
+        }
+      ],
+      "article_content_sha256": "b38bcb7f67e277147827cf9d975c86f186ac355dc3e6f3d82f469aba2d5362c7",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 17,
+        "rect": 5,
+        "line": 5,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "798009cb132e24f746fb117a61083d42a0d49283"
+    }
+  ]
+}
