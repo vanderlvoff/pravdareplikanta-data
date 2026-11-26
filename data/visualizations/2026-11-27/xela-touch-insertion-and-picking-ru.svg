@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 565" width="360" height="565" xml:lang="ru" role="img" aria-labelledby="title desc">
+  <title id="title">Где роборуке помогает осязание</title>
+  <desc id="desc">Штекер упирается в край / Сигнал: растёт сопротивление. / Действие: поправить положение. / Винт скользит в захвате / Сигнал: винт сдвигается. / Действие: изменить силу захвата. / Показан принцип работы.</desc>
+  <rect x="0" y="0" width="360" height="565" rx="0" fill="#f6f7f2" stroke="none" stroke-width="1" data-qa-group="bg" id="g2"/>
+  <text x="24" y="32" fill="#116768" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="start" id="g3">Сценарии применения · XELA Robotics</text>
+  <text x="24" y="68" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g4">Где роборуке</text>
+  <text x="24" y="102" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g5">помогает осязание</text>
+  <text x="24" y="147" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" id="g6">Штекер упирается в край</text>
+  <text x="24" y="272" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g7">Сигнал: растёт сопротивление.</text>
+  <text x="24" y="293" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g8">Действие: поправить положение.</text>
+  <text x="24" y="343" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="17" font-weight="700" text-anchor="start" id="g9">Винт скользит в захвате</text>
+  <text x="24" y="466" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g10">Сигнал: винт сдвигается.</text>
+  <text x="24" y="487" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g11">Действие: изменить силу захвата.</text>
+  <path d="M201 179 H317 V200 H201 Z M201 220 H317 V242 H201 Z" fill="#cde6e0" stroke="#116768" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round" data-qa-group="section-a" id="g12"/>
+  <line x1="212" y1="199" x2="222" y2="180" stroke="#9caaaa" stroke-width="1" data-qa-group="section-a" id="g13"/>
+  <line x1="212" y1="241" x2="222" y2="221" stroke="#9caaaa" stroke-width="1" data-qa-group="section-a" id="g14"/>
+  <line x1="227" y1="199" x2="237" y2="180" stroke="#9caaaa" stroke-width="1" data-qa-group="section-a" id="g15"/>
+  <line x1="227" y1="241" x2="237" y2="221" stroke="#9caaaa" stroke-width="1" data-qa-group="section-a" id="g16"/>
+  <line x1="242" y1="199" x2="252" y2="180" stroke="#9caaaa" stroke-width="1" data-qa-group="section-a" id="g17"/>
+  <line x1="242" y1="241" x2="252" y2="221" stroke="#9caaaa" stroke-width="1" data-qa-group="section-a" id="g18"/>
+  <line x1="257" y1="199" x2="267" y2="180" stroke="#9caaaa" stroke-width="1" data-qa-group="section-a" id="g19"/>
+  <line x1="257" y1="241" x2="267" y2="221" stroke="#9caaaa" stroke-width="1" data-qa-group="section-a" id="g20"/>
+  <line x1="272" y1="199" x2="282" y2="180" stroke="#9caaaa" stroke-width="1" data-qa-group="section-a" id="g21"/>
+  <line x1="272" y1="241" x2="282" y2="221" stroke="#9caaaa" stroke-width="1" data-qa-group="section-a" id="g22"/>
+  <line x1="287" y1="199" x2="297" y2="180" stroke="#9caaaa" stroke-width="1" data-qa-group="section-a" id="g23"/>
+  <line x1="287" y1="241" x2="297" y2="221" stroke="#9caaaa" stroke-width="1" data-qa-group="section-a" id="g24"/>
+  <line x1="302" y1="199" x2="312" y2="180" stroke="#9caaaa" stroke-width="1" data-qa-group="section-a" id="g25"/>
+  <line x1="302" y1="241" x2="312" y2="221" stroke="#9caaaa" stroke-width="1" data-qa-group="section-a" id="g26"/>
+  <path d="M54 184 L163 191 L163 199 L200 201 L199 211 L162 209 L162 217 L54 211 Z" fill="#f4d4ba" stroke="#9a4627" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" data-qa-group="section-a" id="g27"/>
+  <line x1="35" y1="197" x2="53" y2="197" stroke="#40575b" stroke-width="3" data-qa-group="section-a" id="g28"/>
+  <circle cx="201" cy="200" r="9" fill="none" stroke="#9a4627" data-qa-group="section-a" id="g29"/>
+  <circle cx="201" cy="200" r="3" fill="#9a4627" stroke="none" data-qa-group="section-a" id="g30"/>
+  <path d="M85 367 H133 V393 H172 V427 H133 V443 H85 Z M275 367 H227 V393 H188 V427 H227 V443 H275 Z" fill="#cde6e0" stroke="#116768" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round" data-qa-group="section-b" id="g31"/>
+  <rect x="167" y="399" width="6" height="21" rx="0" fill="#116768" stroke="none" stroke-width="1" data-qa-group="section-b" id="g32"/>
+  <rect x="187" y="399" width="6" height="21" rx="0" fill="#116768" stroke="none" stroke-width="1" data-qa-group="section-b" id="g33"/>
+  <path d="M162 374 H198 V386 H188 V430 L180 442 L172 430 V386 H162 Z" fill="#f4d4ba" stroke="#9a4627" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" data-qa-group="section-b" id="g34"/>
+  <line x1="173" y1="397" x2="187" y2="393" stroke="#9a4627" stroke-width="1" data-qa-group="section-b" id="g35"/>
+  <line x1="173" y1="403" x2="187" y2="399" stroke="#9a4627" stroke-width="1" data-qa-group="section-b" id="g36"/>
+  <line x1="173" y1="409" x2="187" y2="405" stroke="#9a4627" stroke-width="1" data-qa-group="section-b" id="g37"/>
+  <line x1="173" y1="415" x2="187" y2="411" stroke="#9a4627" stroke-width="1" data-qa-group="section-b" id="g38"/>
+  <line x1="173" y1="421" x2="187" y2="417" stroke="#9a4627" stroke-width="1" data-qa-group="section-b" id="g39"/>
+  <line x1="173" y1="427" x2="187" y2="423" stroke="#9a4627" stroke-width="1" data-qa-group="section-b" id="g40"/>
+  <line x1="171" y1="380" x2="189" y2="380" stroke="#9a4627" stroke-width="1" data-qa-group="section-b" id="g41"/>
+  <circle cx="189" cy="410" r="9" fill="none" stroke="#9a4627" data-qa-group="section-b" id="g42"/>
+  <text x="24" y="521" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g43">Показан принцип работы.</text>
+  <text x="24" y="541" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g44">Источник: XELA Robotics</text>
+</svg>
