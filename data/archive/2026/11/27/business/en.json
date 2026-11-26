@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-27",
+  "issue_id": "daily-2026-11-27",
+  "edition": "business",
+  "language": "en",
+  "generated_at": "2026-11-26T21:13:18Z",
+  "title": "From ordering equipment to testing it on site",
+  "lead": "Amada and Hitachi plan customer trials of a factory assistant. Separately, the Financial Times reported a halt to some server shipments to Southeast Asia.",
+  "news": [
+    {
+      "id": "nvidia-ft-server-shipment-pause",
+      "title": "FT reports pause in NVIDIA server shipments to four countries",
+      "summary": "The Financial Times reported that NVIDIA told partners to suspend shipments of servers containing its chips to Malaysia, Singapore, Thailand and Indonesia. Reuters relayed the report and requested comment from NVIDIA, Dell and Supermicro. The duration remained unclear.",
+      "details": "The Financial Times reported on November 26 that NVIDIA had told manufacturing partners to stop shipping servers containing its chips to Malaysia, Singapore, Thailand and Indonesia. Such chips serve as accelerators, components that speed up calculations for demanding workloads such as model training. The FT cited three people familiar with the matter. Reuters relayed its account and sought comment from NVIDIA, Dell and Supermicro. The companies did not immediately respond.",
+      "technical_novelty": "The Financial Times described a reported halt at the stage where NVIDIA partners ship complete servers.",
+      "engineering_impact": "A delayed configuration can move the start date for work scheduled around that server.",
+      "limitations": "The report does not give a duration, a count of orders or a list of affected configurations.",
+      "evidence_status": "Financial Times reporting based on people familiar with the matter. Reuters relayed it and received no immediate reply from the companies.",
+      "published_at": "2026-11-26",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "ft-nvidia-server-report",
+        "reuters-nvidia-server-report"
+      ],
+      "time_window": "24h",
+      "body": "The Financial Times reported on November 26 that NVIDIA had told manufacturing partners to stop shipping servers containing its chips to Malaysia, Singapore, Thailand and Indonesia. Such chips serve as accelerators, components that speed up calculations for demanding workloads such as model training. The FT cited three people familiar with the matter. Reuters relayed its account and sought comment from NVIDIA, Dell and Supermicro. The companies did not immediately respond.\n\nSuppliers such as Dell and Supermicro assemble chips and other components into complete servers for customers. According to the FT, manufacturing partners told buyers in the four countries that NVIDIA would not allow their orders to ship. The reporting does not count affected orders or specify which server configurations and delivery dates were involved.\n\nThe report came after US export licensing changes and separate action on firms placed on an export control list. A report about how suppliers are handling orders adds a different piece of information: some customers were said to have been told that an order would not ship. A delayed delivery can alter the timeline for a project that depends on that particular server.\n\nThe unanswered question for a buyer is whether a specific order can still be delivered under its contract. The FT did not establish how long the reported pause would last, and the companies had given Reuters no immediate public response.",
+      "image": null
+    },
+    {
+      "id": "amada-hitachi-factory-assistant-poc",
+      "title": "Amada and Hitachi test a factory planning and maintenance assistant",
+      "summary": "Amada and Hitachi reported completing a proof of concept for software that suggests changes to factory schedules and helps diagnose machine problems. They plan to try the assistant at selected customer plants and develop a way to tie its recommendations to equipment control.",
+      "details": "One factory machine can be the subject of two very different decisions: when to schedule work on it, and what to do when it fails. On November 26, Amada and Hitachi reported a trial that addressed both. Their software suggested production changes after a deadline moved and helped trace faults. The companies plan to take the assistant to selected customers next.",
+      "technical_novelty": "The assistant suggests changes after a deadline moves and proposes checks for a faulty machine.",
+      "engineering_impact": "Amada and Hitachi plan to connect the assistant’s recommendations to equipment control.",
+      "limitations": "The companies have yet to publish results from customer sites or measured repair times.",
+      "evidence_status": "Joint company announcement of a proof of concept without quantitative results.",
+      "published_at": "2026-11-26",
+      "organization": "Amada and Hitachi",
+      "source_ids": [
+        "amada-hitachi-release"
+      ],
+      "time_window": "24h",
+      "body": "One factory machine can be the subject of two very different decisions: when to schedule work on it, and what to do when it fails. On November 26, Amada and Hitachi reported a trial that addressed both. Their software suggested production changes after a deadline moved and helped trace faults. The companies plan to take the assistant to selected customers next.\n\nIn the factory test, the software suggested ways to use machines and software, helped adjust production plans and proposed causes, checks and remedies for faults. The service test asked whether it could work from accumulated knowledge on complex cases without an existing example. The companies report that the program suggested ways to restore operation. They give no count of cases, accuracy rate or measured time savings.\n\nAmada already operates V-factory, a service that connects production equipment so that operating data can be collected. The company says more than 10,000 machines are connected worldwide. That count describes the existing service. Amada also opened an area called MIRAI factory in its own demonstration centre in November, where it presents its plans for future factory operations.\n\nTrials with selected customers will need to show how recommendations fit into the work of planners and maintenance staff. The announcement leaves key commercial questions open, including how much downtime the software can save and what it costs to connect to a customer's machines.",
+      "image": null
+    },
+    {
+      "id": "bleckmann-two-humanoids-warehouse-training",
+      "title": "Bleckmann buys two humanoid robots for a warehouse trial",
+      "summary": "European logistics operator Bleckmann says it has invested in two humanoid robots for distribution centres. It plans to train them on warehouse work and collect data on how they carry it out.",
+      "details": "Bleckmann is buying two humanoids to learn what operating the machines would involve for a logistics business. The company announced the investment in Eindhoven on November 24. It expects the robots at selected European distribution centres in the coming weeks, then plans to use training on warehouse work to gather records for future machines.",
+      "technical_novelty": "The machines have cameras, laser distance sensors and software that builds a map while tracking their position.",
+      "engineering_impact": "Bleckmann plans to collect data as it teaches the two machines to move items and pick orders.",
+      "limitations": "The operator did not name the first sites or publish warehouse performance figures.",
+      "evidence_status": "Operator announcement of the purchase and plans for training after delivery.",
+      "published_at": "2026-11-24",
+      "organization": "Bleckmann",
+      "source_ids": [
+        "bleckmann-warehouse-release"
+      ],
+      "time_window": "72h",
+      "body": "Bleckmann is buying two humanoids to learn what operating the machines would involve for a logistics business. The company announced the investment in Eindhoven on November 24. It expects the robots at selected European distribution centres in the coming weeks, then plans to use training on warehouse work to gather records for future machines.\n\nPotential jobs include moving items and picking goods for orders. Bleckmann describes a voice interface that translates spoken instructions into physical actions. For moving through corridors, it lists cameras, laser distance sensors and software that builds a map while estimating where the robot is on it. The distance sensors can measure how far away surrounding objects are. The map helps the control software relate those observations to the robot's position as it moves.\n\nBleckmann handles logistics for fashion and lifestyle brands. It says investment in its wider automation programme has already exceeded $600 million, including systems in existing warehouses. The operator did not disclose a purchase price for the two humanoids or identify the centres where delivery is expected.\n\nTwo machines give the operator a way to learn what training and support cost before a larger commitment. Bleckmann has yet to publish the price, the planned duration of training or a throughput target for any of the new machines.",
+      "image": null
+    },
+    {
+      "id": "embo-seed-world-model",
+      "title": "Embo raises $110 million to train a controller for unfamiliar situations",
+      "summary": "Embo announced $110 million in seed funding led by Andreessen Horowitz. The startup plans to train a robot controller on internet video, experience from humanoid robots and practice in simulated situations.",
+      "details": "Embo announced on November 23 that it had raised $110 million in an early funding round led by venture capital firm Andreessen Horowitz. The startup is developing a robot controller intended to choose actions in situations the machine has not encountered before. It describes three sources of training: internet video, experience recorded with its own humanoid robots and practice in simulated settings.",
+      "technical_novelty": "Embo plans to learn from video predictions, robot motion records and computer practice.",
+      "engineering_impact": "The training would connect predictions of what objects will do to choices about how a robot should move.",
+      "limitations": "Embo has yet to publish success rates on unfamiliar tasks.",
+      "evidence_status": "The company announced funding and a development plan. It did not publish controller performance.",
+      "published_at": "2026-11-23",
+      "organization": "Embo",
+      "source_ids": [
+        "embo-introduction",
+        "tsn-embo-seed"
+      ],
+      "time_window": "7d",
+      "body": "Embo announced on November 23 that it had raised $110 million in an early funding round led by venture capital firm Andreessen Horowitz. The startup is developing a robot controller intended to choose actions in situations the machine has not encountered before. It describes three sources of training: internet video, experience recorded with its own humanoid robots and practice in simulated settings.\n\nThe first part uses a world model, a program that learns to predict how a scene might change. It could learn from video that moving a hand against an object may move the object as well. Embo wants the model to learn such relationships by predicting how a video continues. The company then plans to refine movements using experience from its own robots. Further training would give the model feedback about which movements succeed in simulated situations. Learning from the outcome of a chosen action is called reinforcement learning.\n\nEmbo named Khosla Ventures, DST Global and NVIDIA among the other participants in the round. Its announcement confirms the financing and sets out how it intends to build the controller. TSN also reported the funding. Embo did not release a test suite, counts of successful trials or the amount of physical robot experience already collected.\n\nThe funding backs work on both physical data collection and the computing infrastructure needed to train the model. A buyer cannot yet compare how much training would be needed for a new operation or how reliably the controller would perform it.",
+      "image": null
+    },
+    {
+      "id": "xela-touch-insertion-and-picking",
+      "title": "A robot hand could sense resistance as it inserts a connector",
+      "summary": "Tokyo-based XELA Robotics outlined uses for touch sensors in assembly and small-parts picking. During insertion, the sensors can report resistance and shifts that would be hard to see with a camera alone.",
+      "details": "A small misalignment during assembly can become a damaged part. On November 25, Tokyo's XELA Robotics described a way to use sensors on a robot hand to detect resistance before damage occurs. The company also described a warehouse use for the sensors, where the item at risk might be a screw hidden inside a gripper rather than a connector being inserted.",
+      "technical_novelty": "Sensors on the hand measure contact and detect insertion resistance or signs of slipping.",
+      "engineering_impact": "A controller can use the readings to reposition a connector or adjust the grip on a small part.",
+      "limitations": "The release reports no damage rate or direct comparison with a camera-only system.",
+      "evidence_status": "The sensor vendor described use cases and did not publish comparative test results.",
+      "published_at": "2026-11-25",
+      "organization": "XELA Robotics",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "time_window": "72h",
+      "body": "A small misalignment during assembly can become a damaged part. On November 25, Tokyo's XELA Robotics described a way to use sensors on a robot hand to detect resistance before damage occurs. The company also described a warehouse use for the sensors, where the item at risk might be a screw hidden inside a gripper rather than a connector being inserted.\n\nWhen a connector catches on the edge of a socket, the resistance to insertion can change. XELA proposes measuring that resistance and using the reading to adjust the position of the part. The company describes a different problem in warehouse picking: the jaws of a gripper can hide a small item such as a screw once they close. The proposed approach monitors the contact and looks for the start of slipping, so the grip can be adjusted before the item drops.\n\nXELA also describes using measurements from multiple points on a humanoid hand, across the fingers and palm. The software can receive a distribution of pressure and information about sideways forces at the surface. The vendor's examples include fitting a memory module to a circuit board and picking small parts in a warehouse.\n\nA customer could tie acceptance tests to present rates of assembly damage and dropped parts. The vendor has not published operating results from regular production or the cost of integrating the sensors with a buyer’s equipment.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "A factory assistant moves toward customer trials",
+    "summary": "Amada and Hitachi tested software that suggests changes to production schedules and diagnoses possible causes of machine faults.",
+    "implications": "Trials at customer sites can measure time savings and reveal the work needed to connect to existing equipment."
+  },
+  "sources": [
+    {
+      "id": "ft-nvidia-server-report",
+      "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370",
+      "domain": "www.ft.com",
+      "organization": "Financial Times",
+      "published_at": "2026-11-26",
+      "title": "Nvidia halts chip shipments to south-east Asia"
+    },
+    {
+      "id": "reuters-nvidia-server-report",
+      "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/",
+      "domain": "www.reuters.com",
+      "organization": "Reuters",
+      "published_at": "2026-11-26",
+      "title": "Nvidia halts server shipments to four Southeast Asian countries, FT reports"
+    },
+    {
+      "id": "amada-hitachi-release",
+      "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf",
+      "domain": "www.amada.co.jp",
+      "organization": "Amada and Hitachi",
+      "published_at": "2026-11-26",
+      "title": "アマダと日立、AIエージェントとフィジカルAIの実装により、お客さま工場の自律化に向けた協創を加速"
+    },
+    {
+      "id": "bleckmann-warehouse-release",
+      "url": "https://www.bleckmann.com/uploads/press-downloads/Press-release-EN-Bleckmann-introduces-humanoids-into-operations-26.pdf",
+      "domain": "www.bleckmann.com",
+      "organization": "Bleckmann",
+      "published_at": "2026-11-24",
+      "title": "Bleckmann introduces humanoid robots into its operations"
+    },
+    {
+      "id": "embo-introduction",
+      "url": "https://embo.com/introducing-embo",
+      "domain": "embo.com",
+      "organization": "Embo",
+      "published_at": "2026-11-23",
+      "title": "Introducing Embo"
+    },
+    {
+      "id": "tsn-embo-seed",
+      "url": "https://tsnmedia.org/embo-110m-seed-a16z-robot-brain/",
+      "domain": "tsnmedia.org",
+      "organization": "TSN",
+      "published_at": "2026-11-24",
+      "title": "Embo Raises a $110m Seed Led by a16z for a World-Model Robot Brain"
+    },
+    {
+      "id": "xela-tactile-use-cases",
+      "url": "https://kyodonewsprwire.jp/release/202611250970",
+      "domain": "kyodonewsprwire.jp",
+      "organization": "XELA Robotics",
+      "published_at": "2026-11-25",
+      "title": "XELA Robotics、視覚だけでは困難な作業を可能にする、フィジカルAIによる触覚ソリューションを提案"
+    }
+  ]
+}
