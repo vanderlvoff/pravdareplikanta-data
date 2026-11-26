@@ -1,0 +1,1346 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-27",
+  "visualizations": [
+    {
+      "issue_date": "2026-11-27",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "amada-hitachi-factory-assistant-poc",
+      "path": "data/visualizations/2026-11-27/amada-hitachi-factory-assistant-poc-en.svg",
+      "type": "process_comparison",
+      "caption": "From advice to machine control",
+      "source_ids": [
+        "amada-hitachi-release"
+      ],
+      "sources": [
+        {
+          "id": "amada-hitachi-release",
+          "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf"
+        }
+      ],
+      "article_content_sha256": "05fe7182f1ab64684af6c0f58236af736c338ff6b03b64891d4486eb89b79ce8",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 1,
+        "line": 2,
+        "path": 0,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "81f90844a2bdd5c97a5ba80deb1bff3a10a0729f"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "business",
+      "language": "en",
+      "news_id": "amada-hitachi-factory-assistant-poc",
+      "path": "data/visualizations/2026-11-27/amada-hitachi-factory-assistant-poc-en.svg",
+      "type": "process_comparison",
+      "caption": "From advice to machine control",
+      "source_ids": [
+        "amada-hitachi-release"
+      ],
+      "sources": [
+        {
+          "id": "amada-hitachi-release",
+          "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf"
+        }
+      ],
+      "article_content_sha256": "17d536c43e2f786473a487439c33467aea72ab94a35ce2893239322b92cb9c0a",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 1,
+        "line": 2,
+        "path": 0,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "81f90844a2bdd5c97a5ba80deb1bff3a10a0729f"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "amada-hitachi-factory-assistant-poc",
+      "path": "data/visualizations/2026-11-27/amada-hitachi-factory-assistant-poc-en.svg",
+      "type": "process_comparison",
+      "caption": "From advice to machine control",
+      "source_ids": [
+        "amada-hitachi-release"
+      ],
+      "sources": [
+        {
+          "id": "amada-hitachi-release",
+          "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf"
+        }
+      ],
+      "article_content_sha256": "c262895fd01a5dda936349230a4a73793402f5c1512723f6e23d5e5bf17683cc",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 1,
+        "line": 2,
+        "path": 0,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "81f90844a2bdd5c97a5ba80deb1bff3a10a0729f"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "children",
+      "language": "en",
+      "news_id": "amada-hitachi-factory-assistant-poc",
+      "path": "data/visualizations/2026-11-27/amada-hitachi-factory-assistant-poc-en.svg",
+      "type": "process_comparison",
+      "caption": "From advice to machine control",
+      "source_ids": [
+        "amada-hitachi-release"
+      ],
+      "sources": [
+        {
+          "id": "amada-hitachi-release",
+          "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf"
+        }
+      ],
+      "article_content_sha256": "2413748b3752942b00f7b70864c3bfe9c838d451a2798c9c8452c4e93ef69416",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 1,
+        "line": 2,
+        "path": 0,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "81f90844a2bdd5c97a5ba80deb1bff3a10a0729f"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "amada-hitachi-factory-assistant-poc",
+      "path": "data/visualizations/2026-11-27/amada-hitachi-factory-assistant-poc-ja.svg",
+      "type": "process_comparison",
+      "caption": "工場への提案から 機械の制御へ",
+      "source_ids": [
+        "amada-hitachi-release"
+      ],
+      "sources": [
+        {
+          "id": "amada-hitachi-release",
+          "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf"
+        }
+      ],
+      "article_content_sha256": "a12ae1be8c4235fe214d0db10da84135de32f1756dd8062723f2da3f41da1112",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 1,
+        "line": 2,
+        "path": 0,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "379b9ca0614859970b5df6750d9c534ebc4dedcd"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "amada-hitachi-factory-assistant-poc",
+      "path": "data/visualizations/2026-11-27/amada-hitachi-factory-assistant-poc-ja.svg",
+      "type": "process_comparison",
+      "caption": "工場への提案から 機械の制御へ",
+      "source_ids": [
+        "amada-hitachi-release"
+      ],
+      "sources": [
+        {
+          "id": "amada-hitachi-release",
+          "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf"
+        }
+      ],
+      "article_content_sha256": "cd357bc83233780a1eb8b745b7ab633ba199810d57e732a452ad63625820b563",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 1,
+        "line": 2,
+        "path": 0,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "379b9ca0614859970b5df6750d9c534ebc4dedcd"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "amada-hitachi-factory-assistant-poc",
+      "path": "data/visualizations/2026-11-27/amada-hitachi-factory-assistant-poc-ja.svg",
+      "type": "process_comparison",
+      "caption": "工場への提案から 機械の制御へ",
+      "source_ids": [
+        "amada-hitachi-release"
+      ],
+      "sources": [
+        {
+          "id": "amada-hitachi-release",
+          "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf"
+        }
+      ],
+      "article_content_sha256": "77abecdf388216ad25fa9bb3ac30e65705ce1a2f0403600f76a1acdc09f19872",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 1,
+        "line": 2,
+        "path": 0,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "379b9ca0614859970b5df6750d9c534ebc4dedcd"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "amada-hitachi-factory-assistant-poc",
+      "path": "data/visualizations/2026-11-27/amada-hitachi-factory-assistant-poc-ja.svg",
+      "type": "process_comparison",
+      "caption": "工場への提案から 機械の制御へ",
+      "source_ids": [
+        "amada-hitachi-release"
+      ],
+      "sources": [
+        {
+          "id": "amada-hitachi-release",
+          "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf"
+        }
+      ],
+      "article_content_sha256": "34fc0efa732de04e0e8c956fe758ce9bc861ed7a770662949c8fffe99fb8137b",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 1,
+        "line": 2,
+        "path": 0,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "379b9ca0614859970b5df6750d9c534ebc4dedcd"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "amada-hitachi-factory-assistant-poc",
+      "path": "data/visualizations/2026-11-27/amada-hitachi-factory-assistant-poc-ru.svg",
+      "type": "process_comparison",
+      "caption": "От подсказок к управлению станками",
+      "source_ids": [
+        "amada-hitachi-release"
+      ],
+      "sources": [
+        {
+          "id": "amada-hitachi-release",
+          "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf"
+        }
+      ],
+      "article_content_sha256": "fa97460049ddafdf206de27e8fd037471ecef1738f771840b88ab1735c903f6d",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 1,
+        "line": 2,
+        "path": 0,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "744aa6b34646a18edeac8b36b97b86424feadfe7"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "amada-hitachi-factory-assistant-poc",
+      "path": "data/visualizations/2026-11-27/amada-hitachi-factory-assistant-poc-ru.svg",
+      "type": "process_comparison",
+      "caption": "От подсказок к управлению станками",
+      "source_ids": [
+        "amada-hitachi-release"
+      ],
+      "sources": [
+        {
+          "id": "amada-hitachi-release",
+          "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf"
+        }
+      ],
+      "article_content_sha256": "c7567ea2de1814ae83fd33b8c25bc81c7b74e441f07c30ec5ec2699b2d41c775",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 1,
+        "line": 2,
+        "path": 0,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "744aa6b34646a18edeac8b36b97b86424feadfe7"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "amada-hitachi-factory-assistant-poc",
+      "path": "data/visualizations/2026-11-27/amada-hitachi-factory-assistant-poc-ru.svg",
+      "type": "process_comparison",
+      "caption": "От подсказок к управлению станками",
+      "source_ids": [
+        "amada-hitachi-release"
+      ],
+      "sources": [
+        {
+          "id": "amada-hitachi-release",
+          "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf"
+        }
+      ],
+      "article_content_sha256": "5e93a964a9ac2e06ee1fe9f94261009d86484f07536c2302550293d178cba7bc",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 1,
+        "line": 2,
+        "path": 0,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "744aa6b34646a18edeac8b36b97b86424feadfe7"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "amada-hitachi-factory-assistant-poc",
+      "path": "data/visualizations/2026-11-27/amada-hitachi-factory-assistant-poc-ru.svg",
+      "type": "process_comparison",
+      "caption": "От подсказок к управлению станками",
+      "source_ids": [
+        "amada-hitachi-release"
+      ],
+      "sources": [
+        {
+          "id": "amada-hitachi-release",
+          "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf"
+        }
+      ],
+      "article_content_sha256": "17c526a6ca7550fed8bce820a0445648b84cdd941a92362fe20531985b1e7464",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 16,
+        "rect": 1,
+        "line": 2,
+        "path": 0,
+        "circle": 4
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "744aa6b34646a18edeac8b36b97b86424feadfe7"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "roboarc-spatial-manipulation-puzzles",
+      "path": "data/visualizations/2026-11-27/roboarc-spatial-manipulation-puzzles-en.svg",
+      "type": "classification_matrix",
+      "caption": "Six challenges for a robot arm",
+      "source_ids": [
+        "roboarc-preprint"
+      ],
+      "sources": [
+        {
+          "id": "roboarc-preprint",
+          "url": "https://arxiv.org/html/2611.33390v1"
+        }
+      ],
+      "article_content_sha256": "a648e39bef80c79317415da0291c367544620022fd528f27a8b7fba15a22df09",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 14,
+        "rect": 3,
+        "line": 4,
+        "path": 5,
+        "circle": 1
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "e05228f683f7b1b295efa923798fc61cc2741b7b"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "roboarc-spatial-manipulation-puzzles",
+      "path": "data/visualizations/2026-11-27/roboarc-spatial-manipulation-puzzles-en.svg",
+      "type": "classification_matrix",
+      "caption": "Six challenges for a robot arm",
+      "source_ids": [
+        "roboarc-preprint"
+      ],
+      "sources": [
+        {
+          "id": "roboarc-preprint",
+          "url": "https://arxiv.org/html/2611.33390v1"
+        }
+      ],
+      "article_content_sha256": "acdcc6653b9944d5562d146605f371e44783b0b427a555f51a5bbb992b7376a7",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 14,
+        "rect": 3,
+        "line": 4,
+        "path": 5,
+        "circle": 1
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "e05228f683f7b1b295efa923798fc61cc2741b7b"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "roboarc-spatial-manipulation-puzzles",
+      "path": "data/visualizations/2026-11-27/roboarc-spatial-manipulation-puzzles-ja.svg",
+      "type": "classification_matrix",
+      "caption": "ロボットの手を 動かす六つの課題",
+      "source_ids": [
+        "roboarc-preprint"
+      ],
+      "sources": [
+        {
+          "id": "roboarc-preprint",
+          "url": "https://arxiv.org/html/2611.33390v1"
+        }
+      ],
+      "article_content_sha256": "13d03f29ebb04799e504d5b7903b1fb5c3f3e5f7619e6c39a47fca60223f331b",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 3,
+        "line": 4,
+        "path": 5,
+        "circle": 1
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "cef7c9372af10adb194f6306ba7be6530c8de127"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "roboarc-spatial-manipulation-puzzles",
+      "path": "data/visualizations/2026-11-27/roboarc-spatial-manipulation-puzzles-ja.svg",
+      "type": "classification_matrix",
+      "caption": "ロボットの手を 動かす六つの課題",
+      "source_ids": [
+        "roboarc-preprint"
+      ],
+      "sources": [
+        {
+          "id": "roboarc-preprint",
+          "url": "https://arxiv.org/html/2611.33390v1"
+        }
+      ],
+      "article_content_sha256": "30da5652563a0f5a592fa9c8cc18954d7d73ea67a93281738570c8d827d80c98",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 12,
+        "rect": 3,
+        "line": 4,
+        "path": 5,
+        "circle": 1
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "cef7c9372af10adb194f6306ba7be6530c8de127"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "roboarc-spatial-manipulation-puzzles",
+      "path": "data/visualizations/2026-11-27/roboarc-spatial-manipulation-puzzles-ru.svg",
+      "type": "classification_matrix",
+      "caption": "Что усложняет движение робота",
+      "source_ids": [
+        "roboarc-preprint"
+      ],
+      "sources": [
+        {
+          "id": "roboarc-preprint",
+          "url": "https://arxiv.org/html/2611.33390v1"
+        }
+      ],
+      "article_content_sha256": "1016a4a08b2003023a54e7ec54c0f1532c5aba972adeb8acb74c41f981687b93",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 15,
+        "rect": 3,
+        "line": 4,
+        "path": 5,
+        "circle": 1
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "a524d26441ca64b10963e5d786fb68ca593fb77d"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "roboarc-spatial-manipulation-puzzles",
+      "path": "data/visualizations/2026-11-27/roboarc-spatial-manipulation-puzzles-ru.svg",
+      "type": "classification_matrix",
+      "caption": "Что усложняет движение робота",
+      "source_ids": [
+        "roboarc-preprint"
+      ],
+      "sources": [
+        {
+          "id": "roboarc-preprint",
+          "url": "https://arxiv.org/html/2611.33390v1"
+        }
+      ],
+      "article_content_sha256": "20fc785e7b31de29055adc14dc689c37df8ad0ebfd39c99579f61494f93892e5",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 15,
+        "rect": 3,
+        "line": 4,
+        "path": 5,
+        "circle": 1
+      },
+      "render_fonts": [
+        "NotoSans-Regular",
+        "NotoSans-Bold",
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "a524d26441ca64b10963e5d786fb68ca593fb77d"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "xela-touch-insertion-and-picking",
+      "path": "data/visualizations/2026-11-27/xela-touch-insertion-and-picking-en.svg",
+      "type": "spatial_comparison",
+      "caption": "What a robot hand can feel",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "sources": [
+        {
+          "id": "xela-tactile-use-cases",
+          "url": "https://kyodonewsprwire.jp/release/202611250970"
+        }
+      ],
+      "article_content_sha256": "d801b7e8290464470b23ca9742a3f8f3f67c510d9981ea03e6b355114e39be86",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 3,
+        "line": 22,
+        "path": 4,
+        "circle": 3
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "7c3c1810c4d2612c6a89be923b28e4f3fda2d1dd"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "business",
+      "language": "en",
+      "news_id": "xela-touch-insertion-and-picking",
+      "path": "data/visualizations/2026-11-27/xela-touch-insertion-and-picking-en.svg",
+      "type": "spatial_comparison",
+      "caption": "What a robot hand can feel",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "sources": [
+        {
+          "id": "xela-tactile-use-cases",
+          "url": "https://kyodonewsprwire.jp/release/202611250970"
+        }
+      ],
+      "article_content_sha256": "5d857b631638018626e0cd9147693e5beb59c7d622d324d1d734909866c19900",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 3,
+        "line": 22,
+        "path": 4,
+        "circle": 3
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "7c3c1810c4d2612c6a89be923b28e4f3fda2d1dd"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "xela-touch-insertion-and-picking",
+      "path": "data/visualizations/2026-11-27/xela-touch-insertion-and-picking-en.svg",
+      "type": "spatial_comparison",
+      "caption": "What a robot hand can feel",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "sources": [
+        {
+          "id": "xela-tactile-use-cases",
+          "url": "https://kyodonewsprwire.jp/release/202611250970"
+        }
+      ],
+      "article_content_sha256": "d470630769b42e2b8ccf800e16e2e580782c8fa092bdb73d11cb400d18b85d4d",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 3,
+        "line": 22,
+        "path": 4,
+        "circle": 3
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "7c3c1810c4d2612c6a89be923b28e4f3fda2d1dd"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "children",
+      "language": "en",
+      "news_id": "xela-touch-insertion-and-picking",
+      "path": "data/visualizations/2026-11-27/xela-touch-insertion-and-picking-en.svg",
+      "type": "spatial_comparison",
+      "caption": "What a robot hand can feel",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "sources": [
+        {
+          "id": "xela-tactile-use-cases",
+          "url": "https://kyodonewsprwire.jp/release/202611250970"
+        }
+      ],
+      "article_content_sha256": "262b30b9d660e935b414b988be5efc3dd776ae4b5d61bf17b450582ac71b4f4c",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 3,
+        "line": 22,
+        "path": 4,
+        "circle": 3
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular"
+      ],
+      "blob_sha": "7c3c1810c4d2612c6a89be923b28e4f3fda2d1dd"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "xela-touch-insertion-and-picking",
+      "path": "data/visualizations/2026-11-27/xela-touch-insertion-and-picking-ja.svg",
+      "type": "spatial_comparison",
+      "caption": "ロボットの手が 接触を感じ取る",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "sources": [
+        {
+          "id": "xela-tactile-use-cases",
+          "url": "https://kyodonewsprwire.jp/release/202611250970"
+        }
+      ],
+      "article_content_sha256": "a904f911899556cac3e96b79f8ff0ccba2f92c19208d2a272fb29d3f81b6f0ea",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 3,
+        "line": 22,
+        "path": 4,
+        "circle": 3
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "28ae95a8407f48f1159d73eb115e679b6e8131d6"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "xela-touch-insertion-and-picking",
+      "path": "data/visualizations/2026-11-27/xela-touch-insertion-and-picking-ja.svg",
+      "type": "spatial_comparison",
+      "caption": "ロボットの手が 接触を感じ取る",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "sources": [
+        {
+          "id": "xela-tactile-use-cases",
+          "url": "https://kyodonewsprwire.jp/release/202611250970"
+        }
+      ],
+      "article_content_sha256": "755b83357095a968c55af70185fbe4460d01a2d442a1904ecae8f4c8f9e2e6ca",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 3,
+        "line": 22,
+        "path": 4,
+        "circle": 3
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "28ae95a8407f48f1159d73eb115e679b6e8131d6"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "xela-touch-insertion-and-picking",
+      "path": "data/visualizations/2026-11-27/xela-touch-insertion-and-picking-ja.svg",
+      "type": "spatial_comparison",
+      "caption": "ロボットの手が 接触を感じ取る",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "sources": [
+        {
+          "id": "xela-tactile-use-cases",
+          "url": "https://kyodonewsprwire.jp/release/202611250970"
+        }
+      ],
+      "article_content_sha256": "60b58959ba82994b0df82f478704657e9b5260ba18810008822e06ac8716f0d2",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 3,
+        "line": 22,
+        "path": 4,
+        "circle": 3
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "28ae95a8407f48f1159d73eb115e679b6e8131d6"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "xela-touch-insertion-and-picking",
+      "path": "data/visualizations/2026-11-27/xela-touch-insertion-and-picking-ja.svg",
+      "type": "spatial_comparison",
+      "caption": "ロボットの手が 接触を感じ取る",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "sources": [
+        {
+          "id": "xela-tactile-use-cases",
+          "url": "https://kyodonewsprwire.jp/release/202611250970"
+        }
+      ],
+      "article_content_sha256": "ee75763f48afada17f0ced6f520302658aecf3f94de82b3b5bfaf1aeabd74fa7",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 3,
+        "line": 22,
+        "path": 4,
+        "circle": 3
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Regular",
+        "NotoSansCJKjp-Bold"
+      ],
+      "blob_sha": "28ae95a8407f48f1159d73eb115e679b6e8131d6"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "xela-touch-insertion-and-picking",
+      "path": "data/visualizations/2026-11-27/xela-touch-insertion-and-picking-ru.svg",
+      "type": "spatial_comparison",
+      "caption": "Где роборуке помогает осязание",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "sources": [
+        {
+          "id": "xela-tactile-use-cases",
+          "url": "https://kyodonewsprwire.jp/release/202611250970"
+        }
+      ],
+      "article_content_sha256": "4bd5bab647c925f9c71211d4ab1cea161f0cd7bd809423055dd9e718db29323d",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 3,
+        "line": 22,
+        "path": 4,
+        "circle": 3
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "07bad44d4acc5a0f390306919a164499c15e3a57"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "xela-touch-insertion-and-picking",
+      "path": "data/visualizations/2026-11-27/xela-touch-insertion-and-picking-ru.svg",
+      "type": "spatial_comparison",
+      "caption": "Где роборуке помогает осязание",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "sources": [
+        {
+          "id": "xela-tactile-use-cases",
+          "url": "https://kyodonewsprwire.jp/release/202611250970"
+        }
+      ],
+      "article_content_sha256": "184dbe53bdfaa03698b166be75c069fdf328450f4602a45480524c60d1b418f2",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 3,
+        "line": 22,
+        "path": 4,
+        "circle": 3
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "07bad44d4acc5a0f390306919a164499c15e3a57"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "xela-touch-insertion-and-picking",
+      "path": "data/visualizations/2026-11-27/xela-touch-insertion-and-picking-ru.svg",
+      "type": "spatial_comparison",
+      "caption": "Где роборуке помогает осязание",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "sources": [
+        {
+          "id": "xela-tactile-use-cases",
+          "url": "https://kyodonewsprwire.jp/release/202611250970"
+        }
+      ],
+      "article_content_sha256": "1b93fe5b72259299835a7bbfdb55004212408e64c91986f81292ca8512964e2f",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 3,
+        "line": 22,
+        "path": 4,
+        "circle": 3
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "07bad44d4acc5a0f390306919a164499c15e3a57"
+    },
+    {
+      "issue_date": "2026-11-27",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "xela-touch-insertion-and-picking",
+      "path": "data/visualizations/2026-11-27/xela-touch-insertion-and-picking-ru.svg",
+      "type": "spatial_comparison",
+      "caption": "Где роборуке помогает осязание",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "sources": [
+        {
+          "id": "xela-tactile-use-cases",
+          "url": "https://kyodonewsprwire.jp/release/202611250970"
+        }
+      ],
+      "article_content_sha256": "535d37bb101dcbf9288dfe3169a826a20360d8d9a3889cb587e5024c1cfcc74b",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml XMLParser(recover=False); allowed SVG element and attribute checks; repeated on GitHub readback",
+      "layout_qa": "passed",
+      "render_qa": "passed",
+      "qa_notes": "Inkscape 1.4 direct SVG rendering and visual bounds at 360, 390 and 768 CSS px; inspected at 360 px; font identities from render output. No arrow markers used.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 13.5,
+      "measured_objects": {
+        "text": 11,
+        "rect": 3,
+        "line": 22,
+        "path": 4,
+        "circle": 3
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSans-Regular",
+        "NotoSans-Bold"
+      ],
+      "blob_sha": "07bad44d4acc5a0f390306919a164499c15e3a57"
+    }
+  ]
+}

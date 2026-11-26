@@ -2,177 +2,159 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-26",
-  "issue_id": "daily-2026-11-26",
+  "issue_date": "2026-11-27",
+  "issue_id": "daily-2026-11-27",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-25T21:13:38Z",
-  "title": "A robot rides to the twentieth floor",
-  "lead": "Engineers in South Korea tried using a lift to move building supplies with a robot. In another experiment, a robot arm missed a bowl and tried again.",
+  "generated_at": "2026-11-26T21:13:18Z",
+  "title": "A robot, a cord and a narrow gap",
+  "lead": "Researchers made puzzles that ask robots to turn parts or thread a cord. A team in Tokyo describes putting sensors on a robot hand so it can tell when a part catches.",
   "news": [
     {
-      "id": "gole-construction-lift-and-loading",
-      "title": "A robot took building supplies up a lift",
-      "summary": "South Korea's GoLe Robotics showed how its robot carried supplies at a hotel under construction. It entered the building from an outdoor area on the fifth floor and used a lift to reach the twentieth.",
-      "details": "At a meeting on November 25, GoLe Robotics showed the route a cargo robot took at a hotel in Jeongseon, South Korea. The trial itself was on October 28. The job was to move bags of building material from an outdoor loading point on the fifth floor to a lift lobby on the twentieth.",
-      "technical_novelty": "The robot first had to roll from outdoors into the building. Then it needed to call the lift.",
-      "engineering_impact": "Moving a load between floors required a separate device to connect the transport robot to the lift.",
-      "limitations": "The presentation gives planned time for the hotel trial and no success rate for automatic loading.",
-      "evidence_status": "Vendor presentation describing two field trials, one ongoing on the date of the report.",
-      "published_at": "2026-11-25",
-      "organization": "GoLe Robotics",
+      "id": "roboarc-spatial-manipulation-puzzles",
+      "title": "A robot puzzle can start with a knot",
+      "summary": "Northwestern University and its collaborators set up ninety puzzles for robots in a computer. The best program that wrote instructions for the robot solved about 43% of them in the standard test.",
+      "details": "Researchers at Northwestern University and other organisations set ninety puzzles for robots in a computer. One asks a robot to move a piece through a narrow gap. Another asks it to thread a cord through a hole. The researchers wanted to see whether programs could guide the hands so that the pieces ended up in the right state.",
+      "technical_novelty": "The puzzles cover assembly, untangling and narrow passages. The final state of the objects determines success.",
+      "engineering_impact": "The two test settings give controllers different observations and different opportunities to restart.",
+      "limitations": "The scores of about 43% and zero out of eighteen concern different systems and different sets of simulated puzzles.",
+      "evidence_status": "Research preprint. The cited benchmark scores come from the authors’ simulation trials.",
+      "published_at": "2026-11-24",
+      "organization": "Northwestern University, Microsoft, UC Berkeley and Carnegie Mellon University",
       "source_ids": [
-        "gole-construction-presentation"
+        "roboarc-preprint"
+      ],
+      "time_window": "7d",
+      "body": "Researchers at Northwestern University and other organisations set ninety puzzles for robots in a computer. One asks a robot to move a piece through a narrow gap. Another asks it to thread a cord through a hole. The researchers wanted to see whether programs could guide the hands so that the pieces ended up in the right state.\n\nImagine trying to slide a wide object through an opening. Turning it sideways might make room, but only if there is space for the turn. A program has to choose such moves for the robot. The test checks where the pieces end up and how they fit together. The researchers made sure that each puzzle already had a solution that worked.\n\nIn the standard test, the best program that wrote instructions for the movements solved about 43% of the puzzles. Four other programs received pictures and a task to perform. Each faced eighteen puzzles designed for one arm, and none solved any of those eighteen in the computer test.",
+      "image": null
+    },
+    {
+      "id": "xela-touch-insertion-and-picking",
+      "title": "A robot hand can feel when a plug catches",
+      "summary": "Tokyo’s XELA Robotics proposed using touch sensors when a robot puts a plug into a socket. It says sensors could also detect a small screw slipping between the fingers.",
+      "details": "Tokyo-based XELA Robotics described how sensors on a robot hand could help guide a plug into a socket. When a plug is a little out of line, it might catch on the edge. A camera might not show the moment that happens. A touch sensor can measure how strongly the part pushes against the hand.",
+      "technical_novelty": "Sensors on the hand measure contact and detect insertion resistance or signs of slipping.",
+      "engineering_impact": "A controller can use the readings to reposition a connector or adjust the grip on a small part.",
+      "limitations": "The release reports no damage rate or direct comparison with a camera-only system.",
+      "evidence_status": "The sensor vendor described use cases and did not publish comparative test results.",
+      "published_at": "2026-11-25",
+      "organization": "XELA Robotics",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "time_window": "72h",
+      "body": "Tokyo-based XELA Robotics described how sensors on a robot hand could help guide a plug into a socket. When a plug is a little out of line, it might catch on the edge. A camera might not show the moment that happens. A touch sensor can measure how strongly the part pushes against the hand.\n\nIf the plug catches, the robot could change its position a little and try again. The program needs a signal telling it that the force has changed. The engineers proposed another use for the sensors: picking up a tiny screw without dropping it. Once the fingers close, they can hide the screw from the camera.\n\nWhen the screw starts to slide, the sensors could report it before the screw falls. The program could then change how tightly the hand holds it. In one job the clue is a plug that pushes back, and in the other it is a screw that slips. The company described both ideas without giving a count of parts assembled without damage.",
+      "image": null
+    },
+    {
+      "id": "bleckmann-two-humanoids-warehouse-training",
+      "title": "Two robots are going to learn warehouse work",
+      "summary": "Logistics company Bleckmann bought two human-shaped robots for European warehouses. Once the machines arrive, workers plan to teach them jobs such as moving items and picking goods for orders.",
+      "details": "On November 24, logistics company Bleckmann announced that it had invested in two human-shaped robots for European warehouses. It expects the machines to arrive in the coming weeks. Workers will then begin teaching them warehouse jobs. The company wants to find out how the robots learn to move things and pick goods for an order.",
+      "technical_novelty": "The machines have cameras, laser distance sensors and software that builds a map while tracking their position.",
+      "engineering_impact": "Bleckmann plans to collect data as it teaches the two machines to move items and pick orders.",
+      "limitations": "The operator did not name the first sites or publish warehouse performance figures.",
+      "evidence_status": "Operator announcement of the purchase and plans for training after delivery.",
+      "published_at": "2026-11-24",
+      "organization": "Bleckmann",
+      "source_ids": [
+        "bleckmann-warehouse-release"
+      ],
+      "time_window": "72h",
+      "body": "On November 24, logistics company Bleckmann announced that it had invested in two human-shaped robots for European warehouses. It expects the machines to arrive in the coming weeks. Workers will then begin teaching them warehouse jobs. The company wants to find out how the robots learn to move things and pick goods for an order.\n\nA box in a passage can change the route that a robot needs to take. Bleckmann says the machines use cameras and sensors that measure distance with a laser. Those measurements help software build a map and work out where the robot is. The company also describes a way to ask the robot to do a job using the human voice.\n\nWorkers plan to keep records of the jobs the two machines try. The records could help teach later robots. The company has not yet announced which warehouses will receive the first machines or how many orders they could pick in a shift.",
+      "image": null
+    },
+    {
+      "id": "amada-hitachi-factory-assistant-poc",
+      "title": "What should workers check when a machine stops?",
+      "summary": "Amada and Hitachi tested software that suggests checks when a machine has a problem. They also asked it to help rearrange work when an order deadline changes.",
+      "details": "Two Japanese companies, Amada and Hitachi, tested a program that helps factory workers with two problems. Sometimes an order has to be ready sooner than expected. Sometimes a machine stops working. On November 26, the two companies explained what the program had been able to suggest in those situations.",
+      "technical_novelty": "The assistant suggests changes after a deadline moves and proposes checks for a faulty machine.",
+      "engineering_impact": "Amada and Hitachi plan to connect the assistant’s recommendations to equipment control.",
+      "limitations": "The companies have yet to publish results from customer sites or measured repair times.",
+      "evidence_status": "Joint company announcement of a proof of concept without quantitative results.",
+      "published_at": "2026-11-26",
+      "organization": "Amada and Hitachi",
+      "source_ids": [
+        "amada-hitachi-release"
       ],
       "time_window": "24h",
-      "body": "At a meeting on November 25, GoLe Robotics showed the route a cargo robot took at a hotel in Jeongseon, South Korea. The trial itself was on October 28. The job was to move bags of building material from an outdoor loading point on the fifth floor to a lift lobby on the twentieth.\n\nThe robot first had to roll from outdoors into the building. Then it needed to call the lift. Engineers fitted a separate device to the lift to help the robot send that signal. The trial plan called for one hundred bags that each weighed 25 kilograms. The company gave a planned time for the job and did not report the actual travel time in that part of the presentation.\n\nA second site, in Gwangmyeong, poses another challenge. The robot has to get its load from a special station before the trip begins. That test was still underway when the company presented the two cases.",
+      "body": "Two Japanese companies, Amada and Hitachi, tested a program that helps factory workers with two problems. Sometimes an order has to be ready sooner than expected. Sometimes a machine stops working. On November 26, the two companies explained what the program had been able to suggest in those situations.\n\nIf a deadline moves up, a job planned for later in the day might have to happen in the morning. The program suggested changes to the schedule and ways to use the available machines. When a machine had a problem, it gave workers possible causes and a list of checks. For difficult cases, it could draw on knowledge collected during earlier repairs.\n\nThe companies plan to try the program at selected customer factories. They also want to build a connection that can pass a decision to a machine or robot. The test they described concerned advice. The companies did not report how many minutes that advice saved during a repair.",
       "image": null
     },
     {
-      "id": "nottingham-screw-attention-bowl",
-      "title": "The robot missed the bowl, then tried again",
-      "summary": "A University of Nottingham researcher tested a program that guides a robot's gripper toward a bowl. With real robot arms, the program put the bowl on a plate in 21 out of 24 tries.",
-      "details": "Aly Magassouba at the University of Nottingham tested whether a robot arm could lift a bowl from a table and set it on a plate. He trained the program using a computer model of a robot arm, then tested it on two real arms. The positions of the bowl and the plate changed between attempts.",
-      "technical_novelty": "A gripper is the part of the robot arm that holds an object. The program gets told where the objects are and which way they face.",
-      "engineering_impact": "After a missed grasp, the program can plan another move using the new positions of the gripper and bowl.",
-      "limitations": "The real-world test measured one task: putting the bowl on the plate.",
-      "evidence_status": "Author-reported physical feasibility test in a preprint.",
-      "published_at": "2026-11-24",
-      "organization": "University of Nottingham",
+      "id": "embo-seed-world-model",
+      "title": "Could videos help teach a robot new moves?",
+      "summary": "The team at Embo raised $110 million to work on software that teaches robots to move. It plans to learn from videos, records made by real machines and practice in computers.",
+      "details": "On November 23, Embo said investors had put $110 million into its work on robot software. The team wants to teach a robot to choose a move when it faces an unfamiliar object. It plans to train the software with videos, records of real robots moving and exercises in computer models.",
+      "technical_novelty": "Embo plans to learn from video predictions, robot motion records and computer practice.",
+      "engineering_impact": "The training would connect predictions of what objects will do to choices about how a robot should move.",
+      "limitations": "Embo has yet to publish success rates on unfamiliar tasks.",
+      "evidence_status": "The company announced funding and a development plan. It did not publish controller performance.",
+      "published_at": "2026-11-23",
+      "organization": "Embo",
       "source_ids": [
-        "nottingham-screw-preprint"
+        "embo-introduction",
+        "tsn-embo-seed"
       ],
-      "time_window": "72h",
-      "body": "Aly Magassouba at the University of Nottingham tested whether a robot arm could lift a bowl from a table and set it on a plate. He trained the program using a computer model of a robot arm, then tested it on two real arms. The positions of the bowl and the plate changed between attempts.\n\nA gripper is the part of the robot arm that holds an object. The program gets told where the objects are and which way they face. If the bowl moves, the robot can send the gripper along a different path. If the gripper misses on the first move, the program can work out another move from where it is now.\n\nThe bowl ended up on the plate in 21 of 24 trials. Two successes started with a missed grasp and a second try. The researcher tested one task with a bowl and a plate. Other shapes would need their own trials.",
-      "image": null
-    },
-    {
-      "id": "omniact-robot-arm-transfer",
-      "title": "One program, two very different robot arms",
-      "summary": "Researchers at the University of Washington and elsewhere taught a program to choose moves from a description of a robot arm. On two real arms, the program picked up and moved an object successfully in 27 out of 40 tries.",
-      "details": "A research team led by the University of Washington built a program to help a robot pick up an object and set it down somewhere else. The team trained the program with robot arms inside a computer. Then the researchers tried it on two different real arms without giving the program extra practice on either machine.",
-      "technical_novelty": "A short arm and a long arm may bend differently to reach the same spot. The researchers told the program what parts each arm had and how they could move.",
-      "engineering_impact": "Supplying an arm’s structure lets the same program choose motions for arms that move differently.",
-      "limitations": "The physical experiment covered two arms and moved one object per trial.",
-      "evidence_status": "Research preprint reporting the authors’ physical laboratory trials.",
-      "published_at": "2026-11-24",
-      "organization": "University of Washington and collaborators",
-      "source_ids": [
-        "omniact-preprint"
-      ],
-      "time_window": "72h",
-      "body": "A research team led by the University of Washington built a program to help a robot pick up an object and set it down somewhere else. The team trained the program with robot arms inside a computer. Then the researchers tried it on two different real arms without giving the program extra practice on either machine.\n\nA short arm and a long arm may bend differently to reach the same spot. The researchers told the program what parts each arm had and how they could move. They made a million arm designs for computer training. In one real test the robot reached down to grab a cube. For a thin object it turned its wrist and came from the side.\n\nOne of the real arms succeeded in 14 of 20 tries. The other succeeded in 13 of 20. The team changed the starting point and the destination, but each attempt asked the robot to move just one object.",
-      "image": null
-    },
-    {
-      "id": "jizai-palmimo-tokyo-exhibit",
-      "title": "Wave to the little robot on the table",
-      "summary": "At an exhibition in Tokyo, Jizai has put out a tabletop robot that can respond when visitors wave or speak to it. The company plans to try software written by people at its developer events on the same machine.",
-      "details": "Jizai put a small robot on a table at an exhibition in Chiyoda, Tokyo. Since November 25, visitors have been able to talk to it or wave their hands. It can respond with sound or a movement. The company wants to use the exhibition to try new ways for the robot to interact with visitors.",
-      "technical_novelty": "A camera gives the program a picture of what is nearby. Microphones pick up voices, and a speaker lets the robot answer out loud.",
-      "engineering_impact": "Developers can change how the robot moves and answers using the same camera, speaker and legs.",
-      "limitations": "Public trials with apps from developer events are planned after checks of operation and safety.",
-      "evidence_status": "The exhibitor reported the opening and describes planned tests of new apps.",
-      "published_at": "2026-11-25",
-      "organization": "Jizai",
-      "source_ids": [
-        "jizai-palmimo-exhibit"
-      ],
-      "time_window": "24h",
-      "body": "Jizai put a small robot on a table at an exhibition in Chiyoda, Tokyo. Since November 25, visitors have been able to talk to it or wave their hands. It can respond with sound or a movement. The company wants to use the exhibition to try new ways for the robot to interact with visitors.\n\nA camera gives the program a picture of what is nearby. Microphones pick up voices, and a speaker lets the robot answer out loud. It also has a round screen and six legs. A new program could make it respond differently to the same greeting, while all of those parts stay in place.\n\nThe company has scheduled its first event for people who write programs on December 10. It plans to check the programs before putting them on the exhibit. For now, visitors can see what the software already on the machine does.",
-      "image": null
-    },
-    {
-      "id": "bis-megaspeed-entity-list-rule",
-      "title": "Some chip shipments will need an extra permit",
-      "summary": "The US Commerce Department added seven firms in Southeast Asia to its export control list. A shipment covered by US rules now needs a permit if one of those companies is involved.",
-      "details": "The US Commerce Department published a rule on November 25 about shipments involving seven companies in Singapore, Malaysia and Thailand. It put those companies on an export control list. Export controls are government rules for sending certain goods from one place to another. A shipment involving a company on the list can need a special permit.",
-      "technical_novelty": "Computing chips are parts that help computers do calculations quickly. Some of them help computers train programs for robots.",
-      "engineering_impact": "Licensing for covered shipments of computing equipment depends on which companies participate in the transaction.",
-      "limitations": "The rule concerns named firms and items covered by US export controls.",
-      "evidence_status": "Official export control rule, supplemented by separate Reuters and Time reporting.",
-      "published_at": "2026-11-25",
-      "organization": "U.S. Bureau of Industry and Security",
-      "source_ids": [
-        "bis-entity-list-amendment",
-        "nvidia-form-8k",
-        "reuters-export-debate",
-        "time-megaspeed-ownership"
-      ],
-      "time_window": "72h",
-      "body": "The US Commerce Department published a rule on November 25 about shipments involving seven companies in Singapore, Malaysia and Thailand. It put those companies on an export control list. Export controls are government rules for sending certain goods from one place to another. A shipment involving a company on the list can need a special permit.\n\nComputing chips are parts that help computers do calculations quickly. Some of them help computers train programs for robots. Between the factory that makes a chip and the company that uses it, there can be several sellers. That is why a rule about a shipment can depend on which companies are involved.\n\nOne of the seven companies is Megaspeed, based in Singapore. The department pointed to a risk that advanced equipment could be sent somewhere other than its intended destination. The rule tells suppliers which companies are on the list. It does not give a new price for computing chips.",
+      "time_window": "7d",
+      "body": "On November 23, Embo said investors had put $110 million into its work on robot software. The team wants to teach a robot to choose a move when it faces an unfamiliar object. It plans to train the software with videos, records of real robots moving and exercises in computer models.\n\nA video can show what happens after a hand pushes a box. The team wants the program to look at the start of a video and learn to predict what happens next. Choosing a motion for a robot's own arm also calls for recordings from real robots. The developers plan to use those as a separate part of training.\n\nThe program would also get to practise in a computer. It would try a move and get feedback based on the result. If the box did not reach the target, the program could use that feedback to change how it chooses a move. Embo has described its plan and has yet to say how often a trained robot succeeds at a new task.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "A delivery robot needs to call the lift",
-    "summary": "At a hotel under construction, GoLe Robotics tested a route from an outdoor loading area to the twentieth floor. Engineers attached a separate device to the lift.",
-    "implications": "At a second site, the company is testing whether a robot can get its load at a station before setting off."
+    "title": "A part may need to turn before it can fit",
+    "summary": "Researchers at Northwestern University and other organisations made ninety computer puzzles for robots. In some, an arm has to guide a part through a narrow gap.",
+    "implications": "The test checks where the objects end up and how they fit together. The scores describe the computer tests."
   },
   "sources": [
     {
-      "id": "gole-construction-presentation",
-      "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410",
-      "domain": "smartcona.co.kr",
-      "organization": "GoLe Robotics",
-      "published_at": "2026-11-25",
-      "title": "건설 자재운반 로봇 현장 실증 사례 — 정선 카지노호텔 · 광명 힐스테이트"
-    },
-    {
-      "id": "nottingham-screw-preprint",
-      "url": "https://arxiv.org/html/2611.32797v1",
+      "id": "roboarc-preprint",
+      "url": "https://arxiv.org/html/2611.33390v1",
       "domain": "arxiv.org",
-      "organization": "University of Nottingham",
+      "organization": "Northwestern University, Microsoft, UC Berkeley and Carnegie Mellon University",
       "published_at": "2026-11-24",
-      "title": "Supply Geometry, Learn Execution: Screw Attention for Zero-Shot Policy Transfer in Robot Manipulation"
+      "title": "RoboARC: Physical Puzzles for Robotic Manipulation under Spatial Constraints"
     },
     {
-      "id": "omniact-preprint",
-      "url": "https://arxiv.org/abs/2611.33158",
-      "domain": "arxiv.org",
-      "organization": "University of Washington and collaborators",
+      "id": "xela-tactile-use-cases",
+      "url": "https://kyodonewsprwire.jp/release/202611250970",
+      "domain": "kyodonewsprwire.jp",
+      "organization": "XELA Robotics",
+      "published_at": "2026-11-25",
+      "title": "XELA Robotics、視覚だけでは困難な作業を可能にする、フィジカルAIによる触覚ソリューションを提案"
+    },
+    {
+      "id": "bleckmann-warehouse-release",
+      "url": "https://www.bleckmann.com/uploads/press-downloads/Press-release-EN-Bleckmann-introduces-humanoids-into-operations-26.pdf",
+      "domain": "www.bleckmann.com",
+      "organization": "Bleckmann",
       "published_at": "2026-11-24",
-      "title": "OmniAct: One Policy, One Million Embodiments"
+      "title": "Bleckmann introduces humanoid robots into its operations"
     },
     {
-      "id": "jizai-palmimo-exhibit",
-      "url": "https://prtimes.jp/main/html/rd/p/000000025.000145251.html",
-      "domain": "prtimes.jp",
-      "organization": "Jizai",
-      "published_at": "2026-11-25",
-      "title": "Jizai Begins Exhibiting Palmimo DevKit at Tokyo Innovation Base"
+      "id": "amada-hitachi-release",
+      "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf",
+      "domain": "www.amada.co.jp",
+      "organization": "Amada and Hitachi",
+      "published_at": "2026-11-26",
+      "title": "アマダと日立、AIエージェントとフィジカルAIの実装により、お客さま工場の自律化に向けた協創を加速"
     },
     {
-      "id": "bis-entity-list-amendment",
-      "url": "https://public-inspection.federalregister.gov/2026-23999.pdf",
-      "domain": "public-inspection.federalregister.gov",
-      "organization": "U.S. Bureau of Industry and Security",
+      "id": "embo-introduction",
+      "url": "https://embo.com/introducing-embo",
+      "domain": "embo.com",
+      "organization": "Embo",
       "published_at": "2026-11-23",
-      "title": "Additions to the Entity List"
+      "title": "Introducing Embo"
     },
     {
-      "id": "nvidia-form-8k",
-      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/d56080ad-0d8b-401a-b284-e3308341659a.pdf",
-      "domain": "d18rn0p25nwr6d.cloudfront.net",
-      "organization": "NVIDIA",
-      "published_at": "2026-11-23",
-      "title": "NVIDIA Corporation Form 8-K"
-    },
-    {
-      "id": "reuters-export-debate",
-      "url": "https://www.reuters.com/legal/government/jensen-huangs-return-nvidia-fuels-washington-fight-over-chinas-chip-access-2026-11-25/",
-      "domain": "www.reuters.com",
-      "organization": "Reuters",
-      "published_at": "2026-11-25",
-      "title": "Jensen Huang's return to Nvidia fuels Washington fight over China's chip access"
-    },
-    {
-      "id": "time-megaspeed-ownership",
-      "url": "https://time.com/article/2026/11/25/nvidia-megaspeed-china-investment/",
-      "domain": "time.com",
-      "organization": "Time",
-      "published_at": "2026-11-25",
-      "title": "The Red Flags Behind Nvidia Customer Megaspeed"
+      "id": "tsn-embo-seed",
+      "url": "https://tsnmedia.org/embo-110m-seed-a16z-robot-brain/",
+      "domain": "tsnmedia.org",
+      "organization": "TSN",
+      "published_at": "2026-11-24",
+      "title": "Embo Raises a $110m Seed Led by a16z for a World-Model Robot Brain"
     }
   ]
 }

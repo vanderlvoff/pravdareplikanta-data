@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 550" width="360" height="550" xml:lang="ru" role="img" aria-labelledby="title desc">
+  <title id="title">От подсказок к управлению станками</title>
+  <desc id="desc">Проверено в опыте / В планах / Перестроить план / при смене срока / Подсказать, что / проверить при сбое / Испытать помощника / на заводах заказчиков / Связать рекомендации / с управлением станками / и роботами</desc>
+  <rect x="0" y="0" width="360" height="550" rx="0" fill="#f6f7f2" stroke="none" stroke-width="1" data-qa-group="bg" id="g2"/>
+  <text x="24" y="32" fill="#116768" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="start" id="g3">Amada и Hitachi · заводской помощник</text>
+  <text x="24" y="68" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g4">От подсказок к</text>
+  <text x="24" y="102" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g5">управлению станками</text>
+  <text x="25" y="148" fill="#116768" font-family="Noto Sans, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" id="g6">Проверено в опыте</text>
+  <line x1="25" y1="162" x2="334" y2="162" stroke="#116768" stroke-width="1.8" data-qa-group="rule-0" id="g7"/>
+  <circle cx="32" cy="192" r="6" fill="#116768" stroke="#116768" data-qa-group="point-0-0" id="g8"/>
+  <text x="48" y="197" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g9">Перестроить план</text>
+  <text x="48" y="216" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g10">при смене срока</text>
+  <circle cx="32" cy="243" r="6" fill="#116768" stroke="#116768" data-qa-group="point-0-1" id="g11"/>
+  <text x="48" y="248" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g12">Подсказать, что</text>
+  <text x="48" y="267" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g13">проверить при сбое</text>
+  <text x="25" y="320" fill="#9a4627" font-family="Noto Sans, Arial, sans-serif" font-size="18" font-weight="700" text-anchor="start" id="g14">В планах</text>
+  <line x1="25" y1="334" x2="334" y2="334" stroke="#9a4627" stroke-width="1.8" data-qa-group="rule-1" id="g15"/>
+  <circle cx="32" cy="364" r="6" fill="#fffefa" stroke="#9a4627" data-qa-group="point-1-0" id="g16"/>
+  <text x="48" y="369" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g17">Испытать помощника</text>
+  <text x="48" y="388" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g18">на заводах заказчиков</text>
+  <circle cx="32" cy="432" r="6" fill="#fffefa" stroke="#9a4627" data-qa-group="point-1-1" id="g19"/>
+  <text x="48" y="437" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g20">Связать рекомендации</text>
+  <text x="48" y="456" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g21">с управлением станками</text>
+  <text x="48" y="475" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g22">и роботами</text>
+  <text x="25" y="509" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g23">Статусы по сообщению компаний.</text>
+  <text x="25" y="533" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g24">Источник: Amada и Hitachi</text>
+</svg>

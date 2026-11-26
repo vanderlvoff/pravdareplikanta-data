@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 449" width="360" height="449" xml:lang="ru" role="img" aria-labelledby="title desc">
+  <title id="title">Что усложняет движение робота</title>
+  <desc id="desc">Твёрдые детали / Мягкие предметы / Сцепление / деталей / Узкий проход / Сборка / Распутывание / Продевание / через отверстие / Изменение / формы ткани</desc>
+  <rect x="0" y="0" width="360" height="449" rx="0" fill="#f6f7f2" stroke="none" stroke-width="1" data-qa-group="bg" id="g2"/>
+  <text x="24" y="32" fill="#116768" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="700" text-anchor="start" id="g3">RoboARC · 90 задач в симуляции</text>
+  <text x="24" y="68" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g4">Что усложняет</text>
+  <text x="24" y="102" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="27" font-weight="700" text-anchor="start" id="g5">движение робота</text>
+  <text x="24" y="148" fill="#116768" font-family="Noto Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" id="g6">Твёрдые детали</text>
+  <line x1="24" y1="163" x2="168" y2="163" stroke="#116768" stroke-width="2" data-qa-group="head-0" id="g7"/>
+  <path d="M28 182 h15 v13 h-7 v9 h-8 Z M56 184 h-9 v15 h-7 v10 h16 Z" fill="#cde6e0" stroke="#116768" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" data-qa-group="constraint-0-0" id="g8"/>
+  <text x="24" y="226" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g9">Сцепление</text>
+  <text x="24" y="243" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g10">деталей</text>
+  <line x1="29" y1="257" x2="56" y2="257" stroke="#116768" stroke-width="2" data-qa-group="constraint-0-1" id="g11"/>
+  <line x1="29" y1="279" x2="56" y2="279" stroke="#116768" stroke-width="2" data-qa-group="constraint-0-1" id="g12"/>
+  <path d="M34 272 l14 -8 5 7 -14 7 Z" fill="#cde6e0" stroke="#116768" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" data-qa-group="constraint-0-1" id="g13"/>
+  <text x="24" y="301" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g14">Узкий проход</text>
+  <rect x="28" y="345" width="27" height="12" rx="0" fill="#cde6e0" stroke="#116768" stroke-width="1" data-qa-group="constraint-0-2" id="g15"/>
+  <rect x="35" y="334" width="13" height="11" rx="0" fill="#cde6e0" stroke="#116768" stroke-width="1" data-qa-group="constraint-0-2" id="g16"/>
+  <text x="24" y="376" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g17">Сборка</text>
+  <text x="183" y="148" fill="#9a4627" font-family="Noto Sans, Arial, sans-serif" font-size="16" font-weight="700" text-anchor="start" id="g18">Мягкие предметы</text>
+  <line x1="183" y1="163" x2="327" y2="163" stroke="#9a4627" stroke-width="2" data-qa-group="head-1" id="g19"/>
+  <path d="M187 198 c6 -20 29 -19 25 -6 c-5 13 -28 12 -20 1 c7 -11 16 13 24 7" fill="none" stroke="#9a4627" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" data-qa-group="constraint-1-0" id="g20"/>
+  <text x="183" y="226" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g21">Распутывание</text>
+  <circle cx="202" cy="269" r="10" fill="#fffefa" stroke="#9a4627" data-qa-group="constraint-1-1" id="g22"/>
+  <path d="M187 281 Q196 271 202 269 T218 258" fill="none" stroke="#9a4627" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" data-qa-group="constraint-1-1" id="g23"/>
+  <text x="183" y="301" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g24">Продевание</text>
+  <text x="183" y="318" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g25">через отверстие</text>
+  <path d="M188 341 l10 -8 17 4 -7 17 -21 -3 Z M189 341 l17 2 8 -5" fill="#f4d4ba" stroke="#9a4627" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" data-qa-group="constraint-1-2" id="g26"/>
+  <text x="183" y="376" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g27">Изменение</text>
+  <text x="183" y="393" fill="#182d33" font-family="Noto Sans, Arial, sans-serif" font-size="14" font-weight="400" text-anchor="start" id="g28">формы ткани</text>
+  <text x="24" y="425" fill="#40575b" font-family="Noto Sans, Arial, sans-serif" font-size="13.5" font-weight="400" text-anchor="start" id="g29">Источник: RoboARC, рис. 4</text>
+</svg>

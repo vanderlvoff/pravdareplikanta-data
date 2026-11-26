@@ -2,177 +2,159 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-26",
-  "issue_id": "daily-2026-11-26",
+  "issue_date": "2026-11-27",
+  "issue_id": "daily-2026-11-27",
   "edition": "engineer",
   "language": "en",
-  "generated_at": "2026-11-25T21:13:38Z",
-  "title": "One controller, two physical arms",
-  "lead": "A University of Washington team ran a single controller on two different robot arms. A separate Nottingham study tested a controller supplied with explicit object geometry.",
+  "generated_at": "2026-11-26T21:13:18Z",
+  "title": "What a robot knows before it moves",
+  "lead": "The RoboARC benchmark asks systems to move objects through tight spaces with limited observations. XELA Robotics describes how touch measurements could add information once a hand makes contact.",
   "news": [
     {
-      "id": "omniact-robot-arm-transfer",
-      "title": "One program controls two unfamiliar robot arms",
-      "summary": "A University of Washington team and its collaborators presented OmniAct, a robot controller that takes a description of the arm as input. It completed 27 of 40 physical pick-and-place trials across two arms without further training on those robots.",
-      "details": "Researchers led by the University of Washington used a million simulated arm designs to train OmniAct, a controller for picking objects up and moving them to a target. They then ran the same program on two physical robot arms. Franka Panda completed 14 of 20 trials, and OpenYAM completed 13 of 20. The authors did not fine-tune the model on either of those machines before the test.",
-      "technical_novelty": "The controller receives a graph describing how the parts of the arm connect and how its joints can move. The input includes measured joint positions and puts the geometry of the arm into the camera's coordinate frame.",
-      "engineering_impact": "Supplying an arm’s structure lets the same program choose motions for arms that move differently.",
-      "limitations": "The physical experiment covered two arms and moved one object per trial.",
-      "evidence_status": "Research preprint reporting the authors’ physical laboratory trials.",
+      "id": "roboarc-spatial-manipulation-puzzles",
+      "title": "Ninety spatial puzzles put robot control to the test",
+      "summary": "Northwestern University and collaborators presented RoboARC, a benchmark for assembly, threading and other object-handling tasks with tight spatial constraints. In its standard simulation setting, the best code-writing agent solved about 43% of tasks.",
+      "details": "Researchers from Northwestern University, Microsoft, UC Berkeley and Carnegie Mellon University introduced RoboARC, a set of 90 simulated robot puzzles. They wanted to measure how systems cope when a move has to satisfy a strict geometric condition. To carry a held part through a narrow opening, for instance, an arm needs to account for the shape and orientation of the part, not just the location of its destination. The best agent that wrote code for its actions solved about 43% of the tasks in the standard setting.",
+      "technical_novelty": "The puzzles cover assembly, untangling and narrow passages. The final state of the objects determines success.",
+      "engineering_impact": "The two test settings give controllers different observations and different opportunities to restart.",
+      "limitations": "The scores of about 43% and zero out of eighteen concern different systems and different sets of simulated puzzles.",
+      "evidence_status": "Research preprint. The cited benchmark scores come from the authors’ simulation trials.",
       "published_at": "2026-11-24",
-      "organization": "University of Washington and collaborators",
+      "organization": "Northwestern University, Microsoft, UC Berkeley and Carnegie Mellon University",
       "source_ids": [
-        "omniact-preprint"
+        "roboarc-preprint"
       ],
-      "time_window": "72h",
-      "body": "Researchers led by the University of Washington used a million simulated arm designs to train OmniAct, a controller for picking objects up and moving them to a target. They then ran the same program on two physical robot arms. Franka Panda completed 14 of 20 trials, and OpenYAM completed 13 of 20. The authors did not fine-tune the model on either of those machines before the test.\n\nThe controller receives a graph describing how the parts of the arm connect and how its joints can move. The input includes measured joint positions and puts the geometry of the arm into the camera's coordinate frame. That gives the controller a way to relate the object's location in the image to the position and reach of the gripper. Training trajectories were generated for many simulated arm designs, exposing the same model to differences in joints, links, and grippers.\n\nIn the real-world tests, the authors changed both the object location and the target location. Each model faced the same twenty initial setups on each robot. One example from the paper shows OpenYAM reaching down to grasp a cube. With a thin object, it turns its wrist and approaches from the side.\n\nThe physical comparison covers one task family and measures completion at selected starting positions. It leaves open whether the controller can transfer contact-rich operations, such as pushing a part into a tight fitting. That would require an evaluation with sustained contact and different tolerances across the two arms.",
+      "time_window": "7d",
+      "body": "Researchers from Northwestern University, Microsoft, UC Berkeley and Carnegie Mellon University introduced RoboARC, a set of 90 simulated robot puzzles. They wanted to measure how systems cope when a move has to satisfy a strict geometric condition. To carry a held part through a narrow opening, for instance, an arm needs to account for the shape and orientation of the part, not just the location of its destination. The best agent that wrote code for its actions solved about 43% of the tasks in the standard setting.\n\nThe researchers group the puzzles into six types. Rigid-object puzzles involve interlocking parts, narrow passages or assembly. The soft-object puzzles involve untangling, threading or controlling the shape of cloth. All 90 run in MuJoCo, a simulator that calculates motion and contact. A verified solution accompanies each puzzle, and the benchmark checks the state of the objects at the end.\n\nA puzzle offers two observation regimes. In the setting with extra access, the agent can inspect the simulator state, reset and try again. In the standard setting it sees colour and depth images, measurements of the robot itself and some contact information. It cannot reset during the episode. The two regimes expose how performance changes when the system has to work from observations instead of exact object states.\n\nThe authors also tried four vision-language-action models, which take observations and instructions and produce actions, on a set of 18 single-arm puzzles without training on them. None was solved. The 43% figure applies to a code-writing agent evaluated across all 90 puzzles.",
       "image": null
     },
     {
-      "id": "nottingham-screw-attention-bowl",
-      "title": "A compact controller uses geometry to move a bowl onto a plate",
-      "summary": "Aly Magassouba of the University of Nottingham published a robot control method that uses the position and orientation of objects to choose a gripper motion. After training in simulation, the controller completed 21 of 24 bowl placement trials on physical Franka Panda arms.",
-      "details": "Aly Magassouba at the University of Nottingham tested whether a compact controller trained on a single simulated arm could move objects with a physical robot. The same program ran on two Franka Panda arms, with the task of putting a bowl on a plate. The author reported 21 successful trials out of 24 across randomized object layouts, including two successes after a missed grasp and a retry.",
-      "technical_novelty": "The program takes object positions and orientations as input. It works with the geometry of the objects relative to each other and to the gripper.",
-      "engineering_impact": "After a missed grasp, the program can plan another move using the new positions of the gripper and bowl.",
-      "limitations": "The real-world test measured one task: putting the bowl on the plate.",
-      "evidence_status": "Author-reported physical feasibility test in a preprint.",
-      "published_at": "2026-11-24",
-      "organization": "University of Nottingham",
+      "id": "amada-hitachi-factory-assistant-poc",
+      "title": "Amada and Hitachi test a factory planning and maintenance assistant",
+      "summary": "Amada and Hitachi reported completing a proof of concept for software that suggests changes to factory schedules and helps diagnose machine problems. They plan to try the assistant at selected customer plants and develop a way to tie its recommendations to equipment control.",
+      "details": "Japan’s Amada and Hitachi tested software that helps factory staff reschedule work when a deadline changes or trace the cause of a machine failure. They announced the results of the first proof of concept on November 26. The companies call the software an AI agent, meaning a program that works through available information and suggests a course of action. This first test examined its ability to assist a decision.",
+      "technical_novelty": "The assistant suggests changes after a deadline moves and proposes checks for a faulty machine.",
+      "engineering_impact": "Amada and Hitachi plan to connect the assistant’s recommendations to equipment control.",
+      "limitations": "The companies have yet to publish results from customer sites or measured repair times.",
+      "evidence_status": "Joint company announcement of a proof of concept without quantitative results.",
+      "published_at": "2026-11-26",
+      "organization": "Amada and Hitachi",
       "source_ids": [
-        "nottingham-screw-preprint"
-      ],
-      "time_window": "72h",
-      "body": "Aly Magassouba at the University of Nottingham tested whether a compact controller trained on a single simulated arm could move objects with a physical robot. The same program ran on two Franka Panda arms, with the task of putting a bowl on a plate. The author reported 21 successful trials out of 24 across randomized object layouts, including two successes after a missed grasp and a retry.\n\nThe program takes object positions and orientations as input. It works with the geometry of the objects relative to each other and to the gripper. If the bowl is farther away or sits at a different angle, the controller can base its next movement on that difference. The method uses a screw representation, a way to describe rotation and translation together. Perception, the step that determines where objects are, supplies those inputs separately.\n\nThe real-world test supplied the same type of geometric scene description as the simulations. On a laptop CPU, computing a control action took 9 milliseconds in a system with a 50-millisecond control period. That timing concerns the controller itself. The accuracy of the upstream scene description remains important because an error there changes the relations from which the controller computes movement.\n\nThe hardware data support feasibility for a single bowl-and-plate task. The success count describes that end-to-end experiment, while the 9-millisecond figure measures the controller's own step. Neither figure establishes performance across a new set of physical workpieces.",
-      "image": null
-    },
-    {
-      "id": "panasonic-robonext-control-and-safety",
-      "title": "Panasonic to demonstrate robot coordination and safety tools in Osaka",
-      "summary": "Panasonic Group has announced its program for the RoboNext trade show in Osaka on December 2–4. It plans to demonstrate control of multiple robots, collision assessment and software that generates sequences of robot actions.",
-      "details": "Panasonic Group plans to show how several robots can work under coordinated control and how users can assess their safety at RoboNext in Osaka. The program released on November 25 includes control software, simulation tools and emergency stopping equipment. The company says its December 2–4 exhibit will include demonstrations with physical robot arms and a simulation of collisions.",
-      "technical_novelty": "One part of the exhibit covers Robo Sync, a software platform for controlling and linking robots. Panasonic says visitors will see real robot arms in a demonstration of coordination and control.",
-      "engineering_impact": "Coordinating several robots and assessing their safety call for different tools.",
-      "limitations": "The show program does not specify how generated actions would be checked before they run on real machinery.",
-      "evidence_status": "Company announcement of planned trade show demonstrations.",
-      "published_at": "2026-11-25",
-      "organization": "Panasonic Group",
-      "source_ids": [
-        "panasonic-osaka-program"
+        "amada-hitachi-release"
       ],
       "time_window": "24h",
-      "body": "Panasonic Group plans to show how several robots can work under coordinated control and how users can assess their safety at RoboNext in Osaka. The program released on November 25 includes control software, simulation tools and emergency stopping equipment. The company says its December 2–4 exhibit will include demonstrations with physical robot arms and a simulation of collisions.\n\nOne part of the exhibit covers Robo Sync, a software platform for controlling and linking robots. Panasonic says visitors will see real robot arms in a demonstration of coordination and control. A separate demonstration will cover generative AI, software that can produce new output from input conditions. Panasonic says it will use this technique to generate robot skills and scenarios, meaning individual actions and sequences for a robot to perform.\n\nThe safety section lists a collision simulator, services for evaluating robots that operate alongside people, and a wireless emergency stop device. Panasonic also lists a module for controlling a mobile robot, which it says meets IEC 62061. That technical standard sets out requirements for machinery control systems that carry out safety functions.\n\nThe public program separates coordinated control from safety assessment and says little about how the demonstrations interact. It leaves open where limits on a generated sequence would be enforced and how those limits would be tested before the sequence can run on real machinery.",
+      "body": "Japan’s Amada and Hitachi tested software that helps factory staff reschedule work when a deadline changes or trace the cause of a machine failure. They announced the results of the first proof of concept on November 26. The companies call the software an AI agent, meaning a program that works through available information and suggests a course of action. This first test examined its ability to assist a decision.\n\nIn the factory test, the software suggested ways to use machines and software, helped adjust production plans and proposed causes, checks and remedies for faults. The service test asked whether it could work from accumulated knowledge on complex cases without an existing example. The companies report that the program suggested ways to restore operation. They give no count of cases, accuracy rate or measured time savings.\n\nAmada already operates V-factory, a service that connects production equipment so that operating data can be collected. The company says more than 10,000 machines are connected worldwide. That count describes the existing service. Amada also opened an area called MIRAI factory in its own demonstration centre in November, where it presents its plans for future factory operations.\n\nThe proposed next stage couples an assistant that analyses shop-floor conditions with a separate means of commanding equipment and robots. Validating that chain will require observing the actual machine actions and testing when the controller should withhold or interrupt a command.",
       "image": null
     },
     {
-      "id": "gole-construction-lift-and-loading",
-      "title": "A construction robot took materials indoors and up a lift",
-      "summary": "South Korea's GoLe Robotics reported a construction-site trial at an industry meeting on November 25. The robot followed a route from an outdoor loading point on the fifth floor to a lift lobby on the twentieth, and the company described a second trial of automatic loading.",
-      "details": "GoLe Robotics used a November 25 South Korean construction industry meeting to present a practical question: how to get building materials from an outdoor loading point to a floor high inside a hotel. In a trial in Jeongseon on October 28, its transport robot used a route from an outdoor area on the fifth floor to the lift lobby on the twentieth. The route entered the building and used the lift.",
-      "technical_novelty": "Previously, the company had mainly carried boxed floor materials and tiles. The hotel trial plan called for one hundred sacks of dry building mix at 25 kilograms each.",
-      "engineering_impact": "Moving a load between floors required a separate device to connect the transport robot to the lift.",
-      "limitations": "The presentation gives planned time for the hotel trial and no success rate for automatic loading.",
-      "evidence_status": "Vendor presentation describing two field trials, one ongoing on the date of the report.",
+      "id": "xela-touch-insertion-and-picking",
+      "title": "A robot hand could sense resistance as it inserts a connector",
+      "summary": "Tokyo-based XELA Robotics outlined uses for touch sensors in assembly and small-parts picking. During insertion, the sensors can report resistance and shifts that would be hard to see with a camera alone.",
+      "details": "Tokyo-based XELA Robotics outlined uses for touch sensors on robot hands on November 25. One is inserting a connector into a socket and detecting a small misalignment before a part is damaged. A camera supplies a view of the objects from outside. Sensors on the fingers and palm can report where the hand is touching something and how the load changes while it moves.",
+      "technical_novelty": "Sensors on the hand measure contact and detect insertion resistance or signs of slipping.",
+      "engineering_impact": "A controller can use the readings to reposition a connector or adjust the grip on a small part.",
+      "limitations": "The release reports no damage rate or direct comparison with a camera-only system.",
+      "evidence_status": "The sensor vendor described use cases and did not publish comparative test results.",
       "published_at": "2026-11-25",
-      "organization": "GoLe Robotics",
+      "organization": "XELA Robotics",
       "source_ids": [
-        "gole-construction-presentation"
-      ],
-      "time_window": "24h",
-      "body": "GoLe Robotics used a November 25 South Korean construction industry meeting to present a practical question: how to get building materials from an outdoor loading point to a floor high inside a hotel. In a trial in Jeongseon on October 28, its transport robot used a route from an outdoor area on the fifth floor to the lift lobby on the twentieth. The route entered the building and used the lift.\n\nPreviously, the company had mainly carried boxed floor materials and tiles. The hotel trial plan called for one hundred sacks of dry building mix at 25 kilograms each. The slides give about six hours as the planned duration including setup. A separate device attached to the lift handled lift calling and coordination. It was the company's first trial with the loading point outside the building.\n\nThe company also described a second site in Gwangmyeong, where it is working with a Hyundai Engineering & Construction robotics team. There, the test centers on loading the vehicle at a station without a worker helping. The schedule on the slides ran from November 2 to 27, extending beyond the day of the presentation.\n\nThe two sites test different interfaces: the lift and the loading station. The presentation establishes where the trials took place and what they targeted. It provides no count of failed lift calls or rate of successful automatic loads.",
-      "image": null
-    },
-    {
-      "id": "bis-megaspeed-entity-list-rule",
-      "title": "US adds seven Southeast Asian firms to its export control list",
-      "summary": "The US Commerce Department published a rule on November 25 adding seven firms in Malaysia, Singapore and Thailand to a list that triggers extra export licensing requirements. It includes Singapore's Megaspeed, which Reuters and Time have linked to purchases of NVIDIA computing equipment.",
-      "details": "The US Bureau of Industry and Security added seven firms in three Southeast Asian countries to the Entity List, which triggers extra export controls when listed entities participate in covered transactions. The final rule was published on November 25. It names Megaspeed International in Singapore. In a filing with the US Securities and Exchange Commission, NVIDIA says its board reinstated Jensen Huang as chief executive on November 22.",
-      "technical_novelty": "The listings require a license for transactions involving the firms and items subject to US export rules. The published policy is a presumption of denial, meaning the review starts from the position that a license should be denied.",
-      "engineering_impact": "Licensing for covered shipments of computing equipment depends on which companies participate in the transaction.",
-      "limitations": "The rule concerns named firms and items covered by US export controls.",
-      "evidence_status": "Official export control rule, supplemented by separate Reuters and Time reporting.",
-      "published_at": "2026-11-25",
-      "organization": "U.S. Bureau of Industry and Security",
-      "source_ids": [
-        "bis-entity-list-amendment",
-        "nvidia-form-8k",
-        "reuters-export-debate",
-        "time-megaspeed-ownership"
+        "xela-tactile-use-cases"
       ],
       "time_window": "72h",
-      "body": "The US Bureau of Industry and Security added seven firms in three Southeast Asian countries to the Entity List, which triggers extra export controls when listed entities participate in covered transactions. The final rule was published on November 25. It names Megaspeed International in Singapore. In a filing with the US Securities and Exchange Commission, NVIDIA says its board reinstated Jensen Huang as chief executive on November 22.\n\nThe listings require a license for transactions involving the firms and items subject to US export rules. The published policy is a presumption of denial, meaning the review starts from the position that a license should be denied. The controls also cover specified reexports and transfers within a country. In projects that need computing equipment to train or test robot models, the obligations can therefore depend on the organizations involved in the supply chain and which one would receive the equipment.\n\nThe bureau cites the risk of advanced computing items being diverted. Time separately examined Megaspeed's historical ownership structure, while Reuters reported on the US debate over chip shipments following Huang's return. The rule sets out requirements for transactions involving the named firms. It contains no finding of personal liability against Huang.\n\nComputing plans for model training and simulation can depend on delivery through a third party. The new rule clarifies which named firms now trigger these licensing requirements, but does not give any measure of accelerator availability through other suppliers.",
+      "body": "Tokyo-based XELA Robotics outlined uses for touch sensors on robot hands on November 25. One is inserting a connector into a socket and detecting a small misalignment before a part is damaged. A camera supplies a view of the objects from outside. Sensors on the fingers and palm can report where the hand is touching something and how the load changes while it moves.\n\nWhen a connector catches on the edge of a socket, the resistance to insertion can change. XELA proposes measuring that resistance and using the reading to adjust the position of the part. The company describes a different problem in warehouse picking: the jaws of a gripper can hide a small item such as a screw once they close. The proposed approach monitors the contact and looks for the start of slipping, so the grip can be adjusted before the item drops.\n\nXELA also describes using measurements from multiple points on a humanoid hand, across the fingers and palm. The software can receive a distribution of pressure and information about sideways forces at the surface. The vendor's examples include fitting a memory module to a circuit board and picking small parts in a warehouse.\n\nAn evaluation could assess resistance thresholds during insertion separately from the response to slipping during a grasp. The announcement gives no sensing rate, detection accuracy or damage rate for repeated automated assembly.",
+      "image": null
+    },
+    {
+      "id": "bleckmann-two-humanoids-warehouse-training",
+      "title": "Bleckmann buys two humanoid robots for a warehouse trial",
+      "summary": "European logistics operator Bleckmann says it has invested in two humanoid robots for distribution centres. It plans to train them on warehouse work and collect data on how they carry it out.",
+      "details": "Logistics operator Bleckmann announced in Eindhoven on November 24 that it had invested in two humanoid robots for selected European distribution centres. It expects delivery in the weeks ahead. Warehouse staff will then start training the machines. The company's stated aims include learning how to operate humanoids in its buildings and gathering examples that can be used to train later robots.",
+      "technical_novelty": "The machines have cameras, laser distance sensors and software that builds a map while tracking their position.",
+      "engineering_impact": "Bleckmann plans to collect data as it teaches the two machines to move items and pick orders.",
+      "limitations": "The operator did not name the first sites or publish warehouse performance figures.",
+      "evidence_status": "Operator announcement of the purchase and plans for training after delivery.",
+      "published_at": "2026-11-24",
+      "organization": "Bleckmann",
+      "source_ids": [
+        "bleckmann-warehouse-release"
+      ],
+      "time_window": "72h",
+      "body": "Logistics operator Bleckmann announced in Eindhoven on November 24 that it had invested in two humanoid robots for selected European distribution centres. It expects delivery in the weeks ahead. Warehouse staff will then start training the machines. The company's stated aims include learning how to operate humanoids in its buildings and gathering examples that can be used to train later robots.\n\nPotential jobs include moving items and picking goods for orders. Bleckmann describes a voice interface that translates spoken instructions into physical actions. For moving through corridors, it lists cameras, laser distance sensors and software that builds a map while estimating where the robot is on it. The distance sensors can measure how far away surrounding objects are. The map helps the control software relate those observations to the robot's position as it moves.\n\nBleckmann handles logistics for fashion and lifestyle brands. It says investment in its wider automation programme has already exceeded $600 million, including systems in existing warehouses. The operator did not disclose a purchase price for the two humanoids or identify the centres where delivery is expected.\n\nA repeatable order-picking evaluation would need to record the objects, positions and routes tested. The release supplies no robot model, training protocol, cycle-time data or safety measurements for movement alongside staff.",
+      "image": null
+    },
+    {
+      "id": "nvidia-ft-server-shipment-pause",
+      "title": "FT reports pause in NVIDIA server shipments to four countries",
+      "summary": "The Financial Times reported that NVIDIA told partners to suspend shipments of servers containing its chips to Malaysia, Singapore, Thailand and Indonesia. Reuters relayed the report and requested comment from NVIDIA, Dell and Supermicro. The duration remained unclear.",
+      "details": "The Financial Times reported on November 26 that NVIDIA had told manufacturing partners to stop shipping servers containing its chips to Malaysia, Singapore, Thailand and Indonesia. Such chips serve as accelerators, components that speed up calculations for demanding workloads such as model training. The FT cited three people familiar with the matter. Reuters relayed its account and sought comment from NVIDIA, Dell and Supermicro. The companies did not immediately respond.",
+      "technical_novelty": "The Financial Times described a reported halt at the stage where NVIDIA partners ship complete servers.",
+      "engineering_impact": "A delayed configuration can move the start date for work scheduled around that server.",
+      "limitations": "The report does not give a duration, a count of orders or a list of affected configurations.",
+      "evidence_status": "Financial Times reporting based on people familiar with the matter. Reuters relayed it and received no immediate reply from the companies.",
+      "published_at": "2026-11-26",
+      "organization": "NVIDIA",
+      "source_ids": [
+        "ft-nvidia-server-report",
+        "reuters-nvidia-server-report"
+      ],
+      "time_window": "24h",
+      "body": "The Financial Times reported on November 26 that NVIDIA had told manufacturing partners to stop shipping servers containing its chips to Malaysia, Singapore, Thailand and Indonesia. Such chips serve as accelerators, components that speed up calculations for demanding workloads such as model training. The FT cited three people familiar with the matter. Reuters relayed its account and sought comment from NVIDIA, Dell and Supermicro. The companies did not immediately respond.\n\nSuppliers such as Dell and Supermicro assemble chips and other components into complete servers for customers. According to the FT, manufacturing partners told buyers in the four countries that NVIDIA would not allow their orders to ship. The reporting does not count affected orders or specify which server configurations and delivery dates were involved.\n\nThe report came after US export licensing changes and separate action on firms placed on an export control list. A report about how suppliers are handling orders adds a different piece of information: some customers were said to have been told that an order would not ship. A delayed delivery can alter the timeline for a project that depends on that particular server.\n\nDevelopment teams may have scheduled model training or testing around delivery of a particular platform. The reporting does not document which configurations are affected or when shipments might resume.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "A controller can take the arm’s structure as input",
-    "summary": "OmniAct received a description of each arm and completed 27 of 40 physical pick-and-place trials without fine-tuning on the test machines.",
-    "implications": "The evidence concerns object transfer. Tasks that require the arm to maintain force against a part need a separate test."
+    "title": "A benchmark score depends on what the controller sees",
+    "summary": "In the 90 RoboARC tasks, the standard setting gives agents images and robot measurements. The best code-writing agent solved about 43% of the tasks.",
+    "implications": "When comparing controllers, identify which observations each one receives and whether it can reset the task."
   },
   "sources": [
     {
-      "id": "omniact-preprint",
-      "url": "https://arxiv.org/abs/2611.33158",
+      "id": "roboarc-preprint",
+      "url": "https://arxiv.org/html/2611.33390v1",
       "domain": "arxiv.org",
-      "organization": "University of Washington and collaborators",
+      "organization": "Northwestern University, Microsoft, UC Berkeley and Carnegie Mellon University",
       "published_at": "2026-11-24",
-      "title": "OmniAct: One Policy, One Million Embodiments"
+      "title": "RoboARC: Physical Puzzles for Robotic Manipulation under Spatial Constraints"
     },
     {
-      "id": "nottingham-screw-preprint",
-      "url": "https://arxiv.org/html/2611.32797v1",
-      "domain": "arxiv.org",
-      "organization": "University of Nottingham",
+      "id": "amada-hitachi-release",
+      "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf",
+      "domain": "www.amada.co.jp",
+      "organization": "Amada and Hitachi",
+      "published_at": "2026-11-26",
+      "title": "アマダと日立、AIエージェントとフィジカルAIの実装により、お客さま工場の自律化に向けた協創を加速"
+    },
+    {
+      "id": "xela-tactile-use-cases",
+      "url": "https://kyodonewsprwire.jp/release/202611250970",
+      "domain": "kyodonewsprwire.jp",
+      "organization": "XELA Robotics",
+      "published_at": "2026-11-25",
+      "title": "XELA Robotics、視覚だけでは困難な作業を可能にする、フィジカルAIによる触覚ソリューションを提案"
+    },
+    {
+      "id": "bleckmann-warehouse-release",
+      "url": "https://www.bleckmann.com/uploads/press-downloads/Press-release-EN-Bleckmann-introduces-humanoids-into-operations-26.pdf",
+      "domain": "www.bleckmann.com",
+      "organization": "Bleckmann",
       "published_at": "2026-11-24",
-      "title": "Supply Geometry, Learn Execution: Screw Attention for Zero-Shot Policy Transfer in Robot Manipulation"
+      "title": "Bleckmann introduces humanoid robots into its operations"
     },
     {
-      "id": "panasonic-osaka-program",
-      "url": "https://prtimes.jp/main/html/rd/p/000006971.000003442.html",
-      "domain": "prtimes.jp",
-      "organization": "Panasonic Group",
-      "published_at": "2026-11-25",
-      "title": "パナソニックグループが「RoboNext2026」に出展"
+      "id": "ft-nvidia-server-report",
+      "url": "https://www.ft.com/content/7838a715-07d4-4605-aa60-21f5af2b2370",
+      "domain": "www.ft.com",
+      "organization": "Financial Times",
+      "published_at": "2026-11-26",
+      "title": "Nvidia halts chip shipments to south-east Asia"
     },
     {
-      "id": "gole-construction-presentation",
-      "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410",
-      "domain": "smartcona.co.kr",
-      "organization": "GoLe Robotics",
-      "published_at": "2026-11-25",
-      "title": "건설 자재운반 로봇 현장 실증 사례 — 정선 카지노호텔 · 광명 힐스테이트"
-    },
-    {
-      "id": "bis-entity-list-amendment",
-      "url": "https://public-inspection.federalregister.gov/2026-23999.pdf",
-      "domain": "public-inspection.federalregister.gov",
-      "organization": "U.S. Bureau of Industry and Security",
-      "published_at": "2026-11-23",
-      "title": "Additions to the Entity List"
-    },
-    {
-      "id": "nvidia-form-8k",
-      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/d56080ad-0d8b-401a-b284-e3308341659a.pdf",
-      "domain": "d18rn0p25nwr6d.cloudfront.net",
-      "organization": "NVIDIA",
-      "published_at": "2026-11-23",
-      "title": "NVIDIA Corporation Form 8-K"
-    },
-    {
-      "id": "reuters-export-debate",
-      "url": "https://www.reuters.com/legal/government/jensen-huangs-return-nvidia-fuels-washington-fight-over-chinas-chip-access-2026-11-25/",
+      "id": "reuters-nvidia-server-report",
+      "url": "https://www.reuters.com/world/asia-pacific/nvidia-halts-chip-shipments-southeast-asia-ft-reports-2026-11-26/",
       "domain": "www.reuters.com",
       "organization": "Reuters",
-      "published_at": "2026-11-25",
-      "title": "Jensen Huang's return to Nvidia fuels Washington fight over China's chip access"
-    },
-    {
-      "id": "time-megaspeed-ownership",
-      "url": "https://time.com/article/2026/11/25/nvidia-megaspeed-china-investment/",
-      "domain": "time.com",
-      "organization": "Time",
-      "published_at": "2026-11-25",
-      "title": "The Red Flags Behind Nvidia Customer Megaspeed"
+      "published_at": "2026-11-26",
+      "title": "Nvidia halts server shipments to four Southeast Asian countries, FT reports"
     }
   ]
 }

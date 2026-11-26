@@ -2,177 +2,159 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-26",
-  "issue_id": "daily-2026-11-26",
+  "issue_date": "2026-11-27",
+  "issue_id": "daily-2026-11-27",
   "edition": "enthusiast",
   "language": "en",
-  "generated_at": "2026-11-25T21:13:38Z",
-  "title": "Finding a path to the bowl",
-  "lead": "A Nottingham researcher tested how a robot arm handles changes in where a bowl and plate are set down. At a Tokyo exhibit, visitors can see a tabletop robot respond to voices and gestures.",
+  "generated_at": "2026-11-26T21:13:18Z",
+  "title": "How a robot can tell when a move goes wrong",
+  "lead": "XELA Robotics describes measuring force during a delicate insertion. The RoboARC researchers ask whether a program can guide an object through a narrow opening.",
   "news": [
     {
-      "id": "nottingham-screw-attention-bowl",
-      "title": "A compact controller uses geometry to move a bowl onto a plate",
-      "summary": "Aly Magassouba of the University of Nottingham published a robot control method that uses the position and orientation of objects to choose a gripper motion. After training in simulation, the controller completed 21 of 24 bowl placement trials on physical Franka Panda arms.",
-      "details": "A bowl can be moved across a table, but the gripper still needs a way to reach it. Aly Magassouba of the University of Nottingham trained a controller on one simulated arm and ran it on two physical Franka Panda arms. With the objects shifted between trials, the robots put the bowl on its plate 21 times in 24 attempts, including two that succeeded after a retry.",
-      "technical_novelty": "The program takes object positions and orientations as input. It works with the geometry of the objects relative to each other and to the gripper.",
-      "engineering_impact": "After a missed grasp, the program can plan another move using the new positions of the gripper and bowl.",
-      "limitations": "The real-world test measured one task: putting the bowl on the plate.",
-      "evidence_status": "Author-reported physical feasibility test in a preprint.",
+      "id": "xela-touch-insertion-and-picking",
+      "title": "A robot hand could sense resistance as it inserts a connector",
+      "summary": "Tokyo-based XELA Robotics outlined uses for touch sensors in assembly and small-parts picking. During insertion, the sensors can report resistance and shifts that would be hard to see with a camera alone.",
+      "details": "A person can feel a plug catch on the edge of a socket. On November 25, Tokyo's XELA Robotics described how a robot hand could detect a similar change. Sensors in the fingers and palm report where the hand touches a part and how the force changes, giving the program information it may not get from a camera.",
+      "technical_novelty": "Sensors on the hand measure contact and detect insertion resistance or signs of slipping.",
+      "engineering_impact": "A controller can use the readings to reposition a connector or adjust the grip on a small part.",
+      "limitations": "The release reports no damage rate or direct comparison with a camera-only system.",
+      "evidence_status": "The sensor vendor described use cases and did not publish comparative test results.",
+      "published_at": "2026-11-25",
+      "organization": "XELA Robotics",
+      "source_ids": [
+        "xela-tactile-use-cases"
+      ],
+      "time_window": "72h",
+      "body": "A person can feel a plug catch on the edge of a socket. On November 25, Tokyo's XELA Robotics described how a robot hand could detect a similar change. Sensors in the fingers and palm report where the hand touches a part and how the force changes, giving the program information it may not get from a camera.\n\nWhen a connector catches on the edge of a socket, the resistance to insertion can change. XELA proposes measuring that resistance and using the reading to adjust the position of the part. The company describes a different problem in warehouse picking: the jaws of a gripper can hide a small item such as a screw once they close. The proposed approach monitors the contact and looks for the start of slipping, so the grip can be adjusted before the item drops.\n\nXELA also describes using measurements from multiple points on a humanoid hand, across the fingers and palm. The software can receive a distribution of pressure and information about sideways forces at the surface. The vendor's examples include fitting a memory module to a circuit board and picking small parts in a warehouse.\n\nWhen a plug catches, resistance is the relevant clue. When a gripper is holding a small screw, the clue might be a tiny slip between the fingers. The supplier offers both examples without publishing comparative test results.",
+      "image": null
+    },
+    {
+      "id": "roboarc-spatial-manipulation-puzzles",
+      "title": "Ninety spatial puzzles put robot control to the test",
+      "summary": "Northwestern University and collaborators presented RoboARC, a benchmark for assembly, threading and other object-handling tasks with tight spatial constraints. In its standard simulation setting, the best code-writing agent solved about 43% of tasks.",
+      "details": "Knowing where a part belongs is only half the puzzle if the route takes it through a narrow gap. Northwestern University and collaborators built challenges like that into RoboARC, a set of 90 puzzles for simulated robot hands. In the standard test, the best system that wrote code for the movements solved about 43% of the tasks.",
+      "technical_novelty": "The puzzles cover assembly, untangling and narrow passages. The final state of the objects determines success.",
+      "engineering_impact": "The two test settings give controllers different observations and different opportunities to restart.",
+      "limitations": "The scores of about 43% and zero out of eighteen concern different systems and different sets of simulated puzzles.",
+      "evidence_status": "Research preprint. The cited benchmark scores come from the authors’ simulation trials.",
       "published_at": "2026-11-24",
-      "organization": "University of Nottingham",
+      "organization": "Northwestern University, Microsoft, UC Berkeley and Carnegie Mellon University",
       "source_ids": [
-        "nottingham-screw-preprint"
+        "roboarc-preprint"
+      ],
+      "time_window": "7d",
+      "body": "Knowing where a part belongs is only half the puzzle if the route takes it through a narrow gap. Northwestern University and collaborators built challenges like that into RoboARC, a set of 90 puzzles for simulated robot hands. In the standard test, the best system that wrote code for the movements solved about 43% of the tasks.\n\nThe researchers group the puzzles into six types. Rigid-object puzzles involve interlocking parts, narrow passages or assembly. The soft-object puzzles involve untangling, threading or controlling the shape of cloth. All 90 run in MuJoCo, a simulator that calculates motion and contact. A verified solution accompanies each puzzle, and the benchmark checks the state of the objects at the end.\n\nA puzzle offers two observation regimes. In the setting with extra access, the agent can inspect the simulator state, reset and try again. In the standard setting it sees colour and depth images, measurements of the robot itself and some contact information. It cannot reset during the episode. The two regimes expose how performance changes when the system has to work from observations instead of exact object states.\n\nThe authors separately tried four ready-made programs that convert pictures and a written instruction into movements. None solved any of the 18 single-arm puzzles it faced. The 43% figure comes from another kind of system, which could write its own code for the moves.",
+      "image": null
+    },
+    {
+      "id": "embo-seed-world-model",
+      "title": "Embo raises $110 million to train a controller for unfamiliar situations",
+      "summary": "Embo announced $110 million in seed funding led by Andreessen Horowitz. The startup plans to train a robot controller on internet video, experience from humanoid robots and practice in simulated situations.",
+      "details": "Embo announced on November 23 that it had raised $110 million in an early funding round led by venture capital firm Andreessen Horowitz. The startup is developing a robot controller intended to choose actions in situations the machine has not encountered before. It describes three sources of training: internet video, experience recorded with its own humanoid robots and practice in simulated settings.",
+      "technical_novelty": "Embo plans to learn from video predictions, robot motion records and computer practice.",
+      "engineering_impact": "The training would connect predictions of what objects will do to choices about how a robot should move.",
+      "limitations": "Embo has yet to publish success rates on unfamiliar tasks.",
+      "evidence_status": "The company announced funding and a development plan. It did not publish controller performance.",
+      "published_at": "2026-11-23",
+      "organization": "Embo",
+      "source_ids": [
+        "embo-introduction",
+        "tsn-embo-seed"
+      ],
+      "time_window": "7d",
+      "body": "Embo announced on November 23 that it had raised $110 million in an early funding round led by venture capital firm Andreessen Horowitz. The startup is developing a robot controller intended to choose actions in situations the machine has not encountered before. It describes three sources of training: internet video, experience recorded with its own humanoid robots and practice in simulated settings.\n\nThe first part uses a world model, a program that learns to predict how a scene might change. It could learn from video that moving a hand against an object may move the object as well. Embo wants the model to learn such relationships by predicting how a video continues. The company then plans to refine movements using experience from its own robots. Further training would give the model feedback about which movements succeed in simulated situations. Learning from the outcome of a chosen action is called reinforcement learning.\n\nEmbo named Khosla Ventures, DST Global and NVIDIA among the other participants in the round. Its announcement confirms the financing and sets out how it intends to build the controller. TSN also reported the funding. Embo did not release a test suite, counts of successful trials or the amount of physical robot experience already collected.\n\nWatching a video can show what happens to an object when a hand pushes it. Making a robot move its own hand takes another kind of practice. Embo outlined how it wants to connect the two and has yet to publish scores showing the effect.",
+      "image": null
+    },
+    {
+      "id": "amada-hitachi-factory-assistant-poc",
+      "title": "Amada and Hitachi test a factory planning and maintenance assistant",
+      "summary": "Amada and Hitachi reported completing a proof of concept for software that suggests changes to factory schedules and helps diagnose machine problems. They plan to try the assistant at selected customer plants and develop a way to tie its recommendations to equipment control.",
+      "details": "Japan’s Amada and Hitachi tested software that helps factory staff reschedule work when a deadline changes or trace the cause of a machine failure. They announced the results of the first proof of concept on November 26. The companies call the software an AI agent, meaning a program that works through available information and suggests a course of action. This first test examined its ability to assist a decision.",
+      "technical_novelty": "The assistant suggests changes after a deadline moves and proposes checks for a faulty machine.",
+      "engineering_impact": "Amada and Hitachi plan to connect the assistant’s recommendations to equipment control.",
+      "limitations": "The companies have yet to publish results from customer sites or measured repair times.",
+      "evidence_status": "Joint company announcement of a proof of concept without quantitative results.",
+      "published_at": "2026-11-26",
+      "organization": "Amada and Hitachi",
+      "source_ids": [
+        "amada-hitachi-release"
+      ],
+      "time_window": "24h",
+      "body": "Japan’s Amada and Hitachi tested software that helps factory staff reschedule work when a deadline changes or trace the cause of a machine failure. They announced the results of the first proof of concept on November 26. The companies call the software an AI agent, meaning a program that works through available information and suggests a course of action. This first test examined its ability to assist a decision.\n\nIn the factory test, the software suggested ways to use machines and software, helped adjust production plans and proposed causes, checks and remedies for faults. The service test asked whether it could work from accumulated knowledge on complex cases without an existing example. The companies report that the program suggested ways to restore operation. They give no count of cases, accuracy rate or measured time savings.\n\nAmada already operates V-factory, a service that connects production equipment so that operating data can be collected. The company says more than 10,000 machines are connected worldwide. That count describes the existing service. Amada also opened an area called MIRAI factory in its own demonstration centre in November, where it presents its plans for future factory operations.\n\nThe trial shows the kinds of checks the software can suggest when a machine stops. A different piece of work will determine how a recommendation can lead to an action on a machine or robot. The report describes that connection as a development goal.",
+      "image": null
+    },
+    {
+      "id": "bleckmann-two-humanoids-warehouse-training",
+      "title": "Bleckmann buys two humanoid robots for a warehouse trial",
+      "summary": "European logistics operator Bleckmann says it has invested in two humanoid robots for distribution centres. It plans to train them on warehouse work and collect data on how they carry it out.",
+      "details": "Logistics operator Bleckmann announced in Eindhoven on November 24 that it had invested in two humanoid robots for selected European distribution centres. It expects delivery in the weeks ahead. Warehouse staff will then start training the machines. The company's stated aims include learning how to operate humanoids in its buildings and gathering examples that can be used to train later robots.",
+      "technical_novelty": "The machines have cameras, laser distance sensors and software that builds a map while tracking their position.",
+      "engineering_impact": "Bleckmann plans to collect data as it teaches the two machines to move items and pick orders.",
+      "limitations": "The operator did not name the first sites or publish warehouse performance figures.",
+      "evidence_status": "Operator announcement of the purchase and plans for training after delivery.",
+      "published_at": "2026-11-24",
+      "organization": "Bleckmann",
+      "source_ids": [
+        "bleckmann-warehouse-release"
       ],
       "time_window": "72h",
-      "body": "A bowl can be moved across a table, but the gripper still needs a way to reach it. Aly Magassouba of the University of Nottingham trained a controller on one simulated arm and ran it on two physical Franka Panda arms. With the objects shifted between trials, the robots put the bowl on its plate 21 times in 24 attempts, including two that succeeded after a retry.\n\nThe program takes object positions and orientations as input. It works with the geometry of the objects relative to each other and to the gripper. If the bowl is farther away or sits at a different angle, the controller can base its next movement on that difference. The method uses a screw representation, a way to describe rotation and translation together. Perception, the step that determines where objects are, supplies those inputs separately.\n\nThe real-world test supplied the same type of geometric scene description as the simulations. On a laptop CPU, computing a control action took 9 milliseconds in a system with a 50-millisecond control period. That timing concerns the controller itself. The accuracy of the upstream scene description remains important because an error there changes the relations from which the controller computes movement.\n\nWhen the first attempt misses the bowl, the relationship between the hand and the bowl changes. In two trials the program picked up the bowl on a second attempt and finished the job. The result so far covers one task with one kind of placement.",
-      "image": null
-    },
-    {
-      "id": "jizai-palmimo-tokyo-exhibit",
-      "title": "A tabletop robot opens to visitors and app developers in Tokyo",
-      "summary": "Jizai has put Palmimo DevKit, a programmable tabletop robot, on display at Tokyo Innovation Base. Visitors can talk or wave to it, and the company plans to run apps from developer events on the exhibit after checking operation and safety.",
-      "details": "At Tokyo Innovation Base in Chiyoda, visitors can wave to a small machine and watch how it answers. Jizai opened the free exhibit on November 25. It put a programmable tabletop robot called Palmimo DevKit on the first floor, where it plans to use the same hardware to test new ways of interacting with visitors.",
-      "technical_novelty": "The robot has a camera, a microphone array, a speaker, a round display and six legs. The camera and microphones give its software information about what is happening nearby, while the display, sound and motion allow it to respond.",
-      "engineering_impact": "Developers can change how the robot moves and answers using the same camera, speaker and legs.",
-      "limitations": "Public trials with apps from developer events are planned after checks of operation and safety.",
-      "evidence_status": "The exhibitor reported the opening and describes planned tests of new apps.",
-      "published_at": "2026-11-25",
-      "organization": "Jizai",
-      "source_ids": [
-        "jizai-palmimo-exhibit"
-      ],
-      "time_window": "24h",
-      "body": "At Tokyo Innovation Base in Chiyoda, visitors can wave to a small machine and watch how it answers. Jizai opened the free exhibit on November 25. It put a programmable tabletop robot called Palmimo DevKit on the first floor, where it plans to use the same hardware to test new ways of interacting with visitors.\n\nThe robot has a camera, a microphone array, a speaker, a round display and six legs. The camera and microphones give its software information about what is happening nearby, while the display, sound and motion allow it to respond. Jizai publishes a software development kit for Python, a set of tools for writing programs for the robot. Programmers can change how the machine interacts with people while keeping the hardware in place.\n\nJizai scheduled its first developer event for December 10. The company plans to rotate applications on the exhibit after checking their operation and safety. A public setting will let developers observe whether a visitor understands the response without having read an instruction manual before approaching the table.\n\nA conversation and a little walk can come from the same hardware, depending on the program it is running. At the opening, visitors can see the behavior of the software already installed. Apps written at developer events are planned for later, after Jizai has reviewed them.",
-      "image": null
-    },
-    {
-      "id": "gole-construction-lift-and-loading",
-      "title": "A construction robot took materials indoors and up a lift",
-      "summary": "South Korea's GoLe Robotics reported a construction-site trial at an industry meeting on November 25. The robot followed a route from an outdoor loading point on the fifth floor to a lift lobby on the twentieth, and the company described a second trial of automatic loading.",
-      "details": "GoLe Robotics used a November 25 South Korean construction industry meeting to present a practical question: how to get building materials from an outdoor loading point to a floor high inside a hotel. In a trial in Jeongseon on October 28, its transport robot used a route from an outdoor area on the fifth floor to the lift lobby on the twentieth. The route entered the building and used the lift.",
-      "technical_novelty": "Previously, the company had mainly carried boxed floor materials and tiles. The hotel trial plan called for one hundred sacks of dry building mix at 25 kilograms each.",
-      "engineering_impact": "Moving a load between floors required a separate device to connect the transport robot to the lift.",
-      "limitations": "The presentation gives planned time for the hotel trial and no success rate for automatic loading.",
-      "evidence_status": "Vendor presentation describing two field trials, one ongoing on the date of the report.",
-      "published_at": "2026-11-25",
-      "organization": "GoLe Robotics",
-      "source_ids": [
-        "gole-construction-presentation"
-      ],
-      "time_window": "24h",
-      "body": "GoLe Robotics used a November 25 South Korean construction industry meeting to present a practical question: how to get building materials from an outdoor loading point to a floor high inside a hotel. In a trial in Jeongseon on October 28, its transport robot used a route from an outdoor area on the fifth floor to the lift lobby on the twentieth. The route entered the building and used the lift.\n\nPreviously, the company had mainly carried boxed floor materials and tiles. The hotel trial plan called for one hundred sacks of dry building mix at 25 kilograms each. The slides give about six hours as the planned duration including setup. A separate device attached to the lift handled lift calling and coordination. It was the company's first trial with the loading point outside the building.\n\nThe company also described a second site in Gwangmyeong, where it is working with a Hyundai Engineering & Construction robotics team. There, the test centers on loading the vehicle at a station without a worker helping. The schedule on the slides ran from November 2 to 27, extending beyond the day of the presentation.\n\nMoving the sacks between floors required the robot to reach and use the lift. The Gwangmyeong trial asks a different question before the wheels start moving: can the robot collect its load at a station without anyone placing it on the vehicle?",
-      "image": null
-    },
-    {
-      "id": "panasonic-robonext-control-and-safety",
-      "title": "Panasonic to demonstrate robot coordination and safety tools in Osaka",
-      "summary": "Panasonic Group has announced its program for the RoboNext trade show in Osaka on December 2–4. It plans to demonstrate control of multiple robots, collision assessment and software that generates sequences of robot actions.",
-      "details": "Panasonic Group plans to show how several robots can work under coordinated control and how users can assess their safety at RoboNext in Osaka. The program released on November 25 includes control software, simulation tools and emergency stopping equipment. The company says its December 2–4 exhibit will include demonstrations with physical robot arms and a simulation of collisions.",
-      "technical_novelty": "One part of the exhibit covers Robo Sync, a software platform for controlling and linking robots. Panasonic says visitors will see real robot arms in a demonstration of coordination and control.",
-      "engineering_impact": "Coordinating several robots and assessing their safety call for different tools.",
-      "limitations": "The show program does not specify how generated actions would be checked before they run on real machinery.",
-      "evidence_status": "Company announcement of planned trade show demonstrations.",
-      "published_at": "2026-11-25",
-      "organization": "Panasonic Group",
-      "source_ids": [
-        "panasonic-osaka-program"
-      ],
-      "time_window": "24h",
-      "body": "Panasonic Group plans to show how several robots can work under coordinated control and how users can assess their safety at RoboNext in Osaka. The program released on November 25 includes control software, simulation tools and emergency stopping equipment. The company says its December 2–4 exhibit will include demonstrations with physical robot arms and a simulation of collisions.\n\nOne part of the exhibit covers Robo Sync, a software platform for controlling and linking robots. Panasonic says visitors will see real robot arms in a demonstration of coordination and control. A separate demonstration will cover generative AI, software that can produce new output from input conditions. Panasonic says it will use this technique to generate robot skills and scenarios, meaning individual actions and sequences for a robot to perform.\n\nThe safety section lists a collision simulator, services for evaluating robots that operate alongside people, and a wireless emergency stop device. Panasonic also lists a module for controlling a mobile robot, which it says meets IEC 62061. That technical standard sets out requirements for machinery control systems that carry out safety functions.\n\nCreating a new sequence of movements and assessing whether the machine may collide with something are two distinct engineering jobs. The company intends to display a collision simulator alongside its programs for coordinating robots, giving visitors a chance to see how those jobs differ.",
-      "image": null
-    },
-    {
-      "id": "bis-megaspeed-entity-list-rule",
-      "title": "US adds seven Southeast Asian firms to its export control list",
-      "summary": "The US Commerce Department published a rule on November 25 adding seven firms in Malaysia, Singapore and Thailand to a list that triggers extra export licensing requirements. It includes Singapore's Megaspeed, which Reuters and Time have linked to purchases of NVIDIA computing equipment.",
-      "details": "The US Bureau of Industry and Security added seven firms in three Southeast Asian countries to the Entity List, which triggers extra export controls when listed entities participate in covered transactions. The final rule was published on November 25. It names Megaspeed International in Singapore. In a filing with the US Securities and Exchange Commission, NVIDIA says its board reinstated Jensen Huang as chief executive on November 22.",
-      "technical_novelty": "The listings require a license for transactions involving the firms and items subject to US export rules. The published policy is a presumption of denial, meaning the review starts from the position that a license should be denied.",
-      "engineering_impact": "Licensing for covered shipments of computing equipment depends on which companies participate in the transaction.",
-      "limitations": "The rule concerns named firms and items covered by US export controls.",
-      "evidence_status": "Official export control rule, supplemented by separate Reuters and Time reporting.",
-      "published_at": "2026-11-25",
-      "organization": "U.S. Bureau of Industry and Security",
-      "source_ids": [
-        "bis-entity-list-amendment",
-        "nvidia-form-8k",
-        "reuters-export-debate",
-        "time-megaspeed-ownership"
-      ],
-      "time_window": "72h",
-      "body": "The US Bureau of Industry and Security added seven firms in three Southeast Asian countries to the Entity List, which triggers extra export controls when listed entities participate in covered transactions. The final rule was published on November 25. It names Megaspeed International in Singapore. In a filing with the US Securities and Exchange Commission, NVIDIA says its board reinstated Jensen Huang as chief executive on November 22.\n\nThe listings require a license for transactions involving the firms and items subject to US export rules. The published policy is a presumption of denial, meaning the review starts from the position that a license should be denied. The controls also cover specified reexports and transfers within a country. In projects that need computing equipment to train or test robot models, the obligations can therefore depend on the organizations involved in the supply chain and which one would receive the equipment.\n\nThe bureau cites the risk of advanced computing items being diverted. Time separately examined Megaspeed's historical ownership structure, while Reuters reported on the US debate over chip shipments following Huang's return. The rule sets out requirements for transactions involving the named firms. It contains no finding of personal liability against Huang.\n\nA chip can pass through several companies between the factory and the data center that uses it. The US rule names the companies that now trigger additional license requirements. It applies to those entities rather than every buyer in the three countries.",
+      "body": "Logistics operator Bleckmann announced in Eindhoven on November 24 that it had invested in two humanoid robots for selected European distribution centres. It expects delivery in the weeks ahead. Warehouse staff will then start training the machines. The company's stated aims include learning how to operate humanoids in its buildings and gathering examples that can be used to train later robots.\n\nPotential jobs include moving items and picking goods for orders. Bleckmann describes a voice interface that translates spoken instructions into physical actions. For moving through corridors, it lists cameras, laser distance sensors and software that builds a map while estimating where the robot is on it. The distance sensors can measure how far away surrounding objects are. The map helps the control software relate those observations to the robot's position as it moves.\n\nBleckmann handles logistics for fashion and lifestyle brands. It says investment in its wider automation programme has already exceeded $600 million, including systems in existing warehouses. The operator did not disclose a purchase price for the two humanoids or identify the centres where delivery is expected.\n\nSome of the operator’s warehouses already use automation. The two new machines still have to learn jobs such as moving goods or picking them for an order. The company has published its training aims and has yet to publish an order-picking result.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "The arm chooses its motion from object positions",
-    "summary": "A University of Nottingham controller was given the positions and orientations of a bowl and plate. Physical robot arms succeeded in 21 out of 24 trials.",
-    "implications": "Two successful runs began with a missed grasp. The finding comes from a single task with a bowl and plate."
+    "title": "Touch can reveal a problem during a move",
+    "summary": "XELA proposes measuring resistance while inserting a connector and detecting a small part as it begins to slip.",
+    "implications": "Each measurement helps with a different move: repositioning the connector or changing the strength of the grip."
   },
   "sources": [
     {
-      "id": "nottingham-screw-preprint",
-      "url": "https://arxiv.org/html/2611.32797v1",
+      "id": "xela-tactile-use-cases",
+      "url": "https://kyodonewsprwire.jp/release/202611250970",
+      "domain": "kyodonewsprwire.jp",
+      "organization": "XELA Robotics",
+      "published_at": "2026-11-25",
+      "title": "XELA Robotics、視覚だけでは困難な作業を可能にする、フィジカルAIによる触覚ソリューションを提案"
+    },
+    {
+      "id": "roboarc-preprint",
+      "url": "https://arxiv.org/html/2611.33390v1",
       "domain": "arxiv.org",
-      "organization": "University of Nottingham",
+      "organization": "Northwestern University, Microsoft, UC Berkeley and Carnegie Mellon University",
       "published_at": "2026-11-24",
-      "title": "Supply Geometry, Learn Execution: Screw Attention for Zero-Shot Policy Transfer in Robot Manipulation"
+      "title": "RoboARC: Physical Puzzles for Robotic Manipulation under Spatial Constraints"
     },
     {
-      "id": "jizai-palmimo-exhibit",
-      "url": "https://prtimes.jp/main/html/rd/p/000000025.000145251.html",
-      "domain": "prtimes.jp",
-      "organization": "Jizai",
-      "published_at": "2026-11-25",
-      "title": "Jizai Begins Exhibiting Palmimo DevKit at Tokyo Innovation Base"
-    },
-    {
-      "id": "gole-construction-presentation",
-      "url": "https://smartcona.co.kr/main/file_download?colum=board_file1&gb=PDS&idx=410",
-      "domain": "smartcona.co.kr",
-      "organization": "GoLe Robotics",
-      "published_at": "2026-11-25",
-      "title": "건설 자재운반 로봇 현장 실증 사례 — 정선 카지노호텔 · 광명 힐스테이트"
-    },
-    {
-      "id": "panasonic-osaka-program",
-      "url": "https://prtimes.jp/main/html/rd/p/000006971.000003442.html",
-      "domain": "prtimes.jp",
-      "organization": "Panasonic Group",
-      "published_at": "2026-11-25",
-      "title": "パナソニックグループが「RoboNext2026」に出展"
-    },
-    {
-      "id": "bis-entity-list-amendment",
-      "url": "https://public-inspection.federalregister.gov/2026-23999.pdf",
-      "domain": "public-inspection.federalregister.gov",
-      "organization": "U.S. Bureau of Industry and Security",
+      "id": "embo-introduction",
+      "url": "https://embo.com/introducing-embo",
+      "domain": "embo.com",
+      "organization": "Embo",
       "published_at": "2026-11-23",
-      "title": "Additions to the Entity List"
+      "title": "Introducing Embo"
     },
     {
-      "id": "nvidia-form-8k",
-      "url": "https://d18rn0p25nwr6d.cloudfront.net/CIK-0001045810/d56080ad-0d8b-401a-b284-e3308341659a.pdf",
-      "domain": "d18rn0p25nwr6d.cloudfront.net",
-      "organization": "NVIDIA",
-      "published_at": "2026-11-23",
-      "title": "NVIDIA Corporation Form 8-K"
+      "id": "tsn-embo-seed",
+      "url": "https://tsnmedia.org/embo-110m-seed-a16z-robot-brain/",
+      "domain": "tsnmedia.org",
+      "organization": "TSN",
+      "published_at": "2026-11-24",
+      "title": "Embo Raises a $110m Seed Led by a16z for a World-Model Robot Brain"
     },
     {
-      "id": "reuters-export-debate",
-      "url": "https://www.reuters.com/legal/government/jensen-huangs-return-nvidia-fuels-washington-fight-over-chinas-chip-access-2026-11-25/",
-      "domain": "www.reuters.com",
-      "organization": "Reuters",
-      "published_at": "2026-11-25",
-      "title": "Jensen Huang's return to Nvidia fuels Washington fight over China's chip access"
+      "id": "amada-hitachi-release",
+      "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf",
+      "domain": "www.amada.co.jp",
+      "organization": "Amada and Hitachi",
+      "published_at": "2026-11-26",
+      "title": "アマダと日立、AIエージェントとフィジカルAIの実装により、お客さま工場の自律化に向けた協創を加速"
     },
     {
-      "id": "time-megaspeed-ownership",
-      "url": "https://time.com/article/2026/11/25/nvidia-megaspeed-china-investment/",
-      "domain": "time.com",
-      "organization": "Time",
-      "published_at": "2026-11-25",
-      "title": "The Red Flags Behind Nvidia Customer Megaspeed"
+      "id": "bleckmann-warehouse-release",
+      "url": "https://www.bleckmann.com/uploads/press-downloads/Press-release-EN-Bleckmann-introduces-humanoids-into-operations-26.pdf",
+      "domain": "www.bleckmann.com",
+      "organization": "Bleckmann",
+      "published_at": "2026-11-24",
+      "title": "Bleckmann introduces humanoid robots into its operations"
     }
   ]
 }
