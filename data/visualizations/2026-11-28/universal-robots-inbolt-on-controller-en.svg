@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="456" viewBox="0 0 360 456" role="img" aria-labelledby="title description">
+  <title id="title">Where 3D camera images are processed</title>
+  <desc id="description">Universal Robots and Inbolt. Previous setup: 3D camera, External PC, Controller. Gen 7 setup: 3D camera, Arm port , Controller.</desc>
+  <rect x="0" y="0" width="360" height="456" fill="#fbf8f1" id="a2" data-qa-group="bg"/>
+  <text x="22" y="33" font-size="14" font-weight="700" font-family="Noto Sans" text-anchor="start" fill="#11636a" id="a3">Universal Robots and Inbolt</text>
+  <text x="22" y="72" font-size="26" font-weight="700" font-family="Noto Serif" text-anchor="start" fill="#191e20" id="a4">Where 3D camera</text>
+  <text x="22" y="105" font-size="26" font-weight="700" font-family="Noto Serif" text-anchor="start" fill="#191e20" id="a5">images are processed</text>
+  <line x1="22" y1="124" x2="338" y2="124" stroke="#6c777a" stroke-width="1.3" id="a6"/>
+  <text x="22" y="160" font-size="17" font-weight="700" font-family="Noto Sans" text-anchor="start" fill="#9c412f" id="a7">Previous setup</text>
+  <text x="64" y="190" font-size="14" font-weight="700" font-family="Noto Sans" text-anchor="middle" fill="#191e20" id="a8">3D camera</text>
+  <circle cx="64" cy="227" r="5" fill="#9c412f" id="a9" data-qa-group="node-151-0"/>
+  <text x="180" y="190" font-size="14" font-weight="700" font-family="Noto Sans" text-anchor="middle" fill="#191e20" id="a10">External PC</text>
+  <circle cx="180" cy="227" r="5" fill="#9c412f" id="a11" data-qa-group="node-151-1"/>
+  <text x="296" y="190" font-size="14" font-weight="700" font-family="Noto Sans" text-anchor="middle" fill="#191e20" id="a12">Controller</text>
+  <circle cx="296" cy="227" r="5" fill="#9c412f" id="a13" data-qa-group="node-151-2"/>
+  <line x1="74" y1="227" x2="170" y2="227" stroke="#11636a" stroke-width="1.7" id="a14" data-qa-group="flow-151-0"/>
+  <path d="M 165 223 L 170 227 L 165 231" stroke="#11636a" fill="none" stroke-width="1.7" stroke-linecap="round" id="a15" data-qa-group="flow-151-0"/>
+  <line x1="190" y1="227" x2="286" y2="227" stroke="#11636a" stroke-width="1.7" id="a16" data-qa-group="flow-151-1"/>
+  <path d="M 281 223 L 286 227 L 281 231" stroke="#11636a" fill="none" stroke-width="1.7" stroke-linecap="round" id="a17" data-qa-group="flow-151-1"/>
+  <line x1="180" y1="235" x2="180" y2="245" stroke="#6c777a" stroke-width="1.3" id="a18" data-qa-group="lead-151-1"/>
+  <text x="180" y="267" font-size="14" font-weight="400" font-family="Noto Sans" text-anchor="middle" fill="#414e56" id="a19">Processes the images</text>
+  <text x="22" y="311" font-size="17" font-weight="700" font-family="Noto Sans" text-anchor="start" fill="#11636a" id="a20">Gen 7 setup</text>
+  <text x="64" y="341" font-size="14" font-weight="700" font-family="Noto Sans" text-anchor="middle" fill="#191e20" id="a21">3D camera</text>
+  <circle cx="64" cy="378" r="5" fill="#11636a" id="a22" data-qa-group="node-302-0"/>
+  <text x="180" y="341" font-size="14" font-weight="700" font-family="Noto Sans" text-anchor="middle" fill="#191e20" id="a23">Arm port</text>
+  <circle cx="180" cy="378" r="5" fill="#11636a" id="a24" data-qa-group="node-302-1"/>
+  <text x="296" y="341" font-size="14" font-weight="700" font-family="Noto Sans" text-anchor="middle" fill="#191e20" id="a25">Controller</text>
+  <circle cx="296" cy="378" r="5" fill="#11636a" id="a26" data-qa-group="node-302-2"/>
+  <line x1="74" y1="378" x2="170" y2="378" stroke="#11636a" stroke-width="1.7" id="a27" data-qa-group="flow-302-0"/>
+  <path d="M 165 374 L 170 378 L 165 382" stroke="#11636a" fill="none" stroke-width="1.7" stroke-linecap="round" id="a28" data-qa-group="flow-302-0"/>
+  <line x1="190" y1="378" x2="286" y2="378" stroke="#11636a" stroke-width="1.7" id="a29" data-qa-group="flow-302-1"/>
+  <path d="M 281 374 L 286 378 L 281 382" stroke="#11636a" fill="none" stroke-width="1.7" stroke-linecap="round" id="a30" data-qa-group="flow-302-1"/>
+  <line x1="180" y1="386" x2="180" y2="396" stroke="#6c777a" stroke-width="1.3" id="a31" data-qa-group="lead-302-1"/>
+  <text x="180" y="418" font-size="14" font-weight="400" font-family="Noto Sans" text-anchor="middle" fill="#414e56" id="a32">carries camera data</text>
+  <line x1="296" y1="386" x2="296" y2="410" stroke="#6c777a" stroke-width="1.3" id="a33" data-qa-group="lead-302-2"/>
+  <text x="338" y="440" font-size="14" font-weight="400" font-family="Noto Sans" text-anchor="end" fill="#191e20" id="a34">locates the part</text>
+  <line x1="22" y1="281" x2="338" y2="281" stroke="#6c777a" stroke-width="1.3" id="a35"/>
+</svg>
