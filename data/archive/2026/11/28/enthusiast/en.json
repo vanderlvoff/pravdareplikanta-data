@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-28",
+  "issue_id": "daily-2026-11-28",
+  "edition": "enthusiast",
+  "language": "en",
+  "generated_at": "2026-11-27T21:13:27Z",
+  "title": "How a movement reaches a robot arm",
+  "lead": "A cargo ship reached the International Space Station with equipment for a remote-control experiment. In Einsia’s computer scenes, controllers learn by moving arms and observing what happens to objects.",
+  "news": [
+    {
+      "id": "progress-ms36-teledroid-equipment-docking",
+      "title": "Progress delivers equipment for a robot experiment to the space station",
+      "summary": "NASA confirmed that a Progress cargo spacecraft docked with the station’s Rassvet module on November 26. Kommersant reported that the cargo included cameras, a manipulator and integration equipment for a robot experiment intended to assist work outside the station.",
+      "details": "A spacecraft has delivered equipment for a test of how a robot can copy a person's movements in orbit. On November 26, Progress MS-36 docked at the Earth-facing port of the station's Rassvet module, NASA said. Kommersant reported that the ship carried an arm, cameras and integration equipment for the Teledroid experiment.",
+      "technical_novelty": "In the experiment, a wearable device will relay the operator’s movements for the robot to reproduce.",
+      "engineering_impact": "The cameras and arm are equipment for testing remote control on the station.",
+      "limitations": "The docking reports document delivery and give no results from a session outside the station.",
+      "evidence_status": "NASA confirmed docking. Kommersant reported the equipment, and TASS described the planned control method.",
+      "published_at": "2026-11-26",
+      "organization": "Roscosmos and NASA",
+      "source_ids": [
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
+      ],
+      "time_window": "72h",
+      "body": "A spacecraft has delivered equipment for a test of how a robot can copy a person's movements in orbit. On November 26, Progress MS-36 docked at the Earth-facing port of the station's Rassvet module, NASA said. Kommersant reported that the ship carried an arm, cameras and integration equipment for the Teledroid experiment.\n\nThe spacecraft lifted off from Baikonur on November 24. The experiment calls for remote operation, with the robot reproducing motions made by an operator. TASS describes an operator wearing an exoskeleton, a device attached to the body that relays movements to the control system. The robot also uses machine vision to process camera images. Its design resembles an upper body without legs.\n\nAfter delivery, the equipment has to be connected and the motion link checked. Operators need to know that a command reaches the robot and that they can see the result. The docking reports contain no measurements of those steps or of the robot's performance outside the station.\n\nA movement of the operator's arm must eventually reach a machine working somewhere else. The delivery brings equipment for testing the link in orbit. The docking reports did not include an outcome from an exercise outside the station.",
+      "image": null
+    },
+    {
+      "id": "einsia-robouniverse-10k-training-and-test",
+      "title": "Einsia releases a simulator with 10,807 robot tasks",
+      "summary": "Singapore’s Einsia AI released RoboUniverse-10K, an open set of simulated environments for training robots. One model improved from 0.8% to 21.2% success after additional training, measured on a separate set of 500 tasks.",
+      "details": "A recording shows what a robot did once. A computer scene can let it try a different move and see what changes. Singapore's Einsia AI released 10,807 such tasks on November 25 in a set called RoboUniverse-10K. In a test on 500 separate tasks, one program's success rate rose from 0.8% to 21.2% after additional training.",
+      "technical_novelty": "The developers turned recordings of real robots into interactive environments that can check the final result.",
+      "engineering_impact": "The release separates 10,307 training tasks from the 500 tasks used for evaluation.",
+      "limitations": "The rise from 0.8% to 21.2% was measured in simulation. The physical demonstration concerned one drawing.",
+      "evidence_status": "Results reported by the developers include a simulation evaluation and a separate demonstration on a physical arm.",
+      "published_at": "2026-11-25",
+      "organization": "Einsia AI Technology",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "time_window": "72h",
+      "body": "A recording shows what a robot did once. A computer scene can let it try a different move and see what changes. Singapore's Einsia AI released 10,807 such tasks on November 25 in a set called RoboUniverse-10K. In a test on 500 separate tasks, one program's success rate rose from 0.8% to 21.2% after additional training.\n\nThe team used recordings from physical robots as a starting point for deciding what objects and actions a task should contain. It turned these into interactive scenes, where the simulator updates what happens when an arm moves or touches an object. Of the 10,807 tasks, 10,307 are for training and 500 are held out for evaluation. During evaluation the software can observe and act through fixed interfaces. It cannot read hidden object coordinates or the rules used to check its work.\n\nA separate demonstration ran the model on a physical Franka arm. Given an example image, the arm drew the Einsia logo on a whiteboard whose height had not been supplied in advance. Einsia says the model used observation, trial movements and correction. The 0.8% and 21.2% figures describe the simulated evaluation.\n\nThe simulated arm can try a move and see what changes, something a recording cannot do. The improved model still finished only about one in five tasks in the computer evaluation.",
+      "image": null
+    },
+    {
+      "id": "xpeng-iron-retail-training-roadmap",
+      "title": "XPENG plans to train its new humanoid in its own stores",
+      "summary": "Chinese carmaker XPENG publicly showed its IRON humanoid at AI Day in Guangzhou. It plans to start training the robot as a store assistant in the first quarter of 2027.",
+      "details": "XPENG presented its new IRON humanoid in Guangzhou on November 25. The carmaker wants to see how the machine can learn the role of a store assistant. It targets the first quarter of 2027 for training in its own shops and the second quarter for a public release. The AI Day announcement described the hardware and planned uses without giving results from work with shoppers.",
+      "technical_novelty": "XPENG says the robot has 76 independent ways to move and more than 1,500 touch-sensing points.",
+      "engineering_impact": "The company plans to use its own stores to train the robot as an assistant.",
+      "limitations": "XPENG gave target dates for training and public release. It did not report results from helping shoppers.",
+      "evidence_status": "Manufacturer launch announcement with target dates for training and public release.",
+      "published_at": "2026-11-25",
+      "organization": "XPENG",
+      "source_ids": [
+        "xpeng-ai-day-iron"
+      ],
+      "time_window": "72h",
+      "body": "XPENG presented its new IRON humanoid in Guangzhou on November 25. The carmaker wants to see how the machine can learn the role of a store assistant. It targets the first quarter of 2027 for training in its own shops and the second quarter for a public release. The AI Day announcement described the hardware and planned uses without giving results from work with shoppers.\n\nXPENG says IRON has 76 degrees of freedom, a count of independent ways its parts can move. It also reports more than 1,500 points that sense touch and says coverage exceeds 80% of key body areas. Three of the company's Turing chips run models on the robot and help control its body. XPENG built the systems for planning tasks, navigating and handling objects together with the robot’s hardware.\n\nThe company lists tasks created by voice or app, autonomous navigation and charging, and reporting of unusual conditions. It plans to use its own stores to train the assistant. Working in those shops would give the team real examples of the objects the robot needs to handle and the spaces it must move through.\n\nMotion and touch help with different parts of the same job. Joints let the robot move its hand, while sensors can tell it when contact occurs. XPENG plans to see how those abilities work together in its shops.",
+      "image": null
+    },
+    {
+      "id": "universal-robots-inbolt-on-controller",
+      "title": "Universal Robots moves 3D vision processing onto the robot controller",
+      "summary": "Universal Robots and Inbolt showed in Nuremberg how Inbolt Standard locates parts on a Gen 7 robot controller. The camera plugs into the end of the arm, and the new setup removes the separate industrial computer formerly needed for that processing.",
+      "details": "At SPS in Nuremberg on November 24, Universal Robots and Inbolt introduced an integration that runs 3D vision on the robot's controller. Inbolt Standard uses image and depth data to locate a part so the arm can bring its tool to the correct position. It now carries out that calculation on the CB7 Core controller. The companies scheduled a live demonstration on a Gen 7 arm at the November 24 to 26 show.",
+      "technical_novelty": "The camera connects at the end of the arm, and the robot controller computes the part position.",
+      "engineering_impact": "The setup removes the separate computer previously needed for this 3D vision processing.",
+      "limitations": "The reported repeatability of 0.5 to 0.7 millimetres covers stationary parts.",
+      "evidence_status": "The suppliers announced the integration and reported repeatability on stationary parts.",
+      "published_at": "2026-11-24",
+      "organization": "Universal Robots and Inbolt",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "time_window": "7d",
+      "body": "At SPS in Nuremberg on November 24, Universal Robots and Inbolt introduced an integration that runs 3D vision on the robot's controller. Inbolt Standard uses image and depth data to locate a part so the arm can bring its tool to the correct position. It now carries out that calculation on the CB7 Core controller. The companies scheduled a live demonstration on a Gen 7 arm at the November 24 to 26 show.\n\nAn Orbbec camera uses the power and gigabit Ethernet connectors on the g-Series tool flange, the mount at the end of the arm. The camera signal travels through the robot. The previous setup needed an external industrial computer for vision processing. To configure a part, the system uses a file from computer-aided design describing its shape. The suppliers say configuration runs locally in under ten minutes and requires no collection or labeling of images.\n\nThe suppliers quote repeatability of 0.5 to 0.7 millimetres on fixed parts. Repeatability describes how closely repeated estimates agree under the stated conditions. It does not measure how close each estimate is to the true position. The release specifies PolyScope X 10.13 or later for three g-Series arms and describes an external camera cable for compatible older arms using a CB7 controller.\n\nA camera supplies measurements, but it takes a processor to decide where the part is. In this setup the robot's own controller takes on that calculation. Older compatible models still need the camera cable routed externally.",
+      "image": null
+    },
+    {
+      "id": "kawasaki-beckhoff-controller-mou",
+      "title": "Kawasaki and Beckhoff sign agreement on robot controls",
+      "summary": "Kawasaki Heavy Industries and Beckhoff signed a memorandum of understanding at SPS in Nuremberg. They will explore using the EtherCAT industrial network and Beckhoff software in Kawasaki robot control systems.",
+      "details": "On November 27, Kawasaki Heavy Industries and Germany's Beckhoff Automation announced a memorandum signed at the SPS trade show in Nuremberg. The partners want to make it easier to connect equipment from different vendors to Kawasaki industrial robots. The agreement covers exploring control technology that runs on industrial computers and discussing support and training for the people who assemble production systems.",
+      "technical_novelty": "The partners will explore sending commands and measurements over an industrial network called EtherCAT.",
+      "engineering_impact": "The work aims to make it easier to connect or replace equipment supplied by different manufacturers.",
+      "limitations": "The partners have yet to publish a list of compatible devices or measurements of communication delay.",
+      "evidence_status": "The partners confirmed the memorandum. Technical results are yet to be published.",
+      "published_at": "2026-11-27",
+      "organization": "Kawasaki Heavy Industries and Beckhoff Automation",
+      "source_ids": [
+        "khi-beckhoff-mou",
+        "beckhoff-sps-mou"
+      ],
+      "time_window": "24h",
+      "body": "On November 27, Kawasaki Heavy Industries and Germany's Beckhoff Automation announced a memorandum signed at the SPS trade show in Nuremberg. The partners want to make it easier to connect equipment from different vendors to Kawasaki industrial robots. The agreement covers exploring control technology that runs on industrial computers and discussing support and training for the people who assemble production systems.\n\nEtherCAT is a network that carries commands and measurements between an industrial controller and attached devices. Kawasaki put the network at the centre of a controller concept shown in Tokyo in December 2025. The new agreement gives Kawasaki and Beckhoff a way to work on putting the concept into practice. They will also assess TwinCAT, Beckhoff's software for running automation from a computer.\n\nA robot cell may contain a camera, sensors and software as well as the arm. If each connection has to be built separately, replacing a camera or adding another sensor becomes more work. The companies want equipment choices and later changes to be easier. They have also said they will discuss training and support for system integrators, the specialists who put those pieces together.\n\nThe camera watches a part and the motor moves the arm, so the controller has to bring information and movement together. The agreement identifies tools that the companies will evaluate. It does not yet tell us which devices will work with the controller.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "Remote control needs commands and a view of the result",
+    "summary": "Progress docked with the space station. Kommersant reported the cargo included an arm, cameras and equipment to connect them for the Teledroid experiment.",
+    "implications": "The trial will need to measure how closely the arm follows the operator and how long each response takes."
+  },
+  "sources": [
+    {
+      "id": "nasa-progress97-docking",
+      "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/",
+      "domain": "www.nasa.gov",
+      "organization": "NASA",
+      "published_at": "2026-11-26",
+      "title": "Progress Cargo Craft Docks to Station on Thanksgiving Day"
+    },
+    {
+      "id": "kommersant-ms36-equipment",
+      "url": "https://www.kommersant.ru/doc/9131416",
+      "domain": "www.kommersant.ru",
+      "organization": "Коммерсантъ",
+      "published_at": "2026-11-26",
+      "title": "Грузовой корабль «Прогресс МС-36» с «Теледроидом» пристыковался к МКС"
+    },
+    {
+      "id": "tass-teledroid-control-background",
+      "url": "https://tass.ru/kosmos/28117839",
+      "domain": "tass.ru",
+      "organization": "ТАСС",
+      "published_at": "2026-09-16",
+      "title": "Прогресс МС-36 отправится к МКС в ноябре"
+    },
+    {
+      "id": "einsia-robouniverse-release",
+      "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml",
+      "domain": "en.prnasia.com",
+      "organization": "Einsia AI Technology",
+      "published_at": "2026-11-25",
+      "title": "Einsia AI Open-Source RoboUniverse-10K, the First 10K-Scale RL Environment Suite for Agential Robotics"
+    },
+    {
+      "id": "xpeng-ai-day-iron",
+      "url": "https://www.xpeng.com/pressroom/news/01a212b0d830a1e838d68a02a2110174",
+      "domain": "www.xpeng.com",
+      "organization": "XPENG",
+      "published_at": "2026-11-25",
+      "title": "XPENG Unveils Turing Physical AI Architecture and Debuts Advanced General-Purpose Humanoid Robot IRON"
+    },
+    {
+      "id": "ur-inbolt-gen7-release",
+      "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/",
+      "domain": "www.universal-robots.com",
+      "organization": "Universal Robots and Inbolt",
+      "published_at": "2026-11-24",
+      "title": "Universal Robots and Inbolt make AI-powered 3D vision guidance easier to deploy and scale with native Gen 7 robot integration"
+    },
+    {
+      "id": "khi-beckhoff-mou",
+      "url": "https://www.khi.co.jp/pressrelease/news_261127-1.pdf",
+      "domain": "www.khi.co.jp",
+      "organization": "Kawasaki Heavy Industries and Beckhoff Automation",
+      "published_at": "2026-11-27",
+      "title": "次世代ロボットコントローラによる柔軟で拡張性の高いシステムの実現に向けた協業に合意"
+    },
+    {
+      "id": "beckhoff-sps-mou",
+      "url": "https://prtimes.jp/main/html/rd/p/000000077.000027362.html",
+      "domain": "prtimes.jp",
+      "organization": "Beckhoff Automation Japan",
+      "published_at": "2026-11-27",
+      "title": "SPS 2026において、川崎重工とベッコフがMOUを締結"
+    }
+  ]
+}

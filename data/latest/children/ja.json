@@ -2,159 +2,177 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-27",
-  "issue_id": "daily-2026-11-27",
+  "issue_date": "2026-11-28",
+  "issue_id": "daily-2026-11-28",
   "edition": "children",
   "language": "ja",
-  "generated_at": "2026-11-26T21:13:18Z",
-  "title": "ロボットはせまいすき間をどう通す？",
-  "lead": "研究者たちは、部品を回したり、ひもを穴に通したりする問題をロボットに出した。東京の会社は、部品が引っかかったことをロボットの手で調べる方法を紹介した。",
+  "generated_at": "2026-11-27T21:13:27Z",
+  "title": "宇宙ステーションにロボットの腕が届いた",
+  "lead": "人の動きをまねるロボットを試す道具が、補給船で宇宙ステーションに届いた。別の研究では、ロボットの腕がコンピューターの中で物を動かす練習をした。",
   "news": [
     {
-      "id": "roboarc-spatial-manipulation-puzzles",
-      "title": "ロボットはひもの結び目をほどけるか",
-      "summary": "ノースウェスタン大学などのチームは、コンピューターの中でロボットが解く90問を作った。ふつうの試験条件では、動きの命令を自分で組み立てるプログラムの最高成績は約43％だった。",
-      "details": "ノースウェスタン大学などの研究チームは、ロボットがコンピューターの中で解く90問を用意した。広い部品をせまいすき間に通す問題や、ひもを穴に通す問題がある。プログラムが手の動きを決め、部品やひもを決められた場所まで動かせるかを調べた。",
-      "technical_novelty": "部品の組み立て、ひもをほどく作業、すき間を通す作業などを、最後の物の状態から採点する。",
-      "engineering_impact": "使える情報ややり直しの可否を変えた二つの条件で、動きの決め方を調べる。",
-      "limitations": "約43％と18問中0問は、コンピューター上で別の方式に別の問題を出したときの結果だ。",
-      "evidence_status": "査読前の論文。ここで挙げた成績は著者らのシミュレーション試験による。",
-      "published_at": "2026-11-24",
-      "organization": "Northwestern University, Microsoft, UC Berkeley and Carnegie Mellon University",
+      "id": "progress-ms36-teledroid-equipment-docking",
+      "title": "宇宙ステーションにロボットの実験道具が届いた",
+      "summary": "補給船プログレスは11月26日、国際宇宙ステーションに着いた。ロシアの新聞によると、人の動きをまねるロボットを試すためのカメラなどが船に積まれていた。",
+      "details": "補給船（ほきゅうせん）プログレスは11月26日、国際宇宙ステーションのラスヴェートという部分に到着し、船とステーションをつないだ。船は二日前にバイコヌールから打ち上げられた。ロシアの新聞コメルサントによると、船にはロボットの腕やカメラ、それらをつなぐための道具が積まれていた。",
+      "technical_novelty": "宇宙飛行士（うちゅうひこうし）が体に着ける道具で、ロボットに動きを伝える予定だ。",
+      "engineering_impact": "カメラの映像で、ロボットの腕がどこへ動くかを見られる。",
+      "limitations": "腕の試験をするには、届いた道具をつなぐ作業が残っている。",
+      "evidence_status": "NASAが到着と接続を発表し、コメルサントが機材を、タス通信が操作方法を伝えた。",
+      "published_at": "2026-11-26",
+      "organization": "Roscosmos and NASA",
       "source_ids": [
-        "roboarc-preprint"
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
+      ],
+      "time_window": "72h",
+      "body": "補給船（ほきゅうせん）プログレスは11月26日、国際宇宙ステーションのラスヴェートという部分に到着し、船とステーションをつないだ。船は二日前にバイコヌールから打ち上げられた。ロシアの新聞コメルサントによると、船にはロボットの腕やカメラ、それらをつなぐための道具が積まれていた。\n\n実験に使うロボットは、人間の上半身に似た形だ。タス通信によると、宇宙飛行士（うちゅうひこうし）は体に道具を付けて、腕の動きをロボットに伝える。たとえば人がひじを曲げると、ロボットの腕も同じように曲がるはずだ。カメラはロボットの近くの物や、動いている腕のようすを映す。\n\n道具は宇宙ステーションに届いた。実験するには、機械をつないで、人が命令したときに手がどう動くかを確かめる。人が見ている映像と、手の動きを合わせることも大切だ。ステーションの外で作業した結果は、今回の到着の知らせにはなかった。この実験に使うロボットの名前はテレドロイドだ。",
+      "image": null
+    },
+    {
+      "id": "einsia-robouniverse-10k-training-and-test",
+      "title": "コンピューターの中でロボットが物を動かす練習",
+      "summary": "シンガポールのEinsiaが、ロボットの腕を動かして物の変化を見られる練習用の場面を公開した。練習とは別に用意した500問で試すと、練習後は一つのプログラムが前より多く成功した。",
+      "details": "シンガポールのEinsiaのチームは11月25日、ロボットが物を動かす練習をする場面を公開した。コンピューターの中で手を物に近づけ、押したときに物がどう動くかを見られる。この方法で練習すると、初めての課題にどれほど成功するかを調べた。",
+      "technical_novelty": "コンピューターの中で腕を動かし、物がどこへ動いたかを見られる。",
+      "engineering_impact": "チームは練習に使わない500問を用意して、結果を調べた。",
+      "limitations": "二つの成功率（せいこうりつ）は、コンピューターの中で試したときの数字だ。",
+      "evidence_status": "開発元が仮想環境での成績と、別に行った実機の実演を公表した。",
+      "published_at": "2026-11-25",
+      "organization": "Einsia AI Technology",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "time_window": "72h",
+      "body": "シンガポールのEinsiaのチームは11月25日、ロボットが物を動かす練習をする場面を公開した。コンピューターの中で手を物に近づけ、押したときに物がどう動くかを見られる。この方法で練習すると、初めての課題にどれほど成功するかを調べた。\n\nチームは本物のロボットを動かした記録をもとに、1万807問を用意した。そのうち1万307問が練習用で、500問は別に取っておいた。試験中は画面を見て動きを選べるが、物の正確な場所や、何をもって成功と決めるかは教えられない。手で押したときに物が思った場所へ動いたかを、試験の終わりに調べる。\n\n一つのプログラムは、500問で成功する割合が、練習前の0.8％から練習後の21.2％に上がった。別の実演では、本物の腕に見本を見せ、白い板に会社のマークをかかせた。板の高さは先に教えていなかった。割合の数字はコンピューターの中の試験で、白い板の実演では一つの絵をかく仕事を試した。",
+      "image": null
+    },
+    {
+      "id": "xpeng-iron-retail-training-roadmap",
+      "title": "店の仕事を手伝うために練習するロボット",
+      "summary": "中国の小鵬汽車は広州で、人の形に近いロボットを公開した。2027年のはじめに、自分たちの店で、店の人を手伝う仕事を教え始める予定だ。",
+      "details": "中国の自動車会社、小鵬汽車は11月25日、広州の発表会で人の形に近いロボットを見せた。会社は店の人を手伝う仕事を教えたいという。2027年の1月から3月に自分たちの店で練習を始め、4月から6月に一般向けに出すことを目指している。",
+      "technical_novelty": "物にふれた場所を調べるため、体にセンサーを付けた。",
+      "engineering_impact": "会社は自分たちの店でロボットの練習を始める予定だ。",
+      "limitations": "店でお客さんを手伝った結果は、まだ発表されていない。",
+      "evidence_status": "メーカーが機体を公開し、訓練と一般向けの発表の予定を示した。",
+      "published_at": "2026-11-25",
+      "organization": "XPENG",
+      "source_ids": [
+        "xpeng-ai-day-iron"
+      ],
+      "time_window": "72h",
+      "body": "中国の自動車会社、小鵬汽車は11月25日、広州の発表会で人の形に近いロボットを見せた。会社は店の人を手伝う仕事を教えたいという。2027年の1月から3月に自分たちの店で練習を始め、4月から6月に一般向けに出すことを目指している。\n\n物をつかむときは、指のどこに物がふれたかが役に立つ。会社によると、ロボットには、ふれたことを調べる場所が1500か所をこえる。体の部分をそれぞれ別々に動かせる数を自由度（じゆうど）といい、この機体では76ある。たとえば、手首を回さずにひじを曲げるときは、別々に動かしている。\n\n機体には、動きを計算するための小さな部品が三つ入っている。声やアプリで仕事を伝えられるという。会社は、自分で場所を確かめて移動したり、充電（じゅうでん）したりする仕組みもあると説明している。店でお客さんを相手に何ができたかは発表されていない。公開した計画では、まず自分たちが運営する店を練習の場所にする。",
+      "image": null
+    },
+    {
+      "id": "universal-robots-inbolt-on-controller",
+      "title": "カメラをロボットの腕に直接つなぐ",
+      "summary": "ユニバーサルロボットとInboltは、カメラを使って部品の場所を調べる仕組みを発表した。画像を調べるプログラムを、ロボットの腕を動かすコンピューターで使う。",
+      "details": "ドイツのニュルンベルクの展示会で、ユニバーサルロボットとInboltが、作業台にある部品の場所を見つける仕組みを発表した。カメラは写真をとるだけでなく、物までのきょりも測る。その情報があれば、工具を部品のどこまで近づけるかをプログラムで決められる。",
+      "technical_novelty": "腕を動かすコンピューターで、カメラの画像も調べられる。",
+      "engineering_impact": "カメラで部品の場所を調べると、腕をどこへ動かすか決める役に立つ。",
+      "limitations": "会社が発表した測定（そくてい）の結果は、止まっている部品を調べたときのものだ。",
+      "evidence_status": "供給元が統合を発表し、固定した部品を測ったときの繰り返し精度を示した。",
+      "published_at": "2026-11-24",
+      "organization": "Universal Robots and Inbolt",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
       ],
       "time_window": "7d",
-      "body": "ノースウェスタン大学などの研究チームは、ロボットがコンピューターの中で解く90問を用意した。広い部品をせまいすき間に通す問題や、ひもを穴に通す問題がある。プログラムが手の動きを決め、部品やひもを決められた場所まで動かせるかを調べた。\n\n大きな部品がそのままでは通らなくても、横に向けると入ることがある。そのためには、部品を回す場所も必要だ。ロボットを動かすプログラムは、どの向きに回せばよいかを決める。試験では、最後に物がどこにあり、どうつながっているかを見て答えを確かめる。チームはすべての問題に、うまくいく手順を一つずつ用意した。\n\nふつうの条件で最もよく解いたプログラムは、動きの命令を作り、約43％に成功した。別の四つのプログラムには、絵と指示を渡して、片手で解く18問を試した。その四つは一問も解けなかった。この数字は、コンピューターの中で行った試験の結果だ。本物の機械で試すときは、手を動かす広さや物のかたさも調べることになる。",
+      "body": "ドイツのニュルンベルクの展示会で、ユニバーサルロボットとInboltが、作業台にある部品の場所を見つける仕組みを発表した。カメラは写真をとるだけでなく、物までのきょりも測る。その情報があれば、工具を部品のどこまで近づけるかをプログラムで決められる。\n\n新しいロボットでは、腕の先の差し込み口にカメラをつなぐ。カメラの信号は腕の中を通り、ロボットを動かすコンピューターに届く。前はこの計算に別のコンピューターが必要だった。形のちがう部品を調べるためには、その形を記録した図のファイルを読みこませる。会社によると、設定は10分かからない。その部品の写真をたくさん集めて印を付ける作業もいらないという。\n\n動かない部品をくり返し測ったとき、結果がどれくらい近いかを調べた。会社が発表した値は0.5から0.7ミリメートルだ。ベルトの上を流れるような動いている部品でも場所を見つけられるかは、今回の発表では分からない。",
       "image": null
     },
     {
-      "id": "xela-touch-insertion-and-picking",
-      "title": "差し込み口に引っかかったら、ロボットの指が知らせる",
-      "summary": "東京のXELA Roboticsは、プラグを入れるときに手のセンサーで引っかかりを調べる方法を紹介した。小さなねじが指の間からすべり始めたときにも、同じように手で確かめられるという。",
-      "details": "東京のXELA Roboticsは、ロボットの手につけたセンサーを使って、プラグを差し込む方法を紹介した。プラグの向きが少しずれると、差し込み口のふちに当たることがある。カメラを使っても、いつ当たったかが見えにくいときがある。手のセンサーは、部品が指をどのくらい強く押したかを測る。",
-      "technical_novelty": "手のセンサーで、プラグが引っかかったときの力や、ねじがすべり始めたときの動きを調べる。",
-      "engineering_impact": "測った値を使って、プラグの位置や、小さな部品をにぎる強さを変えられるという。",
-      "limitations": "カメラだけの方法との比較や、部品がこわれた回数は発表されていない。",
-      "evidence_status": "センサーの供給元が用途を紹介した。比較試験の結果は公表していない。",
-      "published_at": "2026-11-25",
-      "organization": "XELA Robotics",
+      "id": "kawasaki-beckhoff-controller-mou",
+      "title": "工場でロボットとカメラをつなぐには？",
+      "summary": "日本の川崎重工とドイツのベッコフは、工場のロボットにカメラやセンサーをつなぐ方法を一緒に調べる。ドイツのニュルンベルクで開かれた展示会で、そのための約束を結んだ。",
+      "details": "日本の川崎重工とドイツのベッコフは11月27日、工場のロボットに、別の会社が作った道具をつなぐ方法を一緒に調べると発表した。ドイツのニュルンベルクで開かれた展示会で、協力する約束を結んだ。カメラやセンサーを取りかえたときも、ロボットと一緒に使えるようにする作業を楽にしたいという。",
+      "technical_novelty": "二つの会社は、工場でロボットとほかの機器をつなぐ方法を調べる。",
+      "engineering_impact": "工場の通信網（つうしんもう）を使えば、カメラから部品の情報（じょうほう）を送れる。",
+      "limitations": "どのカメラやセンサーをつなげられるかは、まだ発表されていない。",
+      "evidence_status": "両社が基本合意を発表した。技術の検証結果はまだ公表していない。",
+      "published_at": "2026-11-27",
+      "organization": "Kawasaki Heavy Industries and Beckhoff Automation",
       "source_ids": [
-        "xela-tactile-use-cases"
-      ],
-      "time_window": "72h",
-      "body": "東京のXELA Roboticsは、ロボットの手につけたセンサーを使って、プラグを差し込む方法を紹介した。プラグの向きが少しずれると、差し込み口のふちに当たることがある。カメラを使っても、いつ当たったかが見えにくいときがある。手のセンサーは、部品が指をどのくらい強く押したかを測る。\n\n引っかかったと気づけば、手を少し動かし、位置を直してからもう一度入れられる。会社は、小さなねじをつかむときにも別の使い方ができると説明した。指を閉じると、ねじが指にかくれてカメラから見えなくなることがある。\n\nねじがすべり始めると、センサーでその動きをとらえて、握る強さを変えられるという。プラグの作業ではふちに当たったときの力を見て、ねじの作業では指の間の動きを見る。会社は二つの使い方を示したが、取り付けで部品をこわさずにすんだ回数など、実際の成績は発表していない。何度も同じ種類の部品を取り付けて、終わった部品を一つずつ調べると、成績が分かる。",
-      "image": null
-    },
-    {
-      "id": "bleckmann-two-humanoids-warehouse-training",
-      "title": "二台のロボットが倉庫の仕事を習う",
-      "summary": "物流会社のBleckmannは、ヨーロッパの倉庫に人の形に近いロボットを二台入れると発表した。機体が届いたら、荷物を運んだり、注文に合う商品を集めたりする仕事を教える予定だ。",
-      "details": "物流会社のBleckmannは11月24日、ヨーロッパの倉庫で使うロボット二台にお金を出したと発表した。人の形に近い機械で、数週間のうちに届く見通しだ。会社の人たちは、商品を運ぶ仕事や、注文された品を集める仕事を、どのようにロボットに教えられるかを調べる。",
-      "technical_novelty": "カメラとレーザーで周りを調べ、地図を作りながら自分がいる場所を確かめる。",
-      "engineering_impact": "商品を運んだり集めたりする仕事を二台に教え、次の機体を教えるための記録を集める。",
-      "limitations": "どの倉庫で先に使うのかや、作業した結果はまだ発表されていない。",
-      "evidence_status": "運営会社が購入と、機体が届いた後の訓練計画を発表した。",
-      "published_at": "2026-11-24",
-      "organization": "Bleckmann",
-      "source_ids": [
-        "bleckmann-warehouse-release"
-      ],
-      "time_window": "72h",
-      "body": "物流会社のBleckmannは11月24日、ヨーロッパの倉庫で使うロボット二台にお金を出したと発表した。人の形に近い機械で、数週間のうちに届く見通しだ。会社の人たちは、商品を運ぶ仕事や、注文された品を集める仕事を、どのようにロボットに教えられるかを調べる。\n\n通路に箱があると、ロボットが車や台車と同じようにまっすぐ進めないことがある。会社によると、機体にはカメラと、レーザーで物までのきょりを測るセンサーがある。その情報で地図を作りながら、機体が地図のどこにいるかを調べる。たとえば、曲がり角までどれだけ進んだかを知る手がかりになる。また、音声で仕事を指示できるという。\n\n会社は、ロボットが仕事を試したときの記録を集め、次の機体を教えるときに使う予定だ。荷物を運ぶ道を覚えることと、商品を上手につかむことでは、必要な記録も変わる。初めにどの倉庫に入れるかや、一日の仕事で何件の注文を集められるかは、まだ発表されていない。",
-      "image": null
-    },
-    {
-      "id": "amada-hitachi-factory-assistant-poc",
-      "title": "工場の機械が止まったら、どこから調べる？",
-      "summary": "日本のアマダと日立は、工場の機械に問題が起きたとき、調べる場所を提案するプログラムを試した。注文を仕上げる日が変わったときに、仕事の順番を考える助けにもなるかを確かめた。",
-      "details": "日本のアマダと日立は、工場でこまったことが起きたときに、人の判断を助けるプログラムを試した。たとえば、注文の品を予定より早く作らなければならないことがある。機械が止まって理由を調べなければならないこともある。両社は11月26日、プログラムがどんな案を出したかを知らせた。",
-      "technical_novelty": "納期が変わったときの計画や、機械の故障を調べる手順を提案する。",
-      "engineering_impact": "アマダと日立は、提案を機械やロボットの制御につなぐ仕組みを開発する。",
-      "limitations": "顧客の工場での結果や、復旧時間の測定値はまだ公表されていない。",
-      "evidence_status": "両社が検証の内容を発表。数値による結果は公表していない。",
-      "published_at": "2026-11-26",
-      "organization": "Amada and Hitachi",
-      "source_ids": [
-        "amada-hitachi-release"
+        "khi-beckhoff-mou",
+        "beckhoff-sps-mou"
       ],
       "time_window": "24h",
-      "body": "日本のアマダと日立は、工場でこまったことが起きたときに、人の判断を助けるプログラムを試した。たとえば、注文の品を予定より早く作らなければならないことがある。機械が止まって理由を調べなければならないこともある。両社は11月26日、プログラムがどんな案を出したかを知らせた。\n\n注文の品を早く仕上げるなら、午後の仕事を午前中に移すことがある。プログラムは、今ある機械をどう使い、作る予定をどう変えるかを提案した。機械が止まった場合には、考えられる原因と、何を先に調べるかを示した。むずかしい問題でも、これまでの修理（しゅうり）で集めた知識を使った。\n\n両社はこれから、選んだお客さんの工場で試す。ゆくゆくは、プログラムが出した案を使って機械やロボットを動かす仕組みも作る予定だ。今回試したのは、人に案を伝える働きだ。この助けがあると、機械を直す時間が何分短くなるかは、まだ発表されていない。どの工場で試すかも、今回の発表では分からない。",
-      "image": null
-    },
-    {
-      "id": "embo-seed-world-model",
-      "title": "動画を使ってロボットに新しい動きを教える計画",
-      "summary": "Emboという会社は、ロボットに動きを教える研究のために一億一千万ドルを集めた。動画、本物のロボットの記録、コンピューターでの練習を組み合わせる予定だ。",
-      "details": "Emboという会社は11月23日、ロボットのためのプログラムを作るのに、一億一千万ドルを集めたと発表した。ロボットが初めて見る物に出会ったときも、どう手を動かすかを選べるようにしたいという。そのために動画、本物のロボットが動いた記録、コンピューターでの練習を使う。",
-      "technical_novelty": "動画の続き、本物のロボットの記録、コンピューターでの練習を組み合わせて学ばせる。",
-      "engineering_impact": "物がどう動くかを予想したうえで、ロボット自身の動きを決められるようにする計画だ。",
-      "limitations": "初めての仕事でどのくらい成功したかは、まだ公表されていない。",
-      "evidence_status": "会社が資金調達と開発計画を公表。制御モデルの成績は示していない。",
-      "published_at": "2026-11-23",
-      "organization": "Embo",
-      "source_ids": [
-        "embo-introduction",
-        "tsn-embo-seed"
-      ],
-      "time_window": "7d",
-      "body": "Emboという会社は11月23日、ロボットのためのプログラムを作るのに、一億一千万ドルを集めたと発表した。ロボットが初めて見る物に出会ったときも、どう手を動かすかを選べるようにしたいという。そのために動画、本物のロボットが動いた記録、コンピューターでの練習を使う。\n\n手が箱を押す動画を見れば、そのあと箱がどう動くかが分かることがある。会社は、動画のはじめを見せて、続きに何が起こるかを予想する練習をプログラムにさせる計画だ。ロボット自身が手を動かす方法を学ぶときには、本物のロボットで集めた記録も使う。\n\nコンピューターの中で箱を動かす練習も行う。うまく動かせたかを調べ、その結果を次の練習で動きを選ぶときに使う。箱が目印まで届かなければ、その動きでうまくいかなかったと分かる。今回発表されたのは、こうした練習をどのように組み合わせるかという計画だ。まだ見たことのない仕事を何回成功させられるかは、会社は発表していない。",
+      "body": "日本の川崎重工とドイツのベッコフは11月27日、工場のロボットに、別の会社が作った道具をつなぐ方法を一緒に調べると発表した。ドイツのニュルンベルクで開かれた展示会で、協力する約束を結んだ。カメラやセンサーを取りかえたときも、ロボットと一緒に使えるようにする作業を楽にしたいという。\n\nカメラは部品がどこにあるかを知らせる。別のセンサーは、道具が部品にふれたことを知らせる。その情報を受け取り、ロボットをどう動かすか指示する装置を、制御装置（せいぎょそうち）という。機械の間でこうした情報を送るため、両社は工場で使う通信網（つうしんもう）を調べる。\n\n両社は、工場で機械をつなぐ人に、どう教えたり助けたりするかも話し合う。川崎重工は2025年12月、東京でこの制御装置の考え方を紹介した。今回は協力する会社が決まった。どのカメラやセンサーを実際につなげるかは、まだ発表されていない。つなぐ道具が変われば、伝える情報も変わるからだ。",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "部品を通すには、向きを変えることもある",
-    "summary": "ノースウェスタン大学などのチームは、ロボットがコンピューターの中で解く90問を作った。せまいすき間に部品を通す問題もある。",
-    "implications": "最後に物がどこにあり、どうつながったかを見て答えを確かめる。成績はコンピューターの中で行った試験のものだ。"
+    "title": "宇宙飛行士（うちゅうひこうし）の動きを腕に伝える",
+    "summary": "ロシアの新聞は、カメラやロボットの腕が宇宙ステーションに届いたと伝えた。人が体に着ける道具で、腕の動きをロボットに伝える予定だ。",
+    "implications": "道具をつないだあと、人が指示したときにロボットの腕がどう動くかを調べる。"
   },
   "sources": [
     {
-      "id": "roboarc-preprint",
-      "url": "https://arxiv.org/html/2611.33390v1",
-      "domain": "arxiv.org",
-      "organization": "Northwestern University, Microsoft, UC Berkeley and Carnegie Mellon University",
-      "published_at": "2026-11-24",
-      "title": "RoboARC: Physical Puzzles for Robotic Manipulation under Spatial Constraints"
-    },
-    {
-      "id": "xela-tactile-use-cases",
-      "url": "https://kyodonewsprwire.jp/release/202611250970",
-      "domain": "kyodonewsprwire.jp",
-      "organization": "XELA Robotics",
-      "published_at": "2026-11-25",
-      "title": "XELA Robotics、視覚だけでは困難な作業を可能にする、フィジカルAIによる触覚ソリューションを提案"
-    },
-    {
-      "id": "bleckmann-warehouse-release",
-      "url": "https://www.bleckmann.com/uploads/press-downloads/Press-release-EN-Bleckmann-introduces-humanoids-into-operations-26.pdf",
-      "domain": "www.bleckmann.com",
-      "organization": "Bleckmann",
-      "published_at": "2026-11-24",
-      "title": "Bleckmann introduces humanoid robots into its operations"
-    },
-    {
-      "id": "amada-hitachi-release",
-      "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf",
-      "domain": "www.amada.co.jp",
-      "organization": "Amada and Hitachi",
+      "id": "nasa-progress97-docking",
+      "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/",
+      "domain": "www.nasa.gov",
+      "organization": "NASA",
       "published_at": "2026-11-26",
-      "title": "アマダと日立、AIエージェントとフィジカルAIの実装により、お客さま工場の自律化に向けた協創を加速"
+      "title": "Progress Cargo Craft Docks to Station on Thanksgiving Day"
     },
     {
-      "id": "embo-introduction",
-      "url": "https://embo.com/introducing-embo",
-      "domain": "embo.com",
-      "organization": "Embo",
-      "published_at": "2026-11-23",
-      "title": "Introducing Embo"
+      "id": "kommersant-ms36-equipment",
+      "url": "https://www.kommersant.ru/doc/9131416",
+      "domain": "www.kommersant.ru",
+      "organization": "Коммерсантъ",
+      "published_at": "2026-11-26",
+      "title": "Грузовой корабль «Прогресс МС-36» с «Теледроидом» пристыковался к МКС"
     },
     {
-      "id": "tsn-embo-seed",
-      "url": "https://tsnmedia.org/embo-110m-seed-a16z-robot-brain/",
-      "domain": "tsnmedia.org",
-      "organization": "TSN",
+      "id": "tass-teledroid-control-background",
+      "url": "https://tass.ru/kosmos/28117839",
+      "domain": "tass.ru",
+      "organization": "ТАСС",
+      "published_at": "2026-09-16",
+      "title": "Прогресс МС-36 отправится к МКС в ноябре"
+    },
+    {
+      "id": "einsia-robouniverse-release",
+      "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml",
+      "domain": "en.prnasia.com",
+      "organization": "Einsia AI Technology",
+      "published_at": "2026-11-25",
+      "title": "Einsia AI Open-Source RoboUniverse-10K, the First 10K-Scale RL Environment Suite for Agential Robotics"
+    },
+    {
+      "id": "xpeng-ai-day-iron",
+      "url": "https://www.xpeng.com/pressroom/news/01a212b0d830a1e838d68a02a2110174",
+      "domain": "www.xpeng.com",
+      "organization": "XPENG",
+      "published_at": "2026-11-25",
+      "title": "XPENG Unveils Turing Physical AI Architecture and Debuts Advanced General-Purpose Humanoid Robot IRON"
+    },
+    {
+      "id": "ur-inbolt-gen7-release",
+      "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/",
+      "domain": "www.universal-robots.com",
+      "organization": "Universal Robots and Inbolt",
       "published_at": "2026-11-24",
-      "title": "Embo Raises a $110m Seed Led by a16z for a World-Model Robot Brain"
+      "title": "Universal Robots and Inbolt make AI-powered 3D vision guidance easier to deploy and scale with native Gen 7 robot integration"
+    },
+    {
+      "id": "khi-beckhoff-mou",
+      "url": "https://www.khi.co.jp/pressrelease/news_261127-1.pdf",
+      "domain": "www.khi.co.jp",
+      "organization": "Kawasaki Heavy Industries and Beckhoff Automation",
+      "published_at": "2026-11-27",
+      "title": "次世代ロボットコントローラによる柔軟で拡張性の高いシステムの実現に向けた協業に合意"
+    },
+    {
+      "id": "beckhoff-sps-mou",
+      "url": "https://prtimes.jp/main/html/rd/p/000000077.000027362.html",
+      "domain": "prtimes.jp",
+      "organization": "Beckhoff Automation Japan",
+      "published_at": "2026-11-27",
+      "title": "SPS 2026において、川崎重工とベッコフがMOUを締結"
     }
   ]
 }

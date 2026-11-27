@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-28",
+  "issue_id": "daily-2026-11-28",
+  "edition": "children",
+  "language": "ja",
+  "generated_at": "2026-11-27T21:13:27Z",
+  "title": "宇宙ステーションにロボットの腕が届いた",
+  "lead": "人の動きをまねるロボットを試す道具が、補給船で宇宙ステーションに届いた。別の研究では、ロボットの腕がコンピューターの中で物を動かす練習をした。",
+  "news": [
+    {
+      "id": "progress-ms36-teledroid-equipment-docking",
+      "title": "宇宙ステーションにロボットの実験道具が届いた",
+      "summary": "補給船プログレスは11月26日、国際宇宙ステーションに着いた。ロシアの新聞によると、人の動きをまねるロボットを試すためのカメラなどが船に積まれていた。",
+      "details": "補給船（ほきゅうせん）プログレスは11月26日、国際宇宙ステーションのラスヴェートという部分に到着し、船とステーションをつないだ。船は二日前にバイコヌールから打ち上げられた。ロシアの新聞コメルサントによると、船にはロボットの腕やカメラ、それらをつなぐための道具が積まれていた。",
+      "technical_novelty": "宇宙飛行士（うちゅうひこうし）が体に着ける道具で、ロボットに動きを伝える予定だ。",
+      "engineering_impact": "カメラの映像で、ロボットの腕がどこへ動くかを見られる。",
+      "limitations": "腕の試験をするには、届いた道具をつなぐ作業が残っている。",
+      "evidence_status": "NASAが到着と接続を発表し、コメルサントが機材を、タス通信が操作方法を伝えた。",
+      "published_at": "2026-11-26",
+      "organization": "Roscosmos and NASA",
+      "source_ids": [
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
+      ],
+      "time_window": "72h",
+      "body": "補給船（ほきゅうせん）プログレスは11月26日、国際宇宙ステーションのラスヴェートという部分に到着し、船とステーションをつないだ。船は二日前にバイコヌールから打ち上げられた。ロシアの新聞コメルサントによると、船にはロボットの腕やカメラ、それらをつなぐための道具が積まれていた。\n\n実験に使うロボットは、人間の上半身に似た形だ。タス通信によると、宇宙飛行士（うちゅうひこうし）は体に道具を付けて、腕の動きをロボットに伝える。たとえば人がひじを曲げると、ロボットの腕も同じように曲がるはずだ。カメラはロボットの近くの物や、動いている腕のようすを映す。\n\n道具は宇宙ステーションに届いた。実験するには、機械をつないで、人が命令したときに手がどう動くかを確かめる。人が見ている映像と、手の動きを合わせることも大切だ。ステーションの外で作業した結果は、今回の到着の知らせにはなかった。この実験に使うロボットの名前はテレドロイドだ。",
+      "image": null
+    },
+    {
+      "id": "einsia-robouniverse-10k-training-and-test",
+      "title": "コンピューターの中でロボットが物を動かす練習",
+      "summary": "シンガポールのEinsiaが、ロボットの腕を動かして物の変化を見られる練習用の場面を公開した。練習とは別に用意した500問で試すと、練習後は一つのプログラムが前より多く成功した。",
+      "details": "シンガポールのEinsiaのチームは11月25日、ロボットが物を動かす練習をする場面を公開した。コンピューターの中で手を物に近づけ、押したときに物がどう動くかを見られる。この方法で練習すると、初めての課題にどれほど成功するかを調べた。",
+      "technical_novelty": "コンピューターの中で腕を動かし、物がどこへ動いたかを見られる。",
+      "engineering_impact": "チームは練習に使わない500問を用意して、結果を調べた。",
+      "limitations": "二つの成功率（せいこうりつ）は、コンピューターの中で試したときの数字だ。",
+      "evidence_status": "開発元が仮想環境での成績と、別に行った実機の実演を公表した。",
+      "published_at": "2026-11-25",
+      "organization": "Einsia AI Technology",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "time_window": "72h",
+      "body": "シンガポールのEinsiaのチームは11月25日、ロボットが物を動かす練習をする場面を公開した。コンピューターの中で手を物に近づけ、押したときに物がどう動くかを見られる。この方法で練習すると、初めての課題にどれほど成功するかを調べた。\n\nチームは本物のロボットを動かした記録をもとに、1万807問を用意した。そのうち1万307問が練習用で、500問は別に取っておいた。試験中は画面を見て動きを選べるが、物の正確な場所や、何をもって成功と決めるかは教えられない。手で押したときに物が思った場所へ動いたかを、試験の終わりに調べる。\n\n一つのプログラムは、500問で成功する割合が、練習前の0.8％から練習後の21.2％に上がった。別の実演では、本物の腕に見本を見せ、白い板に会社のマークをかかせた。板の高さは先に教えていなかった。割合の数字はコンピューターの中の試験で、白い板の実演では一つの絵をかく仕事を試した。",
+      "image": null
+    },
+    {
+      "id": "xpeng-iron-retail-training-roadmap",
+      "title": "店の仕事を手伝うために練習するロボット",
+      "summary": "中国の小鵬汽車は広州で、人の形に近いロボットを公開した。2027年のはじめに、自分たちの店で、店の人を手伝う仕事を教え始める予定だ。",
+      "details": "中国の自動車会社、小鵬汽車は11月25日、広州の発表会で人の形に近いロボットを見せた。会社は店の人を手伝う仕事を教えたいという。2027年の1月から3月に自分たちの店で練習を始め、4月から6月に一般向けに出すことを目指している。",
+      "technical_novelty": "物にふれた場所を調べるため、体にセンサーを付けた。",
+      "engineering_impact": "会社は自分たちの店でロボットの練習を始める予定だ。",
+      "limitations": "店でお客さんを手伝った結果は、まだ発表されていない。",
+      "evidence_status": "メーカーが機体を公開し、訓練と一般向けの発表の予定を示した。",
+      "published_at": "2026-11-25",
+      "organization": "XPENG",
+      "source_ids": [
+        "xpeng-ai-day-iron"
+      ],
+      "time_window": "72h",
+      "body": "中国の自動車会社、小鵬汽車は11月25日、広州の発表会で人の形に近いロボットを見せた。会社は店の人を手伝う仕事を教えたいという。2027年の1月から3月に自分たちの店で練習を始め、4月から6月に一般向けに出すことを目指している。\n\n物をつかむときは、指のどこに物がふれたかが役に立つ。会社によると、ロボットには、ふれたことを調べる場所が1500か所をこえる。体の部分をそれぞれ別々に動かせる数を自由度（じゆうど）といい、この機体では76ある。たとえば、手首を回さずにひじを曲げるときは、別々に動かしている。\n\n機体には、動きを計算するための小さな部品が三つ入っている。声やアプリで仕事を伝えられるという。会社は、自分で場所を確かめて移動したり、充電（じゅうでん）したりする仕組みもあると説明している。店でお客さんを相手に何ができたかは発表されていない。公開した計画では、まず自分たちが運営する店を練習の場所にする。",
+      "image": null
+    },
+    {
+      "id": "universal-robots-inbolt-on-controller",
+      "title": "カメラをロボットの腕に直接つなぐ",
+      "summary": "ユニバーサルロボットとInboltは、カメラを使って部品の場所を調べる仕組みを発表した。画像を調べるプログラムを、ロボットの腕を動かすコンピューターで使う。",
+      "details": "ドイツのニュルンベルクの展示会で、ユニバーサルロボットとInboltが、作業台にある部品の場所を見つける仕組みを発表した。カメラは写真をとるだけでなく、物までのきょりも測る。その情報があれば、工具を部品のどこまで近づけるかをプログラムで決められる。",
+      "technical_novelty": "腕を動かすコンピューターで、カメラの画像も調べられる。",
+      "engineering_impact": "カメラで部品の場所を調べると、腕をどこへ動かすか決める役に立つ。",
+      "limitations": "会社が発表した測定（そくてい）の結果は、止まっている部品を調べたときのものだ。",
+      "evidence_status": "供給元が統合を発表し、固定した部品を測ったときの繰り返し精度を示した。",
+      "published_at": "2026-11-24",
+      "organization": "Universal Robots and Inbolt",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "time_window": "7d",
+      "body": "ドイツのニュルンベルクの展示会で、ユニバーサルロボットとInboltが、作業台にある部品の場所を見つける仕組みを発表した。カメラは写真をとるだけでなく、物までのきょりも測る。その情報があれば、工具を部品のどこまで近づけるかをプログラムで決められる。\n\n新しいロボットでは、腕の先の差し込み口にカメラをつなぐ。カメラの信号は腕の中を通り、ロボットを動かすコンピューターに届く。前はこの計算に別のコンピューターが必要だった。形のちがう部品を調べるためには、その形を記録した図のファイルを読みこませる。会社によると、設定は10分かからない。その部品の写真をたくさん集めて印を付ける作業もいらないという。\n\n動かない部品をくり返し測ったとき、結果がどれくらい近いかを調べた。会社が発表した値は0.5から0.7ミリメートルだ。ベルトの上を流れるような動いている部品でも場所を見つけられるかは、今回の発表では分からない。",
+      "image": null
+    },
+    {
+      "id": "kawasaki-beckhoff-controller-mou",
+      "title": "工場でロボットとカメラをつなぐには？",
+      "summary": "日本の川崎重工とドイツのベッコフは、工場のロボットにカメラやセンサーをつなぐ方法を一緒に調べる。ドイツのニュルンベルクで開かれた展示会で、そのための約束を結んだ。",
+      "details": "日本の川崎重工とドイツのベッコフは11月27日、工場のロボットに、別の会社が作った道具をつなぐ方法を一緒に調べると発表した。ドイツのニュルンベルクで開かれた展示会で、協力する約束を結んだ。カメラやセンサーを取りかえたときも、ロボットと一緒に使えるようにする作業を楽にしたいという。",
+      "technical_novelty": "二つの会社は、工場でロボットとほかの機器をつなぐ方法を調べる。",
+      "engineering_impact": "工場の通信網（つうしんもう）を使えば、カメラから部品の情報（じょうほう）を送れる。",
+      "limitations": "どのカメラやセンサーをつなげられるかは、まだ発表されていない。",
+      "evidence_status": "両社が基本合意を発表した。技術の検証結果はまだ公表していない。",
+      "published_at": "2026-11-27",
+      "organization": "Kawasaki Heavy Industries and Beckhoff Automation",
+      "source_ids": [
+        "khi-beckhoff-mou",
+        "beckhoff-sps-mou"
+      ],
+      "time_window": "24h",
+      "body": "日本の川崎重工とドイツのベッコフは11月27日、工場のロボットに、別の会社が作った道具をつなぐ方法を一緒に調べると発表した。ドイツのニュルンベルクで開かれた展示会で、協力する約束を結んだ。カメラやセンサーを取りかえたときも、ロボットと一緒に使えるようにする作業を楽にしたいという。\n\nカメラは部品がどこにあるかを知らせる。別のセンサーは、道具が部品にふれたことを知らせる。その情報を受け取り、ロボットをどう動かすか指示する装置を、制御装置（せいぎょそうち）という。機械の間でこうした情報を送るため、両社は工場で使う通信網（つうしんもう）を調べる。\n\n両社は、工場で機械をつなぐ人に、どう教えたり助けたりするかも話し合う。川崎重工は2025年12月、東京でこの制御装置の考え方を紹介した。今回は協力する会社が決まった。どのカメラやセンサーを実際につなげるかは、まだ発表されていない。つなぐ道具が変われば、伝える情報も変わるからだ。",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "宇宙飛行士（うちゅうひこうし）の動きを腕に伝える",
+    "summary": "ロシアの新聞は、カメラやロボットの腕が宇宙ステーションに届いたと伝えた。人が体に着ける道具で、腕の動きをロボットに伝える予定だ。",
+    "implications": "道具をつないだあと、人が指示したときにロボットの腕がどう動くかを調べる。"
+  },
+  "sources": [
+    {
+      "id": "nasa-progress97-docking",
+      "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/",
+      "domain": "www.nasa.gov",
+      "organization": "NASA",
+      "published_at": "2026-11-26",
+      "title": "Progress Cargo Craft Docks to Station on Thanksgiving Day"
+    },
+    {
+      "id": "kommersant-ms36-equipment",
+      "url": "https://www.kommersant.ru/doc/9131416",
+      "domain": "www.kommersant.ru",
+      "organization": "Коммерсантъ",
+      "published_at": "2026-11-26",
+      "title": "Грузовой корабль «Прогресс МС-36» с «Теледроидом» пристыковался к МКС"
+    },
+    {
+      "id": "tass-teledroid-control-background",
+      "url": "https://tass.ru/kosmos/28117839",
+      "domain": "tass.ru",
+      "organization": "ТАСС",
+      "published_at": "2026-09-16",
+      "title": "Прогресс МС-36 отправится к МКС в ноябре"
+    },
+    {
+      "id": "einsia-robouniverse-release",
+      "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml",
+      "domain": "en.prnasia.com",
+      "organization": "Einsia AI Technology",
+      "published_at": "2026-11-25",
+      "title": "Einsia AI Open-Source RoboUniverse-10K, the First 10K-Scale RL Environment Suite for Agential Robotics"
+    },
+    {
+      "id": "xpeng-ai-day-iron",
+      "url": "https://www.xpeng.com/pressroom/news/01a212b0d830a1e838d68a02a2110174",
+      "domain": "www.xpeng.com",
+      "organization": "XPENG",
+      "published_at": "2026-11-25",
+      "title": "XPENG Unveils Turing Physical AI Architecture and Debuts Advanced General-Purpose Humanoid Robot IRON"
+    },
+    {
+      "id": "ur-inbolt-gen7-release",
+      "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/",
+      "domain": "www.universal-robots.com",
+      "organization": "Universal Robots and Inbolt",
+      "published_at": "2026-11-24",
+      "title": "Universal Robots and Inbolt make AI-powered 3D vision guidance easier to deploy and scale with native Gen 7 robot integration"
+    },
+    {
+      "id": "khi-beckhoff-mou",
+      "url": "https://www.khi.co.jp/pressrelease/news_261127-1.pdf",
+      "domain": "www.khi.co.jp",
+      "organization": "Kawasaki Heavy Industries and Beckhoff Automation",
+      "published_at": "2026-11-27",
+      "title": "次世代ロボットコントローラによる柔軟で拡張性の高いシステムの実現に向けた協業に合意"
+    },
+    {
+      "id": "beckhoff-sps-mou",
+      "url": "https://prtimes.jp/main/html/rd/p/000000077.000027362.html",
+      "domain": "prtimes.jp",
+      "organization": "Beckhoff Automation Japan",
+      "published_at": "2026-11-27",
+      "title": "SPS 2026において、川崎重工とベッコフがMOUを締結"
+    }
+  ]
+}

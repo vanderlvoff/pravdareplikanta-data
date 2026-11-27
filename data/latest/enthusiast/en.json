@@ -2,159 +2,177 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-27",
-  "issue_id": "daily-2026-11-27",
+  "issue_date": "2026-11-28",
+  "issue_id": "daily-2026-11-28",
   "edition": "enthusiast",
   "language": "en",
-  "generated_at": "2026-11-26T21:13:18Z",
-  "title": "How a robot can tell when a move goes wrong",
-  "lead": "XELA Robotics describes measuring force during a delicate insertion. The RoboARC researchers ask whether a program can guide an object through a narrow opening.",
+  "generated_at": "2026-11-27T21:13:27Z",
+  "title": "How a movement reaches a robot arm",
+  "lead": "A cargo ship reached the International Space Station with equipment for a remote-control experiment. In Einsia’s computer scenes, controllers learn by moving arms and observing what happens to objects.",
   "news": [
     {
-      "id": "xela-touch-insertion-and-picking",
-      "title": "A robot hand could sense resistance as it inserts a connector",
-      "summary": "Tokyo-based XELA Robotics outlined uses for touch sensors in assembly and small-parts picking. During insertion, the sensors can report resistance and shifts that would be hard to see with a camera alone.",
-      "details": "A person can feel a plug catch on the edge of a socket. On November 25, Tokyo's XELA Robotics described how a robot hand could detect a similar change. Sensors in the fingers and palm report where the hand touches a part and how the force changes, giving the program information it may not get from a camera.",
-      "technical_novelty": "Sensors on the hand measure contact and detect insertion resistance or signs of slipping.",
-      "engineering_impact": "A controller can use the readings to reposition a connector or adjust the grip on a small part.",
-      "limitations": "The release reports no damage rate or direct comparison with a camera-only system.",
-      "evidence_status": "The sensor vendor described use cases and did not publish comparative test results.",
-      "published_at": "2026-11-25",
-      "organization": "XELA Robotics",
+      "id": "progress-ms36-teledroid-equipment-docking",
+      "title": "Progress delivers equipment for a robot experiment to the space station",
+      "summary": "NASA confirmed that a Progress cargo spacecraft docked with the station’s Rassvet module on November 26. Kommersant reported that the cargo included cameras, a manipulator and integration equipment for a robot experiment intended to assist work outside the station.",
+      "details": "A spacecraft has delivered equipment for a test of how a robot can copy a person's movements in orbit. On November 26, Progress MS-36 docked at the Earth-facing port of the station's Rassvet module, NASA said. Kommersant reported that the ship carried an arm, cameras and integration equipment for the Teledroid experiment.",
+      "technical_novelty": "In the experiment, a wearable device will relay the operator’s movements for the robot to reproduce.",
+      "engineering_impact": "The cameras and arm are equipment for testing remote control on the station.",
+      "limitations": "The docking reports document delivery and give no results from a session outside the station.",
+      "evidence_status": "NASA confirmed docking. Kommersant reported the equipment, and TASS described the planned control method.",
+      "published_at": "2026-11-26",
+      "organization": "Roscosmos and NASA",
       "source_ids": [
-        "xela-tactile-use-cases"
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
       ],
       "time_window": "72h",
-      "body": "A person can feel a plug catch on the edge of a socket. On November 25, Tokyo's XELA Robotics described how a robot hand could detect a similar change. Sensors in the fingers and palm report where the hand touches a part and how the force changes, giving the program information it may not get from a camera.\n\nWhen a connector catches on the edge of a socket, the resistance to insertion can change. XELA proposes measuring that resistance and using the reading to adjust the position of the part. The company describes a different problem in warehouse picking: the jaws of a gripper can hide a small item such as a screw once they close. The proposed approach monitors the contact and looks for the start of slipping, so the grip can be adjusted before the item drops.\n\nXELA also describes using measurements from multiple points on a humanoid hand, across the fingers and palm. The software can receive a distribution of pressure and information about sideways forces at the surface. The vendor's examples include fitting a memory module to a circuit board and picking small parts in a warehouse.\n\nWhen a plug catches, resistance is the relevant clue. When a gripper is holding a small screw, the clue might be a tiny slip between the fingers. The supplier offers both examples without publishing comparative test results.",
+      "body": "A spacecraft has delivered equipment for a test of how a robot can copy a person's movements in orbit. On November 26, Progress MS-36 docked at the Earth-facing port of the station's Rassvet module, NASA said. Kommersant reported that the ship carried an arm, cameras and integration equipment for the Teledroid experiment.\n\nThe spacecraft lifted off from Baikonur on November 24. The experiment calls for remote operation, with the robot reproducing motions made by an operator. TASS describes an operator wearing an exoskeleton, a device attached to the body that relays movements to the control system. The robot also uses machine vision to process camera images. Its design resembles an upper body without legs.\n\nAfter delivery, the equipment has to be connected and the motion link checked. Operators need to know that a command reaches the robot and that they can see the result. The docking reports contain no measurements of those steps or of the robot's performance outside the station.\n\nA movement of the operator's arm must eventually reach a machine working somewhere else. The delivery brings equipment for testing the link in orbit. The docking reports did not include an outcome from an exercise outside the station.",
       "image": null
     },
     {
-      "id": "roboarc-spatial-manipulation-puzzles",
-      "title": "Ninety spatial puzzles put robot control to the test",
-      "summary": "Northwestern University and collaborators presented RoboARC, a benchmark for assembly, threading and other object-handling tasks with tight spatial constraints. In its standard simulation setting, the best code-writing agent solved about 43% of tasks.",
-      "details": "Knowing where a part belongs is only half the puzzle if the route takes it through a narrow gap. Northwestern University and collaborators built challenges like that into RoboARC, a set of 90 puzzles for simulated robot hands. In the standard test, the best system that wrote code for the movements solved about 43% of the tasks.",
-      "technical_novelty": "The puzzles cover assembly, untangling and narrow passages. The final state of the objects determines success.",
-      "engineering_impact": "The two test settings give controllers different observations and different opportunities to restart.",
-      "limitations": "The scores of about 43% and zero out of eighteen concern different systems and different sets of simulated puzzles.",
-      "evidence_status": "Research preprint. The cited benchmark scores come from the authors’ simulation trials.",
+      "id": "einsia-robouniverse-10k-training-and-test",
+      "title": "Einsia releases a simulator with 10,807 robot tasks",
+      "summary": "Singapore’s Einsia AI released RoboUniverse-10K, an open set of simulated environments for training robots. One model improved from 0.8% to 21.2% success after additional training, measured on a separate set of 500 tasks.",
+      "details": "A recording shows what a robot did once. A computer scene can let it try a different move and see what changes. Singapore's Einsia AI released 10,807 such tasks on November 25 in a set called RoboUniverse-10K. In a test on 500 separate tasks, one program's success rate rose from 0.8% to 21.2% after additional training.",
+      "technical_novelty": "The developers turned recordings of real robots into interactive environments that can check the final result.",
+      "engineering_impact": "The release separates 10,307 training tasks from the 500 tasks used for evaluation.",
+      "limitations": "The rise from 0.8% to 21.2% was measured in simulation. The physical demonstration concerned one drawing.",
+      "evidence_status": "Results reported by the developers include a simulation evaluation and a separate demonstration on a physical arm.",
+      "published_at": "2026-11-25",
+      "organization": "Einsia AI Technology",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "time_window": "72h",
+      "body": "A recording shows what a robot did once. A computer scene can let it try a different move and see what changes. Singapore's Einsia AI released 10,807 such tasks on November 25 in a set called RoboUniverse-10K. In a test on 500 separate tasks, one program's success rate rose from 0.8% to 21.2% after additional training.\n\nThe team used recordings from physical robots as a starting point for deciding what objects and actions a task should contain. It turned these into interactive scenes, where the simulator updates what happens when an arm moves or touches an object. Of the 10,807 tasks, 10,307 are for training and 500 are held out for evaluation. During evaluation the software can observe and act through fixed interfaces. It cannot read hidden object coordinates or the rules used to check its work.\n\nA separate demonstration ran the model on a physical Franka arm. Given an example image, the arm drew the Einsia logo on a whiteboard whose height had not been supplied in advance. Einsia says the model used observation, trial movements and correction. The 0.8% and 21.2% figures describe the simulated evaluation.\n\nThe simulated arm can try a move and see what changes, something a recording cannot do. The improved model still finished only about one in five tasks in the computer evaluation.",
+      "image": null
+    },
+    {
+      "id": "xpeng-iron-retail-training-roadmap",
+      "title": "XPENG plans to train its new humanoid in its own stores",
+      "summary": "Chinese carmaker XPENG publicly showed its IRON humanoid at AI Day in Guangzhou. It plans to start training the robot as a store assistant in the first quarter of 2027.",
+      "details": "XPENG presented its new IRON humanoid in Guangzhou on November 25. The carmaker wants to see how the machine can learn the role of a store assistant. It targets the first quarter of 2027 for training in its own shops and the second quarter for a public release. The AI Day announcement described the hardware and planned uses without giving results from work with shoppers.",
+      "technical_novelty": "XPENG says the robot has 76 independent ways to move and more than 1,500 touch-sensing points.",
+      "engineering_impact": "The company plans to use its own stores to train the robot as an assistant.",
+      "limitations": "XPENG gave target dates for training and public release. It did not report results from helping shoppers.",
+      "evidence_status": "Manufacturer launch announcement with target dates for training and public release.",
+      "published_at": "2026-11-25",
+      "organization": "XPENG",
+      "source_ids": [
+        "xpeng-ai-day-iron"
+      ],
+      "time_window": "72h",
+      "body": "XPENG presented its new IRON humanoid in Guangzhou on November 25. The carmaker wants to see how the machine can learn the role of a store assistant. It targets the first quarter of 2027 for training in its own shops and the second quarter for a public release. The AI Day announcement described the hardware and planned uses without giving results from work with shoppers.\n\nXPENG says IRON has 76 degrees of freedom, a count of independent ways its parts can move. It also reports more than 1,500 points that sense touch and says coverage exceeds 80% of key body areas. Three of the company's Turing chips run models on the robot and help control its body. XPENG built the systems for planning tasks, navigating and handling objects together with the robot’s hardware.\n\nThe company lists tasks created by voice or app, autonomous navigation and charging, and reporting of unusual conditions. It plans to use its own stores to train the assistant. Working in those shops would give the team real examples of the objects the robot needs to handle and the spaces it must move through.\n\nMotion and touch help with different parts of the same job. Joints let the robot move its hand, while sensors can tell it when contact occurs. XPENG plans to see how those abilities work together in its shops.",
+      "image": null
+    },
+    {
+      "id": "universal-robots-inbolt-on-controller",
+      "title": "Universal Robots moves 3D vision processing onto the robot controller",
+      "summary": "Universal Robots and Inbolt showed in Nuremberg how Inbolt Standard locates parts on a Gen 7 robot controller. The camera plugs into the end of the arm, and the new setup removes the separate industrial computer formerly needed for that processing.",
+      "details": "At SPS in Nuremberg on November 24, Universal Robots and Inbolt introduced an integration that runs 3D vision on the robot's controller. Inbolt Standard uses image and depth data to locate a part so the arm can bring its tool to the correct position. It now carries out that calculation on the CB7 Core controller. The companies scheduled a live demonstration on a Gen 7 arm at the November 24 to 26 show.",
+      "technical_novelty": "The camera connects at the end of the arm, and the robot controller computes the part position.",
+      "engineering_impact": "The setup removes the separate computer previously needed for this 3D vision processing.",
+      "limitations": "The reported repeatability of 0.5 to 0.7 millimetres covers stationary parts.",
+      "evidence_status": "The suppliers announced the integration and reported repeatability on stationary parts.",
       "published_at": "2026-11-24",
-      "organization": "Northwestern University, Microsoft, UC Berkeley and Carnegie Mellon University",
+      "organization": "Universal Robots and Inbolt",
       "source_ids": [
-        "roboarc-preprint"
+        "ur-inbolt-gen7-release"
       ],
       "time_window": "7d",
-      "body": "Knowing where a part belongs is only half the puzzle if the route takes it through a narrow gap. Northwestern University and collaborators built challenges like that into RoboARC, a set of 90 puzzles for simulated robot hands. In the standard test, the best system that wrote code for the movements solved about 43% of the tasks.\n\nThe researchers group the puzzles into six types. Rigid-object puzzles involve interlocking parts, narrow passages or assembly. The soft-object puzzles involve untangling, threading or controlling the shape of cloth. All 90 run in MuJoCo, a simulator that calculates motion and contact. A verified solution accompanies each puzzle, and the benchmark checks the state of the objects at the end.\n\nA puzzle offers two observation regimes. In the setting with extra access, the agent can inspect the simulator state, reset and try again. In the standard setting it sees colour and depth images, measurements of the robot itself and some contact information. It cannot reset during the episode. The two regimes expose how performance changes when the system has to work from observations instead of exact object states.\n\nThe authors separately tried four ready-made programs that convert pictures and a written instruction into movements. None solved any of the 18 single-arm puzzles it faced. The 43% figure comes from another kind of system, which could write its own code for the moves.",
+      "body": "At SPS in Nuremberg on November 24, Universal Robots and Inbolt introduced an integration that runs 3D vision on the robot's controller. Inbolt Standard uses image and depth data to locate a part so the arm can bring its tool to the correct position. It now carries out that calculation on the CB7 Core controller. The companies scheduled a live demonstration on a Gen 7 arm at the November 24 to 26 show.\n\nAn Orbbec camera uses the power and gigabit Ethernet connectors on the g-Series tool flange, the mount at the end of the arm. The camera signal travels through the robot. The previous setup needed an external industrial computer for vision processing. To configure a part, the system uses a file from computer-aided design describing its shape. The suppliers say configuration runs locally in under ten minutes and requires no collection or labeling of images.\n\nThe suppliers quote repeatability of 0.5 to 0.7 millimetres on fixed parts. Repeatability describes how closely repeated estimates agree under the stated conditions. It does not measure how close each estimate is to the true position. The release specifies PolyScope X 10.13 or later for three g-Series arms and describes an external camera cable for compatible older arms using a CB7 controller.\n\nA camera supplies measurements, but it takes a processor to decide where the part is. In this setup the robot's own controller takes on that calculation. Older compatible models still need the camera cable routed externally.",
       "image": null
     },
     {
-      "id": "embo-seed-world-model",
-      "title": "Embo raises $110 million to train a controller for unfamiliar situations",
-      "summary": "Embo announced $110 million in seed funding led by Andreessen Horowitz. The startup plans to train a robot controller on internet video, experience from humanoid robots and practice in simulated situations.",
-      "details": "Embo announced on November 23 that it had raised $110 million in an early funding round led by venture capital firm Andreessen Horowitz. The startup is developing a robot controller intended to choose actions in situations the machine has not encountered before. It describes three sources of training: internet video, experience recorded with its own humanoid robots and practice in simulated settings.",
-      "technical_novelty": "Embo plans to learn from video predictions, robot motion records and computer practice.",
-      "engineering_impact": "The training would connect predictions of what objects will do to choices about how a robot should move.",
-      "limitations": "Embo has yet to publish success rates on unfamiliar tasks.",
-      "evidence_status": "The company announced funding and a development plan. It did not publish controller performance.",
-      "published_at": "2026-11-23",
-      "organization": "Embo",
+      "id": "kawasaki-beckhoff-controller-mou",
+      "title": "Kawasaki and Beckhoff sign agreement on robot controls",
+      "summary": "Kawasaki Heavy Industries and Beckhoff signed a memorandum of understanding at SPS in Nuremberg. They will explore using the EtherCAT industrial network and Beckhoff software in Kawasaki robot control systems.",
+      "details": "On November 27, Kawasaki Heavy Industries and Germany's Beckhoff Automation announced a memorandum signed at the SPS trade show in Nuremberg. The partners want to make it easier to connect equipment from different vendors to Kawasaki industrial robots. The agreement covers exploring control technology that runs on industrial computers and discussing support and training for the people who assemble production systems.",
+      "technical_novelty": "The partners will explore sending commands and measurements over an industrial network called EtherCAT.",
+      "engineering_impact": "The work aims to make it easier to connect or replace equipment supplied by different manufacturers.",
+      "limitations": "The partners have yet to publish a list of compatible devices or measurements of communication delay.",
+      "evidence_status": "The partners confirmed the memorandum. Technical results are yet to be published.",
+      "published_at": "2026-11-27",
+      "organization": "Kawasaki Heavy Industries and Beckhoff Automation",
       "source_ids": [
-        "embo-introduction",
-        "tsn-embo-seed"
-      ],
-      "time_window": "7d",
-      "body": "Embo announced on November 23 that it had raised $110 million in an early funding round led by venture capital firm Andreessen Horowitz. The startup is developing a robot controller intended to choose actions in situations the machine has not encountered before. It describes three sources of training: internet video, experience recorded with its own humanoid robots and practice in simulated settings.\n\nThe first part uses a world model, a program that learns to predict how a scene might change. It could learn from video that moving a hand against an object may move the object as well. Embo wants the model to learn such relationships by predicting how a video continues. The company then plans to refine movements using experience from its own robots. Further training would give the model feedback about which movements succeed in simulated situations. Learning from the outcome of a chosen action is called reinforcement learning.\n\nEmbo named Khosla Ventures, DST Global and NVIDIA among the other participants in the round. Its announcement confirms the financing and sets out how it intends to build the controller. TSN also reported the funding. Embo did not release a test suite, counts of successful trials or the amount of physical robot experience already collected.\n\nWatching a video can show what happens to an object when a hand pushes it. Making a robot move its own hand takes another kind of practice. Embo outlined how it wants to connect the two and has yet to publish scores showing the effect.",
-      "image": null
-    },
-    {
-      "id": "amada-hitachi-factory-assistant-poc",
-      "title": "Amada and Hitachi test a factory planning and maintenance assistant",
-      "summary": "Amada and Hitachi reported completing a proof of concept for software that suggests changes to factory schedules and helps diagnose machine problems. They plan to try the assistant at selected customer plants and develop a way to tie its recommendations to equipment control.",
-      "details": "Japan’s Amada and Hitachi tested software that helps factory staff reschedule work when a deadline changes or trace the cause of a machine failure. They announced the results of the first proof of concept on November 26. The companies call the software an AI agent, meaning a program that works through available information and suggests a course of action. This first test examined its ability to assist a decision.",
-      "technical_novelty": "The assistant suggests changes after a deadline moves and proposes checks for a faulty machine.",
-      "engineering_impact": "Amada and Hitachi plan to connect the assistant’s recommendations to equipment control.",
-      "limitations": "The companies have yet to publish results from customer sites or measured repair times.",
-      "evidence_status": "Joint company announcement of a proof of concept without quantitative results.",
-      "published_at": "2026-11-26",
-      "organization": "Amada and Hitachi",
-      "source_ids": [
-        "amada-hitachi-release"
+        "khi-beckhoff-mou",
+        "beckhoff-sps-mou"
       ],
       "time_window": "24h",
-      "body": "Japan’s Amada and Hitachi tested software that helps factory staff reschedule work when a deadline changes or trace the cause of a machine failure. They announced the results of the first proof of concept on November 26. The companies call the software an AI agent, meaning a program that works through available information and suggests a course of action. This first test examined its ability to assist a decision.\n\nIn the factory test, the software suggested ways to use machines and software, helped adjust production plans and proposed causes, checks and remedies for faults. The service test asked whether it could work from accumulated knowledge on complex cases without an existing example. The companies report that the program suggested ways to restore operation. They give no count of cases, accuracy rate or measured time savings.\n\nAmada already operates V-factory, a service that connects production equipment so that operating data can be collected. The company says more than 10,000 machines are connected worldwide. That count describes the existing service. Amada also opened an area called MIRAI factory in its own demonstration centre in November, where it presents its plans for future factory operations.\n\nThe trial shows the kinds of checks the software can suggest when a machine stops. A different piece of work will determine how a recommendation can lead to an action on a machine or robot. The report describes that connection as a development goal.",
-      "image": null
-    },
-    {
-      "id": "bleckmann-two-humanoids-warehouse-training",
-      "title": "Bleckmann buys two humanoid robots for a warehouse trial",
-      "summary": "European logistics operator Bleckmann says it has invested in two humanoid robots for distribution centres. It plans to train them on warehouse work and collect data on how they carry it out.",
-      "details": "Logistics operator Bleckmann announced in Eindhoven on November 24 that it had invested in two humanoid robots for selected European distribution centres. It expects delivery in the weeks ahead. Warehouse staff will then start training the machines. The company's stated aims include learning how to operate humanoids in its buildings and gathering examples that can be used to train later robots.",
-      "technical_novelty": "The machines have cameras, laser distance sensors and software that builds a map while tracking their position.",
-      "engineering_impact": "Bleckmann plans to collect data as it teaches the two machines to move items and pick orders.",
-      "limitations": "The operator did not name the first sites or publish warehouse performance figures.",
-      "evidence_status": "Operator announcement of the purchase and plans for training after delivery.",
-      "published_at": "2026-11-24",
-      "organization": "Bleckmann",
-      "source_ids": [
-        "bleckmann-warehouse-release"
-      ],
-      "time_window": "72h",
-      "body": "Logistics operator Bleckmann announced in Eindhoven on November 24 that it had invested in two humanoid robots for selected European distribution centres. It expects delivery in the weeks ahead. Warehouse staff will then start training the machines. The company's stated aims include learning how to operate humanoids in its buildings and gathering examples that can be used to train later robots.\n\nPotential jobs include moving items and picking goods for orders. Bleckmann describes a voice interface that translates spoken instructions into physical actions. For moving through corridors, it lists cameras, laser distance sensors and software that builds a map while estimating where the robot is on it. The distance sensors can measure how far away surrounding objects are. The map helps the control software relate those observations to the robot's position as it moves.\n\nBleckmann handles logistics for fashion and lifestyle brands. It says investment in its wider automation programme has already exceeded $600 million, including systems in existing warehouses. The operator did not disclose a purchase price for the two humanoids or identify the centres where delivery is expected.\n\nSome of the operator’s warehouses already use automation. The two new machines still have to learn jobs such as moving goods or picking them for an order. The company has published its training aims and has yet to publish an order-picking result.",
+      "body": "On November 27, Kawasaki Heavy Industries and Germany's Beckhoff Automation announced a memorandum signed at the SPS trade show in Nuremberg. The partners want to make it easier to connect equipment from different vendors to Kawasaki industrial robots. The agreement covers exploring control technology that runs on industrial computers and discussing support and training for the people who assemble production systems.\n\nEtherCAT is a network that carries commands and measurements between an industrial controller and attached devices. Kawasaki put the network at the centre of a controller concept shown in Tokyo in December 2025. The new agreement gives Kawasaki and Beckhoff a way to work on putting the concept into practice. They will also assess TwinCAT, Beckhoff's software for running automation from a computer.\n\nA robot cell may contain a camera, sensors and software as well as the arm. If each connection has to be built separately, replacing a camera or adding another sensor becomes more work. The companies want equipment choices and later changes to be easier. They have also said they will discuss training and support for system integrators, the specialists who put those pieces together.\n\nThe camera watches a part and the motor moves the arm, so the controller has to bring information and movement together. The agreement identifies tools that the companies will evaluate. It does not yet tell us which devices will work with the controller.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "Touch can reveal a problem during a move",
-    "summary": "XELA proposes measuring resistance while inserting a connector and detecting a small part as it begins to slip.",
-    "implications": "Each measurement helps with a different move: repositioning the connector or changing the strength of the grip."
+    "title": "Remote control needs commands and a view of the result",
+    "summary": "Progress docked with the space station. Kommersant reported the cargo included an arm, cameras and equipment to connect them for the Teledroid experiment.",
+    "implications": "The trial will need to measure how closely the arm follows the operator and how long each response takes."
   },
   "sources": [
     {
-      "id": "xela-tactile-use-cases",
-      "url": "https://kyodonewsprwire.jp/release/202611250970",
-      "domain": "kyodonewsprwire.jp",
-      "organization": "XELA Robotics",
-      "published_at": "2026-11-25",
-      "title": "XELA Robotics、視覚だけでは困難な作業を可能にする、フィジカルAIによる触覚ソリューションを提案"
-    },
-    {
-      "id": "roboarc-preprint",
-      "url": "https://arxiv.org/html/2611.33390v1",
-      "domain": "arxiv.org",
-      "organization": "Northwestern University, Microsoft, UC Berkeley and Carnegie Mellon University",
-      "published_at": "2026-11-24",
-      "title": "RoboARC: Physical Puzzles for Robotic Manipulation under Spatial Constraints"
-    },
-    {
-      "id": "embo-introduction",
-      "url": "https://embo.com/introducing-embo",
-      "domain": "embo.com",
-      "organization": "Embo",
-      "published_at": "2026-11-23",
-      "title": "Introducing Embo"
-    },
-    {
-      "id": "tsn-embo-seed",
-      "url": "https://tsnmedia.org/embo-110m-seed-a16z-robot-brain/",
-      "domain": "tsnmedia.org",
-      "organization": "TSN",
-      "published_at": "2026-11-24",
-      "title": "Embo Raises a $110m Seed Led by a16z for a World-Model Robot Brain"
-    },
-    {
-      "id": "amada-hitachi-release",
-      "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf",
-      "domain": "www.amada.co.jp",
-      "organization": "Amada and Hitachi",
+      "id": "nasa-progress97-docking",
+      "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/",
+      "domain": "www.nasa.gov",
+      "organization": "NASA",
       "published_at": "2026-11-26",
-      "title": "アマダと日立、AIエージェントとフィジカルAIの実装により、お客さま工場の自律化に向けた協創を加速"
+      "title": "Progress Cargo Craft Docks to Station on Thanksgiving Day"
     },
     {
-      "id": "bleckmann-warehouse-release",
-      "url": "https://www.bleckmann.com/uploads/press-downloads/Press-release-EN-Bleckmann-introduces-humanoids-into-operations-26.pdf",
-      "domain": "www.bleckmann.com",
-      "organization": "Bleckmann",
+      "id": "kommersant-ms36-equipment",
+      "url": "https://www.kommersant.ru/doc/9131416",
+      "domain": "www.kommersant.ru",
+      "organization": "Коммерсантъ",
+      "published_at": "2026-11-26",
+      "title": "Грузовой корабль «Прогресс МС-36» с «Теледроидом» пристыковался к МКС"
+    },
+    {
+      "id": "tass-teledroid-control-background",
+      "url": "https://tass.ru/kosmos/28117839",
+      "domain": "tass.ru",
+      "organization": "ТАСС",
+      "published_at": "2026-09-16",
+      "title": "Прогресс МС-36 отправится к МКС в ноябре"
+    },
+    {
+      "id": "einsia-robouniverse-release",
+      "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml",
+      "domain": "en.prnasia.com",
+      "organization": "Einsia AI Technology",
+      "published_at": "2026-11-25",
+      "title": "Einsia AI Open-Source RoboUniverse-10K, the First 10K-Scale RL Environment Suite for Agential Robotics"
+    },
+    {
+      "id": "xpeng-ai-day-iron",
+      "url": "https://www.xpeng.com/pressroom/news/01a212b0d830a1e838d68a02a2110174",
+      "domain": "www.xpeng.com",
+      "organization": "XPENG",
+      "published_at": "2026-11-25",
+      "title": "XPENG Unveils Turing Physical AI Architecture and Debuts Advanced General-Purpose Humanoid Robot IRON"
+    },
+    {
+      "id": "ur-inbolt-gen7-release",
+      "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/",
+      "domain": "www.universal-robots.com",
+      "organization": "Universal Robots and Inbolt",
       "published_at": "2026-11-24",
-      "title": "Bleckmann introduces humanoid robots into its operations"
+      "title": "Universal Robots and Inbolt make AI-powered 3D vision guidance easier to deploy and scale with native Gen 7 robot integration"
+    },
+    {
+      "id": "khi-beckhoff-mou",
+      "url": "https://www.khi.co.jp/pressrelease/news_261127-1.pdf",
+      "domain": "www.khi.co.jp",
+      "organization": "Kawasaki Heavy Industries and Beckhoff Automation",
+      "published_at": "2026-11-27",
+      "title": "次世代ロボットコントローラによる柔軟で拡張性の高いシステムの実現に向けた協業に合意"
+    },
+    {
+      "id": "beckhoff-sps-mou",
+      "url": "https://prtimes.jp/main/html/rd/p/000000077.000027362.html",
+      "domain": "prtimes.jp",
+      "organization": "Beckhoff Automation Japan",
+      "published_at": "2026-11-27",
+      "title": "SPS 2026において、川崎重工とベッコフがMOUを締結"
     }
   ]
 }
