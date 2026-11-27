@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="459" viewBox="0 0 360 459" role="img" aria-labelledby="title description">
+  <title id="title">宇宙飛行士の動きで ロボットの腕を動かす</title>
+  <desc id="description">テレドロイド実験の計画. 宇宙飛行士（うちゅうひこうし）: 体に着けた道具で動きを伝える. ロボットの腕とカメラ: 腕が宇宙飛行士の動きをまねる. 11月26日、補給船がISSに接続。 機材の内容はロシア紙の報道による。</desc>
+  <rect x="0" y="0" width="360" height="459" fill="#fbf8f1" id="a2" data-qa-group="bg"/>
+  <text x="22" y="33" font-size="14" font-weight="700" font-family="Noto Sans CJK JP" text-anchor="start" fill="#11636a" id="a3">テレドロイド実験の計画</text>
+  <text x="22" y="72" font-size="26" font-weight="700" font-family="Noto Serif CJK JP" text-anchor="start" fill="#191e20" id="a4">宇宙飛行士の動きで</text>
+  <text x="22" y="105" font-size="26" font-weight="700" font-family="Noto Serif CJK JP" text-anchor="start" fill="#191e20" id="a5">ロボットの腕を動かす</text>
+  <line x1="22" y1="124" x2="338" y2="124" stroke="#6c777a" stroke-width="1.3" id="a6"/>
+  <text x="22" y="165" font-size="18" font-weight="700" font-family="Noto Sans CJK JP" text-anchor="start" fill="#191e20" id="a7">宇宙飛行士（うちゅうひこうし）</text>
+  <text x="22" y="191" font-size="15" font-weight="400" font-family="Noto Sans CJK JP" text-anchor="start" fill="#191e20" id="a8">体に着けた道具で動きを伝える</text>
+  <line x1="22" y1="209" x2="338" y2="209" stroke="#6c777a" stroke-width="1.3" id="a9"/>
+  <line x1="46" y1="226" x2="46" y2="298" stroke="#11636a" stroke-width="1.7" id="a10" data-qa-group="movement"/>
+  <path d="M 42 293 L 46 298 L 50 293" stroke="#11636a" fill="none" stroke-width="1.7" stroke-linecap="round" id="a11" data-qa-group="movement"/>
+  <text x="59" y="270" font-size="15" font-weight="700" font-family="Noto Sans CJK JP" text-anchor="start" fill="#11636a" id="a12">動き</text>
+  <line x1="313" y1="298" x2="313" y2="226" stroke="#9c412f" stroke-width="1.7" id="a13" data-qa-group="image"/>
+  <path d="M 309 231 L 313 226 L 317 231" stroke="#9c412f" fill="none" stroke-width="1.7" stroke-linecap="round" id="a14" data-qa-group="image"/>
+  <text x="300" y="270" font-size="15" font-weight="700" font-family="Noto Sans CJK JP" text-anchor="end" fill="#9c412f" id="a15">カメラ映像</text>
+  <line x1="22" y1="315" x2="338" y2="315" stroke="#6c777a" stroke-width="1.3" id="a16"/>
+  <text x="22" y="348" font-size="18" font-weight="700" font-family="Noto Sans CJK JP" text-anchor="start" fill="#191e20" id="a17">ロボットの腕とカメラ</text>
+  <text x="22" y="374" font-size="15" font-weight="400" font-family="Noto Sans CJK JP" text-anchor="start" fill="#191e20" id="a18">腕が宇宙飛行士の動きをまねる</text>
+  <line x1="22" y1="393" x2="338" y2="393" stroke="#6c777a" stroke-width="1.3" id="a19"/>
+  <text x="22" y="419" font-size="14" font-weight="400" font-family="Noto Sans CJK JP" text-anchor="start" fill="#414e56" id="a20">11月26日、補給船がISSに接続。</text>
+  <text x="22" y="441" font-size="14" font-weight="400" font-family="Noto Sans CJK JP" text-anchor="start" fill="#414e56" id="a21">機材の内容はロシア紙の報道による。</text>
+</svg>
