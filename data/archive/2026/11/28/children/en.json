@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.5",
+  "publication": "pravda_replikanta",
+  "issue_type": "daily",
+  "issue_date": "2026-11-28",
+  "issue_id": "daily-2026-11-28",
+  "edition": "children",
+  "language": "en",
+  "generated_at": "2026-11-27T21:13:27Z",
+  "title": "A robot arm rides to the space station",
+  "lead": "A cargo ship delivered equipment for a robot meant to copy a person’s movements. In another experiment, a robot arm practised moving objects inside a computer.",
+  "news": [
+    {
+      "id": "progress-ms36-teledroid-equipment-docking",
+      "title": "A cargo ship brings cameras and a robot arm to the space station",
+      "summary": "The Progress cargo ship docked with the International Space Station on November 26. Kommersant reported that it brought equipment for an experiment with a robot that is meant to copy a person's movements.",
+      "details": "On November 26, a Progress cargo ship arrived at the International Space Station and joined up with the Rassvet module. It had launched from Baikonur two days earlier. Kommersant reported that the cargo included cameras, an arm and equipment to connect them for a robot experiment.",
+      "technical_novelty": "A device worn by an astronaut is meant to send their movements to the robot.",
+      "engineering_impact": "Cameras can show the astronaut where the robot arm moves.",
+      "limitations": "The equipment still has to be connected before the arm can be tested.",
+      "evidence_status": "NASA confirmed docking. Kommersant reported the equipment, and TASS described the planned control method.",
+      "published_at": "2026-11-26",
+      "organization": "Roscosmos and NASA",
+      "source_ids": [
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
+      ],
+      "time_window": "72h",
+      "body": "On November 26, a Progress cargo ship arrived at the International Space Station and joined up with the Rassvet module. It had launched from Baikonur two days earlier. Kommersant reported that the cargo included cameras, an arm and equipment to connect them for a robot experiment.\n\nThe robot is shaped like the top half of a person. TASS says an astronaut will wear a device that attaches to the body and passes on movements of the arms. When the person bends an elbow, the robot should make a matching move. This is a kind of remote control. Cameras let the system collect pictures of what is happening near the robot.\n\nThe equipment has reached the station. To try the control system, the team needs to connect the parts and see what movement follows a command. The docking reports provided no results for work outside the station. The developers call the experiment Teledroid.",
+      "image": null
+    },
+    {
+      "id": "einsia-robouniverse-10k-training-and-test",
+      "title": "A robot hand can practise with objects inside a computer",
+      "summary": "Singapore's Einsia released training scenes where a program can move a robot arm and see objects react. After practice, one program did better on a separate computer test of 500 tasks.",
+      "details": "On November 25, a team at Einsia in Singapore released computer scenes for training robots. A program can move a robot hand toward an object and see how the object changes position. The team wanted to find out whether practice would help a program at jobs it had not seen before.",
+      "technical_novelty": "In the computer scenes, the robot program can move an arm and see where an object goes.",
+      "engineering_impact": "The team saved 500 tasks to test what the program could do after practice.",
+      "limitations": "The two success rates come from the computer test.",
+      "evidence_status": "Results reported by the developers include a simulation evaluation and a separate demonstration on a physical arm.",
+      "published_at": "2026-11-25",
+      "organization": "Einsia AI Technology",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "time_window": "72h",
+      "body": "On November 25, a team at Einsia in Singapore released computer scenes for training robots. A program can move a robot hand toward an object and see how the object changes position. The team wanted to find out whether practice would help a program at jobs it had not seen before.\n\nThe developers used recordings of real robots to help prepare 10,807 tasks. They set aside 10,307 for training and another 500 for the test. The program can look at the scene and choose moves during the test. It is not told the exact position of each item or how its work will be marked.\n\nAfter practice, one program's success rate went from 0.8 to 21.2 percent on those 500 tasks. In a separate demonstration, a real robot arm used an example picture to draw the company logo on a board whose height had not been handed to the program. The success rates describe the computer test. The board experiment described one drawing.",
+      "image": null
+    },
+    {
+      "id": "xpeng-iron-retail-training-roadmap",
+      "title": "A new robot is headed for training in a shop",
+      "summary": "China’s XPENG showed a human-shaped robot at an event in Guangzhou. The company plans to start teaching it to help in its own stores in early 2027.",
+      "details": "At an event in Guangzhou on November 25, the Chinese company XPENG showed a human-shaped robot that it wants to teach to help store staff. It plans to begin training in its own stores during the first three months of 2027. It aims to release the machine to the public in the following three months.",
+      "technical_novelty": "Sensors help the robot detect where it touches an object.",
+      "engineering_impact": "The company plans to start training the robot in its own stores.",
+      "limitations": "The company has yet to report how the robot did when helping shoppers.",
+      "evidence_status": "Manufacturer launch announcement with target dates for training and public release.",
+      "published_at": "2026-11-25",
+      "organization": "XPENG",
+      "source_ids": [
+        "xpeng-ai-day-iron"
+      ],
+      "time_window": "72h",
+      "body": "At an event in Guangzhou on November 25, the Chinese company XPENG showed a human-shaped robot that it wants to teach to help store staff. It plans to begin training in its own stores during the first three months of 2027. It aims to release the machine to the public in the following three months.\n\nWhen you pick something up, it helps to know where your fingers touch it. XPENG says its robot has more than 1,500 points that can sense touch. It also has 76 degrees of freedom. That is a way of counting movements that can happen independently, like bending an elbow without turning the wrist.\n\nThree chips inside the robot help work out how it moves. The company says people can give it tasks by speaking or using an app. It has announced what the training is for and when it plans to start. It has yet to report results from helping shoppers.",
+      "image": null
+    },
+    {
+      "id": "universal-robots-inbolt-on-controller",
+      "title": "A camera plugs straight into the robot arm",
+      "summary": "Universal Robots and Inbolt showed how a robot can find the position of a part using a camera that measures depth. The program that processes the pictures now runs on the computer controlling the arm.",
+      "details": "At a trade show in Nuremberg, Universal Robots and Inbolt introduced a system that helps a robot find a part on a workbench. The camera can measure distance as well as take a picture. The program uses that information to work out where the arm should take its tool.",
+      "technical_novelty": "The computer that controls the arm can now process pictures from the camera.",
+      "engineering_impact": "The camera helps locate a part so the arm can move its tool towards it.",
+      "limitations": "The companies reported measurements for a part that stayed still.",
+      "evidence_status": "The suppliers announced the integration and reported repeatability on stationary parts.",
+      "published_at": "2026-11-24",
+      "organization": "Universal Robots and Inbolt",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "time_window": "7d",
+      "body": "At a trade show in Nuremberg, Universal Robots and Inbolt introduced a system that helps a robot find a part on a workbench. The camera can measure distance as well as take a picture. The program uses that information to work out where the arm should take its tool.\n\nOn the new arm, the camera plugs into a socket near the tool. The signal goes through the arm to the computer that already controls the robot. The earlier setup needed a separate computer to locate the part. To set up a different part, workers give the program a drawing file that describes its shape. The suppliers say this takes less than ten minutes.\n\nFor a part that stays still, the suppliers reported repeatability of 0.5 to 0.7 millimetres. Repeatability describes how close the answers are when you measure the same thing several times. The announcement did not give a result for finding a part while it is moving down a belt.",
+      "image": null
+    },
+    {
+      "id": "kawasaki-beckhoff-controller-mou",
+      "title": "How can a camera and a robot work together?",
+      "summary": "Japan’s Kawasaki and Germany’s Beckhoff agreed to explore how to connect factory robots to cameras and sensors. They signed the agreement at a trade show in Nuremberg.",
+      "details": "On November 27, Japan’s Kawasaki and Germany’s Beckhoff announced that they would work together on connecting factory robots to devices made by different companies. They signed the agreement at a trade show in Nuremberg. They want it to be easier to set up a new camera or sensor when a factory changes its equipment.",
+      "technical_novelty": "The two companies will look at ways to connect the robot to other factory equipment.",
+      "engineering_impact": "A factory network can carry information about a part from the camera to the robot’s controls.",
+      "limitations": "The companies have yet to name the cameras and sensors that will work together.",
+      "evidence_status": "The partners confirmed the memorandum. Technical results are yet to be published.",
+      "published_at": "2026-11-27",
+      "organization": "Kawasaki Heavy Industries and Beckhoff Automation",
+      "source_ids": [
+        "khi-beckhoff-mou",
+        "beckhoff-sps-mou"
+      ],
+      "time_window": "24h",
+      "body": "On November 27, Japan’s Kawasaki and Germany’s Beckhoff announced that they would work together on connecting factory robots to devices made by different companies. They signed the agreement at a trade show in Nuremberg. They want it to be easier to set up a new camera or sensor when a factory changes its equipment.\n\nA camera can tell the system where a part is. Another sensor can tell it when something touches the part. A controller receives information like this and sends commands that move the robot. A network carries the messages between those devices. The partners plan to study a network designed for factories.\n\nThe companies will also discuss training for people who connect the equipment. Kawasaki showed a design for this kind of controller in Tokyo in December 2025. It now has an agreement with a partner, and the companies have yet to say which cameras and sensors they will be able to connect.",
+      "image": null
+    }
+  ],
+  "technology_signal": {
+    "title": "A robot is meant to copy an astronaut’s arm",
+    "summary": "Kommersant reports that a cargo ship brought cameras, an arm and connecting equipment to the space station. The plan is to send the astronaut’s movements through a device worn on the body.",
+    "implications": "Once the parts are connected, a test can show how the robot moves when it gets a command."
+  },
+  "sources": [
+    {
+      "id": "nasa-progress97-docking",
+      "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/",
+      "domain": "www.nasa.gov",
+      "organization": "NASA",
+      "published_at": "2026-11-26",
+      "title": "Progress Cargo Craft Docks to Station on Thanksgiving Day"
+    },
+    {
+      "id": "kommersant-ms36-equipment",
+      "url": "https://www.kommersant.ru/doc/9131416",
+      "domain": "www.kommersant.ru",
+      "organization": "Коммерсантъ",
+      "published_at": "2026-11-26",
+      "title": "Грузовой корабль «Прогресс МС-36» с «Теледроидом» пристыковался к МКС"
+    },
+    {
+      "id": "tass-teledroid-control-background",
+      "url": "https://tass.ru/kosmos/28117839",
+      "domain": "tass.ru",
+      "organization": "ТАСС",
+      "published_at": "2026-09-16",
+      "title": "Прогресс МС-36 отправится к МКС в ноябре"
+    },
+    {
+      "id": "einsia-robouniverse-release",
+      "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml",
+      "domain": "en.prnasia.com",
+      "organization": "Einsia AI Technology",
+      "published_at": "2026-11-25",
+      "title": "Einsia AI Open-Source RoboUniverse-10K, the First 10K-Scale RL Environment Suite for Agential Robotics"
+    },
+    {
+      "id": "xpeng-ai-day-iron",
+      "url": "https://www.xpeng.com/pressroom/news/01a212b0d830a1e838d68a02a2110174",
+      "domain": "www.xpeng.com",
+      "organization": "XPENG",
+      "published_at": "2026-11-25",
+      "title": "XPENG Unveils Turing Physical AI Architecture and Debuts Advanced General-Purpose Humanoid Robot IRON"
+    },
+    {
+      "id": "ur-inbolt-gen7-release",
+      "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/",
+      "domain": "www.universal-robots.com",
+      "organization": "Universal Robots and Inbolt",
+      "published_at": "2026-11-24",
+      "title": "Universal Robots and Inbolt make AI-powered 3D vision guidance easier to deploy and scale with native Gen 7 robot integration"
+    },
+    {
+      "id": "khi-beckhoff-mou",
+      "url": "https://www.khi.co.jp/pressrelease/news_261127-1.pdf",
+      "domain": "www.khi.co.jp",
+      "organization": "Kawasaki Heavy Industries and Beckhoff Automation",
+      "published_at": "2026-11-27",
+      "title": "次世代ロボットコントローラによる柔軟で拡張性の高いシステムの実現に向けた協業に合意"
+    },
+    {
+      "id": "beckhoff-sps-mou",
+      "url": "https://prtimes.jp/main/html/rd/p/000000077.000027362.html",
+      "domain": "prtimes.jp",
+      "organization": "Beckhoff Automation Japan",
+      "published_at": "2026-11-27",
+      "title": "SPS 2026において、川崎重工とベッコフがMOUを締結"
+    }
+  ]
+}

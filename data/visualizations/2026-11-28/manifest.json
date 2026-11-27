@@ -1,0 +1,1581 @@
+{
+  "schema_version": "1.0",
+  "issue_date": "2026-11-28",
+  "visualizations": [
+    {
+      "issue_date": "2026-11-28",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "einsia-robouniverse-10k-training-and-test",
+      "path": "data/visualizations/2026-11-28/einsia-robouniverse-10k-training-and-test-en.svg",
+      "type": "bar_comparison",
+      "caption": "Task success rate",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "sources": [
+        {
+          "id": "einsia-robouniverse-release",
+          "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml"
+        }
+      ],
+      "article_content_sha256": "94401a963ae592cdff310913dfdd6b1a45b2d4c3587d6486a45473bede28fc26",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 5,
+        "line": 8,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "c2059c9de7ef478a72d0215118ae33b5fabf8462"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "business",
+      "language": "en",
+      "news_id": "einsia-robouniverse-10k-training-and-test",
+      "path": "data/visualizations/2026-11-28/einsia-robouniverse-10k-training-and-test-en.svg",
+      "type": "bar_comparison",
+      "caption": "Task success rate",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "sources": [
+        {
+          "id": "einsia-robouniverse-release",
+          "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml"
+        }
+      ],
+      "article_content_sha256": "7772f6dd4098c6f19a5f20fadaa3e0cdabf733c254066839b513112760df18f7",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 5,
+        "line": 8,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "c2059c9de7ef478a72d0215118ae33b5fabf8462"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "einsia-robouniverse-10k-training-and-test",
+      "path": "data/visualizations/2026-11-28/einsia-robouniverse-10k-training-and-test-en.svg",
+      "type": "bar_comparison",
+      "caption": "Task success rate",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "sources": [
+        {
+          "id": "einsia-robouniverse-release",
+          "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml"
+        }
+      ],
+      "article_content_sha256": "19c679c32016bc3aed7ef1fc812ef257d44286e37f85ba004470e95f3695ef6d",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 5,
+        "line": 8,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "c2059c9de7ef478a72d0215118ae33b5fabf8462"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "children",
+      "language": "en",
+      "news_id": "einsia-robouniverse-10k-training-and-test",
+      "path": "data/visualizations/2026-11-28/einsia-robouniverse-10k-training-and-test-en.svg",
+      "type": "bar_comparison",
+      "caption": "Task success rate",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "sources": [
+        {
+          "id": "einsia-robouniverse-release",
+          "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml"
+        }
+      ],
+      "article_content_sha256": "07c4eda16bfed0ee205f82b44c2501fcdb0f826e29806bf0f5d09884314ad330",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 5,
+        "line": 8,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "c2059c9de7ef478a72d0215118ae33b5fabf8462"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "einsia-robouniverse-10k-training-and-test",
+      "path": "data/visualizations/2026-11-28/einsia-robouniverse-10k-training-and-test-ja.svg",
+      "type": "bar_comparison",
+      "caption": "課題の成功率",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "sources": [
+        {
+          "id": "einsia-robouniverse-release",
+          "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml"
+        }
+      ],
+      "article_content_sha256": "83698b93e6249ac903b4be443a9406b833fdcf68f3b70cda67e2e9a381ddf267",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 5,
+        "line": 8,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular",
+        "NotoSerifCJKjp-Bold"
+      ],
+      "blob_sha": "7d509bdb07414b432ad38e414057bc0a15f4069b"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "einsia-robouniverse-10k-training-and-test",
+      "path": "data/visualizations/2026-11-28/einsia-robouniverse-10k-training-and-test-ja.svg",
+      "type": "bar_comparison",
+      "caption": "課題の成功率",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "sources": [
+        {
+          "id": "einsia-robouniverse-release",
+          "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml"
+        }
+      ],
+      "article_content_sha256": "384835db9bcc8c69736a5780bc83b9dc1353e9801f372fa10ef98200e762b36b",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 5,
+        "line": 8,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular",
+        "NotoSerifCJKjp-Bold"
+      ],
+      "blob_sha": "7d509bdb07414b432ad38e414057bc0a15f4069b"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "einsia-robouniverse-10k-training-and-test",
+      "path": "data/visualizations/2026-11-28/einsia-robouniverse-10k-training-and-test-ja.svg",
+      "type": "bar_comparison",
+      "caption": "課題の成功率",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "sources": [
+        {
+          "id": "einsia-robouniverse-release",
+          "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml"
+        }
+      ],
+      "article_content_sha256": "232027e4e424aecafd11347bcecb17d50313039ccbb238914b53b60ac8bba031",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 5,
+        "line": 8,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular",
+        "NotoSerifCJKjp-Bold"
+      ],
+      "blob_sha": "7d509bdb07414b432ad38e414057bc0a15f4069b"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "einsia-robouniverse-10k-training-and-test",
+      "path": "data/visualizations/2026-11-28/einsia-robouniverse-10k-training-and-test-ja.svg",
+      "type": "bar_comparison",
+      "caption": "課題の成功率",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "sources": [
+        {
+          "id": "einsia-robouniverse-release",
+          "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml"
+        }
+      ],
+      "article_content_sha256": "ab6f249684e7d9b07bd733470d8ea2872625dad580f99c58c7c3b172dd5b6ff6",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 5,
+        "line": 8,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular",
+        "NotoSerifCJKjp-Bold"
+      ],
+      "blob_sha": "7d509bdb07414b432ad38e414057bc0a15f4069b"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "einsia-robouniverse-10k-training-and-test",
+      "path": "data/visualizations/2026-11-28/einsia-robouniverse-10k-training-and-test-ru.svg",
+      "type": "bar_comparison",
+      "caption": "Успешность в тесте",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "sources": [
+        {
+          "id": "einsia-robouniverse-release",
+          "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml"
+        }
+      ],
+      "article_content_sha256": "1dd42141c25962e88c4b82cbd09feb9e271bd8407fd1ca26860895685c4c9f95",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 5,
+        "line": 8,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "74d978af9649d77524d29048189225a4618d79e8"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "einsia-robouniverse-10k-training-and-test",
+      "path": "data/visualizations/2026-11-28/einsia-robouniverse-10k-training-and-test-ru.svg",
+      "type": "bar_comparison",
+      "caption": "Успешность в тесте",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "sources": [
+        {
+          "id": "einsia-robouniverse-release",
+          "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml"
+        }
+      ],
+      "article_content_sha256": "28adbcebb5f115c7ed62581d1df8bb69581aad17e9998d667f851e3fdb00b35c",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 5,
+        "line": 8,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "74d978af9649d77524d29048189225a4618d79e8"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "einsia-robouniverse-10k-training-and-test",
+      "path": "data/visualizations/2026-11-28/einsia-robouniverse-10k-training-and-test-ru.svg",
+      "type": "bar_comparison",
+      "caption": "Успешность в тесте",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "sources": [
+        {
+          "id": "einsia-robouniverse-release",
+          "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml"
+        }
+      ],
+      "article_content_sha256": "f30a4f559c672878c4eb123a7b4a47c63c05b59f79b9c3b2e7c205c7d279bb3c",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 5,
+        "line": 8,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "74d978af9649d77524d29048189225a4618d79e8"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "einsia-robouniverse-10k-training-and-test",
+      "path": "data/visualizations/2026-11-28/einsia-robouniverse-10k-training-and-test-ru.svg",
+      "type": "bar_comparison",
+      "caption": "Успешность в тесте",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "sources": [
+        {
+          "id": "einsia-robouniverse-release",
+          "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml"
+        }
+      ],
+      "article_content_sha256": "8dbae8b7dba64c91cd6a42e29c8219d1c53286820bcbcda459251993d0129008",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 5,
+        "line": 8,
+        "path": 0,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "74d978af9649d77524d29048189225a4618d79e8"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "progress-ms36-teledroid-equipment-docking",
+      "path": "data/visualizations/2026-11-28/progress-ms36-teledroid-equipment-docking-en.svg",
+      "type": "planned_signal_flow",
+      "caption": "How an astronaut will control the robot arm",
+      "source_ids": [
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
+      ],
+      "sources": [
+        {
+          "id": "nasa-progress97-docking",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/"
+        },
+        {
+          "id": "kommersant-ms36-equipment",
+          "url": "https://www.kommersant.ru/doc/9131416"
+        },
+        {
+          "id": "tass-teledroid-control-background",
+          "url": "https://tass.ru/kosmos/28117839"
+        }
+      ],
+      "article_content_sha256": "81af513fbf85740d4887308961005ac2834c834febe9f3bdd8eea1b7fc3c2251",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 11,
+        "rect": 1,
+        "line": 6,
+        "path": 2,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "e30fa99d0a99efb181ff9e82ec4a7abf7d7bd0aa"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "progress-ms36-teledroid-equipment-docking",
+      "path": "data/visualizations/2026-11-28/progress-ms36-teledroid-equipment-docking-en.svg",
+      "type": "planned_signal_flow",
+      "caption": "How an astronaut will control the robot arm",
+      "source_ids": [
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
+      ],
+      "sources": [
+        {
+          "id": "nasa-progress97-docking",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/"
+        },
+        {
+          "id": "kommersant-ms36-equipment",
+          "url": "https://www.kommersant.ru/doc/9131416"
+        },
+        {
+          "id": "tass-teledroid-control-background",
+          "url": "https://tass.ru/kosmos/28117839"
+        }
+      ],
+      "article_content_sha256": "f9c0a5c81bacf39787d7a9bdd4d4de06131d22d413ca5eb064c8c39137a6c89f",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 11,
+        "rect": 1,
+        "line": 6,
+        "path": 2,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "e30fa99d0a99efb181ff9e82ec4a7abf7d7bd0aa"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "children",
+      "language": "en",
+      "news_id": "progress-ms36-teledroid-equipment-docking",
+      "path": "data/visualizations/2026-11-28/progress-ms36-teledroid-equipment-docking-en.svg",
+      "type": "planned_signal_flow",
+      "caption": "How an astronaut will control the robot arm",
+      "source_ids": [
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
+      ],
+      "sources": [
+        {
+          "id": "nasa-progress97-docking",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/"
+        },
+        {
+          "id": "kommersant-ms36-equipment",
+          "url": "https://www.kommersant.ru/doc/9131416"
+        },
+        {
+          "id": "tass-teledroid-control-background",
+          "url": "https://tass.ru/kosmos/28117839"
+        }
+      ],
+      "article_content_sha256": "197f4dddc9c5ec8f9d1c702d03f774df18f48b7fb3f8ebb281fbc6bcdb3c93b0",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 11,
+        "rect": 1,
+        "line": 6,
+        "path": 2,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "e30fa99d0a99efb181ff9e82ec4a7abf7d7bd0aa"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "progress-ms36-teledroid-equipment-docking",
+      "path": "data/visualizations/2026-11-28/progress-ms36-teledroid-equipment-docking-ja.svg",
+      "type": "planned_signal_flow",
+      "caption": "宇宙飛行士の動きで ロボットの腕を動かす",
+      "source_ids": [
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
+      ],
+      "sources": [
+        {
+          "id": "nasa-progress97-docking",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/"
+        },
+        {
+          "id": "kommersant-ms36-equipment",
+          "url": "https://www.kommersant.ru/doc/9131416"
+        },
+        {
+          "id": "tass-teledroid-control-background",
+          "url": "https://tass.ru/kosmos/28117839"
+        }
+      ],
+      "article_content_sha256": "9335ec8ada7ee821815cac61246133df3f751df12bbbbe30293c1d7df57183c8",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 11,
+        "rect": 1,
+        "line": 6,
+        "path": 2,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular",
+        "NotoSerifCJKjp-Bold"
+      ],
+      "blob_sha": "f26b53fd500b0c1b23a564d6613ea885de5548e6"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "progress-ms36-teledroid-equipment-docking",
+      "path": "data/visualizations/2026-11-28/progress-ms36-teledroid-equipment-docking-ja.svg",
+      "type": "planned_signal_flow",
+      "caption": "宇宙飛行士の動きで ロボットの腕を動かす",
+      "source_ids": [
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
+      ],
+      "sources": [
+        {
+          "id": "nasa-progress97-docking",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/"
+        },
+        {
+          "id": "kommersant-ms36-equipment",
+          "url": "https://www.kommersant.ru/doc/9131416"
+        },
+        {
+          "id": "tass-teledroid-control-background",
+          "url": "https://tass.ru/kosmos/28117839"
+        }
+      ],
+      "article_content_sha256": "32ec82d0e23d8aa46919a49e6154d8310fd3c5a0ff61c5488467c3e0ec8e63aa",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 11,
+        "rect": 1,
+        "line": 6,
+        "path": 2,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular",
+        "NotoSerifCJKjp-Bold"
+      ],
+      "blob_sha": "f26b53fd500b0c1b23a564d6613ea885de5548e6"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "progress-ms36-teledroid-equipment-docking",
+      "path": "data/visualizations/2026-11-28/progress-ms36-teledroid-equipment-docking-ja.svg",
+      "type": "planned_signal_flow",
+      "caption": "宇宙飛行士の動きで ロボットの腕を動かす",
+      "source_ids": [
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
+      ],
+      "sources": [
+        {
+          "id": "nasa-progress97-docking",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/"
+        },
+        {
+          "id": "kommersant-ms36-equipment",
+          "url": "https://www.kommersant.ru/doc/9131416"
+        },
+        {
+          "id": "tass-teledroid-control-background",
+          "url": "https://tass.ru/kosmos/28117839"
+        }
+      ],
+      "article_content_sha256": "a7aef115d1677b6dc230a9f72cc1cfce1f58ba6be636842f1ac20d7f501d26d1",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 11,
+        "rect": 1,
+        "line": 6,
+        "path": 2,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular",
+        "NotoSerifCJKjp-Bold"
+      ],
+      "blob_sha": "f26b53fd500b0c1b23a564d6613ea885de5548e6"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "progress-ms36-teledroid-equipment-docking",
+      "path": "data/visualizations/2026-11-28/progress-ms36-teledroid-equipment-docking-ru.svg",
+      "type": "planned_signal_flow",
+      "caption": "Как космонавт будет двигать руку",
+      "source_ids": [
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
+      ],
+      "sources": [
+        {
+          "id": "nasa-progress97-docking",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/"
+        },
+        {
+          "id": "kommersant-ms36-equipment",
+          "url": "https://www.kommersant.ru/doc/9131416"
+        },
+        {
+          "id": "tass-teledroid-control-background",
+          "url": "https://tass.ru/kosmos/28117839"
+        }
+      ],
+      "article_content_sha256": "aef0451e6bd796a832a835f247d67e22b3eda48b1c2cab35ffd4a4e991af61ec",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 11,
+        "rect": 1,
+        "line": 6,
+        "path": 2,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "5c532a3f7417fb3ef7d763af6851d3f46457397f"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "progress-ms36-teledroid-equipment-docking",
+      "path": "data/visualizations/2026-11-28/progress-ms36-teledroid-equipment-docking-ru.svg",
+      "type": "planned_signal_flow",
+      "caption": "Как космонавт будет двигать руку",
+      "source_ids": [
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
+      ],
+      "sources": [
+        {
+          "id": "nasa-progress97-docking",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/"
+        },
+        {
+          "id": "kommersant-ms36-equipment",
+          "url": "https://www.kommersant.ru/doc/9131416"
+        },
+        {
+          "id": "tass-teledroid-control-background",
+          "url": "https://tass.ru/kosmos/28117839"
+        }
+      ],
+      "article_content_sha256": "9c04a9a9f38f7bd0e17061db0369be746cd94ff0354ac9c7df8c799368b15ad0",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 11,
+        "rect": 1,
+        "line": 6,
+        "path": 2,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "5c532a3f7417fb3ef7d763af6851d3f46457397f"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "progress-ms36-teledroid-equipment-docking",
+      "path": "data/visualizations/2026-11-28/progress-ms36-teledroid-equipment-docking-ru.svg",
+      "type": "planned_signal_flow",
+      "caption": "Как космонавт будет двигать руку",
+      "source_ids": [
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
+      ],
+      "sources": [
+        {
+          "id": "nasa-progress97-docking",
+          "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/"
+        },
+        {
+          "id": "kommersant-ms36-equipment",
+          "url": "https://www.kommersant.ru/doc/9131416"
+        },
+        {
+          "id": "tass-teledroid-control-background",
+          "url": "https://tass.ru/kosmos/28117839"
+        }
+      ],
+      "article_content_sha256": "832808e869c9cf91fc9ba58633d68a00f764350820989b8df479413dab86a9df",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 11,
+        "rect": 1,
+        "line": 6,
+        "path": 2,
+        "circle": 0
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "5c532a3f7417fb3ef7d763af6851d3f46457397f"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "engineer",
+      "language": "en",
+      "news_id": "universal-robots-inbolt-on-controller",
+      "path": "data/visualizations/2026-11-28/universal-robots-inbolt-on-controller-en.svg",
+      "type": "architecture_comparison",
+      "caption": "Where 3D camera images are processed",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "sources": [
+        {
+          "id": "ur-inbolt-gen7-release",
+          "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/"
+        }
+      ],
+      "article_content_sha256": "18488bd8ba527c38f671c1730a629b9173165ab1593dfff18288ce785cbe086b",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 14,
+        "rect": 1,
+        "line": 9,
+        "path": 4,
+        "circle": 6
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "3a8e3def1ba083758dceaf54bd129b6ef0f99677"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "business",
+      "language": "en",
+      "news_id": "universal-robots-inbolt-on-controller",
+      "path": "data/visualizations/2026-11-28/universal-robots-inbolt-on-controller-en.svg",
+      "type": "architecture_comparison",
+      "caption": "Where 3D camera images are processed",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "sources": [
+        {
+          "id": "ur-inbolt-gen7-release",
+          "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/"
+        }
+      ],
+      "article_content_sha256": "598b4e859865ac68fdd6d994013be6bd7b5f38190ce84a4db739ad10be321df8",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 14,
+        "rect": 1,
+        "line": 9,
+        "path": 4,
+        "circle": 6
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "3a8e3def1ba083758dceaf54bd129b6ef0f99677"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "enthusiast",
+      "language": "en",
+      "news_id": "universal-robots-inbolt-on-controller",
+      "path": "data/visualizations/2026-11-28/universal-robots-inbolt-on-controller-en.svg",
+      "type": "architecture_comparison",
+      "caption": "Where 3D camera images are processed",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "sources": [
+        {
+          "id": "ur-inbolt-gen7-release",
+          "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/"
+        }
+      ],
+      "article_content_sha256": "059605acffd8d5c77219ff23355c1676564967af6ab864133c0d15593594fdca",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 14,
+        "rect": 1,
+        "line": 9,
+        "path": 4,
+        "circle": 6
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "3a8e3def1ba083758dceaf54bd129b6ef0f99677"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "children",
+      "language": "en",
+      "news_id": "universal-robots-inbolt-on-controller",
+      "path": "data/visualizations/2026-11-28/universal-robots-inbolt-on-controller-en.svg",
+      "type": "architecture_comparison",
+      "caption": "Where 3D camera images are processed",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "sources": [
+        {
+          "id": "ur-inbolt-gen7-release",
+          "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/"
+        }
+      ],
+      "article_content_sha256": "a8e4577e9ec93ee346b77ef0a6543a8ea22f7c3605e56af78b39dae3850f2159",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 14,
+        "rect": 1,
+        "line": 9,
+        "path": 4,
+        "circle": 6
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "3a8e3def1ba083758dceaf54bd129b6ef0f99677"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "engineer",
+      "language": "ja",
+      "news_id": "universal-robots-inbolt-on-controller",
+      "path": "data/visualizations/2026-11-28/universal-robots-inbolt-on-controller-ja.svg",
+      "type": "architecture_comparison",
+      "caption": "三次元カメラの画像を 処理する場所",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "sources": [
+        {
+          "id": "ur-inbolt-gen7-release",
+          "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/"
+        }
+      ],
+      "article_content_sha256": "b74988b5873df3cd6ad5cd635b9ffff541fe0eebc8e5696723c9471360af6f15",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 14,
+        "rect": 1,
+        "line": 9,
+        "path": 4,
+        "circle": 6
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular",
+        "NotoSerifCJKjp-Bold"
+      ],
+      "blob_sha": "1a5745b8afb3f78ce9b403bf994482e723badfad"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "business",
+      "language": "ja",
+      "news_id": "universal-robots-inbolt-on-controller",
+      "path": "data/visualizations/2026-11-28/universal-robots-inbolt-on-controller-ja.svg",
+      "type": "architecture_comparison",
+      "caption": "三次元カメラの画像を 処理する場所",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "sources": [
+        {
+          "id": "ur-inbolt-gen7-release",
+          "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/"
+        }
+      ],
+      "article_content_sha256": "15d149239e3197513af3986f99629f703cf418f74c6f948db88e8b82a1c6bd11",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 14,
+        "rect": 1,
+        "line": 9,
+        "path": 4,
+        "circle": 6
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular",
+        "NotoSerifCJKjp-Bold"
+      ],
+      "blob_sha": "1a5745b8afb3f78ce9b403bf994482e723badfad"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "enthusiast",
+      "language": "ja",
+      "news_id": "universal-robots-inbolt-on-controller",
+      "path": "data/visualizations/2026-11-28/universal-robots-inbolt-on-controller-ja.svg",
+      "type": "architecture_comparison",
+      "caption": "三次元カメラの画像を 処理する場所",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "sources": [
+        {
+          "id": "ur-inbolt-gen7-release",
+          "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/"
+        }
+      ],
+      "article_content_sha256": "39ca9880b4bf0543fddec735435a058598d3b4c48c33493b70530e1cf209cd5d",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 14,
+        "rect": 1,
+        "line": 9,
+        "path": 4,
+        "circle": 6
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular",
+        "NotoSerifCJKjp-Bold"
+      ],
+      "blob_sha": "1a5745b8afb3f78ce9b403bf994482e723badfad"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "children",
+      "language": "ja",
+      "news_id": "universal-robots-inbolt-on-controller",
+      "path": "data/visualizations/2026-11-28/universal-robots-inbolt-on-controller-ja.svg",
+      "type": "architecture_comparison",
+      "caption": "三次元カメラの画像を 処理する場所",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "sources": [
+        {
+          "id": "ur-inbolt-gen7-release",
+          "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/"
+        }
+      ],
+      "article_content_sha256": "8e7833375f18db92c1ab6ab43dc78d08482a343b518163951378a272dc7d4c61",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 14,
+        "rect": 1,
+        "line": 9,
+        "path": 4,
+        "circle": 6
+      },
+      "render_fonts": [
+        "NotoSansCJKjp-Bold",
+        "NotoSansCJKjp-Regular",
+        "NotoSerifCJKjp-Bold"
+      ],
+      "blob_sha": "1a5745b8afb3f78ce9b403bf994482e723badfad"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "engineer",
+      "language": "ru",
+      "news_id": "universal-robots-inbolt-on-controller",
+      "path": "data/visualizations/2026-11-28/universal-robots-inbolt-on-controller-ru.svg",
+      "type": "architecture_comparison",
+      "caption": "Путь изображения с 3D-камеры",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "sources": [
+        {
+          "id": "ur-inbolt-gen7-release",
+          "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/"
+        }
+      ],
+      "article_content_sha256": "e54ac873a5e4e037e02f768f058df2800585af827a8ba75b7ebe5424055f5e45",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 1,
+        "line": 9,
+        "path": 4,
+        "circle": 6
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "8d200f146b9370199d8c11a26c432889de91bcda"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "business",
+      "language": "ru",
+      "news_id": "universal-robots-inbolt-on-controller",
+      "path": "data/visualizations/2026-11-28/universal-robots-inbolt-on-controller-ru.svg",
+      "type": "architecture_comparison",
+      "caption": "Путь изображения с 3D-камеры",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "sources": [
+        {
+          "id": "ur-inbolt-gen7-release",
+          "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/"
+        }
+      ],
+      "article_content_sha256": "452e7857566460d856c0b13f49cdab7a0c057ba6696b8895d82f60c924ed0701",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 1,
+        "line": 9,
+        "path": 4,
+        "circle": 6
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "8d200f146b9370199d8c11a26c432889de91bcda"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "enthusiast",
+      "language": "ru",
+      "news_id": "universal-robots-inbolt-on-controller",
+      "path": "data/visualizations/2026-11-28/universal-robots-inbolt-on-controller-ru.svg",
+      "type": "architecture_comparison",
+      "caption": "Путь изображения с 3D-камеры",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "sources": [
+        {
+          "id": "ur-inbolt-gen7-release",
+          "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/"
+        }
+      ],
+      "article_content_sha256": "412dd5f14b4023ff38197d5a221194a89b7b06931b91c7f3626c9241a28790ff",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 1,
+        "line": 9,
+        "path": 4,
+        "circle": 6
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "8d200f146b9370199d8c11a26c432889de91bcda"
+    },
+    {
+      "issue_date": "2026-11-28",
+      "edition": "children",
+      "language": "ru",
+      "news_id": "universal-robots-inbolt-on-controller",
+      "path": "data/visualizations/2026-11-28/universal-robots-inbolt-on-controller-ru.svg",
+      "type": "architecture_comparison",
+      "caption": "Путь изображения с 3D-камеры",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
+      ],
+      "sources": [
+        {
+          "id": "ur-inbolt-gen7-release",
+          "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/"
+        }
+      ],
+      "article_content_sha256": "8fdd6c28655eae17e7ef2986adcefa8c83a2b393d5ce78a0093b6ace335f4e41",
+      "format": "image/svg+xml",
+      "status": "ready",
+      "xml_qa": "passed",
+      "xml_qa_method": "lxml strict XMLParser(recover=False, resolve_entities=False); SVG namespace, element and attribute checks; repeated on GitHub readback",
+      "render_qa": "passed",
+      "layout_qa": "passed",
+      "qa_notes": "Inkscape 1.4 headless SVG rendering and object bounds at 360, 390, and 768 CSS px. Font names inspected in rendered output. Final rendering reviewed at 360 px. SVG arrowheads are explicit paths.",
+      "render_widths_px": [
+        360,
+        390,
+        768
+      ],
+      "min_font_px_at_360": 14,
+      "measured_objects": {
+        "text": 15,
+        "rect": 1,
+        "line": 9,
+        "path": 4,
+        "circle": 6
+      },
+      "render_fonts": [
+        "NotoSans-Bold",
+        "NotoSans-Regular",
+        "NotoSerif-Bold"
+      ],
+      "blob_sha": "8d200f146b9370199d8c11a26c432889de91bcda"
+    }
+  ]
+}

@@ -2,159 +2,177 @@
   "schema_version": "1.5",
   "publication": "pravda_replikanta",
   "issue_type": "daily",
-  "issue_date": "2026-11-27",
-  "issue_id": "daily-2026-11-27",
+  "issue_date": "2026-11-28",
+  "issue_id": "daily-2026-11-28",
   "edition": "children",
   "language": "en",
-  "generated_at": "2026-11-26T21:13:18Z",
-  "title": "A robot, a cord and a narrow gap",
-  "lead": "Researchers made puzzles that ask robots to turn parts or thread a cord. A team in Tokyo describes putting sensors on a robot hand so it can tell when a part catches.",
+  "generated_at": "2026-11-27T21:13:27Z",
+  "title": "A robot arm rides to the space station",
+  "lead": "A cargo ship delivered equipment for a robot meant to copy a person’s movements. In another experiment, a robot arm practised moving objects inside a computer.",
   "news": [
     {
-      "id": "roboarc-spatial-manipulation-puzzles",
-      "title": "A robot puzzle can start with a knot",
-      "summary": "Northwestern University and its collaborators set up ninety puzzles for robots in a computer. The best program that wrote instructions for the robot solved about 43% of them in the standard test.",
-      "details": "Researchers at Northwestern University and other organisations set ninety puzzles for robots in a computer. One asks a robot to move a piece through a narrow gap. Another asks it to thread a cord through a hole. The researchers wanted to see whether programs could guide the hands so that the pieces ended up in the right state.",
-      "technical_novelty": "The puzzles cover assembly, untangling and narrow passages. The final state of the objects determines success.",
-      "engineering_impact": "The two test settings give controllers different observations and different opportunities to restart.",
-      "limitations": "The scores of about 43% and zero out of eighteen concern different systems and different sets of simulated puzzles.",
-      "evidence_status": "Research preprint. The cited benchmark scores come from the authors’ simulation trials.",
-      "published_at": "2026-11-24",
-      "organization": "Northwestern University, Microsoft, UC Berkeley and Carnegie Mellon University",
+      "id": "progress-ms36-teledroid-equipment-docking",
+      "title": "A cargo ship brings cameras and a robot arm to the space station",
+      "summary": "The Progress cargo ship docked with the International Space Station on November 26. Kommersant reported that it brought equipment for an experiment with a robot that is meant to copy a person's movements.",
+      "details": "On November 26, a Progress cargo ship arrived at the International Space Station and joined up with the Rassvet module. It had launched from Baikonur two days earlier. Kommersant reported that the cargo included cameras, an arm and equipment to connect them for a robot experiment.",
+      "technical_novelty": "A device worn by an astronaut is meant to send their movements to the robot.",
+      "engineering_impact": "Cameras can show the astronaut where the robot arm moves.",
+      "limitations": "The equipment still has to be connected before the arm can be tested.",
+      "evidence_status": "NASA confirmed docking. Kommersant reported the equipment, and TASS described the planned control method.",
+      "published_at": "2026-11-26",
+      "organization": "Roscosmos and NASA",
       "source_ids": [
-        "roboarc-preprint"
+        "nasa-progress97-docking",
+        "kommersant-ms36-equipment",
+        "tass-teledroid-control-background"
+      ],
+      "time_window": "72h",
+      "body": "On November 26, a Progress cargo ship arrived at the International Space Station and joined up with the Rassvet module. It had launched from Baikonur two days earlier. Kommersant reported that the cargo included cameras, an arm and equipment to connect them for a robot experiment.\n\nThe robot is shaped like the top half of a person. TASS says an astronaut will wear a device that attaches to the body and passes on movements of the arms. When the person bends an elbow, the robot should make a matching move. This is a kind of remote control. Cameras let the system collect pictures of what is happening near the robot.\n\nThe equipment has reached the station. To try the control system, the team needs to connect the parts and see what movement follows a command. The docking reports provided no results for work outside the station. The developers call the experiment Teledroid.",
+      "image": null
+    },
+    {
+      "id": "einsia-robouniverse-10k-training-and-test",
+      "title": "A robot hand can practise with objects inside a computer",
+      "summary": "Singapore's Einsia released training scenes where a program can move a robot arm and see objects react. After practice, one program did better on a separate computer test of 500 tasks.",
+      "details": "On November 25, a team at Einsia in Singapore released computer scenes for training robots. A program can move a robot hand toward an object and see how the object changes position. The team wanted to find out whether practice would help a program at jobs it had not seen before.",
+      "technical_novelty": "In the computer scenes, the robot program can move an arm and see where an object goes.",
+      "engineering_impact": "The team saved 500 tasks to test what the program could do after practice.",
+      "limitations": "The two success rates come from the computer test.",
+      "evidence_status": "Results reported by the developers include a simulation evaluation and a separate demonstration on a physical arm.",
+      "published_at": "2026-11-25",
+      "organization": "Einsia AI Technology",
+      "source_ids": [
+        "einsia-robouniverse-release"
+      ],
+      "time_window": "72h",
+      "body": "On November 25, a team at Einsia in Singapore released computer scenes for training robots. A program can move a robot hand toward an object and see how the object changes position. The team wanted to find out whether practice would help a program at jobs it had not seen before.\n\nThe developers used recordings of real robots to help prepare 10,807 tasks. They set aside 10,307 for training and another 500 for the test. The program can look at the scene and choose moves during the test. It is not told the exact position of each item or how its work will be marked.\n\nAfter practice, one program's success rate went from 0.8 to 21.2 percent on those 500 tasks. In a separate demonstration, a real robot arm used an example picture to draw the company logo on a board whose height had not been handed to the program. The success rates describe the computer test. The board experiment described one drawing.",
+      "image": null
+    },
+    {
+      "id": "xpeng-iron-retail-training-roadmap",
+      "title": "A new robot is headed for training in a shop",
+      "summary": "China’s XPENG showed a human-shaped robot at an event in Guangzhou. The company plans to start teaching it to help in its own stores in early 2027.",
+      "details": "At an event in Guangzhou on November 25, the Chinese company XPENG showed a human-shaped robot that it wants to teach to help store staff. It plans to begin training in its own stores during the first three months of 2027. It aims to release the machine to the public in the following three months.",
+      "technical_novelty": "Sensors help the robot detect where it touches an object.",
+      "engineering_impact": "The company plans to start training the robot in its own stores.",
+      "limitations": "The company has yet to report how the robot did when helping shoppers.",
+      "evidence_status": "Manufacturer launch announcement with target dates for training and public release.",
+      "published_at": "2026-11-25",
+      "organization": "XPENG",
+      "source_ids": [
+        "xpeng-ai-day-iron"
+      ],
+      "time_window": "72h",
+      "body": "At an event in Guangzhou on November 25, the Chinese company XPENG showed a human-shaped robot that it wants to teach to help store staff. It plans to begin training in its own stores during the first three months of 2027. It aims to release the machine to the public in the following three months.\n\nWhen you pick something up, it helps to know where your fingers touch it. XPENG says its robot has more than 1,500 points that can sense touch. It also has 76 degrees of freedom. That is a way of counting movements that can happen independently, like bending an elbow without turning the wrist.\n\nThree chips inside the robot help work out how it moves. The company says people can give it tasks by speaking or using an app. It has announced what the training is for and when it plans to start. It has yet to report results from helping shoppers.",
+      "image": null
+    },
+    {
+      "id": "universal-robots-inbolt-on-controller",
+      "title": "A camera plugs straight into the robot arm",
+      "summary": "Universal Robots and Inbolt showed how a robot can find the position of a part using a camera that measures depth. The program that processes the pictures now runs on the computer controlling the arm.",
+      "details": "At a trade show in Nuremberg, Universal Robots and Inbolt introduced a system that helps a robot find a part on a workbench. The camera can measure distance as well as take a picture. The program uses that information to work out where the arm should take its tool.",
+      "technical_novelty": "The computer that controls the arm can now process pictures from the camera.",
+      "engineering_impact": "The camera helps locate a part so the arm can move its tool towards it.",
+      "limitations": "The companies reported measurements for a part that stayed still.",
+      "evidence_status": "The suppliers announced the integration and reported repeatability on stationary parts.",
+      "published_at": "2026-11-24",
+      "organization": "Universal Robots and Inbolt",
+      "source_ids": [
+        "ur-inbolt-gen7-release"
       ],
       "time_window": "7d",
-      "body": "Researchers at Northwestern University and other organisations set ninety puzzles for robots in a computer. One asks a robot to move a piece through a narrow gap. Another asks it to thread a cord through a hole. The researchers wanted to see whether programs could guide the hands so that the pieces ended up in the right state.\n\nImagine trying to slide a wide object through an opening. Turning it sideways might make room, but only if there is space for the turn. A program has to choose such moves for the robot. The test checks where the pieces end up and how they fit together. The researchers made sure that each puzzle already had a solution that worked.\n\nIn the standard test, the best program that wrote instructions for the movements solved about 43% of the puzzles. Four other programs received pictures and a task to perform. Each faced eighteen puzzles designed for one arm, and none solved any of those eighteen in the computer test.",
+      "body": "At a trade show in Nuremberg, Universal Robots and Inbolt introduced a system that helps a robot find a part on a workbench. The camera can measure distance as well as take a picture. The program uses that information to work out where the arm should take its tool.\n\nOn the new arm, the camera plugs into a socket near the tool. The signal goes through the arm to the computer that already controls the robot. The earlier setup needed a separate computer to locate the part. To set up a different part, workers give the program a drawing file that describes its shape. The suppliers say this takes less than ten minutes.\n\nFor a part that stays still, the suppliers reported repeatability of 0.5 to 0.7 millimetres. Repeatability describes how close the answers are when you measure the same thing several times. The announcement did not give a result for finding a part while it is moving down a belt.",
       "image": null
     },
     {
-      "id": "xela-touch-insertion-and-picking",
-      "title": "A robot hand can feel when a plug catches",
-      "summary": "Tokyo’s XELA Robotics proposed using touch sensors when a robot puts a plug into a socket. It says sensors could also detect a small screw slipping between the fingers.",
-      "details": "Tokyo-based XELA Robotics described how sensors on a robot hand could help guide a plug into a socket. When a plug is a little out of line, it might catch on the edge. A camera might not show the moment that happens. A touch sensor can measure how strongly the part pushes against the hand.",
-      "technical_novelty": "Sensors on the hand measure contact and detect insertion resistance or signs of slipping.",
-      "engineering_impact": "A controller can use the readings to reposition a connector or adjust the grip on a small part.",
-      "limitations": "The release reports no damage rate or direct comparison with a camera-only system.",
-      "evidence_status": "The sensor vendor described use cases and did not publish comparative test results.",
-      "published_at": "2026-11-25",
-      "organization": "XELA Robotics",
+      "id": "kawasaki-beckhoff-controller-mou",
+      "title": "How can a camera and a robot work together?",
+      "summary": "Japan’s Kawasaki and Germany’s Beckhoff agreed to explore how to connect factory robots to cameras and sensors. They signed the agreement at a trade show in Nuremberg.",
+      "details": "On November 27, Japan’s Kawasaki and Germany’s Beckhoff announced that they would work together on connecting factory robots to devices made by different companies. They signed the agreement at a trade show in Nuremberg. They want it to be easier to set up a new camera or sensor when a factory changes its equipment.",
+      "technical_novelty": "The two companies will look at ways to connect the robot to other factory equipment.",
+      "engineering_impact": "A factory network can carry information about a part from the camera to the robot’s controls.",
+      "limitations": "The companies have yet to name the cameras and sensors that will work together.",
+      "evidence_status": "The partners confirmed the memorandum. Technical results are yet to be published.",
+      "published_at": "2026-11-27",
+      "organization": "Kawasaki Heavy Industries and Beckhoff Automation",
       "source_ids": [
-        "xela-tactile-use-cases"
-      ],
-      "time_window": "72h",
-      "body": "Tokyo-based XELA Robotics described how sensors on a robot hand could help guide a plug into a socket. When a plug is a little out of line, it might catch on the edge. A camera might not show the moment that happens. A touch sensor can measure how strongly the part pushes against the hand.\n\nIf the plug catches, the robot could change its position a little and try again. The program needs a signal telling it that the force has changed. The engineers proposed another use for the sensors: picking up a tiny screw without dropping it. Once the fingers close, they can hide the screw from the camera.\n\nWhen the screw starts to slide, the sensors could report it before the screw falls. The program could then change how tightly the hand holds it. In one job the clue is a plug that pushes back, and in the other it is a screw that slips. The company described both ideas without giving a count of parts assembled without damage.",
-      "image": null
-    },
-    {
-      "id": "bleckmann-two-humanoids-warehouse-training",
-      "title": "Two robots are going to learn warehouse work",
-      "summary": "Logistics company Bleckmann bought two human-shaped robots for European warehouses. Once the machines arrive, workers plan to teach them jobs such as moving items and picking goods for orders.",
-      "details": "On November 24, logistics company Bleckmann announced that it had invested in two human-shaped robots for European warehouses. It expects the machines to arrive in the coming weeks. Workers will then begin teaching them warehouse jobs. The company wants to find out how the robots learn to move things and pick goods for an order.",
-      "technical_novelty": "The machines have cameras, laser distance sensors and software that builds a map while tracking their position.",
-      "engineering_impact": "Bleckmann plans to collect data as it teaches the two machines to move items and pick orders.",
-      "limitations": "The operator did not name the first sites or publish warehouse performance figures.",
-      "evidence_status": "Operator announcement of the purchase and plans for training after delivery.",
-      "published_at": "2026-11-24",
-      "organization": "Bleckmann",
-      "source_ids": [
-        "bleckmann-warehouse-release"
-      ],
-      "time_window": "72h",
-      "body": "On November 24, logistics company Bleckmann announced that it had invested in two human-shaped robots for European warehouses. It expects the machines to arrive in the coming weeks. Workers will then begin teaching them warehouse jobs. The company wants to find out how the robots learn to move things and pick goods for an order.\n\nA box in a passage can change the route that a robot needs to take. Bleckmann says the machines use cameras and sensors that measure distance with a laser. Those measurements help software build a map and work out where the robot is. The company also describes a way to ask the robot to do a job using the human voice.\n\nWorkers plan to keep records of the jobs the two machines try. The records could help teach later robots. The company has not yet announced which warehouses will receive the first machines or how many orders they could pick in a shift.",
-      "image": null
-    },
-    {
-      "id": "amada-hitachi-factory-assistant-poc",
-      "title": "What should workers check when a machine stops?",
-      "summary": "Amada and Hitachi tested software that suggests checks when a machine has a problem. They also asked it to help rearrange work when an order deadline changes.",
-      "details": "Two Japanese companies, Amada and Hitachi, tested a program that helps factory workers with two problems. Sometimes an order has to be ready sooner than expected. Sometimes a machine stops working. On November 26, the two companies explained what the program had been able to suggest in those situations.",
-      "technical_novelty": "The assistant suggests changes after a deadline moves and proposes checks for a faulty machine.",
-      "engineering_impact": "Amada and Hitachi plan to connect the assistant’s recommendations to equipment control.",
-      "limitations": "The companies have yet to publish results from customer sites or measured repair times.",
-      "evidence_status": "Joint company announcement of a proof of concept without quantitative results.",
-      "published_at": "2026-11-26",
-      "organization": "Amada and Hitachi",
-      "source_ids": [
-        "amada-hitachi-release"
+        "khi-beckhoff-mou",
+        "beckhoff-sps-mou"
       ],
       "time_window": "24h",
-      "body": "Two Japanese companies, Amada and Hitachi, tested a program that helps factory workers with two problems. Sometimes an order has to be ready sooner than expected. Sometimes a machine stops working. On November 26, the two companies explained what the program had been able to suggest in those situations.\n\nIf a deadline moves up, a job planned for later in the day might have to happen in the morning. The program suggested changes to the schedule and ways to use the available machines. When a machine had a problem, it gave workers possible causes and a list of checks. For difficult cases, it could draw on knowledge collected during earlier repairs.\n\nThe companies plan to try the program at selected customer factories. They also want to build a connection that can pass a decision to a machine or robot. The test they described concerned advice. The companies did not report how many minutes that advice saved during a repair.",
-      "image": null
-    },
-    {
-      "id": "embo-seed-world-model",
-      "title": "Could videos help teach a robot new moves?",
-      "summary": "The team at Embo raised $110 million to work on software that teaches robots to move. It plans to learn from videos, records made by real machines and practice in computers.",
-      "details": "On November 23, Embo said investors had put $110 million into its work on robot software. The team wants to teach a robot to choose a move when it faces an unfamiliar object. It plans to train the software with videos, records of real robots moving and exercises in computer models.",
-      "technical_novelty": "Embo plans to learn from video predictions, robot motion records and computer practice.",
-      "engineering_impact": "The training would connect predictions of what objects will do to choices about how a robot should move.",
-      "limitations": "Embo has yet to publish success rates on unfamiliar tasks.",
-      "evidence_status": "The company announced funding and a development plan. It did not publish controller performance.",
-      "published_at": "2026-11-23",
-      "organization": "Embo",
-      "source_ids": [
-        "embo-introduction",
-        "tsn-embo-seed"
-      ],
-      "time_window": "7d",
-      "body": "On November 23, Embo said investors had put $110 million into its work on robot software. The team wants to teach a robot to choose a move when it faces an unfamiliar object. It plans to train the software with videos, records of real robots moving and exercises in computer models.\n\nA video can show what happens after a hand pushes a box. The team wants the program to look at the start of a video and learn to predict what happens next. Choosing a motion for a robot's own arm also calls for recordings from real robots. The developers plan to use those as a separate part of training.\n\nThe program would also get to practise in a computer. It would try a move and get feedback based on the result. If the box did not reach the target, the program could use that feedback to change how it chooses a move. Embo has described its plan and has yet to say how often a trained robot succeeds at a new task.",
+      "body": "On November 27, Japan’s Kawasaki and Germany’s Beckhoff announced that they would work together on connecting factory robots to devices made by different companies. They signed the agreement at a trade show in Nuremberg. They want it to be easier to set up a new camera or sensor when a factory changes its equipment.\n\nA camera can tell the system where a part is. Another sensor can tell it when something touches the part. A controller receives information like this and sends commands that move the robot. A network carries the messages between those devices. The partners plan to study a network designed for factories.\n\nThe companies will also discuss training for people who connect the equipment. Kawasaki showed a design for this kind of controller in Tokyo in December 2025. It now has an agreement with a partner, and the companies have yet to say which cameras and sensors they will be able to connect.",
       "image": null
     }
   ],
   "technology_signal": {
-    "title": "A part may need to turn before it can fit",
-    "summary": "Researchers at Northwestern University and other organisations made ninety computer puzzles for robots. In some, an arm has to guide a part through a narrow gap.",
-    "implications": "The test checks where the objects end up and how they fit together. The scores describe the computer tests."
+    "title": "A robot is meant to copy an astronaut’s arm",
+    "summary": "Kommersant reports that a cargo ship brought cameras, an arm and connecting equipment to the space station. The plan is to send the astronaut’s movements through a device worn on the body.",
+    "implications": "Once the parts are connected, a test can show how the robot moves when it gets a command."
   },
   "sources": [
     {
-      "id": "roboarc-preprint",
-      "url": "https://arxiv.org/html/2611.33390v1",
-      "domain": "arxiv.org",
-      "organization": "Northwestern University, Microsoft, UC Berkeley and Carnegie Mellon University",
-      "published_at": "2026-11-24",
-      "title": "RoboARC: Physical Puzzles for Robotic Manipulation under Spatial Constraints"
-    },
-    {
-      "id": "xela-tactile-use-cases",
-      "url": "https://kyodonewsprwire.jp/release/202611250970",
-      "domain": "kyodonewsprwire.jp",
-      "organization": "XELA Robotics",
-      "published_at": "2026-11-25",
-      "title": "XELA Robotics、視覚だけでは困難な作業を可能にする、フィジカルAIによる触覚ソリューションを提案"
-    },
-    {
-      "id": "bleckmann-warehouse-release",
-      "url": "https://www.bleckmann.com/uploads/press-downloads/Press-release-EN-Bleckmann-introduces-humanoids-into-operations-26.pdf",
-      "domain": "www.bleckmann.com",
-      "organization": "Bleckmann",
-      "published_at": "2026-11-24",
-      "title": "Bleckmann introduces humanoid robots into its operations"
-    },
-    {
-      "id": "amada-hitachi-release",
-      "url": "https://www.amada.co.jp/files/2026/11/NR_261126_01.pdf",
-      "domain": "www.amada.co.jp",
-      "organization": "Amada and Hitachi",
+      "id": "nasa-progress97-docking",
+      "url": "https://www.nasa.gov/blogs/spacestation/2026/11/26/progress-cargo-craft-docks-to-station-on-thanksgiving-day/",
+      "domain": "www.nasa.gov",
+      "organization": "NASA",
       "published_at": "2026-11-26",
-      "title": "アマダと日立、AIエージェントとフィジカルAIの実装により、お客さま工場の自律化に向けた協創を加速"
+      "title": "Progress Cargo Craft Docks to Station on Thanksgiving Day"
     },
     {
-      "id": "embo-introduction",
-      "url": "https://embo.com/introducing-embo",
-      "domain": "embo.com",
-      "organization": "Embo",
-      "published_at": "2026-11-23",
-      "title": "Introducing Embo"
+      "id": "kommersant-ms36-equipment",
+      "url": "https://www.kommersant.ru/doc/9131416",
+      "domain": "www.kommersant.ru",
+      "organization": "Коммерсантъ",
+      "published_at": "2026-11-26",
+      "title": "Грузовой корабль «Прогресс МС-36» с «Теледроидом» пристыковался к МКС"
     },
     {
-      "id": "tsn-embo-seed",
-      "url": "https://tsnmedia.org/embo-110m-seed-a16z-robot-brain/",
-      "domain": "tsnmedia.org",
-      "organization": "TSN",
+      "id": "tass-teledroid-control-background",
+      "url": "https://tass.ru/kosmos/28117839",
+      "domain": "tass.ru",
+      "organization": "ТАСС",
+      "published_at": "2026-09-16",
+      "title": "Прогресс МС-36 отправится к МКС в ноябре"
+    },
+    {
+      "id": "einsia-robouniverse-release",
+      "url": "https://en.prnasia.com/releases/global/einsia-ai-open-source-robouniverse-10k-the-first-10k-scale-rl-environment-suite-for-agential-robotics-558094.shtml",
+      "domain": "en.prnasia.com",
+      "organization": "Einsia AI Technology",
+      "published_at": "2026-11-25",
+      "title": "Einsia AI Open-Source RoboUniverse-10K, the First 10K-Scale RL Environment Suite for Agential Robotics"
+    },
+    {
+      "id": "xpeng-ai-day-iron",
+      "url": "https://www.xpeng.com/pressroom/news/01a212b0d830a1e838d68a02a2110174",
+      "domain": "www.xpeng.com",
+      "organization": "XPENG",
+      "published_at": "2026-11-25",
+      "title": "XPENG Unveils Turing Physical AI Architecture and Debuts Advanced General-Purpose Humanoid Robot IRON"
+    },
+    {
+      "id": "ur-inbolt-gen7-release",
+      "url": "https://www.universal-robots.com/news-and-media/news-center/universal-robots-and-inbolt-make-ai-powered-3d-vision-guidance-easier-to-deploy-and-scale-with-native-gen-7-robot-integration/",
+      "domain": "www.universal-robots.com",
+      "organization": "Universal Robots and Inbolt",
       "published_at": "2026-11-24",
-      "title": "Embo Raises a $110m Seed Led by a16z for a World-Model Robot Brain"
+      "title": "Universal Robots and Inbolt make AI-powered 3D vision guidance easier to deploy and scale with native Gen 7 robot integration"
+    },
+    {
+      "id": "khi-beckhoff-mou",
+      "url": "https://www.khi.co.jp/pressrelease/news_261127-1.pdf",
+      "domain": "www.khi.co.jp",
+      "organization": "Kawasaki Heavy Industries and Beckhoff Automation",
+      "published_at": "2026-11-27",
+      "title": "次世代ロボットコントローラによる柔軟で拡張性の高いシステムの実現に向けた協業に合意"
+    },
+    {
+      "id": "beckhoff-sps-mou",
+      "url": "https://prtimes.jp/main/html/rd/p/000000077.000027362.html",
+      "domain": "prtimes.jp",
+      "organization": "Beckhoff Automation Japan",
+      "published_at": "2026-11-27",
+      "title": "SPS 2026において、川崎重工とベッコフがMOUを締結"
     }
   ]
 }
